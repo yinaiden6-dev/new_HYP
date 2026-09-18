@@ -66,7 +66,8 @@ def add(path, reason, presentation=False):
     why = None
     if path.is_symlink(): why = 'symlink_not_followed'
     elif protected(path): why = 'protected_result_scope'
-    elif path.suffix.lower() in BANNED_EXT: why = 'model_cache_log_or_duplicate_archive'
+    elif path.suffix.lower() in BANNED_EXT:
+        why = 'stored_as_release_asset_not_git_blob' if path.is_relative_to(WS/'models/downloaded_models') and path.suffix=='.safetensors' else 'model_cache_log_or_duplicate_archive'
     elif path.name.lower() in ('stdout.txt', 'stderr.txt', 'auth.json', '.env'): why = 'private_runtime'
     elif path.stat().st_size > LIMIT: why = 'above_50_MiB_review_limit'
     elif path.suffix.lower() not in TEXT | (PRESENTATION if presentation else set()) and path.name not in ('LICENSE', 'LICENSE.txt', 'NOTICE', 'Makefile', '.gitignore'): why = 'not_selected_source_or_document_type'
