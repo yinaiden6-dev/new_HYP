@@ -1,0 +1,60 @@
+{
+  "exact_replacements": [
+    [
+      "N.need(len(order)==5413 and len(set(order))==5413,'FULL_GALLERY_ACTION_RANKING')",
+      "N.need(len(raw)==len(set(raw))==len(set(labels))==5412 and g in raw and set(order)==set(raw) and len(order)==5412 and len({labels[x] for x in order})==5412,'FULL_DEDUPLICATED_IDENTITY_GALLERY_ACTION_RANKING')"
+    ],
+    [
+      "choices=['verify','join']",
+      "choices=['join']"
+    ],
+    [
+      "N.need(N.bind(__file__)==N.read(N.AUTH)['code_sources']['validator'],'FROZEN_VALIDATOR')",
+      "repair_path=ROOT/'registry/rc_paired_local_evidence_join_repair_authority_v1_20260912.json'\n    repair=N.read(repair_path)\n    N.need(repair['program']==N.bind(__file__) and repair['original_experiment_authority']==N.bind(N.AUTH),'FROZEN_JOIN_REPAIR')\n    for b in repair['source_bindings'].values():N.checked(b)\n    N.need(repair['prelabel_seal']==N.bind(N.OUT/'all_predictions_prelabel_seal.json'),'PRESERVED_PRELABEL_SEAL')"
+    ],
+    [
+      "    else:join()",
+      "    else:\n        join()\n        N.write(N.OUT/'join_repair_receipt.json',dict(status='JOIN_ONLY_5412_IDENTITY_AXIS_REPAIR_COMPLETE',repair_authority=N.bind(repair_path),result=N.bind(N.OUT/'result.json'),validation=N.bind(N.OUT/'result_validation.json'),new_training_updates=0,new_predictions=0))"
+    ]
+  ],
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_paired_local_evidence_join_v2.sbatch",
+    "sha256": "cd2923f866d4cd6bd5af611e618d09f6152b94c67e312786b17d8c07482f4cdf"
+  },
+  "new_predictions": 0,
+  "new_training_updates": 0,
+  "original_experiment_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_paired_local_evidence_oof4_authority_v2_20260912.json",
+    "sha256": "ef38ab76d10f9fa2e85bb01c8431b2390b1e1889bad662dd0661fb3a4fad9191"
+  },
+  "prelabel_seal": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_paired_local_evidence_oof4_v1/all_predictions_prelabel_seal.json",
+    "sha256": "1bddcc82617e0bc5fc4e52bf0c6522041d9998d57882c17730ada6dc3518e779"
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_paired_local_evidence_oof4_join_v2.py",
+    "sha256": "b3ec33b261d187e8db8f4662163fcd376e0b905d2ee77acee1fad20ed52855f2"
+  },
+  "reason": "Original complete RAW ranking has 5412 corrected identities from 5413 physical images. Upstream qualification enforces 5412. Repair wrong 5413 assertion and assert complete unique identity coverage; preserve all seals, labels, predictions, parameters and statistical methods.",
+  "scientific_recipe_changes": 0,
+  "source_bindings": {
+    "failure_log": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/paired-local-5142613_4294967294.err",
+      "sha256": "3791615d08f69d2d3b2774044c9c86253a56931765fbab43fe3cb3b93c2baa82"
+    },
+    "original_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_paired_local_evidence_oof4_v1.py",
+      "sha256": "14d58e82abeec133a484a143db9e004b74025a96088fd0e1fdc48ab4a9c02470"
+    },
+    "original_validator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_paired_local_evidence_oof4_v1.py",
+      "sha256": "d4a24e3efe44bb79b240df077fd717acf9a7cd9891bb2ba031694e453db672dc"
+    },
+    "qualification_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_original7_train128_input_qualification_v1.py",
+      "sha256": "20a817fae2c05060f1aa9595d578df52844aaa4a0ca47dc6f177bfb747a2ca86"
+    }
+  },
+  "status": "JOIN_ONLY_REPAIR_AUTHORIZED",
+  "user_authorization": "2026-09-12 \u63a5\u4e0b\u6765\u7ee7\u7eed; complete existing authorized experiment"
+}

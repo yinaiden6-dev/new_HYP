@@ -1,0 +1,98 @@
+{
+  "access": {
+    "opened_model_scoring_count": 4,
+    "opened_new_difficult_train_pixel_decode_count": 4,
+    "retrieval_result_read_count": 0,
+    "sealed_model_scoring_count": 0,
+    "sealed_pixel_decode_count": 0,
+    "target_label_read_count": 0
+  },
+  "bindings": {
+    "gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc",
+    "manifest_receipt_sha256": "4f6208fdf574e739c2ff99fd1b23e6ce6b4e757ca8753580dfb6f874551696a4",
+    "predecessor_sha256": "b12852c196ea360e06c9126fac4fda70df9b0bd1a8962d703a5015c14799d812"
+  },
+  "checks": {
+    "all_exact_label_query_gates_pass": false,
+    "four_fixed_opened_queries": true,
+    "no_target_or_result_read": true,
+    "physical_row_not_used_as_scientific_endpoint": true,
+    "sealed_model_scoring_zero": true,
+    "sealed_pixel_decode_zero": true,
+    "two_oriented_and_two_native": true
+  },
+  "claim_level": "OPENED_RESULT_BLIND_EXACT_LABEL_RUNTIME_PORTABILITY_ONLY",
+  "frozen_thresholds": {
+    "c128_exact_label_set_overlap_min": 120,
+    "expected_axis_score_pearson_min": 0.999,
+    "token_mean_cosine_min": 0.95,
+    "top10_exact_label_set_overlap_min": 8,
+    "top1_exact_label_equal": true
+  },
+  "logical_sha256": "e3176226de2fe5f285abd49e4e40c352672132fb4c0b4b2f0829f3730e199564",
+  "next_authorized_stage": null,
+  "rows": [
+    {
+      "c128_exact_label_set_overlap": 127,
+      "execution_ordinal": 78,
+      "expected_axis_score_pearson": 0.9998321128449882,
+      "expected_top1_exact_label_sha256": "4b5a14eb065ad886b7cb5acd48ef778785c68f121f74b063b1715fed3dcf4614",
+      "grid_exact": true,
+      "observed_top1_exact_label_sha256": "4b5a14eb065ad886b7cb5acd48ef778785c68f121f74b063b1715fed3dcf4614",
+      "pass": true,
+      "query_id": "NDV2-009-P03",
+      "source_exif_orientation": 1,
+      "token_mean_cosine": 0.9595375657081604,
+      "top10_exact_label_set_overlap": 10,
+      "top1_exact_label_equal": true,
+      "top1_physical_row_equal_diagnostic": true
+    },
+    {
+      "c128_exact_label_set_overlap": 127,
+      "execution_ordinal": 83,
+      "expected_axis_score_pearson": 0.9995800571494048,
+      "expected_top1_exact_label_sha256": "4b6c284ae3979213120687891928dec40288a1d58c0f88c91bea6c21160f59c1",
+      "grid_exact": true,
+      "observed_top1_exact_label_sha256": "5e5ab16104a318ea344cff685b9814eb722182d4a2e810602757dacb83e1626e",
+      "pass": false,
+      "query_id": "NDV2-011-P04",
+      "source_exif_orientation": 1,
+      "token_mean_cosine": 0.9609646201133728,
+      "top10_exact_label_set_overlap": 10,
+      "top1_exact_label_equal": false,
+      "top1_physical_row_equal_diagnostic": false
+    },
+    {
+      "c128_exact_label_set_overlap": 127,
+      "execution_ordinal": 88,
+      "expected_axis_score_pearson": 0.9995417330471115,
+      "expected_top1_exact_label_sha256": "bd04b296f9c0133489d69e8ace130bae3f1b0c4b0d3df7a2beffed4cf0816d18",
+      "grid_exact": true,
+      "observed_top1_exact_label_sha256": "bd04b296f9c0133489d69e8ace130bae3f1b0c4b0d3df7a2beffed4cf0816d18",
+      "pass": true,
+      "query_id": "NDV2-014-P01",
+      "source_exif_orientation": 6,
+      "token_mean_cosine": 0.9665842652320862,
+      "top10_exact_label_set_overlap": 10,
+      "top1_exact_label_equal": true,
+      "top1_physical_row_equal_diagnostic": true
+    },
+    {
+      "c128_exact_label_set_overlap": 126,
+      "execution_ordinal": 72,
+      "expected_axis_score_pearson": 0.9996711121280926,
+      "expected_top1_exact_label_sha256": "07e61ec30c330e461e35bd49aa99914e09b9195563bd1a5e5c6fd214c32210c6",
+      "grid_exact": true,
+      "observed_top1_exact_label_sha256": "07e61ec30c330e461e35bd49aa99914e09b9195563bd1a5e5c6fd214c32210c6",
+      "pass": true,
+      "query_id": "NDV2-007-P01",
+      "source_exif_orientation": 6,
+      "token_mean_cosine": 0.9740741848945618,
+      "top10_exact_label_set_overlap": 10,
+      "top1_exact_label_equal": true,
+      "top1_physical_row_equal_diagnostic": true
+    }
+  ],
+  "schema_version": "rc_romav2_colnomic_sealed_source_portability_e0_v5_20260831",
+  "status": "ROMAV2_COLNOMIC_SEALED_SOURCE_PORTABILITY_E0_V5_ABORT"
+}

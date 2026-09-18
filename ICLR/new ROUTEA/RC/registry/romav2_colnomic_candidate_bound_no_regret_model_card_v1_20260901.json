@@ -1,0 +1,174 @@
+{
+  "evidence": {
+    "current_runtime_oof": {
+      "path": "results/romav2_colnomic_current_runtime_frozen_gate_v1/independent_validation.json",
+      "sha256": "83e14a12a8647e08856c2890bfaa638eece1cb3876ba88656e6d755e2f07f87f",
+      "status": "ROMAV2_COLNOMIC_CURRENT_RUNTIME_FROZEN_GATE_INDEPENDENT_VALIDATION_PASS"
+    },
+    "difficult90": {
+      "path": "results/romav2_colnomic_difficult90_frozen_regression_v1/independent_validation.json",
+      "sha256": "be8d3a2eb55cf3e7054529c51730b426054720dddab86d7ec8b464275bec6234",
+      "status": "ROMAV2_COLNOMIC_DIFFICULT90_REGRESSION_INDEPENDENT_VALIDATION_PASS"
+    },
+    "gate_definition": {
+      "path": "results/romav2_colnomic_frozen_gate_definition_v1/validation.json",
+      "sha256": "3dc6fee548ae7171ae6fe0c018cdfe4d31d2e7efecd3790fe0c43e6235f5c372",
+      "status": "ROMAV2_COLNOMIC_FROZEN_GATE_DEFINITION_VALIDATION_PASS"
+    },
+    "model_lineage": {
+      "path": "results/romav2_colnomic_new_difficult_model_lineage_v1/result.json",
+      "sha256": "6d5670561a2188deaea01f9c4373f2d4435ba45114307d95bcde555e5e7f2c82",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_MODEL_LINEAGE_FROZEN"
+    },
+    "sealed31": {
+      "path": "results/romav2_colnomic_new_difficult_sealed_directional_v1/independent_validation.json",
+      "sha256": "97a2199bb5408acae0913baed762aaab156ccd7b4ae508217d45948b778acf20",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_DIRECTIONAL_INDEPENDENT_VALIDATION_PASS"
+    }
+  },
+  "frozen_prohibitions": [
+    "no_threshold_tuning",
+    "no_candidate_width_tuning",
+    "no_pooling_or_feature_change",
+    "no_identity_specific_parameters",
+    "no_target_insertion",
+    "no_human_mask_box_point_polygon",
+    "no_reuse_of_difficult_or_new_difficult_for_selection"
+  ],
+  "inference": {
+    "abstention": "HOLD_WHEN_MAX_LOGIT_LE_ZERO",
+    "bias": -1.5548565799571785,
+    "corrected_exact_labels": 5412,
+    "feature_names": [
+      "standardized_raw_gap",
+      "symmetric_local_score",
+      "symmetric_visibility_mass",
+      "symmetric_visibility_normalized_local_similarity",
+      "symmetric_query_spatial_robustness",
+      "symmetric_reference_spatial_robustness"
+    ],
+    "gallery_physical_rows": 5413,
+    "maximum_switches_per_query": 1,
+    "natural_candidate_width": 128,
+    "parameter_count": 7,
+    "ranking_update": "MOVE_SELECTED_CHALLENGER_EXACT_LABEL_TO_FRONT_STABLE_REMAINDER",
+    "switch_threshold": 0.0,
+    "weight": [
+      0.9812819097198987,
+      -3.812628067996388,
+      5.826320131219255,
+      5.860970045711693,
+      -0.14878670951682949,
+      -0.2442796885686483
+    ]
+  },
+  "logical_sha256": "c545bf32933114e054c3c5eb3ee59aab33e1383864d0799fe2902127e4addee4",
+  "model_name": "RoMaV2-ColNomic-CandidateBound-NoRegret-V1",
+  "models": {
+    "colnomic": {
+      "encoder_fingerprint": {
+        "adapter_file_sha256": {
+          "adapter_config.json": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c",
+          "adapter_model.safetensors": "aa6cba28368342ac6b235f49fcc3e0a5bd891d56df490c12bcbc6dc52c8377f3",
+          "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+          "chat_template.json": "94174d7176c52a7192f96fc34eb2cf23c7c2059d63cdbfadca1586ba89731fb7",
+          "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "preprocessor_config.json": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557",
+          "processor_config.json": "67abb3983388156ccd44dd31d1ad75bb45b94c3d25b94fe2b178028ea3e0b60c",
+          "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+          "tokenizer.json": "5eee858c5123a4279c3e1f7b81247343f356ac767940b2692a928ad929543214",
+          "tokenizer_config.json": "8cf7beeb5bffaaf7347b6d6ebf2f5c114ca75ab0c6d62ab6e6f19fafbd70cb7d",
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        "adapter_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+        "base_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base",
+          "small_file_sha256": {
+            "config.json": "fcf7636197a793fef485bd846052cb4a04a5452e9457d35cdb9f27b0b816cd80",
+            "generation_config.json": "12a853a9c0f468c4bd321e1cf6b0d5929095eb01a078bf47fb2deffec1a4099e",
+            "model.safetensors.index.json": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010"
+          },
+          "weight_shard_stats": [
+            {
+              "bytes": 4952311608,
+              "mtime_ns": 1778003730336771163,
+              "name": "model-00001-of-00007.safetensors"
+            },
+            {
+              "bytes": 4984124272,
+              "mtime_ns": 1778003727313103728,
+              "name": "model-00002-of-00007.safetensors"
+            },
+            {
+              "bytes": 4932743936,
+              "mtime_ns": 1778003725543768292,
+              "name": "model-00003-of-00007.safetensors"
+            },
+            {
+              "bytes": 4998852296,
+              "mtime_ns": 1778003725937516735,
+              "name": "model-00004-of-00007.safetensors"
+            },
+            {
+              "bytes": 4984124336,
+              "mtime_ns": 1778003727557491745,
+              "name": "model-00005-of-00007.safetensors"
+            },
+            {
+              "bytes": 4932743992,
+              "mtime_ns": 1778003727226618178,
+              "name": "model-00006-of-00007.safetensors"
+            },
+            {
+              "bytes": 3385682488,
+              "mtime_ns": 1778003725566737873,
+              "name": "model-00007-of-00007.safetensors"
+            }
+          ]
+        },
+        "base_model_manifest_sha256": "240007b38ebcf8a31a9395b9bbfc428546524f36e58ec999eb55ed77c34f998f",
+        "logical_sha256": "af1f3f83297ac2ab737a50704455fea1da10635b7b14cf101ba0dc02ec30191f",
+        "version": "colnomic_encoder_fingerprint_v2"
+      },
+      "gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc"
+    },
+    "dinov3": {
+      "source_commit": "adc254450203739c8149213a7a69d8d905b4fcfa"
+    },
+    "gallery": {
+      "corrected_exact_label_count": 5412,
+      "corrected_mapping_sha256": "935ce029e3c8177fd9bc4b51f7b41fff8e241c3d587977c31d516b2f300efca4",
+      "physical_row_count": 5413,
+      "repair_contract_sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650",
+      "repair_manifest_sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "romav2": {
+      "checkpoint_sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7",
+      "source_commit": "95c9968145c8906b7b59383258e9f73b02853d89"
+    }
+  },
+  "next_authorized_stage": "UNTOUCHED_EXTERNAL_DATASET_MANIFEST_AND_ONE_SHOT_CONFIRMATION",
+  "query_or_target_read_count": 0,
+  "schema_version": "rc_romav2_colnomic_candidate_bound_no_regret_model_card_v1_20260901",
+  "source_sha256": {
+    "plan/ROMAV2_COLNOMIC_NEW_DIFFICULT_C_BIND_CONTROL_V1_20260901.md": "2a7cd94da01b54c028fb22197c4803e0fa77f1f277a40ee8c962625132bcbaae",
+    "plan/ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_REDUCTION_AUDIT_ADDENDUM_V1_20260901.md": "17b30c322e51206b2642214076b01066eb1dd08d72bfadb8113de63c4e70b37f",
+    "programs/materialize_romav2_colnomic_current_runtime_bridge_roma_shard_v1.py": "46fe67eff5e309d8467cbc5523a565cdfd53f5161189bad34d49c126eeff4325",
+    "programs/reduce_romav2_colnomic_new_difficult_sealed_v1.py": "4e92e331e25ebf3dd0c7a62fa202371d84ffde17d078c77f5ee3fb514c642f35",
+    "programs/run_romav2_colnomic_visibility_xf_six_case_v1.py": "fb73bdd6cc2b585405a9fcb1e411535f487e83d29d6021f8c1f632af78ecfd3c",
+    "src/rc_aslo_xf/colnomic_dino_canonical_geometry_v2.py": "c732dc933c502f17fd5cb8cc80ae45d116716fe801cc8f3034a1e6a49cef6508",
+    "src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+  },
+  "status": "ROMAV2_COLNOMIC_CANDIDATE_BOUND_NO_REGRET_MODEL_FROZEN",
+  "supported_claims": [
+    "target_free_full_C128_no_regret_correction_on_opened_difficult90",
+    "candidate_binding_is_required_for_observed_rescues",
+    "exact_instance_reference_conditioned_retrieval_correction"
+  ],
+  "unsupported_claims": [
+    "strict_spatial_coordinate_causality",
+    "spatial_ownership",
+    "paper_strength_untouched_external_gain",
+    "identity_specific_or_target_mask_supervision"
+  ]
+}

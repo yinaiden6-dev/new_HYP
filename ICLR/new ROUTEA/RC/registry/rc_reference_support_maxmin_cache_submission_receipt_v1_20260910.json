@@ -1,0 +1,17 @@
+{
+  "status": "SUBMITTED_ACTIVATION_CHECKED_NOT_COMPLETED",
+  "job_id": "5139143",
+  "utc": "2026-09-09T23:45:59.760302+00:00",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_reference_support_maxmin_cache_authority_v1_20260910.json",
+    "sha256": "d147a2f2868ad947b91053bb9cdb45186a95fd308f5a7b180f54297a19fea36c"
+  },
+  "submitted_script": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_reference_support_maxmin_cache_submitted_5139143.sh",
+    "sha256": "68a711bec9ef776a5494064a4e126b36a720c2ee1425f0482ad7656f95e3c653"
+  },
+  "launcher_spool_exact": true,
+  "scontrol": "JobId=5139143 JobName=ref_support_cache UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-09-10T01:45:32 EligibleTime=2026-09-10T01:45:32 AccrueTime=2026-09-10T01:45:32 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-10T01:45:32 Scheduler=Main Partition=dev_cpuonly AllocNode:Sid=hkn1990:4090506 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=12G,node=1,billing=8 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryNode=12G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_reference_support_maxmin_cache_v1_dev_cpuonly_30m.sbatch SubmitLine=sbatch --parsable slurm/rc_reference_support_maxmin_cache_v1_dev_cpuonly_30m.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/rc_reference_support_maxmin_cache_v1-5139143.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/rc_reference_support_maxmin_cache_v1-5139143.out TresPerTask=cpu=8",
+  "continuous_scheduler_monitoring": false,
+  "next_stage": "FOUR_HEAD_FINAL_PREFLIGHT_AND_RETRIEVAL_TRAINING_ONLY_AFTER_ALL8320_QUALIFIED"
+}

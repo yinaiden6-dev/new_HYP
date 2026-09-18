@@ -1,0 +1,1917 @@
+{
+  "PAIR_counts": {
+    "JOINT4": 50,
+    "ORIGINAL7": 51,
+    "RAW2": 32,
+    "RAW_PLUS_L3": 51,
+    "RAW_PLUS_M3": 50
+  },
+  "comparisons": {
+    "EVAL": {
+      "JOINT4_vs_ORIGINAL7": {
+        "break": 2,
+        "break_query_ids": [
+          "OUTCOME-0212",
+          "OUTCOME-0618"
+        ],
+        "group_balanced_accuracy_difference": -0.06818181818181818,
+        "groups_harmed": 2,
+        "groups_improved": 0,
+        "net": -2,
+        "rescue": 0,
+        "rescue_query_ids": [],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 2,
+            "net": -1,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 3,
+            "net": -1,
+            "new_correct": 2,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      },
+      "JOINT4_vs_RAW2": {
+        "break": 1,
+        "break_query_ids": [
+          "OUTCOME-0618"
+        ],
+        "group_balanced_accuracy_difference": 0.007575757575757574,
+        "groups_harmed": 1,
+        "groups_improved": 2,
+        "net": 1,
+        "rescue": 2,
+        "rescue_query_ids": [
+          "DIFFICULT-0044",
+          "OUTCOME-0220"
+        ],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 2,
+            "net": -1,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 1,
+            "net": 1,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 1,
+            "net": 1,
+            "new_correct": 2,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      },
+      "JOINT4_vs_RAW_PLUS_L3": {
+        "break": 1,
+        "break_query_ids": [
+          "OUTCOME-0618"
+        ],
+        "group_balanced_accuracy_difference": -0.022727272727272728,
+        "groups_harmed": 1,
+        "groups_improved": 1,
+        "net": 0,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0220"
+        ],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 2,
+            "net": -1,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 1,
+            "net": 1,
+            "new_correct": 2,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      },
+      "JOINT4_vs_RAW_PLUS_M3": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.0,
+        "groups_harmed": 0,
+        "groups_improved": 0,
+        "net": 0,
+        "rescue": 0,
+        "rescue_query_ids": [],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      },
+      "ORIGINAL7_vs_RAW_PLUS_L3": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.045454545454545456,
+        "groups_harmed": 0,
+        "groups_improved": 1,
+        "net": 2,
+        "rescue": 2,
+        "rescue_query_ids": [
+          "OUTCOME-0212",
+          "OUTCOME-0220"
+        ],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 1,
+            "net": 2,
+            "new_correct": 3,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      },
+      "ORIGINAL7_vs_RAW_PLUS_M3": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.06818181818181818,
+        "groups_harmed": 0,
+        "groups_improved": 2,
+        "net": 2,
+        "rescue": 2,
+        "rescue_query_ids": [
+          "OUTCOME-0212",
+          "OUTCOME-0618"
+        ],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 1,
+            "net": 1,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 2,
+            "net": 1,
+            "new_correct": 3,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      },
+      "RAW_PLUS_L3_vs_RAW2": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.0303030303030303,
+        "groups_harmed": 0,
+        "groups_improved": 1,
+        "net": 1,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "DIFFICULT-0044"
+        ],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 1,
+            "net": 1,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      },
+      "RAW_PLUS_M3_vs_RAW2": {
+        "break": 1,
+        "break_query_ids": [
+          "OUTCOME-0618"
+        ],
+        "group_balanced_accuracy_difference": 0.007575757575757574,
+        "groups_harmed": 1,
+        "groups_improved": 2,
+        "net": 1,
+        "rescue": 2,
+        "rescue_query_ids": [
+          "DIFFICULT-0044",
+          "OUTCOME-0220"
+        ],
+        "supergroups": {
+          "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+            "base_correct": 2,
+            "net": -1,
+            "new_correct": 1,
+            "queries": 2
+          },
+          "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+            "base_correct": 1,
+            "net": 1,
+            "new_correct": 2,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+            "base_correct": 1,
+            "net": 1,
+            "new_correct": 2,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 4
+          }
+        }
+      }
+    },
+    "TRAIN": {
+      "JOINT4_vs_ORIGINAL7": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.0,
+        "groups_harmed": 0,
+        "groups_improved": 0,
+        "net": 0,
+        "rescue": 0,
+        "rescue_query_ids": [],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      },
+      "JOINT4_vs_RAW2": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.013888888888888888,
+        "groups_harmed": 0,
+        "groups_improved": 1,
+        "net": 1,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0476"
+        ],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 3,
+            "net": 1,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      },
+      "JOINT4_vs_RAW_PLUS_L3": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.020833333333333332,
+        "groups_harmed": 0,
+        "groups_improved": 1,
+        "net": 1,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0494"
+        ],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 3,
+            "net": 1,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      },
+      "JOINT4_vs_RAW_PLUS_M3": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.0,
+        "groups_harmed": 0,
+        "groups_improved": 0,
+        "net": 0,
+        "rescue": 0,
+        "rescue_query_ids": [],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      },
+      "ORIGINAL7_vs_RAW_PLUS_L3": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.020833333333333332,
+        "groups_harmed": 0,
+        "groups_improved": 1,
+        "net": 1,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0494"
+        ],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 3,
+            "net": 1,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      },
+      "ORIGINAL7_vs_RAW_PLUS_M3": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.0,
+        "groups_harmed": 0,
+        "groups_improved": 0,
+        "net": 0,
+        "rescue": 0,
+        "rescue_query_ids": [],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      },
+      "RAW_PLUS_L3_vs_RAW2": {
+        "break": 1,
+        "break_query_ids": [
+          "OUTCOME-0494"
+        ],
+        "group_balanced_accuracy_difference": -0.006944444444444445,
+        "groups_harmed": 1,
+        "groups_improved": 1,
+        "net": 0,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0476"
+        ],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 4,
+            "net": -1,
+            "new_correct": 3,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 3,
+            "net": 1,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      },
+      "RAW_PLUS_M3_vs_RAW2": {
+        "break": 0,
+        "break_query_ids": [],
+        "group_balanced_accuracy_difference": 0.013888888888888888,
+        "groups_harmed": 0,
+        "groups_improved": 1,
+        "net": 1,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0476"
+        ],
+        "supergroups": {
+          "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 3
+          },
+          "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+            "base_correct": 4,
+            "net": 0,
+            "new_correct": 4,
+            "queries": 4
+          },
+          "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+            "base_correct": 3,
+            "net": 1,
+            "new_correct": 4,
+            "queries": 6
+          },
+          "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+            "base_correct": 1,
+            "net": 0,
+            "new_correct": 1,
+            "queries": 1
+          },
+          "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+            "base_correct": 3,
+            "net": 0,
+            "new_correct": 3,
+            "queries": 3
+          },
+          "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+            "base_correct": 2,
+            "net": 0,
+            "new_correct": 2,
+            "queries": 2
+          },
+          "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+            "base_correct": 5,
+            "net": 0,
+            "new_correct": 5,
+            "queries": 5
+          }
+        }
+      }
+    }
+  },
+  "deployment_changed": false,
+  "existing_fresh_process_retraining_validation_verified": true,
+  "independent_closure_implementation": "literal source-column slicing and standalone action/rank/count/group computation; no producer predict/actions/summary/paired functions called",
+  "job_id": 5138847,
+  "metrics": {
+    "EVAL": {
+      "JOINT4": {
+        "CBIND": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 5,
+          "final_MRR": 0.747470238095238,
+          "final_R@1": 0.625,
+          "final_top1": 20,
+          "hold_count": 25,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 20,
+          "retained_wrong": 7,
+          "switch_count": 7,
+          "wrong_to_wrong": 2
+        },
+        "REAL": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 1,
+          "final_MRR": 0.856845238095238,
+          "final_R@1": 0.8125,
+          "final_top1": 26,
+          "hold_count": 27,
+          "query_count": 32,
+          "rescue": 2,
+          "retained_correct": 24,
+          "retained_wrong": 5,
+          "switch_count": 5,
+          "wrong_to_wrong": 2
+        }
+      },
+      "ORIGINAL7": {
+        "CBIND": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 5,
+          "final_MRR": 0.7459077380952381,
+          "final_R@1": 0.625,
+          "final_top1": 20,
+          "hold_count": 25,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 20,
+          "retained_wrong": 7,
+          "switch_count": 7,
+          "wrong_to_wrong": 2
+        },
+        "REAL": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 0,
+          "final_MRR": 0.9014136904761905,
+          "final_R@1": 0.875,
+          "final_top1": 28,
+          "hold_count": 28,
+          "query_count": 32,
+          "rescue": 3,
+          "retained_correct": 25,
+          "retained_wrong": 4,
+          "switch_count": 4,
+          "wrong_to_wrong": 1
+        }
+      },
+      "RAW2": {
+        "CBIND": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 0,
+          "final_MRR": 0.8281994047619048,
+          "final_R@1": 0.78125,
+          "final_top1": 25,
+          "hold_count": 32,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 25,
+          "retained_wrong": 7,
+          "switch_count": 0,
+          "wrong_to_wrong": 0
+        },
+        "REAL": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 0,
+          "final_MRR": 0.8281994047619048,
+          "final_R@1": 0.78125,
+          "final_top1": 25,
+          "hold_count": 32,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 25,
+          "retained_wrong": 7,
+          "switch_count": 0,
+          "wrong_to_wrong": 0
+        }
+      },
+      "RAW_PLUS_L3": {
+        "CBIND": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 4,
+          "final_MRR": 0.7641369047619048,
+          "final_R@1": 0.65625,
+          "final_top1": 21,
+          "hold_count": 26,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 21,
+          "retained_wrong": 7,
+          "switch_count": 6,
+          "wrong_to_wrong": 2
+        },
+        "REAL": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 0,
+          "final_MRR": 0.849032738095238,
+          "final_R@1": 0.8125,
+          "final_top1": 26,
+          "hold_count": 28,
+          "query_count": 32,
+          "rescue": 1,
+          "retained_correct": 25,
+          "retained_wrong": 6,
+          "switch_count": 4,
+          "wrong_to_wrong": 3
+        }
+      },
+      "RAW_PLUS_M3": {
+        "CBIND": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 5,
+          "final_MRR": 0.747470238095238,
+          "final_R@1": 0.625,
+          "final_top1": 20,
+          "hold_count": 26,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 20,
+          "retained_wrong": 7,
+          "switch_count": 6,
+          "wrong_to_wrong": 1
+        },
+        "REAL": {
+          "base_MRR": 0.8281994047619048,
+          "base_R@1": 0.78125,
+          "base_top1": 25,
+          "break": 1,
+          "final_MRR": 0.8561011904761905,
+          "final_R@1": 0.8125,
+          "final_top1": 26,
+          "hold_count": 27,
+          "query_count": 32,
+          "rescue": 2,
+          "retained_correct": 24,
+          "retained_wrong": 5,
+          "switch_count": 5,
+          "wrong_to_wrong": 2
+        }
+      }
+    },
+    "TRAIN": {
+      "JOINT4": {
+        "CBIND": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 6,
+          "final_MRR": 0.7954059829059829,
+          "final_R@1": 0.65625,
+          "final_top1": 21,
+          "hold_count": 25,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 21,
+          "retained_wrong": 5,
+          "switch_count": 7,
+          "wrong_to_wrong": 1
+        },
+        "REAL": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 0,
+          "final_MRR": 0.9099893162393162,
+          "final_R@1": 0.875,
+          "final_top1": 28,
+          "hold_count": 30,
+          "query_count": 32,
+          "rescue": 1,
+          "retained_correct": 27,
+          "retained_wrong": 4,
+          "switch_count": 2,
+          "wrong_to_wrong": 1
+        }
+      },
+      "ORIGINAL7": {
+        "CBIND": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 6,
+          "final_MRR": 0.7954059829059829,
+          "final_R@1": 0.65625,
+          "final_top1": 21,
+          "hold_count": 25,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 21,
+          "retained_wrong": 5,
+          "switch_count": 7,
+          "wrong_to_wrong": 1
+        },
+        "REAL": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 0,
+          "final_MRR": 0.9099893162393162,
+          "final_R@1": 0.875,
+          "final_top1": 28,
+          "hold_count": 30,
+          "query_count": 32,
+          "rescue": 1,
+          "retained_correct": 27,
+          "retained_wrong": 4,
+          "switch_count": 2,
+          "wrong_to_wrong": 1
+        }
+      },
+      "RAW2": {
+        "CBIND": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 0,
+          "final_MRR": 0.8891559829059829,
+          "final_R@1": 0.84375,
+          "final_top1": 27,
+          "hold_count": 32,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 27,
+          "retained_wrong": 5,
+          "switch_count": 0,
+          "wrong_to_wrong": 0
+        },
+        "REAL": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 0,
+          "final_MRR": 0.8891559829059829,
+          "final_R@1": 0.84375,
+          "final_top1": 27,
+          "hold_count": 32,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 27,
+          "retained_wrong": 5,
+          "switch_count": 0,
+          "wrong_to_wrong": 0
+        }
+      },
+      "RAW_PLUS_L3": {
+        "CBIND": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 6,
+          "final_MRR": 0.8110309829059829,
+          "final_R@1": 0.6875,
+          "final_top1": 22,
+          "hold_count": 24,
+          "query_count": 32,
+          "rescue": 1,
+          "retained_correct": 21,
+          "retained_wrong": 4,
+          "switch_count": 8,
+          "wrong_to_wrong": 1
+        },
+        "REAL": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 1,
+          "final_MRR": 0.8943643162393162,
+          "final_R@1": 0.84375,
+          "final_top1": 27,
+          "hold_count": 30,
+          "query_count": 32,
+          "rescue": 1,
+          "retained_correct": 26,
+          "retained_wrong": 4,
+          "switch_count": 2,
+          "wrong_to_wrong": 0
+        }
+      },
+      "RAW_PLUS_M3": {
+        "CBIND": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 5,
+          "final_MRR": 0.8110309829059829,
+          "final_R@1": 0.6875,
+          "final_top1": 22,
+          "hold_count": 26,
+          "query_count": 32,
+          "rescue": 0,
+          "retained_correct": 22,
+          "retained_wrong": 5,
+          "switch_count": 6,
+          "wrong_to_wrong": 1
+        },
+        "REAL": {
+          "base_MRR": 0.8891559829059829,
+          "base_R@1": 0.84375,
+          "base_top1": 27,
+          "break": 0,
+          "final_MRR": 0.9099893162393162,
+          "final_R@1": 0.875,
+          "final_top1": 28,
+          "hold_count": 30,
+          "query_count": 32,
+          "rescue": 1,
+          "retained_correct": 27,
+          "retained_wrong": 4,
+          "switch_count": 2,
+          "wrong_to_wrong": 1
+        }
+      }
+    }
+  },
+  "parameters_retrained_in_this_closure": false,
+  "positive_predeclared_secondary": {
+    "ORIGINAL7_vs_RAW_PLUS_L3": {
+      "break": 0,
+      "break_query_ids": [],
+      "group_balanced_accuracy_difference": 0.045454545454545456,
+      "groups_harmed": 0,
+      "groups_improved": 1,
+      "net": 2,
+      "rescue": 2,
+      "rescue_query_ids": [
+        "OUTCOME-0212",
+        "OUTCOME-0220"
+      ],
+      "supergroups": {
+        "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+          "base_correct": 4,
+          "net": 0,
+          "new_correct": 4,
+          "queries": 4
+        },
+        "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+          "base_correct": 1,
+          "net": 0,
+          "new_correct": 1,
+          "queries": 2
+        },
+        "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+          "base_correct": 3,
+          "net": 0,
+          "new_correct": 3,
+          "queries": 3
+        },
+        "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+          "base_correct": 4,
+          "net": 0,
+          "new_correct": 4,
+          "queries": 4
+        },
+        "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+          "base_correct": 3,
+          "net": 0,
+          "new_correct": 3,
+          "queries": 3
+        },
+        "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+          "base_correct": 2,
+          "net": 0,
+          "new_correct": 2,
+          "queries": 2
+        },
+        "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+          "base_correct": 2,
+          "net": 0,
+          "new_correct": 2,
+          "queries": 3
+        },
+        "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+          "base_correct": 1,
+          "net": 2,
+          "new_correct": 3,
+          "queries": 4
+        },
+        "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+          "base_correct": 2,
+          "net": 0,
+          "new_correct": 2,
+          "queries": 2
+        },
+        "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+          "base_correct": 1,
+          "net": 0,
+          "new_correct": 1,
+          "queries": 1
+        },
+        "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+          "base_correct": 3,
+          "net": 0,
+          "new_correct": 3,
+          "queries": 4
+        }
+      }
+    },
+    "ORIGINAL7_vs_RAW_PLUS_M3": {
+      "break": 0,
+      "break_query_ids": [],
+      "group_balanced_accuracy_difference": 0.06818181818181818,
+      "groups_harmed": 0,
+      "groups_improved": 2,
+      "net": 2,
+      "rescue": 2,
+      "rescue_query_ids": [
+        "OUTCOME-0212",
+        "OUTCOME-0618"
+      ],
+      "supergroups": {
+        "SOURCE_XML:animal/6d65921e-0d65-48eb-8d28-3dd8f15080bf.xml": {
+          "base_correct": 4,
+          "net": 0,
+          "new_correct": 4,
+          "queries": 4
+        },
+        "SOURCE_XML:animal/80eac8b5-cc36-4f78-a165-379d8399f0e2.xml": {
+          "base_correct": 1,
+          "net": 0,
+          "new_correct": 1,
+          "queries": 2
+        },
+        "SOURCE_XML:animal/a5622b45-08f4-4172-ac5c-ee62961348ec.xml": {
+          "base_correct": 3,
+          "net": 0,
+          "new_correct": 3,
+          "queries": 3
+        },
+        "SOURCE_XML:homeopathic/2b4e90e3-5b08-1c42-e063-6294a90a77e4.xml": {
+          "base_correct": 4,
+          "net": 0,
+          "new_correct": 4,
+          "queries": 4
+        },
+        "SOURCE_XML:otc/263a8307-2ed7-30ce-e063-6394a90ac54d.xml": {
+          "base_correct": 3,
+          "net": 0,
+          "new_correct": 3,
+          "queries": 3
+        },
+        "SOURCE_XML:otc/7685ca08-3ae6-45fd-9549-33c0447ecf0f.xml": {
+          "base_correct": 1,
+          "net": 1,
+          "new_correct": 2,
+          "queries": 2
+        },
+        "SOURCE_XML:otc/7a21e694-00ce-44b3-97d0-dbebbf984a57.xml": {
+          "base_correct": 2,
+          "net": 0,
+          "new_correct": 2,
+          "queries": 3
+        },
+        "SOURCE_XML:otc/9846ff32-284b-5666-e053-2995a90afa2b.xml": {
+          "base_correct": 2,
+          "net": 1,
+          "new_correct": 3,
+          "queries": 4
+        },
+        "SOURCE_XML:otc/b6fb1611-6e8f-4778-e053-2a95a90a6020.xml": {
+          "base_correct": 2,
+          "net": 0,
+          "new_correct": 2,
+          "queries": 2
+        },
+        "SOURCE_XML:other/24887518-9870-451a-9db5-b03dc5571c19.xml": {
+          "base_correct": 1,
+          "net": 0,
+          "new_correct": 1,
+          "queries": 1
+        },
+        "SOURCE_XML:prescription/bde50f3a-b83d-ae1d-e053-2a95a90a3d89.xml": {
+          "base_correct": 3,
+          "net": 0,
+          "new_correct": 3,
+          "queries": 4
+        }
+      }
+    }
+  },
+  "primary_result": "RETRAINED_JOINT_M_L_INTERNAL_SIMPLIFICATION_NOT_ESTABLISHED",
+  "recorded_utc": "2026-09-09T19:00:01.404520+00:00",
+  "replayed_binary64_logits": 81280,
+  "replayed_full_action_dictionaries": 640,
+  "replayed_pair_decisions": 320,
+  "replayed_prediction_records": 640,
+  "replayed_role_comparisons": 16,
+  "report": {
+    "path": "reports/REPORT_RC_RETRAINED_EVIDENCE_SUFFICIENCY_RESULT_V1_20260909.md",
+    "sha256": "bc4906d0979431fde98123eddf904a33d3913f4d40dba0c33e9488e957b71f0e"
+  },
+  "scheduler_accounting": {
+    "MaxRSS": "390420K",
+    "cpus": 8,
+    "elapsed": "00:02:43",
+    "end_Europe_Berlin": "2026-09-09T20:54:04+02:00",
+    "exit_code": "0:0",
+    "source": "parent root live accounting observation; closure made no scheduler calls",
+    "start_Europe_Berlin": "2026-09-09T20:51:21+02:00",
+    "state": "COMPLETED"
+  },
+  "scientific_GO_claimed": false,
+  "sources": {
+    "authority": {
+      "path": "registry/rc_retrained_evidence_sufficiency_authority_v1_20260909.json",
+      "sha256": "012542d9d25d0641187583a4e51f3f5193d8f4d1ef968342a65ebc734de60fe5"
+    },
+    "eval_prejoin": {
+      "path": "results/rc_retrained_evidence_sufficiency_v1/eval_prejoin.json",
+      "sha256": "6cbd8aadf3df59ffe9aedc41179119298b18bf06e12ac107fa109377aa82e8bb"
+    },
+    "eval_prejoin_seal": {
+      "path": "results/rc_retrained_evidence_sufficiency_v1/eval_prejoin_seal.json",
+      "sha256": "da070e7a217eea8649ec4a6e7aeaf587591c963f363e4ed9a59f172babf0b15d"
+    },
+    "independent_validation": {
+      "path": "results/rc_retrained_evidence_sufficiency_v1/independent_validation.json",
+      "sha256": "ebac4a7d704e121d972f8999dbcbe767e588681e3f9a7352974f78d9e809e195"
+    },
+    "input_closure": {
+      "path": "results/rc_retrained_evidence_sufficiency_v1/input_closure.json",
+      "sha256": "0ed30bda7a237d350ee5b636792bd66b00c3e7690e869322a806781051c83aad"
+    },
+    "parameters": {
+      "path": "results/rc_retrained_evidence_sufficiency_v1/parameters.json",
+      "sha256": "8d1781e0abaec6bcd2cdacb6f0637140398764ca1f533452f9bb1cf956aee20b"
+    },
+    "result": {
+      "path": "results/rc_retrained_evidence_sufficiency_v1/result.json",
+      "sha256": "20102901242c734c2b5c0404e0e5571999ab1dc25ceefa5cee2f37f884a12601"
+    }
+  },
+  "status": "COMPLETION_ACTION_HASH_AND_METRIC_REPLAY_PASS",
+  "theory_name": "new HYP"
+}

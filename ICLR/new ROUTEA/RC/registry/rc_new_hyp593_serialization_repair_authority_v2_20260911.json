@@ -1,0 +1,37 @@
+{
+  "status": "H593_SERIALIZATION_ONLY_APPEND_ONLY_REPAIR_AUTHORIZED",
+  "created_utc": "2026-09-11T02:47:48.565022+00:00",
+  "reason": "43 RAW tasks reached save but PyTorch rejected dot-prefixed temporary path",
+  "parent_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_oof5_authority_v1_20260911.json",
+    "sha256": "ff738b347b355c82bf66b83ce646cb84b644290588aa08a3926fe4384e6510ab"
+  },
+  "sources": {
+    "wrapper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v2_serialization.py",
+      "sha256": "c6e8147c84e1a4159d58f5df7ec6a1fd7c2982f2062307ceda1a19e614f662dc"
+    },
+    "original_adapter": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "original_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_oof5_authority_v1_20260911.json",
+      "sha256": "ff738b347b355c82bf66b83ce646cb84b644290588aa08a3926fe4384e6510ab"
+    },
+    "raw_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp593_raw_v2_serialization.sbatch",
+      "sha256": "82306fbd5ea2f534c8eb7b5537048f2be7aa8313b8b317364cc3b06fd9bd7a80"
+    },
+    "roma_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp593_roma_v2_serialization.sbatch",
+      "sha256": "c66a272c093f6bd7ea90ea1f43dfb1c615c5eb548827e0937b9097811acedef7"
+    }
+  },
+  "changed_function": "savepayload only",
+  "all_numeric_and_validation_functions_reused_unchanged": true,
+  "preserved_reuse_features": 256,
+  "raw_minutes": 10,
+  "roma_minutes": 15,
+  "array_throttle": 46
+}

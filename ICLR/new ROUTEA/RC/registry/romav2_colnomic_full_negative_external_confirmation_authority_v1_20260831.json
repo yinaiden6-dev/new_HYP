@@ -1,0 +1,48 @@
+{
+  "schema_version": "rc_romav2_colnomic_full_negative_external_confirmation_authority_v1_20260831",
+  "status": "EXTERNAL_CONFIRMATION_CONTRACT_FROZEN_INPUT_BINDING_REQUIRED",
+  "claim_level": "CONTRACT_ONLY_NO_SEALED_ACCESS",
+  "contract_path": "plan/ROMAV2_COLNOMIC_FULL_NEGATIVE_EXTERNAL_CONFIRMATION_CONTRACT_V1_20260831.md",
+  "contract_sha256": "a6438f98dd08cb74718c35251d44cd99b27a7fa866bc38a673f824ff7d1c507f",
+  "source_result": {
+    "path": "results/romav2_colnomic_full_negative_action_gate_v1/result.json",
+    "sha256": "b296e946ff84ef574605ca5a6f6c6d6892b06dc8f38002b33b913a5afc6f059f",
+    "status": "ROMAV2_COLNOMIC_FULL_NEGATIVE_ACTION_HEADROOM"
+  },
+  "source_independent_validation": {
+    "path": "results/romav2_colnomic_full_negative_action_gate_v1/independent_validation.json",
+    "sha256": "2f112c8daa7b0c199e7e7ca2933116bdaf261b547277140950c809cc3bd264de",
+    "status": "ROMAV2_COLNOMIC_FULL_NEGATIVE_ACTION_INDEPENDENT_VALIDATION_PASS"
+  },
+  "frozen_endpoint_metadata": {
+    "name": "new_difficult_test_v1",
+    "identity_count": 8,
+    "primary_query_count": 31,
+    "complete_gallery_physical_row_count": 5413,
+    "role": "ONE_SHOT_SEALED_DIRECTIONAL_CONFIRMATION"
+  },
+  "frozen_action": {
+    "feature_count": 6,
+    "parameter_count": 7,
+    "weight": [
+      0.9812819097198987,
+      -3.812628067996388,
+      5.826320131219255,
+      5.860970045711693,
+      -0.14878670951682949,
+      -0.2442796885686483
+    ],
+    "bias": -1.5548565799571785,
+    "switch_rule": "MAX_CHALLENGER_LOGIT_STRICTLY_GREATER_THAN_ZERO",
+    "maximum_switches_per_query": 1,
+    "romav2_update_count": 0
+  },
+  "permissions": {
+    "sealed_manifest_metadata_binding_authorized": true,
+    "sealed_query_bytes_read_authorized": false,
+    "sealed_label_read_authorized": false,
+    "sealed_scoring_authorized": false,
+    "model_or_threshold_change_authorized": false
+  },
+  "next_authorized_stage": "SEALED_INPUT_MANIFEST_BINDING_PREFLIGHT"
+}

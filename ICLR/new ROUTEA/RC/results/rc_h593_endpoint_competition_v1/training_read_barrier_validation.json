@@ -1,0 +1,23 @@
+{
+  "status": "DIAGNOSTICS_PARENT_OUTCOMES_AND_OTHER_FOLDS_DENIED",
+  "checks": [
+    {
+      "path": "results/rc_opened_evidence_loss_summary256_v1/result.json",
+      "result": "DENIED DIAGNOSTIC_AND_PROTECTED_SOURCE_BARRIER"
+    },
+    {
+      "path": "results/rc_new_hyp593_oof5_v1/result.json",
+      "result": "DENIED PARENT_OOF_OUTCOMES_NOT_USED"
+    },
+    {
+      "path": "results/rc_new_hyp593_oof5_v1/roles/fold1.json",
+      "result": "DENIED CURRENT_FOLD_TRAIN_LABELS_ONLY"
+    },
+    {
+      "path": "results/rc_new_hyp593_oof5_v1/fits/fold1/payload.pt",
+      "result": "DENIED CURRENT_FOLD_PARENT_BASE_ONLY"
+    }
+  ],
+  "source_sha256": "f2bfcc745089076a0a328512f177eb1142c187e9464bd0981cb795be334036bc",
+  "no_natural_data_contents_read": true
+}

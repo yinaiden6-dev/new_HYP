@@ -1,0 +1,67 @@
+{
+  "BASE_losses": {
+    "PROTECTED7": [
+      "DIFFICULT-0101",
+      "OUTCOME-0494",
+      "DIFFICULT-0107",
+      "OUTCOME-0728"
+    ],
+    "REPAIR_ONLY7": [
+      "OUTCOME-0494",
+      "OUTCOME-0692",
+      "OUTCOME-0072",
+      "NDV2-012-P01",
+      "DIFFICULT-0107",
+      "NDV2-012-P02"
+    ]
+  },
+  "EVAL_access_from_this_gate": false,
+  "gates": {
+    "all_BASE_correct_retained": false,
+    "count_strictly_above_BASE7": true,
+    "equal_group_strictly_above_BASE7": true
+  },
+  "job_id": "5139521",
+  "original_ec7_unchanged": true,
+  "read_only_review": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_protected_projection_result_review_v1/review.json",
+    "sha256": "d1050ad734f15e2cce71493a9541b0dc01261c3e9674f18d0eecdd62fbc54830"
+  },
+  "recorded_utc": "2026-09-10T22:24:51.071081+00:00",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_protected_projection_oof4_v1/result.json",
+    "sha256": "5f5cc6e1a0aba87c22b3c0fea7040d9b54304d38e7db27fce42a9147ae398042"
+  },
+  "review_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_protected_projection_result_review_v1/validation.json",
+    "sha256": "a00dee5cc230c7d0c09f267f3e980454cd6038d46d125f4aa4140c8cf134f714"
+  },
+  "scores": {
+    "BASE7": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.83125,
+      "equal_group_accuracy_fraction": "133/160",
+      "rescue_vs_RAW": 23
+    },
+    "PROTECTED7": {
+      "break_vs_RAW": 5,
+      "correct": 110,
+      "equal_group_accuracy": 0.8458333333333333,
+      "equal_group_accuracy_fraction": "203/240",
+      "rescue_vs_RAW": 29
+    },
+    "REPAIR_ONLY7": {
+      "break_vs_RAW": 7,
+      "correct": 108,
+      "equal_group_accuracy": 0.8359375,
+      "equal_group_accuracy_fraction": "107/128",
+      "rescue_vs_RAW": 29
+    }
+  },
+  "status": "TRAIN128_PROTECTED_PROJECTION_COMPLETE_HARD_RETENTION_NOT_MET",
+  "validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_protected_projection_oof4_v1/validation.json",
+    "sha256": "f852f1dc4f4fd93c2688331b989259353713cb834dc38583f87e7dfb8faefc46"
+  }
+}

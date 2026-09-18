@@ -1,0 +1,104 @@
+{
+  "version": "rc_ltr_aslo_xf_v3_upstreams_20260805",
+  "status": "FROZEN_READ_ONLY_POINTERS_NO_COPY_NO_MUTATION",
+  "experiment_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+  "primary_line": {
+    "optimization_materialization": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_v3_1_o1_c6direct_m1_v1/formal_chain5043715/optimization_materialization.json",
+      "file_sha256": "b9d3cec51d6f494078037b7839aba1e677318dd8aa2ad37b9d9ff977f95d8255",
+      "logical_sha256": "21e0b78f172eed562e0f116bc0023fd87df9530b111a331043fe8c5fd961e964",
+      "queries": 987,
+      "train_queries": 775,
+      "heldout_queries": 212,
+      "track_counts": {
+        "outcome": 813,
+        "difficult": 134,
+        "new_difficult_train": 40
+      },
+      "role": "all_987_queries_are_internal_development_only_under_new_five_fold_oof_contract"
+    },
+    "identity_supergroup_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_v3_1_o1_c6direct_m1_v1/preflight/preflight_seed17_v1.json",
+      "logical_sha256": "e5ac498c02ddf8e982e4bf51741daab3fa4df6f6d8e5e6a4568b91a834342cab",
+      "seed": 17,
+      "folds": [
+        {"fold": 0, "train_queries": 775, "heldout_queries": 212, "train_identities": 62, "heldout_identities": 19, "train_supergroups": 61, "heldout_supergroups": 16},
+        {"fold": 1, "train_queries": 782, "heldout_queries": 205, "train_identities": 64, "heldout_identities": 17, "train_supergroups": 61, "heldout_supergroups": 16},
+        {"fold": 2, "train_queries": 798, "heldout_queries": 189, "train_identities": 66, "heldout_identities": 15, "train_supergroups": 62, "heldout_supergroups": 15},
+        {"fold": 3, "train_queries": 799, "heldout_queries": 188, "train_identities": 66, "heldout_identities": 15, "train_supergroups": 62, "heldout_supergroups": 15},
+        {"fold": 4, "train_queries": 794, "heldout_queries": 193, "train_identities": 66, "heldout_identities": 15, "train_supergroups": 62, "heldout_supergroups": 15}
+      ],
+      "role": "frozen_identity_supergroup_disjoint_internal_split"
+    },
+    "d1_checkpoint": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_v3_1_o1_c6direct_m1_v1/formal_chain5043715/d1_checkpoint.pt",
+      "file_sha256": "0fe914a2f4d54aa35c6cc7a11d6a3375ed87bc2bc15bf288419bd18f188fb30d",
+      "formal_result_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_v3_1_o1_c6direct_m1_v1/formal_chain5043715/result.json",
+      "formal_result_file_sha256": "797e0ca28a34c88909965aebe5b088470eb45e6d214edd81a6d2eb27370a2f1f",
+      "recipe_sha256": "78431fef181b688ac9cd3d97609c615277a91b6b66e645b71308eb252f4aa8e6",
+      "runner_sha256": "cdbac5833699c5904475cc308d1fbae6587a94765f9096d993093b2c1f621e41",
+      "schedule_sha256": "ad6a74ae45935cbbe10fa0233560f47b16aad41f1c31a68bdfdbd51fc4144be2",
+      "parameter_manifest_sha256": "7c6724e5b7f730f8ee993178eb074a8713aa981fa195edaf9a58732ebedebd0e",
+      "parameter_count": 49792,
+      "role": "fold0_heldout_212_base_checkpoint_and_frozen_d1_recipe_anchor_only",
+      "formal_gate": "pass"
+    },
+    "d1_exact_label_reducer_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/route_a_core/route_a/o1_c6direct_m1_d1.py",
+      "file_sha256": "a3973e45f97f2157883acb96b64c614d9fa93ec80187e6608f462fe841737274",
+      "function": "aggregate_exact_label_scores",
+      "reducer": "max_over_physical_rows_with_canonical_row_id_tie_break",
+      "translation_equivariant_under_uniform_per_label_offset": true,
+      "role": "frozen_base_label_reducer_and_switch_projection_validator_reference"
+    },
+    "full_gallery_embeddings": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt",
+      "file_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc",
+      "physical_rows": 5413,
+      "exact_labels": 5404,
+      "dtype": "float16",
+      "embedding_dimension": 128,
+      "role": "frozen_full_gallery_reference_tokens"
+    },
+    "gallery_spatial_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_c2_symmetric_ownership/gallery_spatial_metadata_v1.pt",
+      "file_sha256": "741f0c18443b1f2e58f4a3787e0d95bb958f700012cacc943789d8c590a7ebca",
+      "logical_sha256": "347fd82b2cb839f80f4b237e527704f789dbc7c759c53fbcd01e4261ef40b6ef",
+      "role": "frozen_gallery_geometry_metadata"
+    },
+    "target_free_prejoin": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_v2_rc_cf_v1/c0/full_cache_v1/prejoin_manifest.json",
+      "logical_sha256": "637a0d3778dbcb22c0a41682bfaedd65632aec10b7f7a59183c3267993a6a441",
+      "rows_logical_sha256": "331f20de0744f6eb9f695556fc8dafc9dc6af0881670784fa32a0a4d43f38037",
+      "role": "target_free_prejoin_and_regression_contract"
+    },
+    "clean_cache_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_v2_rc_cf_v1/c0/full_cache_v1/clean_validation.json",
+      "logical_sha256": "8ed9e9ce566892bc92000e77016d0f1379179b0ce6d6317f95b839204d5d543d",
+      "valid": true,
+      "role": "legacy_cache_integrity_control_only"
+    },
+    "reference_cache_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_v2_rc_cf_v1/stage_P0/fold0_seed17_v1/cache_validation.json",
+      "logical_sha256": "999a140e2e20745c0828781d9842c10e72dc370ab09846757ba6c6a06bb06917",
+      "valid": true,
+      "role": "legacy_reference_cache_integrity_control_only"
+    }
+  },
+  "historical_regression_only": {
+    "a10_c6d_opened_224": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/results/route_a_c6d_local_target_star_selective_router_v1/formal_job5038839/result.json",
+      "file_sha256": "8fbe3fe37e3cd60cee8357d5c20c39f2ccc9302330b836e85881447326720949",
+      "logical_sha256": "56297152881999ad8d4deb2a194061e1a9c60ac95a3dd9119cf1e59d2b4c6365",
+      "opened": true,
+      "may_train_or_select": false,
+      "role": "historical_regression_and_negative_evidence_only"
+    }
+  },
+  "access_contract": {
+    "all_upstreams_read_only": true,
+    "opened_access_for_new_line": false,
+    "sealed_access_for_new_line": false,
+    "legacy_contextual_3584d_local_cache": "matched_control_only_not_new_high_resolution_evidence"
+  }
+}

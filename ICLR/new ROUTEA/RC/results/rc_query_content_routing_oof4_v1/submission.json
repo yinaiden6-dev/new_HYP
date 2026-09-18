@@ -1,0 +1,30 @@
+{
+  "status": "CACHE_COMPLETE_FOUR_FOLD_FIT_AND_DEPENDENT_JOIN_SUBMITTED",
+  "authority_sha256": "3b2dbbadffae73dca8f6213f9d3015f26ccfaf007ce61a691a58754ddc423249",
+  "jobs": {
+    "cache": "5142573",
+    "fit_array": "5142574",
+    "join": "5142577"
+  },
+  "cache_completed_exit": "0:0",
+  "cache_elapsed_seconds": 52,
+  "fit_array_spec": "0-3%4",
+  "fit_partition": "dev_accelerated,accelerated",
+  "join_partition": "cpuonly",
+  "join_dependency_verified": "afterok:5142574_*",
+  "time_limit_each": "00:10:00",
+  "scheduler_spool_byte_parity": true,
+  "no_model_results_claimed": true,
+  "scheduler_rejections": [
+    {
+      "attempt": "fit array while cache still counted in dev submissions",
+      "reason": "QOSMaxSubmitJobPerUserLimit",
+      "resolved": "cache finished; same array successfully submitted as5142574"
+    },
+    {
+      "attempt": "join on dev_cpuonly while four fits occupy dev submission slots",
+      "reason": "QOSMaxSubmitJobPerUserLimit",
+      "resolved": "join submitted to cpuonly as5142577"
+    }
+  ]
+}

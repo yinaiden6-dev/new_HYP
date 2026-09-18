@@ -1,0 +1,66 @@
+{
+  "HYP_GO_claimed": false,
+  "PAIR_original_training_labels_may_be_copied": true,
+  "candidate_occurrences": 8320,
+  "evaluation_target_or_outcome_reads_authorized": false,
+  "full_queries": 64,
+  "leakage": {
+    "identity_disjointness_claimed": false,
+    "overlap": {
+      "FULL_TRAIN32": {
+        "execution_ordinal": [],
+        "query_id": [],
+        "source_image_sha256": []
+      },
+      "PAIR64": {
+        "execution_ordinal": [],
+        "query_id": [],
+        "source_image_sha256": []
+      }
+    },
+    "source_metadata_only": true,
+    "status": "TRAIN_EVAL_QUERY_AND_EXACT_IMAGE_DISJOINT_PASS"
+  },
+  "new_encoder_or_RoMa_forwards": 0,
+  "pair_queries": 64,
+  "sources": {
+    "full_manifest": {
+      "path": "results/rc_original_raw_visibility_pv_inputs_v1/manifest.json",
+      "sha256": "2777f72c1eacc3dd46f1ab4ba7f18c0dda23ddcb95a51f4b87c9fecd67dec2d4"
+    },
+    "geometry": {
+      "path": "cache/dino_rcde_colnomic_sr_full600_geometry_v2/full600_geometry_payload_v2.pt",
+      "sha256": "fff5b980ffa88997ed9bb2a509686800a3448d18a93a714c4ef89007fb24329b"
+    },
+    "launcher": {
+      "path": "slurm/rc_shared_query_target_prior_cache_v1_dev_cpuonly_59m.sbatch",
+      "sha256": "64002c77853c03f3bf19b33a9848a031fb4ce74bfcfe7f5cb10914c0025600b3"
+    },
+    "old_score_source": {
+      "path": "programs/run_romav2_colnomic_visibility_xf_six_case_v1.py",
+      "sha256": "fb73bdd6cc2b585405a9fcb1e411535f487e83d29d6021f8c1f632af78ecfd3c"
+    },
+    "pair_lineage": {
+      "path": "results/routea_matched_three_arm_pair64_training_features_v2/post_full_lineage.json",
+      "sha256": "76be3c0cfc839cbe2029e8f7b25f030be15fdb5c37c752ccf9e21e248da33d4e"
+    },
+    "pair_payload": {
+      "path": "results/routea_matched_three_arm_pair64_training_features_v2/payload.pt",
+      "sha256": "d7be701ac4629059d22301c17b0f0d44b69b4b67666072b8fab7c3c0cb7716e3"
+    },
+    "pair_validation": {
+      "path": "results/routea_matched_three_arm_pair64_training_features_v2/independent_validation.json",
+      "sha256": "657b316a83b80f20e8779bf985b2777b1533126c9b8e7ec7b552ea245febbf1b"
+    },
+    "plan": {
+      "path": "plan/RC_SHARED_QUERY_TARGET_PRIOR_CACHE_V1_20260909.md",
+      "sha256": "392462b5d309e4f3213fb1cc640a385b34a74de237605a18b9d4add937244824"
+    },
+    "program": {
+      "path": "programs/prepare_rc_shared_query_target_prior_cache_v1.py",
+      "sha256": "be92313a0597c7f924f52040512eedd55afcb6a04d7183927a97b2f07d516de0"
+    }
+  },
+  "status": "RC_SHARED_QUERY_TARGET_PRIOR_CACHE_V1_AUTHORIZED",
+  "training_updates": 0
+}

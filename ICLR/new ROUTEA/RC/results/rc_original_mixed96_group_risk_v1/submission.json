@@ -1,0 +1,32 @@
+{
+  "status": "ORIGINAL_MIXED96_GROUP_JOB_SUBMITTED_SPOOL_VERIFIED",
+  "job_id": "5141529",
+  "recorded_utc": "2026-09-11T09:32:02.866080+00:00",
+  "scheduler_snapshot": "JobId=5141529 JobName=mixed96_group UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=Priority Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-11T11:31:08 EligibleTime=2026-09-11T11:31:08 AccrueTime=2026-09-11T11:31:08 StartTime=Unknown EndTime=Unknown Deadline=2026-09-11T18:00:00 SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-11T11:31:21 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1993:886635 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original_mixed96_group_risk_v1.sbatch SubmitLine=sbatch --parsable --deadline=2026-09-11T18:00:00 slurm/rc_original_mixed96_group_risk_v1.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/mixed96_group-5141529.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/mixed96_group-5141529.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+  "spool_exact": true,
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original_mixed96_group_risk_v1.sbatch",
+    "sha256": "1796a45fa9fef0229ffc1819782f16a07dc1f603db7eff65ee5ddcfdb3e651f5"
+  },
+  "submitted_spool": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_mixed96_group_risk_v1/submitted_batch_script.sh",
+    "sha256": "1796a45fa9fef0229ffc1819782f16a07dc1f603db7eff65ee5ddcfdb3e651f5"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original_mixed96_group_risk_authority_v1_20260911.json",
+    "sha256": "8a66401863bf05d5ad3d4da1c73a24c894f163cb83284c515d76f055fbe3a02b"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_mixed96_group_risk_v1/preflight.json",
+    "sha256": "523b4619b8c7d760da9b6870916a89b7f9332da9e8c88dc1281cd0516b29f849"
+  },
+  "old_head_training_updates": 0,
+  "old_predictions_reused": true,
+  "new_head_count": 1,
+  "stages": [
+    "new_fit_and_new_fit_replay",
+    "join",
+    "independent_review",
+    "report"
+  ]
+}

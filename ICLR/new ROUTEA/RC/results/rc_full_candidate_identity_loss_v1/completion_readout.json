@@ -1,0 +1,59 @@
+{
+  "status": "LISTWISE_UNIT1_EVAL128_OBSERVED_NET_GAIN_WITH_EVAL32_REGRESSION",
+  "recorded_utc": "2026-09-12T00:56:42.456094+00:00",
+  "job_id": "5142537",
+  "job_state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:01:28",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_full_candidate_identity_loss_v1/result.json",
+    "sha256": "4b87ba71a3abb896f0574532b40a1dedaf7e0c56ff0fd341567283906fea5f5d"
+  },
+  "validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_full_candidate_identity_loss_v1/independent_validation.json",
+    "sha256": "efb7a52c1d63713b7290cfaff2020a8ac8a9ea546e665f2a7752cc12a179a80f"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_full_candidate_identity_loss_authority_v1_20260912.json",
+    "sha256": "9f5a91d426101f97f910186e2d31e89bf08144ca905dc02f58ae6651dde07a5d"
+  },
+  "models": {
+    "EVAL128": {
+      "LISTWISE_UNIT1": 101,
+      "ORIGINAL7": 99,
+      "RAW": 88,
+      "TRAIN_UNIT_COST7": 99
+    },
+    "EVAL32": {
+      "LISTWISE_UNIT1": 26,
+      "ORIGINAL7": 28,
+      "RAW": 25,
+      "TRAIN_UNIT_COST7": 27
+    }
+  },
+  "strong_baseline_net": {
+    "EVAL128": 2,
+    "EVAL32": -2
+  },
+  "EVAL128_gain_vs_original": {
+    "rescue": 7,
+    "loss": 5,
+    "net": 2
+  },
+  "EVAL128_gain_vs_unit": {
+    "rescue": 2,
+    "loss": 0,
+    "net": 2,
+    "new_correct_original_query_ids": [
+      "OUTCOME-0821",
+      "OUTCOME-0818"
+    ],
+    "source_groups": 1,
+    "decision_change": "correct strongest challenger crosses fixed HOLD0"
+  },
+  "same_model_uniform_panel_improvement": false,
+  "original_and_new_models_preserved": true,
+  "automatic_deployment_changed": false,
+  "universal_HYP_claimed": false,
+  "new_593_result": false
+}

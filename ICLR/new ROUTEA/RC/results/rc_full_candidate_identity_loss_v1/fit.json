@@ -1,0 +1,69 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_full_candidate_identity_loss_authority_v1_20260912.json",
+    "sha256": "9f5a91d426101f97f910186e2d31e89bf08144ca905dc02f58ae6651dde07a5d"
+  },
+  "baseline_head_training_updates": 0,
+  "final_preupdate_losses": {
+    "FULL": 0.411536486311145,
+    "PAIR": 0.19449129002936308,
+    "total": 0.6060277763405081
+  },
+  "finite_training": {
+    "all_finite": true,
+    "finite_gradient_step_count": 2000,
+    "finite_loss_step_count": 2000,
+    "finite_parameter_state_count": 2001,
+    "input_finite": true
+  },
+  "function_change": {
+    "FULL_loss": "mean_logsumexp_RAW0_plus_all_challengers_minus_target",
+    "PAIR_FULL_mixture": [
+      1,
+      1
+    ],
+    "PAIR_loss": "cost1_BCE_mean",
+    "changed_component": "FULL_LOSS_ONLY",
+    "changed_function_sha256": "1d7314d01fa6d4b09b5d2315485174e539a8037216972c4db03e8fc2c0501328",
+    "new_features": 0,
+    "parameter_count": 7,
+    "replacement_count": 1,
+    "temperature": 1,
+    "unit_cost_function_sha256": "c977e1defffa74d4cdb4578b2f704d5116da6f814972c4cb803e103fed4583ff"
+  },
+  "heldout_label_reads": 0,
+  "input_seal": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_convex_train_loss_cause_v1/input_seal.json",
+    "sha256": "add8fd4f6640e46936327e200b965ce6bf06e724c44233b178b58c6d3e362862"
+  },
+  "new_head_training_updates": 2000,
+  "optimizer": {
+    "dtype": "float64",
+    "initialization": "zero",
+    "lr": 0.03,
+    "name": "AdamW",
+    "seed": 17,
+    "steps": 2000,
+    "weight_decay": 0.001
+  },
+  "original_head_training_updates": 0,
+  "original_training_pack": {
+    "path": "results/rc_original_mixed96_group_risk_v1/train_inputs.pt",
+    "sha256": "01ebc493e325fb15fce26cec62ec96a731bed3b149a239bac8f5206e88abd42b"
+  },
+  "status": "LISTWISE_UNIT1_MATCHED_TRAINING_COMPLETE",
+  "theta_binary64": [
+    "0x1.9e6f2cb6522cap+0",
+    "-0x1.4d202bedcdbfep+1",
+    "0x1.dccd3f5116e82p+2",
+    "0x1.697c31252fc53p+2",
+    "0x1.c292660af7cecp-2",
+    "0x1.6e5a29d7cd55ap-6",
+    "0x1.55eb2281eeedbp-5"
+  ],
+  "train_count": {
+    "FULL": 32,
+    "PAIR": 64,
+    "total": 96
+  }
+}

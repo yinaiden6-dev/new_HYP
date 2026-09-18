@@ -1,0 +1,703 @@
+{
+  "compile": false,
+  "engineering_execution_ordinal": 56,
+  "matmul_precision": "highest",
+  "model_setting": "precise",
+  "runtime_prefix": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2",
+  "runtime_versions": {
+    "PIL": "12.0.0",
+    "numpy": "2.2.6",
+    "python": "3.13.11",
+    "torch": "2.9.1+cu128",
+    "torchvision": "0.24.1+cu128"
+  },
+  "seed": 17,
+  "source_trees": {
+    "dinov3": {
+      "python_files": [
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/__init__.py",
+          "sha256": "cfcd49b9d41705ef9bd6ce61bccc38e8ab8fa52fa365de48c10a7d7e1710b631"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/checkpointer/__init__.py",
+          "sha256": "2d44449d0cdd2b7c803582def39b61bec1e55bf610a92bc3b072a7a2eddea877"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/checkpointer/checkpointer.py",
+          "sha256": "21d9840fb2bfcb217738a0843ccc72c87cfc518957ff18038e3350640ee3cade"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/configs/__init__.py",
+          "sha256": "3e43ad228d86c0be1cf711a1527c40c9f351a5910cfc250a341e18e000183493"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/configs/config.py",
+          "sha256": "bed862291a153e9008bd33cd4ee84235b8b169804a2552aca45460e992d5dd13"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/__init__.py",
+          "sha256": "d802fa917898098dfeff0d6baf9360620c1e3ab1b856413be0e3d86a993d77ec"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/adapters.py",
+          "sha256": "104068a78e6055a3198ee58f0658950d7a081ce8a79514e924d856f0e59ffad2"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/augmentations.py",
+          "sha256": "ed056cb708e00dbc989bb9c8fc59839536bed17263cc297634e7accaeca3be3e"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/collate.py",
+          "sha256": "49c0f80d055c8e66d4da64f5a3235a45ec3727323dc13d85b752549e4ed2a2a6"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/datasets/__init__.py",
+          "sha256": "968b4da1ffd79c8a19f094853c9f8d2da647290dafbc10be64b65126fcd3abe1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/datasets/ade20k.py",
+          "sha256": "c1e010b3420b62b811a943a539a9df07a23867b391a54cf4f48faf0d8f2b61cf"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/datasets/coco_captions.py",
+          "sha256": "9f602a8bc537db35a99d5c252df64bc9b2c1db606f49b73eb0e7cf163d107eeb"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/datasets/decoders.py",
+          "sha256": "7a7fc3ed86488c4e5be720be59545a40480ae647499a471c6c3178867aa01222"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/datasets/extended.py",
+          "sha256": "b23cbf6245a7cf8c24ce85197aad9edc5123fba5e16a45d672f77a82109b8983"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/datasets/image_net.py",
+          "sha256": "65720c18947dcf142985a77c333103083b8319930f78315e7535ea72614b0ba3"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/datasets/image_net_22k.py",
+          "sha256": "928e8e84e64098e29801ff5e138ea8ff54bb9f126cb1ad5e30dfdf38e5a8ac51"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/loaders.py",
+          "sha256": "b85341f785c2b5236ec6cb8ba6b7531bcee46e94a65221cefe71fcbb65d4f464"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/masking.py",
+          "sha256": "40f37aa4b4a7b7ac94ebf57000bdce50e24fd8771feb1edca7d8ec40bc5f01b2"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/meta_loaders.py",
+          "sha256": "b6301d9381c92a5462a3a4228340a64c660f9e38defcbaf70fc0f9977a2c0b63"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/samplers.py",
+          "sha256": "f51e00c1534badb4c0bd3c09258d03eca50111c6a965a011f35c94184673054c"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/data/transforms.py",
+          "sha256": "fe8de416012616da78c7191e3975c622171cd3c14d26bbbb3eb20c2645bb3840"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/distributed/__init__.py",
+          "sha256": "d17e0f68fa38f506ae19347c2b4fc99d1b1cdc7159bebf9a8ed8f863116e58a1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/distributed/torch_distributed_primitives.py",
+          "sha256": "cde664c2bde4021778284b45018561e219d0ef6c93b8d652b9d596fbea689be9"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/distributed/torch_distributed_wrapper.py",
+          "sha256": "6dd47e7e8044c98b37ad0d00dc1a2f5732389ae38e779207ec794da35a4e5d52"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/env/__init__.py",
+          "sha256": "924c241f9301b704ffe064c796966a801dfffae7cd9d2bd072710f2a8fbc7b74"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/accumulators.py",
+          "sha256": "311aa6a4ba713fa8edd263e95f0d48f5891595c2e525ebc7a2f08a706e122412"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/data.py",
+          "sha256": "97d264cc012d2f52d7102155215dfd9a0c8399c238aa8cb84219b2d384046f90"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/dense/depth/models/__init__.py",
+          "sha256": "696864123d2397f11c15d35034ab13e4b85876c30bf4a5ebc6a1d4fa2c9582e7"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/dense/depth/models/dpt_head.py",
+          "sha256": "52451ada1b3ad4ec9ed6227f20e119719e569154b4d6e9c15d51d2179ce3281d"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/dense/depth/models/embed.py",
+          "sha256": "975b1add76ecf7516dc46e147e5d7e9c7a4ccb0fc0be6eea27501ebae818fb14"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/dense/depth/models/encoder.py",
+          "sha256": "45e41141ffa2bb456eb68039110d7f31f333b70c076e06cb85ffd566d8464c16"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/dense/depth/utils.py",
+          "sha256": "a247ebb745d287e66f7e6890abcde8391e97bf5b665617d1646ebeefb7736474"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/config.py",
+          "sha256": "b70dcd89651d668ab107fd92203d166dccddbfc002e3afd1e57407daf3a50fa9"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/__init__.py",
+          "sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/backbone.py",
+          "sha256": "e739d35f02af46fed6afd8f824e47060bd4d09b73228460bf0063ad8bb974edc"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/detr.py",
+          "sha256": "4e568f73d6cab0d90668163fcb6bbc5b088a4f4bd046be38929daba93a404d23"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/global_ape_decoder.py",
+          "sha256": "96be28c2e99e67ede9472bb29cba68109f513a6e6aed482066d8f001ac2f1b84"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/global_rpe_decomp_decoder.py",
+          "sha256": "f4c77a15572b6d030b6662cad73cf80b3d4fb94ff449301ef20761d3183caffc"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/position_encoding.py",
+          "sha256": "f885b7bfd40df50cb012c8038979042ff2f5c427a5f6bbe36028e84735132d4a"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/transformer.py",
+          "sha256": "9f9f83a54396f1acc1fa1ff9b66ddc54fe4990ab15f586f9382a31a599a4e0a3"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/transformer_encoder.py",
+          "sha256": "907ac6ed7cca47ef5e7fb04089d644422c31cd30226cdaa59d21279f7668ca73"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/utils.py",
+          "sha256": "039d5d96267cd6a3201f38846781155b3de106eda63253d6b059de7b74e79952"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/models/windows.py",
+          "sha256": "fc1a62a3bafdab4345b6c3232a978d03aef0e72ea1101c7da52ef6eca231e30d"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/util/__init__.py",
+          "sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/util/box_ops.py",
+          "sha256": "09a4981ed1a031c0163d9190c166b125d5546982b8467d2e5a388edeb708edf9"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/detection/util/misc.py",
+          "sha256": "fd815910b8dd23f0df3364fa08e194c07e97a1582ae5305b3b575f5d99a92360"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/helpers.py",
+          "sha256": "becd0e2de601b45f597a27f2ebfef4adf0a03086f98f67127910a8a7077c2445"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/knn.py",
+          "sha256": "44e282054c07e7ad0201e0ff6dc8102470dfb41a94a0b2174af7cb71daa5694b"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/linear.py",
+          "sha256": "6a3cfb9ab133e3a386cd0f0c7769fc9d378d7d4a5522d3437e8dfa3114b08b6c"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/log_regression.py",
+          "sha256": "d2924997552714392ed26cfc752d9e83c94bdd3fb267ac97e65d10c4aa7a2ed4"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/metrics/__init__.py",
+          "sha256": "5eac7657f2782bf9aeba5f2e0a02d29c20440fdb6e41372c4c0b4b7cdfcd3cfc"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/metrics/classification.py",
+          "sha256": "7cdf1830dfea572d91269f58d4b44908150a689f3df24b8630b44f9ce1606618"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/metrics/imagenet_c.py",
+          "sha256": "0eba26615a0257edcde85ce93e52b3f2959c0416ce678cf9037145cd347feae3"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/results.py",
+          "sha256": "f3fc969dde4f8622b84e2da251a2044b3f86f5dd4bfe54bd2d4347675ae013ec"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/inference.py",
+          "sha256": "a76460637e26fd4a895529521381a1c8035759b4b3b4d136396d80deac61e5e9"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/__init__.py",
+          "sha256": "0ebe033f2b4250322307ebbf175aacb5464365da410dd43da7281199f2f6c6fc"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/backbone/dinov3_adapter.py",
+          "sha256": "20922fc0b3e7526920525d25dd7207119e7e6aee6626668f747458e9a91bf827"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/heads/__init__.py",
+          "sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/heads/mask2former_head.py",
+          "sha256": "b7b177f9dc1d77cf98404f60d50d288a76f8eec06ac54eceb0a99392ac8c5733"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/heads/mask2former_transformer_decoder.py",
+          "sha256": "c1637e3c873f823f7c2c534b77e7b7b841f0847bb0aa6eed42c04c0f2e71c7dd"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/heads/pixel_decoder.py",
+          "sha256": "ecea2f7b5b0ef0078ff80fda8a1cdf0a149df744680f2301d715c4ab141f96f9"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/batch_norm.py",
+          "sha256": "ead32bdbdf8163625d2810fd315b0613d2890052e20a57f75a115a3850d5ee6b"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/ms_deform_attn.py",
+          "sha256": "54be948b54bce71f881ba1347e1eeb4143f626dab1a921f134d8cd7b9792d465"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/ops/functions/__init__.py",
+          "sha256": "d99e42be9d47c057ba6f9d0c77fd36f823ee2f7aebcce2d34592b83cce4db4fa"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/ops/functions/ms_deform_attn_func.py",
+          "sha256": "0b28e5c0e364b9a3e2c7a2e92b05d835203fa1e8ccfad6218018985888237e21"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/ops/modules/__init__.py",
+          "sha256": "a006f568e2a36e928106a5152cfd39eef97157b6af96861b2a3bb771337f692a"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/ops/modules/ms_deform_attn.py",
+          "sha256": "297e3522826afec3fb93692b68b11f9245263626bc0e37042088bc547a2c3821"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/ops/setup.py",
+          "sha256": "b6d5d2c156b74e07cb56a2f1cef42e4f57ca96599d621bc5a24dba510c4b7984"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/ops/test.py",
+          "sha256": "08c1605c7987a77504e789afb42619f376b37476bad7e7b813c8d3570c05f19e"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/position_encoding.py",
+          "sha256": "a7c1a83ec11f0bbad68c6751fc3a457e8bd0948d6968827611f8a59db7968437"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/segmentation/models/utils/transformer.py",
+          "sha256": "42f8c7a6d045dbe95c4d79d3b39080d6a2ccc7bc2c478df649b4d60d81043a86"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/setup.py",
+          "sha256": "3ca3120e00d1ca25f47b83383127b70c92ae28de279196efadc720a2b8f14a06"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/ac_comp_parallelize.py",
+          "sha256": "939d2a71d35c7135795372f31081d6359d6342a3e0f47c2ad6ca5cfa50e0335c"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/build_dinotxt.py",
+          "sha256": "c3797ed848ff8a2cdae2ede553197b26acf38d3b140b6d7a43b63735c93065c1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/clip_loss.py",
+          "sha256": "b9a15a16a6ab5b734272d7e769baa94c44908b3c3622e6a126556eba29ff0f1e"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/dinotxt_model.py",
+          "sha256": "04a9c4bbd58294b8193163c1d1a716b2b834a1e00e0d039e7222f9bfdb7af0e2"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/gram_loss.py",
+          "sha256": "b32fa04dbb0ba76cbed6c0d4cf98c26180f5c5b0567b986b9f73b885253009d1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/text_tower.py",
+          "sha256": "c131ee186815f533ee93a402720f8208891718edb8e2f1f9b282559df5446d6a"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/text_transformer.py",
+          "sha256": "4264fa001ff0062815a0323a107b8d2205f516de790c6775f60cc5daa5e95247"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/tokenizer.py",
+          "sha256": "4c63dc45da6d2113795b3ca68fd7c27808124f4530d8090888d28fe389ae7f27"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/train_dinotxt.py",
+          "sha256": "40428860f1ec846be0c4874d34b40c32ff4c37bf096353beff00c31339bc5b91"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/text/vision_tower.py",
+          "sha256": "adb2825d99e883126e9903b0a54fbe7ab4920cedccc894d843efd2078c647f85"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/eval/utils.py",
+          "sha256": "bdc42b5e75821d908f814a05fe85b7985b08de19e11de40237c45443c6cca2d3"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/fsdp/ac_compile_parallelize.py",
+          "sha256": "be33c11b0213f8ad1611e8cce1015932f5b2df8ae95b6a8222de80976f9a99b2"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/hub/backbones.py",
+          "sha256": "1b4a111e028e7a414c40f8b4bb84df6aac9c509bcc62aa6979ead92e8a81daae"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/hub/classifiers.py",
+          "sha256": "26496aaca930535f6f1cc04026a2cf40c1c7a42d0bb0ce8105e6a85003575220"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/hub/depthers.py",
+          "sha256": "bb3ce94bfb064aad50f35d229537ab0381c2e24f3541d5b7d313f4615b1c97d3"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/hub/detectors.py",
+          "sha256": "a26059435c85ea1b51540ca4a035335cd39bbedeccab3f166dbd0128f34a02fa"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/hub/dinotxt.py",
+          "sha256": "8b733d5d6a1f8c5a263f25f5a54813ec98aab71d2635c1936581f66e2ab8c389"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/hub/segmentors.py",
+          "sha256": "af232f1e94cdcc802a57ef73f563b25c7b67988104348e5e39e176f40377b2a5"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/hub/utils.py",
+          "sha256": "292698a622db0dcf393ed1f987688b25c55822634a48bdd7d883760c5b1f65a6"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/__init__.py",
+          "sha256": "0707ef3e9c20aff594c3817f64a2c8ff34a21bd3b55e7d03471969fd314dde20"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/attention.py",
+          "sha256": "dfc21def6ba17d00cba18ea23a8726e7f1dd5a0dc8e43510852c999a173d37a8"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/block.py",
+          "sha256": "809a3615ec93019042ab440f31c21d5242186d9e503c67ac0f42a324ceae1950"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/dino_head.py",
+          "sha256": "cd7a83f00ac449f962484bad0f2959be477781e57943508428d32ff88f41fe33"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/ffn_layers.py",
+          "sha256": "fa2caadb52ff43a7e6888966a00ee07842fed9fd05c68305962cc1577d221fbe"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/fp8_linear.py",
+          "sha256": "f5b4d46e8c159e1830bc99968baf9a2e8070f0c46d0dda235eac46cc11c34f47"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/layer_scale.py",
+          "sha256": "f9a10ee763a62136f9e814bfe2f2209c2cb501dfdc5573f858ab01ba9a69c23f"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/patch_embed.py",
+          "sha256": "c592c7262779c8e1789ed502aee81bdd55eba4607065f8d04ae95eea683d0ef1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/rms_norm.py",
+          "sha256": "8509ffc53f0bbe9e353a8b9e57ca2396795640b4ecc85140c27b17127c971869"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/rope_position_encoding.py",
+          "sha256": "af8ea35acb76d18ad4d53b844d5057bf01472a848375c51d70583a87f044efd1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/layers/sparse_linear.py",
+          "sha256": "2fb0a34752b34862dd838d62c9c51fb424a6cfe20fc0e62467871de6f97ff7c6"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/logging/__init__.py",
+          "sha256": "50d75171a7b1828f669023e675d26227c7570a75e9bc3e7e31edb921abfe120f"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/logging/helpers.py",
+          "sha256": "9dec29734a5c88d9b8e1763fff2c738ec1ad2c3a1ead40acb216dcf12a94d5aa"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/loss/__init__.py",
+          "sha256": "84e8e7856fc08af844accd51f4588fce0c85c33890f72e88c11bbb3b9c1d6caa"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/loss/dino_clstoken_loss.py",
+          "sha256": "2ee114321a3c38b4e9426bb200f3c13de4672e6531a7a3e30c4b399881529166"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/loss/gram_loss.py",
+          "sha256": "d4ec062c53cc40f039878fb90f88844ceb15c3685e695640038c6f56988a2256"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/loss/ibot_patch_loss.py",
+          "sha256": "bfb9e358aaf872949ce3150c22599f89f7dbdafd0137652b7e1944a9853f40d4"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/loss/koleo_loss.py",
+          "sha256": "942ccd42b06105c95c04d62ca2105d9e5bf22987b509c19fb81a645fac5a8cf6"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/models/__init__.py",
+          "sha256": "4479dfb19068e2599aaf35c6c698a2cf5b1ecb0b639c6b7afdb647570b7dd987"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/models/convnext.py",
+          "sha256": "3fd7f32601c487f54d4a95567a06f573ec3f1b211bddb84491949a6e8cb2433a"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/models/vision_transformer.py",
+          "sha256": "1af05405e19bc42188f80bfcb204b87ed1ec72af998e0bbd4658a85d7fae93f2"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/run/init.py",
+          "sha256": "dc28d4f4a0fdb4886af9a3194dcddf7807e9523df0ca58ead5563bb3f4e442b4"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/run/submit.py",
+          "sha256": "2233b810f5ebb640d528b0dc7e491557073f35c2e20d2cd39cdf214684d7019c"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/thirdparty/CLIP/clip/simple_tokenizer.py",
+          "sha256": "b03605a8e83952e3202659351cb0d695b0c11927089bb6bf3d0379f5ac1144c7"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/train/__init__.py",
+          "sha256": "a6040401fdef80c38b7bed37e43c657dc908dfefe481244c99f65eb622e42dd1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/train/cosine_lr_scheduler.py",
+          "sha256": "671d3a7c16fcc7b73a6ff76d702664ccfe141895d89bc9d0137bee6a3ce4b02c"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/train/multidist_meta_arch.py",
+          "sha256": "152a46c0143991f2faf7e3346965cd049bd426201c10465e629901755246f589"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/train/param_groups.py",
+          "sha256": "b3d638888c03a63b7bc585c2f886ca4cedb6ba24f4e9511bfa3840f97b90716f"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/train/ssl_meta_arch.py",
+          "sha256": "6c98616d6301b872a3be0e4abf50ce04d8e0bc1e1ecf65cad036cb1080aebbdd"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/train/train.py",
+          "sha256": "13d4fbb08c4cd913a26a68839ccc19d2ccb307e260fb625454a37d9aadddf831"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/utils/__init__.py",
+          "sha256": "83e6ec1f0cea862f18ae111560e2eadf2fff1873e3fdd7d358dee8d32d0ade8d"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/utils/cluster.py",
+          "sha256": "d1a003ad571ad0f69e1b1a495ada8d079068fbed27ec929cb6b12a4eb1afa82b"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/utils/custom_callable.py",
+          "sha256": "4e3508a7e2fb419aae447e4a17049c5aef4603e42bce548ac3b317749c24d1c3"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/utils/dtype.py",
+          "sha256": "0c53f5cc155ea7e9899bc611493193fef9b985f23cb7d990401e22c363ac4419"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/dinov3/utils/utils.py",
+          "sha256": "d6fe7fe621b2ae3db89e3af588fbee0c78afe2130f4548dff87c94cbd734fe40"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/hubconf.py",
+          "sha256": "4b50fa883784ebd7edaf7d56dac9314913f6b4215a397cf67b344a740a9f7ac4"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa/setup.py",
+          "sha256": "e74de8dec4582c1fcbb691f02ff3fb795106a0927c6df87c8cb196c808be8c19"
+        }
+      ],
+      "root": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/facebookresearch_dinov3_adc254450203739c8149213a7a69d8d905b4fcfa"
+    },
+    "roma": {
+      "python_files": [
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/__init__.py",
+          "sha256": "514c2319495b038ff015dc31557dfa71b9f8db15518a4da094afb4aa7efd6480"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/benchmarks/__init__.py",
+          "sha256": "456532eecea9213800c00ffa8b84cf810f497979d47f73e462fd7c2adcee1119"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/benchmarks/mega1500.py",
+          "sha256": "22ab9bbb61da26ff0435f70074b1035b3405847a6315858093591c39d644e1a1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/benchmarks/satast.py",
+          "sha256": "e8d8b9cdcf4edebef86feb9ffbd04a466efccc36ce009be0eebd676eee841af1"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/benchmarks/scannet1500.py",
+          "sha256": "7c3c90066f8332111028aecff3fcfc76b4ed583ee54e6fb2a6814b12d780fca9"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/benchmarks/wxbs.py",
+          "sha256": "c43d25acca46530b81ee2e396b14feac69cae0684a5ddfd589444abd2aecd1a7"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/device.py",
+          "sha256": "df36f7f1b527a874676ede2fac5330edf68768c2fecda67ac97cb8802104b1cf"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/dpt.py",
+          "sha256": "254aebb9b5fb02ffc90e3838ed4e5d27bb423912a680034a7f6af21f9e2d22e9"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/features.py",
+          "sha256": "9b868c97d3fb362491647d53fbe99ec6acc5ea0870afa4b93aa44d58b9362f0d"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/geometry.py",
+          "sha256": "ab0f9bcd374ea272f8e9da13948bba8917f86fdfe7d4ca6ce76c6d040b1db105"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/io.py",
+          "sha256": "45715ed1128e213e0fdaa1e2149480abd099a31d838a1776baa695b05b4aecc7"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/local_correlation.py",
+          "sha256": "484a4464626519abd0f75ebfebecc8970bd9b2c8840fa468779176c0fcef5167"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/logging.py",
+          "sha256": "95e810e9bdbfe4eb6a2e18b742105e650b8d85965047d9ee480089ac292784ab"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/matcher.py",
+          "sha256": "b5db2b991d35b1bd217db70763d10d71bd690a600ab875665daf94a54e44a3b6"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/normalizers.py",
+          "sha256": "c8e6fe3bc39571ff2231a18e9755fa3f906e0b35462bd78b10cc3b1b2cda7199"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/refiner.py",
+          "sha256": "e0f61511777cd4da34beef51db64c52c5860f6c3df31805080505e541de4f965"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/romav2.py",
+          "sha256": "da9d16faf6f602a62d7c6f1c03b85aadae3d877834e348b7c8db11fab5ff2629"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/types.py",
+          "sha256": "28d0f9ab8b525955d88ec2b78008c25585cbdc55e6b206f25d36064b95d7ecad"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vis.py",
+          "sha256": "6eb70ce37f4dc568dc0b9632615a879493c28e4ffccda60932524c62d7537f27"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/__init__.py",
+          "sha256": "567ab9d1db072ffb0b23601d48ca78a165aadd04fdf87fd7f8fd09d11a12d908"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/attention.py",
+          "sha256": "eb8bab3383b7d665bf4659109d0006d9a628503bc663fdaf810c028515e04671"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/block.py",
+          "sha256": "7a29e98fe194eb22fc87b44e9aed1c08006abe62f4a838b1d22803506fd1193a"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/ffn_layers.py",
+          "sha256": "fc8f2e48e8a4399b192fd17d34a9db16924403d08a53e93ef4076138029c6c54"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/layer_scale.py",
+          "sha256": "f9a10ee763a62136f9e814bfe2f2209c2cb501dfdc5573f858ab01ba9a69c23f"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/patch_embed.py",
+          "sha256": "28b2722ba56799405e702bf814018399cc6ef37a35568daf46726a116240b383"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/rms_norm.py",
+          "sha256": "8509ffc53f0bbe9e353a8b9e57ca2396795640b4ecc85140c27b17127c971869"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/rope.py",
+          "sha256": "f32f800a764ef1dc03033920099cf99605f83b57fc1a7db3b62a749046ba538f"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/rope_mixed.py",
+          "sha256": "50e15241ebdc499028fb69c42dc7c8427d6d06cba212eb50636b2413b5ade28a"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/vit/utils.py",
+          "sha256": "f437b96bce57102bbac8c2c53f897e750e7bd8fed508d66dbd6a00abda7fbe5a"
+        }
+      ],
+      "root": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2"
+    }
+  },
+  "sources": {
+    "checkpoint": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/checkpoints/romav2.0.1.pt",
+      "sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7"
+    },
+    "core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_romav2_colnomic_visibility_xf_six_case_v1.py",
+      "sha256": "fb73bdd6cc2b585405a9fcb1e411535f487e83d29d6021f8c1f632af78ecfd3c"
+    },
+    "geometry_dependency_dino_rcde_v1_2_resource_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/dino_rcde_v1_2_resource_core.py",
+      "sha256": "55d5569f2218df679693177e311a3fd43bfb47dbe1047aa0129b66f734959a17"
+    },
+    "geometry_dependency_geometry_hypothesis_v1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/geometry_hypothesis_v1.py",
+      "sha256": "7fb2ea6dac3e84d5335bf4828f94777765487ba4a4a4f9d745d304fe5214d7fc"
+    },
+    "geometry_dependency_lt_hyp_pvlock_v4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/lt_hyp_pvlock_v4.py",
+      "sha256": "8ef569836ecf0c3230fffde241bd2a116520f58c8aef62fa456ca422c1a02926"
+    },
+    "geometry_types": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/dino_rcde_colnomic_superregion_v1.py",
+      "sha256": "1d251eba49ff6903704e1a02c73904f49c9e639949f1d3ba675ea8add076c556"
+    },
+    "geometry_v1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/colnomic_dino_canonical_geometry_v1.py",
+      "sha256": "af5c3e3d7867f3b014a66d72345ffdeb68580233d8c3f3df8f58a1b1628b4682"
+    },
+    "geometry_v2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/colnomic_dino_canonical_geometry_v2.py",
+      "sha256": "c732dc933c502f17fd5cb8cc80ae45d116716fe801cc8f3034a1e6a49cef6508"
+    },
+    "old_roma": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_romav2_colnomic_current_runtime_bridge_roma_shard_v1.py",
+      "sha256": "46fe67eff5e309d8467cbc5523a565cdfd53f5161189bad34d49c126eeff4325"
+    },
+    "old_train56_export": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard03/payload.pt",
+      "sha256": "c70f75ba1023ab0366c3509e4597c5289dfacc274dfa58b535e9ac3b9fc7b8fc"
+    },
+    "processor": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/preprocessor_config.json",
+      "sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+    }
+  },
+  "status": "RC_ORIGINAL7_EVAL128_ROMA_SOURCE_PROFILE",
+  "torch_home": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch"
+}

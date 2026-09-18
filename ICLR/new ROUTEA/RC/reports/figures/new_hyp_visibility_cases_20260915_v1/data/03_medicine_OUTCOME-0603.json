@@ -1,0 +1,133 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "历史 EVAL128 内部面板",
+  "model": "ORIGINAL7",
+  "model_lineage": "frozen ORIGINAL7/NATIVE7 current seven parameters",
+  "evidence_scope": "历史内部结果的事后可视化",
+  "query_id": "E128-bfa6374a6ed51d8836c7a923",
+  "display_id": "OUTCOME-0603",
+  "execution_ordinal": 34,
+  "identity": "askindr carton",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_assets/images/E128-bfa6374a6ed51d8836c7a923.png",
+  "source_result": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 3439,
+  "final_selected": 3208,
+  "target_physical": 3208,
+  "wrong_physical": 3439,
+  "wrong_role": "RAW 错误 reference",
+  "raw_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1",
+  "roma_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1",
+  "selection_rule": "all 12 RAW-to-ORIGINAL7 rescues; plus prespecified OUTCOME-0337 and OUTCOME-0446",
+  "stem": "03_medicine_OUTCOME-0603",
+  "query_grid": [
+    36,
+    20
+  ],
+  "query_geometry": {
+    "sha256": "83a9b105c27b9d729f623d04eddd4cf428d74ddd9f58e95b086f5a699069a45b",
+    "raw_size_hw": [
+      3840,
+      2160
+    ],
+    "oriented_size_hw": [
+      3840,
+      2160
+    ],
+    "exif_orientation": 1,
+    "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+    "grid_shape": [
+      36,
+      20
+    ],
+    "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+  },
+  "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+  "evidence": {
+    "wrong": {
+      "physical_row": 3439,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/biowhite resilient massage carton.jpg",
+      "reference_grid": [
+        25,
+        30
+      ],
+      "reference_geometry": {
+        "sha256": "629978aed6c69c106cbe71718cf3dd1600bbf7501a9a7a08f81c44d064d8ddca",
+        "raw_size_hw": [
+          1460,
+          1762
+        ],
+        "oriented_size_hw": [
+          1460,
+          1762
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          25,
+          30
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.00031116972070758105,
+        "visibility_mass": 0.01017144995538855,
+        "query_control_score": 0.0003143518004989293,
+        "reference_control_score": 0.0003080238995794737,
+        "candidate_position": 70,
+        "physical_row": 3439,
+        "raw_score": 451.141357421875,
+        "query_map_sha256": "e3077dae87f0e48f10dccf0bcffed8cb3d91600c41052771915dd3d4596cc754",
+        "reference_map_sha256": "2f2662df4fe977318b340592ab8307bd273363c500f676ab99ef59036244059f"
+      },
+      "query_map_sha256": "e3077dae87f0e48f10dccf0bcffed8cb3d91600c41052771915dd3d4596cc754",
+      "reference_map_sha256": "2f2662df4fe977318b340592ab8307bd273363c500f676ab99ef59036244059f"
+    },
+    "target": {
+      "physical_row": 3208,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/askindr carton.jpg",
+      "reference_grid": [
+        19,
+        38
+      ],
+      "reference_geometry": {
+        "sha256": "8508a3f70e15a239a5f7af8026720de4bf1d91fe2c239ef80d75dcc9e2f0b08c",
+        "raw_size_hw": [
+          1062,
+          2040
+        ],
+        "oriented_size_hw": [
+          1062,
+          2040
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          19,
+          38
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.06596425376479248,
+        "visibility_mass": 0.13380173267329565,
+        "query_control_score": 0.0602617533537516,
+        "reference_control_score": 0.04249274477772634,
+        "candidate_position": 53,
+        "physical_row": 3208,
+        "raw_score": 447.01678466796875,
+        "query_map_sha256": "a0c58646239467d9b7aab2c7e6243243cfbc13eb46f04f69067ba4cb6943630c",
+        "reference_map_sha256": "2d561c688b969bd6ea10570e4e8711e7fc13b14495c82140856e73e8b784c3a1"
+      },
+      "query_map_sha256": "a0c58646239467d9b7aab2c7e6243243cfbc13eb46f04f69067ba4cb6943630c",
+      "reference_map_sha256": "2d561c688b969bd6ea10570e4e8711e7fc13b14495c82140856e73e8b784c3a1"
+    }
+  },
+  "raw_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard04/payload.pt",
+  "roma_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard04/payload.pt",
+  "visualization": "literal cached native query token grids, fixed [0,1], nearest pixels; no overlay, no mask",
+  "inference_calls": 0,
+  "training_updates": 0
+}

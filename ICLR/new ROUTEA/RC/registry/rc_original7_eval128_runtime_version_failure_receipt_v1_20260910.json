@@ -1,0 +1,51 @@
+{
+  "status": "ENGINEERING_RUNTIME_VERSION_API_MISMATCH_CONFIRMED",
+  "recorded_utc": "2026-09-10T02:21:16.538301+00:00",
+  "parent_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_full_evidence_execution_authority_v1_20260910.json",
+    "sha256": "95a15a6d83a53e70ca2e2750344f42c4c2483f0e9d454260835a2961f1996b6c"
+  },
+  "failed_job": "5139177",
+  "failed_accounting": {
+    "State": "FAILED",
+    "ExitCode": "1:0",
+    "Elapsed": "00:01:13",
+    "Start_Europe_Berlin": "2026-09-10T04:03:43",
+    "End_Europe_Berlin": "2026-09-10T04:04:56",
+    "MaxRSS": "326636K"
+  },
+  "exception": "RUNTIME_PACKAGE_DRIFT:torch",
+  "root_cause": "Profile recorded module __version__; guard compared distribution metadata.version which omits CUDA local build suffix. Actual module versions match frozen profile.",
+  "actual_module_versions": {
+    "torch": "2.9.1+cu128",
+    "torchvision": "0.24.1+cu128",
+    "numpy": "2.2.6",
+    "PIL": "12.0.0",
+    "python": "3.13.11"
+  },
+  "actual_distribution_versions": {
+    "torch": "2.9.1",
+    "torchvision": "0.24.1",
+    "numpy": "2.2.6",
+    "Pillow": "12.0.0"
+  },
+  "raw_bridge_job": "5139176",
+  "raw_accounting": {
+    "State": "COMPLETED",
+    "ExitCode": "0:0",
+    "Elapsed": "00:04:31",
+    "Start_Europe_Berlin": "2026-09-10T03:57:31",
+    "End_Europe_Berlin": "2026-09-10T04:02:02",
+    "MaxRSS": "46735456K"
+  },
+  "preserved_raw_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/bridge/validation.json",
+    "sha256": "0f9bc42fecce900bf845b06ba1e21f17f09515217143c70d416da48d4459e557"
+  },
+  "cancelled_dependency_array": "5139186",
+  "array_was_pending_DependencyNeverSatisfied_before_cancel": true,
+  "Roma_model_constructor_reached": false,
+  "new128_scoring_started": false,
+  "scientific_NO_GO": false,
+  "repair": "append-only v2compat programs/common/authority; compare module versions consistently; explicitly reuse exact validated v1 RAW bridge; unchanged math/weights/cohort"
+}

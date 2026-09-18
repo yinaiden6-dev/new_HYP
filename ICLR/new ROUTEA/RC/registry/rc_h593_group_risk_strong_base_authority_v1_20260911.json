@@ -1,0 +1,50 @@
+{
+  "status": "H593_GROUP_RISK_AND_COMPLETED_STRONG_BASE_AUTHORIZED",
+  "recorded_utc": "2026-09-11T08:05:36.846422+00:00",
+  "objective": "Test unified decision hypothesis via same-data risk weights and fair compensation of strong SMALL base",
+  "post_result_development_followup": true,
+  "primary": "GROUP_COND versus ALL_COND",
+  "strong_comparator": "SMALL_COND trained on same ALL rows",
+  "new_fits_per_fold": 5,
+  "existing_models_reused": 4,
+  "all_data_and_candidate_axes_unchanged": true,
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_group_risk_strong_base_v1.py",
+      "sha256": "edce4ed12559f030ba47852fd4be3e47e4b44f9e17a28679517d889c355d1386"
+    },
+    "parent_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "parent_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_training_authority_v1_20260911.json",
+      "sha256": "6bebedcc5bbd87ef3407db661a88458a17b20a25337d7a7a36b1a1b023a4bd2d"
+    },
+    "input_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_GROUP_RISK_AND_STRONG_BASE_V1_20260911.md",
+      "sha256": "87ebe237f5730c30ff0a03e01e9b04e8d99b92ee7d62365bc0795c741089286c"
+    },
+    "split": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/split_manifest.json",
+      "sha256": "be29f82bc404b44e713f98a3e099117f183de0ef0ca80e7f11ddca5bcf8d1d5c"
+    },
+    "roles_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles_manifest.json",
+      "sha256": "1028d869c392f92341227533d1a4efc3988a6468416b0309d8575cd6641e3355"
+    },
+    "fit_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_group_risk_fit_v1.sbatch",
+      "sha256": "16d014ba10b5e7b2084e91d67bef3b3109d453edf555bbafecd918733bdf806f"
+    },
+    "join_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_group_risk_join_v1.sbatch",
+      "sha256": "eaf2fdbe19c3fde781cffd6d50f7fdf2a961227a800a5c35756b7b9410ea0677"
+    }
+  }
+}

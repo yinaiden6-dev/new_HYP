@@ -1,0 +1,48 @@
+{
+  "allowed_stages": [
+    "cache",
+    "validate"
+  ],
+  "curator_or_EVAL_access_authorized": false,
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "model_fitting_authorized": false,
+  "new_encoder_RoMa_forward_authorized": false,
+  "parent_research_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+    "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+  },
+  "query_count": 128,
+  "recorded_utc": "2026-09-10T06:57:53.794824+00:00",
+  "scientific_GO_or_NO_GO": null,
+  "source_bindings": {
+    "cache_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_train128_disagreement_features_v1_dev_cpuonly_20m.sbatch",
+      "sha256": "ac81f8f5022f48b5f8a0a5b0147b1c171f784ebbbcd412f786f5627a0328a65b"
+    },
+    "cache_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cache_rc_train128_disagreement_features_v1.py",
+      "sha256": "816479b67d5fdae362e26a28d635585a185f12434f5097a85e28673d216e2da5"
+    },
+    "legacy_score": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_romav2_colnomic_visibility_xf_six_case_v1.py",
+      "sha256": "fb73bdd6cc2b585405a9fcb1e411535f487e83d29d6021f8c1f632af78ecfd3c"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_NEW_HYP_TRAIN128_DISAGREEMENT_CONDITIONALITY_V1_20260910.md",
+      "sha256": "9ac727ddd1f931b3da97f4f7f7dccd44cffcf2a9303c837ecdc132124f6eea46"
+    },
+    "preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_features_v1_preflight/816479b67d5fdae362e26a28d635585a185f12434f5097a85e28673d216e2da5/result.json",
+      "sha256": "8be5bd722c5969951dda7b078568041cfbd26a364658280eba6acfdcd87f8267"
+    },
+    "source_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/validation.json",
+      "sha256": "770b9f9ce46f431c7bbe8479e320934c9d1dacdf23f3c3eea650f2812c1a77bf"
+    },
+    "source_worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    }
+  },
+  "status": "NEW_HYP_TRAIN128_DISAGREEMENT_CACHE_AUTHORIZED"
+}

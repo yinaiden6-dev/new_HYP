@@ -1,0 +1,733 @@
+{
+  "EVAL_used_for_training": false,
+  "allowed_phases": [
+    "fit",
+    "validate-fit",
+    "predict",
+    "validate-predictions",
+    "join",
+    "validate-result"
+  ],
+  "contract": {
+    "FULL96_role": "prespecified full-negative-context diagnostic; never selected after EVAL",
+    "FULL_loss_reduction": "original mean over the effective target-present FULL rows",
+    "FULL_order": "TRAIN128 execution order; first32 oldFULL, next64 oldPAIR images, last32 added views",
+    "FULL_sets": {
+      "FULL128": 128,
+      "FULL96": 96,
+      "ORIGINAL7": 32
+    },
+    "PAIR64": "original payload/order/features/labels untouched, including original mixed Q/R shifts",
+    "controls": [
+      "REAL",
+      "CBIND"
+    ],
+    "deployment_changed": false,
+    "feature_count": 6,
+    "inference": "all127 X@w+b; SWITCH iff maximum>0; physical-row ties; unchanged natural C128",
+    "initialization": "ALL_ZERO",
+    "lr": 0.03,
+    "models": [
+      "ORIGINAL7",
+      "FULL96",
+      "FULL128"
+    ],
+    "new_encoder_RoMa_LP_calls": 0,
+    "new_features": 0,
+    "new_thresholds": 0,
+    "optimizer": "AdamW",
+    "panels": [
+      "EVAL32",
+      "EVAL128"
+    ],
+    "parameter_count": 7,
+    "primary_model": "FULL128",
+    "seed": 17,
+    "stage_order": "fit; explicit fresh refit; predict both panels all models/controls; fresh prediction replay; then join",
+    "steps": 2000,
+    "target_absent": "retain selected record and recall miss; omit only undefined FULL positive loss, never insert target or label winner correct",
+    "training_function_sha256": "45921b88203ef7065d824bdaab8e5468fc6d617dd3cb6d3fee213dfd2ccc7403",
+    "weight_decay": 0.001
+  },
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "deployment_replacement_authorized": false,
+  "new_task_spatial_supervision": false,
+  "parent_TRAIN_input_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_train128_execution_authority_v1_20260910.json",
+    "sha256": "34cfddfe7840e67388d627b0e6a312621903030de6957226f56f7d68b1d76cbb"
+  },
+  "parent_research_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+    "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+  },
+  "postjoin_source_bindings": {
+    "EVAL128_curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/curator_roles.json",
+      "sha256": "47277ce66f7aba445fb80a93643039c7e8a47c1f5cc8237f60157a98e3e93381"
+    },
+    "EVAL128_independent_review": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/independent_review.json",
+      "sha256": "bda61510c69399f9adf8a7cbabb84365e96a7a13eeba83a99702996b7b62ca88"
+    },
+    "EVAL128_metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/independent_metadata_validation.json",
+      "sha256": "a70936a24fc2f5c6996228aee673a6de505c3022487b903878d268ad9a34cd94"
+    },
+    "EVAL128_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+      "sha256": "096c9575ffa05a3f9b813adbe5e65c879fbdee77507aa757de09420bef0be866"
+    },
+    "EVAL128_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/validation.json",
+      "sha256": "ccdad5d3de3f4b42b64b69fe11a76be3bb70e79b182c90a60bea11cfb8a1978a"
+    },
+    "EVAL32_original7_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_same_support_specificity_v1/result.json",
+      "sha256": "174195a1d5c5bb99602ea822d6702b2317740a0a7f265b2d19227059803207d1"
+    },
+    "EVAL32_original7_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_same_support_specificity_v1/independent_validation.json",
+      "sha256": "6cabaebb90e5453d607d33faf7c6c11c1f02278a63b57a64f891dd51096211c2"
+    },
+    "EVAL32_role_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_manifest.json",
+      "sha256": "2f104f4fbf71bada1b6186fa3d0915fa7f8059c65d6798414ab00043e5835454"
+    },
+    "EVAL32_role_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/cw0_rgh_xf_v2_p0_a0_manifest_v2/independent_validation.json",
+      "sha256": "ae735624176e5e400ff5c16874b7f73b0505ce71f6814d0c4ed515d94455f8ac"
+    }
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_readout_v1_preflight/7f579a5b87b622df72432345155b6907508a532e15ed8e2fcea9d6d2a8097eef/result.json",
+    "sha256": "649ffdb57ba1d1d4962742dc2a4df5ba363b893fc1fad45534b11ce94190fb2c"
+  },
+  "preparation_launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_train128_readout_prepare_and_run_v1_dev_cpuonly_59m.sbatch",
+    "sha256": "f9d570dd7de83c58be572ebcbe663dbe45d1b27985c8c3998608d9866c2b3f8c"
+  },
+  "preparation_program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prepare_and_run_rc_original7_train128_readout_v1.py",
+    "sha256": "f80c84f4284444d843d27cef886a41f07e5fa4c15254461c82e1bedd31f09af1"
+  },
+  "source_bindings": {
+    "EVAL128_input_qualification": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/input_qualification.json",
+      "sha256": "23f0f9af334dbd2916d6bf358324b417aea2a2894b618785580d12149e420291"
+    },
+    "EVAL128_prejoin_records": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/prejoin_records.json",
+      "sha256": "206e66c57da348afd120b75aeae99410388b4bd1211b7eb21b2ce4eaaa1acf41"
+    },
+    "EVAL128_prejoin_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/prejoin_seal.json",
+      "sha256": "cdaafb85ddc158ec9480074f4cce19bb24e204273f8693a519f7191ca6e76f09"
+    },
+    "EVAL128_prejoin_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/prejoin_validation.json",
+      "sha256": "b7c6e577421215ec9f72d4c59f0c4b420f13f72a11fde85dcec193c0ba9a38c4"
+    },
+    "PAIR64_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/routea_matched_three_arm_pair64_training_features_v2/payload.pt",
+      "sha256": "d7be701ac4629059d22301c17b0f0d44b69b4b67666072b8fab7c3c0cb7716e3"
+    },
+    "PAIR64_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/routea_matched_three_arm_pair64_training_features_v2/independent_validation.json",
+      "sha256": "657b316a83b80f20e8779bf985b2777b1533126c9b8e7ec7b552ea245febbf1b"
+    },
+    "common_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_original7_train128_execution_common_v1.py",
+      "sha256": "845e2a262269003799b6f8612be0eacb8bcab301d7b43760ed2fad1c0a881d50"
+    },
+    "feature_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "gallery_identity_contract": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "gallery_identity_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "gallery_identity_registry": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_train128_readout_v1_dev_cpuonly_59m.sbatch",
+      "sha256": "d36beedebe7bed416d3eb9b5bfbfdb69d345cd6aaab2a31a80646b19ed6f7420"
+    },
+    "old_evaluation_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_original7_eval128_full_evidence_v2_compat.py",
+      "sha256": "806a8506693e2d9e88aba4331702c2d2c8df58e4d3f693b9b30e0601de49304c"
+    },
+    "old_training_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_routea_matched_three_arm_common3_native7_crossfit_v1.py",
+      "sha256": "546e2bc7b3df6c67bcac41e079ba1b00f15c7e65c52a8ab994cd5b2c38d81e22"
+    },
+    "original7_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_TRAIN96_TRAIN128_FIXED_RECIPE_READOUT_V1_20260910.md",
+      "sha256": "716e590d220799b8af12f0e0b104bf0a29b612b149f13d940b65021cfb3b055c"
+    },
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_original7_train128_readout_v1.py",
+      "sha256": "88b981c1394e2948c19d4ff2728eee7976654eb646be38bc6a862a962fcb7af7"
+    },
+    "shared_EVAL_0_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0000/arrays.npz",
+      "sha256": "badab19dbfaa429cfbc6e5e735b2fd44d21cd441abc25684557c633afdc92bbf"
+    },
+    "shared_EVAL_0_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0000/metadata.json",
+      "sha256": "867c2cbe0df8e40a62954835a032e7f1d9fe80b3166faf54abda94d02694045c"
+    },
+    "shared_EVAL_113_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0113/arrays.npz",
+      "sha256": "043c7b1e25982de98b138ab503ec59d26c982a25b428538f29812119c9e26bd4"
+    },
+    "shared_EVAL_113_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0113/metadata.json",
+      "sha256": "549786db4af206ec0eff6fe9311e7ff240676f18bd24378521af664634a4da49"
+    },
+    "shared_EVAL_120_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0120/arrays.npz",
+      "sha256": "c94bfcc88b32367e946b249a8b9aa0ee5ae750a503c87a58bb4af6166c0bdcfd"
+    },
+    "shared_EVAL_120_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0120/metadata.json",
+      "sha256": "c779b28ec1976d0992c85c4f2a708306f2854fbe2eab54a2f7a0f790caf1f8e1"
+    },
+    "shared_EVAL_122_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0122/arrays.npz",
+      "sha256": "9b2bb0a1f9795e0f5ee559053872185d887ff6943a0b593d04fcc9806426639f"
+    },
+    "shared_EVAL_122_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0122/metadata.json",
+      "sha256": "3e07791e00eb742ada98981aa98a7d29d0dffbc6fd68c0be552690ff46ea6cee"
+    },
+    "shared_EVAL_17_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0017/arrays.npz",
+      "sha256": "e3155c3a7d19aed8c3ca24ba155eda4105174f1c78fa9879935ae99ee3090e55"
+    },
+    "shared_EVAL_17_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0017/metadata.json",
+      "sha256": "3e007e643d98ac3778dcb5b2ea318c67941f1732575f88d4e7ef7a613b59f594"
+    },
+    "shared_EVAL_192_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0192/arrays.npz",
+      "sha256": "13007cdf406c83f4e0cbfc08930a93b9f19f067fa715186972adc256987770bb"
+    },
+    "shared_EVAL_192_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0192/metadata.json",
+      "sha256": "80a84af859c5210cdc902b666dc6f6125529aa72c39c7fda29ede7f710aba089"
+    },
+    "shared_EVAL_193_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0193/arrays.npz",
+      "sha256": "dbacbe0ac0a5fbf4b2396b6552c081e80b9109a2fade003ca382bfcb1715f3d0"
+    },
+    "shared_EVAL_193_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0193/metadata.json",
+      "sha256": "16aab84e1b4d1ca34247104e95b6866dd383bfde6087360de644e8e0c75d724e"
+    },
+    "shared_EVAL_194_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0194/arrays.npz",
+      "sha256": "be430b14147731bf4cdfc6375dbc321068ac3d8a51bcef0f63d9b0f827fc6e92"
+    },
+    "shared_EVAL_194_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0194/metadata.json",
+      "sha256": "3466240695b21e4212d04a41f81fdd761b6c59946e4b5a9c1c403f2420892241"
+    },
+    "shared_EVAL_1_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0001/arrays.npz",
+      "sha256": "c7966b77b43e33a5091d82b7ad82d330944dd409025a4ee99ad557d13cb9a5cf"
+    },
+    "shared_EVAL_1_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0001/metadata.json",
+      "sha256": "0d65e2584586220b66450dbbef15e4f2f6c6400d2a3175f4e39152f2c848b681"
+    },
+    "shared_EVAL_200_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0200/arrays.npz",
+      "sha256": "965cec18af0e55fcf0c4c758411ec680db9214e093b91b95fd6f7bd5b010a765"
+    },
+    "shared_EVAL_200_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0200/metadata.json",
+      "sha256": "784b76d682457bc1a1bd8845e414b9d95f90bdd90813eb61152ca1b7c629b4ae"
+    },
+    "shared_EVAL_21_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0021/arrays.npz",
+      "sha256": "7ec54a77e7f9a5235c86669238a459738c474d38f0b9a343f12ffa999d7ec892"
+    },
+    "shared_EVAL_21_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0021/metadata.json",
+      "sha256": "2568b99cbf3e2d52cf192e01f25a8e6bbd15472c7f4610df69463f80228e8c3b"
+    },
+    "shared_EVAL_27_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0027/arrays.npz",
+      "sha256": "d644abc68ea5c6194be00ed5153f495877b64948edcd93d84442fce282fe44cb"
+    },
+    "shared_EVAL_27_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0027/metadata.json",
+      "sha256": "812e536ac99ce4d1e04ea92ea50ab1e1c8b9e95fa62460e1620ad992f4608576"
+    },
+    "shared_EVAL_299_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0299/arrays.npz",
+      "sha256": "4adc4a27427e49330d122cf05ce0651f09ac5a2a74be74a86fe2e8ca69171565"
+    },
+    "shared_EVAL_299_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0299/metadata.json",
+      "sha256": "6a8970f50cd17146306a4b7bb628a6ee3efe88d4be5732dc50fb232f0b26ab4b"
+    },
+    "shared_EVAL_300_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0300/arrays.npz",
+      "sha256": "322a14cfb5b9d315c6bc2ff774022676ae7e05cdd93bcca1b81780333d7f1333"
+    },
+    "shared_EVAL_300_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0300/metadata.json",
+      "sha256": "8b7e0ed86aeef664fe195ca3b46a2efc57a03439825a46a23b3cd036a31ad0d9"
+    },
+    "shared_EVAL_306_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0306/arrays.npz",
+      "sha256": "48df4aa5713e46abc6905bdc9ee27dfce4a4e86de11a4ac58a6b4c3a00432364"
+    },
+    "shared_EVAL_306_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0306/metadata.json",
+      "sha256": "353dee324d7b0577e5d1c2541f811daf48833df2bd59e263143cdf19dc76078f"
+    },
+    "shared_EVAL_307_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0307/arrays.npz",
+      "sha256": "8b065766467e9c52b4590cfcc610fcaa781b58aa3124e24be9f4c90d3bed2af4"
+    },
+    "shared_EVAL_307_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0307/metadata.json",
+      "sha256": "bb39697d486d2650c7ad5640be1690e3ae06f655644b6b320dfccbba7d95c4c4"
+    },
+    "shared_EVAL_327_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0327/arrays.npz",
+      "sha256": "e9bc7617fbdcebe195627ff95bf23b756809300aec3a68b6c62e3e923f9a9707"
+    },
+    "shared_EVAL_327_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0327/metadata.json",
+      "sha256": "4eb0ca64684f689461c17a805600af76f0c54e13a52521532bf054dd3bf2cd91"
+    },
+    "shared_EVAL_329_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0329/arrays.npz",
+      "sha256": "77ea5fd1fe5943e03d9961eceab2bd41fa129efb3f0fa88663239a038fc0f132"
+    },
+    "shared_EVAL_329_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0329/metadata.json",
+      "sha256": "6b1c25b032b9d841746b1930517cee3b19df20f185ea72103c8571126e3f6fbc"
+    },
+    "shared_EVAL_340_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0340/arrays.npz",
+      "sha256": "a9030e46a7bc725f44bddd10f50909ce853146115b2319a580a76deb229e23ad"
+    },
+    "shared_EVAL_340_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0340/metadata.json",
+      "sha256": "3cd22f75e51a5185b61b07edd32cd49ad8ce3ae789b9a349cc6bdb0a3c00e722"
+    },
+    "shared_EVAL_414_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0414/arrays.npz",
+      "sha256": "d6512101ca30f76f2d70322eaae599fc8d5e042b830df4958eb3c7be676cc29a"
+    },
+    "shared_EVAL_414_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0414/metadata.json",
+      "sha256": "5c8e339022c62d3c76955dea72bd931965236f0cb743189a62a28af6ab859e2b"
+    },
+    "shared_EVAL_441_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0441/arrays.npz",
+      "sha256": "972db47271e601f7ebd30a2460fb8ed45af510b5b22b110799380688e89bb023"
+    },
+    "shared_EVAL_441_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0441/metadata.json",
+      "sha256": "0dd022936ec371a44a767e55a9d70c41cc2d75578f4661688b0373bf3af588c7"
+    },
+    "shared_EVAL_449_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0449/arrays.npz",
+      "sha256": "709dfe83913c6cb7f5cd23b6053c5b5cc8ecaaddd57c282edb9481108e9f9a65"
+    },
+    "shared_EVAL_449_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0449/metadata.json",
+      "sha256": "dd0eadd0651048245f8cc3204611e59a8c93bc8e415d595d30b04bdd27e65603"
+    },
+    "shared_EVAL_488_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0488/arrays.npz",
+      "sha256": "42d905864319aece092baa2b69b3d01cb52a86a1a5ce9693983658014f656525"
+    },
+    "shared_EVAL_488_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0488/metadata.json",
+      "sha256": "e7e26c5d55242abdeee6e43cae1ac305c306d4a3865a4922880fb54653ae8668"
+    },
+    "shared_EVAL_489_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0489/arrays.npz",
+      "sha256": "2dc132059dfc8be1c96769671f03f493d8e1f8e0dbeb7eb8db0f3bbe3a800536"
+    },
+    "shared_EVAL_489_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0489/metadata.json",
+      "sha256": "56566eaaab4d7e4aacf70106fc3a3016226b5e2f9411289401271d90fb25a075"
+    },
+    "shared_EVAL_495_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0495/arrays.npz",
+      "sha256": "802dceadc7ab07f0e8d9607987b2a3e86ec1128d9190d8623ee5c3ab8b9087c2"
+    },
+    "shared_EVAL_495_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0495/metadata.json",
+      "sha256": "95c2b2bff5c3ea502801d3bd6b4aa3de8bd956f9835eb508f87ab286ff71211f"
+    },
+    "shared_EVAL_502_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0502/arrays.npz",
+      "sha256": "2b20e20abd36061f10a589a2f98952a99d7b52c7d360b51eda327c630af8a599"
+    },
+    "shared_EVAL_502_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0502/metadata.json",
+      "sha256": "a168a6be0a4fce83bc7ded40a821ad30bd8bc02f6cba4531f47984291e40bcdc"
+    },
+    "shared_EVAL_586_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0586/arrays.npz",
+      "sha256": "7673b064b6252490b77512417fe786a5a11ca7e9bdd5ae7a55af3d3a016f3c92"
+    },
+    "shared_EVAL_586_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0586/metadata.json",
+      "sha256": "e9d591339bed5ba5a35255fdab9a19a5ad649401714420c572b9278a598c2418"
+    },
+    "shared_EVAL_588_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0588/arrays.npz",
+      "sha256": "5828d8567363a4d5dc6b8333306c573c6c3f4546d0ea21644df1ddd6581485f0"
+    },
+    "shared_EVAL_588_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0588/metadata.json",
+      "sha256": "9cf0738620f9af1a477e152d2a3fdd9a3cd6543e80b1d0bdaec7161a2be87ba5"
+    },
+    "shared_EVAL_598_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0598/arrays.npz",
+      "sha256": "5ea7e87a49e79644e2bbe2129077fe33f2338d937b0b48b3290c565d65692608"
+    },
+    "shared_EVAL_598_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0598/metadata.json",
+      "sha256": "349cc932cf12ceb1be496b62ea050e44aaebd39e684e957f677f3b4401ee737d"
+    },
+    "shared_EVAL_599_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0599/arrays.npz",
+      "sha256": "8617840e3d7a4052dbf4bda5a76ec2f5c76d3f258eab880e504297761708cb81"
+    },
+    "shared_EVAL_599_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0599/metadata.json",
+      "sha256": "4041ef2b8801dc7db8d4f2b6c49db3b9e1ed9bf76af6b64ae49a1a6555ce5b8d"
+    },
+    "shared_EVAL_5_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0005/arrays.npz",
+      "sha256": "b6a9b33bef66b900a392db6f6df8b23dd0ad7dcfb83fcc1629ff8a8d3a26d942"
+    },
+    "shared_EVAL_5_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0005/metadata.json",
+      "sha256": "7bb238cc8575d085ec681468c0f3b11ae09424765c6cbca731a0e4d053f21478"
+    },
+    "shared_EVAL_6_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0006/arrays.npz",
+      "sha256": "9b166c92cd821350dde4c0e7b7ad09b7fcf14177a66401db9e17e73a0c12e33e"
+    },
+    "shared_EVAL_6_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0006/metadata.json",
+      "sha256": "5fe6874be8b0bace01cd0295221eac599f41230b14c6046b205156686a08ac48"
+    },
+    "shared_TRAIN_271_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0271/arrays.npz",
+      "sha256": "4a65d0692519863e1b35d428179fc03932c72017fcca9198b0f2d30225ff31d4"
+    },
+    "shared_TRAIN_271_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0271/metadata.json",
+      "sha256": "2f99d2338ae0a338637d05724bfca19e127588d7659fb8408f086b93ef06980a"
+    },
+    "shared_TRAIN_284_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0284/arrays.npz",
+      "sha256": "e543177d58342d45247b10dd5ac08b325c436af38e7309ace79d977a878e48e1"
+    },
+    "shared_TRAIN_284_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0284/metadata.json",
+      "sha256": "ea2a0b403c928591c1f46031606b676fbfa86521ca902b8ca68efb10380e6b05"
+    },
+    "shared_TRAIN_285_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0285/arrays.npz",
+      "sha256": "74481e5a725b2feb186c031e1bac66880a305f38b0988a0b2af9486c9fdb8c38"
+    },
+    "shared_TRAIN_285_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0285/metadata.json",
+      "sha256": "675ac97ec6912aec1d0cc560d16790b55e3ccb678a2496494a2eab017e0a0e0f"
+    },
+    "shared_TRAIN_341_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0341/arrays.npz",
+      "sha256": "2e21de4f460fe2861abb03e375de8cab16356f0457939aa41ff3e86e8e19899d"
+    },
+    "shared_TRAIN_341_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0341/metadata.json",
+      "sha256": "a9a1c2aee892ae5012a4d6e9dc526320dfe61d9ae2452f59edd1de21dea07066"
+    },
+    "shared_TRAIN_344_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0344/arrays.npz",
+      "sha256": "b8ada819e49bfd0474538475505555730d5fae98464a0f6a3088c640dccc1c16"
+    },
+    "shared_TRAIN_344_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0344/metadata.json",
+      "sha256": "8a33c0c8b7324a45bccc9049258a26747f7db25f2013df3fb16c90b64f16d56a"
+    },
+    "shared_TRAIN_345_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0345/arrays.npz",
+      "sha256": "631dc645ec606dd71d191dd5d3b2bbd8b090ca7dad6af5797f72d96c2046c24a"
+    },
+    "shared_TRAIN_345_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0345/metadata.json",
+      "sha256": "5fe85071d68f737578791d2dbf25eb2cdfbb36aef867cd3c9621490b06b7227b"
+    },
+    "shared_TRAIN_356_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0356/arrays.npz",
+      "sha256": "0894d56a4d087df0c00e8c1c6af67bd0e93b46fd848edd4e3df1816bed8dfa68"
+    },
+    "shared_TRAIN_356_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0356/metadata.json",
+      "sha256": "87e428dec317918b68fc3a1640bfaabbf59b7f3d47c85286d3c55909fef23f16"
+    },
+    "shared_TRAIN_357_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0357/arrays.npz",
+      "sha256": "ff9214d3ff97ad0553248cbaadf0d77186c251e6bfc1bda553d7968db7c41234"
+    },
+    "shared_TRAIN_357_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0357/metadata.json",
+      "sha256": "42a8f6b4a9479074b9e33211cc1df4fc3616d3235dc44744fbcb37b4ac4c0d35"
+    },
+    "shared_TRAIN_358_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0358/arrays.npz",
+      "sha256": "30b2a20dbfad91a108f12cdf1bc61c95681195b0e6c909aa79a4b89bd2f25e91"
+    },
+    "shared_TRAIN_358_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0358/metadata.json",
+      "sha256": "42cf40a8d82fa80719a0b6e03b9e4b88161b9ce6a124d127ffe74ac659d6a672"
+    },
+    "shared_TRAIN_359_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0359/arrays.npz",
+      "sha256": "862dbaea38db958d94c13dfa3a515eb7e4431071005c805ad0eb606501e02eed"
+    },
+    "shared_TRAIN_359_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0359/metadata.json",
+      "sha256": "82e18804419431494ce9dfa442b1ff938d09c8d37aa877c874b840a7cf9cf4a8"
+    },
+    "shared_TRAIN_364_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0364/arrays.npz",
+      "sha256": "5ede08c0b1afcb903a7633344a31f780022ff529a9664d512e478596d0b11e1a"
+    },
+    "shared_TRAIN_364_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0364/metadata.json",
+      "sha256": "1a064cac63bb58c2658ccc0b9a64e85ac9d09e6c6ec138c4dddc8c95b6f10ee3"
+    },
+    "shared_TRAIN_368_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0368/arrays.npz",
+      "sha256": "1a95c5ceabe346941ccb3212bb340c445667fa56c2eff4b65309c6f66d8b9a9b"
+    },
+    "shared_TRAIN_368_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0368/metadata.json",
+      "sha256": "016d83a70729435b42b1a0986b6a86eef77c4025aeba1e95aab48010b6857fd2"
+    },
+    "shared_TRAIN_371_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0371/arrays.npz",
+      "sha256": "665f444c39e40b8468cfab53bd4dc6c9a549589179ce0eb9a5e6ca048b4edbf9"
+    },
+    "shared_TRAIN_371_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0371/metadata.json",
+      "sha256": "8a9424dd1f9db5555297332465f3603543b430819495db72ab2494fbcf8d4734"
+    },
+    "shared_TRAIN_394_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0394/arrays.npz",
+      "sha256": "9d935c47b09364b769d75be06dc0f5a2c06380f1fd56db4c328c2765449c1f74"
+    },
+    "shared_TRAIN_394_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0394/metadata.json",
+      "sha256": "0beb7fb5389b4273b39882ebf60a36e9e7b9bcd521472dadf9cd831cc132fc90"
+    },
+    "shared_TRAIN_396_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0396/arrays.npz",
+      "sha256": "e18baab6210a2046e6b48202dfc6f6e24a0de80700ad429d2b314e6c296f6b05"
+    },
+    "shared_TRAIN_396_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0396/metadata.json",
+      "sha256": "deddf00acac3381a8d8720b34c2b47e6246ed5a21971b9eb4a85a8e73a28fcd7"
+    },
+    "shared_TRAIN_399_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0399/arrays.npz",
+      "sha256": "aae49b14efdd1f67764c60cdd3b24f5a954364760149735e32cd84a601d442d8"
+    },
+    "shared_TRAIN_399_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0399/metadata.json",
+      "sha256": "7adc9e9141ef2d4f570c98f0b94be51114585c3b68a9af7aba0f4604c9c71ab9"
+    },
+    "shared_TRAIN_455_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0455/arrays.npz",
+      "sha256": "cc1a62d72ceea2772f78906ff3a38f9957328342541bf005bb9f30e874dd795a"
+    },
+    "shared_TRAIN_455_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0455/metadata.json",
+      "sha256": "f5afa3da6755a362cc25ad4999a93305d90a774b436a8503d525df3c48680a7a"
+    },
+    "shared_TRAIN_459_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0459/arrays.npz",
+      "sha256": "188012979b6fcd41d233bf5efc81c1925614e3c260ab5b1a106b60c08b733827"
+    },
+    "shared_TRAIN_459_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0459/metadata.json",
+      "sha256": "465736b6002ff7509902e2136d8edc759c9c12a0a4f0ed5430095426a944e8a7"
+    },
+    "shared_TRAIN_461_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0461/arrays.npz",
+      "sha256": "317085d1541bd9bff5126706d1eb574ce3f68f84a63a542ac95e2805bd05439e"
+    },
+    "shared_TRAIN_461_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0461/metadata.json",
+      "sha256": "6fa60e16a29f16fa69becb306c4643a0f108816fea348ff8baa01aa48aa36e0b"
+    },
+    "shared_TRAIN_511_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0511/arrays.npz",
+      "sha256": "4f20374df9bb27cc0e0988f7e0e4046d3fad0433131f6ae6a04a27052de7799f"
+    },
+    "shared_TRAIN_511_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0511/metadata.json",
+      "sha256": "73cb38face0ded57f89acb8e7b27ad804c0d2b2ef739db9c636c5604fb10e91a"
+    },
+    "shared_TRAIN_517_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0517/arrays.npz",
+      "sha256": "7661922b0340e316b8014290bb1539f1e262cebd05767ca0f0000d15baff1275"
+    },
+    "shared_TRAIN_517_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0517/metadata.json",
+      "sha256": "4371bb2b5f3d4f22f94202babdb5c7792fac6b018a6dbebe1b23b47b6da9daf0"
+    },
+    "shared_TRAIN_518_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0518/arrays.npz",
+      "sha256": "544fa3cfbd7058a4c6bbba7dda04cb1ae6cc655337ba8cacf5eaeb62ff19f2e8"
+    },
+    "shared_TRAIN_518_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0518/metadata.json",
+      "sha256": "1277f268be48f3e1896c13e7cc1e6fb6b31b0dd00670130acb8bbb5821449db9"
+    },
+    "shared_TRAIN_519_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0519/arrays.npz",
+      "sha256": "2995282c04ff8b53ad9abe9c258717a7405924aba6a013fceb282a1e70a7ad8b"
+    },
+    "shared_TRAIN_519_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0519/metadata.json",
+      "sha256": "41536cae85ad5d8869189f2959cf47f7f3bbf3671a4bf7fa2ec2cd9951821059"
+    },
+    "shared_TRAIN_520_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0520/arrays.npz",
+      "sha256": "29ad5f5888731fcbd1b673e82b95ad1acd2a1e3a9d831ed235398f354b612b38"
+    },
+    "shared_TRAIN_520_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0520/metadata.json",
+      "sha256": "3fd5249d197a4f74ec0c15ad7bc9935d5f79506cec0ee0cf45a7c398bf78dfdd"
+    },
+    "shared_TRAIN_532_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0532/arrays.npz",
+      "sha256": "937940a60f8dfbe04679de278f33cd9eba6dc04f89c035c86b60f902c8ac5649"
+    },
+    "shared_TRAIN_532_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0532/metadata.json",
+      "sha256": "22d46e44ebbee8e786ea7fc0a71c95f0f670c702c872ac011f9f7601710d7919"
+    },
+    "shared_TRAIN_560_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0560/arrays.npz",
+      "sha256": "ba3271f11feddfd0c9722232d131944a032380feb2b34e6173c28a8ac2d6ac01"
+    },
+    "shared_TRAIN_560_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0560/metadata.json",
+      "sha256": "d1939b10afaada540fd0bcf6644b7c194c8b28be32f57c322e8ae823a005cfe0"
+    },
+    "shared_TRAIN_563_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0563/arrays.npz",
+      "sha256": "b9297dfc0bb0b948360ab0389a893e9c768e8b7a207303a57badf3b82cd0bf75"
+    },
+    "shared_TRAIN_563_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0563/metadata.json",
+      "sha256": "d5e36c79c8a2d744d9e67c03347b78a9f09200cefcaa630864414dd9be8ec69c"
+    },
+    "shared_TRAIN_56_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0056/arrays.npz",
+      "sha256": "68a9aa51360d069ecd1509feda0d624ae98287af0320ad148081c9c88c85ec6f"
+    },
+    "shared_TRAIN_56_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0056/metadata.json",
+      "sha256": "fd0dbabcaaf9327d27e65aa891575e1c825b9dc96ad551b6e488fed1ad0713ed"
+    },
+    "shared_TRAIN_570_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0570/arrays.npz",
+      "sha256": "8debac3e38ba7070ab621b713da227236d93e2c492c82c13890505dc23e654ff"
+    },
+    "shared_TRAIN_570_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0570/metadata.json",
+      "sha256": "7b6526dc21ad085dd82f98ca974768df67cd3d46e8d374e48983420ff7b464a8"
+    },
+    "shared_TRAIN_66_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0066/arrays.npz",
+      "sha256": "8158c0f15083017496428f786072e84c6c0ae1b34c8e4ac11ac28f42ad8db8db"
+    },
+    "shared_TRAIN_66_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0066/metadata.json",
+      "sha256": "c8d01700ba6dd1e963ce913517f8be3f32c8d6c87b0fa719db7ba333cf2cb960"
+    },
+    "shared_TRAIN_72_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0072/arrays.npz",
+      "sha256": "b007ad4c06f2ef324ebb2edc60bf19d081228437180e14c185b1cedb76b5655b"
+    },
+    "shared_TRAIN_72_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0072/metadata.json",
+      "sha256": "8279331269d82364ca3ad7076606224c5a09532ae937129762986f27f9100d32"
+    },
+    "shared_TRAIN_75_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0075/arrays.npz",
+      "sha256": "e923e0be8130bc8aa3a99ef3e0e3d2cd75ae1f1980834c6975301be43a21e0c0"
+    },
+    "shared_TRAIN_75_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0075/metadata.json",
+      "sha256": "fb20f71b7e282b2fc9fc93e499dfde0048fa38796680f2edc476f6ff6cfeb0b2"
+    },
+    "shared_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/manifest.json",
+      "sha256": "f9f89522a7a3a67a52072e5a32739b4da9f238ff77d63d3b1faf9e342201fc7c"
+    },
+    "shared_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/validation.json",
+      "sha256": "0258615f000d0d82f757f57298b803420395ebc3a35e3a46bfa53c3116b7488f"
+    },
+    "train_curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/curator_roles.json",
+      "sha256": "240be57ffe824e8e029e83052a8b608166782edfdf1df8327bec164621de8ca1"
+    },
+    "train_input_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_train128_execution_authority_v1_20260910.json",
+      "sha256": "34cfddfe7840e67388d627b0e6a312621903030de6957226f56f7d68b1d76cbb"
+    },
+    "train_input_features": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/feature_records.json",
+      "sha256": "d2a2c7eddc8a1d236d9b5995186c7b80eb550ce33b0344fc0da2516a5486c078"
+    },
+    "train_input_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/validation.json",
+      "sha256": "770b9f9ce46f431c7bbe8479e320934c9d1dacdf23f3c3eea650f2812c1a77bf"
+    },
+    "train_legacy_parity_index": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/legacy_full32_parity_index.json",
+      "sha256": "31c337c676dc17d38fb85cdcb902b3aeddfe104aebbb6840baeaaba5837c6b03"
+    },
+    "train_metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/independent_metadata_validation.json",
+      "sha256": "03176db194d4b5f9d68cc226a1ce48b019675e99b037205bae71552202fa907d"
+    },
+    "train_worker": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    }
+  },
+  "source_closure_policy": "Only predeclared source files from the frozen readout are bound after input qualification; no parameter/outcome selection",
+  "status": "ORIGINAL7_TRAIN128_READOUT_AUTHORIZED"
+}

@@ -1,0 +1,30 @@
+# Large model bytes are versioned as release assets, not Git blobs.
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.gguf
+*.part[0-9][0-9][0-9]
+.model_assets_cache/
+*.restore.partial
+# Experiment caches and execution logs are excluded from this backup.
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pyc
+__pycache__/
+.pytest_cache/
+*.err
+*.out
+*.log
+logs/
+.venv*/
+# Authentication remains outside the repository.
+.env
+.env.*
+auth.json
+hosts.yml
+.ssh/

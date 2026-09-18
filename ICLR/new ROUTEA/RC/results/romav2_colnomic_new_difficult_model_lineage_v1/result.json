@@ -1,0 +1,110 @@
+{
+  "checks": {
+    "colnomic_fingerprint": true,
+    "dino_commit": true,
+    "gallery_hash": true,
+    "gallery_population": true,
+    "programs_present": true,
+    "roma_checkpoint": true,
+    "roma_commit": true
+  },
+  "colnomic": {
+    "encoder_fingerprint": {
+      "adapter_file_sha256": {
+        "adapter_config.json": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c",
+        "adapter_model.safetensors": "aa6cba28368342ac6b235f49fcc3e0a5bd891d56df490c12bcbc6dc52c8377f3",
+        "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "chat_template.json": "94174d7176c52a7192f96fc34eb2cf23c7c2059d63cdbfadca1586ba89731fb7",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "preprocessor_config.json": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557",
+        "processor_config.json": "67abb3983388156ccd44dd31d1ad75bb45b94c3d25b94fe2b178028ea3e0b60c",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "5eee858c5123a4279c3e1f7b81247343f356ac767940b2692a928ad929543214",
+        "tokenizer_config.json": "8cf7beeb5bffaaf7347b6d6ebf2f5c114ca75ab0c6d62ab6e6f19fafbd70cb7d",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "adapter_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+      "base_model": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base",
+        "small_file_sha256": {
+          "config.json": "fcf7636197a793fef485bd846052cb4a04a5452e9457d35cdb9f27b0b816cd80",
+          "generation_config.json": "12a853a9c0f468c4bd321e1cf6b0d5929095eb01a078bf47fb2deffec1a4099e",
+          "model.safetensors.index.json": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010"
+        },
+        "weight_shard_stats": [
+          {
+            "bytes": 4952311608,
+            "mtime_ns": 1778003730336771163,
+            "name": "model-00001-of-00007.safetensors"
+          },
+          {
+            "bytes": 4984124272,
+            "mtime_ns": 1778003727313103728,
+            "name": "model-00002-of-00007.safetensors"
+          },
+          {
+            "bytes": 4932743936,
+            "mtime_ns": 1778003725543768292,
+            "name": "model-00003-of-00007.safetensors"
+          },
+          {
+            "bytes": 4998852296,
+            "mtime_ns": 1778003725937516735,
+            "name": "model-00004-of-00007.safetensors"
+          },
+          {
+            "bytes": 4984124336,
+            "mtime_ns": 1778003727557491745,
+            "name": "model-00005-of-00007.safetensors"
+          },
+          {
+            "bytes": 4932743992,
+            "mtime_ns": 1778003727226618178,
+            "name": "model-00006-of-00007.safetensors"
+          },
+          {
+            "bytes": 3385682488,
+            "mtime_ns": 1778003725566737873,
+            "name": "model-00007-of-00007.safetensors"
+          }
+        ]
+      },
+      "base_model_manifest_sha256": "240007b38ebcf8a31a9395b9bbfc428546524f36e58ec999eb55ed77c34f998f",
+      "logical_sha256": "af1f3f83297ac2ab737a50704455fea1da10635b7b14cf101ba0dc02ec30191f",
+      "version": "colnomic_encoder_fingerprint_v2"
+    },
+    "gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc"
+  },
+  "dinov3": {
+    "source_commit": "adc254450203739c8149213a7a69d8d905b4fcfa"
+  },
+  "gallery": {
+    "corrected_exact_label_count": 5412,
+    "corrected_mapping_sha256": "935ce029e3c8177fd9bc4b51f7b41fff8e241c3d587977c31d516b2f300efca4",
+    "physical_row_count": 5413,
+    "repair_contract_sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650",
+    "repair_manifest_sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+  },
+  "next_authorized_stage": "SEALED_TOP_LEVEL_PREJOIN_SEAL",
+  "romav2": {
+    "checkpoint_sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7",
+    "source_commit": "95c9968145c8906b7b59383258e9f73b02853d89"
+  },
+  "runtime": {
+    "colpali_engine": "0.3.15",
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.6.2"
+  },
+  "schema_version": "rc_romav2_colnomic_new_difficult_model_lineage_v1_20260901",
+  "sealed_query_read_count": 0,
+  "source_sha256": {
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_cbind_shard_v1.py": "2e699e72351545240e28edf84c08f1ef2e62ceaf3b1841318c7c98c5ec8f8322",
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_fullrank_shard_v1.py": "ac4159b056813bfafce0b2f46cce0140591bd5dee4f5fd27f22cba8752531f7a",
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_roma_shard_v1.py": "e8a5764d8aa70bad1a7ca89c860454eeed9c4fd2495b09bc1ec1bb1ee1f0fa9b",
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_token_shard_v1.py": "0091acfb56e4a9e54b4c3792b9c98ed2c6c96d024c8df29cb0f384e1d1cb00c2",
+    "src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+  },
+  "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_MODEL_LINEAGE_FROZEN",
+  "target_label_read_count": 0
+}

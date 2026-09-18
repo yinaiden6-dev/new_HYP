@@ -1,0 +1,133 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "历史 EVAL128 内部面板",
+  "model": "ORIGINAL7",
+  "model_lineage": "frozen ORIGINAL7/NATIVE7 current seven parameters",
+  "evidence_scope": "历史内部结果的事后可视化",
+  "query_id": "E128-d3b95bbd58a3c965bbccae55",
+  "display_id": "OUTCOME-0140",
+  "execution_ordinal": 37,
+  "identity": "200000002710_Final",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_assets/images/E128-d3b95bbd58a3c965bbccae55.png",
+  "source_result": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 4358,
+  "final_selected": 935,
+  "target_physical": 935,
+  "wrong_physical": 4358,
+  "wrong_role": "RAW 错误 reference",
+  "raw_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1",
+  "roma_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1",
+  "selection_rule": "all 12 RAW-to-ORIGINAL7 rescues; plus prespecified OUTCOME-0337 and OUTCOME-0446",
+  "stem": "04_medicine_OUTCOME-0140",
+  "query_grid": [
+    36,
+    20
+  ],
+  "query_geometry": {
+    "sha256": "c682ad399c8818b02e1429542842ea0fec5174da7c5ebf624d4cfa3e1169257c",
+    "raw_size_hw": [
+      3840,
+      2160
+    ],
+    "oriented_size_hw": [
+      3840,
+      2160
+    ],
+    "exif_orientation": 1,
+    "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+    "grid_shape": [
+      36,
+      20
+    ],
+    "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+  },
+  "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+  "evidence": {
+    "wrong": {
+      "physical_row": 4358,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cvsapaplabel.jpg",
+      "reference_grid": [
+        28,
+        27
+      ],
+      "reference_geometry": {
+        "sha256": "b8d302988ff4ca6ed3a0fafe69ddedb55313319383776b7cfc3b5ec8b315672a",
+        "raw_size_hw": [
+          1085,
+          1041
+        ],
+        "oriented_size_hw": [
+          1085,
+          1041
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          28,
+          27
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.0001046727231920473,
+        "visibility_mass": 0.004720888362777721,
+        "query_control_score": 0.00010263159984368453,
+        "reference_control_score": 0.00010795009493890892,
+        "candidate_position": 115,
+        "physical_row": 4358,
+        "raw_score": 537.09033203125,
+        "query_map_sha256": "207154eb4d99446c6094c82d5ebad249cd32b54cb3320559e3b922b777d12328",
+        "reference_map_sha256": "73eeb4fabdcf99da587914911b4492d39288659ee7522a5f3232992ca3540f38"
+      },
+      "query_map_sha256": "207154eb4d99446c6094c82d5ebad249cd32b54cb3320559e3b922b777d12328",
+      "reference_map_sha256": "73eeb4fabdcf99da587914911b4492d39288659ee7522a5f3232992ca3540f38"
+    },
+    "target": {
+      "physical_row": 935,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/200000002710_Final.jpg",
+      "reference_grid": [
+        24,
+        31
+      ],
+      "reference_geometry": {
+        "sha256": "9ca9118801ab1805441a4c02463c4d240f2d2dc7083199c6688920af3e142587",
+        "raw_size_hw": [
+          1301,
+          1650
+        ],
+        "oriented_size_hw": [
+          1301,
+          1650
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          24,
+          31
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.0010459363302898889,
+        "visibility_mass": 0.01584380442818451,
+        "query_control_score": 0.0010673715793545336,
+        "reference_control_score": 0.0010833151683778501,
+        "candidate_position": 2,
+        "physical_row": 935,
+        "raw_score": 508.7056884765625,
+        "query_map_sha256": "13fe8ea28b3655ba74a0d77f069f29f964e66cc54f7a1b0f7fe22dc9a3da45ba",
+        "reference_map_sha256": "f241cbc354c26d3f3b9e8bc601b4402afdd4ea1126e6dddef6cb7aee47b81933"
+      },
+      "query_map_sha256": "13fe8ea28b3655ba74a0d77f069f29f964e66cc54f7a1b0f7fe22dc9a3da45ba",
+      "reference_map_sha256": "f241cbc354c26d3f3b9e8bc601b4402afdd4ea1126e6dddef6cb7aee47b81933"
+    }
+  },
+  "raw_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard04/payload.pt",
+  "roma_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard04/payload.pt",
+  "visualization": "literal cached native query token grids, fixed [0,1], nearest pixels; no overlay, no mask",
+  "inference_calls": 0,
+  "training_updates": 0
+}

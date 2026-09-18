@@ -1,0 +1,21 @@
+{
+  "status": "SUBMITTED_TEN_MINUTE_FULL_ARRAY_DEPENDENCY_PASS",
+  "jobs": {
+    "5142672": {
+      "JobId": "5142672",
+      "JobState": "PENDING",
+      "Reason": "Priority",
+      "Dependency": "(null)",
+      "Partition": "accelerated",
+      "TimeLimit": "00:10:00"
+    },
+    "5142673": {
+      "JobId": "5142673",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "Dependency": "afterok:5142672_*(unfulfilled)",
+      "Partition": "dev_accelerated,accelerated",
+      "TimeLimit": "00:10:00"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "sbatch",
+    "--parsable",
+    "--time=00:15:00",
+    "--array=1-15%16",
+    "--dependency=aftercorr:5150506",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp_processed128_v2_serialization.sbatch",
+    "roma"
+  ],
+  "job_id": "5150507",
+  "label": "fix_roma_rest",
+  "stderr": "",
+  "stdout": "5150507\n"
+}

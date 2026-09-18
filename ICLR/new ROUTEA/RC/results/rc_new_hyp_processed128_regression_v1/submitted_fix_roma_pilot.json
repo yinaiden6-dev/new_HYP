@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "sbatch",
+    "--parsable",
+    "--partition=dev_accelerated",
+    "--time=00:15:00",
+    "--array=0%1",
+    "--dependency=afterok:5150504",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp_processed128_v2_serialization.sbatch",
+    "roma"
+  ],
+  "job_id": "5150505",
+  "label": "fix_roma_pilot",
+  "stderr": "",
+  "stdout": "5150505\n"
+}

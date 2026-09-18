@@ -1,0 +1,64 @@
+{
+  "status": "H593_ENDPOINT_SIGN_BRANCH_AUTHORIZED_SUBJECT_TO_PREFLIGHT",
+  "recorded_utc": "2026-09-11T04:13:58.437102+00:00",
+  "public_sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_endpoint_competition_v1.py",
+      "sha256": "f2bfcc745089076a0a328512f177eb1142c187e9464bd0981cb795be334036bc"
+    },
+    "parent_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "parent_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_training_authority_v1_20260911.json",
+      "sha256": "6bebedcc5bbd87ef3407db661a88458a17b20a25337d7a7a36b1a1b023a4bd2d"
+    },
+    "input_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "cache_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_endpoint_competition_cache_authority_v1_20260911.json",
+      "sha256": "d31dbb3a229d8499c644b4e8a4972c5ec2bbca6ed24887664a924f486b8f1812"
+    },
+    "feature_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "split": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/split_manifest.json",
+      "sha256": "be29f82bc404b44e713f98a3e099117f183de0ef0ca80e7f11ddca5bcf8d1d5c"
+    },
+    "roles_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles_manifest.json",
+      "sha256": "1028d869c392f92341227533d1a4efc3988a6468416b0309d8575cd6641e3355"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_ENDPOINT_COMPETITION_SIGN_V1_20260911.md",
+      "sha256": "06c08d63dcd6b0d24cd946008a011ec3a8adbb6368067028708add2a9f699c35"
+    },
+    "fit_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_endpoint_fit_v1.sbatch",
+      "sha256": "0b411b48ef0ce87717a6797799b848c771bf6176f59ab00b272924ba8cf57e88"
+    },
+    "join_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_endpoint_join_v1.sbatch",
+      "sha256": "3123c80adf7b853347cd64f3d75aa732a650840bc77ea5c840c5e5a6919e8c17"
+    }
+  },
+  "models": [
+    "BASE7",
+    "RELATIVE1",
+    "RELATIVE2",
+    "ENDPOINT2"
+  ],
+  "primary": "ENDPOINT2 versus BASE7 and RELATIVE2",
+  "base_frozen": true,
+  "new_parameters_primary": 2,
+  "new_parameters_matched_control": 2,
+  "original593_experiment_unchanged": true,
+  "diagnostic_results_forbidden_as_inputs": true,
+  "steps": 2000,
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00"
+}

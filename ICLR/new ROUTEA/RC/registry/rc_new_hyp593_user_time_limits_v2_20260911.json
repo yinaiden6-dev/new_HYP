@@ -1,0 +1,27 @@
+{
+  "status": "USER_SPECIFIED_LIMITS_APPLIED_AND_VERIFIED",
+  "user_instruction": "raw 10\u5206\u949f\uff0cRoma15\u5206\u949f",
+  "recorded_utc": "2026-09-10T23:54:21.106655+00:00",
+  "overrides_previous_runtime_allocation": true,
+  "jobs": [
+    {
+      "JobId": "5140736",
+      "JobState": "PENDING",
+      "Reason": "None",
+      "TimeLimit": "00:10:00",
+      "ArrayTaskThrottle": "46",
+      "Partition": "accelerated",
+      "Dependency": "(null)"
+    },
+    {
+      "JobId": "5140737",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "TimeLimit": "00:15:00",
+      "ArrayTaskThrottle": "46",
+      "Partition": "accelerated",
+      "Dependency": "afterok:5140736_*(unfulfilled)"
+    }
+  ],
+  "numerical_source_files_unchanged": true
+}

@@ -1,0 +1,38 @@
+{
+  "status": "H593_FEATURE_CACHE_AUTHORIZED",
+  "no_identity_or_outcome_reads": true,
+  "sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cache_rc_new_hyp593_features_v1.py",
+      "sha256": "3cf21740571f1746a6329f3bf6b545466f001499b4fd0ae0331c4714836305f6"
+    },
+    "adapter": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "operator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cache_rc_train128_disagreement_features_v1.py",
+      "sha256": "816479b67d5fdae362e26a28d635585a185f12434f5097a85e28673d216e2da5"
+    },
+    "feature_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "worker": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/worker_manifest.json",
+      "sha256": "fac2f33b8aa678a4de3f2b8e60dc31bfdc310bfaa754f1a06ef2e5157abda340"
+    },
+    "input_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_oof5_authority_v1_20260911.json",
+      "sha256": "ff738b347b355c82bf66b83ce646cb84b644290588aa08a3926fe4384e6510ab"
+    },
+    "reuse_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp593_features_reuse_v1.sbatch",
+      "sha256": "46c0178a580d36410706725397428a23e341ba02a34713f065291c55f473bb20"
+    },
+    "missing_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp593_features_missing_v1.sbatch",
+      "sha256": "4c4c09e3b01843a7af97a4820ef0868820c49fe13a346a12bf25c58e23976e6f"
+    }
+  }
+}

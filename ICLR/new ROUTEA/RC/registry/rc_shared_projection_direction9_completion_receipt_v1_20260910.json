@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETED_INDEPENDENT_RETRAIN_PASS_NO_GAIN_OVER_ORIGINAL28",
+  "job_id": "5139157",
+  "recorded_utc": "2026-09-10T00:31:05.285335+00:00",
+  "accounting": {
+    "State": "COMPLETED",
+    "ExitCode": "0:0",
+    "Elapsed": "00:02:38",
+    "Start_Europe_Berlin": "2026-09-10T02:17:30",
+    "End_Europe_Berlin": "2026-09-10T02:20:08",
+    "AllocCPUS": 8,
+    "batch_MaxRSS": "439816K"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_projection_direction9_authority_v1_20260910.json",
+    "sha256": "8e9eeecfdf01fe7d25ddb56c7719cc7d90f58dd66932f6992fa6f9ea49aba7ce"
+  },
+  "outputs": {
+    "result.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_projection_direction9_v1/result.json",
+      "sha256": "2f0a33415ba2ac8b6c19a4cac77fb599bd3a27d15a68ac1e8e1068c305870bbc"
+    },
+    "parameters.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_projection_direction9_v1/parameters.json",
+      "sha256": "f4fea15071bc7a59a725e2451f7b486d713b53957d0aed237521c7ce9f83bb45"
+    },
+    "eval_prejoin_seal.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_projection_direction9_v1/eval_prejoin_seal.json",
+      "sha256": "dde0af6ffd880f721c38054db7ad60da7c6fea01991f69a846958c1839f722f9"
+    },
+    "independent_validation.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_projection_direction9_v1/independent_validation.json",
+      "sha256": "9318635cc1f3261cfa75ef02d3fda4815f35ee83adc47e465e7378f8dd15b163"
+    },
+    "independent_review.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_projection_direction9_v1/independent_review.json",
+      "sha256": "bdcaf9bd916e035abd41a05ce3dd9f686617c893eacfd3b20a05906302eada80"
+    }
+  },
+  "EVAL_REAL": {
+    "DIRECTION9": {
+      "base_MRR": 0.8281994047619048,
+      "base_R@1": 0.78125,
+      "base_top1": 25,
+      "break": 0,
+      "final_MRR": 0.8786817528735632,
+      "final_R@1": 0.84375,
+      "final_top1": 27,
+      "hold_count": 28,
+      "query_count": 32,
+      "rescue": 2,
+      "retained_correct": 25,
+      "retained_wrong": 5,
+      "switch_count": 4,
+      "wrong_to_wrong": 2
+    },
+    "FIXED_PROJECTION8": {
+      "base_MRR": 0.8281994047619048,
+      "base_R@1": 0.78125,
+      "base_top1": 25,
+      "break": 1,
+      "final_MRR": 0.8630567528735632,
+      "final_R@1": 0.8125,
+      "final_top1": 26,
+      "hold_count": 27,
+      "query_count": 32,
+      "rescue": 2,
+      "retained_correct": 24,
+      "retained_wrong": 5,
+      "switch_count": 5,
+      "wrong_to_wrong": 2
+    }
+  },
+  "theta_radians": -0.31862845481940694,
+  "axis_degrees_mod180": 26.743934306073147,
+  "gradient_trace": {
+    "first_theta_gradient_binary64": "0x0.0p+0",
+    "max_abs_theta_gradient_binary64": "0x1.06357ffb332aap-1",
+    "nonzero_theta_gradient_calls": 1999,
+    "theta_gradient_calls": 2000
+  },
+  "meets_user_gain_and_preservation": false,
+  "new_model_adopted": false
+}

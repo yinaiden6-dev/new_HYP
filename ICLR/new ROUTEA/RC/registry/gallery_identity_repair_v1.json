@@ -1,0 +1,39 @@
+{
+  "version": "routea_gallery_identity_repair_v1_20260808",
+  "status": "FROZEN_PENDING_CONTRACT_HASH",
+  "purpose": "Repair generic filename-stem collisions in the frozen 5,413-row gallery without overwriting the source cache.",
+  "source_gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc",
+  "source_legacy_setids_sha256": "59305a7b787fc1b61277c03fb99154c9edf5cbaec5a84366432b26cfae47dc80",
+  "physical_row_count": 5413,
+  "legacy_filename_label_count": 5404,
+  "corrected_identity_count": 5412,
+  "verified_byte_identical_duplicate_components": [
+    {
+      "canonical_identity": "Biogen_21",
+      "physical_rows": [714, 715],
+      "relative_paths": [
+        "homeopathic/Biogen_21 .jpg",
+        "homeopathic/Biogen_21.jpg"
+      ],
+      "sha256": "3972cbccd14da1942e6d64dfeb460322a8ad3e766f6dedb58a233f45ffca77ea"
+    }
+  ],
+  "filename_collision_overrides": [
+    {"physical_row": 80, "legacy_label": "Box Label", "corrected_identity": "raw_images/animal/Box Label.jpg"},
+    {"physical_row": 1813, "legacy_label": "Box Label", "corrected_identity": "raw_images/otc/Box Label.jpg"},
+    {"physical_row": 87, "legacy_label": "Carton", "corrected_identity": "raw_images/animal/Carton.jpg"},
+    {"physical_row": 2347, "legacy_label": "Carton", "corrected_identity": "raw_images/otc/Carton .jpg"},
+    {"physical_row": 2400, "legacy_label": "Carton", "corrected_identity": "raw_images/otc/Carton.jpg"},
+    {"physical_row": 217, "legacy_label": "box label", "corrected_identity": "raw_images/animal/box label.jpg"},
+    {"physical_row": 3522, "legacy_label": "box label", "corrected_identity": "raw_images/otc/box label.jpg"},
+    {"physical_row": 236, "legacy_label": "carton", "corrected_identity": "raw_images/animal/carton.jpg"},
+    {"physical_row": 3722, "legacy_label": "carton", "corrected_identity": "raw_images/otc/carton.jpg"},
+    {"physical_row": 234, "legacy_label": "carton-250ml", "corrected_identity": "raw_images/animal/carton-250ml.jpg"},
+    {"physical_row": 5011, "legacy_label": "carton-250ml", "corrected_identity": "raw_images/prescription/carton-250ml.jpg"},
+    {"physical_row": 235, "legacy_label": "carton-label", "corrected_identity": "raw_images/animal/carton-label.jpg"},
+    {"physical_row": 3720, "legacy_label": "carton-label", "corrected_identity": "raw_images/otc/carton-label.jpg"},
+    {"physical_row": 3741, "legacy_label": "carton2", "corrected_identity": "raw_images/otc/carton2.jpg"},
+    {"physical_row": 5032, "legacy_label": "carton2", "corrected_identity": "raw_images/prescription/carton2.jpg"}
+  ],
+  "inference_rule": "Use the corrected identity map only for full-gallery identity reduction and candidate membership. D1 continues to score all 5,413 physical rows. No query target is read in this mapping."
+}

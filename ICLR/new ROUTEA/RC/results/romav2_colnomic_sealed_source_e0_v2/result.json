@@ -1,0 +1,51 @@
+{
+  "access": {
+    "opened_model_scoring_count": 1,
+    "opened_pixel_decode_count": 1,
+    "sealed_model_scoring_count": 0,
+    "sealed_pixel_decode_count": 0,
+    "target_join_count": 0
+  },
+  "bindings": {
+    "gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc",
+    "historical_b4_generator_sha256": "fa86b8a3ecc3b0aabe3e213a96bb8e527a286791a407c065ee76221f9e34db13",
+    "manifest_receipt_sha256": "4f6208fdf574e739c2ff99fd1b23e6ce6b4e757ca8753580dfb6f874551696a4",
+    "predecessor_sha256": "c2e9f2f4e4211d83c2b030faad7c376bfc5f98bc00154b5aada8d36ac4d8f958"
+  },
+  "checks": {
+    "corrected_natural_c128_axis_exact": false,
+    "historical_image_mask_path_replayed": true,
+    "historical_image_template_reordering_replayed": true,
+    "historical_sum_maxsim_replayed": true,
+    "natural_c128_score_max_abs_le_1e_3": false,
+    "natural_c128_score_order_exact": false,
+    "opened_query_exact": true,
+    "predecessor_failure_is_lineage_only": true,
+    "query_token_mean_cosine_ge_0_9999": false,
+    "query_token_min_cosine_ge_0_999": false,
+    "query_token_shape_exact": true,
+    "sealed_model_scoring_zero": true,
+    "sealed_pixel_decode_zero": true,
+    "target_join_zero": true
+  },
+  "claim_level": "OPENED_EXACT_LINEAGE_REPLAY_ENGINEERING_ONLY",
+  "diagnostics": {
+    "attention_implementation": "sdpa",
+    "c128_score_max_abs": 3.614166259765625,
+    "corrected_c128_axis_match_count": 21,
+    "corrected_c128_set_overlap": 121,
+    "legacy_c128_axis_match_count": 21,
+    "legacy_c128_set_overlap": 121,
+    "query_grid_shape": [
+      24,
+      32
+    ],
+    "query_token_max_abs": 0.391845703125,
+    "query_token_mean_cosine": 0.9637596607208252,
+    "query_token_min_cosine": 0.19491581618785858
+  },
+  "logical_sha256": "4c66724fc9c3bf18476314da8ea788c9f1b6cd6be486871878371892d4a458b7",
+  "next_authorized_stage": null,
+  "schema_version": "rc_romav2_colnomic_sealed_source_e0_v2_20260831",
+  "status": "ROMAV2_COLNOMIC_SEALED_SOURCE_E0_V2_ABORT"
+}

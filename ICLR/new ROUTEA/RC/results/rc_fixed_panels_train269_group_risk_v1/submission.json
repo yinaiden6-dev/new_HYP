@@ -1,0 +1,31 @@
+{
+  "status": "FIXED_PANELS_TRAIN269_PIPELINE_SUBMITTED_AND_SPOOL_VERIFIED",
+  "job_id": "5141488",
+  "recorded_utc": "2026-09-11T09:07:47.781544+00:00",
+  "scheduler_snapshot": "JobId=5141488 JobName=fixed269_risk UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:49 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-11T11:06:52 EligibleTime=2026-09-11T11:06:52 AccrueTime=2026-09-11T11:06:52 StartTime=2026-09-11T11:06:58 EndTime=2026-09-11T11:16:58 Deadline=2026-09-11T18:00:00 SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-11T11:06:58 Scheduler=Backfill Partition=accelerated AllocNode:Sid=hkn1993:833035 ReqNodeList=(null) ExcNodeList=(null) NodeList=hkn0422 BatchHost=hkn0422 NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_fixed_panels_train269_group_risk_v1.sbatch SubmitLine=sbatch --parsable --deadline=2026-09-11T18:00:00 slurm/rc_fixed_panels_train269_group_risk_v1.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/fixed269_risk-5141488.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/fixed269_risk-5141488.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_fixed_panels_train269_group_risk_v1.sbatch",
+    "sha256": "b35cb65f5f0cc6ab96ec9c4ff4da83bfa750d947e096418d5c102abb7dc41dd3"
+  },
+  "submitted_spool": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/submitted_batch_script.sh",
+    "sha256": "b35cb65f5f0cc6ab96ec9c4ff4da83bfa750d947e096418d5c102abb7dc41dd3"
+  },
+  "spool_exact": true,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_fixed_panels_train269_group_risk_authority_v1_20260911.json",
+    "sha256": "38de28fc84c9770f845893df74f46c80d163ed74453875d3e3493e3b508fbfde"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/preflight.json",
+    "sha256": "28690de2195aebec52c86446d4daf1ae937c821dbfa645e4debdecd5c7f9bd01"
+  },
+  "stages": [
+    "fit_and_fresh_retrain",
+    "historic_input_parity",
+    "join",
+    "independent_review",
+    "report"
+  ],
+  "scientific_results_available_at_submission": false
+}

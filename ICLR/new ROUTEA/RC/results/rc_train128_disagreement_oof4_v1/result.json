@@ -1,0 +1,3441 @@
+{
+  "EVAL_reads": 0,
+  "OOF_gate_pass": false,
+  "RAW_correct": 86,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_train128_disagreement_oof4_execution_authority_v1_20260910.json",
+    "sha256": "c1284ccb621b58bb23fb8851ba621474d53e90c69dfdecdf50e1d7d57be16645"
+  },
+  "conditional_comparisons": {
+    "BASE7": {
+      "break": 2,
+      "break_query_ids": [
+        "OUTCOME-0087",
+        "DIFFICULT-0102"
+      ],
+      "net": -1,
+      "rescue": 1,
+      "rescue_query_ids": [
+        "OUTCOME-0389"
+      ]
+    },
+    "CONSTANT1": {
+      "break": 1,
+      "break_query_ids": [
+        "DIFFICULT-0102"
+      ],
+      "net": -1,
+      "rescue": 0,
+      "rescue_query_ids": []
+    }
+  },
+  "contract": {
+    "PAIR_correction_loss": false,
+    "action": "all 127 challenger logits, SWITCH iff maximum>0, physical row ties, natural C128 unchanged",
+    "base_parameters": 7,
+    "base_train_function_sha256": "45921b88203ef7065d824bdaab8e5468fc6d617dd3cb6d3fee213dfd2ccc7403",
+    "checkpoint": "last only",
+    "constant_formula": "z=X@w+b+softplus(alpha)*sym(F_c,F_w)",
+    "correction_formula": "z=X@w+b+softplus(beta0+beta1*(-xRAW)+beta2*(D_w-D_c)+beta3*sym(mean_wr_c,mean_wr_w))*sym(F_c,F_w)",
+    "correction_loss": "original FULL query loss only, protection weight 4, mean over target-present training rows",
+    "dtype": "float64",
+    "fold_base": "original FULL32 and original PAIR64 excluding all heldout groups",
+    "fold_count": 4,
+    "fold_label_rule": "fold-local training curator and pair projection only; heldout roles opened after all independent seals",
+    "fold_rule": "sha256(seed+\"|\"+group) sorted rank modulo 4",
+    "gate": [
+      "CONDITIONAL correct count strictly greater than BASE and CONSTANT",
+      "CONDITIONAL equal-group mean strictly greater than BASE and CONSTANT",
+      "CONDITIONAL RAW break count no greater than BASE RAW break count"
+    ],
+    "gate_pass_action": "eligible for separately authorized final fit; this program never opens EVAL",
+    "group_count": 32,
+    "group_seed": "RC_TRAIN128_DISAGREEMENT_OOF4_V1_20260910",
+    "initialization": "base all zero; alpha=0; all four beta=0",
+    "lr": 0.03,
+    "models": [
+      "BASE7",
+      "CONSTANT1",
+      "CONDITIONAL4"
+    ],
+    "new_parameter_counts": {
+      "CONDITIONAL4": 4,
+      "CONSTANT1": 1
+    },
+    "normalization": "none",
+    "optimizer": "AdamW",
+    "primary": "CONDITIONAL4",
+    "scope": "TRAIN128 grouped OOF only; no final fit or EVAL access",
+    "seed": 17,
+    "steps": 2000,
+    "target_absent": "retain all 128 heldout images; omit undefined positive FULL training loss only",
+    "weight_decay": 0.001
+  },
+  "final_ec7_fit_performed": false,
+  "fold_metrics": {
+    "0": {
+      "RAW_correct": 20,
+      "correct": {
+        "BASE7": 30,
+        "CONDITIONAL4": 29,
+        "CONSTANT1": 30
+      },
+      "count": 35
+    },
+    "1": {
+      "RAW_correct": 15,
+      "correct": {
+        "BASE7": 19,
+        "CONDITIONAL4": 20,
+        "CONSTANT1": 20
+      },
+      "count": 27
+    },
+    "2": {
+      "RAW_correct": 22,
+      "correct": {
+        "BASE7": 28,
+        "CONDITIONAL4": 27,
+        "CONSTANT1": 27
+      },
+      "count": 32
+    },
+    "3": {
+      "RAW_correct": 29,
+      "correct": {
+        "BASE7": 31,
+        "CONDITIONAL4": 31,
+        "CONSTANT1": 31
+      },
+      "count": 34
+    }
+  },
+  "fold_validations": {
+    "0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/validation.json",
+      "sha256": "7ed26196ee4ef447902848a6b87f7f637ddf172ee4d943f86ced0999fbe5a493"
+    },
+    "1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/validation.json",
+      "sha256": "d2a19db30df43ac92160c2f2ab4518b5aac1bb8833bd172c3f1228390da5c124"
+    },
+    "2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/validation.json",
+      "sha256": "ea88a28ce944750b6fcebbcd84df35d8cebdd59f4045bd47a27e0d2a3d7dbbfb"
+    },
+    "3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/validation.json",
+      "sha256": "df5bfbb264e355a49a19e730903341814fb271b19476cb88e2fb8abb49c421fb"
+    }
+  },
+  "forbidden_read_attempts": 0,
+  "gallery_mapping_sha256": "935ce029e3c8177fd9bc4b51f7b41fff8e241c3d587977c31d516b2f300efca4",
+  "gates": {
+    "RAW_break_not_above_BASE7": true,
+    "count_strictly_above_BASE7": false,
+    "count_strictly_above_CONSTANT1": false,
+    "equal_group_strictly_above_BASE7": false,
+    "equal_group_strictly_above_CONSTANT1": false
+  },
+  "group_count": 32,
+  "identity_count": 32,
+  "next_stage": "STOP_THIS_FAMILY_WITHOUT_EVAL_ACCESS",
+  "paired_group_statistics": {
+    "contract": {
+      "arithmetic": "rational group differences, common-denominator integer DP; zero groups retained exactly",
+      "bootstrap_draws": 10000,
+      "bootstrap_generator": "numpy.default_rng PCG64; one shared group-index draw array for all contrasts",
+      "bootstrap_interval": "percentile 95%, numpy.quantile method linear",
+      "bootstrap_seed": 20260910,
+      "p_value_is_gate": false,
+      "paired_comparisons": [
+        [
+          "CONDITIONAL4",
+          "BASE7"
+        ],
+        [
+          "CONDITIONAL4",
+          "CONSTANT1"
+        ],
+        [
+          "CONSTANT1",
+          "BASE7"
+        ]
+      ],
+      "signflip": "exact two-sided inclusive tail, abs(sum signed group differences)>=abs(observed sum)",
+      "unit": "source group; equally weighted group mean accuracy difference"
+    },
+    "contrasts": {
+      "CONDITIONAL4_minus_BASE7": {
+        "baseline": "BASE7",
+        "bootstrap_95_percentile_interval": [
+          -0.03958333333333333,
+          0.010416666666666666
+        ],
+        "bootstrap_distribution_sha256": "bbb665743dd987f420069ed751524024f616a900fb31974c2c4c13410d3b2c98",
+        "break": 2,
+        "break_query_ids": [
+          "OUTCOME-0087",
+          "DIFFICULT-0102"
+        ],
+        "equal_group_mean_difference": -0.011458333333333333,
+        "equal_group_mean_difference_fraction": "-11/960",
+        "exact_two_sided_group_signflip": {
+          "absolute_observed_integer_sum": 11,
+          "all_group_sign_assignments": 4294967296,
+          "all_group_tail_assignments": 2147483648,
+          "group_count": 32,
+          "inclusive_tail": true,
+          "integer_common_denominator": 30,
+          "method": "exact rational-to-integer group sign-flip dynamic program",
+          "nonzero_group_count": 3,
+          "nonzero_sign_assignments": 8,
+          "nonzero_tail_assignments": 4,
+          "observed_group_mean_difference_fraction": "-11/960",
+          "p_value_is_gate": false,
+          "two_sided_p": 0.5,
+          "two_sided_p_fraction": "1/2",
+          "zero_group_count": 29
+        },
+        "group_differences": [
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 1,
+            "group": "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus",
+            "image_count": 1,
+            "model_correct": 1
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+            "image_count": 4,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "-1/3",
+            "baseline_correct": 1,
+            "group": "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+            "image_count": 3,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+            "image_count": 4,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "-1/5",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+            "image_count": 5,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml",
+            "image_count": 2,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 0,
+            "group": "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml",
+            "image_count": 3,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml",
+            "image_count": 3,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 1,
+            "group": "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml",
+            "image_count": 1,
+            "model_correct": 1
+          },
+          {
+            "accuracy_difference_fraction": "1/6",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+            "image_count": 6,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 0,
+            "group": "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml",
+            "image_count": 2,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+            "image_count": 6,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+            "image_count": 5,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+            "image_count": 6,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 6,
+            "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+            "image_count": 6,
+            "model_correct": 6
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+            "image_count": 4,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml",
+            "image_count": 3,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml",
+            "image_count": 3,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+            "image_count": 5,
+            "model_correct": 5
+          }
+        ],
+        "model": "CONDITIONAL4",
+        "negative_group_count": 2,
+        "net_correct_images": -1,
+        "positive_group_count": 1,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0389"
+        ],
+        "zero_group_count": 29
+      },
+      "CONDITIONAL4_minus_CONSTANT1": {
+        "baseline": "CONSTANT1",
+        "bootstrap_95_percentile_interval": [
+          -0.018750000000000003,
+          0.0
+        ],
+        "bootstrap_distribution_sha256": "b6e69069a5737bea65128f866966916a3bfdf1b092186393e06a2c6b3e74d53d",
+        "break": 1,
+        "break_query_ids": [
+          "DIFFICULT-0102"
+        ],
+        "equal_group_mean_difference": -0.00625,
+        "equal_group_mean_difference_fraction": "-1/160",
+        "exact_two_sided_group_signflip": {
+          "absolute_observed_integer_sum": 1,
+          "all_group_sign_assignments": 4294967296,
+          "all_group_tail_assignments": 4294967296,
+          "group_count": 32,
+          "inclusive_tail": true,
+          "integer_common_denominator": 5,
+          "method": "exact rational-to-integer group sign-flip dynamic program",
+          "nonzero_group_count": 1,
+          "nonzero_sign_assignments": 2,
+          "nonzero_tail_assignments": 2,
+          "observed_group_mean_difference_fraction": "-1/160",
+          "p_value_is_gate": false,
+          "two_sided_p": 1.0,
+          "two_sided_p_fraction": "1",
+          "zero_group_count": 31
+        },
+        "group_differences": [
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 1,
+            "group": "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus",
+            "image_count": 1,
+            "model_correct": 1
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+            "image_count": 4,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 0,
+            "group": "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+            "image_count": 3,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+            "image_count": 4,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "-1/5",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+            "image_count": 5,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml",
+            "image_count": 2,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 0,
+            "group": "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml",
+            "image_count": 3,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml",
+            "image_count": 3,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 1,
+            "group": "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml",
+            "image_count": 1,
+            "model_correct": 1
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+            "image_count": 6,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 0,
+            "group": "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml",
+            "image_count": 2,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+            "image_count": 6,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+            "image_count": 5,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+            "image_count": 6,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 6,
+            "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+            "image_count": 6,
+            "model_correct": 6
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+            "image_count": 4,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml",
+            "image_count": 3,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml",
+            "image_count": 3,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+            "image_count": 5,
+            "model_correct": 5
+          }
+        ],
+        "model": "CONDITIONAL4",
+        "negative_group_count": 1,
+        "net_correct_images": -1,
+        "positive_group_count": 0,
+        "rescue": 0,
+        "rescue_query_ids": [],
+        "zero_group_count": 31
+      },
+      "CONSTANT1_minus_BASE7": {
+        "baseline": "BASE7",
+        "bootstrap_95_percentile_interval": [
+          -0.03125,
+          0.015625
+        ],
+        "bootstrap_distribution_sha256": "0da7d48306ae4b272d76f8d586148de0ac443a988699be07cf7f80e7431ea8f9",
+        "break": 1,
+        "break_query_ids": [
+          "OUTCOME-0087"
+        ],
+        "equal_group_mean_difference": -0.005208333333333333,
+        "equal_group_mean_difference_fraction": "-1/192",
+        "exact_two_sided_group_signflip": {
+          "absolute_observed_integer_sum": 1,
+          "all_group_sign_assignments": 4294967296,
+          "all_group_tail_assignments": 4294967296,
+          "group_count": 32,
+          "inclusive_tail": true,
+          "integer_common_denominator": 6,
+          "method": "exact rational-to-integer group sign-flip dynamic program",
+          "nonzero_group_count": 2,
+          "nonzero_sign_assignments": 4,
+          "nonzero_tail_assignments": 4,
+          "observed_group_mean_difference_fraction": "-1/192",
+          "p_value_is_gate": false,
+          "two_sided_p": 1.0,
+          "two_sided_p_fraction": "1",
+          "zero_group_count": 30
+        },
+        "group_differences": [
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 1,
+            "group": "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus",
+            "image_count": 1,
+            "model_correct": 1
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+            "image_count": 4,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "-1/3",
+            "baseline_correct": 1,
+            "group": "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+            "image_count": 3,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+            "image_count": 4,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+            "image_count": 5,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml",
+            "image_count": 2,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 0,
+            "group": "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml",
+            "image_count": 3,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 2,
+            "group": "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml",
+            "image_count": 3,
+            "model_correct": 2
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 1,
+            "group": "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml",
+            "image_count": 1,
+            "model_correct": 1
+          },
+          {
+            "accuracy_difference_fraction": "1/6",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+            "image_count": 6,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 0,
+            "group": "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml",
+            "image_count": 2,
+            "model_correct": 0
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+            "image_count": 6,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+            "image_count": 5,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+            "image_count": 6,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 6,
+            "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+            "image_count": 6,
+            "model_correct": 6
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+            "image_count": 4,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+            "image_count": 5,
+            "model_correct": 5
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml",
+            "image_count": 3,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 3,
+            "group": "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml",
+            "image_count": 3,
+            "model_correct": 3
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 4,
+            "group": "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+            "image_count": 4,
+            "model_correct": 4
+          },
+          {
+            "accuracy_difference_fraction": "0",
+            "baseline_correct": 5,
+            "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+            "image_count": 5,
+            "model_correct": 5
+          }
+        ],
+        "model": "CONSTANT1",
+        "negative_group_count": 1,
+        "net_correct_images": 0,
+        "positive_group_count": 1,
+        "rescue": 1,
+        "rescue_query_ids": [
+          "OUTCOME-0389"
+        ],
+        "zero_group_count": 30
+      }
+    },
+    "group_resample_indices_sha256": "ff04b0e0d39162d17f9e3ecadc65e8d214fc73c9c5897f61cd4f0b7efd73c371",
+    "ordered_groups": [
+      "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+      "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus",
+      "NEW_SUPERGROUP:SF_BACITRACIN",
+      "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+      "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+      "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+      "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+      "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+      "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml",
+      "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml",
+      "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+      "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml",
+      "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml",
+      "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+      "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml",
+      "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+      "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+      "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+      "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+      "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+      "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+      "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+      "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+      "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+      "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+      "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml",
+      "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml",
+      "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+      "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+      "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml"
+    ]
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_train128_disagreement_oof4_v1.py",
+    "sha256": "d7302eca66c7c6469a7f5ef99a77afeae8af4b25c3a253a1bdcbb2da7af3a715"
+  },
+  "query_count": 128,
+  "rows": [
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 0,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+      "identity": "int08-0008-17",
+      "original_query_id": "DIFFICULT-0101",
+      "query_id": "T128-e92641577a47fafcd7df2b32",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 1,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+      "identity": "sevospire-02",
+      "original_query_id": "DIFFICULT-0128",
+      "query_id": "T128-af6bfe8dab688c707f953563",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 2,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+      "identity": "45mg PFS CArton",
+      "original_query_id": "NDV2-007-P01",
+      "query_id": "T128-dde130c48da67cb04004a029",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 3,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+      "identity": "45mg PFS CArton",
+      "original_query_id": "NDV2-007-P04",
+      "query_id": "T128-8ce0735db647d2040023bc1c",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 4,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+      "identity": "6941714017-1",
+      "original_query_id": "OUTCOME-0308",
+      "query_id": "T128-b3c45d803aa1b899e5e20708",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 5,
+      "fold": 3,
+      "group": "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+      "identity": "77l96n1c1",
+      "original_query_id": "OUTCOME-0350",
+      "query_id": "T128-d498f91fd52bd2c8fdee9bb7",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 6,
+      "fold": 3,
+      "group": "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+      "identity": "77l96n1c1",
+      "original_query_id": "OUTCOME-0351",
+      "query_id": "T128-12c37a9314c5f14876389ebf",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 7,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "identity": "AlkaSeltzer_36",
+      "original_query_id": "OUTCOME-0460",
+      "query_id": "T128-4c93e5745471b9862b4bb588",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 8,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "identity": "AlkaSeltzer_36",
+      "original_query_id": "OUTCOME-0463",
+      "query_id": "T128-8b285e21f3736f70bc36edde",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 9,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "identity": "AlkaSeltzer_36",
+      "original_query_id": "OUTCOME-0464",
+      "query_id": "T128-a2052ea7204c39304cc7e106",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 10,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "identity": "AlkaSeltzer_36",
+      "original_query_id": "OUTCOME-0475",
+      "query_id": "T128-7575f708dd46be84feb6e407",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 11,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "identity": "AlkaSeltzer_36",
+      "original_query_id": "OUTCOME-0476",
+      "query_id": "T128-438ed31142f74010b80f9273",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 12,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "identity": "AlkaSeltzer_36",
+      "original_query_id": "OUTCOME-0477",
+      "query_id": "T128-f6afcdf5ac6503e1230446f7",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 13,
+      "fold": 2,
+      "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+      "identity": "AntifluDesbx",
+      "original_query_id": "OUTCOME-0489",
+      "query_id": "T128-5aee577b4eb6780130eb4bc7",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 14,
+      "fold": 2,
+      "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+      "identity": "AntifluDesbx",
+      "original_query_id": "OUTCOME-0494",
+      "query_id": "T128-5fda2ddaa028c40e92ecf129",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 15,
+      "fold": 2,
+      "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+      "identity": "AntifluDesbx",
+      "original_query_id": "OUTCOME-0498",
+      "query_id": "T128-fb92cb8dc9f50fe125ce2dd8",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 16,
+      "fold": 2,
+      "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+      "identity": "AntifluDesbx",
+      "original_query_id": "OUTCOME-0501",
+      "query_id": "T128-589bc76544875a66131fd7b0",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 17,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+      "identity": "SH230414C (250 ml Carton)",
+      "original_query_id": "OUTCOME-0533",
+      "query_id": "T128-2f262debf0e3087fcb90b10a",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 18,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+      "identity": "SH230414C (250 ml Carton)",
+      "original_query_id": "OUTCOME-0535",
+      "query_id": "T128-36856c39eee42a328b4bc5a3",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 19,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+      "identity": "SH230414C (250 ml Carton)",
+      "original_query_id": "OUTCOME-0538",
+      "query_id": "T128-1d9a7d5965b8218d161c143e",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 20,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+      "identity": "athletes-01",
+      "original_query_id": "OUTCOME-0625",
+      "query_id": "T128-cfd1ef91e115bd7eba51f7ca",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 21,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+      "identity": "athletes-01",
+      "original_query_id": "OUTCOME-0629",
+      "query_id": "T128-195dd4a9149325d6adf20730",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 22,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+      "identity": "athletes-01",
+      "original_query_id": "OUTCOME-0631",
+      "query_id": "T128-1d9c487d352df6e46072758e",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 23,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+      "identity": "carton-1-gram-10-vial-pack-premier",
+      "original_query_id": "OUTCOME-0692",
+      "query_id": "T128-68ba2e000b6e1c8205bb306e",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 24,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+      "identity": "carton-1-gram-10-vial-pack-premier",
+      "original_query_id": "OUTCOME-0698",
+      "query_id": "T128-dc1d69b92a60ef09d2cc2dbd",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 25,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+      "identity": "carton-1-gram-10-vial-pack-premier",
+      "original_query_id": "OUTCOME-0699",
+      "query_id": "T128-310c350c693e874f3d4a86e2",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 26,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+      "identity": "carton-1-gram-10-vial-pack-premier",
+      "original_query_id": "OUTCOME-0700",
+      "query_id": "T128-019d499f0e1f1bd8824ace69",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 27,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml",
+      "identity": "carton-1-gram-10-vial-pack-premier",
+      "original_query_id": "OUTCOME-0701",
+      "query_id": "T128-cb8e05fd8c09ac7609925809",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 28,
+      "fold": 2,
+      "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+      "identity": "cuvitru-19",
+      "original_query_id": "OUTCOME-0725",
+      "query_id": "T128-02efc1e6e18e1ebab7dacd12",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 29,
+      "fold": 3,
+      "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+      "identity": "kedbumin-02",
+      "original_query_id": "OUTCOME-0753",
+      "query_id": "T128-7a972fedee4f4f893f337399",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 30,
+      "fold": 3,
+      "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+      "identity": "kedbumin-02",
+      "original_query_id": "OUTCOME-0756",
+      "query_id": "T128-972191d1201c6965f0c37fd7",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 31,
+      "fold": 3,
+      "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+      "identity": "kedbumin-02",
+      "original_query_id": "OUTCOME-0763",
+      "query_id": "T128-2986244aafd531624af6e33c",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 32,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "identity": "812-6e-mucus-dm",
+      "original_query_id": "OUTCOME-0382",
+      "query_id": "T128-9dccbad2351514b4e8215663",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 33,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+      "identity": "anti caries toothpaste carton",
+      "original_query_id": "OUTCOME-0588",
+      "query_id": "T128-3cc1438914ded52ca694d969",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 34,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+      "identity": "200000003252_R-00_28ct",
+      "original_query_id": "OUTCOME-0145",
+      "query_id": "T128-37440624d368c2d16ff20e98",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 35,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+      "identity": "200000003252_R-00_28ct",
+      "original_query_id": "OUTCOME-0143",
+      "query_id": "T128-66c9ad201e1b1dd05a873a37",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 36,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "identity": "812-6e-mucus-dm",
+      "original_query_id": "OUTCOME-0389",
+      "query_id": "T128-a8d8cc99981897dd06f702e8",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 37,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+      "identity": "200000003252_R-00_28ct",
+      "original_query_id": "OUTCOME-0152",
+      "query_id": "T128-085d2f96a29916fcbcd487ed",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 38,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+      "identity": "200000003252_R-00_28ct",
+      "original_query_id": "OUTCOME-0153",
+      "query_id": "T128-a1e98e66a291643f0f1aa456",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 39,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+      "identity": "200000003252_R-00_28ct",
+      "original_query_id": "OUTCOME-0148",
+      "query_id": "T128-0260ab3c5b04e97d071afd39",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 40,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml",
+      "identity": "_Pentrexcilina Adult TOTAL RELIEF  Multi_Symptom 6 fl oz (177 ml)_comp",
+      "original_query_id": "OUTCOME-0557",
+      "query_id": "T128-a98f2c750fefdbf61947931b",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 41,
+      "fold": 3,
+      "group": "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+      "identity": "2021 Lice Freee!_6ozPOP R2a",
+      "original_query_id": "OUTCOME-0159",
+      "query_id": "T128-a8003d206aee2991b8bfff9a",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 42,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "identity": "812-6e-mucus-dm",
+      "original_query_id": "OUTCOME-0378",
+      "query_id": "T128-6e4a1ed575061ee5aab535c4",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 43,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+      "identity": "dro0b-0001-04",
+      "original_query_id": "OUTCOME-0730",
+      "query_id": "T128-3edaf49068741e3a8bcaf888",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 44,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "identity": "812-6e-mucus-dm",
+      "original_query_id": "OUTCOME-0379",
+      "query_id": "T128-e789ab37e23c9fc9c1b9bd03",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 45,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml",
+      "identity": "_Pentrexcilina Adult TOTAL RELIEF  Multi_Symptom 6 fl oz (177 ml)_comp",
+      "original_query_id": "OUTCOME-0555",
+      "query_id": "T128-dc91ab0171e3b681f8401da5",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 46,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "identity": "812-6e-mucus-dm",
+      "original_query_id": "OUTCOME-0376",
+      "query_id": "T128-89549dfc75157ded0c997d91",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 47,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml",
+      "identity": "200000003252_R-00_28ct",
+      "original_query_id": "OUTCOME-0150",
+      "query_id": "T128-d1a4ce3d52e7adbdd6086231",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 48,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml",
+      "identity": "20230531134258",
+      "original_query_id": "OUTCOME-0180",
+      "query_id": "T128-674e1eab6b8b2fe36bfadfeb",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 49,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+      "identity": "anti caries toothpaste carton",
+      "original_query_id": "OUTCOME-0581",
+      "query_id": "T128-b091fd0902b36f9718f0a96c",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 50,
+      "fold": 0,
+      "group": "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus",
+      "identity": "5USSTP-2",
+      "original_query_id": "NDV2-009-P01",
+      "query_id": "T128-c31ed449827ce7fba5d83b3b",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 51,
+      "fold": 3,
+      "group": "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml",
+      "identity": "60mg carton",
+      "original_query_id": "OUTCOME-0287",
+      "query_id": "T128-98bc7f2f5d5527390a6cdaf2",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 52,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "identity": "812-6e-mucus-dm",
+      "original_query_id": "OUTCOME-0380",
+      "query_id": "T128-efe0fe5a01055e176fb9e50e",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 53,
+      "fold": 3,
+      "group": "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+      "identity": "2021 Lice Freee!_6ozPOP R2a",
+      "original_query_id": "OUTCOME-0165",
+      "query_id": "T128-0fbb52c6c787084ab2dc9a98",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 54,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+      "identity": "anti caries toothpaste carton",
+      "original_query_id": "OUTCOME-0593",
+      "query_id": "T128-4c83f5d9f129efa145edaeab",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 55,
+      "fold": 3,
+      "group": "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml",
+      "identity": "60mg carton",
+      "original_query_id": "OUTCOME-0291",
+      "query_id": "T128-dc2de0fbd71506b481f28047",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 56,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+      "identity": "dro0b-0001-04",
+      "original_query_id": "OUTCOME-0729",
+      "query_id": "T128-e95cc95338a21d548ab68463",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 57,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+      "identity": "anti caries toothpaste carton",
+      "original_query_id": "OUTCOME-0585",
+      "query_id": "T128-bb178782ac8196d93babc087",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 58,
+      "fold": 3,
+      "group": "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+      "identity": "2021 Lice Freee!_6ozPOP R2a",
+      "original_query_id": "OUTCOME-0164",
+      "query_id": "T128-dbe67efc4d7e88c27fe81a23",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 59,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml",
+      "identity": "anti caries toothpaste carton",
+      "original_query_id": "OUTCOME-0596",
+      "query_id": "T128-9c401b38deef9e58eb9f5303",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 60,
+      "fold": 3,
+      "group": "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml",
+      "identity": "2021 Lice Freee!_6ozPOP R2a",
+      "original_query_id": "OUTCOME-0167",
+      "query_id": "T128-8f1794d245a835c16a547a74",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 61,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml",
+      "identity": "10ml carton",
+      "original_query_id": "OUTCOME-0078",
+      "query_id": "T128-eb1fbb58982eb7f2a7bef73d",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 62,
+      "fold": 3,
+      "group": "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml",
+      "identity": "60mg carton",
+      "original_query_id": "OUTCOME-0292",
+      "query_id": "T128-3bd418e1ff6cd4b3eee71d50",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 63,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml",
+      "identity": "10ml carton",
+      "original_query_id": "OUTCOME-0072",
+      "query_id": "T128-9e3dd48eed73793f77170739",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 64,
+      "fold": 1,
+      "group": "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml",
+      "identity": "int07-0006-04",
+      "original_query_id": "OUTCOME-0742",
+      "query_id": "T128-13d59eb441a7e7f57aae8c5c",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 65,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+      "identity": "11-5BlisterCarton",
+      "original_query_id": "OUTCOME-0090",
+      "query_id": "T128-9b71cc7a5d44ae0be936e51f",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 66,
+      "fold": 0,
+      "group": "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml",
+      "identity": "0003",
+      "original_query_id": "OUTCOME-0015",
+      "query_id": "T128-49514d3db81bfb8902a6f827",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 67,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+      "identity": "cefdinir-fig2",
+      "original_query_id": "DIFFICULT-0086",
+      "query_id": "T128-c33adb2551318ea465d2c1f5",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 68,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+      "identity": "469584",
+      "original_query_id": "OUTCOME-0242",
+      "query_id": "T128-12d45b07e02978a51430d111",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 69,
+      "fold": 1,
+      "group": "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml",
+      "identity": "int07-0006-04",
+      "original_query_id": "OUTCOME-0748",
+      "query_id": "T128-5735f6689896f740421eab0b",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 70,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+      "identity": "11-5BlisterCarton",
+      "original_query_id": "OUTCOME-0087",
+      "query_id": "T128-ccefd5dccce120adc413ebc4",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 71,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+      "identity": "cefdinir-fig2",
+      "original_query_id": "DIFFICULT-0083",
+      "query_id": "T128-74afd5bc3f859cb302229118",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 72,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+      "identity": "bef4f237-ccb8-4d28-bfc2-41c511a17d7f-01",
+      "original_query_id": "DIFFICULT-0061",
+      "query_id": "T128-e8b5bddae9742995609b7b9b",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 73,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+      "identity": "11-5BlisterCarton",
+      "original_query_id": "OUTCOME-0093",
+      "query_id": "T128-c2ec75f19a1e4f83aa7f1689",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 74,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+      "identity": "cefdinir-fig2",
+      "original_query_id": "DIFFICULT-0087",
+      "query_id": "T128-ca5ddea47d6c7078915fa0a0",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 75,
+      "fold": 0,
+      "group": "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml",
+      "identity": "0003",
+      "original_query_id": "OUTCOME-0001",
+      "query_id": "T128-e076178564f6bc12fa3730c7",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 76,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+      "identity": "bef4f237-ccb8-4d28-bfc2-41c511a17d7f-01",
+      "original_query_id": "DIFFICULT-0057",
+      "query_id": "T128-796735f988d0a756b630d0af",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 77,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+      "identity": "Baby spec cream 60 ml_Jun21-Output",
+      "original_query_id": "OUTCOME-0518",
+      "query_id": "T128-073499b3dc1f2410b75ae53a",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 78,
+      "fold": 1,
+      "group": "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml",
+      "identity": "int07-0006-04",
+      "original_query_id": "OUTCOME-0747",
+      "query_id": "T128-3979f0023678614406a477b9",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 79,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+      "identity": "469584",
+      "original_query_id": "OUTCOME-0252",
+      "query_id": "T128-8b4651f70dba7971d130ae31",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 80,
+      "fold": 1,
+      "group": "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml",
+      "identity": "45-carton-ai",
+      "original_query_id": "OUTCOME-0228",
+      "query_id": "T128-cd076b439adbacf32b780705",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 81,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+      "identity": "469584",
+      "original_query_id": "OUTCOME-0253",
+      "query_id": "T128-ead745c8a54735b79c15c7ff",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 82,
+      "fold": 0,
+      "group": "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml",
+      "identity": "0003",
+      "original_query_id": "OUTCOME-0002",
+      "query_id": "T128-3059cb2714ebb5c12a97a0c7",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 83,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+      "identity": "469584",
+      "original_query_id": "OUTCOME-0254",
+      "query_id": "T128-b31115edcb17ca503285e891",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 84,
+      "fold": 2,
+      "group": "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml",
+      "identity": "cefdinir-fig2",
+      "original_query_id": "DIFFICULT-0090",
+      "query_id": "T128-e509f2f6bfed76ce8839f822",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 85,
+      "fold": 1,
+      "group": "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml",
+      "identity": "45-carton-ai",
+      "original_query_id": "OUTCOME-0237",
+      "query_id": "T128-ea86731a5e1935d41ad02168",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 86,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+      "identity": "469584",
+      "original_query_id": "OUTCOME-0250",
+      "query_id": "T128-4badef25d9d1f422a2e6c188",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 87,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+      "identity": "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22",
+      "original_query_id": "NDV2-012-P01",
+      "query_id": "T128-fc20cd66a4e1941d31432b40",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 88,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+      "identity": "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22",
+      "original_query_id": "NDV2-012-P03",
+      "query_id": "T128-1d650f97377e5f2ea6f4bf87",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 89,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+      "identity": "Baby spec cream 60 ml_Jun21-Output",
+      "original_query_id": "OUTCOME-0507",
+      "query_id": "T128-2d38d42e914ae9dd2b23a16d",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 90,
+      "fold": 1,
+      "group": "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml",
+      "identity": "45-carton-ai",
+      "original_query_id": "OUTCOME-0234",
+      "query_id": "T128-67be8912f2ad1743ec351cb0",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 91,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml",
+      "identity": "469584",
+      "original_query_id": "OUTCOME-0244",
+      "query_id": "T128-c82c816f2618b258af418973",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 92,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+      "identity": "bb morning carton",
+      "original_query_id": "OUTCOME-0650",
+      "query_id": "T128-8390e61e577260c688bbe0d7",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 93,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+      "identity": "bef4f237-ccb8-4d28-bfc2-41c511a17d7f-01",
+      "original_query_id": "DIFFICULT-0060",
+      "query_id": "T128-f8807e68c7cfd546f79ec249",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 94,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+      "identity": "Baby spec cream 60 ml_Jun21-Output",
+      "original_query_id": "OUTCOME-0508",
+      "query_id": "T128-15953b375eeba3a4170ca3fd",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 95,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml",
+      "identity": "Baby spec cream 60 ml_Jun21-Output",
+      "original_query_id": "OUTCOME-0515",
+      "query_id": "T128-1865cece949c08bb4662bec4",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 96,
+      "fold": 2,
+      "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+      "identity": "cuvitru-19",
+      "original_query_id": "OUTCOME-0721",
+      "query_id": "T128-fb13b771b168024d171708a5",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 97,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+      "identity": "sevospire-02",
+      "original_query_id": "DIFFICULT-0126",
+      "query_id": "T128-925f6d59e87aff61bd6b4c18",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 98,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+      "identity": "int08-0008-17",
+      "original_query_id": "DIFFICULT-0107",
+      "query_id": "T128-f7ebe22058f4148deb438068",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 99,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+      "identity": "bb morning carton",
+      "original_query_id": "OUTCOME-0655",
+      "query_id": "T128-174fc4aa016d7df643e87d2b",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 100,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+      "identity": "6941714017-1",
+      "original_query_id": "OUTCOME-0302",
+      "query_id": "T128-9e136bf28e91e75d945b95e6",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 101,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+      "identity": "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22",
+      "original_query_id": "NDV2-012-P02",
+      "query_id": "T128-a33e585516e1d812a5817e8e",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 102,
+      "fold": 2,
+      "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+      "identity": "cuvitru-19",
+      "original_query_id": "OUTCOME-0724",
+      "query_id": "T128-75116f1275abec74f14bed9c",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 103,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+      "identity": "sevospire-02",
+      "original_query_id": "DIFFICULT-0125",
+      "query_id": "T128-8be490b01abe719909efb93c",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 104,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+      "identity": "int08-0008-17",
+      "original_query_id": "DIFFICULT-0106",
+      "query_id": "T128-2019e13612caed89bf9cfe97",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 105,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+      "identity": "dro0b-0001-04",
+      "original_query_id": "OUTCOME-0728",
+      "query_id": "T128-3709e0acc64e625d915b0c1f",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 106,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+      "identity": "bb morning carton",
+      "original_query_id": "OUTCOME-0657",
+      "query_id": "T128-9a1e748e63ee9a224af32eec",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 107,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+      "identity": "6941714017-1",
+      "original_query_id": "OUTCOME-0307",
+      "query_id": "T128-1d1ed4610f27ce2b55e3cd97",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 108,
+      "fold": 3,
+      "group": "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+      "identity": "77l96n1c1",
+      "original_query_id": "OUTCOME-0353",
+      "query_id": "T128-e18bb8d1aaa27d41737c8972",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 109,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+      "identity": "45mg PFS CArton",
+      "original_query_id": "NDV2-007-P02",
+      "query_id": "T128-218d52d6ce5f82d286c2c83c",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 110,
+      "fold": 3,
+      "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+      "identity": "kedbumin-02",
+      "original_query_id": "OUTCOME-0752",
+      "query_id": "T128-849663577e9799a567224934",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 111,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+      "identity": "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22",
+      "original_query_id": "NDV2-012-P04",
+      "query_id": "T128-e53c199e2638d8e4a8ac1f76",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 112,
+      "fold": 2,
+      "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+      "identity": "cuvitru-19",
+      "original_query_id": "OUTCOME-0716",
+      "query_id": "T128-c53f693a764411500d838e47",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 113,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+      "identity": "sevospire-02",
+      "original_query_id": "DIFFICULT-0130",
+      "query_id": "T128-e613b94ebc9f038aab799d50",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": false,
+        "CONDITIONAL4": false,
+        "CONSTANT1": false
+      },
+      "execution_ordinal": 114,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+      "identity": "int08-0008-17",
+      "original_query_id": "DIFFICULT-0100",
+      "query_id": "T128-38aa9413a10be0fa0927479e",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 115,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml",
+      "identity": "SH230414C (250 ml Carton)",
+      "original_query_id": "OUTCOME-0537",
+      "query_id": "T128-d097e7c7c9d4b6bc76950aab",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 116,
+      "fold": 2,
+      "group": "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml",
+      "identity": "dro0b-0001-04",
+      "original_query_id": "OUTCOME-0731",
+      "query_id": "T128-57126632285ab284546b6801",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 117,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml",
+      "identity": "bb morning carton",
+      "original_query_id": "OUTCOME-0656",
+      "query_id": "T128-f61385e9df53d419294832a6",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 118,
+      "fold": 0,
+      "group": "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml",
+      "identity": "bef4f237-ccb8-4d28-bfc2-41c511a17d7f-01",
+      "original_query_id": "DIFFICULT-0051",
+      "query_id": "T128-6d473f8fdc2e2ceac6d82de0",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 119,
+      "fold": 3,
+      "group": "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml",
+      "identity": "6941714017-1",
+      "original_query_id": "OUTCOME-0310",
+      "query_id": "T128-06f0fa56a4fb0b5aa58d91d9",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 120,
+      "fold": 3,
+      "group": "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml",
+      "identity": "77l96n1c1",
+      "original_query_id": "OUTCOME-0354",
+      "query_id": "T128-10ee8665fedab7b80075d9a9",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 121,
+      "fold": 3,
+      "group": "NEW_SUPERGROUP:G33_box_prescription_STELARA",
+      "identity": "45mg PFS CArton",
+      "original_query_id": "NDV2-007-P03",
+      "query_id": "T128-a293d0991606816717840ab3",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 122,
+      "fold": 1,
+      "group": "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml",
+      "identity": "athletes-01",
+      "original_query_id": "OUTCOME-0628",
+      "query_id": "T128-9f08b9de93747712333a5c98",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 123,
+      "fold": 3,
+      "group": "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml",
+      "identity": "kedbumin-02",
+      "original_query_id": "OUTCOME-0762",
+      "query_id": "T128-6060bf54fe5b454d1474a24a",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 124,
+      "fold": 2,
+      "group": "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml",
+      "identity": "AntifluDesbx",
+      "original_query_id": "OUTCOME-0491",
+      "query_id": "T128-9ce553d4fc70c3b8d45e3e9f",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 125,
+      "fold": 2,
+      "group": "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml",
+      "identity": "cuvitru-19",
+      "original_query_id": "OUTCOME-0723",
+      "query_id": "T128-6d104a3f6166da6524df3614",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": true,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": true,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 126,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml",
+      "identity": "sevospire-02",
+      "original_query_id": "DIFFICULT-0132",
+      "query_id": "T128-e139408483a13f7b44b39827",
+      "target_in_natural_C128": true
+    },
+    {
+      "RAW_correct": false,
+      "correct": {
+        "BASE7": true,
+        "CONDITIONAL4": false,
+        "CONSTANT1": true
+      },
+      "execution_ordinal": 127,
+      "fold": 0,
+      "group": "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml",
+      "identity": "int08-0008-17",
+      "original_query_id": "DIFFICULT-0102",
+      "query_id": "T128-3dc2ff96eb5bd19b389ba994",
+      "target_in_natural_C128": true
+    }
+  ],
+  "scores": {
+    "BASE7": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.83125,
+      "equal_group_accuracy_fraction": "133/160",
+      "group_metrics": {
+        "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus": {
+          "accuracy_fraction": "1",
+          "correct": 1,
+          "count": 1
+        },
+        "NEW_SUPERGROUP:SF_BACITRACIN": {
+          "accuracy_fraction": "3/4",
+          "correct": 3,
+          "count": 4
+        },
+        "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml": {
+          "accuracy_fraction": "1/3",
+          "correct": 1,
+          "count": 3
+        },
+        "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+          "accuracy_fraction": "1/2",
+          "correct": 2,
+          "count": 4
+        },
+        "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+          "accuracy_fraction": "4/5",
+          "correct": 4,
+          "count": 5
+        },
+        "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml": {
+          "accuracy_fraction": "1",
+          "correct": 2,
+          "count": 2
+        },
+        "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 3
+        },
+        "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 2,
+          "count": 3
+        },
+        "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml": {
+          "accuracy_fraction": "1",
+          "correct": 1,
+          "count": 1
+        },
+        "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml": {
+          "accuracy_fraction": "1/2",
+          "correct": 3,
+          "count": 6
+        },
+        "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 2
+        },
+        "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml": {
+          "accuracy_fraction": "5/6",
+          "correct": 5,
+          "count": 6
+        },
+        "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml": {
+          "accuracy_fraction": "4/5",
+          "correct": 4,
+          "count": 5
+        },
+        "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 4,
+          "count": 6
+        },
+        "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml": {
+          "accuracy_fraction": "1",
+          "correct": 6,
+          "count": 6
+        },
+        "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml": {
+          "accuracy_fraction": "3/4",
+          "correct": 3,
+          "count": 4
+        },
+        "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml": {
+          "accuracy_fraction": "1",
+          "correct": 3,
+          "count": 3
+        },
+        "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml": {
+          "accuracy_fraction": "1",
+          "correct": 3,
+          "count": 3
+        },
+        "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        }
+      },
+      "rescue_vs_RAW": 23
+    },
+    "CONDITIONAL4": {
+      "break_vs_RAW": 1,
+      "correct": 107,
+      "equal_group_accuracy": 0.8197916666666667,
+      "equal_group_accuracy_fraction": "787/960",
+      "group_metrics": {
+        "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus": {
+          "accuracy_fraction": "1",
+          "correct": 1,
+          "count": 1
+        },
+        "NEW_SUPERGROUP:SF_BACITRACIN": {
+          "accuracy_fraction": "3/4",
+          "correct": 3,
+          "count": 4
+        },
+        "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 3
+        },
+        "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+          "accuracy_fraction": "1/2",
+          "correct": 2,
+          "count": 4
+        },
+        "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+          "accuracy_fraction": "3/5",
+          "correct": 3,
+          "count": 5
+        },
+        "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml": {
+          "accuracy_fraction": "1",
+          "correct": 2,
+          "count": 2
+        },
+        "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 3
+        },
+        "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 2,
+          "count": 3
+        },
+        "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml": {
+          "accuracy_fraction": "1",
+          "correct": 1,
+          "count": 1
+        },
+        "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 4,
+          "count": 6
+        },
+        "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 2
+        },
+        "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml": {
+          "accuracy_fraction": "5/6",
+          "correct": 5,
+          "count": 6
+        },
+        "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml": {
+          "accuracy_fraction": "4/5",
+          "correct": 4,
+          "count": 5
+        },
+        "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 4,
+          "count": 6
+        },
+        "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml": {
+          "accuracy_fraction": "1",
+          "correct": 6,
+          "count": 6
+        },
+        "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml": {
+          "accuracy_fraction": "3/4",
+          "correct": 3,
+          "count": 4
+        },
+        "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml": {
+          "accuracy_fraction": "1",
+          "correct": 3,
+          "count": 3
+        },
+        "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml": {
+          "accuracy_fraction": "1",
+          "correct": 3,
+          "count": 3
+        },
+        "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        }
+      },
+      "rescue_vs_RAW": 22
+    },
+    "CONSTANT1": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.8260416666666667,
+      "equal_group_accuracy_fraction": "793/960",
+      "group_metrics": {
+        "NEW_SUPERGROUP:G33_box_prescription_STELARA": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "NEW_SUPERGROUP:G55_box_homeopathic_GUNA_Stomach_Plus": {
+          "accuracy_fraction": "1",
+          "correct": 1,
+          "count": 1
+        },
+        "NEW_SUPERGROUP:SF_BACITRACIN": {
+          "accuracy_fraction": "3/4",
+          "correct": 3,
+          "count": 4
+        },
+        "SOURCE_XML:animal/08b74c2a-ac91-40db-a01e-7e2ba583c304.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 3
+        },
+        "SOURCE_XML:animal/4cc7b9ab-8ca4-47d7-8710-eecfbb59b407.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:animal/791af409-7699-4865-82cc-3612acb07071.xml": {
+          "accuracy_fraction": "1/2",
+          "correct": 2,
+          "count": 4
+        },
+        "SOURCE_XML:animal/9e047009-2006-460e-8877-3aa418e6d232.xml": {
+          "accuracy_fraction": "4/5",
+          "correct": 4,
+          "count": 5
+        },
+        "SOURCE_XML:animal/d77e5aea-97be-4dd8-9cf8-8052feb0c9ae.xml": {
+          "accuracy_fraction": "1",
+          "correct": 2,
+          "count": 2
+        },
+        "SOURCE_XML:animal/f31b084f-11ee-48c1-98fc-f429237ede31.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 3
+        },
+        "SOURCE_XML:homeopathic/262fbc45-89f5-982a-e063-6394a90a1a1e.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:homeopathic/28dc648b-531a-8daf-e063-6294a90a9b44.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 2,
+          "count": 3
+        },
+        "SOURCE_XML:otc/08099eb1-4b9a-113e-e063-6294a90aef48.xml": {
+          "accuracy_fraction": "1",
+          "correct": 1,
+          "count": 1
+        },
+        "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 4,
+          "count": 6
+        },
+        "SOURCE_XML:otc/24b33596-d38f-be47-e063-6394a90ab641.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:otc/2bef47f6-5cc4-db3a-e063-6294a90aaca0.xml": {
+          "accuracy_fraction": "0",
+          "correct": 0,
+          "count": 2
+        },
+        "SOURCE_XML:otc/4249d4bf-f85b-4ab7-aef2-6e77dcd591a8.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/45b08d8c-c754-d45b-e063-6394a90aa4c8.xml": {
+          "accuracy_fraction": "5/6",
+          "correct": 5,
+          "count": 6
+        },
+        "SOURCE_XML:otc/51147704-1189-4444-9ad5-499a8ea25673.xml": {
+          "accuracy_fraction": "4/5",
+          "correct": 4,
+          "count": 5
+        },
+        "SOURCE_XML:otc/54dbdbc2-cdaf-17cf-e054-00144ff8d46c.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/631937d9-6254-44be-9813-ec54c01c90e9.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml": {
+          "accuracy_fraction": "2/3",
+          "correct": 4,
+          "count": 6
+        },
+        "SOURCE_XML:otc/9452d82d-433a-4f1d-8b97-b76ddc84b1aa.xml": {
+          "accuracy_fraction": "1",
+          "correct": 6,
+          "count": 6
+        },
+        "SOURCE_XML:otc/b8a4f38d-1443-4c0f-b4f3-6099018c1e84.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f.xml": {
+          "accuracy_fraction": "3/4",
+          "correct": 3,
+          "count": 4
+        },
+        "SOURCE_XML:other/195585b0-5cd1-4638-9765-224db70d6e44.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:other/27037958-0529-4374-bf3d-e74da80a04dc.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        },
+        "SOURCE_XML:prescription/1b5d6d46-a8fc-ed74-e063-6294a90af6c1.xml": {
+          "accuracy_fraction": "1",
+          "correct": 3,
+          "count": 3
+        },
+        "SOURCE_XML:prescription/1bfe0e55-f3ec-40ea-965d-3e954a31cb29.xml": {
+          "accuracy_fraction": "1",
+          "correct": 3,
+          "count": 3
+        },
+        "SOURCE_XML:prescription/5f6533d8-cd32-44e6-964f-d1087530172c.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:prescription/9cfbe4a1-045c-489f-8ca7-9d595997dab7.xml": {
+          "accuracy_fraction": "1",
+          "correct": 4,
+          "count": 4
+        },
+        "SOURCE_XML:prescription/dcfcbe55-750e-4f29-9ebe-fbf25d4083cd.xml": {
+          "accuracy_fraction": "1",
+          "correct": 5,
+          "count": 5
+        }
+      },
+      "rescue_vs_RAW": 23
+    }
+  },
+  "status": "TRAIN128_DISAGREEMENT_OOF4_JOINED",
+  "target_absent_count": 0
+}

@@ -1,0 +1,53 @@
+{
+  "EVAL_access_from_parent_gate": false,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_train128_hold_lift_exact_oof4_authority_v1_20260910.json",
+    "sha256": "1e4401c51656aa67c937f9b07060707d0a1beb437bcc5680c4a4678683c6db01"
+  },
+  "elapsed": "00:01:06",
+  "exit_code": "0:0",
+  "job_id": "5139348",
+  "new_EVAL_score": null,
+  "primary_gates_unchanged": {
+    "all_BASE_correct_retained": false,
+    "count_strictly_above_BASE7": false,
+    "count_strictly_above_GAP_HOLD1": false,
+    "equal_group_strictly_above_BASE7": false,
+    "equal_group_strictly_above_GAP_HOLD1": false
+  },
+  "primary_promoted": false,
+  "recorded_utc": "2026-09-10T07:57:55.204997+00:00",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_hold_lift_exact_oof4_v1/result.json",
+    "sha256": "b8ba995301206e14cbc7e69d59dbf1918e2b637fa9700c198806745e2f3490e8"
+  },
+  "scheduler_state": "COMPLETED",
+  "scores": {
+    "BASE7": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.83125,
+      "equal_group_accuracy_fraction": "133/160",
+      "rescue_vs_RAW": 23
+    },
+    "CONTENT_HOLD1": {
+      "break_vs_RAW": 3,
+      "correct": 108,
+      "equal_group_accuracy": 0.8302083333333333,
+      "equal_group_accuracy_fraction": "797/960",
+      "rescue_vs_RAW": 25
+    },
+    "GAP_HOLD1": {
+      "break_vs_RAW": 1,
+      "correct": 110,
+      "equal_group_accuracy": 0.8546875,
+      "equal_group_accuracy_fraction": "547/640",
+      "rescue_vs_RAW": 25
+    }
+  },
+  "status": "HOLD_LIFT_CONTENT_PRIMARY_NO_GO_GAP_CONTROL_EXPLORATORY_SIGNAL",
+  "validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_hold_lift_exact_oof4_v1/validation.json",
+    "sha256": "878a6ecc54574865277e3f6b862b95074e5a9e908f7ca5bf3c1a393d1696fffd"
+  }
+}

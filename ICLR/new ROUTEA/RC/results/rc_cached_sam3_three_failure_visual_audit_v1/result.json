@@ -1,0 +1,1471 @@
+{
+  "HYP_GO_claimed": false,
+  "conclusions": [
+    "Both TRAIN H0 cases have existing automatic masks covering the visible subject; their frozen query seed falls outside every mask.",
+    "The EVAL error selects the visible foreground carton but confuses a same-brand reference despite visible distinguishing barcode/code details."
+  ],
+  "coverage": {
+    "contact_sheet_pages": 5,
+    "original_automatic_masks_plotted_and_viewed": 65,
+    "queries_directly_viewed": 3,
+    "reference_images_directly_viewed": 2,
+    "selected_component_detail_panels": 1
+  },
+  "limits": [
+    "Visually identifying a corresponding existing mask is posthoc oracle description only; these masks were not substituted into the model or newly scored.",
+    "The selected native region is an approximate geometric support, not a certified GT mask or a local receptive-field guarantee.",
+    "No new SAM, RoMa, or encoder inference, model training, prediction alteration, or change to the frozen selection rule was performed.",
+    "The historical SAM cache provenance limitation remains: no input-image SHA was embedded at cache generation."
+  ],
+  "new_model_forwards": 0,
+  "records": [
+    {
+      "QUERY_result": {
+        "H0_candidate_count": 0,
+        "MRR": 0.16666666666666666,
+        "correct": false,
+        "prediction_physical_row": 594,
+        "prediction_position": 2,
+        "target_rank": 6,
+        "target_valid": true,
+        "valid_candidate_count": 128
+      },
+      "all_masks": [
+        {
+          "all_native_component_sizes": [
+            25
+          ],
+          "confidence": 0.84765625,
+          "confidence_binary64": "0x1.b200000000000p-1",
+          "mask_index": 0,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 25,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            20
+          ],
+          "confidence": 0.875,
+          "confidence_binary64": "0x1.c000000000000p-1",
+          "mask_index": 1,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 20,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            22
+          ],
+          "confidence": 0.890625,
+          "confidence_binary64": "0x1.c800000000000p-1",
+          "mask_index": 2,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 22,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            46
+          ],
+          "confidence": 0.8828125,
+          "confidence_binary64": "0x1.c400000000000p-1",
+          "mask_index": 3,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 46,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            32
+          ],
+          "confidence": 0.87890625,
+          "confidence_binary64": "0x1.c200000000000p-1",
+          "mask_index": 4,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 32,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            31
+          ],
+          "confidence": 0.87890625,
+          "confidence_binary64": "0x1.c200000000000p-1",
+          "mask_index": 5,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 31,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            29
+          ],
+          "confidence": 0.90234375,
+          "confidence_binary64": "0x1.ce00000000000p-1",
+          "mask_index": 6,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 29,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            34
+          ],
+          "confidence": 0.89453125,
+          "confidence_binary64": "0x1.ca00000000000p-1",
+          "mask_index": 7,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 34,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            29
+          ],
+          "confidence": 0.859375,
+          "confidence_binary64": "0x1.b800000000000p-1",
+          "mask_index": 8,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 29,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            44
+          ],
+          "confidence": 0.8984375,
+          "confidence_binary64": "0x1.cc00000000000p-1",
+          "mask_index": 9,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 44,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            13
+          ],
+          "confidence": 0.890625,
+          "confidence_binary64": "0x1.c800000000000p-1",
+          "mask_index": 10,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 13,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            148
+          ],
+          "confidence": 0.88671875,
+          "confidence_binary64": "0x1.c600000000000p-1",
+          "mask_index": 11,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": true,
+          "native_true_count": 148,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 148,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            7
+          ],
+          "confidence": 0.76171875,
+          "confidence_binary64": "0x1.8600000000000p-1",
+          "mask_index": 12,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 7,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            44
+          ],
+          "confidence": 0.8828125,
+          "confidence_binary64": "0x1.c400000000000p-1",
+          "mask_index": 13,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 44,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            36
+          ],
+          "confidence": 0.88671875,
+          "confidence_binary64": "0x1.c600000000000p-1",
+          "mask_index": 14,
+          "native_mask_source_SHA": "18bcf7d602a35e49e8144b0390768f635a79b9b1043846c04869783422903148",
+          "native_seed_in_mask": false,
+          "native_true_count": 36,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            24
+          ],
+          "confidence": 0.8984375,
+          "confidence_binary64": "0x1.cc00000000000p-1",
+          "mask_index": 0,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 24,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            20
+          ],
+          "confidence": 0.921875,
+          "confidence_binary64": "0x1.d800000000000p-1",
+          "mask_index": 1,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 20,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            22
+          ],
+          "confidence": 0.9375,
+          "confidence_binary64": "0x1.e000000000000p-1",
+          "mask_index": 2,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 22,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            45
+          ],
+          "confidence": 0.91796875,
+          "confidence_binary64": "0x1.d600000000000p-1",
+          "mask_index": 3,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 45,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            32
+          ],
+          "confidence": 0.91796875,
+          "confidence_binary64": "0x1.d600000000000p-1",
+          "mask_index": 4,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 32,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            1,
+            1
+          ],
+          "confidence": 0.2314453125,
+          "confidence_binary64": "0x1.da00000000000p-3",
+          "mask_index": 5,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 2,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            31
+          ],
+          "confidence": 0.91796875,
+          "confidence_binary64": "0x1.d600000000000p-1",
+          "mask_index": 6,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 31,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            29
+          ],
+          "confidence": 0.9453125,
+          "confidence_binary64": "0x1.e400000000000p-1",
+          "mask_index": 7,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 29,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            43
+          ],
+          "confidence": 0.9375,
+          "confidence_binary64": "0x1.e000000000000p-1",
+          "mask_index": 8,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 43,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            34
+          ],
+          "confidence": 0.9453125,
+          "confidence_binary64": "0x1.e400000000000p-1",
+          "mask_index": 9,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 34,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            1
+          ],
+          "confidence": 0.22265625,
+          "confidence_binary64": "0x1.c800000000000p-3",
+          "mask_index": 10,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 1,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            29
+          ],
+          "confidence": 0.8984375,
+          "confidence_binary64": "0x1.cc00000000000p-1",
+          "mask_index": 11,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 29,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            13
+          ],
+          "confidence": 0.93359375,
+          "confidence_binary64": "0x1.de00000000000p-1",
+          "mask_index": 12,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 13,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            147
+          ],
+          "confidence": 0.92578125,
+          "confidence_binary64": "0x1.da00000000000p-1",
+          "mask_index": 13,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": true,
+          "native_true_count": 147,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 147,
+          "selected_by_frozen_QUERY_rule": true
+        },
+        {
+          "all_native_component_sizes": [
+            7
+          ],
+          "confidence": 0.796875,
+          "confidence_binary64": "0x1.9800000000000p-1",
+          "mask_index": 14,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 7,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            44
+          ],
+          "confidence": 0.9296875,
+          "confidence_binary64": "0x1.dc00000000000p-1",
+          "mask_index": 15,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 44,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            36
+          ],
+          "confidence": 0.93359375,
+          "confidence_binary64": "0x1.de00000000000p-1",
+          "mask_index": 16,
+          "native_mask_source_SHA": "27c43fc4f7f1bd5c39db9abe9fdbcd19972c351d5de86a669887604c62586864",
+          "native_seed_in_mask": false,
+          "native_true_count": 36,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            25
+          ],
+          "confidence": 0.640625,
+          "confidence_binary64": "0x1.4800000000000p-1",
+          "mask_index": 0,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 25,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            20
+          ],
+          "confidence": 0.66796875,
+          "confidence_binary64": "0x1.5600000000000p-1",
+          "mask_index": 1,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 20,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            22
+          ],
+          "confidence": 0.7109375,
+          "confidence_binary64": "0x1.6c00000000000p-1",
+          "mask_index": 2,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 22,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            46
+          ],
+          "confidence": 0.6875,
+          "confidence_binary64": "0x1.6000000000000p-1",
+          "mask_index": 3,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 46,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            32
+          ],
+          "confidence": 0.68359375,
+          "confidence_binary64": "0x1.5e00000000000p-1",
+          "mask_index": 4,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 32,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            31
+          ],
+          "confidence": 0.6953125,
+          "confidence_binary64": "0x1.6400000000000p-1",
+          "mask_index": 5,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 31,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            29
+          ],
+          "confidence": 0.72265625,
+          "confidence_binary64": "0x1.7200000000000p-1",
+          "mask_index": 6,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 29,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            34
+          ],
+          "confidence": 0.7109375,
+          "confidence_binary64": "0x1.6c00000000000p-1",
+          "mask_index": 7,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 34,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            29
+          ],
+          "confidence": 0.67578125,
+          "confidence_binary64": "0x1.5a00000000000p-1",
+          "mask_index": 8,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 29,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            44
+          ],
+          "confidence": 0.72265625,
+          "confidence_binary64": "0x1.7200000000000p-1",
+          "mask_index": 9,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 44,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            13
+          ],
+          "confidence": 0.703125,
+          "confidence_binary64": "0x1.6800000000000p-1",
+          "mask_index": 10,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 13,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            147
+          ],
+          "confidence": 0.69140625,
+          "confidence_binary64": "0x1.6200000000000p-1",
+          "mask_index": 11,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": true,
+          "native_true_count": 147,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 147,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            7
+          ],
+          "confidence": 0.5703125,
+          "confidence_binary64": "0x1.2400000000000p-1",
+          "mask_index": 12,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 7,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            44
+          ],
+          "confidence": 0.69140625,
+          "confidence_binary64": "0x1.6200000000000p-1",
+          "mask_index": 13,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 44,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            36
+          ],
+          "confidence": 0.69140625,
+          "confidence_binary64": "0x1.6200000000000p-1",
+          "mask_index": 14,
+          "native_mask_source_SHA": "8533c37a2ab66b9bba35d6f904344ddb742d6c05e52df279da017b995899cb3b",
+          "native_seed_in_mask": false,
+          "native_true_count": 36,
+          "prompt": "medicine box",
+          "prompt_index": 3,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        }
+      ],
+      "execution_ordinal": 6,
+      "figures": [
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_three_failure_visual_audit_v1/exec0006_all_masks_page1.png",
+          "sha256": "eed3d8a8676a0400133f32883850af7da940e774ec39c2dabbacb840af5e26bd"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_three_failure_visual_audit_v1/exec0006_all_masks_page2.png",
+          "sha256": "053e65cd440b0f591e1ac12f097271166f7aec3082cdf928efe014e8b1eaf4d0"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_three_failure_visual_audit_v1/exec0006_all_masks_page3.png",
+          "sha256": "acb92ffa2d5827d54c8461ba4bf18f9632f9b96173f487e64a280c2982157c86"
+        },
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_three_failure_visual_audit_v1/exec0006_selected_component.png",
+          "sha256": "78702197fe31215423433cec64428d156d2212220d0b66cc7355507ba965b62c"
+        }
+      ],
+      "frozen_QUERY_region": {
+        "SAM_confidence_binary64": "0x1.da00000000000p-1",
+        "component_index": 0,
+        "mask_index": 13,
+        "prompt_index": 1,
+        "query_token_indices": [
+          378,
+          379,
+          380,
+          381,
+          382,
+          386,
+          387,
+          388,
+          389,
+          390,
+          391,
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399,
+          400,
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432,
+          433,
+          434,
+          435,
+          436,
+          437,
+          438,
+          439,
+          440,
+          441,
+          442,
+          443,
+          444,
+          445,
+          446,
+          450,
+          451,
+          452,
+          453,
+          454,
+          455,
+          456,
+          457,
+          458,
+          459,
+          460,
+          461,
+          462,
+          463,
+          464,
+          465,
+          466,
+          467,
+          468,
+          469,
+          470,
+          471,
+          472,
+          473,
+          474,
+          475,
+          476,
+          477,
+          478,
+          483,
+          484,
+          485,
+          486,
+          487,
+          488,
+          489,
+          490,
+          491,
+          492,
+          493,
+          494,
+          495,
+          496,
+          497,
+          498,
+          499,
+          500,
+          501,
+          502,
+          503,
+          504,
+          505,
+          506,
+          507,
+          508,
+          509,
+          510,
+          515,
+          516,
+          517,
+          518,
+          519,
+          520,
+          521,
+          522,
+          523,
+          524,
+          525,
+          526,
+          527,
+          528,
+          529,
+          530,
+          531,
+          532,
+          533,
+          534,
+          535,
+          536,
+          537,
+          538,
+          539,
+          540,
+          541,
+          542
+        ],
+        "sampled_mask_sha256": "6324fe21149d0d5821e04726a6d7a76d0791eda77bf88c70e203ce7d6295cfb6",
+        "seed": 471,
+        "state": "H1"
+      },
+      "legal_seed_component_mask_count": 3,
+      "mask_count": 47,
+      "mask_count_containing_seed": 3,
+      "native_grid_shape": [
+        24,
+        32
+      ],
+      "observation": {
+        "facts_zh": [
+          "seed471为raw(row14,col23)，原图中心(2961,1827)，位于前景盒条码。",
+          "47个自动mask中3个包含seed且其component>=4；冻结规则选择box m13，置信0.92578125，完整component147格。",
+          "选中component在原图覆盖可见的Cold-EEZE长侧面、红色logo区及整条白色条码区；native边缘包含少量背景，不宣称完美GT分割。",
+          "query可见条码0 91108 35024 1及UC-0350-24-01；target599的350 label reference有对应条码/代码。",
+          "wrong594的320 label update reference是同品牌另一包装，条码0 91108 32010 7；其正面的10片/口味等并非query可见内容，不以这些不可见字样要求模型区分。",
+          "此V-only完整component均值读出把target排第6，选择594。"
+        ],
+        "failure_stage": "IDENTITY_DISCRIMINATION_AFTER_VISIBLE_SUBJECT_REGION_SELECTED",
+        "interpretation_zh": "该例不是seed落背景或SAM没有覆盖主体。失败发生在已选择可见主体后的reference身份区分；仅凭视觉不能进一步断言条码是否被编码器准确编码，或把全部原因归为均值聚合。",
+        "mask_bank_contains_visually_corresponding_subject": true,
+        "selected_existing_mask": {
+          "mask_index": 13,
+          "native_component_size": 147,
+          "prompt": "box",
+          "prompt_index": 1
+        },
+        "visible_seed_location": "On the barcode printed on the foreground Cold-EEZE long side panel."
+      },
+      "query_id": "DIFFICULT-0006",
+      "raw_size_wh": [
+        4032,
+        3024
+      ],
+      "reference_image_bindings": {
+        "594": {
+          "directly_viewed_in_this_audit": true,
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/320 label update.jpg",
+          "sha256": "800bdf7bfec3344ba32544c81386c1963060b51888da74ef55c40ba2fae8849d"
+        },
+        "599": {
+          "directly_viewed_in_this_audit": true,
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/350 label.jpg",
+          "sha256": "9caa9d792080677a4f8bf470b7b477ec01045b91be4cd29412b88c5dc6eee78b"
+        }
+      },
+      "reference_paths": {
+        "594": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/320 label update.jpg",
+        "599": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/350 label.jpg"
+      },
+      "role": "EVAL",
+      "seed": 471,
+      "seed_display_frame": "EXIF6_CLOCKWISE_DISPLAY_ONLY",
+      "seed_display_xy_in_SAM_resolution": [
+        228.0,
+        564.0
+      ],
+      "seed_raw_center_xy": [
+        2961.0,
+        1827.0
+      ],
+      "seed_raw_row_col": [
+        14,
+        23
+      ],
+      "source_image": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/1/difficult/350 label_0000004.JPG",
+        "sha256": "97b88c7af192344843e95cd1472026ddcc0857d57e102ee0c112c5e139190716"
+      },
+      "target_reference_physical_row": 599
+    },
+    {
+      "QUERY_result": {
+        "H0_candidate_count": 128,
+        "MRR": 0.0,
+        "correct": false,
+        "prediction_physical_row": null,
+        "prediction_position": null,
+        "target_rank": null,
+        "target_valid": false,
+        "valid_candidate_count": 0
+      },
+      "all_masks": [
+        {
+          "all_native_component_sizes": [
+            93
+          ],
+          "confidence": 0.8515625,
+          "confidence_binary64": "0x1.b400000000000p-1",
+          "mask_index": 0,
+          "native_mask_source_SHA": "22cc611b2857539b92701b30d159ff846964667db00a06a73c0020f8abcf92f9",
+          "native_seed_in_mask": false,
+          "native_true_count": 93,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            20
+          ],
+          "confidence": 0.86328125,
+          "confidence_binary64": "0x1.ba00000000000p-1",
+          "mask_index": 1,
+          "native_mask_source_SHA": "22cc611b2857539b92701b30d159ff846964667db00a06a73c0020f8abcf92f9",
+          "native_seed_in_mask": false,
+          "native_true_count": 20,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            51
+          ],
+          "confidence": 0.86328125,
+          "confidence_binary64": "0x1.ba00000000000p-1",
+          "mask_index": 2,
+          "native_mask_source_SHA": "22cc611b2857539b92701b30d159ff846964667db00a06a73c0020f8abcf92f9",
+          "native_seed_in_mask": false,
+          "native_true_count": 51,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            138
+          ],
+          "confidence": 0.53125,
+          "confidence_binary64": "0x1.1000000000000p-1",
+          "mask_index": 3,
+          "native_mask_source_SHA": "22cc611b2857539b92701b30d159ff846964667db00a06a73c0020f8abcf92f9",
+          "native_seed_in_mask": false,
+          "native_true_count": 138,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            51
+          ],
+          "confidence": 0.77734375,
+          "confidence_binary64": "0x1.8e00000000000p-1",
+          "mask_index": 0,
+          "native_mask_source_SHA": "9a555a26eb55991e44268f626078a8743e755a8f584697308058b93b21ea6e68",
+          "native_seed_in_mask": false,
+          "native_true_count": 51,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            93
+          ],
+          "confidence": 0.54296875,
+          "confidence_binary64": "0x1.1600000000000p-1",
+          "mask_index": 1,
+          "native_mask_source_SHA": "9a555a26eb55991e44268f626078a8743e755a8f584697308058b93b21ea6e68",
+          "native_seed_in_mask": false,
+          "native_true_count": 93,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            20
+          ],
+          "confidence": 0.77734375,
+          "confidence_binary64": "0x1.8e00000000000p-1",
+          "mask_index": 2,
+          "native_mask_source_SHA": "9a555a26eb55991e44268f626078a8743e755a8f584697308058b93b21ea6e68",
+          "native_seed_in_mask": false,
+          "native_true_count": 20,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            138
+          ],
+          "confidence": 0.333984375,
+          "confidence_binary64": "0x1.5600000000000p-2",
+          "mask_index": 3,
+          "native_mask_source_SHA": "9a555a26eb55991e44268f626078a8743e755a8f584697308058b93b21ea6e68",
+          "native_seed_in_mask": false,
+          "native_true_count": 138,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        }
+      ],
+      "execution_ordinal": 56,
+      "figures": [
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_three_failure_visual_audit_v1/exec0056_all_masks_page1.png",
+          "sha256": "2c12edce1d26a82dd98616c801fe28349a663e695b33c5a9288f60f64f14c809"
+        }
+      ],
+      "frozen_QUERY_region": {
+        "query_token_indices": [],
+        "reason": "NO_LEGAL_SEED_COMPONENT",
+        "seed": 338,
+        "state": "H0"
+      },
+      "legal_seed_component_mask_count": 0,
+      "mask_count": 8,
+      "mask_count_containing_seed": 0,
+      "native_grid_shape": [
+        24,
+        32
+      ],
+      "observation": {
+        "facts_zh": [
+          "seed338为raw(row10,col18)，原图中心(2331,1323)，显示时仅按EXIF6转向。",
+          "全部8个自动mask中0个包含此seed；因此不是component>=4门槛把已覆盖seed的小主体排掉。",
+          "product package的m2及box的m0在图上覆盖蓝色Interceptor PLUS完整可见长盒面；现成mask主体并未缺失。"
+        ],
+        "failure_stage": "QUERY_SEED_MISSES_ALL_EXISTING_MASKS",
+        "interpretation_zh": "此query-only H0的直接原因是固定query seed在所有已存在的mask之外；不能从H0推导SAM没有找到药盒。",
+        "mask_bank_contains_visually_corresponding_subject": true,
+        "visible_seed_location": "Blue Interceptor PLUS carton right edge exterior, on tabletop/shadow beside the carton.",
+        "visually_corresponding_existing_masks_oracle_description_only": [
+          {
+            "mask_index": 2,
+            "native_true_count": 51,
+            "prompt": "product package",
+            "prompt_index": 0
+          },
+          {
+            "mask_index": 0,
+            "native_true_count": 51,
+            "prompt": "box",
+            "prompt_index": 1
+          }
+        ]
+      },
+      "query_id": "DIFFICULT-0101",
+      "raw_size_wh": [
+        4032,
+        3024
+      ],
+      "reference_image_bindings": {
+        "395": {
+          "directly_viewed_in_this_audit": false,
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/int08-0008-17.jpg",
+          "sha256": "bde40d53d4a1635375b4955f5028553542a41a405bcf2bbd36e52800f78d4b9e"
+        }
+      },
+      "reference_paths": {
+        "395": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/int08-0008-17.jpg"
+      },
+      "role": "TRAIN",
+      "seed": 338,
+      "seed_display_frame": "EXIF6_CLOCKWISE_DISPLAY_ONLY",
+      "seed_display_xy_in_SAM_resolution": [
+        324.0,
+        444.0
+      ],
+      "seed_raw_center_xy": [
+        2331.0,
+        1323.0
+      ],
+      "seed_raw_row_col": [
+        10,
+        18
+      ],
+      "source_image": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/1/difficult/int08-0008-17_00000002.jpg",
+        "sha256": "dc89013e88c49cda63a618503cba45b239b2d5e432e2d9b1b687a3ee66d48bda"
+      },
+      "target_reference_physical_row": 395
+    },
+    {
+      "QUERY_result": {
+        "H0_candidate_count": 128,
+        "MRR": 0.0,
+        "correct": false,
+        "prediction_physical_row": null,
+        "prediction_position": null,
+        "target_rank": null,
+        "target_valid": false,
+        "valid_candidate_count": 0
+      },
+      "all_masks": [
+        {
+          "all_native_component_sizes": [
+            6
+          ],
+          "confidence": 0.30859375,
+          "confidence_binary64": "0x1.3c00000000000p-2",
+          "mask_index": 0,
+          "native_mask_source_SHA": "d9f17a182a929b637771199419111b637536862e2985051ffdd41181f3d4dc44",
+          "native_seed_in_mask": false,
+          "native_true_count": 6,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            69
+          ],
+          "confidence": 0.87109375,
+          "confidence_binary64": "0x1.be00000000000p-1",
+          "mask_index": 1,
+          "native_mask_source_SHA": "d9f17a182a929b637771199419111b637536862e2985051ffdd41181f3d4dc44",
+          "native_seed_in_mask": false,
+          "native_true_count": 69,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            57
+          ],
+          "confidence": 0.87890625,
+          "confidence_binary64": "0x1.c200000000000p-1",
+          "mask_index": 2,
+          "native_mask_source_SHA": "d9f17a182a929b637771199419111b637536862e2985051ffdd41181f3d4dc44",
+          "native_seed_in_mask": false,
+          "native_true_count": 57,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            8
+          ],
+          "confidence": 0.294921875,
+          "confidence_binary64": "0x1.2e00000000000p-2",
+          "mask_index": 3,
+          "native_mask_source_SHA": "d9f17a182a929b637771199419111b637536862e2985051ffdd41181f3d4dc44",
+          "native_seed_in_mask": false,
+          "native_true_count": 8,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            14
+          ],
+          "confidence": 0.267578125,
+          "confidence_binary64": "0x1.1200000000000p-2",
+          "mask_index": 4,
+          "native_mask_source_SHA": "d9f17a182a929b637771199419111b637536862e2985051ffdd41181f3d4dc44",
+          "native_seed_in_mask": false,
+          "native_true_count": 14,
+          "prompt": "product package",
+          "prompt_index": 0,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            6
+          ],
+          "confidence": 0.26171875,
+          "confidence_binary64": "0x1.0c00000000000p-2",
+          "mask_index": 0,
+          "native_mask_source_SHA": "a475d6ac56d4a797be6f616ce1294a32a5f858ba1aa996b3cc130a60e3bb8e23",
+          "native_seed_in_mask": false,
+          "native_true_count": 6,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            8
+          ],
+          "confidence": 0.287109375,
+          "confidence_binary64": "0x1.2600000000000p-2",
+          "mask_index": 1,
+          "native_mask_source_SHA": "a475d6ac56d4a797be6f616ce1294a32a5f858ba1aa996b3cc130a60e3bb8e23",
+          "native_seed_in_mask": false,
+          "native_true_count": 8,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            68
+          ],
+          "confidence": 0.85546875,
+          "confidence_binary64": "0x1.b600000000000p-1",
+          "mask_index": 2,
+          "native_mask_source_SHA": "a475d6ac56d4a797be6f616ce1294a32a5f858ba1aa996b3cc130a60e3bb8e23",
+          "native_seed_in_mask": false,
+          "native_true_count": 68,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            14
+          ],
+          "confidence": 0.2275390625,
+          "confidence_binary64": "0x1.d200000000000p-3",
+          "mask_index": 3,
+          "native_mask_source_SHA": "a475d6ac56d4a797be6f616ce1294a32a5f858ba1aa996b3cc130a60e3bb8e23",
+          "native_seed_in_mask": false,
+          "native_true_count": 14,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        },
+        {
+          "all_native_component_sizes": [
+            57
+          ],
+          "confidence": 0.9453125,
+          "confidence_binary64": "0x1.e400000000000p-1",
+          "mask_index": 4,
+          "native_mask_source_SHA": "a475d6ac56d4a797be6f616ce1294a32a5f858ba1aa996b3cc130a60e3bb8e23",
+          "native_seed_in_mask": false,
+          "native_true_count": 57,
+          "prompt": "box",
+          "prompt_index": 1,
+          "seed_component_size": 0,
+          "selected_by_frozen_QUERY_rule": false
+        }
+      ],
+      "execution_ordinal": 66,
+      "figures": [
+        {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_three_failure_visual_audit_v1/exec0066_all_masks_page1.png",
+          "sha256": "43115f3ab5d2b8f26ae9f006e7b4c17d9408904c8e999c1b8dd470f617a31b40"
+        }
+      ],
+      "frozen_QUERY_region": {
+        "query_token_indices": [],
+        "reason": "NO_LEGAL_SEED_COMPONENT",
+        "seed": 526,
+        "state": "H0"
+      },
+      "legal_seed_component_mask_count": 0,
+      "mask_count": 10,
+      "mask_count_containing_seed": 0,
+      "native_grid_shape": [
+        24,
+        32
+      ],
+      "observation": {
+        "facts_zh": [
+          "seed526为raw(row16,col14)，原图中心(1827,2079)，显示点落在黄色盒左侧玩具/支架位置。",
+          "全部10个自动mask中0个包含seed。",
+          "product package m2与box m4在图上覆盖黄色Sevospire盒可见主体；两者native支持均57格。"
+        ],
+        "failure_stage": "QUERY_SEED_MISSES_ALL_EXISTING_MASKS",
+        "interpretation_zh": "同样是query seed未落到任何被提议对象上；有覆盖主体的既存自动mask，尚未替模型重新选用或评分。",
+        "mask_bank_contains_visually_corresponding_subject": true,
+        "visible_seed_location": "Small toy/scooter support to the left of the yellow Sevospire carton, outside the carton.",
+        "visually_corresponding_existing_masks_oracle_description_only": [
+          {
+            "mask_index": 2,
+            "native_true_count": 57,
+            "prompt": "product package",
+            "prompt_index": 0
+          },
+          {
+            "mask_index": 4,
+            "native_true_count": 57,
+            "prompt": "box",
+            "prompt_index": 1
+          }
+        ]
+      },
+      "query_id": "DIFFICULT-0128",
+      "raw_size_wh": [
+        4032,
+        3024
+      ],
+      "reference_image_bindings": {
+        "480": {
+          "directly_viewed_in_this_audit": false,
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/sevospire-02.jpg",
+          "sha256": "e8c383ae75f82f0205c9012a904e7c5d9cf9e598e32454093cd35ffcd0990132"
+        }
+      },
+      "reference_paths": {
+        "480": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/sevospire-02.jpg"
+      },
+      "role": "TRAIN",
+      "seed": 526,
+      "seed_display_frame": "EXIF6_CLOCKWISE_DISPLAY_ONLY",
+      "seed_display_xy_in_SAM_resolution": [
+        180.0,
+        348.0
+      ],
+      "seed_raw_center_xy": [
+        1827.0,
+        2079.0
+      ],
+      "seed_raw_row_col": [
+        16,
+        14
+      ],
+      "source_image": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/1/difficult/sevospire-02_00000004.jpg",
+        "sha256": "dbc8365c5e5cc3f57aa9f5e75a026d4194b5261e63bc073950a6dcce922b1d55"
+      },
+      "target_reference_physical_row": 480
+    }
+  ],
+  "scientific_GO_or_NO_GO": null,
+  "sources": {
+    "P_V_prejoin": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_region_closure_v1/prejoin.json",
+      "sha256": "0c9bfca90d650e43d54bfc9b66cb88040e6dd49cf90f2bde9a83189336f9f607"
+    },
+    "P_V_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_region_closure_v1/result.json",
+      "sha256": "bf7970d5df75809f55b095a6d9d28d70ca821b195dfdf1f30cd0a3c5abb5a1ad"
+    },
+    "frozen_selector": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_cached_sam3_region_closure_v1.py",
+      "sha256": "d282fa5be4926c6c1e2ea28f24b5790ffefedadaca0cbbfee10fdbcc8d73273b"
+    },
+    "mask_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_existing_sam3_full64_overlap_v1/manifest.json",
+      "sha256": "11248cb09c2d599061186093df2c55eebf5644f9d788c1fce9715755bd1faac7"
+    }
+  },
+  "status": "RC_CACHED_SAM3_THREE_FAILURE_VISUAL_AUDIT_V1_COMPLETE",
+  "training_updates": 0,
+  "visual_inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_cached_sam3_three_failure_visual_audit_v1/visual_inputs.json",
+    "sha256": "1d5030348fb5f9c1c494bec6488899e88577598c8ed423c1b468e0c639734190"
+  }
+}

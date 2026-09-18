@@ -1,0 +1,59 @@
+{
+  "bindings": {
+    "cbind": {
+      "path": "results/romav2_colnomic_difficult90_cbind_prejoin_v1/validation.json",
+      "sha256": "1b786231e01dbbdf054e4f37cdda37e993d2cbd05fcfe63188f1fea5b4d3592e",
+      "status": "ROMAV2_COLNOMIC_DIFFICULT90_CBIND_PREJOIN_VALIDATION_PASS"
+    },
+    "frozen_gate": {
+      "path": "results/romav2_colnomic_frozen_gate_definition_v1/validation.json",
+      "sha256": "3dc6fee548ae7171ae6fe0c018cdfe4d31d2e7efecd3790fe0c43e6235f5c372",
+      "status": "ROMAV2_COLNOMIC_FROZEN_GATE_DEFINITION_VALIDATION_PASS"
+    },
+    "manifest": {
+      "path": "results/romav2_colnomic_difficult90_regression_manifest_v1/receipt.json",
+      "sha256": "cc2b65f7bc06a8bb047c386f79af62b76149378ce0f10b29b75c5633d64707b3",
+      "status": "ROMAV2_COLNOMIC_DIFFICULT90_MANIFEST_BINDING_PASS"
+    },
+    "model_lineage": {
+      "path": "results/romav2_colnomic_new_difficult_model_lineage_v1/result.json",
+      "sha256": "6d5670561a2188deaea01f9c4373f2d4435ba45114307d95bcde555e5e7f2c82",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_MODEL_LINEAGE_FROZEN"
+    },
+    "real": {
+      "path": "results/romav2_colnomic_difficult90_real_prejoin_v1/validation.json",
+      "sha256": "28160696964403ee73aec9fb3edebd28b8e2eb56af1c85b4173788e04d6fbf9d",
+      "status": "ROMAV2_COLNOMIC_DIFFICULT90_REAL_PREJOIN_VALIDATION_PASS"
+    },
+    "token_fullrank": {
+      "path": "results/romav2_colnomic_difficult90_token_fullrank_prejoin_v1/validation.json",
+      "sha256": "f6960327f0723cf142a80bded8f4f613b580ba63b9777ec8d8d6941c79e5ae5a",
+      "status": "ROMAV2_COLNOMIC_DIFFICULT90_TOKEN_FULLRANK_PREJOIN_VALIDATION_PASS"
+    }
+  },
+  "claim_level": "OPENED_REGRESSION_REDUCTION_AUTHORITY_NOT_RESULT",
+  "logical_sha256": "ecfdda383096c3ccfa049d4d46367dec7f8dc2dc6fccccd8b9da848ff71f4283",
+  "manifest": {
+    "prejoin_sha256": "d743eac988ed476dce15ad0c16d19863bf6cac6c7bf795a0bf87bf4f7d70e6c1",
+    "query_count": 90,
+    "target_join_sha256": "f16d9bfb77202c4167966a68067b668ae76d758aba9d04bc28fdfaecf04acc0f"
+  },
+  "permissions": {
+    "all_90_denominator_required": true,
+    "model_forward_authorized": false,
+    "target_join_reader_count": 2,
+    "threshold_or_model_change_authorized": false
+  },
+  "result_path": "results/romav2_colnomic_difficult90_frozen_regression_v1/result.json",
+  "schema_version": "rc_romav2_colnomic_difficult90_reduction_authority_v1_20260901",
+  "source_sha256": {
+    "plan/ROMAV2_COLNOMIC_DIFFICULT90_FROZEN_REGRESSION_V1_20260901.md": "2c049b41c96892c6793578cc2a136992ce0ab7400279a8af364b760d07dc6df0",
+    "programs/reduce_romav2_colnomic_difficult90_regression_v1.py": "6b9a9e16fc0d8fc6d6fd0835debf4df1fad1221cf9ef7a970a7648cc02630d2a",
+    "programs/reduce_romav2_colnomic_new_difficult_sealed_v1.py": "4e92e331e25ebf3dd0c7a62fa202371d84ffde17d078c77f5ee3fb514c642f35",
+    "programs/validate_romav2_colnomic_difficult90_regression_v1.py": "548639f95d7690b72cc54bd979f9653b9ce552455874266c2c3df04087bd1fa8",
+    "programs/validate_romav2_colnomic_new_difficult_sealed_v1.py": "74c31a002dc1a3f8f9a84b306a8817a7a7ec73dd2741f4a09fa484d1c1ede788",
+    "src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+  },
+  "status": "ROMAV2_COLNOMIC_DIFFICULT90_REDUCTION_AUTHORIZED",
+  "validation_path": "results/romav2_colnomic_difficult90_frozen_regression_v1/independent_validation.json"
+}

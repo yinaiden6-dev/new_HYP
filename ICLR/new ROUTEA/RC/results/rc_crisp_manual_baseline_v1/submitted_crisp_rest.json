@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "sbatch",
+    "--parsable",
+    "--array=1-74,76-149%28",
+    "--dependency=afterok:5150501",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_crisp_manual_baseline_v1.sbatch",
+    "worker"
+  ],
+  "job_id": "5150502",
+  "label": "crisp_rest",
+  "stderr": "",
+  "stdout": "5150502\n"
+}

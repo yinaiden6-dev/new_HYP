@@ -1,0 +1,230 @@
+{
+  "adapter": {
+    "path": "programs/prepare_rc_grouped_residual_inputs_v7.py",
+    "sha256": "e933814472a3bca65afa9cead70242a93ad816668d12e7a5d8a124b914ee3d99"
+  },
+  "automatic_stage_advance": false,
+  "contract": {
+    "path": "plan/REFERENCE_CONDITIONED_COHERENT_RESIDUAL_P_ONLY_V8_20260908.md",
+    "sha256": "03e1f4e45141fcf6fa568a62f97c66a65f2631d43892f4666f78d2253c488630"
+  },
+  "coordinate_control_limitation": "All PC proposals are structurally H0; PC drop alone is not identity spatial causality.",
+  "core": {
+    "path": "src/rc_aslo_xf/reference_conditioned_coherent_residual_p_only_v8.py",
+    "sha256": "19806530ba94c4fbdfac050cf437326e9790b446633f2b5d4b001dbb371d6fd2"
+  },
+  "e0": {
+    "expected_status": "RC_COHERENT_RESIDUAL_V8_INDEPENDENT_E0_PASS",
+    "path": "results/rc_coherent_residual_e0_v8_contract_binding_repair_v2/result.json",
+    "sha256": "c31559b6b395c2603ce409868643b4df0a1d319224fcc4f359c295af2baa6e44"
+  },
+  "engineering_qualification": {
+    "checkpoint_512_parity": {
+      "path": "results/rc_coherent_residual_runner_engineering_v8/checkpoint_parity.json",
+      "sha256": "5fe6d07bf3834ad2aa652cad459857a8a14949d64a25f55dfa4e1288dce6f7f7"
+    },
+    "real_query_smoke": {
+      "path": "results/rc_coherent_residual_runner_engineering_v8/one_query_smoke.json",
+      "sha256": "520f2b08c07b9f94302b1ad7d968595355b2d28af580d71d7ac0c11b8957350f"
+    }
+  },
+  "formal_outcomes_before_development_go_authorized": false,
+  "gate": {
+    "path": "src/rc_aslo_xf/reference_conditioned_latent_proposal_natural_gate_v2.py",
+    "sha256": "3fe3eb1369e8c7f391e5d208e73422d9ce3e9e53554815bcc73f78baf8b66f01"
+  },
+  "gate_requirements": {
+    "c_bind_positive_drops_at_least": 21,
+    "control_drop_supergroup_means_positive": true,
+    "p_coord_positive_drops_at_least": 21,
+    "paired_net_vs_each_matched_control_at_least": 4,
+    "paired_net_vs_frozen_v6_query_only_at_least": 4,
+    "rank_success_at_least": 21,
+    "structural_coverage_at_least": 26,
+    "supergroup_margin_positive": true
+  },
+  "input_manifest_sha256": "7dbed0e914a0c176625ed5109ff5b2900ecdd5c0b8f4564d4d190f041d4caf89",
+  "launcher": {
+    "path": "slurm/rc_coherent_residual_development_v8_dev_cpuonly_59m.sbatch",
+    "sha256": "73805b2bb44744b576720caeb7ce8a2627932a68e0ab02a37548896907b7ce3f"
+  },
+  "logical_sha256": "2cb8218221eeed545a568b2bb944cdf3f3915b91c40590083a518b2b6a5adbc1",
+  "matched_arms": [
+    "REAL",
+    "ALL_PATCH_NO_HYP",
+    "QUERY_ONLY_REGION"
+  ],
+  "mechanism": {
+    "atom_aggregation": "SUM_CHANNELS_BEFORE_ACTUAL_ATOM_MAX",
+    "loss_gradients_and_control_drop_counts_changed_vs_v7": true,
+    "retroactive_v7_PASS_or_rescue_claim": false,
+    "score_domain": [
+      0.0,
+      1.0
+    ],
+    "score_link": "FIXED_EXP_NEG_HALF_ENERGY",
+    "structural_H0_score": 0.0,
+    "temperature_parameter_count": 0
+  },
+  "new_method_variant_count": 1,
+  "old_v6": {
+    "fresh_state": {
+      "path": "results/rc_competitive_witness_development_work_v6/fresh_state.json",
+      "sha256": "b351b3105a9c5d113415bb9057d23daa4acaabcb3029615d6025c4a9dd53df6f"
+    },
+    "result": {
+      "path": "results/rc_competitive_witness_development_v6/result.json",
+      "sha256": "8b74cdd225d9b01d2462ca34420bccd225b7dd6fa3bb8aaef4da7891e217af9b"
+    },
+    "statistics": {
+      "path": "results/rc_competitive_witness_development_v6/statistics.json",
+      "sha256": "9882cf87d06a9a295677533903171a6e90512492b4e585bced2d60ab42281c07"
+    },
+    "validation": {
+      "path": "results/rc_competitive_witness_development_v6_validation_json_schema_repair_v1/result.json",
+      "sha256": "a580fb2c79aaba6badf193c5ca79038f6b44e6aa8c98c56b31d627a07d11afda"
+    }
+  },
+  "output_rel": "results/rc_coherent_residual_development_v8",
+  "postjoin": {
+    "authority": {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.json",
+      "sha256": "9c8d90280b2a9e83594d1f87b8754faa98b49449204ba8ada4f92a17c9e66e5d"
+    },
+    "validation": {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.independent_validation.json",
+      "sha256": "15aaa8cf332003e0979b71fc45bf1b20e5afa402930916c20a46fdf519a1124c"
+    }
+  },
+  "prefit_diagnostic": {
+    "authority": {
+      "path": "registry/rc_v7_residual_envelope_diagnostic_v1_authority_20260908.json",
+      "sha256": "bd4f907427f03751146a2e4e0dc42a94fffb10867fccbef29c5504eacaeb3531"
+    },
+    "result": {
+      "path": "results/rc_v7_residual_envelope_diagnostic_v1/result.json",
+      "sha256": "fdb56459f332f6b559fd1e1857b4bd8b98938f49d101e1471a92d08a9ff3206c"
+    },
+    "validation": {
+      "path": "results/rc_v7_residual_envelope_artifact_validation_v1/result.json",
+      "sha256": "29749e244a6ecc59c41cc3959d23a03a0932bc612c172c72d8fb7ba27510fa40"
+    }
+  },
+  "resource_bound": {
+    "continuations_same_checkpoint_only": true,
+    "cpus_per_worker": 4,
+    "gpu_count": 0,
+    "independent_training_lanes": 2,
+    "memory_gib_per_worker": 64,
+    "minutes_per_allocation": 59,
+    "partition": "dev_cpuonly"
+  },
+  "runner": {
+    "path": "programs/run_rc_coherent_residual_development_v8.py",
+    "sha256": "2e2bc48c07dd866aaf836a6c364f6d9343b5718b00954d2c7ce1e7f065918836"
+  },
+  "schema": "rc_coherent_residual_development_authority_v8_20260908",
+  "scientific_GO_or_NO_GO": null,
+  "sources": [
+    {
+      "path": "plan/REFERENCE_CONDITIONED_COHERENT_RESIDUAL_P_ONLY_V8_20260908.md",
+      "sha256": "03e1f4e45141fcf6fa568a62f97c66a65f2631d43892f4666f78d2253c488630"
+    },
+    {
+      "path": "programs/prepare_rc_coherent_residual_authority_v8.py",
+      "sha256": "9d93cf0e084efe5a9e13e0245b800b2892a287e958a8b876f3e8d4a2e6a26315"
+    },
+    {
+      "path": "programs/prepare_rc_grouped_residual_inputs_v7.py",
+      "sha256": "e933814472a3bca65afa9cead70242a93ad816668d12e7a5d8a124b914ee3d99"
+    },
+    {
+      "path": "programs/run_rc_coherent_residual_development_v8.py",
+      "sha256": "2e2bc48c07dd866aaf836a6c364f6d9343b5718b00954d2c7ce1e7f065918836"
+    },
+    {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.independent_validation.json",
+      "sha256": "15aaa8cf332003e0979b71fc45bf1b20e5afa402930916c20a46fdf519a1124c"
+    },
+    {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.json",
+      "sha256": "9c8d90280b2a9e83594d1f87b8754faa98b49449204ba8ada4f92a17c9e66e5d"
+    },
+    {
+      "path": "registry/rc_v7_residual_envelope_diagnostic_v1_authority_20260908.json",
+      "sha256": "bd4f907427f03751146a2e4e0dc42a94fffb10867fccbef29c5504eacaeb3531"
+    },
+    {
+      "path": "results/rc_coherent_residual_e0_v8_contract_binding_repair_v2/result.json",
+      "sha256": "c31559b6b395c2603ce409868643b4df0a1d319224fcc4f359c295af2baa6e44"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_v6/result.json",
+      "sha256": "8b74cdd225d9b01d2462ca34420bccd225b7dd6fa3bb8aaef4da7891e217af9b"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_v6/statistics.json",
+      "sha256": "9882cf87d06a9a295677533903171a6e90512492b4e585bced2d60ab42281c07"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_v6_validation_json_schema_repair_v1/result.json",
+      "sha256": "a580fb2c79aaba6badf193c5ca79038f6b44e6aa8c98c56b31d627a07d11afda"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_work_v6/fresh_state.json",
+      "sha256": "b351b3105a9c5d113415bb9057d23daa4acaabcb3029615d6025c4a9dd53df6f"
+    },
+    {
+      "path": "results/rc_v7_residual_envelope_artifact_validation_v1/result.json",
+      "sha256": "29749e244a6ecc59c41cc3959d23a03a0932bc612c172c72d8fb7ba27510fa40"
+    },
+    {
+      "path": "results/rc_v7_residual_envelope_diagnostic_v1/result.json",
+      "sha256": "fdb56459f332f6b559fd1e1857b4bd8b98938f49d101e1471a92d08a9ff3206c"
+    },
+    {
+      "path": "slurm/rc_coherent_residual_development_v8_dev_cpuonly_59m.sbatch",
+      "sha256": "73805b2bb44744b576720caeb7ce8a2627932a68e0ab02a37548896907b7ce3f"
+    },
+    {
+      "path": "src/rc_aslo_xf/reference_conditioned_coherent_residual_p_only_v8.py",
+      "sha256": "19806530ba94c4fbdfac050cf437326e9790b446633f2b5d4b001dbb371d6fd2"
+    },
+    {
+      "path": "src/rc_aslo_xf/reference_conditioned_latent_proposal_natural_gate_v1.py",
+      "sha256": "30c75700018dd7086ef9f949bd92cc3ac5a3246dab8e121ef5a89f04cee0d282"
+    },
+    {
+      "path": "src/rc_aslo_xf/reference_conditioned_latent_proposal_natural_gate_v2.py",
+      "sha256": "3fe3eb1369e8c7f391e5d208e73422d9ce3e9e53554815bcc73f78baf8b66f01"
+    },
+    {
+      "path": "results/rc_coherent_residual_runner_engineering_v8/one_query_smoke.json",
+      "sha256": "520f2b08c07b9f94302b1ad7d968595355b2d28af580d71d7ac0c11b8957350f"
+    },
+    {
+      "path": "results/rc_coherent_residual_runner_engineering_v8/checkpoint_parity.json",
+      "sha256": "5fe6d07bf3834ad2aa652cad459857a8a14949d64a25f55dfa4e1288dce6f7f7"
+    }
+  ],
+  "status": "RC_COHERENT_RESIDUAL_V8_DEVELOPMENT_AUTHORITY_READY",
+  "training": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "common_eligible_queries": 29,
+    "dtype": "torch.float64",
+    "eps": 1e-08,
+    "head_parameters_per_arm": 256,
+    "lr": 0.03,
+    "masked_updates": "graph_connected_zero_loss_with_AdamW_step",
+    "order_contract_sha256": "46c8cacb95673f3eb3a5887561fa0722ef0de995ccdfaaaabd54be4d0615ea21",
+    "order_sha256": "66935b39e3ce26296d7fc2f5fe0b8dcd5c3f0862969426347662278dcfaf4977",
+    "seed": 17,
+    "updates": 512,
+    "weight_decay": 0.0
+  },
+  "validation_rel": "results/rc_coherent_residual_development_v8_validation",
+  "work_rel": "results/rc_coherent_residual_development_work_v8"
+}

@@ -1,0 +1,201 @@
+{
+  "EVAL_or_final_fit_authorized": false,
+  "allowed_stages": [
+    "run",
+    "project",
+    "fit-fold",
+    "validate-fold",
+    "join",
+    "validate-join"
+  ],
+  "contract": {
+    "PAIR_correction_loss": false,
+    "action": "all 127 challenger logits, SWITCH iff maximum>0, physical row ties, natural C128 unchanged",
+    "base_parameters": 7,
+    "base_train_function_sha256": "45921b88203ef7065d824bdaab8e5468fc6d617dd3cb6d3fee213dfd2ccc7403",
+    "checkpoint": "last only",
+    "constant_formula": "z=X@w+b+softplus(alpha)*sym(F_c,F_w)",
+    "correction_formula": "z=X@w+b+softplus(beta0+beta1*(-xRAW)+beta2*(D_w-D_c)+beta3*sym(mean_wr_c,mean_wr_w))*sym(F_c,F_w)",
+    "correction_loss": "original FULL query loss only, protection weight 4, mean over target-present training rows",
+    "dtype": "float64",
+    "fold_base": "original FULL32 and original PAIR64 excluding all heldout groups",
+    "fold_count": 4,
+    "fold_label_rule": "fold-local training curator and pair projection only; heldout roles opened after all independent seals",
+    "fold_rule": "sha256(seed+\"|\"+group) sorted rank modulo 4",
+    "gate": [
+      "CONDITIONAL correct count strictly greater than BASE and CONSTANT",
+      "CONDITIONAL equal-group mean strictly greater than BASE and CONSTANT",
+      "CONDITIONAL RAW break count no greater than BASE RAW break count"
+    ],
+    "gate_pass_action": "eligible for separately authorized final fit; this program never opens EVAL",
+    "group_count": 32,
+    "group_seed": "RC_TRAIN128_DISAGREEMENT_OOF4_V1_20260910",
+    "initialization": "base all zero; alpha=0; all four beta=0",
+    "lr": 0.03,
+    "models": [
+      "BASE7",
+      "CONSTANT1",
+      "CONDITIONAL4"
+    ],
+    "new_parameter_counts": {
+      "CONDITIONAL4": 4,
+      "CONSTANT1": 1
+    },
+    "normalization": "none",
+    "optimizer": "AdamW",
+    "primary": "CONDITIONAL4",
+    "scope": "TRAIN128 grouped OOF only; no final fit or EVAL access",
+    "seed": 17,
+    "steps": 2000,
+    "target_absent": "retain all 128 heldout images; omit undefined positive FULL training loss only",
+    "weight_decay": 0.001
+  },
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "parent_research_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+    "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1_preflight/d7302eca66c7c6469a7f5ef99a77afeae8af4b25c3a253a1bdcbb2da7af3a715/result.json",
+    "sha256": "fe193ff07f7ac9974dac3d4f1e01eac66465e221a731a3191b61fc5f93ebab0d"
+  },
+  "primary_frozen_ec7_model_replacement_authorized": false,
+  "qualified_cache_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_features_v1/result.json",
+    "sha256": "4cd990fbaee249701f815e89e90522c5a08176442b7074af46bf3550dd03ff8f"
+  },
+  "qualified_cache_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_features_v1/validation.json",
+    "sha256": "e0426233bf5acd0cdc2a6a59f197bf195454e9b82388011ac94c6d51e384494f"
+  },
+  "recorded_utc": "2026-09-10T07:08:59.087064+00:00",
+  "scientific_result": null,
+  "source_bindings": {
+    "PAIR64_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/routea_matched_three_arm_pair64_training_features_v2/payload.pt",
+      "sha256": "d7be701ac4629059d22301c17b0f0d44b69b4b67666072b8fab7c3c0cb7716e3"
+    },
+    "PAIR64_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/routea_matched_three_arm_pair64_training_features_v2/independent_validation.json",
+      "sha256": "657b316a83b80f20e8779bf985b2777b1533126c9b8e7ec7b552ea245febbf1b"
+    },
+    "cache_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_train128_disagreement_cache_authority_v1_20260910.json",
+      "sha256": "463215ad4c9f3513035cee6de8e30d9c40606c380f1cee962abf4a8baf6b92c3"
+    },
+    "cache_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cache_rc_train128_disagreement_features_v1.py",
+      "sha256": "816479b67d5fdae362e26a28d635585a185f12434f5097a85e28673d216e2da5"
+    },
+    "feature_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "fold0_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/heldout_roles.json",
+      "sha256": "6132e4420cef7d90a5a7126907d62caba396f0f5dc4fd4cb7c01fc3bf680f9bc"
+    },
+    "fold0_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/train_roles.json",
+      "sha256": "5dcb7d22bb05cc43a4e0addf4e71db53092b67a3257f1205e6cc30104d110577"
+    },
+    "fold1_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/heldout_roles.json",
+      "sha256": "f5f2fe7e3b5034ae32459ee8cef7320d2c8a85b76fad9c7e975e01883efbd103"
+    },
+    "fold1_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/train_roles.json",
+      "sha256": "38af8628d983935046c08916f6b11a272ee50b60728a7f5a67541668caaf00b8"
+    },
+    "fold2_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/heldout_roles.json",
+      "sha256": "1d7d6459a8986b8789a3ffc0779598c8af24a47ae9eb5c5178b38fb4632b4e7b"
+    },
+    "fold2_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/train_roles.json",
+      "sha256": "eef7c31281cd596d7579b1681fcbebb05f5848e0991958e97afdd2f11c702e8a"
+    },
+    "fold3_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/heldout_roles.json",
+      "sha256": "de7c48f1d53a98187c2cb7966689ec586dd922d365fa48fbe080aeedf755c893"
+    },
+    "fold3_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/train_roles.json",
+      "sha256": "00b969d69c3ca0536e617496429a04a3ea0dff7de1335d91db94971fd02cdcdc"
+    },
+    "fold_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold_manifest.json",
+      "sha256": "0d84b2e3736f562593aeab11f79a90078f791f4b37686b6ce084e674e57d1820"
+    },
+    "gallery_identity_contract": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "gallery_identity_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "gallery_identity_registry": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "old_training_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_routea_matched_three_arm_common3_native7_crossfit_v1.py",
+      "sha256": "546e2bc7b3df6c67bcac41e079ba1b00f15c7e65c52a8ab994cd5b2c38d81e22"
+    },
+    "oof_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_train128_disagreement_oof4_v1_dev_cpuonly_59m.sbatch",
+      "sha256": "bc2d358917832241f5fcec1b69a71625c0fa137bf03daed2914f415dc012365d"
+    },
+    "oof_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_train128_disagreement_oof4_v1.py",
+      "sha256": "d7302eca66c7c6469a7f5ef99a77afeae8af4b25c3a253a1bdcbb2da7af3a715"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_TRAIN128_DISAGREEMENT_OOF4_V1_20260910.md",
+      "sha256": "a2f64f74eb75c43f90e3d41a3b3206cc49e9dd8720658e91bb5804748883bdf9"
+    },
+    "train_features": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/feature_records.json",
+      "sha256": "d2a2c7eddc8a1d236d9b5995186c7b80eb550ce33b0344fc0da2516a5486c078"
+    },
+    "train_input_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/validation.json",
+      "sha256": "770b9f9ce46f431c7bbe8479e320934c9d1dacdf23f3c3eea650f2812c1a77bf"
+    },
+    "train_metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/independent_metadata_validation.json",
+      "sha256": "03176db194d4b5f9d68cc226a1ce48b019675e99b037205bae71552202fa907d"
+    },
+    "train_worker": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    }
+  },
+  "source_review": "independent reviewer found no fold-label, PAIR, loss, gate blockers; reporting omissions resolved before activation",
+  "statistics_contract": {
+    "arithmetic": "rational group differences, common-denominator integer DP; zero groups retained exactly",
+    "bootstrap_draws": 10000,
+    "bootstrap_generator": "numpy.default_rng PCG64; one shared group-index draw array for all contrasts",
+    "bootstrap_interval": "percentile 95%, numpy.quantile method linear",
+    "bootstrap_seed": 20260910,
+    "p_value_is_gate": false,
+    "paired_comparisons": [
+      [
+        "CONDITIONAL4",
+        "BASE7"
+      ],
+      [
+        "CONDITIONAL4",
+        "CONSTANT1"
+      ],
+      [
+        "CONSTANT1",
+        "BASE7"
+      ]
+    ],
+    "signflip": "exact two-sided inclusive tail, abs(sum signed group differences)>=abs(observed sum)",
+    "unit": "source group; equally weighted group mean accuracy difference"
+  },
+  "status": "TRAIN128_DISAGREEMENT_OOF4_AUTHORIZED"
+}

@@ -1,0 +1,261 @@
+{
+  "bindings": {
+    "cbind_prejoin": {
+      "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/validation.json",
+      "sha256": "a1f5457050f38d35f0ff897179be49b0b961a127c17dc8ecf683ea49974ce005",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_CBIND_PREJOIN_VALIDATION_PASS"
+    },
+    "current_runtime_gate": {
+      "path": "results/romav2_colnomic_current_runtime_frozen_gate_v1/independent_validation.json",
+      "sha256": "83e14a12a8647e08856c2890bfaa638eece1cb3876ba88656e6d755e2f07f87f",
+      "status": "ROMAV2_COLNOMIC_CURRENT_RUNTIME_FROZEN_GATE_INDEPENDENT_VALIDATION_PASS"
+    },
+    "frozen_gate": {
+      "path": "results/romav2_colnomic_frozen_gate_definition_v1/validation.json",
+      "sha256": "3dc6fee548ae7171ae6fe0c018cdfe4d31d2e7efecd3790fe0c43e6235f5c372",
+      "status": "ROMAV2_COLNOMIC_FROZEN_GATE_DEFINITION_VALIDATION_PASS"
+    },
+    "fullrank_prejoin": {
+      "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/validation.json",
+      "sha256": "99b1d5063fc8851ed1507ced9bed812b4c12b612205365b755a8439baccf5180",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_FULLRANK_PREJOIN_VALIDATION_PASS"
+    },
+    "fullrank_prejoin_v2": {
+      "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/validation_v2.json",
+      "sha256": "b2c85a2d97a34f1a47efc703e903ea290430944003ae4e4cda768e708cdaacdc",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_FULLRANK_PREJOIN_VALIDATION_V2_PASS"
+    },
+    "manifest_binding": {
+      "path": "results/romav2_colnomic_new_difficult_sealed_manifest_v1/binding_receipt.json",
+      "sha256": "4f6208fdf574e739c2ff99fd1b23e6ce6b4e757ca8753580dfb6f874551696a4",
+      "status": "NEW_DIFFICULT_SEALED_MANIFEST_BINDING_PASS"
+    },
+    "model_lineage": {
+      "path": "results/romav2_colnomic_new_difficult_model_lineage_v1/result.json",
+      "sha256": "6d5670561a2188deaea01f9c4373f2d4435ba45114307d95bcde555e5e7f2c82",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_MODEL_LINEAGE_FROZEN"
+    },
+    "real_prejoin": {
+      "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/validation.json",
+      "sha256": "2b09eee5b73e99e23e05ad700e4b5d367d33afe28d04c359f41b041c3880f0b2",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_ROMA_PREJOIN_VALIDATION_PASS"
+    },
+    "token_prejoin": {
+      "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/validation.json",
+      "sha256": "96fa4efa76fdee7df8c6f68a563024a2bb52f2895bd51f42991f826eff337f2a",
+      "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_TOKEN_PREJOIN_VALIDATION_PASS"
+    }
+  },
+  "claim_level": "ONE_SHOT_DIRECTIONAL_REDUCTION_AUTHORITY_NOT_RESULT",
+  "control_semantics": {
+    "CBIND": "INDEPENDENT_SHIFT64_REFERENCE_PAYLOAD",
+    "Q": "(S10,S10,S01)_DIAGNOSTIC",
+    "R": "(S01,S10,S01)_DIAGNOSTIC",
+    "strict_spatial_causal_claim_authorized": false
+  },
+  "logical_sha256": "562bb6f82f4eb8ed6cb49d64f97124c85a9d0b6948dc9d86892428a4df3c9383",
+  "manifest": {
+    "prejoin_path": "results/romav2_colnomic_new_difficult_sealed_manifest_v1/prejoin_manifest.json",
+    "prejoin_sha256": "dd2225920661c6fb737ba911467c71d7dbc47985dcd15f612aa10376a1f43610",
+    "query_count": 31,
+    "target_join_path": "results/romav2_colnomic_new_difficult_sealed_manifest_v1/target_join_manifest.json",
+    "target_join_sha256": "068dbd6cc1bc8c5e753004a4c078cfb118b7b76188a92277e387e696820304fd"
+  },
+  "permissions": {
+    "all_31_denominator_required": true,
+    "authorized_target_join_reader_process_count": 2,
+    "independent_validator_target_join_read_count": 1,
+    "model_or_threshold_change_authorized": false,
+    "reducer_target_join_read_count": 1,
+    "sealed_model_forward_authorized": false,
+    "sealed_roma_forward_authorized": false,
+    "target_join_attempt_count": 1
+  },
+  "prejoin_artifacts": {
+    "cbind": [
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard00/result.json",
+        "sha256": "af1f99004f1ce620228bdfc35dea9c754f57df9ff58eb3c68b9dac51c39a9e9e",
+        "shard": 0
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard01/result.json",
+        "sha256": "fa59d22be5a05339f2b237a3da3c67c6d4c925961b9a2cdeb1f57b93a10d639e",
+        "shard": 1
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard02/result.json",
+        "sha256": "00330830e81e33ad9fa46c6d6fdfa270a0b1c38264c169c924b4292f2b9a595b",
+        "shard": 2
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard03/result.json",
+        "sha256": "fb9906174d4558771329afaf486cf2869f27acebcc121bf6c61c761a90546978",
+        "shard": 3
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard04/result.json",
+        "sha256": "4fc8a3ec762537117978f44ac4eead97b3a70559f60dcc21a63f1867501ba26e",
+        "shard": 4
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard05/result.json",
+        "sha256": "e313f024f668bc0cef9ec321843a4d6834cbda6388dcc3bc69ee9d2564acc10d",
+        "shard": 5
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard06/result.json",
+        "sha256": "7b1b739d6d94c72dcc504d4cb168751cc5c1db7436181a33c660fbcd825beda5",
+        "shard": 6
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_cbind_prejoin_v1/shard07/result.json",
+        "sha256": "964b302d628ec7b5c51efeae96096174f8bbcbc9c4d94840d0c3902d8a8ef9a9",
+        "shard": 7
+      }
+    ],
+    "fullrank": [
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard00/result.json",
+        "sha256": "db79300c811cca61e8d69107029ccc495c93e81d6079396af783740f21fbc995",
+        "shard": 0
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard01/result.json",
+        "sha256": "0b88b6d2e5c5b6d7a27837c0a66b9922764c5faaedbf2db2d58d26d9c3bf266b",
+        "shard": 1
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard02/result.json",
+        "sha256": "3d03d7efc7b55032030c9920cf42ea2b09f9a835c88bedb74534afbf5a277ec8",
+        "shard": 2
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard03/result.json",
+        "sha256": "875c53984b3ea335e755e76ba3804000f60c284e35ff4c298b37597dee8f8162",
+        "shard": 3
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard04/result.json",
+        "sha256": "23209f0084e3544fd614986646cea0263c51d91ba5b61f23aec82db8470bc3f0",
+        "shard": 4
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard05/result.json",
+        "sha256": "19a16aa08b72eb21102fb23685bb7d117f8dd8a802539a0cc0d217f938538dc6",
+        "shard": 5
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard06/result.json",
+        "sha256": "2991c8e2912b87af1768cc62653134e9397f99f88be88d5b906b8f3e2dfb854b",
+        "shard": 6
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_fullrank_prejoin_v1/shard07/result.json",
+        "sha256": "d2cd24905b50bd9dd7d4c6295e4a77956c0149e097ca1ae0c071203db2300c33",
+        "shard": 7
+      }
+    ],
+    "real": [
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard00/result.json",
+        "sha256": "ffcbc5189ee0ee13df8cefa79ab4658cad8f9a8100961b8733bceff5bea1be71",
+        "shard": 0
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard01/result.json",
+        "sha256": "7cbecbf548275e60ce25f71352c6e6bdacb04afce4217d47eb9a5fee41309e06",
+        "shard": 1
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard02/result.json",
+        "sha256": "a5c947f6a9a12a2e4cad6a83c28f5199888745fdc5ac156186b6b45a615c1777",
+        "shard": 2
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard03/result.json",
+        "sha256": "589e6f5ce19f362bc8bd4a6c6217dd3381cde934644a15cc5f851350b63d070a",
+        "shard": 3
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard04/result.json",
+        "sha256": "b9ea05f2c207b6435f7b09242f37d7177af5303c39c79eeb2fa2dadb9c31c771",
+        "shard": 4
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard05/result.json",
+        "sha256": "61398432e7c3ab50a4838e093e9bf5a476cfe4d06ca265180d61000161f215ee",
+        "shard": 5
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard06/result.json",
+        "sha256": "2b67386c40b9a6a2d49e48edbcfc8c1e0b15ecf760a198ae50d31960f0685410",
+        "shard": 6
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_roma_prejoin_v1/shard07/result.json",
+        "sha256": "cb99e0fe66ae07816e507ccf6f4f1c896ffbfc0c04834b936cacd858f3c6957b",
+        "shard": 7
+      }
+    ],
+    "token": [
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard00/payload.pt",
+        "sha256": "e1296c22a8c86cf4d4d399bb452e1a03c435a8f0c3a8091333506039432434f6",
+        "shard": 0
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard01/payload.pt",
+        "sha256": "354c08be31ddf9726367b5ea396f975ef599d6d3731fa205ad61a3a0f3cb0f35",
+        "shard": 1
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard02/payload.pt",
+        "sha256": "fe368ea03fb93edd81d45c2e7d7ee6ef7847bcaa6dce4ba54ff7d4f8b5b332ad",
+        "shard": 2
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard03/payload.pt",
+        "sha256": "16bc0f84b37e81647dd0f40b84d610c143d9775ed425befa60e1fee8a0b06283",
+        "shard": 3
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard04/payload.pt",
+        "sha256": "f9666333c18bb4288381da66dfb3c641e887ab59ae3b4c3c06f55da932a82607",
+        "shard": 4
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard05/payload.pt",
+        "sha256": "c63b58c83c7ffe92260643f57ae8f4ef821ba0e77c69759a8c21bb290ea202fd",
+        "shard": 5
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard06/payload.pt",
+        "sha256": "0bf247907b8dcf589ef0a15af99b469916dfb38fe9ad7cc10cb5aa44b76f82e7",
+        "shard": 6
+      },
+      {
+        "path": "results/romav2_colnomic_new_difficult_sealed_token_prejoin_v1/shard07/payload.pt",
+        "sha256": "f52f18aedfa1d459918d923632cf73a8023faf5e7f57d9fdab68bf3d517c6875",
+        "shard": 7
+      }
+    ]
+  },
+  "ranking_semantics": "MOVE_SELECTED_CHALLENGER_EXACT_LABEL_TO_FRONT_STABLE_REMAINDER",
+  "result_path": "results/romav2_colnomic_new_difficult_sealed_directional_v1/result.json",
+  "schema_version": "rc_romav2_colnomic_new_difficult_sealed_reduction_authority_v1_20260901",
+  "source_sha256": {
+    "plan/ROMAV2_COLNOMIC_FULL_NEGATIVE_EXTERNAL_CONFIRMATION_CONTRACT_V1_20260831.md": "a6438f98dd08cb74718c35251d44cd99b27a7fa866bc38a673f824ff7d1c507f",
+    "plan/ROMAV2_COLNOMIC_NEW_DIFFICULT_C_BIND_CONTROL_V1_20260901.md": "2a7cd94da01b54c028fb22197c4803e0fa77f1f277a40ee8c962625132bcbaae",
+    "plan/ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_REDUCTION_AUDIT_ADDENDUM_V1_20260901.md": "17b30c322e51206b2642214076b01066eb1dd08d72bfadb8113de63c4e70b37f",
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_cbind_shard_v1.py": "2e699e72351545240e28edf84c08f1ef2e62ceaf3b1841318c7c98c5ec8f8322",
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_fullrank_shard_v1.py": "ac4159b056813bfafce0b2f46cce0140591bd5dee4f5fd27f22cba8752531f7a",
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_roma_shard_v1.py": "e8a5764d8aa70bad1a7ca89c860454eeed9c4fd2495b09bc1ec1bb1ee1f0fa9b",
+    "programs/materialize_romav2_colnomic_new_difficult_sealed_token_shard_v1.py": "0091acfb56e4a9e54b4c3792b9c98ed2c6c96d024c8df29cb0f384e1d1cb00c2",
+    "programs/reduce_romav2_colnomic_new_difficult_sealed_v1.py": "4e92e331e25ebf3dd0c7a62fa202371d84ffde17d078c77f5ee3fb514c642f35",
+    "programs/validate_romav2_colnomic_new_difficult_sealed_v1.py": "74c31a002dc1a3f8f9a84b306a8817a7a7ec73dd2741f4a09fa484d1c1ede788",
+    "src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+  },
+  "status": "ROMAV2_COLNOMIC_NEW_DIFFICULT_SEALED_REDUCTION_AUTHORIZED",
+  "validation_path": "results/romav2_colnomic_new_difficult_sealed_directional_v1/independent_validation.json"
+}

@@ -1,0 +1,50 @@
+{
+  "access_boundary": {
+    "current_eval_label_file_open_count": 0,
+    "external_read_count": 0,
+    "model_update_count": 6000,
+    "sealed_read_count": 0,
+    "train_label_ledger_open_count": 1,
+    "train_target_identity_semantic_consumption_count": 0,
+    "train_target_supergroup_semantic_consumption_count": 0
+  },
+  "authority_validator": {
+    "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_native7_training_execution_authority_v1.py",
+    "sha256": "a430c27b41dbb6ff111df8451a369f7e6c69486b01fa09069007a0a3a06369f2"
+  },
+  "automatic_stage_advance": false,
+  "claim_level": "ENGINEERING_TRAIN_ONLY_NATIVE7_EXECUTION_NO_EVAL_LABEL_OR_ACTION",
+  "forbidden_inputs": {
+    "current_eval_label_ledger": "results/routea_n2_fresh_d1_matched_three_arm_current64_postseal_join_v1/J1_EVAL32_LABEL_LEDGER.json"
+  },
+  "hardware_identity_is_authority": false,
+  "input_shards": {
+    "current64": {"canonical_sha256": "a8640f21ed6d4f41981c595c3370ddb2303df8e965d898256edc0f50f0396d64", "count": 8},
+    "pair64": {"canonical_sha256": "821d74889cdc6cd08ace770bf5c0e0f16848129b95bad0204bd6ba47f1514c09", "count": 8}
+  },
+  "inputs": {
+    "contract": {"path": "plan/ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_SEVEN_PARAMETER_CROSSFIT_CONTRACT_V1_20260904.md", "sha256": "1e129df85e71a14eefa814b477bf304771eeda631d14d4d68cc6c2a3b8342f79"},
+    "current64_aggregate": {"logical_sha256": "f28de8e8a61506dafc14cfb6e47f2c14097cc5a7553bef265b5636e779392af1", "path": "results/routea_n2_fresh_d1_matched_three_arm_current64_prejoin_v1/validation.json", "sha256": "24ea4c6e416fc9d5e0a57d22aaa957d5bb3f29e4f01022369a62dd7ff48b7859"},
+    "j1_independent_validation": {"logical_sha256": "ac05d62a98c2df1502c1eed4001e76ea1b0beef00bc66d5b72ed5cf60ce919ef", "path": "results/routea_n2_fresh_d1_matched_three_arm_current64_postseal_join_v1/independent_validation.json", "sha256": "5aee7659853ebc25c17eba6d963d1e7d83212073a920ff3603cb6121da91ef9a"},
+    "j1_result": {"logical_sha256": "5023341ad6318e353f2b5225e6ceca2837596361d3ae699851c06e1f0f9870a5", "path": "results/routea_n2_fresh_d1_matched_three_arm_current64_postseal_join_v1/result.json", "sha256": "ecea6839a62f94b7f26d7a5c42870512cb128c55fc3cbcc75423792fdea80094"},
+    "j1_train32_label_ledger": {"logical_sha256": "c601fb04581e1affa1934baf0cd0603ed15ac7c06862b2b33f9a5b709bd792d5", "path": "results/routea_n2_fresh_d1_matched_three_arm_current64_postseal_join_v1/J1_TRAIN32_LABEL_LEDGER.json", "sha256": "e574e01febf5f6be35a876cb7e22d2cec819d5cdad6007d4612d1eea2e9e5e87"},
+    "pair64_training_aggregate": {"logical_sha256": "207128da7cc4e5a87db9c9556e9fee78cea54aee484d0ad56462184090f000f4", "path": "results/routea_n2_fresh_d1_matched_three_arm_pair64_training_features_v1/independent_aggregate_validation.json", "sha256": "90e83f9598f3c9cfcf1a1d80282666be213a70abd98c4f8465ae01a3d6c3074e"}
+  },
+  "launcher": {"path": "slurm/routea_n2_fresh_d1_matched_three_arm_native7_training_v1_10m.sbatch", "sha256": "2ec62d83e37963ba0ab3d4a44d61272076d81b9e068699d939d62d3240f16696"},
+  "logical_sha256": "1f2310942f01ad8eecd82fd5324fa88b86d78b5ddb964e9879ac9adc09a203c4",
+  "next_authorized_stage": "N2_FRESH_D1_MATCHED_THREE_ARM_NATIVE7_TRAINING_EXECUTION",
+  "outputs": {
+    "heads": {"path": "results/routea_n2_fresh_d1_matched_three_arm_native7_training_v1/heads.pt"},
+    "independent_validation": {"path": "results/routea_n2_fresh_d1_matched_three_arm_native7_training_v1/independent_validation.json", "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_NATIVE7_TRAINING_VALIDATED"},
+    "result": {"path": "results/routea_n2_fresh_d1_matched_three_arm_native7_training_v1/result.json", "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_NATIVE7_TRAINING_COMPLETE"}
+  },
+  "ownership_GO_or_NO_GO": null,
+  "programs": {
+    "independent_validator": {"path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_native7_training_v1.py", "sha256": "813490d2688dee8025bb0ebde87bb845ba83bf9dd4702f6011890d6d09d1ab17"},
+    "trainer": {"path": "programs/run_routea_n2_fresh_d1_matched_three_arm_native7_training_v1.py", "sha256": "9f630c78d792ceee8176a765cc5a83ebc4ffbbcea726dacefe2e4e61efc05809"}
+  },
+  "resource_contract": {"allowed_partitions": ["cpuonly", "dev_cpuonly"], "cpus_per_task": 4, "default_partition": "cpuonly", "gpu_count": 0, "memory_gib": 32, "walltime_seconds": 600},
+  "scientific_GO_or_NO_GO": null,
+  "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_NATIVE7_TRAINING_EXECUTION_AUTHORIZED",
+  "version": "routea_n2_fresh_d1_matched_three_arm_native7_training_execution_authority_v1_20260904"
+}

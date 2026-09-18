@@ -1,0 +1,44 @@
+{
+  "status": "V9_REMAINS_PAUSED_NO_CURRENT_EXECUTION_JUSTIFICATION",
+  "recorded_utc": "2026-09-09T10:32:08.925626+00:00",
+  "trigger": "User asked whether V9 still needs launching",
+  "decision": "DO_NOT_START_OLD_V9",
+  "V9_actual_draft_unchanged": true,
+  "V9_execution_authority_exists": false,
+  "V9_relevant_core_exists": false,
+  "reasons": [
+    "V9 drafts still train a rank-one metric on hard-assigned cosine and connected four-cell regions.",
+    "No current evidence establishes that this metric change repairs the observed RAW-to-local-V input/readout differences.",
+    "The current zero-training RAW interface bridge addresses verified source/token/arithmetic differences before further learned models."
+  ],
+  "next_work": "Frozen RAW-to-local-V interface bridge using already saved tokens, not new training",
+  "endpoint": "REFERENCE_HYP",
+  "ownership_required": false,
+  "sources": [
+    {
+      "path": "registry/rc_cycle_metric_v9_draft_hold_20260909.json",
+      "sha256": "b4fe4da215bdd04831bc4a9568eabbdbf0b664fcd0322989693ecfd9b76efe79"
+    },
+    {
+      "path": "programs/run_rc_cycle_metric_development_v9.py",
+      "sha256": "87912a354a56142b35acebd94e4fc217d96645dcb346d33ffe6515b2c3af337c"
+    },
+    {
+      "path": "results/rc_difficult0006_fixed_H_pixel_recovery_v1/result.json",
+      "sha256": "cc68ecbeac2de1395b9187fdec709de6c8bf434b39716f7498a0c6384ba5d8de"
+    },
+    {
+      "path": "results/rc_difficult0006_RAW_full_vs_image_reference_bridge_v1/result.json",
+      "sha256": "f529603a0023afe031b24adaa883a2fed3be4e5fb79b4a724e93f2af098ee303"
+    },
+    {
+      "path": "results/rc_difficult0006_RAW_full_vs_image_reference_bridge_v1/image_template_index_validation.json",
+      "sha256": "14c5fdb404975c58722f346d8d8b7dbf9d35f5a5c75170901969e2924c3f38c9"
+    },
+    {
+      "path": "results/rc_difficult0006_RAW_full_vs_image_reference_bridge_v1/full_passage_source_hash_validation.json",
+      "sha256": "2fd0f3bc925358d43a4665a3b2599e123cf7cea904ad13185d442465bc63f661"
+    }
+  ],
+  "HYP_GO_claimed": false
+}

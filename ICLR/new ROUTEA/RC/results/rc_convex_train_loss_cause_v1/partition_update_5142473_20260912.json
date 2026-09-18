@@ -1,0 +1,13 @@
+{
+  "job_id": "5142473",
+  "command": [
+    "scontrol",
+    "update",
+    "JobId=5142473",
+    "Partition=dev_accelerated,accelerated",
+    "TimeLimit=00:10:00"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "5142473_0-5: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)\n"
+}

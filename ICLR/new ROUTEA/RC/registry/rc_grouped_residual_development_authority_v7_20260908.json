@@ -1,0 +1,186 @@
+{
+  "adapter": {
+    "path": "programs/prepare_rc_grouped_residual_inputs_v7.py",
+    "sha256": "e933814472a3bca65afa9cead70242a93ad816668d12e7a5d8a124b914ee3d99"
+  },
+  "automatic_stage_advance": false,
+  "contract": {
+    "path": "plan/REFERENCE_CONDITIONED_GROUPED_RESIDUAL_P_ONLY_V7_20260908.md",
+    "sha256": "d3c7ec4e781582d88b13b3d9932f7463fe07bd869d52478989e448e82bc2c3a6"
+  },
+  "coordinate_control_limitation": "All PC proposals are structurally H0; PC drop alone is not identity spatial causality.",
+  "core": {
+    "path": "src/rc_aslo_xf/reference_conditioned_grouped_residual_p_only_v7.py",
+    "sha256": "cbc98502e27c42e0eb52a59c71ff6fc2a4f7865a20818a1a51186222a0fcec19"
+  },
+  "e0": {
+    "expected_status": "RC_GROUPED_RESIDUAL_V7_INDEPENDENT_E0_PASS",
+    "path": "results/rc_grouped_residual_e0_v7/result.json",
+    "sha256": "80628c773fd124c925cb4e8ee2eee67bd3155ce88b9d180bb27cd96796a24520"
+  },
+  "engineering_qualification": {
+    "path": "registry/rc_grouped_residual_v7_pre_submit_engineering_20260908.json",
+    "sha256": "330622836a083ac929fd0f84408230ce3a184c343fbc3e76575a57bcec6f9a09"
+  },
+  "formal_outcomes_before_development_go_authorized": false,
+  "gate": {
+    "path": "src/rc_aslo_xf/reference_conditioned_latent_proposal_natural_gate_v2.py",
+    "sha256": "3fe3eb1369e8c7f391e5d208e73422d9ce3e9e53554815bcc73f78baf8b66f01"
+  },
+  "gate_requirements": {
+    "c_bind_positive_drops_at_least": 21,
+    "control_drop_supergroup_means_positive": true,
+    "p_coord_positive_drops_at_least": 21,
+    "paired_net_vs_each_matched_control_at_least": 4,
+    "paired_net_vs_frozen_v6_query_only_at_least": 4,
+    "rank_success_at_least": 21,
+    "structural_coverage_at_least": 26,
+    "supergroup_margin_positive": true
+  },
+  "input_manifest_sha256": "7dbed0e914a0c176625ed5109ff5b2900ecdd5c0b8f4564d4d190f041d4caf89",
+  "launcher": {
+    "path": "slurm/rc_grouped_residual_development_v7_dev_cpuonly_59m.sbatch",
+    "sha256": "b98d3d7a1319fb42c957d9ae9764742eb6e2527550566626045fd4253f9bd1f5"
+  },
+  "logical_sha256": "db5be2b0eb2f02365a84c244c1253bad097056025c68215aab2d70461f94f14a",
+  "matched_arms": [
+    "REAL",
+    "ALL_PATCH_NO_HYP",
+    "QUERY_ONLY_REGION"
+  ],
+  "new_method_variant_count": 1,
+  "old_v6": {
+    "fresh_state": {
+      "path": "results/rc_competitive_witness_development_work_v6/fresh_state.json",
+      "sha256": "b351b3105a9c5d113415bb9057d23daa4acaabcb3029615d6025c4a9dd53df6f"
+    },
+    "result": {
+      "path": "results/rc_competitive_witness_development_v6/result.json",
+      "sha256": "8b74cdd225d9b01d2462ca34420bccd225b7dd6fa3bb8aaef4da7891e217af9b"
+    },
+    "statistics": {
+      "path": "results/rc_competitive_witness_development_v6/statistics.json",
+      "sha256": "9882cf87d06a9a295677533903171a6e90512492b4e585bced2d60ab42281c07"
+    },
+    "validation": {
+      "path": "results/rc_competitive_witness_development_v6_validation_json_schema_repair_v1/result.json",
+      "sha256": "a580fb2c79aaba6badf193c5ca79038f6b44e6aa8c98c56b31d627a07d11afda"
+    }
+  },
+  "output_rel": "results/rc_grouped_residual_development_v7",
+  "postjoin": {
+    "authority": {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.json",
+      "sha256": "9c8d90280b2a9e83594d1f87b8754faa98b49449204ba8ada4f92a17c9e66e5d"
+    },
+    "validation": {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.independent_validation.json",
+      "sha256": "15aaa8cf332003e0979b71fc45bf1b20e5afa402930916c20a46fdf519a1124c"
+    }
+  },
+  "resource_bound": {
+    "continuations_same_checkpoint_only": true,
+    "cpus_per_worker": 4,
+    "gpu_count": 0,
+    "independent_training_lanes": 2,
+    "memory_gib_per_worker": 64,
+    "minutes_per_allocation": 59,
+    "partition": "dev_cpuonly"
+  },
+  "runner": {
+    "path": "programs/run_rc_grouped_residual_development_v7.py",
+    "sha256": "4666b8f8802987b92fca96277df19907e47dc2671083244668e50af125f8f26d"
+  },
+  "schema": "rc_grouped_residual_development_authority_v7_20260908",
+  "scientific_GO_or_NO_GO": null,
+  "sources": [
+    {
+      "path": "plan/REFERENCE_CONDITIONED_GROUPED_RESIDUAL_P_ONLY_V7_20260908.md",
+      "sha256": "d3c7ec4e781582d88b13b3d9932f7463fe07bd869d52478989e448e82bc2c3a6"
+    },
+    {
+      "path": "programs/prepare_rc_grouped_residual_authority_v7.py",
+      "sha256": "38d1fdab4d8113c11bd43863f331ea58d296e6dda1dc33febbf66f219f597395"
+    },
+    {
+      "path": "programs/prepare_rc_grouped_residual_inputs_v7.py",
+      "sha256": "e933814472a3bca65afa9cead70242a93ad816668d12e7a5d8a124b914ee3d99"
+    },
+    {
+      "path": "programs/run_rc_grouped_residual_development_v7.py",
+      "sha256": "4666b8f8802987b92fca96277df19907e47dc2671083244668e50af125f8f26d"
+    },
+    {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.independent_validation.json",
+      "sha256": "15aaa8cf332003e0979b71fc45bf1b20e5afa402930916c20a46fdf519a1124c"
+    },
+    {
+      "path": "registry/rc_lth_p_only_natural_optimization_postjoin_authority_v1_20260907.json",
+      "sha256": "9c8d90280b2a9e83594d1f87b8754faa98b49449204ba8ada4f92a17c9e66e5d"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_v6/result.json",
+      "sha256": "8b74cdd225d9b01d2462ca34420bccd225b7dd6fa3bb8aaef4da7891e217af9b"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_v6/statistics.json",
+      "sha256": "9882cf87d06a9a295677533903171a6e90512492b4e585bced2d60ab42281c07"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_v6_validation_json_schema_repair_v1/result.json",
+      "sha256": "a580fb2c79aaba6badf193c5ca79038f6b44e6aa8c98c56b31d627a07d11afda"
+    },
+    {
+      "path": "results/rc_competitive_witness_development_work_v6/fresh_state.json",
+      "sha256": "b351b3105a9c5d113415bb9057d23daa4acaabcb3029615d6025c4a9dd53df6f"
+    },
+    {
+      "path": "results/rc_grouped_residual_e0_v7/result.json",
+      "sha256": "80628c773fd124c925cb4e8ee2eee67bd3155ce88b9d180bb27cd96796a24520"
+    },
+    {
+      "path": "slurm/rc_grouped_residual_development_v7_dev_cpuonly_59m.sbatch",
+      "sha256": "b98d3d7a1319fb42c957d9ae9764742eb6e2527550566626045fd4253f9bd1f5"
+    },
+    {
+      "path": "src/rc_aslo_xf/reference_conditioned_grouped_residual_p_only_v7.py",
+      "sha256": "cbc98502e27c42e0eb52a59c71ff6fc2a4f7865a20818a1a51186222a0fcec19"
+    },
+    {
+      "path": "src/rc_aslo_xf/reference_conditioned_latent_proposal_natural_gate_v1.py",
+      "sha256": "30c75700018dd7086ef9f949bd92cc3ac5a3246dab8e121ef5a89f04cee0d282"
+    },
+    {
+      "path": "src/rc_aslo_xf/reference_conditioned_latent_proposal_natural_gate_v2.py",
+      "sha256": "3fe3eb1369e8c7f391e5d208e73422d9ce3e9e53554815bcc73f78baf8b66f01"
+    },
+    {
+      "path": "registry/rc_grouped_residual_v7_pre_submit_engineering_20260908.json",
+      "sha256": "330622836a083ac929fd0f84408230ce3a184c343fbc3e76575a57bcec6f9a09"
+    },
+    {
+      "path": "programs/validate_rc_grouped_residual_e0_v7.py",
+      "sha256": "090d34310dcb4db86a4ba75c38d28bd3291cd414a26f8873bcb550ccec513742"
+    }
+  ],
+  "status": "RC_GROUPED_RESIDUAL_V7_DEVELOPMENT_AUTHORITY_READY",
+  "training": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "common_eligible_queries": 29,
+    "dtype": "torch.float64",
+    "eps": 1e-08,
+    "head_parameters_per_arm": 256,
+    "lr": 0.03,
+    "masked_updates": "graph_connected_zero_loss_with_AdamW_step",
+    "order_contract_sha256": "46c8cacb95673f3eb3a5887561fa0722ef0de995ccdfaaaabd54be4d0615ea21",
+    "order_sha256": "66935b39e3ce26296d7fc2f5fe0b8dcd5c3f0862969426347662278dcfaf4977",
+    "seed": 17,
+    "updates": 512,
+    "weight_decay": 0.0
+  },
+  "validation_rel": "results/rc_grouped_residual_development_v7_validation",
+  "work_rel": "results/rc_grouped_residual_development_work_v7"
+}

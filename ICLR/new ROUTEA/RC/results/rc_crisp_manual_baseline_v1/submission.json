@@ -1,0 +1,61 @@
+{
+  "join": "5150503",
+  "maximum_worker_concurrency": 28,
+  "pilot": "5150501",
+  "records": [
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_accelerated",
+        "--array=0,75%2",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_crisp_manual_baseline_v1.sbatch",
+        "worker"
+      ],
+      "job_id": "5150501",
+      "label": "crisp_pilots",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_crisp_manual_baseline_v1/submitted_crisp_pilots.sbatch",
+        "sha256": "7a8d78d3994fbace6faf742f787bf8629dbc646e57da8af916819414f96799ec"
+      },
+      "stderr": "",
+      "stdout": "5150501\n"
+    },
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--array=1-74,76-149%28",
+        "--dependency=afterok:5150501",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_crisp_manual_baseline_v1.sbatch",
+        "worker"
+      ],
+      "job_id": "5150502",
+      "label": "crisp_rest",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_crisp_manual_baseline_v1/submitted_crisp_rest.sbatch",
+        "sha256": "7a8d78d3994fbace6faf742f787bf8629dbc646e57da8af916819414f96799ec"
+      },
+      "stderr": "",
+      "stdout": "5150502\n"
+    },
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--dependency=afterok:5150502:5150501",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_crisp_manual_baseline_v1.sbatch",
+        "join"
+      ],
+      "job_id": "5150503",
+      "label": "crisp_join",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_crisp_manual_baseline_v1/submitted_crisp_join.sbatch",
+        "sha256": "7a8d78d3994fbace6faf742f787bf8629dbc646e57da8af916819414f96799ec"
+      },
+      "stderr": "",
+      "stdout": "5150503\n"
+    }
+  ],
+  "remaining": "5150502"
+}

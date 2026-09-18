@@ -1,0 +1,81 @@
+{
+  "RAW_correct": 86,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_train128_disagreement_oof4_execution_authority_v1_20260910.json",
+    "sha256": "c1284ccb621b58bb23fb8851ba621474d53e90c69dfdecdf50e1d7d57be16645"
+  },
+  "elapsed": "00:09:54",
+  "exit_code": "0:0",
+  "gates": {
+    "RAW_break_not_above_BASE7": true,
+    "count_strictly_above_BASE7": false,
+    "count_strictly_above_CONSTANT1": false,
+    "equal_group_strictly_above_BASE7": false,
+    "equal_group_strictly_above_CONSTANT1": false
+  },
+  "job_id": "5139336",
+  "models": {
+    "BASE7": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.83125,
+      "equal_group_accuracy_fraction": "133/160",
+      "rescue_vs_RAW": 23
+    },
+    "CONDITIONAL4": {
+      "break_vs_RAW": 1,
+      "correct": 107,
+      "equal_group_accuracy": 0.8197916666666667,
+      "equal_group_accuracy_fraction": "787/960",
+      "rescue_vs_RAW": 22
+    },
+    "CONSTANT1": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.8260416666666667,
+      "equal_group_accuracy_fraction": "793/960",
+      "rescue_vs_RAW": 23
+    }
+  },
+  "new_EVAL_inference_or_fit_performed": false,
+  "next_stage_for_this_family": "STOP_WITHOUT_EVAL_ACCESS",
+  "original_ec7_parameter_seal_unchanged": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+    "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+  },
+  "paired_changes": {
+    "BASE7": {
+      "break": 2,
+      "break_query_ids": [
+        "OUTCOME-0087",
+        "DIFFICULT-0102"
+      ],
+      "net": -1,
+      "rescue": 1,
+      "rescue_query_ids": [
+        "OUTCOME-0389"
+      ]
+    },
+    "CONSTANT1": {
+      "break": 1,
+      "break_query_ids": [
+        "DIFFICULT-0102"
+      ],
+      "net": -1,
+      "rescue": 0,
+      "rescue_query_ids": []
+    }
+  },
+  "recorded_utc": "2026-09-10T07:23:31.565092+00:00",
+  "research_extension_scope_unchanged": true,
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/result.json",
+    "sha256": "9fdf72f68ab3b1444c1961a9d842b4a8d9267bdfebaee30a081f7b7947a79d0d"
+  },
+  "scheduler_state": "COMPLETED",
+  "status": "TRAIN128_DISAGREEMENT_OOF4_COMPLETE_VALIDATED_GATE_NOT_PASSED",
+  "validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/validation.json",
+    "sha256": "43ccd7e30a50e52f4c4783d4d17304f9b4ec205bac1ca09674e2a82fca20d8c0"
+  }
+}

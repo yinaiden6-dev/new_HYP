@@ -1,0 +1,56 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_full_candidate_identity_loss_authority_v1_20260912.json",
+    "sha256": "9f5a91d426101f97f910186e2d31e89bf08144ca905dc02f58ae6651dde07a5d"
+  },
+  "baseline_head_training_updates": 0,
+  "function_change": {
+    "FULL_loss": "mean_logsumexp_RAW0_plus_all_challengers_minus_target",
+    "PAIR_FULL_mixture": [
+      1,
+      1
+    ],
+    "PAIR_loss": "cost1_BCE_mean",
+    "changed_component": "FULL_LOSS_ONLY",
+    "changed_function_sha256": "1d7314d01fa6d4b09b5d2315485174e539a8037216972c4db03e8fc2c0501328",
+    "new_features": 0,
+    "parameter_count": 7,
+    "replacement_count": 1,
+    "temperature": 1,
+    "unit_cost_function_sha256": "c977e1defffa74d4cdb4578b2f704d5116da6f814972c4cb803e103fed4583ff"
+  },
+  "input_seal": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_convex_train_loss_cause_v1/input_seal.json",
+    "sha256": "add8fd4f6640e46936327e200b965ce6bf06e724c44233b178b58c6d3e362862"
+  },
+  "natural_training_updates": 0,
+  "original_head_training_updates": 0,
+  "status": "LISTWISE_UNIT1_OBJECTIVE_PREFLIGHT_PASS",
+  "synthetic": {
+    "checks": [
+      "RAW0_in_denominator",
+      "all127_challenger_gradients",
+      "target_position_not_physical_index",
+      "nonmaximum_wrong_contributes",
+      "independent_CE_loss_gradient_and_AdamW_step"
+    ],
+    "function_change": {
+      "FULL_loss": "mean_logsumexp_RAW0_plus_all_challengers_minus_target",
+      "PAIR_FULL_mixture": [
+        1,
+        1
+      ],
+      "PAIR_loss": "cost1_BCE_mean",
+      "changed_component": "FULL_LOSS_ONLY",
+      "changed_function_sha256": "1d7314d01fa6d4b09b5d2315485174e539a8037216972c4db03e8fc2c0501328",
+      "new_features": 0,
+      "parameter_count": 7,
+      "replacement_count": 1,
+      "temperature": 1,
+      "unit_cost_function_sha256": "c977e1defffa74d4cdb4578b2f704d5116da6f814972c4cb803e103fed4583ff"
+    },
+    "natural_training_updates": 0,
+    "synthetic_only": true,
+    "tolerance": 1e-12
+  }
+}

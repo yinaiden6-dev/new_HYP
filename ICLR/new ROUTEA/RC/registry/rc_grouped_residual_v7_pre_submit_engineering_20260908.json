@@ -1,0 +1,53 @@
+{
+  "automatic_stage_advance": false,
+  "draft_authority_sha256": "9b242059e45ad374c0dcc46e23c80cf58b65c27242b10801a7228a42f2de31b8",
+  "independent_core_e0": {
+    "expected_status": "RC_GROUPED_RESIDUAL_V7_INDEPENDENT_E0_PASS",
+    "path": "results/rc_grouped_residual_e0_v7/result.json",
+    "sha256": "80628c773fd124c925cb4e8ee2eee67bd3155ce88b9d180bb27cd96796a24520"
+  },
+  "real_query_smoke": {
+    "actual_target_reads": 0,
+    "authority_sha256": "9b242059e45ad374c0dcc46e23c80cf58b65c27242b10801a7228a42f2de31b8",
+    "automatic_stage_advance": false,
+    "candidate_count_each": 128,
+    "checks": {
+      "deploy_serialization_parity": true,
+      "postjoin_label_barrier_unreleased": true,
+      "real_full_C128_query_loaded": true,
+      "score_vectors_FP64_finite": true,
+      "source_manifest_bound": true,
+      "statistic_conversion": true,
+      "synthetic_role_only": true
+    },
+    "claim_level": "ENGINEERING_ONLY_SYNTHETIC_ROLE_NO_TARGET_READS",
+    "context_sha256": "32205cbae34c690513acf3a25eb48746a532e90e5040f9b8f8a1d3410ed7da7f",
+    "core_sha256": "cbc98502e27c42e0eb52a59c71ff6fc2a4f7865a20818a1a51186222a0fcec19",
+    "full_32_closure_performed": false,
+    "input_manifest_sha256": "7dbed0e914a0c176625ed5109ff5b2900ecdd5c0b8f4564d4d190f041d4caf89",
+    "natural_gate_reduction_count": 0,
+    "optimizer_step_count": 0,
+    "query_count_closed": 1,
+    "query_selector_vector_count": 3,
+    "runner_sha256": "4666b8f8802987b92fca96277df19907e47dc2671083244668e50af125f8f26d",
+    "scientific_GO_or_NO_GO": null,
+    "score_vector_count": 1164,
+    "scored_query_count": 1,
+    "status": "RC_GROUPED_RESIDUAL_V7_RUNNER_ONE_QUERY_SMOKE_PASS"
+  },
+  "scientific_GO_or_NO_GO": null,
+  "source_core_sha256": "cbc98502e27c42e0eb52a59c71ff6fc2a4f7865a20818a1a51186222a0fcec19",
+  "source_runner_sha256": "4666b8f8802987b92fca96277df19907e47dc2671083244668e50af125f8f26d",
+  "status": "RC_GROUPED_RESIDUAL_V7_PRE_SUBMIT_ENGINEERING_PASS",
+  "synthetic_checkpoint_512": {
+    "checkpoint_256_sha256": "806fd33bbfe224470bd4c5268bbe4042bac3f5af7f2873484c8a77812f6be930",
+    "checkpoint_512_sha256": "b0534cea6a9af3ce1da9353a00884a87ee777de15e617daa907971534792887b",
+    "checks": {
+      "256_boundary": true,
+      "512_final": true,
+      "masked_zero_grad_steps_retained": true,
+      "model_and_all_AdamW_tensor_bits": true
+    },
+    "status": "V7_SYNTHETIC_512_CHECKPOINT_PARITY_PASS"
+  }
+}

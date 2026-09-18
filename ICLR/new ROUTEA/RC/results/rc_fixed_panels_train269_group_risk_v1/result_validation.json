@@ -1,0 +1,928 @@
+{
+  "MRR_method": "exact fractions followed by float comparison at absolute tolerance 1e-12",
+  "action_tie_rule": "Python max earliest challenger; HOLD when maximum <= 0",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_fixed_panels_train269_group_risk_authority_v1_20260911.json",
+    "sha256": "38de28fc84c9770f845893df74f46c80d163ed74453875d3e3493e3b508fbfde"
+  },
+  "counts": {
+    "EVAL128": 128,
+    "EVAL32": 32,
+    "full_evaluation": 160,
+    "train": 269
+  },
+  "deployment_changed": false,
+  "evaluation_labels_opened_after_fit_seal": true,
+  "evaluation_sources": {
+    "eval_labels": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/eval_curator_roles.json",
+      "sha256": "65fcbe8a2f5b0e14fbf02bf665729400327dad9a88de2b78971da2161a846942"
+    },
+    "h593_curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+      "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+    },
+    "original128_curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/curator_roles.json",
+      "sha256": "47277ce66f7aba445fb80a93643039c7e8a47c1f5cc8237f60157a98e3e93381"
+    },
+    "original128_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+      "sha256": "096c9575ffa05a3f9b813adbe5e65c879fbdee77507aa757de09420bef0be866"
+    },
+    "original32_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/routea_matched_three_arm_common3_native7_crossfit_v1/result.json",
+      "sha256": "591b9787403417efa774e7bdb264291f7e8e4a827bfd4f479256d4e7a8e134c3"
+    },
+    "original_scope_exclusions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_eval128_identity_group_exclusion_v1_20260910.json",
+      "sha256": "e1ee298521ab9dfad5f8611b0011b5aeea9808055e50eea156288eb07f3bd0df"
+    }
+  },
+  "external_confirmation": false,
+  "fit_no_label_read_evidence": "producer audit barrier plus authority-bound fresh-process replay and zero-read attestations; this validator does not retrain",
+  "fit_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/validation.json",
+    "sha256": "42964e9397649298a00afe9f09cddcd68bcb310987f6010b8f5ba23e91e1deba"
+  },
+  "historic_input_parity": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/historic_input_parity.json",
+    "sha256": "8c3ff56df5dee391fd4c031de8cd9abdf5d0995b97a964ee4fb50e10d3d5d0da"
+  },
+  "historically_opened_development": true,
+  "independent_logit_method": "NumPy float64 X @ theta[:6] + theta[6]",
+  "independently_checked_logits": 121920,
+  "logit_tolerance": 1e-12,
+  "maximum_absolute_logit_error": 3.552713678800501e-15,
+  "old128_image_sha_aliases": [
+    {
+      "h593_original_query_id": "OUTCOME-0802",
+      "old_original_query_id": "OUTCOME-0803",
+      "query_id": "H593-439c6d740783fc06dffdae7a",
+      "source_image_sha256": "52bec594589242ae96c8d8ed498deb25afccd5ca3bd3e8d8a1f7e5793bccf0af"
+    }
+  ],
+  "original7_binary64": [
+    "0x1.01ffd7d7241b3p+0",
+    "-0x1.e3db1bf7526f8p+1",
+    "0x1.6ddd66d0df5d3p+2",
+    "0x1.7a67f045c5bd2p+2",
+    "-0x1.3095a38e39e50p-3",
+    "-0x1.e8ea4dd00f544p-3",
+    "-0x1.7a55fbee7993ap+0"
+  ],
+  "original7_parameter_sha256": "ec7df7e5a5b85f725f8729aed91653e1028814a8bbc0474039dbaffab652b263",
+  "panels": {
+    "EVAL128": {
+      "comparisons": {
+        "IMAGE269__to__GROUP269": {
+          "component_bootstrap95": [
+            -0.017006802721088433,
+            0.031746031746031744
+          ],
+          "component_mean_differences_exact": {
+            "055e3d0a2ba828c5df95354fc5d80825fa129f679641c7a5ba585b5c8911a1f9": {
+              "denominator": 7,
+              "numerator": 1
+            },
+            "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "2aa1e6c4bb63c1bf91f9200ac8983a2fdb8a3d86fcbc58c5f88c921023045af6": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5e1903b41967d7091402cde6aa7a4b83e5df5f58a2bef1439e218f802ca6cf53": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "86244889a9cf4aa3df9f971885f8dfcec40ce965b829d12b7deb1eb31c2e4e44": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "876e9a6c8b596c741810be05ef83bc4037f224102f15277c78e9afa9a641a3ab": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea": {
+              "denominator": 6,
+              "numerator": -1
+            },
+            "bf0eaa86ddfc9a7fbdb09ac2f6f0fd91e32036da44a8971649ba96ecb8aa1b71": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c13e6a469d26dd360022a4ba3af2d2bdbb230082c9e605b822c0f5806f9b9bc9": {
+              "denominator": 6,
+              "numerator": 1
+            },
+            "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c7abd98eade15d0ac417dcdde657be6a64e3cb837a808045d084fee49bf7d2a4": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c88cdb15edcd25a88595edf90f1fc3fef1e374c4e494fb4a4e8accfe55137d0a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d39c757e2a4c76e8e9403fd84708b3c233de7ca0b40197f435ceb3a48272b73f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "da3eaa29e19bcc9bd6181db13c258df73a34d84bc20cb67ca147824a6fc4abe5": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f90fb756794a5ae5c68d05c56cb486456e64d83f751a66bbf1ddae3fcb43bb13": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 21,
+          "equal_component_difference": 0.006802721088435374,
+          "loss": 1,
+          "negative_components": 1,
+          "positive_components": 2,
+          "rescue": 2
+        },
+        "ORIGINAL7__to__GROUP269": {
+          "component_bootstrap95": [
+            -0.07482993197278913,
+            -0.007936507936507936
+          ],
+          "component_mean_differences_exact": {
+            "055e3d0a2ba828c5df95354fc5d80825fa129f679641c7a5ba585b5c8911a1f9": {
+              "denominator": 7,
+              "numerator": -2
+            },
+            "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "2aa1e6c4bb63c1bf91f9200ac8983a2fdb8a3d86fcbc58c5f88c921023045af6": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5e1903b41967d7091402cde6aa7a4b83e5df5f58a2bef1439e218f802ca6cf53": {
+              "denominator": 6,
+              "numerator": -1
+            },
+            "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "86244889a9cf4aa3df9f971885f8dfcec40ce965b829d12b7deb1eb31c2e4e44": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "876e9a6c8b596c741810be05ef83bc4037f224102f15277c78e9afa9a641a3ab": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea": {
+              "denominator": 6,
+              "numerator": -1
+            },
+            "bf0eaa86ddfc9a7fbdb09ac2f6f0fd91e32036da44a8971649ba96ecb8aa1b71": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c13e6a469d26dd360022a4ba3af2d2bdbb230082c9e605b822c0f5806f9b9bc9": {
+              "denominator": 6,
+              "numerator": -1
+            },
+            "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c7abd98eade15d0ac417dcdde657be6a64e3cb837a808045d084fee49bf7d2a4": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c88cdb15edcd25a88595edf90f1fc3fef1e374c4e494fb4a4e8accfe55137d0a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d39c757e2a4c76e8e9403fd84708b3c233de7ca0b40197f435ceb3a48272b73f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "da3eaa29e19bcc9bd6181db13c258df73a34d84bc20cb67ca147824a6fc4abe5": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f90fb756794a5ae5c68d05c56cb486456e64d83f751a66bbf1ddae3fcb43bb13": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 21,
+          "equal_component_difference": -0.03741496598639456,
+          "loss": 5,
+          "negative_components": 4,
+          "positive_components": 0,
+          "rescue": 0
+        },
+        "ORIGINAL7__to__IMAGE269": {
+          "component_bootstrap95": [
+            -0.10090702947845805,
+            0.0
+          ],
+          "component_mean_differences_exact": {
+            "055e3d0a2ba828c5df95354fc5d80825fa129f679641c7a5ba585b5c8911a1f9": {
+              "denominator": 7,
+              "numerator": -3
+            },
+            "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "2aa1e6c4bb63c1bf91f9200ac8983a2fdb8a3d86fcbc58c5f88c921023045af6": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5e1903b41967d7091402cde6aa7a4b83e5df5f58a2bef1439e218f802ca6cf53": {
+              "denominator": 6,
+              "numerator": -1
+            },
+            "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "86244889a9cf4aa3df9f971885f8dfcec40ce965b829d12b7deb1eb31c2e4e44": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "876e9a6c8b596c741810be05ef83bc4037f224102f15277c78e9afa9a641a3ab": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "bf0eaa86ddfc9a7fbdb09ac2f6f0fd91e32036da44a8971649ba96ecb8aa1b71": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c13e6a469d26dd360022a4ba3af2d2bdbb230082c9e605b822c0f5806f9b9bc9": {
+              "denominator": 3,
+              "numerator": -1
+            },
+            "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c7abd98eade15d0ac417dcdde657be6a64e3cb837a808045d084fee49bf7d2a4": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c88cdb15edcd25a88595edf90f1fc3fef1e374c4e494fb4a4e8accfe55137d0a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d39c757e2a4c76e8e9403fd84708b3c233de7ca0b40197f435ceb3a48272b73f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "da3eaa29e19bcc9bd6181db13c258df73a34d84bc20cb67ca147824a6fc4abe5": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f90fb756794a5ae5c68d05c56cb486456e64d83f751a66bbf1ddae3fcb43bb13": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 21,
+          "equal_component_difference": -0.04421768707482993,
+          "loss": 7,
+          "negative_components": 3,
+          "positive_components": 0,
+          "rescue": 1
+        },
+        "RAW__to__ORIGINAL7": {
+          "component_bootstrap95": [
+            0.015873015873015872,
+            0.16326530612244897
+          ],
+          "component_mean_differences_exact": {
+            "055e3d0a2ba828c5df95354fc5d80825fa129f679641c7a5ba585b5c8911a1f9": {
+              "denominator": 7,
+              "numerator": 3
+            },
+            "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "2aa1e6c4bb63c1bf91f9200ac8983a2fdb8a3d86fcbc58c5f88c921023045af6": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "5e1903b41967d7091402cde6aa7a4b83e5df5f58a2bef1439e218f802ca6cf53": {
+              "denominator": 6,
+              "numerator": 1
+            },
+            "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b": {
+              "denominator": 2,
+              "numerator": 1
+            },
+            "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "86244889a9cf4aa3df9f971885f8dfcec40ce965b829d12b7deb1eb31c2e4e44": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "876e9a6c8b596c741810be05ef83bc4037f224102f15277c78e9afa9a641a3ab": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea": {
+              "denominator": 6,
+              "numerator": 1
+            },
+            "bf0eaa86ddfc9a7fbdb09ac2f6f0fd91e32036da44a8971649ba96ecb8aa1b71": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c13e6a469d26dd360022a4ba3af2d2bdbb230082c9e605b822c0f5806f9b9bc9": {
+              "denominator": 2,
+              "numerator": 1
+            },
+            "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c7abd98eade15d0ac417dcdde657be6a64e3cb837a808045d084fee49bf7d2a4": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "c88cdb15edcd25a88595edf90f1fc3fef1e374c4e494fb4a4e8accfe55137d0a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "d39c757e2a4c76e8e9403fd84708b3c233de7ca0b40197f435ceb3a48272b73f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "da3eaa29e19bcc9bd6181db13c258df73a34d84bc20cb67ca147824a6fc4abe5": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f90fb756794a5ae5c68d05c56cb486456e64d83f751a66bbf1ddae3fcb43bb13": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 21,
+          "equal_component_difference": 0.08390022675736962,
+          "loss": 1,
+          "negative_components": 0,
+          "positive_components": 5,
+          "rescue": 12
+        }
+      },
+      "old_ec7_perquery_parity_count": 128,
+      "population": 128,
+      "recall_C128": 121,
+      "scores": {
+        "GROUP269": {
+          "MRR": 0.8017041829514486,
+          "MRR_exact": {
+            "denominator": 265988465213080266608640,
+            "numerator": 213244065178162339924043
+          },
+          "correct": 94
+        },
+        "GROUP269_CBIND": {
+          "MRR": 0.7048325649860807,
+          "MRR_exact": {
+            "denominator": 20481111821407180528865280,
+            "numerator": 14435754578849162133403583
+          },
+          "correct": 73
+        },
+        "IMAGE269": {
+          "MRR": 0.7968864746181153,
+          "MRR_exact": {
+            "denominator": 88662821737693422202880,
+            "numerator": 70654203444244913227089
+          },
+          "correct": 93
+        },
+        "IMAGE269_CBIND": {
+          "MRR": 0.7277492316527474,
+          "MRR_exact": {
+            "denominator": 20481111821407180528865280,
+            "numerator": 14905113391423076687190079
+          },
+          "correct": 78
+        },
+        "ORIGINAL7": {
+          "MRR": 0.8240132107292264,
+          "MRR_exact": {
+            "denominator": 797965395639240799825920,
+            "numerator": 657534027711508277198801
+          },
+          "correct": 99
+        },
+        "ORIGINAL7_CBIND": {
+          "MRR": 0.6770857891924299,
+          "MRR_exact": {
+            "denominator": 61443335464221541586595840,
+            "numerator": 41602409283407658779922949
+          },
+          "correct": 67
+        },
+        "RAW": {
+          "MRR": 0.7700669399860807,
+          "MRR_exact": {
+            "denominator": 20481111821407180528865280,
+            "numerator": 15771827107823771175716279
+          },
+          "correct": 88
+        }
+      }
+    },
+    "EVAL32": {
+      "comparisons": {
+        "IMAGE269__to__GROUP269": {
+          "component_bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "component_mean_differences_exact": {
+            "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "1dc9b4a228de9516b591d58e28a2763e3d2428004318636d1f9e2936718e7999": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "4307e640e3e4b993a792a0030fe96b8501fe6e1375f37fcb8115bccccdf67258": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "6041aa5f85f4424e5ea88d82fcb2c3a2efe067770270d57d823d934e313867bf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "a7e2eb3376d106cbd8cfa0ddaf20047219e210af69c8abeada87a180f2a8e2a9": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "b59977829e4879950db4969ecaf00ca81d1c8111d9b7a12c396ccf0401db452e": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "b769c5976cb5ff7ce3b894e9be1b36db00c2256a127a7bbb82bac0dfb917368d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "caadf690e51b6ae8aa69d3ebfb189f9ae43f3e3bde9aadd83d79e71a9ed27df7": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "e54a0a27f9b030e92d3186f1b9feb159b51d71cced53115c3612eb3000f84093": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f15f4acea549124570f8e5b5e20c5575b2b6e0d49386891fe5a7552afc90436f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "ff5ec2587aa3b0cdf9f678e20f8a78ed21590c17b5931d4adc290fe15bf09b84": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 11,
+          "equal_component_difference": 0.0,
+          "loss": 0,
+          "negative_components": 0,
+          "positive_components": 0,
+          "rescue": 0
+        },
+        "ORIGINAL7__to__GROUP269": {
+          "component_bootstrap95": [
+            -0.12878787878787878,
+            0.0
+          ],
+          "component_mean_differences_exact": {
+            "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "1dc9b4a228de9516b591d58e28a2763e3d2428004318636d1f9e2936718e7999": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "4307e640e3e4b993a792a0030fe96b8501fe6e1375f37fcb8115bccccdf67258": {
+              "denominator": 4,
+              "numerator": -1
+            },
+            "6041aa5f85f4424e5ea88d82fcb2c3a2efe067770270d57d823d934e313867bf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "a7e2eb3376d106cbd8cfa0ddaf20047219e210af69c8abeada87a180f2a8e2a9": {
+              "denominator": 3,
+              "numerator": -1
+            },
+            "b59977829e4879950db4969ecaf00ca81d1c8111d9b7a12c396ccf0401db452e": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "b769c5976cb5ff7ce3b894e9be1b36db00c2256a127a7bbb82bac0dfb917368d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "caadf690e51b6ae8aa69d3ebfb189f9ae43f3e3bde9aadd83d79e71a9ed27df7": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "e54a0a27f9b030e92d3186f1b9feb159b51d71cced53115c3612eb3000f84093": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f15f4acea549124570f8e5b5e20c5575b2b6e0d49386891fe5a7552afc90436f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "ff5ec2587aa3b0cdf9f678e20f8a78ed21590c17b5931d4adc290fe15bf09b84": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 11,
+          "equal_component_difference": -0.05303030303030303,
+          "loss": 2,
+          "negative_components": 2,
+          "positive_components": 0,
+          "rescue": 0
+        },
+        "ORIGINAL7__to__IMAGE269": {
+          "component_bootstrap95": [
+            -0.12878787878787878,
+            0.0
+          ],
+          "component_mean_differences_exact": {
+            "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "1dc9b4a228de9516b591d58e28a2763e3d2428004318636d1f9e2936718e7999": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "4307e640e3e4b993a792a0030fe96b8501fe6e1375f37fcb8115bccccdf67258": {
+              "denominator": 4,
+              "numerator": -1
+            },
+            "6041aa5f85f4424e5ea88d82fcb2c3a2efe067770270d57d823d934e313867bf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "a7e2eb3376d106cbd8cfa0ddaf20047219e210af69c8abeada87a180f2a8e2a9": {
+              "denominator": 3,
+              "numerator": -1
+            },
+            "b59977829e4879950db4969ecaf00ca81d1c8111d9b7a12c396ccf0401db452e": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "b769c5976cb5ff7ce3b894e9be1b36db00c2256a127a7bbb82bac0dfb917368d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "caadf690e51b6ae8aa69d3ebfb189f9ae43f3e3bde9aadd83d79e71a9ed27df7": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "e54a0a27f9b030e92d3186f1b9feb159b51d71cced53115c3612eb3000f84093": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f15f4acea549124570f8e5b5e20c5575b2b6e0d49386891fe5a7552afc90436f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "ff5ec2587aa3b0cdf9f678e20f8a78ed21590c17b5931d4adc290fe15bf09b84": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 11,
+          "equal_component_difference": -0.05303030303030303,
+          "loss": 2,
+          "negative_components": 2,
+          "positive_components": 0,
+          "rescue": 0
+        },
+        "RAW__to__ORIGINAL7": {
+          "component_bootstrap95": [
+            0.0,
+            0.18181818181818182
+          ],
+          "component_mean_differences_exact": {
+            "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "1dc9b4a228de9516b591d58e28a2763e3d2428004318636d1f9e2936718e7999": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "4307e640e3e4b993a792a0030fe96b8501fe6e1375f37fcb8115bccccdf67258": {
+              "denominator": 2,
+              "numerator": 1
+            },
+            "6041aa5f85f4424e5ea88d82fcb2c3a2efe067770270d57d823d934e313867bf": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "a7e2eb3376d106cbd8cfa0ddaf20047219e210af69c8abeada87a180f2a8e2a9": {
+              "denominator": 3,
+              "numerator": 1
+            },
+            "b59977829e4879950db4969ecaf00ca81d1c8111d9b7a12c396ccf0401db452e": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "b769c5976cb5ff7ce3b894e9be1b36db00c2256a127a7bbb82bac0dfb917368d": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "caadf690e51b6ae8aa69d3ebfb189f9ae43f3e3bde9aadd83d79e71a9ed27df7": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "e54a0a27f9b030e92d3186f1b9feb159b51d71cced53115c3612eb3000f84093": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "f15f4acea549124570f8e5b5e20c5575b2b6e0d49386891fe5a7552afc90436f": {
+              "denominator": 1,
+              "numerator": 0
+            },
+            "ff5ec2587aa3b0cdf9f678e20f8a78ed21590c17b5931d4adc290fe15bf09b84": {
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "components": 11,
+          "equal_component_difference": 0.07575757575757576,
+          "loss": 0,
+          "negative_components": 0,
+          "positive_components": 2,
+          "rescue": 3
+        }
+      },
+      "old_ec7_perquery_parity_count": 32,
+      "population": 32,
+      "recall_C128": 32,
+      "scores": {
+        "GROUP269": {
+          "MRR": 0.8571428571428571,
+          "MRR_exact": {
+            "denominator": 7,
+            "numerator": 6
+          },
+          "correct": 26
+        },
+        "GROUP269_CBIND": {
+          "MRR": 0.8281994047619048,
+          "MRR_exact": {
+            "denominator": 13440,
+            "numerator": 11131
+          },
+          "correct": 25
+        },
+        "IMAGE269": {
+          "MRR": 0.8578869047619048,
+          "MRR_exact": {
+            "denominator": 1344,
+            "numerator": 1153
+          },
+          "correct": 26
+        },
+        "IMAGE269_CBIND": {
+          "MRR": 0.8281994047619048,
+          "MRR_exact": {
+            "denominator": 13440,
+            "numerator": 11131
+          },
+          "correct": 25
+        },
+        "ORIGINAL7": {
+          "MRR": 0.9014136904761905,
+          "MRR_exact": {
+            "denominator": 2688,
+            "numerator": 2423
+          },
+          "correct": 28
+        },
+        "ORIGINAL7_CBIND": {
+          "MRR": 0.7459077380952381,
+          "MRR_exact": {
+            "denominator": 2688,
+            "numerator": 2005
+          },
+          "correct": 20
+        },
+        "RAW": {
+          "MRR": 0.8281994047619048,
+          "MRR_exact": {
+            "denominator": 13440,
+            "numerator": 11131
+          },
+          "correct": 25
+        }
+      }
+    }
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/payload.pt",
+    "sha256": "eb3fc868cac842d2a9800f26cab339b8ed1e0b50e2736df7f2a1a11b6cfaaaf1"
+  },
+  "producer": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_fixed_panels_train269_group_risk_v1.py",
+    "sha256": "e0ed86d911b4e68a67e13360265f1c67bda846c1f5f51d914b7ba507b5aa5deb"
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_fixed_panels_train269_group_risk_v1.py",
+    "sha256": "e8999b8c904c32677b0df59c4bac11edf780aa293b762e3f76de8e9d219e0127"
+  },
+  "public_sources": {
+    "feature_and_image_fit_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "feature_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_feature_authority_v1_20260911.json",
+      "sha256": "f891aabaef996a7984926987cbcb23814632574ede395c759015194a251b2860"
+    },
+    "freezer": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/freeze_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "476ece9bcd25f16eebee45eb4a747e97dc7877f48573df0c68ea3b8e8651f961"
+    },
+    "group_fit_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_group_risk_strong_base_v1.py",
+      "sha256": "edce4ed12559f030ba47852fd4be3e47e4b44f9e17a28679517d889c355d1386"
+    },
+    "historic_input_validator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_fixed269_historic_inputs_v1.py",
+      "sha256": "6549563c1b8a8cdc351f333dd3dced27fc6d63a89ce3336f88331ff242aedc13"
+    },
+    "input_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_fixed_panels_train269_group_risk_v1.sbatch",
+      "sha256": "b35cb65f5f0cc6ab96ec9c4ff4da83bfa750d947e096418d5c102abb7dc41dd3"
+    },
+    "metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/metadata_validation.json",
+      "sha256": "d5da8554af5452d8c5dde2de44bee9b90c2a116d76471f4e948e2603df123578"
+    },
+    "original_parameter_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "panel_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/panel_manifest.json",
+      "sha256": "e9a0181e8298056c62f42905e151b8a475721e92ed3f08ec3947d35eb3a7d90e"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_FIXED_PANELS_TRAIN269_GROUP_RISK_V1_20260911.md",
+      "sha256": "4b015eceeae21e766ea7dcd8910ea8da2951c421f3dcb10143612544e9a292d8"
+    },
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "e0ed86d911b4e68a67e13360265f1c67bda846c1f5f51d914b7ba507b5aa5deb"
+    },
+    "reporter": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/report_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "b457558405961ed50ca9d75f265545a5f3a6bf4459d19a5d98265a677f219ad8"
+    },
+    "train_labels": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/train_roles.json",
+      "sha256": "1cdc342374bafa0762e782f33a1d2a0ad44815ca5d1a8faa43b6277649cb5fa9"
+    },
+    "validator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "e8999b8c904c32677b0df59c4bac11edf780aa293b762e3f76de8e9d219e0127"
+    }
+  },
+  "rank_method": "literal selected-physical-row move to front of full RAW gallery",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/result.json",
+    "sha256": "8bc9a6e682cb3d55d40ed0a9889770fe614a6cc93da7b3336003aadb4ad4a61a"
+  },
+  "slurm_job_id": "5141488",
+  "status": "FIXED_PANELS_INDEPENDENT_ACTION_RANK_COUNTS_PASS",
+  "train_eval_overlaps": {
+    "EVAL128": {
+      "component": 0,
+      "group": 0,
+      "identity": 0,
+      "query_id": 0,
+      "source_image_sha256": 0
+    },
+    "EVAL32": {
+      "component": 0,
+      "group": 0,
+      "identity": 0,
+      "query_id": 0,
+      "source_image_sha256": 0
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "EVAL_reads": 0,
+  "all_original_axes_unchanged": true,
+  "argmax_tie_rule": "first physical token position",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_train128_disagreement_cache_authority_v1_20260910.json",
+    "sha256": "463215ad4c9f3513035cee6de8e30d9c40606c380f1cee962abf4a8baf6b92c3"
+  },
+  "cache": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_features_v1/features.npz",
+    "sha256": "ea0ffc00f1e0e3503108b849a338fe41ca88b2d803e5784d9f7ec397d649fd9c"
+  },
+  "candidate_occurrences": 16384,
+  "curator_reads": 0,
+  "feature_scalar_bit_checks": 81920,
+  "forbidden_read_attempts": 0,
+  "fresh_process_PID": 1306185,
+  "fresh_process_nonce": "2fbf255c77554120a820efa1d162707c",
+  "head_predictions": 0,
+  "independent_F_A_D_scalar_checks": 49152,
+  "independent_fsum_F_A_checks": 32768,
+  "independent_index_operator": "numpy.argmax plus NumPy row indexing",
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_features_v1/manifest.json",
+    "sha256": "c0deb8d47c4c635f6d3ba8a9860e39e295aa6b12a71620ff378f6ded8dff9dd1"
+  },
+  "maximum_fsum_absolute_error": 3.3306690738754696e-16,
+  "model_forward_calls": 0,
+  "parent_PID": 1306004,
+  "pooling": "FP64 weighted sum, then divide by clamped FP64 weight sum",
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cache_rc_train128_disagreement_features_v1.py",
+    "sha256": "816479b67d5fdae362e26a28d635585a185f12434f5097a85e28673d216e2da5"
+  },
+  "query_count": 128,
+  "runtime": {
+    "CUDA_used": false,
+    "executable": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/bin/python",
+    "interop_threads": 1,
+    "numpy": "2.2.6",
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+    "threads": 8,
+    "torch": "2.9.1+cu128"
+  },
+  "source_C4_scalar_bit_checks": 65536,
+  "source_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/validation.json",
+    "sha256": "770b9f9ce46f431c7bbe8479e320934c9d1dacdf23f3c3eea650f2812c1a77bf"
+  },
+  "status": "TRAIN128_DISAGREEMENT_CACHE_INDEPENDENT_REPLAY_PASS",
+  "training_updates": 0
+}

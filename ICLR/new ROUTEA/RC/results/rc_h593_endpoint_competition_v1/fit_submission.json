@@ -1,0 +1,17 @@
+{
+  "job_id": "5141118",
+  "stage": "fit",
+  "args": [
+    "sbatch",
+    "--parsable",
+    "--deadline=2026-09-11T18:00:00",
+    "--dependency=afterok:5140747:5141116:5141117",
+    "slurm/rc_h593_endpoint_fit_v1.sbatch"
+  ],
+  "dependency_ids": [
+    "5140747",
+    "5141116",
+    "5141117"
+  ],
+  "created_utc": "2026-09-11T04:17:02.598732+00:00"
+}

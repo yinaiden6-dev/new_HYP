@@ -1,0 +1,144 @@
+{
+  "EVAL_reads": 0,
+  "limits": [
+    "No exclusion of nonlinear or translated coordinate maps.",
+    "No conclusion about other queries, EVAL, or full old-six-feature-plus-calibration heads.",
+    "Coefficients must not initialize, tune or score current or future models."
+  ],
+  "new_LP_calls": 0,
+  "new_training_updates": 0,
+  "plotted_exact_coordinates": {
+    "a": {
+      "approximate": 0.1543901427986508,
+      "denominator": "237363881299009822880560656554465180161017777110688467241169497260882886741502341718990011400910950666220833390048819761500536807",
+      "numerator": "36646643528996121405928377749060450354188996814800095238129411956416153564418992074440387594248968450042089497744783142603379737"
+    },
+    "b": {
+      "approximate": 0.6291994148855622,
+      "denominator": "237363881299009822880560656554465180161017777110688467241169497260882886741502341718990011400910950666220833390048819761500536807",
+      "numerator": "149349215228303017541441461206508920398062456543910999297077069235026158843899097778604876030769377789183020140356927627807553712"
+    },
+    "coefficient_sum": {
+      "approximate": 0.783589557684213,
+      "denominator": "237363881299009822880560656554465180161017777110688467241169497260882886741502341718990011400910950666220833390048819761500536807",
+      "numerator": "185995858757299138947369838955569370752251453358711094535206481191442312408318089853045263625018346239225109638101710770410933449"
+    },
+    "exact_reconstruction": true,
+    "points": {
+      "target": [
+        {
+          "approximate": -0.001256974162022926,
+          "denominator": "14150502719313292176868879288701550592",
+          "numerator": "-17786816297811960201685445736730157"
+        },
+        {
+          "approximate": 0.17824540323571503,
+          "denominator": "5192296858534827574487300800774144",
+          "numerator": "925503047269076687991631034496869"
+        }
+      ],
+      "wrong120": [
+        {
+          "approximate": -0.09031187706482628,
+          "denominator": "1916032238377774101589523148358811648",
+          "numerator": "-173040467964617468843865603480159811"
+        },
+        {
+          "approximate": 0.08742209336336608,
+          "denominator": "166153499473114479086958698389569536",
+          "numerator": "14525486743588610410478065766817793"
+        }
+      ],
+      "wrong87": [
+        {
+          "approximate": -0.02415806086094382,
+          "denominator": "2334694870026321324740914911366873088",
+          "numerator": "-56401700761829187758592109218265969"
+        },
+        {
+          "approximate": 0.30474044981226805,
+          "denominator": "18014398509481984",
+          "numerator": "5489715904876991"
+        }
+      ]
+    },
+    "strict_slack": {
+      "approximate": 0.21641044231578702,
+      "denominator": "237363881299009822880560656554465180161017777110688467241169497260882886741502341718990011400910950666220833390048819761500536807",
+      "numerator": "51368022541710683933190817598895809408766323751977372705963016069440574333184251865944747775892604426995723751947108991089603358"
+    }
+  },
+  "production_binary64_coordinates_as_exact_endpoints": {
+    "a": {
+      "approximate": 0.1543901427986514,
+      "denominator": "10994573410330097316161605232347",
+      "numerator": "1697453758831119373630274916664"
+    },
+    "b": {
+      "approximate": 0.6291994148855624,
+      "denominator": "10994573410330097316161605232347",
+      "numerator": "6917779156696059471707209253902"
+    },
+    "coefficient_sum": {
+      "approximate": 0.7835895576842138,
+      "denominator": "10994573410330097316161605232347",
+      "numerator": "8615232915527178845337484170566"
+    },
+    "exact_reconstruction": true,
+    "points": {
+      "target": [
+        {
+          "approximate": -0.0012569741620228614,
+          "denominator": "9007199254740992",
+          "numerator": "-11321816735401"
+        },
+        {
+          "approximate": 0.17824540323571503,
+          "denominator": "2251799813685248",
+          "numerator": "401372965796435"
+        }
+      ],
+      "wrong120": [
+        {
+          "approximate": -0.0903118770648263,
+          "denominator": "18014398509481984",
+          "numerator": "-1626914143585127"
+        },
+        {
+          "approximate": 0.08742209336336608,
+          "denominator": "72057594037927936",
+          "numerator": "6299425713523267"
+        }
+      ],
+      "wrong87": [
+        {
+          "approximate": -0.024158060860943797,
+          "denominator": "18014398509481984",
+          "numerator": "-435192935565361"
+        },
+        {
+          "approximate": 0.30474044981226805,
+          "denominator": "18014398509481984",
+          "numerator": "5489715904876991"
+        }
+      ]
+    },
+    "strict_slack": {
+      "approximate": 0.2164104423157862,
+      "denominator": "10994573410330097316161605232347",
+      "numerator": "2379340494802918470824121061781"
+    }
+  },
+  "query_id": "DIFFICULT-0101",
+  "scope": "NON_DEPLOYABLE_LABEL_AWARE_TRAIN_DIAGNOSTIC_NOT_MODEL_WEIGHTS",
+  "source_prejoin_sha256": "d7347bcfcd0132a14b717db95cce561546470077dd623ed20c2e822282e113ee",
+  "source_result_sha256": "d2f059554bbe62e74dd112b7802449063dae4aa74204a0906c86e82917c941b0",
+  "source_validation_sha256": "75bf7b3c73bafa4e5279912e40ae2be9e94db79ade0cf7b69e862870d13e9426",
+  "status": "EXACT_TRAIN_SINGLE_CASE_ORIGIN_LINEAR_NORM_IMPOSSIBILITY_VERIFIED",
+  "target_position": 65,
+  "theorem": "t=-a*w120+b*w87;a,b>=0;a+b<1 implies norm(A*t)<max(norm(A*w120),norm(A*w87)) for any nonzero linear A on their 2D span and any norm.",
+  "wrong_positions": [
+    120,
+    87
+  ]
+}

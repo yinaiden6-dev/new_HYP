@@ -1,0 +1,102 @@
+{
+  "join": "5150508",
+  "rawpilot": "5150504",
+  "rawrest": "5150506",
+  "records": [
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_accelerated",
+        "--array=0%1",
+        "--dependency=afterok:5150501",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp_processed128_v2_serialization.sbatch",
+        "raw"
+      ],
+      "job_id": "5150504",
+      "label": "fix_raw_pilot",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/submitted_fix_raw_pilot.sbatch",
+        "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142"
+      },
+      "stderr": "",
+      "stdout": "5150504\n"
+    },
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_accelerated",
+        "--time=00:15:00",
+        "--array=0%1",
+        "--dependency=afterok:5150504",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp_processed128_v2_serialization.sbatch",
+        "roma"
+      ],
+      "job_id": "5150505",
+      "label": "fix_roma_pilot",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/submitted_fix_roma_pilot.sbatch",
+        "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142"
+      },
+      "stderr": "",
+      "stdout": "5150505\n"
+    },
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--array=1-15%16",
+        "--dependency=afterok:5150505",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp_processed128_v2_serialization.sbatch",
+        "raw"
+      ],
+      "job_id": "5150506",
+      "label": "fix_raw_rest",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/submitted_fix_raw_rest.sbatch",
+        "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142"
+      },
+      "stderr": "",
+      "stdout": "5150506\n"
+    },
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--time=00:15:00",
+        "--array=1-15%16",
+        "--dependency=aftercorr:5150506",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp_processed128_v2_serialization.sbatch",
+        "roma"
+      ],
+      "job_id": "5150507",
+      "label": "fix_roma_rest",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/submitted_fix_roma_rest.sbatch",
+        "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142"
+      },
+      "stderr": "",
+      "stdout": "5150507\n"
+    },
+    {
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--dependency=afterok:5150507:5150505",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp_processed128_v2_serialization.sbatch",
+        "join"
+      ],
+      "job_id": "5150508",
+      "label": "fix_join",
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/submitted_fix_join.sbatch",
+        "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142"
+      },
+      "stderr": "",
+      "stdout": "5150508\n"
+    }
+  ],
+  "romapilot": "5150505",
+  "romarest": "5150507"
+}

@@ -1,0 +1,26 @@
+{
+  "version": "l0_c0_gallery_identity_repair_contract_v1_20260808",
+  "status": "FROZEN_BEFORE_L0_V2_IDENTITYFIX_C0",
+  "base_l0_contract": "L0_NATURAL_HARDNEG_V_REPRESENTATION_QUALIFICATION_CONTRACT_V2_20260808.json",
+  "source_gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc",
+  "source_legacy_setids_sha256": "59305a7b787fc1b61277c03fb99154c9edf5cbaec5a84366432b26cfae47dc80",
+  "identity_manifest": "../registry/gallery_identity_repair_v1.json",
+  "identity_manifest_sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f",
+  "physical_row_count": 5413,
+  "legacy_filename_label_count": 5404,
+  "corrected_identity_count": 5412,
+  "required_rules": [
+    "score all 5413 physical rows before any reduction",
+    "retain the one byte-identical Biogen_21 component as one identity",
+    "split every verified generic-filename collision into its stated physical-reference identity",
+    "never use a query target label while constructing the corrected map or C128",
+    "persist both corrected-map and legacy-row-map receipts so raw-V provenance remains independently checkable"
+  ],
+  "forbidden": [
+    "overwriting the frozen ColNomic gallery cache",
+    "changing query identities to fit the repaired map",
+    "oracle candidate insertion",
+    "opened or sealed access"
+  ],
+  "claim_level": "gallery-identity data-contract repair only; no retrieval or ownership claim"
+}

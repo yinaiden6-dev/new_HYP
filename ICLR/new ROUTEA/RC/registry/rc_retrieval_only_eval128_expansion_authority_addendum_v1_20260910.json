@@ -1,0 +1,29 @@
+{
+  "status": "USER_AUTHORIZED_EVALUATION_IMAGE_COUNT_EXPANSION_PREPARATION",
+  "recorded_utc": "2026-09-10T00:25:42.179258+00:00",
+  "user_instruction": "可以把图片提到128或者更多。",
+  "interpretation": "At least128evaluationqueryimages,prioritizingadditionalidentityandsourcegroups;not128totalTRAIN+EVALandnot128candidatesperquery",
+  "minimum_evaluation_queries": 128,
+  "parent_research_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+    "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+  },
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "current_frozen_direction_job_unchanged": "5139157",
+  "old_opened_EVAL32": "retain_separate_regression_reporting;notuntouchedconfirmation",
+  "selection_rules": [
+    "exclude_original_training_images_and_account_for_identity_group_overlap",
+    "freeze_query_image_manifest_and_primary_comparison_before_expanded_outcomes",
+    "do_not_select_cases_by_retrieval_success_or_target_presence_in_C128",
+    "report_identity_group_counts_as_well_as_image_counts",
+    "separate_opened_development_from_unused_evaluation",
+    "preserve_original_RAW_full_gallery_C128_and_all127_action_with_no_target_insertion"
+  ],
+  "protected_inputs_not_implicitly_released": [
+    "D1-MI",
+    "GroZi",
+    "unqualified_formal392_results_or_RoMa_consumption"
+  ],
+  "natural_expanded_run_started": false,
+  "next_step": "catalogue_metadata_and_cache_lineage_inventory_then_freeze_concrete_expanded_protocol"
+}

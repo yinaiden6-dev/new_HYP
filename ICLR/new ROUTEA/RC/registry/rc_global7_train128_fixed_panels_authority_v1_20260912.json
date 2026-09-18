@@ -1,0 +1,110 @@
+{
+  "acceptance": "paired observed net per fixed panel; losses allowed; uncertainty separately",
+  "automatic_deployment": false,
+  "automatic_extra_trials": false,
+  "baselines": [
+    "ORIGINAL7",
+    "LISTWISE_UNIT1"
+  ],
+  "eval_feature_loader": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+    "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+  },
+  "evaluation_sources": {
+    "eval_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/eval_curator_roles.json",
+      "sha256": "65fcbe8a2f5b0e14fbf02bf665729400327dad9a88de2b78971da2161a846942"
+    },
+    "panel_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/panel_manifest.json",
+      "sha256": "e9a0181e8298056c62f42905e151b8a475721e92ed3f08ec3947d35eb3a7d90e"
+    },
+    "previous_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_full_candidate_identity_loss_v1/result.json",
+      "sha256": "4b87ba71a3abb896f0574532b40a1dedaf7e0c56ff0fd341567283906fea5f5d"
+    },
+    "previous_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_full_candidate_identity_loss_v1/independent_validation.json",
+      "sha256": "efb7a52c1d63713b7290cfaff2020a8ac8a9ea546e665f2a7752cc12a179a80f"
+    }
+  },
+  "feature_core": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+    "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+  },
+  "initialization": "zero residual around frozen original ec7",
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_global7_train128_fixed_panels_v1.sbatch",
+    "sha256": "053218d930ab55cbf39103794ab25c4113796aa8c699b4137258f37394dea90c"
+  },
+  "loss": "mean FULL-C128 CE with RAW logit0",
+  "model": "GLOBAL7_T128",
+  "native_helper": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_train128_disagreement_oof4_v1.py",
+    "sha256": "d7302eca66c7c6469a7f5ef99a77afeae8af4b25c3a253a1bdcbb2da7af3a715"
+  },
+  "optimizer": "same screened GLOBAL7 AdamW .03/.001 FP64",
+  "original_head": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+    "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+  },
+  "original_head_training_updates": 0,
+  "plan": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_GLOBAL7_TRAIN128_FIXED_PANELS_V1_20260912.md",
+    "sha256": "8e055cf45f6b166afd7d7076be2de2ea27883201ea76cf0e4716ee8fc3e2cddc"
+  },
+  "prediction_sources": {
+    "previous_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_full_candidate_identity_loss_v1/predictions.pt",
+      "sha256": "b3792b9d0eacbdf4f8eb46123c64875ef4611765b0ebafff9817b0d158bba50b"
+    },
+    "previous_prediction_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_full_candidate_identity_loss_v1/prediction_seal.json",
+      "sha256": "7e8464511d26b10e9bee65f43575e0b548815697f2c714f6604a636031db4b87"
+    }
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_global7_train128_fixed_panels_v1.py",
+    "sha256": "633960150cc4ca47a98d2afa59c0f6fc1125fb4928c814834adca22f2b9ddd53"
+  },
+  "residual_parameters": 7,
+  "screened_OOF_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_query_content_routing_oof4_v1/result.json",
+    "sha256": "f4297504b7e6463a4443226c892205a00abe993356465d0c620ac6a854c0b16d"
+  },
+  "screened_OOF_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_query_content_routing_oof4_v1/result_validation.json",
+    "sha256": "69a0cf111a0e8bc89b1026beaf960685d5e5cf1ae28058cbc6964523aa682b8c"
+  },
+  "screened_helper": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_query_content_routing_oof4_v1.py",
+    "sha256": "c5c65f1990752484c73356f3f0cb00bbbc3c2a35ad5f845218df2a9bf6eff52f"
+  },
+  "status": "GLOBAL7_TRAIN128_FIXED_PANELS_SINGLE_RECIPE_AUTHORIZED",
+  "steps": 2000,
+  "train_groups": 32,
+  "train_images": 128,
+  "train_sources": {
+    "input_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/validation.json",
+      "sha256": "770b9f9ce46f431c7bbe8479e320934c9d1dacdf23f3c3eea650f2812c1a77bf"
+    },
+    "native_features": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/feature_records.json",
+      "sha256": "d2a2c7eddc8a1d236d9b5995186c7b80eb550ce33b0344fc0da2516a5486c078"
+    },
+    "train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_global7_train128_fixed_panels_v1/train_roles.json",
+      "sha256": "9283b32f90e35058162af55ec1aa304ee3f9233ffe58f1dcef85f28750c371ed"
+    },
+    "worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    }
+  },
+  "user_authorization": "2026-09-12 user explicitly continues GLOBAL7 transfer to original EVAL32 and EVAL128",
+  "validator": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_global7_train128_fixed_panels_v1.py",
+    "sha256": "df4252d190543dacb922fcf51b0b3cc9be6e2590560ac110dba1fd1a7deec48f"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "USER_REQUESTED_ACCELERATED_GPU_RESERVATION_APPLIED",
+  "recorded_utc": "2026-09-11T06:49:29.264617+00:00",
+  "user_request": "\u7f29\u77ed\u7533\u8bf7\u65f6\u95f4\uff0c\u53bbaccelerated\uff0c\u6302\u4e00\u4e2a\u7a7a\u8f7dGPU",
+  "jobs": [
+    "5140747",
+    "5141118"
+  ],
+  "partition": "accelerated",
+  "GPU_per_fold": 1,
+  "CPU_per_fold": 8,
+  "memory_per_fold": "16G",
+  "time_per_fold": "00:30:00",
+  "parallel_folds": 5,
+  "job_ids_and_dependencies_preserved": true,
+  "model_training_math_changed": false,
+  "source_checks": {
+    "registry/rc_new_hyp593_training_authority_v1_20260911.json": {
+      "launcher": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp593_fit_v1.sbatch",
+        "sha256": "30c9cb93df7b72e71d6f660a6c9dd7079808349b58e9d78aa689710e76f962e6"
+      },
+      "CPU_only_environment_preserved": true
+    },
+    "registry/rc_h593_endpoint_competition_training_authority_v1_20260911.json": {
+      "launcher": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_endpoint_fit_v1.sbatch",
+        "sha256": "0b411b48ef0ce87717a6797799b848c771bf6176f59ab00b272924ba8cf57e88"
+      },
+      "CPU_only_environment_preserved": true
+    }
+  },
+  "activation_record": "results/rc_h593_accelerated_fit_migration_v1/attempt.json",
+  "future_resubmission_overrides": [
+    "--partition=accelerated",
+    "--gres=gpu:1",
+    "--time=00:30:00"
+  ]
+}

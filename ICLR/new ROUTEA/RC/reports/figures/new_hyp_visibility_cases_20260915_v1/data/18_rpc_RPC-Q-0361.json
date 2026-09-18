@@ -1,0 +1,133 @@
+{
+  "dataset": "rpc",
+  "dataset_label": "RPC 商品",
+  "panel": "RPC600 外部确认面板",
+  "model": "COST1",
+  "model_lineage": "frozen full-H593 heads; zero RPC training/calibration",
+  "evidence_scope": "外部确认结果的事后可视化",
+  "query_id": "RPC-Q-0361",
+  "display_id": "RPC-Q-0361",
+  "execution_ordinal": 361,
+  "identity": "RPC-SKU-001",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/images/RPC-Q-0361.jpg",
+  "source_result": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/result.json",
+  "raw_correct": true,
+  "final_correct": false,
+  "raw_selected": 0,
+  "final_selected": 20,
+  "target_physical": 0,
+  "wrong_physical": 20,
+  "wrong_role": "最终误选 reference",
+  "raw_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/raw",
+  "roma_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/roma",
+  "selection_rule": "next 3 COST1 rescues after already shown RPC-Q-0036 by query_id; first COST1 break",
+  "stem": "18_rpc_RPC-Q-0361",
+  "query_grid": [
+    24,
+    32
+  ],
+  "query_geometry": {
+    "sha256": "e87199278d404c320e3e5a44725b19431efdaa2eef8bd9fec9b043940d494d84",
+    "raw_size_hw": [
+      1944,
+      2592
+    ],
+    "oriented_size_hw": [
+      1944,
+      2592
+    ],
+    "exif_orientation": 1,
+    "processor_input_frame": "EXIF_ORIENTED_BEFORE_RESIZE",
+    "grid_shape": [
+      24,
+      32
+    ],
+    "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+  },
+  "processor_input_frame": "EXIF_ORIENTED_BEFORE_RESIZE",
+  "evidence": {
+    "wrong": {
+      "physical_row": 20,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/images/RPC-REF-0020.jpg",
+      "reference_grid": [
+        24,
+        32
+      ],
+      "reference_geometry": {
+        "sha256": "8b99ca59e5612b01484b569d7649d56a6122bd27564dd6022a1838fa29855d16",
+        "raw_size_hw": [
+          1944,
+          2592
+        ],
+        "oriented_size_hw": [
+          1944,
+          2592
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          24,
+          32
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.019126038717573443,
+        "visibility_mass": 0.049059794239206575,
+        "query_control_score": 0.013692003296811401,
+        "reference_control_score": 0.01623134151370596,
+        "candidate_position": 19,
+        "physical_row": 20,
+        "raw_score": 474.1372985839844,
+        "query_map_sha256": "6fe7f84db47691ace4d399f21b4dcf0d4b5c5f96da2dea1a2287b92535f919e7",
+        "reference_map_sha256": "30e8a04fb64e1d6c3dd83d9e380774a961b78ecfb077d095a2063ee329360796"
+      },
+      "query_map_sha256": "6fe7f84db47691ace4d399f21b4dcf0d4b5c5f96da2dea1a2287b92535f919e7",
+      "reference_map_sha256": "30e8a04fb64e1d6c3dd83d9e380774a961b78ecfb077d095a2063ee329360796"
+    },
+    "target": {
+      "physical_row": 0,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/images/RPC-REF-0000.jpg",
+      "reference_grid": [
+        24,
+        32
+      ],
+      "reference_geometry": {
+        "sha256": "aaa5f5cd4cbbb8ffa2fad4a4e926535121fe807108689b01a2454a34f3724cc9",
+        "raw_size_hw": [
+          1944,
+          2592
+        ],
+        "oriented_size_hw": [
+          1944,
+          2592
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          24,
+          32
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.0010465343692032062,
+        "visibility_mass": 0.012659428412684125,
+        "query_control_score": 0.0007644567936502953,
+        "reference_control_score": 0.000801229664563921,
+        "candidate_position": 0,
+        "physical_row": 0,
+        "raw_score": 520.2233276367188,
+        "query_map_sha256": "91241af2993efa599d58228c7099617127049b35c6744d91e0df31f5f0a4b0cf",
+        "reference_map_sha256": "05250a297f4cd3c4e4da66dc928fc62b9b7f6942eee1be31d1dbb875d8c2e5ab"
+      },
+      "query_map_sha256": "91241af2993efa599d58228c7099617127049b35c6744d91e0df31f5f0a4b0cf",
+      "reference_map_sha256": "05250a297f4cd3c4e4da66dc928fc62b9b7f6942eee1be31d1dbb875d8c2e5ab"
+    }
+  },
+  "raw_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/raw/shard45/payload.pt",
+  "roma_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/roma/shard45/payload.pt",
+  "visualization": "literal cached native query token grids, fixed [0,1], nearest pixels; no overlay, no mask",
+  "inference_calls": 0,
+  "training_updates": 0
+}

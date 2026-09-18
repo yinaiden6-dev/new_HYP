@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "EVAL128": 128,
+    "EVAL32": 32,
+    "train": 269,
+    "train_groups": 32,
+    "train_identities": 32
+  },
+  "eval_role": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/eval_curator_roles.json",
+    "sha256": "65fcbe8a2f5b0e14fbf02bf665729400327dad9a88de2b78971da2161a846942"
+  },
+  "join128": "source_image_sha256 then verify identity and group",
+  "overlaps": {
+    "EVAL128": {
+      "component": 0,
+      "group": 0,
+      "identity": 0,
+      "query_id": 0,
+      "source_image_sha256": 0
+    },
+    "EVAL32": {
+      "component": 0,
+      "group": 0,
+      "identity": 0,
+      "query_id": 0,
+      "source_image_sha256": 0
+    }
+  },
+  "panels": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/panel_manifest.json",
+    "sha256": "e9a0181e8298056c62f42905e151b8a475721e92ed3f08ec3947d35eb3a7d90e"
+  },
+  "sources": {
+    "curator_roles.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+      "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+    },
+    "rc_eval128_identity_group_exclusion_v1_20260910.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_eval128_identity_group_exclusion_v1_20260910.json",
+      "sha256": "e1ee298521ab9dfad5f8611b0011b5aeea9808055e50eea156288eb07f3bd0df"
+    }
+  },
+  "status": "FIXED269_TRAIN_TEST_IMAGE_IDENTITY_GROUP_EXCLUSION_PASS",
+  "train_role": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/train_roles.json",
+    "sha256": "1cdc342374bafa0762e782f33a1d2a0ad44815ca5d1a8faa43b6277649cb5fa9"
+  }
+}

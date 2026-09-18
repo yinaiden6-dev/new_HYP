@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-09-13T02:37:37.478241+00:00",
+  "status": "FIVE_FINAL_HEADS_VALIDATED",
+  "bundle": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_external_head_freeze_v1/bundle.json",
+    "sha256": "b593fb5531dc9a2420cff4b187e3d595e01acdd35b77f4a3817692647356a3ee"
+  },
+  "models": {
+    "CE": {
+      "head_sha256": "a67f75ddac8dc0dcce10f4d9c3cefdd439583c44a725cf2fd48d132318a97fa3",
+      "logit_checks": 150622,
+      "max_abs_error": 1.0658141036401503e-14
+    },
+    "COST1": {
+      "head_sha256": "235689f5972f9f9866c301b381e569d550883051bd2ca6ddce7c7c66e98d16a7",
+      "logit_checks": 150622,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    "COST4": {
+      "head_sha256": "8e46255be6c1493a722597b48d8e16aa9fb59852303cdca1461a534b417d0622",
+      "logit_checks": 150622,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    "GROUP_COST4": {
+      "head_sha256": "75fe637874479182d995d4a4853a45bbd3b2c1fa2f5918bbf7a18a53d9f77184",
+      "logit_checks": 150622,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    "RAW2_CE": {
+      "head_sha256": "775b372df7e065b3e3b5e3cc030f8a1db16c51d299a5e7bc1212bd80ad95600e",
+      "logit_checks": 150622,
+      "max_abs_error": 0.0
+    }
+  },
+  "scheduler": "5143648|5143648|CANCELLED by 509100|0:0|00:00:00|00:10:00\n5143647_0|5143649|FAILED|1:0|00:00:46|00:10:00\n5143647_1|5143651|COMPLETED|0:0|00:00:59|00:10:00\n5143647_2|5143654|COMPLETED|0:0|00:01:00|00:10:00\n5143647_3|5143655|COMPLETED|0:0|00:01:00|00:10:00\n5143647_4|5143647|COMPLETED|0:0|00:00:58|00:10:00\n5143653|5143653|COMPLETED|0:0|00:00:36|00:10:00\n5143652_0|5143652|COMPLETED|0:0|00:01:00|00:10:00\n",
+  "fixture_incident": "incidents/launcher_fixture_incident.json",
+  "automatic_deployment_change": false,
+  "external_queries_scored": 0,
+  "HYP_GO_claimed": false
+}

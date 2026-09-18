@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>new HYP 展示讲义</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<style>body{max-width:1000px;margin:40px auto;padding:0 28px;font-family:system-ui,"Microsoft YaHei",sans-serif;color:#142b42;line-height:1.85}img{max-width:100%;height:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:9px;border:1px solid #dce5ed}th{background:#edf4f7}h1,h2,h3{color:#087f8c}a{color:#087f8c}@media print{h3{break-before:page}}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title">new HYP 展示讲义</h1>
+</header>
+<h1 id="new-hyp-展示讲义">new HYP 展示讲义</h1>
+<p>2026-09-15 · 建议讲解时长 15–20 分钟。用途：组会、合作者交流与论文机制说明。</p>
+<h2 id="一句话介绍">一句话介绍</h2>
+<p>我们用登记reference提供身份依据，把候选条件的匹配质量与内容相容性联合起来，用检索身份监督学习共享纠错规则；同一固定商品训练头在GroZi、RPC取得外部净增，在ISIC取得跨域探索信号。</p>
+<h2 id="术语速查">术语速查</h2>
+<ul>
+<li><strong>Reference</strong>：某个具体身份的登记照片。<strong>Gallery</strong>：reference图库。</li>
+<li><strong>Query</strong>：待识别照片。<strong>Target</strong>：正确身份，只用于训练监督和评测核对。</li>
+<li><strong>RAW</strong>：基础ColNomic全库MaxSim检索。<strong>C128</strong>：RAW自然检索前128个候选。</li>
+<li><strong>Challenger</strong>：除RAW首选外的127个候选。<strong>HOLD</strong>：保留RAW答案。<strong>SWITCH</strong>：改选一个challenger。</li>
+<li><strong>COST4 / COST1</strong>：同一七参数结构，不同错误压制代价。<strong>CE</strong>：预定次模型，候选竞争交叉熵。</li>
+<li><strong>CBIND</strong>：打乱候选与配对证据的关联，检验正确绑定是否有贡献。</li>
+<li><strong>Retrieval-only</strong>：本任务新增训练只用身份/检索关系；不表示基础模型全部预训练都无其他监督。</li>
+</ul>
+<h2 id="完整统计表相同full-h593固定头">完整统计表：相同full-H593固定头</h2>
+<table>
+<thead>
+<tr class="header">
+<th>数据</th>
+<th style="text-align: right;">RAW</th>
+<th style="text-align: right;">COST4</th>
+<th style="text-align: right;">GROUP_COST4</th>
+<th style="text-align: right;">COST1主</th>
+<th style="text-align: right;">CE次</th>
+<th style="text-align: right;">COST1救/损（vs RAW）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GroZi480，外部确认</td>
+<td style="text-align: right;">321/480</td>
+<td style="text-align: right;">326/480</td>
+<td style="text-align: right;">329/480</td>
+<td style="text-align: right;">355/480</td>
+<td style="text-align: right;">367/480</td>
+<td style="text-align: right;">34/0</td>
+</tr>
+<tr class="even">
+<td>RPC600，外部确认</td>
+<td style="text-align: right;">192/600</td>
+<td style="text-align: right;">194/600</td>
+<td style="text-align: right;">196/600</td>
+<td style="text-align: right;">207/600</td>
+<td style="text-align: right;">217/600</td>
+<td style="text-align: right;">18/3</td>
+</tr>
+<tr class="odd">
+<td>ISIC537，已打开队列探索</td>
+<td style="text-align: right;">466/537</td>
+<td style="text-align: right;">469/537</td>
+<td style="text-align: right;">470/537</td>
+<td style="text-align: right;">500/537</td>
+<td style="text-align: right;">513/537</td>
+<td style="text-align: right;">34/0</td>
+</tr>
+</tbody>
+</table>
+<p>共同推理为自然RAW C128、127 challenger、原阈值0的HOLD/SWITCH。外部零训练或校准。GroZi旧5413物理reference追加120张；RPC独立200-reference；ISIC独立390-reference。所有11个原结果臂及其MRR见Excel与CSV，不合并分母。</p>
+<h2 id="逐页讲解">逐页讲解</h2>
+<h3 id="从参考照片到可靠纠错">01 从参考照片到可靠纠错</h3>
+<figure>
+<img src="01_overview.png" alt="从参考照片到可靠纠错" /><figcaption aria-hidden="true">从参考照片到可靠纠错</figcaption>
+</figure>
+<p><strong>本页要点：先说明任务、机制和证据范围，再介绍模型名称。</strong></p>
+<p>开场先定义任务：我们要认出同一个具体物体或病灶，而不是只判断商品或疾病类别。reference是登记照片。当前方法把图像匹配提供的质量信息，与内容编码器提供的相似性结合，再学习何时修改基础检索结果。右侧三组都是同一固定COST1商品头相对各自RAW的结果。GroZi和RPC属于预定范围的外部确认；ISIC是已打开队列的跨域探索，三者不合并统计。</p>
+<h3 id="reference-如何变成可检索的记忆">02 Reference 如何变成可检索的记忆</h3>
+<figure>
+<img src="02_reference_encoding.png" alt="Reference 如何变成可检索的记忆" /><figcaption aria-hidden="true">Reference 如何变成可检索的记忆</figcaption>
+</figure>
+<p><strong>本页要点：reference 是一组可复用视觉表示；配对证据在 query 到来后产生。</strong></p>
+<p>这页展示真实RPC缓存中的reference。它的网格为24乘32，共有768个图像token，每个128维。右图就是保存的数值矩阵，颜色只表示向量分量，不能把某一维直接命名为文字或颜色属性。每个token包含编码器上下文，并非独立裁图特征。RAW阶段还保留固定processor模板token；局部加权评分只读取图像token。reference登记不训练身份专属参数，也不输入身份编号、mask或诊断文字。</p>
+<h3 id="推理的完整路径">03 推理的完整路径</h3>
+<figure>
+<img src="03_runtime_mechanism.png" alt="推理的完整路径" /><figcaption aria-hidden="true">推理的完整路径</figcaption>
+</figure>
+<p><strong>本页要点：质量信息参与内容读取，决策同时保留 RAW 先验。</strong></p>
+<p>按箭头讲清两条路径。RAW用全库内容相似性提出128个候选；RoMa对query和每个候选reference做配对，提供双侧软权重。内容匹配仍可在完整reference内寻找最相似token，没有变成硬坐标单点绑定。共享小头比较每个challenger与RAW首选，最终最多切换一次。HOLD只表示保留原答案，不是未知对象拒识。这里只使用冻结模型前向，没有根据测试标签选候选。</p>
+<h3 id="质量与内容怎样联合起来">04 质量与内容怎样联合起来</h3>
+<figure>
+<img src="04_joint_evidence.png" alt="质量与内容怎样联合起来" /><figcaption aria-hidden="true">质量与内容怎样联合起来</figcaption>
+</figure>
+<p><strong>本页要点：小头比较的是质量与内容的联合证据，不是只看一个相似性数值。</strong></p>
+<p>M与L是当前评分图的因子化描述：S等于M乘L。M反映两侧软可见性总量，L是带reference权重的内容匹配平均值。头输入是challenger相对RAW首选的六项特征，含RAW分差以及质量、内容和移位控制。虽然最终头是线性的，输入已经包含乘积、最大匹配和相对归一化等非线性计算。移位特征的存在本身不证明ownership。</p>
+<h3 id="训练改变了什么cost4-cost1">05 训练改变了什么：COST4 → COST1</h3>
+<figure>
+<img src="05_retrieval_only_training.png" alt="训练改变了什么：COST4 → COST1" /><figcaption aria-hidden="true">训练改变了什么：COST4 → COST1</figcaption>
+</figure>
+<p><strong>本页要点：优化的是共享决策规则；reference 编码方式沿用原实现。</strong></p>
+<p>retrieval-only指我们新增的任务监督只需要query-reference身份关系，不需要逐图空间标注。训练头学会正确候选超过HOLD和竞争候选，同时控制错误切换。COST4对错误challenger施加4倍压制，COST1改为1倍，其余训练结构沿用冻结协议。这个改动在更广开发数据和跨数据集上有收益。它没有训练新的token编码器，也不能概括为所有历史错误都只是过度保守。</p>
+<h3 id="同一固定商品头在三个数据集上评测">06 同一固定商品头，在三个数据集上评测</h3>
+<figure>
+<img src="06_accuracy.png" alt="同一固定商品头，在三个数据集上评测" /><figcaption aria-hidden="true">同一固定商品头，在三个数据集上评测</figcaption>
+</figure>
+<p><strong>本页要点：跨数据集收益成立；各面板保留各自的任务和分母。</strong></p>
+<p>这张图的准确率纵轴统一从零到百分之百，并在每根柱上标出分子分母。COST1从各自RAW的321、192、466，提升到355、207、500。CE结果也完整展示，但仍是预定次模型。不同数据集的图库、任务和抽样不同，不把它们连成样本扩大曲线，不以准确率高低推断难度，也不合并为一个总分。</p>
+<h3 id="主模型-cost1救回与损失同时报告">07 主模型 COST1：救回与损失同时报告</h3>
+<figure>
+<img src="07_rescue_break.png" alt="主模型 COST1：救回与损失同时报告" /><figcaption aria-hidden="true">主模型 COST1：救回与损失同时报告</figcaption>
+</figure>
+<p><strong>本页要点：准确率增益需要展开为救回与损失，不能只报告切换次数。</strong></p>
+<p>救回和损失必须成对报告。相对RAW，GroZi是34救0损，RPC是18救3损，ISIC是34救0损。相对相同数据同结构的COST4，分别是29救0损、16救3损、31救0损。RPC说明当前主张是可靠群体净增，不保证每一张原正确都保持。新模型的SWITCH还可能是错误换成另一错误，所以切换次数不能直接算救回次数。</p>
+<h3 id="reference-绑定证据必须属于当前候选">08 Reference 绑定：证据必须属于当前候选</h3>
+<figure>
+<img src="08_candidate_binding.png" alt="Reference 绑定：证据必须属于当前候选" /><figcaption aria-hidden="true">Reference 绑定：证据必须属于当前候选</figcaption>
+</figure>
+<p><strong>本页要点：当前建立的是候选身份层面的证据绑定。</strong></p>
+<p>CBIND把候选关联的整组配对证据移给另一候选，保持RAW候选轴和头参数。COST1打乱后分别为313、174、414，完整绑定为355、207、500。这个干预说明正确reference与证据的关联在当前系统中有作用。它并不隔离每一个token位置，也不意味着我们已经找到了目标的真实mask。</p>
+<h3 id="群体可靠性按相关样本的组来统计">09 群体可靠性：按相关样本的组来统计</h3>
+<figure>
+<img src="09_grouped_uncertainty.png" alt="群体可靠性：按相关样本的组来统计" /><figcaption aria-hidden="true">群体可靠性：按相关样本的组来统计</figcaption>
+</figure>
+<p><strong>本页要点：可靠净增需要考虑组内相关性，而不仅是多出几张正确。</strong></p>
+<p>不能把同一视频、同一商品或同一患者的照片全部视为独立样本。这里复用原方案封存的分组bootstrap区间。显示的是等组平均的配对准确率差，和前面的query微平均不是同一个估计量。主COST1相对RAW和COST4的这些区间下界均大于零。CE相对COST1在GroZi和RPC的区间跨零，因此它没有取代预定主模型。</p>
+<h3 id="一次明确的失效修复找到-target却没有切换">10 一次明确的失效修复：找到 target，却没有切换</h3>
+<figure>
+<img src="10_held_target_rescues.png" alt="一次明确的失效修复：找到 target，却没有切换" /><figcaption aria-hidden="true">一次明确的失效修复：找到 target，却没有切换</figcaption>
+</figure>
+<p><strong>本页要点：部分瓶颈位于从“候选最好”到“愿意纠错”的决策环节。</strong></p>
+<p>这是最具体的机制解释。我们从原始封存logit逐行核对了31个query。对这些照片，COST4和COST1的最高challenger相同，并且就是target；区别在于旧头最高输出不大于零，所以HOLD，新头大于零，所以切换正确。不是重新给模型补入正确reference，也不是改变阈值。这只解释这31次改进，不能推广成所有错误的唯一原因。</p>
+<h3 id="真实图片成功纠错长什么样">11 真实图片：成功纠错长什么样</h3>
+<figure>
+<img src="11_real_rescue_cases.png" alt="真实图片：成功纠错长什么样" /><figcaption aria-hidden="true">真实图片：成功纠错长什么样</figcaption>
+</figure>
+<p><strong>本页要点：真实图片把“救回”落到具体 query-reference 决策。</strong></p>
+<p>这页只描述模型输出，不凭外观编造错误原因。GroZi案例从已登记120个reference内可展示的救回案例按query编号选第一例；RPC与ISIC按同一规则选第一例。左侧是query，中间是RAW错误选择，右侧是COST1正确选择。请注意reference和query不是同一张文件。对ISIC也只讲同病灶实例检索，不讲疾病诊断。</p>
+<h3 id="同一-query面对不同-reference-的质量权重">12 同一 query，面对不同 reference 的质量权重</h3>
+<figure>
+<img src="12_actual_visibility.png" alt="同一 query，面对不同 reference 的质量权重" /><figcaption aria-hidden="true">同一 query，面对不同 reference 的质量权重</figcaption>
+</figure>
+<p><strong>本页要点：动态关系证据依赖 reference；高可见性本身不等于正确身份。</strong></p>
+<p>这里展示实际RoMa缓存，不是手工画出的注意力。左边的同一query和两张reference配对后，产生右边两幅query可见性网格。色标固定为零到一，因而颜色可以直接比较。权重高表示当前配对模型认为更有重叠支持，并不保证身份正确；错误reference也可以形成高权重。所以还需要ColNomic内容与共享决策。网格不是分割mask，也没有以目标标签参与计算。</p>
+<h3 id="完整展示边界仍有损失也仍有无法救回的-query">13 完整展示边界：仍有损失，也仍有无法救回的 query</h3>
+<figure>
+<img src="13_remaining_failures.png" alt="完整展示边界：仍有损失，也仍有无法救回的 query" /><figcaption aria-hidden="true">完整展示边界：仍有损失，也仍有无法救回的 query</figcaption>
+</figure>
+<p><strong>本页要点：成功机制和群体增益并不意味着所有剩余问题已经解决。</strong></p>
+<p>这页保留负例，说明我们主张群体净增而不是每张都正确。RPC有3张RAW原正确被COST1破坏，展示其中编号最小的一张。ISIC展示target已经在C128内但COST1仍未认对的一张。因此未解决问题既包含候选召回，也包含候选内的表示、比较和决策问题。我们不根据这一页主观猜测为每张图确定根因。</p>
+<h3 id="历史成绩各自保留突破不靠更换分母">14 历史成绩各自保留；突破不靠更换分母</h3>
+<figure>
+<img src="14_history_and_lineage.png" alt="历史成绩各自保留；突破不靠更换分母" /><figcaption aria-hidden="true">历史成绩各自保留；突破不靠更换分母</figcaption>
+</figure>
+<p><strong>本页要点：所有贡献有明确模型、数据和证据归属。</strong></p>
+<p>这一页专门防止历史结果混淆。旧32面板25到28，旧128面板88到99，旧90面板61到69都保留自己的头与协议。H593五折开发结果中COST1是481，CE是486，但这是各折独立训练后的留出预测。外部数据使用重新以全部H593开发数据训练并封存的头，因此不能把外部增益写成旧99/128被突破，也不能把593图上的成绩当作旧128图上的成绩。</p>
+<h3 id="当前论文收口机制与增益未来继续扩展">15 当前论文收口：机制与增益；未来继续扩展</h3>
+<figure>
+<img src="15_scope_and_future.png" alt="当前论文收口：机制与增益；未来继续扩展" /><figcaption aria-hidden="true">当前论文收口：机制与增益；未来继续扩展</figcaption>
+</figure>
+<p><strong>本页要点：当前主线可以收口，未来系统目标不再阻塞当前论文。</strong></p>
+<p>结尾回到用户已经确定的论文边界。当前我们建立并验证的是reference条件下质量和内容的联合校准，以及训练改进带来的群体收益。Ownership作为独立扩展。完整过目不忘系统还需要更完整的登记、图库增长后保持、未知拒识和复杂场景验证。ColNomic是本轮已验证实现，但不是预先认定的最终编码器；新的检索监督编码器作为未来工作，不能提前承诺一定提升。</p>
+<h2 id="常见问题与建议回答">常见问题与建议回答</h2>
+<p><strong>是不是又训练了大模型？</strong> 这轮没有。ColNomic与RoMa冻结，任务训练更新共享七参数头。新token编码器列为未来研究。</p>
+<p><strong>新身份要重训吗？</strong> 当前结构允许登记reference后沿用共享头；跨数据集实验实际复用了固定商品头。它不保证任何新身份一定被召回或识别，也不等于完整过目不忘。</p>
+<p><strong>理论贡献只是改一个系数吗？</strong> 系数改变是具体技术实现。研究内容是把reference条件的质量、内容和决策关系形式化，隔离评分接口与决策失效，并通过冻结协议、对照和跨数据集检验验证可迁移收益。不能把已有MaxSim或简单代数恒等式称为新发明。</p>
+<p><strong>COST1是不是在测试集选了阈值？</strong> 不是。系数在训练目标里改变，推理仍采用事先固定的logit阈值0。GroZi、RPC、ISIC都不训练或校准头。</p>
+<p><strong>为什么CE数字更高却仍是次模型？</strong> 主次角色在外部结果前已指定。CE相对COST1在GroZi与RPC的分组区间跨零；ISIC次模型对照为正，也不事后改写主模型。</p>
+<p><strong>是否每个旧正确都保住？</strong> 没有这样的普遍保证。RPC COST1有18救3损，主张是可靠群体净增。GroZi和ISIC的零损失是本次观察。</p>
+<p><strong>是不是证明了目标区域/ownership？</strong> 没有。当前是候选身份绑定与联合证据校准；质量网格只是RoMa输出，ownership留作独立扩展。</p>
+<p><strong>ISIC是不是疾病诊断？</strong> 不是。任务是同一病灶的实例检索，且使用已打开并经历史筛选的队列，结论是跨域探索。不同文件/像素哈希不保证独立拍摄会话，也没有排除近重复或未知预训练暴露。</p>
+<p><strong>旧28/32、99/128被突破了吗？</strong> 这批外部数字不能这样解释。旧固定面板成绩保持原有模型与协议；H593是开发OOF，外部为full-H593冻结头。</p>
+<p><strong>ColNomic是唯一瓶颈吗？</strong> 尚未证明。冻结表示的适配性和无法由本轮小头学习新视觉特征是系统限制；候选召回、reference可辨识信息和决策也各有边界。新编码器的收益仍需未来受控实验。</p>
+<h2 id="展示时的四个提醒">展示时的四个提醒</h2>
+<ol type="1">
+<li>每次报数字同时说出数据集、模型与分母；不把H593 OOF和外部固定头混在一起。</li>
+<li>先说主COST1，再完整披露次CE。净增同时报告救回和损失。</li>
+<li>图像案例按明确事后规则选取，用于解释输出；不代表整体错误类型的占比。</li>
+<li>当前可收口的是限定范围的机制与收益。ownership、完整过目不忘和新编码器属于未来工作。</li>
+</ol>
+<h2 id="可复现材料">可复现材料</h2>
+<p>原始结果、程序、图片与缓存的哈希记录在 <code>source_manifest.json</code>。全部表格来自原结果逐行复算，bootstrap区间原样读取；本包没有训练、推理、重设阈值或重新抽样。<code>data/illustrative_cases.csv</code>说明选图规则，<code>data/ISIC31_held_to_rescue.csv</code>列出31次决策变化，<code>data/encoding_example.*</code>保存实际编码与质量网格示例。</p>
+</body>
+</html>

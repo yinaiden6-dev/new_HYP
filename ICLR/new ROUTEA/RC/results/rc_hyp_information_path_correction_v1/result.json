@@ -1,0 +1,33 @@
+{
+  "bridge_consumed_roma_prediction_keys": [
+    "overlap_AB",
+    "overlap_BA"
+  ],
+  "bundle_sha256": "8bff8ee124aad6d87946cc284e8827a60e4a130356d43c2f0b9443a6276298c8",
+  "claim_level": "SOURCE_LEVEL_ARCHITECTURE_FACT_NOT_PROVEN_NATURAL_FAILURE_ROOT_CAUSE",
+  "created_at_utc": "2026-09-09T00:47:11.332342+00:00",
+  "facts": [
+    "Frozen successful scoring consumes RoMa-derived query/reference overlap weights, then independent all-reference weighted MaxSim on ColNomic tokens.",
+    "The downstream ColNomic score does not consume the RoMa warp assignment as a required q-to-r token pairing.",
+    "P V6/V8 instead use identity values on original RoMa-assigned reference tokens and newly constrained regions.",
+    "These are different information paths; old recognition gains do not validate the new hard-assignment P path."
+  ],
+  "limits": [
+    "RoMa overlap maps can themselves contain candidate-specific and spatial information; this is not a proof that all geometry is irrelevant.",
+    "No natural assignment intervention has isolated how much this transition causes P ranking failures.",
+    "No raw model forward, training, data mutation or new scientific GO was performed."
+  ],
+  "old_score_arguments": [
+    "q",
+    "r",
+    "wq",
+    "wr"
+  ],
+  "old_score_source": "def score(q,r,wq,wr):\n qn=F.normalize(q.to(torch.float64),dim=1);rn=F.normalize(r.to(torch.float64),dim=1);sim=qn@rn.T;local=(sim*wr[None]).max(1).values;mass=torch.sqrt(wq.mean()*wr.mean());return mass*(wq*local).sum()/wq.sum().clamp_min(1e-12),mass,local",
+  "sources": {
+    "programs/materialize_romav2_colnomic_current_runtime_bridge_roma_shard_v1.py": "46fe67eff5e309d8467cbc5523a565cdfd53f5161189bad34d49c126eeff4325",
+    "programs/run_romav2_colnomic_visibility_xf_six_case_v1.py": "fb73bdd6cc2b585405a9fcb1e411535f487e83d29d6021f8c1f632af78ecfd3c",
+    "src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+  },
+  "status": "RC_HYP_INFORMATION_PATH_SOURCE_FACT_CONFIRMED"
+}

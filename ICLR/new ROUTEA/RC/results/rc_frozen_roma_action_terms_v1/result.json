@@ -1,0 +1,1321 @@
+{
+  "D1_or_protected_data_reads": 0,
+  "HYP_GO_claimed": false,
+  "Slurm_jobs": 0,
+  "checks": {
+    "all_64_127_weighted_term_logit_recompositions_exact": true,
+    "all_64_C128_candidate_axes_and_127_challengers_retained": true,
+    "all_six_feature_zero_interventions_rescore_all_127_with_original_ties_and_threshold": true,
+    "all_source_hashes_unchanged": true,
+    "old_32_EVAL_action_logits_FP64_bits_exact": true,
+    "old_complete_EVAL_result_canonical_payload_exact": true,
+    "original_feature_function_source_executed_without_importing_token_loader": true
+  },
+  "claim_level": "OLD_FROZEN_RAW_ROMA_CURRENT_RUNTIME_INTERNAL_COMPUTATION_INTERVENTIONS_ONLY",
+  "complete_terms": {
+    "path": "complete_action_terms_and_interventions.json",
+    "sha256": "d868748b7768947fb6ae3a2f86534843f609d726373eed92922187ac19194cf8"
+  },
+  "elapsed_seconds": 2.8381536453962326,
+  "intervention_definition": "For each of six existing candidate-difference input coordinates separately set that coordinate to positive zero for every challenger and reevaluate the original dot-product, bias, full challenger selection and zero-threshold action. No retraining or selection among interventions.",
+  "label_join": "Original source-axis target physical row plus frozen corrected-identity duplicate equivalence [714,715], then membership on the current RAW C128; EVAL target positions and complete outputs reproduce the original gallery-label reducer exactly.",
+  "legacy_complete_result_replay": {
+    "path": "legacy_complete_result_replay.json",
+    "sha256": "12dccec38392d45da0a34aece6bc0be8e089ef0f07eca49feb764e8a014d6445"
+  },
+  "limits": [
+    "TRAIN and adaptive internal EVAL are reported separately; this is not a new independent endpoint.",
+    "Term sign/magnitude is not a spatial-causal attribution; correlated terms and the fixed intercept affect interpretation.",
+    "Zeroing the explicit visibility-mass feature does not remove mass from real_score, query/reference differences, or other derived features; it deletes only this one head input term.",
+    "Feature zeroing tests this frozen computation, not deletion of pixels, removal of RoMa, removal of geometry, or absence of HYP.",
+    "No intervention replaces the frozen deployed model, no new GO rule, threshold, tuning or HYP conclusion."
+  ],
+  "new_encoder_or_RoMa_forwards": 0,
+  "new_model_or_scoring_definition": false,
+  "parameter_updates": 0,
+  "raw_image_reads": 0,
+  "scientific_GO_or_NO_GO": null,
+  "sources": [
+    {
+      "path": "programs/explain_rc_frozen_roma_action_terms_v1.py",
+      "sha256": "e51fc957fe0c780173ce931e5f79c11fd9c6263c1faf5329b9a6fd1e15f25476"
+    },
+    {
+      "path": "programs/reduce_romav2_colnomic_current_runtime_frozen_gate_v1.py",
+      "sha256": "adf5fc2e39c924e12ba7d0b359dc5b7de43ea4cc5632c13e7a184c9efebb94c1"
+    },
+    {
+      "path": "programs/run_romav2_colnomic_no_regret_action_gate_v1.py",
+      "sha256": "a28ba978cbf55cbd9d5daf811327ce19bfa36909d301b81413a7b8b1cc043b29"
+    },
+    {
+      "path": "registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec000.json",
+      "sha256": "a6e6250e47d19d9d2da360e3c0cc68dad32efd6b8d276666ee709ac52ab47ecb"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec001.json",
+      "sha256": "b823b0928cb845ddcd2d331ebf3aaf47bb174b53b440d3cfcac3ea7dfd300ce0"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec005.json",
+      "sha256": "fce936628bbaa247f441f786bd3f5f245d267f57339ae0eee164ffd4e3f0707e"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec006.json",
+      "sha256": "73cede4d7eac253c474e79bbb0e1d56ffbdbff973fffb0abcdcfd502722afc90"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec017.json",
+      "sha256": "48fd4544a25554c0d268e14b0a10d43062a7a308853cb1c4520c20d0d930d85d"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec021.json",
+      "sha256": "6cb7c3c7d7674d5b0b755bffb50456cd1c128bd4e6d4fa4c352b12f011ce8312"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec027.json",
+      "sha256": "22737ba6d95f53e96027ac5206d31cbd2027d116f45d220ebaa20272750385d6"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec056.json",
+      "sha256": "3eb22296aba54c6e0b7326bee1e114706fc8ec2a6ff81f38d8d9151887f9ed76"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec066.json",
+      "sha256": "87b75882d6488b1b1b07a311b45df0f4a47675f909a5269240e0128343249f22"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec072.json",
+      "sha256": "fdccd4c5cf9086e1b55d2c92347f328d2112c45efd6e93cc603ae384330fe0d4"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec075.json",
+      "sha256": "e6f1f628cd58a13f92ef5f62dba2c6254e88b2b5d7e591c7d01c8e90a4163d13"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec113.json",
+      "sha256": "d17dbd6da0f1b9829ba0a9eec62efaa788cf6f01d4fe715d0c36955a55839ec5"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec120.json",
+      "sha256": "a6a9a5c111773b4c3966b408beb048f10348bb4e159c1ed71b3a52c475418d3a"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec122.json",
+      "sha256": "f5ca5c8cd5694412ac0804ab3b8c7018829dce5b71ae689dedc01f35d0280bb4"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec192.json",
+      "sha256": "d910e9ad46465b6157b847af87848919486bded9ffe2a579cbcd5fa817e1b9ca"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec193.json",
+      "sha256": "a0ac0ea41c747da20ac0c3016d8942148d3cf213ec44f00fcf41652d7fa3dfff"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec194.json",
+      "sha256": "c27ef9db7c5cb249881bcdde7878370f04040ad7b3adbeecd1a4b3a162c5bd38"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec200.json",
+      "sha256": "944740afc42ff4fba88988400fa563ee3fe0ea9ba8074cce442550af5dde0aad"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec271.json",
+      "sha256": "792ee87c25c90f1ec066e476c1c54f626086608b34549d2d4316e90071ddc7b6"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec284.json",
+      "sha256": "1e3ad75f123a65d679019d22987938eda758f9aa73029b3f59bb8f00b37f81f0"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec285.json",
+      "sha256": "ff93e5be0f750e81495fc336ded4f24746de390cae4b63f84c9d5113b8b53021"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec299.json",
+      "sha256": "c9ff11a5faf56a9e0c550d9efb311fa623e9c2502d594d18b8116e11779a1504"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec300.json",
+      "sha256": "68a5c930f5aa32bf48ab8783b2be3b5a1208907c09741251d9a2e0baecc6c42b"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec306.json",
+      "sha256": "7eda971889e31ebbcf70edac9ab7a36a9715ccc0315841f6b73e2c7100b8de8d"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec307.json",
+      "sha256": "265dca6e5b5e7676f7dcfcf87c217c2f9d003f718d8cc12ee1316403de38202a"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec327.json",
+      "sha256": "57a70d6b88f2e4f7ed03010cc56f2acf93555c132edfc9b54e4fe5daa3483e8e"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec329.json",
+      "sha256": "f5b0061ea1ac63bf4688d2d7605278497b3c733c49fee08f044e780347fa26f3"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec340.json",
+      "sha256": "7d4a6081e0587519a393a5760e4aca6b35b51c5be377083e46aa7ec4ca5734ea"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec341.json",
+      "sha256": "4ce7b6290f34a94257c6e4c0f8bdbb8ff1b43b63384cdd4aa2f854d5d01945a1"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec344.json",
+      "sha256": "56a7958bf6045f1392f51562e48eab9cba5e9bb62d68bfe384a8cb9096105c2f"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec345.json",
+      "sha256": "a4f39daf2657c8e708ff8560eaf2046b255f9f452cb340815c621a23fb160557"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec356.json",
+      "sha256": "e560824a834e12fd4b88e5c081e6e4e2c7d73f9dbf0b3c03078491db542abe35"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec357.json",
+      "sha256": "28f71111d0c287a4cad4ef46eddb5ba7492e2f1aa968fe163b115f1d50077f87"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec358.json",
+      "sha256": "bac40ebb4ca5ab81a2a8b5c7afe5430435ce0457e4bf54ca936ec51e7c3312ca"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec359.json",
+      "sha256": "633cbefdb1bead8b02bfe3d92bfafbe7dc297ff79f1d6f684239ac44147fbdaa"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec364.json",
+      "sha256": "d91ba94097d697943e95fb8240e1b27dd64337a24643496181b5208da1c4c7bf"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec368.json",
+      "sha256": "d6ea52dbf1c2a70b84ab958aedf970de51836c4e7615fab8913d10d8eb3d061b"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec371.json",
+      "sha256": "e46f07085bb1dd9add6581463cf59e03be8c703d4d3f2ed5a59e6853339c565e"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec394.json",
+      "sha256": "37cc107d88007a9cbb79b48272659309cf11c7f3e99d9a44fb10ac600267b253"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec396.json",
+      "sha256": "5c7738c277c098d2ebff614cf280974f33ddf828672dd9f4219fd003c8a21905"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec399.json",
+      "sha256": "5ad7f40ed9b1caab12b0029c64a01a52b37f8e0f9fb06fd38c3de739819e83ae"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec414.json",
+      "sha256": "0f22e12c216cc7652254bce8cc8b1f9e437ba45968c638c004b5514f768f2644"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec441.json",
+      "sha256": "b5e6bb24cd9b8c4f1aae415a75000ca2affc2716cd9d49b65f4bb9edfc83fe4a"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec449.json",
+      "sha256": "2bc39dc51ad1a3eccfd772acf1a1322ccbfd00bad232b5346378fd3bf8e9c345"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec455.json",
+      "sha256": "fc4894bdce80cc232ff11bf4089d9132eea5ce1b653dcc3c69b325f77fcdd7f6"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec459.json",
+      "sha256": "1b2cc80ca20807a0299e3baa316b9aa67dea26d98c8c5cd320b0c94ce0d8fe4a"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec461.json",
+      "sha256": "a057b85870088fad39d86b91286deef22f7ffb7078cfc986469dbf8883154402"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec488.json",
+      "sha256": "2b6159f4c9d22412db0109d3c693ea3f708ac36330c26fe30bb4e371e9e65f99"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec489.json",
+      "sha256": "fddc981e1d8c3c06424d843697ab430f027de0c83cf12fd2f90a2081070c3e03"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec495.json",
+      "sha256": "c2514f77a1bfbfce2c3a3235d34b055c759a56477b74a5043794effe55cc2044"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec502.json",
+      "sha256": "9aec1cc16c10f9534b313f96b718a2be7b93a1237cce836c53700f7a207364fe"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec511.json",
+      "sha256": "22b06584d37df7a1f5d976fa2053fc22097e11ee17ad219ba663042401ad58f3"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec517.json",
+      "sha256": "1ccf8c63b9fe96d876bbb393364a9c7bf8628877e65bc4d0183ed0a0ebf2b87e"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec518.json",
+      "sha256": "1ec724c862c4b0e4174f605adc719ee5f38e2aa18194674f1bf9f38fb4be3730"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec519.json",
+      "sha256": "a34584a54634ae299ffd66b14a6617ef274543bb04ec8498e9a60658e9cf814d"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec520.json",
+      "sha256": "5b755e47997b604ebdd99d94e282331a7a385d74d8a06c60b07eaba4e5814c13"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec532.json",
+      "sha256": "f9b35173f9ff21dbba36f6b45837f41f629811023c0c8b19cd6bec0834f7ec78"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec560.json",
+      "sha256": "d1f084900a4e229779d6645b5f27ffe6096c770a55ed9f66ea72a204e710aa2d"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec563.json",
+      "sha256": "ff4fbb6ba7adfdff19f4f0297fb70f9e8a05fbc8df223c067552dd8314672e14"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec570.json",
+      "sha256": "d1a4b56e5bb7ed88f30ad16b4061ca82731ba7979c91a7756110d389a3e7c5c3"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec586.json",
+      "sha256": "437bb5aa26430c4d384fb70609f3e99187eec0badcad90be75132c9603e9f97e"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec588.json",
+      "sha256": "3295f42d137bbac2abc3f809e5872aa1731264184fde0e5b74f9b84b6a3e6d4f"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec598.json",
+      "sha256": "0c09f1214ff34e13d7b2eef4dd411c000045999ad0f897118dcd6edb4a31a6fd"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/role_shards/role_exec599.json",
+      "sha256": "2978559516ea434ccbf0b45778fa11a1c17a83abe2a022426c3f03acab87513d"
+    },
+    {
+      "path": "results/cw0_rgh_xf_v2_p0_a0_manifest_v2/source_manifest.json",
+      "sha256": "e0be35125eddec391a92398e84103e77ca0a65f661452b9190c2b81f3fdbea23"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard00/result.json",
+      "sha256": "32b2c659929ee0020eae6020c7c829cc413fbc6a24e2737b9356ce54ea20e075"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard01/result.json",
+      "sha256": "48ce00bf246f88f63286e4940708a6a1f3f9cb34323d31b0fb2586fcd96063b7"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard02/result.json",
+      "sha256": "e3733467e4a37c99234b76a118ed430720bde7b6ebb7a1f9d23bf7a4c4aa5fc3"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard03/result.json",
+      "sha256": "ad2a00af54f8f29666321a90851f2199e6cd930f8bffefb02878ce8419c04805"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard04/result.json",
+      "sha256": "9400a5b1df50f1dc11184948f3c95dbac423379d693de7d8f244a723f3787ad0"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard05/result.json",
+      "sha256": "de723e5d44bdee5639bc19a1f50219f3db668bfefe34bf57cd5dd5eaf29790a2"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard06/result.json",
+      "sha256": "222d8301769cfbb447793a089a2b59401dbc5c47a091992829f58a08c1a2b3c1"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/shard07/result.json",
+      "sha256": "fd3421663d6ff0f8a7823a1265a32b6fcced2c707f355cdf99f1549ccbaf9a64"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_bridge_roma_prejoin_v1/validation.json",
+      "sha256": "7693c5b09f014f1189ad9ee5722b98bb19e0dd68947afadab2f7e556b197ff52"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_frozen_gate_v1/independent_validation.json",
+      "sha256": "83e14a12a8647e08856c2890bfaa638eece1cb3876ba88656e6d755e2f07f87f"
+    },
+    {
+      "path": "results/romav2_colnomic_current_runtime_frozen_gate_v1/result.json",
+      "sha256": "12dccec38392d45da0a34aece6bc0be8e089ef0f07eca49feb764e8a014d6445"
+    },
+    {
+      "path": "results/romav2_colnomic_full_negative_action_gate_v1/independent_validation.json",
+      "sha256": "2f112c8daa7b0c199e7e7ca2933116bdaf261b547277140950c809cc3bd264de"
+    },
+    {
+      "path": "results/romav2_colnomic_full_negative_action_gate_v1/result.json",
+      "sha256": "b296e946ff84ef574605ca5a6f6c6d6892b06dc8f38002b33b913a5afc6f059f"
+    },
+    {
+      "path": "src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    }
+  ],
+  "status": "RC_FROZEN_ROMA_ACTION_TERMS_EXACT_REPLAY_AND_ACCOUNTING_COMPLETE",
+  "summaries": {
+    "EVAL": {
+      "full_model": {
+        "base_top1": 25,
+        "break": 0,
+        "eligible_target_count": 32,
+        "final_top1": 27,
+        "query_count": 32,
+        "rescue": 2,
+        "switch_count": 3,
+        "target_absent_count": 0
+      },
+      "single_feature_zero": {
+        "standardized_raw_gap": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 2,
+              "correct_HOLDs_retained": 23,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 1,
+              "full_rescues_lost": 1,
+              "full_rescues_retained": 1,
+              "new_errors_from_full_correct": 3,
+              "new_rescues": 1,
+              "prediction_changed": 5
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "OUTCOME-0419",
+                "OUTCOME-0618"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0054",
+                "OUTCOME-0052",
+                "OUTCOME-0683",
+                "OUTCOME-0365",
+                "OUTCOME-0607",
+                "DIFFICULT-0005",
+                "OUTCOME-0670",
+                "OUTCOME-0569",
+                "OUTCOME-0366",
+                "OUTCOME-0372",
+                "OUTCOME-0432",
+                "DIFFICULT-0006",
+                "OUTCOME-0791",
+                "OUTCOME-0779",
+                "OUTCOME-0781",
+                "DIFFICULT-0040",
+                "OUTCOME-0421",
+                "OUTCOME-0792",
+                "DIFFICULT-0001",
+                "DIFFICULT-0000",
+                "OUTCOME-0669",
+                "OUTCOME-0045",
+                "OUTCOME-0211"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [
+                "OUTCOME-0220"
+              ],
+              "full_rescues_lost": [
+                "OUTCOME-0212"
+              ],
+              "full_rescues_retained": [
+                "DIFFICULT-0044"
+              ],
+              "new_errors_from_full_correct": [
+                "OUTCOME-0419",
+                "OUTCOME-0618",
+                "OUTCOME-0212"
+              ],
+              "new_rescues": [
+                "OUTCOME-0220"
+              ],
+              "prediction_changed": [
+                "OUTCOME-0213",
+                "OUTCOME-0419",
+                "OUTCOME-0220",
+                "OUTCOME-0618",
+                "OUTCOME-0212"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 25,
+            "break": 2,
+            "eligible_target_count": 32,
+            "final_top1": 25,
+            "query_count": 32,
+            "rescue": 2,
+            "switch_count": 7,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_local_score": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 2,
+              "correct_HOLDs_retained": 23,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 1,
+              "full_rescues_lost": 0,
+              "full_rescues_retained": 2,
+              "new_errors_from_full_correct": 2,
+              "new_rescues": 1,
+              "prediction_changed": 4
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "OUTCOME-0419",
+                "OUTCOME-0618"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0054",
+                "OUTCOME-0052",
+                "OUTCOME-0683",
+                "OUTCOME-0365",
+                "OUTCOME-0607",
+                "DIFFICULT-0005",
+                "OUTCOME-0670",
+                "OUTCOME-0569",
+                "OUTCOME-0366",
+                "OUTCOME-0372",
+                "OUTCOME-0432",
+                "DIFFICULT-0006",
+                "OUTCOME-0791",
+                "OUTCOME-0779",
+                "OUTCOME-0781",
+                "DIFFICULT-0040",
+                "OUTCOME-0421",
+                "OUTCOME-0792",
+                "DIFFICULT-0001",
+                "DIFFICULT-0000",
+                "OUTCOME-0669",
+                "OUTCOME-0045",
+                "OUTCOME-0211"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [
+                "OUTCOME-0220"
+              ],
+              "full_rescues_lost": [],
+              "full_rescues_retained": [
+                "DIFFICULT-0044",
+                "OUTCOME-0212"
+              ],
+              "new_errors_from_full_correct": [
+                "OUTCOME-0419",
+                "OUTCOME-0618"
+              ],
+              "new_rescues": [
+                "OUTCOME-0220"
+              ],
+              "prediction_changed": [
+                "OUTCOME-0213",
+                "OUTCOME-0419",
+                "OUTCOME-0220",
+                "OUTCOME-0618"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 25,
+            "break": 2,
+            "eligible_target_count": 32,
+            "final_top1": 26,
+            "query_count": 32,
+            "rescue": 3,
+            "switch_count": 7,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_query_spatial_robustness": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 1,
+              "correct_HOLDs_retained": 24,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 1,
+              "full_rescues_lost": 0,
+              "full_rescues_retained": 2,
+              "new_errors_from_full_correct": 1,
+              "new_rescues": 1,
+              "prediction_changed": 2
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "OUTCOME-0618"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0054",
+                "OUTCOME-0052",
+                "OUTCOME-0683",
+                "OUTCOME-0365",
+                "OUTCOME-0607",
+                "DIFFICULT-0005",
+                "OUTCOME-0670",
+                "OUTCOME-0569",
+                "OUTCOME-0366",
+                "OUTCOME-0372",
+                "OUTCOME-0432",
+                "DIFFICULT-0006",
+                "OUTCOME-0419",
+                "OUTCOME-0791",
+                "OUTCOME-0779",
+                "OUTCOME-0781",
+                "DIFFICULT-0040",
+                "OUTCOME-0421",
+                "OUTCOME-0792",
+                "DIFFICULT-0001",
+                "DIFFICULT-0000",
+                "OUTCOME-0669",
+                "OUTCOME-0045",
+                "OUTCOME-0211"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [
+                "OUTCOME-0220"
+              ],
+              "full_rescues_lost": [],
+              "full_rescues_retained": [
+                "DIFFICULT-0044",
+                "OUTCOME-0212"
+              ],
+              "new_errors_from_full_correct": [
+                "OUTCOME-0618"
+              ],
+              "new_rescues": [
+                "OUTCOME-0220"
+              ],
+              "prediction_changed": [
+                "OUTCOME-0220",
+                "OUTCOME-0618"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 25,
+            "break": 1,
+            "eligible_target_count": 32,
+            "final_top1": 27,
+            "query_count": 32,
+            "rescue": 3,
+            "switch_count": 5,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_reference_spatial_robustness": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 1,
+              "correct_HOLDs_retained": 24,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 1,
+              "full_rescues_lost": 0,
+              "full_rescues_retained": 2,
+              "new_errors_from_full_correct": 1,
+              "new_rescues": 1,
+              "prediction_changed": 2
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "OUTCOME-0618"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0054",
+                "OUTCOME-0052",
+                "OUTCOME-0683",
+                "OUTCOME-0365",
+                "OUTCOME-0607",
+                "DIFFICULT-0005",
+                "OUTCOME-0670",
+                "OUTCOME-0569",
+                "OUTCOME-0366",
+                "OUTCOME-0372",
+                "OUTCOME-0432",
+                "DIFFICULT-0006",
+                "OUTCOME-0419",
+                "OUTCOME-0791",
+                "OUTCOME-0779",
+                "OUTCOME-0781",
+                "DIFFICULT-0040",
+                "OUTCOME-0421",
+                "OUTCOME-0792",
+                "DIFFICULT-0001",
+                "DIFFICULT-0000",
+                "OUTCOME-0669",
+                "OUTCOME-0045",
+                "OUTCOME-0211"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [
+                "OUTCOME-0220"
+              ],
+              "full_rescues_lost": [],
+              "full_rescues_retained": [
+                "DIFFICULT-0044",
+                "OUTCOME-0212"
+              ],
+              "new_errors_from_full_correct": [
+                "OUTCOME-0618"
+              ],
+              "new_rescues": [
+                "OUTCOME-0220"
+              ],
+              "prediction_changed": [
+                "OUTCOME-0220",
+                "OUTCOME-0618"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 25,
+            "break": 1,
+            "eligible_target_count": 32,
+            "final_top1": 27,
+            "query_count": 32,
+            "rescue": 3,
+            "switch_count": 5,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_visibility_mass": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 0,
+              "correct_HOLDs_retained": 25,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 0,
+              "full_rescues_lost": 2,
+              "full_rescues_retained": 0,
+              "new_errors_from_full_correct": 2,
+              "new_rescues": 0,
+              "prediction_changed": 3
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0054",
+                "OUTCOME-0052",
+                "OUTCOME-0683",
+                "OUTCOME-0365",
+                "OUTCOME-0607",
+                "DIFFICULT-0005",
+                "OUTCOME-0670",
+                "OUTCOME-0569",
+                "OUTCOME-0366",
+                "OUTCOME-0372",
+                "OUTCOME-0432",
+                "DIFFICULT-0006",
+                "OUTCOME-0419",
+                "OUTCOME-0618",
+                "OUTCOME-0791",
+                "OUTCOME-0779",
+                "OUTCOME-0781",
+                "DIFFICULT-0040",
+                "OUTCOME-0421",
+                "OUTCOME-0792",
+                "DIFFICULT-0001",
+                "DIFFICULT-0000",
+                "OUTCOME-0669",
+                "OUTCOME-0045",
+                "OUTCOME-0211"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [],
+              "full_rescues_lost": [
+                "DIFFICULT-0044",
+                "OUTCOME-0212"
+              ],
+              "full_rescues_retained": [],
+              "new_errors_from_full_correct": [
+                "DIFFICULT-0044",
+                "OUTCOME-0212"
+              ],
+              "new_rescues": [],
+              "prediction_changed": [
+                "OUTCOME-0373",
+                "DIFFICULT-0044",
+                "OUTCOME-0212"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 25,
+            "break": 0,
+            "eligible_target_count": 32,
+            "final_top1": 25,
+            "query_count": 32,
+            "rescue": 0,
+            "switch_count": 0,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_visibility_normalized_local_similarity": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 1,
+              "correct_HOLDs_retained": 24,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 0,
+              "full_rescues_lost": 2,
+              "full_rescues_retained": 0,
+              "new_errors_from_full_correct": 3,
+              "new_rescues": 0,
+              "prediction_changed": 5
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "OUTCOME-0211"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0054",
+                "OUTCOME-0052",
+                "OUTCOME-0683",
+                "OUTCOME-0365",
+                "OUTCOME-0607",
+                "DIFFICULT-0005",
+                "OUTCOME-0670",
+                "OUTCOME-0569",
+                "OUTCOME-0366",
+                "OUTCOME-0372",
+                "OUTCOME-0432",
+                "DIFFICULT-0006",
+                "OUTCOME-0419",
+                "OUTCOME-0618",
+                "OUTCOME-0791",
+                "OUTCOME-0779",
+                "OUTCOME-0781",
+                "DIFFICULT-0040",
+                "OUTCOME-0421",
+                "OUTCOME-0792",
+                "DIFFICULT-0001",
+                "DIFFICULT-0000",
+                "OUTCOME-0669",
+                "OUTCOME-0045"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [],
+              "full_rescues_lost": [
+                "DIFFICULT-0044",
+                "OUTCOME-0212"
+              ],
+              "full_rescues_retained": [],
+              "new_errors_from_full_correct": [
+                "DIFFICULT-0044",
+                "OUTCOME-0212",
+                "OUTCOME-0211"
+              ],
+              "new_rescues": [],
+              "prediction_changed": [
+                "OUTCOME-0373",
+                "DIFFICULT-0044",
+                "OUTCOME-0220",
+                "OUTCOME-0212",
+                "OUTCOME-0211"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 25,
+            "break": 1,
+            "eligible_target_count": 32,
+            "final_top1": 24,
+            "query_count": 32,
+            "rescue": 0,
+            "switch_count": 2,
+            "target_absent_count": 0
+          }
+        }
+      }
+    },
+    "TRAIN": {
+      "full_model": {
+        "base_top1": 27,
+        "break": 0,
+        "eligible_target_count": 32,
+        "final_top1": 28,
+        "query_count": 32,
+        "rescue": 1,
+        "switch_count": 2,
+        "target_absent_count": 0
+      },
+      "single_feature_zero": {
+        "standardized_raw_gap": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 5,
+              "correct_HOLDs_retained": 22,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 1,
+              "full_rescues_lost": 0,
+              "full_rescues_retained": 1,
+              "new_errors_from_full_correct": 5,
+              "new_rescues": 1,
+              "prediction_changed": 8
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "DIFFICULT-0128",
+                "OUTCOME-0494",
+                "OUTCOME-0699",
+                "OUTCOME-0756",
+                "OUTCOME-0692"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0753",
+                "OUTCOME-0535",
+                "OUTCOME-0460",
+                "OUTCOME-0625",
+                "OUTCOME-0308",
+                "OUTCOME-0763",
+                "OUTCOME-0351",
+                "DIFFICULT-0101",
+                "OUTCOME-0701",
+                "OUTCOME-0629",
+                "OUTCOME-0489",
+                "OUTCOME-0700",
+                "OUTCOME-0350",
+                "OUTCOME-0725",
+                "OUTCOME-0501",
+                "OUTCOME-0498",
+                "OUTCOME-0631",
+                "NDV2-007-P01",
+                "OUTCOME-0698",
+                "OUTCOME-0464",
+                "OUTCOME-0463",
+                "NDV2-007-P04"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [
+                "OUTCOME-0477"
+              ],
+              "full_rescues_lost": [],
+              "full_rescues_retained": [
+                "OUTCOME-0476"
+              ],
+              "new_errors_from_full_correct": [
+                "DIFFICULT-0128",
+                "OUTCOME-0494",
+                "OUTCOME-0699",
+                "OUTCOME-0756",
+                "OUTCOME-0692"
+              ],
+              "new_rescues": [
+                "OUTCOME-0477"
+              ],
+              "prediction_changed": [
+                "OUTCOME-0533",
+                "DIFFICULT-0128",
+                "OUTCOME-0494",
+                "OUTCOME-0699",
+                "OUTCOME-0475",
+                "OUTCOME-0477",
+                "OUTCOME-0756",
+                "OUTCOME-0692"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 27,
+            "break": 5,
+            "eligible_target_count": 32,
+            "final_top1": 24,
+            "query_count": 32,
+            "rescue": 2,
+            "switch_count": 9,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_local_score": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 2,
+              "correct_HOLDs_retained": 25,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 0,
+              "full_rescues_lost": 0,
+              "full_rescues_retained": 1,
+              "new_errors_from_full_correct": 2,
+              "new_rescues": 0,
+              "prediction_changed": 2
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "OUTCOME-0494",
+                "DIFFICULT-0101"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0753",
+                "DIFFICULT-0128",
+                "OUTCOME-0535",
+                "OUTCOME-0460",
+                "OUTCOME-0625",
+                "OUTCOME-0699",
+                "OUTCOME-0308",
+                "OUTCOME-0763",
+                "OUTCOME-0351",
+                "OUTCOME-0701",
+                "OUTCOME-0629",
+                "OUTCOME-0489",
+                "OUTCOME-0700",
+                "OUTCOME-0350",
+                "OUTCOME-0725",
+                "OUTCOME-0756",
+                "OUTCOME-0501",
+                "OUTCOME-0498",
+                "OUTCOME-0692",
+                "OUTCOME-0631",
+                "NDV2-007-P01",
+                "OUTCOME-0698",
+                "OUTCOME-0464",
+                "OUTCOME-0463",
+                "NDV2-007-P04"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [],
+              "full_rescues_lost": [],
+              "full_rescues_retained": [
+                "OUTCOME-0476"
+              ],
+              "new_errors_from_full_correct": [
+                "OUTCOME-0494",
+                "DIFFICULT-0101"
+              ],
+              "new_rescues": [],
+              "prediction_changed": [
+                "OUTCOME-0494",
+                "DIFFICULT-0101"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 27,
+            "break": 2,
+            "eligible_target_count": 32,
+            "final_top1": 26,
+            "query_count": 32,
+            "rescue": 1,
+            "switch_count": 4,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_query_spatial_robustness": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 0,
+              "correct_HOLDs_retained": 27,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 0,
+              "full_rescues_lost": 0,
+              "full_rescues_retained": 1,
+              "new_errors_from_full_correct": 0,
+              "new_rescues": 0,
+              "prediction_changed": 0
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0753",
+                "DIFFICULT-0128",
+                "OUTCOME-0494",
+                "OUTCOME-0535",
+                "OUTCOME-0460",
+                "OUTCOME-0625",
+                "OUTCOME-0699",
+                "OUTCOME-0308",
+                "OUTCOME-0763",
+                "OUTCOME-0351",
+                "DIFFICULT-0101",
+                "OUTCOME-0701",
+                "OUTCOME-0629",
+                "OUTCOME-0489",
+                "OUTCOME-0700",
+                "OUTCOME-0350",
+                "OUTCOME-0725",
+                "OUTCOME-0756",
+                "OUTCOME-0501",
+                "OUTCOME-0498",
+                "OUTCOME-0692",
+                "OUTCOME-0631",
+                "NDV2-007-P01",
+                "OUTCOME-0698",
+                "OUTCOME-0464",
+                "OUTCOME-0463",
+                "NDV2-007-P04"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [],
+              "full_rescues_lost": [],
+              "full_rescues_retained": [
+                "OUTCOME-0476"
+              ],
+              "new_errors_from_full_correct": [],
+              "new_rescues": [],
+              "prediction_changed": []
+            }
+          },
+          "summary": {
+            "base_top1": 27,
+            "break": 0,
+            "eligible_target_count": 32,
+            "final_top1": 28,
+            "query_count": 32,
+            "rescue": 1,
+            "switch_count": 2,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_reference_spatial_robustness": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 0,
+              "correct_HOLDs_retained": 27,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 0,
+              "full_rescues_lost": 0,
+              "full_rescues_retained": 1,
+              "new_errors_from_full_correct": 0,
+              "new_rescues": 0,
+              "prediction_changed": 0
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0753",
+                "DIFFICULT-0128",
+                "OUTCOME-0494",
+                "OUTCOME-0535",
+                "OUTCOME-0460",
+                "OUTCOME-0625",
+                "OUTCOME-0699",
+                "OUTCOME-0308",
+                "OUTCOME-0763",
+                "OUTCOME-0351",
+                "DIFFICULT-0101",
+                "OUTCOME-0701",
+                "OUTCOME-0629",
+                "OUTCOME-0489",
+                "OUTCOME-0700",
+                "OUTCOME-0350",
+                "OUTCOME-0725",
+                "OUTCOME-0756",
+                "OUTCOME-0501",
+                "OUTCOME-0498",
+                "OUTCOME-0692",
+                "OUTCOME-0631",
+                "NDV2-007-P01",
+                "OUTCOME-0698",
+                "OUTCOME-0464",
+                "OUTCOME-0463",
+                "NDV2-007-P04"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [],
+              "full_rescues_lost": [],
+              "full_rescues_retained": [
+                "OUTCOME-0476"
+              ],
+              "new_errors_from_full_correct": [],
+              "new_rescues": [],
+              "prediction_changed": []
+            }
+          },
+          "summary": {
+            "base_top1": 27,
+            "break": 0,
+            "eligible_target_count": 32,
+            "final_top1": 28,
+            "query_count": 32,
+            "rescue": 1,
+            "switch_count": 2,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_visibility_mass": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 0,
+              "correct_HOLDs_retained": 27,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 0,
+              "full_rescues_lost": 1,
+              "full_rescues_retained": 0,
+              "new_errors_from_full_correct": 1,
+              "new_rescues": 0,
+              "prediction_changed": 2
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0753",
+                "DIFFICULT-0128",
+                "OUTCOME-0494",
+                "OUTCOME-0535",
+                "OUTCOME-0460",
+                "OUTCOME-0625",
+                "OUTCOME-0699",
+                "OUTCOME-0308",
+                "OUTCOME-0763",
+                "OUTCOME-0351",
+                "DIFFICULT-0101",
+                "OUTCOME-0701",
+                "OUTCOME-0629",
+                "OUTCOME-0489",
+                "OUTCOME-0700",
+                "OUTCOME-0350",
+                "OUTCOME-0725",
+                "OUTCOME-0756",
+                "OUTCOME-0501",
+                "OUTCOME-0498",
+                "OUTCOME-0692",
+                "OUTCOME-0631",
+                "NDV2-007-P01",
+                "OUTCOME-0698",
+                "OUTCOME-0464",
+                "OUTCOME-0463",
+                "NDV2-007-P04"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [],
+              "full_rescues_lost": [
+                "OUTCOME-0476"
+              ],
+              "full_rescues_retained": [],
+              "new_errors_from_full_correct": [
+                "OUTCOME-0476"
+              ],
+              "new_rescues": [],
+              "prediction_changed": [
+                "OUTCOME-0476",
+                "OUTCOME-0477"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 27,
+            "break": 0,
+            "eligible_target_count": 32,
+            "final_top1": 27,
+            "query_count": 32,
+            "rescue": 0,
+            "switch_count": 0,
+            "target_absent_count": 0
+          }
+        },
+        "symmetric_visibility_normalized_local_similarity": {
+          "comparison_to_full_model": {
+            "counts": {
+              "correct_HOLDs_broken": 1,
+              "correct_HOLDs_retained": 26,
+              "full_breaks_removed": 0,
+              "full_breaks_retained": 0,
+              "full_errors_corrected": 0,
+              "full_rescues_lost": 1,
+              "full_rescues_retained": 0,
+              "new_errors_from_full_correct": 2,
+              "new_rescues": 0,
+              "prediction_changed": 3
+            },
+            "query_sets": {
+              "correct_HOLDs_broken": [
+                "DIFFICULT-0101"
+              ],
+              "correct_HOLDs_retained": [
+                "OUTCOME-0753",
+                "DIFFICULT-0128",
+                "OUTCOME-0494",
+                "OUTCOME-0535",
+                "OUTCOME-0460",
+                "OUTCOME-0625",
+                "OUTCOME-0699",
+                "OUTCOME-0308",
+                "OUTCOME-0763",
+                "OUTCOME-0351",
+                "OUTCOME-0701",
+                "OUTCOME-0629",
+                "OUTCOME-0489",
+                "OUTCOME-0700",
+                "OUTCOME-0350",
+                "OUTCOME-0725",
+                "OUTCOME-0756",
+                "OUTCOME-0501",
+                "OUTCOME-0498",
+                "OUTCOME-0692",
+                "OUTCOME-0631",
+                "NDV2-007-P01",
+                "OUTCOME-0698",
+                "OUTCOME-0464",
+                "OUTCOME-0463",
+                "NDV2-007-P04"
+              ],
+              "full_breaks_removed": [],
+              "full_breaks_retained": [],
+              "full_errors_corrected": [],
+              "full_rescues_lost": [
+                "OUTCOME-0476"
+              ],
+              "full_rescues_retained": [],
+              "new_errors_from_full_correct": [
+                "OUTCOME-0476",
+                "DIFFICULT-0101"
+              ],
+              "new_rescues": [],
+              "prediction_changed": [
+                "OUTCOME-0476",
+                "DIFFICULT-0101",
+                "OUTCOME-0477"
+              ]
+            }
+          },
+          "summary": {
+            "base_top1": 27,
+            "break": 1,
+            "eligible_target_count": 32,
+            "final_top1": 26,
+            "query_count": 32,
+            "rescue": 0,
+            "switch_count": 1,
+            "target_absent_count": 0
+          }
+        }
+      }
+    }
+  },
+  "token_payload_reads": 0
+}

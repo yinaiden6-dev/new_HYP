@@ -1,0 +1,55 @@
+{
+  "status": "ACTUAL_LAUNCHER_ARGUMENT_EXPANSION_PASS",
+  "checks": [
+    {
+      "launcher": "rc_crisp_manual_baseline_v1.sbatch",
+      "sha256": "7a8d78d3994fbace6faf742f787bf8629dbc646e57da8af916819414f96799ec",
+      "stage": "worker",
+      "actual_argv": [
+        "programs/run_rc_crisp_manual_baseline_v1.py",
+        "worker",
+        "--shard",
+        "7"
+      ]
+    },
+    {
+      "launcher": "rc_crisp_manual_baseline_v1.sbatch",
+      "sha256": "7a8d78d3994fbace6faf742f787bf8629dbc646e57da8af916819414f96799ec",
+      "stage": "join",
+      "actual_argv": [
+        "programs/run_rc_crisp_manual_baseline_v1.py",
+        "join"
+      ]
+    },
+    {
+      "launcher": "rc_new_hyp_processed128_v2_serialization.sbatch",
+      "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142",
+      "stage": "raw",
+      "actual_argv": [
+        "programs/run_rc_new_hyp_processed128_v2_serialization.py",
+        "raw",
+        "--shard",
+        "7"
+      ]
+    },
+    {
+      "launcher": "rc_new_hyp_processed128_v2_serialization.sbatch",
+      "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142",
+      "stage": "roma",
+      "actual_argv": [
+        "programs/run_rc_new_hyp_processed128_v2_serialization.py",
+        "roma",
+        "--shard",
+        "7"
+      ]
+    },
+    {
+      "launcher": "rc_new_hyp_processed128_v2_serialization.sbatch",
+      "sha256": "14d3781cfab95c8582f0303094cfcb283b8adccc86a1251190a6751b934d4142",
+      "stage": "join",
+      "actual_argv": [
+        "programs/analyze_rc_new_hyp_processed128_v1.py"
+      ]
+    }
+  ]
+}

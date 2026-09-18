@@ -1,0 +1,51 @@
+{
+  "status": "H593_POSITIVE_INCREMENT_ATTRIBUTION_FOLLOWUP_AUTHORIZED",
+  "recorded_utc": "2026-09-11T07:14:47.430612+00:00",
+  "post_result_followup": true,
+  "new_training_model": "BIAS1_only",
+  "new_training_parameters": 1,
+  "existing_CONDITIONAL4_parameters_unchanged": true,
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_increment_attribution_v1.py",
+      "sha256": "4d520d1234ffaba39a044d5145e08ed556916cffe73ce5f51623da8720a092ee"
+    },
+    "parent_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "parent_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_training_authority_v1_20260911.json",
+      "sha256": "6bebedcc5bbd87ef3407db661a88458a17b20a25337d7a7a36b1a1b023a4bd2d"
+    },
+    "scalar_fit_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_endpoint_competition_v1.py",
+      "sha256": "f2bfcc745089076a0a328512f177eb1142c187e9464bd0981cb795be334036bc"
+    },
+    "input_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_INCREMENT_ATTRIBUTION_FOLLOWUP_V1_20260911.md",
+      "sha256": "3261c4bad46f9b3a5462633db26b47611d0e58730a6b10ce76882f40689ba541"
+    },
+    "split": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/split_manifest.json",
+      "sha256": "be29f82bc404b44e713f98a3e099117f183de0ef0ca80e7f11ddca5bcf8d1d5c"
+    },
+    "roles_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles_manifest.json",
+      "sha256": "1028d869c392f92341227533d1a4efc3988a6468416b0309d8575cd6641e3355"
+    },
+    "fit_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_increment_fit_v1.sbatch",
+      "sha256": "fdea1bef10e6f1c6214c75ec0ba66faf2eb067e7c4c8a1c48eec0311c9178291"
+    },
+    "join_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_increment_join_v1.sbatch",
+      "sha256": "8257bc1823c75a06d4e6559809e3502c8fa77fc386a6fad7fb4f2aebf04140ad"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "HYP_GO_claimed": false,
+  "authority_sha256": "fb1bad90ea5788271854829febf7baae7c40ca54cc5bc13f9e462bfed29da519",
+  "checks": {
+    "all_cached_local_vectors_recomputed_from_original_tokens": true,
+    "all_original_C_four_scalars_hex_exact": true,
+    "all_query_token_bytes_and_training_labels_exact": true,
+    "full128_and_pair2_original_axes_unchanged": true,
+    "train_eval_exact_image_query_disjoint": true
+  },
+  "counts": {
+    "candidate_occurrences": 8320,
+    "episodes": 128,
+    "original_scalar_hex_checks": 33280,
+    "raw_local_vectors_bit_exact": 24960
+  },
+  "leakage": {
+    "identity_disjointness_claimed": false,
+    "overlap": {
+      "FULL_TRAIN32": {
+        "execution_ordinal": [],
+        "query_id": [],
+        "source_image_sha256": []
+      },
+      "PAIR64": {
+        "execution_ordinal": [],
+        "query_id": [],
+        "source_image_sha256": []
+      }
+    },
+    "source_metadata_only": true,
+    "status": "TRAIN_EVAL_QUERY_AND_EXACT_IMAGE_DISJOINT_PASS"
+  },
+  "manifest_sha256": "f9f89522a7a3a67a52072e5a32739b4da9f238ff77d63d3b1faf9e342201fc7c",
+  "new_training_updates": 0,
+  "status": "RC_SHARED_QUERY_TARGET_PRIOR_CACHE_V1_SOURCE_REPLAY_VALIDATION_PASS"
+}

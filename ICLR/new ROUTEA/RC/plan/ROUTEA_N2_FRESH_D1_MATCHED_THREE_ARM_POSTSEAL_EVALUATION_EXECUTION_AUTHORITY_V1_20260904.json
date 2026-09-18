@@ -1,0 +1,128 @@
+{
+  "access_boundary": {
+    "external_read_count": 0,
+    "home_file_modification_count": 0,
+    "j1_eval_ledger_open_count": 1,
+    "j1_train_ledger_open_count": 0,
+    "model_update_count": 0,
+    "optimizer_or_training_result_mutation_count": 0,
+    "pair_label_or_fixed_pair_open_count": 0,
+    "sealed_read_count": 0
+  },
+  "authority_validator": {
+    "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_postseal_evaluation_execution_authority_v1.py",
+    "sha256": "014fe9eac46e6f841a6205c1b1e7bdf9adff1851ad614b3e2c30a7121c75418b"
+  },
+  "automatic_stage_advance": false,
+  "claim_level": "ENGINEERING_POSTSEAL_CONDITIONAL_EVALUATION_EXECUTION_ONLY",
+  "hardware_identity_is_authority": false,
+  "inputs": {
+    "a0_actions": {
+      "logical_sha256": "a7493857a5480f6affd7635f5c1059f6291ab95f74c2c4675b6520afcfb479c6",
+      "path": "results/routea_n2_fresh_d1_matched_three_arm_target_free_actions_v1/actions.json",
+      "sha256": "5d0f09d0a2776068d61ca8a2af7abc6993479dcbcf5d3a29ca6fd39cefa41cd0",
+      "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_TARGET_FREE_ACTIONS_READY"
+    },
+    "a0_validation": {
+      "logical_sha256": "343651dbcbdbf31dcfae563cd752eaa190b20aaf7026555fa9fa807d22d23dba",
+      "path": "results/routea_n2_fresh_d1_matched_three_arm_target_free_actions_v1/independent_validation.json",
+      "sha256": "cc02035cf36fb59f2d52c0439a3a22f7508e4c70edfc64cb399a0d015658d575",
+      "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_TARGET_FREE_ACTIONS_VALIDATED"
+    },
+    "candidate_recall_result": {
+      "logical_sha256": "d948c1507f6717d304d34ca1fbd9b4bd0256938961d4ef77d9f27501610312f5",
+      "path": "results/routea_matched_three_arm_n2_current_runtime_d1_candidate_recall_gate_v1/result.json",
+      "sha256": "0544287c2e3ef327143fa5619f28d5df50ad2a5835004717bde38776aeb81b3d",
+      "status": "N2_CANDIDATE_RECALL_NO_GO"
+    },
+    "candidate_recall_validation": {
+      "logical_sha256": "9f1f0bd05f7e752cac32dcfdd6621f203a9bff856f2a07cabef5a133a2f0b598",
+      "path": "results/routea_matched_three_arm_n2_current_runtime_d1_candidate_recall_gate_v1/independent_validation.json",
+      "sha256": "26506c7c5bff8f76ade79625f9744efd4c46dac8bc573f8504ca53dbc1be60d1",
+      "status": "N2_CANDIDATE_RECALL_NO_GO_INDEPENDENTLY_VALIDATED"
+    },
+    "contract": {
+      "path": "plan/ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_SEVEN_PARAMETER_CROSSFIT_CONTRACT_V1_20260904.md",
+      "sha256": "1e129df85e71a14eefa814b477bf304771eeda631d14d4d68cc6c2a3b8342f79"
+    },
+    "gallery": {
+      "path": "../../../colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt",
+      "sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc"
+    },
+    "j1_eval_ledger": {
+      "logical_sha256": "aeeb8b3307fcf74d50e923e3eb7320669e8eeca4fca5dcb33ee104f1dd678bf1",
+      "path": "results/routea_n2_fresh_d1_matched_three_arm_current64_postseal_join_v1/J1_EVAL32_LABEL_LEDGER.json",
+      "sha256": "c0ff7aa2994331e567e0e875b0349dcb68811f66137d4eead719e1e05c3afb14",
+      "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_CURRENT64_J1_EVAL32_LABEL_LEDGER_READY"
+    },
+    "j1_public_validation": {
+      "logical_sha256": "ac05d62a98c2df1502c1eed4001e76ea1b0beef00bc66d5b72ed5cf60ce919ef",
+      "path": "results/routea_n2_fresh_d1_matched_three_arm_current64_postseal_join_v1/independent_validation.json",
+      "sha256": "5aee7659853ebc25c17eba6d963d1e7d83212073a920ff3603cb6121da91ef9a",
+      "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_CURRENT64_POSTSEAL_JOIN_VALIDATED"
+    },
+    "raw_c_result": {
+      "logical_sha256": "63a0df2be54283292ee9a79a86517931f99d9ba7648f3cd4f6820c0c8c9e7a7e",
+      "path": "results/routea_matched_three_arm_common3_native7_crossfit_v1/result.json",
+      "sha256": "591b9787403417efa774e7bdb264291f7e8e4a827bfd4f479256d4e7a8e134c3",
+      "status": "ROUTEA_MATCHED_THREE_ARM_COMMON3_NATIVE7_CROSSFIT_COMPLETE"
+    },
+    "raw_c_validation": {
+      "logical_sha256": "cb4cb02bd4da71555e67136a050c2fc9e74d9644d74d5d194efc58eb9d5d4643",
+      "path": "results/routea_matched_three_arm_common3_native7_crossfit_v1/independent_validation.json",
+      "sha256": "1a7b08edfad7823db62f86c5f0b213106daead6f2ddba2d299102b69e546d8df",
+      "status": "ROUTEA_MATCHED_THREE_ARM_COMMON3_NATIVE7_CROSSFIT_INDEPENDENT_VALIDATION_PASS"
+    },
+    "repair_contract": {
+      "path": "protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "repair_registry": {
+      "path": "registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "repair_runtime": {
+      "path": "src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    }
+  },
+  "launcher": {
+    "path": "slurm/routea_n2_fresh_d1_matched_three_arm_postseal_evaluation_v1_10m.sbatch",
+    "sha256": "e1576dac89b8d88e8cb730fba7c8433eb1289f55796f9fcd0e1818665d44b72c"
+  },
+  "logical_sha256": "965a65118210f936313805967001107b9d8b02738c35791109ffd7d0af06bdfb",
+  "next_authorized_stage": "N2_FRESH_D1_MATCHED_THREE_ARM_POSTSEAL_EVALUATION_EXECUTION",
+  "outputs": {
+    "independent_validation": {
+      "path": "results/routea_n2_fresh_d1_matched_three_arm_postseal_evaluation_v1/independent_validation.json",
+      "status": "N2_FRESH_D1_MATCHED_THREE_ARM_POSTSEAL_EVALUATION_VALIDATED"
+    },
+    "result": {
+      "path": "results/routea_n2_fresh_d1_matched_three_arm_postseal_evaluation_v1/result.json"
+    }
+  },
+  "ownership_GO_or_NO_GO": null,
+  "programs": {
+    "independent_validator": {
+      "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_postseal_evaluation_v1.py",
+      "sha256": "f536573f740f8bae37c47a935d88c87f6a741dfdeefb6c26b80439f4f9d61889"
+    },
+    "reducer": {
+      "path": "programs/reduce_routea_n2_fresh_d1_matched_three_arm_postseal_evaluation_v1.py",
+      "sha256": "c2006c14edc8a766a3f30cf3673b3edc519ed88dc4a0e6f333d56627ffe91245"
+    }
+  },
+  "resource_contract": {
+    "allowed_partitions": [
+      "cpuonly",
+      "dev_cpuonly"
+    ],
+    "cpus_per_task": 4,
+    "gpu_count": 0,
+    "memory_gib": 32,
+    "walltime_seconds": 600
+  },
+  "scientific_GO_or_NO_GO": null,
+  "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_POSTSEAL_EVALUATION_EXECUTION_AUTHORIZED",
+  "version": "routea_n2_fresh_d1_matched_three_arm_postseal_evaluation_execution_authority_v1_20260904"
+}

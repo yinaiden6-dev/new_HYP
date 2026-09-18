@@ -1,0 +1,160 @@
+{
+  "all_saved_FP64_vector_and_argmax_values_replayed": 12898,
+  "candidates": [
+    {
+      "C4_binary64": {
+        "query_control_score": "0x1.c5d8f20e820cfp-13",
+        "real_score": "0x1.bde4d6446774ep-13",
+        "reference_control_score": "0x1.4094b933c8454p-13",
+        "visibility_mass": "0x1.331375fb924e1p-8"
+      },
+      "L_direct": 0.04537698595331854,
+      "L_readout": 0.04537698595331853,
+      "L_readout_minus_L_direct": -6.938893903907228e-18,
+      "M": 0.00468560820042649,
+      "RAW_rank": 1,
+      "S": 0.00021261877749350694,
+      "cosine_matrix_shape": [
+        720,
+        728
+      ],
+      "covariance_recomposition_residual": -6.938893903907228e-18,
+      "mean_visibility_times_mean_cosine": 0.048073544592559254,
+      "original_RAW": 509.9990234375,
+      "physical_row": 1134,
+      "product_expectation": 0.045376985953318544,
+      "query_distribution_sum": 0.9999999999999999,
+      "query_visibility_mean": 0.002718085146133928,
+      "reference_max_rescaled_L": 0.34073494009432587,
+      "reference_mean_rescaled_L": 5.617806298399339,
+      "reference_visibility_max": 0.13317385631410972,
+      "reference_visibility_mean": 0.00807734968830229,
+      "role": "TARGET",
+      "selected_cosine_mean": 0.4432451185227428,
+      "selected_visibility_cosine_covariance": -0.002696558639240713,
+      "selected_visibility_mean": 0.10845814783652855,
+      "three_cosine_stages": {
+        "own_query_weighted_bare_cosine_at_original_wr_argmax": 0.4432451185227428,
+        "own_query_weighted_free_MaxSim": 0.7075041819939116,
+        "uniform_query_free_MaxSim": 0.6904153845502007
+      }
+    },
+    {
+      "C4_binary64": {
+        "query_control_score": "0x1.9bd36e646edbep-7",
+        "real_score": "0x1.f6401e5be783ap-7",
+        "reference_control_score": "0x1.e640d0460e752p-7",
+        "visibility_mass": "0x1.7e5f297caed76p-5"
+      },
+      "L_direct": 0.3283783998985114,
+      "L_readout": 0.3283783998985114,
+      "L_readout_minus_L_direct": 0.0,
+      "M": 0.04667623618066845,
+      "RAW_rank": 17,
+      "S": 0.015327467750292912,
+      "cosine_matrix_shape": [
+        720,
+        650
+      ],
+      "covariance_recomposition_residual": 0.0,
+      "mean_visibility_times_mean_cosine": 0.3383198238323017,
+      "original_RAW": 470.38568115234375,
+      "physical_row": 1436,
+      "product_expectation": 0.3283783998985115,
+      "query_distribution_sum": 1.0,
+      "query_visibility_mean": 0.008388318733019167,
+      "reference_max_rescaled_L": 0.3772218804878972,
+      "reference_mean_rescaled_L": 1.264322448433916,
+      "reference_visibility_max": 0.8705179017552963,
+      "reference_visibility_mean": 0.25972678117458514,
+      "role": "SELECTED_WRONG",
+      "selected_cosine_mean": 0.4757814169773744,
+      "selected_visibility_cosine_covariance": -0.009941423933790253,
+      "selected_visibility_mean": 0.7110824672002487,
+      "three_cosine_stages": {
+        "own_query_weighted_bare_cosine_at_original_wr_argmax": 0.4757814169773744,
+        "own_query_weighted_free_MaxSim": 0.5946284097271887,
+        "uniform_query_free_MaxSim": 0.6365879082223618
+      }
+    }
+  ],
+  "cannot_infer_zh": [
+    "没有进行完整127-challenger/HOLD-SWITCH修复评估，不能保证替换L、归一化wr或增加FREE分数可修复0337并保留其它正确。",
+    "reference均值/最大值重标定只是两个reference的描述量；L/mean(wr)>1不是cosine概率或纯相似度。",
+    "argmax、bare cosine、selected visibility和covariance相互耦合，乘积分解不是独立物理因果效应。",
+    "该例从已打开失败中选择；不能据此宣称TRAIN分布规律、群体泛化或新模型增益。"
+  ],
+  "checked_original_switch_logit_from_qualified_result": 1.2734083122506323,
+  "checked_physical_rows": [
+    1134,
+    1436
+  ],
+  "diagnostic_program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/diagnose_rc_eval128_0337_visibility_content_v1.py",
+    "sha256": "b3fedb918f8dd881f1e293544c06d90c871f4480498fdee7b464edf0f85ee699"
+  },
+  "diagnostic_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_eval128_0337_visibility_content_v1/result.json",
+    "sha256": "b5796d6686dfbc0f3a91bb6ff904e962e99990112e88994452ce1b2b0332d556"
+  },
+  "fitted_parameters": 0,
+  "new_C128_predictions": 0,
+  "new_RoMa_or_encoder_calls": 0,
+  "normalized_cosine_matrices_recomputed": 2,
+  "original_C4_bit_exact_checks": 8,
+  "original_query_id": "OUTCOME-0337",
+  "qualification_zh": "这是归因于算子变化的两reference计算事实，不证明query权重在像素/身份意义上正确，也不证明RoMa几何本身错误；阶段2与阶段3只在每个reference内部保持同一p。",
+  "qualified_input_manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/input_qualification.json",
+    "sha256": "23f0f9af334dbd2916d6bf358324b417aea2a2894b618785580d12149e420291"
+  },
+  "query_id": "E128-2c09646865d5f430ec81f977",
+  "runtime": {
+    "dtype": "FP64 cosine/scalar replay",
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+    "threads": 8,
+    "torch": "2.9.1+cu128"
+  },
+  "scope_notes": [
+    "No RoMa/encoder calls, model fitting, new predictions or source edits.",
+    "The saved image_only_dot_MaxSim_sum_FP32 side statistic was not recomputed: it is outside the requested two normalized-cosine matrices and is not the full RAW scorer.",
+    "L_readout and L_direct can differ by one rounding step; exact reported binary64 values and covariance residuals are retained."
+  ],
+  "source_modified": false,
+  "sources": {
+    "independent_review": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/independent_review.json",
+      "sha256": "bda61510c69399f9adf8a7cbabb84365e96a7a13eeba83a99702996b7b62ca88"
+    },
+    "result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+      "sha256": "096c9575ffa05a3f9b813adbe5e65c879fbdee77507aa757de09420bef0be866"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard07/payload.pt",
+      "sha256": "04685df2528a607fdb2e66c336688b243c906623b37c703e813e72687581833a"
+    },
+    "token_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard07/payload.pt",
+      "sha256": "8f1085d50dae9dd4d1d0805dbb6cb5b0b6eeb97d8a74df34f94558557c26281b"
+    },
+    "validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/validation.json",
+      "sha256": "ccdad5d3de3f4b42b64b69fe11a76be3bb70e79b182c90a60bea11cfb8a1978a"
+    }
+  },
+  "status": "OPENED0337_TWO_REFERENCE_INDEPENDENT_NUMERICAL_REVIEW_PASS",
+  "supported_conclusion_zh": "在0337这一对reference中，自由cosine MaxSim及各自query权重下的自由匹配仍偏向target；保持各自query权重、改用原wr加权argmax选择的reference token后，去掉振幅的bare-cosine偏好已经反转。被选wr的振幅及外部M进一步形成wrong的L/S优势。因此不能把该现象仅解释为最终M缩放，也不能把L=S/M视为纯内容分数。",
+  "target_minus_wrong_cosine_stage_margins": {
+    "own_query_weighted_bare_cosine_at_original_wr_argmax": -0.03253629845463163,
+    "own_query_weighted_free_MaxSim": 0.11287577226672296,
+    "uniform_query_free_MaxSim": 0.05382747632783891
+  },
+  "wrong_over_target_ratios": {
+    "L_readout": 7.236672797887677,
+    "M": 9.961617400366492,
+    "S": 72.08896566419675,
+    "selected_bare_cosine_mean": 1.0734047530248485,
+    "selected_visibility_mean": 6.556284441368241
+  }
+}

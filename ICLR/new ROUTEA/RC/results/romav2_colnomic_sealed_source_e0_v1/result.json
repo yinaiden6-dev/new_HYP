@@ -1,0 +1,46 @@
+{
+  "access": {
+    "opened_model_scoring_count": 1,
+    "opened_pixel_decode_count": 1,
+    "sealed_model_scoring_count": 0,
+    "sealed_pixel_decode_count": 0,
+    "target_join_count": 0
+  },
+  "bindings": {
+    "gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc",
+    "manifest_receipt_sha256": "4f6208fdf574e739c2ff99fd1b23e6ce6b4e757ca8753580dfb6f874551696a4",
+    "model_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b"
+  },
+  "checks": {
+    "natural_c128_axis_exact": false,
+    "natural_c128_score_max_abs_le_1e_3": false,
+    "natural_c128_score_order_exact": false,
+    "opened_query_only": false,
+    "query_token_mean_cosine_ge_0_9999": false,
+    "query_token_min_cosine_ge_0_999": false,
+    "query_token_shape_exact": true,
+    "sealed_model_scoring_zero": true,
+    "sealed_pixel_decode_zero": true,
+    "target_join_zero": true
+  },
+  "claim_level": "OPENED_REPLAY_ENGINEERING_ONLY",
+  "diagnostics": {
+    "attention_implementation": "eager",
+    "c128_axis_match_count": 31,
+    "c128_score_max_abs": 5.767730712890625,
+    "query_grid_sha256": "b0123e2785b3619743b8f2398eeb404348edc6bc50208a181e44646feab28de9",
+    "query_grid_shape": [
+      24,
+      32
+    ],
+    "query_token_max_abs": 0.345703125,
+    "query_token_mean_cosine": 0.9405576586723328,
+    "query_token_min_cosine": -0.02312154695391655
+  },
+  "logical_sha256": "c9abf45ad7ba4955a0bbdbb264ac80a3843ebfbabc425712af6db94f2dea6ba8",
+  "next_authorized_stage": null,
+  "opened_execution": 20,
+  "opened_query_id": "DIFFICULT-0043",
+  "schema_version": "rc_romav2_colnomic_sealed_source_e0_v1_20260831",
+  "status": "ROMAV2_COLNOMIC_SEALED_SOURCE_E0_ABORT"
+}

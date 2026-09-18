@@ -1,0 +1,93 @@
+{
+  "candidate_record_count": 9060,
+  "candidate_union_count_max": 170,
+  "candidate_union_count_mean": 141.5625,
+  "candidate_union_count_min": 131,
+  "checks": {
+    "all_shards_validated": true,
+    "candidate_population": true,
+    "fold_population": true,
+    "input_authorities": true,
+    "query_population": true,
+    "role_balance": true,
+    "target_free_access": true,
+    "track_population": true
+  },
+  "claim_level": "TARGET_FREE_MATCHED_A_B_C_RAW_AND_D1_PORTABILITY_DIAGNOSTIC",
+  "contract_sha256": "b4fbd4241447bb9351a8cabb5057b5be2dcebd73c5344ae4bb6b73ba0d497c9c",
+  "heldout_folds": {
+    "1": 16,
+    "2": 19,
+    "3": 12,
+    "4": 17
+  },
+  "label_join_handoff_sha256": "6670b19000015472930d00e80d6ee31f7f81fb93440d76724b2a2bfbdb4ad79f",
+  "logical_sha256": "5433d0d1f217f5f3f19473117d35643ebde32014a7de7c3f190ebea710a1eb12",
+  "model_update_count": 0,
+  "next_authorized_stage": "D1_CURRENT_RUNTIME_MATCHED_THREE_ARM_POSTSEAL_DIAGNOSTIC",
+  "query_count": 64,
+  "reference_validation_sha256": "284f973b04d79a7d9fdb8b57097552e198d11029f60f706d4fe92ec6f31f0543",
+  "roles": {
+    "EVAL": 32,
+    "TRAIN": 32
+  },
+  "schema_version": "routea_d1_current_runtime_matched_three_arm_prejoin_aggregate_validation_v1_20260902",
+  "shards": [
+    {
+      "payload_sha256": "f4932b3039310ffebf3adf6fca2184ecd34d0c47a834b399452ceea06d8ed151",
+      "receipt_sha256": "1cff32211fc4214dace808ab2e923da861e09e8d542bb9722fd143a9db42d724",
+      "shard": 0,
+      "validation_sha256": "00fb32f71a88def8b5817cab682bb0fee06cbe7fce603bd4bf95b18d35e2b2d9"
+    },
+    {
+      "payload_sha256": "79478bd4d6bb11cd7efd644b5d70387543a83d9ae9fb67e6853d55f36263fae4",
+      "receipt_sha256": "19a2c35623934a9298f2ae95ddc40866475fb6bcfa56897f2f3f4fb5a30a16ee",
+      "shard": 1,
+      "validation_sha256": "771a5f96b979c942ab2d97a058d74db795d1bc3d4d5d586d343126c3484cd5a9"
+    },
+    {
+      "payload_sha256": "649a7008a29c9f0749a1936febca7d546be5ac049c4e1b8d02dd88eca11af488",
+      "receipt_sha256": "67cf8b1b66ed96deacdbd79e67071f66d9dd1f688de510900cabcae231d96417",
+      "shard": 2,
+      "validation_sha256": "9a82221f3bafe087c23448a6b99d067bbb4227a8bf8479c1709d38f893304654"
+    },
+    {
+      "payload_sha256": "decf52c523ddc5762dcc296bbc73e69e5ffac65f7f2d893b0c2e4696f3e5838b",
+      "receipt_sha256": "c886c45a0127c5409d48dc200a4fc292742edeee2e54aaff16ae8c60d48de626",
+      "shard": 3,
+      "validation_sha256": "f0d4c300bce0cabeb3fe9650d4293b6557cc7d81db1047c291917620cc497b13"
+    },
+    {
+      "payload_sha256": "8a442cdfe755b287a4de6ce4b12dfe872025cb52842f40d4781ac9ec6182f7a3",
+      "receipt_sha256": "029d4417f2f482a1bb59b13777c065cb212ed93f198db96a1aec5de368452b25",
+      "shard": 4,
+      "validation_sha256": "1ca37624ce8afcf02b87a05c39b69be0e87dfc49d8dcd14c27514c8b3fd778c6"
+    },
+    {
+      "payload_sha256": "e3f38c54ec7afec6fd4f6f9ffc048b1c9a00e78281926543b265cd07d9b30be2",
+      "receipt_sha256": "6f69748a83a4fc4dc9a70b76a962afe79497ee4e3edb7cec3544995dc260c578",
+      "shard": 5,
+      "validation_sha256": "6e97b97e2f366126d851686d64c449f8c983e2ab3cf97c27b5c9830d69b308b8"
+    },
+    {
+      "payload_sha256": "e971bf250799ad3ac60b98695b9da19518c67eae1135089368c5589b1d53b8ef",
+      "receipt_sha256": "f1a4e2b4f46b4e28b67b99d8e8db4ecdb0c8fad6d6b90f0f2925e19424a9a658",
+      "shard": 6,
+      "validation_sha256": "221e989156d5a8ca52fb5d66b6774732e535dbc465bb06bbeec2f0565c683d62"
+    },
+    {
+      "payload_sha256": "86fdf5c43ae2d6266f454341b022b7620394bd8ba32d56af30f920936517ec45",
+      "receipt_sha256": "49c3524947960a7bf0bd82622d693741883828eadba25091b5548dfa9566ac6b",
+      "shard": 7,
+      "validation_sha256": "38ac65c3ee5355cc00f631af826b0abddeb6586540dbafcefdc698eb44031cab"
+    }
+  ],
+  "source_validation_sha256": "6c031e5a82b8057a48b48794d53dd76f4888b76ed03f081a925425c64e9621cb",
+  "status": "ROUTEA_D1_CURRENT_RUNTIME_MATCHED_THREE_ARM_PREJOIN_VALIDATED",
+  "target_role_read_count": 0,
+  "tracks": {
+    "difficult": 9,
+    "new_difficult_train": 2,
+    "outcome": 53
+  }
+}

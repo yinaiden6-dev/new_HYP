@@ -1,0 +1,22 @@
+{
+  "job_id": "5142474",
+  "submitted_utc": "2026-09-11T23:18:18.778995+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--dependency=afterok:5142472:5142473",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_convex_cause_collect_v1.sbatch"
+  ],
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_convex_cause_collect_v1.sbatch",
+    "sha256": "f02ed87a1ea980f9fee231d746182f13b9c34e653fac7215094167a5914e0b6f"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_convex_cause_isolation_authority_v1_20260912.json",
+    "sha256": "adb15714cc34a7862fe985ee0f8d27f3620e4686981e8f644e1f1c71d78c571c"
+  },
+  "dependencies": {
+    "train": "5142472",
+    "cones": "5142473"
+  }
+}

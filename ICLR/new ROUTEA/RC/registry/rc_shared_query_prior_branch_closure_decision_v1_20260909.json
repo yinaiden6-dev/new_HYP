@@ -1,0 +1,58 @@
+{
+  "status": "SHARED_QUERY_PRIOR_AND_ORIGINAL_HEAD_REFIT_BRANCH_CLOSED_WITHOUT_RETRIEVAL_GAIN",
+  "created_utc": "2026-09-09T08:12:45.433985+00:00",
+  "sources": [
+    {
+      "path": "results/rc_shared_query_target_prior_development_v1/result.json",
+      "sha256": "977ffe3dcd76deb62bb0dde880ee4e9c5694ec25ab0323bd8acfa9a64e05d2f0"
+    },
+    {
+      "path": "results/rc_shared_query_prior_head_refit_v1/result.json",
+      "sha256": "2aa5d46c034b130a940bfc88e99323a0bbb441416edaa28a2d390345b0458b65"
+    },
+    {
+      "path": "results/rc_shared_query_prior_head_refit_v1/independent_validation.json",
+      "sha256": "18c03e876f2836c118c2fbc151cdb9f1259ae509b7c9d72bedb48fa814c9cd31"
+    },
+    {
+      "path": "results/rc_shared_query_prior_head_refit_closure_v1/result.json",
+      "sha256": "2276ebcea3c5ff122c4ad4acc7f33b444bda55d0f2bb2c09fa5c3bf566a54863"
+    },
+    {
+      "path": "results/rc_shared_query_prior_local_evidence_survival_v1/result.json",
+      "sha256": "408c611ff5e4895868369eeb7abdd61002296d363773740aeddecffe1af835ba"
+    },
+    {
+      "path": "results/rc_shared_query_prior_local_evidence_survival_v1/validation.json",
+      "sha256": "d47f84205a09c50792581e6ba93ded3370b28d76461139d351cad50303467af0"
+    },
+    {
+      "path": "results/rc_outcome0212_exclusive_token_gold_polygon_v1/result.json",
+      "sha256": "e3253768658172bb3b6d247d69a2f1259400c9f6122eb8d91097480aa1ecc92b"
+    }
+  ],
+  "scope": {
+    "candidate_source": "ORIGINAL_RAW_C128",
+    "split": "OPENED_MATCHED_EVAL32",
+    "baseline_head": "NATIVE7/C_PAIRED",
+    "baseline_top1": 28,
+    "fixed_head_plus_prior_top1": 26,
+    "refit_head_plus_prior_top1": 25,
+    "refit_head_plus_uniform_top1": 25
+  },
+  "decisions": {
+    "deploy_any_new_branch": false,
+    "continue_same_prior_or_refit_hyperparameter_search": false,
+    "HYP_proved": false,
+    "HYP_impossibility_proved": false,
+    "formal_392_consumed": false
+  },
+  "confirmed_findings": [
+    "All four correctness-flip cases contain target-exclusive original full-reference MaxSim token evidence against all127 rivals.",
+    "Wrong candidates also have local exclusive evidence; this does not establish object presence.",
+    "OUTCOME-0212 and OUTCOME-0220 target-exclusive evidence loses most visibility weight under the learned shared prior.",
+    "OUTCOME-0618 loses all24 original target-exclusive positions at reference-visibility weighting before the learned prior.",
+    "The limited head refit failed to preserve the prior single new rescue or repair the three losses."
+  ],
+  "remaining_question": "How to retain candidate-distinguishing evidence inside a target hypothesis without using target labels at inference or letting each wrong candidate select only self-supporting fragments."
+}

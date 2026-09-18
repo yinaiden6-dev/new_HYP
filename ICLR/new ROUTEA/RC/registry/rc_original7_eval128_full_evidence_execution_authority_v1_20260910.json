@@ -1,0 +1,432 @@
+{
+  "DAG": [
+    "token_raw_bridge",
+    "roma_bridge",
+    "token_raw_shard[0..15]",
+    "raw_aggregate",
+    "roma_shard[0..15]",
+    "finalize_prejoin",
+    "join_validated"
+  ],
+  "allowed_stages": [
+    "token_raw_bridge",
+    "roma_bridge",
+    "token_raw_shard",
+    "raw_aggregate",
+    "roma_shard",
+    "finalize_prejoin",
+    "join_validated"
+  ],
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "deployment_replacement_authorized": false,
+  "engineering_fixture": "previously used TRAIN56 only; no expanded images until both bridges exact and independently validated",
+  "formal392_P_RoMa_results_authorized": false,
+  "inference": "frozen RAW full5413 scores; correctedidentity full5412 rank; naturalC128; full127 ORIGINAL7 X@w+b; >0 SWITCH otherwise HOLD",
+  "max_GPU_array_concurrency": 4,
+  "new128_outcomes_read": false,
+  "new_training_authorized": false,
+  "postjoin_source_bindings": {
+    "curator_ledger": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/curator_roles.json",
+      "sha256": "47277ce66f7aba445fb80a93643039c7e8a47c1f5cc8237f60157a98e3e93381"
+    }
+  },
+  "preflight_statuses": {
+    "cpu_preflight": "ORIGINAL7_EVAL128_CPU_SYNTHETIC_PREFLIGHT_PASS",
+    "roma_preflight": "RC_ORIGINAL7_EVAL128_ROMA_SOURCE_SYNTHETIC_PREFLIGHT_PASS",
+    "token_raw_preflight": "RC_ORIGINAL7_EVAL128_TOKEN_RAW_PREFLIGHT_PASS"
+  },
+  "primary_model": "ORIGINAL7_NATIVE7",
+  "primary_parameter_sha256": "ec7df7e5a5b85f725f8729aed91653e1028814a8bbc0474039dbaffab652b263",
+  "queries_per_shard": 8,
+  "query_count": 128,
+  "recorded_utc": "2026-09-10T01:56:52.263053+00:00",
+  "scheduler_deadline_Europe_Berlin": "2026-09-11T18:00:00",
+  "shards": 16,
+  "source_bindings": {
+    "cpu_current_ORIGINAL7_parameters": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "cpu_feature_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "cpu_gallery_identity_contract": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "cpu_gallery_identity_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "cpu_gallery_identity_registry": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "cpu_launcher_finalize_prejoin": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_finalize_prejoin_v1_dev_cpuonly_30m.sbatch",
+      "sha256": "d3058531f3dd28e8e7ec9f22a19788f68847fe4fa94a0133cc3482d026787cf0"
+    },
+    "cpu_launcher_join_validated": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_join_validated_v1_dev_cpuonly_15m.sbatch",
+      "sha256": "ab3276787fe037ab69af84802df372dcaf9ccfba453e4343b4d1d8c86f2b5914"
+    },
+    "cpu_launcher_raw_aggregate": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_raw_aggregate_v1_dev_cpuonly_15m.sbatch",
+      "sha256": "b45ec4319297c0720da96e49e2d9511063d44fcaecb4a8d49306704c0a9eb911"
+    },
+    "cpu_legacy_C4_score_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/reference_visibility_pv_lossless_v1.py",
+      "sha256": "f5fcfa1ce6fa6582a3628035e2ba54414185160fa36515fa27fd55d8aa81adcc"
+    },
+    "cpu_old_NATIVE7_parameters": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_readout_v1/parameters.json",
+      "sha256": "32969083441ec1071cc88777e253e4d0a333894962d5cb30d32d35d2d6bb3ec1"
+    },
+    "cpu_old_NATIVE7_prejoin": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_readout_v1/eval_prejoin.json",
+      "sha256": "4dbd5c5e4fe359e35075493846df1cfd59d7354ea1e0f222fff9aaedc31e5d1c"
+    },
+    "cpu_old_NATIVE7_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_readout_v1/eval_prejoin_seal.json",
+      "sha256": "41bcd273e324599f2c02457233be2566463cff11670407b5e82032d560383b40"
+    },
+    "cpu_old_TRAIN56_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard03/payload.pt",
+      "sha256": "c70f75ba1023ab0366c3509e4597c5289dfacc274dfa58b535e9ac3b9fc7b8fc"
+    },
+    "cpu_old_TRAIN56_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard03/payload.pt",
+      "sha256": "5c05fb4cf96bda8214fe4dbfdd0d237e90ef9fa571713f034e1005005182ca5d"
+    },
+    "cpu_plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_EVAL128_FULL_EVIDENCE_V1_20260910.md",
+      "sha256": "f9ce8d9ef36489eaf0273fc324ff273a1796a4c90d0830aa8785d8b540059252"
+    },
+    "cpu_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1_preflight/855032229e0a48250fd28fa93ccd45dbabd86eeda32cdef55281d7d04b40f789/result.json",
+      "sha256": "791cf24d4e03e42606679fdb50877b70880a5ac1b53ef221230235ccea42c2c1"
+    },
+    "cpu_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_original7_eval128_full_evidence_v1.py",
+      "sha256": "855032229e0a48250fd28fa93ccd45dbabd86eeda32cdef55281d7d04b40f789"
+    },
+    "cpu_worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_manifest.json",
+      "sha256": "f2c2e6f9181e103a61a181edf43e3309aa1de72743cfa6cf6097a9deb108e4e7"
+    },
+    "execution_common_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_original7_eval128_execution_common_v1.py",
+      "sha256": "8836df77bac9079ba0a960dda2d0fa69c5d7e3a4b1d5eed287ed9cb17f11493e"
+    },
+    "execution_plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_EVAL128_FULL_EVIDENCE_V1_20260910.md",
+      "sha256": "f9ce8d9ef36489eaf0273fc324ff273a1796a4c90d0830aa8785d8b540059252"
+    },
+    "parent_research_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+      "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+    },
+    "post_submission_continuation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_post_submission_continuation_addendum_v1_20260909.json",
+      "sha256": "822135bc29e5270fe4222b57be3643abfea61668688eb2f8587e9d461a4c0a7d"
+    },
+    "roma_bridge_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_roma_bridge_v1_accelerated_30m.sbatch",
+      "sha256": "46fa8bd8fb8ac327593ef2356542645bbed2789772e8a0766c8f260bb8e0a80a"
+    },
+    "roma_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/preflight/5547ef80f8fd0469af9ea491641437d32b1e411cd778f6910327c26b9a151fd1/result.json",
+      "sha256": "436fe71488bdb327dee2e3aa20b34b84726afb462dac71d3759e604afd71c06c"
+    },
+    "roma_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_eval128_roma_v1.py",
+      "sha256": "5547ef80f8fd0469af9ea491641437d32b1e411cd778f6910327c26b9a151fd1"
+    },
+    "roma_shards_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_roma_shards_v1_accelerated_30m.sbatch",
+      "sha256": "2aa954df4267768c7d5c5c1f7a73f52ae52c37d02f0d4b9a30cc9abc08182ec0"
+    },
+    "roma_source_profile": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+      "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+    },
+    "token_raw_adapter_weights": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_model.safetensors",
+      "sha256": "aa6cba28368342ac6b235f49fcc3e0a5bd891d56df490c12bcbc6dc52c8377f3"
+    },
+    "token_raw_base_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/config.json",
+      "sha256": "fcf7636197a793fef485bd846052cb4a04a5452e9457d35cdb9f27b0b816cd80"
+    },
+    "token_raw_base_generation_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/generation_config.json",
+      "sha256": "12a853a9c0f468c4bd321e1cf6b0d5929095eb01a078bf47fb2deffec1a4099e"
+    },
+    "token_raw_base_model_safetensors_index_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model.safetensors.index.json",
+      "sha256": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010"
+    },
+    "token_raw_base_weights_00": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00001-of-00007.safetensors",
+      "sha256": "68830d2490050e8390ee6b0567927c7da1156e8ec1f25ab38cd990193f4c1499"
+    },
+    "token_raw_base_weights_01": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00002-of-00007.safetensors",
+      "sha256": "ab83ce2927a5216474d05c4ff9e9f042ef0ef38451ccd7ba4cc57e0b3afd515f"
+    },
+    "token_raw_base_weights_02": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00003-of-00007.safetensors",
+      "sha256": "e823cbdbda84c451acea187716a2e2b5d0093c5b1c0808c6efb884a7fbfb4b93"
+    },
+    "token_raw_base_weights_03": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00004-of-00007.safetensors",
+      "sha256": "2925c522612eefd7d12ec72bf6bdd9b13f095610bf80189c3fd7c86d37003089"
+    },
+    "token_raw_base_weights_04": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00005-of-00007.safetensors",
+      "sha256": "ef55d6f545f07fe9f5caf919e64c6e191225e0025061de722ac306b205e81df4"
+    },
+    "token_raw_base_weights_05": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00006-of-00007.safetensors",
+      "sha256": "58116086116501f6337cb244dd51ddf1e327938bbfc6075508095cf1aca0cc46"
+    },
+    "token_raw_base_weights_06": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00007-of-00007.safetensors",
+      "sha256": "d639238d6a4340a76150c1157e78cdb56d79441cd8cb8b90e25d8f16ade7e890"
+    },
+    "token_raw_bridge_expected_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard03/payload.pt",
+      "sha256": "5c05fb4cf96bda8214fe4dbfdd0d237e90ef9fa571713f034e1005005182ca5d"
+    },
+    "token_raw_bridge_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_token_raw_bridge_v1_30m.sbatch",
+      "sha256": "f327444d259e7d784870d0ac6483c1ba54eb030180fd92f3ca7903f1138bd7b9"
+    },
+    "token_raw_common_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_original7_eval128_execution_common_v1.py",
+      "sha256": "8836df77bac9079ba0a960dda2d0fa69c5d7e3a4b1d5eed287ed9cb17f11493e"
+    },
+    "token_raw_cpu_probe_current_0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0056/arrays.npz",
+      "sha256": "68a9aa51360d069ecd1509feda0d624ae98287af0320ad148081c9c88c85ec6f"
+    },
+    "token_raw_cpu_probe_current_1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0066/arrays.npz",
+      "sha256": "8158c0f15083017496428f786072e84c6c0ae1b34c8e4ac11ac28f42ad8db8db"
+    },
+    "token_raw_cpu_probe_current_2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0072/arrays.npz",
+      "sha256": "b007ad4c06f2ef324ebb2edc60bf19d081228437180e14c185b1cedb76b5655b"
+    },
+    "token_raw_cpu_probe_current_3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0075/arrays.npz",
+      "sha256": "e923e0be8130bc8aa3a99ef3e0e3d2cd75ae1f1980834c6975301be43a21e0c0"
+    },
+    "token_raw_cpu_probe_legacy_0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0101.pt",
+      "sha256": "3b86c26ef73f5db751d9a40187765c61f07c766bec9aa397cfd89e0e646d5347"
+    },
+    "token_raw_cpu_probe_legacy_1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0128.pt",
+      "sha256": "14981cfe78bf16005fc7eed2d97139a87f6f2344555dc0780173df971a7031d7"
+    },
+    "token_raw_cpu_probe_legacy_2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0146.pt",
+      "sha256": "8680a4022b59ddd43ef8c50cfff25d729e43b92ac92d1c6db696d8c10d2b7daf"
+    },
+    "token_raw_cpu_probe_legacy_3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0149.pt",
+      "sha256": "979b5bfde84f72c129331d18e9353856dd9dad8d5d6853eeec13735d395c7ec6"
+    },
+    "token_raw_encoder_class_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/colpali_engine/models/qwen2_5/colqwen2_5/modeling_colqwen2_5.py",
+      "sha256": "02abc346a45834a68efa5e24e26516cf25a5a9128e1b2929477fcb82fbcdd8a9"
+    },
+    "token_raw_fullrank_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_romav2_colnomic_sealed_source_e0_v2.py",
+      "sha256": "2f43fcb16b4ed3345af5799aaf5f458ea87aaddce551b6fb738e7ea0c2c20327"
+    },
+    "token_raw_gallery_cache": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt",
+      "sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc"
+    },
+    "token_raw_gallery_identity_contract": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "token_raw_gallery_identity_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "token_raw_gallery_identity_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "token_raw_gallery_source_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/conditional_rep_sources.py",
+      "sha256": "ba698021bd02fd3721bf5a9fa9fc66ee78c36596da54107cb0e18ab5dcacfe56"
+    },
+    "token_raw_legacy_encoder_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_romav2_colnomic_current_runtime_bridge_shard_v1.py",
+      "sha256": "3df9c314df8e1da6fa9b4f60c41e3db7117c6cad3784f35a012c76fdb2fde03e"
+    },
+    "token_raw_library_peft_tuners_lora_layer": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/peft/tuners/lora/layer.py",
+      "sha256": "e8a47a49cf69f92ded68bf7ab286aeaf068f0ac809ab3465ad16f78a8f9f8b63"
+    },
+    "token_raw_library_transformers_models_qwen2_5_vl_modeling_qwen2_5_vl": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py",
+      "sha256": "03a5b584314399b60280edd6b882862acfc280f8cab4e1d7f59ade998e1f8c91"
+    },
+    "token_raw_library_transformers_models_qwen2_5_vl_processing_qwen2_5_vl": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py",
+      "sha256": "4d66c1201ea82d0ceb3bb60e17f287e209f82adf28b51240ae7d7822dabf64a0"
+    },
+    "token_raw_library_transformers_models_qwen2_vl_image_processing_qwen2_vl": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py",
+      "sha256": "de5859892f04c64f3e79c9d318842ac0040000788e43870997bd1ec6565c02bb"
+    },
+    "token_raw_metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/independent_metadata_validation.json",
+      "sha256": "a70936a24fc2f5c6996228aee673a6de505c3022487b903878d268ad9a34cd94"
+    },
+    "token_raw_model_adapter_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_config.json",
+      "sha256": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c"
+    },
+    "token_raw_model_added_tokens_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/added_tokens.json",
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    "token_raw_model_chat_template_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/chat_template.json",
+      "sha256": "94174d7176c52a7192f96fc34eb2cf23c7c2059d63cdbfadca1586ba89731fb7"
+    },
+    "token_raw_model_merges_txt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/merges.txt",
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "token_raw_model_preprocessor_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/preprocessor_config.json",
+      "sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+    },
+    "token_raw_model_processor_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/processor_config.json",
+      "sha256": "67abb3983388156ccd44dd31d1ad75bb45b94c3d25b94fe2b178028ea3e0b60c"
+    },
+    "token_raw_model_special_tokens_map_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/special_tokens_map.json",
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    "token_raw_model_tokenizer_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/tokenizer_config.json",
+      "sha256": "8cf7beeb5bffaaf7347b6d6ebf2f5c114ca75ab0c6d62ab6e6f19fafbd70cb7d"
+    },
+    "token_raw_model_tokenizer_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/tokenizer.json",
+      "sha256": "5eee858c5123a4279c3e1f7b81247343f356ac767940b2692a928ad929543214"
+    },
+    "token_raw_model_vocab_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "token_raw_old_runtime_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/validation.json",
+      "sha256": "f776472a70ee61a66624d9d750666168fb0c72cd484a248de5cabad77a5a248c"
+    },
+    "token_raw_old_shared_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/manifest.json",
+      "sha256": "f9f89522a7a3a67a52072e5a32739b4da9f238ff77d63d3b1faf9e342201fc7c"
+    },
+    "token_raw_plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_EVAL128_FULL_EVIDENCE_V1_20260910.md",
+      "sha256": "f9ce8d9ef36489eaf0273fc324ff273a1796a4c90d0830aa8785d8b540059252"
+    },
+    "token_raw_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1_preflight/5c3d413f0c61a506e1f794e58cb82fcdc7eb69e3fb257f31cd5eb6006ab06618.json",
+      "sha256": "d9d59b241e2f76b9739a24917aaa109ad0b19fa9547d97aadf53821845d4e430"
+    },
+    "token_raw_processor_class_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/colpali_engine/models/qwen2_5/colqwen2_5/processing_colqwen2_5.py",
+      "sha256": "2d77f0a5de727bd33dc45b5f7346aed51b945150f84171373067fde1eb7983f2"
+    },
+    "token_raw_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_eval128_token_raw_v1.py",
+      "sha256": "f8b63016f3f0ac50dfd82807312ac63935842e09fa280f6f1a44055c2449517c"
+    },
+    "token_raw_reference_0000_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/0000_1244.pt",
+      "sha256": "2a075800ba11f07dd7d288c8afab3fba4e19675ab0664224f855ba2e35f84d09"
+    },
+    "token_raw_reference_0000_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_0000_1244.json",
+      "sha256": "fbe4d870ac1f919367bffdd1cb8754a5d824a8b19b35360289882e6bf0dd8830"
+    },
+    "token_raw_reference_0000_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_0000_1244.json",
+      "sha256": "1ab9f750dfc35cebba7707e335969a22d92ff61cf97324cc02962109bad344cd"
+    },
+    "token_raw_reference_1244_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/1244_2488.pt",
+      "sha256": "2529115f8a4c1a9c67871bb7f57042ea23d88143430388d5707da17ec47ff684"
+    },
+    "token_raw_reference_1244_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_1244_2488.json",
+      "sha256": "316a642f8241c4c1c6943540de81d44609777b3f015f6c30ca4b9dab862be984"
+    },
+    "token_raw_reference_1244_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_1244_2488.json",
+      "sha256": "b5ed3395751197f8270c852fa99ffcd8ec0d13fccd75d232d4fb66153794c52b"
+    },
+    "token_raw_reference_2488_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/2488_3732.pt",
+      "sha256": "9fbf4813b50dcef1be3db9ffd4beb2f48052599d7449bb57c5dcbe3ff9a37192"
+    },
+    "token_raw_reference_2488_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_2488_3732.json",
+      "sha256": "0cf2c02299b6a172c7bb6a0c858d28d1ecd46e70dba8266ad35df9362456c5b2"
+    },
+    "token_raw_reference_2488_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_2488_3732.json",
+      "sha256": "cde317526f2347cc55437efa33422a00adbc3122ba45d8a71d56b77ea3f2df6c"
+    },
+    "token_raw_reference_3732_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/3732_4976.pt",
+      "sha256": "9c2c62a8337f89b1ce8d9e715b2e2e6312e0e28ad482131153ee5dcb80d16bab"
+    },
+    "token_raw_reference_3732_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_3732_4976.json",
+      "sha256": "4c134cc0d542ed554182412024214815bf463b162c172f5d0accaa684ef48702"
+    },
+    "token_raw_reference_3732_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_3732_4976.json",
+      "sha256": "444d2e08422459bbed884e4b4aafe9bde118df00540af978662a8ec8e96a050a"
+    },
+    "token_raw_reference_cache_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/conditional_colnomic_ms_proposal.py",
+      "sha256": "982f00bcd4682593e1d8a3d72a6204402f731a5bbd21d523ea8cdd9d28e2ae21"
+    },
+    "token_raw_reference_resolver_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/cw1_sr0_s8_feature_runtime_v1.py",
+      "sha256": "5ca8bea5d07b07000401e25eda6f70178ad5952061988574f67f64f06300ee78"
+    },
+    "token_raw_shard_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_token_raw_shards_v1_30m.sbatch",
+      "sha256": "3568de1db8d1b91fce9bb82ee0edd79417d33012d7760c9f58c944c0330431c7"
+    },
+    "token_raw_worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_manifest.json",
+      "sha256": "f2c2e6f9181e103a61a181edf43e3309aa1de72743cfa6cf6097a9deb108e4e7"
+    },
+    "user_expansion_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_eval128_expansion_authority_addendum_v1_20260910.json",
+      "sha256": "53ddc32154491952cf3af4c0a166585602a1e2ba052e29471de0fcc27b18b44f"
+    }
+  },
+  "status": "ORIGINAL7_EVAL128_FULL_EVIDENCE_AUTHORIZED",
+  "target_absent_query_exclusion_authorized": false,
+  "target_insertion_authorized": false,
+  "untouched_external_claim_authorized": false
+}

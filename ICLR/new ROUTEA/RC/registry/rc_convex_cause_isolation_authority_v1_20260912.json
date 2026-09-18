@@ -1,0 +1,123 @@
+{
+  "automatic_deployment": false,
+  "diagnostic_coefficients_allowed_in_training": false,
+  "diagnostic_sources": {
+    "manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_opened_convex_loss_rescue_cones_v1/inputs/manifest.json",
+      "sha256": "c2878f0c2e50fe16d8b495a2a5d4232ab695b716610ed0a24fd0915cb2f217bc"
+    }
+  },
+  "evaluation_sources": {
+    "eval_labels": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/eval_curator_roles.json",
+      "sha256": "65fcbe8a2f5b0e14fbf02bf665729400327dad9a88de2b78971da2161a846942"
+    },
+    "panel_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/panel_manifest.json",
+      "sha256": "e9a0181e8298056c62f42905e151b8a475721e92ed3f08ec3947d35eb3a7d90e"
+    },
+    "result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/result.json",
+      "sha256": "8bc9a6e682cb3d55d40ed0a9889770fe614a6cc93da7b3336003aadb4ad4a61a"
+    },
+    "result_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/result_validation.json",
+      "sha256": "904035e05706ade999b87ac722ad7685ba70da5eedd898b10f8cde8802b55bdf"
+    }
+  },
+  "explicit_L2_added": false,
+  "gap_tolerance": 1e-05,
+  "max_cuts": 256,
+  "max_search_seconds": 420,
+  "old_head_retraining": false,
+  "original_experiment_deadline_not_globally_extended": true,
+  "parameter_box": 64,
+  "recorded_utc": "2026-09-11T23:17:13.323452+00:00",
+  "scope": "one TRAIN-only logged-loss optimization, one original96 unit-cost control, six quarantined analytical cones; no other research restarted",
+  "sources": {
+    "collect_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_convex_cause_collect_v1.sbatch",
+      "sha256": "f02ed87a1ea980f9fee231d746182f13b9c34e653fac7215094167a5914e0b6f"
+    },
+    "collector": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/collect_rc_convex_cause_isolation_v1.py",
+      "sha256": "11aa205604488a1bf73a67f2a97f8b2bc60089f7921221d9499620b4889f4735"
+    },
+    "cones_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_convex_cause_cones_v1.sbatch",
+      "sha256": "e34aa5d3850506825e5d4f4ed534998e0f808e08083ad6e58a93d288b6552d39"
+    },
+    "core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_convex_loss_cause_core_v1.py",
+      "sha256": "9d7ef65f3c36ff2816a72f302eb11a91d7bd93279c77c2a8c1455925d80da69f"
+    },
+    "core_qualification": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_convex_cause_core_preflight_v1/result.json",
+      "sha256": "fbfcfc3bfb83563e535aafbc644456497bf093b2628ed1ee9ae49c6d859224ce"
+    },
+    "freezer": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/freeze_rc_convex_cause_isolation_v1.py",
+      "sha256": "ff2f25764f1e6a5c97301900bf0aa78b53180554b1360968dc42b896dd62493a"
+    },
+    "input_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "input_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_convex_train_loss_cause_v1/input_seal.json",
+      "sha256": "add8fd4f6640e46936327e200b965ce6bf06e724c44233b178b58c6d3e362862"
+    },
+    "original_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_CONVEX_CAUSE_ISOLATION_V1_20260912.md",
+      "sha256": "3f152a2c5fecb0959193b483afc2bbf562ad55f1a79d7225e59242c1b280401e"
+    },
+    "prediction_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "prepare": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prepare_rc_convex_cause_inputs_v1.py",
+      "sha256": "cb86a1a735d7f578070ab9c3abd4c5fb63d4650556a5bc80f0ee9bd942c48b26"
+    },
+    "previous_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_fixed_panels_train269_group_risk_authority_v1_20260911.json",
+      "sha256": "38de28fc84c9770f845893df74f46c80d163ed74453875d3e3493e3b508fbfde"
+    },
+    "previous_fit_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/validation.json",
+      "sha256": "42964e9397649298a00afe9f09cddcd68bcb310987f6010b8f5ba23e91e1deba"
+    },
+    "previous_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/payload.pt",
+      "sha256": "eb3fc868cac842d2a9800f26cab339b8ed1e0b50e2736df7f2a1a11b6cfaaaf1"
+    },
+    "previous_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/receipt.json",
+      "sha256": "dbf22160653c12a52e4b2cd733bd701d4abc7998fab6ba095bef75056f48f67c"
+    },
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_convex_cause_isolation_v1.py",
+      "sha256": "d401777f224cd07af06b92ad337a82ec895f99034211f2b71fd98626403a9117"
+    },
+    "train_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_convex_cause_train_v1.sbatch",
+      "sha256": "157ef0fead1abde61330a2b587bed299e663db20e9302a487ccf7867e75be0e6"
+    },
+    "train_problem": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_convex_train_loss_cause_v1/train_problem.json",
+      "sha256": "69e7342ceebe7fbebdffc7883f16df2ba97d71440e399a0ceec18fb9bbe07c9b"
+    },
+    "unit_cost_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_unit_cost96_cause_v1.py",
+      "sha256": "9ea8374e3faa07335da78ba9ec8d8d91ecdaf0c3e7c4c8534dee482c6dc89aca"
+    }
+  },
+  "status": "CONVEX_CAUSE_ISOLATION_BOUNDED_CONTINUATION_AUTHORIZED",
+  "train_only_conditions": 2,
+  "unit_cost_control": 1,
+  "user_authorization": "2026-09-12 user explicit go continuing annotated cause-isolation and minimum necessary experiment"
+}

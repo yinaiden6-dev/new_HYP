@@ -1,0 +1,90 @@
+{
+  "TRAIN_identity_role_metadata_read": true,
+  "capacity_coefficient_reads": 0,
+  "checks": {
+    "FIT16_SELECT8_groups_and_identities_disjoint": true,
+    "FIT_SELECT_image_sha_disjoint": true,
+    "FIT_target_join_uses_only_FIT_projection": true,
+    "SELECT_PROTECT_only_additional_candidate_filter_is_full_BASE_correct_preservation": true,
+    "SELECT_RANK_vs_FIT_SELECT_contrast_present": true,
+    "SELECT_no_LP_and_all_selected_parameters_exact_pool_members": true,
+    "SELECT_pool_seal_and_fresh_FIT_qualification_precede_role_join": true,
+    "all_four_fixed_hash_splits_rederived_from_original_outer_train_roles": true,
+    "all_four_model_counts_and_paired_statistics_source_checked": true,
+    "all_outer_memberships_and_query_order_unchanged": true,
+    "old_all24_pool_hard_forbidden_including_hash": true,
+    "outer_label_join_after_all_four_seals_and_fresh_replays": true,
+    "own_output_role_guards_precede_path_allowlist": true,
+    "same_strict_SELECT_group_gain_for_both_SELECT_arms": true,
+    "source_and_preflight_bindings_match": true
+  },
+  "fold_image_counts": [
+    {
+      "FIT": 62,
+      "OUTER": 35,
+      "SELECT": 31,
+      "fold": 0
+    },
+    {
+      "FIT": 66,
+      "OUTER": 27,
+      "SELECT": 35,
+      "fold": 1
+    },
+    {
+      "FIT": 61,
+      "OUTER": 32,
+      "SELECT": 35,
+      "fold": 2
+    },
+    {
+      "FIT": 62,
+      "OUTER": 34,
+      "SELECT": 32,
+      "fold": 3
+    }
+  ],
+  "limits": [
+    "SELECT isolation is incremental-fit-only: frozen BASE may have seen SELECT original FULL/PAIR labels",
+    "Outer folds have been used in development; not untouched external evidence",
+    "Stage/source readiness is not a natural result or scientific GO",
+    "No universal no-break guarantee from FIT or SELECT protection"
+  ],
+  "natural_feature_reads": 0,
+  "natural_fit_calls": 0,
+  "real_EVAL_reads": 0,
+  "repaired_before_freeze": [
+    "Explicit group-string hash tie-break",
+    "Added SELECT_RANK minus FIT_SELECT paired contrast",
+    "Join validates actual SELECT LP/FIT-role/outer-role zero counters",
+    "FIT own-output allowlist blocks prior selection ledger"
+  ],
+  "review_scope": "Independent source inspection and metadata-only rederivation; no natural fit or prediction validation",
+  "sources": {
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_train128_group_held_selection_v1_dev_cpuonly_59m.sbatch",
+      "sha256": "28aa8d5d4e5a5439e25014bbacc4da3c94c20747ab6a5675cfaddc8bf0dd446f"
+    },
+    "manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_group_held_selection_v1/split_manifest.json",
+      "sha256": "f6cae391f38412d6aa70c477e6a8940fdbc6f014fda529739e9829a8c141ddad"
+    },
+    "metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_group_held_selection_v1/metadata_validation.json",
+      "sha256": "3b2d7f4c55cb2638fc0e857611264cd8c414fdc7b600f0bf9bc8f76252f6ba54"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_TRAIN128_GROUP_HELD_SELECTION_V1_20260911.md",
+      "sha256": "0850abcb415d6f1eb99a359f29c6cc5ffedb7c560f95fa0bc9a294434fa24a57"
+    },
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_train128_group_held_selection_v1.py",
+      "sha256": "124b03fdd9b097b1eb32da0c5c9f8393c2039f27a9e89d632f650e7b73264c6e"
+    },
+    "synthetic_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_group_held_selection_v1_preflight/124b03fdd9b097b1eb32da0c5c9f8393c2039f27a9e89d632f650e7b73264c6e/result.json",
+      "sha256": "ba94754f0f3038c7b8f5aa9e0441a0ef960b3efb186f42a3f648521d52008af7"
+    }
+  },
+  "status": "TRAIN128_GROUP_HELD_SELECTION_DESIGN_SOURCE_METADATA_REVIEW_PASS"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "USER_AUTHORIZED_RETRIEVAL_ONLY_RESEARCH_CONTINUATION",
+  "recorded_utc": "2026-09-09T13:20:41.220255+00:00",
+  "user_instruction": "不停止试验了，11号再停止。继续推",
+  "user_confirmed_cutoff": "9月11日24:00 北京时间",
+  "cutoff_Asia_Shanghai": "2026-09-12T00:00:00+08:00",
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "cutoff_Europe_Berlin": "2026-09-11T18:00:00+02:00",
+  "supersedes_prior_stop_after_final_H_test": true,
+  "prior_results_and_frozen_protocols_changed": false,
+  "objective": "Improve or explain existing candidate-conditioned joint evidence calibration under retrieval-only task supervision",
+  "preserve": [
+    "original RAW C128 and complete 127-challenger action",
+    "separate model/head/dataset lineage",
+    "TRAIN/PAIR retrieval labels only for fitting",
+    "EVAL parameters/predictions sealed before runtime label join",
+    "zero task spatial supervision or external segmentation teacher",
+    "no deployment replacement inferred from internal improvement"
+  ],
+  "forbidden": [
+    "SAM or external masks/boxes as task teacher",
+    "D1-MI",
+    "GroZi",
+    "unqualified formal392 consumption",
+    "seed/threshold/checkpoint selection after EVAL"
+  ],
+  "superregion_required": false,
+  "fine_grained_binding_required_as_explanation": false,
+  "relation_hypothesis_assumed_true": false,
+  "ownership_required": false,
+  "V9_started": false,
+  "scheduler_monitoring": false,
+  "current_first_new_experiment": "Test whether absolute evidence scale adds predictive information beyond original relative features and an equal-parameter relative-only control",
+  "automatic_background_scheduler_created": false
+}

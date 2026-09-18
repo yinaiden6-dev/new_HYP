@@ -1,0 +1,91 @@
+{
+  "EVAL_evidence_or_feature_rows_examined": 0,
+  "EVAL_target_role_reads": 0,
+  "PAIR_source": {
+    "path": "results/routea_matched_three_arm_pair64_training_features_v2/payload.pt",
+    "sha256": "d7be701ac4629059d22301c17b0f0d44b69b4b67666072b8fab7c3c0cb7716e3"
+  },
+  "limits": [
+    "Original shard containers include EVAL records, excluded by existing split-role flag before their scalars/features are examined.",
+    "TRAIN-only numerical property, not EVAL gain, population generalization, causal contribution, or statistical interaction proof.",
+    "All residuals are diagnostics; neither algebraic form is substituted into frozen FP64 features."
+  ],
+  "new_predictions": 0,
+  "new_training_runs": 0,
+  "original_feature_values_changed": false,
+  "original_input_closure_sha256": "dead13b916b1e2551bd83c80632c5723121d5d64c56a3e149296947b95846ef3",
+  "program_sha256": "20518dc85040bea68cc442977fcec766dc5cbc8430544c4c2e13d174a1b2f5d5",
+  "source_shards": [
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard00/payload.pt",
+      "sha256": "977e506be0c8d7df5bc4334502f6a823707a8461d904232e95df188806994d03"
+    },
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard01/payload.pt",
+      "sha256": "777c692f087540dabebf2ff5996e67eb607d1fe277972ca453d356277e144f24"
+    },
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard02/payload.pt",
+      "sha256": "be2ef9fca2bf8c1212467e32968f7bd7712a8a57d9f408705ea1f150ea2f6113"
+    },
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard03/payload.pt",
+      "sha256": "a0414c021e063e32e3cacf8797d39e04b4d8ab288b25f1f261bbc611d76e51b1"
+    },
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard04/payload.pt",
+      "sha256": "5e42040e57421bff9d3b1875bbe59d29dea69ca5a6b5ed31bdfb6c32b8442c21"
+    },
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard05/payload.pt",
+      "sha256": "9ff1e80dd6cd13a5c9b2aad49df6d0d208eb16cd46ff82e8a1e6fd7c4fb88424"
+    },
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard06/payload.pt",
+      "sha256": "de897e0b87fb93fcdc59af4c69cd6b08f893acc170c957f7cd262272a741d30e"
+    },
+    {
+      "path": "results/routea_matched_three_arm_fullnegative_features_v1/shard07/payload.pt",
+      "sha256": "7d81f7b9d7071a178c47d7f623bcc3df9c721dbb925630781a6f153a83324edf"
+    }
+  ],
+  "statistics": {
+    "FULL_TRAIN": {
+      "L_nonpositive": 0,
+      "M_floor_active": 0,
+      "M_nonpositive": 0,
+      "S_nonpositive": 0,
+      "candidate_occurrences": 8128,
+      "comparisons": 4064,
+      "max_epsilon_aware_formula_residual": 4.440892098500626e-16,
+      "max_epsilon_free_formula_residual": 3.15169507159041e-09,
+      "max_nonlinear_vs_additive_difference": 0.9393908167549734,
+      "max_product_reconstruction_residual": 1.734723475976807e-18,
+      "min_L": 0.0036994240801627334,
+      "min_M": 0.0020720468687068848,
+      "min_S": 1.1296525749797596e-05,
+      "positive_comparisons": 4064,
+      "rows": 32
+    },
+    "PAIR": {
+      "L_nonpositive": 0,
+      "M_floor_active": 0,
+      "M_nonpositive": 0,
+      "S_nonpositive": 0,
+      "candidate_occurrences": 128,
+      "comparisons": 64,
+      "max_epsilon_aware_formula_residual": 3.3306690738754696e-16,
+      "max_epsilon_free_formula_residual": 1.0523999449674193e-09,
+      "max_nonlinear_vs_additive_difference": 0.8335696487593327,
+      "max_product_reconstruction_residual": 1.3877787807814457e-17,
+      "min_L": 0.005500376175115122,
+      "min_M": 0.002488126867460819,
+      "min_S": 1.368563374244531e-05,
+      "positive_comparisons": 64,
+      "rows": 64
+    }
+  },
+  "status": "NEW_HYP_PRODUCT_CONTRAST_TRAINING_ALGEBRA_CHECK_COMPLETE",
+  "task": "Check positive-domain applicability and numerical size of product-contrast identity on original training inputs.",
+  "training_source_scalar_feature_sequence_sha256": "856d6261b1ab8b3596eb5fbee6a2dec525562db1f6ac0d84c912dcc1c925bd6c"
+}

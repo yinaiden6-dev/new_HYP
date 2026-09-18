@@ -1,0 +1,113 @@
+{
+  "status": "FIXED_OLD_PANELS_FRESH269_GROUP_RISK_AUTHORIZED",
+  "recorded_utc": "2026-09-11T09:06:32.448329+00:00",
+  "user_objective": "RAW to original model to theory-guided optimization on identical EVAL32 and EVAL128 panels",
+  "historically_opened_development": true,
+  "primary_model": "GROUP269",
+  "primary_comparator": "ORIGINAL7 ec7",
+  "mechanism_control": "IMAGE269 same rows architecture and update budget",
+  "train_images": 269,
+  "train_identities": 32,
+  "train_groups": 32,
+  "models": [
+    "ORIGINAL7",
+    "IMAGE269",
+    "GROUP269"
+  ],
+  "new_fit_initialization": "zero",
+  "new_fit_steps": 2000,
+  "training_risk": "original full-C128 SIGN with wrong term coefficient4; only image versus group mean changes",
+  "prior_593_fold_weights_allowed": false,
+  "full_eval_image_identity_group_exclusion": true,
+  "acceptance": "observed paired net improvement per fixed panel; zero-loss not required; report statistical uncertainty separately",
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "deployment_change": false,
+  "sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "e0ed86d911b4e68a67e13360265f1c67bda846c1f5f51d914b7ba507b5aa5deb"
+    },
+    "validator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "e8999b8c904c32677b0df59c4bac11edf780aa293b762e3f76de8e9d219e0127"
+    },
+    "historic_input_validator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_fixed269_historic_inputs_v1.py",
+      "sha256": "6549563c1b8a8cdc351f333dd3dced27fc6d63a89ce3336f88331ff242aedc13"
+    },
+    "freezer": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/freeze_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "476ece9bcd25f16eebee45eb4a747e97dc7877f48573df0c68ea3b8e8651f961"
+    },
+    "reporter": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/report_rc_fixed_panels_train269_group_risk_v1.py",
+      "sha256": "b457558405961ed50ca9d75f265545a5f3a6bf4459d19a5d98265a677f219ad8"
+    },
+    "input_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "feature_and_image_fit_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "group_fit_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_group_risk_strong_base_v1.py",
+      "sha256": "edce4ed12559f030ba47852fd4be3e47e4b44f9e17a28679517d889c355d1386"
+    },
+    "original_parameter_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "feature_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_feature_authority_v1_20260911.json",
+      "sha256": "f891aabaef996a7984926987cbcb23814632574ede395c759015194a251b2860"
+    },
+    "panel_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/panel_manifest.json",
+      "sha256": "e9a0181e8298056c62f42905e151b8a475721e92ed3f08ec3947d35eb3a7d90e"
+    },
+    "train_labels": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/train_roles.json",
+      "sha256": "1cdc342374bafa0762e782f33a1d2a0ad44815ca5d1a8faa43b6277649cb5fa9"
+    },
+    "metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/metadata_validation.json",
+      "sha256": "d5da8554af5452d8c5dde2de44bee9b90c2a116d76471f4e948e2603df123578"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_FIXED_PANELS_TRAIN269_GROUP_RISK_V1_20260911.md",
+      "sha256": "4b015eceeae21e766ea7dcd8910ea8da2951c421f3dcb10143612544e9a292d8"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_fixed_panels_train269_group_risk_v1.sbatch",
+      "sha256": "b35cb65f5f0cc6ab96ec9c4ff4da83bfa750d947e096418d5c102abb7dc41dd3"
+    }
+  },
+  "evaluation_sources": {
+    "eval_labels": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/eval_curator_roles.json",
+      "sha256": "65fcbe8a2f5b0e14fbf02bf665729400327dad9a88de2b78971da2161a846942"
+    },
+    "original128_curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/curator_roles.json",
+      "sha256": "47277ce66f7aba445fb80a93643039c7e8a47c1f5cc8237f60157a98e3e93381"
+    },
+    "h593_curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+      "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+    },
+    "original_scope_exclusions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_eval128_identity_group_exclusion_v1_20260910.json",
+      "sha256": "e1ee298521ab9dfad5f8611b0011b5aeea9808055e50eea156288eb07f3bd0df"
+    },
+    "original32_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/routea_matched_three_arm_common3_native7_crossfit_v1/result.json",
+      "sha256": "591b9787403417efa774e7bdb264291f7e8e4a827bfd4f479256d4e7a8e134c3"
+    },
+    "original128_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+      "sha256": "096c9575ffa05a3f9b813adbe5e65c879fbdee77507aa757de09420bef0be866"
+    }
+  }
+}

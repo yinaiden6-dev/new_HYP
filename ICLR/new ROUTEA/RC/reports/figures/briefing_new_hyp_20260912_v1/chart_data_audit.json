@@ -1,0 +1,149 @@
+{
+  "status": "CHART_DATA_ARITHMETIC_AND_ROW_RECOMPUTATION_PASS",
+  "not_new_experimental_validation": true,
+  "date": "2026-09-12",
+  "data_cutoff": "2026-09-11",
+  "source_files": {
+    "results/romav2_colnomic_difficult90_frozen_regression_v1/result.json": {
+      "sha256": "bdb962e4b07e6b27a86a35723465141c1f34f4b6dbda8f41810adb5199b79f31",
+      "bytes": 244168
+    },
+    "results/rc_original7_eval128_full_evidence_v1/result.json": {
+      "sha256": "096c9575ffa05a3f9b813adbe5e65c879fbdee77507aa757de09420bef0be866",
+      "bytes": 1850687
+    },
+    "results/rc_h593_group_risk_strong_base_v1/result.json": {
+      "sha256": "b8ebe590e5a518019a934b6da5e2c1f04fdf6766efe84a6723b27534b8c706ad",
+      "bytes": 1317438
+    },
+    "results/rc_h593_increment_attribution_v1/result.json": {
+      "sha256": "e02c3553ec882bf6dcc0dc3f3f942b4b50fd40ab7903497e79ba3dad6cc71aec",
+      "bytes": 693798
+    },
+    "results/rc_original_mixed96_group_risk_v1/result.json": {
+      "sha256": "ef4549bcf0a288daf0279075b96cca93a44be3ff3fe1a8fc42936a7a34774bea",
+      "bytes": 153131
+    },
+    "results/romav2_colnomic_difficult90_frozen_regression_v1/independent_validation.json": {
+      "sha256": "be8d3a2eb55cf3e7054529c51730b426054720dddab86d7ec8b464275bec6234",
+      "bytes": 3443
+    },
+    "results/rc_h593_group_risk_strong_base_v1/result_validation.json": {
+      "sha256": "675d3ff6ea257bb4910121fb9e6b6ca134378250c8c7e02ed7eaa620972fa264",
+      "bytes": 705
+    },
+    "results/rc_h593_increment_attribution_v1/result_validation.json": {
+      "sha256": "23655f45d11d4b2b0c4c466889e7c7b451e8e9e8423192348282208a18506d12",
+      "bytes": 702
+    },
+    "results/rc_original_mixed96_group_risk_v1/result_validation.json": {
+      "sha256": "fa29129bc1a8b5d9509481ca0d1e9aaa7a65913ed75cb1c98d82b606c3e96f78",
+      "bytes": 19942
+    },
+    "reports/NEW_HYP_THEORY_DEFINITION_AND_PROPOSITIONS_V2_20260910.md": {
+      "sha256": "ec197dc644693caf7b145ee338d824a8a74903330c44715474e098c1908b901c",
+      "bytes": 12013
+    },
+    "reports/NEW_HYP_UNIFIED_DECISION_HYPOTHESIS_V3_20260911.md": {
+      "sha256": "14f46af8d74ef3e9197ec9bf2b3a6f8cb6887c3d79b208609a9d5a3ae21b904e",
+      "bytes": 4978
+    },
+    "reports/REPORT_H593_UNIFIED_HYPOTHESIS_PREDICTION_READOUT_V1_20260911.md": {
+      "sha256": "8586deb65a451373b00e59180b86de64c24913514cd2340800dff243abb16685",
+      "bytes": 4295
+    }
+  },
+  "performance_records": [
+    {
+      "model": "FROZEN_C",
+      "n": 90,
+      "raw": 61,
+      "correct": 69,
+      "rescue": 8,
+      "loss": 0,
+      "net": 8,
+      "accuracy": 0.7666666666666667,
+      "candidate_source": "RAW ColNomic natural C128",
+      "scope": "difficult90 / opened"
+    },
+    {
+      "model": "ORIGINAL7",
+      "n": 32,
+      "raw": 25,
+      "correct": 28,
+      "rescue": 3,
+      "loss": 0,
+      "net": 3,
+      "accuracy": 0.875,
+      "candidate_source": "RAW ColNomic natural C128",
+      "scope": "EVAL32 / internal"
+    },
+    {
+      "model": "ORIGINAL7",
+      "n": 128,
+      "raw": 88,
+      "correct": 99,
+      "rescue": 12,
+      "loss": 1,
+      "net": 11,
+      "accuracy": 0.7734375,
+      "candidate_source": "RAW ColNomic natural C128",
+      "scope": "EVAL128 / internal"
+    },
+    {
+      "model": "ALL_COND",
+      "n": 593,
+      "raw": 426,
+      "correct": 445,
+      "rescue": 19,
+      "loss": 0,
+      "net": 19,
+      "accuracy": 0.7504215851602024,
+      "candidate_source": "RAW ColNomic natural C128",
+      "scope": "593 / grouped OOF5 development"
+    },
+    {
+      "model": "GROUP_BASE",
+      "n": 593,
+      "raw": 426,
+      "correct": 447,
+      "rescue": 22,
+      "loss": 1,
+      "net": 21,
+      "accuracy": 0.7537942664418212,
+      "candidate_source": "RAW ColNomic natural C128",
+      "scope": "593 / grouped OOF5 development"
+    }
+  ],
+  "checked_593_unique_queries": 593,
+  "checked_components_no_crossfold": 64,
+  "candidate_recall_593": 570,
+  "GROUP_BASE_remaining": {
+    "in_C128_wrong": 123,
+    "absent": 23
+  },
+  "artifacts": [
+    "01_performance_separate_panels.png",
+    "01_performance_separate_panels.pdf",
+    "01_performance_separate_panels.svg",
+    "02_rescue_break_balance.png",
+    "02_rescue_break_balance.pdf",
+    "02_rescue_break_balance.svg",
+    "03_candidate_binding_controls.png",
+    "03_candidate_binding_controls.pdf",
+    "03_candidate_binding_controls.svg",
+    "04_training_controls_593.png",
+    "04_training_controls_593.pdf",
+    "04_training_controls_593.svg",
+    "05_remaining_bottlenecks.png",
+    "05_remaining_bottlenecks.pdf",
+    "05_remaining_bottlenecks.svg",
+    "06_new_hyp_mechanism_and_scope.png",
+    "06_new_hyp_mechanism_and_scope.pdf",
+    "06_new_hyp_mechanism_and_scope.svg",
+    "RouteA_newHYP_briefing_6slides.pdf",
+    "metrics.csv"
+  ],
+  "model_or_parameter_changes": false,
+  "training_or_slurm_submissions": false
+}

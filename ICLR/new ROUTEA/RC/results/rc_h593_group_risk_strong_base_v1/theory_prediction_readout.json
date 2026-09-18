@@ -1,0 +1,189 @@
+{
+  "status": "GROUP_RISK_SOURCE_PARITY_AND_EXACT_PAIRED_STATS",
+  "same_input_checks": [
+    {
+      "fold": 0,
+      "effective_groups": 51,
+      "loss_eligible_images": 457,
+      "effective_small_ALL_group_weight_TV": 0.2286652078774617,
+      "same_parent_ALL_features_and_training_labels": true
+    },
+    {
+      "fold": 1,
+      "effective_groups": 52,
+      "loss_eligible_images": 454,
+      "effective_small_ALL_group_weight_TV": 0.24669603524229075,
+      "same_parent_ALL_features_and_training_labels": true
+    },
+    {
+      "fold": 2,
+      "effective_groups": 51,
+      "loss_eligible_images": 451,
+      "effective_small_ALL_group_weight_TV": 0.23533724340175952,
+      "same_parent_ALL_features_and_training_labels": true
+    },
+    {
+      "fold": 3,
+      "effective_groups": 51,
+      "loss_eligible_images": 461,
+      "effective_small_ALL_group_weight_TV": 0.24262039045553146,
+      "same_parent_ALL_features_and_training_labels": true
+    },
+    {
+      "fold": 4,
+      "effective_groups": 51,
+      "loss_eligible_images": 457,
+      "effective_small_ALL_group_weight_TV": 0.2406652078774617,
+      "same_parent_ALL_features_and_training_labels": true
+    }
+  ],
+  "comparisons": {
+    "ALL_BASE__to__GROUP_BASE": {
+      "rescue": 8,
+      "loss": 1,
+      "gains": [
+        "OUTCOME-0307",
+        "OUTCOME-0152",
+        "OUTCOME-0159",
+        "DIFFICULT-0027",
+        "OUTCOME-0376",
+        "DIFFICULT-0015",
+        "NDV2-011-P04",
+        "OUTCOME-0136"
+      ],
+      "losses": [
+        "OUTCOME-0334"
+      ],
+      "equal_group_fraction": "682129/56010240",
+      "exact_group_signflip_p": "1/128",
+      "p_float": 0.0078125
+    },
+    "ALL_COND__to__GROUP_BASE": {
+      "rescue": 5,
+      "loss": 3,
+      "gains": [
+        "OUTCOME-0307",
+        "OUTCOME-0152",
+        "OUTCOME-0159",
+        "OUTCOME-0376",
+        "OUTCOME-0136"
+      ],
+      "losses": [
+        "OUTCOME-0334",
+        "DIFFICULT-0083",
+        "DIFFICULT-0043"
+      ],
+      "equal_group_fraction": "-197/636480",
+      "exact_group_signflip_p": "15/16",
+      "p_float": 0.9375
+    },
+    "SMALL_BASE__to__GROUP_BASE": {
+      "rescue": 5,
+      "loss": 2,
+      "gains": [
+        "OUTCOME-0307",
+        "OUTCOME-0152",
+        "OUTCOME-0159",
+        "DIFFICULT-0027",
+        "OUTCOME-0376"
+      ],
+      "losses": [
+        "OUTCOME-0334",
+        "OUTCOME-0537"
+      ],
+      "equal_group_fraction": "617/97920",
+      "exact_group_signflip_p": "11/64",
+      "p_float": 0.171875
+    },
+    "SMALL_CONST__to__GROUP_BASE": {
+      "rescue": 4,
+      "loss": 3,
+      "gains": [
+        "OUTCOME-0307",
+        "OUTCOME-0152",
+        "OUTCOME-0159",
+        "OUTCOME-0376"
+      ],
+      "losses": [
+        "OUTCOME-0334",
+        "DIFFICULT-0083",
+        "DIFFICULT-0043"
+      ],
+      "equal_group_fraction": "-37/24480",
+      "exact_group_signflip_p": "51/64",
+      "p_float": 0.796875
+    },
+    "SMALL_COND__to__GROUP_BASE": {
+      "rescue": 5,
+      "loss": 3,
+      "gains": [
+        "OUTCOME-0307",
+        "OUTCOME-0152",
+        "OUTCOME-0159",
+        "OUTCOME-0376",
+        "OUTCOME-0136"
+      ],
+      "losses": [
+        "OUTCOME-0334",
+        "DIFFICULT-0083",
+        "DIFFICULT-0043"
+      ],
+      "equal_group_fraction": "-197/636480",
+      "exact_group_signflip_p": "15/16",
+      "p_float": 0.9375
+    },
+    "GROUP_BASE__to__GROUP_CONST": {
+      "rescue": 3,
+      "loss": 3,
+      "gains": [
+        "OUTCOME-0334",
+        "DIFFICULT-0083",
+        "DIFFICULT-0043"
+      ],
+      "losses": [
+        "OUTCOME-0307",
+        "OUTCOME-0152",
+        "OUTCOME-0136"
+      ],
+      "equal_group_fraction": "287/74880",
+      "exact_group_signflip_p": "19/32",
+      "p_float": 0.59375
+    },
+    "RAW__to__GROUP_BASE": {
+      "rescue": 22,
+      "loss": 1,
+      "gains": [
+        "OUTCOME-0307",
+        "OUTCOME-0333",
+        "OUTCOME-0152",
+        "OUTCOME-0467",
+        "OUTCOME-0148",
+        "OUTCOME-0252",
+        "OUTCOME-0518",
+        "OUTCOME-0159",
+        "OUTCOME-0378",
+        "OUTCOME-0603",
+        "DIFFICULT-0027",
+        "OUTCOME-0376",
+        "DIFFICULT-0014",
+        "DIFFICULT-0017",
+        "DIFFICULT-0013",
+        "DIFFICULT-0015",
+        "DIFFICULT-0016",
+        "OUTCOME-0636",
+        "OUTCOME-0135",
+        "OUTCOME-0666",
+        "NDV2-011-P04",
+        "OUTCOME-0136"
+      ],
+      "losses": [
+        "OUTCOME-0334"
+      ],
+      "equal_group_fraction": "823417/22404096",
+      "exact_group_signflip_p": "1/8192",
+      "p_float": 0.0001220703125
+    }
+  },
+  "result_sha256": "b8ebe590e5a518019a934b6da5e2c1f04fdf6766efe84a6723b27534b8c706ad",
+  "not_parameter_selection": true
+}

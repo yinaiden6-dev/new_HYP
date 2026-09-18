@@ -1,0 +1,140 @@
+{
+  "batch_size": 8,
+  "bootstrap_draws": 100000,
+  "bootstrap_seed": 20260918,
+  "candidate_source": "Unchanged natural RAW C128; no target insertion",
+  "extra_normalization": false,
+  "image_tokens_only": true,
+  "manual_theta": {
+    "MANUAL_BALANCED": [
+      1.0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.0
+    ],
+    "MANUAL_EQUAL": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "ZERO_HEAD": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "panels": {
+    "H593": {
+      "count": 593,
+      "worker": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_crisp_manual_baseline_v1/H593_workers.json",
+        "sha256": "d2ce8f62d252355d4d81d4e436a90ed476469ee4e42fab64496afc3d84524c62"
+      }
+    },
+    "RPC600": {
+      "count": 600,
+      "worker": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_crisp_manual_baseline_v1/RPC600_workers.json",
+        "sha256": "cdc87f75d94f6712d99bdd0afdec52f4a1fb88f921b1fbfaf4392d0023a50225"
+      }
+    }
+  },
+  "postjoin": {
+    "H593": {
+      "comparator": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+        "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+      },
+      "curator": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+        "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+      },
+      "expected_CE": 486,
+      "expected_COST1": 481,
+      "expected_raw": 426,
+      "expected_recall": 570,
+      "gallery": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+        "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+      },
+      "head_names": {
+        "CE": "ALL_CE",
+        "COST1": "COST1"
+      },
+      "lineage": "Grouped five-fold OOF heads, training only inside each fold"
+    },
+    "RPC600": {
+      "comparator": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/result.json",
+        "sha256": "6679415e8301b3b80dd49e57b70ebb7d48606659d294869c79e28fedb486bd08"
+      },
+      "curator": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/curator_roles.json",
+        "sha256": "52c9ff0cda91c1897bce728823f415d6ab8ce3d427ccb8273a499eac7bfa901d"
+      },
+      "expected_CE": 217,
+      "expected_COST1": 207,
+      "expected_raw": 192,
+      "gallery": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_rpc_transfer_v1/gallery_manifest.json",
+        "sha256": "4a21e50ba572bc8a9c20f8b6fa92f8c75c0e1961eb45d00045240a057328ae36"
+      },
+      "head_names": {
+        "CE": "CE",
+        "COST1": "COST1"
+      },
+      "lineage": "Frozen full-H593 heads transferred to the already-opened RPC600 panel"
+    }
+  },
+  "shard_size": 8,
+  "shards_per_panel": 75,
+  "sources": {
+    "features": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_crisp_manual_baseline_v1.sbatch",
+      "sha256": "7a8d78d3994fbace6faf742f787bf8629dbc646e57da8af916819414f96799ec"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_CRISP_MANUAL_HEAD_BASELINE_V1_20260918.md",
+      "sha256": "80b86df77b32edf68656ef44dae6be1b71a0a0f355c668f27d1e5957824332e2"
+    },
+    "preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_crisp_manual_baseline_v1/preflight.json",
+      "sha256": "08640817d901e71dd7c1d6bf2558bb4de47330d0baf733546d4594d6f4016801"
+    },
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_crisp_manual_baseline_v1.py",
+      "sha256": "c15bbb0b8a470645521685d99f307c5cb6c1eb6afd618428fcc7815bff94ba76"
+    },
+    "upstream": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/isolated/crisp_baseline_20260918_v1/upstream_crisp.py",
+      "sha256": "51677c8ef55804e69654007b178f1839bad931475d2162c5ac10b93710afb117"
+    },
+    "upstream_provenance": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/isolated/crisp_baseline_20260918_v1/source.json",
+      "sha256": "8188fc08ce690057f46e0aabeda50340a0a0ebad2cf775cc6881157ffcc6c763"
+    }
+  },
+  "status": "FIXED_CACHE_UNTRAINED_BASELINES_AUTHORIZED",
+  "task": "Image-to-image CRISP adaptation, not original text-to-flowchart reproduction",
+  "training_updates": 0,
+  "user_request": "Try CRISP and manually assigned head weights; no training"
+}

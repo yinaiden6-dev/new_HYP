@@ -1,0 +1,72 @@
+{
+  "EVAL_reads": 0,
+  "TRAIN_groups": 3,
+  "TRAIN_queries": 4,
+  "addendum": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_REFERENCE_SUPPORT_PROJECTION_DISTANCE_ADDENDUM_V2_20260910.md",
+    "sha256": "ae21130ed558bc2898441445dd349b436014c4d69a08ca2436eb994e1e7b665e"
+  },
+  "candidate_count_checked": 512,
+  "description": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_projection_distance_train_description_v2/description.json",
+    "sha256": "44da9f6aebb868c524299091a8f3466c0f1be2b1dad2668e1ac16172e398a4e3"
+  },
+  "formula": "binary64 abs(J+float(exact_L))/math.sqrt(2.0); exact plotting ranks use abs(exact_fixed_margin+exact_L)",
+  "new_LP_calls": 0,
+  "new_model_accuracy": null,
+  "new_training_updates": 0,
+  "query_rows": [
+    {
+      "query_id": "DIFFICULT-0101",
+      "strongest_wrong_distance": 0.1984017099090028,
+      "strongest_wrong_position": 87,
+      "target_distance": 0.12514971838956201,
+      "target_exact_distance_rank": 6,
+      "target_production_distance_rank": 6
+    },
+    {
+      "query_id": "DIFFICULT-0128",
+      "strongest_wrong_distance": 0.12358628179036926,
+      "strongest_wrong_position": 124,
+      "target_distance": 0.27304166547701164,
+      "target_exact_distance_rank": 1,
+      "target_production_distance_rank": 1
+    },
+    {
+      "query_id": "NDV2-007-P01",
+      "strongest_wrong_distance": 0.24951351442520864,
+      "strongest_wrong_position": 4,
+      "target_distance": 0.31056782749583284,
+      "target_exact_distance_rank": 1,
+      "target_production_distance_rank": 1
+    },
+    {
+      "query_id": "NDV2-007-P04",
+      "strongest_wrong_distance": 0.1647496606644783,
+      "strongest_wrong_position": 9,
+      "target_distance": 0.3206438128083503,
+      "target_exact_distance_rank": 1,
+      "target_production_distance_rank": 1
+    }
+  ],
+  "reviewer_program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/review_rc_reference_support_projection_distance_train_v2.py",
+    "sha256": "eb20de3f3d6d16df11c9b623ede39bf1a8f1824cd4659932fd294ddc787f96fe"
+  },
+  "sources": {
+    "prejoin_seal.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_train_pilot_v1/prejoin_seal.json",
+      "sha256": "d7347bcfcd0132a14b717db95cce561546470077dd623ed20c2e822282e113ee"
+    },
+    "result.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_train_pilot_v1/result.json",
+      "sha256": "d2f059554bbe62e74dd112b7802449063dae4aa74204a0906c86e82917c941b0"
+    },
+    "validation.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_train_pilot_v1/validation.json",
+      "sha256": "75bf7b3c73bafa4e5279912e40ae2be9e94db79ade0cf7b69e862870d13e9426"
+    }
+  },
+  "status": "LITERAL_PROJECTION_DISTANCE_TRAIN4_INDEPENDENT_REVIEW_PASS",
+  "target_first_count": 3
+}

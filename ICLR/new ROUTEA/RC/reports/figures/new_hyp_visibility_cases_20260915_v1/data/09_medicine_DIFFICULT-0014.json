@@ -1,0 +1,133 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "历史 EVAL128 内部面板",
+  "model": "ORIGINAL7",
+  "model_lineage": "frozen ORIGINAL7/NATIVE7 current seven parameters",
+  "evidence_scope": "历史内部结果的事后可视化",
+  "query_id": "E128-dd5b017670893becfe7b6e3f",
+  "display_id": "DIFFICULT-0014",
+  "execution_ordinal": 110,
+  "identity": "3T3-bn-lansoprazole",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_assets/images/E128-dd5b017670893becfe7b6e3f.jpg",
+  "source_result": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 1787,
+  "final_selected": 996,
+  "target_physical": 996,
+  "wrong_physical": 1787,
+  "wrong_role": "RAW 错误 reference",
+  "raw_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1",
+  "roma_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1",
+  "selection_rule": "all 12 RAW-to-ORIGINAL7 rescues; plus prespecified OUTCOME-0337 and OUTCOME-0446",
+  "stem": "09_medicine_DIFFICULT-0014",
+  "query_grid": [
+    24,
+    32
+  ],
+  "query_geometry": {
+    "sha256": "a9e4754c3a3e5874759822ffc08fa5223ea56c16eccf992115c9df0c24d5e54a",
+    "raw_size_hw": [
+      3024,
+      4032
+    ],
+    "oriented_size_hw": [
+      4032,
+      3024
+    ],
+    "exif_orientation": 6,
+    "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+    "grid_shape": [
+      24,
+      32
+    ],
+    "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+  },
+  "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+  "evidence": {
+    "wrong": {
+      "physical_row": 1787,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bottle Carton.jpg",
+      "reference_grid": [
+        21,
+        35
+      ],
+      "reference_geometry": {
+        "sha256": "3e23e15d60caa74070f2b6c72810300fd88202e368557bec62f6b570d97b449f",
+        "raw_size_hw": [
+          962,
+          1538
+        ],
+        "oriented_size_hw": [
+          962,
+          1538
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          21,
+          35
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.00017232153779583702,
+        "visibility_mass": 0.008960596766489208,
+        "query_control_score": 0.00017193058308846078,
+        "reference_control_score": 0.00014366491389793947,
+        "candidate_position": 21,
+        "physical_row": 1787,
+        "raw_score": 427.81683349609375,
+        "query_map_sha256": "01708ba79bb6d5775267eb5f4fb6d5108e548117deec2a8efd1693170066bb5f",
+        "reference_map_sha256": "b317e15ca9c2f8cc571701a29073835c0b07cd87c9fce87b15d85dca98e24563"
+      },
+      "query_map_sha256": "01708ba79bb6d5775267eb5f4fb6d5108e548117deec2a8efd1693170066bb5f",
+      "reference_map_sha256": "b317e15ca9c2f8cc571701a29073835c0b07cd87c9fce87b15d85dca98e24563"
+    },
+    "target": {
+      "physical_row": 996,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/3T3-bn-lansoprazole.jpg",
+      "reference_grid": [
+        26,
+        29
+      ],
+      "reference_geometry": {
+        "sha256": "9b0fa9e2d0a8a2d801851764954aa68afc594a7157196895a42c064ed4161f76",
+        "raw_size_hw": [
+          1128,
+          1250
+        ],
+        "oriented_size_hw": [
+          1128,
+          1250
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          26,
+          29
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.02980766825762936,
+        "visibility_mass": 0.09928390778189192,
+        "query_control_score": 0.022798261250519293,
+        "reference_control_score": 0.026572445015150253,
+        "candidate_position": 11,
+        "physical_row": 996,
+        "raw_score": 424.5251159667969,
+        "query_map_sha256": "44e2df7f41533f64c7e48a505710850ace00de2568baea4bdedd7565f5e1fbc9",
+        "reference_map_sha256": "90d669ab0365d10292bc7fa904355da8c39528d6bf7e63338b872eb6b8ee14d7"
+      },
+      "query_map_sha256": "44e2df7f41533f64c7e48a505710850ace00de2568baea4bdedd7565f5e1fbc9",
+      "reference_map_sha256": "90d669ab0365d10292bc7fa904355da8c39528d6bf7e63338b872eb6b8ee14d7"
+    }
+  },
+  "raw_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard13/payload.pt",
+  "roma_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard13/payload.pt",
+  "visualization": "literal cached native query token grids, fixed [0,1], nearest pixels; no overlay, no mask",
+  "inference_calls": 0,
+  "training_updates": 0
+}

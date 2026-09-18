@@ -1,0 +1,133 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "历史 EVAL128 内部面板",
+  "model": "ORIGINAL7",
+  "model_lineage": "frozen ORIGINAL7/NATIVE7 current seven parameters",
+  "evidence_scope": "历史内部结果的事后可视化",
+  "query_id": "E128-b494b576b8bc7435aaf43937",
+  "display_id": "OUTCOME-0345",
+  "execution_ordinal": 125,
+  "identity": "766-e9-infants-pain-and-fever",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_assets/images/E128-b494b576b8bc7435aaf43937.png",
+  "source_result": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 2030,
+  "final_selected": 1134,
+  "target_physical": 1134,
+  "wrong_physical": 2030,
+  "wrong_role": "RAW 错误 reference",
+  "raw_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1",
+  "roma_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1",
+  "selection_rule": "all 12 RAW-to-ORIGINAL7 rescues; plus prespecified OUTCOME-0337 and OUTCOME-0446",
+  "stem": "11_medicine_OUTCOME-0345",
+  "query_grid": [
+    36,
+    20
+  ],
+  "query_geometry": {
+    "sha256": "e9cf3bafdf1abe71253c4819796d1e92e0a2e38e0e92b900c05d3ca0be689cfe",
+    "raw_size_hw": [
+      3840,
+      2160
+    ],
+    "oriented_size_hw": [
+      3840,
+      2160
+    ],
+    "exif_orientation": 1,
+    "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+    "grid_shape": [
+      36,
+      20
+    ],
+    "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+  },
+  "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+  "evidence": {
+    "wrong": {
+      "physical_row": 2030,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CH Senna.jpg",
+      "reference_grid": [
+        25,
+        30
+      ],
+      "reference_geometry": {
+        "sha256": "1da866716ff0dfd57595d1e7b59c4763631504b42bf9550cad02f4029537cc81",
+        "raw_size_hw": [
+          1089,
+          1316
+        ],
+        "oriented_size_hw": [
+          1089,
+          1316
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          25,
+          30
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.0011057223808209088,
+        "visibility_mass": 0.018090465814332553,
+        "query_control_score": 0.0010195203095854507,
+        "reference_control_score": 0.000886933147532228,
+        "candidate_position": 41,
+        "physical_row": 2030,
+        "raw_score": 432.7436828613281,
+        "query_map_sha256": "5c17c4bfa96efa970b2bb501136da6c9e1440ecaad7773bac9dd3a648407dfc1",
+        "reference_map_sha256": "bcdc303fcd37ab176995dd09a51a56e0bbf139ebfcab2ec28111ca9d91d3ec7b"
+      },
+      "query_map_sha256": "5c17c4bfa96efa970b2bb501136da6c9e1440ecaad7773bac9dd3a648407dfc1",
+      "reference_map_sha256": "bcdc303fcd37ab176995dd09a51a56e0bbf139ebfcab2ec28111ca9d91d3ec7b"
+    },
+    "target": {
+      "physical_row": 1134,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/766-e9-infants-pain-and-fever.jpg",
+      "reference_grid": [
+        26,
+        28
+      ],
+      "reference_geometry": {
+        "sha256": "af1a501f59e0afdb10e2575c4a2c2291c7920fb31a7917042b141ad490ea03c7",
+        "raw_size_hw": [
+          1182,
+          1247
+        ],
+        "oriented_size_hw": [
+          1182,
+          1247
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          26,
+          28
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.03004977166223803,
+        "visibility_mass": 0.07164274101322675,
+        "query_control_score": 0.030452697235819504,
+        "reference_control_score": 0.016537412228841707,
+        "candidate_position": 25,
+        "physical_row": 1134,
+        "raw_score": 428.87237548828125,
+        "query_map_sha256": "3138e78444533bee759b775bc1113edce5bf0ed27688193a1088d427004c9f49",
+        "reference_map_sha256": "0ecd058b19ad343edb1b355794a02b77f77c8cc3c61e1d07836f52f38496a108"
+      },
+      "query_map_sha256": "3138e78444533bee759b775bc1113edce5bf0ed27688193a1088d427004c9f49",
+      "reference_map_sha256": "0ecd058b19ad343edb1b355794a02b77f77c8cc3c61e1d07836f52f38496a108"
+    }
+  },
+  "raw_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard15/payload.pt",
+  "roma_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard15/payload.pt",
+  "visualization": "literal cached native query token grids, fixed [0,1], nearest pixels; no overlay, no mask",
+  "inference_calls": 0,
+  "training_updates": 0
+}

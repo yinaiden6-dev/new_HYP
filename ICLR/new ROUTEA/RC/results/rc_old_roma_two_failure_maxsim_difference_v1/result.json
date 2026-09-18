@@ -1,0 +1,238 @@
+{
+  "elapsed_seconds": 2.4874214180745184,
+  "fixed_cases": [
+    [
+      25,
+      5049,
+      395
+    ],
+    [
+      64,
+      1113,
+      3825
+    ]
+  ],
+  "formula": "delta[i]=max_j cosine(normalize_fp64(original_query_token_i),normalize_fp64(original_target_reference_token_j)) - max_k cosine(normalize_fp64(original_query_token_i),normalize_fp64(original_wrong_reference_token_k))",
+  "limits": [
+    "This is unweighted cosine MaxSim, not the old visibility-weighted S or S/M and not its full-token RAW base score.",
+    "Positive cells establish a difference in these stored representations, not localized pixel semantics or a usable full-C128 classifier.",
+    "No claim that identity information is absolutely absent follows from negative cells or aggregate averages.",
+    "Original token-frame metadata is preserved; array cells have not been reoriented to EXIF-corrected display images.",
+    "No ROI tuning, selected-cell ranker, new model, training, job, formal392, or HYP GO."
+  ],
+  "model_forward_count": 0,
+  "new_jobs": 0,
+  "program_sha256": "d7314fad0b23c5067891e08968c362ac0b409a3aad5c75c86252544592947447",
+  "records": [
+    {
+      "ROI_or_cell_selection_count": 0,
+      "difference_array": {
+        "dtype": "float64",
+        "path": "ordinal25_target_minus_wrong.npy",
+        "sha256": "28b802e47aa674f50e1ab297edf61a39ad1dafa64a6dc5ee108245b44d12ea77",
+        "tensor_sha256": "c07ebd38885bc1eda10eb250d86ccc8a3f8958f83310c9c1d1fbfc8773da5588"
+      },
+      "exact_zero_cell_count": 0,
+      "fixed_old_selected_wrong_physical_row": 395,
+      "maximum_difference": 0.6052486912912522,
+      "mean_difference": -0.002198379317935191,
+      "minimum_difference": -0.6471251221344198,
+      "negative_wrong_advantage_cell_count": 406,
+      "positive_target_advantage_cell_count": 362,
+      "query": {
+        "array_axis_order": "ORIGINAL_TOKEN_ROW_MAJOR_HEIGHT_WIDTH_NO_EXIF_REORIENTATION",
+        "original_token_dtype": "torch.float16",
+        "raw_height_width": [
+          3024,
+          4032
+        ],
+        "source_exif_orientation": 6,
+        "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/1/difficult/cet03-0003-14_0000002.JPG",
+        "source_sha256": "016cf1f638d1cb660dba5b3d3d08d60b3fcfede5f8cb7d1deaf236774d86510c",
+        "token_frame": "DECODED_RAW_BEFORE_EXIF",
+        "tokens_sha256": "2b6ba9a0372675f84b3a960890f8e230103493039a1b24e3a4670c0ea1325aaf"
+      },
+      "query_cell_count": 768,
+      "query_grid_shape": [
+        24,
+        32
+      ],
+      "query_id": "DREG-5fd661838cb02de3",
+      "query_ordinal": 25,
+      "references": [
+        {
+          "grid_shape": [
+            24,
+            31
+          ],
+          "image_header": {
+            "raw_height_width": [
+              794,
+              1000
+            ],
+            "source_exif_orientation": 1,
+            "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/prescription/cet03-0003-14.jpg"
+          },
+          "original_token_dtype": "torch.float16",
+          "physical_row": 5049,
+          "source_kind": "VALIDATED_4976_CACHE",
+          "source_logical_sha256": "519cce2dfc1e8cd47f6e9db36343438d79065aea758033764bfc0c486ac4450d",
+          "token_frame_declared_by_original_REAL_producer": "DECODED_RAW_BEFORE_EXIF",
+          "tokens_sha256": "0d66668409bb2cdee3eab26215266dbd2144358f4dfc13459875b452c4aef6b1"
+        },
+        {
+          "grid_shape": [
+            29,
+            25
+          ],
+          "image_header": {
+            "raw_height_width": [
+              1133,
+              987
+            ],
+            "source_exif_orientation": 1,
+            "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/int08-0008-17.jpg"
+          },
+          "original_token_dtype": "torch.float16",
+          "physical_row": 395,
+          "source_kind": "VALIDATED_4976_CACHE",
+          "source_logical_sha256": "26dbf11024824a5c9a0383ddcc3464449077265d757c2357efaecbc89c44b2a9",
+          "token_frame_declared_by_original_REAL_producer": "DECODED_RAW_BEFORE_EXIF",
+          "tokens_sha256": "74635788d9e34afff1dadcc9a193e9a0762c0746564c5f7072188e0bb14c8a13"
+        }
+      ],
+      "sources": {
+        "real_score_shard": {
+          "path": "results/romav2_colnomic_difficult90_real_prejoin_v1/shard05/result.json",
+          "sha256": "fe1012259fc14c5ef8ff1199ed46ef3bd7421c5dc43e9ec7b98725d66c2c37e2"
+        },
+        "token_payload": {
+          "path": "results/romav2_colnomic_difficult90_token_fullrank_prejoin_v1/shard05/payload.pt",
+          "sha256": "e5e5b9590b649aa107be5c35dbc8c712e01eaba77854d1caa8620914db4ac7a9"
+        }
+      },
+      "target_physical_row": 5049,
+      "target_unweighted_MaxSim_mean": 0.5172777462699141,
+      "wrong_strictly_dominates_every_cell": false,
+      "wrong_unweighted_MaxSim_mean": 0.5194761255878494,
+      "wrong_weak_dominance_with_at_least_one_strict_cell": false,
+      "wrong_weakly_dominates_every_cell": false
+    },
+    {
+      "ROI_or_cell_selection_count": 0,
+      "difference_array": {
+        "dtype": "float64",
+        "path": "ordinal64_target_minus_wrong.npy",
+        "sha256": "e52add7ed49bd092c0b58b056ee9a26479a1f70ca91ab2c1d10c919ef0f63e91",
+        "tensor_sha256": "91d03fae121e6776319216b9946654fc4d0072d45b5590a820d7e4637934f99b"
+      },
+      "exact_zero_cell_count": 0,
+      "fixed_old_selected_wrong_physical_row": 3825,
+      "maximum_difference": 0.4610483204258791,
+      "mean_difference": -0.0008828094094233766,
+      "minimum_difference": -0.4244028598896695,
+      "negative_wrong_advantage_cell_count": 398,
+      "positive_target_advantage_cell_count": 370,
+      "query": {
+        "array_axis_order": "ORIGINAL_TOKEN_ROW_MAJOR_HEIGHT_WIDTH_NO_EXIF_REORIENTATION",
+        "original_token_dtype": "torch.float16",
+        "raw_height_width": [
+          3024,
+          4032
+        ],
+        "source_exif_orientation": 6,
+        "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/1/difficult/692R-Albertsons-Cetrizine HCl-45s-Carton_00000003.jpg",
+        "source_sha256": "22e9695d01cb05c1067830a427dd6c5b60ea29c443ad5966c27bada1531804f8",
+        "token_frame": "DECODED_RAW_BEFORE_EXIF",
+        "tokens_sha256": "f57ca64a069690b28e9212c34fb44bfe2452e3ead72a680bf7aed6c22449e125"
+      },
+      "query_cell_count": 768,
+      "query_grid_shape": [
+        24,
+        32
+      ],
+      "query_id": "DREG-39ab851ccc60d760",
+      "query_ordinal": 64,
+      "references": [
+        {
+          "grid_shape": [
+            25,
+            29
+          ],
+          "image_header": {
+            "raw_height_width": [
+              896,
+              1041
+            ],
+            "source_exif_orientation": 1,
+            "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/692R-Albertsons-Cetrizine HCl-45s-Carton.jpg"
+          },
+          "original_token_dtype": "torch.float16",
+          "physical_row": 1113,
+          "source_kind": "VALIDATED_4976_CACHE",
+          "source_logical_sha256": "d2133783d581568881c0766470998a34cb928ba2b7036ee9fdb41050ac8bee8a",
+          "token_frame_declared_by_original_REAL_producer": "DECODED_RAW_BEFORE_EXIF",
+          "tokens_sha256": "f9e7599cd6b06d5d03ea6514ba91b7e24d32290210d3b4fc57ac4bbf853a9cac"
+        },
+        {
+          "grid_shape": [
+            27,
+            27
+          ],
+          "image_header": {
+            "raw_height_width": [
+              852,
+              849
+            ],
+            "source_exif_orientation": 1,
+            "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cetirizine-hci-10-mg-tablets-grn-1.jpg"
+          },
+          "original_token_dtype": "torch.float16",
+          "physical_row": 3825,
+          "source_kind": "VALIDATED_4976_CACHE",
+          "source_logical_sha256": "18a3e1df2cbb01380db3ff8811a4c6939ec44316a94eec177d1bdf66af3d486c",
+          "token_frame_declared_by_original_REAL_producer": "DECODED_RAW_BEFORE_EXIF",
+          "tokens_sha256": "97f2833f8713fa3d67cd59dea8756cb7f1e22145b323a43d78230463accb6aa5"
+        }
+      ],
+      "sources": {
+        "real_score_shard": {
+          "path": "results/romav2_colnomic_difficult90_real_prejoin_v1/shard04/result.json",
+          "sha256": "0ad4adb41d59a9b0da9fac4bcdb9b4e66d5603a1e87e14c9008f51a81828815d"
+        },
+        "token_payload": {
+          "path": "results/romav2_colnomic_difficult90_token_fullrank_prejoin_v1/shard04/payload.pt",
+          "sha256": "d143d826a9c82e521dfef1277d52b778b4820b8ad2096de3b52b70250728b7a2"
+        }
+      },
+      "target_physical_row": 1113,
+      "target_unweighted_MaxSim_mean": 0.4641096188387661,
+      "wrong_strictly_dominates_every_cell": false,
+      "wrong_unweighted_MaxSim_mean": 0.4649924282481894,
+      "wrong_weak_dominance_with_at_least_one_strict_cell": false,
+      "wrong_weakly_dominates_every_cell": false
+    }
+  ],
+  "scientific_GO_or_NO_GO": null,
+  "scope": "TWO_PRESELECTED_OPENED_OLD_FAILURES_FULL_REFERENCE_UNWEIGHTED_IMAGE_GRID_CONTENT_DIFFERENCES",
+  "sources": {
+    "old_result": {
+      "path": "results/romav2_colnomic_difficult90_frozen_regression_v1/result.json",
+      "sha256": "bdb962e4b07e6b27a86a35723465141c1f34f4b6dbda8f41810adb5199b79f31"
+    },
+    "real_validation": {
+      "path": "results/romav2_colnomic_difficult90_real_prejoin_v1/validation.json",
+      "sha256": "28160696964403ee73aec9fb3edebd28b8e2eb56af1c85b4173788e04d6fbf9d"
+    },
+    "target_join": {
+      "path": "results/romav2_colnomic_difficult90_regression_manifest_v1/target_join_manifest.json",
+      "sha256": "f16d9bfb77202c4167966a68067b668ae76d758aba9d04bc28fdfaecf04acc0f"
+    },
+    "token_validation": {
+      "path": "results/romav2_colnomic_difficult90_token_fullrank_prejoin_v1/validation.json",
+      "sha256": "f6960327f0723cf142a80bded8f4f613b580ba63b9777ec8d8d6941c79e5ae5a"
+    }
+  },
+  "status": "RC_OLD_ROMA_TWO_FIXED_FAILURE_UNWEIGHTED_MAXSIM_DIFFERENCE_COMPLETE",
+  "training_updates": 0
+}

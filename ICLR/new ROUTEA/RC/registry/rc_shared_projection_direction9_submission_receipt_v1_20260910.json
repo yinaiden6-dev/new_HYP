@@ -1,0 +1,21 @@
+{
+  "status": "SUBMITTED_ACTIVATION_CHECKED_NOT_COMPLETED",
+  "job_id": "5139157",
+  "utc": "2026-09-10T00:17:28.700467+00:00",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_projection_direction9_authority_v1_20260910.json",
+    "sha256": "8e9eeecfdf01fe7d25ddb56c7719cc7d90f58dd66932f6992fa6f9ea49aba7ce"
+  },
+  "submitted_script": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_projection_direction9_submitted_5139157.sh",
+    "sha256": "de2e2e7d07873b19a2a18e4489c62fc282107b7e7d5f343c4afe0f0bc74e244e"
+  },
+  "launcher_spool_exact": true,
+  "scontrol": "JobId=5139157 JobName=shared_direction9 UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-09-10T02:17:00 EligibleTime=2026-09-10T02:17:00 AccrueTime=2026-09-10T02:17:00 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-10T02:17:00 Scheduler=Main Partition=dev_cpuonly AllocNode:Sid=hkn1990:4166199 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=4G,node=1,billing=8 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_shared_projection_direction9_v1_dev_cpuonly_30m.sbatch SubmitLine=sbatch --parsable slurm/rc_shared_projection_direction9_v1_dev_cpuonly_30m.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/rc_shared_projection_direction9_v1-5139157.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/rc_shared_projection_direction9_v1-5139157.out TresPerTask=cpu=8",
+  "continuous_scheduler_monitoring": false,
+  "models": [
+    "FIXED_PROJECTION8",
+    "DIRECTION9"
+  ],
+  "new_accuracy_claimed": false
+}

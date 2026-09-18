@@ -1,0 +1,106 @@
+{
+  "acceptance": "observed rescue minus loss >0 per panel, zero-loss not required",
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "deployment_changed": false,
+  "evaluation_sources": {
+    "eval_labels": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/eval_curator_roles.json",
+      "sha256": "65fcbe8a2f5b0e14fbf02bf665729400327dad9a88de2b78971da2161a846942"
+    },
+    "previous_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/result.json",
+      "sha256": "8bc9a6e682cb3d55d40ed0a9889770fe614a6cc93da7b3336003aadb4ad4a61a"
+    },
+    "previous_result_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/result_validation.json",
+      "sha256": "904035e05706ade999b87ac722ad7685ba70da5eedd898b10f8cde8802b55bdf"
+    }
+  },
+  "historically_opened_development": true,
+  "new_head_count": 1,
+  "new_training_steps": 2000,
+  "old_head_training_updates": 0,
+  "old_predictions_reused": true,
+  "primary": "GROUP_MIXED96 versus frozen ORIGINAL7 on each old panel",
+  "recorded_utc": "2026-09-11T09:30:54.556267+00:00",
+  "sole_factor": "within-pool group weights; original PAIR64+FULL32 mixture1:1",
+  "sources": {
+    "feature_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_feature_authority_v1_20260911.json",
+      "sha256": "f891aabaef996a7984926987cbcb23814632574ede395c759015194a251b2860"
+    },
+    "feature_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "freezer": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/freeze_rc_original_mixed96_group_risk_v1.py",
+      "sha256": "4881b22155274011a3edd5b2aae3406c287a0981de5e63e54557fcce2bba64c6"
+    },
+    "input_helper": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original_mixed96_group_risk_v1.sbatch",
+      "sha256": "1796a45fa9fef0229ffc1819782f16a07dc1f603db7eff65ee5ddcfdb3e651f5"
+    },
+    "legacy_runner": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_routea_matched_three_arm_common3_native7_crossfit_v1.py",
+      "sha256": "546e2bc7b3df6c67bcac41e079ba1b00f15c7e65c52a8ab994cd5b2c38d81e22"
+    },
+    "original_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "panel_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/panel_manifest.json",
+      "sha256": "e9a0181e8298056c62f42905e151b8a475721e92ed3f08ec3947d35eb3a7d90e"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL_MIXED96_GROUP_RISK_V1_20260911.md",
+      "sha256": "bd3dcaaf100c3960d343f1511770ee16670bb99814640f4883a26eb53920dc0e"
+    },
+    "previous_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_fixed_panels_train269_group_risk_authority_v1_20260911.json",
+      "sha256": "38de28fc84c9770f845893df74f46c80d163ed74453875d3e3493e3b508fbfde"
+    },
+    "previous_fit_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/validation.json",
+      "sha256": "42964e9397649298a00afe9f09cddcd68bcb310987f6010b8f5ba23e91e1deba"
+    },
+    "previous_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/payload.pt",
+      "sha256": "eb3fc868cac842d2a9800f26cab339b8ed1e0b50e2736df7f2a1a11b6cfaaaf1"
+    },
+    "previous_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fixed_panels_train269_group_risk_v1/fits/receipt.json",
+      "sha256": "dbf22160653c12a52e4b2cd733bd701d4abc7998fab6ba095bef75056f48f67c"
+    },
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_original_mixed96_group_risk_v1.py",
+      "sha256": "46dd2aca4836249540c89229ef878579182c92e96716757188c8c893f806ec97"
+    },
+    "reporter": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/report_rc_original_mixed96_group_risk_v1.py",
+      "sha256": "2780f25e09390fe0e521cc6cb7ffc221ae398d069ce39879abf6eca56412eae1"
+    },
+    "train_input_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_mixed96_group_risk_v1/train_input_seal.json",
+      "sha256": "79ebf43494267b144bb66fc60a90c111f9b7f0b42090d951d509d63e8bee54ba"
+    },
+    "train_inputs": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_mixed96_group_risk_v1/train_inputs.pt",
+      "sha256": "01ebc493e325fb15fce26cec62ec96a731bed3b149a239bac8f5206e88abd42b"
+    },
+    "train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_mixed96_group_risk_v1/train_roles.json",
+      "sha256": "bf1734538372bf8d6a9bbb02f6f24258b8f8c8c626e2c9a3becd46a5f1f0cea5"
+    },
+    "validator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_original_mixed96_group_risk_v1.py",
+      "sha256": "4e0d56b0cc4736b68588b5e63f3b12b6bf23b767b426b15c58126cd4f66a5e03"
+    }
+  },
+  "status": "ORIGINAL_MIXED96_GROUP_RISK_AUTHORIZED"
+}

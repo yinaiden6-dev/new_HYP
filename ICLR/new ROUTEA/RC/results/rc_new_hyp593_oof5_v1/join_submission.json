@@ -1,0 +1,13 @@
+{
+  "job_id": "5140748",
+  "stage": "join",
+  "dependency": "afterok:5140747",
+  "created_utc": "2026-09-10T23:57:33.942533+00:00",
+  "args": [
+    "sbatch",
+    "--parsable",
+    "--deadline=2026-09-11T18:00:00",
+    "--dependency=afterok:5140747",
+    "slurm/rc_new_hyp593_join_v1.sbatch"
+  ]
+}

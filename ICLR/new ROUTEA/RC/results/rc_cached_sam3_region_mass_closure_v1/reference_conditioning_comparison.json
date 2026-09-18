@@ -1,0 +1,65 @@
+{
+  "area_or_accumulated_mass_preference_is_part_of_the_new_rule": true,
+  "comparisons": {
+    "EVAL": {
+      "QUERY_REGION": {
+        "REF_correct": 6,
+        "break": 0,
+        "broken_execution_ordinals": [],
+        "control_correct": 6,
+        "n": 7,
+        "paired_net": 0,
+        "rescue": 0,
+        "rescued_execution_ordinals": [],
+        "same_final_prediction_count": 7
+      },
+      "REF_GEOMETRY_SHIFT": {
+        "REF_correct": 6,
+        "break": 0,
+        "broken_execution_ordinals": [],
+        "control_correct": 6,
+        "n": 7,
+        "paired_net": 0,
+        "rescue": 0,
+        "rescued_execution_ordinals": [],
+        "same_final_prediction_count": 7
+      }
+    },
+    "TRAIN": {
+      "QUERY_REGION": {
+        "REF_correct": 2,
+        "break": 0,
+        "broken_execution_ordinals": [],
+        "control_correct": 1,
+        "n": 2,
+        "paired_net": 1,
+        "rescue": 1,
+        "rescued_execution_ordinals": [
+          56
+        ],
+        "same_final_prediction_count": 1
+      },
+      "REF_GEOMETRY_SHIFT": {
+        "REF_correct": 2,
+        "break": 0,
+        "broken_execution_ordinals": [],
+        "control_correct": 1,
+        "n": 2,
+        "paired_net": 1,
+        "rescue": 1,
+        "rescued_execution_ordinals": [
+          56
+        ],
+        "same_final_prediction_count": 1
+      }
+    }
+  },
+  "independent_validation_sha256": "df54b263e2b14540d389bfb0ad89e060b0fdcba2382157fc79cfea5f56b9fdf0",
+  "interpretation": "TRAIN56 supplies one reference-conditioned increment; all seven EVAL predictions are identical for REF, QUERY, and REF_GEOMETRY_SHIFT, so EVAL reference-conditioning increment is zero.",
+  "new_methods_or_training_updates": 0,
+  "producer_result_sha256": "7ecf68bb72d67cf354bc3d501481cca876aa50c38a3f4b59f89279e8f79d0898",
+  "reference_HYP_GO_established": false,
+  "region_mass_rule_improves_H0_coverage_but_is_not_by_itself_reference_HYP_pass": true,
+  "scientific_GO_or_NO_GO": null,
+  "status": "FIXED_REGION_MASS_REFERENCE_CONDITIONING_COMPARISON_COMPLETE"
+}

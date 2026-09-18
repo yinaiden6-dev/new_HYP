@@ -1,0 +1,178 @@
+{
+  "access_boundary": {
+    "action_read_count": 0,
+    "external_read_count": 0,
+    "model_update_count": 0,
+    "query_supergroup_read_count": 0,
+    "retrieval_outcome_read_count": 0,
+    "sealed_read_count": 0,
+    "target_identity_read_count": 0,
+    "target_insertion_count": 0
+  },
+  "authorized_scope": {
+    "current64_prejoin_aggregate_validation": true,
+    "current64_prejoin_shard_independent_validation": true,
+    "current64_prejoin_shard_materialization": true,
+    "current64_reference_cache_independent_validation": true,
+    "current64_reference_cache_materialization": true,
+    "head_training": false,
+    "pair64_prejoin": false,
+    "postseal_label_join": false,
+    "source_manifest_independent_validation": true,
+    "source_manifest_materialization": true
+  },
+  "authority_validator": {
+    "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_current64_staging_execution_authority_v1.py",
+    "sha256": "39e43444b05abf305b14f4d697bc5ab748efb0d50bb43226a2f2431c3a7225b3"
+  },
+  "automatic_stage_advance": false,
+  "claim_level": "ENGINEERING_TARGET_FREE_CURRENT64_STAGING_EXECUTION_ONLY_PAIR64_PENDING",
+  "hardware_identity_is_authority": false,
+  "inputs": {
+    "exact_map_cache_reuse_addendum": {
+      "path": "plan/ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_EXACT_ROMA_MAP_CACHE_REUSE_ADDENDUM_V1_20260904.md",
+      "sha256": "4e418ea658b517d2ce02e4ffa7337eab29833b513350167e2c42f847eee0dea6"
+    },
+    "fresh_d1_oof_aggregate": {
+      "logical_sha256": "46680768b95e9f350369900175c945df4c0c5252f3e1432379238d0a543b8b18",
+      "path": "results/routea_matched_three_arm_n2_current_runtime_d1_oof_prejoin_v1/independent_aggregate_validation.json",
+      "sha256": "fc5ac9422ae6f2fe6485b906525f7ddccd316ba9b77c481bb65f679ea706982f"
+    },
+    "j0_independent_validation": {
+      "logical_sha256": "9f1f0bd05f7e752cac32dcfdd6621f203a9bff856f2a07cabef5a133a2f0b598",
+      "path": "results/routea_matched_three_arm_n2_current_runtime_d1_candidate_recall_gate_v1/independent_validation.json",
+      "sha256": "26506c7c5bff8f76ade79625f9744efd4c46dac8bc573f8504ca53dbc1be60d1"
+    },
+    "j0_result": {
+      "logical_sha256": "d948c1507f6717d304d34ca1fbd9b4bd0256938961d4ef77d9f27501610312f5",
+      "path": "results/routea_matched_three_arm_n2_current_runtime_d1_candidate_recall_gate_v1/result.json",
+      "sha256": "0544287c2e3ef327143fa5619f28d5df50ad2a5835004717bde38776aeb81b3d"
+    },
+    "rematerialization_contract": {
+      "path": "plan/ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_REMATERIALIZATION_CONTRACT_V1_20260904.md",
+      "sha256": "6d1eb7515ed739cb74a1d955c8fa077fc1033df8a7e1b06757b02c1eabdf54f3"
+    },
+    "v3_oof_execution_authority": {
+      "logical_sha256": "b06f6216befa7914dfbfb92421e33fe2556a44468aa1ec63ccbaa52cac4f79d5",
+      "path": "plan/ROUTEA_N2_CURRENT_RUNTIME_D1_OOF_SCORING_EXECUTION_AUTHORITY_V3_20260903.json",
+      "sha256": "4cf6bb76bdda7f89eb024771a9a857cd70ce2d5e7d644308f3d7faa68af0d57e"
+    }
+  },
+  "launchers": {
+    "aggregate": {
+      "path": "slurm/routea_n2_fresh_d1_matched_three_arm_current64_prejoin_aggregate_v1_30m.sbatch",
+      "sha256": "37213910ba62ba67e25384b26408cda6624cd17144786d2f4e703244efc60132"
+    },
+    "prejoin_array": {
+      "path": "slurm/routea_n2_fresh_d1_matched_three_arm_current64_prejoin_array_v1_1h.sbatch",
+      "sha256": "06b80f9caea353eaf2dec73dcfd0b05272ba51cd8b2466aadfbb107c3512734b"
+    },
+    "setup": {
+      "path": "slurm/routea_n2_fresh_d1_matched_three_arm_current64_setup_v1_30m.sbatch",
+      "sha256": "2c3d973f08dc89a32d301c69502cf3939d66f44c5be234c1f9d0c7d5b6cf3a73"
+    }
+  },
+  "logical_sha256": "99430821e99bfeea43e17b2de74f53333b60286c1cf11204899931a3bc816079",
+  "next_authorized_stage": "N2_FRESH_D1_MATCHED_THREE_ARM_CURRENT64_SETUP_EXECUTION",
+  "outputs": {
+    "current64_prejoin_aggregate_validation": "results/routea_n2_fresh_d1_matched_three_arm_current64_prejoin_v1/validation.json",
+    "current64_prejoin_shard_pattern": "results/routea_n2_fresh_d1_matched_three_arm_current64_prejoin_v1/shard{shard:02d}/{payload.pt,receipt.json,validation.json}",
+    "reference_cache_payload": "results/routea_n2_fresh_d1_matched_three_arm_reference_cache_v1/payload.pt",
+    "reference_cache_result": "results/routea_n2_fresh_d1_matched_three_arm_reference_cache_v1/result.json",
+    "reference_cache_validation": "results/routea_n2_fresh_d1_matched_three_arm_reference_cache_v1/independent_validation.json",
+    "source_manifest": "results/routea_n2_fresh_d1_matched_three_arm_source_manifest_v1/manifest.json",
+    "source_manifest_validation": "results/routea_n2_fresh_d1_matched_three_arm_source_manifest_v1/independent_validation.json"
+  },
+  "ownership_GO_or_NO_GO": null,
+  "population": {
+    "candidate_count_per_query": 128,
+    "contract_population_complete": false,
+    "current64_candidate_pair_count": 8192,
+    "current64_query_count": 64,
+    "frozen_roma_completion_pair_count": 24,
+    "old_map_exact_reuse_pair_count": 8168,
+    "old_reference_exact_reuse_count": 2801,
+    "pair64_pending_query_count": 64,
+    "reference_completion_rows": [
+      467,
+      1488,
+      2435,
+      5159
+    ],
+    "reference_union_count": 2805
+  },
+  "programs": {
+    "current64_prejoin_aggregate_validator": {
+      "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_current64_prejoin_aggregate_v1.py",
+      "sha256": "66305b12ba3e691fdc495f1f3bb759b8421449082327edc4f3835424fda8a60f"
+    },
+    "current64_prejoin_shard_producer": {
+      "path": "programs/materialize_routea_n2_fresh_d1_matched_three_arm_prejoin_shard_v1.py",
+      "sha256": "19bb0d63c8ce1531e0bf53fd6f53d4f22ee38168bee0e973d769dff306e55fc8"
+    },
+    "current64_prejoin_shard_validator": {
+      "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_prejoin_shard_v1.py",
+      "sha256": "2d76483bc0efcf346b8c1536856a2d4bceaad30c3225133fd4ee5dd18729b301"
+    },
+    "reference_cache_producer": {
+      "path": "programs/materialize_routea_n2_fresh_d1_matched_three_arm_reference_cache_v1.py",
+      "sha256": "bf2ebddf05997de19f1c35e1f62ac88d7d82a2880afe1664a9fd356aed1fa3e1"
+    },
+    "reference_cache_validator": {
+      "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_reference_cache_v1.py",
+      "sha256": "793477fc9a8b477e44fc9797adee24d71f928fee331da9e5cb9c26ec251b6b3d"
+    },
+    "source_manifest_producer": {
+      "path": "programs/materialize_routea_n2_fresh_d1_matched_three_arm_source_manifest_v1.py",
+      "sha256": "a6116867dd18470903cf0c21849fb792215ab08960485fd0aea02d24bbb7f646"
+    },
+    "source_manifest_validator": {
+      "path": "programs/validate_routea_n2_fresh_d1_matched_three_arm_source_manifest_v1.py",
+      "sha256": "274cff6e3eb2f6662113abb5cbfe9fbd7383d94ed37461673e0b97cf734c2e5f"
+    }
+  },
+  "resource_contract": {
+    "aggregate": {
+      "allowed_partitions": [
+        "cpuonly",
+        "dev_cpuonly"
+      ],
+      "cpus_per_task": 4,
+      "default_partition": "cpuonly",
+      "memory_gib": 64,
+      "walltime_seconds": 1800
+    },
+    "prejoin_array": {
+      "allowed_partitions": [
+        "accelerated",
+        "dev_accelerated"
+      ],
+      "canonical_array_tasks": "0-7",
+      "cpus_per_task": 8,
+      "default_array": "0-7%8",
+      "default_partition": "accelerated",
+      "dev_max_concurrency": 4,
+      "gpu_count": 1,
+      "memory_gib": 96,
+      "walltime_seconds": 3600
+    },
+    "setup": {
+      "allowed_partitions": [
+        "cpuonly",
+        "dev_cpuonly"
+      ],
+      "cpus_per_task": 8,
+      "default_partition": "cpuonly",
+      "memory_gib": 64,
+      "walltime_seconds": 1800
+    }
+  },
+  "scientific_GO_or_NO_GO": null,
+  "stage_topology": [
+    "CURRENT64_SOURCE_MANIFEST_AND_REFERENCE_CACHE_SETUP",
+    "CURRENT64_PREJOIN_SHARDS_0_TO_7",
+    "CURRENT64_PREJOIN_AGGREGATE_VALIDATION"
+  ],
+  "status": "ROUTEA_N2_FRESH_D1_MATCHED_THREE_ARM_CURRENT64_STAGING_EXECUTION_AUTHORIZED",
+  "version": "routea_n2_fresh_d1_matched_three_arm_current64_staging_execution_authority_v1_20260904"
+}

@@ -1,0 +1,20 @@
+# ORIGINAL7 EVAL128 三阶段接口复核及RoMa截止时间补充
+
+本次为独立源码接口复核，没有读取新128图、特征或评分，没有提交作业。
+
+复核版本：TOKEN/RAW `f8b63016f3f0ac50dfd82807312ac63935842e09fa280f6f1a44055c2449517c`；RoMa `5547ef80f8fd0469af9ea491641437d32b1e411cd778f6910327c26b9a151fd1`；CPU汇总/冻结头 `855032229e0a48250fd28fa93ccd45dbabd86eeda32cdef55281d7d04b40f789`。未发现接口阻塞。
+
+1. 工程依赖为TOKEN TRAIN56 bridge→RoMa TRAIN56 bridge→TOKEN 16分片→RAW aggregate→RoMa 16分片→CPU prejoin→新进程postjoin；不存在工程bridge依赖扩展分片的循环。
+2. 三段一致使用匿名query_id、0–127执行序、每片8query、sorted physical RAW C128和完整5412 corrected identity排名。token使用dtype+shape+bytes哈希，地图使用原始连续字节哈希，二者未混用。receipt/validation状态、authority和payload绑定、query/reference字段及control_shifts的query/reference键一致。
+3. RoMa保留全部128候选的完整wq/wr与四个原评分。CPU从相同FP16 token和FP64地图按原mass×sum/den顺序独立重算；Q/R各沿完整cell轴half-roll。16384个候选全部65536个C4标量资格通过后才评分。
+4. CPU使用固定ORIGINAL7权重和全部127 challenger，physical-row平局规则、最大logit严格大于0才SWITCH；整份evidence half-roll C_BIND及八种置零条件一并封存。新进程重放全部162560 logits及1280动作后才开放curator解析。metadata错误保留全部预测而停止科学汇总；target不在C128不删样本，仍在全128分母与完整gallery MRR中计入。
+5. 分别检查固定六维定义、字面独立六维重算和共享bias的阈值作用；没有把默认旧FROZEN_C参数当作当前ORIGINAL7。组等权统计使用21来源组，实验仍为历史打开来源目录上的扩大开发验证，不能称未触碰外部确认。
+
+RoMa两个launcher新增截止UTC 2026-09-11 16:00的剩余秒数计算，使用timeout TERM及10秒后KILL，开始前截止已到即失败。不修改HOME、不改变GPU参数、score或checkpoint。对应程序仅新增preflight收据中的deadline执行标志，避免修改launcher后覆盖旧源码绑定的预检收据。程序自然计算路径与前一版f535df相同。
+
+两个launcher在实际env -i环境均重新通过CPU预检；预检
+`results/rc_original7_eval128_roma_v1/preflight/5547ef80f8fd0469af9ea491641437d32b1e411cd778f6910327c26b9a151fd1/result.json`
+SHA为 `436fe71488bdb327dee2e3aa20b34b84726afb462dac71d3759e604afd71c06c`。
+bridge launcher SHA `46fa8bd8fb8ac327593ef2356542645bbed2789772e8a0766c8f260bb8e0a80a`；array launcher SHA `2aa954df4267768c7d5c5c1f7a73f52ae52c37d02f0d4b9a30cc9abc08182ec0`。源码profile仍为 `3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e`。
+
+原TRAIN56 weights_only兼容收据 `58aa66e5f8dbf10c87cc3c7107cebbdfd9a412c859e089922e5dfed60398e7e2` 保留，其代码绑定为deadline补充前版本，所测加载函数及数据未改变。GPU原值复现仍待主代理提交TRAIN56 bridge；本报告不授予自然工程PASS或科学GO。

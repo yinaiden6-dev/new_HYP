@@ -1,0 +1,158 @@
+{
+  "FULL_TRAIN32": {
+    "old_head_REAL_correct": 28,
+    "old_head_REAL_query_loss": 0.36848398702228985,
+    "refit_head_REAL_correct": 29,
+    "refit_last_preupdate_total_pair_full_loss": [
+      0.5033345747768398,
+      0.18249819661694613,
+      0.3208363781598937
+    ],
+    "refit_loss_is_last_preupdate_not_final_parameter_loss": true
+  },
+  "HYP_GO_claimed": false,
+  "broader_thread_goal_complete": false,
+  "checks": {
+    "all_crossed_final_actions_and_correctness_recomputed": true,
+    "new_head_all_four_modes_all127_logits_recomputed": 16256,
+    "old_head_all_four_modes_all127_logits_recomputed": 16256,
+    "parameter_and_authority_and_prejoin_SHA_chain": true,
+    "parameter_semantic_SHA_recomputed": true,
+    "prior_unchanged": true
+  },
+  "evaluation_correct_of32": {
+    "NEW_HEAD_CBIND": 17,
+    "NEW_HEAD_PRIOR_HALF_ROLL": 26,
+    "NEW_HEAD_REAL": 25,
+    "NEW_HEAD_UNIFORM": 25,
+    "OLD_HEAD_REAL": 26,
+    "OLD_HEAD_UNIFORM": 28
+  },
+  "frozen_prior_theta_sha256": "863fcd824bc785f43b5d341d860a68c3297ca6b8cbe883555ccd946e5ac40774",
+  "frozen_prior_unique_gain_lost": {
+    "execution_ordinal": 27,
+    "query_id": "DIFFICULT-0050"
+  },
+  "head_parameter_sha256": "ece3a6ee4a95b60653749491b23e6093531db3b194ba0e138aa8be160f836453",
+  "job_id": 5138442,
+  "new_head_REAL_vs_UNIFORM": {
+    "MRR_REAL": 0.8333333333333334,
+    "MRR_UNIFORM": 0.8325892857142857,
+    "correct_execution_sets_identical": true,
+    "different_final_predictions": [
+      {
+        "REAL_correct": false,
+        "REAL_final_physical_row": 1631,
+        "REAL_final_position": 33,
+        "UNIFORM_correct": false,
+        "UNIFORM_final_physical_row": 745,
+        "UNIFORM_final_position": 6,
+        "execution_ordinal": 193,
+        "query_id": "OUTCOME-0212"
+      },
+      {
+        "REAL_correct": false,
+        "REAL_final_physical_row": 976,
+        "REAL_final_position": 3,
+        "UNIFORM_correct": false,
+        "UNIFORM_final_physical_row": 2678,
+        "UNIFORM_final_position": 59,
+        "execution_ordinal": 194,
+        "query_id": "OUTCOME-0213"
+      },
+      {
+        "REAL_correct": false,
+        "REAL_final_physical_row": 5123,
+        "REAL_final_position": 84,
+        "UNIFORM_correct": false,
+        "UNIFORM_final_physical_row": 5165,
+        "UNIFORM_final_position": 90,
+        "execution_ordinal": 307,
+        "query_id": "OUTCOME-0373"
+      },
+      {
+        "REAL_correct": false,
+        "REAL_final_physical_row": 4659,
+        "REAL_final_position": 124,
+        "UNIFORM_correct": false,
+        "UNIFORM_final_physical_row": 1325,
+        "UNIFORM_final_position": 24,
+        "execution_ordinal": 449,
+        "query_id": "OUTCOME-0618"
+      }
+    ],
+    "final_predictions_identical": false,
+    "same_fields_count_of32": {
+      "decision": 32,
+      "final_correct": 32,
+      "final_position": 28,
+      "final_target_rank": 31,
+      "proposed_challenger": 19
+    },
+    "sole_target_rank_change": {
+      "REAL": 6,
+      "UNIFORM": 7,
+      "execution_ordinal": 307
+    }
+  },
+  "new_inference_model_variants": 0,
+  "new_training_updates": 0,
+  "not_established": [
+    "The aggregate training-versus-EVAL divergence alone does not uniquely identify overfitting, a particular missing feature, or the complete failure cause.",
+    "This negative refit does not prove every HYP formulation impossible or erase the previous RoMa system result.",
+    "No unseen generalization, connected HYP, pixel ownership, or HYP GO follows."
+  ],
+  "prior_losses_still_unrepaired": [
+    193,
+    200,
+    449
+  ],
+  "refit_experiment_closed": true,
+  "scientific_GO_or_NO_GO": null,
+  "scope": "ORIGINAL_RAW_C128_OPENED_INTERNAL_EVAL32_FIXED_PRIOR_ORIGINAL_SEVEN_PARAMETER_HEAD_REFIT",
+  "sources": {
+    "authority": {
+      "path": "registry/rc_shared_query_prior_head_refit_authority_v1_20260909.json",
+      "sha256": "92a62cb77cdd208f39ce8de28a53db9d744823ab090760b74c289a80ea716be5"
+    },
+    "old_head_parameter_seal": {
+      "path": "registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "old_head_result": {
+      "path": "results/rc_shared_query_target_prior_development_v1/result.json",
+      "sha256": "977ffe3dcd76deb62bb0dde880ee4e9c5694ec25ab0323bd8acfa9a64e05d2f0"
+    },
+    "parameters": {
+      "path": "results/rc_shared_query_prior_head_refit_v1/parameters.json",
+      "sha256": "79914a861b4c8631f95b5a6fc3ca3cca8ca84c62d1c4c3a30100db296963f2ac"
+    },
+    "prejoin": {
+      "path": "results/rc_shared_query_prior_head_refit_v1/eval_prejoin.json",
+      "sha256": "a4d858c2328f4f6d2c08525a4d900733039178ae0752182366ba8445bc719573"
+    },
+    "prejoin_seal": {
+      "path": "results/rc_shared_query_prior_head_refit_v1/eval_prejoin_seal.json",
+      "sha256": "836e179fb1992f0966a78ae19f7f48ce5efb9836904acbcff483d229fd5c137a"
+    },
+    "result": {
+      "path": "results/rc_shared_query_prior_head_refit_v1/result.json",
+      "sha256": "2aa5d46c034b130a940bfc88e99323a0bbb441416edaa28a2d390345b0458b65"
+    },
+    "train_accounting": {
+      "path": "results/rc_shared_query_prior_train_eval_accounting_v1/result.json",
+      "sha256": "603e4b764a5d58c23263b7b46878ac3df4ed35616e95adccbd52e59c16a91df5"
+    },
+    "validation": {
+      "path": "results/rc_shared_query_prior_head_refit_v1/independent_validation.json",
+      "sha256": "18c03e876f2836c118c2fbc151cdb9f1259ae509b7c9d72bedb48fa814c9cd31"
+    }
+  },
+  "status": "RC_SHARED_QUERY_PRIOR_HEAD_REFIT_V1_CLOSED_NEGATIVE",
+  "supported_conclusions": [
+    "The fixed-prior original-head refit increases the reported full-C128 training correct count from28 to29 but reduces internal EVAL correct count from26 to25.",
+    "The specified head-refit remedy does not repair the three prior-induced EVAL losses or preserve its unique EVAL gain.",
+    "The prior changes four wrong candidate decisions under the new head, so identical correct sets do not mean identical predictions or inactive prior.",
+    "New-head REAL provides zero paired correctness gain over new-head UNIFORM and is below PRIOR_HALF_ROLL."
+  ]
+}

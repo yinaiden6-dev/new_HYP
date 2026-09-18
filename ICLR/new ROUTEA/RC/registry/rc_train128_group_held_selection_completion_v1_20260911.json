@@ -1,0 +1,117 @@
+{
+  "current_performance_gate_not_relaxed": true,
+  "fold_selection_summary": [
+    {
+      "SELECT_BASE_correct": 29,
+      "SELECT_count": 31,
+      "fold": 0,
+      "maximum_any_candidate_SELECT_rescues": 0,
+      "pool_count": 12,
+      "primary_SELECT_loss": 0,
+      "primary_SELECT_rescue": 0,
+      "selected_ids": {
+        "BASE7": "BASE",
+        "FIT_SELECT": "T128-9b71cc7a5d44ae0be936e51f",
+        "SELECT_PROTECT": "BASE",
+        "SELECT_RANK": "BASE"
+      }
+    },
+    {
+      "SELECT_BASE_correct": 32,
+      "SELECT_count": 35,
+      "fold": 1,
+      "maximum_any_candidate_SELECT_rescues": 0,
+      "pool_count": 8,
+      "primary_SELECT_loss": 0,
+      "primary_SELECT_rescue": 0,
+      "selected_ids": {
+        "BASE7": "BASE",
+        "FIT_SELECT": "T128-d1a4ce3d52e7adbdd6086231",
+        "SELECT_PROTECT": "BASE",
+        "SELECT_RANK": "BASE"
+      }
+    },
+    {
+      "SELECT_BASE_correct": 34,
+      "SELECT_count": 35,
+      "fold": 2,
+      "maximum_any_candidate_SELECT_rescues": 0,
+      "pool_count": 14,
+      "primary_SELECT_loss": 0,
+      "primary_SELECT_rescue": 0,
+      "selected_ids": {
+        "BASE7": "BASE",
+        "FIT_SELECT": "T128-9dccbad2351514b4e8215663",
+        "SELECT_PROTECT": "BASE",
+        "SELECT_RANK": "BASE"
+      }
+    },
+    {
+      "SELECT_BASE_correct": 27,
+      "SELECT_count": 32,
+      "fold": 3,
+      "maximum_any_candidate_SELECT_rescues": 1,
+      "pool_count": 9,
+      "primary_SELECT_loss": 0,
+      "primary_SELECT_rescue": 1,
+      "selected_ids": {
+        "BASE7": "BASE",
+        "FIT_SELECT": "T128-13d59eb441a7e7f57aae8c5c",
+        "SELECT_PROTECT": "T128-13d59eb441a7e7f57aae8c5c",
+        "SELECT_RANK": "T128-13d59eb441a7e7f57aae8c5c"
+      }
+    }
+  ],
+  "gates": {
+    "all_BASE_correct_retained": true,
+    "count_strictly_above_BASE7": false,
+    "equal_group_strictly_above_BASE7": false
+  },
+  "job_id": "5140476",
+  "original_ec7_unchanged": true,
+  "recorded_utc": "2026-09-10T22:58:00.155284+00:00",
+  "report": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/reports/REPORT_TRAIN128_GROUP_HELD_SELECTION_RESULT_V1_20260911.md",
+    "sha256": "46588788acc4aafe8359433d9469b3dfef277d584fddde5cfe56cf42d09e965a"
+  },
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_group_held_selection_v1/result.json",
+    "sha256": "ae6e202cd46fbf88309b60828b7ea748c7d0539b958a9bebabb85d3dcf14a63f"
+  },
+  "scores": {
+    "BASE7": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.83125,
+      "equal_group_accuracy_fraction": "133/160",
+      "rescue_vs_RAW": 23
+    },
+    "FIT_SELECT": {
+      "break_vs_RAW": 4,
+      "correct": 111,
+      "equal_group_accuracy": 0.8578125,
+      "equal_group_accuracy_fraction": "549/640",
+      "rescue_vs_RAW": 29
+    },
+    "SELECT_PROTECT": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.83125,
+      "equal_group_accuracy_fraction": "133/160",
+      "rescue_vs_RAW": 23
+    },
+    "SELECT_RANK": {
+      "break_vs_RAW": 1,
+      "correct": 108,
+      "equal_group_accuracy": 0.83125,
+      "equal_group_accuracy_fraction": "133/160",
+      "rescue_vs_RAW": 23
+    }
+  },
+  "status": "GROUP_HELD_SELECTION_COMPLETE_RETENTION_PASS_NO_INCREMENT",
+  "true_EVAL_access": false,
+  "validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_group_held_selection_v1/validation.json",
+    "sha256": "643677b0a8cb586e9535082bb1472e3b48d612276bfb4b31cefe2730d5b1ac5d"
+  }
+}

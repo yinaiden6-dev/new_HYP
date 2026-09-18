@@ -1,0 +1,133 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "历史 EVAL128 内部面板",
+  "model": "ORIGINAL7",
+  "model_lineage": "frozen ORIGINAL7/NATIVE7 current seven parameters",
+  "evidence_scope": "历史内部结果的事后可视化",
+  "query_id": "E128-292f25b074b7be82436a67ca",
+  "display_id": "OUTCOME-0438",
+  "execution_ordinal": 64,
+  "identity": "ASP Cough Mucus Congestion PMG 24ct",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_assets/images/E128-292f25b074b7be82436a67ca.png",
+  "source_result": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_full_evidence_v1/result.json",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 1321,
+  "final_selected": 1322,
+  "target_physical": 1322,
+  "wrong_physical": 1321,
+  "wrong_role": "RAW 错误 reference",
+  "raw_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1",
+  "roma_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1",
+  "selection_rule": "all 12 RAW-to-ORIGINAL7 rescues; plus prespecified OUTCOME-0337 and OUTCOME-0446",
+  "stem": "06_medicine_OUTCOME-0438",
+  "query_grid": [
+    36,
+    20
+  ],
+  "query_geometry": {
+    "sha256": "30ef7575fb24eea0b5e77afb43c8273a0f05aaf45d44381b2cf70c2beacceba1",
+    "raw_size_hw": [
+      3840,
+      2160
+    ],
+    "oriented_size_hw": [
+      3840,
+      2160
+    ],
+    "exif_orientation": 1,
+    "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+    "grid_shape": [
+      36,
+      20
+    ],
+    "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+  },
+  "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+  "evidence": {
+    "wrong": {
+      "physical_row": 1321,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ASP Cough Mucus COngestion Day Night PMG 24ct.jpg",
+      "reference_grid": [
+        16,
+        45
+      ],
+      "reference_geometry": {
+        "sha256": "a9c4c1bed632431b3f653fa02b12b9bfbd0242ad7579160acc9b5405d6455823",
+        "raw_size_hw": [
+          1155,
+          3115
+        ],
+        "oriented_size_hw": [
+          1155,
+          3115
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          16,
+          45
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.002565706901831157,
+        "visibility_mass": 0.028303983832752476,
+        "query_control_score": 0.002731377861644292,
+        "reference_control_score": 0.002500937037969322,
+        "candidate_position": 25,
+        "physical_row": 1321,
+        "raw_score": 475.9747314453125,
+        "query_map_sha256": "ac9197494e82a487a143f49b78e0b2f49f6105f07f887fcd8514e86b6d8e0960",
+        "reference_map_sha256": "8723b0506f1adca1b89356c054514ba305346d767f4c2df233b3ec7f780cda4b"
+      },
+      "query_map_sha256": "ac9197494e82a487a143f49b78e0b2f49f6105f07f887fcd8514e86b6d8e0960",
+      "reference_map_sha256": "8723b0506f1adca1b89356c054514ba305346d767f4c2df233b3ec7f780cda4b"
+    },
+    "target": {
+      "physical_row": 1322,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ASP Cough Mucus Congestion PMG 24ct.jpg",
+      "reference_grid": [
+        24,
+        31
+      ],
+      "reference_geometry": {
+        "sha256": "743e4e2494028415fb3881b25f9e2209350d6278bdceb366fe308416fa8b893a",
+        "raw_size_hw": [
+          1243,
+          1593
+        ],
+        "oriented_size_hw": [
+          1243,
+          1593
+        ],
+        "exif_orientation": 1,
+        "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+        "grid_shape": [
+          24,
+          31
+        ],
+        "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      "scores": {
+        "real_score": 0.025770195767915997,
+        "visibility_mass": 0.0958323703332282,
+        "query_control_score": 0.02350333933759405,
+        "reference_control_score": 0.026829907578054545,
+        "candidate_position": 26,
+        "physical_row": 1322,
+        "raw_score": 474.0279235839844,
+        "query_map_sha256": "015532f746ce0b726a9158edd047b75bc342bd2317ae506ef378091b03d071f6",
+        "reference_map_sha256": "19d9d6cb62cd345c273e13cc68a2cdae69517eae64d90ed6f1874ad9447f9be4"
+      },
+      "query_map_sha256": "015532f746ce0b726a9158edd047b75bc342bd2317ae506ef378091b03d071f6",
+      "reference_map_sha256": "19d9d6cb62cd345c273e13cc68a2cdae69517eae64d90ed6f1874ad9447f9be4"
+    }
+  },
+  "raw_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard08/payload.pt",
+  "roma_payload": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard08/payload.pt",
+  "visualization": "literal cached native query token grids, fixed [0,1], nearest pixels; no overlay, no mask",
+  "inference_calls": 0,
+  "training_updates": 0
+}

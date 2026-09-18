@@ -1,0 +1,107 @@
+{
+  "status": "COMPLETED_FOUR_HEAD_INDEPENDENT_RETRAIN_PASS_NO_GAIN_PRESERVATION",
+  "job_id": "5139151",
+  "recorded_utc": "2026-09-10T00:02:48.042170+00:00",
+  "accounting": {
+    "State": "COMPLETED",
+    "ExitCode": "0:0",
+    "Elapsed": "00:02:31",
+    "Start_Europe_Berlin": "2026-09-10T01:57:25",
+    "End_Europe_Berlin": "2026-09-10T01:59:56",
+    "AllocCPUS": 8,
+    "batch_MaxRSS": "442564K"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_reference_support_maxmin_readout_authority_v1_20260910.json",
+    "sha256": "e3ad43ba765537e26e1b651813163a7a3f0bd631e79c8af7fe206574544c5d9a"
+  },
+  "outputs": {
+    "result.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_readout_v1/result.json",
+      "sha256": "a7be9cd34e7509c85a5cb06bab79ce92ae63e75614933287279cbd9853760424"
+    },
+    "parameters.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_readout_v1/parameters.json",
+      "sha256": "32969083441ec1071cc88777e253e4d0a333894962d5cb30d32d35d2d6bb3ec1"
+    },
+    "eval_prejoin_seal.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_readout_v1/eval_prejoin_seal.json",
+      "sha256": "41bcd273e324599f2c02457233be2566463cff11670407b5e82032d560383b40"
+    },
+    "independent_validation.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_reference_support_maxmin_readout_v1/independent_validation.json",
+      "sha256": "56d747ac3888687be9455d34086dbf5e12032a246b07151285dd6246b55dcdd2"
+    }
+  },
+  "EVAL_REAL": {
+    "FIXED8": {
+      "base_MRR": 0.8281994047619048,
+      "base_R@1": 0.78125,
+      "base_top1": 25,
+      "break": 0,
+      "final_MRR": 0.8779761904761905,
+      "final_R@1": 0.84375,
+      "final_top1": 27,
+      "hold_count": 29,
+      "query_count": 32,
+      "rescue": 2,
+      "retained_correct": 25,
+      "retained_wrong": 5,
+      "switch_count": 3,
+      "wrong_to_wrong": 1
+    },
+    "MAXMIN8": {
+      "base_MRR": 0.8281994047619048,
+      "base_R@1": 0.78125,
+      "base_top1": 25,
+      "break": 1,
+      "final_MRR": 0.8864942528735632,
+      "final_R@1": 0.84375,
+      "final_top1": 27,
+      "hold_count": 26,
+      "query_count": 32,
+      "rescue": 3,
+      "retained_correct": 24,
+      "retained_wrong": 4,
+      "switch_count": 6,
+      "wrong_to_wrong": 2
+    },
+    "ORIGINAL7": {
+      "base_MRR": 0.8281994047619048,
+      "base_R@1": 0.78125,
+      "base_top1": 25,
+      "break": 0,
+      "final_MRR": 0.9014136904761905,
+      "final_R@1": 0.875,
+      "final_top1": 28,
+      "hold_count": 28,
+      "query_count": 32,
+      "rescue": 3,
+      "retained_correct": 25,
+      "retained_wrong": 4,
+      "switch_count": 4,
+      "wrong_to_wrong": 1
+    },
+    "PROJECTION8": {
+      "base_MRR": 0.8281994047619048,
+      "base_R@1": 0.78125,
+      "base_top1": 25,
+      "break": 1,
+      "final_MRR": 0.8630567528735632,
+      "final_R@1": 0.8125,
+      "final_top1": 26,
+      "hold_count": 27,
+      "query_count": 32,
+      "rescue": 2,
+      "retained_correct": 24,
+      "retained_wrong": 5,
+      "switch_count": 5,
+      "wrong_to_wrong": 2
+    }
+  },
+  "meets_user_gain_and_preservation": {
+    "MAXMIN8": false,
+    "PROJECTION8": false
+  },
+  "new_model_adopted": false
+}

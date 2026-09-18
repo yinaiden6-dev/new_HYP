@@ -1,0 +1,74 @@
+{
+  "EVAL_semantic_reads": 0,
+  "TRAIN_curator": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/curator_roles.json",
+    "sha256": "240be57ffe824e8e029e83052a8b608166782edfdf1df8327bec164621de8ca1"
+  },
+  "by_origin": {
+    "added32": {
+      "correct_HOLD": 27,
+      "correct_SWITCH": 4,
+      "missed_SWITCH": 1
+    },
+    "oldFULL32": {
+      "correct_HOLD": 27,
+      "correct_SWITCH": 1,
+      "missed_SWITCH": 3,
+      "wrong_SWITCH_wrong_to_wrong": 1
+    },
+    "oldPAIR64": {
+      "correct_HOLD": 31,
+      "correct_SWITCH": 18,
+      "missed_SWITCH": 12,
+      "wrong_SWITCH_break": 1,
+      "wrong_SWITCH_wrong_to_wrong": 2
+    }
+  },
+  "counts": {
+    "correct_HOLD": 85,
+    "correct_SWITCH": 23,
+    "missed_SWITCH": 16,
+    "wrong_SWITCH_break": 1,
+    "wrong_SWITCH_wrong_to_wrong": 3
+  },
+  "model_fits": 0,
+  "model_parameter_sha256": "ec7df7e5a5b85f725f8729aed91653e1028814a8bbc0474039dbaffab652b263",
+  "new_encoder_RoMa_calls": 0,
+  "qualification_note": "in-sample fixed-base TRAIN diagnostic, not a group-held-out validation of a reliability model",
+  "source_inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/validation.json",
+    "sha256": "770b9f9ce46f431c7bbe8479e320934c9d1dacdf23f3c3eea650f2812c1a77bf"
+  },
+  "status": "TRAIN128_FROZEN_ORIGINAL7_CONFLICT_COUNTS_ONLY",
+  "wrong_switch_cases": [
+    {
+      "group": "SOURCE_XML:otc/8d32fcd8-4ae6-1c8d-e053-2a95a90ad4c7.xml",
+      "kind": "wrong_SWITCH_wrong_to_wrong",
+      "max_logit": 0.21818116798178777,
+      "original_query_id": "OUTCOME-0477",
+      "query_id": "T128-f6afcdf5ac6503e1230446f7"
+    },
+    {
+      "group": "SOURCE_XML:otc/19df13da-27d4-41f8-91d4-79227547a914.xml",
+      "kind": "wrong_SWITCH_wrong_to_wrong",
+      "max_logit": 1.5225390006570736,
+      "original_query_id": "OUTCOME-0382",
+      "query_id": "T128-9dccbad2351514b4e8215663"
+    },
+    {
+      "group": "SOURCE_XML:animal/27772b36-7c96-465a-a476-3b5dc25349f2.xml",
+      "kind": "wrong_SWITCH_wrong_to_wrong",
+      "max_logit": 0.5385542689724665,
+      "original_query_id": "OUTCOME-0093",
+      "query_id": "T128-c2ec75f19a1e4f83aa7f1689"
+    },
+    {
+      "group": "NEW_SUPERGROUP:SF_BACITRACIN",
+      "kind": "wrong_SWITCH_break",
+      "max_logit": 0.71031468688324,
+      "original_query_id": "NDV2-012-P03",
+      "query_id": "T128-1d650f97377e5f2ea6f4bf87"
+    }
+  ],
+  "wrong_switch_groups": 4
+}

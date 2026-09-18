@@ -1,0 +1,2087 @@
+{
+  "HYP_GO_claimed": false,
+  "RoMa_inference_count": 0,
+  "candidate_physical_rows": [
+    118,
+    563,
+    595,
+    601,
+    693,
+    724,
+    745,
+    814,
+    820,
+    878,
+    891,
+    917,
+    929,
+    944,
+    950,
+    974,
+    983,
+    1007,
+    1024,
+    1078,
+    1148,
+    1157,
+    1262,
+    1319,
+    1377,
+    1381,
+    1402,
+    1405,
+    1454,
+    1586,
+    1588,
+    1594,
+    1610,
+    1631,
+    1681,
+    1682,
+    1770,
+    1804,
+    1832,
+    1855,
+    1875,
+    1891,
+    1898,
+    1967,
+    2014,
+    2036,
+    2037,
+    2097,
+    2107,
+    2121,
+    2179,
+    2247,
+    2293,
+    2328,
+    2360,
+    2393,
+    2410,
+    2412,
+    2458,
+    2488,
+    2557,
+    2582,
+    2583,
+    2584,
+    2588,
+    2678,
+    2715,
+    2728,
+    2733,
+    2747,
+    2780,
+    2834,
+    2854,
+    2857,
+    2879,
+    3030,
+    3124,
+    3149,
+    3250,
+    3311,
+    3323,
+    3336,
+    3433,
+    3451,
+    3454,
+    3455,
+    3456,
+    3457,
+    3458,
+    3459,
+    3460,
+    3461,
+    3462,
+    3463,
+    3464,
+    3465,
+    3476,
+    3483,
+    3495,
+    3578,
+    3610,
+    3652,
+    3669,
+    3670,
+    3674,
+    3701,
+    3721,
+    3788,
+    3961,
+    3965,
+    4022,
+    4057,
+    4058,
+    4245,
+    4286,
+    4297,
+    4305,
+    4311,
+    4338,
+    4403,
+    4502,
+    4512,
+    4587,
+    4661,
+    4673,
+    4756,
+    4759,
+    4766
+  ],
+  "checks": {
+    "all128_reference_token_hashes_checked": true,
+    "all_image_and_token_source_hashes_exact": true,
+    "exact_raster_matches_independent_vector_ray_test_all_pixels": true,
+    "exact_raster_matches_transposed_exact_raster_all_pixels": true,
+    "keep_and_erase_preserve_original_pixels_on_their_declared_complementary_sets": true,
+    "keep_plus_erase_minus_gray_reconstructs_original_RGB_exactly": true,
+    "mask_and_complement_disjoint_and_exhaustive": true,
+    "original_RGB_and_annotation_frame_sizes_exact": true,
+    "run_boundary_neighbor_exact_point_tests": 3824
+  },
+  "conditions": {
+    "ERASE_TARGET": {
+      "dtype": "uint8",
+      "raw_contiguous_bytes_sha256": "83ac16f66fcd14f52472aa0eeceef7c504e84470517b8df38b9d84ab2d24155c",
+      "shape": [
+        3840,
+        2160,
+        3
+      ]
+    },
+    "KEEP_TARGET_ON_GRAY": {
+      "dtype": "uint8",
+      "raw_contiguous_bytes_sha256": "976b38a900ddb295d8192db7a24e76984bea1fb327da53846430a6875c4a4564",
+      "shape": [
+        3840,
+        2160,
+        3
+      ]
+    },
+    "ORIGINAL": {
+      "dtype": "uint8",
+      "raw_contiguous_bytes_sha256": "f35c48c1d3a3f1b3234afbc6202601da35f259cc6b6e3d98797372212533e3df",
+      "shape": [
+        3840,
+        2160,
+        3
+      ]
+    },
+    "WHOLE_GRAY": {
+      "dtype": "uint8",
+      "raw_contiguous_bytes_sha256": "4ed080fd4a1e0c394a4a94a1df04e7817ed94acf5004d1a396305d3e1eb8adf7",
+      "shape": [
+        3840,
+        2160,
+        3
+      ]
+    }
+  },
+  "encoder_inference_count": 0,
+  "execution_ordinal": 193,
+  "gray_RGB": [
+    127,
+    127,
+    127
+  ],
+  "limits": [
+    "This qualifies masks and original source bytes, not the forthcoming encoder replay or causal result.",
+    "Changing pixel conditions re-encodes contextual tokens; token centers must not be treated as receptive-field masks.",
+    "GT masks are used only for this opened fixed-case diagnostic; no oracle inference model or HYP/ownership GO is claimed."
+  ],
+  "mask": {
+    "background_pixel_count": 7718011,
+    "dtype": "bool",
+    "evidence_label_ignored": true,
+    "file": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_outcome0212_exact_pixel_mask_qualification_v1/target_pixel_center_mask.npy",
+      "sha256": "f191b78da18f928153458e1bac1e0086947b2d3510c8f2597d566efec03f2c3c"
+    },
+    "fraction_of_image": 0.06949134355709877,
+    "polygons_in_original_pixel_coordinates": [
+      [
+        [
+          756.7566371681415,
+          1763.476241763791
+        ],
+        [
+          1362.0663716814158,
+          1827.200166984895
+        ],
+        [
+          1283.0575221238937,
+          2511.0159144513564
+        ],
+        [
+          1267.7654867256638,
+          2720.0303891765784
+        ],
+        [
+          645.8893805309734,
+          2651.208549937786
+        ],
+        [
+          612.7566371681415,
+          2440.919596708142
+        ]
+      ]
+    ],
+    "raw_bool_bytes_sha256": "bf11054caf622ec8531e3143644f0b9eef322aa481d6ba4dec50e02177bbb471",
+    "rule": "Union of existing target polygons; original pixel centers(column+1/2,row+1/2); exact rational scanline; boundary included",
+    "shape": [
+      3840,
+      2160
+    ],
+    "target_pixel_count": 576389
+  },
+  "original_token_record_index": 6,
+  "query_grid_shape": [
+    36,
+    20
+  ],
+  "query_id": "OUTCOME-0212",
+  "query_tokens_sha256": "43ee92acc3449766ee8b73b147a3687374bb3413d7308dd52d5035faa8b09b21",
+  "references": [
+    {
+      "candidate_position": 0,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 118,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/Novipet label.jpg",
+      "tokens_sha256": "afc862407f3c1820a955a2116bb3d3cb6745823c132f5d5de8313a22476118c8",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 1,
+      "grid_shape": [
+        26,
+        29
+      ],
+      "physical_row": 563,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/2(1).jpg",
+      "tokens_sha256": "d7a15b1cb40412430e73ba289e987bbbaa34ebf2b5b15832dd9d20e1a040f658",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 2,
+      "grid_shape": [
+        39,
+        19
+      ],
+      "physical_row": 595,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/323 elderberry label.jpg",
+      "tokens_sha256": "933379b491c2c769fdb527ae267b1f02f6e64ecc7fabf6c2a9c12d537167c931",
+      "tokens_shape": [
+        741,
+        128
+      ]
+    },
+    {
+      "candidate_position": 3,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 601,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/365816 Carton 365783 Nail Fungus Relief.jpg",
+      "tokens_sha256": "2ca815df817fc6533b43feaac8e62738c5479cb9fbc245ef7012d2148ec0864c",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 4,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 693,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/81488002-04.jpg",
+      "tokens_sha256": "927b965a2cd62812ba064d3560107feba2b00b56fb5aca97b7c410fed0f1eaf1",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 5,
+      "grid_shape": [
+        28,
+        26
+      ],
+      "physical_row": 724,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/Doitu patch(0.04gx36) V1.jpg",
+      "tokens_sha256": "e164e5859140d43eb19447743ef127d4751daf3d46c901de02e91d0446fa6547",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 6,
+      "grid_shape": [
+        17,
+        43
+      ],
+      "physical_row": 745,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/Menstrual cramps carton.jpg",
+      "tokens_sha256": "bdd63faaf9d3cc00ae8b05a654c5d777e458086f6acc11d7effa20c72ebbe5b4",
+      "tokens_shape": [
+        731,
+        128
+      ]
+    },
+    {
+      "candidate_position": 7,
+      "grid_shape": [
+        27,
+        28
+      ],
+      "physical_row": 814,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/(BUX0ABS1)-Back-card.jpg",
+      "tokens_sha256": "d0d7d53042e35b77fcef78db73cceeb3f63a02de0737464f40ae128760f3a966",
+      "tokens_shape": [
+        756,
+        128
+      ]
+    },
+    {
+      "candidate_position": 8,
+      "grid_shape": [
+        32,
+        23
+      ],
+      "physical_row": 820,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/- CHEST COMFORT_60ML_USA_FINAL_R5.jpg",
+      "tokens_sha256": "9ce85df55b4fe32c34a0eb86b0f3292ad9be60df74e120b7239dac8f1c4dfc03",
+      "tokens_shape": [
+        736,
+        128
+      ]
+    },
+    {
+      "candidate_position": 9,
+      "grid_shape": [
+        27,
+        27
+      ],
+      "physical_row": 878,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/10K(2).jpg",
+      "tokens_sha256": "8e0fb8e6a940d69cc947d8a74e1f75910f80d65f135e6626f6f97bf616fe8a5f",
+      "tokens_shape": [
+        729,
+        128
+      ]
+    },
+    {
+      "candidate_position": 10,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 891,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/124 1J nicotine lozenge image.jpg",
+      "tokens_sha256": "7216169f9034cbc7d1615bf9122d5fbb24c9ca0d53566bf0646d384a0333141d",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 11,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 917,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/158-27.jpg",
+      "tokens_sha256": "899accfbc39760ea833416ee06c213cfea2a8f18ce264d4bcc285cbb5cd839f4",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 12,
+      "grid_shape": [
+        33,
+        23
+      ],
+      "physical_row": 929,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/1c2ef2be-af0a-391c-e054-00144ff88e88.jpg",
+      "tokens_sha256": "8bed03ff9b25488fb9a933577f282ba016d3219a55edfc54c2745a5ecb87651d",
+      "tokens_shape": [
+        759,
+        128
+      ]
+    },
+    {
+      "candidate_position": 13,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 944,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/20230531134258.jpg",
+      "tokens_sha256": "c7fed8791e63b11394c174b996cade74905afa7be2d8e7a2b13248384f22f404",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 14,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 950,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/20ctimage.jpg",
+      "tokens_sha256": "d7b6e256f4f1e33e30261785d5da6eccca085fae6a079c5b5fc012f19b6c0f24",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 15,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 974,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/300000365_R-01_Final.jpg",
+      "tokens_sha256": "5d695b48a7b6d1bd0e2a461f190c486017b146bc085c84337e136dae5b6888d0",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 16,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 983,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/311d7647-figure-01.jpg",
+      "tokens_sha256": "07cb9d43c396afbfd65984e15b631bc20778dedf96757fc836d7dc1a799fd786",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 17,
+      "grid_shape": [
+        25,
+        29
+      ],
+      "physical_row": 1007,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/3mx0b-0004-02.jpg",
+      "tokens_sha256": "5a194a10dc71644cd02da5f727651d39c9a1ba7416348872b6c12c39b1e2b3b4",
+      "tokens_shape": [
+        725,
+        128
+      ]
+    },
+    {
+      "candidate_position": 18,
+      "grid_shape": [
+        21,
+        35
+      ],
+      "physical_row": 1024,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/430984_86324016_ASP_Severe_Cld_Flu_Eff_20ct_Crtn_FDA1.jpg",
+      "tokens_sha256": "e4e8ddb69058fe351062bddfd56389af430f65d3952cf261cb79bd3b7a331212",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 19,
+      "grid_shape": [
+        23,
+        32
+      ],
+      "physical_row": 1078,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/59-95215 patch.jpg",
+      "tokens_sha256": "c47887da37179ee0b475eda6fd9ca63f4155bd4142cda69b5668c5cf9e03c0ba",
+      "tokens_shape": [
+        736,
+        128
+      ]
+    },
+    {
+      "candidate_position": 20,
+      "grid_shape": [
+        22,
+        33
+      ],
+      "physical_row": 1148,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/83861-002-02.jpg",
+      "tokens_sha256": "14402535334c929e7b8d0e4b1777bc626f1c29158300151e4fa6e5c813674e82",
+      "tokens_shape": [
+        726,
+        128
+      ]
+    },
+    {
+      "candidate_position": 21,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 1157,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/85009-001-02.jpg",
+      "tokens_sha256": "afa7575040a110c38e500275f43af2f9b79f87624377110cf02dd1ba56b34b9b",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 22,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 1262,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ART_ASP00019_Page_1.jpg",
+      "tokens_sha256": "db3d056239113ea4d311e3358af5eb4b18cf6acf0b4ac4ec1bce6a7f05e589ad",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 23,
+      "grid_shape": [
+        21,
+        35
+      ],
+      "physical_row": 1319,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ASP Cold and Flu FizzyChews 24ct.jpg",
+      "tokens_sha256": "5d8c224abefd57a09516bfd3efadea8533338eb1bd3fae79bab5d93b70dae315",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 24,
+      "grid_shape": [
+        23,
+        32
+      ],
+      "physical_row": 1377,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/AW1.jpg",
+      "tokens_sha256": "dee3074b08256319d72dd43a70436fcb43f90d9f6d1f4b40b8271769eadb6ca0",
+      "tokens_shape": [
+        736,
+        128
+      ]
+    },
+    {
+      "candidate_position": 25,
+      "grid_shape": [
+        35,
+        21
+      ],
+      "physical_row": 1381,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/AWGAS Hydrocortisone Cream 1 percent  1oz 081023 CDER.jpg",
+      "tokens_sha256": "c06fa74d7fe584acb96e25cc607d7bc32b827a5f7334be4efdd9167c44588589",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 26,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 1402,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/AlkaSeltzer_36.jpg",
+      "tokens_sha256": "ed9ece849c4868c232c5638b13db43aa5bec5ab8f8fcf72b87c6dc2f3693479e",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 27,
+      "grid_shape": [
+        27,
+        27
+      ],
+      "physical_row": 1405,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Anabiose Shampoo.jpg",
+      "tokens_sha256": "3e55aae04f12bc6986efeef2a663a4774a57077da4070cc086726194a2a826e2",
+      "tokens_shape": [
+        729,
+        128
+      ]
+    },
+    {
+      "candidate_position": 28,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 1454,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Arthcal ESTROGEN CREAM.jpg",
+      "tokens_sha256": "91d315b42705bd634d65c7bc8ba8a206c53c31ab49e2e52fab0429aef4315362",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 29,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 1586,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/BLABEL.jpg",
+      "tokens_sha256": "e7d69073f66a7018107ba860d8a28da13440041f4481237d2813a2f2ad202d93",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 30,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 1588,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/BLISSLABEL.jpg",
+      "tokens_sha256": "36d27eaae5663b079c875eda0c1988acdaab3ca9a8946c4e14f7ee2ed7d3d90f",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 31,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 1594,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/BN2295_L_01_Herb-Street_BackMuscles.jpg",
+      "tokens_sha256": "07b7a5be7af1364bb48aa7cbe5397410ed08c49f04c3a7815ca47fa3386506d0",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 32,
+      "grid_shape": [
+        26,
+        29
+      ],
+      "physical_row": 1610,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/BP Acne Spot Treatment _Page_1.jpg",
+      "tokens_sha256": "e5518949e67e03158f8474f7945cd4bffd2429efa98438d2af62c93af84185bc",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 33,
+      "grid_shape": [
+        26,
+        28
+      ],
+      "physical_row": 1631,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/BUX0ABS6-Back-card.jpg",
+      "tokens_sha256": "e7e1a1ba8c37778f9e8324c03b5ac5f71be887a6503d5cde61c77b4142e38bce",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 34,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 1681,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bayer Aspirin Headache 50ct Final Artwork.jpg",
+      "tokens_sha256": "b47aa2d63124cc82120035fde6dd84162027517c50251795a2eb66b8b235e84a",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 35,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 1682,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bayer Aspirin Regimen 325mg.jpg",
+      "tokens_sha256": "e47a1755180c41f4dfc6ec75ab232b6296ff5163984e8c0371c484535bce372c",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 36,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 1770,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bliss_Smoothing Mineral Primer_secondary.jpg",
+      "tokens_sha256": "c29dcde8c02e309f9fe610c78aa6ebd5ce85587d27e9613aa77a7bb433c689a5",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 37,
+      "grid_shape": [
+        43,
+        17
+      ],
+      "physical_row": 1804,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bottle9.jpg",
+      "tokens_sha256": "f21f7adec3b6d0868d766c75b7d8a4150d1fb9ec3165777a8b5d7f7c122c3929",
+      "tokens_shape": [
+        731,
+        128
+      ]
+    },
+    {
+      "candidate_position": 38,
+      "grid_shape": [
+        24,
+        28
+      ],
+      "physical_row": 1832,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Box01.jpg",
+      "tokens_sha256": "73740cef54c89c6571ba0bd9f4e2c1fda9a09c574c226b2cb3d126b58758c1f7",
+      "tokens_shape": [
+        672,
+        128
+      ]
+    },
+    {
+      "candidate_position": 39,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 1855,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bravado Labs Delay Cream BOX.jpg",
+      "tokens_sha256": "ee58960343c1cd7603c7a8a60001d2ca06a1604a4b9a5585b8d195e46ae90c3f",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 40,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 1875,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bronze Glow.jpg",
+      "tokens_sha256": "43ca022ce53e194587cea615f48a2bc7bea4c6c71be750040bfcc64ef6b11828",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 41,
+      "grid_shape": [
+        21,
+        35
+      ],
+      "physical_row": 1891,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Buscapina 69729-813-24.jpg",
+      "tokens_sha256": "80cb4403afd078d73e59003848e5aa1c18bfc6b485bf533f7676b0fb1d0aa87e",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 42,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 1898,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Buscompositum.jpg",
+      "tokens_sha256": "4410e4011714bb062d87d8be39cf092ab5caaa6a952e9189c81f73894ffe5878",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 43,
+      "grid_shape": [
+        21,
+        32
+      ],
+      "physical_row": 1967,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CDER 200ct.jpg",
+      "tokens_sha256": "4b2766710e1c91f25743560bd0b41663fdb71926aad8826d807c14be971e5d9f",
+      "tokens_shape": [
+        672,
+        128
+      ]
+    },
+    {
+      "candidate_position": 44,
+      "grid_shape": [
+        26,
+        28
+      ],
+      "physical_row": 2014,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CE8AA4EB72FC4BAE8E5EAFBE59967E00.jpg",
+      "tokens_sha256": "8bd3c2e3a697cd630ee2020de1c3b69c6dda09e6ac9f39dd728fe480bff12161",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 45,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 2036,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CHEEZHENG PAIN RELIEVING PLASTER Box.jpg",
+      "tokens_sha256": "1d732f654cd12f219ddaf9347321e2273ae44bc665c70738a71a6083429c75dc",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 46,
+      "grid_shape": [
+        22,
+        33
+      ],
+      "physical_row": 2037,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CHEST COMFORT_60ML_USA_FINAL_R1-01.jpg",
+      "tokens_sha256": "4e32847d52bc98b01b95a4e5210f12bffbadc7ae62be6753d0e75b6c7f4a8ebb",
+      "tokens_shape": [
+        726,
+        128
+      ]
+    },
+    {
+      "candidate_position": 47,
+      "grid_shape": [
+        20,
+        37
+      ],
+      "physical_row": 2097,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CP1(1)(1).jpg",
+      "tokens_sha256": "d5b022832e74309938fe95fdbb8866b27a57c36937081962a7b8b472ee79e8a1",
+      "tokens_shape": [
+        740,
+        128
+      ]
+    },
+    {
+      "candidate_position": 48,
+      "grid_shape": [
+        23,
+        32
+      ],
+      "physical_row": 2107,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CREST 3D WHITE ARCTIC FRESH.jpg",
+      "tokens_sha256": "cc7af307d359261fea76108ca940a0cad3fb48dad59d36b859c3a97d3d816311",
+      "tokens_shape": [
+        736,
+        128
+      ]
+    },
+    {
+      "candidate_position": 49,
+      "grid_shape": [
+        30,
+        25
+      ],
+      "physical_row": 2121,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CS TP Color Balm Unit Carton_BRONZE_1709470_PRINT (1).jpg",
+      "tokens_sha256": "a8f9345edba0e598023c326f4a282d192fdd964452ea220e85d8f7c4ad83d9be",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 50,
+      "grid_shape": [
+        28,
+        15
+      ],
+      "physical_row": 2179,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CVS Day & Night Cold & Flu Front.jpg",
+      "tokens_sha256": "a464fb75bb22abe1f1565e8d627da178e5ae7bcb2a6843b2ba8d1819f9ea55a7",
+      "tokens_shape": [
+        420,
+        128
+      ]
+    },
+    {
+      "candidate_position": 51,
+      "grid_shape": [
+        24,
+        30
+      ],
+      "physical_row": 2247,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CVSBS16.jpg",
+      "tokens_sha256": "98caab08362fcae892ef5fa2cd062b8f8d536e91869eed9ae63b207a0efb0460",
+      "tokens_shape": [
+        720,
+        128
+      ]
+    },
+    {
+      "candidate_position": 52,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 2293,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Cabinet Cought travel carton.jpg",
+      "tokens_sha256": "c58368bfdc333158954052d5e59810850b88db3a24cbcb5f86522b59b31abbd0",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 53,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 2328,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CareOne Cherry Benzocaine 18ct.jpg",
+      "tokens_sha256": "3a5d4df3a11f63b3415ffbfd3bb72eeeeb1012c5c6162d6aaaed251da4f0796f",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 54,
+      "grid_shape": [
+        32,
+        24
+      ],
+      "physical_row": 2360,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Carton 2oz.jpg",
+      "tokens_sha256": "bd2121d48fb5fc3ee47003db96d86aa54b423fbf57f06c1a5769df24adcbe245",
+      "tokens_shape": [
+        768,
+        128
+      ]
+    },
+    {
+      "candidate_position": 55,
+      "grid_shape": [
+        26,
+        28
+      ],
+      "physical_row": 2393,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Carton-Sensitive Strength - point 14 over 100 Capsaicin.jpg",
+      "tokens_sha256": "fad973f75348d1a4becb3d3dba1781867fa9d6a1b32b76edda495708db8af366",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 56,
+      "grid_shape": [
+        32,
+        23
+      ],
+      "physical_row": 2410,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Carton_page-0001.jpg",
+      "tokens_sha256": "a6e7e449ed0ba103aad37df291a184a014c90fecac45f9b095ff2414475ea14e",
+      "tokens_shape": [
+        736,
+        128
+      ]
+    },
+    {
+      "candidate_position": 57,
+      "grid_shape": [
+        21,
+        35
+      ],
+      "physical_row": 2412,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Cavity protection.pdf.jpg",
+      "tokens_sha256": "a9c11cfa3eec20d5af26cfafaca12aaae57fb2fa0483509130862abb2bd62c55",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 58,
+      "grid_shape": [
+        28,
+        26
+      ],
+      "physical_row": 2458,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Cinnamon.jpg",
+      "tokens_sha256": "b0492236ef74f6ac95d6fe2aaf0e5512b40fb05f9192ff68d965a95e89014b03",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 59,
+      "grid_shape": [
+        29,
+        20
+      ],
+      "physical_row": 2488,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CliniCalm UC.jpg",
+      "tokens_sha256": "a3987a84f27d3bb24c8265e23c9c227e2d41c22f3e5ae9ee799a258d3420dd95",
+      "tokens_shape": [
+        580,
+        128
+      ]
+    },
+    {
+      "candidate_position": 60,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 2557,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CoughRelief Page 1.jpg",
+      "tokens_sha256": "0cd29575b205e004a0e5ba3eeb329cd1f0ee0ba21bc841cd7099fa41d6066080",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 61,
+      "grid_shape": [
+        22,
+        33
+      ],
+      "physical_row": 2582,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Crest Pro Health Sensitive and Enamel Shield.jpg",
+      "tokens_sha256": "59dedeeae65736e43751a9f286faaee4d36f94b64c02a76794b1526d083b6d83",
+      "tokens_shape": [
+        726,
+        128
+      ]
+    },
+    {
+      "candidate_position": 62,
+      "grid_shape": [
+        20,
+        36
+      ],
+      "physical_row": 2583,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Crest Pro Health Whitening Gel.jpg",
+      "tokens_sha256": "991d3758518c6f316c69db3bd5f122289e92db22718b36c81ccc23ce9bf979b2",
+      "tokens_shape": [
+        720,
+        128
+      ]
+    },
+    {
+      "candidate_position": 63,
+      "grid_shape": [
+        21,
+        35
+      ],
+      "physical_row": 2584,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Crest Pro-Health Clean Mint Paste.jpg",
+      "tokens_sha256": "b2f1e010cfca179f528200876c833cebae4d0b8645845d6d85ebd6b4775d3645",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 64,
+      "grid_shape": [
+        27,
+        28
+      ],
+      "physical_row": 2588,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Ctn Baby Bum Sunscreen Stick SPF30.jpg",
+      "tokens_sha256": "db74e17373fc61384887cbee5a91bc54119af00b5ee008cdf1b4b3ceb0634d38",
+      "tokens_shape": [
+        756,
+        128
+      ]
+    },
+    {
+      "candidate_position": 65,
+      "grid_shape": [
+        38,
+        19
+      ],
+      "physical_row": 2678,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Day & Night ComboPack.jpg",
+      "tokens_sha256": "3430f0f02125727425f785a83a4b5b4ed737a2c61d0668170eec85f81dcfab66",
+      "tokens_shape": [
+        722,
+        128
+      ]
+    },
+    {
+      "candidate_position": 66,
+      "grid_shape": [
+        23,
+        18
+      ],
+      "physical_row": 2715,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Dubai thpaste box.jpg",
+      "tokens_sha256": "cbc25622e54402cd3e336bfc7439b470485fb22bceb8cae0e88d3f12748c99d6",
+      "tokens_shape": [
+        414,
+        128
+      ]
+    },
+    {
+      "candidate_position": 67,
+      "grid_shape": [
+        26,
+        28
+      ],
+      "physical_row": 2728,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Excinol Night 30 Cap NewBox.jpg",
+      "tokens_sha256": "069c51be0f01d07a9b8a196c6edeb8958df268ec375d3a39b33e2564c5ccdc54",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 68,
+      "grid_shape": [
+        33,
+        23
+      ],
+      "physical_row": 2733,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/F109101HTE_R1.jpg",
+      "tokens_sha256": "9364d2db19ed3eee324c6860b623369e37695503fe5ad9f7fd26e06e46de0a41",
+      "tokens_shape": [
+        759,
+        128
+      ]
+    },
+    {
+      "candidate_position": 69,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 2747,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/F113902TCR_R3.jpg",
+      "tokens_sha256": "4bf51c2c473bd7d375ae5ae8093eaf9b30b7930d65154ffcaa3b952c1d65b6e4",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 70,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 2780,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/G1ABHS02 Back Card.jpg",
+      "tokens_sha256": "9721fbb149495e4828ebae1c733ccbdeff822f58c6445ec978ecee93a049eeb0",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 71,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 2834,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Label 01.jpg",
+      "tokens_sha256": "647cc34e7e889c90c541de48dc99dc65f4c7a613847f46027b3e229514d56bb4",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 72,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 2854,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Lidocanna New Label - OTC.jpg",
+      "tokens_sha256": "15f502d68cce20aac9d9f02013c0d06e74f12a3755bd368e387ec774c2900899",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 73,
+      "grid_shape": [
+        33,
+        23
+      ],
+      "physical_row": 2857,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/LoraD-5s-CVS.jpg",
+      "tokens_sha256": "473eefcee628e95d15f322ad03c33ed976940b7d3ea8a58daeb8398cfd3007f9",
+      "tokens_shape": [
+        759,
+        128
+      ]
+    },
+    {
+      "candidate_position": 74,
+      "grid_shape": [
+        28,
+        27
+      ],
+      "physical_row": 2879,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Monster Slime Box.jpg",
+      "tokens_sha256": "a0db2015c130bd18a31190339e33eacfa25d28a5672d72c36dd15b5e3e39ac5e",
+      "tokens_shape": [
+        756,
+        128
+      ]
+    },
+    {
+      "candidate_position": 75,
+      "grid_shape": [
+        19,
+        40
+      ],
+      "physical_row": 3030,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Tatcha 50 ML PDP.jpg",
+      "tokens_sha256": "40d143e8d6b2df6594e5797704a9b28a603fce880502e257abcca5cddb7dcc1d",
+      "tokens_shape": [
+        760,
+        128
+      ]
+    },
+    {
+      "candidate_position": 76,
+      "grid_shape": [
+        28,
+        26
+      ],
+      "physical_row": 3124,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/an adc whitening essence carton.jpg",
+      "tokens_sha256": "57a57e3ee8a9b2016f2596c1ec738d26378edddad25cbab4f2b33bc448613aff",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 77,
+      "grid_shape": [
+        30,
+        24
+      ],
+      "physical_row": 3149,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/anti loss.jpg",
+      "tokens_sha256": "c6c2bfbcf97ab15934c95e674e7ce4ab03567acb28fe90a36c4248c8c18b9b5d",
+      "tokens_shape": [
+        720,
+        128
+      ]
+    },
+    {
+      "candidate_position": 78,
+      "grid_shape": [
+        27,
+        28
+      ],
+      "physical_row": 3250,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/aurophen-fig2.jpg",
+      "tokens_sha256": "924ab087afdbd62e02a223b84d3d9e3347c4ef64fc05df42948caa39c0151263",
+      "tokens_shape": [
+        756,
+        128
+      ]
+    },
+    {
+      "candidate_position": 79,
+      "grid_shape": [
+        22,
+        34
+      ],
+      "physical_row": 3311,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/bb label.pdf.jpg",
+      "tokens_sha256": "3d66b25e7bf297ebfd077adbfcc3429c8f919c622be3f2d6efae3d94e210657d",
+      "tokens_shape": [
+        748,
+        128
+      ]
+    },
+    {
+      "candidate_position": 80,
+      "grid_shape": [
+        24,
+        30
+      ],
+      "physical_row": 3323,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/bb-e8l8-01.jpg",
+      "tokens_sha256": "9a39c8068004a285fa868a9dfe23c67a9b21db78a827f1a615fe27ebd3171902",
+      "tokens_shape": [
+        720,
+        128
+      ]
+    },
+    {
+      "candidate_position": 81,
+      "grid_shape": [
+        20,
+        35
+      ],
+      "physical_row": 3336,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/bc-arthritis---63029-990-01.jpg",
+      "tokens_sha256": "e5938238eea81d5092c3cc11ae507c9ec729ba728c1a90c00fc272230d158ee1",
+      "tokens_shape": [
+        700,
+        128
+      ]
+    },
+    {
+      "candidate_position": 82,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 3433,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/bio0i-0001-01.jpg",
+      "tokens_sha256": "e082fe9470c30dee4c0b82b84df8fdbea9b6c9cd38db2f8ecba38fe274e5611b",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 83,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 3451,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/black.jpg",
+      "tokens_sha256": "2941cd455be00501bc9621bb4bb79508ca98faed474e3fde407e34a66b2f2fec",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 84,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3454,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-02.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 85,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3455,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-03.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 86,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3456,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-04.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 87,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3457,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-05.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 88,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3458,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-06.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 89,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3459,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-07.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 90,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3460,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-08.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 91,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3461,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-09.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 92,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3462,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-10.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 93,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3463,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-11.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 94,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3464,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-12.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 95,
+      "grid_shape": [
+        49,
+        15
+      ],
+      "physical_row": 3465,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blemish-13.jpg",
+      "tokens_sha256": "998807bc160c3b05617119dfc25a6930d9afb634d3747df72c68b80e5db0504f",
+      "tokens_shape": [
+        735,
+        128
+      ]
+    },
+    {
+      "candidate_position": 96,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 3476,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blip-nicotine-gum-fruit-carton-image.jpg",
+      "tokens_sha256": "a2b0e456a9d5b3f8fe40ef036e9fa17a52e139f48b4fe5d3b2da4e3e8c6fea54",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 97,
+      "grid_shape": [
+        27,
+        27
+      ],
+      "physical_row": 3483,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blue carton.jpg",
+      "tokens_sha256": "1e3ce6d5bb2c0dc6f56dfff08effc9d86fb9f726cf25d74c0b7a7fd97c30e79b",
+      "tokens_shape": [
+        729,
+        128
+      ]
+    },
+    {
+      "candidate_position": 98,
+      "grid_shape": [
+        34,
+        22
+      ],
+      "physical_row": 3495,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blur-09.jpg",
+      "tokens_sha256": "af085a148a0e0c9ec292bae4bc7f68d713aedafa7663ad2df55d7d9d289994e2",
+      "tokens_shape": [
+        748,
+        128
+      ]
+    },
+    {
+      "candidate_position": 99,
+      "grid_shape": [
+        55,
+        13
+      ],
+      "physical_row": 3578,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/buxom-07.jpg",
+      "tokens_sha256": "d7799187356d92bc85b8d41e806a5b7557f90842129a0b44717f8728969eaa62",
+      "tokens_shape": [
+        715,
+        128
+      ]
+    },
+    {
+      "candidate_position": 100,
+      "grid_shape": [
+        25,
+        29
+      ],
+      "physical_row": 3610,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/c6797c0e-e52d-e596-e053-2995a90ade19.jpg",
+      "tokens_sha256": "e3c543fa1e48e46bd8f5ffb1db66aad63e32a8650737eae44e5c9ec67c0197e9",
+      "tokens_shape": [
+        725,
+        128
+      ]
+    },
+    {
+      "candidate_position": 101,
+      "grid_shape": [
+        29,
+        25
+      ],
+      "physical_row": 3652,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/care carton.jpg",
+      "tokens_sha256": "a8140a9d29f3695b15bb1cdd4cba84f91f00ae39d78e2e3c0820d3433ae4eeeb",
+      "tokens_shape": [
+        725,
+        128
+      ]
+    },
+    {
+      "candidate_position": 102,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 3669,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/careone-ibuprofen-carton-image.jpg",
+      "tokens_sha256": "ec78ef16b34e67ae89571d4b6e7ae0c12dd3bc7f0f0afe3d26af266b35251dca",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 103,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 3670,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/careone-ibuprofen-pm-carton-image.jpg",
+      "tokens_sha256": "fddde95e460715276392bfdb13ef7a5f27a188b4addddd592a2e773b21db1697",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 104,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 3674,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/careone-nicotine-gum-carton-image.jpg",
+      "tokens_sha256": "a516f24d5f46b37ddade2a0ec4c977f33301c5e683221f56c077597dd386c767",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 105,
+      "grid_shape": [
+        32,
+        23
+      ],
+      "physical_row": 3701,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/carton ortho.jpg",
+      "tokens_sha256": "0d7596df5303512612b6a96758c44a7b4eb1524e267f96306b69c53bc354f3e6",
+      "tokens_shape": [
+        736,
+        128
+      ]
+    },
+    {
+      "candidate_position": 106,
+      "grid_shape": [
+        28,
+        23
+      ],
+      "physical_row": 3721,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/carton-outside-eng.jpg",
+      "tokens_sha256": "7bc45acf6df3073efa51107b5fffe15fbafe3d2731954f1fb55725f36f7f9fdf",
+      "tokens_shape": [
+        644,
+        128
+      ]
+    },
+    {
+      "candidate_position": 107,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 3788,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cbd pain relief cream box_preview.jpg",
+      "tokens_sha256": "899466ae859e1dff86d6df98b637d40ab5bc79828a4b50f166c1c1abaf075dc3",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 108,
+      "grid_shape": [
+        26,
+        20
+      ],
+      "physical_row": 3961,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/chloraseptic-warming-honey-lemon-lozenge-01.jpg",
+      "tokens_sha256": "b5efa97eeec674407199f242be925b3da0d99f71a4d634503d0f9795aaafa646",
+      "tokens_shape": [
+        520,
+        128
+      ]
+    },
+    {
+      "candidate_position": 109,
+      "grid_shape": [
+        34,
+        21
+      ],
+      "physical_row": 3965,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cho05-0002-01.jpg",
+      "tokens_sha256": "7e20fdf2f061f3b401bac30a2d36b8f31a3c2f2b3cb9b9775ebb2ed1402c5bac",
+      "tokens_shape": [
+        714,
+        128
+      ]
+    },
+    {
+      "candidate_position": 110,
+      "grid_shape": [
+        34,
+        22
+      ],
+      "physical_row": 4022,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/clean-clear-01.jpg",
+      "tokens_sha256": "91da6a356d3426c1224c5d55566ebd87fe529ee55422b2ae27faa6b697828053",
+      "tokens_shape": [
+        748,
+        128
+      ]
+    },
+    {
+      "candidate_position": 111,
+      "grid_shape": [
+        27,
+        27
+      ],
+      "physical_row": 4057,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cloveden original carton.jpg",
+      "tokens_sha256": "3b84d8d747bf770fc7cbcda6b89e2d1fbd60e9e5e4ef089fbcc9b7ab1cb7d077",
+      "tokens_shape": [
+        729,
+        128
+      ]
+    },
+    {
+      "candidate_position": 112,
+      "grid_shape": [
+        32,
+        23
+      ],
+      "physical_row": 4058,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cloveden toothpaste carton.jpg",
+      "tokens_sha256": "f52a412fec3897565d7640ed055b204036ede3cc743d3642af1875b0e4321429",
+      "tokens_shape": [
+        736,
+        128
+      ]
+    },
+    {
+      "candidate_position": 113,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 4245,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cur03-0000-01.jpg",
+      "tokens_sha256": "656a14d2f600cc0f7c576bad5e617d52552800d50d6e3b18b8d059315c52ce75",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 114,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 4286,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cvs-44-347-1.jpg",
+      "tokens_sha256": "76c3f0489eab32154429af3f1d9441f0ab34d672ffe2a6be45e4ad14682574a7",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 115,
+      "grid_shape": [
+        30,
+        25
+      ],
+      "physical_row": 4297,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cvs-44-453485-1.jpg",
+      "tokens_sha256": "fbe33accbbe6518a2995cd17b3781d3bea3fea97f8a21805e3e72eaedfb288da",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 116,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 4305,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cvs-44-527-1.jpg",
+      "tokens_sha256": "f2c7eddea29fe5cc8df37cbb2726de4f5e73b79fac621bc1d9329b99ee2faf0b",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 117,
+      "grid_shape": [
+        28,
+        27
+      ],
+      "physical_row": 4311,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cvs-44-600a-51316-601-1.jpg",
+      "tokens_sha256": "2d4e035341ecc41ba949ab73924a18875f5d2ff11fa4efca24d4b6849e0722d9",
+      "tokens_shape": [
+        756,
+        128
+      ]
+    },
+    {
+      "candidate_position": 118,
+      "grid_shape": [
+        28,
+        26
+      ],
+      "physical_row": 4338,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cvs-ibuprofen-pm-carton-image.jpg",
+      "tokens_sha256": "6957b991152e5bd0ecd96ddae496ed74716826699b08ff1b53e984e75ae3a187",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 119,
+      "grid_shape": [
+        24,
+        31
+      ],
+      "physical_row": 4403,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/day-and-night-multi-symptom-cold-and-flu-relief-1.jpg",
+      "tokens_sha256": "d2a7bf640123037e87e5e153f6b83dd6fe7e9d353051c7ec26bf35ed55534068",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    },
+    {
+      "candidate_position": 120,
+      "grid_shape": [
+        29,
+        26
+      ],
+      "physical_row": 4502,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/hello-01.jpg",
+      "tokens_sha256": "3b2d9e1e9da5fe0d4b00da3b2de437268b8b501fd18451e2878d703d7e694358",
+      "tokens_shape": [
+        754,
+        128
+      ]
+    },
+    {
+      "candidate_position": 121,
+      "grid_shape": [
+        28,
+        26
+      ],
+      "physical_row": 4512,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ibi-caplets-100s-ifc.jpg",
+      "tokens_sha256": "d5625796a032ede2b456302ea3d706c139ea0f7030c0fc3c4ed515831ff8bf57",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 122,
+      "grid_shape": [
+        30,
+        25
+      ],
+      "physical_row": 4587,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/mefactory pig collagen 1step piggy nose pack carton.jpg",
+      "tokens_sha256": "fb0f04f1dd9edf32f77bff68ccd1b94a2fcbad7c54c42667585748235abf1e86",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 123,
+      "grid_shape": [
+        25,
+        30
+      ],
+      "physical_row": 4661,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/rite-aid-nicotine-gum-mint-carton-image.jpg",
+      "tokens_sha256": "95a2b92d27871002290dee0a2e49f3a8749419806a03aa69bdba4c218a76be38",
+      "tokens_shape": [
+        750,
+        128
+      ]
+    },
+    {
+      "candidate_position": 124,
+      "grid_shape": [
+        47,
+        16
+      ],
+      "physical_row": 4673,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/selectcorp-01.jpg",
+      "tokens_sha256": "ffc0d0cf0b2984f609e0ce4ee54d23f83c0933c62cd3fcd2e80ad942c5327397",
+      "tokens_shape": [
+        752,
+        128
+      ]
+    },
+    {
+      "candidate_position": 125,
+      "grid_shape": [
+        28,
+        26
+      ],
+      "physical_row": 4756,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/walgreens-44-556-1.jpg",
+      "tokens_sha256": "30e192ddb1de79ea41bc563f459833063dd1846fc78964bc96afcffec126b0a9",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 126,
+      "grid_shape": [
+        28,
+        26
+      ],
+      "physical_row": 4759,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/walgreens-ibuprofen-pm-carton-image.jpg",
+      "tokens_sha256": "fa747ab638489c6bbe8d9e112ee16152a51718ead2c018789bf1cb29b36b2ae4",
+      "tokens_shape": [
+        728,
+        128
+      ]
+    },
+    {
+      "candidate_position": 127,
+      "grid_shape": [
+        31,
+        24
+      ],
+      "physical_row": 4766,
+      "source_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/winco-44-676a-1.jpg",
+      "tokens_sha256": "51f98ad2e149aa550e08d11b0bcb8c11f6ef5bf30696eb835f9b093c754089b7",
+      "tokens_shape": [
+        744,
+        128
+      ]
+    }
+  ],
+  "scientific_GO_or_NO_GO": null,
+  "source_frame": {
+    "EXIF_orientation": 1,
+    "EXIF_transform_applied": false,
+    "annotation_raw_and_display_frame_identical": true,
+    "decoder": "PIL.Image.open(original).convert(RGB)",
+    "image_size_wh": [
+      2160,
+      3840
+    ],
+    "raw_input_mode": "RGB",
+    "resize_crop_interpolation_before_frozen_processor": false
+  },
+  "sources": {
+    "annotation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/new/firstlove/annotation/projects/firstlove_subject_gold_v1/annotations/query_outcome____0135.json",
+      "sha256": "133817fae162120f148334a4c87cead12c2af928bbd92311cd604ad070040f06"
+    },
+    "original_RAW_token_archive": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard05/payload.pt",
+      "sha256": "10cb8dbff5fa37f6992055be9e427146164dca06facc6d4c3fa51d05d9b4973c"
+    },
+    "original_local_cache_arrays": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0193/arrays.npz",
+      "sha256": "dbacbe0ac0a5fbf4b2396b6552c081e80b9109a2fade003ca382bfcb1715f3d0"
+    },
+    "original_local_cache_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0193/metadata.json",
+      "sha256": "16aab84e1b4d1ca34247104e95b6866dd383bfde6087360de644e8e0c75d724e"
+    },
+    "original_query_image": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/1/outcome/430984_86324016_ASP_Severe_Cld_Flu_Eff_20ct_Crtn_FDA1_00000000000000000003.png",
+      "sha256": "ea963143596a1a319773bf8ff37e3090d516af494464fd2c1f395864da22f253"
+    },
+    "utility": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_outcome0212_exact_pixel_polygon_mask_v1.py",
+      "sha256": "43edc05600d2e504e59968fb43e417aa220560c356ba0e7d34ab1813b8eabfe4"
+    }
+  },
+  "status": "RC_OUTCOME0212_EXACT_PIXEL_MASK_AND_SOURCE_QUALIFICATION_PASS",
+  "synthetic_e0": {
+    "cases": 4,
+    "model_inference_count": 0,
+    "status": "EXACT_PIXEL_CENTER_RASTER_E0_PASS"
+  },
+  "training_updates": 0
+}

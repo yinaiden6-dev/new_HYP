@@ -1,0 +1,252 @@
+{
+  "EVAL_fit_predict_or_join_authorized": false,
+  "TRAIN_labels_only_for_fitting": true,
+  "all_opened_capacity_artifacts_forbidden_including_hash_reads": true,
+  "allowed_stages": [
+    "run",
+    "solve-fold",
+    "validate-fold",
+    "join",
+    "validate-join"
+  ],
+  "contract": {
+    "EVAL_access": false,
+    "LP": "min sum(Delta_plus+Delta_minus), theta=theta0+Delta_plus-Delta_minus; nonnegative increments",
+    "PROTECTED7_rows": "all127 action constraints for protected TRAIN queries and one error",
+    "REPAIR_ONLY7_rows": "all127 action constraints for that one error only",
+    "REPAIR_ONLY_gate": false,
+    "acceptance": "numerical success then all exact endpoint margins>0 and actual FP64 error repair; PROTECTED additionally preserves every protected TRAIN image",
+    "base_refits": 0,
+    "candidate_search": "one LP per original error per arm; one pass only; BASE included in each pool",
+    "candidate_selection": "descending exact equal-group accuracy, descending correct images, ascending exact FP64 L1 from BASE, ascending original error execution ordinal; BASE ordinal=-1",
+    "claim_limits": "one-pass finite candidate pool; no whole-class maximal rescue or unique global closest-head claim",
+    "delta": "exact rational minimum of original strict action margins over protected; empty or nonpositive -> exact BASE fallback",
+    "dtype": "float64",
+    "errors": "all original TRAIN BASE errors whose target is naturally in C128",
+    "failure_labels": "numerical/action rejection, not mathematical infeasibility",
+    "fold_count": 4,
+    "fresh_validation": "rerun all LPs; bit exact parameters, candidate choices, complete heldout logits",
+    "gate": [
+      "PROTECTED correct images>BASE",
+      "every BASE-correct heldout image retained",
+      "equal-group PROTECTED-BASE>0"
+    ],
+    "group_gate_interpretation": "logical consistency under complete preservation, not independent evidence",
+    "models": [
+      "BASE7",
+      "PROTECTED7",
+      "REPAIR_ONLY7"
+    ],
+    "new_features": 0,
+    "numeric_rhs": "float(delta); search goal only, never certified exact delta floor",
+    "primary": "PROTECTED7",
+    "prior_OOF_program_sha256": "d7302eca66c7c6469a7f5ef99a77afeae8af4b25c3a253a1bdcbb2da7af3a715",
+    "protected": "all TRAIN images correctly classified by fixed fold BASE7",
+    "scope": "post-hoc TRAIN128 grouped OOF; no EVAL or deployment",
+    "solver": "scipy.optimize.linprog highs-ds",
+    "solver_options": {
+      "dual_feasibility_tolerance": 1e-09,
+      "presolve": true,
+      "primal_feasibility_tolerance": 1e-09,
+      "time_limit": 30.0
+    },
+    "threshold": "unchanged >0 SWITCH, physical-row tie, complete natural C128",
+    "training_labels": "current fold train_roles only; no heldout role reads before four seals"
+  },
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "deployment_change_authorized": false,
+  "final_ec7_fit_authorized": false,
+  "independent_source_and_synthetic_review": "PASS for final source; no natural optimization in preflight",
+  "new_model_EVAL_result": null,
+  "parent_research_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+    "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+  },
+  "posthoc_TRAIN_OOF_reuse_acknowledged": true,
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_protected_projection_oof4_v1_preflight/adda0ee973c6e3074a172458ead8c77a70b11ee77194624d26e14590995ee7ec/result.json",
+    "sha256": "50f5ff3319f544c50decb457aa4ddfa3e941c7fe515ac0728ea97145e9ff5228"
+  },
+  "recorded_utc": "2026-09-10T10:18:12.213032+00:00",
+  "source_bindings": {
+    "feature_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "fold_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold_manifest.json",
+      "sha256": "0d84b2e3736f562593aeab11f79a90078f791f4b37686b6ce084e674e57d1820"
+    },
+    "gallery_identity_contract": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "gallery_identity_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "gallery_identity_registry": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "input_features": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/feature_records.json",
+      "sha256": "d2a2c7eddc8a1d236d9b5995186c7b80eb550ce33b0344fc0da2516a5486c078"
+    },
+    "input_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1/validation.json",
+      "sha256": "770b9f9ce46f431c7bbe8479e320934c9d1dacdf23f3c3eea650f2812c1a77bf"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_train128_protected_projection_oof4_v1_dev_cpuonly_59m.sbatch",
+      "sha256": "511c9d475116b56f5d085a9022226f2933bce96accf412552f3699d2b3a87f47"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_TRAIN128_PROTECTED_PROJECTION_OOF4_V1_20260910.md",
+      "sha256": "3869c362ab5a1ca701e8e295270ec2260d19ff87c50ab9151ad35044f1640eed"
+    },
+    "prior_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_train128_disagreement_oof4_execution_authority_v1_20260910.json",
+      "sha256": "c1284ccb621b58bb23fb8851ba621474d53e90c69dfdecdf50e1d7d57be16645"
+    },
+    "prior_fold0_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/heldout_roles.json",
+      "sha256": "6132e4420cef7d90a5a7126907d62caba396f0f5dc4fd4cb7c01fc3bf680f9bc"
+    },
+    "prior_fold0_parameters": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/parameters.json",
+      "sha256": "5206baaceec24c0ca6e30cf6179aa68007c604a5a74dc0b425d8802875c2316d"
+    },
+    "prior_fold0_predictions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/predictions.json",
+      "sha256": "239ba7b3055299ea0582167cc6873d1078c4a2e6e12935c49e153825e5bbe3fd"
+    },
+    "prior_fold0_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/seal.json",
+      "sha256": "c7d1b20ab875dd3ed012696e4fb0bba67fe120f27aef9ae3060a71a1fd9c6b20"
+    },
+    "prior_fold0_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/train_roles.json",
+      "sha256": "5dcb7d22bb05cc43a4e0addf4e71db53092b67a3257f1205e6cc30104d110577"
+    },
+    "prior_fold0_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold00/validation.json",
+      "sha256": "7ed26196ee4ef447902848a6b87f7f637ddf172ee4d943f86ced0999fbe5a493"
+    },
+    "prior_fold1_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/heldout_roles.json",
+      "sha256": "f5f2fe7e3b5034ae32459ee8cef7320d2c8a85b76fad9c7e975e01883efbd103"
+    },
+    "prior_fold1_parameters": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/parameters.json",
+      "sha256": "2c973d776928fefc2925e46a2a0d4a229be19b2331e2ec2da94083064d5fc4ed"
+    },
+    "prior_fold1_predictions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/predictions.json",
+      "sha256": "3cac4f095214e6c60ea9839924d9e925a8d14a7a5fa6ebc54e2f9918e93e28ae"
+    },
+    "prior_fold1_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/seal.json",
+      "sha256": "15eb015e9fc9a0f48d851b695e90cffff6976cf94db61a36ff566247061c4657"
+    },
+    "prior_fold1_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/train_roles.json",
+      "sha256": "38af8628d983935046c08916f6b11a272ee50b60728a7f5a67541668caaf00b8"
+    },
+    "prior_fold1_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold01/validation.json",
+      "sha256": "d2a19db30df43ac92160c2f2ab4518b5aac1bb8833bd172c3f1228390da5c124"
+    },
+    "prior_fold2_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/heldout_roles.json",
+      "sha256": "1d7d6459a8986b8789a3ffc0779598c8af24a47ae9eb5c5178b38fb4632b4e7b"
+    },
+    "prior_fold2_parameters": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/parameters.json",
+      "sha256": "ba0de07caaf80fb3d695ef178a9e07ccac32fc3fa8a84cec42055fb24a5b472e"
+    },
+    "prior_fold2_predictions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/predictions.json",
+      "sha256": "99ff3d1db31760fbb3fff8c6e17a1155a8c38bca57d79912d59f63bc7fe24352"
+    },
+    "prior_fold2_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/seal.json",
+      "sha256": "17f80a8b4c128be980ed5c623c3e6f58e0526a54736c6a63b659189a65ff01db"
+    },
+    "prior_fold2_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/train_roles.json",
+      "sha256": "eef7c31281cd596d7579b1681fcbebb05f5848e0991958e97afdd2f11c702e8a"
+    },
+    "prior_fold2_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold02/validation.json",
+      "sha256": "ea88a28ce944750b6fcebbcd84df35d8cebdd59f4045bd47a27e0d2a3d7dbbfb"
+    },
+    "prior_fold3_heldout_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/heldout_roles.json",
+      "sha256": "de7c48f1d53a98187c2cb7966689ec586dd922d365fa48fbe080aeedf755c893"
+    },
+    "prior_fold3_parameters": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/parameters.json",
+      "sha256": "b0dd5b77a406ba446ccb8fb7a47ed1120491d38f39422be3241001a18ec9c2c2"
+    },
+    "prior_fold3_predictions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/predictions.json",
+      "sha256": "5cdb2d52911821c45c90feaba761c1a26fb0a9ef6bbf0f8b93f47e389c33bf5d"
+    },
+    "prior_fold3_seal": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/seal.json",
+      "sha256": "aed53e016f37c79a86e01e820e054814ae2f17bfb4987768ae95e58ba9fc0550"
+    },
+    "prior_fold3_train_roles": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/train_roles.json",
+      "sha256": "00b969d69c3ca0536e617496429a04a3ea0dff7de1335d91db94971fd02cdcdc"
+    },
+    "prior_fold3_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/fold03/validation.json",
+      "sha256": "df5bfbb264e355a49a19e730903341814fb271b19476cb88e2fb8abb49c421fb"
+    },
+    "prior_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_train128_disagreement_oof4_v1.py",
+      "sha256": "d7302eca66c7c6469a7f5ef99a77afeae8af4b25c3a253a1bdcbb2da7af3a715"
+    },
+    "prior_result_bytes": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/result.json",
+      "sha256": "9fdf72f68ab3b1444c1961a9d842b4a8d9267bdfebaee30a081f7b7947a79d0d"
+    },
+    "prior_root_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_train128_disagreement_oof4_v1/validation.json",
+      "sha256": "43ccd7e30a50e52f4c4783d4d17304f9b4ec205bac1ca09674e2a82fca20d8c0"
+    },
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_train128_protected_projection_oof4_v1.py",
+      "sha256": "adda0ee973c6e3074a172458ead8c77a70b11ee77194624d26e14590995ee7ec"
+    },
+    "worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    }
+  },
+  "statistics_contract": {
+    "bootstrap_draws": 10000,
+    "bootstrap_interval": "95% percentile numpy.quantile linear",
+    "bootstrap_seed": 20260910,
+    "p_value_is_gate": false,
+    "paired_comparisons": [
+      [
+        "PROTECTED7",
+        "BASE7"
+      ],
+      [
+        "REPAIR_ONLY7",
+        "BASE7"
+      ],
+      [
+        "PROTECTED7",
+        "REPAIR_ONLY7"
+      ]
+    ],
+    "signflip": "exact two-sided inclusive rational group signflip",
+    "unit": "source group; equal-weight group accuracy difference"
+  },
+  "status": "TRAIN128_PROTECTED_PROJECTION_OOF4_AUTHORIZED"
+}

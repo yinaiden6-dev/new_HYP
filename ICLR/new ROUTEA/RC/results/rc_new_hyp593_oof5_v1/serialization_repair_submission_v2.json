@@ -1,0 +1,76 @@
+{
+  "status": "REPAIR_SUBMITTED_AND_DAG_RECONNECTED",
+  "created_utc": "2026-09-11T02:50:11.566956+00:00",
+  "submitted": {
+    "raw": "5140924",
+    "roma": "5140925"
+  },
+  "repair_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_serialization_repair_authority_v2_20260911.json",
+    "sha256": "89fe4f84d03d717d4e171414cea4553fd0dc0a27f7545dc50c7d8247c6d53a7b"
+  },
+  "cancelled_dead_dependency_job": "5140737",
+  "reused_completed_job": "5140738",
+  "downstream_job_ids_preserved": [
+    "5140739",
+    "5140747",
+    "5140748",
+    "5140750"
+  ],
+  "activation": {
+    "5140924": {
+      "JobId": "5140924",
+      "JobState": "PENDING",
+      "Reason": "None",
+      "TimeLimit": "00:10:00",
+      "ArrayTaskThrottle": "46",
+      "Dependency": "(null)",
+      "Partition": "accelerated"
+    },
+    "5140925": {
+      "JobId": "5140925",
+      "JobState": "PENDING",
+      "Reason": "None",
+      "TimeLimit": "00:15:00",
+      "ArrayTaskThrottle": "46",
+      "Dependency": "afterok:5140924_*(unfulfilled)",
+      "Partition": "accelerated"
+    },
+    "5140739": {
+      "JobId": "5140739",
+      "JobState": "PENDING",
+      "Reason": "None",
+      "TimeLimit": "00:30:00",
+      "ArrayTaskThrottle": "46",
+      "Dependency": "afterok:5140925_*(unfulfilled)",
+      "Partition": "cpuonly"
+    },
+    "5140747": {
+      "JobId": "5140747",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "TimeLimit": "01:59:00",
+      "ArrayTaskThrottle": "5",
+      "Dependency": "afterok:5140739_*(unfulfilled)",
+      "Partition": "cpuonly"
+    },
+    "5140748": {
+      "JobId": "5140748",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "TimeLimit": "00:20:00",
+      "ArrayTaskThrottle": null,
+      "Dependency": "afterok:5140747_*(unfulfilled)",
+      "Partition": "cpuonly"
+    },
+    "5140750": {
+      "JobId": "5140750",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "TimeLimit": "00:20:00",
+      "ArrayTaskThrottle": null,
+      "Dependency": "afterok:5140748(unfulfilled)",
+      "Partition": "cpuonly"
+    }
+  }
+}

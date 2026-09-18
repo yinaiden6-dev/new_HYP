@@ -1,0 +1,39 @@
+{
+  "candidate_count": 128,
+  "claim": "ORIGINAL_RAW_SYSTEM_INTERFACE_REPAIR_ONLY",
+  "formal392_authorized": false,
+  "new_HYP_or_scientific_GO": false,
+  "new_training": false,
+  "query_count": 64,
+  "sources": {
+    "core": {
+      "path": "src/rc_aslo_xf/reference_visibility_pv_lossless_v1.py",
+      "sha256": "f5fcfa1ce6fa6582a3628035e2ba54414185160fa36515fa27fd55d8aa81adcc"
+    },
+    "gate": {
+      "path": "src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "input_manifest": {
+      "path": "results/rc_original_raw_visibility_pv_inputs_v1/manifest.json",
+      "sha256": "2777f72c1eacc3dd46f1ab4ba7f18c0dda23ddcb95a51f4b87c9fecd67dec2d4"
+    },
+    "launcher": {
+      "path": "slurm/rc_original_raw_visibility_pv_replay_v1_dev_cpuonly_59m.sbatch",
+      "sha256": "0d05b712495673cf1a1820f3d46af972b95e67131d140f9cbf8e76dd4495a3f6"
+    },
+    "old_action_replay": {
+      "path": "results/rc_frozen_roma_action_terms_v1/result.json",
+      "sha256": "9af91982d06630da09e84120dce9cdd673d06f0c11cb019750e818dfa59300a6"
+    },
+    "plan": {
+      "path": "plan/RC_ORIGINAL_RAW_VISIBILITY_PV_LOSSLESS_REPAIR_V1_20260909.md",
+      "sha256": "b40707acc5729e9c26d8ad59e6a608b113835ed9b39808dcc9f885c67d76d204"
+    },
+    "program": {
+      "path": "programs/run_rc_original_raw_visibility_pv_replay_v1.py",
+      "sha256": "ef7f498c453cb6d7eae109f7a765e88fcbcbb4588dfe0db8937b7895080fd7b7"
+    }
+  },
+  "status": "RC_ORIGINAL_RAW_VISIBILITY_PV_LOSSLESS_REPLAY_AUTHORIZED"
+}

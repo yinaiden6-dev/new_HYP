@@ -1,0 +1,53 @@
+{
+  "binding_checks": {
+    "evaluator": true,
+    "oof_aggregate": true,
+    "r5_seals": true,
+    "raw_aggregate": true,
+    "source_shards": true
+  },
+  "candidate_recall_gate_checks": {
+    "at_least_five_added_target_identities": false,
+    "at_least_four_added_supergroups": false,
+    "fixed235_fresh_d1_c128_coverage_at_least_90_percent": false,
+    "maximum_added_identity_concentration_at_most_40_percent": false,
+    "old_deep_tail_recovery_at_least_20_percent": false
+  },
+  "checks": {
+    "added_identity_and_group_ledgers_recomputed": true,
+    "c128_boundary_diagnostic_seal": true,
+    "canonical_fold_population": true,
+    "canonical_track_population": true,
+    "claim_boundary": true,
+    "complete_987_case_replay": true,
+    "fixed_235_and_deep_22_reproduced": true,
+    "gate_recomputed": true,
+    "metric_reduction_recomputed": true,
+    "result_internal_checks": true,
+    "source_bindings_exact": true,
+    "target_join_after_seal_and_zero_insertion": true
+  },
+  "claim_level": "INDEPENDENT_INTERNAL_OPENED_CANDIDATE_RECALL_GATE_VALIDATION_NOT_OWNERSHIP_OR_EXTERNAL_CLAIM",
+  "deep22_fresh_d1_c128_recovered_count": 0,
+  "evaluator_sha256": "10e2af44f9a8fab490171eb58f6dc04b57c092ab320692d549a06f49c9c1eff9",
+  "fixed235_fresh_d1_c128_coverage_count": 190,
+  "logical_sha256": "9f1f0bd05f7e752cac32dcfdd6621f203a9bff856f2a07cabef5a133a2f0b598",
+  "metric_checks": {
+    "all987_summary": true,
+    "deep22_metrics": true,
+    "fixed235_metrics": true,
+    "fresh_wrong_summary": true,
+    "group_summaries": true,
+    "raw_to_fresh_top1_transition": true,
+    "raw_wrong_summary": true
+  },
+  "model_update_count": 0,
+  "next_authorized_stage": "N2_FRESH_D1_MATCHED_THREE_ARM_REMATERIALIZATION_CONTRACT",
+  "ownership_GO_or_NO_GO": null,
+  "result_sha256": "0544287c2e3ef327143fa5619f28d5df50ad2a5835004717bde38776aeb81b3d",
+  "scientific_GO_or_NO_GO": null,
+  "status": "N2_CANDIDATE_RECALL_NO_GO_INDEPENDENTLY_VALIDATED",
+  "target_insertion_count": 0,
+  "validator_sha256": "a426905fe4da744652b75f155ae8bcd1f3aea15bbab771bd9440fa84f3062625",
+  "version": "routea_n2_current_runtime_d1_oof_scoring_v1_20260903"
+}

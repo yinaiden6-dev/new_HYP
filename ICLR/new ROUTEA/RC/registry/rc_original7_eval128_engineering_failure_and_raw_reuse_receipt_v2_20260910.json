@@ -1,0 +1,69 @@
+{
+  "status": "RAW_BRIDGE_VALID_ROMA_PREMODEL_VERSION_REPRESENTATION_CHECK_FAILED",
+  "recorded_utc": "2026-09-10T02:26:46.365218+00:00",
+  "parent_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_full_evidence_execution_authority_v1_20260910.json",
+    "sha256": "95a15a6d83a53e70ca2e2750344f42c4c2483f0e9d454260835a2961f1996b6c"
+  },
+  "completed_RAW_job": {
+    "job_id": "5139176",
+    "State": "COMPLETED",
+    "ExitCode": "0:0",
+    "Elapsed": "00:04:31",
+    "Start_Europe_Berlin": "2026-09-10T03:57:31",
+    "End_Europe_Berlin": "2026-09-10T04:02:02",
+    "AllocCPUS": 8,
+    "MaxRSS_batch": "46735456K",
+    "validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/bridge/validation.json",
+      "sha256": "0f9bc42fecce900bf845b06ba1e21f17f09515217143c70d416da48d4459e557"
+    },
+    "receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/bridge/receipt.json",
+      "sha256": "86b4a91b87016d3f69a855080bf3e1e227793482d22ad6e63ac4bbff5fed392e"
+    },
+    "payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/bridge/payload.pt",
+      "sha256": "750144a4a316ab5fff8bf3f8bac11463efb8b12eb926f0f1ed5493070e510d36"
+    }
+  },
+  "failed_RoMa_job": {
+    "job_id": "5139177",
+    "State": "FAILED",
+    "ExitCode": "1:0",
+    "Elapsed": "00:01:13",
+    "Start_Europe_Berlin": "2026-09-10T04:03:43",
+    "End_Europe_Berlin": "2026-09-10T04:04:56",
+    "AllocCPUS": 8,
+    "MaxRSS_batch": "326636K",
+    "error": "RUNTIME_PACKAGE_DRIFT:torch",
+    "failed_before_model_constructor": true
+  },
+  "blocked_array": {
+    "job_id": "5139186",
+    "observed_state_before_cancel": "PENDING",
+    "reason": "DependencyNeverSatisfied",
+    "cancellation_command_exit_code": 0,
+    "new128_work_started": false
+  },
+  "actual_module_versions": {
+    "torch": "2.9.1+cu128",
+    "torchvision": "0.24.1+cu128",
+    "numpy": "2.2.6",
+    "PIL": "12.0.0",
+    "python": "3.13.11"
+  },
+  "actual_distribution_versions": {
+    "torch": "2.9.1",
+    "torchvision": "0.24.1",
+    "numpy": "2.2.6",
+    "Pillow": "12.0.0"
+  },
+  "actual_module_versions_match_profile": true,
+  "torchvision_import_Torch_RNG_unchanged": true,
+  "new128_natural_results": false,
+  "repair_plan": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_EVAL128_RUNTIME_VERSION_COMPAT_REPAIR_V2_20260910.md",
+    "sha256": "0e433184726e862ef017fbf362d16ba262962def5b32b0a13ca4b28d4ac837af"
+  }
+}

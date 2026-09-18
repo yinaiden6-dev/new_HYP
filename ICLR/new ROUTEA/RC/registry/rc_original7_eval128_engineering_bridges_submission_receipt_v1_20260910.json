@@ -1,0 +1,36 @@
+{
+  "status": "ENGINEERING_BRIDGES_SUBMITTED_NOT_NEW128_RESULT",
+  "recorded_utc": "2026-09-10T01:58:14.032974+00:00",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_full_evidence_execution_authority_v1_20260910.json",
+    "sha256": "95a15a6d83a53e70ca2e2750344f42c4c2483f0e9d454260835a2961f1996b6c"
+  },
+  "jobs": [
+    {
+      "job_id": "5139176",
+      "stage": "token_raw_bridge",
+      "dependency_afterok": null,
+      "scontrol": "JobId=5139176 JobName=eval128_raw_bridge UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:42 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-09-10T03:56:59 EligibleTime=2026-09-10T03:56:59 AccrueTime=2026-09-10T03:56:59 StartTime=2026-09-10T03:57:31 EndTime=2026-09-10T04:27:31 Deadline=2026-09-11T18:00:00 SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-10T03:57:31 Scheduler=Backfill Partition=accelerated AllocNode:Sid=hkn1990:241453 ReqNodeList=(null) ExcNodeList=(null) NodeList=hkn0719 BatchHost=hkn0719 NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=96G,node=1,billing=8,gres/gpu=1 AllocTRES=cpu=8,mem=96G,node=1,billing=8,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_token_raw_bridge_v1_30m.sbatch SubmitLine=sbatch --parsable --deadline=2026-09-11T18:00:00 slurm/rc_original7_eval128_token_raw_bridge_v1_30m.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/rc_original7_eval128_token_raw_bridge-5139176.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/rc_original7_eval128_token_raw_bridge-5139176.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+      "submitted_script": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_token_raw_bridge_submitted_5139176.sh",
+        "sha256": "f327444d259e7d784870d0ac6483c1ba54eb030180fd92f3ca7903f1138bd7b9"
+      },
+      "launcher_spool_exact": true
+    },
+    {
+      "job_id": "5139177",
+      "stage": "roma_bridge",
+      "dependency_afterok": "5139176",
+      "scontrol": "JobId=5139177 JobName=e128_roma_bridge UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:5139176(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-09-10T03:57:16 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=2026-09-11T18:00:00 SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-10T03:57:16 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1990:241929 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=96G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_eval128_roma_bridge_v1_accelerated_30m.sbatch SubmitLine=sbatch --parsable --deadline=2026-09-11T18:00:00 --dependency=afterok:5139176 slurm/rc_original7_eval128_roma_bridge_v1_accelerated_30m.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/e128_roma_bridge-5139177_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/e128_roma_bridge-5139177_4294967294.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+      "submitted_script": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_bridge_submitted_5139177.sh",
+        "sha256": "46fa8bd8fb8ac327593ef2356542645bbed2789772e8a0766c8f260bb8e0a80a"
+      },
+      "launcher_spool_exact": true
+    }
+  ],
+  "Slurm_deadline_Europe_Berlin": "2026-09-11T18:00:00",
+  "only_already_used_TRAIN56_authorized_in_bridge_jobs": true,
+  "new128_GPU_arrays_submitted": false,
+  "continuous_scheduler_monitoring": false
+}

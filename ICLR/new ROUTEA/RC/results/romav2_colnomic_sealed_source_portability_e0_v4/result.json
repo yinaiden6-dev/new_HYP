@@ -1,0 +1,118 @@
+{
+  "access": {
+    "opened_model_scoring_count": 4,
+    "opened_new_difficult_train_pixel_decode_count": 4,
+    "retrieval_result_read_count": 0,
+    "sealed_model_scoring_count": 0,
+    "sealed_pixel_decode_count": 0,
+    "target_label_read_count": 0
+  },
+  "bindings": {
+    "gallery_cache_sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc",
+    "manifest_receipt_sha256": "4f6208fdf574e739c2ff99fd1b23e6ce6b4e757ca8753580dfb6f874551696a4",
+    "new_difficult_v2_builder_sha256": "3d0259436eb4bb9d98f107cd0778cf6b845ef46a267e50ea2a493fcb91cf0de5",
+    "predecessor_sha256": "99e6cf6834dd91de12ca04e94ead0e8af88f7a2ea3fc2bb39cf8e95503ca8320"
+  },
+  "checks": {
+    "all_query_gates_pass": false,
+    "four_fixed_opened_queries": true,
+    "no_target_or_result_read": true,
+    "sealed_model_scoring_zero": true,
+    "sealed_pixel_decode_zero": true,
+    "two_identity_oriented_and_two_native": true
+  },
+  "claim_level": "OPENED_RESULT_BLIND_RUNTIME_PORTABILITY_ONLY",
+  "frozen_thresholds": {
+    "c128_set_overlap_min": 120,
+    "expected_axis_score_pearson_min": 0.999,
+    "token_mean_cosine_min": 0.95,
+    "top10_set_overlap_min": 8,
+    "top1_exact": true
+  },
+  "logical_sha256": "bd7dce4580ef898025f1fbc85a658c73b4a606b4095bc32693d4298604d8f378",
+  "next_authorized_stage": null,
+  "rows": [
+    {
+      "c128_set_overlap": 127,
+      "execution_ordinal": 78,
+      "expected_axis_score_pearson": 0.9998321128449882,
+      "expected_grid_shape": [
+        24,
+        32
+      ],
+      "grid_exact": true,
+      "grid_shape": [
+        24,
+        32
+      ],
+      "pass": true,
+      "query_id": "NDV2-009-P03",
+      "source_exif_orientation": 1,
+      "token_mean_cosine": 0.9595375657081604,
+      "top10_set_overlap": 10,
+      "top1_exact": true
+    },
+    {
+      "c128_set_overlap": 127,
+      "execution_ordinal": 83,
+      "expected_axis_score_pearson": 0.9995800571494048,
+      "expected_grid_shape": [
+        24,
+        32
+      ],
+      "grid_exact": true,
+      "grid_shape": [
+        24,
+        32
+      ],
+      "pass": false,
+      "query_id": "NDV2-011-P04",
+      "source_exif_orientation": 1,
+      "token_mean_cosine": 0.9609646201133728,
+      "top10_set_overlap": 10,
+      "top1_exact": false
+    },
+    {
+      "c128_set_overlap": 127,
+      "execution_ordinal": 88,
+      "expected_axis_score_pearson": 0.9995417330471115,
+      "expected_grid_shape": [
+        32,
+        24
+      ],
+      "grid_exact": true,
+      "grid_shape": [
+        32,
+        24
+      ],
+      "pass": true,
+      "query_id": "NDV2-014-P01",
+      "source_exif_orientation": 6,
+      "token_mean_cosine": 0.9665842652320862,
+      "top10_set_overlap": 10,
+      "top1_exact": true
+    },
+    {
+      "c128_set_overlap": 126,
+      "execution_ordinal": 72,
+      "expected_axis_score_pearson": 0.9996711121280926,
+      "expected_grid_shape": [
+        32,
+        24
+      ],
+      "grid_exact": true,
+      "grid_shape": [
+        32,
+        24
+      ],
+      "pass": true,
+      "query_id": "NDV2-007-P01",
+      "source_exif_orientation": 6,
+      "token_mean_cosine": 0.9740741848945618,
+      "top10_set_overlap": 10,
+      "top1_exact": true
+    }
+  ],
+  "schema_version": "rc_romav2_colnomic_sealed_source_portability_e0_v4_20260831",
+  "status": "ROMAV2_COLNOMIC_SEALED_SOURCE_PORTABILITY_E0_V4_ABORT"
+}

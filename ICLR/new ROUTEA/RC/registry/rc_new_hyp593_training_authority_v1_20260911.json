@@ -1,0 +1,65 @@
+{
+  "status": "H593_TRAINING_AUTHORIZED_WITH_PREFLIGHT_BARRIER",
+  "created_utc": "2026-09-10T23:53:59.101963+00:00",
+  "public_sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp593_oof5_v1.py",
+      "sha256": "570360aeffa59b45ad6a7ce21d300dcc3a2ec0a3ea2a2b2fb0c14023b190a966"
+    },
+    "adapter": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_new_hyp593_inputs_v1.py",
+      "sha256": "f4004852e7e384576a3e7cd37bf408a1e9877f87b5f8fc04d0b5b3bb38d763a5"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_NEW_HYP593_GROUPED_OOF5_V1_20260911.md",
+      "sha256": "2492ec1a39e9e5c52e5d33dc468ec2fac64e0f8172076ec4abf1b7563e88cd3b"
+    },
+    "worker": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/worker_manifest.json",
+      "sha256": "fac2f33b8aa678a4de3f2b8e60dc31bfdc310bfaa754f1a06ef2e5157abda340"
+    },
+    "split": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/split_manifest.json",
+      "sha256": "be29f82bc404b44e713f98a3e099117f183de0ef0ca80e7f11ddca5bcf8d1d5c"
+    },
+    "feature_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_feature_authority_v1_20260911.json",
+      "sha256": "f891aabaef996a7984926987cbcb23814632574ede395c759015194a251b2860"
+    },
+    "gallery_source_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/conditional_rep_sources.py",
+      "sha256": "ba698021bd02fd3721bf5a9fa9fc66ee78c36596da54107cb0e18ab5dcacfe56"
+    },
+    "gallery_identity_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "gallery_identity_registry": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "fit_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp593_fit_v1.sbatch",
+      "sha256": "30c9cb93df7b72e71d6f660a6c9dd7079808349b58e9d78aa689710e76f962e6"
+    },
+    "join_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_new_hyp593_join_v1.sbatch",
+      "sha256": "61a56cb75c5226137cc0a7438adde345bc63df1a53e615207e393ac2873c95e1"
+    },
+    "roles_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles_manifest.json",
+      "sha256": "1028d869c392f92341227533d1a4efc3988a6468416b0309d8575cd6641e3355"
+    }
+  },
+  "primary_comparison": "CONDITIONAL4 vs BASE7_ALL",
+  "models": [
+    "BASE7_SMALL128",
+    "BASE7_ALL",
+    "CONSTANT1",
+    "CONDITIONAL4"
+  ],
+  "steps": 2000,
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "old_EVAL128_not_direct_comparator": true,
+  "scalar_max_ties": "torch.amax distributes gradients across ties as original scalar values.max"
+}

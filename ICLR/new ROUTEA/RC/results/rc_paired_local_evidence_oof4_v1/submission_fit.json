@@ -1,0 +1,22 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_paired_local_evidence_oof4_authority_v2_20260912.json",
+    "sha256": "ef38ab76d10f9fa2e85bb01c8431b2390b1e1889bad662dd0661fb3a4fad9191"
+  },
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=accelerated",
+    "--array=0-3%4",
+    "--dependency=afterok:5142610:5142611",
+    "--job-name=plocal_fit",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_paired_local_evidence_oof4_v1.sbatch",
+    "fit"
+  ],
+  "job_id": "5142612",
+  "scheduler_at_submission": "JobId=5142612 ArrayJobId=5142612 ArrayTaskId=0-3%4 ArrayTaskThrottle=4 JobName=plocal_fit UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=afterok:5142610_*(unfulfilled),afterok:5142611_*(unfulfilled) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-12T09:28:28 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-12T09:28:28 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1990:3971928 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_paired_local_evidence_oof4_v1.sbatch SubmitLine=sbatch --parsable --partition=accelerated --array=0-3%4 --dependency=afterok:5142610:5142611 --job-name=plocal_fit /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_paired_local_evidence_oof4_v1.sbatch fit WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/paired-local-5142612_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/paired-local-5142612_4294967294.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8\n",
+  "spool": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_paired_local_evidence_oof4_v1/fit_submitted.sbatch",
+    "sha256": "af4ce354b89a4f56c00b933d5f33d1b95500d8238c21cbb0c40a00033dae0fe1"
+  }
+}

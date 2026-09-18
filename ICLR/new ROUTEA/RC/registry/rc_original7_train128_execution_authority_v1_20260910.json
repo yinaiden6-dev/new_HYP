@@ -1,0 +1,943 @@
+{
+  "DAG": [
+    "token_raw_shard[0..15]",
+    "raw_aggregate",
+    "roma_shard[0..15]",
+    "qualify_train"
+  ],
+  "additional_TRAIN_images": 32,
+  "all_original_FULL32_input_bit_parity_required": true,
+  "allowed_stages": [
+    "token_raw_shard",
+    "raw_aggregate",
+    "roma_shard",
+    "qualify_train"
+  ],
+  "continued_user_objective": "Improve or explain reference retrieval while preserving original successes; continuation under active research authority",
+  "cutoff_UTC": "2026-09-11T16:00:00+00:00",
+  "deployment_changed": false,
+  "identity_count": 32,
+  "implementation_decision": "Expand images only within original TRAIN/PAIR identities; do not transfer EVAL identities or labels to TRAIN",
+  "max_GPU_array_concurrency": 16,
+  "new_EVAL_authorized": false,
+  "new_FULL_control_shift": "current half-axis roll; do not claim V1 PAIR control bits preserved in new FULL context",
+  "new_training_authorized": false,
+  "original_PAIR64_auxiliary_features_remain_unchanged_for_later_fits": true,
+  "parent_execution_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_full_evidence_execution_authority_v2_compat_20260910.json",
+    "sha256": "bc671f19d6b975b96e1e6541ac11356889bac9f8e9f138f8977520b9a888a519"
+  },
+  "parent_research_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+    "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+  },
+  "postjoin_source_bindings": {
+    "TRAIN_curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/curator_roles.json",
+      "sha256": "240be57ffe824e8e029e83052a8b608166782edfdf1df8327bec164621de8ca1"
+    }
+  },
+  "preflight_statuses": {
+    "cpu": "ORIGINAL7_TRAIN128_INPUTS_CPU_PREFLIGHT_PASS",
+    "roma": "RC_ORIGINAL7_TRAIN128_ROMA_SOURCE_SYNTHETIC_PREFLIGHT_PASS",
+    "token_raw": "RC_ORIGINAL7_TRAIN128_TOKEN_RAW_PREFLIGHT_PASS"
+  },
+  "preserved_original_FULL_queries": 32,
+  "preserved_original_PAIR_queries": 64,
+  "primary_model": "ORIGINAL7_NATIVE7",
+  "protected_inputs_released": false,
+  "purpose": "Materialize expanded retrieval-only TRAIN inputs; no head fitting or EVAL scoring in this authority",
+  "queries_per_shard": 8,
+  "query_count": 128,
+  "recorded_utc": "2026-09-10T04:28:23.214377+00:00",
+  "reused_engineering_bridges": {
+    "roma": {
+      "payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/bridge/payload.pt",
+        "sha256": "8d271c5d1c996aaa58cb55d28b6f34468bfb1242af3ac01794d9755b86fe8fb7"
+      },
+      "receipt": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/bridge/receipt.json",
+        "sha256": "871a55aae3c6cad8c4d925832c8bff054f21ab4454a68dcf4217992a5bf117b2"
+      },
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/bridge/validation.json",
+        "sha256": "b9ef254ffd4b3919d9ac3764f80654abc8b98b5bf0dcf943784063ad7eaede6c"
+      }
+    },
+    "token_raw": {
+      "payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/bridge/payload.pt",
+        "sha256": "750144a4a316ab5fff8bf3f8bac11463efb8b12eb926f0f1ed5493070e510d36"
+      },
+      "receipt": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/bridge/receipt.json",
+        "sha256": "86b4a91b87016d3f69a855080bf3e1e227793482d22ad6e63ac4bbff5fed392e"
+      },
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/bridge/validation.json",
+        "sha256": "0f9bc42fecce900bf845b06ba1e21f17f09515217143c70d416da48d4459e557"
+      }
+    }
+  },
+  "scheduler_deadline_Europe_Berlin": "2026-09-11T18:00:00",
+  "shards": 16,
+  "source_bindings": {
+    "cpu_current_ORIGINAL7_parameters": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_shared_query_target_prior_native7_c_head_parameter_seal_v1_20260909.json",
+      "sha256": "42c8e503874cb807ca7085a39c802c016de2b1b8c6124bb17a56ed6f06bd174b"
+    },
+    "cpu_feature_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "cpu_gallery_identity_contract": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "cpu_gallery_identity_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "cpu_gallery_identity_registry": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "cpu_launcher_qualify_train": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_train128_qualify_train_v1_dev_cpuonly_30m.sbatch",
+      "sha256": "b4cf2ab079db9e83f1bf0fb3605189f69d9f5c7c7ccd47ae07080cbf8dd0184a"
+    },
+    "cpu_launcher_raw_aggregate": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_train128_raw_aggregate_v1_dev_cpuonly_15m.sbatch",
+      "sha256": "973298d03d18e4143d8c74be76ead9a371c1dfd1fd11ddfdae50bbab9f0ebac1"
+    },
+    "cpu_legacy_C4_score_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/reference_visibility_pv_lossless_v1.py",
+      "sha256": "f5fcfa1ce6fa6582a3628035e2ba54414185160fa36515fa27fd55d8aa81adcc"
+    },
+    "cpu_legacy_full32_parity_index": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/legacy_full32_parity_index.json",
+      "sha256": "31c337c676dc17d38fb85cdcb902b3aeddfe104aebbb6840baeaaba5837c6b03"
+    },
+    "cpu_metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/independent_metadata_validation.json",
+      "sha256": "03176db194d4b5f9d68cc226a1ce48b019675e99b037205bae71552202fa907d"
+    },
+    "cpu_parent_qualified_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_original7_eval128_full_evidence_v2_compat.py",
+      "sha256": "806a8506693e2d9e88aba4331702c2d2c8df58e4d3f693b9b30e0601de49304c"
+    },
+    "cpu_plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_TRAIN128_INPUTS_V1_20260910.md",
+      "sha256": "5aa9439be6702d8d50dde2a2752665a90348bd55faaf8d9ff32baa661927de94"
+    },
+    "cpu_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_inputs_v1_preflight/20a817fae2c05060f1aa9595d578df52844aaa4a0ca47dc6f177bfb747a2ca86/result.json",
+      "sha256": "1ae8af643c47a46e49e6a887ff5b74ed041581707c63ecdadbfe669c195983e2"
+    },
+    "cpu_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_original7_train128_input_qualification_v1.py",
+      "sha256": "20a817fae2c05060f1aa9595d578df52844aaa4a0ca47dc6f177bfb747a2ca86"
+    },
+    "cpu_worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    },
+    "execution_common_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_original7_train128_execution_common_v1.py",
+      "sha256": "845e2a262269003799b6f8612be0eacb8bcab301d7b43760ed2fad1c0a881d50"
+    },
+    "execution_plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_TRAIN128_INPUTS_V1_20260910.md",
+      "sha256": "5aa9439be6702d8d50dde2a2752665a90348bd55faaf8d9ff32baa661927de94"
+    },
+    "parent_execution_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_full_evidence_execution_authority_v2_compat_20260910.json",
+      "sha256": "bc671f19d6b975b96e1e6541ac11356889bac9f8e9f138f8977520b9a888a519"
+    },
+    "parent_research_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_research_extension_authority_v1_20260909.json",
+      "sha256": "b9bdcd4b1c847fc22755a2e5565f30a4e77f3bda4f92e4273769601caf10ceda"
+    },
+    "post_submission_continuation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_retrieval_only_post_submission_continuation_addendum_v1_20260909.json",
+      "sha256": "822135bc29e5270fe4222b57be3643abfea61668688eb2f8587e9d461a4c0a7d"
+    },
+    "roma_common_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_original7_train128_execution_common_v1.py",
+      "sha256": "845e2a262269003799b6f8612be0eacb8bcab301d7b43760ed2fad1c0a881d50"
+    },
+    "roma_legacy_full32_parity_index": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/legacy_full32_parity_index.json",
+      "sha256": "31c337c676dc17d38fb85cdcb902b3aeddfe104aebbb6840baeaaba5837c6b03"
+    },
+    "roma_metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/independent_metadata_validation.json",
+      "sha256": "03176db194d4b5f9d68cc226a1ce48b019675e99b037205bae71552202fa907d"
+    },
+    "roma_parent_qualified_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_eval128_roma_v2_runtime_compat.py",
+      "sha256": "f3514841ca1d1fb47a78dbe571955465fe12b7e09c88cb2175862d2967d420df"
+    },
+    "roma_plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_TRAIN128_INPUTS_V1_20260910.md",
+      "sha256": "5aa9439be6702d8d50dde2a2752665a90348bd55faaf8d9ff32baa661927de94"
+    },
+    "roma_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/preflight/e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e/result.json",
+      "sha256": "e4bee154d376d993860f7c487eadaa0161c15cbbc3c054fea622d83fff3dbc7c"
+    },
+    "roma_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_roma_v1.py",
+      "sha256": "e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e"
+    },
+    "roma_shards_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_train128_roma_shards_v1_accelerated_30m.sbatch",
+      "sha256": "4bb3674508aaa69f4c82ed8218c5914527a09f52a011051aa369bf5ab5b4896f"
+    },
+    "roma_source_profile": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+      "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+    },
+    "roma_worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    },
+    "token_raw_adapter_weights": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_model.safetensors",
+      "sha256": "aa6cba28368342ac6b235f49fcc3e0a5bd891d56df490c12bcbc6dc52c8377f3"
+    },
+    "token_raw_base_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/config.json",
+      "sha256": "fcf7636197a793fef485bd846052cb4a04a5452e9457d35cdb9f27b0b816cd80"
+    },
+    "token_raw_base_generation_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/generation_config.json",
+      "sha256": "12a853a9c0f468c4bd321e1cf6b0d5929095eb01a078bf47fb2deffec1a4099e"
+    },
+    "token_raw_base_model_safetensors_index_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model.safetensors.index.json",
+      "sha256": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010"
+    },
+    "token_raw_base_weights_00": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00001-of-00007.safetensors",
+      "sha256": "68830d2490050e8390ee6b0567927c7da1156e8ec1f25ab38cd990193f4c1499"
+    },
+    "token_raw_base_weights_01": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00002-of-00007.safetensors",
+      "sha256": "ab83ce2927a5216474d05c4ff9e9f042ef0ef38451ccd7ba4cc57e0b3afd515f"
+    },
+    "token_raw_base_weights_02": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00003-of-00007.safetensors",
+      "sha256": "e823cbdbda84c451acea187716a2e2b5d0093c5b1c0808c6efb884a7fbfb4b93"
+    },
+    "token_raw_base_weights_03": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00004-of-00007.safetensors",
+      "sha256": "2925c522612eefd7d12ec72bf6bdd9b13f095610bf80189c3fd7c86d37003089"
+    },
+    "token_raw_base_weights_04": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00005-of-00007.safetensors",
+      "sha256": "ef55d6f545f07fe9f5caf919e64c6e191225e0025061de722ac306b205e81df4"
+    },
+    "token_raw_base_weights_05": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00006-of-00007.safetensors",
+      "sha256": "58116086116501f6337cb244dd51ddf1e327938bbfc6075508095cf1aca0cc46"
+    },
+    "token_raw_base_weights_06": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00007-of-00007.safetensors",
+      "sha256": "d639238d6a4340a76150c1157e78cdb56d79441cd8cb8b90e25d8f16ade7e890"
+    },
+    "token_raw_bridge_expected_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard03/payload.pt",
+      "sha256": "5c05fb4cf96bda8214fe4dbfdd0d237e90ef9fa571713f034e1005005182ca5d"
+    },
+    "token_raw_common_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_original7_train128_execution_common_v1.py",
+      "sha256": "845e2a262269003799b6f8612be0eacb8bcab301d7b43760ed2fad1c0a881d50"
+    },
+    "token_raw_cpu_probe_current_0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0056/arrays.npz",
+      "sha256": "68a9aa51360d069ecd1509feda0d624ae98287af0320ad148081c9c88c85ec6f"
+    },
+    "token_raw_cpu_probe_current_1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0066/arrays.npz",
+      "sha256": "8158c0f15083017496428f786072e84c6c0ae1b34c8e4ac11ac28f42ad8db8db"
+    },
+    "token_raw_cpu_probe_current_2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0072/arrays.npz",
+      "sha256": "b007ad4c06f2ef324ebb2edc60bf19d081228437180e14c185b1cedb76b5655b"
+    },
+    "token_raw_cpu_probe_current_3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0075/arrays.npz",
+      "sha256": "e923e0be8130bc8aa3a99ef3e0e3d2cd75ae1f1980834c6975301be43a21e0c0"
+    },
+    "token_raw_cpu_probe_legacy_0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0101.pt",
+      "sha256": "3b86c26ef73f5db751d9a40187765c61f07c766bec9aa397cfd89e0e646d5347"
+    },
+    "token_raw_cpu_probe_legacy_1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0128.pt",
+      "sha256": "14981cfe78bf16005fc7eed2d97139a87f6f2344555dc0780173df971a7031d7"
+    },
+    "token_raw_cpu_probe_legacy_2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0146.pt",
+      "sha256": "8680a4022b59ddd43ef8c50cfff25d729e43b92ac92d1c6db696d8c10d2b7daf"
+    },
+    "token_raw_cpu_probe_legacy_3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/l0_natural_hardneg_v2_redacted_query_tokens_v1/rows/0149.pt",
+      "sha256": "979b5bfde84f72c129331d18e9353856dd9dad8d5d6853eeec13735d395c7ec6"
+    },
+    "token_raw_encoder_class_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/colpali_engine/models/qwen2_5/colqwen2_5/modeling_colqwen2_5.py",
+      "sha256": "02abc346a45834a68efa5e24e26516cf25a5a9128e1b2929477fcb82fbcdd8a9"
+    },
+    "token_raw_fullrank_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_romav2_colnomic_sealed_source_e0_v2.py",
+      "sha256": "2f43fcb16b4ed3345af5799aaf5f458ea87aaddce551b6fb738e7ea0c2c20327"
+    },
+    "token_raw_gallery_cache": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt",
+      "sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc"
+    },
+    "token_raw_gallery_identity_contract": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/protocols/L0_C0_GALLERY_IDENTITY_REPAIR_CONTRACT_V1_20260808.json",
+      "sha256": "867128101656c41438e6d5c89695ea78bc922c0a59d5a83f78f567364a3fe650"
+    },
+    "token_raw_gallery_identity_core": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "token_raw_gallery_identity_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/gallery_identity_repair_v1.json",
+      "sha256": "9dc7df14922b88afeba0ee321c168f92ed363cfc3695c7579e662985d9767c3f"
+    },
+    "token_raw_gallery_source_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/conditional_rep_sources.py",
+      "sha256": "ba698021bd02fd3721bf5a9fa9fc66ee78c36596da54107cb0e18ab5dcacfe56"
+    },
+    "token_raw_legacy_encoder_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_romav2_colnomic_current_runtime_bridge_shard_v1.py",
+      "sha256": "3df9c314df8e1da6fa9b4f60c41e3db7117c6cad3784f35a012c76fdb2fde03e"
+    },
+    "token_raw_legacy_full32_parity_index": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/legacy_full32_parity_index.json",
+      "sha256": "31c337c676dc17d38fb85cdcb902b3aeddfe104aebbb6840baeaaba5837c6b03"
+    },
+    "token_raw_library_peft_tuners_lora_layer": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/peft/tuners/lora/layer.py",
+      "sha256": "e8a47a49cf69f92ded68bf7ab286aeaf068f0ac809ab3465ad16f78a8f9f8b63"
+    },
+    "token_raw_library_transformers_models_qwen2_5_vl_modeling_qwen2_5_vl": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py",
+      "sha256": "03a5b584314399b60280edd6b882862acfc280f8cab4e1d7f59ade998e1f8c91"
+    },
+    "token_raw_library_transformers_models_qwen2_5_vl_processing_qwen2_5_vl": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py",
+      "sha256": "4d66c1201ea82d0ceb3bb60e17f287e209f82adf28b51240ae7d7822dabf64a0"
+    },
+    "token_raw_library_transformers_models_qwen2_vl_image_processing_qwen2_vl": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py",
+      "sha256": "de5859892f04c64f3e79c9d318842ac0040000788e43870997bd1ec6565c02bb"
+    },
+    "token_raw_metadata_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/independent_metadata_validation.json",
+      "sha256": "03176db194d4b5f9d68cc226a1ce48b019675e99b037205bae71552202fa907d"
+    },
+    "token_raw_model_adapter_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_config.json",
+      "sha256": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c"
+    },
+    "token_raw_model_added_tokens_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/added_tokens.json",
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    "token_raw_model_chat_template_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/chat_template.json",
+      "sha256": "94174d7176c52a7192f96fc34eb2cf23c7c2059d63cdbfadca1586ba89731fb7"
+    },
+    "token_raw_model_merges_txt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/merges.txt",
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "token_raw_model_preprocessor_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/preprocessor_config.json",
+      "sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+    },
+    "token_raw_model_processor_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/processor_config.json",
+      "sha256": "67abb3983388156ccd44dd31d1ad75bb45b94c3d25b94fe2b178028ea3e0b60c"
+    },
+    "token_raw_model_special_tokens_map_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/special_tokens_map.json",
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    "token_raw_model_tokenizer_config_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/tokenizer_config.json",
+      "sha256": "8cf7beeb5bffaaf7347b6d6ebf2f5c114ca75ab0c6d62ab6e6f19fafbd70cb7d"
+    },
+    "token_raw_model_tokenizer_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/tokenizer.json",
+      "sha256": "5eee858c5123a4279c3e1f7b81247343f356ac767940b2692a928ad929543214"
+    },
+    "token_raw_model_vocab_json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "token_raw_old_FULL_271_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard02/payload.pt",
+      "sha256": "6f239523cc7d53a545b7eeb6229d3360444c72b5e9bbeba431a5ea333c0a1d71"
+    },
+    "token_raw_old_FULL_271_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0271/metadata.json",
+      "sha256": "2f99d2338ae0a338637d05724bfca19e127588d7659fb8408f086b93ef06980a"
+    },
+    "token_raw_old_FULL_271_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard02/payload.pt",
+      "sha256": "9108abca569b840275a396762cc0c0a435731dd1238a9474cd801e6c0baf92d3"
+    },
+    "token_raw_old_FULL_284_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard04/payload.pt",
+      "sha256": "dc388be865d83af7add5f011490cbc312e792a10dba28c027a4e2dde2de72cba"
+    },
+    "token_raw_old_FULL_284_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0284/metadata.json",
+      "sha256": "ea2a0b403c928591c1f46031606b676fbfa86521ca902b8ca68efb10380e6b05"
+    },
+    "token_raw_old_FULL_284_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard04/payload.pt",
+      "sha256": "c769f37ae9ecd1e79d1fc0924da6d2f3feb623014292224151723374d4c25139"
+    },
+    "token_raw_old_FULL_285_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard03/payload.pt",
+      "sha256": "c70f75ba1023ab0366c3509e4597c5289dfacc274dfa58b535e9ac3b9fc7b8fc"
+    },
+    "token_raw_old_FULL_285_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0285/metadata.json",
+      "sha256": "675ac97ec6912aec1d0cc560d16790b55e3ccb678a2496494a2eab017e0a0e0f"
+    },
+    "token_raw_old_FULL_285_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard03/payload.pt",
+      "sha256": "5c05fb4cf96bda8214fe4dbfdd0d237e90ef9fa571713f034e1005005182ca5d"
+    },
+    "token_raw_old_FULL_341_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard01/payload.pt",
+      "sha256": "7292404f292455ea4fa899c8d7b0eaa0db0da5c1c513c6fe9b3fdd0bab1fcf0e"
+    },
+    "token_raw_old_FULL_341_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0341/metadata.json",
+      "sha256": "a9a1c2aee892ae5012a4d6e9dc526320dfe61d9ae2452f59edd1de21dea07066"
+    },
+    "token_raw_old_FULL_341_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard01/payload.pt",
+      "sha256": "f5e85dcf93ecce09705ce163f5aba91fe425d81212f5a7fc02dc64dc5fa39f1c"
+    },
+    "token_raw_old_FULL_344_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard07/payload.pt",
+      "sha256": "95b6328ad545e182b200aad3fd80773e574e32ee82b74cd9f8b15d55cc16170e"
+    },
+    "token_raw_old_FULL_344_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0344/metadata.json",
+      "sha256": "8a33c0c8b7324a45bccc9049258a26747f7db25f2013df3fb16c90b64f16d56a"
+    },
+    "token_raw_old_FULL_344_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard07/payload.pt",
+      "sha256": "aadc16d8b4905361d1aad640d189c00c416900ee9debef573a8fb25c57685d74"
+    },
+    "token_raw_old_FULL_345_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard07/payload.pt",
+      "sha256": "95b6328ad545e182b200aad3fd80773e574e32ee82b74cd9f8b15d55cc16170e"
+    },
+    "token_raw_old_FULL_345_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0345/metadata.json",
+      "sha256": "5fe85071d68f737578791d2dbf25eb2cdfbb36aef867cd3c9621490b06b7227b"
+    },
+    "token_raw_old_FULL_345_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard07/payload.pt",
+      "sha256": "aadc16d8b4905361d1aad640d189c00c416900ee9debef573a8fb25c57685d74"
+    },
+    "token_raw_old_FULL_356_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard02/payload.pt",
+      "sha256": "6f239523cc7d53a545b7eeb6229d3360444c72b5e9bbeba431a5ea333c0a1d71"
+    },
+    "token_raw_old_FULL_356_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0356/metadata.json",
+      "sha256": "87e428dec317918b68fc3a1640bfaabbf59b7f3d47c85286d3c55909fef23f16"
+    },
+    "token_raw_old_FULL_356_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard02/payload.pt",
+      "sha256": "9108abca569b840275a396762cc0c0a435731dd1238a9474cd801e6c0baf92d3"
+    },
+    "token_raw_old_FULL_357_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard02/payload.pt",
+      "sha256": "6f239523cc7d53a545b7eeb6229d3360444c72b5e9bbeba431a5ea333c0a1d71"
+    },
+    "token_raw_old_FULL_357_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0357/metadata.json",
+      "sha256": "42a8f6b4a9479074b9e33211cc1df4fc3616d3235dc44744fbcb37b4ac4c0d35"
+    },
+    "token_raw_old_FULL_357_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard02/payload.pt",
+      "sha256": "9108abca569b840275a396762cc0c0a435731dd1238a9474cd801e6c0baf92d3"
+    },
+    "token_raw_old_FULL_358_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard04/payload.pt",
+      "sha256": "dc388be865d83af7add5f011490cbc312e792a10dba28c027a4e2dde2de72cba"
+    },
+    "token_raw_old_FULL_358_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0358/metadata.json",
+      "sha256": "42cf40a8d82fa80719a0b6e03b9e4b88161b9ce6a124d127ffe74ac659d6a672"
+    },
+    "token_raw_old_FULL_358_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard04/payload.pt",
+      "sha256": "c769f37ae9ecd1e79d1fc0924da6d2f3feb623014292224151723374d4c25139"
+    },
+    "token_raw_old_FULL_359_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard04/payload.pt",
+      "sha256": "dc388be865d83af7add5f011490cbc312e792a10dba28c027a4e2dde2de72cba"
+    },
+    "token_raw_old_FULL_359_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0359/metadata.json",
+      "sha256": "82e18804419431494ce9dfa442b1ff938d09c8d37aa877c874b840a7cf9cf4a8"
+    },
+    "token_raw_old_FULL_359_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard04/payload.pt",
+      "sha256": "c769f37ae9ecd1e79d1fc0924da6d2f3feb623014292224151723374d4c25139"
+    },
+    "token_raw_old_FULL_364_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard00/payload.pt",
+      "sha256": "3f2e5f346c4f8b9a61158fd2685ace9685037b1a6f26939906264ae21602ac3a"
+    },
+    "token_raw_old_FULL_364_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0364/metadata.json",
+      "sha256": "1a064cac63bb58c2658ccc0b9a64e85ac9d09e6c6ec138c4dddc8c95b6f10ee3"
+    },
+    "token_raw_old_FULL_364_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard00/payload.pt",
+      "sha256": "b0af181677c4214234a070c6c8e10a15e3a4b57edca1d5291b8a47f41e7a8394"
+    },
+    "token_raw_old_FULL_368_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard06/payload.pt",
+      "sha256": "4202032f1ff038b50f2c98ea09c8b503efe3fde1d2984f08968bd027796c4238"
+    },
+    "token_raw_old_FULL_368_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0368/metadata.json",
+      "sha256": "016d83a70729435b42b1a0986b6a86eef77c4025aeba1e95aab48010b6857fd2"
+    },
+    "token_raw_old_FULL_368_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard06/payload.pt",
+      "sha256": "d604b18b1273684e57ddfb2924db3622134145891250599d7c1da1c77aa40d27"
+    },
+    "token_raw_old_FULL_371_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard05/payload.pt",
+      "sha256": "101c5942c3f0f725e16555ea9f337f15351d58902231a7ba7f303a9575c0d93a"
+    },
+    "token_raw_old_FULL_371_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0371/metadata.json",
+      "sha256": "8a9424dd1f9db5555297332465f3603543b430819495db72ab2494fbcf8d4734"
+    },
+    "token_raw_old_FULL_371_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard05/payload.pt",
+      "sha256": "10cb8dbff5fa37f6992055be9e427146164dca06facc6d4c3fa51d05d9b4973c"
+    },
+    "token_raw_old_FULL_394_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard00/payload.pt",
+      "sha256": "3f2e5f346c4f8b9a61158fd2685ace9685037b1a6f26939906264ae21602ac3a"
+    },
+    "token_raw_old_FULL_394_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0394/metadata.json",
+      "sha256": "0beb7fb5389b4273b39882ebf60a36e9e7b9bcd521472dadf9cd831cc132fc90"
+    },
+    "token_raw_old_FULL_394_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard00/payload.pt",
+      "sha256": "b0af181677c4214234a070c6c8e10a15e3a4b57edca1d5291b8a47f41e7a8394"
+    },
+    "token_raw_old_FULL_396_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard01/payload.pt",
+      "sha256": "7292404f292455ea4fa899c8d7b0eaa0db0da5c1c513c6fe9b3fdd0bab1fcf0e"
+    },
+    "token_raw_old_FULL_396_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0396/metadata.json",
+      "sha256": "deddf00acac3381a8d8720b34c2b47e6246ed5a21971b9eb4a85a8e73a28fcd7"
+    },
+    "token_raw_old_FULL_396_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard01/payload.pt",
+      "sha256": "f5e85dcf93ecce09705ce163f5aba91fe425d81212f5a7fc02dc64dc5fa39f1c"
+    },
+    "token_raw_old_FULL_399_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard05/payload.pt",
+      "sha256": "101c5942c3f0f725e16555ea9f337f15351d58902231a7ba7f303a9575c0d93a"
+    },
+    "token_raw_old_FULL_399_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0399/metadata.json",
+      "sha256": "7adc9e9141ef2d4f570c98f0b94be51114585c3b68a9af7aba0f4604c9c71ab9"
+    },
+    "token_raw_old_FULL_399_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard05/payload.pt",
+      "sha256": "10cb8dbff5fa37f6992055be9e427146164dca06facc6d4c3fa51d05d9b4973c"
+    },
+    "token_raw_old_FULL_455_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard01/payload.pt",
+      "sha256": "7292404f292455ea4fa899c8d7b0eaa0db0da5c1c513c6fe9b3fdd0bab1fcf0e"
+    },
+    "token_raw_old_FULL_455_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0455/metadata.json",
+      "sha256": "f5afa3da6755a362cc25ad4999a93305d90a774b436a8503d525df3c48680a7a"
+    },
+    "token_raw_old_FULL_455_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard01/payload.pt",
+      "sha256": "f5e85dcf93ecce09705ce163f5aba91fe425d81212f5a7fc02dc64dc5fa39f1c"
+    },
+    "token_raw_old_FULL_459_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard03/payload.pt",
+      "sha256": "c70f75ba1023ab0366c3509e4597c5289dfacc274dfa58b535e9ac3b9fc7b8fc"
+    },
+    "token_raw_old_FULL_459_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0459/metadata.json",
+      "sha256": "465736b6002ff7509902e2136d8edc759c9c12a0a4f0ed5430095426a944e8a7"
+    },
+    "token_raw_old_FULL_459_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard03/payload.pt",
+      "sha256": "5c05fb4cf96bda8214fe4dbfdd0d237e90ef9fa571713f034e1005005182ca5d"
+    },
+    "token_raw_old_FULL_461_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard06/payload.pt",
+      "sha256": "4202032f1ff038b50f2c98ea09c8b503efe3fde1d2984f08968bd027796c4238"
+    },
+    "token_raw_old_FULL_461_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0461/metadata.json",
+      "sha256": "6fa60e16a29f16fa69becb306c4643a0f108816fea348ff8baa01aa48aa36e0b"
+    },
+    "token_raw_old_FULL_461_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard06/payload.pt",
+      "sha256": "d604b18b1273684e57ddfb2924db3622134145891250599d7c1da1c77aa40d27"
+    },
+    "token_raw_old_FULL_511_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard06/payload.pt",
+      "sha256": "4202032f1ff038b50f2c98ea09c8b503efe3fde1d2984f08968bd027796c4238"
+    },
+    "token_raw_old_FULL_511_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0511/metadata.json",
+      "sha256": "73cb38face0ded57f89acb8e7b27ad804c0d2b2ef739db9c636c5604fb10e91a"
+    },
+    "token_raw_old_FULL_511_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard06/payload.pt",
+      "sha256": "d604b18b1273684e57ddfb2924db3622134145891250599d7c1da1c77aa40d27"
+    },
+    "token_raw_old_FULL_517_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard07/payload.pt",
+      "sha256": "95b6328ad545e182b200aad3fd80773e574e32ee82b74cd9f8b15d55cc16170e"
+    },
+    "token_raw_old_FULL_517_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0517/metadata.json",
+      "sha256": "4371bb2b5f3d4f22f94202babdb5c7792fac6b018a6dbebe1b23b47b6da9daf0"
+    },
+    "token_raw_old_FULL_517_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard07/payload.pt",
+      "sha256": "aadc16d8b4905361d1aad640d189c00c416900ee9debef573a8fb25c57685d74"
+    },
+    "token_raw_old_FULL_518_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard01/payload.pt",
+      "sha256": "7292404f292455ea4fa899c8d7b0eaa0db0da5c1c513c6fe9b3fdd0bab1fcf0e"
+    },
+    "token_raw_old_FULL_518_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0518/metadata.json",
+      "sha256": "1277f268be48f3e1896c13e7cc1e6fb6b31b0dd00670130acb8bbb5821449db9"
+    },
+    "token_raw_old_FULL_518_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard01/payload.pt",
+      "sha256": "f5e85dcf93ecce09705ce163f5aba91fe425d81212f5a7fc02dc64dc5fa39f1c"
+    },
+    "token_raw_old_FULL_519_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard04/payload.pt",
+      "sha256": "dc388be865d83af7add5f011490cbc312e792a10dba28c027a4e2dde2de72cba"
+    },
+    "token_raw_old_FULL_519_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0519/metadata.json",
+      "sha256": "41536cae85ad5d8869189f2959cf47f7f3bbf3671a4bf7fa2ec2cd9951821059"
+    },
+    "token_raw_old_FULL_519_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard04/payload.pt",
+      "sha256": "c769f37ae9ecd1e79d1fc0924da6d2f3feb623014292224151723374d4c25139"
+    },
+    "token_raw_old_FULL_520_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard03/payload.pt",
+      "sha256": "c70f75ba1023ab0366c3509e4597c5289dfacc274dfa58b535e9ac3b9fc7b8fc"
+    },
+    "token_raw_old_FULL_520_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0520/metadata.json",
+      "sha256": "3fd5249d197a4f74ec0c15ad7bc9935d5f79506cec0ee0cf45a7c398bf78dfdd"
+    },
+    "token_raw_old_FULL_520_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard03/payload.pt",
+      "sha256": "5c05fb4cf96bda8214fe4dbfdd0d237e90ef9fa571713f034e1005005182ca5d"
+    },
+    "token_raw_old_FULL_532_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard05/payload.pt",
+      "sha256": "101c5942c3f0f725e16555ea9f337f15351d58902231a7ba7f303a9575c0d93a"
+    },
+    "token_raw_old_FULL_532_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0532/metadata.json",
+      "sha256": "22d46e44ebbee8e786ea7fc0a71c95f0f670c702c872ac011f9f7601710d7919"
+    },
+    "token_raw_old_FULL_532_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard05/payload.pt",
+      "sha256": "10cb8dbff5fa37f6992055be9e427146164dca06facc6d4c3fa51d05d9b4973c"
+    },
+    "token_raw_old_FULL_560_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard00/payload.pt",
+      "sha256": "3f2e5f346c4f8b9a61158fd2685ace9685037b1a6f26939906264ae21602ac3a"
+    },
+    "token_raw_old_FULL_560_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0560/metadata.json",
+      "sha256": "d1939b10afaada540fd0bcf6644b7c194c8b28be32f57c322e8ae823a005cfe0"
+    },
+    "token_raw_old_FULL_560_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard00/payload.pt",
+      "sha256": "b0af181677c4214234a070c6c8e10a15e3a4b57edca1d5291b8a47f41e7a8394"
+    },
+    "token_raw_old_FULL_563_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard05/payload.pt",
+      "sha256": "101c5942c3f0f725e16555ea9f337f15351d58902231a7ba7f303a9575c0d93a"
+    },
+    "token_raw_old_FULL_563_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0563/metadata.json",
+      "sha256": "d5e36c79c8a2d744d9e67c03347b78a9f09200cefcaa630864414dd9be8ec69c"
+    },
+    "token_raw_old_FULL_563_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard05/payload.pt",
+      "sha256": "10cb8dbff5fa37f6992055be9e427146164dca06facc6d4c3fa51d05d9b4973c"
+    },
+    "token_raw_old_FULL_56_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard03/payload.pt",
+      "sha256": "c70f75ba1023ab0366c3509e4597c5289dfacc274dfa58b535e9ac3b9fc7b8fc"
+    },
+    "token_raw_old_FULL_56_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0056/metadata.json",
+      "sha256": "fd0dbabcaaf9327d27e65aa891575e1c825b9dc96ad551b6e488fed1ad0713ed"
+    },
+    "token_raw_old_FULL_56_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard03/payload.pt",
+      "sha256": "5c05fb4cf96bda8214fe4dbfdd0d237e90ef9fa571713f034e1005005182ca5d"
+    },
+    "token_raw_old_FULL_570_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard02/payload.pt",
+      "sha256": "6f239523cc7d53a545b7eeb6229d3360444c72b5e9bbeba431a5ea333c0a1d71"
+    },
+    "token_raw_old_FULL_570_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0570/metadata.json",
+      "sha256": "7b6526dc21ad085dd82f98ca974768df67cd3d46e8d374e48983420ff7b464a8"
+    },
+    "token_raw_old_FULL_570_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard02/payload.pt",
+      "sha256": "9108abca569b840275a396762cc0c0a435731dd1238a9474cd801e6c0baf92d3"
+    },
+    "token_raw_old_FULL_66_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard00/payload.pt",
+      "sha256": "3f2e5f346c4f8b9a61158fd2685ace9685037b1a6f26939906264ae21602ac3a"
+    },
+    "token_raw_old_FULL_66_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0066/metadata.json",
+      "sha256": "c8d01700ba6dd1e963ce913517f8be3f32c8d6c87b0fa719db7ba333cf2cb960"
+    },
+    "token_raw_old_FULL_66_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard00/payload.pt",
+      "sha256": "b0af181677c4214234a070c6c8e10a15e3a4b57edca1d5291b8a47f41e7a8394"
+    },
+    "token_raw_old_FULL_72_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard06/payload.pt",
+      "sha256": "4202032f1ff038b50f2c98ea09c8b503efe3fde1d2984f08968bd027796c4238"
+    },
+    "token_raw_old_FULL_72_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0072/metadata.json",
+      "sha256": "8279331269d82364ca3ad7076606224c5a09532ae937129762986f27f9100d32"
+    },
+    "token_raw_old_FULL_72_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard06/payload.pt",
+      "sha256": "d604b18b1273684e57ddfb2924db3622134145891250599d7c1da1c77aa40d27"
+    },
+    "token_raw_old_FULL_75_maps": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original_raw_visibility_pv_inputs_v1/shard07/payload.pt",
+      "sha256": "95b6328ad545e182b200aad3fd80773e574e32ee82b74cd9f8b15d55cc16170e"
+    },
+    "token_raw_old_FULL_75_metadata": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/episodes/FULL_0075/metadata.json",
+      "sha256": "fb20f71b7e282b2fc9fc93e499dfde0048fa38796680f2edc476f6ff6cfeb0b2"
+    },
+    "token_raw_old_FULL_75_tokens": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/shard07/payload.pt",
+      "sha256": "aadc16d8b4905361d1aad640d189c00c416900ee9debef573a8fb25c57685d74"
+    },
+    "token_raw_old_runtime_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/romav2_colnomic_current_runtime_bridge_prejoin_v1/validation.json",
+      "sha256": "f776472a70ee61a66624d9d750666168fb0c72cd484a248de5cabad77a5a248c"
+    },
+    "token_raw_old_shared_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_shared_query_target_prior_cache_v1/manifest.json",
+      "sha256": "f9f89522a7a3a67a52072e5a32739b4da9f238ff77d63d3b1faf9e342201fc7c"
+    },
+    "token_raw_plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ORIGINAL7_TRAIN128_INPUTS_V1_20260910.md",
+      "sha256": "5aa9439be6702d8d50dde2a2752665a90348bd55faaf8d9ff32baa661927de94"
+    },
+    "token_raw_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1_preflight/af76877883b1326f44248de521f85bddcb08a91a6fdfcd1f8c3bc69bb1037af8.json",
+      "sha256": "6d8cba4ca5548e6ed6344f131be4eba1622a346e7d6042139d9fa4bb8d907125"
+    },
+    "token_raw_processor_class_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/colpali_engine/models/qwen2_5/colqwen2_5/processing_colqwen2_5.py",
+      "sha256": "2d77f0a5de727bd33dc45b5f7346aed51b945150f84171373067fde1eb7983f2"
+    },
+    "token_raw_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_token_raw_v1.py",
+      "sha256": "5a0fda6c938813721e45f563d0f9f7f65581bd632c62f76e1f6fa9f806e5e43d"
+    },
+    "token_raw_qualified_preflight": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v2_compat_preflight/1ce5aaffabf17d5816a31181517535f0305820bcfac553fea586c82999393ce7.json",
+      "sha256": "630e8b88044b1ab972cc05eba1eccee12431ccda6f662b691c1999c6bff673df"
+    },
+    "token_raw_qualified_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_eval128_token_raw_v2_compat.py",
+      "sha256": "708318dee09a387a2d2fb22680a184ed43b5653cc335ab56311fc8364707c97c"
+    },
+    "token_raw_reference_0000_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/0000_1244.pt",
+      "sha256": "2a075800ba11f07dd7d288c8afab3fba4e19675ab0664224f855ba2e35f84d09"
+    },
+    "token_raw_reference_0000_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_0000_1244.json",
+      "sha256": "fbe4d870ac1f919367bffdd1cb8754a5d824a8b19b35360289882e6bf0dd8830"
+    },
+    "token_raw_reference_0000_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_0000_1244.json",
+      "sha256": "1ab9f750dfc35cebba7707e335969a22d92ff61cf97324cc02962109bad344cd"
+    },
+    "token_raw_reference_1244_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/1244_2488.pt",
+      "sha256": "2529115f8a4c1a9c67871bb7f57042ea23d88143430388d5707da17ec47ff684"
+    },
+    "token_raw_reference_1244_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_1244_2488.json",
+      "sha256": "316a642f8241c4c1c6943540de81d44609777b3f015f6c30ca4b9dab862be984"
+    },
+    "token_raw_reference_1244_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_1244_2488.json",
+      "sha256": "b5ed3395751197f8270c852fa99ffcd8ec0d13fccd75d232d4fb66153794c52b"
+    },
+    "token_raw_reference_2488_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/2488_3732.pt",
+      "sha256": "9fbf4813b50dcef1be3db9ffd4beb2f48052599d7449bb57c5dcbe3ff9a37192"
+    },
+    "token_raw_reference_2488_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_2488_3732.json",
+      "sha256": "0cf2c02299b6a172c7bb6a0c858d28d1ecd46e70dba8266ad35df9362456c5b2"
+    },
+    "token_raw_reference_2488_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_2488_3732.json",
+      "sha256": "cde317526f2347cc55437efa33422a00adbc3122ba45d8a71d56b77ea3f2df6c"
+    },
+    "token_raw_reference_3732_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/gallery/3732_4976.pt",
+      "sha256": "9c2c62a8337f89b1ce8d9e715b2e2e6312e0e28ad482131153ee5dcb80d16bab"
+    },
+    "token_raw_reference_3732_receipt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/receipts/gallery_3732_4976.json",
+      "sha256": "4c134cc0d542ed554182412024214815bf463b162c172f5d0accaa684ef48702"
+    },
+    "token_raw_reference_3732_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/conditional_colnomic_p_spatial_v1/validation/gallery_3732_4976.json",
+      "sha256": "444d2e08422459bbed884e4b4aafe9bde118df00540af978662a8ec8e96a050a"
+    },
+    "token_raw_reference_cache_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/conditional_colnomic_ms_proposal.py",
+      "sha256": "982f00bcd4682593e1d8a3d72a6204402f731a5bbd21d523ea8cdd9d28e2ae21"
+    },
+    "token_raw_reference_resolver_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/cw1_sr0_s8_feature_runtime_v1.py",
+      "sha256": "5ca8bea5d07b07000401e25eda6f70178ad5952061988574f67f64f06300ee78"
+    },
+    "token_raw_shard_launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_original7_train128_token_raw_shards_v1_30m.sbatch",
+      "sha256": "0a881c88a6c315236bfda4a33325c11bff7bfeef493efc20c1ac304ae11dcb57"
+    },
+    "token_raw_worker_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_manifest.json",
+      "sha256": "50d894c9643ca1ef200c18ba79cf700b598be15c5ea322010853c201fc0f22f7"
+    }
+  },
+  "source_group_count": 32,
+  "source_invariant_names": [
+    "cpu_current_ORIGINAL7_parameters",
+    "cpu_feature_core",
+    "cpu_gallery_identity_contract",
+    "cpu_gallery_identity_core",
+    "cpu_gallery_identity_registry",
+    "cpu_legacy_C4_score_core",
+    "parent_research_authority",
+    "post_submission_continuation",
+    "roma_source_profile",
+    "token_raw_adapter_weights",
+    "token_raw_base_config_json",
+    "token_raw_base_generation_config_json",
+    "token_raw_base_model_safetensors_index_json",
+    "token_raw_base_weights_00",
+    "token_raw_base_weights_01",
+    "token_raw_base_weights_02",
+    "token_raw_base_weights_03",
+    "token_raw_base_weights_04",
+    "token_raw_base_weights_05",
+    "token_raw_base_weights_06",
+    "token_raw_bridge_expected_payload",
+    "token_raw_cpu_probe_current_0",
+    "token_raw_cpu_probe_current_1",
+    "token_raw_cpu_probe_current_2",
+    "token_raw_cpu_probe_current_3",
+    "token_raw_cpu_probe_legacy_0",
+    "token_raw_cpu_probe_legacy_1",
+    "token_raw_cpu_probe_legacy_2",
+    "token_raw_cpu_probe_legacy_3",
+    "token_raw_encoder_class_source",
+    "token_raw_fullrank_program",
+    "token_raw_gallery_cache",
+    "token_raw_gallery_identity_contract",
+    "token_raw_gallery_identity_core",
+    "token_raw_gallery_identity_manifest",
+    "token_raw_gallery_source_program",
+    "token_raw_legacy_encoder_program",
+    "token_raw_library_peft_tuners_lora_layer",
+    "token_raw_library_transformers_models_qwen2_5_vl_modeling_qwen2_5_vl",
+    "token_raw_library_transformers_models_qwen2_5_vl_processing_qwen2_5_vl",
+    "token_raw_library_transformers_models_qwen2_vl_image_processing_qwen2_vl",
+    "token_raw_model_adapter_config_json",
+    "token_raw_model_added_tokens_json",
+    "token_raw_model_chat_template_json",
+    "token_raw_model_merges_txt",
+    "token_raw_model_preprocessor_config_json",
+    "token_raw_model_processor_config_json",
+    "token_raw_model_special_tokens_map_json",
+    "token_raw_model_tokenizer_config_json",
+    "token_raw_model_tokenizer_json",
+    "token_raw_model_vocab_json",
+    "token_raw_old_runtime_validation",
+    "token_raw_old_shared_manifest",
+    "token_raw_processor_class_source",
+    "token_raw_reference_0000_payload",
+    "token_raw_reference_0000_receipt",
+    "token_raw_reference_0000_validation",
+    "token_raw_reference_1244_payload",
+    "token_raw_reference_1244_receipt",
+    "token_raw_reference_1244_validation",
+    "token_raw_reference_2488_payload",
+    "token_raw_reference_2488_receipt",
+    "token_raw_reference_2488_validation",
+    "token_raw_reference_3732_payload",
+    "token_raw_reference_3732_receipt",
+    "token_raw_reference_3732_validation",
+    "token_raw_reference_cache_program",
+    "token_raw_reference_resolver_program"
+  ],
+  "spatial_teacher_authorized": false,
+  "status": "ORIGINAL7_TRAIN128_INPUTS_AUTHORIZED",
+  "target_insertion_authorized": false,
+  "target_missing_query_replacement_authorized": false,
+  "task_supervision": "TRAIN/PAIR retrieval identities only in later fit authority; no query-target mapping used in input materialization"
+}

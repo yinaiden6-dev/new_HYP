@@ -1,0 +1,107 @@
+{
+  "version": "l0_natural_hardneg_v_representation_qualification_v1_20260808",
+  "status": "FROZEN_BEFORE_L0_E0",
+  "purpose": "A minimal, fail-closed representation qualification. It asks only whether a frozen, raw verification-token representation contains target-free candidate-conditioned signal for natural exact query/reference versus near-reference competition. It is not a target-hypothesis, H0, ownership, candidate-recall, SWITCH/HOLD, or end-to-end retrieval experiment.",
+  "lineage_boundary": {
+    "new_after": "M0_FULLTOKEN_CANDIDATE_SYMMETRIC_HYP_XF_NO_SIGNAL",
+    "does_not_reuse_as_model_input": [
+      "M0 G0 synthetic correspondence density-ratio calibration",
+      "M0 homography H1 slots or legality",
+      "M0 full-token likelihood marginal or MDL penalty",
+      "P embedding, P confidence, proposal seed, geometry, or coordinates",
+      "A0/C6 selector, ownership readout, D1 score, rank, slot, winner, or base gap"
+    ],
+    "interpretation": "A pass establishes only a frozen-V natural hard-negative representation increment and authorizes a separately frozen P-to-hypothesis test. A failure establishes only that this frozen all-patch V form has no qualified natural conditional signal; it does not falsify reference-conditioned latent hypotheses in general."
+  },
+  "data_roles": {
+    "population": "The existing 987 natural query records and full 5,413 physical-row / 5,404 exact-label gallery are internal development data. Five folds are identity- and supergroup-disjoint internal OOF only, not a paper-confirmatory endpoint.",
+    "candidate_context": "For each outer fold, a fresh frozen fold-local D1 checkpoint is replayed over every one of the 987 natural queries with all 5,413 physical rows legal. The prejoin artifact stores only the 128 winning physical rows, hash-permuted per query. It stores no target label, D1 score, D1 rank, candidate slot semantics, or D1 winner.",
+    "training_join": "Only after immutable prejoin materialization, the training process may join a train query's exact identity to select its naturally present positive candidate for the loss. A rival is the current detached strongest non-target C128 candidate; no D1 rank or numeric value is used to select it.",
+    "evaluation_join": "Only after target-free scores for all 128 candidates are immutable may the evaluator replay the frozen D1 checkpoint to identify the deployed D1 winner and join the true identity for offline metrics.",
+    "forbidden": [
+      "human target masks, boxes, points, polygons, crops, or objectness teacher",
+      "oracle candidate insertion, C128-width change, target-specific parameter, or identity classifier",
+      "opened resources, sealed resources, or home-file modification"
+    ]
+  },
+  "frozen_representation": {
+    "source": "hyp_xf_c128_conditional_atlas_v1 raw V channels",
+    "allowed_channels": ["V_visual", "V_glyph", "V_line_corner", "textness"],
+    "forbidden_channels": ["P", "coordinate", "G0 adapter output", "D1-derived feature"],
+    "pair_feature": "For every query patch and candidate reference, use L2-normalized all-reference-token log-mean-exp support for visual/glyph/line, visual/glyph concentration, and query textness. The same 6-dimensional frozen local feature is applied to every candidate; no top-k, candidate-specific threshold, geometry, mask, or patch selection is permitted.",
+    "score": "A single shared 6-to-8-to-1 head maps each patch feature to signed evidence. Its output bias is deliberately omitted because it cancels from the sole pairwise-margin loss and would have an exact zero gradient. The resulting head has 64 active scalars. Candidate evidence is the exact uniform mean over all 1024 query patches. The head has no candidate identity/order, label, D1, P, coordinate, or rival input."
+  },
+  "objective": {
+    "primary": "For each legal training query whose true exact label is naturally in its C128, score all C128 candidates, choose the detached strongest non-target candidate c_star, and minimize softplus(-(E_y-E_c_star)/1.0). This is the only retrieval-training objective.",
+    "prohibited": [
+      "full-gallery or candidate-listwise cross entropy as a primary objective",
+      "D1/base fusion, D1-correct preservation loss, SWITCH/HOLD training",
+      "H0/no-match loss before a confirmed-absent versus present-nonprimary data contract exists",
+      "top-k, pooling, temperature, rival, threshold, or loss scan on outer-heldout outcomes"
+    ],
+    "training_schedule": {
+      "seed": 17,
+      "optimizer": "AdamW",
+      "learning_rate": 0.003,
+      "weight_decay": 0.0,
+      "updates_per_fold": 768,
+      "episode_order": "deterministic hash shuffle of eligible fold-local training query IDs; repeat cyclically only if fewer than 768 eligible episodes"
+    }
+  },
+  "E0": {
+    "objective": "Validate only the exact all-patch V scorer on synthetic, label-free forward fixtures and a natural-data access preflight. Do not run a learned natural model or score a heldout target.",
+    "required": [
+      "64 shared trainable scalars, all finite and nonzero-gradient on the fixture",
+      "one optimizer step changes parameters and reduces the fixed fixture pair loss",
+      "candidate reorder equivariance and target/rival score anti-symmetry",
+      "candidate-binding rotation changes the bound score while a pure reorder only permutes it",
+      "forward API has no target, label, rank, slot, winner, P, coordinate, or geometry input",
+      "candidate source preflight requires 5,413 all-legal-row replay, distinct C128 physical rows, raw-V atlas availability, hash permutation, and zero opened/sealed/home access"
+    ],
+    "pass": "L0_NATURAL_HARDNEG_V_E0_READY",
+    "fail": "L0_NATURAL_HARDNEG_V_E0_ABORT",
+    "next_if_pass": "L0_C0_FOLD_LOCAL_FULL_GALLERY_C128_MATERIALIZATION"
+  },
+  "C0": {
+    "objective": "Materialize and independently validate fold-local, all-query, full-gallery target-free C128 contexts before any label join or natural training.",
+    "required": [
+      "987 query contexts per fold",
+      "full-gallery all-true 5,413 row mask and 5,404 exact labels before C128 reduction",
+      "unique C128 exact labels and physical rows",
+      "row membership hash-permuted independently of original D1 order",
+      "no target/D1 score/rank/slot/winner serialized into the prejoin context",
+      "candidate rows exist in the frozen raw-V reference atlas"
+    ],
+    "pass": "L0_C0_FOLD_LOCAL_C128_READY",
+    "fail": "L0_C0_CANDIDATE_CONTEXT_ABORT",
+    "next_if_pass": "L0_NATURAL_HARDNEG_V_FIVEFOLD_OOF"
+  },
+  "L0": {
+    "target_free_forward": "Fit the shared head on only the fold-local training identities after loss-only target join. For each heldout query, emit all 128 candidate scores before any target/D1 join. The heldout forward pass has no labels, D1 numerical values, D1 rank/slot/winner, P, coordinates, or raw query image input.",
+    "primary_slice": "Outer-heldout queries for which deployed D1 is wrong and the true exact target is naturally in the independently materialized D1 C128. This slice is defined only after score emission.",
+    "required_reports": [
+      "all eligible train/heldout coverage by fold, identity, supergroup, and track",
+      "per-fold train loss, active-gradient receipt, and target-free score hashes",
+      "primary target-versus-deployed-D1-winner direction and signed margin",
+      "secondary all-target-in-C128 and D1-correct strata, separately",
+      "candidate-binding rotation control, evaluated only after model freeze",
+      "strict statement that L0 makes no spatial/ownership/H0/retrieval-action claim"
+    ],
+    "go": [
+      "primary strict target-over-deployed-winner direction exceeds 0.50 with one-sided exact binomial p < 0.05",
+      "at least four of five fold primary directions exceed 0.50",
+      "real primary mean pair margin and strict direction both exceed the candidate-binding-rotation control on the same records",
+      "all identity/supergroup OOF, target-free, full-gallery-C128, and access validators pass"
+    ],
+    "pass": "L0_FROZEN_V_NATURAL_PAIR_SIGNAL_GO",
+    "fail": "L0_FROZEN_V_NATURAL_PAIR_NO_SIGNAL",
+    "next_if_pass": "L1_FIXED_P_MATERIALIZED_HYPOTHESIS_V_ONLY_COMPARISON",
+    "next_if_fail": null
+  },
+  "controls_and_claims": {
+    "candidate_reorder": "A permutation of candidate records must exactly permute scores. This is an invariance test, not the causal control.",
+    "candidate_binding": "Rotate entire reference atlases across fixed candidate positions after training. This must be separately reported; it destroys reference-to-evidence binding while preserving candidate count and score capacity.",
+    "spatial": "L0 intentionally contains no coordinates or proposal/hypothesis, so a spatial-permutation test would be vacuous. Spatial destruction is pre-registered for L1, where a fixed P-produced hypothesis introduces spatial structure.",
+    "comparison_boundary": "L0 itself is the matched all-patch/no-hypothesis baseline. L1 must strictly beat L0 under equal head capacity before any hypothesis claim."
+  }
+}

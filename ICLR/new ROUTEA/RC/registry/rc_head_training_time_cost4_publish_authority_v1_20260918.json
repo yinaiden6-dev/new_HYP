@@ -1,0 +1,18 @@
+{
+  "status": "COST4_TIMING_PUBLICATION_AUTHORIZED",
+  "request": "补上cost4的",
+  "timing_job_id": "5150701",
+  "partition": "accelerated",
+  "time_limit": "00:10:00",
+  "dependency": "afterok:5150701",
+  "source_sha256": {
+    "programs/update_rc_results_training_time_v2_cost4.py": "a61eaa0dcf9c49c6828df825efeb7cf33ba57064db75f86ac2a24d011b261632",
+    "slurm/rc_head_training_time_v2_cost4_publish.sbatch": "58cbf93c61b85a0fc6d679863b4e458bf6ad5a9167bc7971062d01a30ad92070",
+    "registry/rc_head_training_time_authority_v2_cost4_20260918.json": "3d37fc9a66df92e8bc3c60de9de132fed5a840266d33d3a476a01913b146c94a",
+    "reports/new_hyp_complete_results_20260916_v1_backups/before_training_time_20260918/new_HYP_complete_results_20260916.zip": "dd0218e2b03394a49f9d9559b8bf94a4f887750f208765c2aea6657390478cff",
+    "reports/new_hyp_complete_results_20260916_v1_backups/before_cost4_20260918/new_HYP_complete_results_20260916.zip": "5a39b09db43d97a3e1470b7b331040aee44e75a12ff2f487694cf3f2aa7bf325"
+  },
+  "output_scope": "Replace the measured timing plot, statistics, MD/HTML/DOCX/XLSX and ZIP at the original path; retain prior ZIP; RPC stays diagnostic",
+  "require_measured_fits": 27,
+  "require_original_head_parity": true
+}

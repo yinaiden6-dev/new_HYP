@@ -1,0 +1,19 @@
+# 冻结 ORIGINAL7 扩展128图：RoMa/C4阶段实现与工程资格
+
+本报告记录源码和合成工程资格，不含新128图评分结果。新增文件不改变已冻结的原模型或旧实验。
+
+程序为 `programs/materialize_rc_original7_eval128_roma_v1.py`，SHA `f535df925603bd5adf1f2158cb0fe506bc55de5c14a05f65633148b8f2c1cbc7`。
+源配置为 `registry/rc_original7_eval128_roma_source_profile_v1_20260910.json`，SHA `3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e`。
+源配置逐文件绑定29个RoMa、128个缓存DINOv3 Python文件及6个canonical geometry依赖、原processor、RoMa checkpoint与原TRAIN56导出。
+
+程序只提取旧core的三个原函数 `oriented/cell_means/score`，不导入其旧main或目标诊断数据；复用canonical geometry v2的显式processor frame。RoMa默认precise、seed17、highest matmul与原checkpoint均冻结。模型构造前要求Slurm、当前公开authority、输入资格、源码/权重/runtime一致、指定TORCH_HOME和CUDA；网络访问被禁止。GPU worker不读取curator、target_join、D1-MI、GroZi、formal prerecall结果、旧新样本redacted tokens或报告。
+
+先仅处理已用TRAIN execution56。它要求新TOKEN/RAW bridge独立验证PASS，输出完整128候选的wq/wr与S、S_Q、S_R、M，再与原current-runtime TRAIN56地图逐字节、C4和RAW逐binary64比较。任何漂移记录为 `RC_ORIGINAL7_EVAL128_ROMA_ENGINEERING_DRIFT`，不得通过bridge或计算新图。此处不与已知不同的旧L0 tokens比较。
+
+新16×8分片要求RoMa工程bridge PASS、全部128图RAW aggregate PASS，且当前分片payload、receipt和validation逐SHA等于RAW aggregate所绑定文件。候选始终为冻结RAW完整C128，query/reference控制各自沿完整cell轴roll一半；不插target、不过滤候选或query。地图为CPU FP64，保存raw-byte SHA；token SHA独立使用原dtype+shape+bytes算法。输入、authority、程序、profile和各图片/token来源均绑定。
+
+每个GPU分片完成后启动带nonce的独立CPU子进程，只从保存地图和合格query/reference tokens逐候选重算C4。子进程不构造RoMa，不训练。TRAIN bridge还重做旧128候选比较。后续CPU总汇仍将独立第三次重算C4再封存全候选动作，才允许curator join。
+
+两个launcher均为accelerated、1 GPU、8 CPU、96 GB、30分钟，array固定0–15、最多4并发。NIL环境显式设置PATH及TMPDIR fallback，不修改HOME。CPU合成预检覆盖普通地图、全零query地图、全零reference地图、无效padding cell以及两个EXIF/frame几何分支；12个C4标量逐bit一致。实际bridge launcher在`env -i`下预检PASS，未构造模型、读取自然图像或装载自然token。预检文件为 `results/rc_original7_eval128_roma_v1/preflight/f535df925603bd5adf1f2158cb0fe506bc55de5c14a05f65633148b8f2c1cbc7/result.json`，SHA `ed1d88032d16d81007c7e0b8d99a68652c518118fc917c0805bdec4744e7bdf0`。
+
+本实现代理没有冻结执行authority、启动GPU、提交任务或监控队列。主代理完成独立源码审查后，才可冻结并提交TRAIN56工程bridge；合成PASS不是自然工程bridge PASS，也不是科学GO。

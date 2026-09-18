@@ -1,0 +1,20 @@
+{
+  "status": "USER_GAIN_AND_PRESERVATION_GOAL_RECORDED_BEFORE_TRAINING",
+  "recorded_utc": "2026-09-09T21:53:09.323197+00:00",
+  "user_instruction": "瓶颈怎么突破？既能有增益，又能保持原正确",
+  "interpretation": "Preserve all currently correct ORIGINAL7/NATIVE7 EVAL28 and add at least one correct query; this also preserves its RAW25 subset.",
+  "plan_path": "plan/RC_EVIDENCE_DISPERSION_VS_NONLINEAR_READOUT_V1_20260909.md",
+  "plan_sha256": "b3fd45e44ab6079106253ee795c6c7b71ec7d2b55074d385a64a193c9970a263",
+  "user_goal_criteria": {
+    "paired_net_vs_ORIGINAL7": ">0",
+    "paired_break_vs_ORIGINAL7": "==0",
+    "group_balanced_accuracy_difference": ">0"
+  },
+  "original_plan_overall_gain_comparisons_remain_reported": true,
+  "positive_net_with_breaks": "Report as a tradeoff, not fulfillment of current user goal.",
+  "old_training_inputs_and_optimizer_unchanged": true,
+  "new_EVAL_results_read_count": 0,
+  "training_started": false,
+  "frozen_input_producer_plan_and_artifacts_unchanged": true,
+  "HYP_GO_or_external_generalization_automatic": false
+}

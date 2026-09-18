@@ -1,0 +1,281 @@
+{
+  "status": "SIX_CAUSE_BOUNDED_ANALYSIS_COMPLETE",
+  "sources": {
+    "inventory": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/inventory/result.json",
+      "sha256": "eae3bbd6985b5d28f73cbd6a2f31d589d797b5cc5dbe9306aa71584096fb1a71"
+    },
+    "bridge": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/bridge/result.json",
+      "sha256": "e3517bce481297ee19b1ee9278d4a3269c4c0a27648be70296df6ac64d75ae3a"
+    },
+    "coverage": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/result.json",
+      "sha256": "4f762cf211ee50bfcbfeaf6e422b2b73053919e007a873ad82094f2fe99ecb5d"
+    },
+    "loss_binding": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    }
+  },
+  "visual_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/visual/visual_review.json",
+    "sha256": "9224da6d5aa2478d24043a0f3cf8521eff964c73874a3176824e079da22564ac"
+  },
+  "six": [
+    {
+      "priority": 1,
+      "cause": "照片是否包含身份信息",
+      "status": "部分排除，逐图仍有未决",
+      "supported": "593中没有像素/标签精确冲突；原TRAIN20错例中至少3例有直接可见区分文字。",
+      "unresolved": "不能证明每图可识别；近似背面、遮挡和低清晰度仍需逐图证据。"
+    },
+    {
+      "priority": 2,
+      "cause": "冻结tokens是否保留可用信息",
+      "status": "足以解释本轮提升；全部细节可读性未证明",
+      "supported": "相同冻结tokens与原六统计已支持H593 486，440停滞并非该表示的硬上限。",
+      "unresolved": "无精确token碰撞不证明所有细粒度文字被编码；高维头训练全对也不证明身份泛化。"
+    },
+    {
+      "priority": 3,
+      "cause": "MaxSim、聚合和接口压缩",
+      "status": "当前有限扩展未带来总体优势",
+      "supported": "保留原六统计，增加FREE/POOL/MATCH/CHANNEL得到113/112/110/74，原S6为114；CHANNEL求和精确重建FREE。",
+      "unresolved": "不能由这些探针失败推出所有压缩无损；也不能把单例救回当作群体机制成功。"
+    },
+    {
+      "priority": 4,
+      "cause": "表达能力、成本与训练目标",
+      "status": "H593主要可修失效环节已定位",
+      "supported": "COST4→COST1 440→481、44救3损；COST1→CE 481→486、14救9损，后一步组区间跨0。CE的57次救回全部已是旧头最强challenger，被HOLD拒绝。",
+      "unresolved": "这是当前固定协议下的因果对照，不证明所有COST4优化器都无法提升，也未解释旧固定EVAL全部错误。"
+    },
+    {
+      "priority": 5,
+      "cause": "照片数量、身份覆盖和分布",
+      "status": "已区分本轮作用，不能归为单纯缺数据",
+      "supported": "等128预算下CE broad482/484/486，COST4 broad449/450/439；扩大身份范围净0/1/4不稳定。每身份1→2照片CE净1/10/18，2→4净2/4/-2。",
+      "unresolved": "采样共享同一开发人口；更远域和新来源效果未确认。"
+    },
+    {
+      "priority": 6,
+      "cause": "稳定性、重复开发和独立确认",
+      "status": "内部支持增强，外部确认未完成",
+      "supported": "CE相对COST4五折全部净增；三次预定采样的方向支持目标作用；对447强基线49救10损，组区间为正。",
+      "unresolved": "593全部已开发，剩余未触碰可用图为0；需新独立身份/来源确认，不能靠重分593证明外部泛化。"
+    }
+  ],
+  "counts": {
+    "ALL_CE": 486,
+    "ALL_CE_CBIND": 281,
+    "ALL_COST4": 440,
+    "COST1": 481,
+    "COST1_CBIND": 338,
+    "GROUP_BASE": 447,
+    "RAW": 426,
+    "RAW2_CE": 426
+  },
+  "comparisons": {
+    "ALL_COST4__to__COST1": {
+      "rescue": 44,
+      "loss": 3,
+      "net": 41,
+      "equal_component_difference": 0.08265759592735696,
+      "component_bootstrap95": [
+        0.04565158145954332,
+        0.12582441047514575
+      ]
+    },
+    "COST1__to__ALL_CE": {
+      "rescue": 14,
+      "loss": 9,
+      "net": 5,
+      "equal_component_difference": 0.011486616426873781,
+      "component_bootstrap95": [
+        -0.016103228400735296,
+        0.039691150607970446
+      ]
+    },
+    "GROUP_BASE__to__COST1": {
+      "rescue": 36,
+      "loss": 2,
+      "net": 34,
+      "equal_component_difference": 0.07047894788014274,
+      "component_bootstrap95": [
+        0.03556836086707411,
+        0.11139696882085437
+      ]
+    },
+    "GROUP_BASE__to__ALL_CE": {
+      "rescue": 49,
+      "loss": 10,
+      "net": 39,
+      "equal_component_difference": 0.08196556430701651,
+      "component_bootstrap95": [
+        0.036144112857118375,
+        0.13112881909756907
+      ]
+    },
+    "RAW__to__COST1": {
+      "rescue": 58,
+      "loss": 3,
+      "net": 55,
+      "equal_component_difference": 0.10723191483761337,
+      "component_bootstrap95": [
+        0.06559235577790266,
+        0.15493449740491325
+      ]
+    },
+    "RAW__to__ALL_CE": {
+      "rescue": 71,
+      "loss": 11,
+      "net": 60,
+      "equal_component_difference": 0.11871853126448714,
+      "component_bootstrap95": [
+        0.06350581295491681,
+        0.17843025508753907
+      ]
+    },
+    "RAW2_CE__to__ALL_CE": {
+      "rescue": 71,
+      "loss": 11,
+      "net": 60,
+      "equal_component_difference": 0.11871853126448714,
+      "component_bootstrap95": [
+        0.06350581295491681,
+        0.17843025508753907
+      ]
+    },
+    "ALL_CE__to__ALL_CE_CBIND": {
+      "rescue": 6,
+      "loss": 211,
+      "net": -205,
+      "equal_component_difference": -0.35205696188003177,
+      "component_bootstrap95": [
+        -0.4241890933374734,
+        -0.28053295531954775
+      ]
+    }
+  },
+  "fold_counts": {
+    "0": {
+      "RAW": 98,
+      "ALL_COST4": 99,
+      "GROUP_BASE": 99,
+      "COST1": 105,
+      "ALL_CE": 104,
+      "RAW2_CE": 98,
+      "ALL_CE_CBIND": 56
+    },
+    "1": {
+      "RAW": 78,
+      "ALL_COST4": 80,
+      "GROUP_BASE": 81,
+      "COST1": 95,
+      "ALL_CE": 98,
+      "RAW2_CE": 78,
+      "ALL_CE_CBIND": 61
+    },
+    "2": {
+      "RAW": 97,
+      "ALL_COST4": 99,
+      "GROUP_BASE": 99,
+      "COST1": 103,
+      "ALL_CE": 104,
+      "RAW2_CE": 97,
+      "ALL_CE_CBIND": 69
+    },
+    "3": {
+      "RAW": 80,
+      "ALL_COST4": 82,
+      "GROUP_BASE": 85,
+      "COST1": 91,
+      "ALL_CE": 91,
+      "RAW2_CE": 80,
+      "ALL_CE_CBIND": 45
+    },
+    "4": {
+      "RAW": 73,
+      "ALL_COST4": 80,
+      "GROUP_BASE": 83,
+      "COST1": 87,
+      "ALL_CE": 89,
+      "RAW2_CE": 73,
+      "ALL_CE_CBIND": 50
+    }
+  },
+  "representation_train_held": {
+    "S6": {
+      "train_correct": 351,
+      "train_occurrences": 384,
+      "train_mean_CE": 0.2872033197616896,
+      "held_correct": 114,
+      "held_mean_CE": 0.41122156394245846,
+      "parameter_count": 7
+    },
+    "FREE": {
+      "train_correct": 352,
+      "train_occurrences": 384,
+      "train_mean_CE": 0.28378592264378955,
+      "held_correct": 113,
+      "held_mean_CE": 0.40055142224975293,
+      "parameter_count": 8
+    },
+    "POOL": {
+      "train_correct": 350,
+      "train_occurrences": 384,
+      "train_mean_CE": 0.25137047793642414,
+      "held_correct": 112,
+      "held_mean_CE": 0.4764087645386327,
+      "parameter_count": 25
+    },
+    "MATCH": {
+      "train_correct": 360,
+      "train_occurrences": 384,
+      "train_mean_CE": 0.20545587468087412,
+      "held_correct": 110,
+      "held_mean_CE": 0.5885207654521963,
+      "parameter_count": 25
+    },
+    "CHANNEL": {
+      "train_correct": 384,
+      "train_occurrences": 384,
+      "train_mean_CE": 0.0021682570113940257,
+      "held_correct": 74,
+      "held_mean_CE": 3.1678411161505666,
+      "parameter_count": 136
+    },
+    "CHANNEL_PERM": {
+      "train_correct": 384,
+      "train_occurrences": 384,
+      "train_mean_CE": 0.002168019169696012,
+      "held_correct": 84,
+      "held_mean_CE": 2.220362803159661,
+      "parameter_count": 136
+    }
+  },
+  "action_diagnosis": {
+    "losses": 11,
+    "losses_from_correct_RAW_HOLD": 11,
+    "losses_from_previous_switch": 0,
+    "rescues": 57,
+    "rescues_old_hold_target_already_top_challenger": 57,
+    "rescues_other": 0
+  },
+  "all_six_assessed": true,
+  "all_scientific_uncertainties_resolved": false,
+  "new_HYP_external_GO": false,
+  "original_fixed_EVAL_retested": false,
+  "remaining_errors": {
+    "total_errors": 107,
+    "target_absent_errors": 23,
+    "candidate_present_errors": 84
+  },
+  "all16_sampling_regimes_CE_gt_COST4": 16,
+  "limits": [
+    "COST1/RAW2/binding followup was declared after observing486",
+    "No universal label-free or annotation-free pretraining claim; only retrieval identity supervision",
+    "Group bootstrap describes this opened cohort; overlapping folds/seeds are not independent external studies"
+  ]
+}

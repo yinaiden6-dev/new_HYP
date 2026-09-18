@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-09-10T23:45:02.016211+00:00",
+  "jobs": [
+    "5140736",
+    "5140737"
+  ],
+  "reason": "Initial accelerated-only scheduler estimate exceeded user cutoff; dev_accelerated is UP and 59 minute requests fit its 1 hour limit",
+  "resources_and_deadline_unchanged": true,
+  "attempted_partitions": [
+    "accelerated",
+    "dev_accelerated"
+  ],
+  "status": "REJECTED_BY_SLURM_ACCOUNTING_QOS_POLICY",
+  "effective_partitions": [
+    "accelerated"
+  ],
+  "stderr": "Job violates accounting/QOS policy (job submit limit, user size and/or time limits)"
+}
