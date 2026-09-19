@@ -1,0 +1,1130 @@
+[
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "OUTCOME-0438",
+    "query_id": "H593-7bec97dabbf6cdb58e99fd1c",
+    "identity": "ASP Cough Mucus Congestion PMG 24ct",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_assets/images/E128-292f25b074b7be82436a67ca.png",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 1321,
+    "final_selected": 1322,
+    "wrong_physical": 1321,
+    "target_physical": 1322,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "01_COST1_OUTCOME-0438",
+    "evidence": {
+      "wrong": {
+        "physical_row": 1321,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ASP Cough Mucus COngestion Day Night PMG 24ct.jpg",
+        "scores": {
+          "real_score": 0.002565706901831157,
+          "visibility_mass": 0.028303983832752476,
+          "query_control_score": 0.002731377861644292,
+          "reference_control_score": 0.002500937037969322,
+          "candidate_position": 25,
+          "physical_row": 1321,
+          "raw_score": 475.9747314453125,
+          "query_map_sha256": "ac9197494e82a487a143f49b78e0b2f49f6105f07f887fcd8514e86b6d8e0960",
+          "reference_map_sha256": "8723b0506f1adca1b89356c054514ba305346d767f4c2df233b3ec7f780cda4b"
+        },
+        "query_map_sha256": "ac9197494e82a487a143f49b78e0b2f49f6105f07f887fcd8514e86b6d8e0960",
+        "reference_map_sha256": "8723b0506f1adca1b89356c054514ba305346d767f4c2df233b3ec7f780cda4b"
+      },
+      "target": {
+        "physical_row": 1322,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ASP Cough Mucus Congestion PMG 24ct.jpg",
+        "scores": {
+          "real_score": 0.025770195767915997,
+          "visibility_mass": 0.0958323703332282,
+          "query_control_score": 0.02350333933759405,
+          "reference_control_score": 0.026829907578054545,
+          "candidate_position": 26,
+          "physical_row": 1322,
+          "raw_score": 474.0279235839844,
+          "query_map_sha256": "015532f746ce0b726a9158edd047b75bc342bd2317ae506ef378091b03d071f6",
+          "reference_map_sha256": "19d9d6cb62cd345c273e13cc68a2cdae69517eae64d90ed6f1874ad9447f9be4"
+        },
+        "query_map_sha256": "015532f746ce0b726a9158edd047b75bc342bd2317ae506ef378091b03d071f6",
+        "reference_map_sha256": "19d9d6cb62cd345c273e13cc68a2cdae69517eae64d90ed6f1874ad9447f9be4"
+      }
+    },
+    "query_grid": [
+      36,
+      20
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard08/payload.pt",
+      "sha256": "e56be730c8d942d58e1bb0a7c83cdb865f9f93f4e0b51fda5e670700990ad6af"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard08/payload.pt",
+      "sha256": "08835d2ae9bb65e7d93809a3121b2517c549a4a089fa0e75790abe7130cf7852"
+    },
+    "source_query_id": "E128-292f25b074b7be82436a67ca",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/payload.json",
+      "sha256": "3fc2b71ea52a47b5cd89a1a9f825f0c1c92dddf9f815009202d5942403dff899"
+    },
+    "head_parameters_hex": [
+      "0x1.ec7cff0fa2339p-2",
+      "-0x1.0c0c66914f611p+1",
+      "0x1.d1c8ad1ab4ff5p+1",
+      "0x1.402b170b425ebp+1",
+      "0x1.3084ad1787cb3p-3",
+      "0x1.7906e6dcf0ff5p-7",
+      "-0x1.3b4ac26dbbd06p+0"
+    ],
+    "source_fold": 1,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 1.7763568394002505e-15,
+    "selected_logit": 0.31370655097614164,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "DIFFICULT-0013",
+    "query_id": "H593-2f5a93c328b7e7c9e25412f0",
+    "identity": "3T3-bn-lansoprazole",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-2f5a93c328b7e7c9e25412f0.jpg",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 853,
+    "final_selected": 996,
+    "wrong_physical": 853,
+    "target_physical": 996,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "02_COST1_DIFFICULT-0013",
+    "evidence": {
+      "wrong": {
+        "physical_row": 853,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/0227294C7-image-1.jpg",
+        "scores": {
+          "real_score": 0.0005468570924590838,
+          "visibility_mass": 0.014277787101520622,
+          "query_control_score": 0.0005356116403352214,
+          "reference_control_score": 0.0006420672467766503,
+          "candidate_position": 10,
+          "physical_row": 853,
+          "raw_score": 498.70416259765625,
+          "query_map_sha256": "a22b8c6aecc1400a67b53692b06c46a799e139203495e13740c51f2ce1b10601",
+          "reference_map_sha256": "be7bf545b955dc300167501bbd3ccbed376a5b4482ec85f7a8e96d7c9242c36b"
+        },
+        "query_map_sha256": "a22b8c6aecc1400a67b53692b06c46a799e139203495e13740c51f2ce1b10601",
+        "reference_map_sha256": "be7bf545b955dc300167501bbd3ccbed376a5b4482ec85f7a8e96d7c9242c36b"
+      },
+      "target": {
+        "physical_row": 996,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/3T3-bn-lansoprazole.jpg",
+        "scores": {
+          "real_score": 0.030399925748327998,
+          "visibility_mass": 0.07213816181708282,
+          "query_control_score": 0.030035023708693157,
+          "reference_control_score": 0.018598990968127456,
+          "candidate_position": 20,
+          "physical_row": 996,
+          "raw_score": 489.8419189453125,
+          "query_map_sha256": "af4f84d1d259dd3252ea55ac97a6deb8b18b85a0df7811242d34bcb7a63c3cbf",
+          "reference_map_sha256": "c78763e4fc248ae348c8a98aa64e99c05ee31c02b6e03ee8bd203d73df03da4c"
+        },
+        "query_map_sha256": "af4f84d1d259dd3252ea55ac97a6deb8b18b85a0df7811242d34bcb7a63c3cbf",
+        "reference_map_sha256": "c78763e4fc248ae348c8a98aa64e99c05ee31c02b6e03ee8bd203d73df03da4c"
+      }
+    },
+    "query_grid": [
+      24,
+      32
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard08/payload.pt",
+      "sha256": "b923bf6fce9f769a6ddccad30a618d003dd66d55c389bad2644f05cf36724784"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard08/payload.pt",
+      "sha256": "c331362225960702e57b1435c655e99b63d6a070e600ef68cd716f6e80d44957"
+    },
+    "source_query_id": "H593-2f5a93c328b7e7c9e25412f0",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+      "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+    },
+    "head_parameters_hex": [
+      "0x1.e815719be5897p-2",
+      "-0x1.5412c5bba1bb7p+0",
+      "0x1.ddc22648737a1p+1",
+      "0x1.ca51862b0395ap+0",
+      "0x1.dcbcbf535e60bp-3",
+      "-0x1.07569cba10c5ep-5",
+      "-0x1.53e5a05241b17p+0"
+    ],
+    "source_fold": 4,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 4.440892098500626e-16,
+    "selected_logit": 1.4789366406139905,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "DIFFICULT-0023",
+    "query_id": "H593-37c29058d6ea3f6600852bd1",
+    "identity": "406heb",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-37c29058d6ea3f6600852bd1.jpg",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 2224,
+    "final_selected": 1013,
+    "wrong_physical": 2224,
+    "target_physical": 1013,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "03_COST1_DIFFICULT-0023",
+    "evidence": {
+      "wrong": {
+        "physical_row": 2224,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CVS Stool Softner 100CT.jpg",
+        "scores": {
+          "real_score": 0.00584643865476526,
+          "visibility_mass": 0.046283975872898044,
+          "query_control_score": 0.005060649622479354,
+          "reference_control_score": 0.0051547821094092856,
+          "candidate_position": 38,
+          "physical_row": 2224,
+          "raw_score": 465.64764404296875,
+          "query_map_sha256": "b467c1b496b93f337ee6ae1b2944b6da67fa4b67d5d91fe7a8ac19ce55cbd278",
+          "reference_map_sha256": "fd3d66becdb589c795f8fe026cf4475d219a855663e994bb922b4f93385d6958"
+        },
+        "query_map_sha256": "b467c1b496b93f337ee6ae1b2944b6da67fa4b67d5d91fe7a8ac19ce55cbd278",
+        "reference_map_sha256": "fd3d66becdb589c795f8fe026cf4475d219a855663e994bb922b4f93385d6958"
+      },
+      "target": {
+        "physical_row": 1013,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/406heb.jpg",
+        "scores": {
+          "real_score": 0.07086975901876114,
+          "visibility_mass": 0.14846623529594344,
+          "query_control_score": 0.05476377680491283,
+          "reference_control_score": 0.06451718502524566,
+          "candidate_position": 7,
+          "physical_row": 1013,
+          "raw_score": 459.80206298828125,
+          "query_map_sha256": "c447a08ad1a0ad4384781fa3b843d2dce0f19431c4e0f15b93004926175e5d39",
+          "reference_map_sha256": "e873b0fa843ecfa00d9a3893a66e5ac87379c3b83c0987385e2c34e182633fc7"
+        },
+        "query_map_sha256": "c447a08ad1a0ad4384781fa3b843d2dce0f19431c4e0f15b93004926175e5d39",
+        "reference_map_sha256": "e873b0fa843ecfa00d9a3893a66e5ac87379c3b83c0987385e2c34e182633fc7"
+      }
+    },
+    "query_grid": [
+      24,
+      32
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard10/payload.pt",
+      "sha256": "65f852f5cde1b2aebd22e6cde31ff54325897a719820b83d616f0c5bda40861f"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard10/payload.pt",
+      "sha256": "f6ab0e433f9e21e1af545b3d8e2454462879c39d7fddb160a38a6b2b0cd85eff"
+    },
+    "source_query_id": "H593-37c29058d6ea3f6600852bd1",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold3/payload.json",
+      "sha256": "9a94a448410d8d0eb9c51abb9f7ffd2be2b102ed258a3cbd03f67cb2b8dd5079"
+    },
+    "head_parameters_hex": [
+      "0x1.a61deb15101adp-2",
+      "-0x1.ffa3b70192b65p-1",
+      "0x1.9dc0351896321p+1",
+      "0x1.8fbf12a4090d6p+0",
+      "0x1.1a05f8dac87f9p-3",
+      "-0x1.f792d35840722p-5",
+      "-0x1.4d25f7142bdd9p+0"
+    ],
+    "source_fold": 3,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 8.881784197001252e-16,
+    "selected_logit": 0.38337466009795595,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "DIFFICULT-0043",
+    "query_id": "H593-c317503b769e0f3acf782e33",
+    "identity": "734-uw-mint-mini-nicotine-lozenge",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-c317503b769e0f3acf782e33.jpg",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 3476,
+    "final_selected": 1130,
+    "wrong_physical": 3476,
+    "target_physical": 1130,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "04_COST1_DIFFICULT-0043",
+    "evidence": {
+      "wrong": {
+        "physical_row": 3476,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blip-nicotine-gum-fruit-carton-image.jpg",
+        "scores": {
+          "real_score": 0.00013995704328577496,
+          "visibility_mass": 0.012485819417469513,
+          "query_control_score": 0.00013764369373131993,
+          "reference_control_score": 0.00012555815399901697,
+          "candidate_position": 70,
+          "physical_row": 3476,
+          "raw_score": 409.73431396484375,
+          "query_map_sha256": "c4c174fc0b19fa43ce760aeca9e4a045dc896aa0e9f234af763ce7840c40a0f5",
+          "reference_map_sha256": "e82c5b6dc7bd7d5439e524f011973d81988ae12bd41c00a6bd14cdeb36df7f5d"
+        },
+        "query_map_sha256": "c4c174fc0b19fa43ce760aeca9e4a045dc896aa0e9f234af763ce7840c40a0f5",
+        "reference_map_sha256": "e82c5b6dc7bd7d5439e524f011973d81988ae12bd41c00a6bd14cdeb36df7f5d"
+      },
+      "target": {
+        "physical_row": 1130,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/734-uw-mint-mini-nicotine-lozenge.jpg",
+        "scores": {
+          "real_score": 0.012278310741443142,
+          "visibility_mass": 0.04695500104096659,
+          "query_control_score": 0.008751550867902065,
+          "reference_control_score": 0.008342130390022047,
+          "candidate_position": 17,
+          "physical_row": 1130,
+          "raw_score": 408.55755615234375,
+          "query_map_sha256": "3c1d4981a4ef7839d235564728a0dae9af736be6898090c6e77cb69418511021",
+          "reference_map_sha256": "0fa51e18cd86974b8171ef1f14b166706e442d470018b3a6816d0e23464e4754"
+        },
+        "query_map_sha256": "3c1d4981a4ef7839d235564728a0dae9af736be6898090c6e77cb69418511021",
+        "reference_map_sha256": "0fa51e18cd86974b8171ef1f14b166706e442d470018b3a6816d0e23464e4754"
+      }
+    },
+    "query_grid": [
+      24,
+      32
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard32/payload.pt",
+      "sha256": "e038291810b02db4b3a66e7caf579aa877eb20aa7524c99644d8714d69223ac2"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard32/payload.pt",
+      "sha256": "4c7254e6e873aeb1625d516cbfaa96ebe0dd23d752b2892dbdaed518e0f632bb"
+    },
+    "source_query_id": "H593-c317503b769e0f3acf782e33",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/payload.json",
+      "sha256": "3fc2b71ea52a47b5cd89a1a9f825f0c1c92dddf9f815009202d5942403dff899"
+    },
+    "head_parameters_hex": [
+      "0x1.ec7cff0fa2339p-2",
+      "-0x1.0c0c66914f611p+1",
+      "0x1.d1c8ad1ab4ff5p+1",
+      "0x1.402b170b425ebp+1",
+      "0x1.3084ad1787cb3p-3",
+      "0x1.7906e6dcf0ff5p-7",
+      "-0x1.3b4ac26dbbd06p+0"
+    ],
+    "source_fold": 1,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 8.881784197001252e-16,
+    "selected_logit": 1.1694269776622939,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "DIFFICULT-0061",
+    "query_id": "H593-e69eb7b78aae86a02db13aa6",
+    "identity": "bef4f237-ccb8-4d28-bfc2-41c511a17d7f-01",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_assets/images/T128-e8b5bddae9742995609b7b9b.jpg",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 4346,
+    "final_selected": 3368,
+    "wrong_physical": 4346,
+    "target_physical": 3368,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "05_COST1_DIFFICULT-0061",
+    "evidence": {
+      "wrong": {
+        "physical_row": 4346,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/cvs05-0008-02.jpg",
+        "scores": {
+          "real_score": 0.0011612628515485911,
+          "visibility_mass": 0.018205904211175027,
+          "query_control_score": 0.0011500551525015588,
+          "reference_control_score": 0.0009121035432639761,
+          "candidate_position": 118,
+          "physical_row": 4346,
+          "raw_score": 420.76995849609375,
+          "query_map_sha256": "5e45d2a76f17c39d7e0017cf555bf012fadb8b9ba621e36ab12222e2c7564e1d",
+          "reference_map_sha256": "3d8c2c4f7362475733fa9f863c243084da005eccf946984634d8c17557523712"
+        },
+        "query_map_sha256": "5e45d2a76f17c39d7e0017cf555bf012fadb8b9ba621e36ab12222e2c7564e1d",
+        "reference_map_sha256": "3d8c2c4f7362475733fa9f863c243084da005eccf946984634d8c17557523712"
+      },
+      "target": {
+        "physical_row": 3368,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/bef4f237-ccb8-4d28-bfc2-41c511a17d7f-01.jpg",
+        "scores": {
+          "real_score": 0.011712049317689604,
+          "visibility_mass": 0.05964101941108489,
+          "query_control_score": 0.008219436008964397,
+          "reference_control_score": 0.011793791917946004,
+          "candidate_position": 64,
+          "physical_row": 3368,
+          "raw_score": 418.80718994140625,
+          "query_map_sha256": "f7456db23b4f966b6a7952ac8cf9c4ea7abbe31eec7d0ed284825db148751a2f",
+          "reference_map_sha256": "4d2e35a6c20e517f54346be3241651f5604f56c1cb35c4ecc898ff2c53307d69"
+        },
+        "query_map_sha256": "f7456db23b4f966b6a7952ac8cf9c4ea7abbe31eec7d0ed284825db148751a2f",
+        "reference_map_sha256": "4d2e35a6c20e517f54346be3241651f5604f56c1cb35c4ecc898ff2c53307d69"
+      }
+    },
+    "query_grid": [
+      24,
+      32
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1/shard09/payload.pt",
+      "sha256": "994548d5758badabf2d79c53d9cbc45713f1e6bde28a626ea98d8ad3bc629f9f"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard09/payload.pt",
+      "sha256": "9def5134c251c49fda30a8ed779f7ad220b5b24199575232576668b8f41023f5"
+    },
+    "source_query_id": "T128-e8b5bddae9742995609b7b9b",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/payload.json",
+      "sha256": "3fc2b71ea52a47b5cd89a1a9f825f0c1c92dddf9f815009202d5942403dff899"
+    },
+    "head_parameters_hex": [
+      "0x1.ec7cff0fa2339p-2",
+      "-0x1.0c0c66914f611p+1",
+      "0x1.d1c8ad1ab4ff5p+1",
+      "0x1.402b170b425ebp+1",
+      "0x1.3084ad1787cb3p-3",
+      "0x1.7906e6dcf0ff5p-7",
+      "-0x1.3b4ac26dbbd06p+0"
+    ],
+    "source_fold": 1,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 8.881784197001252e-16,
+    "selected_logit": 0.26102209107270213,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "DIFFICULT-0083",
+    "query_id": "H593-90acde9b0567a472f4232120",
+    "identity": "cefdinir-fig2",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_assets/images/T128-74afd5bc3f859cb302229118.jpg",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 5164,
+    "final_selected": 5043,
+    "wrong_physical": 5164,
+    "target_physical": 5043,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "06_COST1_DIFFICULT-0083",
+    "evidence": {
+      "wrong": {
+        "physical_row": 5164,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/prescription/gabapentin-fig11.jpg",
+        "scores": {
+          "real_score": 0.001766276267444629,
+          "visibility_mass": 0.034289546086745136,
+          "query_control_score": 0.00169463563047351,
+          "reference_control_score": 0.0016213756263583332,
+          "candidate_position": 104,
+          "physical_row": 5164,
+          "raw_score": 450.8756103515625,
+          "query_map_sha256": "ec921489c4856e31ffec8a7dbe55e0870559e97a8f22dc9cb897c3dd322d589e",
+          "reference_map_sha256": "c1d96309461569db8d08cd6b8e0c1d63bb7cc88985dd88709748c1516eb1f4d0"
+        },
+        "query_map_sha256": "ec921489c4856e31ffec8a7dbe55e0870559e97a8f22dc9cb897c3dd322d589e",
+        "reference_map_sha256": "c1d96309461569db8d08cd6b8e0c1d63bb7cc88985dd88709748c1516eb1f4d0"
+      },
+      "target": {
+        "physical_row": 5043,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/prescription/cefdinir-fig2.jpg",
+        "scores": {
+          "real_score": 0.06165799231867958,
+          "visibility_mass": 0.14329098420403902,
+          "query_control_score": 0.044565128184982,
+          "reference_control_score": 0.054417501677096296,
+          "candidate_position": 87,
+          "physical_row": 5043,
+          "raw_score": 449.4945373535156,
+          "query_map_sha256": "bb61358b838c6d93dd893c3ad5d02bb6fcd2515352ce30ed12b4fcf568573810",
+          "reference_map_sha256": "81dfe280f68173522ca852c2d81b90fcc5cdd5fa60045bbc449a46a1a7d9dde4"
+        },
+        "query_map_sha256": "bb61358b838c6d93dd893c3ad5d02bb6fcd2515352ce30ed12b4fcf568573810",
+        "reference_map_sha256": "81dfe280f68173522ca852c2d81b90fcc5cdd5fa60045bbc449a46a1a7d9dde4"
+      }
+    },
+    "query_grid": [
+      24,
+      32
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1/shard08/payload.pt",
+      "sha256": "4e65f2f5af7df01206e7bec017f9c81df3d1ebbc4f1ddbce01597da69c1b93d9"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard08/payload.pt",
+      "sha256": "d0a4f15e562edd38d69850d2fdbb595f446045fb5ba4103e4ac0864bce880718"
+    },
+    "source_query_id": "T128-74afd5bc3f859cb302229118",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold0/payload.json",
+      "sha256": "bfced564709cb6a689be71a7972d642e826b7de649468bd6fd7de816e2cb9ab2"
+    },
+    "head_parameters_hex": [
+      "0x1.c3c4ba8c92e44p-2",
+      "-0x1.bf7c58ee01461p+0",
+      "0x1.d99f81bd9dc74p+1",
+      "0x1.ff21d89f0cd28p+0",
+      "0x1.74f769b8df57bp-3",
+      "-0x1.490877b0410e7p-6",
+      "-0x1.192055faff8eep+0"
+    ],
+    "source_fold": 0,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 8.881784197001252e-16,
+    "selected_logit": 1.18908266579066,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "DIFFICULT-0102",
+    "query_id": "H593-b5088f4d9100c24150c49220",
+    "identity": "int08-0008-17",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_assets/images/T128-3dc2ff96eb5bd19b389ba994.jpg",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 396,
+    "final_selected": 395,
+    "wrong_physical": 396,
+    "target_physical": 395,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "07_COST1_DIFFICULT-0102",
+    "evidence": {
+      "wrong": {
+        "physical_row": 396,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/int08-0008-18.jpg",
+        "scores": {
+          "real_score": 0.006939898576397811,
+          "visibility_mass": 0.04257072153101919,
+          "query_control_score": 0.005709632655200137,
+          "reference_control_score": 0.007025089745296351,
+          "candidate_position": 111,
+          "physical_row": 396,
+          "raw_score": 462.7025451660156,
+          "query_map_sha256": "3e581e6b2ebe9f9a690988843767ea509ceaa9dca7e42d4b4758ff2223a6294a",
+          "reference_map_sha256": "d284c94913def1d86d811592e59b74f8ac0d746bab92ee420c53af2c6b4023ad"
+        },
+        "query_map_sha256": "3e581e6b2ebe9f9a690988843767ea509ceaa9dca7e42d4b4758ff2223a6294a",
+        "reference_map_sha256": "d284c94913def1d86d811592e59b74f8ac0d746bab92ee420c53af2c6b4023ad"
+      },
+      "target": {
+        "physical_row": 395,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/int08-0008-17.jpg",
+        "scores": {
+          "real_score": 0.08847501835502655,
+          "visibility_mass": 0.16597960383612473,
+          "query_control_score": 0.06580474961214995,
+          "reference_control_score": 0.0774992104468185,
+          "candidate_position": 110,
+          "physical_row": 395,
+          "raw_score": 462.1600341796875,
+          "query_map_sha256": "7f57b6562975dd5bef4e608078aa8be381a7dfcbef4972cfc3c73680a5b3b9cc",
+          "reference_map_sha256": "22a81943df2a5f4e3e8ad66db95c20bf8d777e126d027d115cc431baa8560bd0"
+        },
+        "query_map_sha256": "7f57b6562975dd5bef4e608078aa8be381a7dfcbef4972cfc3c73680a5b3b9cc",
+        "reference_map_sha256": "22a81943df2a5f4e3e8ad66db95c20bf8d777e126d027d115cc431baa8560bd0"
+      }
+    },
+    "query_grid": [
+      24,
+      32
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1/shard15/payload.pt",
+      "sha256": "d57b919aa7963287ecbc5e68c664b8ac19699c1367018eba9ce4e5b352822e4d"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard15/payload.pt",
+      "sha256": "06a1c86d3f84d88c0648cfcb2ac220ccf613eda13e4b78496ba264a6d73dfe0b"
+    },
+    "source_query_id": "T128-3dc2ff96eb5bd19b389ba994",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold0/payload.json",
+      "sha256": "bfced564709cb6a689be71a7972d642e826b7de649468bd6fd7de816e2cb9ab2"
+    },
+    "head_parameters_hex": [
+      "0x1.c3c4ba8c92e44p-2",
+      "-0x1.bf7c58ee01461p+0",
+      "0x1.d99f81bd9dc74p+1",
+      "0x1.ff21d89f0cd28p+0",
+      "0x1.74f769b8df57bp-3",
+      "-0x1.490877b0410e7p-6",
+      "-0x1.192055faff8eep+0"
+    ],
+    "source_fold": 0,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 1.7763568394002505e-15,
+    "selected_logit": 0.7909640756053209,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "NDV2-011-P04",
+    "query_id": "H593-f063b9949afaac7650b24e97",
+    "identity": "Bacitracin  14.2g 0.5oz carton label rev 09 2021",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-f063b9949afaac7650b24e97.jpg",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 1644,
+    "final_selected": 1645,
+    "wrong_physical": 1644,
+    "target_physical": 1645,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "08_COST1_NDV2-011-P04",
+    "evidence": {
+      "wrong": {
+        "physical_row": 1644,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bacitracin  0.9g 0.03oz carton label rev 09 2021.jpg",
+        "scores": {
+          "real_score": 0.0028388340156785597,
+          "visibility_mass": 0.05151189630516963,
+          "query_control_score": 0.002844572371653856,
+          "reference_control_score": 0.003930723877005835,
+          "candidate_position": 27,
+          "physical_row": 1644,
+          "raw_score": 495.70281982421875,
+          "query_map_sha256": "2c30d79f112d6f07f0bdb1660e04c12d43716339f5aead38160ae802f819c7c3",
+          "reference_map_sha256": "c162c73212369b971893c41ba6df7946bf29cc9a5d1e82b48b0c90da3c3bcc11"
+        },
+        "query_map_sha256": "2c30d79f112d6f07f0bdb1660e04c12d43716339f5aead38160ae802f819c7c3",
+        "reference_map_sha256": "c162c73212369b971893c41ba6df7946bf29cc9a5d1e82b48b0c90da3c3bcc11"
+      },
+      "target": {
+        "physical_row": 1645,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bacitracin  14.2g 0.5oz carton label rev 09 2021.jpg",
+        "scores": {
+          "real_score": 0.10693021529091902,
+          "visibility_mass": 0.1981652135178679,
+          "query_control_score": 0.0727268279631956,
+          "reference_control_score": 0.07434366590983585,
+          "candidate_position": 28,
+          "physical_row": 1645,
+          "raw_score": 495.00555419921875,
+          "query_map_sha256": "366ec9abf5cfb9e2d4bc40193c136bc763fd580b06ff3ec69f6fe2b67281a7ad",
+          "reference_map_sha256": "d95785a2e1875a32bfd881df389ad6b9d3620a53d1cee38d6b8a9a97bd39e96a"
+        },
+        "query_map_sha256": "366ec9abf5cfb9e2d4bc40193c136bc763fd580b06ff3ec69f6fe2b67281a7ad",
+        "reference_map_sha256": "d95785a2e1875a32bfd881df389ad6b9d3620a53d1cee38d6b8a9a97bd39e96a"
+      }
+    },
+    "query_grid": [
+      24,
+      32
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard40/payload.pt",
+      "sha256": "2ff5b63fa8baa154d3e0df6ad10309034959204e56551f776f8358332c02bf8d"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard40/payload.pt",
+      "sha256": "ba416ccd012210fcc5a4dafab8eea183f0c3ac75efa978123e756efe42a8921b"
+    },
+    "source_query_id": "H593-f063b9949afaac7650b24e97",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+      "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+    },
+    "head_parameters_hex": [
+      "0x1.e815719be5897p-2",
+      "-0x1.5412c5bba1bb7p+0",
+      "0x1.ddc22648737a1p+1",
+      "0x1.ca51862b0395ap+0",
+      "0x1.dcbcbf535e60bp-3",
+      "-0x1.07569cba10c5ep-5",
+      "-0x1.53e5a05241b17p+0"
+    ],
+    "source_fold": 4,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 8.881784197001252e-16,
+    "selected_logit": 1.2511775211947358,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "OUTCOME-0015",
+    "query_id": "H593-3a88599950984808ec05d372",
+    "identity": "0003",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_assets/images/T128-49514d3db81bfb8902a6f827.png",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 926,
+    "final_selected": 518,
+    "wrong_physical": 926,
+    "target_physical": 518,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "09_COST1_OUTCOME-0015",
+    "evidence": {
+      "wrong": {
+        "physical_row": 926,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/199006EC8 image 2.jpg",
+        "scores": {
+          "real_score": 0.003420199101036303,
+          "visibility_mass": 0.03361475321346681,
+          "query_control_score": 0.0031084655764771272,
+          "reference_control_score": 0.0027473505212400593,
+          "candidate_position": 12,
+          "physical_row": 926,
+          "raw_score": 485.78924560546875,
+          "query_map_sha256": "dea64ea4c3f69aef22ec6d943ca5e73a1118cfba4ce7bf5835424a0190dc15a5",
+          "reference_map_sha256": "bd397b8141b57cfdcdeb76d20cf14532d6a057639f6683939098b372d5343f13"
+        },
+        "query_map_sha256": "dea64ea4c3f69aef22ec6d943ca5e73a1118cfba4ce7bf5835424a0190dc15a5",
+        "reference_map_sha256": "bd397b8141b57cfdcdeb76d20cf14532d6a057639f6683939098b372d5343f13"
+      },
+      "target": {
+        "physical_row": 518,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/homeopathic/0003.jpg",
+        "scores": {
+          "real_score": 0.12173727938275421,
+          "visibility_mass": 0.2298368494529824,
+          "query_control_score": 0.1134414188657928,
+          "reference_control_score": 0.09222142664565015,
+          "candidate_position": 0,
+          "physical_row": 518,
+          "raw_score": 480.51397705078125,
+          "query_map_sha256": "d67be86004c761cbfeb84dce9ad3327260feb48d7cf36f08324b53f9f7415afa",
+          "reference_map_sha256": "85b1fee9a0b89332ef21d2f5ea167a68394ac61ff238e9b786d84644ebda2ca9"
+        },
+        "query_map_sha256": "d67be86004c761cbfeb84dce9ad3327260feb48d7cf36f08324b53f9f7415afa",
+        "reference_map_sha256": "85b1fee9a0b89332ef21d2f5ea167a68394ac61ff238e9b786d84644ebda2ca9"
+      }
+    },
+    "query_grid": [
+      36,
+      20
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1/shard08/payload.pt",
+      "sha256": "4e65f2f5af7df01206e7bec017f9c81df3d1ebbc4f1ddbce01597da69c1b93d9"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard08/payload.pt",
+      "sha256": "d0a4f15e562edd38d69850d2fdbb595f446045fb5ba4103e4ac0864bce880718"
+    },
+    "source_query_id": "T128-49514d3db81bfb8902a6f827",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/payload.json",
+      "sha256": "3fc2b71ea52a47b5cd89a1a9f825f0c1c92dddf9f815009202d5942403dff899"
+    },
+    "head_parameters_hex": [
+      "0x1.ec7cff0fa2339p-2",
+      "-0x1.0c0c66914f611p+1",
+      "0x1.d1c8ad1ab4ff5p+1",
+      "0x1.402b170b425ebp+1",
+      "0x1.3084ad1787cb3p-3",
+      "0x1.7906e6dcf0ff5p-7",
+      "-0x1.3b4ac26dbbd06p+0"
+    ],
+    "source_fold": 1,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 1.7763568394002505e-15,
+    "selected_logit": 1.1823492282995156,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "OUTCOME-0087",
+    "query_id": "H593-5cde50d3890df26e13611884",
+    "identity": "11-5BlisterCarton",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_assets/images/T128-ccefd5dccce120adc413ebc4.png",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 51,
+    "final_selected": 9,
+    "wrong_physical": 51,
+    "target_physical": 9,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "10_COST1_OUTCOME-0087",
+    "evidence": {
+      "wrong": {
+        "physical_row": 51,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/5-75BlisterCarton.jpg",
+        "scores": {
+          "real_score": 0.009649650701561423,
+          "visibility_mass": 0.048377722051239934,
+          "query_control_score": 0.0069501120125929385,
+          "reference_control_score": 0.007081017179350247,
+          "candidate_position": 16,
+          "physical_row": 51,
+          "raw_score": 491.63250732421875,
+          "query_map_sha256": "2bc0b0b559f308b0b795e2bd9aede6988e46f4d3cdec2cdec9d61f32ad37e30a",
+          "reference_map_sha256": "1be0af2e22947533c689e019a9910dfad6c4130b68b1abebf2d6ac83fd647441"
+        },
+        "query_map_sha256": "2bc0b0b559f308b0b795e2bd9aede6988e46f4d3cdec2cdec9d61f32ad37e30a",
+        "reference_map_sha256": "1be0af2e22947533c689e019a9910dfad6c4130b68b1abebf2d6ac83fd647441"
+      },
+      "target": {
+        "physical_row": 9,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/11-5BlisterCarton.jpg",
+        "scores": {
+          "real_score": 0.0656042294061877,
+          "visibility_mass": 0.13847681525875424,
+          "query_control_score": 0.054288958650550646,
+          "reference_control_score": 0.06355469778479553,
+          "candidate_position": 2,
+          "physical_row": 9,
+          "raw_score": 490.9654846191406,
+          "query_map_sha256": "520e05c6882fa2e354031e510525136afaf015eb974f30fc286de1940da0a2c5",
+          "reference_map_sha256": "c4b2c305eeb39d51a1d2586cfc7c78ebfd885c7d291bf3dde6213848fa1b10f7"
+        },
+        "query_map_sha256": "520e05c6882fa2e354031e510525136afaf015eb974f30fc286de1940da0a2c5",
+        "reference_map_sha256": "c4b2c305eeb39d51a1d2586cfc7c78ebfd885c7d291bf3dde6213848fa1b10f7"
+      }
+    },
+    "query_grid": [
+      36,
+      20
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1/shard08/payload.pt",
+      "sha256": "4e65f2f5af7df01206e7bec017f9c81df3d1ebbc4f1ddbce01597da69c1b93d9"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard08/payload.pt",
+      "sha256": "d0a4f15e562edd38d69850d2fdbb595f446045fb5ba4103e4ac0864bce880718"
+    },
+    "source_query_id": "T128-ccefd5dccce120adc413ebc4",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+      "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+    },
+    "head_parameters_hex": [
+      "0x1.e815719be5897p-2",
+      "-0x1.5412c5bba1bb7p+0",
+      "0x1.ddc22648737a1p+1",
+      "0x1.ca51862b0395ap+0",
+      "0x1.dcbcbf535e60bp-3",
+      "-0x1.07569cba10c5ep-5",
+      "-0x1.53e5a05241b17p+0"
+    ],
+    "source_fold": 4,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 1.7763568394002505e-15,
+    "selected_logit": 0.34474806481229225,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "OUTCOME-0108",
+    "query_id": "H593-d4fd56aea7e4dc41f9436c8f",
+    "identity": "1g7-17-allergy-nasal-spray",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-d4fd56aea7e4dc41f9436c8f.png",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 2208,
+    "final_selected": 930,
+    "wrong_physical": 2208,
+    "target_physical": 930,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "11_COST1_OUTCOME-0108",
+    "evidence": {
+      "wrong": {
+        "physical_row": 2208,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CVS Lidocaine IFC.jpg",
+        "scores": {
+          "real_score": 0.002586569715613999,
+          "visibility_mass": 0.01881001636112267,
+          "query_control_score": 0.0020651101293029266,
+          "reference_control_score": 0.0016325629733701618,
+          "candidate_position": 25,
+          "physical_row": 2208,
+          "raw_score": 470.79925537109375,
+          "query_map_sha256": "d4f9c81d151c9148095cc0752d0f1bb85b2a89193d7d18acab976acdef43b6c7",
+          "reference_map_sha256": "7b4682ef32dc914f491f9e13a9657ed8995dc0fe0506673b73d198667dd54d45"
+        },
+        "query_map_sha256": "d4f9c81d151c9148095cc0752d0f1bb85b2a89193d7d18acab976acdef43b6c7",
+        "reference_map_sha256": "7b4682ef32dc914f491f9e13a9657ed8995dc0fe0506673b73d198667dd54d45"
+      },
+      "target": {
+        "physical_row": 930,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/1g7-17-allergy-nasal-spray.jpg",
+        "scores": {
+          "real_score": 0.039262746784235115,
+          "visibility_mass": 0.10745895515986098,
+          "query_control_score": 0.03623491099217197,
+          "reference_control_score": 0.028313947543461917,
+          "candidate_position": 1,
+          "physical_row": 930,
+          "raw_score": 449.8223876953125,
+          "query_map_sha256": "fb875406d1c870ccacb25cd53dea0ea5269b8e0e15142a5640b184ca893d5362",
+          "reference_map_sha256": "8c712abeade8e25194152e58258034d20adfd9a34776dc8b313c1b76d70baf26"
+        },
+        "query_map_sha256": "fb875406d1c870ccacb25cd53dea0ea5269b8e0e15142a5640b184ca893d5362",
+        "reference_map_sha256": "8c712abeade8e25194152e58258034d20adfd9a34776dc8b313c1b76d70baf26"
+      }
+    },
+    "query_grid": [
+      36,
+      20
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard35/payload.pt",
+      "sha256": "cb2007ba8f6ec293aebdbbe2454c784f3152af7c56ab2466b20ec924aea02c4c"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard35/payload.pt",
+      "sha256": "05268dc6545ecd737db9698f17bbdf5cfbdcafb9efdc87924a66e0a883e9728d"
+    },
+    "source_query_id": "H593-d4fd56aea7e4dc41f9436c8f",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold3/payload.json",
+      "sha256": "9a94a448410d8d0eb9c51abb9f7ffd2be2b102ed258a3cbd03f67cb2b8dd5079"
+    },
+    "head_parameters_hex": [
+      "0x1.a61deb15101adp-2",
+      "-0x1.ffa3b70192b65p-1",
+      "0x1.9dc0351896321p+1",
+      "0x1.8fbf12a4090d6p+0",
+      "0x1.1a05f8dac87f9p-3",
+      "-0x1.f792d35840722p-5",
+      "-0x1.4d25f7142bdd9p+0"
+    ],
+    "source_fold": 3,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 8.881784197001252e-16,
+    "selected_logit": 0.24255209632199626,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  },
+  {
+    "dataset": "medicine",
+    "dataset_label": "药盒",
+    "panel": "真实纠错案例",
+    "model": "COST1",
+    "display_id": "OUTCOME-0131",
+    "query_id": "H593-e8c8ae988bf96315bca9637e",
+    "identity": "200000002710_Final",
+    "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-e8c8ae988bf96315bca9637e.png",
+    "raw_correct": false,
+    "final_correct": true,
+    "raw_selected": 4424,
+    "final_selected": 935,
+    "wrong_physical": 4424,
+    "target_physical": 935,
+    "wrong_role": "RAW 错误 reference",
+    "stem": "12_COST1_OUTCOME-0131",
+    "evidence": {
+      "wrong": {
+        "physical_row": 4424,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/daytime-cold-flu-pur-1.jpg",
+        "scores": {
+          "real_score": 7.89144812312209e-05,
+          "visibility_mass": 0.005917191501505361,
+          "query_control_score": 8.513318265129399e-05,
+          "reference_control_score": 9.9282616616096e-05,
+          "candidate_position": 111,
+          "physical_row": 4424,
+          "raw_score": 412.64453125,
+          "query_map_sha256": "678eab28e542619df9584bc46a9fc9cb8576b1c9efd6be37bac838629c300014",
+          "reference_map_sha256": "ddd07e33efa4915bfbdd55ad4c3a6a11723449ceed35e396946f0c45e7ac4520"
+        },
+        "query_map_sha256": "678eab28e542619df9584bc46a9fc9cb8576b1c9efd6be37bac838629c300014",
+        "reference_map_sha256": "ddd07e33efa4915bfbdd55ad4c3a6a11723449ceed35e396946f0c45e7ac4520"
+      },
+      "target": {
+        "physical_row": 935,
+        "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/200000002710_Final.jpg",
+        "scores": {
+          "real_score": 0.01226106646481569,
+          "visibility_mass": 0.042018332629443,
+          "query_control_score": 0.011705707800424762,
+          "reference_control_score": 0.011009085732179204,
+          "candidate_position": 11,
+          "physical_row": 935,
+          "raw_score": 401.7699890136719,
+          "query_map_sha256": "2f79d594a43b77c4e077da1e9718b7e549c34c0ce2dbfd6511716a9c3d1a1890",
+          "reference_map_sha256": "91362400aa1ee4e70f3008c195486ffc6bfd17a039c5b0e630f932861e239e25"
+        },
+        "query_map_sha256": "2f79d594a43b77c4e077da1e9718b7e549c34c0ce2dbfd6511716a9c3d1a1890",
+        "reference_map_sha256": "91362400aa1ee4e70f3008c195486ffc6bfd17a039c5b0e630f932861e239e25"
+      }
+    },
+    "query_grid": [
+      36,
+      20
+    ],
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "raw_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard39/payload.pt",
+      "sha256": "d6720e51fa73b2d80c9ca7b37764baf8b79fe15f66127ea4ad017974de90a6c8"
+    },
+    "roma_payload": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard39/payload.pt",
+      "sha256": "576b4217c2b106eaeca36d7388aec2a7e600e3adb1b5071f1951c48a9300b6e0"
+    },
+    "source_query_id": "H593-e8c8ae988bf96315bca9637e",
+    "head_source": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+      "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+    },
+    "head_parameters_hex": [
+      "0x1.e815719be5897p-2",
+      "-0x1.5412c5bba1bb7p+0",
+      "0x1.ddc22648737a1p+1",
+      "0x1.ca51862b0395ap+0",
+      "0x1.dcbcbf535e60bp-3",
+      "-0x1.07569cba10c5ep-5",
+      "-0x1.53e5a05241b17p+0"
+    ],
+    "source_fold": 4,
+    "query_excluded_from_head_training": true,
+    "decision_logit_error": 8.881784197001252e-16,
+    "selected_logit": 0.5142781189027392,
+    "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+    "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+    "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+    "fold_number_displayed": false,
+    "training_updates": 0,
+    "encoder_or_matcher_inference_calls": 0
+  }
+]

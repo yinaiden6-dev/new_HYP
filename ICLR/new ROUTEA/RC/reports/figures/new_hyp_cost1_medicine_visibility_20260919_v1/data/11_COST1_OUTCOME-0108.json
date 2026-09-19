@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "OUTCOME-0108",
+  "query_id": "H593-d4fd56aea7e4dc41f9436c8f",
+  "identity": "1g7-17-allergy-nasal-spray",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-d4fd56aea7e4dc41f9436c8f.png",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 2208,
+  "final_selected": 930,
+  "wrong_physical": 2208,
+  "target_physical": 930,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "11_COST1_OUTCOME-0108",
+  "evidence": {
+    "wrong": {
+      "physical_row": 2208,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CVS Lidocaine IFC.jpg",
+      "scores": {
+        "real_score": 0.002586569715613999,
+        "visibility_mass": 0.01881001636112267,
+        "query_control_score": 0.0020651101293029266,
+        "reference_control_score": 0.0016325629733701618,
+        "candidate_position": 25,
+        "physical_row": 2208,
+        "raw_score": 470.79925537109375,
+        "query_map_sha256": "d4f9c81d151c9148095cc0752d0f1bb85b2a89193d7d18acab976acdef43b6c7",
+        "reference_map_sha256": "7b4682ef32dc914f491f9e13a9657ed8995dc0fe0506673b73d198667dd54d45"
+      },
+      "query_map_sha256": "d4f9c81d151c9148095cc0752d0f1bb85b2a89193d7d18acab976acdef43b6c7",
+      "reference_map_sha256": "7b4682ef32dc914f491f9e13a9657ed8995dc0fe0506673b73d198667dd54d45"
+    },
+    "target": {
+      "physical_row": 930,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/1g7-17-allergy-nasal-spray.jpg",
+      "scores": {
+        "real_score": 0.039262746784235115,
+        "visibility_mass": 0.10745895515986098,
+        "query_control_score": 0.03623491099217197,
+        "reference_control_score": 0.028313947543461917,
+        "candidate_position": 1,
+        "physical_row": 930,
+        "raw_score": 449.8223876953125,
+        "query_map_sha256": "fb875406d1c870ccacb25cd53dea0ea5269b8e0e15142a5640b184ca893d5362",
+        "reference_map_sha256": "8c712abeade8e25194152e58258034d20adfd9a34776dc8b313c1b76d70baf26"
+      },
+      "query_map_sha256": "fb875406d1c870ccacb25cd53dea0ea5269b8e0e15142a5640b184ca893d5362",
+      "reference_map_sha256": "8c712abeade8e25194152e58258034d20adfd9a34776dc8b313c1b76d70baf26"
+    }
+  },
+  "query_grid": [
+    36,
+    20
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard35/payload.pt",
+    "sha256": "cb2007ba8f6ec293aebdbbe2454c784f3152af7c56ab2466b20ec924aea02c4c"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard35/payload.pt",
+    "sha256": "05268dc6545ecd737db9698f17bbdf5cfbdcafb9efdc87924a66e0a883e9728d"
+  },
+  "source_query_id": "H593-d4fd56aea7e4dc41f9436c8f",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold3/payload.json",
+    "sha256": "9a94a448410d8d0eb9c51abb9f7ffd2be2b102ed258a3cbd03f67cb2b8dd5079"
+  },
+  "head_parameters_hex": [
+    "0x1.a61deb15101adp-2",
+    "-0x1.ffa3b70192b65p-1",
+    "0x1.9dc0351896321p+1",
+    "0x1.8fbf12a4090d6p+0",
+    "0x1.1a05f8dac87f9p-3",
+    "-0x1.f792d35840722p-5",
+    "-0x1.4d25f7142bdd9p+0"
+  ],
+  "source_fold": 3,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 8.881784197001252e-16,
+  "selected_logit": 0.24255209632199626,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}

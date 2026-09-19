@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "OUTCOME-0087",
+  "query_id": "H593-5cde50d3890df26e13611884",
+  "identity": "11-5BlisterCarton",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_assets/images/T128-ccefd5dccce120adc413ebc4.png",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 51,
+  "final_selected": 9,
+  "wrong_physical": 51,
+  "target_physical": 9,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "10_COST1_OUTCOME-0087",
+  "evidence": {
+    "wrong": {
+      "physical_row": 51,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/5-75BlisterCarton.jpg",
+      "scores": {
+        "real_score": 0.009649650701561423,
+        "visibility_mass": 0.048377722051239934,
+        "query_control_score": 0.0069501120125929385,
+        "reference_control_score": 0.007081017179350247,
+        "candidate_position": 16,
+        "physical_row": 51,
+        "raw_score": 491.63250732421875,
+        "query_map_sha256": "2bc0b0b559f308b0b795e2bd9aede6988e46f4d3cdec2cdec9d61f32ad37e30a",
+        "reference_map_sha256": "1be0af2e22947533c689e019a9910dfad6c4130b68b1abebf2d6ac83fd647441"
+      },
+      "query_map_sha256": "2bc0b0b559f308b0b795e2bd9aede6988e46f4d3cdec2cdec9d61f32ad37e30a",
+      "reference_map_sha256": "1be0af2e22947533c689e019a9910dfad6c4130b68b1abebf2d6ac83fd647441"
+    },
+    "target": {
+      "physical_row": 9,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/animal/11-5BlisterCarton.jpg",
+      "scores": {
+        "real_score": 0.0656042294061877,
+        "visibility_mass": 0.13847681525875424,
+        "query_control_score": 0.054288958650550646,
+        "reference_control_score": 0.06355469778479553,
+        "candidate_position": 2,
+        "physical_row": 9,
+        "raw_score": 490.9654846191406,
+        "query_map_sha256": "520e05c6882fa2e354031e510525136afaf015eb974f30fc286de1940da0a2c5",
+        "reference_map_sha256": "c4b2c305eeb39d51a1d2586cfc7c78ebfd885c7d291bf3dde6213848fa1b10f7"
+      },
+      "query_map_sha256": "520e05c6882fa2e354031e510525136afaf015eb974f30fc286de1940da0a2c5",
+      "reference_map_sha256": "c4b2c305eeb39d51a1d2586cfc7c78ebfd885c7d291bf3dde6213848fa1b10f7"
+    }
+  },
+  "query_grid": [
+    36,
+    20
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1/shard08/payload.pt",
+    "sha256": "4e65f2f5af7df01206e7bec017f9c81df3d1ebbc4f1ddbce01597da69c1b93d9"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard08/payload.pt",
+    "sha256": "d0a4f15e562edd38d69850d2fdbb595f446045fb5ba4103e4ac0864bce880718"
+  },
+  "source_query_id": "T128-ccefd5dccce120adc413ebc4",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+    "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+  },
+  "head_parameters_hex": [
+    "0x1.e815719be5897p-2",
+    "-0x1.5412c5bba1bb7p+0",
+    "0x1.ddc22648737a1p+1",
+    "0x1.ca51862b0395ap+0",
+    "0x1.dcbcbf535e60bp-3",
+    "-0x1.07569cba10c5ep-5",
+    "-0x1.53e5a05241b17p+0"
+  ],
+  "source_fold": 4,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 1.7763568394002505e-15,
+  "selected_logit": 0.34474806481229225,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}

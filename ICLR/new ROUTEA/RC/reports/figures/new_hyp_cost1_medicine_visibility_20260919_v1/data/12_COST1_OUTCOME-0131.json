@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "OUTCOME-0131",
+  "query_id": "H593-e8c8ae988bf96315bca9637e",
+  "identity": "200000002710_Final",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-e8c8ae988bf96315bca9637e.png",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 4424,
+  "final_selected": 935,
+  "wrong_physical": 4424,
+  "target_physical": 935,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "12_COST1_OUTCOME-0131",
+  "evidence": {
+    "wrong": {
+      "physical_row": 4424,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/daytime-cold-flu-pur-1.jpg",
+      "scores": {
+        "real_score": 7.89144812312209e-05,
+        "visibility_mass": 0.005917191501505361,
+        "query_control_score": 8.513318265129399e-05,
+        "reference_control_score": 9.9282616616096e-05,
+        "candidate_position": 111,
+        "physical_row": 4424,
+        "raw_score": 412.64453125,
+        "query_map_sha256": "678eab28e542619df9584bc46a9fc9cb8576b1c9efd6be37bac838629c300014",
+        "reference_map_sha256": "ddd07e33efa4915bfbdd55ad4c3a6a11723449ceed35e396946f0c45e7ac4520"
+      },
+      "query_map_sha256": "678eab28e542619df9584bc46a9fc9cb8576b1c9efd6be37bac838629c300014",
+      "reference_map_sha256": "ddd07e33efa4915bfbdd55ad4c3a6a11723449ceed35e396946f0c45e7ac4520"
+    },
+    "target": {
+      "physical_row": 935,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/200000002710_Final.jpg",
+      "scores": {
+        "real_score": 0.01226106646481569,
+        "visibility_mass": 0.042018332629443,
+        "query_control_score": 0.011705707800424762,
+        "reference_control_score": 0.011009085732179204,
+        "candidate_position": 11,
+        "physical_row": 935,
+        "raw_score": 401.7699890136719,
+        "query_map_sha256": "2f79d594a43b77c4e077da1e9718b7e549c34c0ce2dbfd6511716a9c3d1a1890",
+        "reference_map_sha256": "91362400aa1ee4e70f3008c195486ffc6bfd17a039c5b0e630f932861e239e25"
+      },
+      "query_map_sha256": "2f79d594a43b77c4e077da1e9718b7e549c34c0ce2dbfd6511716a9c3d1a1890",
+      "reference_map_sha256": "91362400aa1ee4e70f3008c195486ffc6bfd17a039c5b0e630f932861e239e25"
+    }
+  },
+  "query_grid": [
+    36,
+    20
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard39/payload.pt",
+    "sha256": "d6720e51fa73b2d80c9ca7b37764baf8b79fe15f66127ea4ad017974de90a6c8"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard39/payload.pt",
+    "sha256": "576b4217c2b106eaeca36d7388aec2a7e600e3adb1b5071f1951c48a9300b6e0"
+  },
+  "source_query_id": "H593-e8c8ae988bf96315bca9637e",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+    "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+  },
+  "head_parameters_hex": [
+    "0x1.e815719be5897p-2",
+    "-0x1.5412c5bba1bb7p+0",
+    "0x1.ddc22648737a1p+1",
+    "0x1.ca51862b0395ap+0",
+    "0x1.dcbcbf535e60bp-3",
+    "-0x1.07569cba10c5ep-5",
+    "-0x1.53e5a05241b17p+0"
+  ],
+  "source_fold": 4,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 8.881784197001252e-16,
+  "selected_logit": 0.5142781189027392,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}

@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "OUTCOME-0438",
+  "query_id": "H593-7bec97dabbf6cdb58e99fd1c",
+  "identity": "ASP Cough Mucus Congestion PMG 24ct",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_expanded_eval128_manifest_v1/worker_assets/images/E128-292f25b074b7be82436a67ca.png",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 1321,
+  "final_selected": 1322,
+  "wrong_physical": 1321,
+  "target_physical": 1322,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "01_COST1_OUTCOME-0438",
+  "evidence": {
+    "wrong": {
+      "physical_row": 1321,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ASP Cough Mucus COngestion Day Night PMG 24ct.jpg",
+      "scores": {
+        "real_score": 0.002565706901831157,
+        "visibility_mass": 0.028303983832752476,
+        "query_control_score": 0.002731377861644292,
+        "reference_control_score": 0.002500937037969322,
+        "candidate_position": 25,
+        "physical_row": 1321,
+        "raw_score": 475.9747314453125,
+        "query_map_sha256": "ac9197494e82a487a143f49b78e0b2f49f6105f07f887fcd8514e86b6d8e0960",
+        "reference_map_sha256": "8723b0506f1adca1b89356c054514ba305346d767f4c2df233b3ec7f780cda4b"
+      },
+      "query_map_sha256": "ac9197494e82a487a143f49b78e0b2f49f6105f07f887fcd8514e86b6d8e0960",
+      "reference_map_sha256": "8723b0506f1adca1b89356c054514ba305346d767f4c2df233b3ec7f780cda4b"
+    },
+    "target": {
+      "physical_row": 1322,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/ASP Cough Mucus Congestion PMG 24ct.jpg",
+      "scores": {
+        "real_score": 0.025770195767915997,
+        "visibility_mass": 0.0958323703332282,
+        "query_control_score": 0.02350333933759405,
+        "reference_control_score": 0.026829907578054545,
+        "candidate_position": 26,
+        "physical_row": 1322,
+        "raw_score": 474.0279235839844,
+        "query_map_sha256": "015532f746ce0b726a9158edd047b75bc342bd2317ae506ef378091b03d071f6",
+        "reference_map_sha256": "19d9d6cb62cd345c273e13cc68a2cdae69517eae64d90ed6f1874ad9447f9be4"
+      },
+      "query_map_sha256": "015532f746ce0b726a9158edd047b75bc342bd2317ae506ef378091b03d071f6",
+      "reference_map_sha256": "19d9d6cb62cd345c273e13cc68a2cdae69517eae64d90ed6f1874ad9447f9be4"
+    }
+  },
+  "query_grid": [
+    36,
+    20
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_token_raw_v1/shard08/payload.pt",
+    "sha256": "e56be730c8d942d58e1bb0a7c83cdb865f9f93f4e0b51fda5e670700990ad6af"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_eval128_roma_v1/shard08/payload.pt",
+    "sha256": "08835d2ae9bb65e7d93809a3121b2517c549a4a089fa0e75790abe7130cf7852"
+  },
+  "source_query_id": "E128-292f25b074b7be82436a67ca",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/payload.json",
+    "sha256": "3fc2b71ea52a47b5cd89a1a9f825f0c1c92dddf9f815009202d5942403dff899"
+  },
+  "head_parameters_hex": [
+    "0x1.ec7cff0fa2339p-2",
+    "-0x1.0c0c66914f611p+1",
+    "0x1.d1c8ad1ab4ff5p+1",
+    "0x1.402b170b425ebp+1",
+    "0x1.3084ad1787cb3p-3",
+    "0x1.7906e6dcf0ff5p-7",
+    "-0x1.3b4ac26dbbd06p+0"
+  ],
+  "source_fold": 1,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 1.7763568394002505e-15,
+  "selected_logit": 0.31370655097614164,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}

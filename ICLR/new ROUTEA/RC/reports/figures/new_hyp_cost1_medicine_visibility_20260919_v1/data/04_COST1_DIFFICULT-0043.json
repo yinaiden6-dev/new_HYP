@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "DIFFICULT-0043",
+  "query_id": "H593-c317503b769e0f3acf782e33",
+  "identity": "734-uw-mint-mini-nicotine-lozenge",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-c317503b769e0f3acf782e33.jpg",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 3476,
+  "final_selected": 1130,
+  "wrong_physical": 3476,
+  "target_physical": 1130,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "04_COST1_DIFFICULT-0043",
+  "evidence": {
+    "wrong": {
+      "physical_row": 3476,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/blip-nicotine-gum-fruit-carton-image.jpg",
+      "scores": {
+        "real_score": 0.00013995704328577496,
+        "visibility_mass": 0.012485819417469513,
+        "query_control_score": 0.00013764369373131993,
+        "reference_control_score": 0.00012555815399901697,
+        "candidate_position": 70,
+        "physical_row": 3476,
+        "raw_score": 409.73431396484375,
+        "query_map_sha256": "c4c174fc0b19fa43ce760aeca9e4a045dc896aa0e9f234af763ce7840c40a0f5",
+        "reference_map_sha256": "e82c5b6dc7bd7d5439e524f011973d81988ae12bd41c00a6bd14cdeb36df7f5d"
+      },
+      "query_map_sha256": "c4c174fc0b19fa43ce760aeca9e4a045dc896aa0e9f234af763ce7840c40a0f5",
+      "reference_map_sha256": "e82c5b6dc7bd7d5439e524f011973d81988ae12bd41c00a6bd14cdeb36df7f5d"
+    },
+    "target": {
+      "physical_row": 1130,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/734-uw-mint-mini-nicotine-lozenge.jpg",
+      "scores": {
+        "real_score": 0.012278310741443142,
+        "visibility_mass": 0.04695500104096659,
+        "query_control_score": 0.008751550867902065,
+        "reference_control_score": 0.008342130390022047,
+        "candidate_position": 17,
+        "physical_row": 1130,
+        "raw_score": 408.55755615234375,
+        "query_map_sha256": "3c1d4981a4ef7839d235564728a0dae9af736be6898090c6e77cb69418511021",
+        "reference_map_sha256": "0fa51e18cd86974b8171ef1f14b166706e442d470018b3a6816d0e23464e4754"
+      },
+      "query_map_sha256": "3c1d4981a4ef7839d235564728a0dae9af736be6898090c6e77cb69418511021",
+      "reference_map_sha256": "0fa51e18cd86974b8171ef1f14b166706e442d470018b3a6816d0e23464e4754"
+    }
+  },
+  "query_grid": [
+    24,
+    32
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard32/payload.pt",
+    "sha256": "e038291810b02db4b3a66e7caf579aa877eb20aa7524c99644d8714d69223ac2"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard32/payload.pt",
+    "sha256": "4c7254e6e873aeb1625d516cbfaa96ebe0dd23d752b2892dbdaed518e0f632bb"
+  },
+  "source_query_id": "H593-c317503b769e0f3acf782e33",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/payload.json",
+    "sha256": "3fc2b71ea52a47b5cd89a1a9f825f0c1c92dddf9f815009202d5942403dff899"
+  },
+  "head_parameters_hex": [
+    "0x1.ec7cff0fa2339p-2",
+    "-0x1.0c0c66914f611p+1",
+    "0x1.d1c8ad1ab4ff5p+1",
+    "0x1.402b170b425ebp+1",
+    "0x1.3084ad1787cb3p-3",
+    "0x1.7906e6dcf0ff5p-7",
+    "-0x1.3b4ac26dbbd06p+0"
+  ],
+  "source_fold": 1,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 8.881784197001252e-16,
+  "selected_logit": 1.1694269776622939,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}

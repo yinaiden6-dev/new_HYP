@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "DIFFICULT-0023",
+  "query_id": "H593-37c29058d6ea3f6600852bd1",
+  "identity": "406heb",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-37c29058d6ea3f6600852bd1.jpg",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 2224,
+  "final_selected": 1013,
+  "wrong_physical": 2224,
+  "target_physical": 1013,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "03_COST1_DIFFICULT-0023",
+  "evidence": {
+    "wrong": {
+      "physical_row": 2224,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/CVS Stool Softner 100CT.jpg",
+      "scores": {
+        "real_score": 0.00584643865476526,
+        "visibility_mass": 0.046283975872898044,
+        "query_control_score": 0.005060649622479354,
+        "reference_control_score": 0.0051547821094092856,
+        "candidate_position": 38,
+        "physical_row": 2224,
+        "raw_score": 465.64764404296875,
+        "query_map_sha256": "b467c1b496b93f337ee6ae1b2944b6da67fa4b67d5d91fe7a8ac19ce55cbd278",
+        "reference_map_sha256": "fd3d66becdb589c795f8fe026cf4475d219a855663e994bb922b4f93385d6958"
+      },
+      "query_map_sha256": "b467c1b496b93f337ee6ae1b2944b6da67fa4b67d5d91fe7a8ac19ce55cbd278",
+      "reference_map_sha256": "fd3d66becdb589c795f8fe026cf4475d219a855663e994bb922b4f93385d6958"
+    },
+    "target": {
+      "physical_row": 1013,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/406heb.jpg",
+      "scores": {
+        "real_score": 0.07086975901876114,
+        "visibility_mass": 0.14846623529594344,
+        "query_control_score": 0.05476377680491283,
+        "reference_control_score": 0.06451718502524566,
+        "candidate_position": 7,
+        "physical_row": 1013,
+        "raw_score": 459.80206298828125,
+        "query_map_sha256": "c447a08ad1a0ad4384781fa3b843d2dce0f19431c4e0f15b93004926175e5d39",
+        "reference_map_sha256": "e873b0fa843ecfa00d9a3893a66e5ac87379c3b83c0987385e2c34e182633fc7"
+      },
+      "query_map_sha256": "c447a08ad1a0ad4384781fa3b843d2dce0f19431c4e0f15b93004926175e5d39",
+      "reference_map_sha256": "e873b0fa843ecfa00d9a3893a66e5ac87379c3b83c0987385e2c34e182633fc7"
+    }
+  },
+  "query_grid": [
+    24,
+    32
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard10/payload.pt",
+    "sha256": "65f852f5cde1b2aebd22e6cde31ff54325897a719820b83d616f0c5bda40861f"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard10/payload.pt",
+    "sha256": "f6ab0e433f9e21e1af545b3d8e2454462879c39d7fddb160a38a6b2b0cd85eff"
+  },
+  "source_query_id": "H593-37c29058d6ea3f6600852bd1",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold3/payload.json",
+    "sha256": "9a94a448410d8d0eb9c51abb9f7ffd2be2b102ed258a3cbd03f67cb2b8dd5079"
+  },
+  "head_parameters_hex": [
+    "0x1.a61deb15101adp-2",
+    "-0x1.ffa3b70192b65p-1",
+    "0x1.9dc0351896321p+1",
+    "0x1.8fbf12a4090d6p+0",
+    "0x1.1a05f8dac87f9p-3",
+    "-0x1.f792d35840722p-5",
+    "-0x1.4d25f7142bdd9p+0"
+  ],
+  "source_fold": 3,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 8.881784197001252e-16,
+  "selected_logit": 0.38337466009795595,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}

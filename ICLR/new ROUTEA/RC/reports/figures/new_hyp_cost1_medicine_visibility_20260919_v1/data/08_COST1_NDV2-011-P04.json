@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "NDV2-011-P04",
+  "query_id": "H593-f063b9949afaac7650b24e97",
+  "identity": "Bacitracin  14.2g 0.5oz carton label rev 09 2021",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/images/H593-f063b9949afaac7650b24e97.jpg",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 1644,
+  "final_selected": 1645,
+  "wrong_physical": 1644,
+  "target_physical": 1645,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "08_COST1_NDV2-011-P04",
+  "evidence": {
+    "wrong": {
+      "physical_row": 1644,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bacitracin  0.9g 0.03oz carton label rev 09 2021.jpg",
+      "scores": {
+        "real_score": 0.0028388340156785597,
+        "visibility_mass": 0.05151189630516963,
+        "query_control_score": 0.002844572371653856,
+        "reference_control_score": 0.003930723877005835,
+        "candidate_position": 27,
+        "physical_row": 1644,
+        "raw_score": 495.70281982421875,
+        "query_map_sha256": "2c30d79f112d6f07f0bdb1660e04c12d43716339f5aead38160ae802f819c7c3",
+        "reference_map_sha256": "c162c73212369b971893c41ba6df7946bf29cc9a5d1e82b48b0c90da3c3bcc11"
+      },
+      "query_map_sha256": "2c30d79f112d6f07f0bdb1660e04c12d43716339f5aead38160ae802f819c7c3",
+      "reference_map_sha256": "c162c73212369b971893c41ba6df7946bf29cc9a5d1e82b48b0c90da3c3bcc11"
+    },
+    "target": {
+      "physical_row": 1645,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/otc/Bacitracin  14.2g 0.5oz carton label rev 09 2021.jpg",
+      "scores": {
+        "real_score": 0.10693021529091902,
+        "visibility_mass": 0.1981652135178679,
+        "query_control_score": 0.0727268279631956,
+        "reference_control_score": 0.07434366590983585,
+        "candidate_position": 28,
+        "physical_row": 1645,
+        "raw_score": 495.00555419921875,
+        "query_map_sha256": "366ec9abf5cfb9e2d4bc40193c136bc763fd580b06ff3ec69f6fe2b67281a7ad",
+        "reference_map_sha256": "d95785a2e1875a32bfd881df389ad6b9d3620a53d1cee38d6b8a9a97bd39e96a"
+      },
+      "query_map_sha256": "366ec9abf5cfb9e2d4bc40193c136bc763fd580b06ff3ec69f6fe2b67281a7ad",
+      "reference_map_sha256": "d95785a2e1875a32bfd881df389ad6b9d3620a53d1cee38d6b8a9a97bd39e96a"
+    }
+  },
+  "query_grid": [
+    24,
+    32
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/raw/shard40/payload.pt",
+    "sha256": "2ff5b63fa8baa154d3e0df6ad10309034959204e56551f776f8358332c02bf8d"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roma/shard40/payload.pt",
+    "sha256": "ba416ccd012210fcc5a4dafab8eea183f0c3ac75efa978123e756efe42a8921b"
+  },
+  "source_query_id": "H593-f063b9949afaac7650b24e97",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+    "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+  },
+  "head_parameters_hex": [
+    "0x1.e815719be5897p-2",
+    "-0x1.5412c5bba1bb7p+0",
+    "0x1.ddc22648737a1p+1",
+    "0x1.ca51862b0395ap+0",
+    "0x1.dcbcbf535e60bp-3",
+    "-0x1.07569cba10c5ep-5",
+    "-0x1.53e5a05241b17p+0"
+  ],
+  "source_fold": 4,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 8.881784197001252e-16,
+  "selected_logit": 1.2511775211947358,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}

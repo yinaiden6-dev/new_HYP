@@ -13,6 +13,7 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 - [全部统计表 Excel](<ICLR/new ROUTEA/RC/reports/new_hyp_complete_results_20260916_v1/all_results.xlsx>)
 - [processed128 结果](<ICLR/new ROUTEA/RC/reports/new_hyp_complete_results_20260916_v1/processed128_zh.md>)
 - [展示图和讲义](<ICLR/new ROUTEA/RC/reports/figures/new_hyp_showcase_20260915_v1>)
+- [COST1 药盒热图：12 张高清案例与下载包](<ICLR/new ROUTEA/RC/reports/figures/new_hyp_cost1_medicine_visibility_20260919_v1>)
 - [药盒与商品可见性案例](<ICLR/new ROUTEA/RC/reports/figures/new_hyp_visibility_cases_20260915_v1>)
 - [模型与数据恢复说明](RESTORE.md) · [执行入口与环境](REPRODUCTION.md)
 

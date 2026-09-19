@@ -1,0 +1,94 @@
+{
+  "dataset": "medicine",
+  "dataset_label": "药盒",
+  "panel": "真实纠错案例",
+  "model": "COST1",
+  "display_id": "DIFFICULT-0083",
+  "query_id": "H593-90acde9b0567a472f4232120",
+  "identity": "cefdinir-fig2",
+  "query_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_manifest_v1/worker_assets/images/T128-74afd5bc3f859cb302229118.jpg",
+  "raw_correct": false,
+  "final_correct": true,
+  "raw_selected": 5164,
+  "final_selected": 5043,
+  "wrong_physical": 5164,
+  "target_physical": 5043,
+  "wrong_role": "RAW 错误 reference",
+  "stem": "06_COST1_DIFFICULT-0083",
+  "evidence": {
+    "wrong": {
+      "physical_row": 5164,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/prescription/gabapentin-fig11.jpg",
+      "scores": {
+        "real_score": 0.001766276267444629,
+        "visibility_mass": 0.034289546086745136,
+        "query_control_score": 0.00169463563047351,
+        "reference_control_score": 0.0016213756263583332,
+        "candidate_position": 104,
+        "physical_row": 5164,
+        "raw_score": 450.8756103515625,
+        "query_map_sha256": "ec921489c4856e31ffec8a7dbe55e0870559e97a8f22dc9cb897c3dd322d589e",
+        "reference_map_sha256": "c1d96309461569db8d08cd6b8e0c1d63bb7cc88985dd88709748c1516eb1f4d0"
+      },
+      "query_map_sha256": "ec921489c4856e31ffec8a7dbe55e0870559e97a8f22dc9cb897c3dd322d589e",
+      "reference_map_sha256": "c1d96309461569db8d08cd6b8e0c1d63bb7cc88985dd88709748c1516eb1f4d0"
+    },
+    "target": {
+      "physical_row": 5043,
+      "reference_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images/prescription/cefdinir-fig2.jpg",
+      "scores": {
+        "real_score": 0.06165799231867958,
+        "visibility_mass": 0.14329098420403902,
+        "query_control_score": 0.044565128184982,
+        "reference_control_score": 0.054417501677096296,
+        "candidate_position": 87,
+        "physical_row": 5043,
+        "raw_score": 449.4945373535156,
+        "query_map_sha256": "bb61358b838c6d93dd893c3ad5d02bb6fcd2515352ce30ed12b4fcf568573810",
+        "reference_map_sha256": "81dfe280f68173522ca852c2d81b90fcc5cdd5fa60045bbc449a46a1a7d9dde4"
+      },
+      "query_map_sha256": "bb61358b838c6d93dd893c3ad5d02bb6fcd2515352ce30ed12b4fcf568573810",
+      "reference_map_sha256": "81dfe280f68173522ca852c2d81b90fcc5cdd5fa60045bbc449a46a1a7d9dde4"
+    }
+  },
+  "query_grid": [
+    24,
+    32
+  ],
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+    "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+  },
+  "raw_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_token_raw_v1/shard08/payload.pt",
+    "sha256": "4e65f2f5af7df01206e7bec017f9c81df3d1ebbc4f1ddbce01597da69c1b93d9"
+  },
+  "roma_payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard08/payload.pt",
+    "sha256": "d0a4f15e562edd38d69850d2fdbb595f446045fb5ba4103e4ac0864bce880718"
+  },
+  "source_query_id": "T128-74afd5bc3f859cb302229118",
+  "head_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold0/payload.json",
+    "sha256": "bfced564709cb6a689be71a7972d642e826b7de649468bd6fd7de816e2cb9ab2"
+  },
+  "head_parameters_hex": [
+    "0x1.c3c4ba8c92e44p-2",
+    "-0x1.bf7c58ee01461p+0",
+    "0x1.d99f81bd9dc74p+1",
+    "0x1.ff21d89f0cd28p+0",
+    "0x1.74f769b8df57bp-3",
+    "-0x1.490877b0410e7p-6",
+    "-0x1.192055faff8eep+0"
+  ],
+  "source_fold": 0,
+  "query_excluded_from_head_training": true,
+  "decision_logit_error": 8.881784197001252e-16,
+  "selected_logit": 1.18908266579066,
+  "selection_rule": "OUTCOME-0438 first; then first RAW-to-COST1 rescue per previously unseen identity, ordered by original_query_id, until 12 cases. Selection does not inspect visibility maps.",
+  "evidence_scope": "H593 grouped OOF development; illustrative rescue selection",
+  "map_rendering": "native FP64 arrays; nearest; fixed 0 to 1; no per-image normalization",
+  "fold_number_displayed": false,
+  "training_updates": 0,
+  "encoder_or_matcher_inference_calls": 0
+}
