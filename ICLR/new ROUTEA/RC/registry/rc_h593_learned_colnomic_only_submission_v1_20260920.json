@@ -1,0 +1,44 @@
+{
+  "submitted_utc": "2026-09-20T19:40:36.193483+00:00",
+  "authority_sha256": "b2874a1a1cd08a7b57412b81ade25548187297480800d1f951aaa463085136be",
+  "partition": "accelerated",
+  "time_limit": "00:10:00",
+  "jobs": {
+    "pilot": {
+      "id": "5153205",
+      "options": [
+        "--hold",
+        "--array=0-0%1",
+        "--job-name=h593_colpilot"
+      ],
+      "stage": "worker"
+    },
+    "features": {
+      "id": "5153206",
+      "options": [
+        "--array=1-74%16",
+        "--job-name=h593_colfeat",
+        "--dependency=afterok:5153205"
+      ],
+      "stage": "worker"
+    },
+    "fit": {
+      "id": "5153207",
+      "options": [
+        "--array=0-4%5",
+        "--job-name=h593_colfit",
+        "--dependency=afterok:5153205:5153206"
+      ],
+      "stage": "fit"
+    },
+    "join": {
+      "id": "5153208",
+      "options": [
+        "--job-name=h593_coljoin",
+        "--dependency=afterok:5153207"
+      ],
+      "stage": "join"
+    }
+  },
+  "pilot_released": true
+}
