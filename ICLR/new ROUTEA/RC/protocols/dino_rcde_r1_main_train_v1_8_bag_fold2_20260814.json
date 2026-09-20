@@ -1,0 +1,200 @@
+{
+  "schema_version": "rc_dino_rcde_r1_main_train_protocol_v1_8_single_scope_20260814",
+  "date": "2026-08-14",
+  "stage": "R1_MAIN_BAG_FOLDS2_4_V18_ACCELERATED_TRAINING",
+  "claim_boundary": "engineering_single_scope_outer_train_training_and_independent_validation_only_not_scientific_GO_or_NO_GO",
+  "authority": {
+    "path": "registry/current_authority_v14_20260814.json",
+    "sha256": "73289c11225faae93f220c35d170c98210b2325f0bdeca3955ca408042c0d7b2",
+    "required_status": "DINO_RCDE_R1_BAG_FOLDS2_4_V18_ACCELERATED_TRAINING_AUTHORIZED"
+  },
+  "bindings": {
+    "scientific_contract": {
+      "path": "plan/DINO_RCDE_LEARNED_DENSE_EVIDENCE_DECODER_V1_1_20260812.md",
+      "sha256": "a32ec29637e7ee194a39ec8b95687c2b84436123f2a71281af6d54c686fcc721"
+    },
+    "cache_protocol": {
+      "path": "protocols/dino_rcde_r1_cache_v1_4_job5069910_repair_20260813.json",
+      "sha256": "98e581065ad884b79abb11dc6ec237ff2ae5c4642015dacaca731c92348d8eaf"
+    },
+    "cache_result": {
+      "path": "results/dino_rcde_r1_v1_4_job5069910_repair/cache_job5069979/cache_result.json",
+      "sha256": "668ac7f548c1f399e71ba408f9aee6c368aa2a92c5d385bcff5a9b303dedeb3e"
+    },
+    "cache_validation": {
+      "path": "results/dino_rcde_r1_v1_4_job5069910_repair/cache_job5069979/cache_validation.json",
+      "sha256": "53d7c17dec416fdb6722d2f6351e665312c310df5eec9f58c2dfdac1dcdb4109"
+    },
+    "training_roles": {
+      "path": "protocols/dino_rcde_training_roles_600_v1_2_20260812.json",
+      "sha256": "beac89d8caecd09b3e4815684cde207a363a0fa784e1e793f5694cc5fb7ee672"
+    },
+    "episode_ledger": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/fold_access_and_episode_receipt.json",
+      "sha256": "7a35e0acff8032453f064c77cc40ee6a822e227b5aed2852016c0a93ba32b0e7"
+    },
+    "resource_shape_ledger": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/resource_shape_ledger.json",
+      "sha256": "35ae0fc826a794f591bdaa6801ea499448a50a747f265ef9039e81a12b6636fa"
+    },
+    "model_visible_c128": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/model_visible_c128.json",
+      "sha256": "784d196f4f05abddbca13eab8aaa88f1c2cbc8cf48cd9db3e929bf68c5803a81"
+    },
+    "rcde_core": {
+      "path": "src/rc_aslo_xf/dino_rcde_v1_2_resource_core.py",
+      "sha256": "dc8e4377a28e3b3de409438d33d1ed577fa3ecf5065c00f4a85eccfaf9fb2f36"
+    },
+    "single_scope_runner": {
+      "path": "programs/run_dino_rcde_r1_main_train_v1_8_single_scope.py",
+      "sha256": "e8d20acc4032ed9d09100f906d83e3f773b4bbb1cdde9bdec55570f53f65ee59"
+    },
+    "single_scope_validator": {
+      "path": "programs/validate_dino_rcde_r1_main_train_v1_8_single_scope.py",
+      "sha256": "f118a09c9f95de7db66a2b46cd80270101b7382a44390af1f0306d02fba14bd3"
+    },
+    "validation_common_v1_7": {
+      "path": "programs/validate_dino_rcde_r1_main_train_v1_7_contract_repair.py",
+      "sha256": "1ec6dd73697ebfb91f3db61acbca66c85427a1337068c4bd670f489275fc1f5e"
+    },
+    "single_scope_tests": {
+      "path": "tests/test_dino_rcde_r1_main_v1_8_single_scope.py",
+      "sha256": "045f6bc31c5381e98b7a11f90b115da4eb80afe080bd5137a136f51671dd0ff4"
+    },
+    "formal_slurm": {
+      "path": "slurm/dino_rcde_r1_main_bag_folds2_4_v1_8_accelerated_4h.sbatch",
+      "sha256": "3c922a80b5256bd386711436c7333246133137f672f40a51bed5ee37d77a5ff4"
+    }
+  },
+  "cache": {
+    "root": "runtime/dino_rcde_p0_v1_2/stable_fp16_cache",
+    "query_count": 600,
+    "reference_count": 4748,
+    "query_key": "execution_ordinal",
+    "model_checkpoint_logical_sha256": "f901d9bd056bb65e5fcb02c72e869f6d0cf8d7472467d22fbc340442feca034c"
+  },
+  "training": {
+    "arms": [
+      "RCDE_BAG"
+    ],
+    "outer_folds": [
+      2
+    ],
+    "seed": 17,
+    "parameter_count": 65125,
+    "optimizer": "AdamW",
+    "deterministic_algorithms": true,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_l2": 1.0,
+    "updates_total": 2048,
+    "episodes_per_update": 4,
+    "raw_correct_per_update": 2,
+    "raw_wrong_per_update": 2,
+    "warmup_updates": 128,
+    "final_learning_rate": 0.00003,
+    "loss": "mean_softplus_negative_signed_pair_logit_tau_1",
+    "query_tile_rows": 8,
+    "reference_tile_rows": 16,
+    "query_order_namespace": "RCDE_QUERY_ORDER_V1_1",
+    "query_order_key": "source_image_sha256",
+    "query_order_tie_break": "stable_episode_ledger_order",
+    "candidate_direction_source": "P0_frozen_model_candidate_order",
+    "cache_query_key": "execution_ordinal",
+    "outer_train_only": true,
+    "heldout_target_join_allowed": false
+  },
+  "resume": {
+    "save_at_every_job_boundary": true,
+    "restore_model": true,
+    "restore_optimizer": true,
+    "restore_progress_and_loss_trace": true,
+    "restore_python_numpy_torch_cuda_rng": true,
+    "recompute_schedule_digest_prefix_from_frozen_ledger": true,
+    "persistent_output": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold2",
+    "concurrent_writer_lock": "flock_exclusive",
+    "completed_result_immutable": true
+  },
+  "execution": {
+    "slurm_path": "slurm/dino_rcde_r1_main_bag_folds2_4_v1_8_accelerated_4h.sbatch",
+    "slurm_sha256": "3c922a80b5256bd386711436c7333246133137f672f40a51bed5ee37d77a5ff4",
+    "partition": "accelerated",
+    "partition_max_time": "2-00:00:00",
+    "job_time": "04:00:00",
+    "runner_runtime_guard_seconds": 13800,
+    "maximum_jobs_submitted_now": 1,
+    "maximum_running_tasks": 3,
+    "submission_topology": "one_three_task_array_with_one_isolated_single_fold_model_per_task",
+    "array_used": true,
+    "gpu_per_job": 1,
+    "chunk_commit": "atomic_directory_rename",
+    "committed_chunk_files": [
+      "chunk.json",
+      "input_preflight.json",
+      "resume_state.pt",
+      "runtime_read_ledger.json"
+    ],
+    "finalization_recovery": true
+  },
+  "artifact_contract": {
+    "identity": {
+      "schema_version": "rc_dino_rcde_r1_run_identity_v1_8",
+      "status": "DINO_RCDE_R1_RUN_IDENTITY_FROZEN"
+    },
+    "manifest": {
+      "schema_version": "rc_dino_rcde_signed_reference_access_manifest_v1_8",
+      "status": "DINO_RCDE_SIGNED_REFERENCE_ACCESS_FROZEN"
+    },
+    "preflight": {
+      "schema_version": "rc_dino_rcde_r1_main_input_preflight_v1_8",
+      "status": "DINO_RCDE_R1_MAIN_INPUT_PREFLIGHT_PASS"
+    },
+    "read_ledger": {
+      "schema_version": "rc_dino_rcde_r1_runtime_cache_read_ledger_v1_8",
+      "status": "DINO_RCDE_R1_RUNTIME_CACHE_READ_LEDGER_COMPLETE"
+    },
+    "chunk": {
+      "schema_version": "rc_dino_rcde_r1_main_chunk_v1_8",
+      "status": "DINO_RCDE_R1_MAIN_CHUNK_COMPLETE"
+    },
+    "resume": {
+      "schema_version": "rc_dino_rcde_r1_main_resume_state_v1_8",
+      "status": "DINO_RCDE_R1_MAIN_RESUME_STATE_COMPLETE"
+    },
+    "checkpoint": {
+      "schema_version": "rc_dino_rcde_r1_main_checkpoint_v1_8",
+      "status": "DINO_RCDE_R1_MAIN_CHECKPOINT_COMPLETE"
+    },
+    "result": {
+      "schema_version": "rc_dino_rcde_r1_main_train_result_v1_8",
+      "status": "DINO_RCDE_R1_MAIN_ARM_FOLD_TRAINING_COMPLETE"
+    },
+    "validation": {
+      "schema_version": "rc_dino_rcde_r1_main_training_validation_v1_8",
+      "status": "DINO_RCDE_R1_MAIN_ARM_FOLD_VALIDATION_PASS"
+    }
+  },
+  "forbidden": {
+    "paths": [
+      "C8",
+      "S8",
+      "opened",
+      "sealed"
+    ],
+    "home_write": false,
+    "other_fold_or_arm_training": false,
+    "control_training": false,
+    "heldout_label_join": false,
+    "evaluation": false,
+    "scientific_decision": false
+  },
+  "decision": {
+    "completed_fold_pass": "DINO_RCDE_R1_MAIN_ARM_FOLD_VALIDATION_PASS",
+    "next_on_pass": "R1_MAIN_BAG_FOLDS1_4_VALIDATED_AUTHORITY_UPDATE_REQUIRED",
+    "incomplete_after_maximum_jobs": "R1_MAIN_BAG_FOLD2_ACCELERATED_INCOMPLETE_AUTHORITY_UPDATE_REQUIRED",
+    "automatic_stage_advance": false,
+    "scientific_GO_or_NO_GO": null
+  },
+  "automatic_stage_advance": false,
+  "scientific_GO_or_NO_GO": null
+}

@@ -1,0 +1,119 @@
+{
+  "automatic_stage_advance": false,
+  "bindings": {
+    "authority_test": {
+      "bytes": 4316,
+      "path": "tests/test_freeze_dino_rcde_h0_c128_target_free_postjoin_pj2_authority_v1.py",
+      "sha256": "d96a52f23bee543ea8c5e10dca161a9e890416a62f2f98815ec81c8181e2ac9c"
+    },
+    "contract": {
+      "bytes": 6361,
+      "path": "plan/DINO_RCDE_H0_C128_TARGET_FREE_POSTJOIN_AUTOMATIC_HANDOFF_CONTRACT_V1_20260824.md",
+      "sha256": "1baf3a8e01c78a19d1c2623793ae281567efcce8d16a8e849bcbb774809ce352"
+    },
+    "freezer": {
+      "bytes": 10122,
+      "path": "programs/freeze_dino_rcde_h0_c128_target_free_postjoin_pj2_authority_v1.py",
+      "sha256": "ba1e0cb8e3e3c7a60db6ed08d50349c4b6d18e5f0dca3584713e5923ce67b6c4"
+    },
+    "handoff_authority": {
+      "bytes": 7458,
+      "logical_sha256": "37f764056174bd516abcf09a28688c273e89c7bd9617f9e4916f59504647b6ba",
+      "path": "registry/h0/h0_c128_target_free_postjoin_handoff_authority_v1_20260824.json",
+      "sha256": "790c284d313197016895c9328a905c6507c5b5e20b79e7800513ef4832916c29"
+    },
+    "launcher": {
+      "bytes": 2687,
+      "path": "slurm/dino_rcde_h0_c128_target_free_postjoin_pj2_v1.sbatch",
+      "sha256": "efafc284cb9f90cbf4ae9bc3a611ab995e989e81504962ff87057516bf8dcbb8"
+    },
+    "pj1_authority": {
+      "bytes": 7298,
+      "logical_sha256": "794454de7a70b571184364dce209002bb08ce167fb6bc31e206e23c32367a99b",
+      "path": "registry/h0/h0_c128_target_free_postjoin_pj1_authority_v1_20260824.json",
+      "sha256": "a9e42ade12c97a133e922b1b9e2367317b3c6f36b9d0716d4ac0dbf3c9b2465e"
+    },
+    "pj1_result": {
+      "bytes": 95864852,
+      "logical_sha256": "ffc3e1c69a8c0bb0e1b4707835f6daeb7ecab3cc4774fc304b676383e600a79f",
+      "path": "results/dino_rcde_h0_c128_target_free_postjoin_pj1_v1/result.json",
+      "sha256": "8b0e7fa3d46c9c15d19d719fa1c1ed73b29c0bfd5ae6329909dd8db1dab059e4"
+    },
+    "pj1_validation": {
+      "bytes": 1363,
+      "logical_sha256": "e6e3cf3d42929b77210166a1637dc4251f4680d037661c30c93e5b871a212a3d",
+      "path": "results/dino_rcde_h0_c128_target_free_postjoin_pj1_validation_v1/result.json",
+      "sha256": "20c74b3be20aa3cbc50368d513fca1bcea9b959b887e142f1dcd092c2dce0b81"
+    },
+    "reducer": {
+      "bytes": 21254,
+      "path": "programs/reduce_dino_rcde_h0_c128_target_free_postjoin_pj2_v1.py",
+      "sha256": "52df65cfc635f7ecc59fade1ddbec1d9284d0b7722b35e47e0ddfbb4c6ff635b"
+    },
+    "test": {
+      "bytes": 8894,
+      "path": "tests/test_dino_rcde_h0_c128_target_free_postjoin_pj2_v1.py",
+      "sha256": "dc4340de4a505fc357fa0e8f8f4c6693711ec6876fb0be3a84354ba1758f7036"
+    },
+    "validator": {
+      "bytes": 23336,
+      "path": "programs/validate_dino_rcde_h0_c128_target_free_postjoin_pj2_v1.py",
+      "sha256": "7fd9409247b47dac4672e27736bb9dc607a34ea3c23bf44ca2208d573cdcc426"
+    }
+  },
+  "c_p_ownership_or_full_gallery_retrieval_claim_authorized": false,
+  "claim_level": "RELATIVE_C128_RANK_INCREMENT_ONLY",
+  "formula_contract": {
+    "candidate_score": "binary64(0.5*(a_to_b+b_to_a))",
+    "forbidden_cross_arm_margin_difference": true,
+    "margin": "target_score-own_strongest_wrong_score",
+    "rank": "1+count(wrong_score>=target_score)",
+    "reciprocal_rank": "1/rank",
+    "same_identity_reduce": "max_then_smaller_physical_row",
+    "strict_top1": "margin>0",
+    "strongest_wrong_order": "(-score,physical_row,UTF8_label)"
+  },
+  "gate_contract": {
+    "minimum_group_balanced_top1_gain": 0.03,
+    "minimum_positive_mrr_folds": 3,
+    "minimum_positive_top1_folds": 3,
+    "mrr_ci_lower_strictly_positive": true,
+    "mrr_gain_strictly_positive": true,
+    "mrr_one_sided_p_below": 0.05,
+    "top1_ci_lower_strictly_positive": true,
+    "top1_one_sided_p_below": 0.05,
+    "zero_to_one_strictly_exceeds_one_to_zero": true
+  },
+  "logical_sha256": "97c321748e625c432ca5b5ca1dfa7ea88bfb9234b39de851d608b3e119613f81",
+  "model_forward_authorized": false,
+  "namespace": "h0_c128_target_free_postjoin",
+  "next_authorized_stage": null,
+  "output": "results/dino_rcde_h0_c128_target_free_postjoin_pj2_v1/result.json",
+  "rescue_break_analysis_authorized": false,
+  "resource_contract": {
+    "cpus_per_task": 4,
+    "memory_megabytes": 32768,
+    "partitions": [
+      "cpuonly",
+      "dev_cpuonly"
+    ],
+    "walltime_seconds": 3600
+  },
+  "schema_version": "rc_h0_c128_target_free_postjoin_pj2_authority_v1_20260824",
+  "scientific_GO_or_NO_GO": null,
+  "scientific_reduction_authorized": true,
+  "statistical_contract": {
+    "aggregation": "supergroup_mean_then_equal_supergroup_mean",
+    "bootstrap_quantile_method": "linear",
+    "bootstrap_replicates": 9999,
+    "bootstrap_rng": "numpy.PCG64",
+    "bootstrap_seed": 17,
+    "signflip_p": "(1+count(null>=observed))/10000",
+    "signflip_replicates": 9999,
+    "signflip_rng": "numpy.PCG64",
+    "signflip_seed": 17
+  },
+  "status": "H0_C128_TARGET_FREE_POSTJOIN_PJ2_REDUCTION_AUTHORIZED",
+  "training_authorized": false,
+  "validation_output": "results/dino_rcde_h0_c128_target_free_postjoin_pj2_validation_v1/result.json"
+}

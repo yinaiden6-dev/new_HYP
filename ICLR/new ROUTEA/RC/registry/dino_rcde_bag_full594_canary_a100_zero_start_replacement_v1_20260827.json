@@ -1,0 +1,32 @@
+{
+  "schema_version": "rc_dino_rcde_bag_full594_canary_a100_zero_start_replacement_v1_20260827",
+  "date": "2026-08-27",
+  "status": "DINO_RCDE_BAG_FULL594_CANARY_ZERO_START_A100_REPLACEMENT_AUTHORIZED",
+  "parent_authority": {
+    "path": "registry/dino_rcde_bag_full594_completion_authority_v1_20260827.json",
+    "sha256": "ef9988695ae90cd5f660b5337da59fc0c636d7d264adc83f8b57df312d6b6341"
+  },
+  "superseded_scheduler_job": {
+    "job_id": 5112829,
+    "required_state": "PENDING",
+    "required_runtime": "00:00:00",
+    "required_output_count": 0,
+    "cancellation_authorized": true
+  },
+  "replacement": {
+    "partition": "dev_accelerated",
+    "time_limit": "00:30:00",
+    "cpus_per_task": 8,
+    "memory_megabytes": 120000,
+    "gpu_count": 1,
+    "launcher_path": "slurm/dino_rcde_bag_full594_canary_dev_a100_v1.sbatch",
+    "launcher_sha256": "1e727678a634a8437b7bb6cc1219bf4313a1c45c1806f03e2f522f391886432b"
+  },
+  "scientific_programs": "BYTE_IDENTICAL_PARENT_AUTHORITY_PRODUCER_AND_VALIDATOR",
+  "checkpoint_change_authorized": false,
+  "input_change_authorized": false,
+  "output_path_change_authorized": false,
+  "scientific_claim_change_authorized": false,
+  "scientific_GO_or_NO_GO": null,
+  "automatic_stage_advance": false
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "rc_dino_rcde_bag_full594_canary_job5112841_early_cancel_recovery_v1_20260827",
+  "date": "2026-08-27",
+  "status": "DINO_RCDE_BAG_FULL594_CANARY_PREPUBLICATION_CANCELLATION_RECOVERY_AUTHORIZED",
+  "parent_authority": {
+    "path": "registry/dino_rcde_bag_full594_completion_authority_v1_20260827.json",
+    "sha256": "ef9988695ae90cd5f660b5337da59fc0c636d7d264adc83f8b57df312d6b6341"
+  },
+  "cancelled_job": {
+    "job_id": 5112841,
+    "state": "CANCELLED_BY_USER",
+    "elapsed": "00:00:23",
+    "node": "hkn0401",
+    "exit_code": "0:0",
+    "committed_producer_output_count": 0,
+    "committed_validation_output_count": 0,
+    "scientific_output_count": 0
+  },
+  "failure_domain": "SCHEDULER_OPERATOR_RACE_AFTER_PENDING_TO_RUNNING_TRANSITION",
+  "model_failure": false,
+  "scientific_failure": false,
+  "recovery": "RESUBMIT_BYTE_IDENTICAL_A100_CANARY_WRAPPER_WITH_NO_MIGRATION_OR_CANCELLATION",
+  "launcher_path": "slurm/dino_rcde_bag_full594_canary_dev_a100_v1.sbatch",
+  "launcher_sha256": "1e727678a634a8437b7bb6cc1219bf4313a1c45c1806f03e2f522f391886432b",
+  "input_change_authorized": false,
+  "checkpoint_change_authorized": false,
+  "scientific_claim_change_authorized": false,
+  "scientific_GO_or_NO_GO": null,
+  "automatic_stage_advance": false
+}

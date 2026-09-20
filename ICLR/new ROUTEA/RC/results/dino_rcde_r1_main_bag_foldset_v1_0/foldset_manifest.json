@@ -1,0 +1,274 @@
+{
+  "arm": "RCDE_BAG",
+  "authority": {
+    "path": "registry/current_authority_v15_20260814.json",
+    "required_status": "DINO_RCDE_R1_MAIN_BAG_FOLDS1_4_FOLDSET_CLOSURE_AUTHORIZED",
+    "sha256": "2609b41f6b679c148f3df51d0368ac2e85581ddcb194e0f839ae12ca075a5c60"
+  },
+  "automatic_stage_advance": false,
+  "claim_level": "engineering_foldset_closure_only_not_scientific_GO_or_NO_GO",
+  "cross_fold_closure": {
+    "allowed_is_universe_minus_heldout": true,
+    "eligible_query_outer_train_membership_count": 3,
+    "eligible_query_union_count": 594,
+    "globally_ineligible_execution_ordinals": [
+      25,
+      26,
+      101,
+      346,
+      354,
+      470
+    ],
+    "heldout_membership_count_per_reference": 1,
+    "heldout_pairwise_intersection_count": 0,
+    "heldout_reference_counts_by_fold": {
+      "1": 13,
+      "2": 12,
+      "3": 12,
+      "4": 13
+    },
+    "heldout_union_count": 50,
+    "optimization_reference_universe_count": 50,
+    "scope": {
+      "full_gallery_evaluation": false,
+      "heldout_label_join": false,
+      "outer_heldout_forward": false,
+      "query_population": "600_query_training_role",
+      "reference_population": "50_row_optimization_reference_universe",
+      "scientific_reduction": false
+    }
+  },
+  "folds": [
+    {
+      "access_manifest": {
+        "logical_sha256": "8304dacb22ed1cd7c3ec5dd4c7892babfbc4723bc480a4733c23f51de10adde4",
+        "path": "results/dino_rcde_r1_main_v1_7_contract_repair/RCDE_BAG_fold1/signed_reference_access_manifest.json",
+        "sha256": "98bb58109666ad78b07685065eb917221e7c96456b18ab91e57475ac88c411e1"
+      },
+      "allowed_reference_count": 37,
+      "authority": {
+        "path": "registry/current_authority_v13_20260813.json",
+        "sha256": "4cb9decca89be72f67d01278ed15ea01001ee931448f71da9c9955a67e02a5aa"
+      },
+      "checkpoint": {
+        "path": "results/dino_rcde_r1_main_v1_7_contract_repair/RCDE_BAG_fold1/checkpoint_update2048.pt",
+        "sha256": "1a0eede25b5ec10cc41eb0c0dc577b8ca957abca3c09915901d0a64a3efbe7d2"
+      },
+      "eligible_query_count": 445,
+      "final_state_sha256": "d24ac2412c7f806c9577f953679f2112efcba639ede2848b66c47e4e0726fdea",
+      "heldout_reference_count": 13,
+      "initial_state_sha256": "4a51b45b1a29aa80be6acb18278d783d5485fbff01665f7054b518e2d870099b",
+      "outer_fold": 1,
+      "pair_count": 65536,
+      "protocol": {
+        "path": "protocols/dino_rcde_r1_main_train_v1_7_contract_repair_20260813.json",
+        "sha256": "34b212c17b7793be04f33605a708b6a2844ce1b2daff1f656017f29796fc7f56"
+      },
+      "run_identity": {
+        "path": "results/dino_rcde_r1_main_v1_7_contract_repair/RCDE_BAG_fold1/run_identity.json",
+        "sha256": "68b454420faacfc4bab78bf0c37e30b80375089ca4348866173951365b5819b0"
+      },
+      "schedule_sha256": "d61bdc950410de9d47ffd53bf99d3534f64241a7d4bbaff9f29883b0be127b06",
+      "train_result": {
+        "path": "results/dino_rcde_r1_main_v1_7_contract_repair/RCDE_BAG_fold1/train_result.json",
+        "sha256": "8948df487d17aa1c376b9909593bd9c81916e91f46c7205437ef9cd3e09dd458"
+      },
+      "training_validation": {
+        "path": "results/dino_rcde_r1_main_v1_7_contract_repair/RCDE_BAG_fold1/training_validation.json",
+        "sha256": "8a23562f92f8b2124419527bf80b6191a0167d11dcd8f73efe3cb8b0e25ce30c"
+      },
+      "update_count": 2048
+    },
+    {
+      "access_manifest": {
+        "logical_sha256": "466c84e66cebea3664fa301ee3544d3c608028ddfe6db040316f06fa90376c0d",
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold2/signed_reference_access_manifest.json",
+        "sha256": "645174c7854b6f9d00ab018474728951f0acc71a389bb89b3c79d3834cde9693"
+      },
+      "allowed_reference_count": 38,
+      "authority": {
+        "path": "registry/current_authority_v14_20260814.json",
+        "sha256": "73289c11225faae93f220c35d170c98210b2325f0bdeca3955ca408042c0d7b2"
+      },
+      "checkpoint": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold2/checkpoint_update2048.pt",
+        "sha256": "1a57eb1df6ea08a7657079bdaddf0888cacb7a67b3b5850e4a3351b69de53ab3"
+      },
+      "eligible_query_count": 446,
+      "final_state_sha256": "462e355f239f7504aeae72e7c7ec1554141bf360b2ce2cf743e4518cb72e97aa",
+      "heldout_reference_count": 12,
+      "initial_state_sha256": "4a51b45b1a29aa80be6acb18278d783d5485fbff01665f7054b518e2d870099b",
+      "outer_fold": 2,
+      "pair_count": 65536,
+      "protocol": {
+        "path": "protocols/dino_rcde_r1_main_train_v1_8_bag_fold2_20260814.json",
+        "sha256": "e3d92b2cfc828ac668fe91717d105899155ab81fcbe2e2bb29f90287c5e278fc"
+      },
+      "run_identity": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold2/run_identity.json",
+        "sha256": "2222fb50104ea74f4a00a46fb522a1db91a9c83399a56de7b13c5b5378d86c35"
+      },
+      "schedule_sha256": "ea513fd56c4d44884ad1386d64ceae4edb1e70a770c724ddce1794983aaa7314",
+      "train_result": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold2/train_result.json",
+        "sha256": "09f26c0e668d56018e62d1cd5fcfa79e1e98b45021b934f72445bb77b2832a92"
+      },
+      "training_validation": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold2/training_validation.json",
+        "sha256": "3a113922a475fa82dff2fb9a1295d79444f3e6ff009ce9fbb1d902fec2e3cc06"
+      },
+      "update_count": 2048
+    },
+    {
+      "access_manifest": {
+        "logical_sha256": "22e2feb443e605fca56798c6ed365887c9156373eeeb767b5d4e3fafd5882dd0",
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold3/signed_reference_access_manifest.json",
+        "sha256": "03591eddd80d69a3bdd47b1c68262c43c23ffade643ff42a235816c43e683fb1"
+      },
+      "allowed_reference_count": 38,
+      "authority": {
+        "path": "registry/current_authority_v14_20260814.json",
+        "sha256": "73289c11225faae93f220c35d170c98210b2325f0bdeca3955ca408042c0d7b2"
+      },
+      "checkpoint": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold3/checkpoint_update2048.pt",
+        "sha256": "1337249d8b88ada6f3e767d25227ffc6ae72bc672fec535da3fee3fa15174ae2"
+      },
+      "eligible_query_count": 445,
+      "final_state_sha256": "c2041b3c99096d7cba6be8c43434aa3f6a9b417779f19d547ba495abb4d8a697",
+      "heldout_reference_count": 12,
+      "initial_state_sha256": "4a51b45b1a29aa80be6acb18278d783d5485fbff01665f7054b518e2d870099b",
+      "outer_fold": 3,
+      "pair_count": 65536,
+      "protocol": {
+        "path": "protocols/dino_rcde_r1_main_train_v1_8_bag_fold3_20260814.json",
+        "sha256": "ea07ad68851300e6e570972837af52c3cd7d548e90ec78130087a2070f1bbc0c"
+      },
+      "run_identity": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold3/run_identity.json",
+        "sha256": "7331f87e828abab4185dbdc3557d2df7fe6c906fc5114fb43f4660ee603af69b"
+      },
+      "schedule_sha256": "0b4149b401ace0848a9a646958b8aea0d167967e9ae88771b8121a1ad089aa54",
+      "train_result": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold3/train_result.json",
+        "sha256": "34e2be84efa78da079caa51606ec9e882820b33835ce6e34db2d09a8b9bbb625"
+      },
+      "training_validation": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold3/training_validation.json",
+        "sha256": "9ee05c0f8c1dbfaa82dad3c39adb455b8c8f140ae622f6914fe98ea30cb37e90"
+      },
+      "update_count": 2048
+    },
+    {
+      "access_manifest": {
+        "logical_sha256": "730b34630acf377864125569cbe034054ebd7322a672b01988e89b24b605e2f0",
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold4/signed_reference_access_manifest.json",
+        "sha256": "b5ef7746e97d42704ab06dd37b349505a05dcc85bd3d74b4e5209590148c8c27"
+      },
+      "allowed_reference_count": 37,
+      "authority": {
+        "path": "registry/current_authority_v14_20260814.json",
+        "sha256": "73289c11225faae93f220c35d170c98210b2325f0bdeca3955ca408042c0d7b2"
+      },
+      "checkpoint": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold4/checkpoint_update2048.pt",
+        "sha256": "6c2e3a790e35ba2eea3abead55b0cbfba6e883e72180b149b9ede5fe01d1bffe"
+      },
+      "eligible_query_count": 446,
+      "final_state_sha256": "1b87795e78eed256132191b2afa416a58c9acbd3da1adc15df45afe3da306794",
+      "heldout_reference_count": 13,
+      "initial_state_sha256": "4a51b45b1a29aa80be6acb18278d783d5485fbff01665f7054b518e2d870099b",
+      "outer_fold": 4,
+      "pair_count": 65536,
+      "protocol": {
+        "path": "protocols/dino_rcde_r1_main_train_v1_8_bag_fold4_20260814.json",
+        "sha256": "47c8a35aad07ee514b19450a0ee1ece5ada9ae0d4052c906477d218ba1b3bd3c"
+      },
+      "run_identity": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold4/run_identity.json",
+        "sha256": "c57b56946b745caa5125a51a56b82269b86e9e87d65354cebcebe497ee4d7019"
+      },
+      "schedule_sha256": "53c19c32ed72435535447eb2350b51b1f90486f45fb7bcc828665aaa9fb556e3",
+      "train_result": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold4/train_result.json",
+        "sha256": "e73a14486c19a127751eedf55051eb5eac88adf1f9b39fb5244a0b5d7a2d9263"
+      },
+      "training_validation": {
+        "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold4/training_validation.json",
+        "sha256": "0d73da3b89df83225381d767a935a08d5afee813249ab5d8f24492b636039ef4"
+      },
+      "update_count": 2048
+    }
+  ],
+  "foldset_protocol": {
+    "path": "protocols/dino_rcde_r1_bag_foldset_v1_20260814.json",
+    "sha256": "67a78e9c4fe00644cc5dfe12b2c5856babc74d8db96f38d381f06d3b0ab526df"
+  },
+  "next_required_stage": "R1_MAIN_BAG_FOLDS1_4_FOLDSET_VALIDATION",
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "protected_access_counts": {
+    "C8_runtime_read_count": 0,
+    "S8_runtime_read_count": 0,
+    "home_files_modified": 0,
+    "opened_runtime_read_count": 0,
+    "sealed_runtime_read_count": 0,
+    "unauthorized_natural_result_read_count": 0
+  },
+  "schema_version": "rc_dino_rcde_r1_main_bag_foldset_manifest_v1_0",
+  "scientific_GO_or_NO_GO": null,
+  "shared_training_contract": {
+    "bag_permutation_sha256": "1a2142a2cb681bdbb45b29db62ab2d78f0ec38e4a9d77b573f9996ce2bca06b4",
+    "common_bindings": {
+      "cache_protocol": {
+        "path": "protocols/dino_rcde_r1_cache_v1_4_job5069910_repair_20260813.json",
+        "sha256": "98e581065ad884b79abb11dc6ec237ff2ae5c4642015dacaca731c92348d8eaf"
+      },
+      "cache_result": {
+        "path": "results/dino_rcde_r1_v1_4_job5069910_repair/cache_job5069979/cache_result.json",
+        "sha256": "668ac7f548c1f399e71ba408f9aee6c368aa2a92c5d385bcff5a9b303dedeb3e"
+      },
+      "cache_validation": {
+        "path": "results/dino_rcde_r1_v1_4_job5069910_repair/cache_job5069979/cache_validation.json",
+        "sha256": "53d7c17dec416fdb6722d2f6351e665312c310df5eec9f58c2dfdac1dcdb4109"
+      },
+      "episode_ledger": {
+        "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/fold_access_and_episode_receipt.json",
+        "sha256": "7a35e0acff8032453f064c77cc40ee6a822e227b5aed2852016c0a93ba32b0e7"
+      },
+      "model_visible_c128": {
+        "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/model_visible_c128.json",
+        "sha256": "784d196f4f05abddbca13eab8aaa88f1c2cbc8cf48cd9db3e929bf68c5803a81"
+      },
+      "rcde_core": {
+        "path": "src/rc_aslo_xf/dino_rcde_v1_2_resource_core.py",
+        "sha256": "dc8e4377a28e3b3de409438d33d1ed577fa3ecf5065c00f4a85eccfaf9fb2f36"
+      },
+      "resource_shape_ledger": {
+        "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/resource_shape_ledger.json",
+        "sha256": "35ae0fc826a794f591bdaa6801ea499448a50a747f265ef9039e81a12b6636fa"
+      },
+      "scientific_contract": {
+        "path": "plan/DINO_RCDE_LEARNED_DENSE_EVIDENCE_DECODER_V1_1_20260812.md",
+        "sha256": "a32ec29637e7ee194a39ec8b95687c2b84436123f2a71281af6d54c686fcc721"
+      },
+      "training_roles": {
+        "path": "protocols/dino_rcde_training_roles_600_v1_2_20260812.json",
+        "sha256": "beac89d8caecd09b3e4815684cde207a363a0fa784e1e793f5694cc5fb7ee672"
+      }
+    },
+    "initial_state_sha256": "4a51b45b1a29aa80be6acb18278d783d5485fbff01665f7054b518e2d870099b",
+    "model_state_schema_sha256": "2a1110ccebf0706986fe2d5377c4abadd0fc0687560ae2738bd850ea4f6af2e7",
+    "normalized_cache_contract_sha256": "ee2559f765fd0ab1f3650d16e34477f5481e670c64413ab2977330822dabeb4a",
+    "normalized_forbidden_contract_sha256": "417fe570b2d58ff9eeaf8c4e80609950001dc0405fbcb672c65fdb847359608a",
+    "normalized_training_semantics_sha256": "e0d0d8d8cb2de523559af4801e76954457c072336df1b157c65598cf6a16c5e2",
+    "parameter_count": 65125,
+    "seed": 17
+  },
+  "source_mode": "immutable_paths_and_sha256_no_copy",
+  "status": "DINO_RCDE_R1_MAIN_BAG_FOLDS1_4_FOLDSET_FROZEN"
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "rc_current_authority_v22_20260814",
+  "date": "2026-08-14",
+  "status": "RCDE_CONNECTED_SUPERREGION_MAINLINE_E0_CORE_READY",
+  "claim_level": "ENGINEERING_SUPERREGION_E0_ONLY",
+  "scientific_GO_or_NO_GO": null,
+  "natural_training_authorized": false,
+  "automatic_stage_advance": false,
+  "mainline": {
+    "proposal": "COLNOMIC_CANDIDATE_CONDITIONED_P_ONLY",
+    "hard_bottleneck": "PAIRED_CONNECTED_SUPERREGION",
+    "verification": "DINO_RCDE_REGION_ONLY_V",
+    "candidate_decision": "SYMMETRIC_TWO_DIRECTION_CROSSFIT",
+    "retrieval_action": "NOT_AUTHORIZED_UNTIL_SR0_AND_T1_GO",
+    "ownership_role": "POST_TARGET_CONNECTED_G_VS_C_EVIDENCE_INTERPRETATION_ONLY"
+  },
+  "authorized_scope": {
+    "stages": [
+      "DINO_RCDE_R1_OOF_PREJOIN_E0_JOB5074144_PREREQUISITE",
+      "RCDE_SR_E0_CORE",
+      "RCDE_SR_CANONICAL_GEOMETRY_RECEIPT_CONTRACT_DESIGN"
+    ],
+    "current_inflight_job": 5074144,
+    "current_inflight_job_role": "DINO_RCDE_EVIDENCE_SOURCE_PREREQUISITE_ONLY",
+    "current_inflight_job_scientific_role_changed": false
+  },
+  "preserved_inflight_execution_authority": {
+    "path": "registry/current_authority_v21_20260814.json",
+    "sha256": "03125be9d8ce453741d1971137c581f34a0e41e83f7bf356ba488e813276bc52",
+    "rule": "job 5074144 and its validators continue to bind v21 byte-for-byte; v22 does not alter their spool, inputs, model, checkpoint, cohort, or claim boundary"
+  },
+  "content_anchors": {
+    "mainline_plan": {
+      "path": "plan/DINO_RCDE_COLNOMIC_CONNECTED_SUPERREGION_MAINLINE_V1_20260814.md",
+      "sha256": "fe0c8aa5f628990af98bff3e750f9c5770d048c26de72d18f6b7ad0cf535fdff"
+    },
+    "superregion_core": {
+      "path": "src/rc_aslo_xf/dino_rcde_colnomic_superregion_v1.py",
+      "sha256": "8f33106c44f05872d93f6832bddb155420e4ac7d355be972d04e8352a29c736a"
+    },
+    "superregion_tests": {
+      "path": "tests/test_dino_rcde_colnomic_superregion_v1.py",
+      "sha256": "63c1601acaf944592f572a8dd183c4b55a9e1ac33a27e4db882121463c470058"
+    },
+    "e0_result": {
+      "path": "results/dino_rcde_colnomic_connected_superregion_e0_v1/result.json",
+      "sha256": "27df332a761ecc1ca25685ca2842f70cff4f21f3baaf4eee186b6f144b21d631",
+      "required_status": "RCDE_SR_E0_CORE_READY_GEOMETRY_MATERIALIZATION_REQUIRED"
+    },
+    "e0_independent_validation": {
+      "path": "results/dino_rcde_colnomic_connected_superregion_e0_v1/independent_validation.json",
+      "sha256": "94e2bf580a80c1d42da9df8c35098f8be9762f175bf58ac74d6b0dad6fec453b",
+      "required_status": "RCDE_SR_E0_INDEPENDENT_VALIDATION_PASS"
+    },
+    "e0_validator": {
+      "path": "programs/validate_dino_rcde_colnomic_superregion_e0_v1.py",
+      "sha256": "3060e4a1b48166026070497f6faeb460094a87d401a1cbf4e2001b11c2467a68"
+    }
+  },
+  "permanent_negative_evidence": [
+    "OLD_CW1_S8_HANDCRAFTED_COARSE_V_READOUT_NO_GO",
+    "DINO_QUERY_ONLY_STRUCTURE_X_COLNOMIC_EVIDENCE_D32_NO_GO",
+    "QWEN_MULTISUPPORT_VERIFIER_BINDING_AND_SPATIAL_CONTROL_NO_GO"
+  ],
+  "forbidden": [
+    "TOKEN_ORDINAL_OR_SIMPLE_GRID_RESIZE_ALIGNMENT",
+    "AUTO_BRIDGE_OR_FILL_DISCONNECTED_REGION",
+    "SINGLE_PATCH_TARGET_EVIDENCE",
+    "OLD_S8_SCORER_OR_301_PARAMETER_HEAD_REUSE",
+    "DINO_QUERY_ONLY_FOREGROUND_OR_OBJECTNESS_AS_IDENTITY_EVIDENCE",
+    "NATURAL_LABEL_JOIN_OR_TRAINING_BEFORE_GEOMETRY_RECEIPT_VALIDATION",
+    "FULL_C128_TARGET_DECISION",
+    "D1_SWITCH_OR_HOLD_ACTION",
+    "OWNERSHIP_CLAIM",
+    "opened",
+    "sealed"
+  ],
+  "next_authorized_stage": "RCDE_SR_CANONICAL_GEOMETRY_RECEIPT_MATERIALIZATION_CONTRACT",
+  "next_on_pass": "RCDE_SR_NATURAL_GIVEN_PAIR_CONTRACT_REQUIRED",
+  "supersedes": {
+    "path": "registry/current_authority_v21_20260814.json",
+    "sha256": "03125be9d8ce453741d1971137c581f34a0e41e83f7bf356ba488e813276bc52",
+    "reason": "User-directed scientific mainline correction: restore candidate-conditioned connected superregion between ColNomic P and DINO-RCDE V. The inflight v21 E0 remains byte-identical and useful only as an evidence-source prerequisite. No prior result is overwritten or reinterpreted."
+  }
+}

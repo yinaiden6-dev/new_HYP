@@ -1,0 +1,41 @@
+{
+  "schema_version": "rc_dino_rcde_bag_full594_dev_requeue_execution_amendment_v1_20260827",
+  "date": "2026-08-27",
+  "status": "DINO_RCDE_BAG_FULL594_SINGLE_SLOT_DEV_REQUEUE_EXECUTION_AUTHORIZED",
+  "parent_authority": {
+    "path": "registry/dino_rcde_bag_full594_predecessor_status_repair_authority_v2_20260827.json",
+    "sha256": "0b33ad52ebbb31852ee5718460e102fada688e7fe095e6fd484c50ba15eb443d"
+  },
+  "validated_canary": {
+    "job_id": 5112858,
+    "state": "COMPLETED",
+    "elapsed": "00:05:58",
+    "producer_sha256": "6c2e241e242977f8be0cd6df3e46b7e05788dbbe700c7e1dcd3fc899fef3741c",
+    "validation_sha256": "5a810efda113e3950c24182a4548cafccb6bf91ef73d38313be5d2334be9be5b",
+    "validation_status": "DINO_RCDE_BAG_FULL594_PREJOIN_SHARD_VALIDATION_PASS"
+  },
+  "superseded_pending_serial_job": {
+    "job_id": 5112864,
+    "required_state_before_cancel": "PENDING_HELD_ZERO_START",
+    "cancellation_authorized": true
+  },
+  "execution": {
+    "partition": "dev_accelerated",
+    "walltime_per_run": "01:00:00",
+    "requeue_same_job_id": true,
+    "maximum_restart_count": 10,
+    "maximum_newly_validated_shards_per_run": 5,
+    "initial_validated_shard_count": 1,
+    "expected_restart_count_before_finalization": 9,
+    "resume_rule": "SKIP_VALIDATED_PAIR_OR_VALIDATE_EXISTING_IMMUTABLE_PRODUCER_THEN_CONTINUE",
+    "launcher_path": "slurm/dino_rcde_bag_full594_dev_requeue_v1.sbatch",
+    "launcher_sha256": "0f1fa2e18b2043bc096b038a2e027e0ceb4bc6f3e5c9e11e19ca2ef68e989eee"
+  },
+  "scientific_programs": "BYTE_IDENTICAL_V2_AUTHORITY_PRODUCER_VALIDATORS_JOINER_AND_REDUCER",
+  "qos_submit_slot_count": 1,
+  "input_change_authorized": false,
+  "checkpoint_change_authorized": false,
+  "scientific_claim_change_authorized": false,
+  "scientific_GO_or_NO_GO": null,
+  "automatic_stage_beyond_parent_authority": false
+}

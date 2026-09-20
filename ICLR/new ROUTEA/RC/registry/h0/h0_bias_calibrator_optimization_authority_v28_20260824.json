@@ -1,0 +1,123 @@
+{
+  "U4_role": "OPTIMIZATION_ONLY_NOT_CONFIRMATION",
+  "automatic_stage_advance": false,
+  "bindings": {
+    "contract": {
+      "bytes": 9193,
+      "path": "plan/DINO_RCDE_H0_BIAS_CALIBRATION_SUCCESSOR_CONTRACT_V1_20260824.md",
+      "sha256": "eca9445e2d8d354400a0b7668a6131a14b4eced148e44786608ef790c08ecfbe"
+    },
+    "core": {
+      "bytes": 8447,
+      "path": "src/rc_aslo_xf/dino_rcde_h0_bias_calibrator_v1.py",
+      "sha256": "7d66d63d21ae64b3cae0848927f75fe433c5a397023e9bf59dc0192cb0bac80c"
+    },
+    "freezer": {
+      "bytes": 4727,
+      "path": "programs/freeze_dino_rcde_h0_bias_calibrator_authority_v28.py",
+      "sha256": "140900479498fe2330185a9711ff9bcc79a94c9e80926f315762bc6e7df47643"
+    },
+    "launcher": {
+      "bytes": 2227,
+      "path": "slurm/dino_rcde_h0_bias_calibrator_optimization_v1.sbatch",
+      "sha256": "50c155d8032974f081ccbc25bb17cdb7169922372b27ea8faa06a6a2d58aca05"
+    },
+    "literature_report": {
+      "bytes": 6185,
+      "path": "reports/REPORT_H0_U4_NO_GO_LITERATURE_AND_BIAS_REPAIR_DECISION_20260824.md",
+      "sha256": "22e24a8cda0a0b094712048fbecc4ac8635ef28b515281ee4572fb223878aefb"
+    },
+    "producer": {
+      "bytes": 19050,
+      "path": "programs/fit_dino_rcde_h0_bias_calibrator_v1.py",
+      "sha256": "79b0144b397708b2b67999795dba3f57ff29bc96a6c7d56628b88b69f1f65d14"
+    },
+    "raw_aggregate": {
+      "bytes": 1749653,
+      "logical_sha256": "519220c5f1ad2353051d39b64f83b0ad0569ccbc3b252274048f486577583f19",
+      "path": "results/dino_rcde_h0_u4_raw_aggregate_v2/result.json",
+      "sha256": "3ecb1f4c133fd5175ba45791103a684b1198f33f85b6f517111f55975c82d562"
+    },
+    "raw_aggregate_validation": {
+      "bytes": 708,
+      "logical_sha256": "ef39b1dad2a701a217c3cb8ba313e29e808c7d34fc3f437d39aa3256fd488b9c",
+      "path": "results/dino_rcde_h0_u4_raw_aggregate_validation_v2/result.json",
+      "sha256": "2e2beaf198b29405ddf90babd1855a3137f025df9a3ab714bedfc037e4ec72c7"
+    },
+    "test_authority": {
+      "bytes": 640,
+      "path": "tests/test_freeze_dino_rcde_h0_bias_calibrator_authority_v28.py",
+      "sha256": "95ebdd5ce1c4015b2d1574e69bba15d16c789ab8ea7fc4e975d20e7768845e81"
+    },
+    "test_core": {
+      "bytes": 3051,
+      "path": "tests/test_dino_rcde_h0_bias_calibrator_v1.py",
+      "sha256": "d0e579da0c80fee4da95eee6efa64974f58a3779a73ba27d3f8392ac92f9c183"
+    },
+    "test_pipeline": {
+      "bytes": 9051,
+      "path": "tests/test_fit_dino_rcde_h0_bias_calibrator_v1.py",
+      "sha256": "993e5e5bec6239515d091b54a61a7809867938f0dce82e9c9f6e441bcb3a2a49"
+    },
+    "u4_no_go_result": {
+      "bytes": 43286,
+      "logical_sha256": "0cc95dee97376fb3e5f51a46f62050e304c1df96a3889fb118fd4b37d3fe5d41",
+      "path": "results/dino_rcde_h0_u4_absolute_gate_v1/result.json",
+      "sha256": "7f57e8705089b348615693acf88f0f8a2958d0b5dd3d0e5352f4ffd87f89583b"
+    },
+    "u4_no_go_validation": {
+      "bytes": 805,
+      "logical_sha256": "39f393839dd07aedba0a82ee5aba9a2d87dd37fdd0f4547e5a714b108aa9e43c",
+      "path": "results/dino_rcde_h0_u4_absolute_gate_validation_v1/result.json",
+      "sha256": "bb01c8a397ffae23306fd278c81f083849d69adb2bc07e2d82858eca8bc64d5e"
+    },
+    "validator": {
+      "bytes": 22691,
+      "path": "programs/validate_dino_rcde_h0_bias_calibrator_v1.py",
+      "sha256": "f85194fbb516f4ae0256e098591379cb72a360e42c96fed405e7bf3d2abc0a51"
+    }
+  },
+  "calibrator_consumption_authorized": false,
+  "calibrator_family": "SHARED_BIAS_ONLY",
+  "calibrator_fit_authorized": true,
+  "claim_level": "OPTIMIZATION_ONLY_NOT_CONFIRMATION",
+  "fit_contract": {
+    "dtype": "float64",
+    "gradient_tolerance": 1e-12,
+    "initial_bias": 0.0,
+    "max_iterations": 64,
+    "optimizer": "SAFEGUARDED_NEWTON",
+    "parameters": 1,
+    "regularization": null,
+    "transform": "READY: z+b; STRUCTURAL_H0: exact 0",
+    "weighting": "EQUAL_RECIPIENT_SUPERGROUP_THEN_QUERY_ROLE_DIRECTION"
+  },
+  "formal_endpoint_scoring_authorized": false,
+  "logical_sha256": "033f8d08092a6cce6ba2539f0333cda192fd9d382f951e445ea6a2ca9f72d8d9",
+  "model_backward_or_update_authorized": false,
+  "model_forward_authorized": false,
+  "next_authorized_stage": null,
+  "output": "results/dino_rcde_h0_bias_calibrator_optimization_v1/result.json",
+  "qualification_gates": {
+    "combined_lofo_improvement_vs_init_min": 0.01,
+    "heldout_fold_improvement_vs_raw_h_required_count": 4,
+    "lofo_bias_span_max": 0.15,
+    "margin_max_abs_change_max": 1e-12,
+    "structural_h0_exact_zero": true
+  },
+  "resource_contract": {
+    "cpus_per_task": 2,
+    "memory_megabytes": 8192,
+    "partitions": [
+      "dev_cpuonly",
+      "cpuonly"
+    ],
+    "walltime_seconds": 600
+  },
+  "retrieval_or_ownership_claim_authorized": false,
+  "schema_version": "rc_h0_bias_calibrator_optimization_authority_v28_20260824",
+  "scientific_GO_or_NO_GO": null,
+  "status": "H0_BIAS_CALIBRATOR_OPTIMIZATION_EXECUTION_AUTHORIZED",
+  "track": "H0_BIAS_CALIBRATION_SUCCESSOR",
+  "validation_output": "results/dino_rcde_h0_bias_calibrator_optimization_validation_v1/result.json"
+}

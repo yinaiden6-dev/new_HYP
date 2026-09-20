@@ -1,0 +1,280 @@
+{
+  "U4_role": "OPTIMIZATION_ONLY_NOT_CONFIRMATION",
+  "all_heldout_folds_improve_raw_track_h": true,
+  "all_qualification_gates_pass": true,
+  "automatic_stage_advance": false,
+  "bias_range": {
+    "all_fit_max_bias": 0.4239848296450666,
+    "all_fit_min_bias": 0.34220061357774556,
+    "global_bias": 0.3846088653313626,
+    "lofo_max_bias": 0.4239848296450666,
+    "lofo_min_bias": 0.34220061357774556
+  },
+  "calibration_transform": "z_calibrated = z_raw + b",
+  "calibrator_consumption_authorized": false,
+  "claim_level": "OPTIMIZATION_ONLY_BIAS_CALIBRATOR_FIT_NOT_CONFIRMATION",
+  "combined_lofo_oof_metrics": {
+    "binary_observation_count": 2268,
+    "calibrated_group_balanced_mean_margin": 0.18468914130328673,
+    "calibrated_track_h_loss": 0.6737636023593105,
+    "improvement_vs_init": 0.01666210385151834,
+    "improvement_vs_raw_track_h": 0.016559224889279633,
+    "max_abs_directional_margin_change": 2.220446049250313e-16,
+    "negative_observation_count": 1134,
+    "positive_observation_count": 1134,
+    "raw_group_balanced_mean_margin": 0.18468914130328673,
+    "raw_init_loss": 0.6904257062108289,
+    "raw_track_h_loss": 0.6903228272485902,
+    "recipient_supergroup_count": 45,
+    "row_count": 567
+  },
+  "fit_arm": "TRACK_H",
+  "global_fit": {
+    "fit": {
+      "bias": 0.3846088653313626,
+      "converged": true,
+      "final_loss": 0.6728133961510948,
+      "gradient": 8.326672684688674e-17,
+      "hessian": 0.23824449302433015,
+      "initial_loss": 0.6903228272485902,
+      "iterations": 3
+    },
+    "metrics": {
+      "binary_observation_count": 2268,
+      "calibrated_group_balanced_mean_margin": 0.18468914130328673,
+      "calibrated_track_h_loss": 0.6728133961510948,
+      "improvement_vs_init": 0.01761231005973407,
+      "improvement_vs_raw_track_h": 0.017509431097495365,
+      "max_abs_directional_margin_change": 0.0,
+      "negative_observation_count": 1134,
+      "positive_observation_count": 1134,
+      "raw_group_balanced_mean_margin": 0.18468914130328673,
+      "raw_init_loss": 0.6904257062108289,
+      "raw_track_h_loss": 0.6903228272485902,
+      "recipient_supergroup_count": 45,
+      "row_count": 567
+    }
+  },
+  "heldout_fold_improvement_vs_raw_track_h": {
+    "1": 0.026757127125722757,
+    "2": 0.024091182514839438,
+    "3": 0.0031138460318893557,
+    "4": 0.010661510543898745
+  },
+  "lofo_fits": {
+    "1": {
+      "excluded_outer_fold": 1,
+      "fit": {
+        "bias": 0.34220061357774556,
+        "converged": true,
+        "final_loss": 0.6655921855042402,
+        "gradient": 0.0,
+        "hessian": 0.2378617569349105,
+        "initial_loss": 0.679446729020167,
+        "iterations": 3
+      },
+      "heldout_metrics": {
+        "binary_observation_count": 580,
+        "calibrated_group_balanced_mean_margin": 0.0942115491484799,
+        "calibrated_track_h_loss": 0.6934749702510314,
+        "improvement_vs_init": -0.002075714708663079,
+        "improvement_vs_raw_track_h": 0.026757127125722757,
+        "max_abs_directional_margin_change": 0.0,
+        "negative_observation_count": 290,
+        "positive_observation_count": 290,
+        "raw_group_balanced_mean_margin": 0.0942115491484799,
+        "raw_init_loss": 0.6913992555423684,
+        "raw_track_h_loss": 0.7202320973767542,
+        "recipient_supergroup_count": 12,
+        "row_count": 145
+      },
+      "heldout_population": {
+        "binary_observation_count": 580,
+        "negative_observation_count": 290,
+        "positive_observation_count": 290,
+        "recipient_supergroup_count": 12,
+        "row_count": 145
+      },
+      "training_population": {
+        "binary_observation_count": 1688,
+        "negative_observation_count": 844,
+        "positive_observation_count": 844,
+        "recipient_supergroup_count": 33,
+        "row_count": 422
+      }
+    },
+    "2": {
+      "excluded_outer_fold": 2,
+      "fit": {
+        "bias": 0.3604927618002018,
+        "converged": true,
+        "final_loss": 0.6704132870517077,
+        "gradient": -2.7755575615628914e-17,
+        "hessian": 0.23664117798551887,
+        "initial_loss": 0.6857016417847956,
+        "iterations": 3
+      },
+      "heldout_metrics": {
+        "binary_observation_count": 560,
+        "calibrated_group_balanced_mean_margin": 0.1095541333030777,
+        "calibrated_track_h_loss": 0.6805153088945703,
+        "improvement_vs_init": 0.008972645202822926,
+        "improvement_vs_raw_track_h": 0.024091182514839438,
+        "max_abs_directional_margin_change": 5.551115123125783e-17,
+        "negative_observation_count": 280,
+        "positive_observation_count": 280,
+        "raw_group_balanced_mean_margin": 0.10955413330307771,
+        "raw_init_loss": 0.6894879540973933,
+        "raw_track_h_loss": 0.7046064914094098,
+        "recipient_supergroup_count": 11,
+        "row_count": 140
+      },
+      "heldout_population": {
+        "binary_observation_count": 560,
+        "negative_observation_count": 280,
+        "positive_observation_count": 280,
+        "recipient_supergroup_count": 11,
+        "row_count": 140
+      },
+      "training_population": {
+        "binary_observation_count": 1708,
+        "negative_observation_count": 854,
+        "positive_observation_count": 854,
+        "recipient_supergroup_count": 34,
+        "row_count": 427
+      }
+    },
+    "3": {
+      "excluded_outer_fold": 3,
+      "fit": {
+        "bias": 0.4239848296450666,
+        "converged": true,
+        "final_loss": 0.6768430609191679,
+        "gradient": 2.7755575615628914e-17,
+        "hessian": 0.239688465063499,
+        "initial_loss": 0.6982280400589421,
+        "iterations": 3
+      },
+      "heldout_metrics": {
+        "binary_observation_count": 544,
+        "calibrated_group_balanced_mean_margin": 0.29126760414204705,
+        "calibrated_track_h_loss": 0.65954073638047,
+        "improvement_vs_init": 0.022970435426031388,
+        "improvement_vs_raw_track_h": 0.0031138460318893557,
+        "max_abs_directional_margin_change": 2.220446049250313e-16,
+        "negative_observation_count": 272,
+        "positive_observation_count": 272,
+        "raw_group_balanced_mean_margin": 0.29126760414204705,
+        "raw_init_loss": 0.6825111718065013,
+        "raw_track_h_loss": 0.6626545824123593,
+        "recipient_supergroup_count": 10,
+        "row_count": 136
+      },
+      "heldout_population": {
+        "binary_observation_count": 544,
+        "negative_observation_count": 272,
+        "positive_observation_count": 272,
+        "recipient_supergroup_count": 10,
+        "row_count": 136
+      },
+      "training_population": {
+        "binary_observation_count": 1724,
+        "negative_observation_count": 862,
+        "positive_observation_count": 862,
+        "recipient_supergroup_count": 35,
+        "row_count": 431
+      }
+    },
+    "4": {
+      "excluded_outer_fold": 4,
+      "fit": {
+        "bias": 0.40955642723279284,
+        "converged": true,
+        "final_loss": 0.677677349753321,
+        "gradient": 2.7755575615628914e-17,
+        "hessian": 0.23894879538016184,
+        "initial_loss": 0.6975758302469135,
+        "iterations": 3
+      },
+      "heldout_metrics": {
+        "binary_observation_count": 584,
+        "calibrated_group_balanced_mean_margin": 0.25522510509265167,
+        "calibrated_track_h_loss": 0.6597155584593024,
+        "improvement_vs_init": 0.03719164986090906,
+        "improvement_vs_raw_track_h": 0.010661510543898745,
+        "max_abs_directional_margin_change": 1.1102230246251565e-16,
+        "negative_observation_count": 292,
+        "positive_observation_count": 292,
+        "raw_group_balanced_mean_margin": 0.25522510509265167,
+        "raw_init_loss": 0.6969072083202115,
+        "raw_track_h_loss": 0.6703770690032012,
+        "recipient_supergroup_count": 12,
+        "row_count": 146
+      },
+      "heldout_population": {
+        "binary_observation_count": 584,
+        "negative_observation_count": 292,
+        "positive_observation_count": 292,
+        "recipient_supergroup_count": 12,
+        "row_count": 146
+      },
+      "training_population": {
+        "binary_observation_count": 1684,
+        "negative_observation_count": 842,
+        "positive_observation_count": 842,
+        "recipient_supergroup_count": 33,
+        "row_count": 421
+      }
+    }
+  },
+  "logical_sha256": "d7bf0196f5f4e5387b621de51d5d4860e97f4cf67c2c3e0dbc27d3cfa90c8017",
+  "margin_invariance": {
+    "common_additive_bias_cancels": true,
+    "global_max_abs_directional_margin_change": 0.0,
+    "lofo_heldout_max_abs_directional_margin_change": 2.220446049250313e-16,
+    "lofo_oof_max_abs_directional_margin_change": 2.220446049250313e-16,
+    "theoretical_identity": "(target+b)-(donor+b)=target-donor"
+  },
+  "model_backward_count": 0,
+  "model_forward_count": 0,
+  "model_update_count": 0,
+  "next_authorized_stage": null,
+  "objective": "recipient-supergroup-balanced binary log loss",
+  "population": {
+    "binary_observation_count": 2268,
+    "negative_observation_count": 1134,
+    "outer_fold_count": 4,
+    "positive_observation_count": 1134,
+    "recipient_supergroup_count": 45,
+    "row_count": 567,
+    "unmatched_row_count": 27
+  },
+  "qualification_gates": {
+    "all_four_heldout_folds_improve_raw_track_h": true,
+    "combined_lofo_improvement_vs_init_at_least_0p01": true,
+    "global_final_loss_not_above_initial": true,
+    "global_margin_max_abs_at_most_1e_12": true,
+    "lofo_bias_range_at_most_0p15": true,
+    "lofo_margin_max_abs_at_most_1e_12": true
+  },
+  "retrieval_or_ownership_claim_authorized": false,
+  "schema_version": "rc_dino_rcde_h0_bias_calibrator_fit_v1_20260824",
+  "scientific_GO_or_NO_GO": null,
+  "scientific_metric_count": 0,
+  "source_aggregate": {
+    "file_sha256": "3ecb1f4c133fd5175ba45791103a684b1198f33f85b6f517111f55975c82d562",
+    "logical_sha256": "519220c5f1ad2353051d39b64f83b0ad0569ccbc3b252274048f486577583f19",
+    "path": "results/dino_rcde_h0_u4_raw_aggregate_v2/result.json",
+    "schema_version": "rc_dino_rcde_h0_u4_raw_score_aggregate_v2_20260823",
+    "status": "H0_U4_V2_RAW_SCORE_AGGREGATE_QUARANTINED"
+  },
+  "status": "H0_BIAS_CALIBRATOR_OPTIMIZATION_READY",
+  "structural_h0_exact_zero_contract": true,
+  "structural_h0_probe_output": 0.0,
+  "weighting": {
+    "donor_label": 0,
+    "observation_weight": "1 / (4 * rows_in_recipient_supergroup)",
+    "scheme": "EQUAL_RECIPIENT_SUPERGROUP_MASS",
+    "target_label": 1
+  }
+}

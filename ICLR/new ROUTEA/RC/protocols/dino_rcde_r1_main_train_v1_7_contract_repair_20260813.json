@@ -1,0 +1,197 @@
+{
+  "schema_version": "rc_dino_rcde_r1_main_train_protocol_v1_7_contract_repair_20260813",
+  "date": "2026-08-13",
+  "stage": "R1_MAIN_BAG_FOLD1_V17_CONTRACT_REPAIR_TRAINING",
+  "claim_boundary": "engineering_contract_repaired_time_bounded_training_and_independent_validation_only_not_scientific_GO_or_NO_GO",
+  "authority": {
+    "path": "registry/current_authority_v13_20260813.json",
+    "sha256": "4cb9decca89be72f67d01278ed15ea01001ee931448f71da9c9955a67e02a5aa",
+    "required_status": "DINO_RCDE_R1_CACHE_READY_BAG_FOLD1_V17_CONTRACT_REPAIR_TRAINING_AUTHORIZED"
+  },
+  "bindings": {
+    "scientific_contract": {
+      "path": "plan/DINO_RCDE_LEARNED_DENSE_EVIDENCE_DECODER_V1_1_20260812.md",
+      "sha256": "a32ec29637e7ee194a39ec8b95687c2b84436123f2a71281af6d54c686fcc721"
+    },
+    "p0_protocol": {
+      "path": "protocols/dino_rcde_p0_v1_2_20260812.json",
+      "sha256": "0502a93c6d2b5ef48cc4bf2fd527db6c152fd1490053db0918106eee41ced6e7"
+    },
+    "p0_finalization_repair_manifest": {
+      "path": "protocols/dino_rcde_p0_v1_2_job5069436_finalize_repair_manifest_20260813.json",
+      "sha256": "fa40991bc293b8f7f57ab56d81b5fc207a15a4c6bf732865debb3bfc00b2d695"
+    },
+    "p0_result": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/result.json",
+      "sha256": "33ca3e6dc798b9d0450fddd2aa0d43efb13d07fc672d601369626b1425843301"
+    },
+    "p0_validation": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/validation.json",
+      "sha256": "9e430c04eb015cce7664cdf813e2326529fab85cefc0e577b19ff8de801aba89"
+    },
+    "cache_protocol": {
+      "path": "protocols/dino_rcde_r1_cache_v1_4_job5069910_repair_20260813.json",
+      "sha256": "98e581065ad884b79abb11dc6ec237ff2ae5c4642015dacaca731c92348d8eaf"
+    },
+    "cache_result": {
+      "path": "results/dino_rcde_r1_v1_4_job5069910_repair/cache_job5069979/cache_result.json",
+      "sha256": "668ac7f548c1f399e71ba408f9aee6c368aa2a92c5d385bcff5a9b303dedeb3e"
+    },
+    "cache_validation": {
+      "path": "results/dino_rcde_r1_v1_4_job5069910_repair/cache_job5069979/cache_validation.json",
+      "sha256": "53d7c17dec416fdb6722d2f6351e665312c310df5eec9f58c2dfdac1dcdb4109"
+    },
+    "training_roles": {
+      "path": "protocols/dino_rcde_training_roles_600_v1_2_20260812.json",
+      "sha256": "beac89d8caecd09b3e4815684cde207a363a0fa784e1e793f5694cc5fb7ee672"
+    },
+    "episode_ledger": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/fold_access_and_episode_receipt.json",
+      "sha256": "7a35e0acff8032453f064c77cc40ee6a822e227b5aed2852016c0a93ba32b0e7"
+    },
+    "resource_shape_ledger": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/resource_shape_ledger.json",
+      "sha256": "35ae0fc826a794f591bdaa6801ea499448a50a747f265ef9039e81a12b6636fa"
+    },
+    "model_visible_c128": {
+      "path": "results/dino_rcde_p0_v1_2/finalize_repair_job5069473/data/model_visible_c128.json",
+      "sha256": "784d196f4f05abddbca13eab8aaa88f1c2cbc8cf48cd9db3e929bf68c5803a81"
+    },
+    "rcde_core": {
+      "path": "src/rc_aslo_xf/dino_rcde_v1_2_resource_core.py",
+      "sha256": "dc8e4377a28e3b3de409438d33d1ed577fa3ecf5065c00f4a85eccfaf9fb2f36"
+    },
+    "base_runner": {
+      "path": "programs/run_dino_rcde_r1_main_train_v1_5.py",
+      "sha256": "ef1f5ef7022ce8211ea7a36614dc6dd4427e2574fb9ce1190b5d62db0c54cf4b"
+    },
+    "base_validator": {
+      "path": "programs/validate_dino_rcde_r1_main_train_v1_5.py",
+      "sha256": "329c0d9c32ed63f9510c1bfb6fa5e0feaaae3d6cab21b243fa1d56c690228ea8"
+    },
+    "contract_repair_runner": {
+      "path": "programs/run_dino_rcde_r1_main_train_v1_7_contract_repair.py",
+      "sha256": "2eabbb95f0981299d56cbbaccb20d518b9a7d9b7ea7a767f7139069a68d70139"
+    },
+    "contract_repair_validator": {
+      "path": "programs/validate_dino_rcde_r1_main_train_v1_7_contract_repair.py",
+      "sha256": "1ec6dd73697ebfb91f3db61acbca66c85427a1337068c4bd670f489275fc1f5e"
+    },
+    "contract_repair_tests": {
+      "path": "tests/test_dino_rcde_r1_main_v1_7_contract_repair.py",
+      "sha256": "3510271a45bb3049944cd7972985dc9fdd6b8943960e05541e155a40cb2bbc25"
+    },
+    "real_gpu_smoke_runner": {
+      "path": "programs/smoke_dino_rcde_r1_main_v1_7_gpu.py",
+      "sha256": "4f65810129ae0d6cc81141c8381b08ee6ee37caa212f302b95f890794f576289"
+    },
+    "real_gpu_smoke_slurm": {
+      "path": "slurm/dino_rcde_r1_main_v1_7_gpu_smoke_30m.sbatch",
+      "sha256": "fdb5224565e7a4b6cbd5fe0a4b4b376a36995e95bb3a1f23e59953785a491b23"
+    },
+    "real_gpu_smoke_result": {
+      "path": "results/dino_rcde_r1_main_v1_7_gpu_smoke/smoke_job5071363/result.json",
+      "sha256": "9eb90d370a87829d4aaf50ca744852ff2ec95ad11816c59603b8e637f807737c"
+    },
+    "job5070402_failure_stderr": {
+      "path": "logs/rcde_r1b1d16-5070402.err",
+      "sha256": "0354758047830cba2e9d835d110e1a4ab4f3c097c941895671162d77d03db990"
+    },
+    "root_cause_report": {
+      "path": "reports/REPORT_DINO_RCDE_R1_JOB5070402_ROOT_CAUSE_AND_V17_CONTRACT_REPAIR_20260813.md",
+      "sha256": "d68e648c5d480bd1ecdb98480ad65463967c98f3b39e98bc46ab6cc6a76c71db"
+    }
+  },
+  "cache": {
+    "root": "runtime/dino_rcde_p0_v1_2/stable_fp16_cache",
+    "query_count": 600,
+    "reference_count": 4748,
+    "query_key": "execution_ordinal",
+    "model_checkpoint_logical_sha256": "f901d9bd056bb65e5fcb02c72e869f6d0cf8d7472467d22fbc340442feca034c"
+  },
+  "training": {
+    "arms": [
+      "RCDE_BAG"
+    ],
+    "outer_folds": [
+      1
+    ],
+    "seed": 17,
+    "parameter_count": 65125,
+    "optimizer": "AdamW",
+    "deterministic_algorithms": true,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_l2": 1.0,
+    "updates_total": 2048,
+    "episodes_per_update": 4,
+    "raw_correct_per_update": 2,
+    "raw_wrong_per_update": 2,
+    "warmup_updates": 128,
+    "final_learning_rate": 0.00003,
+    "loss": "mean_softplus_negative_signed_pair_logit_tau_1",
+    "query_tile_rows": 8,
+    "reference_tile_rows": 16,
+    "query_order_namespace": "RCDE_QUERY_ORDER_V1_1",
+    "query_order_key": "source_image_sha256",
+    "query_order_tie_break": "stable_episode_ledger_order",
+    "candidate_direction_source": "P0_frozen_model_candidate_order",
+    "cache_query_key": "execution_ordinal",
+    "outer_train_only": true,
+    "heldout_target_join_allowed": false
+  },
+  "resume": {
+    "save_at_every_job_boundary": true,
+    "restore_model": true,
+    "restore_optimizer": true,
+    "restore_progress_and_loss_trace": true,
+    "restore_python_numpy_torch_cuda_rng": true,
+    "recompute_schedule_digest_prefix_from_frozen_ledger": true,
+    "persistent_output": "results/dino_rcde_r1_main_v1_7_contract_repair/RCDE_BAG_fold1",
+    "concurrent_writer_lock": "flock_exclusive",
+    "completed_result_immutable": true
+  },
+  "execution": {
+    "slurm_path": "slurm/dino_rcde_r1_main_bag_fold1_v1_7_contract_repair_dev_1h.sbatch",
+    "slurm_sha256": "f5bd89b6f94b8b727114397f611f603318351dd5008aff247e91f29a13629272",
+    "partition": "dev_accelerated-h100",
+    "partition_max_time": "01:00:00",
+    "job_time": "01:00:00",
+    "runner_runtime_guard_seconds": 3240,
+    "maximum_jobs_submitted_now": 4,
+    "maximum_running_tasks": 1,
+    "submission_topology": "four_identical_single_task_jobs_in_strict_afterok_chain",
+    "array_used": false,
+    "gpu_per_job": 1,
+    "chunk_commit": "atomic_directory_rename",
+    "committed_chunk_files": [
+      "chunk.json",
+      "input_preflight.json",
+      "resume_state.pt",
+      "runtime_read_ledger.json"
+    ],
+    "finalization_recovery": true
+  },
+  "forbidden": {
+    "paths": [
+      "C8",
+      "S8",
+      "opened",
+      "sealed"
+    ],
+    "home_write": false,
+    "other_fold_or_arm_training": false,
+    "control_training": false,
+    "heldout_label_join": false,
+    "evaluation": false,
+    "scientific_decision": false
+  },
+  "decision": {
+    "completed_fold_pass": "DINO_RCDE_R1_MAIN_ARM_FOLD_VALIDATION_PASS",
+    "next_on_pass": "R1_MAIN_BAG_FOLD2_AUTHORITY_UPDATE_REQUIRED",
+    "incomplete_after_four_jobs": "R1_MAIN_BAG_FOLD1_ADDITIONAL_DEV_RESUME_AUTHORITY_UPDATE_REQUIRED",
+    "automatic_stage_advance": false,
+    "scientific_GO_or_NO_GO": null
+  },
+  "automatic_stage_advance": false
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "rc_dino_rcde_bag_full594_canary_dev_migration_amendment_v1_20260827",
+  "date": "2026-08-27",
+  "status": "DINO_RCDE_BAG_FULL594_CANARY_SCHEDULER_ONLY_DEV_MIGRATION_AUTHORIZED",
+  "parent_authority": {
+    "path": "registry/dino_rcde_bag_full594_completion_authority_v1_20260827.json",
+    "sha256": "ef9988695ae90cd5f660b5337da59fc0c636d7d264adc83f8b57df312d6b6341"
+  },
+  "job_id": 5112829,
+  "array_task_id": 0,
+  "required_precondition": "PENDING_ZERO_START",
+  "scheduler_mutation": {
+    "from_partition": "accelerated",
+    "to_partition": "dev_accelerated-h100",
+    "time_limit_from": "01:00:00",
+    "time_limit_to": "00:30:00",
+    "time_limit_reason": "backfill-safe upper bound based on the 10m27s historical eight-query two-arm run",
+    "cpus_per_task_unchanged": 8,
+    "memory_megabytes_unchanged": 128000,
+    "gpu_count_unchanged": 1
+  },
+  "launcher_support": "launcher explicitly accepts accelerated or dev_accelerated-h100",
+  "spool_change_authorized": false,
+  "input_change_authorized": false,
+  "checkpoint_change_authorized": false,
+  "output_change_authorized": false,
+  "scientific_claim_change_authorized": false,
+  "scientific_GO_or_NO_GO": null,
+  "automatic_stage_advance": false
+}

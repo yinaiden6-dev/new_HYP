@@ -1,0 +1,47 @@
+{
+  "schema_version": "rc_dino_rcde_bag_full594_fail_closed_dependency_execution_amendment_v1_20260827",
+  "date": "2026-08-27",
+  "status": "DINO_RCDE_BAG_FULL594_FAIL_CLOSED_DEPENDENCY_EXECUTION_AUTHORIZED",
+  "parent_authority": {
+    "path": "registry/dino_rcde_bag_full594_completion_authority_v1_20260827.json",
+    "sha256": "ef9988695ae90cd5f660b5337da59fc0c636d7d264adc83f8b57df312d6b6341"
+  },
+  "canary_job_id": 5112829,
+  "canary_array_task_id": 0,
+  "remaining_shards": {
+    "rejected_submission": {
+      "requested_array_tasks": "1-49%8",
+      "result": "QOSMaxSubmitJobPerUserLimit",
+      "job_created": false
+    },
+    "rejected_compact_pool_submission": {
+      "requested_worker_array_tasks": "0-11%8",
+      "result": "QOSMaxSubmitJobPerUserLimit",
+      "job_created": false
+    },
+    "active_plan": "ONE_SERIAL_COMPLETION_JOB_WITH_SHARD0_AS_HARD_CANARY_GATE",
+    "required_precondition": "SEPARATE_CANARY_REPLACEMENTS_REMAIN_ZERO_START_AND_ARE_CANCELLED_BEFORE_SUBMISSION",
+    "serial_shards": "0-49_IN_NUMERIC_ORDER",
+    "canary_semantics": "SET_E_ABORTS_BEFORE_SHARD1_IF_SHARD0_PRODUCER_OR_VALIDATOR_FAILS",
+    "resume_rule": "SKIP_ONLY_WHEN_BOTH_IMMUTABLE_PRODUCER_AND_VALIDATION_FILES_EXIST",
+    "partition": "accelerated",
+    "walltime": "08:00:00",
+    "launcher_path": "slurm/dino_rcde_bag_full594_serial_completion_v1.sbatch",
+    "launcher_sha256": "1a0a18943ffda0f2fa740f42c3b1ef9f59a4590b0c84735d7d9f7232eed40a08",
+    "scientific_programs": "BYTE_IDENTICAL_PARENT_AUTHORITY_PRODUCER_VALIDATORS_JOINER_AND_REDUCER",
+    "finalizer_in_same_allocation": true
+  },
+  "finalizer": {
+    "execution": "SAME_SERIAL_GPU_ALLOCATION_AFTER_ALL_50_SHARD_VALIDATIONS_PASS",
+    "separate_job_created": false,
+    "scientific_boundary": "TARGET_FREE_FINALIZER_MUST_PASS_BEFORE_LABEL_JOIN"
+  },
+  "dependency_semantics": "ANY_CANARY_SHARD_OR_VALIDATOR_FAILURE_PREVENTS_ALL_DOWNSTREAM_EXECUTION",
+  "scientific_pass_inferred_from_dependency": false,
+  "input_change_authorized": false,
+  "checkpoint_change_authorized": false,
+  "code_change_authorized": false,
+  "scientific_claim_change_authorized": false,
+  "scientific_GO_or_NO_GO": null,
+  "automatic_stage_beyond_this_authority": false
+}

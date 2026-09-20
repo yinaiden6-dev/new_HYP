@@ -1,0 +1,288 @@
+{
+  "allowed_decisions": [
+    "DINO_RCDE_BAG_FIXED_DECODER_CANDIDATE_BOUND_NONSPATIAL_EVIDENCE_GO",
+    "DINO_RCDE_BAG_FIXED_DECODER_CANDIDATE_BOUND_EVIDENCE_NO_GO",
+    "DINO_RCDE_BAG_COMPLETION_STATISTICALLY_INELIGIBLE"
+  ],
+  "automatic_stage_advance": false,
+  "bindings": {
+    "authority_v22_historical_mainline_switch": {
+      "bytes": 4080,
+      "path": "registry/current_authority_v22_20260814.json",
+      "sha256": "205c651bdac330e73ec922f3c3e8a94f2870243a6e1c2c8068765ce730459cbe"
+    },
+    "bag_checkpoint_fold1": {
+      "bytes": 267434,
+      "path": "results/dino_rcde_r1_main_v1_7_contract_repair/RCDE_BAG_fold1/checkpoint_update2048.pt",
+      "sha256": "1a0eede25b5ec10cc41eb0c0dc577b8ca957abca3c09915901d0a64a3efbe7d2"
+    },
+    "bag_checkpoint_fold2": {
+      "bytes": 267498,
+      "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold2/checkpoint_update2048.pt",
+      "sha256": "1a57eb1df6ea08a7657079bdaddf0888cacb7a67b3b5850e4a3351b69de53ab3"
+    },
+    "bag_checkpoint_fold3": {
+      "bytes": 267498,
+      "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold3/checkpoint_update2048.pt",
+      "sha256": "1337249d8b88ada6f3e767d25227ffc6ae72bc672fec535da3fee3fa15174ae2"
+    },
+    "bag_checkpoint_fold4": {
+      "bytes": 267498,
+      "path": "results/dino_rcde_r1_main_v1_8_accelerated_folds2_4/RCDE_BAG_fold4/checkpoint_update2048.pt",
+      "sha256": "6c2e3a790e35ba2eea3abead55b0cbfba6e883e72180b149b9ede5fe01d1bffe"
+    },
+    "bag_foldset_manifest": {
+      "bytes": 13106,
+      "path": "results/dino_rcde_r1_main_bag_foldset_v1_0/foldset_manifest.json",
+      "sha256": "7c52eab2df096abbc61d79cbb2ea30dfd9dd851656db25b3a7cf2c5f0d6112be"
+    },
+    "bag_foldset_validation": {
+      "bytes": 1826,
+      "path": "results/dino_rcde_r1_main_bag_foldset_v1_0/foldset_validation.json",
+      "sha256": "d7b868920eab4c77c50b048baa3a01cf2eb5762f618132f4a9c34b47b28f9e46"
+    },
+    "contract": {
+      "bytes": 5956,
+      "path": "plan/DINO_RCDE_BAG_FULL594_COMPLETION_CONTRACT_V1_20260827.md",
+      "sha256": "ce0765d7421dfb28e41eebd27b3a77fbb856843dbb33982f2bea5fbcebb686f2"
+    },
+    "core": {
+      "bytes": 17013,
+      "path": "src/rc_aslo_xf/dino_rcde_bag_completion_v1.py",
+      "sha256": "14174ac15621ccfa8e21586c3b24a8a137dfe490899521cf65236ce800d3947b"
+    },
+    "current_authority_v123": {
+      "bytes": 44187,
+      "path": "registry/current_authority_v123_20260822.json",
+      "sha256": "9f68961c599f48b5e97f8872b3dd34143ce614956e171560644a698da60792be"
+    },
+    "eight_query_prejoin_aggregate": {
+      "bytes": 15056,
+      "path": "results/dino_rcde_r1_oof_prejoin_e0_v4_0/aggregate_result.json",
+      "sha256": "3c41b640d3ce39a67a24393e0ae9faf229864416410d8747e7c0a79fe514acad"
+    },
+    "finalize_launcher": {
+      "bytes": 3923,
+      "path": "slurm/dino_rcde_bag_full594_serial_completion_v2.sbatch",
+      "sha256": "d1b32856c55acbcc1aa08d4d696f128ae4326e3d38d4eaa3e24d3b4bed7b00aa"
+    },
+    "freezer": {
+      "bytes": 4886,
+      "path": "programs/freeze_dino_rcde_bag_full594_predecessor_status_repair_authority_v2.py",
+      "sha256": "6edbbf53293fc2444e1d183c88e162bae70596c8543cd4821708cebcb552bcb4"
+    },
+    "gallery_cache": {
+      "bytes": 1000296272,
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt",
+      "sha256": "11713d62d649143c05899bf89714eb768095b95b69e60792e266e64de17e9fcc"
+    },
+    "gallery_identity_repair": {
+      "bytes": 7558,
+      "path": "src/rc_aslo_xf/gallery_identity_repair.py",
+      "sha256": "995c43fe36ef946bef6686af0809b3e1d0f9c758eb01d8784ca8115f1d17a34d"
+    },
+    "gpu_launcher": {
+      "bytes": 2479,
+      "path": "slurm/dino_rcde_bag_full594_canary_dev_a100_v2.sbatch",
+      "sha256": "371147ae9766d602ad9d4a391121e88ecc33f6dc1df129c1751e360e1685e0b6"
+    },
+    "historical_scientific_contract": {
+      "bytes": 105599,
+      "path": "plan/DINO_RCDE_LEARNED_DENSE_EVIDENCE_DECODER_V1_1_20260812.md",
+      "sha256": "a32ec29637e7ee194a39ec8b95687c2b84436123f2a71281af6d54c686fcc721"
+    },
+    "i0_science_metadata": {
+      "bytes": 597801,
+      "path": "results/dino_rcde_track_r_i0_science_metadata_v1/result.json",
+      "sha256": "118391b6590609e7ac50a01b9f8844ff76f7bd29f5974c1c17cac8f3e68e06eb"
+    },
+    "i0_science_metadata_validation": {
+      "bytes": 785,
+      "path": "results/dino_rcde_track_r_i0_science_metadata_validation_v1/result.json",
+      "sha256": "c1a5cd3359bbbff0e15baadf7d310872d626018fdb2050336394d642057c9456"
+    },
+    "independent_statistics": {
+      "bytes": 10310,
+      "path": "programs/dino_rcde_bag_statistics_independent_v1.py",
+      "sha256": "8105aca3e2bd10492a890c0b2e8053e8c27de88a6d2f7b011d7d8a476e7e7a5b"
+    },
+    "io": {
+      "bytes": 4792,
+      "path": "programs/dino_rcde_bag_completion_io_v1.py",
+      "sha256": "73edcad0e9b0b2a09065c11bf55245ce7d2cdcb19a1556b2869d7309248b7090"
+    },
+    "label_joiner": {
+      "bytes": 8738,
+      "path": "programs/join_dino_rcde_bag_full594_labels_v1.py",
+      "sha256": "c733c661df8d66c07d80dee06999efec98850f0d9c75be137a662de9b9babd1d"
+    },
+    "legacy_materializer": {
+      "bytes": 90573,
+      "path": "programs/materialize_dino_rcde_r1_oof_prejoin_v3.py",
+      "sha256": "3fc18e4c85dd302d0abf68c10080b719db86c0be7d558905c3d91cd8fdd95ffc"
+    },
+    "legacy_validator": {
+      "bytes": 56806,
+      "path": "programs/validate_dino_rcde_r1_oof_prejoin_v1.py",
+      "sha256": "bde593eb4b23e97e5928f2d9b41bfd58702b83d57f6caffd2550483dd48bb2b1"
+    },
+    "model_core": {
+      "bytes": 73355,
+      "path": "src/rc_aslo_xf/dino_rcde_v1_2_resource_core.py",
+      "sha256": "55d5569f2218df679693177e311a3fd43bfb47dbe1047aa0129b66f734959a17"
+    },
+    "parent_authority_v1": {
+      "bytes": 10705,
+      "path": "registry/dino_rcde_bag_full594_completion_authority_v1_20260827.json",
+      "sha256": "ef9988695ae90cd5f660b5337da59fc0c636d7d264adc83f8b57df312d6b6341"
+    },
+    "prejoin_finalizer": {
+      "bytes": 12003,
+      "path": "programs/finalize_dino_rcde_bag_full594_prejoin_v1.py",
+      "sha256": "150f2b3698ca7655e312ccfe978b88c1237f0b768530e7a9e1d68daf2073c522"
+    },
+    "producer": {
+      "bytes": 9076,
+      "path": "programs/materialize_dino_rcde_bag_full594_shard_v1.py",
+      "sha256": "3831f3ef89633ebf95f218a1c9f51fb42bb0babb9dca73ba9bf1c07c758922b0"
+    },
+    "redacted_cache_index": {
+      "bytes": 3019712,
+      "path": "results/dino_rcde_r1_oof_redacted_inputs_v1_0/redacted_cache_index.json",
+      "sha256": "bf2fc5e82e3484c9290e56c937084ae21b9c41f134e59d37cd60d938d7464ffc"
+    },
+    "redacted_inputs_validation": {
+      "bytes": 997,
+      "path": "results/dino_rcde_r1_oof_redacted_inputs_v1_0/redacted_inputs_validation.json",
+      "sha256": "e333e128925117554ebddafcf435bcdbd6318ea79732ca7b04e9b72fc844fbdf"
+    },
+    "redacted_schedule": {
+      "bytes": 1281283,
+      "path": "results/dino_rcde_r1_oof_redacted_inputs_v1_0/redacted_oof_schedule.json",
+      "sha256": "3d226d89b32fe79b9b490e10cfaecb7b2e8a22dbcbc8e46cde20a79f129e548f"
+    },
+    "scientific_reducer": {
+      "bytes": 4324,
+      "path": "programs/reduce_dino_rcde_bag_full594_science_v1.py",
+      "sha256": "77329ad92df57c39e542950913e7f00c4f099e9149f64ce6b895a8ae90a817c6"
+    },
+    "scientific_validator": {
+      "bytes": 10744,
+      "path": "programs/validate_dino_rcde_bag_full594_science_v1.py",
+      "sha256": "0199df3f992d344adbfbba6178f6b499b06333de033a9f5dc2ca59dbf75c35d9"
+    },
+    "shard_validator": {
+      "bytes": 9428,
+      "path": "programs/validate_dino_rcde_bag_full594_shard_v1.py",
+      "sha256": "e71588e59c8aab064308328ecc19c15e7ee172b5e03f34d1c5222d7f2d74e3bd"
+    },
+    "tests": {
+      "bytes": 4403,
+      "path": "tests/test_dino_rcde_bag_completion_v1.py",
+      "sha256": "102afafd67a958fee518cc2b7b96ba4c86df0b447cf89234499fb0915c665d1e"
+    }
+  },
+  "checkpoint_update_authorized": false,
+  "claim_level": "GIVEN_C128_FIXED_BAG_DECODER_NONSPATIAL_REPRESENTATION_QUALIFICATION_ONLY",
+  "controls": {
+    "C_BIND_namespace": "RCDE_BAG_FULL594_C_BIND_V1_SEED17",
+    "C_BIND_scope": "COMPLETE_C128_FIXED_POINT_FREE_CORRECTED_IDENTITY_DISJOINT_REFERENCE_REBIND",
+    "candidate_reorder_namespace": "RCDE_BAG_FULL594_CANDIDATE_REORDER_V1_SEED17",
+    "candidate_reorder_role": "INVARIANCE_GATE_NOT_C_BIND"
+  },
+  "date": "2026-08-27",
+  "forbidden_claims": [
+    "DEPLOYABLE_DISPERSED_MULTI_COMPONENT_MODEL",
+    "SPATIAL_CORRESPONDENCE",
+    "CONNECTED_TARGET_REGION",
+    "FULL_GALLERY_RETRIEVAL_GAIN",
+    "TARGET_ABSENCE",
+    "HOLD_SWITCH",
+    "OWNERSHIP",
+    "OPENED_OR_SEALED_GENERALIZATION",
+    "ALL_DISPERSED_PATCH_MECHANISMS_NO_GO"
+  ],
+  "historical_disposition": "RCDE_BAG_TRAINING_COMPLETE_SCIENTIFIC_EVALUATION_UNFINISHED_NOT_NO_GO",
+  "label_join_conditionally_authorized": true,
+  "model_forward_after_label_join_authorized": false,
+  "model_forward_authorized": true,
+  "model_load_authorized": true,
+  "next_authorized_stage": null,
+  "non_superseding_sidecar": true,
+  "parent_authority": {
+    "path": "registry/dino_rcde_bag_full594_completion_authority_v1_20260827.json",
+    "sha256": "ef9988695ae90cd5f660b5337da59fc0c636d7d264adc83f8b57df312d6b6341",
+    "status": "DINO_RCDE_BAG_FULL594_COMPLETION_AUTHORIZED"
+  },
+  "population": {
+    "candidate_count_per_query": 128,
+    "eligible_query_count": 594,
+    "excluded_execution_ordinals": [
+      25,
+      26,
+      101,
+      346,
+      354,
+      470
+    ],
+    "outer_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "schedule_query_count": 600,
+    "shard_count": 50,
+    "shard_size": 12
+  },
+  "protected_access_authorized": false,
+  "repair_receipt": {
+    "candidate_forward_count": 0,
+    "committed_output_count": 0,
+    "elapsed": "00:00:51",
+    "failed_exit_code": "1:0",
+    "failed_job_id": 5112847,
+    "failed_state": "FAILED",
+    "failure_domain": "PRE_MODEL_PREDECESSOR_STATUS_LITERAL",
+    "incorrect_literal": "DINO_RCDE_R1_MAIN_BAG_FOLDSET_VALIDATION_PASS",
+    "maximum_memory_megabytes": 419,
+    "model_load_count": 0,
+    "repaired_literal": "DINO_RCDE_R1_MAIN_BAG_FOLDS1_4_FOLDSET_VALIDATION_PASS",
+    "scientific_failure": false
+  },
+  "resource_contract": {
+    "canary_cpus_per_task": 8,
+    "canary_gpu_count": 1,
+    "canary_memory_megabytes": 120000,
+    "canary_partition": "dev_accelerated",
+    "canary_walltime_seconds": 1800,
+    "serial_completion_cpus_per_task": 8,
+    "serial_completion_gpu_count": 1,
+    "serial_completion_memory_megabytes": 128000,
+    "serial_completion_partition": "accelerated",
+    "serial_completion_walltime_seconds": 28800,
+    "serial_order": "SHARDS_0_THROUGH_49_WITH_PER_SHARD_VALIDATION"
+  },
+  "runtime_paths": {
+    "producer_root": "results/dino_rcde_bag_full594_completion_v1/prejoin",
+    "result_root": "results/dino_rcde_bag_full594_completion_v1",
+    "stable_cache_root": "runtime/dino_rcde_p0_v1_2/stable_fp16_cache",
+    "validation_root": "results/dino_rcde_bag_full594_completion_v1/prejoin_validation"
+  },
+  "schema_version": "rc_dino_rcde_bag_full594_predecessor_status_repair_authority_v2_20260827",
+  "scientific_GO_or_NO_GO": null,
+  "scientific_reduction_after_label_join_authorized": true,
+  "scientific_reduction_before_label_join_authorized": false,
+  "statistics": {
+    "gates_frozen_in_contract": true,
+    "independent_unit": "SUPERGROUP",
+    "permutations": 9999,
+    "seed": 17,
+    "single_arm_family": "RCDE_BAG_ONLY_NO_CONTEXT_SELECTION"
+  },
+  "status": "DINO_RCDE_BAG_FULL594_PREDECESSOR_STATUS_REPAIR_AUTHORIZED",
+  "supersedes_current_mainline": false,
+  "target_free_control_materialization_authorized": true,
+  "target_rival_join_before_prejoin_aggregate_authorized": false,
+  "training_authorized": false
+}

@@ -1,0 +1,118 @@
+{
+  "alternative_scale_count": 0,
+  "automatic_stage_advance": false,
+  "bindings": {
+    "canary12_result": {
+      "bytes": 15295,
+      "logical_sha256": "fd9052ca38a2f3a4b52678ced28b463b9e624c6f6f9640169f5adc4dc4cf3177",
+      "path": "results/dino_rcde_h0_component_pair_canary12_postjoin_v1/result.json",
+      "sha256": "852b46711769869785f594d19d7c498b4de915a0a8f92d91b9662d24f91a3d6e"
+    },
+    "canary12_validation": {
+      "bytes": 1238,
+      "logical_sha256": "a6e1f38c93918fc30b98424a7d3ffd05e247a2d28005b26951dae5d37f3462d8",
+      "path": "results/dino_rcde_h0_component_pair_canary12_postjoin_validation_v1/result.json",
+      "sha256": "25f6de599ad4f08dcf450666f57b396b0524233b4d316124a1204f4f65f2463d"
+    },
+    "contract": {
+      "bytes": 5356,
+      "path": "plan/DINO_RCDE_H0_COMPONENT_SCALE4_SUCCESSOR_CONTRACT_V1_20260824.md",
+      "sha256": "6e8486dfb03cb4acbf589fdbc928909865f55cd0fb83cc85583872ec28fc7c1b"
+    },
+    "freezer": {
+      "bytes": 6821,
+      "path": "programs/freeze_dino_rcde_h0_component_scale4_prereg_authority_v35.py",
+      "sha256": "b50952eb8e1aad13d59cbc493574b615bbc0709bd5ef914d5d6b8ffd7a4991cf"
+    },
+    "full_c128_postjoin_handoff_authority": {
+      "bytes": 7458,
+      "logical_sha256": "37f764056174bd516abcf09a28688c273e89c7bd9617f9e4916f59504647b6ba",
+      "path": "registry/h0/h0_c128_target_free_postjoin_handoff_authority_v1_20260824.json",
+      "sha256": "790c284d313197016895c9328a905c6507c5b5e20b79e7800513ef4832916c29"
+    },
+    "full_c128_prejoin_authority": {
+      "bytes": 16446,
+      "logical_sha256": "811d2962768be2427d3c5b9e2dc62fd06a95a70f78d9f30d8f591de802c07df0",
+      "path": "registry/h0/h0_c128_target_free_full_prejoin_authority_v2_20260824.json",
+      "sha256": "daffd77e72bd62eb528d711866cbb9b7affe3731ee3e310596bddb3e3dfa34c7"
+    },
+    "test_authority": {
+      "bytes": 1655,
+      "path": "tests/test_freeze_dino_rcde_h0_component_scale4_prereg_authority_v35.py",
+      "sha256": "9e30ed6be68fe9ead38b185e0e82b5bf68f8a69c1850dfeb9c4732ab6c2b9283"
+    },
+    "track_r_negative_result": {
+      "bytes": 33755,
+      "logical_sha256": "d49ec707f504c7f4af5496d8d611c4f837465fdb40c5309785d986b7fe56d7b0",
+      "path": "results/dino_rcde_track_r_scientific_result_v1/result.json",
+      "sha256": "3603a44782d97b12f9c3ffc475e0872ab3db217e669b580dceaa594fcd3aabdf"
+    },
+    "track_r_negative_validation": {
+      "bytes": 976,
+      "logical_sha256": "393a1c0b2cecf9cbbfd467774b0bb42a350692ca3d34cb4124f179cba71f6611",
+      "path": "results/dino_rcde_track_r_scientific_validation_v1/result.json",
+      "sha256": "c23ccd825ce4a60e97defd0437f5ef4e06fb90922ad3e6186fd750bfd196e8aa"
+    }
+  },
+  "claim_level": "RESULT_BLIND_SUCCESSOR_INTENT_ONLY",
+  "confirmation_execution_ordinals_excluded": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "development_execution_ordinals": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "execution_authorized": false,
+  "expected_confirmation_query_count": 582,
+  "future_input_requirements": {
+    "full_50_shard_aggregate_immutable": true,
+    "full_aggregate_independent_validation_pass": true,
+    "pj1_exact_metadata_join_immutable": true,
+    "pj1_independent_validation_pass": true
+  },
+  "gate_contract": {
+    "difficult_rescue_at_least_break_vs_init": true,
+    "group_balanced_top1_gain_vs_init_minimum": 0.03,
+    "positive_fold_count_minimum": 3,
+    "rescue_strictly_above_break_vs_init": true,
+    "top1_and_mrr_bootstrap_lower_strictly_positive": true,
+    "top1_and_mrr_group_signflip_p_strictly_below": 0.05,
+    "top1_mrr_and_net_rescue_strictly_above_track_h": true
+  },
+  "logical_sha256": "f0966dc199877eedc7882777096d76a20364c22da9a76125f4a79ed34f4c9307",
+  "model_backward_authorized": false,
+  "model_forward_authorized": false,
+  "model_load_authorized": false,
+  "model_update_authorized": false,
+  "next_authorized_stage": null,
+  "protected_access_authorized": false,
+  "scale": 4.0,
+  "schema_version": "rc_h0_component_scale4_prereg_authority_v35_20260824",
+  "scientific_GO_or_NO_GO": null,
+  "scientific_reduction_authorized": false,
+  "score_formula": "S_INIT + 4.0 * (S_TRACK_H - S_INIT)",
+  "semantic_join_authorized": false,
+  "status": "H0_COMPONENT_SCALE4_SUCCESSOR_PREREGISTERED_NOT_EXECUTABLE",
+  "threshold_or_hold_scan_authorized": false
+}

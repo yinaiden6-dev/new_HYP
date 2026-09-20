@@ -1,0 +1,104 @@
+{
+  "schema_version": "rc_dino_rcde_r1_matched_foldset_protocol_v1_20260814",
+  "date": "2026-08-14",
+  "stage": "R1_MAIN_BAG_CONTEXT_FOLDS1_4_MATCHED_FOLDSET_CLOSURE",
+  "claim_level": "engineering_matched_foldset_closure_only_not_scientific_GO_or_NO_GO",
+  "authority": {
+    "path": "registry/current_authority_v17_20260814.json",
+    "sha256": "da89e0c049e44b49ec00c7922f10957f5138efc4c25ad0393e114d29b9dedc29",
+    "required_status": "DINO_RCDE_R1_MAIN_BAG_CONTEXT_FOLDS1_4_MATCHED_FOLDSET_CLOSURE_AUTHORIZED"
+  },
+  "source_context_authority": {
+    "path": "registry/current_authority_v16_20260814.json",
+    "sha256": "60196af6981fd99a72d9cb8e21685b78793bda4bce7f2773772db599e1490de8",
+    "required_status": "DINO_RCDE_R1_CONTEXT_FOLDS1_4_V18_ACCELERATED_TRAINING_AUTHORIZED"
+  },
+  "runtime_scheduler_amendment": {
+    "path": "registry/runtime_scheduler_amendment_job5072108_throttle4_20260814.json",
+    "sha256": "891a81b2ee0c5f286d9a53d0ae3a73b8273a0a9e1942a41003cd0483a28dae63",
+    "required_status": "RUNTIME_SCHEDULER_THROTTLE4_AUTHORIZED"
+  },
+  "runtime_scheduler_receipt": {
+    "path": "registry/runtime_scheduler_receipt_job5072108_throttle4_20260814.json",
+    "sha256": "fbaf69f52c9aa6781f26b31c3a9daa22f1c8ce9bf030f2986e51da72c0c3eba4",
+    "required_status": "RUNTIME_SCHEDULER_THROTTLE4_APPLIED_AND_FOLD4_RUNNING"
+  },
+  "scheduler_completion": {
+    "source": "live_slurm_accounting_read_only_observation_20260814",
+    "array_job_id": 5072108,
+    "tasks": [
+      {"array_task_id": 1, "job_id_raw": 5072109, "state": "COMPLETED", "exit_code": "0:0"},
+      {"array_task_id": 2, "job_id_raw": 5072110, "state": "COMPLETED", "exit_code": "0:0"},
+      {"array_task_id": 3, "job_id_raw": 5072111, "state": "COMPLETED", "exit_code": "0:0"},
+      {"array_task_id": 4, "job_id_raw": 5072108, "state": "COMPLETED", "exit_code": "0:0"}
+    ],
+    "validator_queries_live_slurm": false
+  },
+  "bag_foldset": {
+    "manifest": {
+      "path": "results/dino_rcde_r1_main_bag_foldset_v1_0/foldset_manifest.json",
+      "sha256": "7c52eab2df096abbc61d79cbb2ea30dfd9dd851656db25b3a7cf2c5f0d6112be",
+      "required_status": "DINO_RCDE_R1_MAIN_BAG_FOLDS1_4_FOLDSET_FROZEN"
+    },
+    "validation": {
+      "path": "results/dino_rcde_r1_main_bag_foldset_v1_0/foldset_validation.json",
+      "sha256": "d7b868920eab4c77c50b048baa3a01cf2eb5762f618132f4a9c34b47b28f9e46",
+      "required_status": "DINO_RCDE_R1_MAIN_BAG_FOLDS1_4_FOLDSET_VALIDATION_PASS"
+    }
+  },
+  "context_fold_inputs": [
+    {
+      "outer_fold": 1,
+      "protocol": {"path": "protocols/dino_rcde_r1_main_train_v1_8_context_fold1_20260814.json", "sha256": "c33224b9a232bfddc91e40fe1fe6e523b1f2c0770c576348fc2102d7edc8ec08"},
+      "run_identity": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold1/run_identity.json", "sha256": "c52972caf76b1bb4240b982310350505c9d70facc0ab0b23e20722b1b23fe4db"},
+      "access_manifest": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold1/signed_reference_access_manifest.json", "sha256": "e68ad7b1969cb6a9f791f5d53469057add38281a4a9aa12c534df0f2e8d5c01d"},
+      "train_result": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold1/train_result.json", "sha256": "41411d5f211c58509a01503e4dafbc77298c4f13709497ed8282436d4ada4777"},
+      "training_validation": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold1/training_validation.json", "sha256": "c36dae0274906583934798a8004e6bb2c0771f04a6a10db1f2eba3daa9f8e877"},
+      "checkpoint": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold1/checkpoint_update2048.pt", "sha256": "496a033f6874117862912b33c75bc25ffaec2cd9baeda072e5a0efdda7c1a6fa"}
+    },
+    {
+      "outer_fold": 2,
+      "protocol": {"path": "protocols/dino_rcde_r1_main_train_v1_8_context_fold2_20260814.json", "sha256": "efc39036c5d98c07fa8a1962d9329dc459a3975a0aa62f27f73026095f252016"},
+      "run_identity": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold2/run_identity.json", "sha256": "96732646d7e716d3d2147670b3832f4fba357df36bc688037b5732dc48835f54"},
+      "access_manifest": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold2/signed_reference_access_manifest.json", "sha256": "645174c7854b6f9d00ab018474728951f0acc71a389bb89b3c79d3834cde9693"},
+      "train_result": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold2/train_result.json", "sha256": "5f20db15fdc961072e15a3ef2318e30fe37a65b38243c244f148f377a7d8371b"},
+      "training_validation": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold2/training_validation.json", "sha256": "499aab67ba1b7409a965c5a2f1018f2b797a919324cb368a6f918f39dac45067"},
+      "checkpoint": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold2/checkpoint_update2048.pt", "sha256": "24e7c039a0cadbf0722185d21574d1cc0567b4ed22090bb03fba5742868614d2"}
+    },
+    {
+      "outer_fold": 3,
+      "protocol": {"path": "protocols/dino_rcde_r1_main_train_v1_8_context_fold3_20260814.json", "sha256": "47056bf9bbd164c2ebdc29edfc18b797b35d1397a26c46fef3e297677081fc0f"},
+      "run_identity": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold3/run_identity.json", "sha256": "e12b1d165417bb5d8606e3eeadacdf96d5e642844bc2e4f72fe31ee3dd88f713"},
+      "access_manifest": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold3/signed_reference_access_manifest.json", "sha256": "03591eddd80d69a3bdd47b1c68262c43c23ffade643ff42a235816c43e683fb1"},
+      "train_result": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold3/train_result.json", "sha256": "d47674a7e4cef0ad224dfd504895eeac749be6fa092abe5507b6f07b02b84f56"},
+      "training_validation": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold3/training_validation.json", "sha256": "025330fd58d81bca4fbc3244c041793c4bc5f50d80562d69cfd5ed4bd24dd96b"},
+      "checkpoint": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold3/checkpoint_update2048.pt", "sha256": "30dc2e6d62cd04e9967f940a4680fa0949c4a52deddc849483ca64cf1b0b2d5d"}
+    },
+    {
+      "outer_fold": 4,
+      "protocol": {"path": "protocols/dino_rcde_r1_main_train_v1_8_context_fold4_20260814.json", "sha256": "9701a9a4f0745846eba249f756addecd55224f0473f1b9456235de0ed8141c2c"},
+      "run_identity": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold4/run_identity.json", "sha256": "3713f8053ac0ee7349e38972dbf08cecfa7a974f299d50ae3a9816b4f61d64da"},
+      "access_manifest": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold4/signed_reference_access_manifest.json", "sha256": "b5ef7746e97d42704ab06dd37b349505a05dcc85bd3d74b4e5209590148c8c27"},
+      "train_result": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold4/train_result.json", "sha256": "985f0b7bccfca926661e2e6a09a362fcf8c70d1ac10c2a80db9cd20af1e418ff"},
+      "training_validation": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold4/training_validation.json", "sha256": "d76fb154580073f6397240ed473fdca92ffc053d31f168458853dd2515750b8d"},
+      "checkpoint": {"path": "results/dino_rcde_r1_main_v1_8_accelerated_context_folds1_4/RCDE_CONTEXT_fold4/checkpoint_update2048.pt", "sha256": "6de2c90ded52c749f9d78087176c6578c72bf891e66d4c33612f9684679d7c94"}
+    }
+  ],
+  "implementation_bindings": {
+    "materializer": {"path": "programs/materialize_dino_rcde_r1_matched_foldset_v1.py", "sha256": "72354b548ce49dc69c315c5fcb667d2955405ecb563f928e5c478be71464d74b"},
+    "validator": {"path": "programs/validate_dino_rcde_r1_matched_foldset_v1.py", "sha256": "c578c31cd5ddb165beffa43d3793e82dd1974e78c46edc9dedfc65ecce2e60b2"},
+    "tests": {"path": "tests/test_dino_rcde_r1_matched_foldset_v1.py", "sha256": "0d461f0ae8748059df43e0cf68f6bad6b4d8f413e943317b7063b75a4c7bf66b"}
+  },
+  "output_dir": "results/dino_rcde_r1_main_matched_foldset_v1_0",
+  "forbidden": {
+    "checkpoint_copy": false,
+    "outer_heldout_forward": false,
+    "heldout_label_join": false,
+    "scientific_reduction": false,
+    "scientific_decision": false,
+    "protected_paths": ["C8", "S8", "opened", "sealed"],
+    "home_write": false
+  },
+  "automatic_stage_advance": false,
+  "scientific_GO_or_NO_GO": null
+}

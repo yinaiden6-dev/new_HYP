@@ -1,0 +1,116 @@
+{
+  "alternative_weight_count": 0,
+  "automatic_stage_advance": false,
+  "bindings": {
+    "contract": {
+      "bytes": 5010,
+      "path": "plan/DINO_RCDE_COLNOMIC_COMPONENT_RESIDUAL_FUSION_CONTRACT_V1_20260824.md",
+      "sha256": "523a3891170d881a7c51bf833ca546c59ffd29c5140272453d6465119ab40961"
+    },
+    "development_canary12": {
+      "bytes": 15295,
+      "logical_sha256": "fd9052ca38a2f3a4b52678ced28b463b9e624c6f6f9640169f5adc4dc4cf3177",
+      "path": "results/dino_rcde_h0_component_pair_canary12_postjoin_v1/result.json",
+      "sha256": "852b46711769869785f594d19d7c498b4de915a0a8f92d91b9662d24f91a3d6e"
+    },
+    "freezer": {
+      "bytes": 6184,
+      "path": "programs/freeze_dino_rcde_colnomic_component_residual_prereg_authority_v37.py",
+      "sha256": "63f385450832f71d6a1a7fbf0f21aad2afdc2222dec85d087a15ecdaadeb0806"
+    },
+    "pj1_result": {
+      "bytes": 95864852,
+      "logical_sha256": "ffc3e1c69a8c0bb0e1b4707835f6daeb7ecab3cc4774fc304b676383e600a79f",
+      "path": "results/dino_rcde_h0_c128_target_free_postjoin_pj1_v1/result.json",
+      "sha256": "8b0e7fa3d46c9c15d19d719fa1c1ed73b29c0bfd5ae6329909dd8db1dab059e4"
+    },
+    "pj1_validation": {
+      "bytes": 1363,
+      "logical_sha256": "e6e3cf3d42929b77210166a1637dc4251f4680d037661c30c93e5b871a212a3d",
+      "path": "results/dino_rcde_h0_c128_target_free_postjoin_pj1_validation_v1/result.json",
+      "sha256": "20c74b3be20aa3cbc50368d513fca1bcea9b959b887e142f1dcd092c2dce0b81"
+    },
+    "raw_prejoin_ledger": {
+      "bytes": 3216109,
+      "path": "results/dino_rcde_sr0_mt_i0_v1/formal_job5075941/prejoin_ledger.pt",
+      "sha256": "3540980f34bd67f62509595c9aef86da2059174be638d909660c891a12aa109a"
+    },
+    "raw_prejoin_receipt": {
+      "bytes": 5175,
+      "logical_sha256": "207d1961301ff834e68fcd5a0f2599b92f7e784c98629df6e89a05b2038f7630",
+      "path": "results/dino_rcde_sr0_mt_i0_v1/formal_job5075941/prejoin_receipt.json",
+      "sha256": "c93a8f0d157cf58670f35f8ff580a5308cdef2f012bd5f932a101d0530eb5a86"
+    },
+    "raw_prejoin_validation": {
+      "bytes": 5654,
+      "logical_sha256": "55d1e3087f330ab14b102d540c1c82fc0b0c5eec8aa9eb782b06bd716b57ff81",
+      "path": "results/dino_rcde_sr0_mt_i0_v1/formal_job5075941/prejoin_validation.json",
+      "sha256": "8f3e212769c30e7966ccf80925058ec7f7714323c47877f2805718358bf49c50"
+    },
+    "scale4_negative_result": {
+      "bytes": 1837850,
+      "logical_sha256": "754005421e032a097afbc30f859985800df8719fbd2b1c3406419c6667747132",
+      "path": "results/dino_rcde_h0_component_scale4_confirmation_v1/result.json",
+      "sha256": "1ab6b51e1d7f670f40fb2661f12fe80fc2f848f588e6d05a93d61acef164d637"
+    },
+    "test_authority": {
+      "bytes": 1578,
+      "path": "tests/test_freeze_dino_rcde_colnomic_component_residual_prereg_authority_v37.py",
+      "sha256": "8b61ed6b71c5b295bbe91875910bd93a85da5dc7f30b764a4837da7465a9ccf7"
+    }
+  },
+  "claim_level": "RESULT_BLIND_UNIT_RESIDUAL_INTENT_ONLY",
+  "confirmation_execution_ordinals_excluded": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "development_execution_ordinals": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "execution_authorized": false,
+  "expected_confirmation_query_count": 582,
+  "gate_contract": {
+    "absolute_top1_and_mrr_strictly_above_raw": true,
+    "difficult_rescue_at_least_break_vs_raw": true,
+    "group_balanced_top1_gain_vs_raw_minimum": 0.03,
+    "positive_fold_count_minimum": 3,
+    "rescue_strictly_above_break_vs_raw": true,
+    "top1_and_mrr_bootstrap_lower_strictly_positive": true,
+    "top1_and_mrr_group_signflip_p_strictly_below": 0.05
+  },
+  "logical_sha256": "1f197b3003d683dff2f0c205f53b6cb1473c4922d03e08f7bffc7976abc2bbfd",
+  "model_backward_authorized": false,
+  "model_forward_authorized": false,
+  "model_load_authorized": false,
+  "model_update_authorized": false,
+  "next_authorized_stage": null,
+  "normalization_threshold_hold_scan_authorized": false,
+  "protected_access_authorized": false,
+  "residual_weight": 1.0,
+  "schema_version": "rc_colnomic_component_residual_prereg_authority_v37_20260824",
+  "scientific_GO_or_NO_GO": null,
+  "score_formula": "S_RAW_COLNOMIC + (S_TRACK_H_COMPONENT - S_INIT_COMPONENT)",
+  "semantic_reduction_authorized": false,
+  "status": "COLNOMIC_COMPONENT_RESIDUAL_PREREGISTERED_NOT_EXECUTABLE"
+}
