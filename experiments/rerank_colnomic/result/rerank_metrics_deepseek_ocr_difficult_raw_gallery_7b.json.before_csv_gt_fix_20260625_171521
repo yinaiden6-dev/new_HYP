@@ -1,0 +1,34 @@
+{
+  "preds_jsonl": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/run_colnomic_retrieval_detail_name_preds.jsonl",
+  "gallery_dir": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images",
+  "query_ocr_jsonl": "/hkfs/work/workspace/scratch/ap7811-benchmark/ocr_cache/query_ocr_deepseek_difficult.jsonl",
+  "base_model": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/Qwen2-VL-2B-Instruct",
+  "adapter": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/MonoQwen2-VL-v0.1",
+  "rerank_topk": 10,
+  "final_topk": 10,
+  "min_chars": 40,
+  "n_queries": 224,
+  "missing_ocr": 0,
+  "short_ocr": 0,
+  "colnomic_baseline": {
+    "recall@1": 0.5982142857142857,
+    "recall@5": 0.8214285714285714,
+    "recall@10": 0.8482142857142857,
+    "mrr": 0.6990876558956918,
+    "n_queries": 224
+  },
+  "monoqwen_deepseek_ocr_rerank": {
+    "recall@1": 0.4330357142857143,
+    "recall@5": 0.6785714285714286,
+    "recall@10": 0.8482142857142857,
+    "mrr": 0.5432964852607711,
+    "n_queries": 224
+  },
+  "gt_fix": {
+    "applied": true,
+    "reason": "difficult rerank metrics use query_path stem before _000... as gt",
+    "corrected_query_count": 37,
+    "preds_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/rerank/colnomc_rerank/result/rerank_preds_deepseek_ocr_difficult_raw_gallery_7b.jsonl",
+    "updated_at": "2026-06-25T16:52:21"
+  }
+}

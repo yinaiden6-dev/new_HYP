@@ -1,0 +1,44 @@
+{
+  "method": "qwen3vl_reranker_hybrid",
+  "model_dir": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/Qwen3-VL-Reranker-2B",
+  "preds_jsonl": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/run_colnomic_retrieval_detail_name_preds.jsonl",
+  "gallery_dir": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images",
+  "query_ocr_jsonl": "/hkfs/work/workspace/scratch/ap7811-benchmark/ocr_cache/query_ocr_deepseek_difficult.jsonl",
+  "gallery_ocr_jsonl": "/hkfs/work/workspace/scratch/ap7811-benchmark/ocr_cache/gallery_ocr_deepseek_raw_gallery.jsonl",
+  "rerank_topk": 10,
+  "final_topk": 10,
+  "alpha_base": 0.8,
+  "beta_rerank": 0.2,
+  "base_score_mode": "linear",
+  "switch_margin": 0.15,
+  "instruction": "Retrieve the exact same medicine product image. Use visual identity first. Use OCR text only as supporting evidence. Penalize visually similar but different products, strengths, package variants, or unrelated products.",
+  "n_queries": 224,
+  "missing_ocr": 0,
+  "short_ocr": 0,
+  "missing_gallery_ocr": 0,
+  "changed_order_count": 2,
+  "switched_top1_count": 1,
+  "demoted_correct_top1": 0,
+  "promoted_correct_top1": 0,
+  "colnomic_baseline": {
+    "recall@1": 0.6473214285714286,
+    "recall@5": 0.875,
+    "recall@10": 0.90625,
+    "mrr": 0.7504269416099776,
+    "n_queries": 224
+  },
+  "qwen3vl_hybrid": {
+    "recall@1": 0.6473214285714286,
+    "recall@5": 0.875,
+    "recall@10": 0.90625,
+    "mrr": 0.750650155895692,
+    "n_queries": 224
+  },
+  "gt_fix": {
+    "applied": true,
+    "reason": "CSV/rerank metrics recover UUID-suffix from query filename only when old gt is the bare UUID",
+    "corrected_query_count": 23,
+    "preds_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/rerank/colnomc_rerank/result/rerank_preds_qwen3vl_hybrid_difficult_raw_gallery_7b.jsonl",
+    "updated_at": "2026-06-25T17:15:42"
+  }
+}

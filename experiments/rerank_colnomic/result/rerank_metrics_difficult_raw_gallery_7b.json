@@ -1,0 +1,31 @@
+{
+  "preds_jsonl": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/run_colnomic_retrieval_detail_name_preds.jsonl",
+  "gallery_dir": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images",
+  "base_model": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/Qwen2-VL-2B-Instruct",
+  "adapter": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/MonoQwen2-VL-v0.1",
+  "rerank_topk": 10,
+  "final_topk": 10,
+  "min_chars": 40,
+  "n_queries": 224,
+  "colnomic_baseline": {
+    "recall@1": 0.6473214285714286,
+    "recall@5": 0.875,
+    "recall@10": 0.90625,
+    "mrr": 0.7504269416099776,
+    "n_queries": 224
+  },
+  "monoqwen_rerank": {
+    "recall@1": 0.5982142857142857,
+    "recall@5": 0.8080357142857143,
+    "recall@10": 0.90625,
+    "mrr": 0.6924957482993197,
+    "n_queries": 224
+  },
+  "gt_fix": {
+    "applied": true,
+    "reason": "CSV/rerank metrics recover UUID-suffix from query filename only when old gt is the bare UUID",
+    "corrected_query_count": 23,
+    "preds_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/rerank/colnomc_rerank/result/rerank_preds_difficult_raw_gallery_7b.jsonl",
+    "updated_at": "2026-06-25T17:19:41"
+  }
+}

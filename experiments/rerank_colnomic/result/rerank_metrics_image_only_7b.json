@@ -1,0 +1,22 @@
+{
+  "preds_jsonl": "/hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/result/raw_gallery/run_colnomic_retrieval_detail_raw_gallery_name_preds_image_only_7b.jsonl",
+  "gallery_dir": "/hkfs/work/workspace/scratch/ap7811-benchmark/dailymed/data/box_flat_20000_images/data/raw_images",
+  "base_model": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/Qwen2-VL-2B-Instruct",
+  "adapter": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/MonoQwen2-VL-v0.1",
+  "rerank_topk": 10,
+  "final_topk": 10,
+  "min_chars": 40,
+  "n_queries": 1132,
+  "colnomic_baseline": {
+    "recall@1": 0.7561837455830389,
+    "recall@5": 0.872791519434629,
+    "recall@10": 0.901060070671378,
+    "mrr": 0.8083568203488705
+  },
+  "monoqwen_rerank": {
+    "recall@1": 0.6899293286219081,
+    "recall@5": 0.8621908127208481,
+    "recall@10": 0.901060070671378,
+    "mrr": 0.7644764148297722
+  }
+}
