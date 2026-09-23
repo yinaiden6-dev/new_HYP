@@ -1,0 +1,5096 @@
+{
+  "status": "H71_FUSION_PILOT_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h71_feature_fusion_pilot_authority_v1_20260923.json",
+    "sha256": "f3f1ba42e06c269552262d3ff04d919b7e413e757760f2c5766edbbcefa551f2"
+  },
+  "queries": 71,
+  "groups": 37,
+  "target_absent": 4,
+  "counts": {
+    "RAW": 51,
+    "ORIGINAL_COST1": 57,
+    "COL_ONLY/FREE": 51,
+    "COL_ONLY/ROMA_WEIGHTED": 57,
+    "COARSE/FREE": 51,
+    "COARSE/ROMA_WEIGHTED": 57,
+    "FINE/FREE": 51,
+    "FINE/ROMA_WEIGHTED": 57,
+    "COARSE_FINE/FREE": 51,
+    "COARSE_FINE/ROMA_WEIGHTED": 57,
+    "NO_ADAPTER/FREE": 51,
+    "NO_ADAPTER/ROMA_WEIGHTED": 57
+  },
+  "comparisons": {
+    "RAW__to__COL_ONLY/FREE": {
+      "base": "RAW",
+      "arm": "COL_ONLY/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "ORIGINAL_COST1__to__COL_ONLY/FREE": {
+      "base": "ORIGINAL_COST1",
+      "arm": "COL_ONLY/FREE",
+      "rescue": 0,
+      "breaks": 6,
+      "net": -6,
+      "groups": 37,
+      "group_mean": -0.08108108108108109,
+      "group_bootstrap95": [
+        -0.15765765765765768,
+        -0.018018018018018018
+      ],
+      "leave_one_group_out_range": [
+        -0.08333333333333333,
+        -0.05555555555555555
+      ],
+      "fold_net": {
+        "0": -1,
+        "1": -2,
+        "2": 0,
+        "3": -1,
+        "4": -2
+      }
+    },
+    "NO_ADAPTER/FREE__to__COL_ONLY/FREE": {
+      "base": "NO_ADAPTER/FREE",
+      "arm": "COL_ONLY/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "RAW__to__COL_ONLY/ROMA_WEIGHTED": {
+      "base": "RAW",
+      "arm": "COL_ONLY/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "ORIGINAL_COST1__to__COL_ONLY/ROMA_WEIGHTED": {
+      "base": "ORIGINAL_COST1",
+      "arm": "COL_ONLY/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "NO_ADAPTER/ROMA_WEIGHTED__to__COL_ONLY/ROMA_WEIGHTED": {
+      "base": "NO_ADAPTER/ROMA_WEIGHTED",
+      "arm": "COL_ONLY/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COL_ONLY/FREE__to__COL_ONLY/ROMA_WEIGHTED": {
+      "base": "COL_ONLY/FREE",
+      "arm": "COL_ONLY/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "RAW__to__COARSE/FREE": {
+      "base": "RAW",
+      "arm": "COARSE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "ORIGINAL_COST1__to__COARSE/FREE": {
+      "base": "ORIGINAL_COST1",
+      "arm": "COARSE/FREE",
+      "rescue": 0,
+      "breaks": 6,
+      "net": -6,
+      "groups": 37,
+      "group_mean": -0.08108108108108109,
+      "group_bootstrap95": [
+        -0.15765765765765768,
+        -0.018018018018018018
+      ],
+      "leave_one_group_out_range": [
+        -0.08333333333333333,
+        -0.05555555555555555
+      ],
+      "fold_net": {
+        "0": -1,
+        "1": -2,
+        "2": 0,
+        "3": -1,
+        "4": -2
+      }
+    },
+    "NO_ADAPTER/FREE__to__COARSE/FREE": {
+      "base": "NO_ADAPTER/FREE",
+      "arm": "COARSE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COL_ONLY/FREE__to__COARSE/FREE": {
+      "base": "COL_ONLY/FREE",
+      "arm": "COARSE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "RAW__to__COARSE/ROMA_WEIGHTED": {
+      "base": "RAW",
+      "arm": "COARSE/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "ORIGINAL_COST1__to__COARSE/ROMA_WEIGHTED": {
+      "base": "ORIGINAL_COST1",
+      "arm": "COARSE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "NO_ADAPTER/ROMA_WEIGHTED__to__COARSE/ROMA_WEIGHTED": {
+      "base": "NO_ADAPTER/ROMA_WEIGHTED",
+      "arm": "COARSE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COL_ONLY/ROMA_WEIGHTED__to__COARSE/ROMA_WEIGHTED": {
+      "base": "COL_ONLY/ROMA_WEIGHTED",
+      "arm": "COARSE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COARSE/FREE__to__COARSE/ROMA_WEIGHTED": {
+      "base": "COARSE/FREE",
+      "arm": "COARSE/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "RAW__to__FINE/FREE": {
+      "base": "RAW",
+      "arm": "FINE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "ORIGINAL_COST1__to__FINE/FREE": {
+      "base": "ORIGINAL_COST1",
+      "arm": "FINE/FREE",
+      "rescue": 0,
+      "breaks": 6,
+      "net": -6,
+      "groups": 37,
+      "group_mean": -0.08108108108108109,
+      "group_bootstrap95": [
+        -0.15765765765765768,
+        -0.018018018018018018
+      ],
+      "leave_one_group_out_range": [
+        -0.08333333333333333,
+        -0.05555555555555555
+      ],
+      "fold_net": {
+        "0": -1,
+        "1": -2,
+        "2": 0,
+        "3": -1,
+        "4": -2
+      }
+    },
+    "NO_ADAPTER/FREE__to__FINE/FREE": {
+      "base": "NO_ADAPTER/FREE",
+      "arm": "FINE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COL_ONLY/FREE__to__FINE/FREE": {
+      "base": "COL_ONLY/FREE",
+      "arm": "FINE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "RAW__to__FINE/ROMA_WEIGHTED": {
+      "base": "RAW",
+      "arm": "FINE/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "ORIGINAL_COST1__to__FINE/ROMA_WEIGHTED": {
+      "base": "ORIGINAL_COST1",
+      "arm": "FINE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "NO_ADAPTER/ROMA_WEIGHTED__to__FINE/ROMA_WEIGHTED": {
+      "base": "NO_ADAPTER/ROMA_WEIGHTED",
+      "arm": "FINE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COL_ONLY/ROMA_WEIGHTED__to__FINE/ROMA_WEIGHTED": {
+      "base": "COL_ONLY/ROMA_WEIGHTED",
+      "arm": "FINE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "FINE/FREE__to__FINE/ROMA_WEIGHTED": {
+      "base": "FINE/FREE",
+      "arm": "FINE/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "RAW__to__COARSE_FINE/FREE": {
+      "base": "RAW",
+      "arm": "COARSE_FINE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "ORIGINAL_COST1__to__COARSE_FINE/FREE": {
+      "base": "ORIGINAL_COST1",
+      "arm": "COARSE_FINE/FREE",
+      "rescue": 0,
+      "breaks": 6,
+      "net": -6,
+      "groups": 37,
+      "group_mean": -0.08108108108108109,
+      "group_bootstrap95": [
+        -0.15765765765765768,
+        -0.018018018018018018
+      ],
+      "leave_one_group_out_range": [
+        -0.08333333333333333,
+        -0.05555555555555555
+      ],
+      "fold_net": {
+        "0": -1,
+        "1": -2,
+        "2": 0,
+        "3": -1,
+        "4": -2
+      }
+    },
+    "NO_ADAPTER/FREE__to__COARSE_FINE/FREE": {
+      "base": "NO_ADAPTER/FREE",
+      "arm": "COARSE_FINE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COL_ONLY/FREE__to__COARSE_FINE/FREE": {
+      "base": "COL_ONLY/FREE",
+      "arm": "COARSE_FINE/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "RAW__to__COARSE_FINE/ROMA_WEIGHTED": {
+      "base": "RAW",
+      "arm": "COARSE_FINE/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "ORIGINAL_COST1__to__COARSE_FINE/ROMA_WEIGHTED": {
+      "base": "ORIGINAL_COST1",
+      "arm": "COARSE_FINE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "NO_ADAPTER/ROMA_WEIGHTED__to__COARSE_FINE/ROMA_WEIGHTED": {
+      "base": "NO_ADAPTER/ROMA_WEIGHTED",
+      "arm": "COARSE_FINE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COL_ONLY/ROMA_WEIGHTED__to__COARSE_FINE/ROMA_WEIGHTED": {
+      "base": "COL_ONLY/ROMA_WEIGHTED",
+      "arm": "COARSE_FINE/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "COARSE_FINE/FREE__to__COARSE_FINE/ROMA_WEIGHTED": {
+      "base": "COARSE_FINE/FREE",
+      "arm": "COARSE_FINE/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "RAW__to__NO_ADAPTER/FREE": {
+      "base": "RAW",
+      "arm": "NO_ADAPTER/FREE",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "ORIGINAL_COST1__to__NO_ADAPTER/FREE": {
+      "base": "ORIGINAL_COST1",
+      "arm": "NO_ADAPTER/FREE",
+      "rescue": 0,
+      "breaks": 6,
+      "net": -6,
+      "groups": 37,
+      "group_mean": -0.08108108108108109,
+      "group_bootstrap95": [
+        -0.15765765765765768,
+        -0.018018018018018018
+      ],
+      "leave_one_group_out_range": [
+        -0.08333333333333333,
+        -0.05555555555555555
+      ],
+      "fold_net": {
+        "0": -1,
+        "1": -2,
+        "2": 0,
+        "3": -1,
+        "4": -2
+      }
+    },
+    "RAW__to__NO_ADAPTER/ROMA_WEIGHTED": {
+      "base": "RAW",
+      "arm": "NO_ADAPTER/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "ORIGINAL_COST1__to__NO_ADAPTER/ROMA_WEIGHTED": {
+      "base": "ORIGINAL_COST1",
+      "arm": "NO_ADAPTER/ROMA_WEIGHTED",
+      "rescue": 0,
+      "breaks": 0,
+      "net": 0,
+      "groups": 37,
+      "group_mean": 0.0,
+      "group_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_group_out_range": [
+        0.0,
+        0.0
+      ],
+      "fold_net": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "NO_ADAPTER/FREE__to__NO_ADAPTER/ROMA_WEIGHTED": {
+      "base": "NO_ADAPTER/FREE",
+      "arm": "NO_ADAPTER/ROMA_WEIGHTED",
+      "rescue": 6,
+      "breaks": 0,
+      "net": 6,
+      "groups": 37,
+      "group_mean": 0.08108108108108109,
+      "group_bootstrap95": [
+        0.018018018018018018,
+        0.15765765765765768
+      ],
+      "leave_one_group_out_range": [
+        0.05555555555555555,
+        0.08333333333333333
+      ],
+      "fold_net": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2
+      }
+    }
+  },
+  "MRR": {
+    "COL_ONLY/FREE": 0.774905222032724,
+    "COL_ONLY/ROMA_WEIGHTED": 0.8525186204948992,
+    "COARSE/FREE": 0.7761292066770618,
+    "COARSE/ROMA_WEIGHTED": 0.8524283351933464,
+    "FINE/FREE": 0.7759798893980566,
+    "FINE/ROMA_WEIGHTED": 0.8525186204948992,
+    "COARSE_FINE/FREE": 0.7736392899913136,
+    "COARSE_FINE/ROMA_WEIGHTED": 0.8524283351933464,
+    "NO_ADAPTER/FREE": 0.7711901747113016,
+    "NO_ADAPTER/ROMA_WEIGHTED": 0.8525598032640286
+  },
+  "rows": [
+    {
+      "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+      "component": "fa72f98eeda7c16b4963aa2c9a26bb7b6da07062d61f1935ff18b1204cf99a43",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3144,
+        "ORIGINAL_COST1": 3144,
+        "COL_ONLY/FREE": 3144,
+        "COL_ONLY/ROMA_WEIGHTED": 3144,
+        "COARSE/FREE": 3144,
+        "COARSE/ROMA_WEIGHTED": 3144,
+        "FINE/FREE": 3144,
+        "FINE/ROMA_WEIGHTED": 3144,
+        "COARSE_FINE/FREE": 3144,
+        "COARSE_FINE/ROMA_WEIGHTED": 3144,
+        "NO_ADAPTER/FREE": 3144,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3144
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.0273061631082827,
+        "COL_ONLY/ROMA_WEIGHTED": 2.5380347536014183,
+        "COARSE/FREE": 2.0231838305779943,
+        "COARSE/ROMA_WEIGHTED": 2.53541090853856,
+        "FINE/FREE": 2.0365095839648735,
+        "FINE/ROMA_WEIGHTED": 2.5400298673640265,
+        "COARSE_FINE/FREE": 2.0242972860908077,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.538787262007511,
+        "NO_ADAPTER/FREE": 2.0104788343294873,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.5305340738770434
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-00db0e83284b1620da33639a",
+      "component": "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 64,
+        "ORIGINAL_COST1": 64,
+        "COL_ONLY/FREE": 64,
+        "COL_ONLY/ROMA_WEIGHTED": 64,
+        "COARSE/FREE": 64,
+        "COARSE/ROMA_WEIGHTED": 64,
+        "FINE/FREE": 64,
+        "FINE/ROMA_WEIGHTED": 64,
+        "COARSE_FINE/FREE": 64,
+        "COARSE_FINE/ROMA_WEIGHTED": 64,
+        "NO_ADAPTER/FREE": 64,
+        "NO_ADAPTER/ROMA_WEIGHTED": 64
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.037169208698602,
+        "COL_ONLY/ROMA_WEIGHTED": 1.1969786410270276,
+        "COARSE/FREE": 1.0414759696128149,
+        "COARSE/ROMA_WEIGHTED": 1.1969713366311412,
+        "FINE/FREE": 1.038695754701716,
+        "FINE/ROMA_WEIGHTED": 1.1966488529007282,
+        "COARSE_FINE/FREE": 1.0395373415352402,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.1961542886525516,
+        "NO_ADAPTER/FREE": 1.0235904402994283,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.1968431106825974
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-00f945a36392a04124513f2c",
+      "component": "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf",
+      "fold": 3,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 1403,
+        "ORIGINAL_COST1": 1403,
+        "COL_ONLY/FREE": 1403,
+        "COL_ONLY/ROMA_WEIGHTED": 1403,
+        "COARSE/FREE": 1403,
+        "COARSE/ROMA_WEIGHTED": 1403,
+        "FINE/FREE": 1403,
+        "FINE/ROMA_WEIGHTED": 1403,
+        "COARSE_FINE/FREE": 1403,
+        "COARSE_FINE/ROMA_WEIGHTED": 1403,
+        "NO_ADAPTER/FREE": 1403,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1403
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.015151515151515152,
+        "COL_ONLY/ROMA_WEIGHTED": 0.25,
+        "COARSE/FREE": 0.014705882352941176,
+        "COARSE/ROMA_WEIGHTED": 0.25,
+        "FINE/FREE": 0.017857142857142856,
+        "FINE/ROMA_WEIGHTED": 0.25,
+        "COARSE_FINE/FREE": 0.01694915254237288,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.25,
+        "NO_ADAPTER/FREE": 0.015151515151515152,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.25
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.9735405245073959,
+        "COL_ONLY/ROMA_WEIGHTED": -1.4629280472575616,
+        "COARSE/FREE": -0.9402777000459468,
+        "COARSE/ROMA_WEIGHTED": -1.452656989139272,
+        "FINE/FREE": -0.939901450966262,
+        "FINE/ROMA_WEIGHTED": -1.4599429022537707,
+        "COARSE_FINE/FREE": -0.9424642199941315,
+        "COARSE_FINE/ROMA_WEIGHTED": -1.4573512121178887,
+        "NO_ADAPTER/FREE": -0.9678159147110337,
+        "NO_ADAPTER/ROMA_WEIGHTED": -1.4676988336742938
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-01371ddf81e97f382dca84d8",
+      "component": "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 64,
+        "ORIGINAL_COST1": 64,
+        "COL_ONLY/FREE": 64,
+        "COL_ONLY/ROMA_WEIGHTED": 64,
+        "COARSE/FREE": 64,
+        "COARSE/ROMA_WEIGHTED": 64,
+        "FINE/FREE": 64,
+        "FINE/ROMA_WEIGHTED": 64,
+        "COARSE_FINE/FREE": 64,
+        "COARSE_FINE/ROMA_WEIGHTED": 64,
+        "NO_ADAPTER/FREE": 64,
+        "NO_ADAPTER/ROMA_WEIGHTED": 64
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.0334025633445432,
+        "COL_ONLY/ROMA_WEIGHTED": 1.1329914465390272,
+        "COARSE/FREE": 1.040217181751343,
+        "COARSE/ROMA_WEIGHTED": 1.129496213382809,
+        "FINE/FREE": 1.0472805083296297,
+        "FINE/ROMA_WEIGHTED": 1.1331143050323913,
+        "COARSE_FINE/FREE": 1.0372183854691823,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.1289438642688392,
+        "NO_ADAPTER/FREE": 1.0176378050407238,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.1321536283610474
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-01539eca5c5afd1c6d5ccda2",
+      "component": "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4855,
+        "ORIGINAL_COST1": 4855,
+        "COL_ONLY/FREE": 4855,
+        "COL_ONLY/ROMA_WEIGHTED": 4855,
+        "COARSE/FREE": 4855,
+        "COARSE/ROMA_WEIGHTED": 4855,
+        "FINE/FREE": 4855,
+        "FINE/ROMA_WEIGHTED": 4855,
+        "COARSE_FINE/FREE": 4855,
+        "COARSE_FINE/ROMA_WEIGHTED": 4855,
+        "NO_ADAPTER/FREE": 4855,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4855
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.0240791749791986,
+        "COL_ONLY/ROMA_WEIGHTED": 6.066303607185436,
+        "COARSE/FREE": 3.0233675756108127,
+        "COARSE/ROMA_WEIGHTED": 6.089199776861419,
+        "FINE/FREE": 3.0513219325755463,
+        "FINE/ROMA_WEIGHTED": 6.069925263769011,
+        "COARSE_FINE/FREE": 3.025930385693588,
+        "COARSE_FINE/ROMA_WEIGHTED": 6.089453725821043,
+        "NO_ADAPTER/FREE": 2.9723552571209697,
+        "NO_ADAPTER/ROMA_WEIGHTED": 6.056593173407563
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0188e7f7150a7aaf05c23614",
+      "component": "a5cc6cd71cb98a23641d9032f2abdbe55a284b95eedc14e13d1ab9d93b7adc76",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4798,
+        "ORIGINAL_COST1": 4798,
+        "COL_ONLY/FREE": 4798,
+        "COL_ONLY/ROMA_WEIGHTED": 4798,
+        "COARSE/FREE": 4798,
+        "COARSE/ROMA_WEIGHTED": 4798,
+        "FINE/FREE": 4798,
+        "FINE/ROMA_WEIGHTED": 4798,
+        "COARSE_FINE/FREE": 4798,
+        "COARSE_FINE/ROMA_WEIGHTED": 4798,
+        "NO_ADAPTER/FREE": 4798,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4798
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.4814260906184704,
+        "COL_ONLY/ROMA_WEIGHTED": 5.02449851203436,
+        "COARSE/FREE": 3.4935190556614284,
+        "COARSE/ROMA_WEIGHTED": 5.0450830717153945,
+        "FINE/FREE": 3.5132832869585604,
+        "FINE/ROMA_WEIGHTED": 5.035580476927373,
+        "COARSE_FINE/FREE": 3.5111306230591177,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.041651918135884,
+        "NO_ADAPTER/FREE": 3.4743878078702792,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.999420899236884
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-02060e3d320616b952a39654",
+      "component": "0afd089c456e855f9466067a75179f94b4fb386831d044fd18ff0bcd22e0d3f4",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 304,
+        "ORIGINAL_COST1": 304,
+        "COL_ONLY/FREE": 304,
+        "COL_ONLY/ROMA_WEIGHTED": 304,
+        "COARSE/FREE": 304,
+        "COARSE/ROMA_WEIGHTED": 304,
+        "FINE/FREE": 304,
+        "FINE/ROMA_WEIGHTED": 304,
+        "COARSE_FINE/FREE": 304,
+        "COARSE_FINE/ROMA_WEIGHTED": 304,
+        "NO_ADAPTER/FREE": 304,
+        "NO_ADAPTER/ROMA_WEIGHTED": 304
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.1215664026482632,
+        "COL_ONLY/ROMA_WEIGHTED": 3.9787050178495766,
+        "COARSE/FREE": 1.1451174173580891,
+        "COARSE/ROMA_WEIGHTED": 3.983320284523013,
+        "FINE/FREE": 1.1267467932452817,
+        "FINE/ROMA_WEIGHTED": 3.9807939487414092,
+        "COARSE_FINE/FREE": 1.143781126850918,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.982499131360621,
+        "NO_ADAPTER/FREE": 1.1253853745126532,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.9648910899973435
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-021e62b31ffbd6d351d13e91",
+      "component": "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49",
+      "fold": 4,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 3128,
+        "ORIGINAL_COST1": 3128,
+        "COL_ONLY/FREE": 3128,
+        "COL_ONLY/ROMA_WEIGHTED": 3128,
+        "COARSE/FREE": 3128,
+        "COARSE/ROMA_WEIGHTED": 3128,
+        "FINE/FREE": 3128,
+        "FINE/ROMA_WEIGHTED": 3128,
+        "COARSE_FINE/FREE": 3128,
+        "COARSE_FINE/ROMA_WEIGHTED": 1827,
+        "NO_ADAPTER/FREE": 3128,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3128
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.0,
+        "COL_ONLY/ROMA_WEIGHTED": 0.0,
+        "COARSE/FREE": 0.0,
+        "COARSE/ROMA_WEIGHTED": 0.0,
+        "FINE/FREE": 0.0,
+        "FINE/ROMA_WEIGHTED": 0.0,
+        "COARSE_FINE/FREE": 0.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.0,
+        "NO_ADAPTER/FREE": 0.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": null,
+        "COL_ONLY/ROMA_WEIGHTED": null,
+        "COARSE/FREE": null,
+        "COARSE/ROMA_WEIGHTED": null,
+        "FINE/FREE": null,
+        "FINE/ROMA_WEIGHTED": null,
+        "COARSE_FINE/FREE": null,
+        "COARSE_FINE/ROMA_WEIGHTED": null,
+        "NO_ADAPTER/FREE": null,
+        "NO_ADAPTER/ROMA_WEIGHTED": null
+      },
+      "target_in_C128": false
+    },
+    {
+      "query_id": "H593-02543adf69ee9391380f4ee6",
+      "component": "e5b4f86a4d49af3ede0ecdd200dfae35f36ef1fb29c77d00e2fc254648085e0e",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4830,
+        "ORIGINAL_COST1": 4830,
+        "COL_ONLY/FREE": 4830,
+        "COL_ONLY/ROMA_WEIGHTED": 4830,
+        "COARSE/FREE": 4830,
+        "COARSE/ROMA_WEIGHTED": 4830,
+        "FINE/FREE": 4830,
+        "FINE/ROMA_WEIGHTED": 4830,
+        "COARSE_FINE/FREE": 4830,
+        "COARSE_FINE/ROMA_WEIGHTED": 4830,
+        "NO_ADAPTER/FREE": 4830,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4830
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.078732740398889,
+        "COL_ONLY/ROMA_WEIGHTED": 4.017436458998434,
+        "COARSE/FREE": 2.0684609086858736,
+        "COARSE/ROMA_WEIGHTED": 4.0406064584667565,
+        "FINE/FREE": 2.052890043461356,
+        "FINE/ROMA_WEIGHTED": 4.020339859472564,
+        "COARSE_FINE/FREE": 2.0656966764580416,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.040436994829015,
+        "NO_ADAPTER/FREE": 2.0629751163111103,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.007429787147078
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-028ab5aaff186d9fc48a7f19",
+      "component": "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b",
+      "fold": 4,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1787,
+        "ORIGINAL_COST1": 996,
+        "COL_ONLY/FREE": 1787,
+        "COL_ONLY/ROMA_WEIGHTED": 996,
+        "COARSE/FREE": 1787,
+        "COARSE/ROMA_WEIGHTED": 996,
+        "FINE/FREE": 1787,
+        "FINE/ROMA_WEIGHTED": 996,
+        "COARSE_FINE/FREE": 1787,
+        "COARSE_FINE/ROMA_WEIGHTED": 996,
+        "NO_ADAPTER/FREE": 1787,
+        "NO_ADAPTER/ROMA_WEIGHTED": 996
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.00909090909090909,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 0.009900990099009901,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 0.012658227848101266,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 0.010869565217391304,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 0.008547008547008548,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.8179018766081174,
+        "COL_ONLY/ROMA_WEIGHTED": 1.2831494605249216,
+        "COARSE/FREE": -0.7790684576955584,
+        "COARSE/ROMA_WEIGHTED": 1.2846104940341365,
+        "FINE/FREE": -0.7808164240618891,
+        "FINE/ROMA_WEIGHTED": 1.2834583740635566,
+        "COARSE_FINE/FREE": -0.7757106591379614,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.2849778339840354,
+        "NO_ADAPTER/FREE": -0.8303799864501096,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.2808543769760716
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-02ce6b371f2907428fc96ffe",
+      "component": "ef7d75f57f11d1174b60813355c0cf7d7dce1009b41f2c7a54cf612906b3dea7",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3238,
+        "ORIGINAL_COST1": 3238,
+        "COL_ONLY/FREE": 3238,
+        "COL_ONLY/ROMA_WEIGHTED": 3238,
+        "COARSE/FREE": 3238,
+        "COARSE/ROMA_WEIGHTED": 3238,
+        "FINE/FREE": 3238,
+        "FINE/ROMA_WEIGHTED": 3238,
+        "COARSE_FINE/FREE": 3238,
+        "COARSE_FINE/ROMA_WEIGHTED": 3238,
+        "NO_ADAPTER/FREE": 3238,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3238
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.2861478613365285,
+        "COL_ONLY/ROMA_WEIGHTED": 0.7880578182996708,
+        "COARSE/FREE": 1.2802967286956615,
+        "COARSE/ROMA_WEIGHTED": 0.793863453208763,
+        "FINE/FREE": 1.3401042419104403,
+        "FINE/ROMA_WEIGHTED": 0.7787750863443127,
+        "COARSE_FINE/FREE": 1.2864909993943816,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.7836299067725032,
+        "NO_ADAPTER/FREE": 1.2809457532194113,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.8104483543761438
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-03168677fa508c139372f0ed",
+      "component": "4d5d4731b2c45171a86a8690a5b3a1819d26c3dd6226f61b0f9104c2f6f56484",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1032,
+        "ORIGINAL_COST1": 1032,
+        "COL_ONLY/FREE": 1032,
+        "COL_ONLY/ROMA_WEIGHTED": 1032,
+        "COARSE/FREE": 1032,
+        "COARSE/ROMA_WEIGHTED": 1032,
+        "FINE/FREE": 1032,
+        "FINE/ROMA_WEIGHTED": 1032,
+        "COARSE_FINE/FREE": 1032,
+        "COARSE_FINE/ROMA_WEIGHTED": 1032,
+        "NO_ADAPTER/FREE": 1032,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1032
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.9131125971992815,
+        "COL_ONLY/ROMA_WEIGHTED": 5.781693596186282,
+        "COARSE/FREE": 2.9512276407787708,
+        "COARSE/ROMA_WEIGHTED": 5.782729736297907,
+        "FINE/FREE": 2.912854157848255,
+        "FINE/ROMA_WEIGHTED": 5.780966676268095,
+        "COARSE_FINE/FREE": 2.947584269496858,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.782956645175339,
+        "NO_ADAPTER/FREE": 2.862731549026991,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5.768460144474717
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-04953480712cfc6b638e8fb2",
+      "component": "ef7d75f57f11d1174b60813355c0cf7d7dce1009b41f2c7a54cf612906b3dea7",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3238,
+        "ORIGINAL_COST1": 3238,
+        "COL_ONLY/FREE": 3238,
+        "COL_ONLY/ROMA_WEIGHTED": 3238,
+        "COARSE/FREE": 3238,
+        "COARSE/ROMA_WEIGHTED": 3238,
+        "FINE/FREE": 3238,
+        "FINE/ROMA_WEIGHTED": 3238,
+        "COARSE_FINE/FREE": 3238,
+        "COARSE_FINE/ROMA_WEIGHTED": 3238,
+        "NO_ADAPTER/FREE": 3238,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3238
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.770617303145264,
+        "COL_ONLY/ROMA_WEIGHTED": 5.7970018517893935,
+        "COARSE/FREE": 3.7824029419923346,
+        "COARSE/ROMA_WEIGHTED": 5.801262613934442,
+        "FINE/FREE": 3.7732473672961246,
+        "FINE/ROMA_WEIGHTED": 5.799677410770717,
+        "COARSE_FINE/FREE": 3.7786575260932556,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.801254634916571,
+        "NO_ADAPTER/FREE": 3.755920206412005,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5.786188776253386
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-04bd54f85fedc55966f9ee04",
+      "component": "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 512,
+        "ORIGINAL_COST1": 512,
+        "COL_ONLY/FREE": 512,
+        "COL_ONLY/ROMA_WEIGHTED": 512,
+        "COARSE/FREE": 512,
+        "COARSE/ROMA_WEIGHTED": 512,
+        "FINE/FREE": 512,
+        "FINE/ROMA_WEIGHTED": 512,
+        "COARSE_FINE/FREE": 512,
+        "COARSE_FINE/ROMA_WEIGHTED": 512,
+        "NO_ADAPTER/FREE": 512,
+        "NO_ADAPTER/ROMA_WEIGHTED": 512
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 0.8333440620068664,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0591374594415988,
+        "COARSE/FREE": 0.8271604136031758,
+        "COARSE/ROMA_WEIGHTED": 1.0622756624981906,
+        "FINE/FREE": 0.833474619279367,
+        "FINE/ROMA_WEIGHTED": 1.065674962996951,
+        "COARSE_FINE/FREE": 0.8276425536432757,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.066192147330565,
+        "NO_ADAPTER/FREE": 0.8410042528455933,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.05641392831884
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0576bfe455276d27cc059542",
+      "component": "0748babacede700838aa4a895d8d3238fc567929c58d772ed17e063e9856bb96",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1424,
+        "ORIGINAL_COST1": 1424,
+        "COL_ONLY/FREE": 1424,
+        "COL_ONLY/ROMA_WEIGHTED": 1424,
+        "COARSE/FREE": 1424,
+        "COARSE/ROMA_WEIGHTED": 1424,
+        "FINE/FREE": 1424,
+        "FINE/ROMA_WEIGHTED": 1424,
+        "COARSE_FINE/FREE": 1424,
+        "COARSE_FINE/ROMA_WEIGHTED": 1424,
+        "NO_ADAPTER/FREE": 1424,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1424
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.7453961657116115,
+        "COL_ONLY/ROMA_WEIGHTED": 3.424203544306579,
+        "COARSE/FREE": 1.7540799610543198,
+        "COARSE/ROMA_WEIGHTED": 3.4270129395160818,
+        "FINE/FREE": 1.7410790287854,
+        "FINE/ROMA_WEIGHTED": 3.4250318197530087,
+        "COARSE_FINE/FREE": 1.7542520819745668,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.4277673228627066,
+        "NO_ADAPTER/FREE": 1.7343888959536053,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.4117119801226705
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-059423d2642d803097a5e092",
+      "component": "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 19,
+        "ORIGINAL_COST1": 19,
+        "COL_ONLY/FREE": 19,
+        "COL_ONLY/ROMA_WEIGHTED": 19,
+        "COARSE/FREE": 19,
+        "COARSE/ROMA_WEIGHTED": 19,
+        "FINE/FREE": 19,
+        "FINE/ROMA_WEIGHTED": 19,
+        "COARSE_FINE/FREE": 19,
+        "COARSE_FINE/ROMA_WEIGHTED": 19,
+        "NO_ADAPTER/FREE": 19,
+        "NO_ADAPTER/ROMA_WEIGHTED": 19
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 0.7730055144930988,
+        "COL_ONLY/ROMA_WEIGHTED": 1.1707676630383084,
+        "COARSE/FREE": 0.7857997542331692,
+        "COARSE/ROMA_WEIGHTED": 1.1741821033749817,
+        "FINE/FREE": 0.786853718730399,
+        "FINE/ROMA_WEIGHTED": 1.1712711891201184,
+        "COARSE_FINE/FREE": 0.7862988050261016,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.174239456350345,
+        "NO_ADAPTER/FREE": 0.7687676974174948,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.1691727234470957
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-059b70b913c381ca4c02e851",
+      "component": "1c37c8c6064f3ee8446595a55b1d8fb0394f2b039c86eb060704e75d998d0d11",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 518,
+        "ORIGINAL_COST1": 518,
+        "COL_ONLY/FREE": 518,
+        "COL_ONLY/ROMA_WEIGHTED": 518,
+        "COARSE/FREE": 518,
+        "COARSE/ROMA_WEIGHTED": 518,
+        "FINE/FREE": 518,
+        "FINE/ROMA_WEIGHTED": 518,
+        "COARSE_FINE/FREE": 518,
+        "COARSE_FINE/ROMA_WEIGHTED": 518,
+        "NO_ADAPTER/FREE": 518,
+        "NO_ADAPTER/ROMA_WEIGHTED": 518
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 0.4173166930611947,
+        "COL_ONLY/ROMA_WEIGHTED": 3.7093263475494513,
+        "COARSE/FREE": 0.4372370349077366,
+        "COARSE/ROMA_WEIGHTED": 3.720649014343538,
+        "FINE/FREE": 0.4186990143338538,
+        "FINE/ROMA_WEIGHTED": 3.7131159892560737,
+        "COARSE_FINE/FREE": 0.4416152477980041,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.71650655781574,
+        "NO_ADAPTER/FREE": 0.36819820459122266,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.69248161796454
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-05b3ce4ffdc0d30f9d3abac9",
+      "component": "86244889a9cf4aa3df9f971885f8dfcec40ce965b829d12b7deb1eb31c2e4e44",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 5053,
+        "ORIGINAL_COST1": 5053,
+        "COL_ONLY/FREE": 5053,
+        "COL_ONLY/ROMA_WEIGHTED": 5053,
+        "COARSE/FREE": 5053,
+        "COARSE/ROMA_WEIGHTED": 5053,
+        "FINE/FREE": 5053,
+        "FINE/ROMA_WEIGHTED": 5053,
+        "COARSE_FINE/FREE": 5053,
+        "COARSE_FINE/ROMA_WEIGHTED": 5053,
+        "NO_ADAPTER/FREE": 5053,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5053
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.238327095889356,
+        "COL_ONLY/ROMA_WEIGHTED": 2.445027143942144,
+        "COARSE/FREE": 3.2398878569190503,
+        "COARSE/ROMA_WEIGHTED": 2.4432235203059727,
+        "FINE/FREE": 3.250152888782288,
+        "FINE/ROMA_WEIGHTED": 2.4513784743152973,
+        "COARSE_FINE/FREE": 3.256360306055659,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.4434389566389116,
+        "NO_ADAPTER/FREE": 3.2411373732169153,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.428846268831478
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-064aa36809b4f00051cb821a",
+      "component": "caadf690e51b6ae8aa69d3ebfb189f9ae43f3e3bde9aadd83d79e71a9ed27df7",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 0,
+        "ORIGINAL_COST1": 0,
+        "COL_ONLY/FREE": 0,
+        "COL_ONLY/ROMA_WEIGHTED": 0,
+        "COARSE/FREE": 0,
+        "COARSE/ROMA_WEIGHTED": 0,
+        "FINE/FREE": 0,
+        "FINE/ROMA_WEIGHTED": 0,
+        "COARSE_FINE/FREE": 0,
+        "COARSE_FINE/ROMA_WEIGHTED": 0,
+        "NO_ADAPTER/FREE": 0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.30188256203361,
+        "COL_ONLY/ROMA_WEIGHTED": 3.365890247327263,
+        "COARSE/FREE": 3.335191931405649,
+        "COARSE/ROMA_WEIGHTED": 3.3680845174530387,
+        "FINE/FREE": 3.3063225712328164,
+        "FINE/ROMA_WEIGHTED": 3.3682339101350047,
+        "COARSE_FINE/FREE": 3.320765018430846,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.3689173066400597,
+        "NO_ADAPTER/FREE": 3.283941987155241,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.3698780970545905
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-068d4310663d131f8027b587",
+      "component": "f16447b66992689bdb8350dadcb85602511b1bd2c18265a511e90bf7d2910d9c",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3368,
+        "ORIGINAL_COST1": 3368,
+        "COL_ONLY/FREE": 3368,
+        "COL_ONLY/ROMA_WEIGHTED": 3368,
+        "COARSE/FREE": 3368,
+        "COARSE/ROMA_WEIGHTED": 3368,
+        "FINE/FREE": 3368,
+        "FINE/ROMA_WEIGHTED": 3368,
+        "COARSE_FINE/FREE": 3368,
+        "COARSE_FINE/ROMA_WEIGHTED": 3368,
+        "NO_ADAPTER/FREE": 3368,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3368
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.038240123552876,
+        "COL_ONLY/ROMA_WEIGHTED": 3.8829298125849254,
+        "COARSE/FREE": 2.0578362543291817,
+        "COARSE/ROMA_WEIGHTED": 3.8804898867714686,
+        "FINE/FREE": 2.008628664407139,
+        "FINE/ROMA_WEIGHTED": 3.8825606358399076,
+        "COARSE_FINE/FREE": 2.041684476110263,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.88404820253941,
+        "NO_ADAPTER/FREE": 2.0020892751977897,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.873486799777025
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-07197c3f4badd640f6859f5e",
+      "component": "caadf690e51b6ae8aa69d3ebfb189f9ae43f3e3bde9aadd83d79e71a9ed27df7",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 0,
+        "ORIGINAL_COST1": 0,
+        "COL_ONLY/FREE": 0,
+        "COL_ONLY/ROMA_WEIGHTED": 0,
+        "COARSE/FREE": 0,
+        "COARSE/ROMA_WEIGHTED": 0,
+        "FINE/FREE": 0,
+        "FINE/ROMA_WEIGHTED": 0,
+        "COARSE_FINE/FREE": 0,
+        "COARSE_FINE/ROMA_WEIGHTED": 0,
+        "NO_ADAPTER/FREE": 0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.876877363053019,
+        "COL_ONLY/ROMA_WEIGHTED": 2.1495585645904987,
+        "COARSE/FREE": 3.9197717724475223,
+        "COARSE/ROMA_WEIGHTED": 2.15748151214335,
+        "FINE/FREE": 3.9269099755470553,
+        "FINE/ROMA_WEIGHTED": 2.153422021209596,
+        "COARSE_FINE/FREE": 3.922156127779958,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.157368579970582,
+        "NO_ADAPTER/FREE": 3.863037698240803,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.1297140717427228
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0745854000292039c9c10f33",
+      "component": "a7e2eb3376d106cbd8cfa0ddaf20047219e210af69c8abeada87a180f2a8e2a9",
+      "fold": 1,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4367,
+        "ORIGINAL_COST1": 1130,
+        "COL_ONLY/FREE": 4367,
+        "COL_ONLY/ROMA_WEIGHTED": 1130,
+        "COARSE/FREE": 4367,
+        "COARSE/ROMA_WEIGHTED": 1130,
+        "FINE/FREE": 4367,
+        "FINE/ROMA_WEIGHTED": 1130,
+        "COARSE_FINE/FREE": 4367,
+        "COARSE_FINE/ROMA_WEIGHTED": 1130,
+        "NO_ADAPTER/FREE": 4367,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1130
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.5,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 0.5,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 0.5,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 0.5,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 0.3333333333333333,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.8602509904519842,
+        "COL_ONLY/ROMA_WEIGHTED": 0.49608609243465907,
+        "COARSE/FREE": -0.8619412634580562,
+        "COARSE/ROMA_WEIGHTED": 0.5197902300040018,
+        "FINE/FREE": -0.8767451601865001,
+        "FINE/ROMA_WEIGHTED": 0.49824233789088246,
+        "COARSE_FINE/FREE": -0.8467123965441717,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.508931614362474,
+        "NO_ADAPTER/FREE": -0.8791636579853261,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.48049420546022326
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-08297e272b0164e6fdd42e9f",
+      "component": "a7e2eb3376d106cbd8cfa0ddaf20047219e210af69c8abeada87a180f2a8e2a9",
+      "fold": 1,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 3368,
+        "ORIGINAL_COST1": 3368,
+        "COL_ONLY/FREE": 3368,
+        "COL_ONLY/ROMA_WEIGHTED": 3368,
+        "COARSE/FREE": 3368,
+        "COARSE/ROMA_WEIGHTED": 3368,
+        "FINE/FREE": 3368,
+        "FINE/ROMA_WEIGHTED": 3368,
+        "COARSE_FINE/FREE": 3368,
+        "COARSE_FINE/ROMA_WEIGHTED": 3368,
+        "NO_ADAPTER/FREE": 3368,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3368
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.3333333333333333,
+        "COL_ONLY/ROMA_WEIGHTED": 0.5,
+        "COARSE/FREE": 0.3333333333333333,
+        "COARSE/ROMA_WEIGHTED": 0.5,
+        "FINE/FREE": 0.25,
+        "FINE/ROMA_WEIGHTED": 0.5,
+        "COARSE_FINE/FREE": 0.25,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.5,
+        "NO_ADAPTER/FREE": 0.3333333333333333,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.5
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.4502113709360738,
+        "COL_ONLY/ROMA_WEIGHTED": -1.7962923776561694,
+        "COARSE/FREE": -1.4593860918294865,
+        "COARSE/ROMA_WEIGHTED": -1.7931641926093875,
+        "FINE/FREE": -1.4697487022807465,
+        "FINE/ROMA_WEIGHTED": -1.795599922304317,
+        "COARSE_FINE/FREE": -1.4652346732691421,
+        "COARSE_FINE/ROMA_WEIGHTED": -1.7975673389197673,
+        "NO_ADAPTER/FREE": -1.4612088227740512,
+        "NO_ADAPTER/ROMA_WEIGHTED": -1.797680320858296
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-082cd2a46d9b304893a3587c",
+      "component": "f15f4acea549124570f8e5b5e20c5575b2b6e0d49386891fe5a7552afc90436f",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4865,
+        "ORIGINAL_COST1": 4865,
+        "COL_ONLY/FREE": 4865,
+        "COL_ONLY/ROMA_WEIGHTED": 4865,
+        "COARSE/FREE": 4865,
+        "COARSE/ROMA_WEIGHTED": 4865,
+        "FINE/FREE": 4865,
+        "FINE/ROMA_WEIGHTED": 4865,
+        "COARSE_FINE/FREE": 4865,
+        "COARSE_FINE/ROMA_WEIGHTED": 4865,
+        "NO_ADAPTER/FREE": 4865,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4865
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.9180623198297555,
+        "COL_ONLY/ROMA_WEIGHTED": 4.5405418870934495,
+        "COARSE/FREE": 1.910238589852388,
+        "COARSE/ROMA_WEIGHTED": 4.56117423227692,
+        "FINE/FREE": 1.909589945913604,
+        "FINE/ROMA_WEIGHTED": 4.547361828004911,
+        "COARSE_FINE/FREE": 1.9145456278881254,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.562719207010378,
+        "NO_ADAPTER/FREE": 1.9043022958910893,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.528207630486284
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0923651f03329ad9587b7927",
+      "component": "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f",
+      "fold": 2,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 508,
+        "ORIGINAL_COST1": 508,
+        "COL_ONLY/FREE": 508,
+        "COL_ONLY/ROMA_WEIGHTED": 508,
+        "COARSE/FREE": 508,
+        "COARSE/ROMA_WEIGHTED": 508,
+        "FINE/FREE": 508,
+        "FINE/ROMA_WEIGHTED": 508,
+        "COARSE_FINE/FREE": 508,
+        "COARSE_FINE/ROMA_WEIGHTED": 508,
+        "NO_ADAPTER/FREE": 508,
+        "NO_ADAPTER/ROMA_WEIGHTED": 508
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.041666666666666664,
+        "COL_ONLY/ROMA_WEIGHTED": 0.05263157894736842,
+        "COARSE/FREE": 0.038461538461538464,
+        "COARSE/ROMA_WEIGHTED": 0.05263157894736842,
+        "FINE/FREE": 0.038461538461538464,
+        "FINE/ROMA_WEIGHTED": 0.05263157894736842,
+        "COARSE_FINE/FREE": 0.037037037037037035,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.05263157894736842,
+        "NO_ADAPTER/FREE": 0.038461538461538464,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.05555555555555555
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.4943384168017912,
+        "COL_ONLY/ROMA_WEIGHTED": -2.944069909707578,
+        "COARSE/FREE": -1.4863061128627577,
+        "COARSE/ROMA_WEIGHTED": -2.940442277894044,
+        "FINE/FREE": -1.4941740742679395,
+        "FINE/ROMA_WEIGHTED": -2.9530153901962386,
+        "COARSE_FINE/FREE": -1.5002856121143335,
+        "COARSE_FINE/ROMA_WEIGHTED": -2.95027729910584,
+        "NO_ADAPTER/FREE": -1.522869645883664,
+        "NO_ADAPTER/ROMA_WEIGHTED": -2.931451856466552
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-094186f2ba40a8fa08ad355b",
+      "component": "86244889a9cf4aa3df9f971885f8dfcec40ce965b829d12b7deb1eb31c2e4e44",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 5053,
+        "ORIGINAL_COST1": 5053,
+        "COL_ONLY/FREE": 5053,
+        "COL_ONLY/ROMA_WEIGHTED": 5053,
+        "COARSE/FREE": 5053,
+        "COARSE/ROMA_WEIGHTED": 5053,
+        "FINE/FREE": 5053,
+        "FINE/ROMA_WEIGHTED": 5053,
+        "COARSE_FINE/FREE": 5053,
+        "COARSE_FINE/ROMA_WEIGHTED": 5053,
+        "NO_ADAPTER/FREE": 5053,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5053
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.220056005738502,
+        "COL_ONLY/ROMA_WEIGHTED": 4.563031210427894,
+        "COARSE/FREE": 3.1933776087361525,
+        "COARSE/ROMA_WEIGHTED": 4.58085886793444,
+        "FINE/FREE": 3.2233622741440633,
+        "FINE/ROMA_WEIGHTED": 4.566661766113425,
+        "COARSE_FINE/FREE": 3.2134091473040343,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.582006337239924,
+        "NO_ADAPTER/FREE": 3.213479232320228,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.5494109520490245
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-097dd2637a0f46ccbfb61ff4",
+      "component": "4d5d4731b2c45171a86a8690a5b3a1819d26c3dd6226f61b0f9104c2f6f56484",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1032,
+        "ORIGINAL_COST1": 1032,
+        "COL_ONLY/FREE": 1032,
+        "COL_ONLY/ROMA_WEIGHTED": 1032,
+        "COARSE/FREE": 1032,
+        "COARSE/ROMA_WEIGHTED": 1032,
+        "FINE/FREE": 1032,
+        "FINE/ROMA_WEIGHTED": 1032,
+        "COARSE_FINE/FREE": 1032,
+        "COARSE_FINE/ROMA_WEIGHTED": 1032,
+        "NO_ADAPTER/FREE": 1032,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1032
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.941452757036152,
+        "COL_ONLY/ROMA_WEIGHTED": 3.499896731453746,
+        "COARSE/FREE": 1.9588571166144242,
+        "COARSE/ROMA_WEIGHTED": 3.499830324427144,
+        "FINE/FREE": 1.970606061455359,
+        "FINE/ROMA_WEIGHTED": 3.4986569514959682,
+        "COARSE_FINE/FREE": 1.9688342338398601,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.4998399382385865,
+        "NO_ADAPTER/FREE": 1.9047064587820628,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.4873699839400727
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-09ce47090a8b579fa3833638",
+      "component": "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1145,
+        "ORIGINAL_COST1": 1145,
+        "COL_ONLY/FREE": 1145,
+        "COL_ONLY/ROMA_WEIGHTED": 1145,
+        "COARSE/FREE": 1145,
+        "COARSE/ROMA_WEIGHTED": 1145,
+        "FINE/FREE": 1145,
+        "FINE/ROMA_WEIGHTED": 1145,
+        "COARSE_FINE/FREE": 1145,
+        "COARSE_FINE/ROMA_WEIGHTED": 1145,
+        "NO_ADAPTER/FREE": 1145,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1145
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.4887768892133928,
+        "COL_ONLY/ROMA_WEIGHTED": 2.851724319324867,
+        "COARSE/FREE": 1.4902365709633407,
+        "COARSE/ROMA_WEIGHTED": 2.869368980829214,
+        "FINE/FREE": 1.5065297066173762,
+        "FINE/ROMA_WEIGHTED": 2.856476842459146,
+        "COARSE_FINE/FREE": 1.4923967725678233,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.8711788567340015,
+        "NO_ADAPTER/FREE": 1.4776170021982074,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.8383211039058427
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0a87021a30d8b6a9de32f2b3",
+      "component": "69e8433234f6613d539957d8cd900a9503c3e7bceb31e12adec7cfa0adc6368b",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1114,
+        "ORIGINAL_COST1": 1114,
+        "COL_ONLY/FREE": 1114,
+        "COL_ONLY/ROMA_WEIGHTED": 1114,
+        "COARSE/FREE": 1114,
+        "COARSE/ROMA_WEIGHTED": 1114,
+        "FINE/FREE": 1114,
+        "FINE/ROMA_WEIGHTED": 1114,
+        "COARSE_FINE/FREE": 1114,
+        "COARSE_FINE/ROMA_WEIGHTED": 1114,
+        "NO_ADAPTER/FREE": 1114,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1114
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.6324725301342249,
+        "COL_ONLY/ROMA_WEIGHTED": 4.160034316360198,
+        "COARSE/FREE": 1.6546338188892533,
+        "COARSE/ROMA_WEIGHTED": 4.179263566388764,
+        "FINE/FREE": 1.6728710008341707,
+        "FINE/ROMA_WEIGHTED": 4.163732109237506,
+        "COARSE_FINE/FREE": 1.652691626125263,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.179355962284317,
+        "NO_ADAPTER/FREE": 1.6043639494388693,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.147438951755026
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0ac0e839567fe775450fa642",
+      "component": "d39c757e2a4c76e8e9403fd84708b3c233de7ca0b40197f435ceb3a48272b73f",
+      "fold": 3,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 608,
+        "ORIGINAL_COST1": 608,
+        "COL_ONLY/FREE": 608,
+        "COL_ONLY/ROMA_WEIGHTED": 608,
+        "COARSE/FREE": 608,
+        "COARSE/ROMA_WEIGHTED": 608,
+        "FINE/FREE": 608,
+        "FINE/ROMA_WEIGHTED": 608,
+        "COARSE_FINE/FREE": 608,
+        "COARSE_FINE/ROMA_WEIGHTED": 608,
+        "NO_ADAPTER/FREE": 608,
+        "NO_ADAPTER/ROMA_WEIGHTED": 608
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 5.992699114138722,
+        "COL_ONLY/ROMA_WEIGHTED": 7.300422407310378,
+        "COARSE/FREE": 5.973481055956349,
+        "COARSE/ROMA_WEIGHTED": 7.303584574513761,
+        "FINE/FREE": 5.967279934676433,
+        "FINE/ROMA_WEIGHTED": 7.3111607120739075,
+        "COARSE_FINE/FREE": 5.976484640011127,
+        "COARSE_FINE/ROMA_WEIGHTED": 7.306319659288219,
+        "NO_ADAPTER/FREE": 5.967733617350594,
+        "NO_ADAPTER/ROMA_WEIGHTED": 7.287624214662094
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0c19fd5a9f5839f926c4ae57",
+      "component": "f4cb26eef9646d6dfd71a5bdba8092d2e0f934cd5f8e9ffe627d7c9ba8444f36",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4861,
+        "ORIGINAL_COST1": 4861,
+        "COL_ONLY/FREE": 4861,
+        "COL_ONLY/ROMA_WEIGHTED": 4861,
+        "COARSE/FREE": 4861,
+        "COARSE/ROMA_WEIGHTED": 4861,
+        "FINE/FREE": 4861,
+        "FINE/ROMA_WEIGHTED": 4861,
+        "COARSE_FINE/FREE": 4861,
+        "COARSE_FINE/ROMA_WEIGHTED": 4861,
+        "NO_ADAPTER/FREE": 4861,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4861
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 4.370620678605732,
+        "COL_ONLY/ROMA_WEIGHTED": 7.289527955973684,
+        "COARSE/FREE": 4.373730510078881,
+        "COARSE/ROMA_WEIGHTED": 7.320184523414184,
+        "FINE/FREE": 4.35651763438991,
+        "FINE/ROMA_WEIGHTED": 7.295252981211076,
+        "COARSE_FINE/FREE": 4.400622611382289,
+        "COARSE_FINE/ROMA_WEIGHTED": 7.311280416078025,
+        "NO_ADAPTER/FREE": 4.359775624650315,
+        "NO_ADAPTER/ROMA_WEIGHTED": 7.281487571073011
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0c251f2d0b52c9cde036edc1",
+      "component": "055e3d0a2ba828c5df95354fc5d80825fa129f679641c7a5ba585b5c8911a1f9",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1322,
+        "ORIGINAL_COST1": 1322,
+        "COL_ONLY/FREE": 1322,
+        "COL_ONLY/ROMA_WEIGHTED": 1322,
+        "COARSE/FREE": 1322,
+        "COARSE/ROMA_WEIGHTED": 1322,
+        "FINE/FREE": 1322,
+        "FINE/ROMA_WEIGHTED": 1322,
+        "COARSE_FINE/FREE": 1322,
+        "COARSE_FINE/ROMA_WEIGHTED": 1322,
+        "NO_ADAPTER/FREE": 1322,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1322
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.6223448590166019,
+        "COL_ONLY/ROMA_WEIGHTED": 1.8256660412784116,
+        "COARSE/FREE": 1.6070146704900032,
+        "COARSE/ROMA_WEIGHTED": 1.825045464019003,
+        "FINE/FREE": 1.5662818144425874,
+        "FINE/ROMA_WEIGHTED": 1.8275554425349467,
+        "COARSE_FINE/FREE": 1.5982247847022681,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.832670386955138,
+        "NO_ADAPTER/FREE": 1.6246816720140966,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.8213608108717545
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0c93295a4efc661bc7464f47",
+      "component": "162fd69cd74c8e3f1f06ce6bb5fec631f657a623f060862dbcc70a39fc026e96",
+      "fold": 3,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1873,
+        "ORIGINAL_COST1": 567,
+        "COL_ONLY/FREE": 1873,
+        "COL_ONLY/ROMA_WEIGHTED": 567,
+        "COARSE/FREE": 1873,
+        "COARSE/ROMA_WEIGHTED": 567,
+        "FINE/FREE": 1873,
+        "FINE/ROMA_WEIGHTED": 567,
+        "COARSE_FINE/FREE": 1873,
+        "COARSE_FINE/ROMA_WEIGHTED": 567,
+        "NO_ADAPTER/FREE": 1873,
+        "NO_ADAPTER/ROMA_WEIGHTED": 567
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.3333333333333333,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 0.3333333333333333,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 0.3333333333333333,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 0.3333333333333333,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 0.3333333333333333,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.9223293569851783,
+        "COL_ONLY/ROMA_WEIGHTED": 1.4255526457117118,
+        "COARSE/FREE": -0.8815012527189781,
+        "COARSE/ROMA_WEIGHTED": 1.4230270532882763,
+        "FINE/FREE": -0.9110512242843747,
+        "FINE/ROMA_WEIGHTED": 1.428486894150263,
+        "COARSE_FINE/FREE": -0.8892692940872955,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.4254635100030641,
+        "NO_ADAPTER/FREE": -0.9366412408003854,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.4230656378889721
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0d8db033f048bf0a40089770",
+      "component": "c04b390c7ae86a0d21958115ce19bd1ed22c76ff1b8fb240f01405c8bf9231ec",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 480,
+        "ORIGINAL_COST1": 480,
+        "COL_ONLY/FREE": 480,
+        "COL_ONLY/ROMA_WEIGHTED": 480,
+        "COARSE/FREE": 480,
+        "COARSE/ROMA_WEIGHTED": 480,
+        "FINE/FREE": 480,
+        "FINE/ROMA_WEIGHTED": 480,
+        "COARSE_FINE/FREE": 480,
+        "COARSE_FINE/ROMA_WEIGHTED": 480,
+        "NO_ADAPTER/FREE": 480,
+        "NO_ADAPTER/ROMA_WEIGHTED": 480
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.2086188701294156,
+        "COL_ONLY/ROMA_WEIGHTED": 2.5163936022953735,
+        "COARSE/FREE": 2.1681896383903556,
+        "COARSE/ROMA_WEIGHTED": 2.5180213285222557,
+        "FINE/FREE": 2.194443408268568,
+        "FINE/ROMA_WEIGHTED": 2.5213690945193035,
+        "COARSE_FINE/FREE": 2.186929926629379,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.5205150097966067,
+        "NO_ADAPTER/FREE": 2.124036648063808,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.517066563399894
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0dc7d62664f27ce00d40a1ab",
+      "component": "1efff5d5855cab66509977a0b8d496f45b9a66147726f1323cdd42a873075386",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1402,
+        "ORIGINAL_COST1": 1402,
+        "COL_ONLY/FREE": 1402,
+        "COL_ONLY/ROMA_WEIGHTED": 1402,
+        "COARSE/FREE": 1402,
+        "COARSE/ROMA_WEIGHTED": 1402,
+        "FINE/FREE": 1402,
+        "FINE/ROMA_WEIGHTED": 1402,
+        "COARSE_FINE/FREE": 1402,
+        "COARSE_FINE/ROMA_WEIGHTED": 1402,
+        "NO_ADAPTER/FREE": 1402,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1402
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.140781184435378,
+        "COL_ONLY/ROMA_WEIGHTED": 3.0415741286536333,
+        "COARSE/FREE": 2.1685996418806073,
+        "COARSE/ROMA_WEIGHTED": 3.0578414600420416,
+        "FINE/FREE": 2.1608433299636913,
+        "FINE/ROMA_WEIGHTED": 3.043677124028908,
+        "COARSE_FINE/FREE": 2.1509246467183716,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.0528131296989267,
+        "NO_ADAPTER/FREE": 2.118999792986296,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.0329945483955925
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0dd4951a9b49124b8f24958f",
+      "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1134,
+        "ORIGINAL_COST1": 1134,
+        "COL_ONLY/FREE": 1134,
+        "COL_ONLY/ROMA_WEIGHTED": 1134,
+        "COARSE/FREE": 1134,
+        "COARSE/ROMA_WEIGHTED": 1134,
+        "FINE/FREE": 1134,
+        "FINE/ROMA_WEIGHTED": 1134,
+        "COARSE_FINE/FREE": 1134,
+        "COARSE_FINE/ROMA_WEIGHTED": 1134,
+        "NO_ADAPTER/FREE": 1134,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1134
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.3433271219013596,
+        "COL_ONLY/ROMA_WEIGHTED": 1.642699793777135,
+        "COARSE/FREE": 1.3358005060722782,
+        "COARSE/ROMA_WEIGHTED": 1.6296567913332054,
+        "FINE/FREE": 1.3478294056302011,
+        "FINE/ROMA_WEIGHTED": 1.6379412140042915,
+        "COARSE_FINE/FREE": 1.349905525669299,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.6298467771422973,
+        "NO_ADAPTER/FREE": 1.349068967678719,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.6521064422577665
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0de8c65af51ef20333889d71",
+      "component": "4d5d4731b2c45171a86a8690a5b3a1819d26c3dd6226f61b0f9104c2f6f56484",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1032,
+        "ORIGINAL_COST1": 1032,
+        "COL_ONLY/FREE": 1032,
+        "COL_ONLY/ROMA_WEIGHTED": 1032,
+        "COARSE/FREE": 1032,
+        "COARSE/ROMA_WEIGHTED": 1032,
+        "FINE/FREE": 1032,
+        "FINE/ROMA_WEIGHTED": 1032,
+        "COARSE_FINE/FREE": 1032,
+        "COARSE_FINE/ROMA_WEIGHTED": 1032,
+        "NO_ADAPTER/FREE": 1032,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1032
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.6038689951189715,
+        "COL_ONLY/ROMA_WEIGHTED": 2.652297263070461,
+        "COARSE/FREE": 1.62296919997564,
+        "COARSE/ROMA_WEIGHTED": 2.652047957315417,
+        "FINE/FREE": 1.6454353037373002,
+        "FINE/ROMA_WEIGHTED": 2.6535209026719877,
+        "COARSE_FINE/FREE": 1.6457335103386832,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.6513487884925118,
+        "NO_ADAPTER/FREE": 1.558258679544324,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.643886051046997
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0e5d73ab749914eaaeb680ae",
+      "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+      "fold": 0,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 4075,
+        "ORIGINAL_COST1": 4075,
+        "COL_ONLY/FREE": 4075,
+        "COL_ONLY/ROMA_WEIGHTED": 4075,
+        "COARSE/FREE": 4075,
+        "COARSE/ROMA_WEIGHTED": 4075,
+        "FINE/FREE": 4075,
+        "FINE/ROMA_WEIGHTED": 4075,
+        "COARSE_FINE/FREE": 4075,
+        "COARSE_FINE/ROMA_WEIGHTED": 4075,
+        "NO_ADAPTER/FREE": 4075,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4075
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.0,
+        "COL_ONLY/ROMA_WEIGHTED": 0.0,
+        "COARSE/FREE": 0.0,
+        "COARSE/ROMA_WEIGHTED": 0.0,
+        "FINE/FREE": 0.0,
+        "FINE/ROMA_WEIGHTED": 0.0,
+        "COARSE_FINE/FREE": 0.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.0,
+        "NO_ADAPTER/FREE": 0.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": null,
+        "COL_ONLY/ROMA_WEIGHTED": null,
+        "COARSE/FREE": null,
+        "COARSE/ROMA_WEIGHTED": null,
+        "FINE/FREE": null,
+        "FINE/ROMA_WEIGHTED": null,
+        "COARSE_FINE/FREE": null,
+        "COARSE_FINE/ROMA_WEIGHTED": null,
+        "NO_ADAPTER/FREE": null,
+        "NO_ADAPTER/ROMA_WEIGHTED": null
+      },
+      "target_in_C128": false
+    },
+    {
+      "query_id": "H593-0e8e2230acf18be9984a101b",
+      "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1134,
+        "ORIGINAL_COST1": 1134,
+        "COL_ONLY/FREE": 1134,
+        "COL_ONLY/ROMA_WEIGHTED": 1134,
+        "COARSE/FREE": 1134,
+        "COARSE/ROMA_WEIGHTED": 1134,
+        "FINE/FREE": 1134,
+        "FINE/ROMA_WEIGHTED": 1134,
+        "COARSE_FINE/FREE": 1134,
+        "COARSE_FINE/ROMA_WEIGHTED": 1134,
+        "NO_ADAPTER/FREE": 1134,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1134
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.1391713717101823,
+        "COL_ONLY/ROMA_WEIGHTED": 1.7707771589381562,
+        "COARSE/FREE": 1.14537395207916,
+        "COARSE/ROMA_WEIGHTED": 1.7804542128863166,
+        "FINE/FREE": 1.1480269338991578,
+        "FINE/ROMA_WEIGHTED": 1.7623751365520124,
+        "COARSE_FINE/FREE": 1.1642616719506969,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.7716257564369362,
+        "NO_ADAPTER/FREE": 1.1327539785276308,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.7864732903056373
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-0ee088c09f80add39585ed84",
+      "component": "2aa1e6c4bb63c1bf91f9200ac8983a2fdb8a3d86fcbc58c5f88c921023045af6",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 409,
+        "ORIGINAL_COST1": 409,
+        "COL_ONLY/FREE": 409,
+        "COL_ONLY/ROMA_WEIGHTED": 409,
+        "COARSE/FREE": 409,
+        "COARSE/ROMA_WEIGHTED": 409,
+        "FINE/FREE": 409,
+        "FINE/ROMA_WEIGHTED": 409,
+        "COARSE_FINE/FREE": 409,
+        "COARSE_FINE/ROMA_WEIGHTED": 409,
+        "NO_ADAPTER/FREE": 409,
+        "NO_ADAPTER/ROMA_WEIGHTED": 409
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.7804455648695967,
+        "COL_ONLY/ROMA_WEIGHTED": 5.941713569649428,
+        "COARSE/FREE": 2.7804035259104714,
+        "COARSE/ROMA_WEIGHTED": 5.961602264243532,
+        "FINE/FREE": 2.812611232677301,
+        "FINE/ROMA_WEIGHTED": 5.9449303088288215,
+        "COARSE_FINE/FREE": 2.782409615638441,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.953125177033129,
+        "NO_ADAPTER/FREE": 2.7813919771453115,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5.921138733357595
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-102e05de4bdefbe546c83578",
+      "component": "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d",
+      "fold": 0,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 2728,
+        "ORIGINAL_COST1": 1800,
+        "COL_ONLY/FREE": 2728,
+        "COL_ONLY/ROMA_WEIGHTED": 1800,
+        "COARSE/FREE": 2728,
+        "COARSE/ROMA_WEIGHTED": 1800,
+        "FINE/FREE": 2728,
+        "FINE/ROMA_WEIGHTED": 1800,
+        "COARSE_FINE/FREE": 2728,
+        "COARSE_FINE/ROMA_WEIGHTED": 1800,
+        "NO_ADAPTER/FREE": 2728,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1800
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.0,
+        "COL_ONLY/ROMA_WEIGHTED": 0.0,
+        "COARSE/FREE": 0.0,
+        "COARSE/ROMA_WEIGHTED": 0.0,
+        "FINE/FREE": 0.0,
+        "FINE/ROMA_WEIGHTED": 0.0,
+        "COARSE_FINE/FREE": 0.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.0,
+        "NO_ADAPTER/FREE": 0.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": null,
+        "COL_ONLY/ROMA_WEIGHTED": null,
+        "COARSE/FREE": null,
+        "COARSE/ROMA_WEIGHTED": null,
+        "FINE/FREE": null,
+        "FINE/ROMA_WEIGHTED": null,
+        "COARSE_FINE/FREE": null,
+        "COARSE_FINE/ROMA_WEIGHTED": null,
+        "NO_ADAPTER/FREE": null,
+        "NO_ADAPTER/ROMA_WEIGHTED": null
+      },
+      "target_in_C128": false
+    },
+    {
+      "query_id": "H593-106aa1a451e3f1c3a21d37fe",
+      "component": "1efff5d5855cab66509977a0b8d496f45b9a66147726f1323cdd42a873075386",
+      "fold": 1,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1022,
+        "ORIGINAL_COST1": 1402,
+        "COL_ONLY/FREE": 1022,
+        "COL_ONLY/ROMA_WEIGHTED": 1402,
+        "COARSE/FREE": 1022,
+        "COARSE/ROMA_WEIGHTED": 1402,
+        "FINE/FREE": 1022,
+        "FINE/ROMA_WEIGHTED": 1402,
+        "COARSE_FINE/FREE": 1022,
+        "COARSE_FINE/ROMA_WEIGHTED": 1402,
+        "NO_ADAPTER/FREE": 1022,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1402
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.3333333333333333,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 0.3333333333333333,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 0.3333333333333333,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 0.3333333333333333,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 0.3333333333333333,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.2807040955782711,
+        "COL_ONLY/ROMA_WEIGHTED": 1.4329360006877017,
+        "COARSE/FREE": -1.2680337224704779,
+        "COARSE/ROMA_WEIGHTED": 1.4548607647827267,
+        "FINE/FREE": -1.2712347729816074,
+        "FINE/ROMA_WEIGHTED": 1.4416831928336091,
+        "COARSE_FINE/FREE": -1.2667303498613216,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.4493757969474965,
+        "NO_ADAPTER/FREE": -1.2640023897279546,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.4053392611226905
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-10e669d82eed33568754dbb1",
+      "component": "fa72f98eeda7c16b4963aa2c9a26bb7b6da07062d61f1935ff18b1204cf99a43",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3144,
+        "ORIGINAL_COST1": 3144,
+        "COL_ONLY/FREE": 3144,
+        "COL_ONLY/ROMA_WEIGHTED": 3144,
+        "COARSE/FREE": 3144,
+        "COARSE/ROMA_WEIGHTED": 3144,
+        "FINE/FREE": 3144,
+        "FINE/ROMA_WEIGHTED": 3144,
+        "COARSE_FINE/FREE": 3144,
+        "COARSE_FINE/ROMA_WEIGHTED": 3144,
+        "NO_ADAPTER/FREE": 3144,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3144
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.903251474890351,
+        "COL_ONLY/ROMA_WEIGHTED": 4.852862947894328,
+        "COARSE/FREE": 2.942035713735244,
+        "COARSE/ROMA_WEIGHTED": 4.855732246256393,
+        "FINE/FREE": 2.9414500359558575,
+        "FINE/ROMA_WEIGHTED": 4.849787767618119,
+        "COARSE_FINE/FREE": 2.9153816181675825,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.854455040583986,
+        "NO_ADAPTER/FREE": 2.8986308414241333,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.844887309500372
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-118dee9f38aacba8f825b966",
+      "component": "2aa1e6c4bb63c1bf91f9200ac8983a2fdb8a3d86fcbc58c5f88c921023045af6",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 409,
+        "ORIGINAL_COST1": 409,
+        "COL_ONLY/FREE": 409,
+        "COL_ONLY/ROMA_WEIGHTED": 409,
+        "COARSE/FREE": 409,
+        "COARSE/ROMA_WEIGHTED": 409,
+        "FINE/FREE": 409,
+        "FINE/ROMA_WEIGHTED": 409,
+        "COARSE_FINE/FREE": 409,
+        "COARSE_FINE/ROMA_WEIGHTED": 409,
+        "NO_ADAPTER/FREE": 409,
+        "NO_ADAPTER/ROMA_WEIGHTED": 409
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.603700301745304,
+        "COL_ONLY/ROMA_WEIGHTED": 5.4571302387364256,
+        "COARSE/FREE": 2.6080225388110723,
+        "COARSE/ROMA_WEIGHTED": 5.478542387647695,
+        "FINE/FREE": 2.6282360405273604,
+        "FINE/ROMA_WEIGHTED": 5.460159903537923,
+        "COARSE_FINE/FREE": 2.607501474356585,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.469226424985016,
+        "NO_ADAPTER/FREE": 2.6035083508276804,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5.4371836962193685
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-12c93384cd26eac2b57b065b",
+      "component": "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b",
+      "fold": 4,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3407,
+        "ORIGINAL_COST1": 996,
+        "COL_ONLY/FREE": 3407,
+        "COL_ONLY/ROMA_WEIGHTED": 996,
+        "COARSE/FREE": 3407,
+        "COARSE/ROMA_WEIGHTED": 996,
+        "FINE/FREE": 3407,
+        "FINE/ROMA_WEIGHTED": 996,
+        "COARSE_FINE/FREE": 3407,
+        "COARSE_FINE/ROMA_WEIGHTED": 996,
+        "NO_ADAPTER/FREE": 3407,
+        "NO_ADAPTER/ROMA_WEIGHTED": 996
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.3333333333333333,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 0.3333333333333333,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 0.5,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 0.3333333333333333,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 0.25,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.9151361315421385,
+        "COL_ONLY/ROMA_WEIGHTED": 1.7025720137012144,
+        "COARSE/FREE": -0.8794153193047077,
+        "COARSE/ROMA_WEIGHTED": 1.687483496702443,
+        "FINE/FREE": -0.8904048464264084,
+        "FINE/ROMA_WEIGHTED": 1.7035116923175087,
+        "COARSE_FINE/FREE": -0.8835562441801803,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.688975403939924,
+        "NO_ADAPTER/FREE": -0.9142374881723226,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.6982925595949174
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-135d0a301829fc765ac62aca",
+      "component": "ef7d75f57f11d1174b60813355c0cf7d7dce1009b41f2c7a54cf612906b3dea7",
+      "fold": 4,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 2501,
+        "ORIGINAL_COST1": 2501,
+        "COL_ONLY/FREE": 2501,
+        "COL_ONLY/ROMA_WEIGHTED": 2501,
+        "COARSE/FREE": 2501,
+        "COARSE/ROMA_WEIGHTED": 2501,
+        "FINE/FREE": 2501,
+        "FINE/ROMA_WEIGHTED": 2501,
+        "COARSE_FINE/FREE": 2501,
+        "COARSE_FINE/ROMA_WEIGHTED": 2501,
+        "NO_ADAPTER/FREE": 2501,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2501
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.25,
+        "COL_ONLY/ROMA_WEIGHTED": 0.5,
+        "COARSE/FREE": 0.3333333333333333,
+        "COARSE/ROMA_WEIGHTED": 0.5,
+        "FINE/FREE": 0.25,
+        "FINE/ROMA_WEIGHTED": 0.5,
+        "COARSE_FINE/FREE": 0.25,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.5,
+        "NO_ADAPTER/FREE": 0.25,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.5
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.0607277307234264,
+        "COL_ONLY/ROMA_WEIGHTED": -0.550822384744874,
+        "COARSE/FREE": -1.061064048147149,
+        "COARSE/ROMA_WEIGHTED": -0.5477557122994922,
+        "FINE/FREE": -1.0236459616800013,
+        "FINE/ROMA_WEIGHTED": -0.5489975170531958,
+        "COARSE_FINE/FREE": -1.0607053804933484,
+        "COARSE_FINE/ROMA_WEIGHTED": -0.5460310809761579,
+        "NO_ADAPTER/FREE": -1.0574100486777906,
+        "NO_ADAPTER/ROMA_WEIGHTED": -0.5578631325077875
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-13e342e35a49ea7a9a10b5ce",
+      "component": "90d7a704ad7bf679580bc4dbadbe13884f491d2e338402f4d4437c2ffd66ab93",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 5004,
+        "ORIGINAL_COST1": 5004,
+        "COL_ONLY/FREE": 5004,
+        "COL_ONLY/ROMA_WEIGHTED": 5004,
+        "COARSE/FREE": 5004,
+        "COARSE/ROMA_WEIGHTED": 5004,
+        "FINE/FREE": 5004,
+        "FINE/ROMA_WEIGHTED": 5004,
+        "COARSE_FINE/FREE": 5004,
+        "COARSE_FINE/ROMA_WEIGHTED": 5004,
+        "NO_ADAPTER/FREE": 5004,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5004
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.9270746471426308,
+        "COL_ONLY/ROMA_WEIGHTED": 3.9577309530168403,
+        "COARSE/FREE": 2.948331956182712,
+        "COARSE/ROMA_WEIGHTED": 3.951891596465775,
+        "FINE/FREE": 2.910031641365007,
+        "FINE/ROMA_WEIGHTED": 3.9554296048740594,
+        "COARSE_FINE/FREE": 2.952161862193542,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.9520843605513085,
+        "NO_ADAPTER/FREE": 2.905163931990053,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.9667041058689922
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-14386333d65f4c444d23e372",
+      "component": "0afd089c456e855f9466067a75179f94b4fb386831d044fd18ff0bcd22e0d3f4",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 304,
+        "ORIGINAL_COST1": 304,
+        "COL_ONLY/FREE": 304,
+        "COL_ONLY/ROMA_WEIGHTED": 304,
+        "COARSE/FREE": 304,
+        "COARSE/ROMA_WEIGHTED": 304,
+        "FINE/FREE": 304,
+        "FINE/ROMA_WEIGHTED": 304,
+        "COARSE_FINE/FREE": 304,
+        "COARSE_FINE/ROMA_WEIGHTED": 304,
+        "NO_ADAPTER/FREE": 304,
+        "NO_ADAPTER/ROMA_WEIGHTED": 304
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.134592973598547,
+        "COL_ONLY/ROMA_WEIGHTED": 1.97980692261042,
+        "COARSE/FREE": 1.139700556392149,
+        "COARSE/ROMA_WEIGHTED": 1.9822370323882723,
+        "FINE/FREE": 1.145099183671565,
+        "FINE/ROMA_WEIGHTED": 1.977420064181657,
+        "COARSE_FINE/FREE": 1.1461996741951408,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.9825009781190523,
+        "NO_ADAPTER/FREE": 1.1261698230071973,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.9759176098501334
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-14742ff288bf8a71f7d5208d",
+      "component": "caadf690e51b6ae8aa69d3ebfb189f9ae43f3e3bde9aadd83d79e71a9ed27df7",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 0,
+        "ORIGINAL_COST1": 0,
+        "COL_ONLY/FREE": 0,
+        "COL_ONLY/ROMA_WEIGHTED": 0,
+        "COARSE/FREE": 0,
+        "COARSE/ROMA_WEIGHTED": 0,
+        "FINE/FREE": 0,
+        "FINE/ROMA_WEIGHTED": 0,
+        "COARSE_FINE/FREE": 0,
+        "COARSE_FINE/ROMA_WEIGHTED": 0,
+        "NO_ADAPTER/FREE": 0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.21889371450614,
+        "COL_ONLY/ROMA_WEIGHTED": 1.629363382418787,
+        "COARSE/FREE": 3.2607020773370192,
+        "COARSE/ROMA_WEIGHTED": 1.6325420468056466,
+        "FINE/FREE": 3.2282368382859583,
+        "FINE/ROMA_WEIGHTED": 1.6283117095035962,
+        "COARSE_FINE/FREE": 3.246528617522171,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.6312484627896948,
+        "NO_ADAPTER/FREE": 3.201329116419138,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.6295010413185576
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-147ee84e2fed004258fe44bc",
+      "component": "a5cc6cd71cb98a23641d9032f2abdbe55a284b95eedc14e13d1ab9d93b7adc76",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4798,
+        "ORIGINAL_COST1": 4798,
+        "COL_ONLY/FREE": 4798,
+        "COL_ONLY/ROMA_WEIGHTED": 4798,
+        "COARSE/FREE": 4798,
+        "COARSE/ROMA_WEIGHTED": 4798,
+        "FINE/FREE": 4798,
+        "FINE/ROMA_WEIGHTED": 4798,
+        "COARSE_FINE/FREE": 4798,
+        "COARSE_FINE/ROMA_WEIGHTED": 4798,
+        "NO_ADAPTER/FREE": 4798,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4798
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.569388462454876,
+        "COL_ONLY/ROMA_WEIGHTED": 5.579560971133876,
+        "COARSE/FREE": 2.603623219258368,
+        "COARSE/ROMA_WEIGHTED": 5.598569693835002,
+        "FINE/FREE": 2.634198188310525,
+        "FINE/ROMA_WEIGHTED": 5.583686404956868,
+        "COARSE_FINE/FREE": 2.637939033716081,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.590480158602438,
+        "NO_ADAPTER/FREE": 2.573347777865216,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5.55801221351498
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-148a11f5ffffec76fd85b3c8",
+      "component": "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b",
+      "fold": 4,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 3681,
+        "ORIGINAL_COST1": 3681,
+        "COL_ONLY/FREE": 3681,
+        "COL_ONLY/ROMA_WEIGHTED": 1998,
+        "COARSE/FREE": 3681,
+        "COARSE/ROMA_WEIGHTED": 1998,
+        "FINE/FREE": 3681,
+        "FINE/ROMA_WEIGHTED": 1998,
+        "COARSE_FINE/FREE": 3681,
+        "COARSE_FINE/ROMA_WEIGHTED": 1998,
+        "NO_ADAPTER/FREE": 3681,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1998
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.25,
+        "COL_ONLY/ROMA_WEIGHTED": 0.14285714285714285,
+        "COARSE/FREE": 0.25,
+        "COARSE/ROMA_WEIGHTED": 0.14285714285714285,
+        "FINE/FREE": 0.25,
+        "FINE/ROMA_WEIGHTED": 0.14285714285714285,
+        "COARSE_FINE/FREE": 0.25,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.14285714285714285,
+        "NO_ADAPTER/FREE": 0.25,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.14285714285714285
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.1930693045915293,
+        "COL_ONLY/ROMA_WEIGHTED": -0.7332187537453224,
+        "COARSE/FREE": -1.2020720403741754,
+        "COARSE/ROMA_WEIGHTED": -0.7313250833380527,
+        "FINE/FREE": -1.1723813248627755,
+        "FINE/ROMA_WEIGHTED": -0.7313782066719469,
+        "COARSE_FINE/FREE": -1.2028288245500374,
+        "COARSE_FINE/ROMA_WEIGHTED": -0.7306488215678997,
+        "NO_ADAPTER/FREE": -1.2163183382198066,
+        "NO_ADAPTER/ROMA_WEIGHTED": -0.7325631501371553
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-14a2dd843bc26150f05949e9",
+      "component": "fa72f98eeda7c16b4963aa2c9a26bb7b6da07062d61f1935ff18b1204cf99a43",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3144,
+        "ORIGINAL_COST1": 3144,
+        "COL_ONLY/FREE": 3144,
+        "COL_ONLY/ROMA_WEIGHTED": 3144,
+        "COARSE/FREE": 3144,
+        "COARSE/ROMA_WEIGHTED": 3144,
+        "FINE/FREE": 3144,
+        "FINE/ROMA_WEIGHTED": 3144,
+        "COARSE_FINE/FREE": 3144,
+        "COARSE_FINE/ROMA_WEIGHTED": 3144,
+        "NO_ADAPTER/FREE": 3144,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3144
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.613886451341165,
+        "COL_ONLY/ROMA_WEIGHTED": 5.6075675833932355,
+        "COARSE/FREE": 2.6275997970761535,
+        "COARSE/ROMA_WEIGHTED": 5.611558754235904,
+        "FINE/FREE": 2.622620786189022,
+        "FINE/ROMA_WEIGHTED": 5.614612721021844,
+        "COARSE_FINE/FREE": 2.63082725260053,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.612763172141874,
+        "NO_ADAPTER/FREE": 2.677856143642168,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5.591887867425463
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1533c32a07d745928239de77",
+      "component": "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49",
+      "fold": 4,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 4794,
+        "ORIGINAL_COST1": 4794,
+        "COL_ONLY/FREE": 4794,
+        "COL_ONLY/ROMA_WEIGHTED": 4794,
+        "COARSE/FREE": 4794,
+        "COARSE/ROMA_WEIGHTED": 4794,
+        "FINE/FREE": 4794,
+        "FINE/ROMA_WEIGHTED": 4794,
+        "COARSE_FINE/FREE": 4794,
+        "COARSE_FINE/ROMA_WEIGHTED": 4794,
+        "NO_ADAPTER/FREE": 4794,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4794
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.5,
+        "COL_ONLY/ROMA_WEIGHTED": 0.5,
+        "COARSE/FREE": 0.5,
+        "COARSE/ROMA_WEIGHTED": 0.5,
+        "FINE/FREE": 0.5,
+        "FINE/ROMA_WEIGHTED": 0.5,
+        "COARSE_FINE/FREE": 0.5,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.5,
+        "NO_ADAPTER/FREE": 0.5,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.5
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.0824273958810051,
+        "COL_ONLY/ROMA_WEIGHTED": -0.9097232771449919,
+        "COARSE/FREE": -1.0657454274026998,
+        "COARSE/ROMA_WEIGHTED": -0.9127277037912882,
+        "FINE/FREE": -1.0672510230539418,
+        "FINE/ROMA_WEIGHTED": -0.9019619121250326,
+        "COARSE_FINE/FREE": -1.0654670264392205,
+        "COARSE_FINE/ROMA_WEIGHTED": -0.9077180759407422,
+        "NO_ADAPTER/FREE": -1.065881385707366,
+        "NO_ADAPTER/ROMA_WEIGHTED": -0.9141621159008275
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-156bfb4a63653eec1f65ecda",
+      "component": "4d5d4731b2c45171a86a8690a5b3a1819d26c3dd6226f61b0f9104c2f6f56484",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1032,
+        "ORIGINAL_COST1": 1032,
+        "COL_ONLY/FREE": 1032,
+        "COL_ONLY/ROMA_WEIGHTED": 1032,
+        "COARSE/FREE": 1032,
+        "COARSE/ROMA_WEIGHTED": 1032,
+        "FINE/FREE": 1032,
+        "FINE/ROMA_WEIGHTED": 1032,
+        "COARSE_FINE/FREE": 1032,
+        "COARSE_FINE/ROMA_WEIGHTED": 1032,
+        "NO_ADAPTER/FREE": 1032,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1032
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.1072637382694848,
+        "COL_ONLY/ROMA_WEIGHTED": 2.7776860525657603,
+        "COARSE/FREE": 1.1183117520524004,
+        "COARSE/ROMA_WEIGHTED": 2.7774502615343706,
+        "FINE/FREE": 1.1196593306637297,
+        "FINE/ROMA_WEIGHTED": 2.783354277814338,
+        "COARSE_FINE/FREE": 1.1087778575553888,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.778931014692021,
+        "NO_ADAPTER/FREE": 1.101686440124906,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.7674706347500306
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-158f7a5d2bb5969248c9eb5c",
+      "component": "c13e6a469d26dd360022a4ba3af2d2bdbb230082c9e605b822c0f5806f9b9bc9",
+      "fold": 3,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 3208,
+        "ORIGINAL_COST1": 3208,
+        "COL_ONLY/FREE": 3208,
+        "COL_ONLY/ROMA_WEIGHTED": 3208,
+        "COARSE/FREE": 3208,
+        "COARSE/ROMA_WEIGHTED": 3208,
+        "FINE/FREE": 3208,
+        "FINE/ROMA_WEIGHTED": 3208,
+        "COARSE_FINE/FREE": 3208,
+        "COARSE_FINE/ROMA_WEIGHTED": 3208,
+        "NO_ADAPTER/FREE": 3208,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3208
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.4987973474317844,
+        "COL_ONLY/ROMA_WEIGHTED": 5.665792599219315,
+        "COARSE/FREE": 2.4989726821737483,
+        "COARSE/ROMA_WEIGHTED": 5.671362432353546,
+        "FINE/FREE": 2.4993771016530317,
+        "FINE/ROMA_WEIGHTED": 5.6747742228739,
+        "COARSE_FINE/FREE": 2.5028434557642947,
+        "COARSE_FINE/ROMA_WEIGHTED": 5.672698140224378,
+        "NO_ADAPTER/FREE": 2.4977029290192965,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5.654240146085818
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1608d9630ec3a84e25e593bc",
+      "component": "69e8433234f6613d539957d8cd900a9503c3e7bceb31e12adec7cfa0adc6368b",
+      "fold": 0,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 693,
+        "ORIGINAL_COST1": 1114,
+        "COL_ONLY/FREE": 693,
+        "COL_ONLY/ROMA_WEIGHTED": 1114,
+        "COARSE/FREE": 693,
+        "COARSE/ROMA_WEIGHTED": 1114,
+        "FINE/FREE": 693,
+        "FINE/ROMA_WEIGHTED": 1114,
+        "COARSE_FINE/FREE": 693,
+        "COARSE_FINE/ROMA_WEIGHTED": 1114,
+        "NO_ADAPTER/FREE": 693,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1114
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.5,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 0.5,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 0.5,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 0.5,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 0.5,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.7234745004928403,
+        "COL_ONLY/ROMA_WEIGHTED": 1.2874018405897947,
+        "COARSE/FREE": -0.7397664040367593,
+        "COARSE/ROMA_WEIGHTED": 1.3001093412582343,
+        "FINE/FREE": -0.6744500058915442,
+        "FINE/ROMA_WEIGHTED": 1.2894859059248516,
+        "COARSE_FINE/FREE": -0.7167944999486838,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.301419335886272,
+        "NO_ADAPTER/FREE": -0.711207832532774,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.2719817614817575
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-163df34acba78d2b4f94a0d0",
+      "component": "f4cb26eef9646d6dfd71a5bdba8092d2e0f934cd5f8e9ffe627d7c9ba8444f36",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4861,
+        "ORIGINAL_COST1": 4861,
+        "COL_ONLY/FREE": 4861,
+        "COL_ONLY/ROMA_WEIGHTED": 4861,
+        "COARSE/FREE": 4861,
+        "COARSE/ROMA_WEIGHTED": 4861,
+        "FINE/FREE": 4861,
+        "FINE/ROMA_WEIGHTED": 4861,
+        "COARSE_FINE/FREE": 4861,
+        "COARSE_FINE/ROMA_WEIGHTED": 4861,
+        "NO_ADAPTER/FREE": 4861,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4861
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.936443096202705,
+        "COL_ONLY/ROMA_WEIGHTED": 4.397307578952974,
+        "COARSE/FREE": 3.9294974104072313,
+        "COARSE/ROMA_WEIGHTED": 4.356088128361534,
+        "FINE/FREE": 3.9279755057516104,
+        "FINE/ROMA_WEIGHTED": 4.374883320335356,
+        "COARSE_FINE/FREE": 3.9493148887587974,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.3522243513371714,
+        "NO_ADAPTER/FREE": 3.8750609006119667,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.392354714891815
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1652082eb7bdd4e18f2fa4e2",
+      "component": "bf0eaa86ddfc9a7fbdb09ac2f6f0fd91e32036da44a8971649ba96ecb8aa1b71",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 265,
+        "ORIGINAL_COST1": 265,
+        "COL_ONLY/FREE": 265,
+        "COL_ONLY/ROMA_WEIGHTED": 265,
+        "COARSE/FREE": 265,
+        "COARSE/ROMA_WEIGHTED": 265,
+        "FINE/FREE": 265,
+        "FINE/ROMA_WEIGHTED": 265,
+        "COARSE_FINE/FREE": 265,
+        "COARSE_FINE/ROMA_WEIGHTED": 265,
+        "NO_ADAPTER/FREE": 265,
+        "NO_ADAPTER/ROMA_WEIGHTED": 265
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 0.929240179608727,
+        "COL_ONLY/ROMA_WEIGHTED": 1.2960147313876884,
+        "COARSE/FREE": 0.9369166622314522,
+        "COARSE/ROMA_WEIGHTED": 1.3016761088029565,
+        "FINE/FREE": 0.937781008817831,
+        "FINE/ROMA_WEIGHTED": 1.2983492744128915,
+        "COARSE_FINE/FREE": 0.9372846964957633,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.2976609345168304,
+        "NO_ADAPTER/FREE": 0.9346021267626029,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.2905675789627404
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-17128afb252013a8b2a0ee5f",
+      "component": "5e70e07c018dad8a49c0f98df36183854e1a11398f9835189e1f22ef07f9c615",
+      "fold": 2,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1641,
+        "ORIGINAL_COST1": 1641,
+        "COL_ONLY/FREE": 1641,
+        "COL_ONLY/ROMA_WEIGHTED": 1641,
+        "COARSE/FREE": 1641,
+        "COARSE/ROMA_WEIGHTED": 1641,
+        "FINE/FREE": 1641,
+        "FINE/ROMA_WEIGHTED": 1641,
+        "COARSE_FINE/FREE": 1641,
+        "COARSE_FINE/ROMA_WEIGHTED": 1641,
+        "NO_ADAPTER/FREE": 1641,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1641
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 3.123997767934184,
+        "COL_ONLY/ROMA_WEIGHTED": 6.595805984039741,
+        "COARSE/FREE": 3.119342807895782,
+        "COARSE/ROMA_WEIGHTED": 6.5967586484824885,
+        "FINE/FREE": 3.1618186468079954,
+        "FINE/ROMA_WEIGHTED": 6.5965805997211024,
+        "COARSE_FINE/FREE": 3.128615506584586,
+        "COARSE_FINE/ROMA_WEIGHTED": 6.596693466511734,
+        "NO_ADAPTER/FREE": 3.056108126543192,
+        "NO_ADAPTER/ROMA_WEIGHTED": 6.579137550107722
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1720428a3a7802dc9dfc49e4",
+      "component": "f90fb756794a5ae5c68d05c56cb486456e64d83f751a66bbf1ddae3fcb43bb13",
+      "fold": 3,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 892,
+        "ORIGINAL_COST1": 892,
+        "COL_ONLY/FREE": 892,
+        "COL_ONLY/ROMA_WEIGHTED": 892,
+        "COARSE/FREE": 892,
+        "COARSE/ROMA_WEIGHTED": 892,
+        "FINE/FREE": 892,
+        "FINE/ROMA_WEIGHTED": 892,
+        "COARSE_FINE/FREE": 892,
+        "COARSE_FINE/ROMA_WEIGHTED": 892,
+        "NO_ADAPTER/FREE": 892,
+        "NO_ADAPTER/ROMA_WEIGHTED": 892
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.0,
+        "COL_ONLY/ROMA_WEIGHTED": 0.0,
+        "COARSE/FREE": 0.0,
+        "COARSE/ROMA_WEIGHTED": 0.0,
+        "FINE/FREE": 0.0,
+        "FINE/ROMA_WEIGHTED": 0.0,
+        "COARSE_FINE/FREE": 0.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.0,
+        "NO_ADAPTER/FREE": 0.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": null,
+        "COL_ONLY/ROMA_WEIGHTED": null,
+        "COARSE/FREE": null,
+        "COARSE/ROMA_WEIGHTED": null,
+        "FINE/FREE": null,
+        "FINE/ROMA_WEIGHTED": null,
+        "COARSE_FINE/FREE": null,
+        "COARSE_FINE/ROMA_WEIGHTED": null,
+        "NO_ADAPTER/FREE": null,
+        "NO_ADAPTER/ROMA_WEIGHTED": null
+      },
+      "target_in_C128": false
+    },
+    {
+      "query_id": "H593-172289962b84290bc00b6b57",
+      "component": "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1145,
+        "ORIGINAL_COST1": 1145,
+        "COL_ONLY/FREE": 1145,
+        "COL_ONLY/ROMA_WEIGHTED": 1145,
+        "COARSE/FREE": 1145,
+        "COARSE/ROMA_WEIGHTED": 1145,
+        "FINE/FREE": 1145,
+        "FINE/ROMA_WEIGHTED": 1145,
+        "COARSE_FINE/FREE": 1145,
+        "COARSE_FINE/ROMA_WEIGHTED": 1145,
+        "NO_ADAPTER/FREE": 1145,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1145
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.2388096932413672,
+        "COL_ONLY/ROMA_WEIGHTED": 2.2800971287119305,
+        "COARSE/FREE": 1.2486880066782335,
+        "COARSE/ROMA_WEIGHTED": 2.2899115397482914,
+        "FINE/FREE": 1.2478892427934078,
+        "FINE/ROMA_WEIGHTED": 2.2826127877223303,
+        "COARSE_FINE/FREE": 1.2465953833818975,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.291419787563581,
+        "NO_ADAPTER/FREE": 1.2293784208830376,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.271092576072852
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-174dc7ecf520dfa933141c09",
+      "component": "1dc9b4a228de9516b591d58e28a2763e3d2428004318636d1f9e2936718e7999",
+      "fold": 2,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 219,
+        "ORIGINAL_COST1": 219,
+        "COL_ONLY/FREE": 219,
+        "COL_ONLY/ROMA_WEIGHTED": 219,
+        "COARSE/FREE": 219,
+        "COARSE/ROMA_WEIGHTED": 219,
+        "FINE/FREE": 219,
+        "FINE/ROMA_WEIGHTED": 219,
+        "COARSE_FINE/FREE": 219,
+        "COARSE_FINE/ROMA_WEIGHTED": 219,
+        "NO_ADAPTER/FREE": 219,
+        "NO_ADAPTER/ROMA_WEIGHTED": 219
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.3333333333333333,
+        "COL_ONLY/ROMA_WEIGHTED": 0.5,
+        "COARSE/FREE": 0.3333333333333333,
+        "COARSE/ROMA_WEIGHTED": 0.5,
+        "FINE/FREE": 0.3333333333333333,
+        "FINE/ROMA_WEIGHTED": 0.5,
+        "COARSE_FINE/FREE": 0.3333333333333333,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.5,
+        "NO_ADAPTER/FREE": 0.3333333333333333,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.5
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.8162157840311708,
+        "COL_ONLY/ROMA_WEIGHTED": -1.390854775343634,
+        "COARSE/FREE": -0.8100690161962701,
+        "COARSE/ROMA_WEIGHTED": -1.4037823395205642,
+        "FINE/FREE": -0.7955738354417137,
+        "FINE/ROMA_WEIGHTED": -1.3879960113787513,
+        "COARSE_FINE/FREE": -0.803593608386026,
+        "COARSE_FINE/ROMA_WEIGHTED": -1.3962038367367116,
+        "NO_ADAPTER/FREE": -0.8235501439603143,
+        "NO_ADAPTER/ROMA_WEIGHTED": -1.39373641660824
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-178d10ad3076a41e89d549dd",
+      "component": "f136ca0b9c716fcae1884f370b2cc9c1a38f30e5a477d50097f50ecb3c76d60b",
+      "fold": 4,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1652,
+        "ORIGINAL_COST1": 1652,
+        "COL_ONLY/FREE": 1652,
+        "COL_ONLY/ROMA_WEIGHTED": 1652,
+        "COARSE/FREE": 1652,
+        "COARSE/ROMA_WEIGHTED": 1652,
+        "FINE/FREE": 1652,
+        "FINE/ROMA_WEIGHTED": 1652,
+        "COARSE_FINE/FREE": 1652,
+        "COARSE_FINE/ROMA_WEIGHTED": 1652,
+        "NO_ADAPTER/FREE": 1652,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1652
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.2093333608772177,
+        "COL_ONLY/ROMA_WEIGHTED": 1.4443841052049762,
+        "COARSE/FREE": 1.2089721758994059,
+        "COARSE/ROMA_WEIGHTED": 1.4441449892948306,
+        "FINE/FREE": 1.2127543755005554,
+        "FINE/ROMA_WEIGHTED": 1.444624683932271,
+        "COARSE_FINE/FREE": 1.2109266944165424,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.4444194761370077,
+        "NO_ADAPTER/FREE": 1.1915298922311064,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.4446446859971764
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-17e5724183278e475c4a304d",
+      "component": "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f",
+      "fold": 2,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 508,
+        "ORIGINAL_COST1": 508,
+        "COL_ONLY/FREE": 508,
+        "COL_ONLY/ROMA_WEIGHTED": 508,
+        "COARSE/FREE": 508,
+        "COARSE/ROMA_WEIGHTED": 508,
+        "FINE/FREE": 508,
+        "FINE/ROMA_WEIGHTED": 508,
+        "COARSE_FINE/FREE": 508,
+        "COARSE_FINE/ROMA_WEIGHTED": 508,
+        "NO_ADAPTER/FREE": 508,
+        "NO_ADAPTER/ROMA_WEIGHTED": 508
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.2,
+        "COL_ONLY/ROMA_WEIGHTED": 0.5,
+        "COARSE/FREE": 0.2,
+        "COARSE/ROMA_WEIGHTED": 0.5,
+        "FINE/FREE": 0.2,
+        "FINE/ROMA_WEIGHTED": 0.5,
+        "COARSE_FINE/FREE": 0.2,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.5,
+        "NO_ADAPTER/FREE": 0.2,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.5
+      },
+      "margin": {
+        "COL_ONLY/FREE": -0.8624799352110928,
+        "COL_ONLY/ROMA_WEIGHTED": -0.8068413669199288,
+        "COARSE/FREE": -0.8421740577845787,
+        "COARSE/ROMA_WEIGHTED": -0.7973725730239173,
+        "FINE/FREE": -0.8333366341869843,
+        "FINE/ROMA_WEIGHTED": -0.7957076227815028,
+        "COARSE_FINE/FREE": -0.845290980767502,
+        "COARSE_FINE/ROMA_WEIGHTED": -0.7978360537574973,
+        "NO_ADAPTER/FREE": -0.8684650402651656,
+        "NO_ADAPTER/ROMA_WEIGHTED": -0.8098665201256424
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-19cc2c81ca081e39a7d72b99",
+      "component": "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f",
+      "fold": 2,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 337,
+        "ORIGINAL_COST1": 337,
+        "COL_ONLY/FREE": 337,
+        "COL_ONLY/ROMA_WEIGHTED": 337,
+        "COARSE/FREE": 337,
+        "COARSE/ROMA_WEIGHTED": 337,
+        "FINE/FREE": 337,
+        "FINE/ROMA_WEIGHTED": 337,
+        "COARSE_FINE/FREE": 337,
+        "COARSE_FINE/ROMA_WEIGHTED": 337,
+        "NO_ADAPTER/FREE": 337,
+        "NO_ADAPTER/ROMA_WEIGHTED": 337
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.07692307692307693,
+        "COL_ONLY/ROMA_WEIGHTED": 0.08333333333333333,
+        "COARSE/FREE": 0.08333333333333333,
+        "COARSE/ROMA_WEIGHTED": 0.07692307692307693,
+        "FINE/FREE": 0.06666666666666667,
+        "FINE/ROMA_WEIGHTED": 0.08333333333333333,
+        "COARSE_FINE/FREE": 0.07142857142857142,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.07692307692307693,
+        "NO_ADAPTER/FREE": 0.06666666666666667,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.08333333333333333
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.6361843279236357,
+        "COL_ONLY/ROMA_WEIGHTED": -2.940237890814739,
+        "COARSE/FREE": -1.630006965935757,
+        "COARSE/ROMA_WEIGHTED": -2.9344059843066717,
+        "FINE/FREE": -1.6460306594450196,
+        "FINE/ROMA_WEIGHTED": -2.9337060593513593,
+        "COARSE_FINE/FREE": -1.635562339135588,
+        "COARSE_FINE/ROMA_WEIGHTED": -2.9406570345914718,
+        "NO_ADAPTER/FREE": -1.5992445128732338,
+        "NO_ADAPTER/ROMA_WEIGHTED": -2.932694051694262
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1a93fb96ae91549c4629e69e",
+      "component": "69e8433234f6613d539957d8cd900a9503c3e7bceb31e12adec7cfa0adc6368b",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1114,
+        "ORIGINAL_COST1": 1114,
+        "COL_ONLY/FREE": 1114,
+        "COL_ONLY/ROMA_WEIGHTED": 1114,
+        "COARSE/FREE": 1114,
+        "COARSE/ROMA_WEIGHTED": 1114,
+        "FINE/FREE": 1114,
+        "FINE/ROMA_WEIGHTED": 1114,
+        "COARSE_FINE/FREE": 1114,
+        "COARSE_FINE/ROMA_WEIGHTED": 1114,
+        "NO_ADAPTER/FREE": 1114,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1114
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.7353352102340494,
+        "COL_ONLY/ROMA_WEIGHTED": 4.1729229557321705,
+        "COARSE/FREE": 1.7702739962623641,
+        "COARSE/ROMA_WEIGHTED": 4.174827758782932,
+        "FINE/FREE": 1.805348419588656,
+        "FINE/ROMA_WEIGHTED": 4.158112577231551,
+        "COARSE_FINE/FREE": 1.7760806794322432,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.172596795694789,
+        "NO_ADAPTER/FREE": 1.684157459576552,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.152202106323122
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1ab5d06d095c1ab6749b227c",
+      "component": "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1145,
+        "ORIGINAL_COST1": 1145,
+        "COL_ONLY/FREE": 1145,
+        "COL_ONLY/ROMA_WEIGHTED": 1145,
+        "COARSE/FREE": 1145,
+        "COARSE/ROMA_WEIGHTED": 1145,
+        "FINE/FREE": 1145,
+        "FINE/ROMA_WEIGHTED": 1145,
+        "COARSE_FINE/FREE": 1145,
+        "COARSE_FINE/ROMA_WEIGHTED": 1145,
+        "NO_ADAPTER/FREE": 1145,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1145
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.023518911536943,
+        "COL_ONLY/ROMA_WEIGHTED": 2.8435023281926117,
+        "COARSE/FREE": 2.017121662254279,
+        "COARSE/ROMA_WEIGHTED": 2.846455308933045,
+        "FINE/FREE": 2.0317181766324754,
+        "FINE/ROMA_WEIGHTED": 2.851408084520773,
+        "COARSE_FINE/FREE": 2.020781082987905,
+        "COARSE_FINE/ROMA_WEIGHTED": 2.8546538210654466,
+        "NO_ADAPTER/FREE": 2.0028081161871625,
+        "NO_ADAPTER/ROMA_WEIGHTED": 2.8088491123974575
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1aee8f8c27c19ea85c3d7d4b",
+      "component": "a5cc6cd71cb98a23641d9032f2abdbe55a284b95eedc14e13d1ab9d93b7adc76",
+      "fold": 1,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 4798,
+        "ORIGINAL_COST1": 4798,
+        "COL_ONLY/FREE": 4798,
+        "COL_ONLY/ROMA_WEIGHTED": 4798,
+        "COARSE/FREE": 4798,
+        "COARSE/ROMA_WEIGHTED": 4798,
+        "FINE/FREE": 4798,
+        "FINE/ROMA_WEIGHTED": 4798,
+        "COARSE_FINE/FREE": 4798,
+        "COARSE_FINE/ROMA_WEIGHTED": 4798,
+        "NO_ADAPTER/FREE": 4798,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4798
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.3980243666663807,
+        "COL_ONLY/ROMA_WEIGHTED": 2.9924845210905358,
+        "COARSE/FREE": 2.3918772654048297,
+        "COARSE/ROMA_WEIGHTED": 3.119628544599483,
+        "FINE/FREE": 2.431064756387153,
+        "FINE/ROMA_WEIGHTED": 2.935359515671503,
+        "COARSE_FINE/FREE": 2.4368547226898896,
+        "COARSE_FINE/ROMA_WEIGHTED": 3.10370202038688,
+        "NO_ADAPTER/FREE": 2.4202813838120405,
+        "NO_ADAPTER/ROMA_WEIGHTED": 3.0625659854464464
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1af45e7f0d56a52adeb60b07",
+      "component": "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d",
+      "fold": 0,
+      "correct": {
+        "RAW": false,
+        "ORIGINAL_COST1": false,
+        "COL_ONLY/FREE": false,
+        "COL_ONLY/ROMA_WEIGHTED": false,
+        "COARSE/FREE": false,
+        "COARSE/ROMA_WEIGHTED": false,
+        "FINE/FREE": false,
+        "FINE/ROMA_WEIGHTED": false,
+        "COARSE_FINE/FREE": false,
+        "COARSE_FINE/ROMA_WEIGHTED": false,
+        "NO_ADAPTER/FREE": false,
+        "NO_ADAPTER/ROMA_WEIGHTED": false
+      },
+      "selected": {
+        "RAW": 3250,
+        "ORIGINAL_COST1": 1980,
+        "COL_ONLY/FREE": 3250,
+        "COL_ONLY/ROMA_WEIGHTED": 1980,
+        "COARSE/FREE": 3250,
+        "COARSE/ROMA_WEIGHTED": 1980,
+        "FINE/FREE": 3250,
+        "FINE/ROMA_WEIGHTED": 1980,
+        "COARSE_FINE/FREE": 3250,
+        "COARSE_FINE/ROMA_WEIGHTED": 1980,
+        "NO_ADAPTER/FREE": 3250,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1980
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 0.008771929824561403,
+        "COL_ONLY/ROMA_WEIGHTED": 0.5,
+        "COARSE/FREE": 0.008771929824561403,
+        "COARSE/ROMA_WEIGHTED": 0.5,
+        "FINE/FREE": 0.008928571428571428,
+        "FINE/ROMA_WEIGHTED": 0.5,
+        "COARSE_FINE/FREE": 0.008771929824561403,
+        "COARSE_FINE/ROMA_WEIGHTED": 0.5,
+        "NO_ADAPTER/FREE": 0.009009009009009009,
+        "NO_ADAPTER/ROMA_WEIGHTED": 0.5
+      },
+      "margin": {
+        "COL_ONLY/FREE": -1.3656210260279231,
+        "COL_ONLY/ROMA_WEIGHTED": -1.0482339057938301,
+        "COARSE/FREE": -1.3928910708965487,
+        "COARSE/ROMA_WEIGHTED": -1.0534849399717425,
+        "FINE/FREE": -1.353148974083374,
+        "FINE/ROMA_WEIGHTED": -1.0476924112653108,
+        "COARSE_FINE/FREE": -1.3734689941507625,
+        "COARSE_FINE/ROMA_WEIGHTED": -1.0516528961396758,
+        "NO_ADAPTER/FREE": -1.3449307325571107,
+        "NO_ADAPTER/ROMA_WEIGHTED": -1.051389862129111
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1b38ef6880169a631e184725",
+      "component": "86244889a9cf4aa3df9f971885f8dfcec40ce965b829d12b7deb1eb31c2e4e44",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 5053,
+        "ORIGINAL_COST1": 5053,
+        "COL_ONLY/FREE": 5053,
+        "COL_ONLY/ROMA_WEIGHTED": 5053,
+        "COARSE/FREE": 5053,
+        "COARSE/ROMA_WEIGHTED": 5053,
+        "FINE/FREE": 5053,
+        "FINE/ROMA_WEIGHTED": 5053,
+        "COARSE_FINE/FREE": 5053,
+        "COARSE_FINE/ROMA_WEIGHTED": 5053,
+        "NO_ADAPTER/FREE": 5053,
+        "NO_ADAPTER/ROMA_WEIGHTED": 5053
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 1.7814081979485943,
+        "COL_ONLY/ROMA_WEIGHTED": 1.5823880634865501,
+        "COARSE/FREE": 1.772825875361895,
+        "COARSE/ROMA_WEIGHTED": 1.6061287331718215,
+        "FINE/FREE": 1.7596481191035886,
+        "FINE/ROMA_WEIGHTED": 1.583584944018214,
+        "COARSE_FINE/FREE": 1.7701141989030629,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.6059955192923794,
+        "NO_ADAPTER/FREE": 1.7874950761653143,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.5761896878340493
+      },
+      "target_in_C128": true
+    },
+    {
+      "query_id": "H593-1bab76bb2cce8605543067d4",
+      "component": "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d",
+      "fold": 0,
+      "correct": {
+        "RAW": true,
+        "ORIGINAL_COST1": true,
+        "COL_ONLY/FREE": true,
+        "COL_ONLY/ROMA_WEIGHTED": true,
+        "COARSE/FREE": true,
+        "COARSE/ROMA_WEIGHTED": true,
+        "FINE/FREE": true,
+        "FINE/ROMA_WEIGHTED": true,
+        "COARSE_FINE/FREE": true,
+        "COARSE_FINE/ROMA_WEIGHTED": true,
+        "NO_ADAPTER/FREE": true,
+        "NO_ADAPTER/ROMA_WEIGHTED": true
+      },
+      "selected": {
+        "RAW": 1183,
+        "ORIGINAL_COST1": 1183,
+        "COL_ONLY/FREE": 1183,
+        "COL_ONLY/ROMA_WEIGHTED": 1183,
+        "COARSE/FREE": 1183,
+        "COARSE/ROMA_WEIGHTED": 1183,
+        "FINE/FREE": 1183,
+        "FINE/ROMA_WEIGHTED": 1183,
+        "COARSE_FINE/FREE": 1183,
+        "COARSE_FINE/ROMA_WEIGHTED": 1183,
+        "NO_ADAPTER/FREE": 1183,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1183
+      },
+      "mrr": {
+        "COL_ONLY/FREE": 1.0,
+        "COL_ONLY/ROMA_WEIGHTED": 1.0,
+        "COARSE/FREE": 1.0,
+        "COARSE/ROMA_WEIGHTED": 1.0,
+        "FINE/FREE": 1.0,
+        "FINE/ROMA_WEIGHTED": 1.0,
+        "COARSE_FINE/FREE": 1.0,
+        "COARSE_FINE/ROMA_WEIGHTED": 1.0,
+        "NO_ADAPTER/FREE": 1.0,
+        "NO_ADAPTER/ROMA_WEIGHTED": 1.0
+      },
+      "margin": {
+        "COL_ONLY/FREE": 2.5700010652685585,
+        "COL_ONLY/ROMA_WEIGHTED": 4.396917023222688,
+        "COARSE/FREE": 2.5526266277938707,
+        "COARSE/ROMA_WEIGHTED": 4.418056908224093,
+        "FINE/FREE": 2.58887019326553,
+        "FINE/ROMA_WEIGHTED": 4.40292437201772,
+        "COARSE_FINE/FREE": 2.5621714583494124,
+        "COARSE_FINE/ROMA_WEIGHTED": 4.420704643083534,
+        "NO_ADAPTER/FREE": 2.50928893512801,
+        "NO_ADAPTER/ROMA_WEIGHTED": 4.385954694359153
+      },
+      "target_in_C128": true
+    }
+  ],
+  "evidence": "Opened71-query grouped pilot with original full-TRAIN warm heads; not external GO",
+  "limitations": "Single-seed reduced240-step opened pilot; no winner selection, no external GO; no gain does not prove absent information"
+}

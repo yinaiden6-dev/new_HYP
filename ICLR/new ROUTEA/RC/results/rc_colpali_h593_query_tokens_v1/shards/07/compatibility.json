@@ -1,0 +1,35 @@
+{
+  "status": "FAIL",
+  "comparison": [
+    {
+      "physical_row": 0,
+      "min_token_cosine": -0.3398811167519969,
+      "relative_l2": 1.429497446194293,
+      "max_abs_error": 0.5673828125
+    },
+    {
+      "physical_row": 2706,
+      "min_token_cosine": -0.33992709358468143,
+      "relative_l2": 1.412124166125874,
+      "max_abs_error": 0.58984375
+    },
+    {
+      "physical_row": 5412,
+      "min_token_cosine": -0.2969988602013251,
+      "relative_l2": 1.4272939319008415,
+      "max_abs_error": 0.5888671875
+    }
+  ],
+  "provenance": {
+    "model": "/hkfs/home/project/hk-project-pai00054/ap7811/.cache/huggingface/hub/models--vidore--colpali-v1.3-hf/snapshots/7d3c8ab1c1908b32d701308fb1dfb2968d150c67",
+    "manifest_sha256": "923e262af7fb73fee62390d1b9f5b591015d3a212669c882338dd580bd3d55a1",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.6.2",
+    "image_processor": "SiglipImageProcessor",
+    "processor": "ColPaliProcessor",
+    "device": "NVIDIA A100-SXM4-40GB",
+    "job_id": "5160184",
+    "program_sha256": "00a36660329786af26ddcde52cf8a1accf803bd832192fb114afa49d6452470f"
+  },
+  "scope": "three reference anchors, numerical compatibility only"
+}

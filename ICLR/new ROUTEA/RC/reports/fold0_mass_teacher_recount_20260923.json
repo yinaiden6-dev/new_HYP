@@ -1,0 +1,46 @@
+{
+  "status": "TEACHER_RESULT_SHA_AND_ACTION_RECOUNT_PASS",
+  "result_sha256": "8db949eea1ae93b9e6245eae0d0f913fa5fde5514cf51766aa753146bcba077e",
+  "verified_prediction_files": 576,
+  "recounted_model_actions": 952,
+  "held": 119,
+  "student_equals_raw_all_queries": true,
+  "quality_errors": {
+    "train": {
+      "student": {
+        "log_mse": 0.3412054317393817,
+        "centered_log_mse": 0.21505342640183162,
+        "mean_log_error": 0.08525730288787525,
+        "rmse": 0.013144159726953574,
+        "pair_order_agreement": 0.46369647682475884
+      },
+      "constant": {
+        "log_mse": 0.3704238429004031,
+        "centered_log_mse": 0.2150379279933943,
+        "mean_log_error": 0.19096932388642343,
+        "rmse": 0.013275602656102241,
+        "pair_order_agreement": 0.5
+      }
+    },
+    "held": {
+      "student": {
+        "log_mse": 0.39094637258701675,
+        "centered_log_mse": 0.22973094377150652,
+        "mean_log_error": 0.0039018164872758293,
+        "rmse": 0.01634302789698665,
+        "pair_order_agreement": 0.45491828181783733
+      },
+      "constant": {
+        "log_mse": 0.4029795681737289,
+        "centered_log_mse": 0.2297106771327831,
+        "mean_log_error": 0.1096269745405333,
+        "rmse": 0.0163282665707625,
+        "pair_order_agreement": 0.5
+      }
+    }
+  },
+  "student_median_within_query_std": 1.6481924852258591e-06,
+  "teacher_median_within_query_std": 0.010726913619793927,
+  "student_target_strict_first": 0,
+  "teacher_target_strict_first": 78
+}
