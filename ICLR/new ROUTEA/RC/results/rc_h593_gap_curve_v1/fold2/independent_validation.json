@@ -1,0 +1,84 @@
+{
+  "status": "GAP_CURVE_INDEPENDENT_PASS",
+  "passed": true,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_gap_curve_authority_v1_20260921.json",
+    "sha256": "ede07c0bfa116ad1af784f48fb6ba6c2c3d0d165971d4f63ed49a250d07f7e90"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/fold2/payload.json",
+    "sha256": "11c9ee56fdd018d543559dddca378fd37d0774dfb9841b6a3f26412d6358afde"
+  },
+  "fold": 2,
+  "calibration_queries": 474,
+  "heldout_queries": 119,
+  "new_model_score_checks": 45339,
+  "original_switches": 7,
+  "matched_GAP_BIAS2_exact": true,
+  "structural_GAP_CURVE4_exact": true,
+  "scale_fitted_on_inner_holds_only": true,
+  "same_curve_coordinate_as_structural": true,
+  "canonical_positive_zero_RAW_input": true,
+  "heldout_label_reads": 0,
+  "nested_surrogate_family_check": {
+    "GAP_BIAS2": 0.196759943562715,
+    "GAP_CURVE3": 0.18675451971428222,
+    "GAP_CURVE4": 0.1636315553163981,
+    "tolerance": 1e-06
+  },
+  "fits": {
+    "GAP_CURVE3": {
+      "optimization": {
+        "informative_holds": 361,
+        "fitted_surrogate_loss": 0.18675451971428222,
+        "projected_gradient_inf_norm": 1.2356846987911924e-08
+      },
+      "calibration": {
+        "net_gain": 12,
+        "changed_holds": 18,
+        "rescues": 13,
+        "breaks": 1,
+        "both_wrong": 4,
+        "independent_bias_candidates": 801,
+        "bias_hex": "-0x1.29b6a129a4eb6p-1"
+      },
+      "scale_hex": "0x1.e9533dfe11a91p+0"
+    }
+  },
+  "controls": {
+    "matched_control": {
+      "optimization": {
+        "informative_holds": 361,
+        "fitted_surrogate_loss": 0.196759943562715,
+        "projected_gradient_inf_norm": 1.2300445155705511e-09
+      },
+      "calibration": {
+        "net_gain": 11,
+        "changed_holds": 32,
+        "rescues": 16,
+        "breaks": 5,
+        "both_wrong": 11,
+        "independent_bias_candidates": 801,
+        "bias_hex": "0x1.9768ab7a99895p-2"
+      },
+      "scale_hex": "0x1.0000000000000p+0"
+    },
+    "structural_control": {
+      "optimization": {
+        "informative_holds": 361,
+        "fitted_surrogate_loss": 0.1636315553163981,
+        "projected_gradient_inf_norm": 1.2976484063082308e-08
+      },
+      "calibration": {
+        "net_gain": 12,
+        "changed_holds": 22,
+        "rescues": 14,
+        "breaks": 2,
+        "both_wrong": 6,
+        "independent_bias_candidates": 801,
+        "bias_hex": "-0x1.532d65f106054p-2"
+      },
+      "scale_hex": "0x1.e9533dfe11a91p+0"
+    }
+  }
+}

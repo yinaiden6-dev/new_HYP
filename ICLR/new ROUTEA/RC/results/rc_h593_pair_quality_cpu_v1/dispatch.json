@@ -1,0 +1,63 @@
+{
+  "active": [],
+  "chunks": {
+    "0": 11,
+    "1": 16,
+    "2": 12,
+    "3": 16,
+    "4": 1,
+    "5": 1,
+    "6": 2,
+    "7": 2
+  },
+  "join": null,
+  "complete": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "partition": "dev_cpuonly",
+  "paused_later_fold_continuations": [
+    {
+      "job_id": "5159907",
+      "stage": "fit",
+      "index": 6,
+      "args": [
+        "/usr/bin/sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+        "fit",
+        "6"
+      ],
+      "reason": "User requested first fold priority; pending continuation cancelled; checkpoint retained",
+      "resume_from_existing_checkpoint": true
+    },
+    {
+      "job_id": "5159914",
+      "stage": "fit",
+      "index": 7,
+      "args": [
+        "/usr/bin/sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+        "fit",
+        "7"
+      ],
+      "reason": "User requested first fold priority; pending continuation cancelled; checkpoint retained",
+      "resume_from_existing_checkpoint": true
+    }
+  ],
+  "priority_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "FUSION_TRAINING_GRADIENT_RESUME_PASS",
+  "checks": [
+    {
+      "kind": "COST1",
+      "mode": "FREE",
+      "target": -1,
+      "max_adapter_gradient_error": 1.0842021724855044e-19
+    },
+    {
+      "kind": "COST1",
+      "mode": "FREE",
+      "target": 2,
+      "max_adapter_gradient_error": 1.0842021724855044e-19
+    },
+    {
+      "kind": "COST1",
+      "mode": "ROMA_WEIGHTED",
+      "target": -1,
+      "max_adapter_gradient_error": 8.673617379884035e-19
+    },
+    {
+      "kind": "COST1",
+      "mode": "ROMA_WEIGHTED",
+      "target": 2,
+      "max_adapter_gradient_error": 8.673617379884035e-19
+    },
+    {
+      "kind": "CE",
+      "mode": "FREE",
+      "target": -1,
+      "max_adapter_gradient_error": 2.168404344971009e-19
+    },
+    {
+      "kind": "CE",
+      "mode": "FREE",
+      "target": 2,
+      "max_adapter_gradient_error": 1.6263032587282567e-19
+    },
+    {
+      "kind": "CE",
+      "mode": "ROMA_WEIGHTED",
+      "target": -1,
+      "max_adapter_gradient_error": 8.673617379884035e-19
+    },
+    {
+      "kind": "CE",
+      "mode": "ROMA_WEIGHTED",
+      "target": 2,
+      "max_adapter_gradient_error": 1.734723475976807e-18
+    }
+  ],
+  "optimizer_resume_next_update_exact": true,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+    "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+  }
+}

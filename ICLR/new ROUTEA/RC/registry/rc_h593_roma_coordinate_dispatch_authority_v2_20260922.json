@@ -1,0 +1,33 @@
+{
+  "status": "COORDINATE_DISPATCH_AUTHORIZED",
+  "coordinate": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_precision_authority_v2_20260922.json",
+    "sha256": "08c1d5673561719232ea8d4e5ba2c6d032d6347b2e226e052e23a13dd58386f7"
+  },
+  "evaluation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_eval_authority_v2_20260922.json",
+    "sha256": "05ba7b28e7ea34a9b0a652cd2db3133f0a7108a9f741e6e8014623805ac41084"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_roma_coordinate_v2.py",
+      "sha256": "f015ff21f77a624d84c91cc279f0d99ce5b6742114118ee0a4035201a01ee904"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_dispatch_v2.sbatch",
+      "sha256": "0cfe2073d5545966642fd2ca1380aa43a0b99f33ce2c57d77d9dacdf5602959a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_precision_v2.sbatch",
+      "sha256": "37853e39c21cf2eefd46892bbf56be00cb8f8d8aea2fdcb6e931e0c1f82ca135"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_eval_v2.sbatch",
+      "sha256": "ad8ed044bbf61c7a6889e60896915f1d0ff147a96abb4ef072799e3f44835dbd"
+    }
+  ],
+  "total_queries": 593,
+  "max_wave_tasks": 46,
+  "dependency": "afterok only; prerequisite failure cancels next task",
+  "automatic_retries": 0
+}

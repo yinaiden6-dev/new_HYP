@@ -1,0 +1,90 @@
+{
+  "status": "BOX_CE_POLISH_EXACT_REPLAY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_polish_authority_v1_20260921.json",
+    "sha256": "46fe4a68d070841870193c553f5970dc820e7a234912dd6273abbd66c51b12cb"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_polish_v1/fold1/payload.json",
+    "sha256": "4329f0cbab81dbf70e36eaae36d0107ce126605339c85c60e433ae9726ecf475"
+  },
+  "fold": 1,
+  "logits": {
+    "CONTENT_BOX_CE_POLISH18": {
+      "logit_count": 14986,
+      "max_abs_error": 1.4210854715202004e-14,
+      "decisions": 118
+    },
+    "DIAG_BOX_CE_POLISH13": {
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    },
+    "COST1_FULL": {
+      "logit_count": 14986,
+      "max_abs_error": 3.552713678800501e-15,
+      "decisions": 118
+    },
+    "CE_FULL": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "DIAG_CE13": {
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    },
+    "JOINT_CONTENT_CE18": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "DIAG_CONT_CE13": {
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    },
+    "CONTENT_CONT_CE18": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "CONTENT_CONTINUOUS_CE18": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "DIAG_CONTINUOUS_CE13": {
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    },
+    "CONTENT_BOX_CE18": {
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    },
+    "DIAG_BOX_CE13": {
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    }
+  },
+  "certificates": {
+    "CONTENT_BOX_CE_POLISH18": {
+      "loss_error": 0.0,
+      "gradient_error": 6.284764260806781e-16,
+      "exact_certificate_replay": true,
+      "certified_box_gap_le_1e_6": true
+    },
+    "DIAG_BOX_CE_POLISH13": {
+      "loss_error": 0.0,
+      "gradient_error": 3.100761884052526e-16,
+      "exact_certificate_replay": true,
+      "certified_box_gap_le_1e_6": true
+    }
+  },
+  "heldout_label_reads": 0,
+  "natural_refits": 0
+}

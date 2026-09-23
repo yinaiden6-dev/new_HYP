@@ -1,0 +1,110 @@
+{
+  "status": "SQUARE_BLOCKS_POSTJOIN_COUNTS_PASS",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_square_blocks_v1/result.json",
+    "sha256": "1bb1e81e8befbc5fde39221fb2203a27d5005f45ac2bb146be2881c6bf261431"
+  },
+  "errors": {
+    "CE_FULL": {
+      "RAW_and_top_wrong": 40,
+      "target_absent": 23,
+      "correct_top_HELD": 33,
+      "RAW_correct_broken": 11
+    },
+    "RAW_SQUARE_CE8": {
+      "RAW_and_top_wrong": 41,
+      "target_absent": 23,
+      "correct_top_HELD": 34,
+      "RAW_correct_broken": 9
+    },
+    "JOINT_SQUARE_CE12": {
+      "RAW_and_top_wrong": 39,
+      "target_absent": 23,
+      "correct_top_HELD": 32,
+      "RAW_correct_broken": 8
+    },
+    "DIAG_CE13": {
+      "RAW_and_top_wrong": 39,
+      "target_absent": 23,
+      "correct_top_HELD": 30,
+      "RAW_correct_broken": 8
+    }
+  },
+  "full_head_comparisons": {
+    "CE_FULL": {
+      "baseline": "CE_FULL",
+      "new": "DIAG_CE13",
+      "rescue": 9,
+      "loss": 2,
+      "net": 7,
+      "changed": 19,
+      "gained_query_ids": [
+        "H593-3937b8534db594248fbab03f",
+        "H593-490d4ed0a2cc29258e504a6a",
+        "H593-5f1d8e99507134bf9261aa26",
+        "H593-9ed31ed09c4b3cb0fa797e4b",
+        "H593-a75c121cbde1aeaa4aa8433f",
+        "H593-b9b3b47180519cbd55260c38",
+        "H593-ba2efedd26ed9b4bcecca71f",
+        "H593-ddead65d98e659c927cda92c",
+        "H593-feb9948db167fc67715b216a"
+      ],
+      "lost_query_ids": [
+        "H593-3e371fe7d77d82719a05830d",
+        "H593-4e6b9dc0dba15fcec5bea111"
+      ],
+      "equal_component_difference": 0.01639480311355311,
+      "bootstrap95": [
+        0.0022834511408730157,
+        0.03366257440476189
+      ]
+    },
+    "RAW_SQUARE_CE8": {
+      "baseline": "RAW_SQUARE_CE8",
+      "new": "DIAG_CE13",
+      "rescue": 8,
+      "loss": 1,
+      "net": 7,
+      "changed": 15,
+      "gained_query_ids": [
+        "H593-3937b8534db594248fbab03f",
+        "H593-490d4ed0a2cc29258e504a6a",
+        "H593-5f1d8e99507134bf9261aa26",
+        "H593-a75c121cbde1aeaa4aa8433f",
+        "H593-b9b3b47180519cbd55260c38",
+        "H593-d2ef20eeb4ce3ad7cf1b74d2",
+        "H593-ddead65d98e659c927cda92c",
+        "H593-feb9948db167fc67715b216a"
+      ],
+      "lost_query_ids": [
+        "H593-4e6b9dc0dba15fcec5bea111"
+      ],
+      "equal_component_difference": 0.018794356684981684,
+      "bootstrap95": [
+        0.003920558608058607,
+        0.03645910838293649
+      ]
+    },
+    "JOINT_SQUARE_CE12": {
+      "baseline": "JOINT_SQUARE_CE12",
+      "new": "DIAG_CE13",
+      "rescue": 2,
+      "loss": 0,
+      "net": 2,
+      "changed": 3,
+      "gained_query_ids": [
+        "H593-3937b8534db594248fbab03f",
+        "H593-5f1d8e99507134bf9261aa26"
+      ],
+      "lost_query_ids": [],
+      "equal_component_difference": 0.006076388888888888,
+      "bootstrap95": [
+        0.0,
+        0.017361111111111112
+      ]
+    }
+  },
+  "natural_fits": 0,
+  "masked_coordinates_verified": true,
+  "external_GO": false
+}

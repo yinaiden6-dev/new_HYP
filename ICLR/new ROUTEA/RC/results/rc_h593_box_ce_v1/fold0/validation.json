@@ -1,0 +1,80 @@
+{
+  "status": "BOX_CE_EXACT_REPLAY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_authority_v1_20260921.json",
+    "sha256": "3ce42e37d49f484d252f329abbba6bd78986710ef87f1828d88567617351b23f"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_v1/fold0/payload.json",
+    "sha256": "6673afdee99b18631752fcda4bd5399638ad6d479ce7ee5a2706554592b6bd02"
+  },
+  "fold": 0,
+  "logits": {
+    "CONTENT_BOX_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    "DIAG_BOX_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    "COST1_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 1.7763568394002505e-15,
+      "decisions": 119
+    },
+    "CE_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 8.881784197001252e-15,
+      "decisions": 119
+    },
+    "JOINT_CONTENT_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CONT_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 1.4210854715202004e-14,
+      "decisions": 119
+    },
+    "CONTENT_CONT_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "CONTENT_CONTINUOUS_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CONTINUOUS_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    }
+  },
+  "certificates": {
+    "CONTENT_BOX_CE18": {
+      "loss_error": 5.551115123125783e-17,
+      "gradient_error": 5.400897386806867e-16,
+      "exact_certificate_replay": true,
+      "certified_box_gap_le_1e_6": false
+    },
+    "DIAG_BOX_CE13": {
+      "loss_error": 5.551115123125783e-17,
+      "gradient_error": 2.0103128252937107e-16,
+      "exact_certificate_replay": true,
+      "certified_box_gap_le_1e_6": false
+    }
+  },
+  "heldout_label_reads": 0,
+  "natural_refits": 0
+}

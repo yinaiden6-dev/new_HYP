@@ -1,0 +1,141 @@
+{
+  "utc": "2026-09-22T17:30:38.612567+00:00",
+  "queries": 593,
+  "candidates_per_query": 128,
+  "pairs_per_diagnostic_branch": 75904,
+  "fusion": {
+    "configurations": 200,
+    "steps_per_configuration": 2000,
+    "adapter_configurations": 160,
+    "adapter_first_pass_candidate_evaluations": 40960000,
+    "completed_chunks": [
+      {
+        "array_element": "5157555_1",
+        "saved_step": 371,
+        "total_steps": 2000,
+        "log": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-ftrain-5157555_1.out",
+        "updates": [
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 1,
+            "step": 50,
+            "loss": 1.1197078808508678,
+            "seconds": 150.0761035978794
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 1,
+            "step": 100,
+            "loss": 1.3601510151142597,
+            "seconds": 236.9551155460067
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 1,
+            "step": 150,
+            "loss": 1.1561426902154557,
+            "seconds": 320.6993556700181
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 1,
+            "step": 200,
+            "loss": 0.006236540648245149,
+            "seconds": 397.711187726818
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 1,
+            "step": 250,
+            "loss": 1.7452603487459426,
+            "seconds": 468.91061876597814
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 1,
+            "step": 300,
+            "loss": 0.03716009052014611,
+            "seconds": 539.3893827260472
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 1,
+            "step": 350,
+            "loss": 0.036900115997747875,
+            "seconds": 607.0765607238282
+          }
+        ]
+      },
+      {
+        "array_element": "5157555_2",
+        "saved_step": 376,
+        "total_steps": 2000,
+        "log": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-ftrain-5157555_2.out",
+        "updates": [
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 2,
+            "step": 50,
+            "loss": 1.4965284036657502,
+            "seconds": 148.5472235288471
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 2,
+            "step": 100,
+            "loss": 1.6708688446434068,
+            "seconds": 232.06712713395245
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 2,
+            "step": 150,
+            "loss": 1.6229243023986142,
+            "seconds": 311.7762940558605
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 2,
+            "step": 200,
+            "loss": 0.049627386071308496,
+            "seconds": 388.283157621976
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 2,
+            "step": 250,
+            "loss": 1.5879630847956183,
+            "seconds": 460.23394202184863
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 2,
+            "step": 300,
+            "loss": 0.06370427278513599,
+            "seconds": 532.472315507941
+          },
+          {
+            "event": "FUSION_TRAIN_UPDATE",
+            "config": 2,
+            "step": 350,
+            "loss": 0.2744259312297447,
+            "seconds": 600.5041625739541
+          }
+        ]
+      }
+    ]
+  },
+  "observations": [
+    "Training recomputes parameter-dependent tokens/MaxSim after every optimizer update.",
+    "Current pair loop recomputes the same query adapter output for each reference within a step.",
+    "Host feature bank has 512 entries and pair_forward transfers tensors to GPU per pair; no inference about time share without profiling.",
+    "Internal observer performs per-branch per-stage CPU token pooling and scalar extraction; it has not been batched.",
+    "Cross-process dense-feature sharing is absent in the three RoMa intervention branches."
+  ],
+  "runtime_estimate": {
+    "inside_sample_seconds": 471.3855105229886,
+    "inside_593_serial_slot_hours": 77.6476688167034,
+    "scope": "Single-query extrapolation; excludes queues, variation and startup/verification outside the recorded interval"
+  },
+  "mutations": "No experiment code, optimizer, candidate set, authority or running jobs changed in this audit"
+}

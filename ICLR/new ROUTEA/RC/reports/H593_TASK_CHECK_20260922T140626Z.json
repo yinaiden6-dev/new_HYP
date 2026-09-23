@@ -1,0 +1,48 @@
+{
+  "time_utc": "2026-09-22T14:06:26.963976+00:00",
+  "feature_extraction": {
+    "job": "5157341",
+    "validated_shards": 9,
+    "total_shards": 21,
+    "validated_new_images": 2304,
+    "reused_pilot_images": 129,
+    "total_image_geometries": 5324,
+    "cache_join_job": "5157342",
+    "full_cache_ready": false
+  },
+  "capacity": {
+    "job": "5157368",
+    "last_scheduler_state": "PENDING",
+    "last_reason": "QOSMaxJobsPerUserLimit",
+    "validation_exists": false
+  },
+  "operator": {
+    "materialized_queries": 593,
+    "validated_shards": 75,
+    "fold_job": "5157407",
+    "validated_folds": [
+      "fold0",
+      "fold1",
+      "fold2"
+    ],
+    "diagnostics_job": "5157408",
+    "join_job": "5157409"
+  },
+  "coordinate": {
+    "validated_queries": 59,
+    "next_array": "5157033",
+    "last_pending_range": "59-92"
+  },
+  "fusion_dispatcher": {
+    "time_utc": "2026-09-22T14:06:26.529576+00:00",
+    "pid": 55395,
+    "status": "WAITING_FOR_FEATURES_AND_TRAINING_CAPACITY",
+    "catalog_job": "5157273",
+    "benchmark_job": "5157368",
+    "features_ready": false,
+    "capacity_ready": false,
+    "cpu_helper_paused": false
+  },
+  "dispatcher_verification": "Shared status heartbeat refreshed during inspection; running on hkn1991 while this session is hkn1990; cross-node SSH authentication unavailable, no restart attempted.",
+  "new_runtime_errors_seen": false
+}

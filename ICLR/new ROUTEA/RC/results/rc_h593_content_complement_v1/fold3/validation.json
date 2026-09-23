@@ -1,0 +1,59 @@
+{
+  "status": "CONTENT_COMPLEMENT_FRESH_NUMPY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_content_complement_authority_v1_20260921.json",
+    "sha256": "bae04fe87bc048fe97c60215464b76c26a6d8057ba5a95ce13cf5ddf5ed31f9c"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_content_complement_v1/fold3/payload.json",
+    "sha256": "dad4ea301a3833a8efbc2aae05db4d3f785ac1e73a6415e98a206be3bcca627a"
+  },
+  "logits": {
+    "JOINT_CONTENT_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "JOINT_CURVE_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "LINEAR_CONTENT_CE12": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    "COST1_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 2.6645352591003757e-15,
+      "decisions": 119
+    },
+    "CE_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    }
+  },
+  "gradients": {
+    "JOINT_CONTENT_CE18": {
+      "loss_error": 0.0,
+      "gradient_error": 1.3666639434722905e-15
+    },
+    "JOINT_CURVE_CE18": {
+      "loss_error": 0.0,
+      "gradient_error": 4.676231732565761e-16
+    },
+    "LINEAR_CONTENT_CE12": {
+      "loss_error": 0.0,
+      "gradient_error": 1.5750747060783166e-16
+    }
+  },
+  "heldout_label_reads": 0,
+  "fresh_refits": 3
+}

@@ -1,0 +1,51 @@
+{
+  "status": "DYNAMIC_LAUNCH_ARGUMENTS_PASS",
+  "cases": [
+    {
+      "launcher": "rc_h593_feature_fusion_train_v2.sbatch",
+      "stage": "benchmark",
+      "args": [
+        "--signal=TERM",
+        "--kill-after=10s",
+        "850s",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+        "programs/run_rc_h593_feature_fusion_train_v2.py",
+        "benchmark",
+        "--index",
+        "7"
+      ],
+      "offline": "1",
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC"
+    },
+    {
+      "launcher": "rc_h593_feature_fusion_train_v2.sbatch",
+      "stage": "fit",
+      "args": [
+        "--signal=TERM",
+        "--kill-after=10s",
+        "850s",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+        "programs/run_rc_h593_feature_fusion_train_v2.py",
+        "fit",
+        "--index",
+        "7"
+      ],
+      "offline": "1",
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC"
+    },
+    {
+      "launcher": "rc_h593_feature_fusion_train_join_v2.sbatch",
+      "stage": "join",
+      "args": [
+        "--signal=TERM",
+        "--kill-after=10s",
+        "850s",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+        "programs/run_rc_h593_feature_fusion_train_v2.py",
+        "join"
+      ],
+      "offline": "1",
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC"
+    }
+  ]
+}

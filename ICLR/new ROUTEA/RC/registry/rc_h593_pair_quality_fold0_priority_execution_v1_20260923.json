@@ -1,0 +1,60 @@
+{
+  "status": "FOLD0_PRIORITY_EXECUTION_AUTHORIZED",
+  "time_utc": "2026-09-23T14:33:01.571674+00:00",
+  "user_instruction": "\u5148\u4f18\u5148\u7b2c\u4e00\u6298\u5b8c\u6210\u3002",
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "pause_after_first_fold": true,
+  "partition": "dev_cpuonly",
+  "scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_cpu_authority_v1_20260923.json",
+    "sha256": "e28370bb2cfc2d43b7c1ca5abdd8c23198f0c46e05bd51012529f0175a9345e9"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_fold0_priority_v1.py",
+      "sha256": "02da2044e9e5ed3fff45e5c7f3dc403365b15e8b4e2f1f42dc6ba5a4deb77f8e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_cpu_v1.py",
+      "sha256": "d4452a570c0f33a8ceae4c0a9aa30718b8d3ae00852b3ca71a2a5e1a9c551526"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_pair_quality_cpu_v1.py",
+      "sha256": "a21ce51efefd266f3803cd1a834419375fbb5c8cc79957cfc1fe998c76c8813b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+      "sha256": "3d6baf11620060573c3ff0ff04c4053185fda20e48d83335ae592fc969be2ea3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_h593_pair_quality_execution_source_compat_v1.py",
+      "sha256": "3609696d1609de11a45013c6437b3c9609c823e60b6a6fa67ad0b7e24f7e484e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_original_dev_execution_override_20260923.json",
+      "sha256": "b2848eb65a0e8b8bc98d5dec13086b008db7f730164cc060f1d06ee55987cd98"
+    }
+  ],
+  "max_active_first_fold": 2,
+  "worker_and_checkpoint_unchanged": true,
+  "held_labels_read_before_six_arm_seal": false,
+  "backup_directory": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_pair_quality_cpu_v1/execution_backups/fold0_priority_20260923T143301Z",
+  "planned_paused_continuations": [
+    {
+      "job_id": "5159907",
+      "index": 6
+    },
+    {
+      "job_id": "5159914",
+      "index": 7
+    }
+  ],
+  "old_controller_stop": "Cancel a held never-started continuation to make unreachable original controller exit fail-closed; require shared lock release before takeover."
+}

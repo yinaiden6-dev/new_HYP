@@ -1,0 +1,43 @@
+{
+  "status": "INDEPENDENT70_DECISION_AND_TIMING_RECOUNT_PASS",
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_coarse_exit_v1/result.json",
+    "sha256": "9380de64d64d4d5db7863464fc17822d031d0b0b380afa44eed19e58a4c923bc"
+  },
+  "queries": 70,
+  "candidate_logits_recounted": 17780,
+  "totals": {
+    "raw": 50,
+    "native": 56,
+    "coarse": 56,
+    "rescues": 6,
+    "breaks": 0,
+    "retained": 6
+  },
+  "rescued_query_ids": [
+    "DIFFICULT-0014",
+    "DIFFICULT-0044",
+    "OUTCOME-0159",
+    "OUTCOME-0476",
+    "DIFFICULT-0017",
+    "OUTCOME-0307"
+  ],
+  "changed_wrong_decisions": [
+    {
+      "query": "OUTCOME-0282",
+      "both_wrong": true
+    },
+    {
+      "query": "DIFFICULT-0011",
+      "both_wrong": true
+    }
+  ],
+  "timing_pairs": 8,
+  "timing_repetitions_each": 3,
+  "paired_speedup_median": 4.4938557702497475,
+  "median_peak_allocated_GiB": {
+    "FULL": 3.0445199012756348,
+    "EARLY": 1.7447686195373535
+  },
+  "timing_scope": "Warm matching call including input upload and resize; excludes model initialization, PIL decode, content scoring and correction head"
+}

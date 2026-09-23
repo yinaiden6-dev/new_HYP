@@ -1,0 +1,26 @@
+{
+  "status": "H71_CPU_EXECUTION_V2_AUTHORIZED",
+  "scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h71_feature_fusion_pilot_authority_v1_20260923.json",
+    "sha256": "f3f1ba42e06c269552262d3ff04d919b7e413e757760f2c5766edbbcefa551f2"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h71_feature_fusion_pilot_v2.py",
+      "sha256": "ba0f292fc7b499168d756706618fd18af38f67d014a261c8368b2b1cbb1212a4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h71_feature_fusion_follow_v2.sbatch",
+      "sha256": "2bd05e65059330b3e55c2ba8df48d65a3b34cbbf38500c44517e8fc366f13844"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h71_feature_fusion_pilot_v1.sbatch",
+      "sha256": "4ff862beeefe68d32ea1f54b0701985a08485b27c9def576355a054fc868e833"
+    }
+  ],
+  "partition": "cpuonly",
+  "dev_backfill_slots": 1,
+  "new_gpu_jobs": 0,
+  "reason": "Combined50-task dev partition array rejected by dev MaxSubmitJobsPU4; no scientific job started",
+  "user_instruction": "Start approved reduced fusion-benefit pilot"
+}

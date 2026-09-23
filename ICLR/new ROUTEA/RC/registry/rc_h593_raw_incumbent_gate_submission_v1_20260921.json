@@ -1,0 +1,41 @@
+{
+  "status": "SUBMITTED_SCHEDULER_AND_SPOOL_VERIFIED",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_raw_incumbent_gate_authority_v1_20260921.json",
+    "sha256": "f9a35535fe75f2045fcc073597a8dade46441ea0528c7e2c61057a04b99f49ed"
+  },
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_raw_incumbent_gate_v1.sbatch",
+    "sha256": "66586fd4a96f049610dde9c6eba90a31d6944ecaa119121e59530fa4c5046ae8"
+  },
+  "submitted_at_utc": "2026-09-21T03:47:49.587400+00:00",
+  "jobs": {
+    "fit": "5153756",
+    "join": "5153757"
+  },
+  "fit_command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-4%5",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_raw_incumbent_gate_v1.sbatch",
+    "fit"
+  ],
+  "join_command": [
+    "sbatch",
+    "--parsable",
+    "--dependency=afterok:5153756",
+    "--job-name=h593_rawgate_join",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_raw_incumbent_gate_v1.sbatch",
+    "join"
+  ],
+  "scheduler_verification": {
+    "fit": {
+      "scontrol": "JobId=5153756 ArrayJobId=5153756 ArrayTaskId=0-4%5 ArrayTaskThrottle=5 JobName=h593_rawgate UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-21T05:47:49 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-21T05:47:49 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1993:2661849 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_raw_incumbent_gate_v1.sbatch SubmitLine=sbatch --parsable --array=0-4%5 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_raw_incumbent_gate_v1.sbatch fit WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-rawgate-5153756_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-rawgate-5153756_4294967294.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+      "spool_sha256": "66586fd4a96f049610dde9c6eba90a31d6944ecaa119121e59530fa4c5046ae8"
+    },
+    "join": {
+      "scontrol": "JobId=5153757 JobName=h593_rawgate_join UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:5153756_*(unfulfilled) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-21T05:47:49 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-21T05:47:49 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1993:2661849 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_raw_incumbent_gate_v1.sbatch SubmitLine=sbatch --parsable --dependency=afterok:5153756 --job-name=h593_rawgate_join /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_raw_incumbent_gate_v1.sbatch join WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-rawgate-5153757_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-rawgate-5153757_4294967294.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+      "spool_sha256": "66586fd4a96f049610dde9c6eba90a31d6944ecaa119121e59530fa4c5046ae8"
+    }
+  }
+}

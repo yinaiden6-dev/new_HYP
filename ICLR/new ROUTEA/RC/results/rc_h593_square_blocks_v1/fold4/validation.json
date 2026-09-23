@@ -1,0 +1,50 @@
+{
+  "status": "SQUARE_BLOCKS_FRESH_NUMPY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_square_blocks_authority_v1_20260921.json",
+    "sha256": "f4630b361509807b27a0781cdbdad82862c498e16304b210ef5d2e419f42a2e6"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_square_blocks_v1/fold4/payload.json",
+    "sha256": "2ef18375941fca735ea5235414183ae65083c94103833a346e5b99cd87afb55f"
+  },
+  "logits": {
+    "JOINT_SQUARE_CE12": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "RAW_SQUARE_CE8": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "COST1_FULL": {
+      "logit_count": 14986,
+      "max_abs_error": 2.6645352591003757e-15,
+      "decisions": 118
+    },
+    "CE_FULL": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "DIAG_CE13": {
+      "logit_count": 14986,
+      "max_abs_error": 8.881784197001252e-15,
+      "decisions": 118
+    }
+  },
+  "gradients": {
+    "JOINT_SQUARE_CE12": {
+      "loss_error": 0.0,
+      "gradient_error": 9.776793090388036e-17
+    },
+    "RAW_SQUARE_CE8": {
+      "loss_error": 1.1102230246251565e-16,
+      "gradient_error": 3.1029866176535137e-16
+    }
+  },
+  "heldout_label_reads": 0,
+  "fresh_refits": 2
+}

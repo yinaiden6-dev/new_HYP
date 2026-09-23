@@ -1,0 +1,31 @@
+{
+  "status": "H593_SQUARE_BLOCKS_SUBMITTED",
+  "job_id": "5154444",
+  "partition": "dev_accelerated",
+  "time_limit": "00:10:00",
+  "cpus": 8,
+  "mem": "16G",
+  "gpu": 1,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_square_blocks_authority_v1_20260921.json",
+    "sha256": "f4630b361509807b27a0781cdbdad82862c498e16304b210ef5d2e419f42a2e6"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_square_blocks_v1/preflight.json",
+    "sha256": "fe4ac7b500b28c3c0a02f7927e6632335ea3d1d83752dc329b22d3037cc4c438"
+  },
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_square_blocks_v1.sbatch",
+    "sha256": "f17307efa8080ce57829715518bdf980083aba1b1df972d7d09cf86d90ccd436"
+  },
+  "spool_identical": true,
+  "checks": {
+    "synthetic": 30,
+    "synthetic_fits": 2,
+    "launcher_dynamic": true,
+    "assembly_control_parity_all5_folds": true,
+    "natural_fits_before_submission": 0
+  },
+  "frozen_primary_control": 493,
+  "external_GO": false
+}

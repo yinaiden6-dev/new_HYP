@@ -1,0 +1,2650 @@
+{
+  "status": "PAIR_QUALITY_AUTHORIZED",
+  "user_authorization": "2026-09-23 不用测，直接改程序，然后去cpuonly分区",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_pair_quality_cpu_v2.py",
+      "sha256": "922d171265ab1372c08377e4093db1c4af2004c575a5c37ae6f7143ff633f2c5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_pair_quality_core_v1.py",
+      "sha256": "be538cf93e9a36310c7478a43a29ee238ee94a6bfbe021cec0bc8f56cc7064d3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_PAIR_QUALITY_CPU_V2_20260923.md",
+      "sha256": "8da5c491dfcb99d015bface8e8ee6e3a02905306a0d36688cf5070b8ad92d717"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v2.sbatch",
+      "sha256": "d4060f0438bfc36d848de3e8a096c4e5cc5f03112c1af62da385cad97c552250"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_cpu_v2.py",
+      "sha256": "a4f784d8b1bc817270060f6a1efacd0a7d3f9563e79b6e9f3c883177327c2a44"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_authority_v1_20260923.json",
+      "sha256": "287601ce6d24e96e21aca30863765342d39aef656dfd88fa0c8c5f0718c20aea"
+    }
+  ],
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+    "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+  },
+  "ready": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_cache_v1/ready.json",
+    "sha256": "ac2b6e58a23523bff0b245728e144b1fddc59348479b791d4b5bbc215394044c"
+  },
+  "catalog": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_cache_v1/catalog.json",
+    "sha256": "34d878a40fa459524d9499e5a2ae052eb8e74722a371e7b2fec28ad95d4c347d"
+  },
+  "public_sources": {
+    "feature_authority": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp593_feature_authority_v1_20260911.json",
+      "sha256": "f891aabaef996a7984926987cbcb23814632574ede395c759015194a251b2860"
+    },
+    "split": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/split_manifest.json",
+      "sha256": "be29f82bc404b44e713f98a3e099117f183de0ef0ca80e7f11ddca5bcf8d1d5c"
+    },
+    "worker": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/worker_manifest.json",
+      "sha256": "fac2f33b8aa678a4de3f2b8e60dc31bfdc310bfaa754f1a06ef2e5157abda340"
+    },
+    "gallery": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+      "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+    }
+  },
+  "fold_sources": {
+    "0": {
+      "ce_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit30/payload.json",
+        "sha256": "b67c2b28e678135c40dde3753dc28bd663e4c08cd78d84b65f9094ea44382ac7"
+      },
+      "ce_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit30/validation.json",
+        "sha256": "115f0d462da7b38a526dc3120521d2b3dd60a277a1482181b25ef2c2468baaaf"
+      },
+      "full_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold0/payload.json",
+        "sha256": "bfced564709cb6a689be71a7972d642e826b7de649468bd6fd7de816e2cb9ab2"
+      },
+      "full_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold0/validation.json",
+        "sha256": "65954972b6471b2c91491edfb5b42f76577a3ea3a74d0381135c7874301a0900"
+      },
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold0.json",
+        "sha256": "4ed6bdb7d4e47062e2bdef7268090b86453bd31c9af765e483af23b47e7bf7ca"
+      }
+    },
+    "1": {
+      "ce_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit31/payload.json",
+        "sha256": "7f1ed72bb05929a2a8f46783d2301f480324f0ab6b2f1c616232fdcf4b397bf2"
+      },
+      "ce_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit31/validation.json",
+        "sha256": "6296806cf89330eabff1d95c460c98b1ae92c62ee8bd349860f449c508d74954"
+      },
+      "full_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/payload.json",
+        "sha256": "3fc2b71ea52a47b5cd89a1a9f825f0c1c92dddf9f815009202d5942403dff899"
+      },
+      "full_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold1/validation.json",
+        "sha256": "abcaff406a2e6d8fe29b487fdc0d98c0505bcd3e2b5c58cbf7d5bfe95f4e7208"
+      },
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold1.json",
+        "sha256": "df1289b7063c7dd3cd3206b5145137b7f0ab3d6d9eb19a157b809bb0b177c1aa"
+      }
+    },
+    "2": {
+      "ce_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit32/payload.json",
+        "sha256": "c682ad652d283f16df91606d72010779362a63c1797147e0c55ca39183868d5e"
+      },
+      "ce_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit32/validation.json",
+        "sha256": "5fd064c03406da5592b03b1a6e47bfdbc04440ae60a0767b8b56cc7c97abfaf3"
+      },
+      "full_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold2/payload.json",
+        "sha256": "00c5b2f8ed490321a1977e1d9d3a42545dfc60a7e988fc887f78a2bef4da54a1"
+      },
+      "full_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold2/validation.json",
+        "sha256": "bbf57d5aed96b9637a2e0cfd305dcf5f529619bac6c939de100a9032dcaa3f8f"
+      },
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold2.json",
+        "sha256": "1cacdef765473306368403b75add4c75561ab8130df67373ec9eb949c775ed78"
+      }
+    },
+    "3": {
+      "ce_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit33/payload.json",
+        "sha256": "d0b73a1b62475b79aedd2bab58a5d6c1afc6dd13a7adb767af3fe14d320a0a77"
+      },
+      "ce_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit33/validation.json",
+        "sha256": "5fd1402cda7c8d60dd86b401a3cc5de5d58a75f8812aa53f09ae7b4441a92b86"
+      },
+      "full_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold3/payload.json",
+        "sha256": "9a94a448410d8d0eb9c51abb9f7ffd2be2b102ed258a3cbd03f67cb2b8dd5079"
+      },
+      "full_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold3/validation.json",
+        "sha256": "44587b86ad649df2fc7b100da55dc94eb5ba23ce8e6610ac1efd1b973caf1c11"
+      },
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold3.json",
+        "sha256": "2e58828ddbc76acef92cda57c8b1f1c30fd828101209d4e5dcb46bfbcfda95fe"
+      }
+    },
+    "4": {
+      "ce_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit34/payload.json",
+        "sha256": "117dafb4aec7f6d39451d04c5a5bba5f8a76bff176224c9fb04b36baf4e7fde7"
+      },
+      "ce_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/coverage/fit34/validation.json",
+        "sha256": "41c8aa868a7c9b3a9364cdaa1824695f11799965822c78545237a01d63e962b1"
+      },
+      "full_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/payload.json",
+        "sha256": "9dd66d4bddf330f98305fb36a59c3a4e92b50c63a8a33d8a55382452fd9b0f80"
+      },
+      "full_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold4/validation.json",
+        "sha256": "a24300e76b20a7e93a6d93466384652386b405604fecf78b36b9ac18d4c690f2"
+      },
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold4.json",
+        "sha256": "3458451875fc7accfec4bd210404564f1c7cb3af46205393d44d2fd186e99318"
+      }
+    }
+  },
+  "join_sources": {
+    "curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+      "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+    },
+    "old_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "old_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/validation.json",
+      "sha256": "57c3694a920b2d20c75ab490d22550aa7246ec0cb9273f9915cb261a8290eba1"
+    }
+  },
+  "warm_content": {
+    "H593-0091cc1b5a6f73a4ad8d88ae": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query000.pt",
+      "sha256": "9730f8177965f5d661f847841bfef87fef52c57c1707b3e0e9088c5f7e54ba01"
+    },
+    "H593-00db0e83284b1620da33639a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query001.pt",
+      "sha256": "b0f033d3f241b8a2b3b5a6f0360c8baa734c9f0cdde0313e80a508f49f36bde9"
+    },
+    "H593-00f945a36392a04124513f2c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query002.pt",
+      "sha256": "453467862cb3496ec54bb47d3476584c013cf6f903347a37e61519678f3027f3"
+    },
+    "H593-01371ddf81e97f382dca84d8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query003.pt",
+      "sha256": "a5c931d7f539d67d0b1160aa8872ad9568e674b7c53024746d531a7d98716e22"
+    },
+    "H593-01539eca5c5afd1c6d5ccda2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query004.pt",
+      "sha256": "ef2c1713491b473a1f29e6cffc2861e930282489f4f21aeb81af9c75454dddcd"
+    },
+    "H593-0188e7f7150a7aaf05c23614": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query005.pt",
+      "sha256": "435685fa8a21bd7dfca81b7d6b3a05839f1361e11dea28d02695de25a2b56be1"
+    },
+    "H593-02060e3d320616b952a39654": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query006.pt",
+      "sha256": "4b5b20b95faf625cbd55366a17974ed7160e6b74dc040ac1b03fab8bd9d18709"
+    },
+    "H593-02543adf69ee9391380f4ee6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query008.pt",
+      "sha256": "a69e11384df7a0012fa7c04851654a30772a6b2c8ed483e5fcaa6aa248f3dca1"
+    },
+    "H593-028ab5aaff186d9fc48a7f19": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query009.pt",
+      "sha256": "440fbfb1e8307df40fa1f115d93991b5d9f4c171f2244bd2c13b364ba8d9678b"
+    },
+    "H593-02ce6b371f2907428fc96ffe": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query010.pt",
+      "sha256": "f0d3df44d0ced5cbc54cc803b81690a3690cef25de0c7a060f8eaf72cef9bb6e"
+    },
+    "H593-03168677fa508c139372f0ed": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query011.pt",
+      "sha256": "86cfbdd6e19d4b49b737aa2bc9e2bc3616cd741413facecffcc60705805f665d"
+    },
+    "H593-04953480712cfc6b638e8fb2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query012.pt",
+      "sha256": "19d4eaa364e72af3a0013243a699f8f6e6b3f1d5bbb1053c7aba1e200b1b0d69"
+    },
+    "H593-04bd54f85fedc55966f9ee04": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query013.pt",
+      "sha256": "482af7c0eea05fb7a33e80f5e93775c6b53948ec35711c2ea72dcd6202ed8ceb"
+    },
+    "H593-0576bfe455276d27cc059542": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query014.pt",
+      "sha256": "8a7187916b5aaee62d479a866bbd439f73fb2b3afecbe672d07a12235f44dfc4"
+    },
+    "H593-059423d2642d803097a5e092": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query015.pt",
+      "sha256": "9151c86ed0edad72f286a99b1bf47d81ef5c91ad55327ee24eaba17aa80d9d89"
+    },
+    "H593-059b70b913c381ca4c02e851": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query016.pt",
+      "sha256": "9d5eeb7d9b28ada89f3384291b0b56fa59152d9388dc340387ff5eb1447e96e2"
+    },
+    "H593-05b3ce4ffdc0d30f9d3abac9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query017.pt",
+      "sha256": "7cffcc42ffc24c8b6cb597dce989c8b897f981d121f9728fea05d56a592afea4"
+    },
+    "H593-064aa36809b4f00051cb821a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query018.pt",
+      "sha256": "aca205967b08c6df7ac52133bbeedb6cd0bf8eb870df8744aedb8ab6d87df6b2"
+    },
+    "H593-068d4310663d131f8027b587": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query019.pt",
+      "sha256": "c945b4491d82fdb91f36be7e033fc1a7f63b4dfbdc96c0c0a6b3590aefb8f4a5"
+    },
+    "H593-07197c3f4badd640f6859f5e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query020.pt",
+      "sha256": "2ec1c21bfad4b02a0f4dc46aba1fa5bc3214ac87ffa1dc053fd667be07a0bd16"
+    },
+    "H593-0745854000292039c9c10f33": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query021.pt",
+      "sha256": "74dbe393d29e22751be7312a1967966d4b47677355d2d9b57706f30da66b1094"
+    },
+    "H593-08297e272b0164e6fdd42e9f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query022.pt",
+      "sha256": "8757104f2cd6df24ef68df6101341de4fb1a46f9c84f386d342dcb994e71c9f0"
+    },
+    "H593-082cd2a46d9b304893a3587c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query023.pt",
+      "sha256": "2ce1fc3c66a1142e56a8bcdf75b6c4b7ede2fc7a73ffa693a5be6fd5836a7bed"
+    },
+    "H593-0923651f03329ad9587b7927": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query024.pt",
+      "sha256": "8f4322b1ea42dc003a606afe843165dce39fc405d807b0109073b88abf851c62"
+    },
+    "H593-094186f2ba40a8fa08ad355b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query025.pt",
+      "sha256": "5fcb0acd91f592208e496abfd8398d6fcf5b4585c6b12b79287095060e97cdcf"
+    },
+    "H593-097dd2637a0f46ccbfb61ff4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query026.pt",
+      "sha256": "37fc12fda2cea6217018952a20af9b701274d1113f48a9f616884578234eca7e"
+    },
+    "H593-09ce47090a8b579fa3833638": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query027.pt",
+      "sha256": "37487ce6fe3ea832464715ffb3324507b9cc03d3abef202da29e25562f72e626"
+    },
+    "H593-0a87021a30d8b6a9de32f2b3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query028.pt",
+      "sha256": "1ad2b80e3845191d8947dba317ec4ecfce6c7710509cf25086fe38cd41e79083"
+    },
+    "H593-0ac0e839567fe775450fa642": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query029.pt",
+      "sha256": "bd4b293e05179db3e17d395634d6091e62eb8c1b69fcb6c31aa4a811be8a0aac"
+    },
+    "H593-0c19fd5a9f5839f926c4ae57": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query030.pt",
+      "sha256": "c8b8b82cfb545593f0b1135a7cb2c0ceb238ac336a5001337177620832ed516e"
+    },
+    "H593-0c251f2d0b52c9cde036edc1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query031.pt",
+      "sha256": "ea5f3e9a6b3b7b17ce7d6c6d913dfb4cbb1047a7f73e143f2ebef833248c53e3"
+    },
+    "H593-0c93295a4efc661bc7464f47": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query032.pt",
+      "sha256": "b31978f595bf9539678785c746c9b9352a1382dcd4553a511d709d1020815abb"
+    },
+    "H593-0d8db033f048bf0a40089770": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query033.pt",
+      "sha256": "aa509395a5c16343fb60806d98a62b01aa6c07fed9469fc0d3bb706b64ac0cb4"
+    },
+    "H593-0dc7d62664f27ce00d40a1ab": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query034.pt",
+      "sha256": "07020e6d0c5d9a57e00cbb222d5166f57fa5731849b481f74aa2c98d2520d596"
+    },
+    "H593-0dd4951a9b49124b8f24958f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query035.pt",
+      "sha256": "de60aadd594540aa1296b22418ff527f0a08b7535c962980346aa7be97314ea3"
+    },
+    "H593-0de8c65af51ef20333889d71": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query036.pt",
+      "sha256": "5fa6e0ce8c67680ce2fb4152cd1818c557640bab6f3cad9ed8a2dee53697a73d"
+    },
+    "H593-0e8e2230acf18be9984a101b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query038.pt",
+      "sha256": "620e97e96a6c05e3ce9a30ce0ce262f56aea11b4753cddf41de865c49ebf0429"
+    },
+    "H593-0ee088c09f80add39585ed84": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query039.pt",
+      "sha256": "d4a61fd4288d85c658731051a6c3d215fcf9c0674d26ac8ef4eb215d3cfa7854"
+    },
+    "H593-106aa1a451e3f1c3a21d37fe": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query041.pt",
+      "sha256": "bdb883428783d74baa0b054b18f72c1080d71a4cf32e0874899d74e86a17546d"
+    },
+    "H593-10e669d82eed33568754dbb1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query042.pt",
+      "sha256": "5463d430e46ccf991720a07dfccaff30b52fd72489b0821e2edc4e516c3cb42f"
+    },
+    "H593-118dee9f38aacba8f825b966": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query043.pt",
+      "sha256": "1d99b14d8100a3085c233d90f422457b1238601e84c2b9cf2b8cba4a8b29483f"
+    },
+    "H593-12c93384cd26eac2b57b065b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query044.pt",
+      "sha256": "d2cd601a82bd9b13dc5dcb90f436f743470586c3d176d57d0f6b32165395a2be"
+    },
+    "H593-135d0a301829fc765ac62aca": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query045.pt",
+      "sha256": "f85935d007692ca6dc678fb6999d1cc5344d2990b05072ce56882aca0ec9b427"
+    },
+    "H593-13e342e35a49ea7a9a10b5ce": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query046.pt",
+      "sha256": "22fc491f5b07768d02fb31030a7798b944e531ceeb2f2e4c205667e48d366955"
+    },
+    "H593-14386333d65f4c444d23e372": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query047.pt",
+      "sha256": "c4fc2808e4ff19762f1f41f6839e3010cd87414ba90afe962e98b7bf6f9d9a9b"
+    },
+    "H593-14742ff288bf8a71f7d5208d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query048.pt",
+      "sha256": "32330c06693583fb4480dcefb90d0a48bd14bb2516364ceb756e1ed01b41c5fb"
+    },
+    "H593-147ee84e2fed004258fe44bc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query049.pt",
+      "sha256": "588ca7c6821631b5cedf84be790edf716685e7cc842504011725f084269941b2"
+    },
+    "H593-148a11f5ffffec76fd85b3c8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query050.pt",
+      "sha256": "1ef85c74e1e969b0db40991651fa4857d6f761563eb58518320bbe01192ad386"
+    },
+    "H593-14a2dd843bc26150f05949e9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query051.pt",
+      "sha256": "05fe86189fa79c0ddb8b6d1ae53e556fdcedfd36e96dccdf5e504c49b3bc9d93"
+    },
+    "H593-1533c32a07d745928239de77": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query052.pt",
+      "sha256": "ab2e513d649dc80c92b9569d414bd57ec2a89d68b62980246a8d0d6545dd9aba"
+    },
+    "H593-156bfb4a63653eec1f65ecda": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query053.pt",
+      "sha256": "36b78727123bfa4685bfe1f9dd76c7142981e07d8e8f62f7ba67543bce70732f"
+    },
+    "H593-158f7a5d2bb5969248c9eb5c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query054.pt",
+      "sha256": "e3a6a0759d24fd91a2c848ec0ac9fef1e30c1e7fa494360730d816d5139c8033"
+    },
+    "H593-1608d9630ec3a84e25e593bc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query055.pt",
+      "sha256": "2d535d715fb83973e5629c9460ad11863f7615a3622b5353f66c4b7b6b33bdf5"
+    },
+    "H593-163df34acba78d2b4f94a0d0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query056.pt",
+      "sha256": "e49a2b09d93c2417dfdaf4f3816cb7162cb5b11d62f6ebe8fe2a7a9955c8725a"
+    },
+    "H593-1652082eb7bdd4e18f2fa4e2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query057.pt",
+      "sha256": "7c880b88592d811eb090a3d26f88a77b9a8857b0ecba0428042b32e095578e23"
+    },
+    "H593-17128afb252013a8b2a0ee5f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query058.pt",
+      "sha256": "bd55ea5f34561de7a95c7c9f540f0909189c44634baecd07dbd6225e213303b5"
+    },
+    "H593-172289962b84290bc00b6b57": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query060.pt",
+      "sha256": "1d227176c26d5a1d776d5b15aa5261d41104cdb6792195e25b28d9e99589054f"
+    },
+    "H593-174dc7ecf520dfa933141c09": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query061.pt",
+      "sha256": "7523929384c57c20ae881bba2f4dce5e623dc27b2ceb9f9106be6362abf7c755"
+    },
+    "H593-178d10ad3076a41e89d549dd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query062.pt",
+      "sha256": "0b4a91461f201c8eb95202963c74c2c07d840f3a1bf96268c50927decd4efcba"
+    },
+    "H593-17e5724183278e475c4a304d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query063.pt",
+      "sha256": "c837afbeae061d2d79405a20bbf43e87df2e9642a3565ed28bccf594b9978ebc"
+    },
+    "H593-19cc2c81ca081e39a7d72b99": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query064.pt",
+      "sha256": "6be947dd69dd9d47ba3062693f5ceea93bf29aa5e3b645e4a90cc1acb9f886ee"
+    },
+    "H593-1a93fb96ae91549c4629e69e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query065.pt",
+      "sha256": "0c0dd3ac61796485a4a378d2c54be5f75b482ab54dc9ab98ca12e4601363adc5"
+    },
+    "H593-1ab5d06d095c1ab6749b227c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query066.pt",
+      "sha256": "fb722281bacb1e08e3344a40dcc724f866e7aed7b5646998dc211a26f7ba9348"
+    },
+    "H593-1aee8f8c27c19ea85c3d7d4b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query067.pt",
+      "sha256": "ccc08aed842dc1a864f6dad2fb7bebfec2db5a5dd32f65a0f1d348df72c1ec6d"
+    },
+    "H593-1af45e7f0d56a52adeb60b07": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query068.pt",
+      "sha256": "e4d8f411f1a72269b608f59e0a2232388a49bf98d540dbb585468c68db11f59f"
+    },
+    "H593-1b38ef6880169a631e184725": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query069.pt",
+      "sha256": "667211f7b6212d72d609d3fc4a3f2afd219d12d0a89b01d2ee631baaae4e6f23"
+    },
+    "H593-1bab76bb2cce8605543067d4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query070.pt",
+      "sha256": "8943f3cad862ad92e3fc505005fe70dd147acd045f03450a338d9ccbfc492986"
+    },
+    "H593-1bdb2bfae2aae669afa4627f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query071.pt",
+      "sha256": "6051534da1d56ccbfc4f00ab3d31ae5c17878c69d2b9a15253423327dd8bc602"
+    },
+    "H593-1bef63e477961c10e0077a91": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query072.pt",
+      "sha256": "9c50c0c75552ddb129ab0015ee93b8f4cc9036249dce808f73debdc195cfae17"
+    },
+    "H593-1c5e61610edb8626ae77f9f6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query073.pt",
+      "sha256": "50364c5e4ceb41f8146ea44c78938c3c55f937a001dfe2ab757466ecd2e83f4a"
+    },
+    "H593-1cf0eabcc44cfc60588f292c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query074.pt",
+      "sha256": "736b1d518cc1bda04e14078a51ccdf3eea4c9ca7b9846c710a6bfdc4c676ceea"
+    },
+    "H593-1dd405f920b439879fc89b2c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query075.pt",
+      "sha256": "b68f08dbfe7fb8fa42ae652d363c8cf1a7cf09a2c25930f23cc45039746754b1"
+    },
+    "H593-1e1593a08e4ed18acf833796": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query076.pt",
+      "sha256": "7ca2ad572169fe9b7dd26ec2d982662cefcd88ce6a004ba558de4b38f832ec3e"
+    },
+    "H593-1e203e93f22affa5c8c93e7b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query077.pt",
+      "sha256": "6d7442d705d3f1687e87152f731dc6c20b5c4c5b7e84c6f6efc1e7e1390f3bbf"
+    },
+    "H593-1e69202f59c1e38274747acc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query078.pt",
+      "sha256": "bb9dbbff2e8b1490d24b0579040967bb53323d5dd0e3a9c706794636a5c87142"
+    },
+    "H593-1ef966932ba70ca899b49b6f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query079.pt",
+      "sha256": "8a332bf74b6f124fc0958b016944400addc3fc1af0c08bc8a607c751520353dc"
+    },
+    "H593-1f65d77d8ddd265c0d00b1f2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query080.pt",
+      "sha256": "6cab9a7635ce90731a24a8813b3285e7f80329a5f279f14e3e66ddb80572d659"
+    },
+    "H593-1fb1391bf43d4e4f4cfc1fa5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query081.pt",
+      "sha256": "33649f5a81f560e71a1533ded0b5b2f7d88c1053a8736de0a068a3a8dc08d0a0"
+    },
+    "H593-202d17a8fea9c8283f65d42d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query082.pt",
+      "sha256": "ac7fedbb413ed1bfc5555fb9b57e3afff9e31e764e84a444634029246bd03703"
+    },
+    "H593-20c36189f2e4e46a9590ae78": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query083.pt",
+      "sha256": "163616817439cdce1ef552a3f83c0d0db3311d7ebbf21245e6cf3d15f89494c7"
+    },
+    "H593-20fdadbf18ce1e0e1a0746a9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query084.pt",
+      "sha256": "f8d62ef06da67dbe8ae965772f49b9e45004fb49ff695bb20d5586e890035c06"
+    },
+    "H593-2226b02dfbc9f44bb2cdb71c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query085.pt",
+      "sha256": "1ed5d6ca10ddf6bc7f9c88e5b9be334014a527b811b7915dcfe45a551a373c50"
+    },
+    "H593-22df23c2ff5577aea691a22b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query086.pt",
+      "sha256": "a76475c9af8fbba74418ab17ec12b0994b42c633988aa73ba6771c230edbe034"
+    },
+    "H593-24402f98b4c6d27775ea51b8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query087.pt",
+      "sha256": "a106a15db31794e93a3bc4c0a3a6011db31cfae1f9a057a35754be5df39b803e"
+    },
+    "H593-2446df0fcadbf0831876d7dc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query088.pt",
+      "sha256": "235840dc5bf0affcd15413973e8520b9f6fd2a8214ea30a60d9982ccced8ac6a"
+    },
+    "H593-2494f10623fb760ff3b647d7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query089.pt",
+      "sha256": "1739aaed4166506c81f6fba873c8254b9b01267a37d6954874493ee9f10fed2a"
+    },
+    "H593-257581a6d8113bc829cc4f7d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query090.pt",
+      "sha256": "25157e177a0220416932b98123ed71cee2fe8c6758cc96abea10d5022a23cbe9"
+    },
+    "H593-25bb54d111079fe02df38114": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query091.pt",
+      "sha256": "2eb8276425df9236ed4c50c7e16da9c0268806da73f3e684ffc85afc13174cf6"
+    },
+    "H593-264b94be0b6f4ab3ec07cfb5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query092.pt",
+      "sha256": "a62c950fd7ed4b958194ae9163bdeda5b2e3bbdedcb43eb72dfdacc189bc03bd"
+    },
+    "H593-272a6668246b45626dea5ed4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query093.pt",
+      "sha256": "4656654623605d77a1944bd336aa111e74d328ecd06dd36fde4fb7c40c437f8c"
+    },
+    "H593-2799023fa51eeb3333651a78": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query095.pt",
+      "sha256": "e217ed6a786303bd9eb7adf2874fb7d73a48b7162a40c9becd79b511ca8603e8"
+    },
+    "H593-27e35a9cbecb2ef6b0c1fc10": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query096.pt",
+      "sha256": "bcef1ec1ef12ea51ccde0c66783448a55966a9b2652a7b7d5c7b0fde90a352b7"
+    },
+    "H593-2822f2513c87ee22a59ce51b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query097.pt",
+      "sha256": "f9f4eb16df8e750c57bc9b69bf0594f7c176640ccc9f5d3216a7e39f759fedec"
+    },
+    "H593-2848a70ea80c7f1dc1cfd651": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query098.pt",
+      "sha256": "573b86978d191c7397cacc1e2ef0ad636870bfb96d95f76af245c102cf39c06f"
+    },
+    "H593-297ba148574e09f5723aa6b7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query099.pt",
+      "sha256": "f6d7746705b555318dffb71b4cbb49602ec7a0b792aecb9816a9a847354a2013"
+    },
+    "H593-29b067277aef7b28b3547a97": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query100.pt",
+      "sha256": "7cd2a58a45cee45f1e88077dfda750f6c328345364c3332a2af38d6079c65374"
+    },
+    "H593-29d505a42ed3f7b9bb256b2b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query101.pt",
+      "sha256": "471ac4a2b40accaee4151271cc2e198150fbcc5ffe482c9535cde012b21e0c1a"
+    },
+    "H593-2a09bc7ee67cc38fba44400e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query102.pt",
+      "sha256": "c260f21eefae6dc093c1f3b0743ac8865ffcb15162ca8082e851530f54b32961"
+    },
+    "H593-2acfe07e77226545b2ae0e10": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query103.pt",
+      "sha256": "eb1298988da93114fccfbe437a03f3808edf4f8e199e73137cf4e329f352ff2d"
+    },
+    "H593-2ad687a1c029e9f33146503b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query104.pt",
+      "sha256": "4c03f4a003e6f5b689b0dfcc73d8526cd0112b074f3f6f6440eb5d5da915d082"
+    },
+    "H593-2b13d777bd87f808044a7852": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query105.pt",
+      "sha256": "f3965d627ac765ab0384b1ebcfd517bb5c9c7502438d7aa247b5bd045f5fecd2"
+    },
+    "H593-2bae4a6fe6f937a87545fde2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query107.pt",
+      "sha256": "0c3cad498c4e03aeb0f6cf70157d931b9248d4b0011cb083b3b416b0896c9412"
+    },
+    "H593-2bcc3d446a9293adfd81509f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query108.pt",
+      "sha256": "f729ab0f061099ca26337b81b753897802521179ebf172266d69bc9069ab05f3"
+    },
+    "H593-2d0dc828facf9c0c8e44c960": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query110.pt",
+      "sha256": "852516be65441d927101a46ee0074c38dec214c83a2e098ee6ac1d69b7248d69"
+    },
+    "H593-2e44547e6a7fb1f39cc27d3a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query111.pt",
+      "sha256": "73816b2266439b43c250d92b2c0922e8e7e522d76e31d31242418a239d6b8f00"
+    },
+    "H593-2e5153cd0e9bd1dddbb75dea": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query112.pt",
+      "sha256": "379584bcda93218ef0ae48c134fa53188713dd9ca5f35ea16e5b6df7011da9fe"
+    },
+    "H593-2e843bf03a9cb860ec035d26": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query113.pt",
+      "sha256": "1389787e09c8874814a9f4c1fc85c6c2a69890a2f3d2ebb3a51486259bf728c3"
+    },
+    "H593-2e8ca9e124da2d21f42ee190": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query114.pt",
+      "sha256": "fe87e5cbf934c79828d48ac016bf1bc2a6cb81affcad18efd12680cc857c5eaa"
+    },
+    "H593-2ecb07df64c211f4edf1e8d3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query115.pt",
+      "sha256": "631fc5c57da2b6a6d4f5273bff514c9479eb34ca4521d291e373891e312797f3"
+    },
+    "H593-2f5a93c328b7e7c9e25412f0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query116.pt",
+      "sha256": "520924568e9cc7ea46390ce12d57dc36baebd9201851fc781925d2e4e6c9fee5"
+    },
+    "H593-2fa24ad21b4ed56f150b2b7a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query117.pt",
+      "sha256": "0e18a5990886f74f53744b4c484b8ae47fe1ff4421a8681daa03ed656304e801"
+    },
+    "H593-30656f17b4be13cde8124a15": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query118.pt",
+      "sha256": "4ff660d8e38163ebddc6bb90f2456e68581016c0fc65c62bc9593933568432f2"
+    },
+    "H593-30d56e7ebdd8d445dd0c0837": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query119.pt",
+      "sha256": "247251463ee8d2f1de713b2e8cd8cc161fa659dd687609a1822af0e8f79cb891"
+    },
+    "H593-30df437866a92249e15d556f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query120.pt",
+      "sha256": "e3c29f690fea8105e0100b0372c72bacbb45200e606f4f5749d6326c2074373b"
+    },
+    "H593-3138eb9150d5fc2ff0b21e85": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query121.pt",
+      "sha256": "7742062ff05d04b8ff6762a4c9f516567c02efd11d8e8afde87d7a074d3d3df2"
+    },
+    "H593-315859149cbadcf0a035cb5b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query122.pt",
+      "sha256": "54fe78f8d4e468359aa80d14dbb7b718c619590b3cb56faf9ee3c654c7f97251"
+    },
+    "H593-31a7078fc5358b3fbdc70c42": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query123.pt",
+      "sha256": "1eb5f4938f916a8ddd98d0c4df8214c6010efeeaaddca71b47c541f5ba111ed3"
+    },
+    "H593-31aaa7c97fbc81e06383e85f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query124.pt",
+      "sha256": "27eab7f46aadc28e8991ff6bf19391e8c51002ba210b81da9b9d8f0ed7a571f5"
+    },
+    "H593-3202e8cf83300e822008d3d1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query126.pt",
+      "sha256": "5893265540fb68e59ff7f7559d90d2a54c6397418017d7261ac939abbf8a903c"
+    },
+    "H593-327f0627e7abd208ae771d92": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query127.pt",
+      "sha256": "08c303da889b13ceeba05551a14742a7eb5058bf92053357307f8561e3229e87"
+    },
+    "H593-3344b63a711a49110a6e1d06": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query128.pt",
+      "sha256": "d8ef22e9be2b5ec9f565c054dc28982920d12974408888653b6de9232f1570e9"
+    },
+    "H593-335401c2797674933672eb63": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query129.pt",
+      "sha256": "823dfcdfe142c209a9cc07553ab57465568062978a56bbeb36a39cd6e49bef19"
+    },
+    "H593-3378917e44506cb2c9f3e74d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query130.pt",
+      "sha256": "4f6829b116c0cee885618876635c344c808d11ccbbbd36f166298252d7602519"
+    },
+    "H593-339a688dea829493403d97e9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query131.pt",
+      "sha256": "edf5762e167824f471f721c756325b01e82b0be8654e103fae972811d942349b"
+    },
+    "H593-33b3b0aa0a8612273130dcd4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query132.pt",
+      "sha256": "192ab7c3c36a2e64b0684da5c8a410f787f8f9beb2a93bba4453594a2a912041"
+    },
+    "H593-33f89c84ccc65e07b73a31cb": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query133.pt",
+      "sha256": "035b1a237ce94863aec563ce46099e797565f2b9a5eec58e64b653bdc0af05ed"
+    },
+    "H593-340a6e18c21c149dc46968d4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query134.pt",
+      "sha256": "0ee346a3f231c412f9e25b3ccf9dc7ca7e2094141e415af0b8920d6d32f47fe5"
+    },
+    "H593-34133bc85696e399819d4944": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query135.pt",
+      "sha256": "af506afc5086ce68bd6beb38fc722ef78be3650531562bc6e5fe6af6637f915c"
+    },
+    "H593-3414eabf1d60f67a6dba89f1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query136.pt",
+      "sha256": "797b7c3aa687a21d329d4351bfd7e9bd4057b851ec69e9fb915a1a7ab8c559f4"
+    },
+    "H593-343c0fdac394c330c78c814c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query137.pt",
+      "sha256": "5e818a78e548996d7ff0262e25e52f6c6499f371f3224a715ede89c4db790561"
+    },
+    "H593-3450f0a1d858a2df9e5e9058": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query138.pt",
+      "sha256": "9b2b171add786ab4f80fa65ed12eb2031ab8f1531ecbed2fa566b8e534c55084"
+    },
+    "H593-34d45edf8c0dc44243949bd9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query139.pt",
+      "sha256": "93b425516b617cf51dcd0fbde987b0e2b64a7791ce18b15cb7d9ee590e1abff2"
+    },
+    "H593-35070730f195ea5ef15d78a4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query140.pt",
+      "sha256": "4cda10b0734e29a79645cf59718b80fcb3a02d16d17a9811e9b7378d573db49f"
+    },
+    "H593-35b1f3a33258743e93f63965": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query141.pt",
+      "sha256": "b85df476754dfa141733b409656b43d37c35ab01846b96e3b7ff5fb3a096484b"
+    },
+    "H593-35e2c26e209782269ad40fed": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query142.pt",
+      "sha256": "c3ee48903f7efca9486bb872ab18e1c3b62320d8be087ec63cfa41cc1590f410"
+    },
+    "H593-36177667d1799f89d767d878": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query143.pt",
+      "sha256": "168079a3f4967cf7453bdd0efe02a7e76f3649a1276e73f5daf0bd64c2226c2b"
+    },
+    "H593-36d9c0f4cf68321ee5636b42": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query145.pt",
+      "sha256": "763cdb1d415fe1bffe7a6a5e52e6eb660124a02cf8be47a78a720cf4df55ba10"
+    },
+    "H593-36f0d9d88cf08e835a02f26d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query146.pt",
+      "sha256": "a41e6b15be7f7cec5f2f7608c1361cdf14e866c900cd509696b833e8126db17b"
+    },
+    "H593-379bc58daa6ab14d6b6ca05b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query147.pt",
+      "sha256": "6cd943fbca92a4612112b25a9b996f620696ae3052e9b6cc71edba797cb20f1d"
+    },
+    "H593-37c29058d6ea3f6600852bd1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query148.pt",
+      "sha256": "6a3ce50acfcf76aab8bb41f35774378e5feb0d228f9cc727af4ea622ad080b47"
+    },
+    "H593-381647ec4c00fbc41b7f9a82": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query149.pt",
+      "sha256": "e687fc8f337ead3e0489f5ea0cf8202fb6b4e51032b2fd215c380a5d0cfa3528"
+    },
+    "H593-381b6429e5e3137c9e41b0d5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query150.pt",
+      "sha256": "b1f716af6acb45e0959cf3eca228601df585d03be86b523bfc1a085c4cf1f01d"
+    },
+    "H593-3871dee39d9099c42505f688": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query151.pt",
+      "sha256": "9b607da97bc603e7815e8bbb94b073dea9a5475894734e34b2b7dccef5ff7d11"
+    },
+    "H593-3893e4ce6f5507593e0f76e9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query152.pt",
+      "sha256": "ef886f611301a51ee01729192546956670b49c45c2c36f8d5d4ff6e110e95676"
+    },
+    "H593-38b8b30a470de2510a233942": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query153.pt",
+      "sha256": "dd63fc8cf5154b444d60917b8aa1c969f85055f3c5e6f668d6dc51eb0e01f8cf"
+    },
+    "H593-3907fe8991331013322a278a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query154.pt",
+      "sha256": "8ceac64dd4fe16a556e7aa2f01e4011f3f1a65989cbaaa0b5507452e4933d4c2"
+    },
+    "H593-3919c7418b8dc52330d7b0cd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query155.pt",
+      "sha256": "ddff4b1cd7a143953eaf6e6ac9879f3873b3a40747993b705b4269964ffc0d3c"
+    },
+    "H593-3937b8534db594248fbab03f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query156.pt",
+      "sha256": "9f6b964d03e3d89485147862a1ce68d5b53f03ee8d3e2f3e8a8ad39a606e97b3"
+    },
+    "H593-3a88599950984808ec05d372": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query157.pt",
+      "sha256": "4b4bf5f82547f02d07695d8e4a9f1ffd98ab6a27ff3c1ff3b69d8b365c528796"
+    },
+    "H593-3a8e211c97e4e3dda358a315": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query158.pt",
+      "sha256": "64b9cd680b6b4ce5916effc400a9522ee35b6eaa47675b0034df58befaf306fc"
+    },
+    "H593-3b68986a5abcc6bf1b6ba1b9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query159.pt",
+      "sha256": "7e072cbce513b6c8ed7a54be4cfcff3210fca777b15e17bd560e1ddbf2863de4"
+    },
+    "H593-3bd92d539d92b456362d66d2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query160.pt",
+      "sha256": "1c83ebcf8f4104a71d98e7cd1567d41c1856f3bc76486c0716471d78b9590682"
+    },
+    "H593-3c05a04b6502fb7cd73c680e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query161.pt",
+      "sha256": "7bc6fabe5a62987ad568ff80bc619eba6b65b21407decd759753d48116bc20c6"
+    },
+    "H593-3c3b32e44f324367dbd542c8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query162.pt",
+      "sha256": "f8b975d41f383f30ae47840f953516b1f01ad4f14bd47e1786bf8bbc7497f5d3"
+    },
+    "H593-3c6e9826d4aaa5c8c18ee68d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query163.pt",
+      "sha256": "3cd79c9ce8f0456b6d5c0d3b6b39ff91b8278a733757a8c2dde22ffb19cf553a"
+    },
+    "H593-3c7deb83919ca9175820857d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query164.pt",
+      "sha256": "48a6e7d729f6a7c7dd1116a1548feac230ffb7521a497ea4e1edfa7849144a8e"
+    },
+    "H593-3da112eebd7cc0e1a48f3fbd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query165.pt",
+      "sha256": "7591b5b675ded7da5c5d4632f0673c07142a51f2bacfbd2f0768ee70d9064739"
+    },
+    "H593-3e371fe7d77d82719a05830d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query166.pt",
+      "sha256": "ae2ba8b4e8f290159e4a3434cb1b205642fdff2dc0ecfd13dc51f9ccb52dd5c5"
+    },
+    "H593-3ebd3543a8da2ab12dd9b943": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query167.pt",
+      "sha256": "f8176e968f56767b9b2b48156326d53c6be6a03426811fa55507bd5231d13c75"
+    },
+    "H593-3f7b7d3d52a024fd546a40d6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query168.pt",
+      "sha256": "9b7d85bbdd28edb69291f04a40f8dda04a6258e0d461256f6b15a84fd44c63e0"
+    },
+    "H593-42420c983790bf340313f47b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query169.pt",
+      "sha256": "c9b36ad71b27aca7a8d5477af968ce2141f21cbc0b59af25e6711e155fbd044d"
+    },
+    "H593-42c4620dc4ec12b555d472a7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query170.pt",
+      "sha256": "cecab970c5b788dda4fe4d22094ea0a2699e3c3f6145d50caa6a990b0243c582"
+    },
+    "H593-4324194c82636eb2bd4e0523": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query171.pt",
+      "sha256": "ef0e4b3d0fefc9cdc16224010ce020eabef002bad13c24e4dd0e54658108a39a"
+    },
+    "H593-439c6d740783fc06dffdae7a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query172.pt",
+      "sha256": "1e48da45586f0bdc6a9708cd76a4023a7f9e19b58f7a90bf59920ecd7a53abbe"
+    },
+    "H593-4465eb39dafa16f3ace74e3b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query173.pt",
+      "sha256": "90b39b8738c40ad0759bbc10c19f1ef6273c996190f974e69aae625f3817bf9c"
+    },
+    "H593-4504245768770ed0279a4124": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query174.pt",
+      "sha256": "21d1cc30f80312b74eecf47e832605f2ffa743f9c869e239fe57d8d96df382b1"
+    },
+    "H593-455aee3db8f97d77c87d9bcc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query175.pt",
+      "sha256": "23d581c2a8962ad977878dc42577dc8c943b303fadbc22d9346e847f0f8571b6"
+    },
+    "H593-45a4b48fd7d584ff912c32cd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query176.pt",
+      "sha256": "98856ffc60770c24ef59e301d0588bca82794953da99e5e9207c215a01c735d4"
+    },
+    "H593-45b44a0e21c38fc764d3bda3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query177.pt",
+      "sha256": "907d8b7dc0efa2a1b7a99c96d4cec0e036cdb58bdb22e09a263282d159d80476"
+    },
+    "H593-46428f82969f19c1f035978b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query178.pt",
+      "sha256": "2e6ab91810829b2a1d026720d44742d9bdc2d0d57862f090298bb7d240925545"
+    },
+    "H593-46bebd9352f2e631d6c557fa": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query179.pt",
+      "sha256": "0c769ab9593359216d820b0db472b7419e63bd147f5a932a951b132dc66710f3"
+    },
+    "H593-46eb5bc0f271f7e1fa17423b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query180.pt",
+      "sha256": "cb7c9a864066b0726449eaaa9d372cb1208dbbf91691ef46a69d2c1e91bb98d0"
+    },
+    "H593-471a2fedf467917f9dc0140d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query181.pt",
+      "sha256": "643fc305d5efa63ded8c63f4f0ab851c3740c2317f49981a4deefab2e6971a8c"
+    },
+    "H593-47f8fff9a6390d11ea60c3c3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query182.pt",
+      "sha256": "3689e815a603d09127e4b412bd347cb36703a393adb87b406eb10811f7ce7f91"
+    },
+    "H593-490d4ed0a2cc29258e504a6a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query183.pt",
+      "sha256": "5e2b3f2c66d31033da66f60b5df220abc33be4717cb64bcdd2e18a712e88f704"
+    },
+    "H593-497c8c89496ddb929f1943e7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query184.pt",
+      "sha256": "d814886f90d5ac8618b1581959ae9969953b60355d31a9f925deae37df953b78"
+    },
+    "H593-497d7b354503fb6abfe8e638": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query185.pt",
+      "sha256": "7602998b5089725994b8f2279250598be46eab8c46603af20305d765ffb30917"
+    },
+    "H593-49e398ee5fa1770f2f4b4804": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query186.pt",
+      "sha256": "b0d6f848db13ecd91b65c8c9a05a437dfe5890728de05a59ae7cdb432533bc42"
+    },
+    "H593-49f22736fa0dc6e88308fe6e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query187.pt",
+      "sha256": "f507f56dfd93493d87242cfbe52e8949241ea0f6585ab782e15d5178ff831ed2"
+    },
+    "H593-49f8cacecc7b076432f500a5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query188.pt",
+      "sha256": "63f8e7c2ab59c3496dd6c6d349c0e69296e67458fdd80507edc5217fd11984a8"
+    },
+    "H593-4a5e17cb5c478c7f39d47e05": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query189.pt",
+      "sha256": "e6a12ba8dc5db851573e26fbbaf3b8f5f92eb37d06c50753c24f52f3c727d697"
+    },
+    "H593-4a83dc5dd057d6229c12ae0e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query190.pt",
+      "sha256": "b2f8ad374093c9d5556a462e359dc4cac3179311b30ae39c29300dea49e32132"
+    },
+    "H593-4b21f0164b2aae1b748917d5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query191.pt",
+      "sha256": "3512101fdc2b3f1520bda5b4234756bd5b6fbb9ca20debed296f6588cc312d15"
+    },
+    "H593-4b694eed8bda537b0b21e8ff": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query192.pt",
+      "sha256": "42eb44db35cffe3075f8a90b38b270edcf5c0a8444bbc3f61c3d24284d0b2463"
+    },
+    "H593-4b6d56a0f3762d25fcace38a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query193.pt",
+      "sha256": "6db47619a23597bee1580e243c9f02a0602f6655fbb808e057ce2a395862dc25"
+    },
+    "H593-4b977198186c9a205795518f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query194.pt",
+      "sha256": "4f7cf29fc49174bbb823270a107ca046144de1698f44aa9b2bd319c954e592cd"
+    },
+    "H593-4b9c8b2d75262b752ef8d7bd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query195.pt",
+      "sha256": "c616f23665f7254be6ee6df29bf8cd38f832e6d13040943dd09ad9bd869d7c2b"
+    },
+    "H593-4c47eaead5712c9295001ec4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query196.pt",
+      "sha256": "6d7b8c1d73546c781c3ad8249b25860f49404da6eae9824c00bdaeb20e08c422"
+    },
+    "H593-4c7da12e23a000c6fce488e2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query197.pt",
+      "sha256": "9570faef46d8e6d6d229c86aa5122359e692a51ae044d009c4ad037571bd5cbe"
+    },
+    "H593-4c89e7fdea0f3bfc34d4091a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query198.pt",
+      "sha256": "1b919b0ab761e855b2c72265a959c240e61f573d2e88eca9be1652eb3749a2e8"
+    },
+    "H593-4c8af79cf3ec012acced486e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query199.pt",
+      "sha256": "d42ab0fe3358f75bd39197030d75f6050f9e74754cccb0ea9af54df7837aeb8b"
+    },
+    "H593-4c9f0e3ae6ac7d842dede29d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query200.pt",
+      "sha256": "3e57704c2859e7eab7d94a0fbecdc37778828cbe9ced4f60fffff8d59110a98e"
+    },
+    "H593-4cdc50b55891617da26d2e7a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query201.pt",
+      "sha256": "c08b784bf3cb4c8d957694759f2bea9172dbbf6b3846e3207d2cf15a4af1c7fa"
+    },
+    "H593-4e4f8bc110d32982909421ec": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query202.pt",
+      "sha256": "765daf496bff61588e7511e07a363a8d36599d037d8b4db2a0bf712a98b3e3f9"
+    },
+    "H593-4e6b9dc0dba15fcec5bea111": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query203.pt",
+      "sha256": "2254e2450f1318c44ba03cfa694a44dc3a704ba42b70d77c26005058d51f8301"
+    },
+    "H593-4edbbd8a5f9a75ce2559d49d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query204.pt",
+      "sha256": "4c9c71046fdb2c6e84964e06284f686d25d4f49109191e26f80272c0772acabf"
+    },
+    "H593-4ef2d085267e3a655f22c017": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query205.pt",
+      "sha256": "ac088f558ad2ef5b936f49cdc7164920344a302681f0d3aa5283fd85a55cd451"
+    },
+    "H593-500972ee89029bc55f7ce4da": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query206.pt",
+      "sha256": "e440ecc34be234913b5e408812988a67b35d9bde8330591d8ded55e9d1c782a2"
+    },
+    "H593-5013811bdfa12b1550e11683": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query207.pt",
+      "sha256": "1b546ad65b484aaa834d3f6629abddad25e60dd5abc415af0db6f3d9089b1f32"
+    },
+    "H593-50257d3fc942087a47f7ed9b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query208.pt",
+      "sha256": "f6b568d604e675cc50a53a7dc29123ed6fecb1b54a64ad6ee7fad180efb5a3de"
+    },
+    "H593-505241b0686c5828ac2cea63": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query209.pt",
+      "sha256": "934673bcb72cc3e36a558182ac72e65ea01aa461958d2573b5a796e878ef90d0"
+    },
+    "H593-506fbf0965ee584fadc5f5d1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query210.pt",
+      "sha256": "306cc5355953ff58f004aafc7d24b7add6d069edb29ac0a631c8b9bed78c3ca1"
+    },
+    "H593-50e98a4949f2bb0bae2a8cc5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query211.pt",
+      "sha256": "5815243ba59544329f1257df78188371ef92e68d43fa39f602ee4a470e6f2a28"
+    },
+    "H593-5143094db93c7c74aac3b66d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query212.pt",
+      "sha256": "3c52c84e798ce9f80663537bd1154b23cc751337e2ce9e4484920042a8db1b8a"
+    },
+    "H593-51f9fd7fedf15c7a3386049d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query214.pt",
+      "sha256": "abe914880f88b44b41c1c2f8e967294966320679cf3eaeaa837e1e319acec61c"
+    },
+    "H593-5215365f1c24c67d099c6773": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query215.pt",
+      "sha256": "6cd5f67f75a89806edd4d56ce3a87e740721ea25c75244af47c21fdbb022f9be"
+    },
+    "H593-526854f7b33d3ad6e1521409": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query216.pt",
+      "sha256": "6f1a561f874a07f1eeb223153ec7e28067c6b3177f9e38ab1f9166c463d52ac7"
+    },
+    "H593-5332c0cc3d7929c09d5c01f3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query217.pt",
+      "sha256": "c2a9efdfacf27ab8549a5321384584245aa6c88d7c1afb307ab7484f0bbf30a7"
+    },
+    "H593-53e0bb3f0f95aa31e37ff328": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query218.pt",
+      "sha256": "e23a97ed84a5e31cbe56f9cfbb09c42cfda60749809f54d224e502c658aae53c"
+    },
+    "H593-53f1fabaea0e77a8ad271caf": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query219.pt",
+      "sha256": "7fd139080a4d27dadf75decde0c98f999d8c9b59f7626451c241be14685fae07"
+    },
+    "H593-542a9d20e3accf68eed2f111": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query220.pt",
+      "sha256": "eb01ace57137acccf27853d57f91c615c54be2d890de53f5b11b73e4b1cd7d6c"
+    },
+    "H593-55896fed273be6f353312f56": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query221.pt",
+      "sha256": "1a02e165de0929a50c2caf551180ec93d66c598b2f79809f3eb34c737fa686dc"
+    },
+    "H593-55ba8ad94b75fd7b8b1484d7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query222.pt",
+      "sha256": "7d07bb7f9bcd025611a18cff43fd25245403d71a15b05157151bc29e9b0a4e9f"
+    },
+    "H593-55dca419c3a60e609c284564": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query223.pt",
+      "sha256": "2b1e915b1b01f4b30efbdb16a5b4e138ea08f9c6cfa4670b817485cad24383b9"
+    },
+    "H593-56dd45ec2e7deff86e812509": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query224.pt",
+      "sha256": "3cb400e3c29db76aea266d89fe0316dd4d5b4e6b25179be0fedbb88748f49f66"
+    },
+    "H593-56ea0b6924407c2819a6f9f9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query225.pt",
+      "sha256": "bd0449ce43e93a5e3eeabd0402eedd2c55ca5daeb64d8ff849e1aabc52eab106"
+    },
+    "H593-575d6db6bfc93ebe863516ea": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query226.pt",
+      "sha256": "b699b4242c01b38b4bef411c7cc51193988e2d6bb8381bd6614e2b9d35140b0d"
+    },
+    "H593-57dba7774ff1e1399e0d181e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query227.pt",
+      "sha256": "01c1e0898c812eceba9b771b8e834e850371309082581046320d60d555a96eda"
+    },
+    "H593-596fedd7ad0dd56b9b06d758": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query228.pt",
+      "sha256": "45ea236c5cf2582847efaed9abad77f7883b32b793c78fc72fce2e162ea2f55f"
+    },
+    "H593-59fdea3ddfa2a7c762aa0a19": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query229.pt",
+      "sha256": "def82a6aaf57ae1c4a24175cce6e33ee41e8030fb37da89de808ab6c8382be10"
+    },
+    "H593-5b9e6dcf1a92193abe8b39b2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query230.pt",
+      "sha256": "7ba9c03246ff1e3360258d8809dff50bf2b982628010d519532f18e187f1911d"
+    },
+    "H593-5bf76899256100e280a80e1d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query231.pt",
+      "sha256": "4d9e93465178f5bdf42c0271717cc4be22031e20985baedcbf6f0db64b9ba219"
+    },
+    "H593-5c99ac9c05994bb4d60da476": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query232.pt",
+      "sha256": "96e49243ba02e779d3f19df67dd3d2e936f56076daca98dc594a9f6e31673808"
+    },
+    "H593-5ca1f16c2917448ec0557e02": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query233.pt",
+      "sha256": "2abefe6a5ed8e9f2a1bf49801f956042a6acb730a36b963bddf9e8ece114f822"
+    },
+    "H593-5cde50d3890df26e13611884": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query234.pt",
+      "sha256": "e026fc8a5bc1620fe4b9e63afb7de7860376d2b1c54d52d6921342c9b106e2b0"
+    },
+    "H593-5ce80bead003f31b6617b817": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query235.pt",
+      "sha256": "7c80b6d6d66b5da9c0a821343bbd9a15dfcbe67ceff24a0eb45e82269e0af9d6"
+    },
+    "H593-5cf549d352c47628697f6f37": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query236.pt",
+      "sha256": "4fc88a73b2f05acdf31ec166f6e02e695884087750b0eb2f1ed93571a8985676"
+    },
+    "H593-5d3f5a51f35755fb8b50d72a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query237.pt",
+      "sha256": "92821d803437975e2d2cae708678a041e773909229e184435f90766baaa0189e"
+    },
+    "H593-5deb30c18beda44d1e9a98af": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query238.pt",
+      "sha256": "83a07f595499edfea013fa18e5ec476f515f8bb68cacbcb56e81268ed9c5916f"
+    },
+    "H593-5e3baff5983fb5e1280953d4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query239.pt",
+      "sha256": "78077b0007090c67dd1e1bade3f7e7ddb487ebc4c3c440be026333f74f1d8b22"
+    },
+    "H593-5ead089e93e3fef6a60f6016": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query240.pt",
+      "sha256": "da0e32a127c890d6456906613288b6e758292ac7e2f9f50102fb6b7621f36105"
+    },
+    "H593-5ec7687ad1569b8195a9fcd1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query241.pt",
+      "sha256": "fcff6d67e60159c1846f07c50c122a0ec6aada5fc0ba965124abc22ca930da86"
+    },
+    "H593-5f1d8e99507134bf9261aa26": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query243.pt",
+      "sha256": "819ac7d3f6d68df51bdaf7e3474a2ef0e9e4e78a5f10661d5eca0648d043468f"
+    },
+    "H593-5f2533f8d63dca3775f00d6e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query244.pt",
+      "sha256": "059bcac423f449ece30ffe3f1444d507ce0dcf9497b623234afc868ee436b51f"
+    },
+    "H593-5fe59cce1a8be38a02275a23": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query245.pt",
+      "sha256": "7b918587d788a4dfc2a7871195c28403e9aef8b00ec70017ae7c852a6a6e52da"
+    },
+    "H593-600a237ce0d7753df38cf902": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query246.pt",
+      "sha256": "185d4ed559a0bc087ee67f6e225b399b3584de0d4ec4cbaca1dc9f896adb4a93"
+    },
+    "H593-60917368d9020829ad933264": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query247.pt",
+      "sha256": "4cb9b085f6ef3d3ffec4658f278e4f6ca7879b6865f573a1a629c22a92410d0e"
+    },
+    "H593-60d3d272fcf4945ce1b4cfad": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query248.pt",
+      "sha256": "9041d7e116855a2b6e0ee8b85b7475757deddff7a1ec7f772849c9b9c30fc069"
+    },
+    "H593-610d2220452ac13a29625c81": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query249.pt",
+      "sha256": "feac49da8ee7600e5c0fbbb5b9b70475aa5ea2fd2578239f6154a7e4645e5757"
+    },
+    "H593-613164a8ed07b8331901f9c7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query250.pt",
+      "sha256": "2310a8fc6e9a7bab99e7a1669d10bd285cac39d274e5232fd59c4fe76cc8a3f9"
+    },
+    "H593-619260cce074655fc8b3b2ce": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query251.pt",
+      "sha256": "57773a1e9b833594f16cc1ebedda1ae5cbde79ca35024b7005438df2bc8281a6"
+    },
+    "H593-61dd525ce4c64a94855321cf": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query252.pt",
+      "sha256": "83b357bb95e8ca2ab1acb587031ff362d4581ad3af633710d0817e5b0468ac53"
+    },
+    "H593-62a3ef9aed28fe11480a070d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query253.pt",
+      "sha256": "3106a732172b1e6576cc87cd6cf026bc595d1efdab45468b9161814fc6be7631"
+    },
+    "H593-6383fcb3c30d23a881c0d351": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query254.pt",
+      "sha256": "33231d27eda306c31ff0898a614592f8d8f2cb55f24005e959dfe344587bcdcc"
+    },
+    "H593-63f9178f5a1ac8c911f30671": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query255.pt",
+      "sha256": "9a8ba890a60041469ad54114e884ee0374fbe3ed6525ed8ba1d69cf2b377f6f7"
+    },
+    "H593-64732ad8af7e22ab8530b83d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query256.pt",
+      "sha256": "99a96e468e56d515e7a549a178bda0931c867552866c8b880a7ccdd9dd3ac547"
+    },
+    "H593-648cf256a0655f0b4baede6a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query257.pt",
+      "sha256": "30807a3f4a6674b5efa5cbb3bb753333f88a6fca63f49b00b403d38f994e492c"
+    },
+    "H593-64d4b96748545637c220ac9d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query258.pt",
+      "sha256": "992d24074ab61e7022d3e981354d9e591187c813dad980cd72bc683db9936ecd"
+    },
+    "H593-64e146b0abb950dce567767c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query259.pt",
+      "sha256": "5a4cc510d7ee851d60c8bad941bdfa56646fe5497691b6efebec11bfcd893e06"
+    },
+    "H593-657b8fd68285cbf2a58e2cd2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query260.pt",
+      "sha256": "217b637ee9dbf288aaeea8ac6c7a854a356c3cf4d06c1d7a20f7c5b9f8717ea9"
+    },
+    "H593-6643faf35f58ab82ab7e712d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query261.pt",
+      "sha256": "f4b96d2c5880560e207f45d6fe4a57b339932b75a5138e1970971d3bc45c4d5c"
+    },
+    "H593-671d0f11f416b72cd6df22b5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query262.pt",
+      "sha256": "70acb7260c2331ed67cf548157d5cb49f6ecb727e6dec631ec0ba3e83e4d1068"
+    },
+    "H593-6829310800010539ea1d94b5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query263.pt",
+      "sha256": "d70564b3b425cb50a7a425188b4d58944e95e11f0e9e5868d72cbf99cf283a2c"
+    },
+    "H593-68c0678826661b7d2a038ac8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query264.pt",
+      "sha256": "c455fc83a1828d814653405c410ec006fc118a7b38b3b1ad92136685ecbedf32"
+    },
+    "H593-6a135758a5df59039c4dd3ef": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query265.pt",
+      "sha256": "74daf080f87429e6396a7db55df2bd6aed477d6d7650f25d883e6c6fc7dbcd76"
+    },
+    "H593-6a176cd4811e16620c134360": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query266.pt",
+      "sha256": "d4f8b6ff6a0a5205b3445053a0e0c027b93dd1d1abb3755cc51153678925e19c"
+    },
+    "H593-6a23b1a27c51bbde9c38b5ce": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query267.pt",
+      "sha256": "85c122d5b8e744a7af6b1302806e08f1f9c94679790af74d2cf433dce7932ae2"
+    },
+    "H593-6a41937f82d722c1bd11db83": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query268.pt",
+      "sha256": "506236be99ecb6cf08c64de0dff309ee123a30814e6bed2939705ed3d591fe25"
+    },
+    "H593-6b6f28c3059152ad0505c08d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query270.pt",
+      "sha256": "2a63b631a24eea94e98a084460fa5b4298f2fdb1832c58ca02be15f84315eb7e"
+    },
+    "H593-6c4ba020c70c5827dd7c5229": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query271.pt",
+      "sha256": "5a340498819ea137f713b39e6a7b5c2499febf6c719e0b7b938b457e67149aad"
+    },
+    "H593-6d972ef4236570a35bc4adf0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query272.pt",
+      "sha256": "ced7cbabfd4f8659b88d18ae98dba4310b74311aa1bcd6edf342db25c38875f6"
+    },
+    "H593-6e81425780a0e9f03a924de4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query273.pt",
+      "sha256": "2eeac95b82648016d30469f848fcfc1d97680be90cb1dfabb277c4e70d2cea35"
+    },
+    "H593-6eed4a007d0370e035410941": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query274.pt",
+      "sha256": "e48cdc1ba8725522bfcbd2500d0d12dfe4f1f48a05de593f061cb6ab655c6899"
+    },
+    "H593-6f38112fbf3474ccf845534e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query275.pt",
+      "sha256": "70648e6d57b242c9b32c767a5d195d161168bce07a7f8a755d1050891de9198e"
+    },
+    "H593-6fbc0bd5cc7a6fdd5e33f290": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query276.pt",
+      "sha256": "3c8589b749354dbf21ecc9a1033bb36193a7440b4caf325fe7f5e388f537709e"
+    },
+    "H593-6fd71aa96c47c72dff2bd2f2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query277.pt",
+      "sha256": "4d96309d13d4b386a4887230597db669369ec9d7f20ba09e749260d383c10180"
+    },
+    "H593-7090a1ee7fe6811f7fd655ec": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query278.pt",
+      "sha256": "17a5999ec76c3d7767e826eff562a06f421e4477a45f5ef4e1fea29ecb8a1914"
+    },
+    "H593-70d36e5f24cab2ddc78b38ea": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query279.pt",
+      "sha256": "3d9d5631df89ba8d1cea0f6873794ac5b2b437316384a4422b66978ad04157ad"
+    },
+    "H593-715fe4641e960fade94872da": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query280.pt",
+      "sha256": "2c9621f0d38353b3f7c7908e9497e6548c17b6c404731bd09a4ccdff8b18440b"
+    },
+    "H593-71a8e729bc95ecbd6e4dbc1e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query281.pt",
+      "sha256": "6171dbca42b5455986db328a18e0c150bf1c1f122d785baa38e95ef33e4058d9"
+    },
+    "H593-71b6e21207e212b1665f9cc6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query282.pt",
+      "sha256": "2f6492b8f0dfde12b72bbcc8a92f16bc7d74122720018a6090b94d71025444cf"
+    },
+    "H593-71bb9528a8ed1a01bbcf03c2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query283.pt",
+      "sha256": "c955f4801e0f58c828fc6ddadd53e558f780cbae68fd11de77c1d6d94af69432"
+    },
+    "H593-72fa544dc79ae7a09a7d75c3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query284.pt",
+      "sha256": "7995be0d3b82e9978b06bca79e99ae292cfc0bd137ff56335df9d26e40bf412f"
+    },
+    "H593-73779fe9c390b8d75b07f9fc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query285.pt",
+      "sha256": "027e535dcec183e5781c6db992916cce64f4596bb1a834d131ee2d3f91c44fef"
+    },
+    "H593-74f8620ac02b6e6c2a64a722": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query286.pt",
+      "sha256": "ca5c333d21b8a6132f4eae93592f92436f2b27f85ffc83f55158e226950b2b79"
+    },
+    "H593-75bb4e011323af524bb6c0a8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query287.pt",
+      "sha256": "8244ab3f9767b527018986c58223cd29eaf26ea9230207f3a1ae03996d9be2a4"
+    },
+    "H593-772d4e717709ffb1faaa4751": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query289.pt",
+      "sha256": "f66e24a0a003652f5a4db7eacb1bae457dbc50d3ebac3aacfaba0e08a4a58c7d"
+    },
+    "H593-781e579d26df1fa016a3b3b2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query290.pt",
+      "sha256": "1e2eac4633a0f07e585d88ef1e523dc13d33ca2be5f7c49393ce906a39bd7c89"
+    },
+    "H593-78606a2dd4349afc3e93a5d4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query291.pt",
+      "sha256": "c2ee21a7b2dbe7094694f2caa074d4c9fe1984defb50e2669a9b71328536b280"
+    },
+    "H593-78915e402bcb9f1d844cc49f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query292.pt",
+      "sha256": "460cecc7725d30880affb70a8edfee87437eff868ee64071e5eefc0541b1abe8"
+    },
+    "H593-789352ff1b5b65e23c400aa3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query293.pt",
+      "sha256": "e9bd97928d82e60299146954752e5ad73f4663106d21a311a09059933f3ad8ff"
+    },
+    "H593-79ce3b4b2a924821dc8dc21a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query294.pt",
+      "sha256": "baab985a681d45af21c3bfd74357c189ebbbda08dc2f943cb28e45401359cd92"
+    },
+    "H593-7a2a329a01beb7a806b52b3e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query295.pt",
+      "sha256": "997b16ce6f6a2eb019f4b470299cc57669aa72cef08d42b4906db9b0efd0e10a"
+    },
+    "H593-7b06dd98b68f8bb5cfaf5ee9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query296.pt",
+      "sha256": "999860b58c003da239076c6eedd1ab436e32908a251dec7fce7b54474140d947"
+    },
+    "H593-7b7e5008423565e7dabb7046": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query297.pt",
+      "sha256": "567e379e61e07121145f1d084ba8d451186bb06a1a49e5e7a24718f34eab5348"
+    },
+    "H593-7bec97dabbf6cdb58e99fd1c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query299.pt",
+      "sha256": "c681cdc31b7086361e05e0be91d004317f7b681d92c9104b5b052ff343e6a627"
+    },
+    "H593-7c514d458a3698754aa405bc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query300.pt",
+      "sha256": "c7c9bf6b51fc81698199a7c19ef5e06778b78df10c755782382df05d6b2e0428"
+    },
+    "H593-7c5d7856df1eaee4c5e9743d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query301.pt",
+      "sha256": "2de57fad9c1345c58fbdb358e153ae07e4f10221f6bec6791810472675ba7d3a"
+    },
+    "H593-7c6edd0dd50c429fa6b1d952": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query302.pt",
+      "sha256": "95f7bee290c26771490e86d54c9af08d4087a7deb974940bbc4f15b54da2b7c0"
+    },
+    "H593-7d06b1868b0027825f88ef1c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query303.pt",
+      "sha256": "62973359b378a680e2a808a0ee7c1c45b922013350b37012868022091ad06a4f"
+    },
+    "H593-7d0da05ef415f738c2552977": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query304.pt",
+      "sha256": "7942c7a03af9e6b2d17c6f57283afb24566278047d0f5b5729613ec5c778ad52"
+    },
+    "H593-7d8b07a3d2656655a4aca7bb": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query305.pt",
+      "sha256": "ab07ee75d499ca4b24dd43707a5f6f5399559805b49c4c0b07276bdb55e0cfdb"
+    },
+    "H593-7d98c429f6f7e1e10918800b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query306.pt",
+      "sha256": "4404793c0c3fd320900ed46cb0933b6272a48fbad8b4226a9846f34443612ba8"
+    },
+    "H593-7dacd3aadc7a3c0857f02206": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query307.pt",
+      "sha256": "e72ca23df3402bd0dd72a230802b3adf1cc2abb2d2318d95efb1fd375a6a33d8"
+    },
+    "H593-7e69370b1238d0d64a7652cd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query308.pt",
+      "sha256": "9ea261f55e303cd11455427354bd9aeb471add5c6e194a216854555fcb88fbae"
+    },
+    "H593-7e8b411c2369c244ad7087b2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query309.pt",
+      "sha256": "d1c8b1fef00b71dd4070fa0c0df282839b351e202beec242810aab9da652b345"
+    },
+    "H593-7ee5e502bef1035c68e37c1a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query310.pt",
+      "sha256": "e41edd0e8acb2b42060df8d649331adabf928b69e763f8fb38f5cbbf32c63653"
+    },
+    "H593-7ef48aba809a41bdbf3bca77": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query311.pt",
+      "sha256": "08d8a3bd88ba101cfd86697862586959163f26edeadc650008bc9c72ec461c46"
+    },
+    "H593-7ef565e4b6b34418380c35a3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query312.pt",
+      "sha256": "5e026bf07fc4705fd1a58845113bfcdcd996db179b49dce0868b48ca8130fb47"
+    },
+    "H593-7f0d1bb3ad1b26bad23006b9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query313.pt",
+      "sha256": "9d047c7ed49762e966811fcace619f98ac8b09e8cd15d7c574467f3ad3da4bb9"
+    },
+    "H593-7f0f41ced5016535e6387661": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query314.pt",
+      "sha256": "a3e2c5f807fc19a48f1a4e70531df76fde9adab0719bc29100ac20e0b6d1942c"
+    },
+    "H593-7f2d9238a94e1a0d377e3c3d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query315.pt",
+      "sha256": "ec6f7df1f2feba7f63c97f0453db51eeb45a97a8e3bd5ddc49b2953e9961c3d7"
+    },
+    "H593-7f660327bc71c144559f7752": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query316.pt",
+      "sha256": "73b82f2e1d428e3f08dc9de40393003b7db49a94cea8010a3cc79cebf6dfff3c"
+    },
+    "H593-7f9909762046898e336e4643": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query317.pt",
+      "sha256": "7df59b798a27542066601c6f778169bda57038a10bf0298fea454f9d603b1578"
+    },
+    "H593-80833abd79f8f663bae6168f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query318.pt",
+      "sha256": "0de32a2d404777d23959ec4382cad94476415a7bd924b67719bc430c36f7a3a2"
+    },
+    "H593-8084a71b01d9f785089e6ccd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query319.pt",
+      "sha256": "786cb73f161de85f8a3c651bab6e6202897a3ecd4c01419345dd75456e02b154"
+    },
+    "H593-80c5e47b3fd61cde75299862": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query320.pt",
+      "sha256": "4ba5ec37971f9432b6cf8fd354cebb98ba5e1f0f6be5a43431be4bb70f527126"
+    },
+    "H593-81dbdb08652482bd8788ce02": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query321.pt",
+      "sha256": "ce457a0ce201cfc61307701c7cb89536af7091a22b9e50e21d1dbac5d62dd244"
+    },
+    "H593-820e5167c392828d4e579768": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query322.pt",
+      "sha256": "89344a71de86afe9d9a5d0027a9fec21d76e35addeb586aa4adfbc29a18fa227"
+    },
+    "H593-8266ebf78426769d3bbbec9c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query323.pt",
+      "sha256": "ab70b3e1228e35904ee4f1a9ca521543fb0692ccb011dc278371f7f712c9bd5c"
+    },
+    "H593-8285fd5984e94e029faac844": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query324.pt",
+      "sha256": "c807506f76c6dafcdb1eae51919138a8549b1449f999a330c6628618caea4173"
+    },
+    "H593-82accb6320d90d4f40f6aee3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query325.pt",
+      "sha256": "9e4219a8b024def8514c80494d36f7675f08d4f62cf76124a1a611ce7c71ef3e"
+    },
+    "H593-83ae5f0f0c0328c63ca8ba2c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query326.pt",
+      "sha256": "46b5002dd6fa5ea3e26a063fd81cf974ce20316414d1b7b12c80e2af758a3b07"
+    },
+    "H593-83c5074ae46b2bcd08002e11": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query327.pt",
+      "sha256": "2694c6bfc91925e958658d886151648ed2660de136752692eab6e504e42545d4"
+    },
+    "H593-846e1664026a641b27c25c21": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query328.pt",
+      "sha256": "ac3e259b57cd53c50e995741227b9af1865f8a0a3169ff7144a63feb3247ec7c"
+    },
+    "H593-8471180120a9a4d1308aa35b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query329.pt",
+      "sha256": "bdf7927a4ada2798ca3cce32802ec8bb8b25b2425cceafa427cce57cb4851a0b"
+    },
+    "H593-856f6cccd12a19abbefd0068": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query330.pt",
+      "sha256": "31ff75ed239c8314da84662fd8d0ce778c7509d89fcdbec82cd934b85004d9f5"
+    },
+    "H593-85ad4b95b4f6fc8b44843023": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query331.pt",
+      "sha256": "19259b6117291e50a632566739eae08061458a985107c2c65bef17f21ac964ec"
+    },
+    "H593-86dacdfaa7e49eed6c7701bc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query332.pt",
+      "sha256": "8423f2a94543b01cb500b0070daca5aa8abac7546aca9ff1ce469fdf19f3485c"
+    },
+    "H593-873815a4220226b46cf86099": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query333.pt",
+      "sha256": "9b64bf3d9652bb71e0ba075fca91c1fadd2e7c895ae2d26d28dddf16a8bc8dd9"
+    },
+    "H593-87ac2a4b8bc60542af7bf709": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query334.pt",
+      "sha256": "e707cd870d6b747defd70cefabfb904bb27e2b7c1da5e2c87ccc81082284afe2"
+    },
+    "H593-89f858095a471767364e3a86": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query335.pt",
+      "sha256": "8572290a27360b020b390a3206480af5b94bdfab11ac980af88da432a2a84355"
+    },
+    "H593-8a0c8f3872f6604400a4f5a3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query336.pt",
+      "sha256": "c2da889d4e9ee753257dbb13a844700ed3c5e717ada118eb0d1d0afa750098c5"
+    },
+    "H593-8a536eb4afa1e192028304cb": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query337.pt",
+      "sha256": "3534783e905b95fe5a2f7244930f5165f7b7185e82a6aeebe5c3571faf823609"
+    },
+    "H593-8b7ecf77a17bdcf3073f645c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query338.pt",
+      "sha256": "8c1542a0a82382861ced8dcb0e0c1a8e47990c03efdab1bf679a5a582ee05d3f"
+    },
+    "H593-8bb2544752c9d69209d15c50": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query339.pt",
+      "sha256": "2d1daa15b712f9e9255743045dc65adddd1e733a89f135ed881d683aeb04c543"
+    },
+    "H593-8cfc3f4dd768e6bfd60f2810": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query340.pt",
+      "sha256": "9eb051de1263a1af4d7a3c055becdcab2a59e9f41589c21adeed1c96266395a9"
+    },
+    "H593-8d6854acb79630102d79485a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query341.pt",
+      "sha256": "645d91a66fb3f7ca76af0e5982a527c92485a8ec2902aa7e87c37b1a1d8ffe02"
+    },
+    "H593-8de398eccd35d2516c677aaa": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query342.pt",
+      "sha256": "40059d98c4429e89d5fc4759aae39ceb9d93b5781c41bc6cda6244bfa2a86488"
+    },
+    "H593-8dfa0524053f87e724996a9e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query343.pt",
+      "sha256": "4e816fb5f50f9d5c5b14e4c90b2fa00e3731f5cd85ed10254d7538b044832ebe"
+    },
+    "H593-8f096c4d02544b0511563036": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query344.pt",
+      "sha256": "b18b57c31c4506ee02335c956c5493be47cd8f9f6ca8ef549132ca19238919dc"
+    },
+    "H593-8f781475641ffa2c1fa69d45": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query345.pt",
+      "sha256": "9474ff9ea2bf811257d04338d20db8ec46da36726a708f03d47c84de3e8dd904"
+    },
+    "H593-901d8e16d1938d576207e589": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query347.pt",
+      "sha256": "bf6430f08d9dd7fee32f21d9de4a038bdeca9a0cd7673709632587fa46642fa8"
+    },
+    "H593-90acde9b0567a472f4232120": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query348.pt",
+      "sha256": "e8c83b11f34127b8f526a4aed563fcb7cec74a078ffb954d5711754f14f857d7"
+    },
+    "H593-913ec852ccd620d36cfbe8d5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query349.pt",
+      "sha256": "250739c598ebde2565d9f7efd373ec26e5a359b7a3709a2a3843329f48e79e81"
+    },
+    "H593-928c2091183fb7bc5e8d8c76": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query350.pt",
+      "sha256": "96540d12d7ed0e2d0b37236e862407b992fc1dade2f7afbbc94ff582a404c0ea"
+    },
+    "H593-93bb466d99aefd144ec856ee": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query351.pt",
+      "sha256": "0c589f9450ee366d3781ec34a45e892523d49ffe6f4401799eca1964176a62f8"
+    },
+    "H593-94c8aface219e35791ceaea6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query352.pt",
+      "sha256": "e36066453e39debb376f6406e3648d604c87ea4ecc52c85e4223d862a246bea7"
+    },
+    "H593-94f0441d80c908de395777ea": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query353.pt",
+      "sha256": "72fd9cdbbd039d75dcd03b97ab820b3909640bfd0e044b14ba70556631162e22"
+    },
+    "H593-9567a5b390df83a314dbfab1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query354.pt",
+      "sha256": "6c493942e66fad95706024cb3e3861debde3a45de58c901ffa1ef8a10e90307e"
+    },
+    "H593-95b957426a8c934b0bb6e8c5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query355.pt",
+      "sha256": "f86e25c7bc0b3e90bc35de9fd9dff239898ecb3a95dcc289a8a38809482309d1"
+    },
+    "H593-9609a1ade70bc285b43d714c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query356.pt",
+      "sha256": "d2076a5530a9c111c6dba77b040435072deae0ae055dc4721c2f3e60ecfc6879"
+    },
+    "H593-960ffe9ce8453f803f0d7069": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query357.pt",
+      "sha256": "c8188e00b9c52243ed31cec990fcd7ea8aec6f1689809099c1bbd523a148a806"
+    },
+    "H593-96b120672ad18ee05520c1c2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query358.pt",
+      "sha256": "ad131b717bfef9a1f6fcc76a3887f6788a36617e143cf4d8ad355117476c4bcc"
+    },
+    "H593-9758eb12de9aee217daf447c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query359.pt",
+      "sha256": "5f1ec3a9dadb0e5a3d69359a32e01758cba77706eaabf35c57c893c2c16abccc"
+    },
+    "H593-978cc9932e208401b21a7478": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query360.pt",
+      "sha256": "b6f697b7746f9cee45271e6293a78444cc510799ece09117113c6517218b2c53"
+    },
+    "H593-978f4b594ec67d209cdfd758": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query361.pt",
+      "sha256": "531b65bcde614fb78081e46e9c20f61d233ac494aad37a7d0e2b084e35ef1b0d"
+    },
+    "H593-979d4429602e6c4a69aa6724": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query362.pt",
+      "sha256": "1fb58b03c2c57f2645a99f37f2b604d210345f00be70cf42b7e25e42ae12a3c8"
+    },
+    "H593-999f83e11a6c2a0fac269ff5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query363.pt",
+      "sha256": "f6c2941c501ab81602aaff91eee633a007235c5c4f2c3cb43ecbf7e625cbee7f"
+    },
+    "H593-9a4d47022d3146e0af92e33f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query364.pt",
+      "sha256": "c3bcf84af4afedfb30866469b505deab94b5f09070306834bcd73c5c564afb11"
+    },
+    "H593-9b0fe03a3633ed99ecc96e21": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query366.pt",
+      "sha256": "a578c664278244e1a86f2e00cf8ce78c2fdad8fd2875bbbb7f0f357dc9770a46"
+    },
+    "H593-9b681db8e5117d318b40d460": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query367.pt",
+      "sha256": "debb08183a4a73ffed9756469224721f1809215e8652a4a1ac0a33058f5b8bf5"
+    },
+    "H593-9bb742601df8e97873473bfd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query368.pt",
+      "sha256": "cbbe1d375ff75af562c6eee90b62a7b5e207a58bac626390b060076f50126c95"
+    },
+    "H593-9c0aaa63096534849ab64b8c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query370.pt",
+      "sha256": "84cc5a852729eb6dc9e9951e4eca18d2b9c46a215679efdbd1e7481cfe2b34e0"
+    },
+    "H593-9c93b71a9b46da8e1ed6f3db": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query371.pt",
+      "sha256": "3af5335bfe44872f92a79b40b15b1204f4d372af7bfa9108b9ddc3046142cc22"
+    },
+    "H593-9ca7dde32b05ab798ccbfa8f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query372.pt",
+      "sha256": "5c7e31d14c02751a13d229df7f9f4e9a64c8e13d9d7d6c2b3ad349b2f4937794"
+    },
+    "H593-9d32a43e7529d136a5b58964": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query373.pt",
+      "sha256": "83600118b18e5fc3ab6e8db8779c6ebc499223a0b751ff9715e7b32a566d4cd0"
+    },
+    "H593-9d9064b348467a8bd0f8b9e3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query374.pt",
+      "sha256": "67244278de48512f4ea2cd48b14cb398214a21029ae1bf81bef9efc69e80740e"
+    },
+    "H593-9daaa4e49269fe8b0df59c8c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query375.pt",
+      "sha256": "a55aae821facfcf449d20851f2ef79f54452edc90b8ddd6a1e3277ea0b6f0e91"
+    },
+    "H593-9ed31ed09c4b3cb0fa797e4b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query376.pt",
+      "sha256": "b60d9589cdfcdaed19be2ccf017eed8c3d089257e105f85b22527be21b3a3a19"
+    },
+    "H593-9ed878a775d721d5d77a491d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query377.pt",
+      "sha256": "db904048bd45a5ea0cbc97af2c67c8955a310559403f42369287b57445a3908c"
+    },
+    "H593-9ef1d8c2590d6487518c2d18": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query378.pt",
+      "sha256": "b2b3d2bb9f7b1b3eba95fc9c0c9a0a99349c9e5c794a5b0a8a46cd1d7db8774f"
+    },
+    "H593-9f8dd01155f74649239042a7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query379.pt",
+      "sha256": "6a6cffe7a3d35fd939fb5b8b0b2ae587bf80c6f8ad26844732bb31676d589ff1"
+    },
+    "H593-9f91daf2068d31d6a3605a12": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query380.pt",
+      "sha256": "29f60773d6faf437540fb8d1fa4b39470fd9f8d363200a866382853ab5466c72"
+    },
+    "H593-a04fed19b50c1df3dfaa07e3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query381.pt",
+      "sha256": "515a1baad2643d75a1c9e346d3eb8f25dcdbeed1398869c8b6175448aa46519f"
+    },
+    "H593-a05ecc9947c81d4eb4b6ee3b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query382.pt",
+      "sha256": "f1cdd9fdf2ce87507f2727c7512ece2117c41a41f62609268957a479b4708dbc"
+    },
+    "H593-a0c47eb239ac25d662c34c18": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query383.pt",
+      "sha256": "0b12b7ab5bc518bf2b4995c8a8fa7b6b3384878b261772a1ea23f34ea4ccf415"
+    },
+    "H593-a0d714dbbee06d9907f4d20e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query384.pt",
+      "sha256": "6706c787ec5765ee1875f54502a7cb7b05567c47cb5dd17789f3ea2d0b8753ba"
+    },
+    "H593-a114ff1f00cbc465a5ace6d8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query385.pt",
+      "sha256": "95b36b159a6a90396da5feee1027570a112e5a18f9426133b5e29616b6624015"
+    },
+    "H593-a1bceaf731739690029b37c4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query386.pt",
+      "sha256": "93c54b4faa22e70b0827c6c81bc6e9319d6fbc2454e7bd7349ac917835ba47ba"
+    },
+    "H593-a1daf11a61705b1051217902": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query387.pt",
+      "sha256": "c9917e019fa70deb17d469e6ed0ef4b3fe22766f8ac905c3d60d536f5c74a70c"
+    },
+    "H593-a20c04fa7e2500016ce114e2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query388.pt",
+      "sha256": "c4509e7b232524d7e8c6fd30f1eb47ce6bce29faba6961c7fef224c166b42d2f"
+    },
+    "H593-a2c507612d213253be128e81": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query389.pt",
+      "sha256": "5b732e4e2e6ad37a3d5e09020d93d3cc60046b578f591e47ffc297b63b2efed2"
+    },
+    "H593-a31a10e1b469032cc39968ef": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query391.pt",
+      "sha256": "8769498b2afef02bfb7d9910b3499e87ffb812350eb2e13aad91d5e1d214c751"
+    },
+    "H593-a37be078955ca99fb50d7a4f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query392.pt",
+      "sha256": "d0c41618f71bf3cd2a6649a809732d455923d79edde20c4e95524e61066de5da"
+    },
+    "H593-a3e7d6500b6b7e33262f9143": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query393.pt",
+      "sha256": "e176c0edaea32fa1030750886d177d682e6d38c1c1a4e03995e499866d76ae8c"
+    },
+    "H593-a487586dad789825a5e5de7e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query394.pt",
+      "sha256": "a82af65815080b0b661b937d4ddbf5c8576aec69d2b1a86dd759e40db467a33c"
+    },
+    "H593-a4a42f963cbb49a2c59b3c36": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query395.pt",
+      "sha256": "461a37a27b0fc9347ee6d42804e051fb16f42d60ccc04188d2e1787361c34bc5"
+    },
+    "H593-a4ae311047750421b6705cb8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query396.pt",
+      "sha256": "d4a67cddba96d82bd2ea4e2cf7c914b69a34e8caa6fe68aa196038dd65c9d256"
+    },
+    "H593-a4b2ba6b91cb5aa793db96b5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query397.pt",
+      "sha256": "c2193e7a9e1444b6305d775c6a38f570ef760a9f91ecbcced44028025daf6926"
+    },
+    "H593-a4df16d733beef6694520349": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query398.pt",
+      "sha256": "ae8691a37b898315d9733f4ede68a8c784c838f0047b969c14e9697579805caf"
+    },
+    "H593-a68241215d96a54614534d61": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query399.pt",
+      "sha256": "87b9d932a2bc0211238883708db8012dc3a51516b4135e085bc6653a02d4f4ce"
+    },
+    "H593-a736a2eceec87049c2d34564": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query400.pt",
+      "sha256": "2f985548d23be8d5c89ec18cc13dd78526c67f958d20075b8dea74f492018ef4"
+    },
+    "H593-a74031ef721651084ee88e86": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query401.pt",
+      "sha256": "af086f83f52db528584c0786e96d2f9a365076f75939a90f7dfeb0976cb77651"
+    },
+    "H593-a75c121cbde1aeaa4aa8433f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query402.pt",
+      "sha256": "3a046e3e764e8974df620ebdaa5c5e67735f6d3a439aee734a4d9dad0a11e5a2"
+    },
+    "H593-a786f0738bcc2b9cbef1d792": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query403.pt",
+      "sha256": "161fdd2e57df42e2b260742a175989c91421265e4bf5210898162add090e9d3a"
+    },
+    "H593-a865a52b11a3d828fa6bc1d1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query405.pt",
+      "sha256": "68c374a274005b913689bba67380b721a4cfa9f504f0b54e3a860a135609a316"
+    },
+    "H593-a99579cf97417982073affd5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query406.pt",
+      "sha256": "fb03c8115c8b8d8e8b4b66d60cd00f4206e2219cf59c2e753b289cd5f5d6e54a"
+    },
+    "H593-aa931c1f4d8700ae037fbb00": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query407.pt",
+      "sha256": "aa2ce9cdcfc42703c4ac71b17e0ee92f490b2e61f7bad0aa6892e9638a9deb5b"
+    },
+    "H593-aad869bc4c329c79b3b3098f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query408.pt",
+      "sha256": "a601ac731cf08ab4120daf37975fdb4593967d0de0ae06f9c55cf411b636d632"
+    },
+    "H593-ab800bcb6b260c64833c792c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query409.pt",
+      "sha256": "3e519e766d07a086ce10c0acc91e93039af6b8072448eac601f945e52d075273"
+    },
+    "H593-abc0b2f2d75d073d9b32aa3f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query410.pt",
+      "sha256": "e811eef97777463e60e4c313c3f5001e7cc2152546e33ca1d5f0ec2d7858c808"
+    },
+    "H593-abe538f97b9ba7aa92d41895": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query411.pt",
+      "sha256": "bc7d13822b4abf9b4fa6780a4d89bb9c5efa29f44a75b91d3f25b22606efb437"
+    },
+    "H593-acb88ad9ae6dc89a74d597a0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query412.pt",
+      "sha256": "a5945ccddc1d8994a87f03834b3e76e70d745d1ebd9f1a46758fd9ce66563a10"
+    },
+    "H593-acbecf04ad7226d889b6b827": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query413.pt",
+      "sha256": "f441705d0e1a5ade8e366a6a5f14db93da63bae9de4a780a7509a98786178e73"
+    },
+    "H593-ad671a6c4a53a334ff1c45da": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query414.pt",
+      "sha256": "63300cc4714707d81a85666ed47abe88a836ece40093c2c2b451b4581b634e73"
+    },
+    "H593-ad73d224791055826ef7876e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query415.pt",
+      "sha256": "69a3cc4ab6d4f949cb3376ea1026b716a9b28b5f7a1c3ac2bb1ff4b577357195"
+    },
+    "H593-ae2c238f2914e4ef8f249622": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query417.pt",
+      "sha256": "5de054655541a1a885722f05010b05d6c8fd4231421e23a12f5c2b365622d6a3"
+    },
+    "H593-ae4130a111482f755df6181a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query418.pt",
+      "sha256": "284af9119ded6ab936124c2bb8a0bd1781fd86c6b55e29a72f1e723bb25714c2"
+    },
+    "H593-ae9be56a1902c7848b38571b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query419.pt",
+      "sha256": "97b19588f2d3bb0cc236b1b5374a3be9cf59de5cf1ef1575521a190f57a2a6fc"
+    },
+    "H593-aee4be696b3cf1e9660a0043": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query420.pt",
+      "sha256": "09677d30fe966727f96b4cafc50f4ddea98e5fe2618865a89baf8723b82abb38"
+    },
+    "H593-af21217245b2cc0821f79503": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query421.pt",
+      "sha256": "4ed7a1c04bd34247e6a15afc899261d991b37a04ec1cc52c70632391220c0a9e"
+    },
+    "H593-afcb436616416abae565da10": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query422.pt",
+      "sha256": "4bcd4d86d0ae324dd88420c7511fa46f8b81afba3cb8b215a9437eabbb845950"
+    },
+    "H593-b04f465b15526e9607fd9b70": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query423.pt",
+      "sha256": "c76d0736347b9b9c1ceec7d83f22453cb041c9b8c67fd81bd0585d48267e65d4"
+    },
+    "H593-b06273e75d64a6537f0ba426": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query424.pt",
+      "sha256": "325ce6ab7e41308ddcaa74a24bafe81058c8c6826c9bd70cf016d92704c3f9e5"
+    },
+    "H593-b06f5f90d0a384729c6b93cb": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query425.pt",
+      "sha256": "c5b98ee258f45895fb1aeb38119d20e2f90bc1fb0e68c1df69131d94cda2e8e0"
+    },
+    "H593-b09f7b0a786d03912dd97806": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query426.pt",
+      "sha256": "ca1ad1013dee15562381e1c1a2678af572bcccd3b364ebe7b85933175007cd5e"
+    },
+    "H593-b186925ccb62a97d1f49a9a6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query427.pt",
+      "sha256": "55b2aa51d9208697ffc9881063ddf663faf306b0bccb04580181f2cd9a62c2ac"
+    },
+    "H593-b2399473327834cc8a1530cb": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query428.pt",
+      "sha256": "17367b5e7ca0a16bd50ec98ffad35c1fdbb977c67c9f17a99acb813dc7f6b243"
+    },
+    "H593-b268a4269d5d61a6e2bbec90": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query429.pt",
+      "sha256": "5fd8b853ff7fc933dcf473e7c8765d6f0d188ad80563f18832596885cdb9e69b"
+    },
+    "H593-b290cd29a15546cc773cf283": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query430.pt",
+      "sha256": "84f671ce5f14e6e8cde3e192e43a8593385dc92014b99a243d89006116e3679f"
+    },
+    "H593-b4135fa9fc83b8c616fa57b7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query431.pt",
+      "sha256": "4dcefd46f25f5653770dbf27c0c7458d0b44bfe72f7744df3f666e201ddb7fad"
+    },
+    "H593-b4f7137c5b415a98210ce3e1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query432.pt",
+      "sha256": "348c63f91987aca0fd7a202f6a3c7d9837866f9ee41780bae900e01097b9b515"
+    },
+    "H593-b5088f4d9100c24150c49220": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query433.pt",
+      "sha256": "77c17724ae7c69f4692ab82639c04178c4434907cafe1f719239588eff216987"
+    },
+    "H593-b52eb937914c8c593a72c477": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query434.pt",
+      "sha256": "bbb336cf5b64eb2ba63c70c84d1591bdd0ebc885dd0dfaaa71fc71f2c065699a"
+    },
+    "H593-b6cf2130e8541c75b7a0daf3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query435.pt",
+      "sha256": "d784be1fc0a7723e5327f6364f9737360c82d4e9de952fa02a98692eee5bf7ef"
+    },
+    "H593-b87cff1766e4fd6e130f4f0d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query436.pt",
+      "sha256": "f31c918427bd13f5e789c5a935d9c66f5d28f9c4fa57a533b87b16a06ac13c5e"
+    },
+    "H593-b890a8f09b0dc93ce3a6ec7c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query437.pt",
+      "sha256": "82e1e951e617069364ee685601a9447774d8b3fd4c0ccfe36144f29f5899ec0c"
+    },
+    "H593-b8b81f9ea25a51448f92c735": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query438.pt",
+      "sha256": "f0fc0731014201c61aae3bc12ba713619b9fddd18decbffae139bbce30159f9c"
+    },
+    "H593-b90eeadf731ed28d7b01ab84": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query439.pt",
+      "sha256": "a7c2377ff834e856bc77920b949fb9f95961ae1b00d2824a10f4839a7641c85f"
+    },
+    "H593-b934ce8694d521ecce42de7b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query440.pt",
+      "sha256": "27c8ccbad27ca0bea41c5fd16d50bfa694dd6590e376db0fee03841fbcc1cdcd"
+    },
+    "H593-b98760533d5b5968acf3d2d8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query441.pt",
+      "sha256": "9357aa6273be59b851f58bfae88a73096e8db4d1120a25781019e884e6229b1d"
+    },
+    "H593-b9b3b47180519cbd55260c38": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query442.pt",
+      "sha256": "2c1a9c4e1f5e59b66ba6224f030387b0e94cb53e91d141a717904f6b029aff56"
+    },
+    "H593-ba2efedd26ed9b4bcecca71f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query443.pt",
+      "sha256": "763e6ec93c783280bbddef97d6274fe5f9735cc6722ed5dc3042f6ff88b79640"
+    },
+    "H593-baaae79e1a5f7793171f450a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query444.pt",
+      "sha256": "2dce6a77ceaa00e519cb399b412b379417f81e46627c8299eee335c52aab26e7"
+    },
+    "H593-bb070f8673390afcb71bba1f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query445.pt",
+      "sha256": "035d218817c0acd18b93d1411ada99e639c6f3db61607a3b00f383cd978b870c"
+    },
+    "H593-bb0e26bf00988704e7674f59": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query446.pt",
+      "sha256": "cd501f7047ff826bb713e399e1924a0773290c6a1cc875ce6a188fa6dddea3c9"
+    },
+    "H593-bb4431f14238909d56f4f6f2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query447.pt",
+      "sha256": "c11be8c56e4f49cdbeb37275300c2d4301e6203f97b4a25075c1f1bade26a4f4"
+    },
+    "H593-bb5dd42b437a1e0b7185f2fb": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query448.pt",
+      "sha256": "a3be0c195fa4c03efd09ce2b0d5341a5cbe48b3381fc0088ce882b789388899e"
+    },
+    "H593-bbff6f2a0463d1430b70d8f7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query449.pt",
+      "sha256": "8bf76eb32a6906000a6aa549adf8d65913feb8aa3a0ca69c99f5b43842b8f128"
+    },
+    "H593-bcb46b28e3f68f1997c73b22": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query450.pt",
+      "sha256": "991bbe9b3127f8ea3fe6019ba7ae99549dd4f371c086ed8a6065d8b0bb2738cc"
+    },
+    "H593-bcc28cdb9788352cc4129ed5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query451.pt",
+      "sha256": "6e20098ff45e505a4d3688d94bfa7ce7f528cd6403d3791071717d94f9c6aad5"
+    },
+    "H593-bcee23f88378066e9f5f0e2a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query452.pt",
+      "sha256": "3f5b1677cd93b6b9573d1326e6fd9f8e6fba4419cad6a4e5a8e6fed07371c26f"
+    },
+    "H593-bd50369106a00a7162abcff8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query453.pt",
+      "sha256": "65917b4ddcc41e65446d1db88cc807ca719b5c4d450bb833f4da8361efcf16e6"
+    },
+    "H593-bebe2833da2edf94d7d8c25b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query454.pt",
+      "sha256": "916b1a6bae37fdece91b366392a934c0aa14ead68b0f7e59afc73aa7c0d409ce"
+    },
+    "H593-bfedff27526023108259df43": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query455.pt",
+      "sha256": "1655b6704ae7a3ceeaf3c601cb6e9c88c252af12cb21bd4e5c397436cfc0e391"
+    },
+    "H593-c0907e99c1c23fe8e8a6b1a3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query456.pt",
+      "sha256": "b5db3cb6c726a7105eba188663a5cae3c488be0748f15deeeb87ba5216afd8bf"
+    },
+    "H593-c1e87208ec64f28d13f80f11": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query457.pt",
+      "sha256": "1e06a5fccf15044ff82fa6854612bcf686d3f1bba7c7e9b559e21d95b633bf6d"
+    },
+    "H593-c22c8e1044a8088c5a3d3f0e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query458.pt",
+      "sha256": "23e51201057d76dd72b89a3ac914e509d58b38bd4aa4d88e0b93e7eea9782087"
+    },
+    "H593-c27cc5698d114b2e38e732d1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query459.pt",
+      "sha256": "a5739ca063fce8c4b4dd0f02ca53b6c1f0698f1fbe8c9a4538328b3993331650"
+    },
+    "H593-c2c8b91bd700c1354b6e6ee9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query460.pt",
+      "sha256": "f0969ea24f0f503aa7831378f6db9286e3375407212ff0b63fe8d6ca4f06f9e4"
+    },
+    "H593-c30cdabf5993a0c426ba0205": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query461.pt",
+      "sha256": "aaf9683faaebe9fbbd55d68be72234612661a20c08037e821b0f99eb580c948b"
+    },
+    "H593-c311ba2ac614da95fb3ed97e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query462.pt",
+      "sha256": "a2dc418f46e3f79aa7f3191232f4a75733627f5be0bf364bc8aa8a12d5df4b79"
+    },
+    "H593-c317503b769e0f3acf782e33": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query463.pt",
+      "sha256": "56f2f1550d6a2962b3eab9e93653274d5ba7efce5c2cbef66daaf441caa3fc2f"
+    },
+    "H593-c358c8ad94f489bab50d45b6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query464.pt",
+      "sha256": "7b2a8d4e766c406dfc5046c0912bcf19c30ded729c79f8f240d41e201002e302"
+    },
+    "H593-c46f21293cefba88bf549fbf": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query465.pt",
+      "sha256": "4b31a4764266210912dfe5cd7f969e905a8261addd824ede737ee46a3cc2c99e"
+    },
+    "H593-c69e2282252382010960c43a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query466.pt",
+      "sha256": "ba6024621dbc7f9dcb4bec19bdf634aa35e38173e31baa19d32f3ea0bbda36d3"
+    },
+    "H593-c6ad63874f6fdf348e0906bf": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query467.pt",
+      "sha256": "a38da0d2434ff00e4cc117a31e36874cb490cd1d6df0ac1358cc0fc5b32b88ef"
+    },
+    "H593-c76764b05b53a550caa7d193": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query468.pt",
+      "sha256": "a21cf861957951167c5af887e1546322e613649da2860d7e8d4154725a870a26"
+    },
+    "H593-c7de10914b97438ea391ef69": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query469.pt",
+      "sha256": "a65cc00236ff29881ea89768a0bc852b92ea0f12daba4b8bf5b020a2f1b16405"
+    },
+    "H593-c80f563bd4cc8c240f4ce0e4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query470.pt",
+      "sha256": "624a4cd86f38ccd42ecc0119f82b8d78307f23461ac88c8b0aaf759dd6d407e9"
+    },
+    "H593-c8379d139262cf23abe8cf3f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query471.pt",
+      "sha256": "38e26236e655e09d963e79b47057223386906bff3866803389c9dc1484809ace"
+    },
+    "H593-c87f01c7404926ac2f3d5404": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query472.pt",
+      "sha256": "8d2f03f4c8dc891c1c3f226aced8f13394afc68e0012db9f4467a02ae78f5959"
+    },
+    "H593-c967c0f887f10151135e81fc": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query473.pt",
+      "sha256": "9d978dcb1b833171df13166339bab8e99ded47cf696781eeaf2476f8aeaee0b9"
+    },
+    "H593-c9ae3eb9e9fe146ef01e07f9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query474.pt",
+      "sha256": "fef9eb14b1278a7c181302c7f1207d35671604763150a88a88adc71f75b731c1"
+    },
+    "H593-c9d897c86e0a07349f3816a5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query475.pt",
+      "sha256": "afeb7bea80bdc3b3b0dfe022853cf7c753df3ab87685650d1d07258892675892"
+    },
+    "H593-ca02c70f0bad8aaf62caa00a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query476.pt",
+      "sha256": "0c1d3de4811d0f3aa808789d97c57ec149e0d487a5d9fe9035c3e40b1c135100"
+    },
+    "H593-ca8b26b506e727e2c826a0a9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query477.pt",
+      "sha256": "2523f40eeb509a0d13ecb893f5b10de785ee1d600f30970328d9dc1da134a154"
+    },
+    "H593-cb08e284452bbeca09345c1d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query478.pt",
+      "sha256": "54cf5c4a8eee7d58fa51b01d6a230073e1b24c5fc714b16547dcc96bb6023b85"
+    },
+    "H593-cb7de2ed70a969859718b4c8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query479.pt",
+      "sha256": "a86f4f908f835357b0a4e06104f2f5b6729045ae00ff0d2ebb7288bcb37aa351"
+    },
+    "H593-cbd580ca8890e580605311e6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query480.pt",
+      "sha256": "c5102f1e1d7f1a43d3a252af1bd28a8e2f74098bd26b4681d2bbc821279b0b69"
+    },
+    "H593-cd810ce4f68ec2e45cc2c736": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query481.pt",
+      "sha256": "04bcadc8093d35a0cfafea6359ad04c83072d808beb5ace66dfd70ae9b9953d3"
+    },
+    "H593-ce6c88b1a0e4cf5238d2af56": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query483.pt",
+      "sha256": "eb0fbe6afe885df05ecd09cfa2dd7b569aef58c3d149d8b36f03ff0cf01d3ce5"
+    },
+    "H593-ce727d9df349b4a2b09b0569": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query484.pt",
+      "sha256": "6b4cd1c5c743b4b457712abf9b94cbfecdba2f50672c55562c92c63c2fcbba80"
+    },
+    "H593-cf3d303c6942b97f41b6fc64": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query485.pt",
+      "sha256": "1d5f7f46f8843170dead16b8c74cfe8e00f2754bbf14d0e1cac2c516bc43dbc1"
+    },
+    "H593-cf4370c2b7c1a87bc4ed328c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query486.pt",
+      "sha256": "eee81cfdf67f700a1dec6327cb2a62c4ae2469e22fe5ce8529cd8c63ecd2fca2"
+    },
+    "H593-d093d4d47fdd62dc2cac68b2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query487.pt",
+      "sha256": "73c6ba88860d6c3a1ae472e5b0f1af6196c7f0f9219a54744ce9e95256811d43"
+    },
+    "H593-d1ddd31574e73913b670ac2f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query488.pt",
+      "sha256": "68a2f19b0fb5d2ed0fc2cf51858559da5c1982e72c15bcb29307f1dca98899c8"
+    },
+    "H593-d26d0257a133ee3b7d65501b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query489.pt",
+      "sha256": "6a7fea28be01f1fa712dd9f8b5d90bb236d12f23c1dc8d6b5bd7482f8d088ef5"
+    },
+    "H593-d29e3883066f9b27a2a4c21a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query490.pt",
+      "sha256": "1655588de3eabd16361f635ba50c92dd22618970aacce0ea53cbfdc38af95592"
+    },
+    "H593-d2bb8fcad397d4f761848233": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query491.pt",
+      "sha256": "0aec5abb629a979213ae8146233bcb15b775aaa5b47deec34bd115e9f1acd446"
+    },
+    "H593-d2ef20eeb4ce3ad7cf1b74d2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query492.pt",
+      "sha256": "d71cba3a87d2166022616f5fffb224d5d6ea66786cf760b38543f77f97e05388"
+    },
+    "H593-d34d6636f26c3f3a95c899cd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query493.pt",
+      "sha256": "dcd3453fb347c09fb56dfd1386a8f7d5c72375834f18fdee712fb65e16f9eb45"
+    },
+    "H593-d35facd3bcef8508d52b6098": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query494.pt",
+      "sha256": "603cfb6d7087383139f6264296f1cd89d9a09d303e3d78128d06b108d60a4572"
+    },
+    "H593-d404e46663a91ac00c5f1973": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query495.pt",
+      "sha256": "467105931e140f584b610f9b56eefcbe2d7585dd4182817e915245b6a14d6fe5"
+    },
+    "H593-d436f10dfd701cc9385e8423": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query496.pt",
+      "sha256": "a601b4e621a02238bbb32dfb8647f3425d705c476df06b6174f5094213d2a905"
+    },
+    "H593-d49db6c43ed93ffbd53c56b2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query497.pt",
+      "sha256": "2c5995bbdfb7756fbd806e65ad59ad81d1c58aa3269c032e5fe4c3ba40276d75"
+    },
+    "H593-d4eb99839abe07f70ec9fa06": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query498.pt",
+      "sha256": "bd7eaa2a363b620e8ac81437bfc048effa085b4fa0df1ef31bcb512588d779b6"
+    },
+    "H593-d4fd56aea7e4dc41f9436c8f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query499.pt",
+      "sha256": "912eb92b7a4fd2dcddd3f23749f3fdc2104a45b5b068718c144d4252dea0e5e9"
+    },
+    "H593-d847127af2275cebc7d0a855": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query502.pt",
+      "sha256": "7e60e211b0ba1865a25254fd564e88916ee3f01e81ce432c6223162cd33a6c0f"
+    },
+    "H593-d89ee18850bb49f7986e065b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query503.pt",
+      "sha256": "8de0aaf161de4a1d8ce731540ae8414bb66316c149ef66924d403ee5ed3da281"
+    },
+    "H593-d95db08b3f39be7256ba6c14": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query504.pt",
+      "sha256": "78ce251607e16d0dbed4ab719391cc968c9f175ceea44c8b0284fa7e9a540cbc"
+    },
+    "H593-da02d3441b2c6b4597eeecd4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query505.pt",
+      "sha256": "dcd961ded798f3eba78d383a4628980c9a0b72bff0afdbca4e3edbe2c2a0d1cd"
+    },
+    "H593-db15ccfd642dc2496260750d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query506.pt",
+      "sha256": "0da4a90adb0611b8ae20e7b1bf77306a25d5bf7a99de746b4518f088f638e575"
+    },
+    "H593-dc202d508f99c4a7bcb3f66b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query507.pt",
+      "sha256": "bc132cb7ee81d42eb787edd2614a9698d34a9c61f7023aece3afaa01761c3a35"
+    },
+    "H593-dc49d87eddb7dcd54a502ee3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query508.pt",
+      "sha256": "6132275702eaf19adf9d2dc2c5f1f7e1de9ffdd258418d3186f9af231f195171"
+    },
+    "H593-dcd3ccb47c9158d5e5bf7f4f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query509.pt",
+      "sha256": "b015797686c2ce59e4d299c9616c56186f991bf5e842cad85d62ce6d797b6a9e"
+    },
+    "H593-dcefc56c2ddbfcd758644177": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query510.pt",
+      "sha256": "89b56fbabe1693aefeac9c594c2098a738cf6590d6bbfdbf4c0412d81cd40902"
+    },
+    "H593-dcf09c09df4f20df9122bf55": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query511.pt",
+      "sha256": "c4de442224a9821f0ab8d43bff5fa863a3f260a92e7c544ecb187a1514dd920e"
+    },
+    "H593-dd30b52d4199a64c81b4976c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query512.pt",
+      "sha256": "430af7d052461cf1e52f1519158371a2b93ae249c1d6b7a8e7c6fbd475225482"
+    },
+    "H593-dd91c965c4987a6f11b4d08b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query513.pt",
+      "sha256": "340802296d3caaa7e076a4a3838d0e7c826ee588218c44ab00a5b2a68b68fdcc"
+    },
+    "H593-dda20b76d5b7af6159053c31": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query514.pt",
+      "sha256": "5c235284c8c84b783f0ae2f6fcd02a4fecb31a19960d2443cbacf601696fc6c0"
+    },
+    "H593-ddd029aad5773c59147bd25d": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query515.pt",
+      "sha256": "95c79489a31d6d31c1cd480576f57792e6e77014405ed2b8440c7a7185b6f1c9"
+    },
+    "H593-ddead65d98e659c927cda92c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query516.pt",
+      "sha256": "a867369ed2586c63b911a6a3643c73456c03a80fc9773ebe98b2739a9596d41c"
+    },
+    "H593-de1e1f6f272fc318dc3c5875": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query517.pt",
+      "sha256": "f3f255edadcd35a594ba5a6f2833bddd53be269e7defd76dadb79f4c2557ad85"
+    },
+    "H593-de48d9ea86e26c33436d5659": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query518.pt",
+      "sha256": "7d88bee163eedb7847038ac25af5fa41d9026889b1e71dda9eeddb721f74105d"
+    },
+    "H593-de5f802ba95b660402a7eb35": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query519.pt",
+      "sha256": "a57927216b102c9a0a7e4828bda9a31bd3614659fa51fcdc5988ca754b7989e9"
+    },
+    "H593-dee44c3e2310634d9bc6b455": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query520.pt",
+      "sha256": "c70bec16a7d16e1fd65ad00466e7a99d1b5b403d005868eb6875e3147cb0199d"
+    },
+    "H593-deeedb839c4275fee269e4b1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query521.pt",
+      "sha256": "1324e33972e20f90b217dafef06d4eda94d07c70ef90d4291ea7ee814ce1556e"
+    },
+    "H593-df2b460cafbe7908b36c9f41": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query522.pt",
+      "sha256": "e0fc420babeee20cace6f01e24a99b785af6d73d44b3c8ba94532f9cb3371b0e"
+    },
+    "H593-dff5ad1efb50ad282dc69f32": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query523.pt",
+      "sha256": "371ec463a84d0afc63f1fa7bae2d3c8352c04dad64b7334470c645cf70d86107"
+    },
+    "H593-e0504cc23358865e805ab7d8": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query524.pt",
+      "sha256": "f8076ea765a9ad8fb2d1c593f6b7d094e90b7ab3542fb0b1ec4defaa472b18c1"
+    },
+    "H593-e074e8a735231d914b14563a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query525.pt",
+      "sha256": "8cd4fa5c94ffac002b6ab6aaa43eb873bd1cedb023086d2c9c71bdcf0f6fe12a"
+    },
+    "H593-e144503cb73837b393fd64a7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query526.pt",
+      "sha256": "6155b26e9c5fabbd78d0d81d3e9e8dfd9a7b38b87fe5fb87318d25c9f2a84609"
+    },
+    "H593-e145bcae800e8d359e4d9bc7": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query527.pt",
+      "sha256": "1f25be3f48ea6388acc9c65554017840f6bd945b60ade8cfc320170862dfcf1f"
+    },
+    "H593-e1d2c7ca3a91606fdef2a012": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query528.pt",
+      "sha256": "35c8a33184e21e123549faf76ff56b72e79e2bb1780d174b0b0755349823d7dd"
+    },
+    "H593-e1fc157329d8b0eed6101eee": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query529.pt",
+      "sha256": "df42ff0695fd85e0fb73559bfabefea0066d5c0e0d880f2f31bed3c99987c57a"
+    },
+    "H593-e231dadc5ef7695b0c738e54": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query530.pt",
+      "sha256": "04e113f318d2070ab4efeb3dc8c86cf95dfbacfa5228a70aa922125a9ecd9970"
+    },
+    "H593-e2472468e840fd9de1c1724f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query531.pt",
+      "sha256": "0e52966b24353982030fdcd1b9764b43c5419d1a85704a601bf712225ac31aaf"
+    },
+    "H593-e2df8b1f9a0066d722f177e2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query532.pt",
+      "sha256": "e391313ad4f9f47051792627ee9cdd382b0a10ecda1fe72b939aacd6a9f47f51"
+    },
+    "H593-e3a1eef1c2822562c67fe0fa": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query533.pt",
+      "sha256": "940c57c2160e720bd6457616b2ab39bc03e1586aead7db708d78785a0927e12c"
+    },
+    "H593-e439fefab23845c41029c64b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query534.pt",
+      "sha256": "815c30a5c76ac930566eefb1b838b35b48cdbd24f278577848096ab3fdb6f2a0"
+    },
+    "H593-e5866ba677990acd1f32d391": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query535.pt",
+      "sha256": "6f411539bd327a645c6ece2d3e522fb5f42f285eacade442782285a99ea812c8"
+    },
+    "H593-e5e24ebb2040c92eaea0764e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query536.pt",
+      "sha256": "82e26996e94b43301a007c02df59e482e4ae26a2c3f965e58794120cb5297f79"
+    },
+    "H593-e5e96cde696cb0a0236052a9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query537.pt",
+      "sha256": "469d63f84a6d2ba2950e4ccda82d3a0df6ecd0a07b740e270fbc0c67503af7f2"
+    },
+    "H593-e692515f387c7a5fc759c07c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query538.pt",
+      "sha256": "087f4ce1944ede17c8b676ae9ddedd145a5ac129ea37992a9cf4d0bdc7ff3908"
+    },
+    "H593-e69eb7b78aae86a02db13aa6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query539.pt",
+      "sha256": "9b04fa35fe4fe8a84c481815970ff671cf5d6fdf897f69d3e3a5878b57020040"
+    },
+    "H593-e745d1315c4f8a09abbb528a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query540.pt",
+      "sha256": "10eb8f92c5b55620c9dc6fc272648881aac19f3a215e721e3522e9449b4637b7"
+    },
+    "H593-e7f81704d24ad28f3ed69f17": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query541.pt",
+      "sha256": "cc859bd7cf363474ea3719453c8e9f905c6ecf07a7b6178817df8e0cb2a4406d"
+    },
+    "H593-e8352d4faef37224ec8d3c87": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query542.pt",
+      "sha256": "0eeb737bf99e5e0ddeea52c9dfa59ba45b2f2994a889078e5f89a4e94ffaccaf"
+    },
+    "H593-e8c8ae988bf96315bca9637e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query543.pt",
+      "sha256": "d0530f3d048b5a63f1654414eacc7e943435e1fe05edc5a9c3aa5cbbccdd8f16"
+    },
+    "H593-e92fe753ade85e2fd385e8fd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query544.pt",
+      "sha256": "0a7672593968ace5319d60066637e528d8700e4f8907d676899f69963de4047d"
+    },
+    "H593-e99d58a3d13a742bf663ba50": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query545.pt",
+      "sha256": "0fded94c5e4f80d83b6f888e6e2aaa02388d4db290c3f000f4bb07dd692ed7b3"
+    },
+    "H593-ea052fca527e8b385b91ced6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query546.pt",
+      "sha256": "0aabb9c23bdeddda357ce59671374b3c6126462e583ba085ae88ce94ee047af4"
+    },
+    "H593-ea6da1ea39a3b6c4df654b68": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query547.pt",
+      "sha256": "66ce1e24259c0fa7aa9e0b6ed3bdeb9d8b10c4d65aa95cdf0f2e714cf88cd29c"
+    },
+    "H593-eadfceaa5ec693edd8fe4318": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query548.pt",
+      "sha256": "87e81fd3aa4075c5202f803f1f2a7a46ccac7e6df58abf1febd143de4211582f"
+    },
+    "H593-eaf3edda1f071e309b8a2a43": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query549.pt",
+      "sha256": "eafe018d9ce96968e85cdae3d3cc2e130d62c4bf12e9df7882b1fa463c78161c"
+    },
+    "H593-ebb0e74799ca19a69c13cbe6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query550.pt",
+      "sha256": "f12612b82dc29a0d6ce0be4bf98518a6f3af547a21856b415af9b3b191257ebb"
+    },
+    "H593-ebcc7ec67efc54601b0acdc3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query551.pt",
+      "sha256": "4a31127c76f93b0ccd02f5a82b420280d8a56f3d0b24c0e0c833c9803ce968f0"
+    },
+    "H593-ebe004fac3a869155a17eaca": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query552.pt",
+      "sha256": "01c896097ecc64a7f337cf91f877a57b25aaaebab2aeaf6d96380be9a8d1426b"
+    },
+    "H593-ec2c7b5e62c36bab4a4ce68f": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query553.pt",
+      "sha256": "c1f46994191dc43e28ee666ef38910786dacd9ff8e7422e510d68997b1fe9faa"
+    },
+    "H593-ec3836db486607fb464da173": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query554.pt",
+      "sha256": "b5e0a741d468d735fb9c0b5e3e35d49522ba58105fe3f6bad2ba69fd0aca261c"
+    },
+    "H593-ec3b4c5b9e5c85d7f1c77e04": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query555.pt",
+      "sha256": "60e72818a3a91de3852101a30136e34c17c38742fdc1bafef87e1402d625436a"
+    },
+    "H593-edaf6d7ae2f6b07a0947ebe4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query556.pt",
+      "sha256": "725129fc26ca308115cca8d4b0b37eee6a740ddc33010ad7cc883f1bd62b89e0"
+    },
+    "H593-edb743470b7490b0360aa942": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query557.pt",
+      "sha256": "d819e21582e231b4e242b165c67e9fc96d73830b9505ac6a7cf8652906ed206b"
+    },
+    "H593-eed1fdcec6a5fc782b62b0e2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query558.pt",
+      "sha256": "8cfe6a6a096b327da027996731c66576afc145bfecc3bea6776cc8e748acde7e"
+    },
+    "H593-eed6c85ca855e4ae9630c4d1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query559.pt",
+      "sha256": "d1e5ca5e10474bc49163e20bb07cd3c5287f9917b464e93698fc5a9e1cc0f61b"
+    },
+    "H593-efa7a88b273f82ecd4fef43c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query560.pt",
+      "sha256": "a39e5d3a6e483e86434a91a3b05681c1ab1c3ab350dd4f2372222707ed35413e"
+    },
+    "H593-f01b0d9567d81975a69f9aef": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query561.pt",
+      "sha256": "caa0d6f335354f496ba549d36b4ef1dcd8079bedb457f8cfea78a0c6dd0e809a"
+    },
+    "H593-f063b9949afaac7650b24e97": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query562.pt",
+      "sha256": "a99a9395279899197cca7bba12b6f7b403977c08e8e489e39038239e0287a3b5"
+    },
+    "H593-f20e682caad635857fd5f8dd": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query563.pt",
+      "sha256": "9b5164c2187b478f28c1b67a4a043655c242080aca0d68447edf558e248af734"
+    },
+    "H593-f35a8c51ab813d80801658e6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query564.pt",
+      "sha256": "23df2cf543bd8edaea1fea7ad8b8db51784dbe18c77d6f11a833abc95badc610"
+    },
+    "H593-f3c20abac3dd184a86c429a0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query565.pt",
+      "sha256": "a7761c97da025535989cbd4944d48b8ee1e4ae1bf1230824a5137c2320824442"
+    },
+    "H593-f42264b44984bda93155507c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query566.pt",
+      "sha256": "f7789804335c03970b320ce97cc62af885c9661c3a3a51026830a34d4c0d2a43"
+    },
+    "H593-f522efe671aecfa850b10989": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query567.pt",
+      "sha256": "2f693413d0cac662d728fc1f9acdcc514271f7298517ffb3c80d540a3aedd481"
+    },
+    "H593-f56cf6023f8dcccac4693b08": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query568.pt",
+      "sha256": "fa1cb3ac3c0b1d26862f9068bc846608c2c32c7063a98be280c3d7a1df8f7cab"
+    },
+    "H593-f5c5e96edf25f0e9889f7a90": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query569.pt",
+      "sha256": "e4ff8dd7e065fa1b9005343487551f1b6901c59132c363434849805b25b1e06f"
+    },
+    "H593-f76526c33a46334ffd03f393": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query570.pt",
+      "sha256": "9616d90e86ebf75ddae9f982443aaf8a0a869549de434f0a75dd3acd7f9c91e4"
+    },
+    "H593-f82866c3a45308bd0b16d5ac": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query571.pt",
+      "sha256": "3f72f35b8ce650dbcec683b87c16efe4f9801d8593357295ce42a20520ed9028"
+    },
+    "H593-f84d26c893d33050fff89605": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query572.pt",
+      "sha256": "6c755d5ab49df5b73c2cc84fcf7e1dc3f8bc509d4d9fae3b1a12e1f5a90d1b3c"
+    },
+    "H593-f8eff39159581996e9ea4e6c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query573.pt",
+      "sha256": "f21e9530f02fe821babdc29b04f2b8239e8ffe9a55651e32dd1435f67209a6fd"
+    },
+    "H593-f8f2ba33e85faa63a18e6a66": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query574.pt",
+      "sha256": "2044a75f7ca5052c770c1d17165c538ed8d471aa23d696182c16a1d7a32ac8e3"
+    },
+    "H593-f90239a05b957482e11280a4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query575.pt",
+      "sha256": "d2fb69842c30203188a539ccc098abeb359cfd2637c4e3d5aa692a3c1b0d67c9"
+    },
+    "H593-f99f32ee31f49704d2c9891e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query576.pt",
+      "sha256": "8ae79e9174d392e2e0214af9bc71686dbe89939ed13c012b913ce1febe437aca"
+    },
+    "H593-f9fdc3eba36a0ac68a3dcb72": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query577.pt",
+      "sha256": "dcf011b199f7f9f92fa666aa47e3cc3d6710fcbe3771a166d365df26cb1f7a92"
+    },
+    "H593-fa11ede2797c8a575ecf38a9": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query578.pt",
+      "sha256": "79ca4acaee9a524f8762aa470ec18d90af853eec8e1cba752d5a125ba43a4f86"
+    },
+    "H593-fa12d24ad164c3ae3b3f0ff6": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query579.pt",
+      "sha256": "a674c4d4ba8e1f3d92f91a606c1a867971e4d07c8b5a1f9750caf483683fa74d"
+    },
+    "H593-fa40eb493bb915b96a07206e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query580.pt",
+      "sha256": "d9caa53f5f6f50838bea4f9e35abb947d1fd5d57fcaac72c61ba3c9837ce9555"
+    },
+    "H593-faa6074c9997f968c1272a9e": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query581.pt",
+      "sha256": "eb221ea4fe8be09abf57fe46607d04a656de1d723d06edb5124c6012d9e0b902"
+    },
+    "H593-fad260b269d3d417a7731657": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query582.pt",
+      "sha256": "b98358242b6b9a9b69df5f97207a33f484e00583f6ffc5ef3a0cf0996d163822"
+    },
+    "H593-fb2b078bd866460d51bf7395": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query583.pt",
+      "sha256": "1969696606af236072811a52ae7971428858ee9145820ccb2562d7c83ac28221"
+    },
+    "H593-fc24d3c5a9feecb49bf1edfa": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query584.pt",
+      "sha256": "4c3668bb0383790062750b83b7b1623425a102bf44764199f87d11fdea2ec1d0"
+    },
+    "H593-fc81e205bf979fb6adf73655": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query585.pt",
+      "sha256": "48293454e86195f5d5ed9bacb1dceb971a88ea3261d0f5f1ad30d0775227c22c"
+    },
+    "H593-fe03d26ba43ce31225a4cc40": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query586.pt",
+      "sha256": "65f36f89cf28aef6431332f7c3c5cb5df3796852d2cd8f294819c3d52a7b11c0"
+    },
+    "H593-feb9948db167fc67715b216a": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query587.pt",
+      "sha256": "9d3ed5f5583e5f2862106cefeb218230a54500794d4cd1d584d49e3781f7201c"
+    },
+    "H593-fec0fed3cd6dbb3b7fa3bdce": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query588.pt",
+      "sha256": "bbc4c24edec931558a6f185071be5edd14d0abfa12b4400a2714103f0105d848"
+    },
+    "H593-ff10afe9bea632bb497326c1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query589.pt",
+      "sha256": "7252af050d1d7ebfd4f5fcb7e647c87f1f21a7f757efb17efa82b2f500578fe9"
+    },
+    "H593-ff4f96d84bf1c9b62000723b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query590.pt",
+      "sha256": "430e66b7db4c625644cf9d295b78bffd1688722899ffaa567501a584e9bc7961"
+    },
+    "H593-ffa09c9771998a865907952c": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query591.pt",
+      "sha256": "27cee589628ab6d8e8e474eaed25e68a591a8549a58346e0ff6cbe3d7c4a0534"
+    },
+    "H593-ffb122cdce092c8a0ed03d4b": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_train_v2/initial/query592.pt",
+      "sha256": "3f14e1464cea3010e1b5980d627f405ddf60d3bf579d42bfd49690b6551a8f71"
+    }
+  },
+  "configs": [
+    {
+      "fold": 0,
+      "arm": "COL_ONLY_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 0,
+      "arm": "COL_ONLY_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 0,
+      "arm": "COARSE_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 0,
+      "arm": "COARSE_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 0,
+      "arm": "NONE",
+      "seed": 17
+    },
+    {
+      "fold": 0,
+      "arm": "ROMA",
+      "seed": 17
+    },
+    {
+      "fold": 1,
+      "arm": "COL_ONLY_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 1,
+      "arm": "COL_ONLY_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 1,
+      "arm": "COARSE_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 1,
+      "arm": "COARSE_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 1,
+      "arm": "NONE",
+      "seed": 17
+    },
+    {
+      "fold": 1,
+      "arm": "ROMA",
+      "seed": 17
+    },
+    {
+      "fold": 2,
+      "arm": "COL_ONLY_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 2,
+      "arm": "COL_ONLY_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 2,
+      "arm": "COARSE_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 2,
+      "arm": "COARSE_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 2,
+      "arm": "NONE",
+      "seed": 17
+    },
+    {
+      "fold": 2,
+      "arm": "ROMA",
+      "seed": 17
+    },
+    {
+      "fold": 3,
+      "arm": "COL_ONLY_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 3,
+      "arm": "COL_ONLY_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 3,
+      "arm": "COARSE_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 3,
+      "arm": "COARSE_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 3,
+      "arm": "NONE",
+      "seed": 17
+    },
+    {
+      "fold": 3,
+      "arm": "ROMA",
+      "seed": 17
+    },
+    {
+      "fold": 4,
+      "arm": "COL_ONLY_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 4,
+      "arm": "COL_ONLY_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 4,
+      "arm": "COARSE_SINGLE",
+      "seed": 17
+    },
+    {
+      "fold": 4,
+      "arm": "COARSE_PAIR",
+      "seed": 17
+    },
+    {
+      "fold": 4,
+      "arm": "NONE",
+      "seed": 17
+    },
+    {
+      "fold": 4,
+      "arm": "ROMA",
+      "seed": 17
+    }
+  ],
+  "steps": 2000,
+  "precision": "FP64",
+  "new_encoder_forwards": 0,
+  "roma_teacher_loss": false,
+  "primary_loss": "COST1",
+  "max_parallel": 4,
+  "max_chunks_per_config": 128,
+  "target_absent_kept": 23,
+  "evidence": "Opened H593 original grouped OOF5; not external confirmation",
+  "supersedes_execution": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_authority_v1_20260923.json",
+    "sha256": "287601ce6d24e96e21aca30863765342d39aef656dfd88fa0c8c5f0718c20aea"
+  },
+  "execution": {
+    "device": "cpu",
+    "partition": "cpuonly",
+    "threads": 8,
+    "memory_gb": 32,
+    "minutes": 10,
+    "chunk_stop_seconds": 450,
+    "max_parallel": 4,
+    "new_cpu_benchmark": false,
+    "inherited_gpu_capacity": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_pair_quality_v1/benchmark_validation.json",
+      "sha256": "a50b489179f5b7c2c3e6e0fb867120f95366786458aeb5f6de155e68fb00e65d"
+    },
+    "separate_checkpoints": true,
+    "cpu_gpu_bit_exact_claim": false
+  },
+  "prepared_at": "2026-09-23T08:43:29.368299+00:00"
+}

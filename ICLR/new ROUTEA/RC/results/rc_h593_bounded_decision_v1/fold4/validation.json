@@ -1,0 +1,73 @@
+{
+  "status": "BOUNDED_DECISION_FRESH_NUMPY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_bounded_decision_authority_v1_20260921.json",
+    "sha256": "1bac25a0e46fe468f9987bf32e22b10701e27501d9f6cbf0f99e67244a0ffede"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_bounded_decision_v1/fold4/payload.json",
+    "sha256": "cda91d7c9cd4a1def8aa42f339dc26f161bb2bda262df7d24236ff8927544537"
+  },
+  "logits": {
+    "COST1_FULL": {
+      "logit_count": 14986,
+      "max_abs_error": 2.6645352591003757e-15,
+      "decisions": 118
+    },
+    "CE_FULL": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "DIAG_CE13": {
+      "logit_count": 14986,
+      "max_abs_error": 8.881784197001252e-15,
+      "decisions": 118
+    },
+    "JOINT_CONTENT_CE18": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    },
+    "DIAG_BOUND13": {
+      "logit_count": 14986,
+      "max_abs_error": 6.394884621840902e-14,
+      "decisions": 118
+    },
+    "DIAG_CONT_CE13": {
+      "logit_count": 14986,
+      "max_abs_error": 8.881784197001252e-15,
+      "decisions": 118
+    },
+    "CONTENT_BOUND18": {
+      "logit_count": 14986,
+      "max_abs_error": 3.552713678800501e-14,
+      "decisions": 118
+    },
+    "CONTENT_CONT_CE18": {
+      "logit_count": 14986,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 118
+    }
+  },
+  "gradients": {
+    "DIAG_BOUND13": {
+      "loss_error": 1.3877787807814457e-17,
+      "gradient_error": 1.1763593571467723e-17
+    },
+    "DIAG_CONT_CE13": {
+      "loss_error": 5.551115123125783e-17,
+      "gradient_error": 2.6053002333956327e-16
+    },
+    "CONTENT_BOUND18": {
+      "loss_error": 0.0,
+      "gradient_error": 2.7376104855258987e-18
+    },
+    "CONTENT_CONT_CE18": {
+      "loss_error": 5.551115123125783e-17,
+      "gradient_error": 2.594241688873636e-16
+    }
+  },
+  "heldout_label_reads": 0,
+  "fresh_refits": 4
+}

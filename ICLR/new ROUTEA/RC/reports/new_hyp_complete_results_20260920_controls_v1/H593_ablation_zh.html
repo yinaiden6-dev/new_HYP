@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>new HYP 实验汇总</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">new HYP 实验汇总</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#h593-六项证据逐项消融">H593 六项证据逐项消融</a>
+<ul>
+<li><a href="#配对分组结果">配对分组结果</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="h593-六项证据逐项消融">H593 六项证据逐项消融</h1>
+<p>原 H593 grouped OOF5、RAW 自然 C128、原六统计、FP64/2000 updates；COST1 为主、CE 为对照。全部593图纳入，包含23个候选缺失。</p>
+<p>FULL参数和原始127分数逐位复现封存结果；每个REFIT在独立新进程重训重放，NumPy核算通过。ZERO只置零该权重且保留bias；REFIT删除该输入列后重训其余五权重和bias。</p>
+<table>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th style="text-align: right;">正确/593</th>
+<th style="text-align: right;">对RAW救/损</th>
+<th style="text-align: right;">对FULL救/损</th>
+<th style="text-align: right;">MRR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>COST1_FULL</td>
+<td style="text-align: right;">481</td>
+<td style="text-align: right;">58/3</td>
+<td style="text-align: right;">0/0</td>
+<td style="text-align: right;">0.854276</td>
+</tr>
+<tr class="even">
+<td>COST1_ZERO_RAW</td>
+<td style="text-align: right;">456</td>
+<td style="text-align: right;">66/36</td>
+<td style="text-align: right;">12/37</td>
+<td style="text-align: right;">0.838250</td>
+</tr>
+<tr class="odd">
+<td>COST1_ZERO_S</td>
+<td style="text-align: right;">487</td>
+<td style="text-align: right;">72/11</td>
+<td style="text-align: right;">14/8</td>
+<td style="text-align: right;">0.864116</td>
+</tr>
+<tr class="even">
+<td>COST1_ZERO_M</td>
+<td style="text-align: right;">426</td>
+<td style="text-align: right;">0/0</td>
+<td style="text-align: right;">3/58</td>
+<td style="text-align: right;">0.790204</td>
+</tr>
+<tr class="odd">
+<td>COST1_ZERO_L</td>
+<td style="text-align: right;">435</td>
+<td style="text-align: right;">11/2</td>
+<td style="text-align: right;">2/48</td>
+<td style="text-align: right;">0.800025</td>
+</tr>
+<tr class="even">
+<td>COST1_ZERO_Q</td>
+<td style="text-align: right;">480</td>
+<td style="text-align: right;">56/2</td>
+<td style="text-align: right;">1/2</td>
+<td style="text-align: right;">0.852186</td>
+</tr>
+<tr class="odd">
+<td>COST1_ZERO_R</td>
+<td style="text-align: right;">481</td>
+<td style="text-align: right;">59/4</td>
+<td style="text-align: right;">1/1</td>
+<td style="text-align: right;">0.854951</td>
+</tr>
+<tr class="even">
+<td>COST1_REFIT_RAW</td>
+<td style="text-align: right;">467</td>
+<td style="text-align: right;">45/4</td>
+<td style="text-align: right;">10/24</td>
+<td style="text-align: right;">0.844022</td>
+</tr>
+<tr class="odd">
+<td>COST1_REFIT_S</td>
+<td style="text-align: right;">478</td>
+<td style="text-align: right;">56/4</td>
+<td style="text-align: right;">1/4</td>
+<td style="text-align: right;">0.850037</td>
+</tr>
+<tr class="even">
+<td>COST1_REFIT_M</td>
+<td style="text-align: right;">474</td>
+<td style="text-align: right;">50/2</td>
+<td style="text-align: right;">5/12</td>
+<td style="text-align: right;">0.840647</td>
+</tr>
+<tr class="odd">
+<td>COST1_REFIT_L</td>
+<td style="text-align: right;">479</td>
+<td style="text-align: right;">57/4</td>
+<td style="text-align: right;">2/4</td>
+<td style="text-align: right;">0.850937</td>
+</tr>
+<tr class="even">
+<td>COST1_REFIT_Q</td>
+<td style="text-align: right;">480</td>
+<td style="text-align: right;">57/3</td>
+<td style="text-align: right;">0/1</td>
+<td style="text-align: right;">0.853012</td>
+</tr>
+<tr class="odd">
+<td>COST1_REFIT_R</td>
+<td style="text-align: right;">480</td>
+<td style="text-align: right;">58/4</td>
+<td style="text-align: right;">0/1</td>
+<td style="text-align: right;">0.853433</td>
+</tr>
+<tr class="even">
+<td>CE_FULL</td>
+<td style="text-align: right;">486</td>
+<td style="text-align: right;">71/11</td>
+<td style="text-align: right;">0/0</td>
+<td style="text-align: right;">0.860845</td>
+</tr>
+<tr class="odd">
+<td>CE_ZERO_RAW</td>
+<td style="text-align: right;">418</td>
+<td style="text-align: right;">78/86</td>
+<td style="text-align: right;">14/82</td>
+<td style="text-align: right;">0.807179</td>
+</tr>
+<tr class="even">
+<td>CE_ZERO_S</td>
+<td style="text-align: right;">486</td>
+<td style="text-align: right;">76/16</td>
+<td style="text-align: right;">5/5</td>
+<td style="text-align: right;">0.862320</td>
+</tr>
+<tr class="odd">
+<td>CE_ZERO_M</td>
+<td style="text-align: right;">442</td>
+<td style="text-align: right;">18/2</td>
+<td style="text-align: right;">10/54</td>
+<td style="text-align: right;">0.805606</td>
+</tr>
+<tr class="even">
+<td>CE_ZERO_L</td>
+<td style="text-align: right;">478</td>
+<td style="text-align: right;">58/6</td>
+<td style="text-align: right;">6/14</td>
+<td style="text-align: right;">0.847902</td>
+</tr>
+<tr class="odd">
+<td>CE_ZERO_Q</td>
+<td style="text-align: right;">486</td>
+<td style="text-align: right;">69/9</td>
+<td style="text-align: right;">2/2</td>
+<td style="text-align: right;">0.860845</td>
+</tr>
+<tr class="even">
+<td>CE_ZERO_R</td>
+<td style="text-align: right;">486</td>
+<td style="text-align: right;">71/11</td>
+<td style="text-align: right;">0/0</td>
+<td style="text-align: right;">0.860845</td>
+</tr>
+<tr class="odd">
+<td>CE_REFIT_RAW</td>
+<td style="text-align: right;">467</td>
+<td style="text-align: right;">58/17</td>
+<td style="text-align: right;">15/34</td>
+<td style="text-align: right;">0.846853</td>
+</tr>
+<tr class="even">
+<td>CE_REFIT_S</td>
+<td style="text-align: right;">483</td>
+<td style="text-align: right;">70/13</td>
+<td style="text-align: right;">1/4</td>
+<td style="text-align: right;">0.857482</td>
+</tr>
+<tr class="odd">
+<td>CE_REFIT_M</td>
+<td style="text-align: right;">472</td>
+<td style="text-align: right;">63/17</td>
+<td style="text-align: right;">4/18</td>
+<td style="text-align: right;">0.843006</td>
+</tr>
+<tr class="even">
+<td>CE_REFIT_L</td>
+<td style="text-align: right;">480</td>
+<td style="text-align: right;">67/13</td>
+<td style="text-align: right;">1/7</td>
+<td style="text-align: right;">0.852816</td>
+</tr>
+<tr class="odd">
+<td>CE_REFIT_Q</td>
+<td style="text-align: right;">483</td>
+<td style="text-align: right;">70/13</td>
+<td style="text-align: right;">0/3</td>
+<td style="text-align: right;">0.858316</td>
+</tr>
+<tr class="even">
+<td>CE_REFIT_R</td>
+<td style="text-align: right;">485</td>
+<td style="text-align: right;">71/12</td>
+<td style="text-align: right;">0/1</td>
+<td style="text-align: right;">0.860002</td>
+</tr>
+</tbody>
+</table>
+<p>RAW：426/593。对FULL救/损以相应COST1或CE完整头为基准。</p>
+<h2 id="配对分组结果">配对分组结果</h2>
+<table>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th style="text-align: right;">FULL−消融：等组差pp</th>
+<th>bootstrap95% pp</th>
+<th style="text-align: right;">Holm p（六项）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>COST1_ZERO_RAW</td>
+<td style="text-align: right;">3.608</td>
+<td>[-0.145, 7.566]</td>
+<td style="text-align: right;">0.1316</td>
+</tr>
+<tr class="even">
+<td>COST1_ZERO_S</td>
+<td style="text-align: right;">-1.697</td>
+<td>[-4.545, 1.191]</td>
+<td style="text-align: right;">1.0000</td>
+</tr>
+<tr class="odd">
+<td>COST1_ZERO_M</td>
+<td style="text-align: right;">10.723</td>
+<td>[6.589, 15.340]</td>
+<td style="text-align: right;">0.0006</td>
+</tr>
+<tr class="even">
+<td>COST1_ZERO_L</td>
+<td style="text-align: right;">8.905</td>
+<td>[5.086, 13.378]</td>
+<td style="text-align: right;">0.0006</td>
+</tr>
+<tr class="odd">
+<td>COST1_ZERO_Q</td>
+<td style="text-align: right;">0.316</td>
+<td>[-0.466, 1.292]</td>
+<td style="text-align: right;">1.0000</td>
+</tr>
+<tr class="even">
+<td>COST1_ZERO_R</td>
+<td style="text-align: right;">0.689</td>
+<td>[-0.276, 2.344]</td>
+<td style="text-align: right;">1.0000</td>
+</tr>
+<tr class="odd">
+<td>COST1_REFIT_RAW</td>
+<td style="text-align: right;">2.504</td>
+<td>[-0.385, 5.441]</td>
+<td style="text-align: right;">0.3036</td>
+</tr>
+<tr class="even">
+<td>COST1_REFIT_S</td>
+<td style="text-align: right;">1.001</td>
+<td>[-0.067, 2.812]</td>
+<td style="text-align: right;">0.4740</td>
+</tr>
+<tr class="odd">
+<td>COST1_REFIT_M</td>
+<td style="text-align: right;">0.626</td>
+<td>[-0.837, 2.133]</td>
+<td style="text-align: right;">0.6992</td>
+</tr>
+<tr class="even">
+<td>COST1_REFIT_L</td>
+<td style="text-align: right;">0.889</td>
+<td>[-0.220, 2.738]</td>
+<td style="text-align: right;">0.6992</td>
+</tr>
+<tr class="odd">
+<td>COST1_REFIT_Q</td>
+<td style="text-align: right;">0.391</td>
+<td>[0.000, 1.172]</td>
+<td style="text-align: right;">0.9912</td>
+</tr>
+<tr class="even">
+<td>COST1_REFIT_R</td>
+<td style="text-align: right;">0.781</td>
+<td>[0.000, 2.344]</td>
+<td style="text-align: right;">0.9912</td>
+</tr>
+<tr class="odd">
+<td>CE_ZERO_RAW</td>
+<td style="text-align: right;">10.122</td>
+<td>[6.164, 14.221]</td>
+<td style="text-align: right;">0.0006</td>
+</tr>
+<tr class="even">
+<td>CE_ZERO_S</td>
+<td style="text-align: right;">-0.791</td>
+<td>[-2.452, 0.565]</td>
+<td style="text-align: right;">1.0000</td>
+</tr>
+<tr class="odd">
+<td>CE_ZERO_M</td>
+<td style="text-align: right;">7.893</td>
+<td>[3.527, 12.383]</td>
+<td style="text-align: right;">0.0030</td>
+</tr>
+<tr class="even">
+<td>CE_ZERO_L</td>
+<td style="text-align: right;">2.355</td>
+<td>[0.236, 4.787]</td>
+<td style="text-align: right;">0.0948</td>
+</tr>
+<tr class="odd">
+<td>CE_ZERO_Q</td>
+<td style="text-align: right;">0.110</td>
+<td>[-0.614, 0.898]</td>
+<td style="text-align: right;">1.0000</td>
+</tr>
+<tr class="even">
+<td>CE_ZERO_R</td>
+<td style="text-align: right;">0.000</td>
+<td>[0.000, 0.000]</td>
+<td style="text-align: right;">1.0000</td>
+</tr>
+<tr class="odd">
+<td>CE_REFIT_RAW</td>
+<td style="text-align: right;">3.590</td>
+<td>[0.686, 6.641]</td>
+<td style="text-align: right;">0.0582</td>
+</tr>
+<tr class="even">
+<td>CE_REFIT_S</td>
+<td style="text-align: right;">0.604</td>
+<td>[-0.144, 1.598]</td>
+<td style="text-align: right;">0.3720</td>
+</tr>
+<tr class="odd">
+<td>CE_REFIT_M</td>
+<td style="text-align: right;">1.718</td>
+<td>[-0.085, 3.470]</td>
+<td style="text-align: right;">0.1304</td>
+</tr>
+<tr class="even">
+<td>CE_REFIT_L</td>
+<td style="text-align: right;">1.329</td>
+<td>[0.246, 2.634]</td>
+<td style="text-align: right;">0.0800</td>
+</tr>
+<tr class="odd">
+<td>CE_REFIT_Q</td>
+<td style="text-align: right;">0.374</td>
+<td>[0.000, 0.868]</td>
+<td style="text-align: right;">0.3720</td>
+</tr>
+<tr class="even">
+<td>CE_REFIT_R</td>
+<td style="text-align: right;">0.142</td>
+<td>[0.000, 0.426]</td>
+<td style="text-align: right;">0.4912</td>
+</tr>
+</tbody>
+</table>
+<p>正差表示完整头较好；区间为64 component等权差，不是图片微平均差。H593已经开发；本表不作为新外部确认，也不按结果替换部署模型。</p>
+<p>删项不消除该特征在其它耦合统计中的全部信息。固定头下降不能证明重新训练无法补偿；重训无下降也不证明底层视觉线索无用。</p>
+<p>原始参数及全部127分数：fold0/ 到 fold4/ 的 payload.json。完整逐查询结果和配对统计：result.json。复核：validation.json 和各fold/validation.json。</p>
+<p><a href="H593_ablation_evidence/">原始证据目录</a></p>
+</body>
+</html>

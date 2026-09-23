@@ -1,0 +1,45 @@
+{
+  "status": "ACTUAL_SHELL_ARGUMENTS_PASS_WITH_FAKE_PYTHON_ONLY",
+  "checks": [
+    {
+      "launcher": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_coarse_exit_gpu_v1.sbatch",
+      "stage": "probe",
+      "observed": {
+        "args": [
+          "programs/run_rc_h593_coarse_exit_v1.py",
+          "probe"
+        ],
+        "cuda": null,
+        "threads": "8"
+      }
+    },
+    {
+      "launcher": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_coarse_exit_cpu_v1.sbatch",
+      "stage": "worker",
+      "observed": {
+        "args": [
+          "programs/run_rc_h593_coarse_exit_v1.py",
+          "worker",
+          "--index",
+          "17"
+        ],
+        "cuda": "",
+        "threads": "8"
+      }
+    },
+    {
+      "launcher": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_coarse_exit_cpu_v1.sbatch",
+      "stage": "control:5150000",
+      "observed": {
+        "args": [
+          "programs/run_rc_h593_coarse_exit_v1.py",
+          "control:5150000",
+          "--index",
+          "17"
+        ],
+        "cuda": "",
+        "threads": "8"
+      }
+    }
+  ]
+}

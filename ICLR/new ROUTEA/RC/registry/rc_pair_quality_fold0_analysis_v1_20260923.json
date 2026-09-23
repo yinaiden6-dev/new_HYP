@@ -1,0 +1,55 @@
+{
+  "status": "FIRST_FOLD_MECHANISM_ANALYSIS_AUTHORIZED",
+  "time_utc": "2026-09-23T15:44:29.365717+00:00",
+  "user_scope": "Prioritize first fold; explain mechanism rather than seek new optimum",
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_cpu_authority_v1_20260923.json",
+    "sha256": "e28370bb2cfc2d43b7c1ca5abdd8c23198f0c46e05bd51012529f0175a9345e9"
+  },
+  "seal": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_pair_quality_cpu_v1/fold0_priority_prediction_seal.json",
+    "sha256": "b7fdf237160fda2b9ac4815de3be20f907c730c1fea14b5b19aa6bb912093a73"
+  },
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_pair_quality_fold0_v1.py",
+    "sha256": "2f7eb750febfcbb63291f1a76985c087bacb18ae01b9b2aa9929f4ef00e9ca35"
+  },
+  "fold": 0,
+  "arms": [
+    "COL_ONLY_SINGLE",
+    "COL_ONLY_PAIR",
+    "COARSE_SINGLE",
+    "COARSE_PAIR",
+    "NONE",
+    "ROMA"
+  ],
+  "expected_queries": 119,
+  "comparisons": [
+    [
+      "COL_ONLY_SINGLE",
+      "COL_ONLY_PAIR"
+    ],
+    [
+      "COARSE_SINGLE",
+      "COARSE_PAIR"
+    ],
+    [
+      "COL_ONLY_PAIR",
+      "COARSE_PAIR"
+    ],
+    [
+      "NONE",
+      "COL_ONLY_PAIR"
+    ],
+    [
+      "ROMA",
+      "COL_ONLY_PAIR"
+    ]
+  ],
+  "analysis": "All six arms; RAW and original seven-parameter COST1; rescue overlap, candidate mass, margins and CBIND",
+  "no_training": true,
+  "held_labels_read": false,
+  "group_bootstrap_seed": 20260923,
+  "group_bootstrap_samples": 10000,
+  "interpretation": "Opened first-fold development evidence, simplified five-parameter action; not H593 OOF5 or external confirmation"
+}

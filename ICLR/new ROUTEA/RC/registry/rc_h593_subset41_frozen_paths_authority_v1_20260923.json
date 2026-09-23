@@ -1,0 +1,117 @@
+{
+  "status": "SUBSET41_FIXED_COST1_PATH_REPLAY_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_subset41_frozen_paths_v1.py",
+      "sha256": "aed218b702abe31ab1e50bfd2c3f729e14c603b51903e031bb0c27cd5a6569bc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_subset41_frozen_paths_v1.sbatch",
+      "sha256": "65c5b89420bf12073b360b3cc21920f3e551a83d89a02ececa92e3e1885df9b5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_subset41_frozen_paths_control_v1.sbatch",
+      "sha256": "68c0774ac7cc93efb4ea0ad2a7055ed898efe76a9bbe380704d33e865b1206f7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_SUBSET41_FROZEN_PATHS_V1_20260923.md",
+      "sha256": "bac4d722ff313cbacf18b6beb5079e23755c83551dd61c54a566d5698eece20e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v2.py",
+      "sha256": "e6f4a801047c97aa4f3e31441adfd41cf3c4e69f1779217d575b14cb606c8b3c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_quality_operator_eval_v1.py",
+      "sha256": "38526978cd9393ee5da472c302fbc262977f052d39f22a97f0a72d59c66e76c2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_m_inside_v1.py",
+      "sha256": "a77da2bdf9bc5157d5f522493eccb84dabf86d34de406a5c371c58ab7156757f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    }
+  ],
+  "snapshot": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_existing_subset_analysis_v1/snapshot.json",
+    "sha256": "93938d1deb320a72a5759daf159fca45f5da6acef4b5d41585d4edd0fade1656"
+  },
+  "heads": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_subset41_frozen_paths_v1/heads.json",
+    "sha256": "4dd4ab7d1a4778e7019a27286c9469d3026cb81a32c6b77f3f06499b495bd3d2"
+  },
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_roma_coordinate_precision_v2/workers.json",
+    "sha256": "7755841971ccf27f7ef75216c14b6dfd362cf30a66d3cab6318895d5d2e2b03b"
+  },
+  "arms": [
+    "native/COARSE",
+    "native/LR4",
+    "native/LR2",
+    "native/LR1",
+    "native/HR4",
+    "native/HR2",
+    "native/HR1",
+    "visual/Q_GRAY/HR1",
+    "visual/R_GRAY/HR1",
+    "visual/Q_LOWPASS/HR1",
+    "visual/R_LOWPASS/HR1",
+    "visual/Q_SHUFFLE/HR1",
+    "visual/R_SHUFFLE/HR1",
+    "inside/A0J0P0/COARSE",
+    "inside/A0J0P0/HR1",
+    "inside/A0J0P1/COARSE",
+    "inside/A0J0P1/HR1",
+    "inside/A0J1P0/COARSE",
+    "inside/A0J1P0/HR1",
+    "inside/A0J1P1/COARSE",
+    "inside/A0J1P1/HR1",
+    "inside/A1J0P0/COARSE",
+    "inside/A1J0P0/HR1",
+    "inside/A1J0P1/COARSE",
+    "inside/A1J0P1/HR1",
+    "inside/A1J1P0/COARSE",
+    "inside/A1J1P0/HR1",
+    "inside/NO_COARSE_LOGIT/COARSE",
+    "inside/NO_COARSE_LOGIT/HR1",
+    "inside/NO_LR_DELTA/COARSE",
+    "inside/NO_LR_DELTA/HR1",
+    "inside/NO_HR_DELTA/COARSE",
+    "inside/NO_HR_DELTA/HR1",
+    "inside/NO_REFINER_DELTA/COARSE",
+    "inside/NO_REFINER_DELTA/HR1",
+    "coordinate/GRID256",
+    "coordinate/GRID64",
+    "coordinate/GRID16"
+  ],
+  "modes": [
+    "M_ONLY",
+    "FULL_UV"
+  ],
+  "queries": 41,
+  "candidates": 128,
+  "original_model": "Original sealed COST1 head of each query held-out fold, not M1Q0R0 refit or global 32 head",
+  "M_ONLY": "Replace M with stage/intervention mass; pool original native u/v and original weighted MaxSim. Recompute all dependent six head features. Control masses use the new maps with the original roll convention.",
+  "FULL_UV": "Replace both maps, recompute original four scores and six features; original RAW axis, head and zero threshold unchanged",
+  "input_scope": "38 cached stage/intervention arms; no new RoMa or encoder forward, no fit or threshold choice",
+  "predictor_boundary": "Internal paths fix native geometry and native refiner evidence; not removal of the full matcher",
+  "old_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_eval_v1/result.json",
+    "sha256": "aa6a2919419c4d1a6c95d31e03169f795fa67d718271f0267ad06574fc78c935"
+  },
+  "old_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_eval_v1/validation.json",
+    "sha256": "739eecef787b28b0de841f4ae8eb20c202e9a2918f7935a5097bda265911d13d"
+  },
+  "gallery": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+    "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+  },
+  "chunk_seconds": 430,
+  "max_chunks": 12,
+  "exploratory": true,
+  "full593_replaced": false,
+  "new_GPU_forwards": 0
+}

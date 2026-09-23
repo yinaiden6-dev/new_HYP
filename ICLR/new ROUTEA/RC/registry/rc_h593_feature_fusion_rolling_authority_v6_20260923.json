@@ -1,0 +1,48 @@
+{
+  "status": "FUSION_ROLLING_TOPUP_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/supplement_rc_h593_feature_fusion_v6.py",
+      "sha256": "60d428a243f60cffc3d9b861c17d2ca986a98a6ef7788cfc5f918faefd7e502c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_packed_gpu_v2.py",
+      "sha256": "5f6581d80775ebafb7af4095cf37adfd1e26fd9dbcd39b652d39941375440933"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_feature_fusion_v3.py",
+      "sha256": "10dec16875801fa45739518282762b65f7ca5c32dd8261afe19e5c72f570d1ba"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_dispatch_authority_v3_20260922.json",
+      "sha256": "c514d20ce6be71e34105fb921581c023abdddb039474a5b8bf26d31a64b2e29f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+      "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_feature_fusion_train_v2.sbatch",
+      "sha256": "8c10f93d9fe3e54a3b4c3a6a75fa437de71d62e9e994a45daa57402ec902da7c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_FEATURE_FUSION_ROLLING_V6_20260923.md",
+      "sha256": "2a83b8ef1b6ae6c68201802ee6c5336ea45b047a9ce3ece54ea271747e2dd66c"
+    }
+  ],
+  "train_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+    "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+  },
+  "maximum_active": 50,
+  "config_count": 200,
+  "max_chunks": 128,
+  "maximum_hours": 48,
+  "minutes": 13,
+  "user_instruction": "Raise 5158421 and its rolling fusion continuations to 50; assess shorter limits using measured runtimes",
+  "scientific_change": false,
+  "ledger": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_dispatch_v3",
+  "original_dispatcher": "Continues unchanged; recognizes supplemented waves through shared ledger",
+  "coordination": "Temporarily hold one verified pending recorded task during submission; its existence prevents the legacy empty-wave branch. Release only this hold afterward. Running tasks untouched.",
+  "no_pending_anchor": "Do not race the legacy dispatcher: wait for its next wave when no recorded pending task can protect the transaction"
+}

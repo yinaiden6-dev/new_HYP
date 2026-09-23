@@ -1,0 +1,43 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_rank_action_authority_v1_20260921.json",
+    "sha256": "d730c1e53dc116ff2d67efc32c5855d356d84e5743952aadc0b9ae5543b89059"
+  },
+  "fit_array_id": "5153901",
+  "array": "0-4%5",
+  "partition": "accelerated",
+  "time_limit": "00:10:00",
+  "fit_launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_rank_action_v1.sbatch",
+    "sha256": "5317c746d809565ed30d93b43466edbb2748635f3a786be4ce79f1d515d912a9"
+  },
+  "scheduler_override": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_rank_action_scheduler_override_v1_20260921.json",
+  "join_job_id": "5153902",
+  "join_launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_rank_action_join_v1.sbatch",
+    "sha256": "1c1d5d596fcaba0f4d564d444e80f4ac41d3bcb7db1ba58e4c9f85e64cd742d4"
+  },
+  "dependency": "afterok:5153901",
+  "fit_submitted_script_byte_exact": true,
+  "fit_scheduler_record": "JobId=5153901 ArrayJobId=5153901 ArrayTaskId=0-4%5 ArrayTaskThrottle=5 JobName=h593_ract UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-21T10:20:34 EligibleTime=2026-09-21T10:20:34 AccrueTime=2026-09-21T10:20:34 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-21T10:20:34 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1993:3634051 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_rank_action_v1.sbatch SubmitLine=sbatch --parsable --partition=accelerated /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_rank_action_v1.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-ract-5153901_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-ract-5153901_4294967294.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+  "join_submitted_script_byte_exact": true,
+  "join_scheduler_record": "JobId=5153902 JobName=h593_raj UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:5153901_*(unfulfilled) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-21T10:20:34 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-21T10:20:34 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1993:3634051 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_rank_action_join_v1.sbatch SubmitLine=sbatch --parsable --partition=accelerated --dependency=afterok:5153901 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_rank_action_join_v1.sbatch WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-raj-5153902.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-raj-5153902.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+  "scheduler_override_binding": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_rank_action_scheduler_override_v1_20260921.json",
+    "sha256": "94c80c05466b61a0ace1d2e272df77eeeef2f70fe85d7a76084ec38911b844a4"
+  },
+  "partition_by_task": {
+    "0": "dev_accelerated",
+    "1": "accelerated",
+    "2": "accelerated",
+    "3": "accelerated",
+    "4": "accelerated",
+    "join": "accelerated"
+  },
+  "latest_startup_check": {
+    "5153901_0": "RUNNING/Prolog, elapsed00:00:14",
+    "5153901_[1-4%5]": "PENDING/Priority",
+    "5153902": "PENDING/Dependency",
+    "new_result_available": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "DUPLICATE_MATCHER_INTERNAL_HOOK_REPLAY_REPAIR",
+  "time_utc": "2026-09-23T10:36:05.572756+00:00",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_unified_duplicate_resume_v1.py",
+      "sha256": "ea8b44a3c52b7451235b76ed98ffcaebc83250fb94d141d637864d62ab7607de"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_unified_duplicate_resume_v1.sbatch",
+      "sha256": "67d824ec964c5c08b537b7c79697190c6c13ef40e392ef445c5aa6c578ac208c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_unified_acquisition_v1.py",
+      "sha256": "e2bf8d6f09be94ff56dfc577dc5278368741540c0d0967b0f60f0e57ec946627"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_h593_unified_acquisition_core_v1.py",
+      "sha256": "68cc689307415b4cb422cc535d528cc40890e6f62e070257e2b5b7189b6fac2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_unified_acquisition_authority_v1_20260923.json",
+      "sha256": "bdc857b2020584ae247e6834175a3ffe3d369e76875f941f351c8ed11bac5151"
+    }
+  ],
+  "failed_job": "5159474_70",
+  "error": "INTERNAL_PATHS_MUST_BE_COLLECTED_ON_NATIVE_MISS",
+  "cause": "Identical image pair reused matcher output while newly requested internal head hooks require executing the matcher",
+  "repair": "Bypass only identical-pair native matcher cache hits requiring internal hooks; reuse descriptors; original inputs/output validation unchanged",
+  "only_query": 70,
+  "existing_capsules": 97,
+  "no_new_queries": true
+}

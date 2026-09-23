@@ -1,0 +1,28 @@
+{
+  "status": "READY_TO_RESTART_ORIGINAL_DISPATCHER",
+  "override": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_original_dev_execution_override_20260923.json",
+    "sha256": "b2848eb65a0e8b8bc98d5dec13086b008db7f730164cc060f1d06ee55987cd98"
+  },
+  "retired_pending_slice": {
+    "job_id": "5159630",
+    "stage": "fit",
+    "index": 2,
+    "args": [
+      "/usr/bin/sbatch",
+      "--parsable",
+      "--partition=cpuonly",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+      "fit",
+      "2"
+    ]
+  },
+  "training_ast_unchanged": true,
+  "preserved_attempt_counts": {
+    "0": 9,
+    "1": 8,
+    "2": 8,
+    "3": 7
+  },
+  "source_backup": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_pair_quality_cpu_v1/execution_backups/direct_original_dev_20260923"
+}

@@ -1,0 +1,292 @@
+{
+  "status": "GAP_CURVE_POST_JOIN_ANALYSIS_PASS",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/result.json",
+    "sha256": "233e7693ea2e2eba10f119614a6268313c85b449c8c4b12e1841ded8a0f1bc33"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_gap_curve_authority_v1_20260921.json",
+    "sha256": "ede07c0bfa116ad1af784f48fb6ba6c2c3d0d165971d4f63ed49a250d07f7e90"
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_h593_gap_curve_result_v1.py",
+    "sha256": "fd109841f7e90a010887ae905e4c8861bf76e709b4d3283b6e380375ddfd55e0"
+  },
+  "comparisons": {
+    "GAP_BIAS2": {
+      "counts": {
+        "lost_RAW_rescue": 4,
+        "new_RAW_rescue": 1,
+        "new_RAW_break": 1,
+        "repaired_RAW_break": 2
+      },
+      "rescues": [
+        "OUTCOME-0150",
+        "OUTCOME-0721",
+        "OUTCOME-0722"
+      ],
+      "losses": [
+        "OUTCOME-0809",
+        "DIFFICULT-0100",
+        "OUTCOME-0528",
+        "OUTCOME-0529",
+        "OUTCOME-0661"
+      ]
+    },
+    "GAP_CURVE4": {
+      "counts": {
+        "repaired_RAW_break": 10,
+        "lost_RAW_rescue": 9,
+        "new_RAW_break": 2,
+        "new_RAW_rescue": 2
+      },
+      "rescues": [
+        "NDV2-012-P01",
+        "NDV2-012-P02",
+        "OUTCOME-0379",
+        "NDV2-005-P03",
+        "OUTCOME-0279",
+        "DIFFICULT-0107",
+        "DIFFICULT-0101",
+        "OUTCOME-0569",
+        "DIFFICULT-0104",
+        "NDV2-005-P02",
+        "OUTCOME-0001",
+        "OUTCOME-0280"
+      ],
+      "losses": [
+        "OUTCOME-0809",
+        "OUTCOME-0588",
+        "DIFFICULT-0100",
+        "OUTCOME-0536",
+        "OUTCOME-0331",
+        "OUTCOME-0794",
+        "OUTCOME-0576",
+        "OUTCOME-0534",
+        "OUTCOME-0529",
+        "OUTCOME-0341",
+        "OUTCOME-0618"
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "positive_HOLD_count": 39,
+      "negative_HOLD_count": 326,
+      "positive_HOLD_components": 21,
+      "inner_net": {
+        "GAP_BIAS2": 9,
+        "GAP_CURVE4": 14,
+        "GAP_CURVE3": 10
+      },
+      "outer_correct": {
+        "GAP_BIAS2": 106,
+        "GAP_CURVE4": 103,
+        "GAP_CURVE3": 105
+      },
+      "fitted_loss": {
+        "GAP_BIAS2": 0.21698383436276697,
+        "GAP_CURVE4": 0.19585153965452068,
+        "GAP_CURVE3": 0.21468684455840392
+      },
+      "parameters": {
+        "GAP_BIAS2": {
+          "gamma": 0.0,
+          "beta": 0.11600987710518738,
+          "bias": 0.574316855540047
+        },
+        "GAP_CURVE4": {
+          "gamma": 0.9940597101138302,
+          "beta": 0.7970398880860765,
+          "eta": -0.5458374731111798,
+          "bias": 1.0975058363985954,
+          "scale": 2.1259681793390754
+        },
+        "GAP_CURVE3": {
+          "gamma": 0.0,
+          "beta": 0.8036508416369522,
+          "eta": -0.5208385236260473,
+          "bias": 0.13444378679178118,
+          "scale": 2.1259681793390754
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "positive_HOLD_count": 38,
+      "negative_HOLD_count": 345,
+      "positive_HOLD_components": 18,
+      "inner_net": {
+        "GAP_BIAS2": 10,
+        "GAP_CURVE4": 12,
+        "GAP_CURVE3": 11
+      },
+      "outer_correct": {
+        "GAP_BIAS2": 100,
+        "GAP_CURVE4": 100,
+        "GAP_CURVE3": 101
+      },
+      "fitted_loss": {
+        "GAP_BIAS2": 0.20849867314838869,
+        "GAP_CURVE4": 0.17096302608232708,
+        "GAP_CURVE3": 0.20274809813268144
+      },
+      "parameters": {
+        "GAP_BIAS2": {
+          "gamma": 0.0,
+          "beta": 0.03873251285349127,
+          "bias": 0.7164141671908465
+        },
+        "GAP_CURVE4": {
+          "gamma": 2.058797862368539,
+          "beta": 1.415719284915994,
+          "eta": -1.2953410583632998,
+          "bias": 0.8403835624651644,
+          "scale": 2.800320651521006
+        },
+        "GAP_CURVE3": {
+          "gamma": 0.0,
+          "beta": 1.117527577350872,
+          "eta": -1.037374168960535,
+          "bias": 0.48923309490474204,
+          "scale": 2.800320651521006
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "positive_HOLD_count": 36,
+      "negative_HOLD_count": 325,
+      "positive_HOLD_components": 20,
+      "inner_net": {
+        "GAP_BIAS2": 11,
+        "GAP_CURVE4": 12,
+        "GAP_CURVE3": 12
+      },
+      "outer_correct": {
+        "GAP_BIAS2": 102,
+        "GAP_CURVE4": 104,
+        "GAP_CURVE3": 103
+      },
+      "fitted_loss": {
+        "GAP_BIAS2": 0.196759943562715,
+        "GAP_CURVE4": 0.1636315553163981,
+        "GAP_CURVE3": 0.18675451971428222
+      },
+      "parameters": {
+        "GAP_BIAS2": {
+          "gamma": 0.0,
+          "beta": 0.42190272909818605,
+          "bias": 0.3978602212504339
+        },
+        "GAP_CURVE4": {
+          "gamma": 1.5696969450043914,
+          "beta": 2.2394160691263996,
+          "eta": -1.1214980525759564,
+          "bias": -0.3312278679236489,
+          "scale": 1.9114264245305643
+        },
+        "GAP_CURVE3": {
+          "gamma": 0.0,
+          "beta": 1.8488247816623575,
+          "eta": -0.9094491759552062,
+          "bias": -0.5814714778266168,
+          "scale": 1.9114264245305643
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "positive_HOLD_count": 33,
+      "negative_HOLD_count": 343,
+      "positive_HOLD_components": 21,
+      "inner_net": {
+        "GAP_BIAS2": 10,
+        "GAP_CURVE4": 11,
+        "GAP_CURVE3": 10
+      },
+      "outer_correct": {
+        "GAP_BIAS2": 94,
+        "GAP_CURVE4": 95,
+        "GAP_CURVE3": 94
+      },
+      "fitted_loss": {
+        "GAP_BIAS2": 0.18830465981269554,
+        "GAP_CURVE4": 0.15000052603898142,
+        "GAP_CURVE3": 0.17908643677676064
+      },
+      "parameters": {
+        "GAP_BIAS2": {
+          "gamma": 0.0,
+          "beta": 0.3694117203780276,
+          "bias": 0.4296854080618585
+        },
+        "GAP_CURVE4": {
+          "gamma": 1.8980874304064812,
+          "beta": 2.0376467506274896,
+          "eta": -1.1165827214868003,
+          "bias": 0.059302633626664554,
+          "scale": 2.0145389240186327
+        },
+        "GAP_CURVE3": {
+          "gamma": 0.0,
+          "beta": 1.8759409922724029,
+          "eta": -1.0224225280061776,
+          "bias": -0.2734814530316799,
+          "scale": 2.0145389240186327
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "positive_HOLD_count": 30,
+      "negative_HOLD_count": 350,
+      "positive_HOLD_components": 18,
+      "inner_net": {
+        "GAP_BIAS2": 9,
+        "GAP_CURVE4": 14,
+        "GAP_CURVE3": 12
+      },
+      "outer_correct": {
+        "GAP_BIAS2": 90,
+        "GAP_CURVE4": 87,
+        "GAP_CURVE3": 87
+      },
+      "fitted_loss": {
+        "GAP_BIAS2": 0.1726789698871015,
+        "GAP_CURVE4": 0.15501984019414508,
+        "GAP_CURVE3": 0.16329037219188489
+      },
+      "parameters": {
+        "GAP_BIAS2": {
+          "gamma": 0.0,
+          "beta": 0.1966044461619701,
+          "bias": 0.5217660110013075
+        },
+        "GAP_CURVE4": {
+          "gamma": 0.7042846811819548,
+          "beta": 1.8086521644775253,
+          "eta": -1.4656887897191362,
+          "bias": 0.4824009217887844,
+          "scale": 2.9486484945364904
+        },
+        "GAP_CURVE3": {
+          "gamma": 0.0,
+          "beta": 1.6282292046890767,
+          "eta": -1.3007482495653906,
+          "bias": -0.21706848477409724,
+          "scale": 2.9486484945364904
+        }
+      }
+    }
+  ],
+  "frozen_CURVE4_drop_raw_diagnostic": {
+    "correct": 489,
+    "rescues": 8,
+    "losses": 8
+  },
+  "diagnostic_scope": "Post-hoc gamma=0 intervention with all other CURVE4 coefficients fixed; no refitting, not a validated selected alternative.",
+  "natural_fits": 0,
+  "automatic_model_replacement": false
+}

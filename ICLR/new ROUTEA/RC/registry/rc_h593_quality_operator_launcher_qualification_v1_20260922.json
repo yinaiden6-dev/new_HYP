@@ -1,0 +1,99 @@
+{
+  "status": "QUALITY_OPERATOR_LAUNCHER_DYNAMIC_PASS",
+  "natural_work_performed": false,
+  "stages": [
+    {
+      "stage": "worker",
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_v1.sbatch",
+      "sha256": "f2ca3354324cddc8e0a73314ba6a54579db795a87d069505783e3967b9056426",
+      "observed": [
+        {
+          "argv": [
+            "programs/run_rc_h593_quality_operator_v1.py",
+            "worker",
+            "--shard",
+            "0"
+          ],
+          "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+          "cuda": "",
+          "threads": "8"
+        }
+      ]
+    },
+    {
+      "stage": "fit",
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_eval_v1.sbatch",
+      "sha256": "513e2623e05161087ca163bcb5fcac26daa0ddbd5e990847cb4b5f29b7ca116f",
+      "observed": [
+        {
+          "argv": [
+            "programs/run_rc_h593_quality_operator_eval_v1.py",
+            "fit",
+            "--fold",
+            "0"
+          ],
+          "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+          "cuda": "",
+          "threads": "8"
+        }
+      ]
+    },
+    {
+      "stage": "diagnose",
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_eval_v1.sbatch",
+      "sha256": "513e2623e05161087ca163bcb5fcac26daa0ddbd5e990847cb4b5f29b7ca116f",
+      "observed": [
+        {
+          "argv": [
+            "programs/run_rc_h593_quality_operator_eval_v1.py",
+            "diagnose"
+          ],
+          "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+          "cuda": "",
+          "threads": "8"
+        }
+      ]
+    },
+    {
+      "stage": "join",
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_eval_v1.sbatch",
+      "sha256": "513e2623e05161087ca163bcb5fcac26daa0ddbd5e990847cb4b5f29b7ca116f",
+      "observed": [
+        {
+          "argv": [
+            "programs/run_rc_h593_quality_operator_eval_v1.py",
+            "join"
+          ],
+          "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+          "cuda": "",
+          "threads": "8"
+        },
+        {
+          "argv": [
+            "programs/run_rc_h593_quality_operator_eval_v1.py",
+            "publish"
+          ],
+          "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+          "cuda": "",
+          "threads": "8"
+        }
+      ]
+    },
+    {
+      "stage": "dispatch",
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_dispatch_v1.sbatch",
+      "sha256": "4224a49f2d6e1e4b91d800b136ced27bb093e0a6eb612b877f8cceda6d3b2a46",
+      "observed": [
+        {
+          "argv": [
+            "programs/dispatch_rc_h593_quality_operator_v1.py",
+            "run"
+          ],
+          "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+          "cuda": "",
+          "threads": "1"
+        }
+      ]
+    }
+  ]
+}

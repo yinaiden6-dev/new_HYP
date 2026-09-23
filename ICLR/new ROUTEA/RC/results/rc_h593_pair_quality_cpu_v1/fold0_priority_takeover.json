@@ -1,0 +1,70 @@
+{
+  "time_utc": "2026-09-23T14:34:24.785965+00:00",
+  "old_controller_lock_released": true,
+  "expected_old_stop": "cancelled unstarted continuation",
+  "adopted_active": [
+    {
+      "job_id": "5159901",
+      "stage": "fit",
+      "index": 3,
+      "args": [
+        "/usr/bin/sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+        "fit",
+        "3"
+      ]
+    },
+    {
+      "job_id": "5159921",
+      "stage": "fit",
+      "index": 1,
+      "args": [
+        "/usr/bin/sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+        "fit",
+        "1"
+      ]
+    }
+  ],
+  "paused": [
+    {
+      "job_id": "5159907",
+      "stage": "fit",
+      "index": 6,
+      "args": [
+        "/usr/bin/sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+        "fit",
+        "6"
+      ],
+      "reason": "User requested first fold priority; pending continuation cancelled; checkpoint retained",
+      "resume_from_existing_checkpoint": true
+    },
+    {
+      "job_id": "5159914",
+      "stage": "fit",
+      "index": 7,
+      "args": [
+        "/usr/bin/sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+        "fit",
+        "7"
+      ],
+      "reason": "User requested first fold priority; pending continuation cancelled; checkpoint retained",
+      "resume_from_existing_checkpoint": true
+    }
+  ],
+  "training_worker_unchanged": true,
+  "execution_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_fold0_priority_execution_v1_20260923.json",
+    "sha256": "3cc50b8cb8e124e81fc5c6370dd3acfc084e458a32ec88d9d0d7640f804abf8d"
+  }
+}

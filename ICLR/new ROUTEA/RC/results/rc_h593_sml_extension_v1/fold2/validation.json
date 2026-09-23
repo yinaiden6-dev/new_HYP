@@ -1,0 +1,50 @@
+{
+  "status": "SML_EXTENSION_FRESH_NUMPY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_sml_extension_authority_v1_20260921.json",
+    "sha256": "2c84c4dbe83d98642a833c8bb0195f77175bd9aae5c23a715468fa000a692e42"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_sml_extension_v1/fold2/payload.json",
+    "sha256": "390bf300def43846a77add6a0cb0e17aac8c040ab6baa860230561ba537e0046"
+  },
+  "logits": {
+    "SML_CROSS_CE16": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    "SML_CUBE_CE16": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    "COST1_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 3.552713678800501e-15,
+      "decisions": 119
+    },
+    "CE_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 8.881784197001252e-15,
+      "decisions": 119
+    }
+  },
+  "gradients": {
+    "SML_CROSS_CE16": {
+      "loss_error": 0.0,
+      "gradient_error": 8.582476634759473e-16
+    },
+    "SML_CUBE_CE16": {
+      "loss_error": 0.0,
+      "gradient_error": 3.504090599496315e-16
+    }
+  },
+  "heldout_label_reads": 0,
+  "fresh_refits": 2
+}

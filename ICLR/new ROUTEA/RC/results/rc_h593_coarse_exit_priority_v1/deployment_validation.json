@@ -1,0 +1,75 @@
+{
+  "status": "PRIORITY_APPLIED_AND_AUTORESTORE_ALIVE",
+  "time_utc": "2026-09-23T05:03:26.037307+00:00",
+  "held": [
+    "5158421_79",
+    "5158974_123",
+    "5158421_80",
+    "5158421_84",
+    "5158421_88",
+    "5158421_89",
+    "5158421_91",
+    "5158421_82",
+    "5158898",
+    "5158421_87",
+    "5158421_85",
+    "5158421_78",
+    "5158421_81",
+    "5158421_67",
+    "5158421_86",
+    "5158421_92",
+    "5158421_83",
+    "5158421_90"
+  ],
+  "probe": {
+    "JobState": "PENDING",
+    "Reason": "QOSMaxJobsPerUserLimit",
+    "Partition": "accelerated,dev_accelerated",
+    "TimeLimit": "00:10:00"
+  },
+  "callback": {
+    "JobState": "PENDING",
+    "Reason": "Dependency",
+    "Partition": "cpuonly,dev_cpuonly",
+    "Dependency": "afterok:5158971(unfulfilled)",
+    "TimeLimit": "00:10:00"
+  },
+  "running_preserved": [
+    {
+      "job": "5158421_75",
+      "name": "h593_ftrain",
+      "partition": "accelerated",
+      "state": "RUNNING",
+      "reason": "None"
+    },
+    {
+      "job": "5158421_76",
+      "name": "h593_ftrain",
+      "partition": "accelerated",
+      "state": "RUNNING",
+      "reason": "None"
+    },
+    {
+      "job": "5158421_77",
+      "name": "h593_ftrain",
+      "partition": "accelerated",
+      "state": "RUNNING",
+      "reason": "None"
+    },
+    {
+      "job": "5158421_74",
+      "name": "h593_ftrain",
+      "partition": "accelerated",
+      "state": "RUNNING",
+      "reason": "None"
+    },
+    {
+      "job": "5158421_64",
+      "name": "h593_ftrain",
+      "partition": "dev_accelerated",
+      "state": "RUNNING",
+      "reason": "None"
+    }
+  ],
+  "pid": 2677198
+}

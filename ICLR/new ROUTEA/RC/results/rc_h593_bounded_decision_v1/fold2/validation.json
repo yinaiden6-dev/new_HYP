@@ -1,0 +1,73 @@
+{
+  "status": "BOUNDED_DECISION_FRESH_NUMPY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_bounded_decision_authority_v1_20260921.json",
+    "sha256": "1bac25a0e46fe468f9987bf32e22b10701e27501d9f6cbf0f99e67244a0ffede"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_bounded_decision_v1/fold2/payload.json",
+    "sha256": "d6e5cf4c5c0b725e86677453eace12c0eecf7c005d47af02dbe23319a5221052"
+  },
+  "logits": {
+    "COST1_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 3.552713678800501e-15,
+      "decisions": 119
+    },
+    "CE_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 8.881784197001252e-15,
+      "decisions": 119
+    },
+    "JOINT_CONTENT_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_BOUND13": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-14,
+      "decisions": 119
+    },
+    "DIAG_CONT_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    "CONTENT_BOUND18": {
+      "logit_count": 15113,
+      "max_abs_error": 3.552713678800501e-14,
+      "decisions": 119
+    },
+    "CONTENT_CONT_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    }
+  },
+  "gradients": {
+    "DIAG_BOUND13": {
+      "loss_error": 2.7755575615628914e-17,
+      "gradient_error": 3.686287386450715e-17
+    },
+    "DIAG_CONT_CE13": {
+      "loss_error": 5.551115123125783e-17,
+      "gradient_error": 4.2589324807714574e-16
+    },
+    "CONTENT_BOUND18": {
+      "loss_error": 0.0,
+      "gradient_error": 3.469446951953614e-17
+    },
+    "CONTENT_CONT_CE18": {
+      "loss_error": 5.551115123125783e-17,
+      "gradient_error": 2.31514856791808e-16
+    }
+  },
+  "heldout_label_reads": 0,
+  "fresh_refits": 4
+}

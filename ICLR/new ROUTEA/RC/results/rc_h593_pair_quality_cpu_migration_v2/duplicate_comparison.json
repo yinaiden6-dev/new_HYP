@@ -1,0 +1,47 @@
+{
+  "status": "DUPLICATE_SCIENTIFIC_EXECUTION_CONFIRMED",
+  "time_utc": "2026-09-23T08:49:59.697352+00:00",
+  "authorities": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_cpu_authority_v1_20260923.json",
+      "sha256": "e28370bb2cfc2d43b7c1ca5abdd8c23198f0c46e05bd51012529f0175a9345e9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_cpu_authority_v2_20260923.json",
+      "sha256": "fd2b11bcd58f8f7297696f5eb1c75e22dcb43f72b30f0272af4dacf4dfcbc8e5"
+    }
+  ],
+  "identical_bindings": [
+    "parent",
+    "ready",
+    "catalog",
+    "public_sources",
+    "fold_sources",
+    "join_sources",
+    "warm_content",
+    "configs",
+    "steps",
+    "precision",
+    "new_encoder_forwards",
+    "roma_teacher_loss",
+    "primary_loss",
+    "max_parallel",
+    "max_chunks_per_config",
+    "target_absent_kept"
+  ],
+  "identical_function_AST": [
+    "Bank",
+    "guard",
+    "record",
+    "content",
+    "masses",
+    "update",
+    "load_fold",
+    "join"
+  ],
+  "fit_identical_except_device_assertions": true,
+  "trained_checkpoints_in_either_branch": 0,
+  "retain": "rc_h593_pair_quality_cpu_v1",
+  "retire_our_duplicate": "rc_h593_pair_quality_cpu_v2",
+  "reason": "Same seed/data/folds/arms/loss/budget/core; retain one live chain; no accuracy-based selection"
+}

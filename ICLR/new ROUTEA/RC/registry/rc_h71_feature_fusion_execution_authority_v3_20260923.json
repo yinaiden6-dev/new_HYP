@@ -1,0 +1,29 @@
+{
+  "status": "H71_ACCELERATED_CPU_EXECUTION_V3_AUTHORIZED",
+  "scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h71_feature_fusion_pilot_authority_v1_20260923.json",
+    "sha256": "f3f1ba42e06c269552262d3ff04d919b7e413e757760f2c5766edbbcefa551f2"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h71_feature_fusion_pilot_v3.py",
+      "sha256": "5ed1a4d20a01ab86452f421d1a25c62449d28211023802937d021883c694c62a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h71_feature_fusion_follow_v3.sbatch",
+      "sha256": "ec6f28f6cb89a4b8dd2b6eec4597aeca87c6c7217c8b2a39b76cfcaac94bc81d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h71_feature_fusion_pilot_v1.sbatch",
+      "sha256": "4ff862beeefe68d32ea1f54b0701985a08485b27c9def576355a054fc868e833"
+    }
+  ],
+  "partition": "accelerated",
+  "allocated_gpus_per_fit": 1,
+  "compute_device": "cpu",
+  "cuda_visible_devices": "",
+  "callback_partition": "cpuonly",
+  "scientific_worker_unchanged": true,
+  "override": "Supersedes earlier no-GPU-allocation execution setting only; frozen science/CPU numerics unchanged",
+  "user_instruction": "Directly add one idle GPU and move to accelerated; applies to current and continuation training slices"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "H593_BOX_CE_SUBMITTED",
+  "fit_array": "5154655",
+  "join_job": "5154656",
+  "array": "0-4%5",
+  "partition": "accelerated",
+  "time_limit": "00:10:00",
+  "cpus": 4,
+  "mem": "16G",
+  "gpu": 1,
+  "fit_state": "PENDING",
+  "fit_reason": "Priority",
+  "join_state": "PENDING",
+  "join_reason": "Dependency",
+  "dependency": "afterok:5154655_*",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_authority_v1_20260921.json",
+    "sha256": "3ce42e37d49f484d252f329abbba6bd78986710ef87f1828d88567617351b23f"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_v1/preflight.json",
+    "sha256": "fcc14b4db943a899575f8872f9d491fbdea52c9c50de96ff6df8112e3bd0e9ee"
+  },
+  "assembly_preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_v1/assembly_preflight.json",
+    "sha256": "fe6c6e71fc7e658e08b249b78611ae1de26295736a5a74f6a5861895bfad6f3e"
+  },
+  "partition_override": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_partition_override_v1_20260921.json",
+    "sha256": "d39d72399a6b5aca806f8e7e5d9b89ed9d96a149d9b83f2a40a5c2d66f69f5a8"
+  },
+  "fit_script": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_box_ce_v1.sbatch",
+    "sha256": "d1742ec784680d4ab6f6997ad5ec7dc7835c99797d2b86ca74f829d77657acf9"
+  },
+  "fit_spool": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_submitted_5154655.sbatch",
+    "sha256": "d1742ec784680d4ab6f6997ad5ec7dc7835c99797d2b86ca74f829d77657acf9"
+  },
+  "join_script": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_box_ce_join_v1.sbatch",
+    "sha256": "1dabcf9b720961529710f32f1a58081bec88be041b36936aa0bb57531c47e3b3"
+  },
+  "join_spool": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_join_submitted_5154656.sbatch",
+    "sha256": "1dabcf9b720961529710f32f1a58081bec88be041b36936aa0bb57531c47e3b3"
+  },
+  "submitted_scripts_identical": true,
+  "checks": {
+    "synthetic": 25,
+    "synthetic_fits": 3,
+    "dynamic_launchers": 2,
+    "natural_fits_before_submission": 0,
+    "all_fivefold_inputs_and_frozen_scores": true
+  },
+  "retained_best_correct": 496,
+  "paper_main": "COST1_FULL",
+  "external_GO": false
+}

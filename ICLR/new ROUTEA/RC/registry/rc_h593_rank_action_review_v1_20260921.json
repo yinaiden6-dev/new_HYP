@@ -1,0 +1,33 @@
+{
+  "status": "RANK_ACTION_SOURCE_AND_SYNTHETIC_REVIEW_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_rank_action_authority_v1_20260921.json",
+    "sha256": "d730c1e53dc116ff2d67efc32c5855d356d84e5743952aadc0b9ae5543b89059"
+  },
+  "source_review": "Root reviewed complete runner, split/label flow, baseline parity, score mapping and join. Core and independent validator were separately authored.",
+  "core_synthetic_checks": 15,
+  "independent_synthetic_checks": 15,
+  "root_cross_cases": 12,
+  "cross_loss_max_error": 0.0,
+  "cross_gradient_max_error": 1.7997756063259374e-17,
+  "nested_synthetic_pipeline": {
+    "outer_queries": 2,
+    "train_queries": 8,
+    "inner_folds": 4,
+    "mock_rank_fits_per_replay": 8,
+    "two_replays_identical": true
+  },
+  "frozen_parent_schema": {
+    "folds": 5,
+    "queries": 593,
+    "all_candidate_axes_and_COST1_CE_logits_match": true
+  },
+  "safeguards": [
+    "All current outer TRAIN queries receive their own inner-out-of-fold predictions",
+    "No other outer rank heads are reused for inner training",
+    "All N includes neutral rows for action loss and RMS",
+    "No previous SWITCH lock and no post-fit bias sweep",
+    "New action evaluated on all593 including23 missing candidates"
+  ],
+  "natural_fits_during_review": 0
+}

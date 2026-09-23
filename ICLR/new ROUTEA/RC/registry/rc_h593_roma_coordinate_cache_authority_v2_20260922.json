@@ -1,0 +1,43 @@
+{
+  "status": "COORDINATE_EXACT_CACHE_EXECUTION_AUTHORIZED",
+  "scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_precision_authority_v2_20260922.json",
+    "sha256": "08c1d5673561719232ea8d4e5ba2c6d032d6347b2e226e052e23a13dd58386f7"
+  },
+  "scientific_program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v2.py",
+    "sha256": "e6f4a801047c97aa4f3e31441adfd41cf3c4e69f1779217d575b14cb606c8b3c"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_cache_v2.py",
+      "sha256": "366d7cfe6d2d64d6e02ed4dcec3209a5543b42ed007af92c718f423ecfb7c5a1"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_exact_feature_cache_v2.py",
+      "sha256": "0b8ed4d0946a7b320fe176359461fa290d4a5f8b400fb6eca3c824395d31bf5b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_ROMA_EXACT_CACHE_V2_20260922.md",
+      "sha256": "540aab1dc92618ca6b82f3ed0e69ad3c06e52bc1154f667ddc8e488cb6c7e0d9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_cache_v2.sbatch",
+      "sha256": "6dc49fff0f955a2f04345907f4034a52c51efd7c307892413569ba2bc4fd7573"
+    }
+  ],
+  "pilot_ordinal": 0,
+  "candidates": 128,
+  "levels": [
+    "NATIVE",
+    "GRID256",
+    "GRID64",
+    "GRID16"
+  ],
+  "qualification": "Fresh unmodified vs cached all dense output bytes; original sealed four-arm token maps, coordinates, content, C4 and 127x6 features",
+  "changes": "Only memoize f, refiner_features, matcher forward; original match, refinement, hooks, scoring and original CPU validator unchanged",
+  "memory": "One query and one reference feature set plus current pair matcher; clone outputs before consumers",
+  "provenance": "Original authority continues to identify frozen scientific protocol; new parts/payload name execution authority and qualification explicitly",
+  "preserved": "Existing qualified V2 queries and partial 16-pair files; same original downstream evaluation and fivefold",
+  "user_authorization": "2026-09-22 user: 改, after concrete cache-reuse audit"
+}

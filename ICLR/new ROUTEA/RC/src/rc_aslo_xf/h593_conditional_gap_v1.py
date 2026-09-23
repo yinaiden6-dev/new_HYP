@@ -1,0 +1,345 @@
+"""Conditional RAW-margin/competition HOLD calibration, with a matched curve arm.
+
+Adds one sign-free, RMS-scaled nonlinear feature to the frozen incumbent gate.
+RMS uses only original training HOLD rows, including neutral deltas. Original
+inputs are not centered or rescaled. eta=0 preserves the old scalar operation
+order exactly. Only the final bias fit claims exact empirical net optimality,
+and only conditional on its frozen fitted slopes and training scale.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+import sys
+from collections.abc import Iterable, Mapping, Sequence
+from typing import Any
+
+import numpy as np
+from scipy.optimize import minimize
+from scipy.special import expit
+
+MODES = {"GAP_RAW_INTERACT4": ("h_raw", "d", "phi"),
+         "GAP_CURVE4": ("h_raw", "d", "phi")}
+L2 = 0.001
+MAX_FINITE = sys.float_info.max
+
+
+def _finite(x: Any, name: str) -> float:
+    x = float(x)
+    if not math.isfinite(x):
+        raise ValueError(f"{name} must be finite")
+    return x
+
+
+def _nonnegative(x: Any, name: str) -> float:
+    x = _finite(x, name)
+    if x < 0:
+        raise ValueError(f"{name} must be nonnegative")
+    return x
+
+
+def _rows(records: Iterable[Mapping[str, Any]]) -> list[dict[str, Any]]:
+    out = []
+    for i, r in enumerate(records):
+        m = _finite(r["m"], "m")
+        h = _finite(r["h_raw"], "h_raw")
+        if h > 0:
+            raise ValueError("RAW margin must be nonpositive")
+        d = _nonnegative(r["d"], "d")
+        if r["delta"] not in (-1, 0, 1):
+            raise ValueError("delta must be -1, 0 or 1")
+        out.append({"index": i, "m": m, "h_raw": h, "d": d,
+                    "delta": int(r["delta"])})
+    return out
+
+
+def _mode_scale(mode: str, scale: float) -> tuple[str, float]:
+    if mode not in MODES:
+        raise ValueError(f"unknown mode {mode!r}")
+    scale = _finite(scale, "scale")
+    if scale <= 0.0:
+        raise ValueError("scale must be strictly positive")
+    return mode, scale
+
+
+def raw_feature_value(h_raw: float, d: float, mode: str) -> float:
+    h_raw, d = _finite(h_raw, "h_raw"), _nonnegative(d, "d")
+    if h_raw > 0.0:
+        raise ValueError("RAW margin must be nonpositive")
+    if mode not in MODES:
+        raise ValueError(f"unknown mode {mode!r}")
+    return _finite(float(h_raw * d if mode == "GAP_RAW_INTERACT4" else d * d),
+                   "raw nonlinear feature")
+
+
+def feature_value(h_raw: float, d: float, mode: str, scale: float) -> float:
+    """One scalar FP64 product followed by one FP64 division."""
+    mode, scale = _mode_scale(mode, scale)
+    return _finite(float(raw_feature_value(h_raw, d, mode) / scale), "phi")
+
+
+def fit_scale(records: Iterable[Mapping[str, Any]], mode: str) -> dict[str, Any]:
+    """Label-free RMS on all original HOLD rows, preserving input order."""
+    rows = _rows(records)
+    _mode_scale(mode, 1.0)
+    raw = np.asarray([raw_feature_value(r["h_raw"], r["d"], mode)
+                      for r in rows if r["m"] <= 0.0], dtype=np.float64)
+    fallback = len(raw) == 0 or bool(np.all(raw == 0.0))
+    if fallback:
+        scale = 1.0
+    else:
+        with np.errstate(over="ignore", under="ignore", invalid="ignore"):
+            scale = float(np.sqrt(np.mean(raw * raw, dtype=np.float64)))
+        if not math.isfinite(scale) or scale <= 0.0:
+            raise ValueError("nonzero training feature RMS underflowed or overflowed")
+    return {
+        "rule": "FP64 sqrt(mean(raw_phi * raw_phi)) over ALL original training HOLD rows in input order, including delta0; empty/allzero=1",
+        "count": len(raw), "mode": mode, "scale": scale,
+        "scale_hex": scale.hex(), "empty_or_allzero_fallback": fallback,
+        "raw_phi_hex": [float(v).hex() for v in raw],
+        "centered": False, "old_inputs_rescaled": False,
+    }
+
+
+def _u(m: float, h_raw: float, d: float, gamma: float, beta: float,
+       eta: float, mode: str, scale: float) -> float:
+    # Keep the frozen gate's exact scalar operations, without FMA.
+    ah = _finite(float(gamma * h_raw), "gamma*h_raw")
+    bd = _finite(float(beta * d), "beta*d")
+    mh = _finite(float(m + ah), "m+gamma*h_raw")
+    u0 = _finite(float(mh + bd), "m+gamma*h_raw+beta*d")
+    # Skipping even a +0 addition protects all old bits, including signed zero.
+    if eta == 0.0:
+        return u0
+    phi = feature_value(h_raw, d, mode, scale)
+    ep = _finite(float(eta * phi), "eta*phi")
+    return _finite(float(u0 + ep), "conditional gate before bias")
+
+def first_crossing_bias(u: float) -> float | None:
+    """Smallest finite bias with fl(u+b)>0; predecessor gives exact zero."""
+    u = _finite(u, "u")
+    zero = -u
+    crossing = math.nextafter(zero, math.inf)
+    if not math.isfinite(crossing):
+        return None
+    if not float(u + crossing) > 0.0:
+        raise ArithmeticError("binary64 crossing failed")
+    if float(u + math.nextafter(crossing, -math.inf)) > 0.0:
+        raise ArithmeticError("crossing predecessor is already positive")
+    return crossing
+
+
+def _parameters(head: Mapping[str, Any]) -> tuple[float, float, float, float, str, float]:
+    def read(name: str) -> float:
+        return (float.fromhex(head[name + "_hex"]) if name + "_hex" in head
+                else float(head[name]))
+    mode, scale = _mode_scale(str(head["mode"]), read("scale"))
+    return (_nonnegative(read("gamma"), "gamma"),
+            _nonnegative(read("beta"), "beta"), _finite(read("eta"), "eta"),
+            _finite(read("bias"), "bias"), mode, scale)
+
+
+def gate_score(m: float, h_raw: float, d: float, head: Mapping[str, Any]) -> float:
+    """Only original HOLD rows are eligible; disabled/existing SWITCH is identity."""
+    m = _finite(m, "m")
+    h_raw, d = _finite(h_raw, "h_raw"), _nonnegative(d, "d")
+    if h_raw > 0.0:
+        raise ValueError("RAW margin must be nonpositive")
+    gamma, beta, eta, bias, mode, scale = _parameters(head)
+    if m > 0.0 or head.get("disabled", False):
+        return m
+    return _finite(float(_u(m, h_raw, d, gamma, beta, eta, mode, scale) + bias), "gate")
+
+def apply_head(original_logits: Sequence[float], h_raw: float, d: float,
+               head: Mapping[str, Any]) -> tuple[float, ...]:
+    """Change only frozen top challenger, and only when a HOLD becomes SWITCH.
+
+    First maximum resolves ties. All 127 values of existing SWITCH rows,
+    disabled heads and retained HOLD rows retain their exact original bits.
+    """
+    values = tuple(_finite(v, "logit") for v in original_logits)
+    if not values:
+        raise ValueError("nonempty challenger axis required")
+    pos = max(range(len(values)), key=values.__getitem__)
+    score = gate_score(values[pos], h_raw, d, head)
+    if values[pos] > 0.0 or score <= 0.0 or head.get("disabled", False):
+        return values
+    changed = list(values)
+    changed[pos] = score
+    return tuple(changed)
+
+
+def calibrate_bias(records: Iterable[Mapping[str, Any]], gamma: float,
+                   beta: float, eta: float, mode: str, scale: float) -> dict[str, Any]:
+    """Exactly maximize net gain over bias at fixed slopes and feature scale.
+
+    Include neutral rows in decision counts/ties. Enumerate grouped crossings
+    and select the closest-to-zero binary64 bias in each constant-action
+    interval. Overflowing intervals are excluded; their closest-to-zero value
+    overflows, hence every value in that same-sign interval does too. The
+    explicit disabled head is the unchanged baseline, even if no finite bias
+    can represent it. Disable unless the best empirical gain is positive.
+    """
+    rows = _rows(records)
+    gamma, beta = _nonnegative(gamma, "gamma"), _nonnegative(beta, "beta")
+    eta = _finite(eta, "eta")
+    mode, scale = _mode_scale(mode, scale)
+    holds = [r for r in rows if r["m"] <= 0]
+    groups: dict[float, list[dict[str, Any]]] = {}
+    certs = []
+    for r in holds:
+        u = _u(r["m"], r["h_raw"], r["d"], gamma, beta, eta, mode, scale)
+        crossing = first_crossing_bias(u)
+        entry = {"index": r["index"], "u_hex": u.hex(), "delta": r["delta"],
+                 "crossing_hex": None if crossing is None else crossing.hex(),
+                 "predecessor_hex": None if crossing is None else
+                     math.nextafter(crossing, -math.inf).hex()}
+        certs.append(entry)
+        if crossing is not None:
+            groups.setdefault(crossing, []).append(r)
+    crossings = sorted(groups)
+    intervals = []
+    rescues = breaks = neutral = changed = 0
+    best_key = (0, 0, 0.0, 0.0)
+    best_bias = 0.0
+    best_counts = {"net_gain": 0, "changed_holds": 0, "rescues": 0,
+                   "breaks": 0, "both_wrong": 0}
+    us = [float.fromhex(c["u_hex"]) for c in certs]
+    for j in range(len(crossings) + 1):
+        lower = -MAX_FINITE if j == 0 else crossings[j - 1]
+        upper = (MAX_FINITE if j == len(crossings) else
+                 math.nextafter(crossings[j], -math.inf))
+        if j:
+            deltas = [r["delta"] for r in groups[lower]]
+            rescues += deltas.count(1)
+            breaks += deltas.count(-1)
+            neutral += deltas.count(0)
+            changed += len(deltas)
+        # -0 and +0 are a single numeric bias; canonical +0 is deterministic.
+        bias = 0.0 if lower <= 0.0 <= upper else (lower if lower > 0 else upper)
+        scores = [float(u + bias) for u in us]
+        feasible = all(math.isfinite(s) for s in scores)
+        counts = {"net_gain": rescues - breaks, "changed_holds": changed,
+                  "rescues": rescues, "breaks": breaks, "both_wrong": neutral}
+        if feasible:
+            observed = [c["delta"] for c, score in zip(certs, scores) if score > 0]
+            if len(observed) != changed or sum(observed) != rescues - breaks:
+                raise ArithmeticError("crossing sweep disagrees with literal gate")
+        intervals.append({"lower_hex": lower.hex(), "upper_hex": upper.hex(),
+                          "bias_hex": bias.hex(), "feasible": feasible, **counts})
+        key = (counts["net_gain"], -changed, -abs(bias), -bias)
+        if feasible and counts["net_gain"] > 0 and key > best_key:
+            best_key, best_bias, best_counts = key, bias, counts
+    disabled = best_counts["net_gain"] <= 0
+    digest = hashlib.sha256(json.dumps(certs, sort_keys=True,
+                           separators=(",", ":")).encode()).hexdigest()
+    return {
+        "gamma": gamma, "beta": beta, "eta": eta, "bias": best_bias,
+        "mode": mode, "scale": scale, "scale_hex": scale.hex(),
+        "eta_hex": eta.hex(),
+        "gamma_hex": gamma.hex(), "beta_hex": beta.hex(),
+        "bias_hex": best_bias.hex(), "disabled": disabled,
+        "training_net_gain": best_counts["net_gain"],
+        "training_changed_holds": best_counts["changed_holds"],
+        "training_rescues": best_counts["rescues"],
+        "training_breaks": best_counts["breaks"],
+        "training_both_wrong": best_counts["both_wrong"],
+        "calibration_certificate": {
+            "status": "EXACT_FINITE_BINARY64_BIAS_NET_GAIN_OPTIMUM_FIXED_SLOPES",
+            "query_count": len(rows), "original_hold_count": len(holds),
+            "original_switch_count": len(rows) - len(holds),
+            "distinct_crossings": len(crossings),
+            "unreachable_hold_count": sum(c["crossing_hex"] is None for c in certs),
+            "breakpoints_sha256": digest, "certificates": certs,
+            "intervals": intervals, "selected_counts": best_counts,
+            "tie_break": "max net gain, min changed HOLDs, min abs(bias), min bias; disable unless gain>0",
+            "scope": "exact bias calibration at frozen slopes and scale; not joint net-gain optimality",
+        },
+    }
+
+
+def surrogate_loss_gradient(theta: Sequence[float], offsets: np.ndarray,
+                            design: np.ndarray, targets: np.ndarray,
+                            l2: float = L2) -> tuple[float, np.ndarray]:
+    """Mean logistic loss + l2/2 * squared norm, including free bias."""
+    theta = np.asarray(theta, dtype=np.float64)
+    offsets, design, targets = (np.asarray(x, dtype=np.float64)
+                                for x in (offsets, design, targets))
+    if len(offsets) == 0:
+        return float(l2 * np.dot(theta, theta) / 2), l2 * theta
+    z = offsets + design @ theta
+    yz = targets * z
+    loss = float(np.logaddexp(0.0, -yz).mean() + l2 * np.dot(theta, theta) / 2)
+    gradient = design.T @ (-targets * expit(-yz)) / len(offsets) + l2 * theta
+    if not math.isfinite(loss) or not np.isfinite(gradient).all():
+        raise ValueError("nonfinite surrogate objective or gradient")
+    return loss, gradient
+
+
+def projected_gradient(theta: Sequence[float], gradient: Sequence[float],
+                       constrained_count: int) -> np.ndarray:
+    """KKT projected gradient for nonnegative slopes and unconstrained bias."""
+    x = np.asarray(theta, dtype=np.float64)
+    g = np.asarray(gradient, dtype=np.float64).copy()
+    for i in range(constrained_count):
+        if x[i] <= 0.0 and g[i] > 0.0:
+            g[i] = 0.0
+    return g
+
+
+def fit_head(records: Iterable[Mapping[str, Any]], mode: str) -> dict[str, Any]:
+    """Convex four-parameter fit, then exact net-gain bias recalibration."""
+    rows = _rows(records)
+    scaling = fit_scale(rows, mode)
+    scale = scaling["scale"]
+    informative = [r for r in rows if r["m"] <= 0.0 and r["delta"] != 0]
+    offsets = np.asarray([r["m"] for r in informative], dtype=np.float64)
+    design = np.asarray([[r["h_raw"], r["d"],
+                          feature_value(r["h_raw"], r["d"], mode, scale), 1.0]
+                         for r in informative], dtype=np.float64).reshape(len(informative), 4)
+    targets = np.asarray([r["delta"] for r in informative], dtype=np.float64)
+    zero = np.zeros(4, dtype=np.float64)
+    initial_loss, _ = surrogate_loss_gradient(zero, offsets, design, targets)
+    if informative:
+        opt = minimize(surrogate_loss_gradient, zero, args=(offsets, design, targets),
+                       method="L-BFGS-B", jac=True,
+                       bounds=[(0.0, None), (0.0, None), (None, None), (None, None)],
+                       options={"maxiter": 2000, "ftol": 1e-12, "gtol": 1e-8})
+        theta = np.asarray(opt.x, dtype=np.float64)
+        success, message, status, nit, nfev = (bool(opt.success), str(opt.message),
+                                             int(opt.status), int(opt.nit), int(opt.nfev))
+    else:
+        theta = zero
+        success, message, status, nit, nfev = True, "no informative HOLD rows", 0, 0, 0
+    if not np.isfinite(theta).all() or (theta[:2] < 0.0).any():
+        raise ArithmeticError("optimizer returned invalid parameters")
+    final_loss, gradient = surrogate_loss_gradient(theta, offsets, design, targets)
+    pg = projected_gradient(theta, gradient, 2)
+    gamma, beta, eta = map(float, theta[:3])
+    head = calibrate_bias(rows, gamma, beta, eta, mode, scale)
+    calibrated_theta = theta.copy()
+    calibrated_theta[-1] = head["bias"]
+    calibrated_loss, _ = surrogate_loss_gradient(calibrated_theta, offsets, design, targets)
+    head.update(training_scale=scaling, training_scale_count=scaling["count"],
+                training_scale_rule=scaling["rule"], optimization={
+        "method": "L-BFGS-B", "success": success, "status": status,
+        "message": message, "iterations": nit, "function_evaluations": nfev,
+        "maxiter": 2000, "ftol": 1e-12, "gtol": 1e-8, "l2": L2,
+        "l2_definition": "lambda/2 * sum(all four free coefficients squared), including bias",
+        "free_features": ["h_raw", "d", "phi", "bias"],
+        "design_features": ["h_raw", "d", "phi", "bias"],
+        "coefficient_order": ["gamma", "beta", "eta", "bias"],
+        "bounds": [[0.0, None], [0.0, None], [None, None], [None, None]],
+        "initialization": "all zero", "theta_hex": [float(x).hex() for x in theta],
+        "surrogate_bias_hex": float(theta[-1]).hex(),
+        "informative_hold_count": len(informative),
+        "neutral_holds_omitted_from_surrogate": sum(r["m"] <= 0 and r["delta"] == 0 for r in rows),
+        "initial_surrogate_loss": initial_loss, "fitted_surrogate_loss": final_loss,
+        "calibrated_bias_surrogate_loss": calibrated_loss,
+        "calibrated_loss_is_applied_when_disabled": False,
+        "gradient_hex": [float(x).hex() for x in gradient],
+        "projected_gradient_inf_norm": float(np.abs(pg).max(initial=0.0)),
+        "joint_empirical_net_optimum_claimed": False,
+    })
+    return head

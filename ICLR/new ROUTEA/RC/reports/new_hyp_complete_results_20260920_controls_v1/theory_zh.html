@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>new HYP：完整理论与processed128补充</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>body{font:17px/1.65 system-ui,sans-serif;color:#183047;max-width:1480px;margin:auto;padding:30px;background:#fafcfe}h1,h2,h3{color:#087f8c}a{color:#087f8c}table{border-collapse:collapse;display:block;overflow-x:auto;font-size:14px;margin:22px 0}td,th{border:1px solid #d9e3eb;padding:8px 11px}th{background:#edf4f7}tr:nth-child(even){background:#f0f5f8}img{max-width:100%}code{white-space:pre-wrap}</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">new HYP：完整理论与processed128补充</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#new-hyp理论定义命题与当前证据说明">new HYP：理论定义、命题与当前证据说明</a>
+<ul>
+<li><a href="#定义与实际实现">1. 定义与实际实现</a></li>
+<li><a href="#性质一reference登记与任务参数学习可分离">2. 性质一：reference登记与任务参数学习可分离</a></li>
+<li><a href="#性质二丢失必要统计量的接口不能普遍恢复原评分">3. 性质二：丢失必要统计量的接口不能普遍恢复原评分</a></li>
+<li><a href="#性质三相对比较对共同尺度近似不敏感">4. 性质三：相对比较对共同尺度近似不敏感</a></li>
+<li><a href="#性质四正确action与所有错误logit为负不是同一条件">5. 性质四：正确action与所有错误logit为负不是同一条件</a></li>
+<li><a href="#性质五乘积对比改变线性读出的函数表达范围">6. 性质五：乘积对比改变线性读出的函数表达范围</a></li>
+<li><a href="#统一对象与任务">统一对象与任务</a></li>
+<li><a href="#当前证据与理论的对应2026-09-19">当前证据与理论的对应（2026-09-19）</a></li>
+<li><a href="#完整原文入口">完整原文入口</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="new-hyp理论定义命题与当前证据说明">new HYP：理论定义、命题与当前证据说明</h1>
+<p>归档日期：2026-09-19。本文件把理论定义、五条形式化性质、决策目标及当前证据放在一起，完整历史原文另附于 <code>theory_sources/</code>，其SHA与仓库原件一致。</p>
+<p><strong>当前名称为 new HYP — Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval。</strong> 研究对象是候选reference条件下的身份判断；旧空间/superregion Reference HYP的失败保留，ownership不属于当前已经完成的主张。实现仍须披露RoMa、ColNomic和共享七参数头，不能把抽象命名等同于跨编码器证明。</p>
+<p>任务训练只用query/reference身份或正负检索关系，冻结基础模型的预训练另行披露。五条性质是带条件的结构、信息或代数结论，不是普遍识别保证，也不把基础代数或共享参数可扩展性宣称为首次发现。</p>
+<p>以下“定义与性质”完整摘入2026-09-10 V2第1–6节；其中实验语句保留其历史时点。随后列出已完成的新证据，避免把旧文中的“当前”“尚未完成”当成2026-09-19状态。</p>
+<h2 id="定义与实际实现">1. 定义与实际实现</h2>
+<p>给定query q、自然候选集C、reference R_g，质量通道G产生候选条件的 匹配可靠性，内容通道C_content产生内容相容性。联合证据经共享校准 函数A_theta与基础检索先验B决定候选。theta不含identity专属参数。</p>
+<p>当前实现的状态可完整记录为E_g=(M_g,S_g,S_g<sup>Q,S_g</sup>R)，其中 L_g=S_g/max(M_g,epsilon)。在数学上忽略浮点归约差异且分母高于数值保护下限时：</p>
+<pre><code>local_i = max_j [v_j * c_ij]
+M = sqrt(mean(u) * mean(v))
+L = sum_i u_i*local_i / sum_i u_i
+S = M*L</code></pre>
+<p>实际实现采用冻结的完整FP64次序，不能用代数等价擅自替换。RoMa和 ColNomic分别是当前G与内容通道的实现，方法部分必须披露。new HYP 本身不要求二维连通区域，也不声称具有独立的新假设生成网络。</p>
+<p>任务训练监督只有query-reference身份/正负检索关系。冻结基础模型的 预训练来源单独披露；不使用本任务mask、box、point、人工crop或分割 teacher。HOLD表示保留RAW winner，不表示reference不存在。</p>
+<h2 id="性质一reference登记与任务参数学习可分离">2. 性质一：reference登记与任务参数学习可分离</h2>
+<p>假设G、内容编码器、校准函数均共享参数，reference身份只作为资源 索引，不进入identity专属可训练参数。则登记一个新的reference、 计算其表示并纳入候选后，原theta仍可直接用于评分。</p>
+<p>证明：将新reference代入同一个共享函数即可，参数维度和定义不变。 这是结构上的可执行性，不保证新reference会被召回、正确排名或在 任意遮挡下可辨认，也不是本文独创的数学定律。它给出“外部reference 记忆可扩展”的技术基础，不能直接等同于普遍的过目不忘保证。</p>
+<h2 id="性质二丢失必要统计量的接口不能普遍恢复原评分">3. 性质二：丢失必要统计量的接口不能普遍恢复原评分</h2>
+<p>设完整状态E、原评分f(E)、压缩接口T(E)。若存在E1/E2满足 T(E1)=T(E2)但f(E1)不等于f(E2)，则不存在只读取T的函数能对所有E 重建原f。否则同一个输入值须输出两个不同值，矛盾。</p>
+<p>具体构造：一个query token、两个reference tokens，c=(1,0)， u=(1)，v=(1,a)，0&lt;=a&lt;=1。若接口只保存获胜的第一个reference位置， 它不随a改变；但L=1，M=sqrt((1+a)/2)，S=M随a改变。因此仅保存那个 局部匹配不充分。该构造证明评分可恢复性的问题，不证明预测一定变差。</p>
+<p>当前项目已发现旧P压缩缺少完整reference质量统计，并通过无损接口 恢复了原标量和决策。恢复统计量不自动保证new HYP解释或识别增益。</p>
+<h2 id="性质三相对比较对共同尺度近似不敏感">4. 性质三：相对比较对共同尺度近似不敏感</h2>
+<p>令D_e(a,b)=(a-b)/(|a|+|b|+e)，k&gt;0，A=|a|+|b|&gt;0，则</p>
+<pre><code>|D_e(ka,kb)-D_e(a,b)|
+  = |a-b|*e*|1-1/k| / ((A+e)*(A+e/k)).</code></pre>
+<p>e=0时严格尺度不变；e&gt;0时误差大小由上式给出，A很小时不能声称可忽略。 这解释了原相对特征弱化绝对尺度的方式，不说明绝对尺度必然有用。 实际ABS12试验将绝对差补回后EVAL26，原NATIVE7为28；同参数REL12也26。 因此“额外信息存在”与“该信息提高泛化”必须分开。</p>
+<h2 id="性质四正确action与所有错误logit为负不是同一条件">5. 性质四：正确action与所有错误logit为负不是同一条件</h2>
+<p>固定RAW winner w，定义z_w=0、其它候选z_g为旧action logit。排除 依赖精确平局的情况，正确目标t为w时需max_wrong z&lt;0；t不为w时需 z_t&gt;0且z_t&gt;max_wrong z。它不要求每个错误logit都小于0。</p>
+<p>例如z_t=2、z_wrong=1时action正确，但错误绝对压负条件未满足。 因此两种训练代理目标不同。当前线性头下，上述严格条件都是线性 不等式；共享解是否存在可用可行性证书验证。</p>
+<p>项目已用原缓存浮点特征的精确有理数表达核验12套TRAIN约束系统。 这些证书限定了所测试特征与线性头的训练能力，不是EVAL结果、所有 模型的上界或32/32资格门。随后固定NATIVE7的2×2目标对照中，原方案 EVAL28，三种改法均27。因此“目标条件不同”没有自动带来更好识别。</p>
+<h2 id="性质五乘积对比改变线性读出的函数表达范围">6. 性质五：乘积对比改变线性读出的函数表达范围</h2>
+<p>在正M、正L、S=M L、无epsilon/floor的理想实数条件下，令 x=(M_c−M_w)/(M_c+M_w)，y=(L_c−L_w)/(L_c+L_w)，可得</p>
+<pre><code>dS=(S_c−S_w)/(S_c+S_w)=(x+y)/(1+xy).</code></pre>
+<p>x、y落在(-1,1)，分母为正。该函数在一般开域上不是x、y的仿射组合： 原点和两条坐标轴迫使仿射式为x+y，而x=y≠0即给出反例。因此在相同 底层质量/内容信息上，[RAW,x,y,dS]的线性评分函数类严格包含 [RAW,x,y]的线性评分函数类。这个结论针对函数表达，不是训练成功率 或泛化保证，也不是本项目新创的数学定律。</p>
+<p>保留e&gt;0时，设A=M_c+M_w、B=L_c+L_w、 x=(M_c−M_w)/(A+e)、y=(L_c−L_w)/(B+e)，则实数恒等式为</p>
+<pre><code>dS=[A*y*(B+e)+B*x*(A+e)]
+   /[A*B+x*y*(A+e)*(B+e)+2e].</code></pre>
+<p>这时精确关系仍含A/B，不能无条件称dS只由两个归一化对比恢复。实际 L由S/max(M,e)得到；触发floor、非正内容或浮点舍入时须另行分析。 生产路径继续直接读取原FP64列，公式只解释该列的函数作用。</p>
+<p>原PAIR64和FULL TRAIN32的4128次比较全部M/L/S&gt;0且无M floor，含e 公式对原dS最大残差4.44e-16，独立重执行一致。dS对简单x+y最大差 0.93939表明二者数值不同；这个数不是准确率增益或因果贡献。 完整推导、可复现程序及源绑定见 reports/NEW_HYP_PRODUCT_CONTRAST_MATHEMATICAL_REVIEW_V1_20260909.md。</p>
+<h2 id="统一对象与任务">统一对象与任务</h2>
+<p>new HYP中的假说是“候选reference g解释query的身份”，不是必须连通的空间区域。reference组织匹配可靠性、内容相容性及竞争证据；空间支持只是证据组织的一种实现。RoMa/ColNomic是当前实现，论文必须披露，不能把去掉模型名当通用性证明。</p>
+<p>令w为RAW答案，Z为推理时全部合法候选及其可见证据。切换到g相对保留w的条件价值为</p>
+<pre><code>Delta_g(Z) = P(Y=g | Z) - P(Y=w | Z).</code></pre>
+<p>HOLD的相对价值为0，理想决策取最大正Delta，否则保持w。任意固定系统相对RAW的准确率增量，恰等于rescue概率减去loss概率。query-reference身份标签Y已足以监督这一任务，不必增加框、mask、匹配正确性或ownership标注。</p>
+<p>这是决策目标的定义；当前七参数logit并未被证明是Delta或身份后验的校准估计。旧SIGN损失是代理目标，不能把定义当成其一致性保证。HOLD保留RAW答案，也不等于未知类拒识。</p>
+<h2 id="当前证据与理论的对应2026-09-19">当前证据与理论的对应（2026-09-19）</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>理论层次</th>
+<th>已完成的对应证据</th>
+<th>边界</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>共享reference条件证据与校准</td>
+<td>同一full-H593固定COST1头，GroZi480为RAW321→355，34救0损；ISIC537为466→500，34救0损</td>
+<td>GroZi为正式外部确认；ISIC为已打开队列的探索。不是任意新身份保证</td>
+</tr>
+<tr class="even">
+<td>信息接口是否保留原评分</td>
+<td>缺失完整reference质量统计的接口不能普遍重建；补齐后可无损恢复原评分</td>
+<td>恢复原评分不自动提升识别，也不证明旧空间P成立</td>
+</tr>
+<tr class="odd">
+<td>动作目标与错误绝对压负的差异</td>
+<td>同H593五折、同七参数，COST4 440→COST1 481，44救3损；CE486</td>
+<td>训练成本单因素有净增，CE相对COST1优势的组区间跨0；不宣称普适最优成本</td>
+</tr>
+<tr class="even">
+<td>实际参数学习的价值</td>
+<td>同H593自然C128，手填等权／平衡均459，COST1 481、CE486</td>
+<td>对所测两种固定规则成立；COST4仅440，不能说一切训练版都优于免训练</td>
+</tr>
+<tr class="odd">
+<td>高基线保持回归</td>
+<td>processed128：RAW121、COST1 122、CE123；保住原121正确</td>
+<td>合成处理回归；净增区间包含0，不是外部GO或普遍零损失定理</td>
+</tr>
+<tr class="even">
+<td>候选绑定与空间所有权</td>
+<td>已有整包候选证据错绑对照；processed128中COST1 122→92、CE123→74</td>
+<td>支持候选级联合绑定；不证明token对应、mask或ownership</td>
+</tr>
+</tbody>
+</table>
+<p>旧EVAL32的25→28和旧EVAL128的88→99来自固定ORIGINAL7；difficult90的61→69来自另一FROZEN_C头。H593结果是五折OOF，外部和processed128使用冻结full-H593头。各面板和头不混成一条样本量学习曲线。</p>
+<p>RPC按2026-09-18决定仅保留参考图不足诊断。附带2026-09-15旧范围文档中的RPC“外部确认”是历史表述，已被当前范围修订覆盖。完整过目不忘系统、未知拒识、持续注册后的旧身份保持、多物体ownership及新编码器训练仍是未来方向。</p>
+<h2 id="完整原文入口">完整原文入口</h2>
+<p>以下文件按原字节保存。V1/V2/V3记录不同阶段；V3是工作假说及可证伪预测，不因收入本包就升级成普适理论定理。原文内部指向其它仓库证据的链接仍可能需要原工作区。</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>原文</th>
+<th>日期版本与用途</th>
+<th>包内文件</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>new HYP：定义、可证明性质与当前证据</td>
+<td>NEW_HYP_THEORY_DEFINITION_AND_PROPOSITIONS_V1_20260909</td>
+<td><a href="theory_sources/NEW_HYP_THEORY_DEFINITION_AND_PROPOSITIONS_V1_20260909.md">NEW_HYP_THEORY_DEFINITION_AND_PROPOSITIONS_V1_20260909.md</a></td>
+</tr>
+<tr class="even">
+<td>new HYP：定义、可证明性质与扩大样本证据（V2）</td>
+<td>NEW_HYP_THEORY_DEFINITION_AND_PROPOSITIONS_V2_20260910</td>
+<td><a href="theory_sources/NEW_HYP_THEORY_DEFINITION_AND_PROPOSITIONS_V2_20260910.md">NEW_HYP_THEORY_DEFINITION_AND_PROPOSITIONS_V2_20260910.md</a></td>
+</tr>
+<tr class="odd">
+<td>new HYP：统一的工作假说、已有证据与下一次可证伪预测</td>
+<td>NEW_HYP_UNIFIED_DECISION_HYPOTHESIS_V3_20260911</td>
+<td><a href="theory_sources/NEW_HYP_UNIFIED_DECISION_HYPOTHESIS_V3_20260911.md">NEW_HYP_UNIFIED_DECISION_HYPOTHESIS_V3_20260911.md</a></td>
+</tr>
+<tr class="even">
+<td>new HYP：乘积对比项的数学与实验范围复核</td>
+<td>NEW_HYP_PRODUCT_CONTRAST_MATHEMATICAL_REVIEW_V1_20260909</td>
+<td><a href="theory_sources/NEW_HYP_PRODUCT_CONTRAST_MATHEMATICAL_REVIEW_V1_20260909.md">NEW_HYP_PRODUCT_CONTRAST_MATHEMATICAL_REVIEW_V1_20260909.md</a></td>
+</tr>
+<tr class="odd">
+<td>new HYP：当前校准机制的联合证据收口</td>
+<td>REPORT_NEW_HYP_CALIBRATION_MECHANISM_SYNTHESIS_V1_20260909</td>
+<td><a href="theory_sources/REPORT_NEW_HYP_CALIBRATION_MECHANISM_SYNTHESIS_V1_20260909.md">REPORT_NEW_HYP_CALIBRATION_MECHANISM_SYNTHESIS_V1_20260909.md</a></td>
+</tr>
+<tr class="even">
+<td>new HYP：原始论文与贡献范围复核</td>
+<td>NEW_HYP_PRIMARY_LITERATURE_SCOPE_V1_20260909</td>
+<td><a href="theory_sources/NEW_HYP_PRIMARY_LITERATURE_SCOPE_V1_20260909.md">NEW_HYP_PRIMARY_LITERATURE_SCOPE_V1_20260909.md</a></td>
+</tr>
+<tr class="odd">
+<td>new HYP：当前论文收口与未来工作范围</td>
+<td>RC_NEW_HYP_PAPER_SCOPE_FREEZE_V1_20260915</td>
+<td><a href="theory_sources/RC_NEW_HYP_PAPER_SCOPE_FREEZE_V1_20260915.md">RC_NEW_HYP_PAPER_SCOPE_FREEZE_V1_20260915.md</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="complete_results_zh.md">返回当前主总结</a> · <a href="theory_source_index.csv">原文SHA索引</a></p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "status": "COORDINATE_DISPATCH_AUTHORIZED",
+  "coordinate": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_precision_authority_v2_20260922.json",
+    "sha256": "08c1d5673561719232ea8d4e5ba2c6d032d6347b2e226e052e23a13dd58386f7"
+  },
+  "evaluation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_eval_authority_v2_20260922.json",
+    "sha256": "05ba7b28e7ea34a9b0a652cd2db3133f0a7108a9f741e6e8014623805ac41084"
+  },
+  "execution": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_cache_authority_v2_20260922.json",
+    "sha256": "1d6833dfd2622021a4d9d29936a570e2fd26c4b1d187904da3a193e0995dc422"
+  },
+  "qualification": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_roma_coordinate_cache_v2/validation.json",
+    "sha256": "e220a3e8f5f449ae712c7f16461c4a2337674b90add921715ccdb2455dd330b9"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_roma_coordinate_cache_v1.py",
+      "sha256": "1481acfd6d43fbf44d2955906a2730f17794e0ee9ad0cfd427a93a41e15b7adc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_cache_dispatch_v1.sbatch",
+      "sha256": "0f9ca87401bf01cb5da81eb41f89f666c3599e94a0d0004738d19ac37fa62856"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_cache_v2.sbatch",
+      "sha256": "6dc49fff0f955a2f04345907f4034a52c51efd7c307892413569ba2bc4fd7573"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_eval_v2.sbatch",
+      "sha256": "ad8ed044bbf61c7a6889e60896915f1d0ff147a96abb4ef072799e3f44835dbd"
+    }
+  ],
+  "total_queries": 593,
+  "max_wave_tasks": 46,
+  "dependency": "afterok only; prerequisite failure cancels next task",
+  "automatic_retries": 0
+}

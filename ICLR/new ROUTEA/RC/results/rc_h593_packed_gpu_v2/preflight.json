@@ -1,0 +1,46 @@
+{
+  "status": "PACKED_GPU_STATIC_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_packed_gpu_authority_v2_20260923.json",
+    "sha256": "87e8b75ff19b57da4defe4dc73a65136d034bf87d55e485c607dc15d8bd1c22b"
+  },
+  "families": [
+    "inside",
+    "visual",
+    "coordinate",
+    "fusion"
+  ],
+  "commands": {
+    "inside": [
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_shared_pooling_v1.py",
+      "consumer",
+      "inside",
+      "--index",
+      "17"
+    ],
+    "visual": [
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_shared_pooling_v1.py",
+      "consumer",
+      "visual",
+      "--index",
+      "17"
+    ],
+    "coordinate": [
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_shared_pooling_v1.py",
+      "consumer",
+      "coordinate",
+      "--index",
+      "17"
+    ],
+    "fusion": [
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_feature_fusion_train_v2.py",
+      "fit",
+      "--index",
+      "17"
+    ]
+  }
+}

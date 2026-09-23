@@ -1,0 +1,35 @@
+{
+  "status": "CACHE_CUTOVER_DISPATCH_SHELL_PASS",
+  "cases": [
+    {
+      "script": "slurm/rc_h593_roma_coordinate_cache_cutover_v1.sbatch",
+      "args": [
+        "240s",
+        "/usr/bin/python3",
+        "programs/cutover_rc_h593_roma_coordinate_cache_v1.py",
+        "start"
+      ],
+      "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC"
+    },
+    {
+      "script": "slurm/rc_h593_roma_coordinate_cache_cutover_v1.sbatch",
+      "args": [
+        "240s",
+        "/usr/bin/python3",
+        "programs/cutover_rc_h593_roma_coordinate_cache_v1.py",
+        "finish"
+      ],
+      "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC"
+    },
+    {
+      "script": "slurm/rc_h593_roma_coordinate_cache_dispatch_v1.sbatch",
+      "args": [
+        "240s",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/bin/python",
+        "programs/dispatch_rc_h593_roma_coordinate_cache_v1.py",
+        "run"
+      ],
+      "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC"
+    }
+  ]
+}

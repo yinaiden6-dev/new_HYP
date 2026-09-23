@@ -1,0 +1,26 @@
+{
+  "status": "PAIR_QUALITY_DEV_CPU_EXECUTION_AUTHORIZED",
+  "scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_cpu_authority_v1_20260923.json",
+    "sha256": "e28370bb2cfc2d43b7c1ca5abdd8c23198f0c46e05bd51012529f0175a9345e9"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_cpu_v2.py",
+      "sha256": "ff6949efccee32cf4a7ba143eae1dd8a494c813ce5f48b3f7f39ae9b0ccfa578"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+      "sha256": "3d6baf11620060573c3ff0ff04c4053185fda20e48d83335ae592fc969be2ea3"
+    }
+  ],
+  "partition": "dev_cpuonly",
+  "execution_device": "cpu",
+  "max_active_jobs": 4,
+  "time_limit": "00:10:00",
+  "cpus": 8,
+  "memory": "32G",
+  "scientific_change": false,
+  "user_instruction": "Move current and all future continuation jobs of the30-configuration pair-quality experiment to dev_cpuonly",
+  "takeover": "Cancel one not-started pending slice so old fixed-partition dispatcher stops; verify canonical lock released; preserve checkpoint and attempts and adopt remaining jobs"
+}

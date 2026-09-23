@@ -1,0 +1,54 @@
+{
+  "status": "H593_BOX_CE_COMPLETION_VERIFIED",
+  "fit_array": "5154655",
+  "join_job": "5154656",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "actual_partition": "dev_accelerated",
+  "submission_partition": "accelerated",
+  "partition_note": "Final accounting differs from submission; intervening scheduler update not attributed.",
+  "fold_elapsed": [
+    "00:01:28",
+    "00:01:25",
+    "00:01:25",
+    "00:01:26",
+    "00:01:25"
+  ],
+  "join_elapsed": "00:00:38",
+  "stderr_empty": true,
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_v1/result.json",
+    "sha256": "4f8a878a07df8050ba7f7596c5d993f4ef4b7973c490f558f9f3494a32cf0cdd"
+  },
+  "validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_v1/validation.json",
+    "sha256": "cc5f5b241af2d5fe21285da310055a9f4abc3abb82f34d1f0ffee8cd16eedd5a"
+  },
+  "post_join_analysis": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_v1/post_join_analysis.json",
+    "sha256": "15bb0d11d80d8b9dbb970cea46c677e0794feadcc3ea3fd9ece8405303b569ee"
+  },
+  "counts": {
+    "RAW": 426,
+    "COST1_FULL": 481,
+    "CE_FULL": 486,
+    "GAP_BIAS2": 492,
+    "DIAG_CE13": 493,
+    "JOINT_CONTENT_CE18": 492,
+    "DIAG_CONT_CE13": 491,
+    "CONTENT_CONT_CE18": 496,
+    "CONTENT_CONTINUOUS_CE18": 494,
+    "DIAG_CONTINUOUS_CE13": 492,
+    "CONTENT_BOX_CE18": 496,
+    "DIAG_BOX_CE13": 491
+  },
+  "performance_signal": false,
+  "all_box_optima_certified": false,
+  "gap_range": [
+    5.073498860757945e-06,
+    3.135645646704062e-05
+  ],
+  "retained_best_correct": 496,
+  "paper_main": "COST1_FULL",
+  "external_GO": false
+}

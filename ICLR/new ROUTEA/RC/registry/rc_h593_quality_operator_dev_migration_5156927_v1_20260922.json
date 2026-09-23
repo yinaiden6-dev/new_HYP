@@ -1,0 +1,41 @@
+{
+  "time_utc": "2026-09-22T11:05:01.681744+00:00",
+  "user_scope": {
+    "array_id": "5156927",
+    "indices": [
+      1,
+      46
+    ],
+    "destination": "dev_cpuonly"
+  },
+  "whole_array_attempt": "REJECTED_BY_SLURM_QOS_SUBMIT_LIMIT",
+  "dev_limits": {
+    "max_jobs_per_user": 1,
+    "max_submitted_per_user": 4
+  },
+  "initial_migrated_and_verified": [
+    "5156927_1",
+    "5156927_2",
+    "5156927_3",
+    "5156927_4"
+  ],
+  "preserved": {
+    "time_limit": "00:15:00",
+    "cpus_per_task": 8,
+    "memory": "32G",
+    "gpus": 0,
+    "next_job": "5156928",
+    "next_dependency": "afterok:5156927"
+  },
+  "automatic_slot_refill": {
+    "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/migrate_h593_operator_5156927_dev_cpuonly_v1.py",
+    "sha256": "d180f93b33f8de507b726a8a43fd07fd92bc55c62b6f26403ea38c569dab7543",
+    "pid": 3782527,
+    "poll_seconds": 30,
+    "maximum_hours": 24,
+    "state_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_dispatch_v1/dev_migration_5156927/status.json"
+  },
+  "remaining_migration_not_claimed_complete": true,
+  "new_job_ids_created": false,
+  "experiment_code_modified": false
+}

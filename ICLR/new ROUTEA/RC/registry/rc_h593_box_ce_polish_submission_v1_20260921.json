@@ -1,0 +1,62 @@
+{
+  "status": "H593_BOX_CE_POLISH_SUBMITTED",
+  "fit_array": "5154823",
+  "join_job": "5154824",
+  "array": "0-4%5",
+  "partition": "accelerated",
+  "time_limit": "00:10:00",
+  "cpus": 4,
+  "mem": "16G",
+  "gpu": 1,
+  "fit_state": "PENDING",
+  "fit_reason": "None",
+  "join_state": "PENDING",
+  "join_reason": "Dependency",
+  "dependency": "afterok:5154823_*",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_polish_authority_v1_20260921.json",
+    "sha256": "46fe4a68d070841870193c553f5970dc820e7a234912dd6273abbd66c51b12cb"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_polish_v1/preflight.json",
+    "sha256": "ef36042238814e26a754356ecb06748cf7ea03558ec0b29793133d2a64072d30"
+  },
+  "assembly_preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_polish_v1/assembly_preflight.json",
+    "sha256": "912d4cc1bd866f7b4d7e972183a1d3eecea2e07ead89c188f0acf72143914613"
+  },
+  "scripts": [
+    {
+      "source": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_box_ce_polish_v1.sbatch",
+        "sha256": "1039a6c72b121315fcf4655511a4615e200becaebfd61b4d0b4b6e317038da46"
+      },
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_polish_submitted_5154823.sbatch",
+        "sha256": "1039a6c72b121315fcf4655511a4615e200becaebfd61b4d0b4b6e317038da46"
+      }
+    },
+    {
+      "source": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_box_ce_polish_join_v1.sbatch",
+        "sha256": "68107cc7f1552db8845929c6043c31435b103b9d50f0ade239e020c773252992"
+      },
+      "spool": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_polish_join_submitted_5154824.sbatch",
+        "sha256": "68107cc7f1552db8845929c6043c31435b103b9d50f0ade239e020c773252992"
+      }
+    }
+  ],
+  "submitted_scripts_identical": true,
+  "checks": {
+    "synthetic": 21,
+    "synthetic_base_fits": 2,
+    "synthetic_refinements": 2,
+    "dynamic_launchers": 2,
+    "natural_fits_before_submission": 0,
+    "all_fivefold_old_scores": true
+  },
+  "retained_best_correct": 496,
+  "paper_main": "COST1_FULL",
+  "external_GO": false
+}

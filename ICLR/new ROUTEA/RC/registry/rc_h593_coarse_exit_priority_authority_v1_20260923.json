@@ -1,0 +1,21 @@
+{
+  "status": "USER_REQUESTED_EARLY_CHAIN_PRIORITY",
+  "user_instruction": "先做5158971和后续任务",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prioritize_rc_h593_coarse_exit_v1.py",
+      "sha256": "fb6ba39962545033a325f02b1a0e771905e8cb46cb5fa7e2e8eb5b299bf9846c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_packed_gpu_v2.py",
+      "sha256": "5f6581d80775ebafb7af4095cf37adfd1e26fd9dbcd39b652d39941375440933"
+    }
+  ],
+  "probe": "5158971",
+  "callback": "5158972",
+  "hold_scope": "Only eligible pending fusion-ledger jobs and pending5158898; preserve running jobs and existing holds/dependencies",
+  "target_chain": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_coarse_exit_dispatch_v1",
+  "restore": "Automatically restore only this operation holds and original partitions on verified70-query completion, detected chain failure, or48h bound",
+  "maximum_hours": 48,
+  "dev_cpu_policy": "At most one target CPU pending/running in dev; regular CPU remains eligible; no CPU job receives GPU"
+}

@@ -1,0 +1,793 @@
+{
+  "status": "GAP_NET2_POST_JOIN_INDEPENDENT_RECOUNT_PASS",
+  "code": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_h593_gap_net2_result_v1.py",
+    "sha256": "1cc55c4984895dce13c7eb11268e1ff6c0f38ba286d562176cacaa3dd8c456a0"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_gap_net2_authority_v1_20260921.json",
+    "sha256": "84abee646a8fe46f853fcf54d3bab145e35a6a3c63eda42e2ada9e60996814bc"
+  },
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_net2_v1/result.json",
+    "sha256": "19baa448dc84e2aebd0e13320332b08a1aef874987104585cc546774f210f835"
+  },
+  "queries": 593,
+  "components": 64,
+  "original_switches_preserved": 78,
+  "target_missing": 23,
+  "parameter_updates": 0,
+  "counts": {
+    "CE_FULL": 486,
+    "COST1_FULL": 481,
+    "GAP_NET1": 484,
+    "RAW": 426,
+    "S_NET1": 485,
+    "S_SAFE1": 482,
+    "ZERO_S": 487,
+    "BIAS1": 484,
+    "S_FIXED_BIAS2": 486,
+    "S_BIAS2": 485,
+    "GAP_BIAS2": 492,
+    "S_GAP3": 486,
+    "GAP_NET2": 491
+  },
+  "comparisons": {
+    "GAP_BIAS2__to__GAP_NET2": {
+      "rescue": 1,
+      "loss": 2,
+      "changed": 3,
+      "equal_component_difference": -0.0011160714285714285,
+      "bootstrap95": [
+        -0.00588474025974026,
+        0.003145292207792208
+      ]
+    },
+    "COST1_FULL__to__GAP_NET2": {
+      "rescue": 14,
+      "loss": 4,
+      "changed": 31,
+      "equal_component_difference": 0.021511530748663098,
+      "bootstrap95": [
+        -0.007419697815205627,
+        0.04964753230837789
+      ]
+    },
+    "BIAS1__to__GAP_NET2": {
+      "rescue": 10,
+      "loss": 3,
+      "changed": 16,
+      "equal_component_difference": 0.014083074044011542,
+      "bootstrap95": [
+        -0.0004932133838383835,
+        0.031227171266233762
+      ]
+    },
+    "S_NET1__to__GAP_NET2": {
+      "rescue": 8,
+      "loss": 2,
+      "changed": 15,
+      "equal_component_difference": 0.007610928440432117,
+      "bootstrap95": [
+        -0.0018634588068181823,
+        0.016615811138157185
+      ]
+    },
+    "CE_FULL__to__GAP_NET2": {
+      "rescue": 9,
+      "loss": 4,
+      "changed": 22,
+      "equal_component_difference": 0.010024914321789322,
+      "bootstrap95": [
+        -0.005445075757575758,
+        0.02701400162337662
+      ]
+    },
+    "ZERO_S__to__GAP_NET2": {
+      "rescue": 8,
+      "loss": 4,
+      "changed": 21,
+      "equal_component_difference": 0.004542122246625923,
+      "bootstrap95": [
+        -0.00453441319709702,
+        0.012741883862920167
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "queries": 119,
+      "old_beta": 0.11600987710518738,
+      "new_beta": 0.11600987710518738,
+      "old_bias": 0.574316855540047,
+      "new_bias": 0.574316855540047,
+      "old_inner_net": 9,
+      "new_inner_net": 9,
+      "candidate_count": 152755,
+      "incumbent_retained": true,
+      "runtime": {
+        "job_id": "5153659",
+        "seconds": 8.067925887880847
+      },
+      "inner_changes": {
+        "changed": 0,
+        "rescue": 0,
+        "loss": 0,
+        "neutral": 0,
+        "net": 0,
+        "component_net": {},
+        "records": []
+      },
+      "outer_changes": {
+        "changed": 0,
+        "rescue": 0,
+        "loss": 0,
+        "neutral": 0,
+        "net": 0,
+        "component_net": {},
+        "records": []
+      }
+    },
+    {
+      "fold": 1,
+      "queries": 118,
+      "old_beta": 0.03873251285349127,
+      "new_beta": 0.03873251285349127,
+      "old_bias": 0.7164141671908465,
+      "new_bias": 0.7164141671908465,
+      "old_inner_net": 10,
+      "new_inner_net": 10,
+      "candidate_count": 162935,
+      "incumbent_retained": true,
+      "runtime": {
+        "job_id": "5153661",
+        "seconds": 7.039509576046839
+      },
+      "inner_changes": {
+        "changed": 0,
+        "rescue": 0,
+        "loss": 0,
+        "neutral": 0,
+        "net": 0,
+        "component_net": {},
+        "records": []
+      },
+      "outer_changes": {
+        "changed": 0,
+        "rescue": 0,
+        "loss": 0,
+        "neutral": 0,
+        "net": 0,
+        "component_net": {},
+        "records": []
+      }
+    },
+    {
+      "fold": 2,
+      "queries": 119,
+      "old_beta": 0.42190272909818605,
+      "new_beta": 0.2632264077647225,
+      "old_bias": 0.3978602212504339,
+      "new_bias": 0.43846823834420395,
+      "old_inner_net": 11,
+      "new_inner_net": 12,
+      "candidate_count": 147731,
+      "incumbent_retained": false,
+      "runtime": {
+        "job_id": "5153662",
+        "seconds": 6.616634648060426
+      },
+      "inner_changes": {
+        "changed": 7,
+        "rescue": 3,
+        "loss": 2,
+        "neutral": 2,
+        "net": 1,
+        "component_net": {
+          "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a": -1,
+          "67c564121b4c0847db261d818757e131684626ea0db83097a0e9610c7cf03222": 1,
+          "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b": 0,
+          "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea": 1,
+          "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49": 0
+        },
+        "records": [
+          {
+            "query_id": "H593-0dd4951a9b49124b8f24958f",
+            "original_query_id": "OUTCOME-0342",
+            "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+            "identity": "766-e9-infants-pain-and-fever",
+            "m": -1.525097553692146,
+            "d": 4.128116645193118,
+            "old_gate": 0.6144263462009125,
+            "new_gate": -5.551115123125783e-17,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": -1,
+            "accuracy_delta": 1
+          },
+          {
+            "query_id": "H593-0e8e2230acf18be9984a101b",
+            "original_query_id": "OUTCOME-0332",
+            "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+            "identity": "766-e9-infants-pain-and-fever",
+            "m": -1.6837708305500478,
+            "d": 3.9190279516109334,
+            "old_gate": 0.36753797889711276,
+            "new_gate": -0.21371094257375917,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": -1,
+            "accuracy_delta": 1
+          },
+          {
+            "query_id": "H593-5f1d8e99507134bf9261aa26",
+            "original_query_id": "OUTCOME-0331",
+            "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+            "identity": "766-e9-infants-pain-and-fever",
+            "m": -0.8798232758463832,
+            "d": 1.2138014038276177,
+            "old_gate": 0.030143070262131977,
+            "new_gate": -0.12185045423285817,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": 1,
+            "accuracy_delta": -1
+          },
+          {
+            "query_id": "H593-62a3ef9aed28fe11480a070d",
+            "original_query_id": "OUTCOME-0528",
+            "component": "67c564121b4c0847db261d818757e131684626ea0db83097a0e9610c7cf03222",
+            "identity": "SH230414C (250 ml Carton)",
+            "m": -1.032294711618158,
+            "d": 2.208049328352248,
+            "old_gate": 0.2971475472475061,
+            "new_gate": -0.012609580404483622,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": -1,
+            "accuracy_delta": 1
+          },
+          {
+            "query_id": "H593-7a2a329a01beb7a806b52b3e",
+            "original_query_id": "OUTCOME-0576",
+            "component": "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a",
+            "identity": "alp0b-0002-29",
+            "m": -1.0572945260953224,
+            "d": 1.5630008041294838,
+            "old_gate": 5.551115123125783e-17,
+            "new_gate": -0.20740320074674173,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": 1,
+            "accuracy_delta": -1
+          },
+          {
+            "query_id": "H593-ad9f49fe8ff6e9e1c8b4c03c",
+            "original_query_id": "DIFFICULT-0018",
+            "component": "7309194c945cf747ac938c081c8e1c7587ee93c9427836b98aa713829ad9307b",
+            "identity": "3T3-bn-lansoprazole",
+            "m": -0.784780136274102,
+            "d": 1.050341852663754,
+            "old_gate": 0.05622217910121452,
+            "new_gate": -0.06983418512827472,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": 0,
+            "accuracy_delta": 0
+          },
+          {
+            "query_id": "H593-d738b62fe4ce9ca980d24764",
+            "original_query_id": "OUTCOME-0281",
+            "component": "c36d84d6c8d54c84a5f0b431f53eb8775569f16793018d5e6c57459cf8e20e49",
+            "identity": "5fe0ce14-bc11-4b43-b002-7efdca0d3003-04",
+            "m": -0.4631492909732805,
+            "d": 0.11467898752500671,
+            "old_gate": -0.016905691915829413,
+            "new_gate": 0.005505485303226421,
+            "old_switch": false,
+            "new_switch": true,
+            "correctness_delta_if_switched": 0,
+            "accuracy_delta": 0
+          }
+        ]
+      },
+      "outer_changes": {
+        "changed": 2,
+        "rescue": 1,
+        "loss": 1,
+        "neutral": 0,
+        "net": 0,
+        "component_net": {
+          "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f": -1,
+          "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb": 1
+        },
+        "records": [
+          {
+            "query_id": "H593-17e5724183278e475c4a304d",
+            "original_query_id": "OUTCOME-0809",
+            "fold": 2,
+            "identity": "vetoryl-09",
+            "component": "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f",
+            "m": -0.7005115399484397,
+            "d": 0.7692587245899999,
+            "old_gate": 0.021901036589105027,
+            "new_gate": -0.05955409088873814,
+            "slope_contribution_change": -0.12206314457161316,
+            "bias_change": 0.040608017093770044,
+            "new_bias_crossing": 0.4980223292329421,
+            "raw_identity": "vetoryl-05",
+            "challenger_identity": "vetoryl-09",
+            "old_switch": true,
+            "new_switch": false,
+            "correct": {
+              "RAW": false,
+              "CE_FULL": true,
+              "COST1_FULL": false,
+              "GAP_NET1": false,
+              "S_NET1": false,
+              "S_SAFE1": false,
+              "ZERO_S": false,
+              "BIAS1": false,
+              "S_FIXED_BIAS2": false,
+              "S_BIAS2": false,
+              "GAP_BIAS2": true,
+              "S_GAP3": false,
+              "GAP_NET2": false
+            },
+            "accuracy_delta": -1
+          },
+          {
+            "query_id": "H593-6e81425780a0e9f03a924de4",
+            "original_query_id": "OUTCOME-0721",
+            "fold": 2,
+            "identity": "cuvitru-19",
+            "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+            "m": -2.017507148237239,
+            "d": 4.287174632708263,
+            "old_gate": 0.18912375067332438,
+            "new_gate": -0.45054133186519546,
+            "slope_contribution_change": -0.6802730996322899,
+            "bias_change": 0.040608017093770044,
+            "new_bias_crossing": 0.8890095702093994,
+            "raw_identity": "cuvitru-19",
+            "challenger_identity": "cuvitru-13",
+            "old_switch": true,
+            "new_switch": false,
+            "correct": {
+              "RAW": true,
+              "CE_FULL": true,
+              "COST1_FULL": true,
+              "GAP_NET1": true,
+              "S_NET1": true,
+              "S_SAFE1": true,
+              "ZERO_S": true,
+              "BIAS1": true,
+              "S_FIXED_BIAS2": true,
+              "S_BIAS2": true,
+              "GAP_BIAS2": false,
+              "S_GAP3": true,
+              "GAP_NET2": true
+            },
+            "accuracy_delta": 1
+          }
+        ]
+      }
+    },
+    {
+      "fold": 3,
+      "queries": 119,
+      "old_beta": 0.3694117203780276,
+      "new_beta": 0.3691326910188974,
+      "old_bias": 0.4296854080618585,
+      "new_bias": 0.4398954437216732,
+      "old_inner_net": 10,
+      "new_inner_net": 11,
+      "candidate_count": 159303,
+      "incumbent_retained": false,
+      "runtime": {
+        "job_id": "5153663",
+        "seconds": 7.033618252025917
+      },
+      "inner_changes": {
+        "changed": 1,
+        "rescue": 1,
+        "loss": 0,
+        "neutral": 0,
+        "net": 1,
+        "component_net": {
+          "dca95ffa60d30d6597de3bfed4a27b53d657ea2e90a8d6ee6aa513316eee9848": 1
+        },
+        "records": [
+          {
+            "query_id": "H593-2ad687a1c029e9f33146503b",
+            "original_query_id": "DIFFICULT-0100",
+            "component": "dca95ffa60d30d6597de3bfed4a27b53d657ea2e90a8d6ee6aa513316eee9848",
+            "identity": "int08-0008-17",
+            "m": -0.5474301188206143,
+            "d": 0.2913171271883801,
+            "old_gate": -0.010128749628511624,
+            "new_gate": 5.551115123125783e-17,
+            "old_switch": false,
+            "new_switch": true,
+            "correctness_delta_if_switched": 1,
+            "accuracy_delta": 1
+          }
+        ]
+      },
+      "outer_changes": {
+        "changed": 0,
+        "rescue": 0,
+        "loss": 0,
+        "neutral": 0,
+        "net": 0,
+        "component_net": {},
+        "records": []
+      }
+    },
+    {
+      "fold": 4,
+      "queries": 118,
+      "old_beta": 0.1966044461619701,
+      "new_beta": 0.11512330428388215,
+      "old_bias": 0.5217660110013075,
+      "new_bias": 0.6017454434341664,
+      "old_inner_net": 9,
+      "new_inner_net": 10,
+      "candidate_count": 159703,
+      "incumbent_retained": false,
+      "runtime": {
+        "job_id": "5153657",
+        "seconds": 6.7912482540123165
+      },
+      "inner_changes": {
+        "changed": 3,
+        "rescue": 2,
+        "loss": 1,
+        "neutral": 0,
+        "net": 1,
+        "component_net": {
+          "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a": 1,
+          "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb": 1,
+          "f4cb26eef9646d6dfd71a5bdba8092d2e0f934cd5f8e9ffe627d7c9ba8444f36": -1
+        },
+        "records": [
+          {
+            "query_id": "H593-60d3d272fcf4945ce1b4cfad",
+            "original_query_id": "OUTCOME-0717",
+            "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+            "identity": "cuvitru-19",
+            "m": -0.9172480984802991,
+            "d": 2.2713512764689545,
+            "old_gate": 0.051075672270470995,
+            "new_gate": -0.0540171909096131,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": -1,
+            "accuracy_delta": 1
+          },
+          {
+            "query_id": "H593-873815a4220226b46cf86099",
+            "original_query_id": "OUTCOME-0347",
+            "component": "f4cb26eef9646d6dfd71a5bdba8092d2e0f934cd5f8e9ffe627d7c9ba8444f36",
+            "identity": "77l96n1c1",
+            "m": -0.7834818828553674,
+            "d": 1.4485015638203824,
+            "old_gate": 0.023065975865594,
+            "new_gate": -0.014980153133827945,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": 1,
+            "accuracy_delta": -1
+          },
+          {
+            "query_id": "H593-9c93b71a9b46da8e1ed6f3db",
+            "original_query_id": "OUTCOME-0568",
+            "component": "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a",
+            "identity": "alp0b-0002-29",
+            "m": -1.0624875280813098,
+            "d": 4.0021617474686195,
+            "old_gate": 0.24612127673168804,
+            "new_gate": 0.0,
+            "old_switch": true,
+            "new_switch": false,
+            "correctness_delta_if_switched": -1,
+            "accuracy_delta": 1
+          }
+        ]
+      },
+      "outer_changes": {
+        "changed": 1,
+        "rescue": 0,
+        "loss": 1,
+        "neutral": 0,
+        "net": -1,
+        "component_net": {
+          "67c564121b4c0847db261d818757e131684626ea0db83097a0e9610c7cf03222": -1
+        },
+        "records": [
+          {
+            "query_id": "H593-baaae79e1a5f7793171f450a",
+            "original_query_id": "OUTCOME-0529",
+            "fold": 4,
+            "identity": "SH230414C (250 ml Carton)",
+            "component": "67c564121b4c0847db261d818757e131684626ea0db83097a0e9610c7cf03222",
+            "m": -1.0200072130312772,
+            "d": 3.150113449097097,
+            "old_gate": 0.12108510797713845,
+            "new_gate": -0.05561030046795623,
+            "slope_contribution_change": -0.2566748408779535,
+            "bias_change": 0.07997943243285888,
+            "new_bias_crossing": 0.6573557439021226,
+            "raw_identity": "SH230414B (100 ml Carton)",
+            "challenger_identity": "SH230414C (250 ml Carton)",
+            "old_switch": true,
+            "new_switch": false,
+            "correct": {
+              "RAW": false,
+              "CE_FULL": false,
+              "COST1_FULL": false,
+              "GAP_NET1": false,
+              "S_NET1": false,
+              "S_SAFE1": false,
+              "ZERO_S": false,
+              "BIAS1": false,
+              "S_FIXED_BIAS2": false,
+              "S_BIAS2": false,
+              "GAP_BIAS2": true,
+              "S_GAP3": false,
+              "GAP_NET2": false
+            },
+            "accuracy_delta": -1
+          }
+        ]
+      }
+    }
+  ],
+  "outer_case_traces": [
+    {
+      "query_id": "H593-17e5724183278e475c4a304d",
+      "original_query_id": "OUTCOME-0809",
+      "fold": 2,
+      "identity": "vetoryl-09",
+      "component": "7abc0d7c0e302804a40dcf309dece25b925a424ae8a43fd70cd693d41ebfc54f",
+      "m": -0.7005115399484397,
+      "d": 0.7692587245899999,
+      "old_gate": 0.021901036589105027,
+      "new_gate": -0.05955409088873814,
+      "slope_contribution_change": -0.12206314457161316,
+      "bias_change": 0.040608017093770044,
+      "new_bias_crossing": 0.4980223292329421,
+      "raw_identity": "vetoryl-05",
+      "challenger_identity": "vetoryl-09",
+      "old_switch": true,
+      "new_switch": false,
+      "correct": {
+        "RAW": false,
+        "CE_FULL": true,
+        "COST1_FULL": false,
+        "GAP_NET1": false,
+        "S_NET1": false,
+        "S_SAFE1": false,
+        "ZERO_S": false,
+        "BIAS1": false,
+        "S_FIXED_BIAS2": false,
+        "S_BIAS2": false,
+        "GAP_BIAS2": true,
+        "S_GAP3": false,
+        "GAP_NET2": false
+      },
+      "accuracy_delta": -1
+    },
+    {
+      "query_id": "H593-60d3d272fcf4945ce1b4cfad",
+      "original_query_id": "OUTCOME-0717",
+      "fold": 2,
+      "identity": "cuvitru-19",
+      "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+      "m": -0.9041775616540577,
+      "d": 1.9360108942130925,
+      "old_gate": 0.3104909394286995,
+      "new_gate": 0.04389986976722676,
+      "slope_contribution_change": -0.30719908675524277,
+      "bias_change": 0.040608017093770044,
+      "new_bias_crossing": 0.3945683685769772,
+      "raw_identity": "cuvitru-19",
+      "challenger_identity": "cuvitru-13",
+      "old_switch": true,
+      "new_switch": true,
+      "correct": {
+        "RAW": true,
+        "CE_FULL": true,
+        "COST1_FULL": true,
+        "GAP_NET1": true,
+        "S_NET1": true,
+        "S_SAFE1": true,
+        "ZERO_S": true,
+        "BIAS1": true,
+        "S_FIXED_BIAS2": true,
+        "S_BIAS2": true,
+        "GAP_BIAS2": false,
+        "S_GAP3": true,
+        "GAP_NET2": false
+      },
+      "accuracy_delta": 0
+    },
+    {
+      "query_id": "H593-6e81425780a0e9f03a924de4",
+      "original_query_id": "OUTCOME-0721",
+      "fold": 2,
+      "identity": "cuvitru-19",
+      "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+      "m": -2.017507148237239,
+      "d": 4.287174632708263,
+      "old_gate": 0.18912375067332438,
+      "new_gate": -0.45054133186519546,
+      "slope_contribution_change": -0.6802730996322899,
+      "bias_change": 0.040608017093770044,
+      "new_bias_crossing": 0.8890095702093994,
+      "raw_identity": "cuvitru-19",
+      "challenger_identity": "cuvitru-13",
+      "old_switch": true,
+      "new_switch": false,
+      "correct": {
+        "RAW": true,
+        "CE_FULL": true,
+        "COST1_FULL": true,
+        "GAP_NET1": true,
+        "S_NET1": true,
+        "S_SAFE1": true,
+        "ZERO_S": true,
+        "BIAS1": true,
+        "S_FIXED_BIAS2": true,
+        "S_BIAS2": true,
+        "GAP_BIAS2": false,
+        "S_GAP3": true,
+        "GAP_NET2": true
+      },
+      "accuracy_delta": 1
+    },
+    {
+      "query_id": "H593-e0504cc23358865e805ab7d8",
+      "original_query_id": "OUTCOME-0722",
+      "fold": 2,
+      "identity": "cuvitru-19",
+      "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+      "m": -0.9029011161016407,
+      "d": 3.4085214352341118,
+      "old_gate": 0.9330236008637309,
+      "new_gate": 0.43277997542829477,
+      "slope_contribution_change": -0.5408516425292063,
+      "bias_change": 0.040608017093770044,
+      "new_bias_crossing": 0.005688262915909181,
+      "raw_identity": "cuvitru-19",
+      "challenger_identity": "cuvitru-13",
+      "old_switch": true,
+      "new_switch": true,
+      "correct": {
+        "RAW": true,
+        "CE_FULL": true,
+        "COST1_FULL": true,
+        "GAP_NET1": true,
+        "S_NET1": true,
+        "S_SAFE1": true,
+        "ZERO_S": true,
+        "BIAS1": true,
+        "S_FIXED_BIAS2": true,
+        "S_BIAS2": true,
+        "GAP_BIAS2": false,
+        "S_GAP3": false,
+        "GAP_NET2": false
+      },
+      "accuracy_delta": 0
+    },
+    {
+      "query_id": "H593-61dd525ce4c64a94855321cf",
+      "original_query_id": "OUTCOME-0794",
+      "fold": 3,
+      "identity": "tul01-0001-02",
+      "component": "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf",
+      "m": -0.24751066131638444,
+      "d": 0.30302602615260554,
+      "old_gate": 0.29411611238582525,
+      "new_gate": 0.3042415948877628,
+      "slope_contribution_change": -8.455315787713632e-05,
+      "bias_change": 0.010210035659814709,
+      "new_bias_crossing": 0.13565384883391038,
+      "raw_identity": "tul01-0001-02",
+      "challenger_identity": "Doraject injectable solution-100 mL Carton",
+      "old_switch": true,
+      "new_switch": true,
+      "correct": {
+        "RAW": true,
+        "CE_FULL": false,
+        "COST1_FULL": true,
+        "GAP_NET1": false,
+        "S_NET1": false,
+        "S_SAFE1": false,
+        "ZERO_S": false,
+        "BIAS1": false,
+        "S_FIXED_BIAS2": false,
+        "S_BIAS2": false,
+        "GAP_BIAS2": false,
+        "S_GAP3": false,
+        "GAP_NET2": false
+      },
+      "accuracy_delta": 0
+    },
+    {
+      "query_id": "H593-f9fdc3eba36a0ac68a3dcb72",
+      "original_query_id": "OUTCOME-0618",
+      "fold": 3,
+      "identity": "aspirin_nsaid-1",
+      "component": "b59977829e4879950db4969ecaf00ca81d1c8111d9b7a12c396ccf0401db452e",
+      "m": -0.015816596662727278,
+      "d": 0.25471586223662057,
+      "old_gate": 0.5079638362755339,
+      "new_gate": 0.5181027987315484,
+      "slope_contribution_change": -7.107320380018355e-05,
+      "bias_change": 0.010210035659814709,
+      "new_bias_crossing": -0.07820735500987522,
+      "raw_identity": "aspirin_nsaid-1",
+      "challenger_identity": "rite-aid-44-417-1",
+      "old_switch": true,
+      "new_switch": true,
+      "correct": {
+        "RAW": true,
+        "CE_FULL": false,
+        "COST1_FULL": true,
+        "GAP_NET1": false,
+        "S_NET1": false,
+        "S_SAFE1": false,
+        "ZERO_S": false,
+        "BIAS1": false,
+        "S_FIXED_BIAS2": false,
+        "S_BIAS2": false,
+        "GAP_BIAS2": false,
+        "S_GAP3": false,
+        "GAP_NET2": false
+      },
+      "accuracy_delta": 0
+    },
+    {
+      "query_id": "H593-baaae79e1a5f7793171f450a",
+      "original_query_id": "OUTCOME-0529",
+      "fold": 4,
+      "identity": "SH230414C (250 ml Carton)",
+      "component": "67c564121b4c0847db261d818757e131684626ea0db83097a0e9610c7cf03222",
+      "m": -1.0200072130312772,
+      "d": 3.150113449097097,
+      "old_gate": 0.12108510797713845,
+      "new_gate": -0.05561030046795623,
+      "slope_contribution_change": -0.2566748408779535,
+      "bias_change": 0.07997943243285888,
+      "new_bias_crossing": 0.6573557439021226,
+      "raw_identity": "SH230414B (100 ml Carton)",
+      "challenger_identity": "SH230414C (250 ml Carton)",
+      "old_switch": true,
+      "new_switch": false,
+      "correct": {
+        "RAW": false,
+        "CE_FULL": false,
+        "COST1_FULL": false,
+        "GAP_NET1": false,
+        "S_NET1": false,
+        "S_SAFE1": false,
+        "ZERO_S": false,
+        "BIAS1": false,
+        "S_FIXED_BIAS2": false,
+        "S_BIAS2": false,
+        "GAP_BIAS2": true,
+        "S_GAP3": false,
+        "GAP_NET2": false
+      },
+      "accuracy_delta": -1
+    }
+  ],
+  "limits": [
+    "Post-join analysis, not another model or parameter selection.",
+    "Inner calibration sets overlap; their gains must not be pooled as unique-query accuracy.",
+    "Accuracy/actions/group comparisons independently recounted; full-ranking MRR uses existing join replay.",
+    "Opened H593 development, not independent external confirmation."
+  ]
+}

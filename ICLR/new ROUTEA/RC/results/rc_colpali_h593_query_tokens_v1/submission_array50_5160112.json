@@ -1,0 +1,26 @@
+{
+  "array_job": "5160112",
+  "array": "0-49%50",
+  "partition": "accelerated",
+  "shards": 50,
+  "max_parallel": 50,
+  "queries": 593,
+  "queries_per_shard": {
+    "12": 43,
+    "11": 7
+  },
+  "resources_per_task": {
+    "gpu": 1,
+    "cpu": 8,
+    "memory_gib": 48,
+    "time_limit_minutes": 15
+  },
+  "timeout_policy": "USR1 at 90 seconds before Slurm limit, soft-budget exit 75, or timeout exit 124 requeues the same array element; up to 8 automatic requeues; validated query cache retained",
+  "join_job": "5160114",
+  "join_dependency": "afterok:5160112",
+  "join_partition": "cpuonly",
+  "replaced_job": "5160106",
+  "replaced_job_state": "CANCELLED_BEFORE_START",
+  "spool_byte_match": true,
+  "worker_sha256": "00a36660329786af26ddcde52cf8a1accf803bd832192fb114afa49d6452470f"
+}

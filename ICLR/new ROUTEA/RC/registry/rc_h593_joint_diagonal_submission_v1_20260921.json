@@ -1,0 +1,34 @@
+{
+  "status": "H593_JOINT_DIAGONAL_SUBMITTED",
+  "job_id": "5154394",
+  "partition": "dev_accelerated",
+  "time_limit": "00:10:00",
+  "cpus": 8,
+  "mem": "16G",
+  "gpu": 1,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_joint_diagonal_authority_v1_20260921.json",
+    "sha256": "102a1c4c4a72844e767d7162078a2ce7aa69a1e8aabc040f36d5d92a486e7741"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_joint_diagonal_v1/preflight.json",
+    "sha256": "83048b2ba343637f0d560b0e4134dff30bebe23cc473bde4133e8eee8a3cdc9c"
+  },
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_joint_diagonal_v1.sbatch",
+    "sha256": "bb7565566df68c339f9ffb1c4d5e3a7d579bda8889a6fb799a71be514a4f27ca"
+  },
+  "submitted_script_identical": true,
+  "checks": {
+    "synthetic": 24,
+    "multiscale_gradients": 8,
+    "control_folds_bit_exact": 5,
+    "launcher_dynamic": true,
+    "natural_fits_before_submission": 0
+  },
+  "external_GO": false,
+  "last_verified_scheduler_state": "RUNNING",
+  "startup_reason": "Prolog",
+  "node": "hkn0401",
+  "state_note": "Scheduler has assigned resources; no result implied by RUNNING."
+}

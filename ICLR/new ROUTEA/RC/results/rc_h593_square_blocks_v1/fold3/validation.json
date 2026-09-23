@@ -1,0 +1,50 @@
+{
+  "status": "SQUARE_BLOCKS_FRESH_NUMPY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_square_blocks_authority_v1_20260921.json",
+    "sha256": "f4630b361509807b27a0781cdbdad82862c498e16304b210ef5d2e419f42a2e6"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_square_blocks_v1/fold3/payload.json",
+    "sha256": "663e8d195d8152c7c7763d1035f68f9670054fb14ae5a4c8f5d0bab82ebc96ef"
+  },
+  "logits": {
+    "JOINT_SQUARE_CE12": {
+      "logit_count": 15113,
+      "max_abs_error": 1.4210854715202004e-14,
+      "decisions": 119
+    },
+    "RAW_SQUARE_CE8": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "COST1_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 2.6645352591003757e-15,
+      "decisions": 119
+    },
+    "CE_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    }
+  },
+  "gradients": {
+    "JOINT_SQUARE_CE12": {
+      "loss_error": 1.6653345369377348e-16,
+      "gradient_error": 8.538092108323347e-17
+    },
+    "RAW_SQUARE_CE8": {
+      "loss_error": 0.0,
+      "gradient_error": 2.5916497680550377e-16
+    }
+  },
+  "heldout_label_reads": 0,
+  "fresh_refits": 2
+}

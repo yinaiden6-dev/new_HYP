@@ -1,0 +1,70 @@
+{
+  "status": "EXACT_CACHE_STAGED_CUTOVER_AUTHORIZED",
+  "execution": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_cache_authority_v2_20260922.json",
+    "sha256": "1d6833dfd2622021a4d9d29936a570e2fd26c4b1d187904da3a193e0995dc422"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cutover_rc_h593_roma_coordinate_cache_v1.py",
+      "sha256": "e469b112bec661c60907e5b4f76eee8494f4bc25471e937d055b28e394d8f33c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_cache_v2.sbatch",
+      "sha256": "6dc49fff0f955a2f04345907f4034a52c51efd7c307892413569ba2bc4fd7573"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_cache_cutover_v1.sbatch",
+      "sha256": "9bb50b4a95c1e0274145f59b7431e2c7af641a929816cb0844d84738d3743786"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_roma_coordinate_cache_v1.py",
+      "sha256": "1481acfd6d43fbf44d2955906a2730f17794e0ee9ad0cfd427a93a41e15b7adc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_cache_dispatch_v1.sbatch",
+      "sha256": "0f9ca87401bf01cb5da81eb41f89f666c3599e94a0d0004738d19ac37fa62856"
+    }
+  ],
+  "qualification_job": "5157565",
+  "pending_scope": [
+    "5157033_59",
+    "5157033_60",
+    "5157033_61",
+    "5157033_62",
+    "5157033_63",
+    "5157033_64",
+    "5157033_65",
+    "5157033_66",
+    "5157033_67",
+    "5157033_68",
+    "5157033_69",
+    "5157033_70",
+    "5157033_71",
+    "5157033_72",
+    "5157033_73",
+    "5157033_74",
+    "5157033_75",
+    "5157033_76",
+    "5157033_77",
+    "5157033_78",
+    "5157033_79",
+    "5157033_80",
+    "5157033_81",
+    "5157033_82",
+    "5157033_83",
+    "5157033_84",
+    "5157033_85",
+    "5157033_86",
+    "5157033_87",
+    "5157033_88",
+    "5157033_89",
+    "5157033_90",
+    "5157033_91",
+    "5157033_92",
+    "5157034"
+  ],
+  "stages": "Qualification afterok -> hold scoped pending old jobs -> one natural cached worker -> afterany verifier -> cancel held pending old jobs and continue cached waves",
+  "failure": "First cached worker failure releases held original jobs; never cancels running tasks",
+  "user_authorization": "2026-09-22 改; cache-only acceleration with original completed data retained"
+}

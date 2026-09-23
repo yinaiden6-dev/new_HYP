@@ -1,0 +1,33 @@
+{
+  "status": "COARSE_EXIT_CPU_NORMAL_PARTITION_CONTINUATION",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_coarse_exit_v1.py",
+      "sha256": "68a6adb0422bfa98fd7127a0075379fdac32197caff5aec622317186491200d8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_coarse_exit_control_v1.sbatch",
+      "sha256": "8f100178ee8240abe577a55836c6cbe0eca4df4b910d26556decf4c62a09cb2e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_coarse_exit_gpu_v1.sbatch",
+      "sha256": "43ca6987b60fd4e0ce7643775d99cb556a81c788f5f3ec3f8cf118caf3f54bb7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_coarse_exit_cpu_v1.sbatch",
+      "sha256": "319e1e468c109d6a431662da0b4461d19acf6feb02406a2f29831095da1a030f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_coarse_exit_authority_v1_20260923.json",
+      "sha256": "d479cee1e351de8e00fbd4664469d99f9a39414e54da691d039de8f30a15e60e"
+    }
+  ],
+  "reason": "dev QOSMaxSubmitJobPerUserLimit observed when adding CPU callback after GPU probe; use normal CPU for workers/controllers and normal GPU for retries",
+  "original_probe": "5158971",
+  "unchanged_scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_coarse_exit_authority_v1_20260923.json",
+    "sha256": "d479cee1e351de8e00fbd4664469d99f9a39414e54da691d039de8f30a15e60e"
+  },
+  "max_parallel": 50,
+  "max_chunks": 12
+}

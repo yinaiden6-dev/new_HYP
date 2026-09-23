@@ -1,0 +1,110 @@
+{
+  "spawn": {
+    "pid": 2034225,
+    "host": "hkn1991.localdomain",
+    "args": [
+      "/usr/bin/python3",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_cpu_v1.py"
+    ],
+    "time_utc": "2026-09-23T11:41:27.227793+00:00",
+    "partition": "dev_cpuonly",
+    "original_program_in_place": true
+  },
+  "status": {
+    "status": "CPU_TRAIN_OR_JOIN",
+    "time_utc": "2026-09-23T11:41:27.456076+00:00",
+    "active": [
+      {
+        "job_id": "5159589",
+        "stage": "fit",
+        "index": 0,
+        "args": [
+          "/usr/bin/sbatch",
+          "--parsable",
+          "--partition=cpuonly",
+          "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+          "fit",
+          "0"
+        ]
+      },
+      {
+        "job_id": "5159601",
+        "stage": "fit",
+        "index": 3,
+        "args": [
+          "/usr/bin/sbatch",
+          "--parsable",
+          "--partition=cpuonly",
+          "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+          "fit",
+          "3"
+        ]
+      },
+      {
+        "job_id": "5159621",
+        "stage": "fit",
+        "index": 1,
+        "args": [
+          "/usr/bin/sbatch",
+          "--parsable",
+          "--partition=cpuonly",
+          "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+          "fit",
+          "1"
+        ]
+      },
+      {
+        "job_id": "5159648",
+        "stage": "fit",
+        "index": 2,
+        "args": [
+          "/usr/bin/sbatch",
+          "--parsable",
+          "--partition=dev_cpuonly",
+          "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch",
+          "fit",
+          "2"
+        ]
+      }
+    ],
+    "complete": 0,
+    "total": 30,
+    "pid": 2034225,
+    "partition": "dev_cpuonly",
+    "capacity_probe": false
+  },
+  "jobs": [
+    {
+      "job": "5159589",
+      "fit": 0,
+      "state": "RUNNING",
+      "reason": "None",
+      "partition": "dev_cpuonly",
+      "SubmitLine": "/usr/bin/sbatch --parsable --partition=cpuonly /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch fit 0"
+    },
+    {
+      "job": "5159601",
+      "fit": 3,
+      "state": "PENDING",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "partition": "dev_cpuonly",
+      "SubmitLine": "/usr/bin/sbatch --parsable --partition=cpuonly /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch fit 3"
+    },
+    {
+      "job": "5159621",
+      "fit": 1,
+      "state": "PENDING",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "partition": "dev_cpuonly",
+      "SubmitLine": "/usr/bin/sbatch --parsable --partition=cpuonly /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch fit 1"
+    },
+    {
+      "job": "5159648",
+      "fit": 2,
+      "state": "PENDING",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "partition": "dev_cpuonly",
+      "SubmitLine": "/usr/bin/sbatch --parsable --partition=dev_cpuonly /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_pair_quality_cpu_v1.sbatch fit 2"
+    }
+  ]
+}

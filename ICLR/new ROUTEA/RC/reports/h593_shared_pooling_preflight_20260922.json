@@ -1,0 +1,53 @@
+{
+  "status": "EXACT_POOLING_LAUNCHERS_PASS",
+  "launchers": [
+    {
+      "script": "rc_h593_shared_pooling_v1.sbatch",
+      "args": [],
+      "actual_tail": [
+        "consumer",
+        "inside",
+        "--index",
+        "17"
+      ]
+    },
+    {
+      "script": "rc_h593_shared_pooling_v1.sbatch",
+      "args": [
+        "consumer",
+        "coordinate"
+      ],
+      "actual_tail": [
+        "consumer",
+        "coordinate",
+        "--index",
+        "17"
+      ]
+    },
+    {
+      "script": "rc_h593_shared_pooling_control_v1.sbatch",
+      "args": [],
+      "actual_tail": [
+        "control",
+        "start",
+        ""
+      ]
+    },
+    {
+      "script": "rc_h593_shared_pooling_control_v1.sbatch",
+      "args": [
+        "control",
+        "inside",
+        "123456"
+      ],
+      "actual_tail": [
+        "control",
+        "inside",
+        "123456"
+      ]
+    }
+  ],
+  "consumer_adapter_mock_checks": 3,
+  "native_factory_untouched": true,
+  "meaning": "Mechanical dispatch checks; real output correctness uses full128 qualification and original validators"
+}

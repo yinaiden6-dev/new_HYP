@@ -1,0 +1,48 @@
+{
+  "status": "H593_CONTENT_COMPLEMENT_SUBMITTED",
+  "job_id": "5154585",
+  "partition": "dev_accelerated",
+  "time_limit": "00:10:00",
+  "cpus": 8,
+  "mem": "16G",
+  "gpu": 1,
+  "last_verified_state": "PENDING",
+  "pending_reason": "Priority",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_content_complement_authority_v1_20260921.json",
+    "sha256": "bae04fe87bc048fe97c60215464b76c26a6d8057ba5a95ce13cf5ddf5ed31f9c"
+  },
+  "preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_content_complement_v1/preflight.json",
+    "sha256": "afc1d42718d847da1611aaf19eb4a967c9f0ef24b5b5355ce0666035883c282c"
+  },
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_content_complement_v1_launchfix.sbatch",
+    "sha256": "2d2fe0d4bf123a77b0283a16fb9ab9a7cd1509321f3ae4ee3309bc5e56e8b8df"
+  },
+  "launcher_override": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_content_complement_launcher_override_v1_20260921.json",
+    "sha256": "2fac00d2a47bbe57254c952562b0e778713003f71acae7f9a2717423049a7089"
+  },
+  "submitted_script": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_content_complement_submitted_5154585.sbatch",
+    "sha256": "2d2fe0d4bf123a77b0283a16fb9ab9a7cd1509321f3ae4ee3309bc5e56e8b8df"
+  },
+  "submitted_script_identical": true,
+  "checks": {
+    "synthetic": 48,
+    "synthetic_fits": 3,
+    "dynamic_launcher": true,
+    "mocked_fivefold_assembly_and_frozen_controls": true,
+    "content_shards": 75,
+    "queries": 593,
+    "natural_fits_before_submission": 0
+  },
+  "primary": "JOINT_CONTENT_CE18",
+  "controls": [
+    "JOINT_CURVE_CE18",
+    "LINEAR_CONTENT_CE12",
+    "DIAG_CE13"
+  ],
+  "external_GO": false
+}

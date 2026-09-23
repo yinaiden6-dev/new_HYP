@@ -1,0 +1,56 @@
+{
+  "status": "FUSION_ROLLING_TOPUP_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/supplement_rc_h593_feature_fusion_v7.py",
+      "sha256": "05cc8f2afe8e93d5b1c87849386d54a47309dd6804feaf5ddeadf1e13e9a1a9c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_packed_gpu_v2.py",
+      "sha256": "5f6581d80775ebafb7af4095cf37adfd1e26fd9dbcd39b652d39941375440933"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_feature_fusion_v3.py",
+      "sha256": "10dec16875801fa45739518282762b65f7ca5c32dd8261afe19e5c72f570d1ba"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_dispatch_authority_v3_20260922.json",
+      "sha256": "c514d20ce6be71e34105fb921581c023abdddb039474a5b8bf26d31a64b2e29f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+      "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_feature_fusion_train_v2.sbatch",
+      "sha256": "8c10f93d9fe3e54a3b4c3a6a75fa437de71d62e9e994a45daa57402ec902da7c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_FEATURE_FUSION_ROLLING_V7_20260923.md",
+      "sha256": "bdd11832cd4891a61c87936939aad6cb153ea0577c54c260facba3e3b5f75cb3"
+    }
+  ],
+  "train_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+    "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+  },
+  "maximum_active": 50,
+  "predecessor": "5158421",
+  "dependent_arrays": [
+    "5158958",
+    "5158960",
+    "5158961",
+    "5158967",
+    "5158969"
+  ],
+  "config_count": 200,
+  "max_chunks": 128,
+  "maximum_hours": 48,
+  "minutes": 13,
+  "user_instruction": "Make listed continuation arrays depend on predecessor5158421; wait for all its chunks to finish before further rolling top-ups",
+  "scientific_change": false,
+  "ledger": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_dispatch_v3",
+  "original_dispatcher": "Continues unchanged; recognizes supplemented waves through shared ledger",
+  "coordination": "Temporarily hold one verified pending recorded task during submission; its existence prevents the legacy empty-wave branch. Release only this hold afterward. Running tasks untouched.",
+  "no_pending_anchor": "Do not race the legacy dispatcher: wait for its next wave when no recorded pending task can protect the transaction"
+}

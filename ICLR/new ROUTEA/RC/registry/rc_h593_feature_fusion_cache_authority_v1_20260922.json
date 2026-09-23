@@ -1,0 +1,65 @@
+{
+  "status": "FEATURE_FUSION_CACHE_AUTHORIZED",
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_feature_fusion_cache_v1.py",
+      "sha256": "f722d525ff6322f4fc1993be8f1405dabea4d839a7ea87d67fa60aaa12c029af"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_feature_fusion_pilot_v1.py",
+      "sha256": "316d7b8118e7d6dd51ba2329e3dc1593addc1eec0a54c82682e44f723a72d108"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_feature_fusion_core_v1.py",
+      "sha256": "dde546d408d92c9f1a6f421ea4230babb747f18e39857520834d3a76b87f5f6f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v2.py",
+      "sha256": "e6f4a801047c97aa4f3e31441adfd41cf3c4e69f1779217d575b14cb606c8b3c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_roma_v1.py",
+      "sha256": "e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_FEATURE_FUSION_EXECUTION_V1_20260922.md",
+      "sha256": "3f5cf043eb66b7fa33370fc8f28a46be1f6a57402f9051d393bd9a2272955fee"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_feature_fusion_cache_v1.sbatch",
+      "sha256": "48baa598348b4e0cc9e7ae27675c0d7792df2296ed2b8c1d6563ea7279b31b74"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_feature_fusion_catalog_v1.sbatch",
+      "sha256": "753ada007337c97aaa8a5783f1416d0a77f9971be668725ef8516a2471d35e0c"
+    }
+  ],
+  "pilot_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_pilot_authority_v1_20260922.json",
+    "sha256": "3666c78186ff098196baf41742ba429054e97ba847467a6171ef689bf5fec41e"
+  },
+  "pilot_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_pilot_v1/validation.json",
+    "sha256": "0b803da05e2e2ccdde9f81d97b8e45b297455f19a30b701b148a71664da466a8"
+  },
+  "pilot_manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_pilot_v1/manifest.json",
+    "sha256": "8b3b07a48cc8ce7984fc27f38ce6ae5282904c8617805ff26c5493e6371c6329"
+  },
+  "profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_roma_coordinate_precision_v2/workers.json",
+    "sha256": "7755841971ccf27f7ef75216c14b6dfd362cf30a66d3cab6318895d5d2e2b03b"
+  },
+  "batch_images": 256,
+  "total_queries": 593,
+  "candidates_per_query": 128,
+  "train_label_reads": 0,
+  "heldout_label_reads": 0,
+  "scope": "Single-image frozen descriptors; no trainable weights and no RoMa matcher beyond existing pilot",
+  "user_authorization": "2026-09-22 continue tasks following job5157186",
+  "automatic_followup": "All unique feature shards and independent completeness join"
+}

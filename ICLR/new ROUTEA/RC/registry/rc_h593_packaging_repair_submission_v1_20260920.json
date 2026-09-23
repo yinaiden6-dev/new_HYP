@@ -1,0 +1,29 @@
+{
+  "submitted_utc": "2026-09-20T20:10:23.590230+00:00",
+  "authority_sha256": "69b79f2f1e064ea7a780a6b744c396120dd1e1a11fa1cf9b84d9d4418167e2ac",
+  "replaces_blocked_job": "5153215",
+  "original_failed_job": "5153195",
+  "original_scientific_jobs_unchanged": true,
+  "jobs": {
+    "ablation_package_runtime_validation": {
+      "id": "5153235",
+      "options": [
+        "--hold",
+        "--job-name=h593_abpack_fix",
+        "--partition=dev_accelerated"
+      ],
+      "stage": "ablation"
+    },
+    "combined_package": {
+      "id": "5153236",
+      "options": [
+        "--job-name=h593_colpack_fix",
+        "--partition=dev_accelerated",
+        "--dependency=afterok:5153208:5153235"
+      ],
+      "stage": "content"
+    }
+  },
+  "obsolete_pending_job_cancelled": "5153215",
+  "repair_validation_released": true
+}

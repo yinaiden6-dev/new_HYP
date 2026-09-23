@@ -1,0 +1,52 @@
+{
+  "status": "RAW_INCUMBENT_INDEPENDENT_PASS",
+  "passed": true,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_raw_incumbent_gate_authority_v1_20260921.json",
+    "sha256": "f9a35535fe75f2045fcc073597a8dade46441ea0528c7e2c61057a04b99f49ed"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_raw_incumbent_gate_v1/fold2/payload.json",
+    "sha256": "fb8db5a7024a073733d674a57c51a6c241b41008c4ab977d3744e5c6023402fc"
+  },
+  "fold": 2,
+  "calibration_queries": 474,
+  "heldout_queries": 119,
+  "input_readout_checks": 593,
+  "new_model_score_checks": 30226,
+  "original_switches": 7,
+  "matched_GAP_BIAS2_exact": true,
+  "heldout_label_reads": 0,
+  "fits": {
+    "GAP_RAWPAIR3": {
+      "optimization": {
+        "informative_holds": 361,
+        "fitted_surrogate_loss": 0.190454657987661,
+        "projected_gradient_inf_norm": 6.032529191999682e-09
+      },
+      "counts": {
+        "net_gain": 10,
+        "changed_holds": 23,
+        "rescues": 13,
+        "breaks": 3,
+        "both_wrong": 7
+      },
+      "distinct_tested_biases": 801
+    },
+    "GAP_RAWNEAR3": {
+      "optimization": {
+        "informative_holds": 361,
+        "fitted_surrogate_loss": 0.17627325753479733,
+        "projected_gradient_inf_norm": 5.293689982893701e-10
+      },
+      "counts": {
+        "net_gain": 12,
+        "changed_holds": 32,
+        "rescues": 17,
+        "breaks": 5,
+        "both_wrong": 10
+      },
+      "distinct_tested_biases": 801
+    }
+  }
+}

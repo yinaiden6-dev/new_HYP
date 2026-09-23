@@ -1,0 +1,82 @@
+{
+  "status": "UNIFIED_GPU_ACQUISITION_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_unified_acquisition_v1.py",
+      "sha256": "e2bf8d6f09be94ff56dfc577dc5278368741540c0d0967b0f60f0e57ec946627"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_h593_unified_acquisition_core_v1.py",
+      "sha256": "68cc689307415b4cb422cc535d528cc40890e6f62e070257e2b5b7189b6fac2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v2.py",
+      "sha256": "e6f4a801047c97aa4f3e31441adfd41cf3c4e69f1779217d575b14cb606c8b3c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_visual_origin_v1.py",
+      "sha256": "6a5339e15e49f86df0698a002226dd4343ec80cdaebf56686cc3d7fd1a72263b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_m_inside_v1.py",
+      "sha256": "a77da2bdf9bc5157d5f522493eccb84dabf86d34de406a5c371c58ab7156757f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_shared_native_cache_v1.py",
+      "sha256": "60eb8016b14e743171425f8653fd70672ec088a8a3c5373db5bbb96698042024"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_unified_acquisition_v1.sbatch",
+      "sha256": "a37e0847f0dbbf302d65b0119515038bb33927238f539e7584bcfaeca9f06e36"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_unified_export_v1.sbatch",
+      "sha256": "9e86ec1468b8b0e9bbd527caf1511475cf4811d3795848b57389aa6594763bbc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_UNIFIED_ACQUISITION_V1_20260923.md",
+      "sha256": "c0c90028b5d45003d79fef725e5c87199e67c2d3d7f09518a47799a1bcd230ae"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_inside_authority_v1_20260922.json",
+      "sha256": "6839430c2c0d6685f6b1a479fe82e8e47ab3b944f5b16f1ab2b2869fbaf31163"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_visual_origin_authority_v1_20260922.json",
+      "sha256": "e6bd0b2cd467d646b58021db27f1ae402465f1964eaaa3ac5d8b4da94ecb74fb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_precision_authority_v2_20260922.json",
+      "sha256": "08c1d5673561719232ea8d4e5ba2c6d032d6347b2e226e052e23a13dd58386f7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_m_inside_v1.py",
+      "sha256": "e80f435f0f6934f3d1c378030dc5c9e5dc47918469c4dd2327d4d29a07819c54"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_m_visual_origin_v1.py",
+      "sha256": "49fa4fa778d727113f25967387d779f7cc612cefcd769cfa42a75eb46362a56b"
+    }
+  ],
+  "profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_roma_coordinate_precision_v2/workers.json",
+    "sha256": "7755841971ccf27f7ef75216c14b6dfd362cf30a66d3cab6318895d5d2e2b03b"
+  },
+  "queries": 593,
+  "candidates": 128,
+  "families": [
+    "inside",
+    "visual",
+    "coordinate"
+  ],
+  "chunk_seconds": 640,
+  "max_chunks": 32,
+  "precision": "Original native tensors and FP64 statistics; no conversion",
+  "scope": "One native forward with joint observers, shared unchanged single-image descriptors and matcher; registered interventions only",
+  "outputs": "Compact immutable pair capsules; existing scientific artifacts/validators via CPU export",
+  "user_instruction": "Combine required fields in one GPU acquisition, reuse existing data, CPU downstream"
+}

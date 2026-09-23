@@ -1,0 +1,36 @@
+{
+  "status": "QUALITY_OPERATOR_DISPATCH_AUTHORIZED",
+  "operator": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_authority_v1_20260922.json",
+    "sha256": "e802a42033ae94777a187ebbcc1ac90f212a661ab96c0a71331022e4f59fc8b1"
+  },
+  "evaluation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_eval_authority_v1_20260922.json",
+    "sha256": "8a1ff0b8b5d9a32a2a8224aa722aa84ef037cad4d375e7272cc97c2a665c0ae9"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_quality_operator_v1.py",
+      "sha256": "efd7920402f394e6666334e6f6a72c5b5c30cdbe0863cb33db464dd368556f16"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_dispatch_v1.sbatch",
+      "sha256": "4224a49f2d6e1e4b91d800b136ced27bb093e0a6eb612b877f8cceda6d3b2a46"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_v1.sbatch",
+      "sha256": "f2ca3354324cddc8e0a73314ba6a54579db795a87d069505783e3967b9056426"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_eval_v1.sbatch",
+      "sha256": "513e2623e05161087ca163bcb5fcac26daa0ddbd5e990847cb4b5f29b7ca116f"
+    }
+  ],
+  "total_shards": 75,
+  "total_queries": 593,
+  "max_wave_tasks": 46,
+  "partition": "cpuonly",
+  "gpu_count": 0,
+  "dependency": "afterok plus qualified shard seals; failed predecessor cancels callback",
+  "automatic_retries": 0
+}

@@ -1,0 +1,38 @@
+{
+  "status": "SCHEDULER_ONLY_PARTITION_OVERRIDE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_rank_action_authority_v1_20260921.json",
+    "sha256": "d730c1e53dc116ff2d67efc32c5855d356d84e5743952aadc0b9ae5543b89059"
+  },
+  "reason": "dev QOS MaxSubmitJobsPU=4 and MaxJobsPU=1; five-fold array rejected before receiving any Job ID",
+  "failed_submission_job_id": null,
+  "original_partition": "dev_accelerated",
+  "effective_partition": "mixed",
+  "array": "0-4%5",
+  "time_limit": "00:10:00",
+  "training_protocol_changed": false,
+  "frozen_files_modified": false,
+  "old_unrelated_jobs_untouched": [
+    "5150822"
+  ],
+  "launcher_override": [
+    "--partition=accelerated"
+  ],
+  "initial_accepted_partition": "accelerated",
+  "partition_by_task": {
+    "0": "dev_accelerated",
+    "1": "accelerated",
+    "2": "accelerated",
+    "3": "accelerated",
+    "4": "accelerated",
+    "join": "accelerated"
+  },
+  "task0_move": {
+    "array_task_id": "5153901_0",
+    "physical_job_id": "5153906",
+    "reason": "Accelerated array remained Priority-pending; use one available dev submit slot without exceeding dev four-job submission limit",
+    "verified_partition": "dev_accelerated",
+    "verified_time_limit": "00:10:00",
+    "array_identity_preserved": true
+  }
+}

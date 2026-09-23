@@ -1,0 +1,49 @@
+{
+  "status": "SHARED_NATIVE_STAGES_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_shared_stages_v1.py",
+      "sha256": "8047ca4c80a3bf5a3c6d256be51d14c66b888d68a5c9aed5870efc2cc4e98c4e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_m_visual_origin_v1.py",
+      "sha256": "49fa4fa778d727113f25967387d779f7cc612cefcd769cfa42a75eb46362a56b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_shared_native_cache_v1.py",
+      "sha256": "60eb8016b14e743171425f8653fd70672ec088a8a3c5373db5bbb96698042024"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_exact_feature_cache_v2.py",
+      "sha256": "0b8ed4d0946a7b320fe176359461fa290d4a5f8b400fb6eca3c824395d31bf5b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_shared_stages_v1.sbatch",
+      "sha256": "44f1c129dd213459bec7cb0b6e2ecdce3d841c271f0901312f3fe40fad28e044"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_SHARED_STAGES_V1_20260923.md",
+      "sha256": "0ad9de75ec42414a33c33b9fccf02052e90dd0c0004f345582cb4293d3d10f0b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_inside_authority_v1_20260922.json",
+      "sha256": "6839430c2c0d6685f6b1a479fe82e8e47ab3b944f5b16f1ab2b2869fbaf31163"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_visual_origin_authority_v1_20260922.json",
+      "sha256": "e6bd0b2cd467d646b58021db27f1ae402465f1964eaaa3ac5d8b4da94ecb74fb"
+    }
+  ],
+  "scope": "Read validated inside native stages, preserve six visual interventions and original verifier",
+  "source_profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_roma_coordinate_precision_v2/workers.json",
+    "sha256": "7755841971ccf27f7ef75216c14b6dfd362cf30a66d3cab6318895d5d2e2b03b"
+  },
+  "full_C128": true,
+  "precision_unchanged": true,
+  "user_instruction": "Reuse completed stages before new computation; collect missing stages once for downstream use"
+}

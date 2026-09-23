@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>new HYP：完整理论与processed128补充</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>body{font:17px/1.65 system-ui,sans-serif;color:#183047;max-width:1480px;margin:auto;padding:30px;background:#fafcfe}h1,h2,h3{color:#087f8c}a{color:#087f8c}table{border-collapse:collapse;display:block;overflow-x:auto;font-size:14px;margin:22px 0}td,th{border:1px solid #d9e3eb;padding:8px 11px}th{background:#edf4f7}tr:nth-child(even){background:#f0f5f8}img{max-width:100%}code{white-space:pre-wrap}</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">new HYP：完整理论与processed128补充</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#processed128完整冻结头回归读出">processed128：完整冻结头回归读出</a>
+<ul>
+<li><a href="#processed128高-raw-准确率下的冻结头回归2026-09-19归档">3.3 processed128：高 RAW 准确率下的冻结头回归（2026-09-19归档）</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="processed128完整冻结头回归读出">processed128：完整冻结头回归读出</h1>
+<h2 id="processed128高-raw-准确率下的冻结头回归2026-09-19归档">3.3 processed128：高 RAW 准确率下的冻结头回归（2026-09-19归档）</h2>
+<p>从 <code>ap7811-benchmark/1/processed</code> 在查看结果前按固定hash选入128张合成处理图，对应128个不同reference身份。使用2026-09-13冻结的full-H593头，零新增训练、零阈值调整。全库5413物理reference／5412校正身份，RAW自然C128后评价全部127个challenger；最高logit大于0才SWITCH，否则保留RAW。该面板独立列账，不与旧EVAL128的88→99或H593五折合并。</p>
+<table>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>正确/128</th>
+<th>准确率</th>
+<th>对RAW救回／改错</th>
+<th>净增</th>
+<th>SWITCH</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RAW</td>
+<td>121</td>
+<td>94.53%</td>
+<td>0／0</td>
+<td>+0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>COST4</td>
+<td>121</td>
+<td>94.53%</td>
+<td>0／0</td>
+<td>+0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>GROUP_COST4</td>
+<td>121</td>
+<td>94.53%</td>
+<td>0／0</td>
+<td>+0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>COST1</td>
+<td>122</td>
+<td>95.31%</td>
+<td>1／0</td>
+<td>+1</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>CE</td>
+<td>123</td>
+<td>96.09%</td>
+<td>2／0</td>
+<td>+2</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>RAW2_CE</td>
+<td>121</td>
+<td>94.53%</td>
+<td>0／0</td>
+<td>+0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="processed128_results.png" alt="processed128准确率与救回、改错" /><figcaption aria-hidden="true">processed128准确率与救回、改错</figcaption>
+</figure>
+<p><strong>RAW原正确121张全部保留：COST1救回1张，CE救回2张。</strong> COST1共2次SWITCH（1救回、1错换另一个错），CE共3次SWITCH（2救回、1错换另一个错）。COST4、GROUP_COST4和RAW2_CE均没有正确数净增。</p>
+<p>自然C128包含target为127/128，1张正确候选缺席并保留在分母中。COST1剩余6错＝1张候选缺席＋5张候选内判断错；CE剩余5错＝1＋4。</p>
+<table>
+<thead>
+<tr class="header">
+<th>相对RAW的比较</th>
+<th>净差/128</th>
+<th>准确率差 pp</th>
+<th>来源组bootstrap 95%区间 pp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CE</td>
+<td>2</td>
+<td>+1.5625</td>
+<td>[0.0000, 3.9062]</td>
+</tr>
+<tr class="even">
+<td>COST1</td>
+<td>1</td>
+<td>+0.7812</td>
+<td>[0.0000, 2.3438]</td>
+</tr>
+</tbody>
+</table>
+<p>两组区间下界均为0，所以只报告观察到小幅净增和零改错，不宣称可靠正净增或总体永不损失。此面板是合成处理图回归，不是独立外部确认。与H593训练图的字节重叠为0，但有5个身份重叠；其余123身份上RAW116、COST1 117、CE118，新增救回全部来自该非重叠部分。字节不重复不等于来源或语义完全独立。</p>
+<h3 id="实际救回与候选绑定对照">实际救回与候选绑定对照</h3>
+<ul>
+<li><code>PROC-Q-0099</code>：<code>50mLcarton__motion_blur+aged_05.jpg</code>，COST1和CE均救回。</li>
+<li><code>PROC-Q-0091</code>：<code>cla04-0002-05__aged+motion_blur_02.jpg</code>，CE额外救回。</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>正确绑定/128</th>
+<th>候选证据错绑/128</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>COST4</td>
+<td>121</td>
+<td>118</td>
+</tr>
+<tr class="even">
+<td>GROUP_COST4</td>
+<td>121</td>
+<td>118</td>
+</tr>
+<tr class="odd">
+<td>COST1</td>
+<td>122</td>
+<td>92</td>
+</tr>
+<tr class="even">
+<td>CE</td>
+<td>123</td>
+<td>74</td>
+</tr>
+<tr class="odd">
+<td>RAW2_CE</td>
+<td>121</td>
+<td>121</td>
+</tr>
+</tbody>
+</table>
+<p>上述错绑是候选级联合证据控制，不能作为空间ownership或每个token精确对应必要性的证明。按处理类型及训练身份重叠分组的所有臂保留在CSV/Excel，未按最好子集筛选。</p>
+<p><a href="processed128_all_models.csv">全部11臂</a> · <a href="processed128_comparisons.csv">比较与区间</a> · <a href="processed128_per_query.csv">逐图结果</a> · <a href="processed128_changed_queries.csv">所有COST1/CE改变决策</a> · <a href="processed128_by_corruption.csv">处理类型</a> · <a href="processed128_by_overlap.csv">训练身份重叠</a></p>
+<p><a href="processed128_evidence/result.json">原始结果JSON</a> · <a href="processed128_evidence/result_validation.json">原验证记录</a> · <a href="processed128_evidence/report_zh.md">完整原报告</a>。本次归档复算128图、11臂的正确数、救损和分组计数，并核对16片验证SHA；未重训、未重新推理。</p>
+</body>
+</html>

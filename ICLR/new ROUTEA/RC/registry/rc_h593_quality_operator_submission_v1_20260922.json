@@ -1,0 +1,69 @@
+{
+  "status": "PILOT_AND_AFTEROK_DISPATCH_SUBMITTED",
+  "time_utc": "2026-09-22T10:42:58.584075+00:00",
+  "pilot": {
+    "job": "5156888",
+    "partition": "dev_cpuonly",
+    "time_limit": "00:15:00",
+    "cpus": 8,
+    "memory": "32G",
+    "gpus": 0
+  },
+  "dispatch": {
+    "job": "5156904",
+    "partition": "cpuonly",
+    "dependency": "afterok:5156888",
+    "time_limit": "00:05:00",
+    "kill_on_invalid_dependency": true
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_authority_v1_20260922.json",
+    "sha256": "e802a42033ae94777a187ebbcc1ac90f212a661ab96c0a71331022e4f59fc8b1"
+  },
+  "eval_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_eval_authority_v1_20260922.json",
+    "sha256": "8a1ff0b8b5d9a32a2a8224aa722aa84ef037cad4d375e7272cc97c2a665c0ae9"
+  },
+  "dispatch_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_dispatch_authority_v1_20260922.json",
+    "sha256": "1962cf145a82a799ccc7a9c13bdab834eabc3cdb97e28ab6a9d4ba18b09201ba"
+  },
+  "launcher_dynamic": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_launcher_qualification_v1_20260922.json",
+    "sha256": "25f2387dba895a78dd577d01a7afd64e1a596a4a415fc06a254e1b05f29227e7"
+  },
+  "operator_preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_v1/preflight.json",
+    "sha256": "a6ec35d0b5273b6beaa61a3caffb7c3a3e56b39db55e5fc445a1e136e77a5d19"
+  },
+  "eval_preflight": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_eval_v1/preflight.json",
+    "sha256": "153ed289aa7fd845b11710947f72004ff9f193a7346c329cecfa4f5349ac57ca"
+  },
+  "spools": [
+    {
+      "frozen": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_v1.sbatch",
+        "sha256": "f2ca3354324cddc8e0a73314ba6a54579db795a87d069505783e3967b9056426"
+      },
+      "submitted": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_submitted_5156888.sbatch",
+        "sha256": "f2ca3354324cddc8e0a73314ba6a54579db795a87d069505783e3967b9056426"
+      },
+      "byte_equal": true
+    },
+    {
+      "frozen": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_dispatch_v1.sbatch",
+        "sha256": "4224a49f2d6e1e4b91d800b136ced27bb093e0a6eb612b877f8cceda6d3b2a46"
+      },
+      "submitted": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quality_operator_dispatch_submitted_5156904.sbatch",
+        "sha256": "4224a49f2d6e1e4b91d800b136ced27bb093e0a6eb612b877f8cceda6d3b2a46"
+      },
+      "byte_equal": true
+    }
+  ],
+  "natural_pilot_qualified": false,
+  "full_results_complete": false
+}

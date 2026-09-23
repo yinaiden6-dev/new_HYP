@@ -1,0 +1,21 @@
+{
+  "status": "HARD_RANK_INDEPENDENT_REVIEW_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_hard_rank_authority_v1_20260921.json",
+    "sha256": "a88dc37df218a71e6bd0d13ce858ff336aa0e4911a80a4e064a502dd8359bd5e"
+  },
+  "checks": [
+    "10 NumPy synthetic cases",
+    "16 core-to-independent gradient comparisons",
+    "target masked before max, uniform tied gradients",
+    "original six-dimensional parameter class and N denominator unchanged",
+    "old3 score heads remain bit-identical",
+    "distinct authority path fixed before freeze",
+    "OOF probability improvement motivates ranking loss isolation, not generic overfit claim"
+  ],
+  "max_synthetic_cross_gradient_error": 4.44e-16,
+  "natural_fits_during_review": 0,
+  "hypothesis_development_used_opened_H593": true,
+  "outer_labels_used_for_parameter_fitting": false,
+  "quadratic_candidates": "synthetic-only backup; not frozen, trained or submitted"
+}

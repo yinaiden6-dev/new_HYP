@@ -1,0 +1,27 @@
+{
+  "status": "QUADRATIC_RANK_INDEPENDENT_SOURCE_REVIEW_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_quadratic_rank_authority_v1_20260921.json",
+    "sha256": "f16fff410983f889183e548ffdba25de2f536742dfe61d90387aeae4af84034a"
+  },
+  "reviewers": [
+    "rank28_head_review",
+    "competition_validator",
+    "root"
+  ],
+  "fixed_before_freeze": [
+    "TRAIN roles lack source_image_sha256; join now uses pinned public worker map",
+    "Added fixed FULL_QUAD27 versus DIAG12 paired comparison"
+  ],
+  "checked": [
+    "TRAIN-only identity supervision and group/image disjointness",
+    "Unmodified six inputs and conditional CE denominator",
+    "Three frozen control parameter and logit parity",
+    "Primary FULL_QUAD27, secondary DIAG12, no best-arm selection",
+    "Fresh-fit replay, independent NumPy basis/loss/gradient/logits",
+    "No new deployed accuracy or ownership claims"
+  ],
+  "independent_synthetic_checks": 23,
+  "numpy_torch_cross_max_score_error": 7.105427357601002e-15,
+  "natural_fits_during_review": 0
+}

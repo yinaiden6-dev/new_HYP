@@ -1,0 +1,97 @@
+{
+  "status": "COST4_COST1_CE_TIMING_DOCUMENTS_AND_RPC_SCOPE_PASS",
+  "backup_archive": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/reports/new_hyp_complete_results_20260916_v1_backups/before_training_time_20260918/new_HYP_complete_results_20260916.zip",
+    "sha256": "dd0218e2b03394a49f9d9559b8bf94a4f887750f208765c2aea6657390478cff"
+  },
+  "previous_published_archive": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/reports/new_hyp_complete_results_20260916_v1_backups/before_cost4_20260918/new_HYP_complete_results_20260916.zip",
+    "sha256": "5a39b09db43d97a3e1470b7b331040aee44e75a12ff2f487694cf3f2aa7bf325"
+  },
+  "timing_fits": [
+    {
+      "model": "COST4",
+      "intercept_seconds": 1.5372793463492833,
+      "slope_seconds_per_effective_query": 0.0028508277378536872,
+      "R_squared": 0.9930515885626462,
+      "RMSE_seconds": 0.05626007433916914,
+      "effective_queries": "[31.0, 120.0, 570.0]",
+      "median_seconds": "[1.5636995270615444, 1.9535875710425898, 3.149997739936225]",
+      "residual_seconds": "[-0.061955479161203364, 0.07420889615086401, -0.012253416989659982]",
+      "scope": "Three observed scales only; no extrapolation or universal complexity claim"
+    },
+    {
+      "model": "COST1",
+      "intercept_seconds": 1.396790295867899,
+      "slope_seconds_per_effective_query": 0.002871639856106216,
+      "R_squared": 0.9958287725517107,
+      "RMSE_seconds": 0.043847217737819306,
+      "effective_queries": "[31.0, 120.0, 570.0]",
+      "median_seconds": "[1.4375251058954746, 1.7992230069357902, 3.024075111025013]",
+      "residual_seconds": "[-0.048286025511717234, 0.05783592833514528, -0.009549902823429157]",
+      "scope": "Three observed scales only; no extrapolation or universal complexity claim"
+    },
+    {
+      "model": "CE",
+      "intercept_seconds": 1.087440042656726,
+      "slope_seconds_per_effective_query": 0.001935126154095011,
+      "R_squared": 0.9966973122235064,
+      "RMSE_seconds": 0.02628051470241906,
+      "effective_queries": "[31.0, 120.0, 570.0]",
+      "median_seconds": "[1.1184879699721932, 1.3543200480053201, 2.184738067095168]",
+      "residual_seconds": "[-0.028940983461477998, 0.034664866857192944, -0.005723883395714502]",
+      "scope": "Three observed scales only; no extrapolation or universal complexity claim"
+    }
+  ],
+  "measured_fits": 27,
+  "repeats_per_configuration": 3,
+  "full_head_parameter_max_abs_error": 0,
+  "main_plot_excludes_RPC": true,
+  "formal_tables_exclude_RPC": true,
+  "RPC_diagnostics_retained": true,
+  "docx_xlsx_xml_valid": true,
+  "spreadsheet_sheets": [
+    "early_and_expanded_arms",
+    "ORIGINAL7_interventions",
+    "internal_all_models",
+    "fixed_panel_models",
+    "fixed_panel_matrix",
+    "H593_comparisons",
+    "H593_by_fold",
+    "spatial_P_history",
+    "report_index",
+    "training_time_repeats",
+    "training_time_summary",
+    "training_time_fits",
+    "historical_training_time",
+    "historical_job_elapsed",
+    "manual_head_H593",
+    "RPC_manual_diagnostic",
+    "external_all_models",
+    "RPC_diagnostic_models",
+    "external_comparisons",
+    "RPC_diagnostic_comparisons"
+  ],
+  "source_sha256": {
+    "results/rc_head_training_time_v2_cost4_20260918/result.json": "3a5be066ebf617457e13172bac90e6f676d81032fe97aec60f0d351eaf97773d",
+    "results/rc_head_training_time_v2_cost4_20260918/validation.json": "4d973f3146a374925beafcd677205b9a9a17d727cf1e1b78e598ad87981f77d1"
+  },
+  "artifact_sha256": {
+    "historical_job_elapsed.csv": "8fc4cf5b7574009d590ebc861cf6767154f839073859e97886df7a1705894b21",
+    "historical_training_time.csv": "392059e879fa149616a6a0b6fba869ca9cfa09cab42914a3e10301c6dc76918b",
+    "training_time_fit.json": "be197ec7aab01c4ae9cc83c7fcade2d96d6fd900c63e608d3bedd5a2ad84a86a",
+    "training_time_fits.csv": "f573f01d30fbcc27eb862fced07a70227d4404645f0869498e35788155143b01",
+    "training_time_repeats.csv": "a7cc99e5f96d0b9905a1c44e951c95e12d25f424c03438732e33fa1ecc0ff570",
+    "training_time_scaling.pdf": "ed71895618209a57f38e1c8858cbc4873de5a250698962a38e27b8fd5d00e9df",
+    "training_time_scaling.png": "8560b30a649a1276edfe819ef8d6adf99191b04dbc36e532fe1caa9f9e3b5049",
+    "training_time_scaling.svg": "045ee47500b9c35116952a668588c11c01268898226fd441ff1b2d885f635f60",
+    "training_time_source.json": "3a5be066ebf617457e13172bac90e6f676d81032fe97aec60f0d351eaf97773d",
+    "training_time_summary.csv": "d23e155527e4e3449563fc368deb6bb0ccb12e1b147673ebb35813173cb88730",
+    "training_time_v1_previous_source.json": "f38f3a1fccac6877d0f422922f6daee191dc5a5694dadcb8f4c7316521bcfca1",
+    "training_time_v1_previous_summary.csv": "953cd55a8dd1dde3ef0c49b37f6cd3be2ec4ebddf0d273dbe9c34eb5f8a0f8bc",
+    "training_time_v1_previous_validation.json": "494e4a444d0cf7dcb007bc505ee7c4b014212d4dbaa36e21d898dc81b6b603f6",
+    "training_time_zh.md": "24e854ab0589b3acf63554ca65364514453b6b25092ffe9342417304e2af62a1"
+  },
+  "artifact_scope": "Original timing artifacts only; current whole-package hashes are in archive_manifest.json",
+  "prior_full_package_validation": "historical_validation/training_time_update_validation.json"
+}

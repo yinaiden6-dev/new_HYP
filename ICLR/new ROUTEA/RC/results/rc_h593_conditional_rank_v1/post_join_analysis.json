@@ -1,0 +1,54 @@
+{
+  "status": "CONDITIONAL_RANK_POST_JOIN_RECOUNT_PASS",
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_conditional_rank_v1/result.json",
+    "sha256": "8b06396c3a6b334f88a2b8b0a356c730416c185524de4812693b8f706a2fb648"
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_h593_conditional_rank_result_v1.py",
+    "sha256": "bc84ddf089bb120ef2b0be4aed7c2f19b9ac3ca9abc0fc6a1c1aa689f48a1637"
+  },
+  "models": {
+    "COST1_FULL": {
+      "OOF_conditional_CE_per570": 0.5442769390221459,
+      "challenger_MRR_per144": 0.7992207400263516,
+      "OOF_conditional_CE_by_fold": {
+        "0": 0.24555205820794257,
+        "1": 0.6930686072094685,
+        "2": 0.46217369083406623,
+        "3": 0.5462525965635783,
+        "4": 0.7748169203021538
+      }
+    },
+    "CE_FULL": {
+      "OOF_conditional_CE_per570": 0.3119904278916075,
+      "challenger_MRR_per144": 0.796744702619994,
+      "OOF_conditional_CE_by_fold": {
+        "0": 0.10426671670604733,
+        "1": 0.3159145267004534,
+        "2": 0.38502813106169087,
+        "3": 0.3067739515163274,
+        "4": 0.44380187169521623
+      }
+    },
+    "RANK_ONLY6": {
+      "OOF_conditional_CE_per570": 0.2905489126037823,
+      "challenger_MRR_per144": 0.8007074365217286,
+      "OOF_conditional_CE_by_fold": {
+        "0": 0.09422494702313633,
+        "1": 0.2784178343573411,
+        "2": 0.3751393145506809,
+        "3": 0.28791856466687316,
+        "4": 0.4127813310165462
+      }
+    }
+  },
+  "old40_rank_shift_vs_COST1": {
+    "improved": 12,
+    "same": 20,
+    "worse": 8,
+    "new_top": 0
+  },
+  "model_fits": 0,
+  "interpretation": "OOF conditional loss and challenger MRR improved; first-place identity count did not. This does not establish generic overfitting."
+}

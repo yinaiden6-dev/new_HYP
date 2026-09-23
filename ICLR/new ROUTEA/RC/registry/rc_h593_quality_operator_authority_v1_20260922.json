@@ -1,0 +1,107 @@
+{
+  "status": "QUALITY_OPERATOR_AUTHORIZED",
+  "user_authorization": "2026-09-22 continue mechanism analysis and experiments; retain intermediate evidence",
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_v1/workers.json",
+    "sha256": "972af4c5b8f451020acc71fbaf97ba01a2c333affbaacf26aa20ed106af3d30c"
+  },
+  "code_sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_quality_operator_v1.py",
+      "sha256": "88425431ffc2a0bd5d1d668c173f33a832a85f7070c35b724a9416cb20c8970a"
+    },
+    "operators": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_quality_content_operator_v1.py",
+      "sha256": "d77eb9a8eed6fc4b9ff36b6bb728c0cec28e23235b23d6b1c230e06ce16092e9"
+    },
+    "shared_io": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v1.py",
+      "sha256": "a18fa338409afb9ae43017cb9509fe6cc3d6cd1315cf81c2a87dde67c6af1855"
+    },
+    "original_replay": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_roma_v1.py",
+      "sha256": "e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e"
+    },
+    "feature_formula": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_QUALITY_OPERATOR_V1_20260922.md",
+      "sha256": "e1bb4e2ffd80965d932651c69814c8eef0d76d504e6d766065936f363dc063ce"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_quality_operator_v1.sbatch",
+      "sha256": "f2ca3354324cddc8e0a73314ba6a54579db795a87d069505783e3967b9056426"
+    }
+  },
+  "profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "native_scorer": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_romav2_colnomic_visibility_xf_six_case_v1.py",
+    "sha256": "fb73bdd6cc2b585405a9fcb1e411535f487e83d29d6021f8c1f632af78ecfd3c"
+  },
+  "levels": [
+    "NATIVE",
+    "M0Q0R0",
+    "M0Q0R1",
+    "M0Q1R0",
+    "M0Q1R1",
+    "M1Q0R0",
+    "M1Q0R1",
+    "M1Q1R0",
+    "FIXED_FREE_ARGMAX"
+  ],
+  "factors": {
+    "NATIVE": [
+      1,
+      1,
+      1
+    ],
+    "M0Q0R0": [
+      0,
+      0,
+      0
+    ],
+    "M0Q0R1": [
+      0,
+      0,
+      1
+    ],
+    "M0Q1R0": [
+      0,
+      1,
+      0
+    ],
+    "M0Q1R1": [
+      0,
+      1,
+      1
+    ],
+    "M1Q0R0": [
+      1,
+      0,
+      0
+    ],
+    "M1Q0R1": [
+      1,
+      0,
+      1
+    ],
+    "M1Q1R0": [
+      1,
+      1,
+      0
+    ]
+  },
+  "total": 593,
+  "candidates": 128,
+  "pilot_shard": 0,
+  "new_encoder_forwards": 0,
+  "new_RoMa_forwards": 0,
+  "device": "CPU FP64 8 threads",
+  "evaluation": "Frozen COST1/CE plus original matched refits; exact native baseline, original grouped folds; no heldout labels before predictions sealed",
+  "scope": "Functional intervention into query pooling, reference weighting and overall quality mass; fixed-free-argmax separates reference value attenuation from match reselection. Not six input-column zeroing."
+}

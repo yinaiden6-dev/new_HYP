@@ -1,0 +1,13 @@
+# H593坐标精度实验：逐位等价缓存执行
+
+2026-09-22用户明确授权改。原科学合同、旧实现与已完成结果保留。新增独立执行授权，原authority仍标识相同坐标干预/评分协议；新写的part及query payload显式记录新execution_authority与qualification。原CPU验证器原样重放所有128候选、四臂、token贡献与六特征；下游原五折COST1/CE固定头和同协议重训不变。
+
+缓存边界为冻结RoMa的f、refiner_features与matcher.forward。原match/forward、图像加载缩放、12次双向refiner坐标量化、插值、精度及得分顺序完全不改。单query描述符跨候选保留；reference描述符和pair matcher只保留当前对。每次缓存命中逐位核对模块输入，递归复制输出，避免confidence原地写污染。
+
+资格固定原ordinal0的完整128候选，四臂逐对比较新鲜未缓存前向与缓存前向的所有密集输出字节、coarse输出、hook调用；进一步比对原封存token可见性、坐标统计、MaxSim命中及贡献、C4、127×6输入，并用固定合成head回放全部127分数。真实身份标签不读取。显存低于35GiB；分别记录前向计时，不把其比值当作总worker加速比。全部合格才释放新worker。CPU自检覆盖可变输出隔离、跨reference query复用、输入漂移拒绝。
+
+运行依旧每query一个15分钟GPU任务、完整C128四臂、每16候选不可变part断点。已经合格的query直接复用；已有part保留原producer，新part明确新producer。新worker调用原worker执行科学计算并调用原独立CPU验证，不用缓存资格替代每query验证。
+
+变更调度时先核实旧5157033的59–92仍待运行、旧后继5157034仍待依赖；准备好新队列链后只替换这些待运行项。后续新dispatcher沿用每批最多46和原完整性门，直至593完整再提交原评测链。失败保留证据并停在工程资格，不能改成科学完成。
+
+V1的CPU自检在inference tensor外做原地修改，被PyTorch正确拒绝，未提交任何Slurm任务。V2让模拟原地消费者的测试处于inference_mode，与真实RoMa一致；缓存逻辑不变。先通过self_test再建立新授权，保留V1失败来源。

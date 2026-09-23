@@ -1,0 +1,28 @@
+{
+  "status": "CONTENT_INDEPENDENT_ACTION_RANK_COUNTS_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_learned_colnomic_only_authority_v1_20260920.json",
+    "sha256": "b2874a1a1cd08a7b57412b81ade25548187297480800d1f951aaa463085136be"
+  },
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/result.json",
+    "sha256": "ac86b3c6f600d01cf6d0351dfd8f37fd102deaf24cacedf51766f410e29caa87"
+  },
+  "queries": 593,
+  "baseline_counts": {
+    "RAW": 426,
+    "RAW2_CE": 426,
+    "FULL_COST1": 481,
+    "FULL_CE": 486
+  },
+  "all_raw2_parameters_and_scores_bit_exact": true,
+  "independently_recomputed": [
+    "all_feature_statistics",
+    "all_head_logits",
+    "all_actions",
+    "all_label_joins",
+    "all_ranks",
+    "counts"
+  ],
+  "group_statistics": "deterministic replay of shared statistical helper"
+}

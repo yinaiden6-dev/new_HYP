@@ -1,0 +1,231 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+    "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+  },
+  "status": "FUSION_FULL128_BACKWARD_CAPACITY_PASS",
+  "rows": [
+    {
+      "source": "COL_ONLY",
+      "mode": "FREE",
+      "kind": "COST1",
+      "seconds": [
+        3.8534390539862216,
+        0.23316831898409873
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.9944895727500644,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "COL_ONLY",
+      "mode": "FREE",
+      "kind": "CE",
+      "seconds": [
+        0.6310341469943523,
+        0.6005322600249201
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.735692197116503,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    },
+    {
+      "source": "COL_ONLY",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "COST1",
+      "seconds": [
+        0.2265207910677418,
+        0.2283838459989056
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.6625954352663253,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "COL_ONLY",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "CE",
+      "seconds": [
+        0.5994417570764199,
+        0.5988091719336808
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.746223670379187,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE",
+      "mode": "FREE",
+      "kind": "COST1",
+      "seconds": [
+        3.503360394970514,
+        0.23278435599058867
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.9944885228985614,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE",
+      "mode": "FREE",
+      "kind": "CE",
+      "seconds": [
+        0.6073022760683671,
+        0.6034097539959475
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.735690976722034,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "COST1",
+      "seconds": [
+        0.2289271600311622,
+        0.22756980394478887
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.6625675553133452,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "CE",
+      "seconds": [
+        0.6046143190469593,
+        0.6001020850380883
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.746221688066674,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    },
+    {
+      "source": "FINE",
+      "mode": "FREE",
+      "kind": "COST1",
+      "seconds": [
+        3.458084449986927,
+        0.2316542180487886
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.9944865589364018,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "FINE",
+      "mode": "FREE",
+      "kind": "CE",
+      "seconds": [
+        0.6060314490459859,
+        0.603573105065152
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.735690464926733,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    },
+    {
+      "source": "FINE",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "COST1",
+      "seconds": [
+        0.22945795604027808,
+        0.22716566105373204
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.662580321637737,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "FINE",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "CE",
+      "seconds": [
+        0.6008106949739158,
+        0.5989641550695524
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.746221742574932,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE_FINE",
+      "mode": "FREE",
+      "kind": "COST1",
+      "seconds": [
+        3.4218050990020856,
+        0.23593116202391684
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.9944864723216849,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE_FINE",
+      "mode": "FREE",
+      "kind": "CE",
+      "seconds": [
+        0.613921687938273,
+        0.6132108820602298
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.735690002472706,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE_FINE",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "COST1",
+      "seconds": [
+        0.23165423900354654,
+        0.23065534501802176
+      ],
+      "peak_gpu_bytes": 37798912,
+      "loss": 1.6625726477647305,
+      "active_vjp_candidates": 3,
+      "candidates": 128
+    },
+    {
+      "source": "COARSE_FINE",
+      "mode": "ROMA_WEIGHTED",
+      "kind": "CE",
+      "seconds": [
+        0.6076302389847115,
+        0.6045267699519172
+      ],
+      "peak_gpu_bytes": 38339584,
+      "loss": 4.746221320872356,
+      "active_vjp_candidates": 128,
+      "candidates": 128
+    }
+  ],
+  "synthetic_target_position": 0,
+  "real_identity_label_reads": 0,
+  "formal_training_updates": 0,
+  "benchmark_head": [
+    -0.2,
+    0.2,
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "benchmark_weights_discarded": true,
+  "gpu": "NVIDIA A100-SXM4-40GB"
+}

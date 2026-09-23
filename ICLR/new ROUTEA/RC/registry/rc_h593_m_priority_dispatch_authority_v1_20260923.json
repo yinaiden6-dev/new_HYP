@@ -1,0 +1,69 @@
+{
+  "status": "M_PRIORITY_SHORT_ARRAYS_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_m_priority_dispatch_v1.py",
+      "sha256": "f9d1867abdba1cbf99491821ce482c02b8113b6586462ec6a27bc742a88a537d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_M_PRIORITY_DISPATCH_V1_20260923.md",
+      "sha256": "176aff7fbda64b416a0a49df2379bf8e6e913b74152f8f4909ce481a19dd1f12"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_shared_pooling_v1.sbatch",
+      "sha256": "d10a0458a864dd80618d508b8f2a8a7d5b403326307831a8d585d4b08166673b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_packed_gpu_v2.py",
+      "sha256": "5f6581d80775ebafb7af4095cf37adfd1e26fd9dbcd39b652d39941375440933"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_packed_gpu_authority_v2_20260923.json",
+      "sha256": "87e8b75ff19b57da4defe4dc73a65136d034bf87d55e485c607dc15d8bd1c22b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/rc_h593_shared_pooling_v1/ready.json",
+      "sha256": "1c36eb79184612e548e3c29a68ff9980afaff55d272580f2838c739eec106704"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_shared_pooling_cache_authority_v1_20260922.json",
+      "sha256": "e24df3e3902e939e97bf92f5d412991bc97501de9f6ccdcfa3fb3cbfa905d390"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_path_readout_authority_v1_20260922.json",
+      "sha256": "520268e995e96e616fcb3726661b4e6750f3fd5818cd4864224b6253bfd0540d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_inside_authority_v1_20260922.json",
+      "sha256": "6839430c2c0d6685f6b1a479fe82e8e47ab3b944f5b16f1ab2b2869fbaf31163"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_visual_origin_authority_v1_20260922.json",
+      "sha256": "e6bd0b2cd467d646b58021db27f1ae402465f1964eaaa3ac5d8b4da94ecb74fb"
+    }
+  ],
+  "families": [
+    "inside",
+    "visual"
+  ],
+  "partition": "accelerated",
+  "gpus_per_task": 1,
+  "cpus_per_task": 8,
+  "memory_gb": 64,
+  "minutes": 12,
+  "maximum_active_gpus": 46,
+  "maximum_days": 14,
+  "maximum_attempts_per_query": 32,
+  "maximum_submissions": 2048,
+  "readout_job": "5158704",
+  "deferred": [
+    "coordinate",
+    "fusion"
+  ],
+  "scientific_change": false,
+  "candidate_count": 128,
+  "queries": 593,
+  "user_instruction": "Prioritize why M is useful; restore original multiple short GPU shards in accelerated",
+  "running_packed_policy": "Let current allocation finish, exclude all its manifest tasks until exit",
+  "no_new_packed_allocations": true
+}

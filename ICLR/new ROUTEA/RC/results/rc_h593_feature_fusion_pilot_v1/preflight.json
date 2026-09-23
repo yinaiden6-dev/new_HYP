@@ -1,0 +1,32 @@
+{
+  "status": "FEATURE_FUSION_CORE_PASS",
+  "pool_check": {
+    "feature_shape": [
+      1,
+      9,
+      7,
+      65
+    ],
+    "pooled_shape": [
+      3,
+      65
+    ],
+    "max_direct_mean_error": 0.0,
+    "dtype": "float32_after_FP64_pool"
+  },
+  "zero_adapter_exact": true,
+  "gradients": [
+    "COL_ONLY",
+    "COARSE",
+    "FINE",
+    "COARSE_FINE"
+  ],
+  "parameter_count_per_source": 4096,
+  "differentiable_feature_formula_exact": true,
+  "candidate_permutation_equivariant": true,
+  "inference_tensor_backward_pass": true,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_pilot_authority_v1_20260922.json",
+    "sha256": "3666c78186ff098196baf41742ba429054e97ba847467a6171ef689bf5fec41e"
+  }
+}

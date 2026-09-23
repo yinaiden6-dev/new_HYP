@@ -1,0 +1,33 @@
+{
+  "status": "EXACT_CACHE_LAUNCHER_DYNAMIC_PASS",
+  "cases": [
+    {
+      "args": [
+        "--signal=TERM",
+        "--kill-after=10s",
+        "850s",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+        "programs/run_rc_h593_roma_coordinate_cache_v2.py",
+        "qualify",
+        "--index",
+        "0"
+      ],
+      "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+      "offline": "1"
+    },
+    {
+      "args": [
+        "--signal=TERM",
+        "--kill-after=10s",
+        "850s",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-romav2/bin/python",
+        "programs/run_rc_h593_roma_coordinate_cache_v2.py",
+        "worker",
+        "--index",
+        "59"
+      ],
+      "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+      "offline": "1"
+    }
+  ]
+}

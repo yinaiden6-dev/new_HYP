@@ -1,0 +1,37 @@
+{
+  "status": "M_PRIORITY_SHORT_ARRAYS_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_m_stage_reuse_dispatch_v1.py",
+      "sha256": "6098af57a8f56b4930ceb7da198792f1cdfae10529e19f262a35202772c238fe"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_m_priority_dispatch_v1.py",
+      "sha256": "f9d1867abdba1cbf99491821ce482c02b8113b6586462ec6a27bc742a88a537d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_shared_stages_v1.sbatch",
+      "sha256": "44f1c129dd213459bec7cb0b6e2ecdce3d841c271f0901312f3fe40fad28e044"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_m_priority_dispatch_authority_v1_20260923.json",
+      "sha256": "711182b4302e848448584005a4f75c333321c415f0503899709105d6523021a6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_shared_stages_authority_v1_20260923.json",
+      "sha256": "a550ffaf70698ca2c45380b4fa548c30e80f01bddb68c2f7c7bfe400c9bf030e"
+    }
+  ],
+  "maximum_days": 14,
+  "families": [
+    "inside",
+    "visual"
+  ],
+  "maximum_active_gpus": 46,
+  "minutes": 12,
+  "user_instruction": "Collect missing GPU stage data once; downstream CPU reuse; prioritize reuse of complete results",
+  "visual_prerequisite": "All128 inside native stages sealed; exact replay qualification required",
+  "old_active_arrays": "Allow to finish unchanged, no cancellation or duplicate query writers",
+  "qualification_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/rc_h593_shared_stages_v1/qualification.json",
+  "scientific_protocol_unchanged": true
+}

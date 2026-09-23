@@ -1,0 +1,64 @@
+{
+  "status": "H593_ROMA_COORDINATE_PRECISION_AUTHORIZED",
+  "user_authorization": "2026-09-22: RoMa matching coordinate precision, not visibility-map granularity",
+  "code_sources": {
+    "program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v1.py",
+      "sha256": "a18fa338409afb9ae43017cb9509fe6cc3d6cd1315cf81c2a87dde67c6af1855"
+    },
+    "hook": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_coordinate_precision_v1.py",
+      "sha256": "efc2a13365d0a497803d7905b755a7549a20a4ba13586765b6d305d83649f2d5"
+    },
+    "roma_adapter": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_roma_v1.py",
+      "sha256": "e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e"
+    },
+    "feature_formula": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    "plan": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_ROMA_COORDINATE_PRECISION_V1_20260922.md",
+      "sha256": "f4ad6986baed2fe587bac7961dd28f08b354c2e8d4315636dd1a4b1143fce0bf"
+    },
+    "launcher": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_precision_v1.sbatch",
+      "sha256": "e9b7cd49a6e7fe7b9ff3ed4eab53b7deca034c5a465988dd50cd02d6b055720a"
+    }
+  },
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_roma_coordinate_precision_v1/workers.json",
+    "sha256": "7755841971ccf27f7ef75216c14b6dfd362cf30a66d3cab6318895d5d2e2b03b"
+  },
+  "profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "levels": {
+    "NATIVE": 0,
+    "GRID256": 256,
+    "GRID64": 64,
+    "GRID16": 16
+  },
+  "pilot_index": 0,
+  "total_queries": 593,
+  "candidates_per_query": 128,
+  "pairs_per_part": 16,
+  "intervention": "Round prev_warp independently in x,y before EACH RoMa refiner; both AB and BA, both LR and HR passes; no clipping",
+  "quantizer": "Q_B(z)=round(z*B/2)*(2/B), B=256,64,16; normalized per-axis displacement <=1/B plus float rounding",
+  "native": "Unmodified precise setting: LR800, HR1280, bidirectional. Every native pair must reproduce sealed overlap-derived token maps and four scores bit exactly.",
+  "terminal_control": "Quantize FINAL warps only: overlap unchanged, scorer does not read warp; negative dependency control.",
+  "scope": "Coordinate sampling precision inside refinement, not match error against ground truth and not switching RoMa inference presets",
+  "full_workers_gate": "Pilot index0 all128 pairs + four levels must validate before indices1..592",
+  "evaluation": "Same H593 grouped fivefold: frozen COST1 and CE heads, plus matched same-loss refits. No 496-head selection. All593 denominator, no identity annotations beyond original retrieval labels.",
+  "forbidden": [
+    "D1-MI",
+    "formal392",
+    "GroZi",
+    "ownership",
+    "SAM",
+    "new encoder training"
+  ],
+  "external_GO": false
+}

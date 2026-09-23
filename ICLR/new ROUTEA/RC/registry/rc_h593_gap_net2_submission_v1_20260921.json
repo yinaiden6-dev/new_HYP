@@ -1,0 +1,41 @@
+{
+  "status": "SUBMITTED_SCHEDULER_AND_SPOOL_VERIFIED",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_gap_net2_authority_v1_20260921.json",
+    "sha256": "84abee646a8fe46f853fcf54d3bab145e35a6a3c63eda42e2ada9e60996814bc"
+  },
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_gap_net2_v1.sbatch",
+    "sha256": "cfa30eaf43101fa729b8665740815fe31d3b265388c14353b69fc467a7bb3d28"
+  },
+  "submitted_at_utc": "2026-09-20T22:58:46Z",
+  "jobs": {
+    "fit": "5153657",
+    "join": "5153658"
+  },
+  "fit_command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-4%5",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_gap_net2_v1.sbatch",
+    "fit"
+  ],
+  "join_command": [
+    "sbatch",
+    "--parsable",
+    "--dependency=afterok:5153657",
+    "--job-name=h593_gnet2_join",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_gap_net2_v1.sbatch",
+    "join"
+  ],
+  "scheduler_verification": {
+    "fit": {
+      "scontrol": "JobId=5153657 ArrayJobId=5153657 ArrayTaskId=0-4%5 ArrayTaskThrottle=5 JobName=h593_gnet2 UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-21T00:58:46 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-21T00:58:46 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1993:1970093 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_gap_net2_v1.sbatch SubmitLine=sbatch --parsable --array=0-4%5 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_gap_net2_v1.sbatch fit WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-gnet2-5153657_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-gnet2-5153657_4294967294.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+      "spool_sha256": "cfa30eaf43101fa729b8665740815fe31d3b265388c14353b69fc467a7bb3d28"
+    },
+    "join": {
+      "scontrol": "JobId=5153658 JobName=h593_gnet2_join UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:5153657_*(unfulfilled) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-21T00:58:46 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-21T00:58:46 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1993:1970093 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_gap_net2_v1.sbatch SubmitLine=sbatch --parsable --dependency=afterok:5153657 --job-name=h593_gnet2_join /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_gap_net2_v1.sbatch join WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-gnet2-5153658_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/h593-gnet2-5153658_4294967294.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+      "spool_sha256": "cfa30eaf43101fa729b8665740815fe31d3b265388c14353b69fc467a7bb3d28"
+    }
+  }
+}

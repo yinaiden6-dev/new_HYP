@@ -1,0 +1,30 @@
+{
+  "status": "RANK_ACTION_SYNTHETIC_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_rank_action_authority_v1_20260921.json",
+    "sha256": "d730c1e53dc116ff2d67efc32c5855d356d84e5743952aadc0b9ae5543b89059"
+  },
+  "core": {
+    "status": "RANK_ACTION_SYNTHETIC_PASS",
+    "checks": 15,
+    "natural_data_reads": 0,
+    "neutral_denominator_verified": true,
+    "all_row_rms_verified": true,
+    "first_argmax_ties_verified": true,
+    "no_informative_fallback_HOLD": true,
+    "bias_in_regularizer_verified": true
+  },
+  "independent": {
+    "status": "RANK_ACTION_INDEPENDENT_SYNTHETIC_PASS",
+    "checks": 15,
+    "max_finite_difference_gradient_error": 1.1886915063374914e-12,
+    "no_core_imports": true,
+    "natural_data_reads": 0,
+    "model_fits": 0,
+    "denominator_all_rows": true,
+    "RMS_includes_neutral": true,
+    "strict_positive_boundary_verified": true,
+    "first_maximum_tie_verified": true
+  },
+  "natural_updates": 0
+}

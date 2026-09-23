@@ -1,0 +1,18 @@
+{
+  "status": "SCHEDULER_ONLY_PARTITION_OVERRIDE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_box_ce_authority_v1_20260921.json",
+    "sha256": "3ce42e37d49f484d252f329abbba6bd78986710ef87f1828d88567617351b23f"
+  },
+  "reason": "dev QoS MaxSubmitJobsPU=4, MaxJobsPU=1 rejected five-task array; no job created by rejected submission",
+  "requested_partition": "dev_accelerated",
+  "actual_partition": "accelerated",
+  "mechanism": "sbatch --partition=accelerated; frozen scripts unchanged",
+  "job_ids": [
+    "5154655",
+    "5154656"
+  ],
+  "time_limit_unchanged": "00:10:00",
+  "array_unchanged": "0-4%5",
+  "scientific_protocol_unchanged": true
+}

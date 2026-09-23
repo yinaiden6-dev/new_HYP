@@ -1,0 +1,94 @@
+{
+  "status": "FEATURE_FUSION_PILOT_AUTHORIZED",
+  "user_authorization": "2026-09-22 user: 开始; start four feature sources by matcher evidence experiment",
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_feature_fusion_pilot_v1.py",
+      "sha256": "316d7b8118e7d6dd51ba2329e3dc1593addc1eec0a54c82682e44f723a72d108"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_feature_fusion_core_v1.py",
+      "sha256": "dde546d408d92c9f1a6f421ea4230babb747f18e39857520834d3a76b87f5f6f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v2.py",
+      "sha256": "e6f4a801047c97aa4f3e31441adfd41cf3c4e69f1779217d575b14cb606c8b3c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_roma_v1.py",
+      "sha256": "e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/colnomic_dino_canonical_geometry_v1.py",
+      "sha256": "af5c3e3d7867f3b014a66d72345ffdeb68580233d8c3f3df8f58a1b1628b4682"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/colnomic_dino_canonical_geometry_v2.py",
+      "sha256": "c732dc933c502f17fd5cb8cc80ae45d116716fe801cc8f3034a1e6a49cef6508"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_H593_FEATURE_FUSION_V1_20260922.md",
+      "sha256": "3245a7f30c242a4d89d719c65bd2be7b026a01d10b3d235a8fc2359bd62ae88d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_feature_fusion_pilot_v1.sbatch",
+      "sha256": "0a3e6f95a2e594aa53901947029b47e633872865486e236d7ff3f62ca3d5950d"
+    }
+  ],
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_pilot_v1/manifest.json",
+    "sha256": "8b3b07a48cc8ce7984fc27f38ce6ae5282904c8617805ff26c5493e6371c6329"
+  },
+  "profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "feature_sources": [
+    "COL_ONLY",
+    "COARSE",
+    "FINE",
+    "COARSE_FINE"
+  ],
+  "components": {
+    "coarse_11": 1024,
+    "coarse_17": 1024,
+    "fine_lr_1": 64,
+    "fine_lr_2": 128,
+    "fine_lr_4": 256,
+    "fine_hr_1": 64,
+    "fine_hr_2": 128,
+    "fine_hr_4": 256
+  },
+  "arms": [
+    "COL_ONLY_FREE",
+    "COL_ONLY_ROMA_WEIGHTED",
+    "COARSE_FREE",
+    "COARSE_ROMA_WEIGHTED",
+    "FINE_FREE",
+    "FINE_ROMA_WEIGHTED",
+    "COARSE_FINE_FREE",
+    "COARSE_FINE_ROMA_WEIGHTED"
+  ],
+  "selection": "execution ordinal0, all128 candidates; first candidate only for full RoMa feature hook qualification",
+  "trainable_adapter_parameters": 4096,
+  "source_projection_seed": 20260922,
+  "initialization_seed": 17,
+  "training_updates": 0,
+  "label_reads": 0,
+  "scope": "Engineering extraction, zero-adapter replay and gradients; not natural-data training or accuracy",
+  "full_training_requires": "Separate frozen training execution contract after engineering timing; original grouped fivefold and retrieval labels only",
+  "prohibited": [
+    "D1-MI",
+    "formal392",
+    "GroZi",
+    "ISIC",
+    "heldout labels",
+    "ownership",
+    "SAM"
+  ],
+  "external_GO": false
+}

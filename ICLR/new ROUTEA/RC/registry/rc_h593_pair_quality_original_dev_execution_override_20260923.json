@@ -1,0 +1,49 @@
+{
+  "status": "ORIGINAL_DISPATCHER_DEV_CPU_EDIT_AUTHORIZED",
+  "time_utc": "2026-09-23T11:40:26.633567+00:00",
+  "user_instruction": "Directly modify the original continuation program; current and future jobs use dev_cpuonly",
+  "scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_pair_quality_cpu_authority_v1_20260923.json",
+    "sha256": "e28370bb2cfc2d43b7c1ca5abdd8c23198f0c46e05bd51012529f0175a9345e9"
+  },
+  "approved_changes": {
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_pair_quality_cpu_v1.py": {
+      "before": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_pair_quality_cpu_v1.py",
+        "sha256": "446ee634c097e9d507fb98c409c586202982843d91595b5ab5822dfc30c2751b"
+      },
+      "after": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_pair_quality_cpu_v1.py",
+        "sha256": "a21ce51efefd266f3803cd1a834419375fbb5c8cc79957cfc1fe998c76c8813b"
+      },
+      "archive": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_pair_quality_cpu_v1/execution_backups/direct_original_dev_20260923/run_rc_h593_pair_quality_cpu_v1.py",
+        "sha256": "446ee634c097e9d507fb98c409c586202982843d91595b5ab5822dfc30c2751b"
+      }
+    },
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_cpu_v1.py": {
+      "before": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_cpu_v1.py",
+        "sha256": "dc0ef8c15b22c723e634f5c854fb312fdc42be0e4ea936eb3893603e17209f1a"
+      },
+      "after": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_h593_pair_quality_cpu_v1.py",
+        "sha256": "d4452a570c0f33a8ceae4c0a9aa30718b8d3ae00852b3ca71a2a5e1a9c551526"
+      },
+      "archive": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_pair_quality_cpu_v1/execution_backups/direct_original_dev_20260923/dispatch_rc_h593_pair_quality_cpu_v1.py",
+        "sha256": "dc0ef8c15b22c723e634f5c854fb312fdc42be0e4ea936eb3893603e17209f1a"
+      }
+    }
+  },
+  "compatibility_helper": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_h593_pair_quality_execution_source_compat_v1.py",
+    "sha256": "3609696d1609de11a45013c6437b3c9609c823e60b6a6fa67ad0b7e24f7e484e"
+  },
+  "worker_change": "Only checked() accepts these two exact source replacements; all other hashes remain strict",
+  "training_ast_unchanged_excluding_checked": true,
+  "partition": "dev_cpuonly",
+  "alternate_v2_controller_used": false,
+  "checkpoint_and_optimizer_migration": false,
+  "source_backup": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_pair_quality_cpu_v1/execution_backups/direct_original_dev_20260923"
+}

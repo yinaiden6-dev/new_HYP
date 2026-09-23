@@ -1,0 +1,53 @@
+{
+  "status": "CACHED_VISUAL_TREND_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_cached_visual_trend_v1.py",
+      "sha256": "7fcb45b29cd75752e106a79512f34a9374972fa16debe48c95b4da66404e792b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_subset41_frozen_paths_v1.py",
+      "sha256": "aed218b702abe31ab1e50bfd2c3f729e14c603b51903e031bb0c27cd5a6569bc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_cached_visual_trend_v1.sbatch",
+      "sha256": "d7ada913f77760792ec19549aa378966e5e919a28ccbaef13e794ce9690c2367"
+    }
+  ],
+  "snapshot": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_cached_visual_trend_v1/snapshot.json",
+    "sha256": "4199ce99be0e7195d49c05e70d947ea21f84af193f8ec07f0a229ebc82d95706"
+  },
+  "old_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_eval_v1/result.json",
+    "sha256": "aa6a2919419c4d1a6c95d31e03169f795fa67d718271f0267ad06574fc78c935"
+  },
+  "gallery": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+    "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+  },
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_roma_coordinate_precision_v2/workers.json",
+    "sha256": "7755841971ccf27f7ef75216c14b6dfd362cf30a66d3cab6318895d5d2e2b03b"
+  },
+  "primary_arms": [
+    "Q_GRAY",
+    "R_GRAY",
+    "Q_LOWPASS",
+    "R_LOWPASS",
+    "Q_SHUFFLE",
+    "R_SHUFFLE"
+  ],
+  "head": "Original held-out fold COST1",
+  "candidates": "Natural RAW C128",
+  "supervision_changes": false,
+  "threshold": 0,
+  "precision": "FP64 original replay",
+  "new_gpu_forwards": 0,
+  "inference": "Exploratory paired group-equal effects; 20000 cluster bootstrap draws and grouped sign flips; Holm across six arms per outcome",
+  "expansion": "Only if current evidence insufficient: fixed total128, no significance-based repeated stopping; no automatic GPU expansion here"
+}

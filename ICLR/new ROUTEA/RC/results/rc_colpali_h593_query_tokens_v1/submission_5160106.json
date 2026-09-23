@@ -1,0 +1,36 @@
+{
+  "job_id": "5160106",
+  "status_at_submission": "PENDING",
+  "query_count": 593,
+  "partition_request": [
+    "dev_accelerated",
+    "accelerated"
+  ],
+  "gpus": 1,
+  "cpus": 8,
+  "memory_request_gib": 48,
+  "time_limit_minutes": 15,
+  "max_voluntary_requeues": 3,
+  "training_updates": 0,
+  "reference_forward_count_for_compatibility": 3,
+  "reference_gallery_reencoding": false,
+  "roma_reencoding": false,
+  "files": {
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colpali_h593_query_tokens_v1.sbatch": "c49efa9e5777dd3e29da9076feea6383af6961c32720be4a40496097fccdd62d",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colpali_h593_query_tokens_v1/submitted_5160106.sbatch": "c49efa9e5777dd3e29da9076feea6383af6961c32720be4a40496097fccdd62d",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cache_colpali_h593_queries_v1.py": "2ea6f84c94949d0a88d32291470307b68917d3705cb9ecffaf9f134babb65cd2",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colpali_h593_query_tokens_v1/manifest.json": "923e262af7fb73fee62390d1b9f5b591015d3a212669c882338dd580bd3d55a1"
+  },
+  "spool_byte_match": true,
+  "preflight": {
+    "source_image_sha_checks": 593,
+    "gallery_memmap_shape": [
+      5413,
+      1030,
+      128
+    ],
+    "bash_syntax": "PASS",
+    "python_ast": "PASS"
+  },
+  "scientific_result": null
+}

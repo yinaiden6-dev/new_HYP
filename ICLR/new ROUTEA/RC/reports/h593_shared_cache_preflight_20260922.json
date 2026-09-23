@@ -1,0 +1,52 @@
+{
+  "status": "SHARED_CACHE_CPU_CHECKS_PASS",
+  "pooling_bit_checks": 24,
+  "pool_stats": {
+    "bounds_builds": 12,
+    "maps": 24
+  },
+  "reader_stats": {
+    "disk_loads": 1,
+    "hits": 2,
+    "read_seconds": 0.0017924364656209946,
+    "uncached_input_computations": 1
+  },
+  "launcher_argv": [
+    {
+      "script": "rc_h593_shared_native_cache_v1.sbatch",
+      "args": [],
+      "actual_tail": [
+        "build",
+        "build",
+        "--index",
+        "17"
+      ]
+    },
+    {
+      "script": "rc_h593_shared_native_cache_v1.sbatch",
+      "args": [
+        "consumer",
+        "inside"
+      ],
+      "actual_tail": [
+        "consumer",
+        "inside",
+        "--index",
+        "17"
+      ]
+    },
+    {
+      "script": "rc_h593_shared_native_control_v1.sbatch",
+      "args": [
+        "control",
+        "inside",
+        "123456"
+      ],
+      "actual_tail": [
+        "control",
+        "inside",
+        "123456"
+      ]
+    }
+  ]
+}

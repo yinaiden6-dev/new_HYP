@@ -1,0 +1,200 @@
+{
+  "status": "SEALED_H593_CANDIDATE_RANKING_RECOUNT_PASS",
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/result.json",
+    "sha256": "233e7693ea2e2eba10f119614a6268313c85b449c8c4b12e1841ded8a0f1bc33"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_gap_curve_authority_v1_20260921.json",
+    "sha256": "ede07c0bfa116ad1af784f48fb6ba6c2c3d0d165971d4f63ed49a250d07f7e90"
+  },
+  "payloads": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/fold0/payload.json",
+      "sha256": "a80839e5252bc9389b0724f776367bcae1acf9bcbb8bef64551257a7c4a46fc4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/fold1/payload.json",
+      "sha256": "acf8b75559ebd8526a234a705ea1d1980ce8d2e0b76d5dc6527f2c88d7755cc9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/fold2/payload.json",
+      "sha256": "11c9ee56fdd018d543559dddca378fd37d0774dfb9841b6a3f26412d6358afde"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/fold3/payload.json",
+      "sha256": "51314200b98190fe090a185cd2e6ce6b6e8a8d99ede2dd2ce52fc930200e5a64"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_gap_curve_v1/fold4/payload.json",
+      "sha256": "1c2415965896632c12893c698112c1680f3abb6b72b03157ae0f39457dbec4ee"
+    }
+  ],
+  "population_categories": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_population_opportunities_v1/all593_categories.csv",
+    "sha256": "1b89e7395588c66bdbdc0e8375607062e93bc47c3f56074b48f0704b4546c585"
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_h593_candidate_ranking_v1.py",
+    "sha256": "e58b4aa926c5d281137a4315ac993731c938504a8b3e7da3fed096c015b78584"
+  },
+  "evidence_level": "Post-hoc diagnostic on opened H593 grouped OOF development predictions",
+  "all593_queries": 593,
+  "RAW_wrong_target_present_queries": 144,
+  "GAP_BIAS2_remaining78_mechanism_counts": {
+    "wrong_challenger": 40,
+    "correct_challenger_not_selected": 30,
+    "RAW_correct_wrong_SWITCH": 8
+  },
+  "all40_ranking_blocked_original_categories": {
+    "wrong_RAW_and_challenger": 28,
+    "locked_wrong_SWITCH": 12
+  },
+  "subset28_identities": 19,
+  "subset28_components": 19,
+  "subset28_by_fold": {
+    "3": 6,
+    "2": 8,
+    "4": 7,
+    "1": 7
+  },
+  "models": {
+    "COST1_FULL": {
+      "all593_correct": 481,
+      "all593_vs492": {
+        "rescue": 5,
+        "loss": 16
+      },
+      "target_top_challenger_among_RAW_wrong_present": 104,
+      "top_challenger_correctness_vs_COST1": {
+        "gained": 0,
+        "lost": 0
+      },
+      "any_RAW_or_top_challenger_correct_oracle": 530,
+      "subset28_correct": 0,
+      "subset28_target_top_challenger": 0,
+      "subset28_challenger_rank_shift": {
+        "improved": 0,
+        "same": 28,
+        "worse": 0
+      },
+      "subset28_unified_diagnostic_rank_shift": {
+        "improved": 0,
+        "same": 28,
+        "worse": 0
+      },
+      "subset28_top_identity_unchanged": 28,
+      "subset28_challenger_rank": {
+        "min": 2,
+        "median": 4.0,
+        "max": 31,
+        "second": 7,
+        "top4": 15
+      },
+      "subset28_top_target_but_HOLD": []
+    },
+    "CE_FULL": {
+      "all593_correct": 486,
+      "all593_vs492": {
+        "rescue": 4,
+        "loss": 10
+      },
+      "target_top_challenger_among_RAW_wrong_present": 104,
+      "top_challenger_correctness_vs_COST1": {
+        "gained": 1,
+        "lost": 1
+      },
+      "any_RAW_or_top_challenger_correct_oracle": 530,
+      "subset28_correct": 0,
+      "subset28_target_top_challenger": 1,
+      "subset28_challenger_rank_shift": {
+        "improved": 7,
+        "same": 14,
+        "worse": 7
+      },
+      "subset28_unified_diagnostic_rank_shift": {
+        "improved": 9,
+        "same": 12,
+        "worse": 7
+      },
+      "subset28_top_identity_unchanged": 24,
+      "subset28_challenger_rank": {
+        "min": 1,
+        "median": 4.5,
+        "max": 37,
+        "second": 9,
+        "top4": 14
+      },
+      "subset28_top_target_but_HOLD": [
+        {
+          "query_id": "H593-3937b8534db594248fbab03f",
+          "original_query_id": "OUTCOME-0747",
+          "score": -0.3091233962040145
+        }
+      ]
+    },
+    "ZERO_S": {
+      "all593_correct": 487,
+      "all593_vs492": {
+        "rescue": 5,
+        "loss": 10
+      },
+      "target_top_challenger_among_RAW_wrong_present": 102,
+      "top_challenger_correctness_vs_COST1": {
+        "gained": 3,
+        "lost": 5
+      },
+      "any_RAW_or_top_challenger_correct_oracle": 528,
+      "subset28_correct": 0,
+      "subset28_target_top_challenger": 3,
+      "subset28_challenger_rank_shift": {
+        "improved": 9,
+        "same": 4,
+        "worse": 15
+      },
+      "subset28_unified_diagnostic_rank_shift": {
+        "improved": 10,
+        "same": 3,
+        "worse": 15
+      },
+      "subset28_top_identity_unchanged": 16,
+      "subset28_challenger_rank": {
+        "min": 1,
+        "median": 6.5,
+        "max": 69,
+        "second": 4,
+        "top4": 13
+      },
+      "subset28_top_target_but_HOLD": [
+        {
+          "query_id": "H593-3937b8534db594248fbab03f",
+          "original_query_id": "OUTCOME-0747",
+          "score": -0.5859642510305534
+        },
+        {
+          "query_id": "H593-a2c507612d213253be128e81",
+          "original_query_id": "OUTCOME-0474",
+          "score": -0.25065670137176355
+        },
+        {
+          "query_id": "H593-cbd580ca8890e580605311e6",
+          "original_query_id": "OUTCOME-0557",
+          "score": -1.097110573129627
+        }
+      ]
+    }
+  },
+  "COST1_subset28_unified_rank_vs_RAW": {
+    "improved": 15,
+    "same": 3,
+    "worse": 10
+  },
+  "model_fits": 0,
+  "external_GO": false,
+  "limits": [
+    "Unified128 rank is a score diagnostic, not deployed pipeline MRR.",
+    "Subset28 was selected from GAP_BIAS2 errors; its metrics are not an unbiased model comparison.",
+    "Oracle counts are action-space capacities, not achievable predictions.",
+    "Ranking results do not isolate frozen-token information, summary-feature compression, or learning failure."
+  ]
+}

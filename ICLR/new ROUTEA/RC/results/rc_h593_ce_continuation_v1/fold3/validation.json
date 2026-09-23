@@ -1,0 +1,65 @@
+{
+  "status": "CE_CONTINUATION_FRESH_NUMPY_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_ce_continuation_authority_v1_20260921.json",
+    "sha256": "613f8a61bea36f9cf9afb436032beca9661b72990e6db4113cbdea6af10d3b7e"
+  },
+  "payload": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_ce_continuation_v1/fold3/payload.json",
+    "sha256": "632c556acf23897d7033e5f2572e78252fe6674ab9a884309ad434e7ad815230"
+  },
+  "logits": {
+    "COST1_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 2.6645352591003757e-15,
+      "decisions": 119
+    },
+    "CE_FULL": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "JOINT_CONTENT_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CONT_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    "CONTENT_CONT_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "CONTENT_CONTINUOUS_CE18": {
+      "logit_count": 15113,
+      "max_abs_error": 7.105427357601002e-15,
+      "decisions": 119
+    },
+    "DIAG_CONTINUOUS_CE13": {
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    }
+  },
+  "gradients": {
+    "CONTENT_CONTINUOUS_CE18": {
+      "loss_error": 0.0,
+      "gradient_error": 8.856983072305646e-16
+    },
+    "DIAG_CONTINUOUS_CE13": {
+      "loss_error": 1.1102230246251565e-16,
+      "gradient_error": 4.997231808586723e-16
+    }
+  },
+  "heldout_label_reads": 0,
+  "fresh_refits": 2
+}

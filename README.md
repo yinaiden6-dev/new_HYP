@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-23 当前实验与结果：完成项、进行中分支及数据索引](CURRENT_EXPERIMENTS_20260923.md)**
+
 - [2026-09-20 补充对照执行状态：六项消融与 learned ColNomic-only（完整结果待完成）](<ICLR/new ROUTEA/RC/reports/REPORT_H593_ADDITIONAL_CONTROLS_EXECUTION_V1_20260920.md>)
 - [早期 query–reference 联合 RCDE：原始负结果、停止依据与协议修正](<ICLR/new ROUTEA/RC/reports/rcde_joint_history_20260920/README.md>)
 - [完整中文结果总账](<ICLR/new ROUTEA/RC/reports/new_hyp_complete_results_20260916_v1/complete_results_zh.md>)

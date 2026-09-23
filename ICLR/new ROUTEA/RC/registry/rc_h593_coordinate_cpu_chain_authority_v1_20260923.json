@@ -1,0 +1,36 @@
+{
+  "status": "COORDINATE_DATA_FIRST_CPU_READOUT_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_coordinate_cpu_chain_v1.py",
+      "sha256": "a368065e0980db2935d05ba2c8faad2153a314b1169c3adc2e409b45ab0a9cef"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_coordinate_cpu_chain_v1.sbatch",
+      "sha256": "9f074f9f0d49d004ad97141f68d31cee77aada2baa328a5133401195a7ca326e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_eval_cpu_v1.sbatch",
+      "sha256": "d7e7e9d19b5a64f452f05816d5e59e96f5e3ffbb2daf3b2cf9eebb9e24dad1b9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_roma_coordinate_eval_v2.sbatch",
+      "sha256": "ad8ed044bbf61c7a6889e60896915f1d0ff147a96abb4ef072799e3f44835dbd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_shared_pooling_v1.py",
+      "sha256": "ddc227dd22c3619be26328dd0853f52c51b8604ecc2c42c13f2b304cd9c9076f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_shared_pooling_cache_authority_v1_20260922.json",
+      "sha256": "e24df3e3902e939e97bf92f5d412991bc97501de9f6ccdcfa3fb3cbfa905d390"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_roma_coordinate_eval_authority_v2_20260922.json",
+      "sha256": "05ba7b28e7ea34a9b0a652cd2db3133f0a7108a9f741e6e8014623805ac41084"
+    }
+  ],
+  "scope": "Original GPU acquisitions and candidate/seal rules; CPU-only fit, diagnose, join and publish",
+  "user_instruction": "Complete required GPU intermediate data once, then CPU consumers",
+  "science_unchanged": true
+}

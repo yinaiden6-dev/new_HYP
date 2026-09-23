@@ -1,0 +1,1224 @@
+{
+  "status": "JOINT_DIAGONAL_POSTJOIN_AUDIT_PASS",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_joint_diagonal_v1/result.json",
+    "sha256": "805151c6e6985741f1c287740042b2429c6349bf14e0028b02b56656c3dbedd3"
+  },
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_h593_joint_diagonal_result_v1.py",
+    "sha256": "84067acd79eeb8e5cdc628010c6fdbe2a5c3c43dccdc2aba490aec2c2bd0b924"
+  },
+  "natural_fits": 0,
+  "validation": [
+    {
+      "fold": 0,
+      "independent_logits": 15113,
+      "max_abs_error": 8.881784197001252e-15
+    },
+    {
+      "fold": 1,
+      "independent_logits": 14986,
+      "max_abs_error": 1.0658141036401503e-14
+    },
+    {
+      "fold": 2,
+      "independent_logits": 15113,
+      "max_abs_error": 8.881784197001252e-15
+    },
+    {
+      "fold": 3,
+      "independent_logits": 15113,
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "fold": 4,
+      "independent_logits": 14986,
+      "max_abs_error": 8.881784197001252e-15
+    }
+  ],
+  "counts": {
+    "RAW": 426,
+    "COST1_FULL": 481,
+    "CE_FULL": 486,
+    "GAP_BIAS2": 492,
+    "DIAG_CE13": 493,
+    "DIAG_COST113": 477
+  },
+  "losses": [
+    {
+      "fold": 0,
+      "n": 113,
+      "heldout_CE": {
+        "CE_FULL": 0.37899943810567055,
+        "DIAG_CE13": 0.40671837024725194
+      },
+      "train": {
+        "DIAG_CE13": {
+          "CE": 0.501875942429958,
+          "COST1": 0.6892651865562472,
+          "actual_correct": 390,
+          "target_top_RAWwrong": 94
+        },
+        "DIAG_COST113": {
+          "CE": 0.9645909556692904,
+          "COST1": 0.4564809945194269,
+          "actual_correct": 377,
+          "target_top_RAWwrong": 91
+        },
+        "COST1_FULL": {
+          "CE": 1.126637310857853,
+          "COST1": 0.47208220977398485,
+          "actual_correct": 377,
+          "target_top_RAWwrong": 91
+        },
+        "CE_FULL": {
+          "CE": 0.5492517549790439,
+          "COST1": 0.6923051878676664,
+          "actual_correct": 381,
+          "target_top_RAWwrong": 90
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "n": 116,
+      "heldout_CE": {
+        "CE_FULL": 0.5461101152045227,
+        "DIAG_CE13": 0.5217916786316358
+      },
+      "train": {
+        "DIAG_CE13": {
+          "CE": 0.4765311055063258,
+          "COST1": 0.5405594869262711,
+          "actual_correct": 394,
+          "target_top_RAWwrong": 78
+        },
+        "DIAG_COST113": {
+          "CE": 0.843356322191707,
+          "COST1": 0.4058258933171964,
+          "actual_correct": 382,
+          "target_top_RAWwrong": 77
+        },
+        "COST1_FULL": {
+          "CE": 0.9764619973872611,
+          "COST1": 0.4189657675976633,
+          "actual_correct": 384,
+          "target_top_RAWwrong": 78
+        },
+        "CE_FULL": {
+          "CE": 0.5138726817862148,
+          "COST1": 0.5523595361352784,
+          "actual_correct": 390,
+          "target_top_RAWwrong": 75
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "n": 119,
+      "heldout_CE": {
+        "CE_FULL": 0.5669213679057339,
+        "DIAG_CE13": 0.5586180475492208
+      },
+      "train": {
+        "DIAG_CE13": {
+          "CE": 0.4610081343354235,
+          "COST1": 0.6159908896958914,
+          "actual_correct": 388,
+          "target_top_RAWwrong": 94
+        },
+        "DIAG_COST113": {
+          "CE": 0.83597653959541,
+          "COST1": 0.42570471794692577,
+          "actual_correct": 378,
+          "target_top_RAWwrong": 94
+        },
+        "COST1_FULL": {
+          "CE": 0.9535331738986803,
+          "COST1": 0.4374436374498406,
+          "actual_correct": 378,
+          "target_top_RAWwrong": 91
+        },
+        "CE_FULL": {
+          "CE": 0.5024595867304357,
+          "COST1": 0.6290156489893837,
+          "actual_correct": 385,
+          "target_top_RAWwrong": 92
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "n": 109,
+      "heldout_CE": {
+        "CE_FULL": 0.5189218463910429,
+        "DIAG_CE13": 0.47755300563972675
+      },
+      "train": {
+        "DIAG_CE13": {
+          "CE": 0.4867173140240435,
+          "COST1": 0.6634246314356645,
+          "actual_correct": 399,
+          "target_top_RAWwrong": 85
+        },
+        "DIAG_COST113": {
+          "CE": 0.9151049769141666,
+          "COST1": 0.42610620865927595,
+          "actual_correct": 389,
+          "target_top_RAWwrong": 85
+        },
+        "COST1_FULL": {
+          "CE": 1.0717113297301026,
+          "COST1": 0.4361565516330352,
+          "actual_correct": 388,
+          "target_top_RAWwrong": 83
+        },
+        "CE_FULL": {
+          "CE": 0.5188510913945572,
+          "COST1": 0.6589411014175427,
+          "actual_correct": 396,
+          "target_top_RAWwrong": 84
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "n": 113,
+      "heldout_CE": {
+        "CE_FULL": 0.7168951382382016,
+        "DIAG_CE13": 0.6400759006069381
+      },
+      "train": {
+        "DIAG_CE13": {
+          "CE": 0.44516259848470974,
+          "COST1": 0.523496152907761,
+          "actual_correct": 405,
+          "target_top_RAWwrong": 77
+        },
+        "DIAG_COST113": {
+          "CE": 0.7832439413406589,
+          "COST1": 0.38103894246211406,
+          "actual_correct": 396,
+          "target_top_RAWwrong": 77
+        },
+        "COST1_FULL": {
+          "CE": 0.8535087929221101,
+          "COST1": 0.38709843137907307,
+          "actual_correct": 395,
+          "target_top_RAWwrong": 74
+        },
+        "CE_FULL": {
+          "CE": 0.4721390531826265,
+          "COST1": 0.5129817145573612,
+          "actual_correct": 404,
+          "target_top_RAWwrong": 74
+        }
+      }
+    }
+  ],
+  "decomposition": {
+    "CE_FULL": {
+      "gains": {
+        "correct_top_now_switched": 3,
+        "ranking_repair_and_switch": 2,
+        "old_RAW_break_reverted": 4
+      },
+      "losses": {
+        "correct_top_HELD": 1,
+        "new_RAW_break": 1
+      }
+    },
+    "GAP_BIAS2": {
+      "gains": {
+        "correct_top_now_switched": 4,
+        "old_RAW_break_reverted": 3
+      },
+      "losses": {
+        "correct_top_HELD": 3,
+        "new_RAW_break": 3
+      }
+    }
+  },
+  "fixed_head_interventions": {
+    "DIAG_CE13": {
+      "correct": 493,
+      "rescue_vs_RAW": 75,
+      "break_vs_RAW": 8
+    },
+    "NO_RAW_SQUARE": {
+      "correct": 493,
+      "rescue_vs_RAW": 74,
+      "break_vs_RAW": 7
+    },
+    "NO_JOINT_SQUARE": {
+      "correct": 487,
+      "rescue_vs_RAW": 74,
+      "break_vs_RAW": 13
+    },
+    "NO_SQUARE": {
+      "correct": 485,
+      "rescue_vs_RAW": 70,
+      "break_vs_RAW": 11
+    },
+    "CBIND": {
+      "correct": 205,
+      "rescue_vs_RAW": 5,
+      "break_vs_RAW": 226
+    }
+  },
+  "changed_details": [
+    {
+      "query_id": "H593-5f1d8e99507134bf9261aa26",
+      "original_query_id": "OUTCOME-0331",
+      "fold": 0,
+      "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+      "raw_correct": false,
+      "original40": false,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "GAP_BIAS2": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": false
+      },
+      "top_correct": {
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": 0.14409741694247033,
+      "selected_top_contributions": {
+        "linear": [
+          -0.07290571854335985,
+          -0.12453385685992231,
+          0.5594880528483249,
+          0.25499467565037043,
+          0.01631677925285434,
+          0.024486153949228956
+        ],
+        "square": [
+          0.00011588803341529737,
+          -0.1539877482477,
+          0.05447030065839507,
+          0.03359547034196864,
+          -0.0008003846449350535,
+          -0.22419360771264887
+        ],
+        "bias": -0.22294858778352125
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": true,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-a75c121cbde1aeaa4aa8433f",
+      "original_query_id": "DIFFICULT-0107",
+      "fold": 0,
+      "component": "dca95ffa60d30d6597de3bfed4a27b53d657ea2e90a8d6ee6aa513316eee9848",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": -0.11041452492826778,
+      "selected_top_contributions": {
+        "linear": [
+          -0.8866374191023445,
+          -0.32645143536910637,
+          0.8979147999572068,
+          1.010946755742126,
+          0.21029757134295346,
+          -0.026443726980219677
+        ],
+        "square": [
+          0.017139869695512278,
+          -1.058152972338907,
+          0.140297004340127,
+          0.5280500240485613,
+          -0.13295307505115966,
+          -0.2614733334294962
+        ],
+        "bias": -0.22294858778352125
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": true,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-afcb436616416abae565da10",
+      "original_query_id": "DIFFICULT-0101",
+      "fold": 0,
+      "component": "dca95ffa60d30d6597de3bfed4a27b53d657ea2e90a8d6ee6aa513316eee9848",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": false,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": 0.7716893547664293,
+      "selected_top_contributions": {
+        "linear": [
+          -0.4297111679228204,
+          -0.25544838546541904,
+          1.4201698534454217,
+          0.40473983422721577,
+          0.21715712784421148,
+          0.007206530372021759
+        ],
+        "square": [
+          0.004025952861299643,
+          -0.6479143748538373,
+          0.35096088540266757,
+          0.0846389758938838,
+          -0.14176794695580308,
+          -0.019419342298891484
+        ],
+        "bias": -0.22294858778352125
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": false,
+        "NO_RAW_SQUARE": false,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": false,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-3e371fe7d77d82719a05830d",
+      "original_query_id": "OUTCOME-0769",
+      "fold": 1,
+      "component": "2aa1e6c4bb63c1bf91f9200ac8983a2fdb8a3d86fcbc58c5f88c921023045af6",
+      "raw_correct": false,
+      "original40": false,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": true,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_correct": {
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": -0.9375773400875612,
+      "selected_top_contributions": {
+        "linear": [
+          -0.5346255746868287,
+          -0.30400069036856364,
+          1.2413584942281648,
+          0.6148954345946931,
+          0.32431210623773565,
+          -0.103274971900464
+        ],
+        "square": [
+          0.0069784628957087124,
+          -0.7257928115139322,
+          0.2981204320573778,
+          0.15072158299617125,
+          -0.7336140867132817,
+          -0.4156636069680097
+        ],
+        "bias": -0.7569921109463327
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": false,
+        "NO_RAW_SQUARE": false,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": false,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-490d4ed0a2cc29258e504a6a",
+      "original_query_id": "OUTCOME-0469",
+      "fold": 1,
+      "component": "1efff5d5855cab66509977a0b8d496f45b9a66147726f1323cdd42a873075386",
+      "raw_correct": false,
+      "original40": false,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": 2.9602438769320853,
+      "selected_top_contributions": {
+        "linear": [
+          -5.521735061502867,
+          -0.7801289438542549,
+          4.5272466590233975,
+          2.9453313015572093,
+          0.3097085082411261,
+          -0.0991467389206935
+        ],
+        "square": [
+          0.7444087054479022,
+          -4.779652304087229,
+          3.965204726057566,
+          3.4581292033439186,
+          -0.6690331130351408,
+          -0.38309695439251706
+        ],
+        "bias": -0.7569921109463327
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": false,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-4b694eed8bda537b0b21e8ff",
+      "original_query_id": "OUTCOME-0150",
+      "fold": 1,
+      "component": "da19e4e6b83d15ea83c05ab2e67a7e30bde059231ecd7dfb7f93382fc5e60b98",
+      "raw_correct": false,
+      "original40": false,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": true,
+        "GAP_BIAS2": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": false
+      },
+      "top_correct": {
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": 0.3129396155926778,
+      "selected_top_contributions": {
+        "linear": [
+          -0.1994437621422718,
+          -0.20690998073191788,
+          1.431728045862705,
+          0.002311227863816995,
+          0.13684008982030876,
+          0.041359482946908055
+        ],
+        "square": [
+          0.000971183351693462,
+          -0.3362222137374197,
+          0.3965686382748623,
+          2.129405831015342e-06,
+          -0.1306074774714045,
+          -0.06666563690410116
+        ],
+        "bias": -0.7569921109463327
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": false,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-873815a4220226b46cf86099",
+      "original_query_id": "OUTCOME-0347",
+      "fold": 1,
+      "component": "f4cb26eef9646d6dfd71a5bdba8092d2e0f934cd5f8e9ffe627d7c9ba8444f36",
+      "raw_correct": false,
+      "original40": false,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_correct": {
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": -0.951570834796408,
+      "selected_top_contributions": {
+        "linear": [
+          -3.4022015401531798,
+          -0.7050944667628524,
+          1.8612084255464096,
+          2.801894350492529,
+          0.32431210669810634,
+          -0.10327497218863695
+        ],
+        "square": [
+          0.28260535518900287,
+          -3.904434448622248,
+          0.6701736082069762,
+          3.1295105558275744,
+          -0.7336140887960557,
+          -0.41566360928770063
+        ],
+        "bias": -0.7569921109463327
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": false,
+        "NO_RAW_SQUARE": false,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": false,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-b9b3b47180519cbd55260c38",
+      "original_query_id": "OUTCOME-0477",
+      "fold": 1,
+      "component": "1efff5d5855cab66509977a0b8d496f45b9a66147726f1323cdd42a873075386",
+      "raw_correct": false,
+      "original40": true,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "GAP_BIAS2": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": 2.3112771303793975,
+      "selected_top_contributions": {
+        "linear": [
+          -6.153570738383561,
+          -0.7783633037578402,
+          4.600772925379221,
+          2.822429545791567,
+          0.3185975801206556,
+          -0.09781407100511047
+        ],
+        "square": [
+          0.9245165889887828,
+          -4.758041528583087,
+          4.09504707921705,
+          3.1755512719738754,
+          -0.7079886348927087,
+          -0.37286747352311367
+        ],
+        "bias": -0.7569921109463327
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": false,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-feb9948db167fc67715b216a",
+      "original_query_id": "OUTCOME-0001",
+      "fold": 1,
+      "component": "1c37c8c6064f3ee8446595a55b1d8fb0394f2b039c86eb060704e75d998d0d11",
+      "raw_correct": false,
+      "original40": false,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": false
+      },
+      "top_correct": {
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": 0.9264142829002633,
+      "selected_top_contributions": {
+        "linear": [
+          -6.724778967798927,
+          -0.7726261328771955,
+          4.053022389487486,
+          2.961613130054431,
+          0.32431210715969633,
+          -0.10283470219718661
+        ],
+        "square": [
+          1.1041201665463887,
+          -4.688158752621969,
+          3.178010348292927,
+          3.496468043550445,
+          -0.733614090884346,
+          -0.41212714486515534
+        ],
+        "bias": -0.7569921109463327
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": false,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": false,
+        "CBIND": false,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-60d3d272fcf4945ce1b4cfad",
+      "original_query_id": "OUTCOME-0717",
+      "fold": 2,
+      "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "GAP_BIAS2": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": -0.29704544098799013,
+      "selected_top_contributions": {
+        "linear": [
+          -0.8574147021045689,
+          -0.0014274414477367815,
+          0.981587835906474,
+          -0.501628863611617,
+          0.6577025214752287,
+          0.061770004202966126
+        ],
+        "square": [
+          0.02283419066045719,
+          -0.00012811824621518567,
+          0.17232526225263123,
+          0.14052779011087174,
+          -0.3876676528043152,
+          0.2502383664054747
+        ],
+        "bias": -0.8357646337876408
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": true,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-6e81425780a0e9f03a924de4",
+      "original_query_id": "OUTCOME-0721",
+      "fold": 2,
+      "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "GAP_BIAS2": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": -3.6622165928530954,
+      "selected_top_contributions": {
+        "linear": [
+          -0.944704678112979,
+          0.10091013342996139,
+          -1.0382906920009674,
+          -0.5280087028124589,
+          -0.24234256991196138,
+          0.03963488395954066
+        ],
+        "square": [
+          0.027720170853543783,
+          -0.6402711598059098,
+          0.1928095467770777,
+          0.15569667671254891,
+          -0.05263322351478938,
+          0.10302765536093855
+        ],
+        "bias": -0.8357646337876408
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": false,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-ba2efedd26ed9b4bcecca71f",
+      "original_query_id": "OUTCOME-0494",
+      "fold": 2,
+      "component": "0748babacede700838aa4a895d8d3238fc567929c58d772ed17e063e9856bb96",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": -0.6805965023982288,
+      "selected_top_contributions": {
+        "linear": [
+          -5.469450544220947,
+          -0.26496074450455637,
+          2.5766877048832377,
+          2.2712197384789308,
+          0.6577025318892724,
+          -0.06177000492470011
+        ],
+        "square": [
+          0.9291614225998751,
+          -4.414255329277995,
+          1.1874468579997906,
+          2.8808157912943035,
+          -0.38766766508095324,
+          0.25023837225315226
+        ],
+        "bias": -0.8357646337876408
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": true,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-e0504cc23358865e805ab7d8",
+      "original_query_id": "OUTCOME-0722",
+      "fold": 2,
+      "component": "d3d9e86636e760b3c7ab9d0366cce29c32d905942a4e7efc24b4feb559ccafdb",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "GAP_BIAS2": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": -0.5850830130055809,
+      "selected_top_contributions": {
+        "linear": [
+          -1.6123571504577643,
+          -0.1502291340878522,
+          1.3069557147066284,
+          0.9740538863163005,
+          0.2956926224413726,
+          -0.02581009700624344
+        ],
+        "square": [
+          0.08074697597512759,
+          -1.4190663674318404,
+          0.305500803270565,
+          0.529862455979461,
+          -0.07835767278534704,
+          0.04368958386165194
+        ],
+        "bias": -0.8357646337876408
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": true,
+        "CBIND": false,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-3937b8534db594248fbab03f",
+      "original_query_id": "OUTCOME-0747",
+      "fold": 3,
+      "component": "30a739efc9fa2fbc6556b4a23a5b909fd205591b6158bb099a4dd09818a8f35e",
+      "raw_correct": false,
+      "original40": true,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "GAP_BIAS2": false,
+        "DIAG_CE13": true,
+        "DIAG_COST113": false
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": false
+      },
+      "top_score": 0.0980329558376698,
+      "selected_top_contributions": {
+        "linear": [
+          -0.11209635699419686,
+          0.2522220783719283,
+          -0.46857160414307036,
+          1.7374161164378932,
+          0.4212171708363901,
+          -0.24839708306575495
+        ],
+        "square": [
+          0.00019194409098515966,
+          -1.3613126466347452,
+          0.043330255922741236,
+          1.6353124620678696,
+          -0.8361094221918232,
+          0.06301165744219807
+        ],
+        "bias": -1.0281816163027453
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": false,
+        "RAW": false
+      }
+    },
+    {
+      "query_id": "H593-9ed31ed09c4b3cb0fa797e4b",
+      "original_query_id": "DIFFICULT-0004",
+      "fold": 3,
+      "component": "ff5ec2587aa3b0cdf9f678e20f8a78ed21590c17b5931d4adc290fe15bf09b84",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": -0.8623685576325553,
+      "selected_top_contributions": {
+        "linear": [
+          -2.7207307158874467,
+          0.34211297723650513,
+          2.009916392570239,
+          1.5185744072430032,
+          0.4301845038689663,
+          -0.27375402974137736
+        ],
+        "square": [
+          0.11307402943063401,
+          -2.5045561685377726,
+          0.7972514279356485,
+          1.2492955919196442,
+          -0.8720883969011184,
+          0.0765330395332649
+        ],
+        "bias": -1.0281816163027453
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": true,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-ddead65d98e659c927cda92c",
+      "original_query_id": "OUTCOME-0795",
+      "fold": 3,
+      "component": "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": -0.29808710879007316,
+      "selected_top_contributions": {
+        "linear": [
+          -3.4029779100633957,
+          0.37213518842969256,
+          2.6091701111863848,
+          1.5951650932055044,
+          0.32719455537485936,
+          -0.2838683384354038
+        ],
+        "square": [
+          0.1768927400964024,
+          -2.96341964215481,
+          1.343519923434128,
+          1.378492253026944,
+          -0.5045022651074962,
+          0.08229279851986182
+        ],
+        "bias": -1.0281816163027453
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": true,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": false,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-de5f802ba95b660402a7eb35",
+      "original_query_id": "OUTCOME-0798",
+      "fold": 3,
+      "component": "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": false,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": 0.2443265662664631,
+      "selected_top_contributions": {
+        "linear": [
+          -0.1094161497072836,
+          0.20566255682530685,
+          0.3778291453002017,
+          1.1280980187778389,
+          0.4512978846152007,
+          0.2838683382020092
+        ],
+        "square": [
+          0.00018287511222596036,
+          -0.9051116199075523,
+          0.02817281432157716,
+          0.689424523830992,
+          -0.9597930031858488,
+          0.08229279838454065
+        ],
+        "bias": -1.0281816163027453
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": false,
+        "NO_RAW_SQUARE": false,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": true,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-4e6b9dc0dba15fcec5bea111",
+      "original_query_id": "OUTCOME-0130",
+      "fold": 4,
+      "component": "5e1903b41967d7091402cde6aa7a4b83e5df5f58a2bef1439e218f802ca6cf53",
+      "raw_correct": true,
+      "original40": false,
+      "correct": {
+        "RAW": true,
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": false,
+        "DIAG_COST113": true
+      },
+      "top_correct": {
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_score": 0.8550008431260998,
+      "selected_top_contributions": {
+        "linear": [
+          -6.547214610725935,
+          0.11233040026905863,
+          4.006941494998489,
+          2.3995752858171913,
+          -0.5724545578927362,
+          -0.15197609395471326
+        ],
+        "square": [
+          0.9874929891056456,
+          -3.863385901486935,
+          2.824299381359456,
+          3.533525609046171,
+          -0.7221798793610662,
+          -0.04146725442134245
+        ],
+        "bias": -1.110486019627183
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": false,
+        "NO_RAW_SQUARE": true,
+        "NO_JOINT_SQUARE": true,
+        "NO_SQUARE": true,
+        "CBIND": false,
+        "RAW": true
+      }
+    },
+    {
+      "query_id": "H593-baaae79e1a5f7793171f450a",
+      "original_query_id": "OUTCOME-0529",
+      "fold": 4,
+      "component": "67c564121b4c0847db261d818757e131684626ea0db83097a0e9610c7cf03222",
+      "raw_correct": false,
+      "original40": false,
+      "correct": {
+        "RAW": false,
+        "COST1_FULL": false,
+        "CE_FULL": false,
+        "GAP_BIAS2": true,
+        "DIAG_CE13": false,
+        "DIAG_COST113": false
+      },
+      "top_correct": {
+        "COST1_FULL": true,
+        "CE_FULL": true,
+        "DIAG_CE13": true,
+        "DIAG_COST113": true
+      },
+      "top_score": -0.39519378412861317,
+      "selected_top_contributions": {
+        "linear": [
+          -0.1928056938449643,
+          0.0201826264026504,
+          0.5829731258482956,
+          0.19432165079703853,
+          0.18020597560346166,
+          0.04682046557823826
+        ],
+        "square": [
+          0.000856368289646499,
+          -0.12471791448807101,
+          0.059783563451678984,
+          0.02317297883657688,
+          -0.07156517296788308,
+          -0.003935738008098487
+        ],
+        "bias": -1.110486019627183
+      },
+      "fixed_head_intervention_correct": {
+        "DIAG_CE13": false,
+        "NO_RAW_SQUARE": false,
+        "NO_JOINT_SQUARE": false,
+        "NO_SQUARE": false,
+        "CBIND": false,
+        "RAW": false
+      }
+    }
+  ],
+  "intervention_scope": "Post-hoc frozen-parameter sensitivity; not retrained ablations, not selected or deployed heads.",
+  "binding_scope": "Existing cached CBIND preserves RAW and breaks candidate binding of joint evidence; not spatial ownership.",
+  "external_GO": false
+}

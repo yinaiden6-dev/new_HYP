@@ -1,0 +1,261 @@
+{
+  "status": "BOX_CE_POLISH_POSTJOIN_AUDIT_PASS",
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_h593_box_ce_polish_result_v1.py",
+    "sha256": "4ceaa6b2c7cf8a1e3ebd9965958b87cded1cf86a5f42d7305485876807163706"
+  },
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_box_ce_polish_v1/result.json",
+    "sha256": "c41246423a752fb14cd5ba110a9d2a5a3571828a76b1a95995738604e4499d7c"
+  },
+  "natural_fits": 0,
+  "counts": {
+    "RAW": 426,
+    "COST1_FULL": 481,
+    "CE_FULL": 486,
+    "GAP_BIAS2": 492,
+    "DIAG_CE13": 493,
+    "JOINT_CONTENT_CE18": 492,
+    "DIAG_CONT_CE13": 491,
+    "CONTENT_CONT_CE18": 496,
+    "CONTENT_CONTINUOUS_CE18": 494,
+    "DIAG_CONTINUOUS_CE13": 492,
+    "CONTENT_BOX_CE18": 496,
+    "DIAG_BOX_CE13": 491,
+    "CONTENT_BOX_CE_POLISH18": 496,
+    "DIAG_BOX_CE_POLISH13": 491
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_present": 457,
+      "held_present": 113,
+      "metrics": {
+        "CONTENT_BOX_CE18": {
+          "train_CE": 0.42001871802486873,
+          "heldout_CE": 0.3867915290662508,
+          "train_correct": 398
+        },
+        "CONTENT_BOX_CE_POLISH18": {
+          "train_CE": 0.4200187180209169,
+          "heldout_CE": 0.38679106044082645,
+          "train_correct": 398
+        },
+        "DIAG_BOX_CE13": {
+          "train_CE": 0.4963714092576234,
+          "heldout_CE": 0.4289980734486762,
+          "train_correct": 388
+        },
+        "DIAG_BOX_CE_POLISH13": {
+          "train_CE": 0.49637140925727324,
+          "heldout_CE": 0.42899797195038114,
+          "train_correct": 388
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "train_present": 454,
+      "held_present": 116,
+      "metrics": {
+        "CONTENT_BOX_CE18": {
+          "train_CE": 0.4106902287115979,
+          "heldout_CE": 0.4206248885513034,
+          "train_correct": 393
+        },
+        "CONTENT_BOX_CE_POLISH18": {
+          "train_CE": 0.41069022871106897,
+          "heldout_CE": 0.42062477025183936,
+          "train_correct": 393
+        },
+        "DIAG_BOX_CE13": {
+          "train_CE": 0.4710039028930072,
+          "heldout_CE": 0.5280789221531419,
+          "train_correct": 386
+        },
+        "DIAG_BOX_CE_POLISH13": {
+          "train_CE": 0.4710039028929624,
+          "heldout_CE": 0.5280789245987308,
+          "train_correct": 386
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_present": 451,
+      "held_present": 119,
+      "metrics": {
+        "CONTENT_BOX_CE18": {
+          "train_CE": 0.37089030099364,
+          "heldout_CE": 0.5561659110079479,
+          "train_correct": 400
+        },
+        "CONTENT_BOX_CE_POLISH18": {
+          "train_CE": 0.37089030099237924,
+          "heldout_CE": 0.5561661440920906,
+          "train_correct": 400
+        },
+        "DIAG_BOX_CE13": {
+          "train_CE": 0.4563361167635536,
+          "heldout_CE": 0.5627486688731094,
+          "train_correct": 387
+        },
+        "DIAG_BOX_CE_POLISH13": {
+          "train_CE": 0.45633611676307567,
+          "heldout_CE": 0.5627485338669079,
+          "train_correct": 387
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_present": 461,
+      "held_present": 109,
+      "metrics": {
+        "CONTENT_BOX_CE18": {
+          "train_CE": 0.43348097307398964,
+          "heldout_CE": 0.3183924923843951,
+          "train_correct": 400
+        },
+        "CONTENT_BOX_CE_POLISH18": {
+          "train_CE": 0.43348097307374095,
+          "heldout_CE": 0.31839241033070614,
+          "train_correct": 400
+        },
+        "DIAG_BOX_CE13": {
+          "train_CE": 0.48385915115451783,
+          "heldout_CE": 0.4620754838974368,
+          "train_correct": 399
+        },
+        "DIAG_BOX_CE_POLISH13": {
+          "train_CE": 0.4838591511521339,
+          "heldout_CE": 0.46207564237548665,
+          "train_correct": 399
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_present": 457,
+      "held_present": 113,
+      "metrics": {
+        "CONTENT_BOX_CE18": {
+          "train_CE": 0.3650247127523621,
+          "heldout_CE": 0.5848871775732306,
+          "train_correct": 407
+        },
+        "CONTENT_BOX_CE_POLISH18": {
+          "train_CE": 0.3650247127471693,
+          "heldout_CE": 0.5848868702887463,
+          "train_correct": 407
+        },
+        "DIAG_BOX_CE13": {
+          "train_CE": 0.4416828184930992,
+          "heldout_CE": 0.6200106560296317,
+          "train_correct": 405
+        },
+        "DIAG_BOX_CE_POLISH13": {
+          "train_CE": 0.4416828184921098,
+          "heldout_CE": 0.6200108329315785,
+          "train_correct": 405
+        }
+      }
+    }
+  ],
+  "heldout_CE": {
+    "CONTENT_BOX_CE18": 0.45522930877553935,
+    "DIAG_BOX_CE13": 0.5212780013009367,
+    "CONTENT_BOX_CE_POLISH18": 0.45522916385028217,
+    "DIAG_BOX_CE_POLISH13": 0.5212780188670252
+  },
+  "independent_logits": [
+    {
+      "fold": 0,
+      "model": "CONTENT_BOX_CE_POLISH18",
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    {
+      "fold": 0,
+      "model": "DIAG_BOX_CE_POLISH13",
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    {
+      "fold": 1,
+      "model": "CONTENT_BOX_CE_POLISH18",
+      "logit_count": 14986,
+      "max_abs_error": 1.4210854715202004e-14,
+      "decisions": 118
+    },
+    {
+      "fold": 1,
+      "model": "DIAG_BOX_CE_POLISH13",
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    },
+    {
+      "fold": 2,
+      "model": "CONTENT_BOX_CE_POLISH18",
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    {
+      "fold": 2,
+      "model": "DIAG_BOX_CE_POLISH13",
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    {
+      "fold": 3,
+      "model": "CONTENT_BOX_CE_POLISH18",
+      "logit_count": 15113,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 119
+    },
+    {
+      "fold": 3,
+      "model": "DIAG_BOX_CE_POLISH13",
+      "logit_count": 15113,
+      "max_abs_error": 1.4210854715202004e-14,
+      "decisions": 119
+    },
+    {
+      "fold": 4,
+      "model": "CONTENT_BOX_CE_POLISH18",
+      "logit_count": 14986,
+      "max_abs_error": 1.0658141036401503e-14,
+      "decisions": 118
+    },
+    {
+      "fold": 4,
+      "model": "DIAG_BOX_CE_POLISH13",
+      "logit_count": 14986,
+      "max_abs_error": 8.881784197001252e-15,
+      "decisions": 118
+    }
+  ],
+  "error_decomposition": {
+    "CONTENT_BOX_CE_POLISH18": {
+      "target_absent": 23,
+      "RAW_correct_broken": 10,
+      "correct_challenger_HELD": 27,
+      "RAW_and_top_wrong": 37
+    },
+    "DIAG_BOX_CE_POLISH13": {
+      "RAW_and_top_wrong": 38,
+      "target_absent": 23,
+      "correct_challenger_HELD": 30,
+      "RAW_correct_broken": 11
+    }
+  },
+  "changed": [],
+  "external_GO": false,
+  "all_box_optima_certified": true,
+  "optimization": "Same frozen box/objective; certificate and accuracy gates reported separately."
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PRE_SUBMISSION_LAUNCHER_TYPO_REPAIRED",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_content_complement_authority_v1_20260921.json",
+    "sha256": "bae04fe87bc048fe97c60215464b76c26a6d8057ba5a95ce13cf5ddf5ed31f9c"
+  },
+  "original_launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_content_complement_v1.sbatch",
+    "sha256": "89f0534a5a8e5a38f6127eb8b4017bc559acdd2f1f7a56ea1556978c9f08d325"
+  },
+  "execution_launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_content_complement_v1_launchfix.sbatch",
+    "sha256": "2d2fe0d4bf123a77b0283a16fb9ab9a7cd1509321f3ae4ee3309bc5e56e8b8df"
+  },
+  "only_change": {
+    "old": "programs/run_rc_h593_content_extension_v1.py",
+    "new": "programs/run_rc_h593_content_complement_v1.py"
+  },
+  "reason": "Ordered name replacement produced non-existent runner filename; dynamic launcher check caught this before any submission.",
+  "dynamic_check": {
+    "argv": [
+      "programs/run_rc_h593_content_complement_v1.py",
+      "fit-all"
+    ],
+    "cwd": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC",
+    "threads": "8",
+    "gpu": "",
+    "tmpdir": "/tmp/h593_content_launcher_mbam34ie/h593-content-preflight"
+  },
+  "natural_fits_before_repair": 0,
+  "scientific_protocol_change": false
+}
