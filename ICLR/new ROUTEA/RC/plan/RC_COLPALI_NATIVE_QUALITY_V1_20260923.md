@@ -1,0 +1,9 @@
+# ColPali原生候选缺失RoMa质量补齐
+
+原生Top128已基于全部5413张ColPali token评分完成。图库有5412个身份；与原RAW协议一致，按公开图库身份去重，只有query260、443的候选末端改变，无需重算GPU内容分数。训练有效集合按新召回重新计算。
+
+仅补缺失query-reference图像对，旧M仅对相同query图像与物理reference复用；保留原RoMa模型、EXIF几何、FP64均值池化与M定义。该M使用已冻结的原采样网格，网格元数据不含ColNomic embedding或排名。已对4731个现有reference网格独立验证尺寸恢复公式，零差异。未知网格按相同processor规则从图像尺寸恢复，每个query复算一个已有配对以核验M误差<1e-10，再扩展缺失对。
+
+GPU每片12张query，50片、accelerated、15分钟、最大并行50、同Job断点续跑。每8个新配对保存FP64 query/reference可见性网格、M、原图SHA和几何SHA；查询侧特征只计算一次并精确复用。没有重新计算旧候选的全部RoMa。
+
+先完成首片，再自动放行其余片。全部质量完成后生成不含身份标签的ready_workers。下游用原五折、原预算重训CONTENT7与简化MASS5，COST1/CE及固定头M绑定对照。不能把该MASS5称为完整局部七参数模型。新候选recall缺失保留在593分母中。

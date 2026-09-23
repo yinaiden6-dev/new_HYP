@@ -1,0 +1,140 @@
+{
+  "status": "COLPALI_NATIVE_MISSING_QUALITY_AUTHORIZED",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colpali_native_quality_v1.py",
+      "sha256": "342d2167ec71a3bab25a76d557f590ac5a009dd2986cfbda92378d9ea90df74a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colpali_mass_transfer_v1.py",
+      "sha256": "4de30b3ac6bcff2831b26160f942127fe440aa9193baa81eb0e6422e80df709d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/lib/python3.13/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py",
+      "sha256": "de5859892f04c64f3e79c9d318842ac0040000788e43870997bd1ec6565c02bb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_roma_v1.py",
+      "sha256": "e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_exact_feature_cache_v2.py",
+      "sha256": "0b8ed4d0946a7b320fe176359461fa290d4a5f8b400fb6eca3c824395d31bf5b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_shared_native_cache_v1.py",
+      "sha256": "60eb8016b14e743171425f8653fd70672ec088a8a3c5373db5bbb96698042024"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colpali_native_quality_v1.sbatch",
+      "sha256": "27b813d52fe3d03479bb76cab43f841c84187c8b0515d5d1251eaea5be3c5609"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colpali_native_quality_join_v1.sbatch",
+      "sha256": "73c6fa391ef1fdad268174d22a378d2a958c9cfc8713b90cbadb0fd8bd68aed1"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_COLPALI_NATIVE_QUALITY_V1_20260923.md",
+      "sha256": "33b8c313996d6b006762f6da1a00032aae05bfeb8451ecaa448f6b038e09c7bb"
+    }
+  ],
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colpali_native_quality_v1/workers.json",
+    "sha256": "1586d744a938742c7815ef6785db9a8efdfb7b6daaa0905ad0f214813199d595"
+  },
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_colpali_mass_transfer_authority_v1_20260923.json",
+    "sha256": "f6f11acdbe30a822ef349fd9b9008b14c22c8ecfb123d98f05d0d14c195eacf5"
+  },
+  "native": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colpali_native_c128_v1/validation.json",
+    "sha256": "aee621e5e64de63b5daf6b3a00df4e6b60174808b1e200f3b345d7d804f1cd42"
+  },
+  "profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "catalog": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_cache_v1/catalog.json",
+    "sha256": "34d878a40fa459524d9499e5a2ae052eb8e74722a371e7b2fec28ad95d4c347d"
+  },
+  "pairs": 75904,
+  "reused_pairs": 30852,
+  "missing_pairs": 45052,
+  "grid_recovery_checks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+  ],
+  "identity_dedup_changed_queries": [
+    260,
+    443
+  ],
+  "shards": 50,
+  "quality": "Original RoMa overlap pooled by the exact original geometry, sqrt(mean(u)*mean(v)); frozen sampling grid is part of quality definition",
+  "content_encoder": "ColPali only; no ColNomic embeddings or ranks enter scoring",
+  "cache_policy": "Reuse exact image pairs; native missing pairs only; query feature memoization preserves original forward",
+  "precision": "Original RoMa profile and FP64 pooling; save u/v and source provenance per missing pair",
+  "downstream": "Native C128 content7 and simplified mass5, same group folds and training budget; not full local seven-parameter transfer"
+}

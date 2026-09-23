@@ -1,0 +1,36 @@
+[
+  {
+    "job": "5160396",
+    "args": [
+      "sbatch",
+      "--parsable",
+      "--hold",
+      "--partition=dev_accelerated",
+      "--array=0%1",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colpali_h593_query_tokens_array50_v4_legacy.sbatch"
+    ]
+  },
+  {
+    "job": "5160397",
+    "args": [
+      "sbatch",
+      "--parsable",
+      "--hold",
+      "--partition=accelerated",
+      "--array=1-49%50",
+      "--dependency=afterok:5160396",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colpali_h593_query_tokens_array50_v4_legacy.sbatch"
+    ]
+  },
+  {
+    "job": "5160398",
+    "args": [
+      "sbatch",
+      "--parsable",
+      "--hold",
+      "--partition=cpuonly",
+      "--dependency=afterok:5160396:5160397",
+      "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colpali_h593_query_tokens_join_v4_legacy.sbatch"
+    ]
+  }
+]

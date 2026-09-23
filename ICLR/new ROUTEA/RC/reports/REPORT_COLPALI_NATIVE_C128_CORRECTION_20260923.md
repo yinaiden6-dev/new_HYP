@@ -1,0 +1,11 @@
+# ColPali候选来源更正
+
+问题：此前为了直接复用RoMa配对缓存，使用了ColNomic C128。该实验只能保留为固定候选迁移对照，不满足用户要求的ColPali自召回。
+
+修正：复用已验收的593张query与5413张reference编码，用ColPali自己的MaxSim遍历全图库生成自然C128；全候选分数和完整排序保留，候选不插入target。FP64数值协议保持与前次一致。
+
+任务：5160680首片（12 query全图库），5160681其余49片，accelerated、15分钟、最大并行50、断点续跑；5160682在全部候选封存后统计原生RAW、C128召回、候选交集与缺少RoMa的图像对。五折不变，但自然C128有效TRAIN必须重算。
+
+后续质量头状态：尚未训练；需要先得到新候选缺口，复用同图像对的缓存并补齐缺失配对。不可将此前MASS5头的388/593当作新候选结果。完整局部七参数头还需32×32映射验证，与当前简化M质量校准保持区分。
+
+来源：plan/RC_COLPALI_NATIVE_C128_V1_20260923.md、registry/rc_colpali_native_c128_authority_v1_20260923.json、results/rc_colpali_native_c128_v1/submission.json。

@@ -1,0 +1,28 @@
+{
+  "status": "INDEPENDENT_COUNTS_RESCUE_BREAK_MRR_AND_SHA_PASS",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_qwen3_rerank_v2_layout/result.json",
+    "sha256": "0d0a8760fce0d3314062d1c7ffb30398435336d6c93d6d761455710747756dcc"
+  },
+  "shards": 50,
+  "folds": 5,
+  "counts": {
+    "RAW": 426,
+    "QWEN3_DIRECT": 522,
+    "QWEN3_OFFICIAL_SIGMOID": 522,
+    "ORIGINAL_COST1": 481,
+    "ORIGINAL_ALL_CE": 486,
+    "QWEN3_CAL_COST1": 477,
+    "QWEN3_CAL_CE": 523
+  },
+  "target_in_C128": 570,
+  "absent_count": 23,
+  "migration": {
+    "job": "5160875_0",
+    "partition": "dev_accelerated",
+    "time_limit": "00:15:00",
+    "cpus": 8,
+    "mem_gb": 48,
+    "gpus": 1
+  }
+}

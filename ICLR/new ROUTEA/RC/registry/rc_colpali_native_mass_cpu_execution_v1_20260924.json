@@ -1,0 +1,41 @@
+{
+  "status": "CPU_DEVICE_ONLY_EXECUTION_AUTHORIZED",
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_colpali_native_mass_head_authority_v1_20260923.json",
+    "sha256": "6d96719e4d98e1ca11682befdb9573c3322eb33f23e2f648eaadd608dfada9bc"
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colpali_native_mass_cpu_execution_v1.py",
+      "sha256": "b2a2f3b1c11cb7892f9650d14b784010d5ec7328fe94c94210cb1d3b14fdd71d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_COLPALI_NATIVE_MASS_CPU_EXECUTION_20260924.md",
+      "sha256": "c098236ad19c21b5c0eb475732c76ffc59d78c138de174ad9b156ec119cae583"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colpali_native_mass_cpu_score_v1.sbatch",
+      "sha256": "e46e1a001ace64ce71c1bd02b14513e29d1fd5d490884e0c619ac4fb80a012ea"
+    }
+  ],
+  "transformed_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colpali_native_mass_head_v1.py",
+    "sha256": "4a2fb8d7dff37a19bb51c080cf172d6580927b895c6a115f132de0e4ab1d5041"
+  },
+  "ast_changes": {
+    "assertions": 1,
+    "device_literals": 2
+  },
+  "qualification_ordinals": [
+    0,
+    50
+  ],
+  "pilot_gpu_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colpali_native_mass_head_v1/shards/00/validation.json",
+    "sha256": "69b622d06d1ea71330e493be8dff0a17ab28b5a9f97c0b0ac1067fa9b076b856"
+  },
+  "float_tolerance": 2e-09,
+  "precision": "FP64",
+  "cpu_only": true,
+  "identity_reads": 0
+}
