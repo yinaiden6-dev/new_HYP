@@ -1,0 +1,33 @@
+{
+  "status": "PREFREEZE_INDEPENDENT_TESTS_PASS",
+  "returncode": 0,
+  "seconds": 27.280541885644197,
+  "command": [
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/.venv-colpali/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests",
+    "-p",
+    "test_internal_m_learned_use_v3.py",
+    "-v"
+  ],
+  "stdout": "",
+  "stderr": "test_corrupt_partial_axis_or_values_fail_before_forward (test_internal_m_learned_use_v3.CandidateReplayTests.test_corrupt_partial_axis_or_values_fail_before_forward) ... ok\ntest_mass_diagnostic_restores_module_even_on_exception (test_internal_m_learned_use_v3.CandidateReplayTests.test_mass_diagnostic_restores_module_even_on_exception) ... ok\ntest_partial_candidate_resume_and_constant_forward_reuse (test_internal_m_learned_use_v3.CandidateReplayTests.test_partial_candidate_resume_and_constant_forward_reuse) ... ok\ntest_shared_query_backward_accumulates_all_active_candidates (test_internal_m_learned_use_v3.CandidateReplayTests.test_shared_query_backward_accumulates_all_active_candidates) ... ok\ntest_optimizer_and_joint_parameters_resume_exactly_next_update (test_internal_m_learned_use_v3.JointCheckpointTests.test_optimizer_and_joint_parameters_resume_exactly_next_update) ... ok\ntest_pilot_receipt_recovery_after_committed_update_is_idempotent (test_internal_m_learned_use_v3.JointCheckpointTests.test_pilot_receipt_recovery_after_committed_update_is_idempotent) ... ok\ntest_hard_failure_is_not_success_or_requeue (test_internal_m_learned_use_v3.LauncherExecutionTests.test_hard_failure_is_not_success_or_requeue) ... ok\ntest_maximum_restarts_fail_closed (test_internal_m_learned_use_v3.LauncherExecutionTests.test_maximum_restarts_fail_closed) ... ok\ntest_partial_and_timeout_requeue_same_job_without_advancing (test_internal_m_learned_use_v3.LauncherExecutionTests.test_partial_and_timeout_requeue_same_job_without_advancing) ... ok\ntest_requeue_failure_is_not_silently_successful (test_internal_m_learned_use_v3.LauncherExecutionTests.test_requeue_failure_is_not_silently_successful) ... ok\ntest_success_executes_with_literal_arm_argument (test_internal_m_learned_use_v3.LauncherExecutionTests.test_success_executes_with_literal_arm_argument) ... ok\ntest_action_hold_zero_and_physical_candidate_tie_order (test_internal_m_learned_use_v3.LearnedUseArithmeticTests.test_action_hold_zero_and_physical_candidate_tie_order) ... ok\ntest_feature_columns_full_axis_and_no_direct_internal_mass (test_internal_m_learned_use_v3.LearnedUseArithmeticTests.test_feature_columns_full_axis_and_no_direct_internal_mass) ... ok\ntest_joint_content_and_head_vjp_matches_direct_autograd (test_internal_m_learned_use_v3.LearnedUseArithmeticTests.test_joint_content_and_head_vjp_matches_direct_autograd) ... ok\ntest_original_cost1_both_label_types_and_tie_derivative (test_internal_m_learned_use_v3.LearnedUseArithmeticTests.test_original_cost1_both_label_types_and_tie_derivative) ... ok\ntest_shared_warm_start_identical_predictions_for_all_heads (test_internal_m_learned_use_v3.LearnedUseArithmeticTests.test_shared_warm_start_identical_predictions_for_all_heads) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 16.248s\n\nOK\n",
+  "bindings": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_internal_m_learned_use_v3.py",
+      "sha256": "ad8679b8639f2eaf2274f418956f1c75ca88733734b5dbb424ca47f310b6d9a6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_internal_m_learned_use_v3.py",
+      "sha256": "61b5581f3d52e34aec9e737934062605adb0ef512b932c1fa38ae2a1da39dec0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+      "sha256": "e213a813b9eea895e84d313de4068da34393cbfb6095cdec33ecbe99eb89c5a8"
+    }
+  ],
+  "scope": "Synthetic fullC128 arithmetic, joint VJP, shared graph, checkpoint resume, pilot recovery, real-shell launcher; no held labels or actual 7B forward"
+}

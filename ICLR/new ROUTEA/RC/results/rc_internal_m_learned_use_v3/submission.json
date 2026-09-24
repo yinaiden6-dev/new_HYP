@@ -1,0 +1,53 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_learned_use_v3_authority_20260924.json",
+    "sha256": "7c3e6066c760d3cdb3a838a07b138fadef190a601169970c9ea22f8a267b6fb1"
+  },
+  "git_receipt": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/prior_round_github_receipt.json",
+    "sha256": "11a3fb09eed771c49d0666b28f031216f47c77d9eb3f0cafc851fd7bf45f3450"
+  },
+  "submitted_utc": "2026-09-24T07:25:34.319280+00:00",
+  "jobs": [
+    {
+      "stage": "cpu",
+      "arm": "",
+      "job_id": "5161636",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly,dev_cpuonly",
+        "--gres=none",
+        "--mem=32G",
+        "--job-name=cn_Muse3_cpu",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+        "cpu",
+        ""
+      ],
+      "launcher": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+        "sha256": "e213a813b9eea895e84d313de4068da34393cbfb6095cdec33ecbe99eb89c5a8"
+      }
+    },
+    {
+      "stage": "pilot",
+      "arm": "PRE_REAL",
+      "job_id": "5161637",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161636",
+        "--job-name=cn_Muse3_pilot",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+        "pilot",
+        "PRE_REAL"
+      ],
+      "launcher": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+        "sha256": "e213a813b9eea895e84d313de4068da34393cbfb6095cdec33ecbe99eb89c5a8"
+      }
+    }
+  ],
+  "status": "CPU_AND_DEPENDENT_GPU_PILOT_SUBMITTED"
+}

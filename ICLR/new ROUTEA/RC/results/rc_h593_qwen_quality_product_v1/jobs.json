@@ -1,0 +1,26 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_qwen_quality_product_authority_v1_20260924.json",
+    "sha256": "9b7ac71432fc5b4b1c9fe74909f3ebcb84251d36e8906817bfee09798a8bec7e"
+  },
+  "fit_job": "5161651",
+  "fit_command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-4%5",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_qwen_quality_product_v1.sbatch",
+    "fit"
+  ],
+  "new_fits": 10,
+  "max_parallel_folds": 5,
+  "gpu_jobs": 0,
+  "status": "FIT_AND_JOIN_SUBMITTED",
+  "join_job": "5161652",
+  "join_command": [
+    "sbatch",
+    "--parsable",
+    "--dependency=afterok:5161651",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_qwen_quality_product_v1.sbatch",
+    "join"
+  ]
+}

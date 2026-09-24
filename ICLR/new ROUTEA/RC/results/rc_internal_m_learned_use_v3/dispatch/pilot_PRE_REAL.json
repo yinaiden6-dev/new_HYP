@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "stage": "train",
+      "arm": "PRE_CONSTANT",
+      "job_id": "5161638",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161637",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+        "train",
+        "PRE_CONSTANT"
+      ]
+    },
+    {
+      "stage": "train",
+      "arm": "PRE_REAL",
+      "job_id": "5161639",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161637",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+        "train",
+        "PRE_REAL"
+      ]
+    },
+    {
+      "stage": "summarize",
+      "arm": "",
+      "job_id": "5161640",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--gres=none",
+        "--mem=16G",
+        "--dependency=afterok:5161638:5161639",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch",
+        "summarize",
+        ""
+      ]
+    }
+  ]
+}
