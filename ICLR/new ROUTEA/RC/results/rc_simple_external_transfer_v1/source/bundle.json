@@ -1,0 +1,70 @@
+{
+  "status": "SIMPLE_SOURCE_HEADS_FROZEN_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_simple_external_transfer_authority_v1_20260924.json",
+    "sha256": "07b5414c64e692ccdb7f66f871501eb9bc60d08233212fa1547b3aa16c7fd386"
+  },
+  "primary": "MASS5",
+  "control": "ADDITIVE4",
+  "native_reference": "NATIVE7",
+  "heads": {
+    "NATIVE7": {
+      "head": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_simple_external_transfer_v1/source/NATIVE7/head.json",
+        "sha256": "1d4a455dceac3cbf5dd954f37ad8d9a233cc9cb84f46b11071f80b557e9e20be"
+      },
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_simple_external_transfer_v1/source/NATIVE7/validation.json",
+        "sha256": "4925d33c3421eba0b3723491e5586885fc922f5a01299927e65019aaba11c31f"
+      }
+    },
+    "MASS5": {
+      "head": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_simple_external_transfer_v1/source/MASS5/head.json",
+        "sha256": "399b4325b00ec11de36cb2232ecdef2643e747434987c4d84ae92d88c1679a8e"
+      },
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_simple_external_transfer_v1/source/MASS5/validation.json",
+        "sha256": "6f137fe8cd4d29bb1c0e5a0e7fd34f359c6a04af97530f5c4b57d99b9c775558"
+      }
+    },
+    "ADDITIVE4": {
+      "head": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_simple_external_transfer_v1/source/ADDITIVE4/head.json",
+        "sha256": "10f27859743362abbba8b1f1e97fd7744a7a0eab239ac904059c435196bbd325"
+      },
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_simple_external_transfer_v1/source/ADDITIVE4/validation.json",
+        "sha256": "e510bd3b1fff94111aa39ceba9f4012e2ca47c3d4ffd7ef1b47a6640318134ca"
+      }
+    }
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_simple_external_source_freeze_v1.py",
+    "sha256": "0207eccde4056af2f89f48d2599291abcc8504dc8f02b814d118e5ec6a63e725"
+  },
+  "input_manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_simple_external_transfer_v1/source/input_manifest.json",
+    "sha256": "a15d85f9cce4ac5110f51ce4bc38d71f163f1a9b503b44e0530f32dbaebca243"
+  },
+  "protocol": {
+    "loss": "COST1",
+    "optimizer": "AdamW",
+    "lr": 0.03,
+    "weight_decay": 0.001,
+    "steps": 2000,
+    "initialization": "zero",
+    "checkpoint": "final",
+    "dtype": "float64",
+    "threads": 8,
+    "source_queries": 593,
+    "eligible_target_present": 570,
+    "excluded_target_absent": 23,
+    "threshold": 0.0,
+    "source_recipe": "legacy all-H593 external COST1 freeze"
+  },
+  "native_theta_and_source_logits_exact_legacy_parity": true,
+  "external_queries_read": 0,
+  "frozen_before_external_predictions": true,
+  "source_fit_not_OOF": true
+}

@@ -1,0 +1,76 @@
+{
+  "status": "INTERNAL_M_PILOT_AUTHORIZED",
+  "user_authorization": "2026-09-24 开始第一种改造方式; 也加在其他地方做对照",
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_prellm_m_pilot_v1.py",
+      "sha256": "c45c92ccd16c5f6a50b72a934233641d8a02084f3eef91df8823bc24f90f9f9e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prepare_rc_prellm_m_v1.py",
+      "sha256": "9a70a3438574ac793c4254a140d44cbe1ed3b99b8f1f82742b660444e45e184a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_join_v1.py",
+      "sha256": "9621f6e3518ca06b8d12068214e3c21913b8fd25f4cf3780bb8315b3a36e1db2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_prellm_m_adapter_v1.py",
+      "sha256": "cb559751a5da511763bcc841e70b5a04816cd52acd4615ee029ded14c719e6da"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_COLNOMIC_INTERNAL_M_PILOT_V1_20260924.md",
+      "sha256": "0d0382006fbfede6872797d72301cf3b3bbc72b9a1017e011c975e025a1cb400"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v1.sbatch",
+      "sha256": "fd4c3b8dcc21850a529f3faa183ddbf464302a956dffe399f3729a094e552daa"
+    }
+  ],
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v1/input_manifest.json",
+    "sha256": "a788f82954ca68d713bba8fce91b76b806f85f222a2db58e507c2a3facb98054"
+  },
+  "arms": [
+    "PRE_REAL",
+    "PRE_CONSTANT",
+    "POST_REAL",
+    "POST_CONSTANT"
+  ],
+  "fold": 0,
+  "train_count": 16,
+  "probe_count": 8,
+  "candidates": 128,
+  "epochs": 1,
+  "updates": 16,
+  "seed": 17,
+  "bottleneck": 16,
+  "residual_scale": 0.1,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.001,
+  "clip_norm": 1.0,
+  "model": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+  "conditioning": "TRAIN-only log M standardized; constant z=0",
+  "selection": "Fixed terminal update; no probe model selection",
+  "dtype": {
+    "backbone": "bfloat16",
+    "adapter": "float32",
+    "scoring": "float64"
+  },
+  "attention": "sdpa",
+  "use_fast": false,
+  "max_requeues": 16,
+  "output_head": "frozen COST1_REFIT_M1Q0R0, original fold0 full TRAIN",
+  "source_parity": {
+    "mean_cosine_min": 0.999,
+    "max_content_error": 0.005,
+    "action_exact": true
+  },
+  "cache_parity_atol": 1e-06,
+  "new_roma_forwards": 0,
+  "scope": "16 TRAIN adapter feasibility and 8 opened outer-held probes; not generalization confirmation"
+}

@@ -1,0 +1,85 @@
+{
+  "status": "LAUNCHER_BRANCH_EXECUTION_PASS",
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v1.sbatch",
+    "sha256": "fd4c3b8dcc21850a529f3faa183ddbf464302a956dffe399f3729a094e552daa"
+  },
+  "checks": [
+    {
+      "exit_in": 0,
+      "restarts": 0,
+      "exit_out": 0,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v1.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ],
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v1.py",
+          "advance-fit",
+          "--arm",
+          "PRE_REAL"
+        ]
+      ]
+    },
+    {
+      "exit_in": 75,
+      "restarts": 0,
+      "exit_out": 0,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v1.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ],
+        [
+          "requeue",
+          "999999"
+        ]
+      ]
+    },
+    {
+      "exit_in": 75,
+      "restarts": 16,
+      "exit_out": 75,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v1.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ]
+      ]
+    },
+    {
+      "exit_in": 1,
+      "restarts": 0,
+      "exit_out": 1,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v1.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ]
+      ]
+    }
+  ],
+  "real_jobs_submitted": 0
+}

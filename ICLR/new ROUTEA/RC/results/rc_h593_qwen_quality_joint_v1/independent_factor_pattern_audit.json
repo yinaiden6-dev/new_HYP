@@ -1,0 +1,136 @@
+{
+  "status": "INDEPENDENT_QWEN_QUALITY_FACTOR_PATTERN_READOUT",
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_qwen_quality_joint_v1/result.json",
+    "sha256": "e3915b914695376694eeab56e2b655bc662bf1049447bf0a016e6520808f631e"
+  },
+  "independent_audit": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_qwen_quality_joint_v1/independent_result_audit.json",
+    "sha256": "b41578253028f45f3ce7637da035a9eda025f454c4fd21b812ba15ba1f724d47"
+  },
+  "all_reported_statistics_previously_independently_recomputed": true,
+  "arm_pairs": {
+    "CE_QWEN3__to__CE_QWEN_L4": {
+      "changed": 2,
+      "changes": [
+        {
+          "query_id": "H593-89f858095a471767364e3a86",
+          "fold": 3,
+          "before_correct": false,
+          "after_correct": false
+        },
+        {
+          "query_id": "H593-c311ba2ac614da95fb3ed97e",
+          "fold": 2,
+          "before_correct": false,
+          "after_correct": false
+        }
+      ],
+      "correctness_changed": 0
+    },
+    "CE_QWEN_M4__to__CE_QWEN_ML5": {
+      "changed": 0,
+      "changes": [],
+      "correctness_changed": 0
+    },
+    "COST1_QWEN3__to__COST1_QWEN_L4": {
+      "changed": 1,
+      "changes": [
+        {
+          "query_id": "H593-526854f7b33d3ad6e1521409",
+          "fold": 1,
+          "before_correct": true,
+          "after_correct": false
+        }
+      ],
+      "correctness_changed": 1
+    },
+    "COST1_QWEN_M4__to__COST1_QWEN_ML5": {
+      "changed": 1,
+      "changes": [
+        {
+          "query_id": "H593-514ffff2eed103b274b1a789",
+          "fold": 4,
+          "before_correct": false,
+          "after_correct": false
+        }
+      ],
+      "correctness_changed": 0
+    }
+  },
+  "secondary_comparisons": {
+    "COST1_QWEN3__to__COST1_QWEN_ML5": {
+      "rescue": 30,
+      "breaks": 3,
+      "net": 27,
+      "changed": 48,
+      "baseline_correct": 477,
+      "baseline_correct_loss_rate": 0.006289308176100629,
+      "components": 64,
+      "component_balanced_delta": 0.05034673889223522,
+      "component_balanced_bootstrap95": [
+        0.021608922091746082,
+        0.08651551168526123
+      ],
+      "query_weighted_delta": 0.045531197301854974,
+      "query_weighted_cluster_bootstrap95": [
+        0.021351933503085407,
+        0.07407559948746108
+      ]
+    },
+    "RAW__to__COST1_QWEN_ML5": {
+      "rescue": 78,
+      "breaks": 0,
+      "net": 78,
+      "changed": 96,
+      "baseline_correct": 426,
+      "baseline_correct_loss_rate": 0.0,
+      "components": 64,
+      "component_balanced_delta": 0.15608614858385078,
+      "component_balanced_bootstrap95": [
+        0.10386515152025262,
+        0.21188107274159662
+      ],
+      "query_weighted_delta": 0.1315345699831366,
+      "query_weighted_cluster_bootstrap95": [
+        0.09294104991394149,
+        0.17625929764662845
+      ]
+    },
+    "RAW__to__CE_QWEN_ML5": {
+      "rescue": 117,
+      "breaks": 7,
+      "net": 110,
+      "changed": 153,
+      "baseline_correct": 426,
+      "baseline_correct_loss_rate": 0.01643192488262911,
+      "components": 64,
+      "component_balanced_delta": 0.2165009737505142,
+      "component_balanced_bootstrap95": [
+        0.15023086929537988,
+        0.2883576879679246
+      ],
+      "query_weighted_delta": 0.18549747048903878,
+      "query_weighted_cluster_bootstrap95": [
+        0.1319864993098689,
+        0.2464683689388392
+      ]
+    }
+  },
+  "primary_fold_net_vs_qwen": {
+    "0": -2,
+    "1": 11,
+    "2": 2,
+    "3": 0,
+    "4": 2
+  },
+  "secondary_fold_net_vs_qwen": {
+    "0": 5,
+    "1": 9,
+    "2": 4,
+    "3": 1,
+    "4": 8
+  },
+  "primary_kept": "CE_QWEN_ML5, intervals still include zero",
+  "secondary_scope": "COST1 result is predeclared secondary; zero RAW breaks is an observed panel result, not a guarantee"
+}

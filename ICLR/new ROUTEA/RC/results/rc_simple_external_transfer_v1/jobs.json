@@ -1,0 +1,104 @@
+{
+  "authority": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_simple_external_transfer_authority_v1_20260924.json",
+  "authorized_task": 2,
+  "submitted": [
+    {
+      "job_id": "5161444",
+      "name": "simp_src",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=simp_src",
+        "--partition=cpuonly,dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_transfer_v1.sbatch",
+        "source",
+        "fit"
+      ],
+      "dependencies": []
+    },
+    {
+      "job_id": "5161445",
+      "name": "simp_inputs",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=simp_inputs",
+        "--partition=cpuonly,dev_cpuonly",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_transfer_v1.sbatch",
+        "replay",
+        "preflight-all"
+      ],
+      "dependencies": []
+    },
+    {
+      "job_id": "5161446",
+      "name": "simp_pilot",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=simp_pilot",
+        "--array=0,60%2",
+        "--dependency=afterok:5161444:5161445",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_transfer_v1.sbatch",
+        "replay",
+        "array"
+      ],
+      "dependencies": [
+        "5161444",
+        "5161445"
+      ]
+    },
+    {
+      "job_id": "5161447",
+      "name": "simp_replay",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=simp_replay",
+        "--array=1-59,61-127%32",
+        "--dependency=afterok:5161446",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_transfer_v1.sbatch",
+        "replay",
+        "array"
+      ],
+      "dependencies": [
+        "5161446"
+      ]
+    },
+    {
+      "job_id": "5161448",
+      "name": "simp_join",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=simp_join",
+        "--dependency=afterok:5161447",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_transfer_v1.sbatch",
+        "replay",
+        "join"
+      ],
+      "dependencies": [
+        "5161447"
+      ]
+    },
+    {
+      "job_id": "5161449",
+      "name": "simp_verify",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=simp_verify",
+        "--dependency=afterok:5161448",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_transfer_v1.sbatch",
+        "replay",
+        "verify"
+      ],
+      "dependencies": [
+        "5161448"
+      ]
+    }
+  ],
+  "created_unix": 1790230964.6101503,
+  "status": "TASK2_DAG_SUBMITTED_NOT_RESULTS",
+  "completion_job": "5161449"
+}

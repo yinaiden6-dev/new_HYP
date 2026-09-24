@@ -1,0 +1,24 @@
+{
+  "status": "ACTUAL_7B_BOTH_LOCATIONS_GRAD_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_prellm_m_adapter_authority_v2_20260924.json",
+    "sha256": "ff3538b8d8f4281c9f082db96a310261280d6edf7aabf7702fba8738ba919451"
+  },
+  "query_id": "H593-b06273e75d64a6537f0ba426",
+  "checks": [
+    {
+      "location": "prellm",
+      "gradient_norm": 0.003136389803094177,
+      "peak_cuda_bytes": 19583459840,
+      "image_tokens": 768
+    },
+    {
+      "location": "postllm",
+      "gradient_norm": 0.0007961947215414782,
+      "peak_cuda_bytes": 19583459840,
+      "image_tokens": 768
+    }
+  ],
+  "fitting_updates": 0,
+  "diagnostic": "Negative full-reference content for fixed position0; trial modules discarded"
+}

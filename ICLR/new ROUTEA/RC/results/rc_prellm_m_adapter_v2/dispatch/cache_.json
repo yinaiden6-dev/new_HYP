@@ -1,0 +1,117 @@
+{
+  "jobs": [
+    {
+      "stage": "fit",
+      "arm": "PRE_REAL",
+      "job_id": "5161428",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161427",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "fit",
+        "PRE_REAL"
+      ]
+    },
+    {
+      "stage": "predict",
+      "arm": "PRE_REAL",
+      "job_id": "5161429",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161428",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "predict",
+        "PRE_REAL"
+      ]
+    },
+    {
+      "stage": "fit",
+      "arm": "PRE_CONSTANT",
+      "job_id": "5161430",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161427",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "fit",
+        "PRE_CONSTANT"
+      ]
+    },
+    {
+      "stage": "predict",
+      "arm": "PRE_CONSTANT",
+      "job_id": "5161431",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161430",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "predict",
+        "PRE_CONSTANT"
+      ]
+    },
+    {
+      "stage": "fit",
+      "arm": "POST_REAL",
+      "job_id": "5161432",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161427",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "fit",
+        "POST_REAL"
+      ]
+    },
+    {
+      "stage": "predict",
+      "arm": "POST_REAL",
+      "job_id": "5161433",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161432",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "predict",
+        "POST_REAL"
+      ]
+    },
+    {
+      "stage": "fit",
+      "arm": "POST_CONSTANT",
+      "job_id": "5161434",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161427",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "fit",
+        "POST_CONSTANT"
+      ]
+    },
+    {
+      "stage": "predict",
+      "arm": "POST_CONSTANT",
+      "job_id": "5161435",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--dependency=afterok:5161434",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+        "predict",
+        "POST_CONSTANT"
+      ]
+    }
+  ],
+  "complete": true
+}

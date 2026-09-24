@@ -1,0 +1,31 @@
+{
+  "job_id": "5161411",
+  "partition": "dev_accelerated",
+  "gpu": 1,
+  "cpu": 8,
+  "memory_requested": "64G",
+  "time_limit": "00:10:00",
+  "stage": "cache",
+  "scheduler_state_at_submit_verification": "PENDING",
+  "reason": "None",
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v1.sbatch",
+    "sha256": "fd4c3b8dcc21850a529f3faa183ddbf464302a956dffe399f3729a094e552daa"
+  },
+  "submitted_spool": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v1/submitted_5161411.sbatch",
+    "sha256": "fd4c3b8dcc21850a529f3faa183ddbf464302a956dffe399f3729a094e552daa"
+  },
+  "spool_byte_equal": true,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_prellm_m_adapter_authority_v1_20260924.json",
+    "sha256": "a1d0e913fe0fa19d2ce46316ec8ccf814bbb4eb8854258a3364d84ad10645256"
+  },
+  "after_cache": "four fitting arms on accelerated; prediction jobs afterok each fit; CPU independent join",
+  "maximum_requeues": 16,
+  "scientific_result_available": false,
+  "last_verified_state": "RUNNING",
+  "last_verified_elapsed": "00:00:43",
+  "node": "hkn0401",
+  "model_source_hashes_pass": true
+}

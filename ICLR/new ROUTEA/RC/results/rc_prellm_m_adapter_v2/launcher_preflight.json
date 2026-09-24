@@ -1,0 +1,105 @@
+{
+  "status": "LAUNCHER_BRANCH_EXECUTION_PASS",
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_prellm_m_pilot_v2.sbatch",
+    "sha256": "d66526dd298cb68398394c67f55eb0722d4fe90bd81d364c978a367548b826b2"
+  },
+  "checks": [
+    {
+      "exit_in": 0,
+      "restarts": 0,
+      "exit_out": 0,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v2.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ],
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v2.py",
+          "advance-fit",
+          "--arm",
+          "PRE_REAL"
+        ]
+      ]
+    },
+    {
+      "exit_in": 75,
+      "restarts": 0,
+      "exit_out": 0,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v2.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ],
+        [
+          "requeue",
+          "999999"
+        ]
+      ]
+    },
+    {
+      "exit_in": 124,
+      "restarts": 0,
+      "exit_out": 0,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v2.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ],
+        [
+          "requeue",
+          "999999"
+        ]
+      ]
+    },
+    {
+      "exit_in": 75,
+      "restarts": 16,
+      "exit_out": 75,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v2.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ]
+      ]
+    },
+    {
+      "exit_in": 1,
+      "restarts": 0,
+      "exit_out": 1,
+      "calls": [
+        [
+          "-u",
+          "programs/run_rc_prellm_m_pilot_v2.py",
+          "fit",
+          "--arm",
+          "PRE_REAL",
+          "--budget",
+          "400"
+        ]
+      ]
+    }
+  ],
+  "real_jobs_submitted": 0
+}

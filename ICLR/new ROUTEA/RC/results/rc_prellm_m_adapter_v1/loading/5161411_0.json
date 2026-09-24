@@ -1,0 +1,155 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_prellm_m_adapter_authority_v1_20260924.json",
+    "sha256": "a1d0e913fe0fa19d2ce46316ec8ccf814bbb4eb8854258a3364d84ad10645256"
+  },
+  "report": {
+    "status": "STRICT_LOCAL_COLNOMIC_WEIGHTS_PASS",
+    "loader": "explicit base key mapping plus local PEFT get_peft_model and set_peft_model_state_dict",
+    "base_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base",
+    "adapter_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+    "sources": [
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/config.json",
+        "sha256": "fcf7636197a793fef485bd846052cb4a04a5452e9457d35cdb9f27b0b816cd80"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model.safetensors.index.json",
+        "sha256": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_config.json",
+        "sha256": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c"
+      }
+    ],
+    "weight_hashes_verified_here": false,
+    "weight_file_stats": [
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00001-of-00007.safetensors",
+        "device": 50,
+        "inode": 285291781,
+        "size": 4952311608,
+        "mtime_ns": 1778003730336771163
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00002-of-00007.safetensors",
+        "device": 50,
+        "inode": 285291778,
+        "size": 4984124272,
+        "mtime_ns": 1778003727313103728
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00003-of-00007.safetensors",
+        "device": 50,
+        "inode": 285291780,
+        "size": 4932743936,
+        "mtime_ns": 1778003725543768292
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00004-of-00007.safetensors",
+        "device": 50,
+        "inode": 285291782,
+        "size": 4998852296,
+        "mtime_ns": 1778003725937516735
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00005-of-00007.safetensors",
+        "device": 50,
+        "inode": 285291788,
+        "size": 4984124336,
+        "mtime_ns": 1778003727557491745
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00006-of-00007.safetensors",
+        "device": 50,
+        "inode": 285291796,
+        "size": 4932743992,
+        "mtime_ns": 1778003727226618178
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00007-of-00007.safetensors",
+        "device": 50,
+        "inode": 285291798,
+        "size": 3385682488,
+        "mtime_ns": 1778003725566737873
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_model.safetensors",
+        "device": 50,
+        "inode": 777080420,
+        "size": 323489536,
+        "mtime_ns": 1778003664506585399
+      }
+    ],
+    "base_key_mapping": {
+      "^model\\.embed_tokens\\.": "language_model.embed_tokens.",
+      "^model\\.norm\\.": "language_model.norm.",
+      "^model\\.layers\\.": "language_model.layers.",
+      "^model\\.language_model\\.": "language_model.",
+      "^model\\.visual\\.": "visual."
+    },
+    "base_missing_keys": [],
+    "base_unused_keys": [
+      "lm_head.weight"
+    ],
+    "adapter_source_tensor_count": 394,
+    "adapter_loaded_tensor_count": 394,
+    "adapter_tensor_value_parity": true,
+    "adapter_dtype": [
+      "torch.bfloat16"
+    ],
+    "adapter_source_dtype": [
+      "torch.float32"
+    ],
+    "modules_to_save": null,
+    "backbone_dtype": "torch.bfloat16",
+    "attention": "sdpa",
+    "trainable_parameters": 0,
+    "versions": {
+      "torch": "2.9.1",
+      "transformers": "5.6.2",
+      "peft": "0.18.1",
+      "colpali-engine": "0.3.15"
+    },
+    "processor_use_fast": false,
+    "processor_class": "ColQwen2_5_Processor",
+    "processor_sources": [
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/added_tokens.json",
+        "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/chat_template.json",
+        "sha256": "94174d7176c52a7192f96fc34eb2cf23c7c2059d63cdbfadca1586ba89731fb7"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/preprocessor_config.json",
+        "sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/processor_config.json",
+        "sha256": "67abb3983388156ccd44dd31d1ad75bb45b94c3d25b94fe2b178028ea3e0b60c"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/results.json",
+        "sha256": "9ee575664d95a0ba19fe2344ee6e100a5d2589b724ef3825db4781ecd3811bd4"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/special_tokens_map.json",
+        "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/tokenizer.json",
+        "sha256": "5eee858c5123a4279c3e1f7b81247343f356ac767940b2692a928ad929543214"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/tokenizer_config.json",
+        "sha256": "8cf7beeb5bffaaf7347b6d6ebf2f5c114ca75ab0c6d62ab6e6f19fafbd70cb7d"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    ]
+  }
+}

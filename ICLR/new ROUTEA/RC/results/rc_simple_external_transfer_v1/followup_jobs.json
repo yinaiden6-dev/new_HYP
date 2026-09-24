@@ -1,0 +1,63 @@
+{
+  "task_order": [
+    2,
+    3,
+    1
+  ],
+  "status": "DEPENDENCY_CHAIN_SUBMITTED_NOT_RESULTS",
+  "submitted": [
+    {
+      "job_id": "5161484",
+      "name": "simp_audit",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=simp_audit",
+        "--dependency=afterok:5161449",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_independent_audit_v1.sbatch"
+      ]
+    },
+    {
+      "job_id": "5161485",
+      "name": "h593_qjoint",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=h593_qjoint",
+        "--array=0-4%5",
+        "--dependency=afterok:5161484",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_qwen_quality_joint_v1.sbatch",
+        "fit"
+      ]
+    },
+    {
+      "job_id": "5161486",
+      "name": "h593_qjoin",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=h593_qjoin",
+        "--dependency=afterok:5161485",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_qwen_quality_joint_v1.sbatch",
+        "join"
+      ]
+    }
+  ],
+  "code": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_simple_external_transfer_v1.py",
+      "sha256": "b6e98a8a60ad57b96120fc0eed3b73e9dd90ab5a64be48f93ee1283c0d308852"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_simple_external_independent_audit_v1.sbatch",
+      "sha256": "54bf572b517820c407da7d0a7ed819c14e34a0905194fee0f833f43f33bbc2c7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_h593_qwen_quality_joint_v1.sbatch",
+      "sha256": "151bc5a5399ddf5fdc1d5549b742bd33980245e6f1f1980bb7d231cbe57fd33c"
+    }
+  ],
+  "task2_independent_audit_job": "5161484",
+  "task3_fit_job": "5161485",
+  "task3_join_job": "5161486"
+}

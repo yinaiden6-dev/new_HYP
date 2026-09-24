@@ -1,0 +1,36 @@
+{
+  "status": "INTERNAL_M_PILOT_NUMPY_IDENTITY_JOIN_PASS",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_prellm_m_adapter_authority_v2_20260924.json",
+    "sha256": "ff3538b8d8f4281c9f082db96a310261280d6edf7aabf7702fba8738ba919451"
+  },
+  "result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/result.json",
+    "sha256": "ee61d4e3abfb9d82375811d7046040ed9c65596f2001d613e660db3a6b47bdb3"
+  },
+  "prelabel_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/independent_prelabel_validation.json",
+    "sha256": "14463beec5cb1dc0fe4ae18274f4d35a939325d4fedad341e40346c6d3b37375"
+  },
+  "queries": 24,
+  "train": 16,
+  "probe": 8,
+  "grouping": {
+    "full_fold_train_components": 51,
+    "selected_train_components": 16,
+    "probe_components": 6,
+    "probe_groups": 6,
+    "probe_group_metadata_count": 8,
+    "group_disjoint_checked_where_available": true,
+    "component_identity_disjoint": true
+  },
+  "max_numpy_error": 1.0658141036401503e-14,
+  "tolerance": 1e-10,
+  "all_predictions_sealed_and_verified_before_held_labels": true,
+  "all128_L_and_all127_logits_saved": true,
+  "identity_correctness": true,
+  "frozen_head": true,
+  "fixed_terminal_checkpoint": true,
+  "external_GO": false,
+  "generalization_confirmed": false
+}
