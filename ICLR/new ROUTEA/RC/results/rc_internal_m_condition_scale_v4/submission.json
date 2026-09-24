@@ -1,0 +1,53 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_condition_scale_v4_authority_20260924.json",
+    "sha256": "6edb7e2e89524112e83148886f799b89106428ecc6dd05c1ede2c945d7d896f4"
+  },
+  "git_receipt": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/prior_round_github_receipt.json",
+    "sha256": "cf286f0a8e5db965ecd2bee947dfbd6c456e4e8892128153d3f5f971445cb962"
+  },
+  "submitted_utc": "2026-09-24T09:27:37.446372+00:00",
+  "jobs": [
+    {
+      "stage": "cpu",
+      "arm": "",
+      "job_id": "5161817",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly,dev_cpuonly",
+        "--gres=none",
+        "--mem=32G",
+        "--job-name=cn_Mscale4_cpu",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+        "cpu",
+        ""
+      ],
+      "launcher": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+        "sha256": "1d1d712c602d106d7581554d9e05f81aea68486a9ac9e2f5e6a9b56188400915"
+      }
+    },
+    {
+      "stage": "pilot",
+      "arm": "PRE_REAL",
+      "job_id": "5161818",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_accelerated,accelerated",
+        "--dependency=afterok:5161817",
+        "--job-name=cn_Mscale4_pilot",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+        "pilot",
+        "PRE_REAL"
+      ],
+      "launcher": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+        "sha256": "1d1d712c602d106d7581554d9e05f81aea68486a9ac9e2f5e6a9b56188400915"
+      }
+    }
+  ],
+  "status": "CPU_AND_DEPENDENT_GPU_PILOT_SUBMITTED"
+}

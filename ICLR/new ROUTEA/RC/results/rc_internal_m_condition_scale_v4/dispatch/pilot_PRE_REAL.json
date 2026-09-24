@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "stage": "train",
+      "arm": "PRE_REAL",
+      "job_id": "5161827",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_accelerated,accelerated",
+        "--dependency=afterok:5161818",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+        "train",
+        "PRE_REAL"
+      ]
+    },
+    {
+      "stage": "train",
+      "arm": "PRE_SHUFFLED",
+      "job_id": "5161828",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_accelerated,accelerated",
+        "--dependency=afterok:5161818",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+        "train",
+        "PRE_SHUFFLED"
+      ]
+    },
+    {
+      "stage": "summarize",
+      "arm": "",
+      "job_id": "5161829",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly,cpuonly",
+        "--gres=none",
+        "--mem=16G",
+        "--dependency=afterok:5161827:5161828",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+        "summarize",
+        ""
+      ]
+    }
+  ]
+}

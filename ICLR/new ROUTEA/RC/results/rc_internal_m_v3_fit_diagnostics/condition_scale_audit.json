@@ -1,0 +1,2379 @@
+{
+  "status": "V3_CONDITION_SCALE_READONLY_AUDIT_PASS",
+  "evidence_level": "Opened TRAIN16 fit diagnostic only",
+  "runtime": {
+    "torch_version": "2.9.1+cu128",
+    "threads": 1,
+    "device": "cpu",
+    "backbone_forwards": 0,
+    "image_reads": 0,
+    "encoder_cache_reads": 0,
+    "reference_token_reads": 0,
+    "held_label_reads": 0
+  },
+  "endpoint_native": {
+    "PRE_REAL": {
+      "queries": 16,
+      "correct": 8,
+      "switches": 0,
+      "head": [
+        -0.1272506573061705,
+        25.04269165846882,
+        -0.5283728933516487
+      ],
+      "mean_cost1": 0.8578355671070997,
+      "target_margin": {
+        "count": 16,
+        "min": -1.218910642935598,
+        "median": 0.2602139604921827,
+        "max": 2.7384164667324327,
+        "mean": 0.4837670986027103,
+        "rms": 1.2011072093860933
+      },
+      "wrong_target_margin": {
+        "count": 8,
+        "min": -1.218910642935598,
+        "median": -0.36953230793327574,
+        "max": -0.18638241804242128,
+        "mean": -0.47657498711323004,
+        "rms": 0.5636147398076002
+      }
+    },
+    "PRE_CONSTANT": {
+      "queries": 16,
+      "correct": 8,
+      "switches": 0,
+      "head": [
+        -0.1212243382293643,
+        25.08420682760691,
+        -0.5334521318141019
+      ],
+      "mean_cost1": 0.8419840404477844,
+      "target_margin": {
+        "count": 16,
+        "min": -1.1470608162734728,
+        "median": 0.2583939211577614,
+        "max": 2.8498754206481487,
+        "mean": 0.5333272720413176,
+        "rms": 1.2361898673760747
+      },
+      "wrong_target_margin": {
+        "count": 8,
+        "min": -1.1470608162734728,
+        "median": -0.34334540492053284,
+        "max": -0.22252032930721113,
+        "mean": -0.44035895477164766,
+        "rms": 0.5242326362470756
+      }
+    }
+  },
+  "endpoint_real_interventions": {
+    "constant": {
+      "queries": 16,
+      "correct": 8,
+      "switches": 0,
+      "head": [
+        -0.1272506573061705,
+        25.04269165846882,
+        -0.5283728933516487
+      ],
+      "mean_cost1": 0.8567127606845959,
+      "target_margin": {
+        "count": 16,
+        "min": -1.2056520356635458,
+        "median": 0.2510527237558657,
+        "max": 2.7312339702598276,
+        "mean": 0.4847937457360108,
+        "rms": 1.200307350530033
+      },
+      "wrong_target_margin": {
+        "count": 8,
+        "min": -1.2056520356635458,
+        "median": -0.36957417246053986,
+        "max": -0.21119746683271168,
+        "mean": -0.4758870256760736,
+        "rms": 0.5596121926432432
+      }
+    },
+    "shuffled": {
+      "queries": 16,
+      "correct": 8,
+      "switches": 0,
+      "head": [
+        -0.1272506573061705,
+        25.04269165846882,
+        -0.5283728933516487
+      ],
+      "mean_cost1": 0.8564160910874521,
+      "target_margin": {
+        "count": 16,
+        "min": -1.206655742985887,
+        "median": 0.2504446875573847,
+        "max": 2.727594162068799,
+        "mean": 0.48477422828856404,
+        "rms": 1.19794366713696
+      },
+      "wrong_target_margin": {
+        "count": 8,
+        "min": -1.206655742985887,
+        "median": -0.3662419390664575,
+        "max": -0.2151974712154769,
+        "mean": -0.4729641788140618,
+        "rms": 0.5576990471200858
+      }
+    }
+  },
+  "paired_endpoint_interventions": {
+    "constant": {
+      "difference_direction": "native real M minus intervention at identical saved adapter and head",
+      "content_delta": {
+        "count": 2048,
+        "min": -0.001224716068930598,
+        "median": -3.6866676525637576e-05,
+        "max": 0.001833002195452904,
+        "mean": -4.1990339653220855e-05,
+        "rms": 0.0003304332585035278
+      },
+      "logit_delta": {
+        "count": 2032,
+        "min": -0.026956446437210013,
+        "median": 0.0006227892960319892,
+        "max": 0.056724801326061,
+        "mean": 0.0008677553230123831,
+        "rms": 0.008553130898885182
+      },
+      "target_margin_delta": {
+        "count": 16,
+        "min": -0.01474250556658735,
+        "median": -0.004165021611949538,
+        "max": 0.024815048790290395,
+        "mean": -0.0010266471333005046,
+        "rms": 0.010106263482328378
+      },
+      "queries_with_larger_native_margin": 6,
+      "prediction_changes": 0,
+      "queries": [
+        {
+          "query_id": "H593-08297e272b0164e6fdd42e9f",
+          "native_minus_intervention_target_margin": 0.00504541150401322,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-174dc7ecf520dfa933141c09",
+          "native_minus_intervention_target_margin": -0.0007789838958732753,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-490d4ed0a2cc29258e504a6a",
+          "native_minus_intervention_target_margin": -0.013258607272052192,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-4c47eaead5712c9295001ec4",
+          "native_minus_intervention_target_margin": 0.013030238099749347,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-5bf76899256100e280a80e1d",
+          "native_minus_intervention_target_margin": -0.006492575317656346,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-64e146b0abb950dce567767c",
+          "native_minus_intervention_target_margin": 0.006519582560605863,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-6a41937f82d722c1bd11db83",
+          "native_minus_intervention_target_margin": 0.0018814337216925825,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-71a8e729bc95ecbd6e4dbc1e",
+          "native_minus_intervention_target_margin": 0.007182496472605049,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-979d4429602e6c4a69aa6724",
+          "native_minus_intervention_target_margin": -0.005327802921108571,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-b06273e75d64a6537f0ba426",
+          "native_minus_intervention_target_margin": -0.0033683607744141586,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-b6cf2130e8541c75b7a0daf3",
+          "native_minus_intervention_target_margin": -0.009098529502174824,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-dd91c965c4987a6f11b4d08b",
+          "native_minus_intervention_target_margin": -0.008141955168163184,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-ddead65d98e659c927cda92c",
+          "native_minus_intervention_target_margin": -0.008729562414249714,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-f42264b44984bda93155507c",
+          "native_minus_intervention_target_margin": -0.01474250556658735,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-fa12d24ad164c3ae3b3f0ff6",
+          "native_minus_intervention_target_margin": 0.024815048790290395,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-faa6074c9997f968c1272a9e",
+          "native_minus_intervention_target_margin": -0.0049616824494849165,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "shuffled": {
+      "difference_direction": "native real M minus intervention at identical saved adapter and head",
+      "content_delta": {
+        "count": 2048,
+        "min": -0.00286589425102457,
+        "median": -4.967547979378706e-06,
+        "max": 0.002886097886147021,
+        "mean": 8.129782220038528e-07,
+        "rms": 0.00037289465769478695
+      },
+      "logit_delta": {
+        "count": 2032,
+        "min": -0.05558054111016819,
+        "median": 0.00010627655551265214,
+        "max": 0.07125132274379575,
+        "mean": 5.775397760056678e-05,
+        "rms": 0.010638438397753644
+      },
+      "target_margin_delta": {
+        "count": 16,
+        "min": -0.022855699563693432,
+        "median": -0.0008028103468712966,
+        "max": 0.028815053173055605,
+        "mean": -0.001007129685853772,
+        "rms": 0.01350461580131498
+      },
+      "queries_with_larger_native_margin": 8,
+      "prediction_changes": 0,
+      "queries": [
+        {
+          "query_id": "H593-08297e272b0164e6fdd42e9f",
+          "native_minus_intervention_target_margin": 0.0033592396731494945,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-174dc7ecf520dfa933141c09",
+          "native_minus_intervention_target_margin": 0.0017779777486136572,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-490d4ed0a2cc29258e504a6a",
+          "native_minus_intervention_target_margin": -0.012254899949710962,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-4c47eaead5712c9295001ec4",
+          "native_minus_intervention_target_margin": 0.02418340979832667,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-5bf76899256100e280a80e1d",
+          "native_minus_intervention_target_margin": -0.009276507303459636,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-64e146b0abb950dce567767c",
+          "native_minus_intervention_target_margin": 0.0008580234868724723,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-6a41937f82d722c1bd11db83",
+          "native_minus_intervention_target_margin": 0.0007287005905399768,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-71a8e729bc95ecbd6e4dbc1e",
+          "native_minus_intervention_target_margin": 0.010822304663633542,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-979d4429602e6c4a69aa6724",
+          "native_minus_intervention_target_margin": -0.0024825930185974343,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-b06273e75d64a6537f0ba426",
+          "native_minus_intervention_target_margin": -0.00233432128428257,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-b6cf2130e8541c75b7a0daf3",
+          "native_minus_intervention_target_margin": -0.011983265680186594,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-dd91c965c4987a6f11b4d08b",
+          "native_minus_intervention_target_margin": -0.018646183554847262,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-ddead65d98e659c927cda92c",
+          "native_minus_intervention_target_margin": 0.0031146636537119354,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-f42264b44984bda93155507c",
+          "native_minus_intervention_target_margin": -0.022855699563693432,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-fa12d24ad164c3ae3b3f0ff6",
+          "native_minus_intervention_target_margin": 0.028815053173055605,
+          "prediction_changed": false
+        },
+        {
+          "query_id": "H593-faa6074c9997f968c1272a9e",
+          "native_minus_intervention_target_margin": -0.009939977406785816,
+          "prediction_changed": false
+        }
+      ]
+    }
+  },
+  "steps": {
+    "PRE_REAL": {
+      "steps": 128,
+      "complete_ordered_passes": 8,
+      "query_order": [
+        "H593-979d4429602e6c4a69aa6724",
+        "H593-5bf76899256100e280a80e1d",
+        "H593-71a8e729bc95ecbd6e4dbc1e",
+        "H593-ddead65d98e659c927cda92c",
+        "H593-b06273e75d64a6537f0ba426",
+        "H593-6a41937f82d722c1bd11db83",
+        "H593-b6cf2130e8541c75b7a0daf3",
+        "H593-4c47eaead5712c9295001ec4",
+        "H593-f42264b44984bda93155507c",
+        "H593-dd91c965c4987a6f11b4d08b",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-faa6074c9997f968c1272a9e",
+        "H593-64e146b0abb950dce567767c",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-490d4ed0a2cc29258e504a6a",
+        "H593-fa12d24ad164c3ae3b3f0ff6"
+      ],
+      "raw_correct_in_order": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "first_eight_correct_next_eight_incorrect": true,
+      "head_initial": [
+        -0.1581809656091234,
+        24.178263874937812,
+        -0.45744478516823506
+      ],
+      "head_after_first_eight": [
+        0.05130113305971478,
+        24.384436562600715,
+        -0.6740586564239397
+      ],
+      "head_after_first_pass": [
+        -0.005636351209184683,
+        24.396087536782023,
+        -0.6299307138066378
+      ],
+      "head_final": [
+        -0.1272506573061705,
+        25.04269165846882,
+        -0.5283728933516487
+      ],
+      "adapter_gradient_norm": {
+        "count": 128,
+        "min": 0.009737291373312473,
+        "median": 0.2149428278207779,
+        "max": 3.038600444793701,
+        "mean": 0.36597576506756013,
+        "rms": 0.5532523697014162
+      },
+      "head_gradient_norm": {
+        "count": 128,
+        "min": 0.1862308211949626,
+        "median": 0.41420648360770523,
+        "max": 4.412774656288122,
+        "mean": 0.7799595066442214,
+        "rms": 1.1242525985225573
+      },
+      "adapter_norm_above_one_steps": 11,
+      "head_norm_above_one_steps": 20,
+      "gradient_forward_error_max": 0.0,
+      "all_adapter_updates_nonzero": true,
+      "all_head_updates_nonzero": true,
+      "decision_switches_before_update": 0,
+      "pass_average_online_loss": [
+        1.0483096263319016,
+        0.9322140810911879,
+        0.9201461040954126,
+        0.921970174988426,
+        0.9102839658439457,
+        0.898268572919948,
+        0.8835871809598603,
+        0.8792882751535587
+      ]
+    },
+    "PRE_CONSTANT": {
+      "steps": 128,
+      "complete_ordered_passes": 8,
+      "query_order": [
+        "H593-979d4429602e6c4a69aa6724",
+        "H593-5bf76899256100e280a80e1d",
+        "H593-71a8e729bc95ecbd6e4dbc1e",
+        "H593-ddead65d98e659c927cda92c",
+        "H593-b06273e75d64a6537f0ba426",
+        "H593-6a41937f82d722c1bd11db83",
+        "H593-b6cf2130e8541c75b7a0daf3",
+        "H593-4c47eaead5712c9295001ec4",
+        "H593-f42264b44984bda93155507c",
+        "H593-dd91c965c4987a6f11b4d08b",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-faa6074c9997f968c1272a9e",
+        "H593-64e146b0abb950dce567767c",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-490d4ed0a2cc29258e504a6a",
+        "H593-fa12d24ad164c3ae3b3f0ff6"
+      ],
+      "raw_correct_in_order": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "first_eight_correct_next_eight_incorrect": true,
+      "head_initial": [
+        -0.1581809656091234,
+        24.178263874937812,
+        -0.45744478516823506
+      ],
+      "head_after_first_eight": [
+        0.05109367913811107,
+        24.384950552497575,
+        -0.6743008118657544
+      ],
+      "head_after_first_pass": [
+        -0.005353827016324321,
+        24.398817028828688,
+        -0.6303783363018026
+      ],
+      "head_final": [
+        -0.1212243382293643,
+        25.08420682760691,
+        -0.5334521318141019
+      ],
+      "adapter_gradient_norm": {
+        "count": 128,
+        "min": 0.007857274264097214,
+        "median": 0.1955685392022133,
+        "max": 1.8063592910766602,
+        "mean": 0.30450113610277185,
+        "rms": 0.43871308123929154
+      },
+      "head_gradient_norm": {
+        "count": 128,
+        "min": 0.13652099239357227,
+        "median": 0.4266520170729688,
+        "max": 4.401965772333674,
+        "mean": 0.7763770692819307,
+        "rms": 1.120613273939861
+      },
+      "adapter_norm_above_one_steps": 6,
+      "head_norm_above_one_steps": 20,
+      "gradient_forward_error_max": 0.0,
+      "all_adapter_updates_nonzero": true,
+      "all_head_updates_nonzero": true,
+      "decision_switches_before_update": 0,
+      "pass_average_online_loss": [
+        1.046742021295346,
+        0.9332061798974784,
+        0.9201656599581827,
+        0.9189444936987917,
+        0.9053368011159101,
+        0.8936767256333444,
+        0.8824665679277969,
+        0.8614925000679384
+      ]
+    }
+  },
+  "condition_scale": {
+    "scope": "PRE_REAL saved traces at steps16,64,128; a single TRAIN image, not all TRAIN16",
+    "measurements": [
+      {
+        "step": 16,
+        "query_id": "H593-fa12d24ad164c3ae3b3f0ff6",
+        "patches": 720,
+        "hidden_size": 3584,
+        "source_dtype": "torch.bfloat16",
+        "trace": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/traces/0016.pt",
+          "sha256": "d4955f30582bc4059cd1979d6f3d9f61ec271b9110574a30c2e26df7424a9f3f",
+          "bytes": 10693785
+        },
+        "checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0016.pt",
+          "sha256": "5252a1e33c0ec18812c8dc8612f11b26a1c32e31b7e9a1684c578575f7b39434",
+          "bytes": 477129
+        },
+        "source_rms": 0.6657522916793823,
+        "content_preactivation_including_bias_rms": 0.8236317038536072,
+        "M_preactivation_over_original_C128_rms": 0.011649100109934807,
+        "M_to_content_preactivation_rms_ratio": 0.014143579048051464,
+        "C128_standardized_mass_min": -2.459110975265503,
+        "C128_standardized_mass_max": 1.7511203289031982,
+        "mass_column_norm": 0.03941410779953003,
+        "trace_candidate_position": 127,
+        "trace_candidate_mass": 0.005856491731732482,
+        "trace_candidate_standardized_mass": -1.5581684112548828,
+        "zero_condition_residual_rms": 0.0005184522597119212,
+        "trace_real_minus_zero_residual_rms": 6.134481282060733e-06,
+        "trace_M_residual_to_zero_condition_residual_rms_ratio": 0.01183229731792348,
+        "trace_bf16_real_minus_zero_injected_tokens_rms": 5.69348776480183e-05,
+        "trace_bf16_real_minus_zero_changed_coordinate_fraction": 0.01338936947286129
+      },
+      {
+        "step": 64,
+        "query_id": "H593-fa12d24ad164c3ae3b3f0ff6",
+        "patches": 720,
+        "hidden_size": 3584,
+        "source_dtype": "torch.bfloat16",
+        "trace": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/traces/0064.pt",
+          "sha256": "4aff709254a86d11001fe26d11780e0e36616375ed352c6eea36726932c2644a",
+          "bytes": 10693785
+        },
+        "checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0064.pt",
+          "sha256": "1af37dc349a4e601a07042d10c05304a46733b4d48ca437e3bbe52bef7514275",
+          "bytes": 477129
+        },
+        "source_rms": 0.6657522916793823,
+        "content_preactivation_including_bias_rms": 4.1130146980285645,
+        "M_preactivation_over_original_C128_rms": 0.01591687835752964,
+        "M_to_content_preactivation_rms_ratio": 0.0038698812248735364,
+        "C128_standardized_mass_min": -2.459110975265503,
+        "C128_standardized_mass_max": 1.7511203289031982,
+        "mass_column_norm": 0.05385391041636467,
+        "trace_candidate_position": 61,
+        "trace_candidate_mass": 0.01069994446436927,
+        "trace_candidate_standardized_mass": -0.5197252035140991,
+        "zero_condition_residual_rms": 0.015148482285439968,
+        "trace_real_minus_zero_residual_rms": 1.6114739992190152e-05,
+        "trace_M_residual_to_zero_condition_residual_rms_ratio": 0.0010637857765908936,
+        "trace_bf16_real_minus_zero_injected_tokens_rms": 0.00016433313430752605,
+        "trace_bf16_real_minus_zero_changed_coordinate_fraction": 0.02361421100795269
+      },
+      {
+        "step": 128,
+        "query_id": "H593-fa12d24ad164c3ae3b3f0ff6",
+        "patches": 720,
+        "hidden_size": 3584,
+        "source_dtype": "torch.bfloat16",
+        "trace": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/traces/0128.pt",
+          "sha256": "1a256d6622c3403dc7e671523c9dc13c3eeffabe0e93ea498d098cf65ba3d79a",
+          "bytes": 10693785
+        },
+        "checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0128.pt",
+          "sha256": "ea0d387bd9f9f73f5908b903f2996531c1fd81c24c1f2aa77cc3710caba64548",
+          "bytes": 477129
+        },
+        "source_rms": 0.6657522916793823,
+        "content_preactivation_including_bias_rms": 8.807076454162598,
+        "M_preactivation_over_original_C128_rms": 0.022920969873666763,
+        "M_to_content_preactivation_rms_ratio": 0.0026025628360286735,
+        "C128_standardized_mass_min": -2.459110975265503,
+        "C128_standardized_mass_max": 1.7511203289031982,
+        "mass_column_norm": 0.07755187898874283,
+        "trace_candidate_position": 125,
+        "trace_candidate_mass": 0.01099595850233324,
+        "trace_candidate_standardized_mass": -0.4727058708667755,
+        "zero_condition_residual_rms": 0.06299197673797607,
+        "trace_real_minus_zero_residual_rms": 4.6659060899401084e-05,
+        "trace_M_residual_to_zero_condition_residual_rms_ratio": 0.000740714346741109,
+        "trace_bf16_real_minus_zero_injected_tokens_rms": 0.00028880935860797763,
+        "trace_bf16_real_minus_zero_changed_coordinate_fraction": 0.04353686049580574
+      }
+    ],
+    "parameter_norms": {
+      "PRE_REAL": {
+        "down.weight": {
+          "initial": 2.316115140914917,
+          "final": 3.2171108722686768,
+          "change": 2.1520583629608154
+        },
+        "down.bias": {
+          "initial": 0.04169517755508423,
+          "final": 0.05295811966061592,
+          "change": 0.06853019446134567
+        },
+        "up.weight": {
+          "initial": 0.0,
+          "final": 1.4132860898971558,
+          "change": 1.4132860898971558
+        },
+        "up.bias": {
+          "initial": 0.0,
+          "final": 0.25567248463630676,
+          "change": 0.25567248463630676
+        },
+        "down_mass_column": {
+          "initial": 0.03892805427312851,
+          "final": 0.07755187898874283,
+          "change": 0.05868823453783989
+        }
+      },
+      "PRE_CONSTANT": {
+        "down.weight": {
+          "initial": 2.316115140914917,
+          "final": 3.3565518856048584,
+          "change": 2.3386013507843018
+        },
+        "down.bias": {
+          "initial": 0.04169517755508423,
+          "final": 0.06416934728622437,
+          "change": 0.07566270232200623
+        },
+        "up.weight": {
+          "initial": 0.0,
+          "final": 1.5769861936569214,
+          "change": 1.5769861936569214
+        },
+        "up.bias": {
+          "initial": 0.0,
+          "final": 0.27151861786842346,
+          "change": 0.27151861786842346
+        },
+        "down_mass_column": {
+          "initial": 0.03892805427312851,
+          "final": 0.03892650455236435,
+          "change": 1.5577950307488209e-06
+        }
+      }
+    },
+    "unique_traced_query_count": 1,
+    "traced_query_ids": [
+      "H593-fa12d24ad164c3ae3b3f0ff6"
+    ],
+    "formulas": {
+      "content": "F.linear(F.layer_norm(source.float(), [3584]), down.weight[:,:-1], down.bias)",
+      "condition": "(log(clamp(M,epsilon)) - saved_log_mean) / saved_log_std",
+      "M_branch": "condition[C128,None] * down.weight[:,-1][None,:]",
+      "residual": "saved_residual_scale * F.linear(gelu(content + condition * mass_column), up.weight, up.bias)",
+      "precision": "FP32 adapter arithmetic; residual cast to saved source dtype before addition"
+    }
+  },
+  "interpretation": {
+    "established": [
+      "Saved traces show a small M preactivation relative to content preactivation for one TRAIN image.",
+      "True-M versus constant/shuffled endpoint interventions change scores but do not change any prediction.",
+      "Saved step records report nonzero adapter/head updates and zero no-grad/VJP replay score discrepancy.",
+      "Training repeatedly presents eight RAW-correct queries followed by eight RAW-incorrect queries."
+    ],
+    "not_established": [
+      "The traced image establishes neither all-TRAIN activation statistics nor a unique failure cause.",
+      "Nonzero intervention effects exclude complete M removal but do not establish useful M use.",
+      "This audit does not identify how much the head schedule, condition scale, or training budget causes failure.",
+      "A proposed fixed condition gain is an untested controlled intervention, not a demonstrated repair."
+    ],
+    "proposed_minimal_intervention": {
+      "condition_gain": 59.86651818838306,
+      "definition": "Multiply the existing standardized M input by fixed sqrt(hidden_size), preserving architecture and output head.",
+      "comparison": "Match initialization, parameters, training schedule and budget across real, constant and fixed within-query shuffled M.",
+      "scope": "TRAIN16 fit and causal-use diagnostic; no generalization claim or requirement to exceed the external head."
+    }
+  },
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_internal_m_v3_condition_scale.py",
+      "sha256": "3594bf541a089acb9e19c95c2e6f0df223ee2521ce1a6fea15fffd0d65de48ce",
+      "bytes": 15500
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-08297e272b0164e6fdd42e9f.json",
+      "sha256": "131f5389b2ff5e532d8e3d3f6f7470cde56064e544d4508aa3ac504a324e80c7",
+      "bytes": 20074
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-174dc7ecf520dfa933141c09.json",
+      "sha256": "3d9cbb76a6beacc613cd8e17ffa5ecb73e2983635e81a4adc9a015a2bde31b61",
+      "bytes": 19825
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-490d4ed0a2cc29258e504a6a.json",
+      "sha256": "da38ffbf85ecfb9fe638653e0428772607c9750a4ddb9ea420ce49291ef83d1e",
+      "bytes": 20026
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-4c47eaead5712c9295001ec4.json",
+      "sha256": "852925437ca0017ceda62ab631e89d0810aa559d2f9669bf105deb35714555ed",
+      "bytes": 19898
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-5bf76899256100e280a80e1d.json",
+      "sha256": "e58a9562e62022e682c4696ca45ac84ebcf47e72d4726e63cc6678b1a064fd3e",
+      "bytes": 19812
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-64e146b0abb950dce567767c.json",
+      "sha256": "4c0a9a8cda83b79ab70352423f19eebd836d440b9f1c571c2bd727059c8fb394",
+      "bytes": 20045
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-6a41937f82d722c1bd11db83.json",
+      "sha256": "a2da606db95acd9a9c5c0957531573f9d1139b9ef4774814908068f81d52dab9",
+      "bytes": 19942
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-71a8e729bc95ecbd6e4dbc1e.json",
+      "sha256": "57532e99d056c955eb4d5dba47be4613c7f51b25e39fbbc9bbbd4a0c290f59aa",
+      "bytes": 19891
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-979d4429602e6c4a69aa6724.json",
+      "sha256": "3ed0cc7cb63a20160f0198fe253ccb5c5a1bf4caa7695e00c2c9c322add8d382",
+      "bytes": 19999
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-b06273e75d64a6537f0ba426.json",
+      "sha256": "536063a23b6cec80f81d4cbc2064e548a4c434554d987a7ec365e3f0476ce73d",
+      "bytes": 19799
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-b6cf2130e8541c75b7a0daf3.json",
+      "sha256": "18721cb924d1ad66ff76c528a0ddd04f6397c02f6cb71b79a64a3481aab41c84",
+      "bytes": 19955
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-dd91c965c4987a6f11b4d08b.json",
+      "sha256": "b0d4ca15816c0aa88a0bb1ea07a0042f09ba9e7c04841f9b8f04d449b7c2c878",
+      "bytes": 20081
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-ddead65d98e659c927cda92c.json",
+      "sha256": "13f066e2358baab0cc887b67b1d93f6227caf89da59fd433d47e8a8c2061cab5",
+      "bytes": 19783
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-f42264b44984bda93155507c.json",
+      "sha256": "f85208afd6231725b8f3d37bd6d3a049aadcbfe76c3ce42b4562d1583044bae4",
+      "bytes": 20219
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-fa12d24ad164c3ae3b3f0ff6.json",
+      "sha256": "dd9cb51a3a50b6d351a605f5be02397b3c2c9ea4ff08347519f1c7d69280b9d1",
+      "bytes": 20100
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/endpoints/0128/native/H593-faa6074c9997f968c1272a9e.json",
+      "sha256": "4959f7a9b252bb4349952014a437f6941e719a9fdd831b9fb26ee8464491ed63",
+      "bytes": 20075
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/initial.pt",
+      "sha256": "806bb5ff3a3a83de7398ff4ab3cd902d8ad65138864805d2a291c0bce95c92a0",
+      "bytes": 477129
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/snapshots/0128.pt",
+      "sha256": "2f2a5e8d68a4fa9d94a225d481ed029fc81ad1ec9c9e281182366dbeeb484ffa",
+      "bytes": 477129
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0001.json",
+      "sha256": "a6e156e345d4c66b6664d72864cb9408c199133513c4e452a5f7e3d728ee3f3e",
+      "bytes": 14001
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0002.json",
+      "sha256": "54236286bc85c7f350af54b4d256a873b924d2f9ea63785c53b9a331d618cd17",
+      "bytes": 13860
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0003.json",
+      "sha256": "a52455845fe2d0deef1d3fcff438eef1dc5d262cfa1d1322a7bcec10b069df0f",
+      "bytes": 13774
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0004.json",
+      "sha256": "1af61edae2d6ae7c4267609250f521f59c5018c5e203ed39d8b895a595c7395a",
+      "bytes": 13814
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0005.json",
+      "sha256": "32cd78da958bbec0e341f1223da110c6c5f201ff3b81fff7ef41e4dcdbae8a95",
+      "bytes": 13853
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0006.json",
+      "sha256": "6ba57598dc4f3aa2d9b8986e5d7e189fdb7a529bb1c7b37eaa17d0e02dacd817",
+      "bytes": 13829
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0007.json",
+      "sha256": "1aa3fe6efaf71a81eb3c7fc4661dd95e1d6437bc365284caae27a9a2976ada6b",
+      "bytes": 13872
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0008.json",
+      "sha256": "a574dbe83da96f929f18d066d56ea6c138f5063f144fb73fb4b9da078328439a",
+      "bytes": 13757
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0009.json",
+      "sha256": "e38a943e7237079d2d777807f25f785b9203aa29bcb0e11b110f65e90f84ec0b",
+      "bytes": 13938
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0010.json",
+      "sha256": "240b32d8fad10ba45119c19edad0c9f856688f1e34061d5efc54cc4b280c2b08",
+      "bytes": 13926
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0011.json",
+      "sha256": "57e06921fec8b7118c13251e183244b5dad04eff525367a8e6deb1d9a5e79752",
+      "bytes": 13921
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0012.json",
+      "sha256": "3e79d75b264e77d5d13599101afb9fb4975dcfd321049ed41855c3d183f929c6",
+      "bytes": 13908
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0013.json",
+      "sha256": "0626573d0a0c2d767d5057ce8b8a313974fcd047021859baab59a710ad9246cd",
+      "bytes": 13940
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0014.json",
+      "sha256": "01353b017a9820bdc999bdb7456efc14960bb81801115cadf59fdea7dbb6e01e",
+      "bytes": 13860
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0015.json",
+      "sha256": "307a376e31ecb4eb5a40d29e517cc73183ba16ca4c6541536ed29f024d7e2450",
+      "bytes": 13931
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0016.json",
+      "sha256": "9c67086d1d471e3a45aa95001a5edd99563f14814f41b83570919e59c6a382d3",
+      "bytes": 14057
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0017.json",
+      "sha256": "26554b6372be1e1686458d77d44c708d01a7a0c8b984ee891ad508882fefb01d",
+      "bytes": 13856
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0018.json",
+      "sha256": "398241c8bc2915059a4d4e4b2e2b504ff5ee5ee74a792a83a01a304c405ecca2",
+      "bytes": 13855
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0019.json",
+      "sha256": "a7b19de3f121b09c0a65de414ff6306965da32960293a5f491bbdd575104c789",
+      "bytes": 13751
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0020.json",
+      "sha256": "eec8eed2241bc859a9536779f71d119c91dbd164d67346b6d08f0ae8e84de24d",
+      "bytes": 13787
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0021.json",
+      "sha256": "5f368fa980c457779ee65d24f8fce8a96e9c77448b1c8edc0774d6789b5c9b93",
+      "bytes": 13851
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0022.json",
+      "sha256": "642b97bb626389de2725ba8c1febaa945066c0e5e9eaba3ba09469db76255d01",
+      "bytes": 13870
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0023.json",
+      "sha256": "421b1625c9ec3e3c2d0a851292d4b80bff83766d60252ce22b156d57cd5101d4",
+      "bytes": 13845
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0024.json",
+      "sha256": "eb2e5e1a55805e10de6739bc649461b0106e50c8353ae1f9d85e78ae3cf45168",
+      "bytes": 13810
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0025.json",
+      "sha256": "fd5cbbf2db4864a761d6ae4e0a7bc384280e19bb26e563c735f5634ef860cbd5",
+      "bytes": 13978
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0026.json",
+      "sha256": "e6ec772eb7c655b60c16d3b3f66a3211c325305b8361f5f71ed22659cdd73ec1",
+      "bytes": 13937
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0027.json",
+      "sha256": "9ac1b184c3577234dc632e32364aa69b18c45a4336546286349799f3644e26fd",
+      "bytes": 13994
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0028.json",
+      "sha256": "1c70aad7f535791d5c1f5e13e87108471d55d3f12d14a417769aa89a1ca65791",
+      "bytes": 13937
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0029.json",
+      "sha256": "0454282249bc3dc275d45f2189937a3a4fac827955effa59da6eda3def11d9a5",
+      "bytes": 13950
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0030.json",
+      "sha256": "b6da209ebaac19021c597c555b3599eb841d633cc952832fd2554ee6e716e135",
+      "bytes": 13885
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0031.json",
+      "sha256": "af0fc5dd8cfb89a5a20479806e1edf9bfbe4293fb45ca9581d3c214c777711fd",
+      "bytes": 13918
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0032.json",
+      "sha256": "1e1693ee6eb3af60d6ffd45d3a1395a9b1b809d81b4f76a66587be30fee548de",
+      "bytes": 13978
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0033.json",
+      "sha256": "890166db84a999d4bddd89738ab0435c8e1a38a3bb2b5f7938100c026c8cb309",
+      "bytes": 13858
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0034.json",
+      "sha256": "09fed79fc54e977455511089f836b04ffed1f3d6a244be8220297e54c58284ea",
+      "bytes": 13854
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0035.json",
+      "sha256": "0cee66889b742583787426bb440e5266108d4fc1338d2711cf34da96da6f534f",
+      "bytes": 13845
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0036.json",
+      "sha256": "251abc0e7a7e81fcb6ec90491c5affd39bb5256793a0e42a838cd11af6389110",
+      "bytes": 13835
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0037.json",
+      "sha256": "b2e6c1f8304683d26dacc4c34615398f922b550ebd30b1b2bc91d36d5940ae0c",
+      "bytes": 13905
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0038.json",
+      "sha256": "dfcd8adcee459dbbb2a84f20be2f970cd498a7a61efac6ccc6c7d57f6667608f",
+      "bytes": 13856
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0039.json",
+      "sha256": "a4423568a68ffa00825c16759034c0fa264bc11be1516f00147f847891fd68e9",
+      "bytes": 13925
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0040.json",
+      "sha256": "e8682ec556e99e28708f1798c398d3b1cc4151f9156ae4f950f71dbeb9a7948c",
+      "bytes": 13888
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0041.json",
+      "sha256": "b340563dd901fb7e7de4c0c1b6bbcf03f90f67db843b28c267424ce6a012c762",
+      "bytes": 14105
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0042.json",
+      "sha256": "c4800ee8dab307e0d651739a212551223700077660632c11590262723f4c8a4d",
+      "bytes": 13986
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0043.json",
+      "sha256": "a4983dbca1cb508d189026fefc32f5cce3309061ff96aa17c0132b5a742c437d",
+      "bytes": 13987
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0044.json",
+      "sha256": "f9353be764cd800c5b09845c10d04dacb6bf3e11c6c78c5fbe7d4ab75c22022e",
+      "bytes": 13983
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0045.json",
+      "sha256": "ad78c465e843a4e10bf8d6a9194473be0023cd92589e2d725aa7aef43fc6bc21",
+      "bytes": 14000
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0046.json",
+      "sha256": "1bd638f954d27105835fdee0cdb9d4fc163961889be4e8e39513b19db28639aa",
+      "bytes": 13878
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0047.json",
+      "sha256": "2418a2524c45f7867175965d64a53078b3438450f52a26bcca6c434cf0e8199d",
+      "bytes": 13937
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0048.json",
+      "sha256": "b261ce5b215da47a52840904e2a2cf5bed1a62572ee392d17344098c433c49bf",
+      "bytes": 14081
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0049.json",
+      "sha256": "68d24e5ba0de053cfea88e4365b7e165b6513ca6f75bfc0e3e1c69ea86e21d3a",
+      "bytes": 13854
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0050.json",
+      "sha256": "fe1bfce7e25627d2e385d651d19c6af5696312b55441dd7180a4e271c2715ac8",
+      "bytes": 13866
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0051.json",
+      "sha256": "ffa1d5c56a23bcb610c5a5fffe219e32ba22db4d5468430eeee39227d5ef8a6f",
+      "bytes": 13854
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0052.json",
+      "sha256": "c4d0f6a5837d4b8e600974bcd115e4d2040746d30615cb477fb2950b401d0d7b",
+      "bytes": 13818
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0053.json",
+      "sha256": "e01f6b7522f2968803b4c3c66d4b1ccf170d909f95ff1ff6c554a6f6a5c2cfa9",
+      "bytes": 13917
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0054.json",
+      "sha256": "a87b06276ca6a8a47c2fdd6a2431d215998cb34aada52014776ea0512a9f1e15",
+      "bytes": 13880
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0055.json",
+      "sha256": "728f5e0d42785cee19d6f474b34c8aa1f63e8016060b915986e51d7b306fde40",
+      "bytes": 13896
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0056.json",
+      "sha256": "e0c259db4a972861e20516b7d2c836932ef88e39b1e6f5cf71c019f96e572b0b",
+      "bytes": 13876
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0057.json",
+      "sha256": "d6c90831d489595fb03890ae8c2ff1e202e98e761e68b6ad31f2d57b5bf866b6",
+      "bytes": 14105
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0058.json",
+      "sha256": "ccf82287ea3ef4d753650071ac4c4611257dcda2500330767d8d31ac63880764",
+      "bytes": 13981
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0059.json",
+      "sha256": "c4a94d573d39407ef2f41ce519a0dfa05991778d4b5988f428ff1e30b39813cd",
+      "bytes": 14008
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0060.json",
+      "sha256": "b1c9d4d47fcb8fb01943971a0426a08a2364b55a256b144fa66374eb4c765c80",
+      "bytes": 13978
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0061.json",
+      "sha256": "2aafbc2b0a63d50bf17f440af6678953a884b213c43d302ce4915f48496d5938",
+      "bytes": 13959
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0062.json",
+      "sha256": "d50dc7baf22972bce735f5c319756cdf65d2eb140f93a8e7fc8f6861eecee1ad",
+      "bytes": 13862
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0063.json",
+      "sha256": "ba72d2d70f4de94ad0867175762b0b09c1e374607177ac2673444b989d155346",
+      "bytes": 13937
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0064.json",
+      "sha256": "e45ed46f8a0c16d4f7336ab2a1c0bc22fee470a1b85bfd8d13fac088f3adb960",
+      "bytes": 14106
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0065.json",
+      "sha256": "f4a2c4528f1c02b85ce256844f80f3571e13741da573494ba69cd384baafa40f",
+      "bytes": 13822
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0066.json",
+      "sha256": "971a2cc549221a576cdae1ac5f7e989262504f2626d7a72af319ff47a216b9e1",
+      "bytes": 13831
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0067.json",
+      "sha256": "4dca1a1fd63e9551e00997d956bfbf42b8eeaa3e99fd6e3b193d634158455d14",
+      "bytes": 13867
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0068.json",
+      "sha256": "3622fe9d4c7dd2f1219a8caabad4e47c58a97919cf2871e505dc2f23ef98baf1",
+      "bytes": 13827
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0069.json",
+      "sha256": "14bae5974f05af3c20e98baa76966095b388c1ed45eb9f9c592e92065f2711bb",
+      "bytes": 13893
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0070.json",
+      "sha256": "7b95cf69e150524356497521d4fe2366d9f987404931c50546ba542991e3271e",
+      "bytes": 13879
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0071.json",
+      "sha256": "dff3beb75194ab33eec7e542593784496c3f0b3627a303ace63ff0e8bfbfd5bd",
+      "bytes": 13854
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0072.json",
+      "sha256": "170a24d561d78eb7797ac36accb0222d78162cb14e033e175e6a60bf7bdbf4b4",
+      "bytes": 13862
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0073.json",
+      "sha256": "366858fe46c464ae76f5a28b139219c451e744be3270a3da33dde3021baa70e9",
+      "bytes": 14083
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0074.json",
+      "sha256": "129a8a22554e1853c57db38e4a201d484e0e0f13866214166a1d8e78bfa82706",
+      "bytes": 13985
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0075.json",
+      "sha256": "41c2a8fc33fa3a577593d4fee45dc9d2769492dd1161d96113543f3f0f7183f3",
+      "bytes": 13990
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0076.json",
+      "sha256": "046c2968b860229a4060d9af354e745ee97941f612cdcabb6d1c66798c9886ed",
+      "bytes": 13992
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0077.json",
+      "sha256": "74190d55a9cd882a6fce6fdbfa3f65f5aa7513684551ae910fb97ed3d4fc431f",
+      "bytes": 13959
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0078.json",
+      "sha256": "a4ec881d5544de3252c16dcedd3b6db07d43cb2febefaf5a8a27cb70f7c01978",
+      "bytes": 13873
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0079.json",
+      "sha256": "ac1666b073206ce421413b56b3c56d6c0dce79d7250aab55cbb9a632e73698e0",
+      "bytes": 13949
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0080.json",
+      "sha256": "7490bfd7de696f9f786536ae18d5bc319946483ad733aee8b02d84b72ac8c147",
+      "bytes": 13971
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0081.json",
+      "sha256": "861cfba42def9c0516f8fd7538b886e44af66e783e43b955563b58611b0c891e",
+      "bytes": 13849
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0082.json",
+      "sha256": "0d4f7bae0783c0d4a42f0e2d4e68109043cfd2c86c46c67a670c938545a3ce7c",
+      "bytes": 13865
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0083.json",
+      "sha256": "efd66620aeda955feb94d0beef60f327084022767e4c0df2495f8affce4b5dd8",
+      "bytes": 13845
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0084.json",
+      "sha256": "07e3ba44323a43e5c60b9cbb10639cb961af274a6dd51928951c3063bb2fd11a",
+      "bytes": 13793
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0085.json",
+      "sha256": "6bc8cdcd0354114ce378871e98ee9255925073f901cec5229f30aa8d47b8b2be",
+      "bytes": 13844
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0086.json",
+      "sha256": "c0caf3e1a93499193090b6a5ef9e26ac986796d12f99552e9986af26f0d21f5f",
+      "bytes": 13880
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0087.json",
+      "sha256": "3835264df9073ebf949480f342c6ebf26e33ebe493e4a3a7a958cb2d9864833a",
+      "bytes": 13831
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0088.json",
+      "sha256": "00bc63cfd7ad76f0fb5af64b605351b46c0e9b451e5147453a0727b6121d75b1",
+      "bytes": 13896
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0089.json",
+      "sha256": "bc2ae68dff9d130da7218afcec32c2d6ce1004999bc5ad2b4bd945fa985b4cf0",
+      "bytes": 14106
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0090.json",
+      "sha256": "a7a1055c7600969e937d4bd210d30ee0cb2bbf0dc56461677eafb207bc029d56",
+      "bytes": 13988
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0091.json",
+      "sha256": "185946669b2e1304e5e4076684efe76bad939c4e795f11c114f499fdcd48f429",
+      "bytes": 13999
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0092.json",
+      "sha256": "a811a3e469ebbc60164ecb8ce7eab44b21d5bfcae0c837ae1ed6f6b838005564",
+      "bytes": 13984
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0093.json",
+      "sha256": "6569d32b875c9f92c568039aee9645f1682356f28bec622228c484d2b934c9c5",
+      "bytes": 13974
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0094.json",
+      "sha256": "6ccafd174f6e35b382151911198c0da36dbe620626dafe5c913dfb6da61ed78d",
+      "bytes": 13885
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0095.json",
+      "sha256": "6b96d4bee04036e07ce8b767757263bbb4f7ca251e80ff9406fa0e26a53faf02",
+      "bytes": 13932
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0096.json",
+      "sha256": "10b1ae099ac5a7b9952e6e2e15a99dfe2679fcab6192a8ae73491a1e61f79b2c",
+      "bytes": 13993
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0097.json",
+      "sha256": "5f92ead95608c4885be6fa0809ab35d5864f9fd946895cbd3b5a31f54f238a42",
+      "bytes": 13838
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0098.json",
+      "sha256": "fcbbf17894a47a511a4bab864d9a83568c7612e01d8f6495c70db70ee64bdc93",
+      "bytes": 13830
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0099.json",
+      "sha256": "e2823bb66c66a0763c6c5d4a2b270dc3aaaa58d528afd04e2fb1cc7f0df6745e",
+      "bytes": 13847
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0100.json",
+      "sha256": "8693d3a94618bcae01678c04698868ef6f08d39929f0e3b15d1ddb2042ace90b",
+      "bytes": 13810
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0101.json",
+      "sha256": "91225fd31faf600e1d48897425fd2ffe15adc8bcbe69688d07f5211af5c2a514",
+      "bytes": 13860
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0102.json",
+      "sha256": "f282b52465a7c90869b57f282bf1385c48dcbb460d2d3476fc4f00c2d57af509",
+      "bytes": 13877
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0103.json",
+      "sha256": "b053eb2a44b4a21190072b94c50a2872ec6f323e5ff6d3ac5890cf89580972e5",
+      "bytes": 13855
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0104.json",
+      "sha256": "301817bd0a95efd4d14d61a7b4faaf810dff4fbcdb56088106e0a0ec725c0fbe",
+      "bytes": 13868
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0105.json",
+      "sha256": "315558a7b8be28e9d5493acb28af04fbd47e301f1a195d70619614b80b143a6e",
+      "bytes": 14087
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0106.json",
+      "sha256": "46e9bc3f8da8f264942bd894a650818bcf79d833d36b338cbda34295226927c7",
+      "bytes": 13967
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0107.json",
+      "sha256": "cd7d7d360cbcd3ee73765704947bea7466a04ef1de6fd53a9ad11a754c2a58c8",
+      "bytes": 14015
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0108.json",
+      "sha256": "6193b768411edbe60bd0fed4824423b84fee4be61a4d44ee199dbd08e34bd49a",
+      "bytes": 13969
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0109.json",
+      "sha256": "6d5c1481df8d6a0506a619e8fcbb7e22483eaa7ae51b41edd2f99a25ae1fdc08",
+      "bytes": 13969
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0110.json",
+      "sha256": "2021159f806e5f634871ece6b20c0854fa04d3c496e5684d5f2e15885018a7f0",
+      "bytes": 13870
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0111.json",
+      "sha256": "d850aa5bb12040ad770aab6c64f16ba1e1efcb4cfa5d9f24a396f0ee41966abe",
+      "bytes": 13927
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0112.json",
+      "sha256": "f6cfac2d5cf06cbcb0390958dd85ddf3be253a20aa5f8562ca8851c4943372ec",
+      "bytes": 13971
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0113.json",
+      "sha256": "5ffc66983d7a815dda7f7d28c595ef64a5484b6c62123dd9ce7ea5073836931f",
+      "bytes": 13859
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0114.json",
+      "sha256": "49bad7152fcac6dfd3584bcfac1f9ad782cfaf9d0db2effefffb1dc1decfee99",
+      "bytes": 13840
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0115.json",
+      "sha256": "6e174bb68ce1dc69dde67b294b861bb7f4cbcc94a3d9b73dc54ad0e2f0ed8081",
+      "bytes": 13779
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0116.json",
+      "sha256": "f1623f3002fee63f5f82c058d53bae5e0753c3880844c84687ae42df11f8ef3c",
+      "bytes": 13789
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0117.json",
+      "sha256": "e55fc6807d8916d55372ce800eeec83676bd54af9ca5527ceee243ed4ea674d8",
+      "bytes": 13842
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0118.json",
+      "sha256": "8d6f9b43986eca963266d81cabf5c064dcf38044c2bb7049f337ce693818e2d4",
+      "bytes": 13864
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0119.json",
+      "sha256": "6d1238772f7522c39ae4b55b838bc88b0fe32a239b77c50bc66f0a823647aea6",
+      "bytes": 13853
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0120.json",
+      "sha256": "51ec7041d93c0e25178a9d26e55c43ecfa12a9744da66c4225f33c63631a2742",
+      "bytes": 13883
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0121.json",
+      "sha256": "9664e1a54bf0a41a2f1f25570f3b84bf9b0ee201f9c65a1dff7ec39a8b40a42c",
+      "bytes": 14110
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0122.json",
+      "sha256": "692bcb3c5e6e7b2c35023dfe129d9d82d3a439a187f1d6e912e4d313bd96bda6",
+      "bytes": 13972
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0123.json",
+      "sha256": "3f7be08a5fe5a36bf216fe5b2f091812644c0dad032f214284728b65cbcee800",
+      "bytes": 13984
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0124.json",
+      "sha256": "603d5f7b0021f5e3b721dd0d0c3fb5b9b7bd3d3263338e2e6806e1378ae4400e",
+      "bytes": 13971
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0125.json",
+      "sha256": "da172a1542308be21f0b321b83226b0ae27ef88e321277e2692c7fa280593067",
+      "bytes": 13973
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0126.json",
+      "sha256": "d7ee8a9ef0a7493303cf319e2dbed684ec2c0cb50be8558c5272e3aca3cd2a6a",
+      "bytes": 13859
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0127.json",
+      "sha256": "b08f06a466beda5d794fe206a071664365c89798147d4d505fc510a004b89ec2",
+      "bytes": 13961
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/steps/0128.json",
+      "sha256": "b4c20297a959f9a7a9511def3852ace9ede1cd4a0825efca57574eaf8a6ac5a0",
+      "bytes": 14132
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-08297e272b0164e6fdd42e9f.json",
+      "sha256": "2fa5e6f3891c0b50fa6cd6002da95ee013db7b8a19c63f3c8c4a4b13718eba83",
+      "bytes": 20070
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-174dc7ecf520dfa933141c09.json",
+      "sha256": "782de1990f434db2e79843c6d5781b5f44c2bcbd0a0adf0eb7f0ff19b3ef45a8",
+      "bytes": 19827
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-490d4ed0a2cc29258e504a6a.json",
+      "sha256": "cb6ef57edbb653690865d602a5d7427430f6be251bb25450632ff2684795fe3f",
+      "bytes": 20006
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-4c47eaead5712c9295001ec4.json",
+      "sha256": "54ea30a2cf1fbc67ae794a13c63644fabaaa1bf9457c1c746999495159df4517",
+      "bytes": 19925
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-5bf76899256100e280a80e1d.json",
+      "sha256": "337509d161bd3d27549bf3a19f16bb5814d272e258321ebbe8caf95b6355828e",
+      "bytes": 19792
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-64e146b0abb950dce567767c.json",
+      "sha256": "c89da50f9604498d02e5d86431f710eaf1d1f5523ac469c66d17bca94e3bae08",
+      "bytes": 20045
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-6a41937f82d722c1bd11db83.json",
+      "sha256": "b5eb67e7111beea97d561ac9a67f2b89a7223884022a4adc53196c8c044bc8c3",
+      "bytes": 19928
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-71a8e729bc95ecbd6e4dbc1e.json",
+      "sha256": "700527dbd10db4832cb864915ec6fa5e16bc32f7fd11bdd2863a6eb79ff79eaa",
+      "bytes": 19872
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-979d4429602e6c4a69aa6724.json",
+      "sha256": "ecc727b098f7ed1e7516fee83ac3700138abf92f0581e3658a4160dda3d1baec",
+      "bytes": 20001
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-b06273e75d64a6537f0ba426.json",
+      "sha256": "88514d819889c06a7c1d524c0c79c38a8ef1553b7350129d0f76cd0f249b399f",
+      "bytes": 19775
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-b6cf2130e8541c75b7a0daf3.json",
+      "sha256": "7bde6ea79c6ebbbacc8045bedbf54ef441c864cc33a74ac1a5048a742667e5b7",
+      "bytes": 19915
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-dd91c965c4987a6f11b4d08b.json",
+      "sha256": "a223d07da2649fa1be0287542aa396a59e3190c5ec70600b7aae6f71297fbaa3",
+      "bytes": 20095
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-ddead65d98e659c927cda92c.json",
+      "sha256": "6198b93d69779ba059af91319bd416713a96f5975edb4943ce84090f17c398d9",
+      "bytes": 19775
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-f42264b44984bda93155507c.json",
+      "sha256": "cb1963de881ff524acae43c55af95386385aa83306484238813b37192a74a083",
+      "bytes": 20170
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-fa12d24ad164c3ae3b3f0ff6.json",
+      "sha256": "6d392c290ebb130e605884852a1be65b5a80d1df3b4fab77271ed6873dd1c92f",
+      "bytes": 20114
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/constant/H593-faa6074c9997f968c1272a9e.json",
+      "sha256": "d32b2dad87fb4f448b84a41768e5db811cd492bfc3b1d557deedace58cd16741",
+      "bytes": 20054
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-08297e272b0164e6fdd42e9f.json",
+      "sha256": "a578bc79998d7900fddbdaf1b0be144cf725fd9d4478181b1bd6d2b05a7d288d",
+      "bytes": 20071
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-174dc7ecf520dfa933141c09.json",
+      "sha256": "d90eec47da254e9a380935042f3f124cafb67d66499e491af800faee81b3457f",
+      "bytes": 19842
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-490d4ed0a2cc29258e504a6a.json",
+      "sha256": "0db6ca12939495b419c77a815ad907532918b30a4715327500a04957e4829e7d",
+      "bytes": 20003
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-4c47eaead5712c9295001ec4.json",
+      "sha256": "d5ce8745701f4856dbc3e243fdbb2e843dde35eb054e630fab8d254e8ce44e90",
+      "bytes": 19893
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-5bf76899256100e280a80e1d.json",
+      "sha256": "fe253ffafc8e2e989ee363e181df80add5d5e63bb2ead25db7438994f1dae727",
+      "bytes": 19786
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-64e146b0abb950dce567767c.json",
+      "sha256": "e5a54d5d9f59006e66fc393481e31b7cc9ed839201c7d1cca8c7fd0ccf15f1fa",
+      "bytes": 20056
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-6a41937f82d722c1bd11db83.json",
+      "sha256": "72c1766f0104e7e75d5135d3a31df86a9bed9f5b3887595876cb1e3906983861",
+      "bytes": 19933
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-71a8e729bc95ecbd6e4dbc1e.json",
+      "sha256": "586d95a2ff6eef971eef495972875eadfc1c4284b83c0e1fbd62a7185e20a49d",
+      "bytes": 19872
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-979d4429602e6c4a69aa6724.json",
+      "sha256": "347599f198efc8d84227d8eb621057093d8fc4e0d6c820cf340b358c51cb2d68",
+      "bytes": 19994
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-b06273e75d64a6537f0ba426.json",
+      "sha256": "87ed1d634396576aa213b0d0afa116ffb21549fd5d4d22a17ec0bc13a13d131a",
+      "bytes": 19815
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-b6cf2130e8541c75b7a0daf3.json",
+      "sha256": "5391c584af39b449686ab81fb10791aa5f0d713df896fc27322ee83e5d30efb1",
+      "bytes": 19923
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-dd91c965c4987a6f11b4d08b.json",
+      "sha256": "bb7e638c4f59b8b9967d7ac0fc0a9b66a3f3ae0c40af0e1ce4d7e3d437b5f13e",
+      "bytes": 20058
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-ddead65d98e659c927cda92c.json",
+      "sha256": "e035baabe27722f1ff1bfa7af840c88976d7d1dc0f8906e5bc44ea09d9f4d80a",
+      "bytes": 19769
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-f42264b44984bda93155507c.json",
+      "sha256": "8b773e9e35c0f7e56559771c60c2f11b8931e69f65934a43b5bcb8a515e98882",
+      "bytes": 20206
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-fa12d24ad164c3ae3b3f0ff6.json",
+      "sha256": "8ea4b7acdba702f719a937d05f21cefbc0a7b9be64835e3ab2037d37d887ba28",
+      "bytes": 20118
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/native/H593-faa6074c9997f968c1272a9e.json",
+      "sha256": "8afc6f0d1a3a29867498af995dc955eee3c4d793e3b7e6faf53af6970af4147b",
+      "bytes": 20067
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-08297e272b0164e6fdd42e9f.json",
+      "sha256": "5c9e075e68a3a5608f1700d9cdcff70ed477d96a763d63b616936b98edb7d640",
+      "bytes": 20064
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-174dc7ecf520dfa933141c09.json",
+      "sha256": "bea8550334cfe69ebdc1f7bb60e50e8ed578344c5783dd288ed724733c3c2ff6",
+      "bytes": 19796
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-490d4ed0a2cc29258e504a6a.json",
+      "sha256": "bf0c970f3c3b632b025ad19d0a1d96a4f53b7e53e6cf40bd08803a8b3c300ede",
+      "bytes": 19999
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-4c47eaead5712c9295001ec4.json",
+      "sha256": "a30ce841c6fa3a3b34cacee5ee64c7f54aa9b91aab31ab3784baf97b14270060",
+      "bytes": 19903
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-5bf76899256100e280a80e1d.json",
+      "sha256": "3af9e4e12e5473875ec422f24f6a53c89765f5702d18b5aae400bebb807973f0",
+      "bytes": 19792
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-64e146b0abb950dce567767c.json",
+      "sha256": "abf8312bb30e76fbb1a71e0512d9ed06e7f8e601b9e6ce5baba2f04e5d5ec566",
+      "bytes": 20044
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-6a41937f82d722c1bd11db83.json",
+      "sha256": "8a5a35c34053346b82666f6897885deceef7f55ada38d80206b88dcf0d911545",
+      "bytes": 19918
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-71a8e729bc95ecbd6e4dbc1e.json",
+      "sha256": "5e94664f3c1b35c54148f4adaea54832fb7becf61f395c4d5367f94fabbb9f5f",
+      "bytes": 19871
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-979d4429602e6c4a69aa6724.json",
+      "sha256": "7edd1d61356a8a2f5e90ba1497644fd080954f8dcc8f259df11797e066fa1edd",
+      "bytes": 19974
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-b06273e75d64a6537f0ba426.json",
+      "sha256": "a2c4ebed187073d16f3385e6f14efcef5e0fae3de30f0cbc66260336cdf5993c",
+      "bytes": 19778
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-b6cf2130e8541c75b7a0daf3.json",
+      "sha256": "f4c4c25a7951160674f94b3dbbd533bbe371d10762fe2e09832b3bc3ee68addf",
+      "bytes": 19906
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-dd91c965c4987a6f11b4d08b.json",
+      "sha256": "86f66b0e08df85089010fc4570d96b38f817bcfdfb128f21672b87cbabfa1bc5",
+      "bytes": 20077
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-ddead65d98e659c927cda92c.json",
+      "sha256": "6092707041f96843386f345cd56bb04b0e68e354ad2a8ae3e2d64857d6d6b9fc",
+      "bytes": 19755
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-f42264b44984bda93155507c.json",
+      "sha256": "6128de1354ace805319d7d1f2909d146fac498697684fb321ebee46d5c6f913f",
+      "bytes": 20180
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-fa12d24ad164c3ae3b3f0ff6.json",
+      "sha256": "306cff6c45a4d715e74d7b5fb5c5cf379dea235e7aab8e6d59cda9b860f50469",
+      "bytes": 20117
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/shuffled/H593-faa6074c9997f968c1272a9e.json",
+      "sha256": "ceabe477c2cf8404a2a5a691a4c5111424183e119283240edca631efa12a009d",
+      "bytes": 20050
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/initial.pt",
+      "sha256": "bbec46ba023dc25e5fa6b1c5739ccaca11a041f1ea274d182ba8ff2257bdc203",
+      "bytes": 477129
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0016.pt",
+      "sha256": "5252a1e33c0ec18812c8dc8612f11b26a1c32e31b7e9a1684c578575f7b39434",
+      "bytes": 477129
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0064.pt",
+      "sha256": "1af37dc349a4e601a07042d10c05304a46733b4d48ca437e3bbe52bef7514275",
+      "bytes": 477129
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0128.pt",
+      "sha256": "ea0d387bd9f9f73f5908b903f2996531c1fd81c24c1f2aa77cc3710caba64548",
+      "bytes": 477129
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0001.json",
+      "sha256": "ce632fc33eb05cac137c8c719bf560cfc151a19c839280737280e0cf2affca72",
+      "bytes": 13996
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0002.json",
+      "sha256": "64e34de0b88b20374e788532a3d04066a1250564d01d89f5079dcad0c7b0069d",
+      "bytes": 13830
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0003.json",
+      "sha256": "63c53475f6df88a7619f4d49f4d2db3ef345b5a4b423d502299c7609a8d0e2c7",
+      "bytes": 13774
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0004.json",
+      "sha256": "4b5bce51c927c7373a47093a487b58885a660c2225de78722afca3de1d948eec",
+      "bytes": 13799
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0005.json",
+      "sha256": "e717249038056c9458a7b5e1b400193cc9cb49b93c9d08e4eb93ef08fc538564",
+      "bytes": 13822
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0006.json",
+      "sha256": "e45875a6b6c72998a1335822c5336e5bfa30a3c9b77cc61397480ca4e488f49a",
+      "bytes": 13850
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0007.json",
+      "sha256": "e15390a3f5e3a2e73a1332064c5484b00778f1ba17825d4ccdbf5ad269aefbf7",
+      "bytes": 13883
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0008.json",
+      "sha256": "17a5a8fb856c194fabd7008ff69a64d2e30f072bb99730b5eee55c76b710dcbf",
+      "bytes": 13794
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0009.json",
+      "sha256": "b5fcaadcfd3f7ba6766180c59604bfebda08226d780ecdb00a650e0c4623fa20",
+      "bytes": 13935
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0010.json",
+      "sha256": "12cfeca4f7c384ed52291c4a5644e20f56b331c3d75047c6e8e282438a8d634c",
+      "bytes": 13935
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0011.json",
+      "sha256": "c3de833106ddb209f7619768293d0882166ece87850de13a9c4f37d768cf5398",
+      "bytes": 13919
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0012.json",
+      "sha256": "2e923e34d2407e71f8b87fcec00720dea05c0c90ff28de8ceac675a140d50652",
+      "bytes": 13929
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0013.json",
+      "sha256": "f98b4a6674b6853c329077f226086f3e77f90b18d8e1230e5a2d82950f5f3772",
+      "bytes": 13930
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0014.json",
+      "sha256": "f8a6957e4449aa09432f2a6b2bdbfac7a5b0ecc4812c1980db2427194331b9d7",
+      "bytes": 13853
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0015.json",
+      "sha256": "4fb8cf0d3a4e7c1d27c5d51efa3daf79021abee0829536703d4c8245680fa535",
+      "bytes": 13901
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0016.json",
+      "sha256": "622df49a9563dcdcade24f5d2304ab7d39bbcf72e697f8aefe5c81827cb1fdf3",
+      "bytes": 14020
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0017.json",
+      "sha256": "8e0e93d9e4571d4c366aaec9bc0123cf8b2a89ec6c013dd4a5a56c02ed36eb81",
+      "bytes": 13812
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0018.json",
+      "sha256": "c9bebafaea46cedcec7756eabd8339ec8e23efbd8710e2b6667cd5ee28f6b956",
+      "bytes": 13851
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0019.json",
+      "sha256": "340f30e8d954e086da174aeb53f1c60e80e2185a08f8acee433077cd8d1b7203",
+      "bytes": 13740
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0020.json",
+      "sha256": "2d5769a4b4e65c2da41ec191d90e610e2ea6ae5fa52d305ce9b71c458246ad6c",
+      "bytes": 13791
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0021.json",
+      "sha256": "01176083e0c066767f46b91e999008899f332c7c35bc4e188d5557185d7e85f0",
+      "bytes": 13840
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0022.json",
+      "sha256": "1152ae3465d8b92a1df3a7a0e77dd4402caff163c43747daa651b680e34f5801",
+      "bytes": 13872
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0023.json",
+      "sha256": "e4aba2e5fc22f8f1ed4cd02fd76f11b761c8fbb09c145fb1427b8a5ca6bd8c97",
+      "bytes": 13865
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0024.json",
+      "sha256": "313679fc3f8d531346facad16ec2ed7497e5006a669409c4a4fd2bec8dbc6bef",
+      "bytes": 13799
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0025.json",
+      "sha256": "9efb32ec924f785a5a9e5eeaa4169cd5600f85736527eff9e95441361f04f6b6",
+      "bytes": 13959
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0026.json",
+      "sha256": "8ae1d54fff6f69b67a9cb9c84d78fac397834942f212a729ffc4c89b6264c6fd",
+      "bytes": 13957
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0027.json",
+      "sha256": "4f03854d12f08717d8a54e92b7748df79eefd807461e2f9c94b6e05f5d545065",
+      "bytes": 13990
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0028.json",
+      "sha256": "145e6e6e15847d72181893507afff1ef18ccd32da6e5a9c63d41e15b6ac6e678",
+      "bytes": 13955
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0029.json",
+      "sha256": "ae6009a995afe80e9239a324d6ce31aeefc9b98b470eb880d59e8ecf2f66f146",
+      "bytes": 13963
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0030.json",
+      "sha256": "0cdf210bed310a72a9e7ece2feb3e7e0ac37f185a88f6e00895d7569a8a79a98",
+      "bytes": 13866
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0031.json",
+      "sha256": "0499bbc4b406f738ae5a6dec324c20d2e4b58b998a2f95833ebdb77f2170f552",
+      "bytes": 13923
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0032.json",
+      "sha256": "ffd33182b5c3bdf88557d175328f9b9b757e3e500034f6b89f0cc1ccd4490413",
+      "bytes": 13956
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0033.json",
+      "sha256": "7693531072cd8994d35ee8ef9bb5f303929c2422b15979c07b546d6096f602d6",
+      "bytes": 13851
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0034.json",
+      "sha256": "d00d55cab93970186cf79a2bfeace386cd24fc14f6895b3ada3a8ee262f2239f",
+      "bytes": 13867
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0035.json",
+      "sha256": "7d7ffb383adbdf0fba63ff6c8c02f567a77ed99a42241cd0028a4c438b027e3a",
+      "bytes": 13833
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0036.json",
+      "sha256": "0e31cf669ceb186a4d619557fc4172199a676f30518a83bd558f9f1ba3f5129f",
+      "bytes": 13844
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0037.json",
+      "sha256": "ee8339200fc955afb6fa96a8ae9cb5b87258a32bc6e12ef35e8b0b29ce5d0eed",
+      "bytes": 13897
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0038.json",
+      "sha256": "1e539a8139a97e2c148d7cd802f8c48fbb715922864c7905c503a960057ab1a6",
+      "bytes": 13851
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0039.json",
+      "sha256": "98d55ab355751e22426f1b90a9535a95bc85d03e2d61a2e0b79b6d827623e7ab",
+      "bytes": 13898
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0040.json",
+      "sha256": "0e4027a910c9582ea3bd7261dc4404cd1c7afceb0c593093c665654b6b13c7eb",
+      "bytes": 13888
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0041.json",
+      "sha256": "e4357d8f418eaf066bea39b32732ac708760a88d2671d5db06a65c10edee0184",
+      "bytes": 14117
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0042.json",
+      "sha256": "f061da1630236f34a621a5d0104c9a430844b0280f7a72ad6bd074467e27538d",
+      "bytes": 13991
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0043.json",
+      "sha256": "af4ca20cc6f5d322ef201d415ba7321cbad96cfe10f4e4000d47c4b107026cc0",
+      "bytes": 13966
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0044.json",
+      "sha256": "878b9b17cd849953f4e2f29c560aaa1a795941a88091bef2c7ae181f043e7d82",
+      "bytes": 13970
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0045.json",
+      "sha256": "a08e6263f74013356090fed64e85f96df9a310f3e344fa1e0e4f31c19578ba62",
+      "bytes": 14021
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0046.json",
+      "sha256": "b7358173affbbcb6ba3ca43fd593def73e81122f953d10db6dff9b3f9bbe7aca",
+      "bytes": 13869
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0047.json",
+      "sha256": "205e857fc38ffc43dc08f84a3c82ecd667febdd7ec124aa4121da7b5b5d7a524",
+      "bytes": 13942
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0048.json",
+      "sha256": "884f5e157f17bdbdcbe8b0debd65a6575acb86b1c22a6b65eb6fd90661b3e9fc",
+      "bytes": 14054
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0049.json",
+      "sha256": "6ee7ced667a5ce5ce5e3c891cc6aeccb1bedd605f4745be9d0403cdfc1fdb864",
+      "bytes": 13872
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0050.json",
+      "sha256": "e0fe5b64ddb1ef2eb91aea6715fd06812405c9693d24e2d842155d76d1566001",
+      "bytes": 13866
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0051.json",
+      "sha256": "2657b8c3c9e9d383a99e253dfae82aa379e6a5f6cfbb8497f337852a88224568",
+      "bytes": 13841
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0052.json",
+      "sha256": "80a774c994445c8a9eb141770bfcab1940195c8f86d9d9262f72b95c31e15771",
+      "bytes": 13827
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0053.json",
+      "sha256": "df81dce0bac74a340c56c8baa2500b7b0bbdaf88a926e65fa9c035669c3f4f33",
+      "bytes": 13906
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0054.json",
+      "sha256": "e4e98f14f069d15ba815b613d61c56579a3d478716bca2f881659d629c91b0d3",
+      "bytes": 13865
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0055.json",
+      "sha256": "a4b15c9552dd84e2738fa8e5a35349942cc76bb77bfeb2468935fdcbfa9a3495",
+      "bytes": 13880
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0056.json",
+      "sha256": "06b802bfa210258e5793ea4c9852f8d3860383eeb707dde58b03bfb51e9c7d97",
+      "bytes": 13874
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0057.json",
+      "sha256": "1386b02377fe07b45d11439aa197be2b77b2859d2b0b0548c2df09238a83d462",
+      "bytes": 14093
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0058.json",
+      "sha256": "8d7263e4572aa2e9e1048aac28755ac1935517abb8ca22af1a6d6d39c258f261",
+      "bytes": 13998
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0059.json",
+      "sha256": "a9d951583ab8ad2979b1c28a1cbc9e8ba2dfe1dd9bcc7c49e7fa8f64e8b469ff",
+      "bytes": 13981
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0060.json",
+      "sha256": "e5bd797db1ce4870e65a1013ccaa7ceeb8990f44f06daac97c37852f29ea20f1",
+      "bytes": 13962
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0061.json",
+      "sha256": "f801a9501d32f358dbee748ab310659349836f280ede0b1dfa6bb7a849613f77",
+      "bytes": 13972
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0062.json",
+      "sha256": "d0e28cf681a61cd30ab28ad2448a6d6383fdfa8d519012bd14b305ae4fe7ea35",
+      "bytes": 13862
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0063.json",
+      "sha256": "9118694c76724505237d2b089cc655b1dd19ba46e070ee98faa1864451e1092e",
+      "bytes": 13942
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0064.json",
+      "sha256": "f62416818622adc2a91a3e73ab17504697c7fd9aa4a17da298b8459808eba164",
+      "bytes": 14082
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0065.json",
+      "sha256": "6613a540e6821d84226523eecc9957fa117f9487014e27c1becd1ab77984138d",
+      "bytes": 13817
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0066.json",
+      "sha256": "f7232486db96fcaee6d43ed8947fffa5ac3a9f392159475efe22a5518835f2b9",
+      "bytes": 13871
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0067.json",
+      "sha256": "575ea7d72f2f02894476079544f289b4e028d3cec951d354e6d2f3568e147450",
+      "bytes": 13844
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0068.json",
+      "sha256": "d4375156d8cf198ebf5dd85c12205f217b702d1d7751ec21b638e9336680dc64",
+      "bytes": 13813
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0069.json",
+      "sha256": "f556f0e8c7383cd9e0e99b85828c4aa5fd697128d1c9ac43a0638bcd4b480c6a",
+      "bytes": 13848
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0070.json",
+      "sha256": "f28e14179bd9b3ed2d4bbd2a42b2de6010d84ee40ef9fab5ee96ac860cfde26d",
+      "bytes": 13885
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0071.json",
+      "sha256": "4811769da9e3bdce21b5a168589b8426eae47c0e945f2b66650b01967fcc3287",
+      "bytes": 13856
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0072.json",
+      "sha256": "c5487e17f92239241e830c7fe293a22343b5ca8f308554cd7354a82f281ed4ba",
+      "bytes": 13857
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0073.json",
+      "sha256": "c5b7a4b82bdf3711c67b95bbbfa8acfa348bb93913e5ac8acaac7cd4317b7a79",
+      "bytes": 14105
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0074.json",
+      "sha256": "9c2873691af2bd38ad8ca80ba9ee089a4f0ac4f7cbe1fc14a218d57084f8166a",
+      "bytes": 13986
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0075.json",
+      "sha256": "2cab80ba294be51604ba04a1c06a6857febca0a8c578ce43337b6488b7c6ed94",
+      "bytes": 13973
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0076.json",
+      "sha256": "b8a88d55dc40f867f983ba1b5c99f44f72824955f3a80896845da0c2763f6108",
+      "bytes": 13952
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0077.json",
+      "sha256": "6a0bc189d1a9aadfaf270d0f61566871a315773d8ba96c96fd8bf470873266c1",
+      "bytes": 13960
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0078.json",
+      "sha256": "dab7140a7877ed27a75857d5644fe74d2b0a7b77eea4cbc1fa006d9f137d6d0c",
+      "bytes": 13892
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0079.json",
+      "sha256": "a9d8fbc0158511601994deb2f007c3348378414e38b02f756deb4beae5f95eb5",
+      "bytes": 13947
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0080.json",
+      "sha256": "11df695afd5a92023667352af0875bc295f0265bf582ea73ff68b39e297d8ea9",
+      "bytes": 13940
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0081.json",
+      "sha256": "40d62d30c22b90a6c08e8ba887dc4f788dfff5bae3d3213971133e67d7129812",
+      "bytes": 13859
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0082.json",
+      "sha256": "71d3548ebb3d9abd670f9b68522413e5106e951ccd6ba2845f13e5aab9d9a7bc",
+      "bytes": 13831
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0083.json",
+      "sha256": "c44d31bb21481ce29a6ca26b4da8cdcf1d51692f5f523a5820c4152d2bb5a1ae",
+      "bytes": 13846
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0084.json",
+      "sha256": "60b7bf43e3a332effe801d414124c6a820b14a0802baaabc77aff0e45faf8d40",
+      "bytes": 13793
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0085.json",
+      "sha256": "6d58c988c85221eadfb0e6ed0b1304701f85f659f87b3f8bf03312768a02237f",
+      "bytes": 13853
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0086.json",
+      "sha256": "d68391e41183abc4d502830c693711170c2e571ab8783cc8322f8bc0f1e61144",
+      "bytes": 13889
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0087.json",
+      "sha256": "00a8d037f3afbc3b47f7cc08853e8d416c09fde4db44082d5c16b98175ac0404",
+      "bytes": 13845
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0088.json",
+      "sha256": "80c25e3c61892e814121d346e36f13be78827e97b50988467b8cc84904f7c1ff",
+      "bytes": 13868
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0089.json",
+      "sha256": "1ef4093ea00b500a70ce78c80ba2a144e431272d046c53c440999253b4c7b6c2",
+      "bytes": 14077
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0090.json",
+      "sha256": "e6908405b0ee0ac8b84484dfef60c2989d428457bf8eaa26a4d4baa75b2fc51f",
+      "bytes": 13949
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0091.json",
+      "sha256": "0548af3add2adc288a84e49b71a34837e5581c7ec61d6c0b76a58c0d47f548b8",
+      "bytes": 13981
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0092.json",
+      "sha256": "8aff1952549f40b744b9ae25b19a2a58e1589b92a2c79611ee5b4c982e62a219",
+      "bytes": 13958
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0093.json",
+      "sha256": "0ccdbf424d31523051482c85101e01a782fda50be9b1f6d737e293f89087a5a5",
+      "bytes": 13970
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0094.json",
+      "sha256": "f44d229aacce01bcc1e9cc60c79ef499bbf01b2d7a3a72c0b8ad1f54b031eb81",
+      "bytes": 13884
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0095.json",
+      "sha256": "b1628c6e49b2b5da2b76c7924269a0c1252f3dda60ece2ea3f7741762ce9954d",
+      "bytes": 13939
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0096.json",
+      "sha256": "bcc9e52a04d796ef883907debd3776ea66e69adbdd70a7f60d20ea8d41eb9163",
+      "bytes": 13963
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0097.json",
+      "sha256": "071084885db639bb2412089f95903cb6650e289e99344f24ac6773fd3cbe7c03",
+      "bytes": 13847
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0098.json",
+      "sha256": "a88a8072db8249ac1f5cc47c5cbfb7f8ebd514611cabd296a2fa5b445706b3e9",
+      "bytes": 13853
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0099.json",
+      "sha256": "d702beb966c529fca30df65d8c642e31d8848d809a22a77ae92bc58cd0ba2382",
+      "bytes": 13835
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0100.json",
+      "sha256": "5ea90c194a2080ec3bcde9b407eee17386d2aff1db3afb3b878aca6fcb9e978e",
+      "bytes": 13780
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0101.json",
+      "sha256": "cb140e7ecbae6e3ecbf42023c69f236e01c36fa510ccf523ece07d72bd2ab1cd",
+      "bytes": 13849
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0102.json",
+      "sha256": "a11a6e98bf95d0299692b4cfe2ccf77ecb1c189a39537b6f66571bbb8450cac6",
+      "bytes": 13875
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0103.json",
+      "sha256": "442c8507d8bb0d95690a127467d71dfa671b6afc9f2a707c6334fcb6958ba2b3",
+      "bytes": 13844
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0104.json",
+      "sha256": "ea52f0bb9c34bc056f4e5bdf558e3fcfedcf9e3e7d573035a37d1f31ad74bdaf",
+      "bytes": 13873
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0105.json",
+      "sha256": "471ef780c2e42ea710506a42b66c76ebdb1d4eb2f104f40b87a318f467fa0ca2",
+      "bytes": 14081
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0106.json",
+      "sha256": "f33dd38c9cb15ae92b8df3d36c337c6d34b4506d05c58f4702128222cf629e05",
+      "bytes": 13979
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0107.json",
+      "sha256": "1d7a570ff4a91247a7df73eea2e989e46f30f6c65ae4b42e65759a8e587c8e85",
+      "bytes": 13995
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0108.json",
+      "sha256": "7fbf277a8c8204e662e0fc3e9c6123646685201ba6e88fd04c43541ccbd784ad",
+      "bytes": 13976
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0109.json",
+      "sha256": "bca12dbb7bea3aa32c27112d7df2903bb60382f05d3d01132bf188fab65c3046",
+      "bytes": 13965
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0110.json",
+      "sha256": "134551488155f081f1635ad226a847dc3ce2dd4711e1a1629e4604a8cf010cff",
+      "bytes": 13849
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0111.json",
+      "sha256": "ff206e24c64b7e2b123b579b386e9797a66cb7a4f9e75a856405ead19d55945a",
+      "bytes": 13912
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0112.json",
+      "sha256": "fe6d9b0bef3ae289b7cb576caf5fc03891bf75f5bb45866a91187e0d0b3e0a78",
+      "bytes": 14051
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0113.json",
+      "sha256": "357388c0060cffc0173c8c10cde2645533edd4f764e447cfa5ea9445e3db72a6",
+      "bytes": 13855
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0114.json",
+      "sha256": "1c35be18309002468a12bb7045557b7462cd1928279f78b4e39282c7e279e2fc",
+      "bytes": 13845
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0115.json",
+      "sha256": "7603cb7149f0b1c0915e0e7fe628deb11c48f0621a0096996f8ded1f84b2dca1",
+      "bytes": 13847
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0116.json",
+      "sha256": "e3ecce86faed35bccc6d4243bb51849b8e93b0c909767325aba496439bb05535",
+      "bytes": 13791
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0117.json",
+      "sha256": "8db7f02ba2ea138ff18a5b6b520b1b3e83cc5b89df63f1899055ab7c6005ded9",
+      "bytes": 13835
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0118.json",
+      "sha256": "4d35edd6cdb7802b38ee635e13aebb6201a43ddc7dc042f079b14444bffe9375",
+      "bytes": 13874
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0119.json",
+      "sha256": "a3e9f4c00662ebaf499926a8033a4cae61b837743b8e55b00c73ad9fafd47105",
+      "bytes": 13854
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0120.json",
+      "sha256": "7c225b6ba369e5f73eed1c65fdd390a27718e5a576e531c95cc2f4a627dcd097",
+      "bytes": 13889
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0121.json",
+      "sha256": "55f9ffb321b0c76b13fd8992e5c5116969b3763aceeeda9feb55b957c59dab3b",
+      "bytes": 14074
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0122.json",
+      "sha256": "17f7d3a77331030eb27706e1c7813a1da2c48564a7ea96e349bbf7905ccdf618",
+      "bytes": 13968
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0123.json",
+      "sha256": "39e15a8f3860cbbd34d8b024a33829a3005ea59e465b5733961e7dc1a64c7470",
+      "bytes": 14018
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0124.json",
+      "sha256": "442427a34fe257e257b2ab72a786dd008a15e9764aedebefa8dfb3c90f9d87bf",
+      "bytes": 13981
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0125.json",
+      "sha256": "c0840d214c26290e1d7bd53fc2419c29f455b2a307945f807affa6001553d993",
+      "bytes": 13947
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0126.json",
+      "sha256": "949b6b984c1c91aa2e46a4979ac453789efce43cde06c7e50e6c053bc8920673",
+      "bytes": 13869
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0127.json",
+      "sha256": "a49195ca8a020ab375f4fbb80bcaf1932083c2a822e510697194ebde8d9824ea",
+      "bytes": 13947
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/steps/0128.json",
+      "sha256": "d0f43c7560e5941477334f2469c64b1346bc34ce5bdf2262b9c4ddc08e5743d0",
+      "bytes": 14159
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/traces/0016.pt",
+      "sha256": "d4955f30582bc4059cd1979d6f3d9f61ec271b9110574a30c2e26df7424a9f3f",
+      "bytes": 10693785
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/traces/0064.pt",
+      "sha256": "4aff709254a86d11001fe26d11780e0e36616375ed352c6eea36726932c2644a",
+      "bytes": 10693785
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/traces/0128.pt",
+      "sha256": "1a256d6622c3403dc7e671523c9dc13c3eeffabe0e93ea498d098cf65ba3d79a",
+      "bytes": 10693785
+    }
+  ],
+  "source_count": 330
+}

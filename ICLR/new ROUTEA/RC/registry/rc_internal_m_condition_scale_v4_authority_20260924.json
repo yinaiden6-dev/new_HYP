@@ -1,0 +1,385 @@
+{
+  "condition_gain": 59.86651818838306,
+  "condition_shift": 1,
+  "updates": 128,
+  "endpoint_updates": [
+    16,
+    128
+  ],
+  "checkpoint_updates": [
+    16,
+    64,
+    128
+  ],
+  "warmstart_steps": 2000,
+  "external_steps": 2000,
+  "seed": 17,
+  "bottleneck": 16,
+  "residual_scale": 0.1,
+  "adapter_lr": 0.0003,
+  "head_lr": 0.03,
+  "weight_decay": 0.001,
+  "clip_norm": 1.0,
+  "max_requeues": 48,
+  "worker_budget": 400,
+  "diagnostic_interventions": [
+    "constant",
+    "shuffled"
+  ],
+  "diagnostic_updates": [
+    128
+  ],
+  "candidates": 128,
+  "train_count": 16,
+  "frozen_opened_probe_count": 8,
+  "attention": "sdpa",
+  "processor_backend": "torchvision",
+  "status": "TRAIN16_INTERNAL_REAL_M_LEARNED_USE_AUTHORIZED",
+  "user_authorization": "2026-09-24 先推论文收口稿和本轮结果，然后继续解决内部M问题；有效即可，不要求超过外部头",
+  "baseline_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_learned_use_v3_authority_20260924.json",
+    "sha256": "7c3e6066c760d3cdb3a838a07b138fadef190a601169970c9ea22f8a267b6fb1"
+  },
+  "baseline_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/result.json",
+    "sha256": "13cdb2b3b5d015a394f5986d7cdff8a4cc67025df8ad6fb09ab2351e11eb6424"
+  },
+  "parent_program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_internal_m_learned_use_v3.py",
+    "sha256": "61b5581f3d52e34aec9e737934062605adb0ef512b932c1fa38ae2a1da39dec0"
+  },
+  "push_receipt": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/prior_round_github_receipt.json",
+    "sha256": "cf286f0a8e5db965ecd2bee947dfbd6c456e4e8892128153d3f5f971445cb962"
+  },
+  "baseline_initial": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/initial.pt",
+    "sha256": "bbec46ba023dc25e5fa6b1c5739ccaca11a041f1ea274d182ba8ff2257bdc203"
+  },
+  "condition_scale_evidence": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v3_fit_diagnostics/condition_scale_audit.json",
+    "sha256": "55d4560f7c2894b69e93bcfd02990a7c6977c52de958942c190dc6ae659fc758"
+  },
+  "readout_evidence": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v3_fit_diagnostics/readout_capacity_audit.json",
+    "sha256": "7d39ecb90e091d658eaa584941d615f5fa1139d6dedb5e7ad5d584e9bfd56fc9"
+  },
+  "changed_factor": "Only standardized scalar M input gain=sqrt(hidden_size)",
+  "shuffled_control": "One fixed left cyclic shift on each query C128 M in training and evaluation; identity/RAW/reference order unchanged",
+  "reused_constant_reason": "Multiplying standardized zero by gain leaves adapter, gradients, initialization and recipe unchanged",
+  "success_question": "Can internally supplied real M produce useful correction; no requirement to exceed external heads",
+  "postfit_readout": "After fixed128 endpoint, refit only INTERNAL3 on frozen L for2000 fullTRAIN16 updates from the same V3 warm head; all paths treated alike",
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_internal_m_condition_scale_v4.py",
+      "sha256": "b29d55a610c822114cacbe76a0f65e4d2487e27d4e62faea59c18eb7742b2766"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_condition_scale_v4.sbatch",
+      "sha256": "1d1d712c602d106d7581554d9e05f81aea68486a9ac9e2f5e6a9b56188400915"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_COLNOMIC_INTERNAL_M_CONDITION_SCALE_V4_EXECUTION_20260924.md",
+      "sha256": "1fa477c6c9c10e7b27ae2361d57a09e441796157c430b7b49bc353bd98707ef5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_internal_m_condition_scale_v4.py",
+      "sha256": "562b5510665538c8df0504ca588253ba298c37f13e385c17f157b432b57d15a7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_internal_m_condition_scale_v4.py",
+      "sha256": "3374b8d601eb287c009ede68188451bce62c2b2121a049f9ea7fcefb1dd069fd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_prellm_m_pilot_v1.py",
+      "sha256": "c45c92ccd16c5f6a50b72a934233641d8a02084f3eef91df8823bc24f90f9f9e"
+    }
+  ],
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/input_manifest.json",
+    "sha256": "a788f82954ca68d713bba8fce91b76b806f85f222a2db58e507c2a3facb98054"
+  },
+  "v2_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_prellm_m_adapter_authority_v2_20260924.json",
+    "sha256": "ff3538b8d8f4281c9f082db96a310261280d6edf7aabf7702fba8738ba919451"
+  },
+  "cache_bindings": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-979d4429602e6c4a69aa6724/validation.json",
+      "sha256": "36bf08ca0e4a6d6d47dd047657c228e114c3dcdefb300c737a602c52aded876a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-979d4429602e6c4a69aa6724/payload.pt",
+      "sha256": "c95f1c4bb4c745abb98d5b5011074ec66e9f1c328cfc628cf363501dd2cd4e08"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-979d4429602e6c4a69aa6724/parity.json",
+      "sha256": "a34bb5db5af482c024be78c817cb5657e93c53b3b58f47aa19b408b035099292"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-5bf76899256100e280a80e1d/validation.json",
+      "sha256": "d6e26eb6e937b535fd0452d635c273d3ceecf6ab062d607a6f325e6b65bc72c2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-5bf76899256100e280a80e1d/payload.pt",
+      "sha256": "042bbc3419119e567b2ff86a5703d7cd2d2131f084db0ff6c924374203a531a9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-5bf76899256100e280a80e1d/parity.json",
+      "sha256": "af495de3c0d43dd4f2371c8cfee5f0c47ebe9147a5db0c31127a019213e0278f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-71a8e729bc95ecbd6e4dbc1e/validation.json",
+      "sha256": "563d950daaac1b5e8af2871bee87728313e80ab384c9f670995820a3aab97fb3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-71a8e729bc95ecbd6e4dbc1e/payload.pt",
+      "sha256": "8f5f1b8f9549f16b7c1bd6aa85e9254e91f1358b7263d4f4efe7b0a0dd76de0b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-71a8e729bc95ecbd6e4dbc1e/parity.json",
+      "sha256": "f668f822c0b98ee9954331fd59a51218f9f1740da7f1477c1c3774949ede9b4b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-ddead65d98e659c927cda92c/validation.json",
+      "sha256": "f6c612d0cb108a54f0d89e60d6aafc82a61008d1d8139fe280ab59d474cf033d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-ddead65d98e659c927cda92c/payload.pt",
+      "sha256": "fa59fd49c2fbf487e1e88633d5db7785d693a7209e960b0af371ed602ddf655b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-ddead65d98e659c927cda92c/parity.json",
+      "sha256": "f97c06daa238d502c9f1c1488d96be2cd45cc8d69937e4050b2d2f4fb924fa36"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b06273e75d64a6537f0ba426/validation.json",
+      "sha256": "a5ba5d85f78ca81136e3559f639a5728b2d0a79138fddca73a108e15f04596f0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b06273e75d64a6537f0ba426/payload.pt",
+      "sha256": "98150b8cc147d7ad931deebbe72e39e52728f9530e8e69b476b55db1bab9f8a7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b06273e75d64a6537f0ba426/parity.json",
+      "sha256": "2be371fb533b59f6ad90732170ba5b9a13aa6947cc6ee537bef8ceefd4267955"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-6a41937f82d722c1bd11db83/validation.json",
+      "sha256": "3b4fac5e20f4c5a393ba4c24fbec70aaed3e3e256395f44c0740843a12782835"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-6a41937f82d722c1bd11db83/payload.pt",
+      "sha256": "018a6f4ab8730463065f4b8bfd7c8d37b6adcef19f2cc5941f05746b14845fc9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-6a41937f82d722c1bd11db83/parity.json",
+      "sha256": "381794cf2d1bdd6fc6bc91072e39dfcffd6b57b8865907a4cefdee87698076f0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b6cf2130e8541c75b7a0daf3/validation.json",
+      "sha256": "50f7e6714c47b0706a02bcf4ce2d087b07405e376a953b065d3fbe9fbb5aa80f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b6cf2130e8541c75b7a0daf3/payload.pt",
+      "sha256": "ca2831f6d74861355ebb4205886339de7e72daffa79f06b66554a1216e20a62a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b6cf2130e8541c75b7a0daf3/parity.json",
+      "sha256": "6e85485d72d38ff9c09fa686fde79ae13e00e079b420d7a616341dc22b017417"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4c47eaead5712c9295001ec4/validation.json",
+      "sha256": "df46d2a74bb62ab6762d41437f8d40c93df211d0fe109a0b043160a5508e14cd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4c47eaead5712c9295001ec4/payload.pt",
+      "sha256": "064e1360a952f1105285eb54e641a585e53a5d9e24f9eaeb23a68c9cac9665f8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4c47eaead5712c9295001ec4/parity.json",
+      "sha256": "73d0e8f7e04c28d40021fbdfd25520082d860a322b42c3012e23149f2c83a117"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f42264b44984bda93155507c/validation.json",
+      "sha256": "ab8b1ec69f6bff7a74722e9581f10cbc6f15fa5b191f22f563856f1b96516cde"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f42264b44984bda93155507c/payload.pt",
+      "sha256": "af34a06275b1d9340f3d1db048fb3cc629014da181b368f71dfdc5ed1402e038"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f42264b44984bda93155507c/parity.json",
+      "sha256": "a5e9c658b0881c56475f9eab94e1e8a993d4fb55aa9e69bf7d53cca7e55d3f82"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-dd91c965c4987a6f11b4d08b/validation.json",
+      "sha256": "800bc4d093444ee8e22e6ba94c2f3b1f8b294a4a2deea744a5e6c96cf5fdbc09"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-dd91c965c4987a6f11b4d08b/payload.pt",
+      "sha256": "da41f72db9ccc3d6b827ab0578b460c982d3b26de6b7803451ac31b7b1bafccc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-dd91c965c4987a6f11b4d08b/parity.json",
+      "sha256": "2edbebbc7e214397fc4e28d3ca7c58edb5dba6584570c01554d903e1aa7396ff"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-08297e272b0164e6fdd42e9f/validation.json",
+      "sha256": "808e0ae5a726bb7318510a97cd205c76e089e48334e6d68dee68452a9f268be1"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-08297e272b0164e6fdd42e9f/payload.pt",
+      "sha256": "308d13cb5aed3079e75f707fd739c4e8fd23673de72d34299302d0a2eb7c298b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-08297e272b0164e6fdd42e9f/parity.json",
+      "sha256": "6043856e483efc0d57f8f8e200baf9b1af5f9f51cd309c7939bba915b5472e82"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-faa6074c9997f968c1272a9e/validation.json",
+      "sha256": "ce94958a899c27bb3f5cbcea3c66f9351d05f0fc45c8fd9150649ab5660d7304"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-faa6074c9997f968c1272a9e/payload.pt",
+      "sha256": "f3fe6e840d6c14039aab89ae46d5f7f79b675fe9da82bdd35020baeec8fbc35f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-faa6074c9997f968c1272a9e/parity.json",
+      "sha256": "6a2a0a180cbbc203ea515fc1a20f08f46c85e0a11cb1305d190e97ec517368a2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-64e146b0abb950dce567767c/validation.json",
+      "sha256": "45b60b6f74fb50e5d0a514fc7f9b434cebfa55a0d37d9462d764a4aff8562a2e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-64e146b0abb950dce567767c/payload.pt",
+      "sha256": "349e2c4c22cd63304dadce056d71ef778c1d132a871131be047ee77a9730a78d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-64e146b0abb950dce567767c/parity.json",
+      "sha256": "44e55ef9cfa392e014e4ef89e2726d9ceeb4b833cef46be7ba3a7b3a4ae007b3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-174dc7ecf520dfa933141c09/validation.json",
+      "sha256": "37257db4a8b394baa4b3f4d082082dac30b769a5a85b45055ae2f01c1ebfde86"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-174dc7ecf520dfa933141c09/payload.pt",
+      "sha256": "645ec2e06bb507153211916fd58f97edb22a3be77b2496247257d29d03155355"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-174dc7ecf520dfa933141c09/parity.json",
+      "sha256": "c67455718716e59d8241e8d3b8c38040174805940115347b24d657599179cd02"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-490d4ed0a2cc29258e504a6a/validation.json",
+      "sha256": "b204649370106c883ce26789c0383dca63a88ee9b5811639e20c52bbe5f0586a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-490d4ed0a2cc29258e504a6a/payload.pt",
+      "sha256": "bb16930c95accbb4e08507c7ebb1bf8f6a7a59399d3debf86f820cac83dba375"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-490d4ed0a2cc29258e504a6a/parity.json",
+      "sha256": "8fc3aab0eb52340c92fa62fceb398f671bab3b8ef9e634877c1c1d0039dc293a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-fa12d24ad164c3ae3b3f0ff6/validation.json",
+      "sha256": "a002c620e8e1b21a1edc8c2f5397949f0a902b5219acf3bfd7c9c5d53e51cf26"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-fa12d24ad164c3ae3b3f0ff6/payload.pt",
+      "sha256": "5452d4ec1fd5dba2263fe14b26b761418a14fd251e564e9f659ed62daf1d5e83"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-fa12d24ad164c3ae3b3f0ff6/parity.json",
+      "sha256": "17721063e1137f5a2d6e38a66f9b05be8f84d52b010a529c6fc5deda3031e1a9"
+    }
+  ],
+  "model_source_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/model_source_validation.json",
+    "sha256": "624a998ada31fbde71a55371f45d9fbd17a0726092181fdbb4824bb52b046590"
+  },
+  "encoder_cache_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/validation.json",
+    "sha256": "3f8fb8085e2a244a2888c86410314b9d1dbe461d9bc07f53479bab3a30aa0132"
+  },
+  "model": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+  "arms": [
+    "PRE_REAL",
+    "PRE_SHUFFLED"
+  ],
+  "source_fold": 0,
+  "mass_normalization": {
+    "log_mean": -4.235880477628437,
+    "log_std": 0.5803763303909416,
+    "epsilon": 1e-08,
+    "definition": "log(max(M,epsilon)); population mean/std over sixteen TRAIN x original C128 only",
+    "fit_queries": 16,
+    "fit_pairs": 2048,
+    "held_used": false
+  },
+  "score_dtype": "float64",
+  "adapter_dtype": "float32",
+  "backbone_dtype": "bfloat16",
+  "encoder_trainable": false,
+  "retrieval_lora_trainable": false,
+  "training_order": [
+    "H593-979d4429602e6c4a69aa6724",
+    "H593-5bf76899256100e280a80e1d",
+    "H593-71a8e729bc95ecbd6e4dbc1e",
+    "H593-ddead65d98e659c927cda92c",
+    "H593-b06273e75d64a6537f0ba426",
+    "H593-6a41937f82d722c1bd11db83",
+    "H593-b6cf2130e8541c75b7a0daf3",
+    "H593-4c47eaead5712c9295001ec4",
+    "H593-f42264b44984bda93155507c",
+    "H593-dd91c965c4987a6f11b4d08b",
+    "H593-08297e272b0164e6fdd42e9f",
+    "H593-faa6074c9997f968c1272a9e",
+    "H593-64e146b0abb950dce567767c",
+    "H593-174dc7ecf520dfa933141c09",
+    "H593-490d4ed0a2cc29258e504a6a",
+    "H593-fa12d24ad164c3ae3b3f0ff6"
+  ],
+  "feature_definitions": {
+    "INTERNAL3": [
+      "raw_standardized_delta",
+      "sym_L",
+      "bias"
+    ],
+    "ADDITIVE4": [
+      "raw_standardized_delta",
+      "sym_M",
+      "sym_L",
+      "bias"
+    ],
+    "PRODUCT5": [
+      "raw_standardized_delta",
+      "sym_ML",
+      "sym_M",
+      "sym_L",
+      "bias"
+    ]
+  },
+  "external_supervision": "Same TRAIN16, original cached fresh full-reference L and original M",
+  "warmstart": "INTERNAL3 full TRAIN16 mean COST1, zero init,2000 AdamW updates",
+  "external_initialization": "Embed same warm INTERNAL3; added M/ML coefficients zero",
+  "internal_initialization": "Same warm INTERNAL3 plus zero residual adapter",
+  "selection": "Fixed128 updates; no probe, held, hyperparameter or checkpoint selection",
+  "diagnostic_scope": "TRAIN16 repeated fit diagnostic only; neither OOF nor external evidence",
+  "new_roma_forwards": 0,
+  "new_visual_encoder_forwards": 0,
+  "grad_rule": "Full128 scalar loss; head gradient directly plus exact nonzero content VJP",
+  "continuation": "One PRE_REAL update must pass actual engineering gates, then resume both arms",
+  "candidate_sampling": false
+}

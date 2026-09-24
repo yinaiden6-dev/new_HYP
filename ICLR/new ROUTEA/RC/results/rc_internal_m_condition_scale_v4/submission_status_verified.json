@@ -1,0 +1,32 @@
+{
+  "utc": "2026-09-24T09:29:04.313214+00:00",
+  "cpu": {
+    "job": "5161817",
+    "state": "COMPLETED",
+    "elapsed_seconds": 37,
+    "exit_code": "0:0",
+    "partition": "dev_cpuonly",
+    "verified": "TRAIN16_COMMON_WARM_AND_EXTERNAL_HEADS_PASS",
+    "heads": [
+      {
+        "kind": "INTERNAL3",
+        "correct": 8
+      },
+      {
+        "kind": "ADDITIVE4",
+        "correct": 12
+      },
+      {
+        "kind": "PRODUCT5",
+        "correct": 12
+      }
+    ]
+  },
+  "pilot": {
+    "job": "5161818",
+    "state": "RUNNING",
+    "partition": "dev_accelerated",
+    "node": "hkn0403"
+  },
+  "scientific_result_available": false
+}
