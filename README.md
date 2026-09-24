@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-24 ColQwen base完整结果、简单融合对照与蒸馏状态](FINAL_CONTROLS_20260924.md)**
+
 - **[2026-09-24 ColPali 自有 C128：H593 五折完成，RAW 283 → MASS5 COST1 348 / CE 365](COLPALI_RESULTS_20260924.md)**
 
 - **[2026-09-23 当前实验与结果：完成项、进行中分支及数据索引](CURRENT_EXPERIMENTS_20260923.md)**

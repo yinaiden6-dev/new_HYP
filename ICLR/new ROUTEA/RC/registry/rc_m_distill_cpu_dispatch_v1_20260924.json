@@ -1,0 +1,40 @@
+{
+  "status": "EXECUTION_ONLY_ROUTING_REPAIR",
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_distill_cpu_dispatch_v1.py",
+    "sha256": "bfd6e57a019319d9a1c6fb6a85678b10891080a77040af6798c867cf2fc3075b"
+  },
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_distill_cpu_dispatch_v1.sbatch",
+    "sha256": "e546d6a6806d6225ac8cb48692601354da746f171421161036b14ccb053fa1ad"
+  },
+  "original_program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_distill_generalization_v1.py",
+    "sha256": "f98a826861424659a6c47ca51278bcc1d84aef4f07e4b62bf1d882d8014539c4"
+  },
+  "original_launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_distill_generalization_v1.sbatch",
+    "sha256": "cef3847d235b4f1f2b4d73d7b563f38f6bf7f724f1d7a6f99a29d8e2df7116fd"
+  },
+  "scientific_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_m_distill_generalization_authority_v1_20260924.json",
+    "sha256": "8443bac8effbc23ccd83ff200946623480a36a2bd653cab6c524e895bea49a4a"
+  },
+  "reason": "Eight-task array rejected under dev submit cap. Resume validated n64 output; route all new descendants to cpuonly.",
+  "unchanged": [
+    "scientific_authority",
+    "inputs",
+    "checkpoint",
+    "loss",
+    "selection",
+    "split",
+    "budgets",
+    "output_paths"
+  ],
+  "failed_parent": "5161355",
+  "original_core": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_distill_full_repair_v1.py",
+    "sha256": "eb3e21530f19d6f567103108f70e95291df95ab892944493dbf1509f46708ee9"
+  },
+  "additional_execution_fix": "Full457 has no probe. Change only progress logging lookup to .get; no model, loss, data, gate, iteration or selection changes."
+}

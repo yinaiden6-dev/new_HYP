@@ -1,0 +1,91 @@
+{
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_small_scaling_v1.py",
+      "sha256": "ceab6883e6aadd38d8ef75ce2817b2b9ad2ef08ca795d45108cb601f2d37e2aa"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_small_scaling_v1.sbatch",
+      "sha256": "affea3cef6b77ca9ad83e6d8773e2e3881294e6a280d708602d938513d416576"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_M_SMALL_SCALING_V1_20260924.md",
+      "sha256": "d8b07e7f835b7097fafe8c5296beb0fe2b0f4992ad88800d14d7c68e863b6311"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colnomic_m_train_fit_v1.py",
+      "sha256": "3066d87483ae24b9ed0ccdfa95f3d892a6a5d4015a79dd2fafecb3a5e3e09684"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colnomic_m_scale_fit_v2.py",
+      "sha256": "7feeb87697b7d108602e6310476732c58b6b8c2a8db29e790a4f1b64c0c34463"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_pair_quality_core_v1.py",
+      "sha256": "be538cf93e9a36310c7478a43a29ee238ee94a6bfbe021cec0bc8f56cc7064d3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_pair_quality_cpu_v1.py",
+      "sha256": "a21ce51efefd266f3803cd1a834419375fbb5c8cc79957cfc1fe998c76c8813b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_logit_calibration_v3.py",
+      "sha256": "0ece4f07a845019287c7c19a35df37f43059e18c9b416d7808e50a4f7a500fa4"
+    }
+  ],
+  "panel": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_small_scaling_v1/panel.json",
+    "sha256": "90f2adddbcd7a246e6dece95b632ad972eb20bda729870be36ee1094a29a0b8b"
+  },
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_fold0_mass_teacher_authority_v1_20260923.json",
+    "sha256": "5554fb66b0f257806f8ac3093eb39a5a24c6dfbec392f5be782fd7c4932276e7"
+  },
+  "train": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_fold0_mass_teacher_v1/train_inputs.json",
+    "sha256": "eb252e8e345ae970de417247a7ae04c3a4678361f93030365ee35ae85e9d812f"
+  },
+  "roles": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold0.json",
+    "sha256": "4ed6bdb7d4e47062e2bdef7268090b86453bd31c9af765e483af23b47e7bf7ca"
+  },
+  "old_four_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_scale_calibration_v3/result.json",
+    "sha256": "0a6f8d5fefcac3ce29e2e961759dabfa72aa70a6f73ea119f151c5aaa6b5b92d"
+  },
+  "old_four_relations": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query0.pt",
+      "sha256": "79f881a62e2f0be9fb4140c864f8f9e6e440478f1bd34eb692e1f2b1f08154f3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query1.pt",
+      "sha256": "cba253748c8db17fd4549b6e37bc947c49af0d68880e7e4f8f54ca7edcc090ad"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query2.pt",
+      "sha256": "af5cc5cbe02184caf60bd9ddf0bd2d48d58876a4a9ffaadb08fda1174bb0605f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query3.pt",
+      "sha256": "c46898352484a25dfb5e460e393efe5440eb26d5aac8a9779a48a3c49ec946c9"
+    }
+  ],
+  "sizes": [
+    16,
+    32,
+    64
+  ],
+  "epochs": [
+    4,
+    16,
+    64,
+    128,
+    256,
+    500
+  ],
+  "chunk_seconds": 450,
+  "max_chunks": 4,
+  "held_reads": 0,
+  "new_gpu_forwards": 0
+}

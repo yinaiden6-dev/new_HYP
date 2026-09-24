@@ -1,0 +1,93 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_m_small_scaling_authority_v1_20260924.json",
+    "sha256": "cc72ee77a87b0f9332b20b0bea607ce930721e785978f8faf768f700a7b50a47"
+  },
+  "four_historical": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_scale_calibration_v3/result.json",
+    "sha256": "0a6f8d5fefcac3ce29e2e961759dabfa72aa70a6f73ea119f151c5aaa6b5b92d"
+  },
+  "arms": {
+    "16": {
+      "result": {
+        "status": "FIT_GATE_NOT_MET_AT_500_EPOCHS",
+        "authority": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_m_small_scaling_authority_v1_20260924.json",
+          "sha256": "cc72ee77a87b0f9332b20b0bea607ce930721e785978f8faf768f700a7b50a47"
+        },
+        "snapshot": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_small_scaling_v1/n16/snapshots/epoch500.json",
+          "sha256": "dc4654371aaeb190509cac0c85f89318a986839323fda0953b3ce3164c619b02"
+        },
+        "stop_uses": "TRAIN_ONLY",
+        "n": 16,
+        "epochs": 500.0
+      },
+      "latest_snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_small_scaling_v1/n16/snapshots/epoch500.json",
+        "sha256": "dc4654371aaeb190509cac0c85f89318a986839323fda0953b3ce3164c619b02"
+      },
+      "status": {
+        "complete": true,
+        "phase": "fit",
+        "n": 16,
+        "step": 8000,
+        "seconds": 446.4373274908867,
+        "authority": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_m_small_scaling_authority_v1_20260924.json",
+          "sha256": "cc72ee77a87b0f9332b20b0bea607ce930721e785978f8faf768f700a7b50a47"
+        }
+      }
+    },
+    "32": {
+      "result": {
+        "status": "FIT_GATE_NOT_MET_AT_500_EPOCHS",
+        "authority": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_m_small_scaling_authority_v1_20260924.json",
+          "sha256": "cc72ee77a87b0f9332b20b0bea607ce930721e785978f8faf768f700a7b50a47"
+        },
+        "snapshot": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_small_scaling_v1/n32/snapshots/epoch500.json",
+          "sha256": "1ece5b18359d19e897d039830b0f5b308bed03d6e53d7d69b45d478e0a0d7a76"
+        },
+        "stop_uses": "TRAIN_ONLY",
+        "n": 32,
+        "epochs": 500.0
+      },
+      "latest_snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_small_scaling_v1/n32/snapshots/epoch500.json",
+        "sha256": "1ece5b18359d19e897d039830b0f5b308bed03d6e53d7d69b45d478e0a0d7a76"
+      },
+      "status": {
+        "complete": true,
+        "phase": "fit",
+        "n": 32,
+        "step": 16000,
+        "seconds": 444.1616112070624,
+        "authority": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_m_small_scaling_authority_v1_20260924.json",
+          "sha256": "cc72ee77a87b0f9332b20b0bea607ce930721e785978f8faf768f700a7b50a47"
+        }
+      }
+    },
+    "64": {
+      "result": null,
+      "latest_snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_small_scaling_v1/n64/snapshots/epoch256.json",
+        "sha256": "ba14728785d052deac673d2ce9b0659192c423f9494f9e53b400cd124869445d"
+      },
+      "status": {
+        "complete": false,
+        "phase": "fit",
+        "step": 29722,
+        "n": 64,
+        "seconds": 450.02848810586147,
+        "authority": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_m_small_scaling_authority_v1_20260924.json",
+          "sha256": "cc72ee77a87b0f9332b20b0bea607ce930721e785978f8faf768f700a7b50a47"
+        }
+      }
+    }
+  },
+  "boundary": "TRAIN fitting plus eight group-disjoint TRAIN probe queries; not held119 or accuracy GO"
+}

@@ -1,0 +1,75 @@
+{
+  "status": "TRAIN_RELATIVE_AND_ABSOLUTE_M_FROZEN",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colnomic_m_scale_fit_v2.py",
+      "sha256": "7feeb87697b7d108602e6310476732c58b6b8c2a8db29e790a4f1b64c0c34463"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colnomic_m_train_fit_v1.py",
+      "sha256": "3066d87483ae24b9ed0ccdfa95f3d892a6a5d4015a79dd2fafecb3a5e3e09684"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_pair_quality_core_v1.py",
+      "sha256": "be538cf93e9a36310c7478a43a29ee238ee94a6bfbe021cec0bc8f56cc7064d3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_pair_quality_cpu_v1.py",
+      "sha256": "a21ce51efefd266f3803cd1a834419375fbb5c8cc79957cfc1fe998c76c8813b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_COLNOMIC_M_SCALE_FIT_V2_20260923.md",
+      "sha256": "8a903efe4ea36c2eed7691b8a6b7804e115519a1b84968c99874acda8768bdc8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colnomic_m_scale_fit_v2.sbatch",
+      "sha256": "6fa5a93049f975cf794c2a0d203bc7a570070229811821c3d2c3fa2b5c639d8c"
+    }
+  ],
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_colnomic_m_train_fit_authority_v1_20260923.json",
+    "sha256": "85a1856f0873f41e8eab9dabfd8453d91799261dec90baac9e3911db84469d1c"
+  },
+  "panel": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/panel.json",
+    "sha256": "8002da20b7b05f1b87dae7a0b4fb5b803b109e0c29d55e5e8edd1ae4ab7ee516"
+  },
+  "start_checkpoint": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/checkpoint.pt",
+    "sha256": "926c60d0842eeb2d0f778ae7df870349e7026a989a78ad0403a31b55cf718342"
+  },
+  "relations": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query0.pt",
+      "sha256": "79f881a62e2f0be9fb4140c864f8f9e6e440478f1bd34eb692e1f2b1f08154f3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query1.pt",
+      "sha256": "cba253748c8db17fd4549b6e37bc947c49af0d68880e7e4f8f54ca7edcc090ad"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query2.pt",
+      "sha256": "af5cc5cbe02184caf60bd9ddf0bd2d48d58876a4a9ffaadb08fda1174bb0605f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_m_train_fit_v1/relations/query3.pt",
+      "sha256": "c46898352484a25dfb5e460e393efe5440eb26d5aac8a9779a48a3c49ec946c9"
+    }
+  ],
+  "initial_arm": "CALIBRATED",
+  "start_step": 256,
+  "final_step": 2000,
+  "arms": [
+    "FULL",
+    "BALANCED"
+  ],
+  "seed": 17,
+  "lr": 0.001,
+  "weight_decay": 0.001,
+  "chunk_seconds": 450,
+  "max_chunks": 8,
+  "held_reads": 0,
+  "candidate_count": 128,
+  "train_queries": 4,
+  "cross_group_start_only_after_fit_gate": true
+}

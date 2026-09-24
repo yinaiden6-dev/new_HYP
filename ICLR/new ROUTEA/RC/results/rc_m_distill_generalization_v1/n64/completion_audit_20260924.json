@@ -1,0 +1,49 @@
+{
+  "status": "N64_SNAPSHOT_AGGREGATES_AND_ORIGINAL_GATES_PASS",
+  "snapshot": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_distill_generalization_v1/n64/snapshots/iter080.json",
+    "sha256": "b4c0597a841afcdce29ab5ec98b3410e8af78504ac1fd5dbaa7bc2b3eba670b5"
+  },
+  "fit": {
+    "log_mse": 0.04712221802329458,
+    "centered_log_mse": 0.04698744149676353,
+    "teacher_centered_log_variance": 0.21207470429621583,
+    "normalized_centered_mse": 0.2396009586117473,
+    "mean_log_error": 1.9943898962870854e-16,
+    "pair_order_agreement": 0.8356880097687358,
+    "predicted_M_std": 0.0067830433510165196,
+    "teacher_M_std": 0.011935283126054515,
+    "predicted_logM_std": 0.3552256326195906,
+    "teacher_logM_std": 0.4519385106360643
+  },
+  "probe": {
+    "log_mse": 0.44011702000174024,
+    "centered_log_mse": 0.3711974699756797,
+    "teacher_centered_log_variance": 0.28055652899973205,
+    "normalized_centered_mse": 1.5030165619038138,
+    "mean_log_error": -0.042809925318664864,
+    "pair_order_agreement": 0.5503592555260777,
+    "predicted_M_std": 0.005515683665689179,
+    "teacher_M_std": 0.010088362996089504,
+    "predicted_logM_std": 0.4092237303771469,
+    "teacher_logM_std": 0.5063850523006309
+  },
+  "fit_gate": {
+    "relative_error": true,
+    "order": true,
+    "absolute_log_rmse": true,
+    "every_query_log_bias": true
+  },
+  "probe_gate": {
+    "relative_error": false,
+    "order": false,
+    "absolute_log_rmse": false,
+    "every_query_log_bias": false
+  },
+  "held119_new_result": false,
+  "scheduler": "5161355 FAILED/1:0 after FIT_GATE_PASS because dispatch failed",
+  "resume_jobs": {
+    "cache": "5161375",
+    "cache_join": "5161376"
+  }
+}

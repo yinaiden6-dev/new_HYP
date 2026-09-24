@@ -1,0 +1,16 @@
+{
+  "command": [
+    "sbatch",
+    "--partition=cpuonly",
+    "--parsable",
+    "--mem=32G",
+    "--dependency=afterok:5161376",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_distill_cpu_dispatch_v1.sbatch",
+    "inner",
+    "0"
+  ],
+  "returncode": 0,
+  "stdout": "5161388\n",
+  "stderr": "",
+  "parent": "5161376"
+}
