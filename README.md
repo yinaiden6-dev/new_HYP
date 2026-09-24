@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-24 论文收口稿与内部M V3最终结果](backup/internal_m_v3_final_closure_20260924/README.md)**：内部真实M／恒定M均8/16，外部加性／乘积均12/16；完整终点已封存，未获得内部纠错收益。
+
 - **[2026-09-24 Qwen乘积项完整结果与内部M V3阶段快照](backup/internal_m_v3_and_qwen_product6_20260924/README.md)**：Qwen CE 536→537/593（2救1损，分组区间跨零），COST1维持504/593；内部M真实输入线仅归档至88/128步，尚非最终结果。
 
 - **[2026-09-24 ColQwen base完整结果、简单融合对照与蒸馏状态](FINAL_CONTROLS_20260924.md)**

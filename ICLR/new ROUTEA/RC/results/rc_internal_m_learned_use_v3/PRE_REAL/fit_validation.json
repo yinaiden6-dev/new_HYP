@@ -1,0 +1,47 @@
+{
+  "status": "FIXED128_UPDATES_TRAIN_ENDPOINTS_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_learned_use_v3_authority_20260924.json",
+    "sha256": "7c3e6066c760d3cdb3a838a07b138fadef190a601169970c9ea22f8a267b6fb1"
+  },
+  "arm": "PRE_REAL",
+  "steps": 128,
+  "checkpoint": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/checkpoint.pt",
+    "sha256": "c758b53c2e22c15cc7195e1671346756715608e4ecbeb350a2db94d2eeda6e0d"
+  },
+  "endpoints": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0016/validation.json",
+      "sha256": "4f2226e60a3fb7374e9bc6201d4e937402b8e61f92c1076f5d0ef6b39f7a3d8b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/endpoints/0128/validation.json",
+      "sha256": "8d8169d4df97cc3c5b19b8ec65f064bc3f27ac07c1c136bc76ae76ff932ae0c5"
+    }
+  ],
+  "snapshots": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0016.pt",
+      "sha256": "5252a1e33c0ec18812c8dc8612f11b26a1c32e31b7e9a1684c578575f7b39434"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0064.pt",
+      "sha256": "1af37dc349a4e601a07042d10c05304a46733b4d48ca437e3bbe52bef7514275"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/snapshots/0128.pt",
+      "sha256": "ea0d387bd9f9f73f5908b903f2996531c1fd81c24c1f2aa77cc3710caba64548"
+    }
+  ],
+  "head_trainable_parameters": 3,
+  "adapter_parameters": 118304,
+  "head_features": [
+    "raw_standardized_delta",
+    "sym_L",
+    "bias"
+  ],
+  "direct_M_in_head": false,
+  "held_label_reads": 0,
+  "selection": "Fixed terminal128; no model or epoch selection"
+}

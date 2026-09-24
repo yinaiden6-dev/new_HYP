@@ -1,0 +1,119 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_learned_use_v3_authority_20260924.json",
+    "sha256": "7c3e6066c760d3cdb3a838a07b138fadef190a601169970c9ea22f8a267b6fb1"
+  },
+  "report": {
+    "status": "STRICT_LOCAL_COLNOMIC_WEIGHTS_PASS",
+    "loader": "explicit base key mapping plus local PEFT get_peft_model and set_peft_model_state_dict",
+    "base_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base",
+    "adapter_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+    "sources": [
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/config.json",
+        "sha256": "fcf7636197a793fef485bd846052cb4a04a5452e9457d35cdb9f27b0b816cd80"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model.safetensors.index.json",
+        "sha256": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_config.json",
+        "sha256": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c"
+      }
+    ],
+    "weight_hashes_verified_here": false,
+    "weight_file_stats": [
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00001-of-00007.safetensors",
+        "device": 49,
+        "inode": 285291781,
+        "size": 4952311608,
+        "mtime_ns": 1778003730336771163
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00002-of-00007.safetensors",
+        "device": 49,
+        "inode": 285291778,
+        "size": 4984124272,
+        "mtime_ns": 1778003727313103728
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00003-of-00007.safetensors",
+        "device": 49,
+        "inode": 285291780,
+        "size": 4932743936,
+        "mtime_ns": 1778003725543768292
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00004-of-00007.safetensors",
+        "device": 49,
+        "inode": 285291782,
+        "size": 4998852296,
+        "mtime_ns": 1778003725937516735
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00005-of-00007.safetensors",
+        "device": 49,
+        "inode": 285291788,
+        "size": 4984124336,
+        "mtime_ns": 1778003727557491745
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00006-of-00007.safetensors",
+        "device": 49,
+        "inode": 285291796,
+        "size": 4932743992,
+        "mtime_ns": 1778003727226618178
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00007-of-00007.safetensors",
+        "device": 49,
+        "inode": 285291798,
+        "size": 3385682488,
+        "mtime_ns": 1778003725566737873
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_model.safetensors",
+        "device": 49,
+        "inode": 777080420,
+        "size": 323489536,
+        "mtime_ns": 1778003664506585399
+      }
+    ],
+    "base_key_mapping": {
+      "^model\\.embed_tokens\\.": "language_model.embed_tokens.",
+      "^model\\.norm\\.": "language_model.norm.",
+      "^model\\.layers\\.": "language_model.layers.",
+      "^model\\.language_model\\.": "language_model.",
+      "^model\\.visual\\.": "visual."
+    },
+    "base_missing_keys": [],
+    "base_unused_keys": [
+      "lm_head.weight"
+    ],
+    "adapter_source_tensor_count": 394,
+    "adapter_loaded_tensor_count": 394,
+    "adapter_tensor_value_parity": true,
+    "adapter_dtype": [
+      "torch.bfloat16"
+    ],
+    "adapter_source_dtype": [
+      "torch.float32"
+    ],
+    "modules_to_save": null,
+    "backbone_dtype": "torch.bfloat16",
+    "attention": "sdpa",
+    "trainable_parameters": 0,
+    "versions": {
+      "torch": "2.9.1",
+      "transformers": "5.6.2",
+      "peft": "0.18.1",
+      "colpali-engine": "0.3.15"
+    },
+    "processor_forward_calls": 0,
+    "visual_forward_calls": 0,
+    "cache_processor_backend": "torchvision",
+    "loading_seconds": 34.36380736110732
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2026-09-24T08:41:08.466139+00:00",
+  "job_id": "5161639",
+  "requested_by_user": "Move to dev_accelerated to finish internal M experiment",
+  "previous_partition": "accelerated",
+  "verified_partition": "dev_accelerated",
+  "scheduler": "JobId=5161639 JobName=cn_Muse3 UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=RUNNING Reason=Prolog Dependency=(null) Requeue=1 Restarts=6 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:28 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-24T10:26:27 EligibleTime=2026-09-24T10:28:28 AccrueTime=2026-09-24T10:28:28 StartTime=2026-09-24T10:40:40 EndTime=2026-09-24T10:50:40 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-24T10:40:40 Scheduler=Main Partition=dev_accelerated AllocNode:Sid=hkn0412:2890391 ReqNodeList=(null) ExcNodeList=(null) NodeList=hkn0402 BatchHost=hkn0402 NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=64G,node=1,billing=8,gres/gpu=1 AllocTRES=cpu=8,mem=64G,node=1,billing=8,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=8 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch SubmitLine=sbatch --parsable --partition=accelerated --dependency=afterok:5161637 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_internal_m_learned_use_v3.sbatch train PRE_REAL WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/internal-M3-5161639.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/internal-M3-5161639.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=8",
+  "checkpoint_policy": "same Job ID, existing checkpoint, same-ID requeue; no program changes",
+  "summary_job": "5161640",
+  "summary_dependency_verified_before_update": "afterok:5161639(unfulfilled)"
+}

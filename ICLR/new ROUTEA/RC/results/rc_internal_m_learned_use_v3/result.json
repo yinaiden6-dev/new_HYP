@@ -1,0 +1,177 @@
+{
+  "status": "TRAIN16_INTERNAL_M_LEARNED_USE_DIAGNOSTIC_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_learned_use_v3_authority_20260924.json",
+    "sha256": "7c3e6066c760d3cdb3a838a07b138fadef190a601169970c9ea22f8a267b6fb1"
+  },
+  "evidence_level": "Opened TRAIN16 fit diagnostic; no held/probe result",
+  "raw_correct": 8,
+  "train_count": 16,
+  "external": {
+    "INTERNAL3": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/cpu/warmstart_INTERNAL3.json",
+        "sha256": "baa92dcea170098afe14e5ebc392dc56c1a8b4508d4711a2d2ab30b621972810"
+      },
+      "theta": [
+        -0.1581809656091234,
+        24.178263874937812,
+        -0.45744478516823506
+      ],
+      "summary": {
+        "queries": 16,
+        "correct": 8,
+        "mean_cost1": 0.9220788025644815,
+        "target_margin_mean": 0.2826696597952313,
+        "rescues_vs_raw": [],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 0
+      }
+    },
+    "ADDITIVE4": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/cpu/ADDITIVE4.json",
+        "sha256": "70b21a2d64900e87573af12356a9951c8380c87147fac0ba5e98aee9dbc5be33"
+      },
+      "theta": [
+        0.08800040013269313,
+        3.5237561758291847,
+        30.777066049690756,
+        -0.4992148340409783
+      ],
+      "summary": {
+        "queries": 16,
+        "correct": 12,
+        "mean_cost1": 0.7484206912605809,
+        "target_margin_mean": 1.4003566177244975,
+        "rescues_vs_raw": [
+          "H593-f42264b44984bda93155507c",
+          "H593-dd91c965c4987a6f11b4d08b",
+          "H593-faa6074c9997f968c1272a9e",
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 5
+      }
+    },
+    "PRODUCT5": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/cpu/PRODUCT5.json",
+        "sha256": "ab5a13ecbc33a80c8a17581cb8546607aca46b8e855bfa434e3e56c856dd9402"
+      },
+      "theta": [
+        0.08596441829987489,
+        3.2506088803663324,
+        0.24412378354748326,
+        28.832465181351385,
+        -0.48580859794970943
+      ],
+      "summary": {
+        "queries": 16,
+        "correct": 12,
+        "mean_cost1": 0.7461964448342494,
+        "target_margin_mean": 1.4108914613389034,
+        "rescues_vs_raw": [
+          "H593-f42264b44984bda93155507c",
+          "H593-dd91c965c4987a6f11b4d08b",
+          "H593-faa6074c9997f968c1272a9e",
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 5
+      }
+    }
+  },
+  "internal": {
+    "PRE_CONSTANT": {
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/fit_validation.json",
+        "sha256": "6e17e7dce0f63a91682cc2ce74fb37ec9b12ef3bccfec6e62d0377f5948a9c2b"
+      },
+      "endpoints": {
+        "16": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9945578601014684,
+            "target_margin_mean": 0.3050635448373774,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        },
+        "128": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8419840404477844,
+            "target_margin_mean": 0.5333272720413176,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        }
+      }
+    },
+    "PRE_REAL": {
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/fit_validation.json",
+        "sha256": "1665dc9ae501a6efaf32c25119af50ca6cfdcdafaf2d04f216eef31d03357482"
+      },
+      "endpoints": {
+        "16": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9944737795266888,
+            "target_margin_mean": 0.30396060987894996,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        },
+        "128": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8578355671070997,
+            "target_margin_mean": 0.4837670986027103,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          },
+          "constant": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8567127606845959,
+            "target_margin_mean": 0.4847937457360108,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          },
+          "shuffled": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8564160910874521,
+            "target_margin_mean": 0.48477422828856404,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        }
+      }
+    }
+  },
+  "no_generalization_claim": true,
+  "opened_probe_evaluations": 0,
+  "train_loss_relative_change": {
+    "PRE_CONSTANT": {
+      "16": -0.0786039732563079,
+      "128": 0.0868632506179926
+    },
+    "PRE_REAL": {
+      "16": -0.07851278736791555,
+      "128": 0.06967217474114876
+    }
+  }
+}
