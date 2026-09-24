@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[90张英文纠错图（放大 reference）及内部M V4最新快照](backup/rescue90_english_and_internal_m4_20260924/README.md)**：药盒／GroZi／ISIC各30张，附完整候选分数、原生热图与验证记录。
+
 - **[2026-09-24 内部M失败定位与V4阶段快照、ZIP下载](backup/internal_m_diagnostics_v4_snapshot_20260924/README.md)**：补齐V3读出/条件尺度诊断，V4仍在训练，阶段数据不作为最终结论。
 
 - **[2026-09-24 论文收口稿与内部M V3最终结果](backup/internal_m_v3_final_closure_20260924/README.md)**：内部真实M／恒定M均8/16，外部加性／乘积均12/16；完整终点已封存，未获得内部纠错收益。
