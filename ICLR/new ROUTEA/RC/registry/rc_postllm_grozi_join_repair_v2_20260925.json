@@ -1,0 +1,44 @@
+{
+  "status": "FROZEN_PRELABEL_JOIN_REPAIR",
+  "reason": "5533 physical rows yield 5532 unique identities; original RAW ranks highest-scoring physical representative per identity",
+  "original_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_grozi_external_authority_v1_20260925.json",
+    "sha256": "984069e679e6e2595769eadc8b6e558b91bc973486f00b218f2596529927a4d7"
+  },
+  "original_join": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/join_rc_postllm_grozi_external_v1.py",
+    "sha256": "7d33bcaabad6363223129ad116b7d57282bc6542b8438d380bf82e635a6efde9"
+  },
+  "replacement_join": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/join_rc_postllm_grozi_external_v2.py",
+    "sha256": "c6454da6a5ad2223bdd893d9dd217fecf1548d81d2f5e38afaf7615c30cd7302"
+  },
+  "regression_tests": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_postllm_grozi_identity_axis_v2.py",
+    "sha256": "9e62264d579a4aff273cdad4bf64aa2f23f5aac6349c19ef1d7897833cda0161"
+  },
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_grozi_join_repair_v2.sbatch",
+    "sha256": "3b2b182d68dfb57b6b807d8e8c282c3d066c2ea58004af077113ed243cb246bf"
+  },
+  "original_rank_implementation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_new_hyp_grozi120_inference_v1.py",
+    "sha256": "5cb206dca3e7c9f64b0f82df9ff233eab2a654fbfc13a7f361066debf25bb2f8"
+  },
+  "failed_job": "5163011",
+  "inference_or_model_changes": false,
+  "external_training_updates": 0,
+  "changed_checks": [
+    "identity-deduplicated complete ranking, 5532 identities across5533 physical rows",
+    "independent full-score stable identity-dedup ranking reconstruction"
+  ],
+  "unchanged": [
+    "source frozen model",
+    "all480 predictions and token caches",
+    "natural C128",
+    "source head and normalization",
+    "all127 logits and strict zero action",
+    "original authority and code",
+    "post-seal label join and grouped inference"
+  ]
+}

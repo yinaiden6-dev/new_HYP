@@ -1,0 +1,185 @@
+{
+  "status": "FROZEN_POSTLLM_GROZI480_AUTHORIZED",
+  "user_authorization": "2026-09-25: 然后补一个内部模型的外部数据实验就收口",
+  "source_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_h593_authority_v1_20260924.json",
+    "sha256": "4e244190e58a73b27239a400394ba362b9221d2d8cfd342f841f85ff59248bad"
+  },
+  "source_fold": 0,
+  "source_fit": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/fit_validation.json",
+    "sha256": "4ea57009698a13b79227c32d0280e7cf89a7f65fbd795dd72abaff4f23294f6b"
+  },
+  "source_snapshot": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/final.pt",
+    "sha256": "4ad1fa8be929c59339162d8557ee8be8e36d2c60408dd0e1974aedebcf749a29"
+  },
+  "source_heads": {
+    "INTERNAL3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/warm/INTERNAL3.json",
+      "sha256": "3bb2f19362aa2c32e7890b902ff4b3cf8c49d95c36c6cc2669f03ae28330bfcc"
+    },
+    "ADDITIVE4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/warm/ADDITIVE4.json",
+      "sha256": "d2b49f06e7f0e76e1c44e1e5e68eb2a5c63df1475defb7ab43d76cf195ec9f15"
+    },
+    "PRODUCT5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/warm/PRODUCT5.json",
+      "sha256": "118027f340b09f9cc576a300f971c77231f8ab03275441b8158e38fd678dee81"
+    }
+  },
+  "model": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+  "model_source_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/model_source_validation.json",
+    "sha256": "624a998ada31fbde71a55371f45d9fbd17a0726092181fdbb4824bb52b046590"
+  },
+  "external_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_new_hyp_grozi120_inference_authority_v1_20260913.json",
+    "sha256": "fa173fe7645acc1e35da3b1b828d48664a54803f0615326b780895527a6d0148"
+  },
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_grozi120_external_v1/worker_manifest.json",
+    "sha256": "19b3e2ecb297094c5b2ee4c377871fd508b9d7b37eb66bd71c9312c583e3ecc0"
+  },
+  "legacy_gallery": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+    "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+  },
+  "gallery_append": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_grozi120_external_v1/gallery_append_manifest.json",
+    "sha256": "9e3c08442d934c5b12fab8c7fb3bfa253196bfc6e0255368784b49e53951012f"
+  },
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_grozi_external_v1.py",
+      "sha256": "0c3b8dc6a5816081b077a7fbcc616fcab9917adee51786f4e39e00ce8079030f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/join_rc_postllm_grozi_external_v1.py",
+      "sha256": "7d33bcaabad6363223129ad116b7d57282bc6542b8438d380bf82e635a6efde9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prepare_rc_postllm_grozi_external_v1.py",
+      "sha256": "0b2e9ad8d6ec307c3d815f7ce9c5eb5db2e30234aa5af2ba840a862dca892f5e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_postllm_grozi_external_v1.py",
+      "sha256": "7376ab89b79e9fa5edcd3cae18f91739bb7d0d25c1b75e5f9ec33fd8d8d87048"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_grozi_external_v1.sbatch",
+      "sha256": "ddbd5688e6b50495bc6367ca160a0b19529f2a5a6d5ac2f40a91584cbf680f0f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_POSTLLM_GROZI_EXTERNAL_V1_20260925.md",
+      "sha256": "a04fb764dd3f7b4c2db25a8f3bc0e5183de1adf9fb282818b13be441148e7cc6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_postllm_grozi_external_v1.py",
+      "sha256": "9a76d56a98d4f9c18a6b7a0e0f275d37a6f9e7600b8e3a7077871e1e3ada4929"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_simple_external_replay_v1.py",
+      "sha256": "b89775e5fb53ab70dcea147e53ec8fed0f1aae2d58ab7b4e1705024c7f60f888"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/join_rc_postllm_h593_v1.py",
+      "sha256": "99d355ccde59c1030b884d70dc75a6d1ddc34d00eb48eae9c722072b0b957509"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_postllm_h593_v1.py",
+      "sha256": "50676cc35431de89d61b6945dca3c6f398cba06b538b68d9bc2abea7d0b633df"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_h593_v1.sbatch",
+      "sha256": "017d290ea863b6260b395a9c9f5bcea33c445909df911fa12e394529c0af5f34"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_POSTLLM_H593_FULL_EXPANSION_V1_20260924.md",
+      "sha256": "ef9ea8e5388edfac6a9bb49e7e6830a8dd38a5b1b90edbb902a2b59e4e7b9cff"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prepare_rc_postllm_h593_v1.py",
+      "sha256": "bb7529edd4e0507d4a9a0bd3419ca550c1446d3d399b3d602c50a4bf8c538529"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/cache_rc_postllm_h593_v1.py",
+      "sha256": "a7f28642c78c7b6b17d89fb2b0ec39a2e1970bc92253803305bc6623733bb6d0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_h593_v1.py",
+      "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_postllm_h593_v1.py",
+      "sha256": "de2c5424983bacea6364bea93f3c96aa8c8f08846d25b876852937b055dda82a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_postllm_h593_join_v1.py",
+      "sha256": "5313ee1dbff197ae6c61ae15817d029765deceedac3dd774a928099a98b234ae"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_internal_m_condition_scale_v4.py",
+      "sha256": "b29d55a610c822114cacbe76a0f65e4d2487e27d4e62faea59c18eb7742b2766"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_prellm_m_pilot_v1.py",
+      "sha256": "c45c92ccd16c5f6a50b72a934233641d8a02084f3eef91df8823bc24f90f9f9e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_internal_m_v4_probe_v1.py",
+      "sha256": "e481d70b806321cfc13705abd5dc57f1ed6f936632698697c4dd76f291f80a97"
+    }
+  ],
+  "dataset": "GroZi480",
+  "n": 480,
+  "shards": 60,
+  "workers_parallel": 12,
+  "source_video_groups": 27,
+  "primary": "POST_REAL",
+  "controls": [
+    "RAW",
+    "NO_ADAPTER_INTERNAL3",
+    "POST_REAL_CONSTANT",
+    "POST_REAL_SHUFFLED",
+    "EXTERNAL_ADDITIVE4",
+    "EXTERNAL_PRODUCT5"
+  ],
+  "training_updates": 0,
+  "switch_threshold": 0.0,
+  "candidate_count": 128,
+  "physical_gallery": 5533,
+  "source_parity": {
+    "historical_fp16_exact": true,
+    "projection_exact": true,
+    "max_content_error": 0.005
+  },
+  "frame": "EXIF_ORIENTED_BEFORE_RESIZE",
+  "processor_backend": "torchvision",
+  "attention": "sdpa",
+  "new_query_encoder_forwards": 480,
+  "new_reference_encoder_forwards": 0,
+  "new_roma_forwards": 0,
+  "external_fitting": false,
+  "external_normalization": false,
+  "external_threshold_selection": false,
+  "fold_selection": "Fixed fold0 by index before external predictions; no external-result selection",
+  "source_normalization": "Saved fold0 TRAIN log-M mean/std; no external statistics",
+  "seal_policy": "All480 predictions and controls before curator-label access",
+  "panel_scope": "Previously opened external product-crop panel, not new untouched data or scene segmentation",
+  "continuation": "Finish result and report; no automatic optimization, resampling or new experiments",
+  "time_limit": "00:10:00",
+  "max_requeues": 12
+}

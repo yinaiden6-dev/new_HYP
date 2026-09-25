@@ -1,0 +1,46 @@
+{
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_grozi_external_authority_v1_20260925.json",
+    "sha256": "984069e679e6e2595769eadc8b6e558b91bc973486f00b218f2596529927a4d7"
+  },
+  "jobs": {
+    "pilot": {
+      "job_id": "5163009",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_accelerated",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_grozi_external_v1.sbatch",
+        "pilot"
+      ],
+      "stderr": ""
+    },
+    "worker": {
+      "job_id": "5163010",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=accelerated",
+        "--array=0-11%12",
+        "--dependency=afterok:5163009",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_grozi_external_v1.sbatch",
+        "worker"
+      ],
+      "stderr": ""
+    },
+    "join": {
+      "job_id": "5163011",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly,dev_cpuonly",
+        "--gres=none",
+        "--mem=16G",
+        "--dependency=afterok:5163009:5163010",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_grozi_external_v1.sbatch",
+        "join"
+      ],
+      "stderr": ""
+    }
+  }
+}

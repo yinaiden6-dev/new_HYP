@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-25 最新论文主稿、空间支持统一说明与新颖性核对](backup/paper_support_novelty_20260925/README.md)**：分别更新 reports、reports/data 和 plan 原目录；补齐固定内部模型 GroZi480 的321→339（18救0损）结果及验收。当前文档与证据按此增量清单验证；旧归档清单及校验脚本须在各自归档提交运行，不能用于验证后来修订的同名文档。
+
 - **[2026-09-25 后 LLM 全量实验与机制归因完整归档](backup/postllm_and_attribution_20260925/README.md)**：H593 内部 POST_REAL 478/593；共同响应 477、patch 剩余 430、固定内容命中 469。含完整逐候选记录、独立核算、上游干预及无 RoMa 对照的负结果与边界。下方 V3/V4 快照保留为历史记录。
 
 - **[90张英文纠错图（放大 reference）及内部M V4最新快照](backup/rescue90_english_and_internal_m4_20260924/README.md)**：药盒／GroZi／ISIC各30张，附完整候选分数、原生热图与验证记录。

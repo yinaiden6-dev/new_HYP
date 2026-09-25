@@ -1,0 +1,744 @@
+{
+  "status": "DOCUMENTATION_CLOSURE_SOURCE_METRICS_VERIFIED",
+  "created_at_utc": "2026-09-25T06:13:21.276935+00:00",
+  "scope": {
+    "dataset": "H593 previously used development panel",
+    "split": "original grouped five-fold OOF",
+    "candidate_source": "ColNomic natural C128",
+    "n": 593,
+    "target_present": 570,
+    "RAW_correct": 426,
+    "heads": "historical COST1 operator heads; separately trained POST_REAL/INTERNAL3 and fresh external heads; fixed POST model decomposition",
+    "interpretation": "Scientific source results remain immutable; this is a documentation extraction, not a new experiment, new model, or historical spatial GO."
+  },
+  "sources": {
+    "external_operator": {
+      "path": "results/rc_h593_quality_operator_eval_v1/result.json",
+      "sha256": "aa6a2919419c4d1a6c95d31e03169f795fa67d718271f0267ad06574fc78c935",
+      "status": "QUALITY_OPERATOR_EVAL_ALL593_COMPLETE"
+    },
+    "postllm": {
+      "path": "results/rc_postllm_h593_v1/result.json",
+      "sha256": "1636f91df870895e1306eb4ff34313d28bf1d8cd0eab76318078c79618d55780",
+      "status": "H593_POSTLLM_FIVEFOLD_INDEPENDENT_JOIN_COMPLETE"
+    },
+    "decomposition": {
+      "path": "results/rc_postllm_h593_decomposition_v1/result.json",
+      "sha256": "add0be89cea7cb575c97371c7b4452cfe98790f1facf56b069c0388f6e42c114",
+      "status": "ALL593_DECOMPOSITION_AUDITED"
+    },
+    "head_content_swap": {
+      "path": "results/rc_postllm_h593_attribution_v1/result.json",
+      "sha256": "72f4febadefe993c33310b8fef98ed5e465a5cbb7b806944bac08a5dd9523dfe",
+      "status": "SAVED_OOF_CONTENT_HEAD_SWAP_REPLAY_PASS"
+    },
+    "matched_content": {
+      "path": "results/rc_mass_information_transport_v1/result.json",
+      "sha256": "fc16807d7964185cd64f15502acd6d92b0b6598e0ca79ff9f9d862fd85c6a4cf",
+      "status": "INFORMATION_AND_TRANSPORT_DIAGNOSTIC_COMPLETE"
+    },
+    "matched_content_external": {
+      "path": "results/rc_mass_information_transport_v1/external_panels.json",
+      "sha256": "547917d13fa5e256ef524e83dc8542035065bbd228507da114c1e8b568804b0d",
+      "status": "OPENED_EXTERNAL_INFORMATION_PROPERTY_RECOUNT_COMPLETE"
+    },
+    "upstream_source": {
+      "path": "results/rc_mass_discrimination_source_v1/result.json",
+      "sha256": "d91cba8c4063c336f99ea10286e45ad175bf2a332d613ed36874f2534c7b54b1",
+      "status": "M_DISCRIMINATION_SOURCE_PANEL8_COMPLETE"
+    },
+    "fixed_head_external_grozi": {
+      "path": "results/rc_simple_external_transfer_v1/grozi/result.json",
+      "sha256": "b97fdbbef35ca003db19b794951240a5ed1f7be9fcf31b7eb5328798c6f31cd8",
+      "status": "FIXED_SIMPLE_EXTERNAL_DATASET_COMPLETE"
+    },
+    "fixed_head_external_isic": {
+      "path": "results/rc_simple_external_transfer_v1/isic/result.json",
+      "sha256": "6d6bb983eca34a69710b270cb7ba2d6939670040a62e219e95091ffcb0aeb7b1",
+      "status": "FIXED_SIMPLE_EXTERNAL_DATASET_COMPLETE"
+    },
+    "shared_modulation_probe8": {
+      "path": "results/rc_postllm_train_pool_common_v2/summary.json",
+      "sha256": "9816143121718e9366275821d7293c635464b2210e5152391a75ab39d7478206",
+      "status": "ALL8_PROBE_COMPLETE"
+    },
+    "sam3_h593_summary": {
+      "path": "reports/sam3_colnomic_ocr_h593/package_20260918_2340/results/h593_summary.csv",
+      "sha256": "5bfffbf69e4bbaf14ca5408707f1cbe40f4895d46721dca275cb42ccae2a0c26",
+      "status": "SOURCE_VERIFIED_FOR_DOCUMENTATION"
+    },
+    "sam3_legacy72": {
+      "path": "../colnomic_migration/results/threeway_72gold/threeway_72gold.json",
+      "sha256": "56f3a8d728532fc2b2fc053d366b6ec245a92ff87fb302bace59655153a074d3",
+      "status": "SOURCE_VERIFIED_FOR_DOCUMENTATION"
+    },
+    "target_free_post_implementation": {
+      "path": "programs/run_rc_postllm_h593_v1.py",
+      "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a",
+      "status": "SOURCE_VERIFIED_FOR_DOCUMENTATION"
+    },
+    "postllm_external_grozi": {
+      "path": "results/rc_postllm_grozi_external_v1/result.json",
+      "sha256": "2f0dc60141e56d707631cdf2db2988108b4928be12542e42f247810d3618c340",
+      "status": "GROZI_POSTLLM_FROZEN480_COMPLETE"
+    },
+    "postllm_external_grozi_validation": {
+      "path": "results/rc_postllm_grozi_external_v1/validation.json",
+      "sha256": "939c76ebecf7d85ab75c773dab4b67dec6b35342b203c1c7dde7e437096a51d6",
+      "status": "GROZI_POSTLLM_NUMPY_SOURCE_COUNTS_GROUPS_PASS"
+    },
+    "postllm_external_grozi_recount": {
+      "path": "results/rc_postllm_grozi_external_v1/operations/independent_final_recount_20260925.json",
+      "sha256": "70bcee0200d546226caba36a85927343460febf08246a26b117e1f303dc8327d",
+      "status": "INDEPENDENT_480_QUERY_ACTION_LABEL_RANK_GROUP_RECOUNT_PASS"
+    },
+    "postllm_external_grozi_join_repair": {
+      "path": "registry/rc_postllm_grozi_join_repair_v2_20260925.json",
+      "sha256": "3ec3312211fadb15d7fc94c7fafa6c372aab83a99e9520ee67d88362e5bc9c37",
+      "status": "FROZEN_PRELABEL_JOIN_REPAIR"
+    }
+  },
+  "metrics": [
+    {
+      "bundle": "external_operator",
+      "arm": "RAW",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 426,
+      "rescues_vs_RAW": 0,
+      "breaks_vs_RAW": 0,
+      "net_vs_RAW": 0,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_h593_quality_operator_eval_v1/result.json",
+      "json_pointer": "/summary/RAW"
+    },
+    {
+      "bundle": "external_operator",
+      "arm": "COST1_FROZEN_NATIVE",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 481,
+      "rescues_vs_RAW": 58,
+      "breaks_vs_RAW": 3,
+      "net_vs_RAW": 55,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_h593_quality_operator_eval_v1/result.json",
+      "json_pointer": "/summary/COST1_FROZEN_NATIVE"
+    },
+    {
+      "bundle": "external_operator",
+      "arm": "COST1_FROZEN_M1Q0R0",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 441,
+      "rescues_vs_RAW": 15,
+      "breaks_vs_RAW": 0,
+      "net_vs_RAW": 15,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_h593_quality_operator_eval_v1/result.json",
+      "json_pointer": "/summary/COST1_FROZEN_M1Q0R0"
+    },
+    {
+      "bundle": "external_operator",
+      "arm": "COST1_REFIT_M1Q0R0",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 481,
+      "rescues_vs_RAW": 57,
+      "breaks_vs_RAW": 2,
+      "net_vs_RAW": 55,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_h593_quality_operator_eval_v1/result.json",
+      "json_pointer": "/summary/COST1_REFIT_M1Q0R0"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "POST_REAL",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 478,
+      "rescues_vs_RAW": 54,
+      "breaks_vs_RAW": 2,
+      "net_vs_RAW": 52,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/POST_REAL"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "EXTERNAL_INTERNAL3",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 426,
+      "rescues_vs_RAW": 0,
+      "breaks_vs_RAW": 0,
+      "net_vs_RAW": 0,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/EXTERNAL_INTERNAL3"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "EXTERNAL_ADDITIVE4",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 481,
+      "rescues_vs_RAW": 58,
+      "breaks_vs_RAW": 3,
+      "net_vs_RAW": 55,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/EXTERNAL_ADDITIVE4"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "EXTERNAL_PRODUCT5",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 481,
+      "rescues_vs_RAW": 58,
+      "breaks_vs_RAW": 3,
+      "net_vs_RAW": 55,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/EXTERNAL_PRODUCT5"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "POST_REAL_CONSTANT",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 426,
+      "rescues_vs_RAW": 5,
+      "breaks_vs_RAW": 5,
+      "net_vs_RAW": 0,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/POST_REAL_CONSTANT"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "POST_REAL_SHUFFLED",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 369,
+      "rescues_vs_RAW": 8,
+      "breaks_vs_RAW": 65,
+      "net_vs_RAW": -57,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/POST_REAL_SHUFFLED"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "POST_CONSTANT",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 406,
+      "rescues_vs_RAW": 5,
+      "breaks_vs_RAW": 25,
+      "net_vs_RAW": -20,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/POST_CONSTANT"
+    },
+    {
+      "bundle": "postllm",
+      "arm": "POST_SHUFFLED",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 429,
+      "rescues_vs_RAW": 8,
+      "breaks_vs_RAW": 5,
+      "net_vs_RAW": 3,
+      "original_54_rescues_kept": "",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "json_pointer": "/totals/POST_SHUFFLED"
+    },
+    {
+      "bundle": "decomposition",
+      "arm": "NATIVE",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 478,
+      "rescues_vs_RAW": 54,
+      "breaks_vs_RAW": 2,
+      "net_vs_RAW": 52,
+      "original_54_rescues_kept": 54,
+      "source": "results/rc_postllm_h593_decomposition_v1/result.json",
+      "json_pointer": "/totals/NATIVE"
+    },
+    {
+      "bundle": "decomposition",
+      "arm": "COMMON_ONLY",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 477,
+      "rescues_vs_RAW": 53,
+      "breaks_vs_RAW": 2,
+      "net_vs_RAW": 51,
+      "original_54_rescues_kept": 52,
+      "source": "results/rc_postllm_h593_decomposition_v1/result.json",
+      "json_pointer": "/totals/COMMON_ONLY"
+    },
+    {
+      "bundle": "decomposition",
+      "arm": "SPATIAL_ONLY",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 430,
+      "rescues_vs_RAW": 7,
+      "breaks_vs_RAW": 3,
+      "net_vs_RAW": 4,
+      "original_54_rescues_kept": 6,
+      "source": "results/rc_postllm_h593_decomposition_v1/result.json",
+      "json_pointer": "/totals/SPATIAL_ONLY"
+    },
+    {
+      "bundle": "decomposition",
+      "arm": "NATIVE_FIXED_ARGMAX",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 469,
+      "rescues_vs_RAW": 44,
+      "breaks_vs_RAW": 1,
+      "net_vs_RAW": 43,
+      "original_54_rescues_kept": 44,
+      "source": "results/rc_postllm_h593_decomposition_v1/result.json",
+      "json_pointer": "/totals/NATIVE_FIXED_ARGMAX"
+    },
+    {
+      "bundle": "decomposition",
+      "arm": "COMMON_FIXED_ARGMAX",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 468,
+      "rescues_vs_RAW": 43,
+      "breaks_vs_RAW": 1,
+      "net_vs_RAW": 42,
+      "original_54_rescues_kept": 43,
+      "source": "results/rc_postllm_h593_decomposition_v1/result.json",
+      "json_pointer": "/totals/COMMON_FIXED_ARGMAX"
+    },
+    {
+      "bundle": "decomposition",
+      "arm": "RECOMPOSED",
+      "n": 593,
+      "candidate_recall": 570,
+      "correct": 478,
+      "rescues_vs_RAW": 54,
+      "breaks_vs_RAW": 2,
+      "net_vs_RAW": 52,
+      "original_54_rescues_kept": 54,
+      "source": "results/rc_postllm_h593_decomposition_v1/result.json",
+      "json_pointer": "/totals/RECOMPOSED"
+    }
+  ],
+  "post_vs_RAW_paired_group_statistics": {
+    "baseline": "RAW",
+    "groups": 64,
+    "samples": 10000,
+    "seed": 20260924,
+    "pooled_accuracy_difference": 0.08768971332209106,
+    "group_resampled_pooled_95ci": [
+      0.0589171974522293,
+      0.12014134275618374
+    ],
+    "equal_group_accuracy_difference": 0.10583303797917769,
+    "equal_group_95ci": [
+      0.06710509896430163,
+      0.14829599730335022
+    ],
+    "interpretation": "Development OOF paired group bootstrap; not an untouched confirmation or automatic GO test"
+  },
+  "head_content_swap": {
+    "totals": {
+      "UNADAPTED_WARM_HEAD": {
+        "correct": 426,
+        "rescues_RAW": 0,
+        "breaks_RAW": 0,
+        "switches": 0,
+        "fold_correct": [
+          98,
+          78,
+          97,
+          80,
+          73
+        ]
+      },
+      "UNADAPTED_FINAL_HEAD": {
+        "correct": 426,
+        "rescues_RAW": 0,
+        "breaks_RAW": 0,
+        "switches": 0,
+        "fold_correct": [
+          98,
+          78,
+          97,
+          80,
+          73
+        ]
+      },
+      "ADAPTED_WARM_HEAD": {
+        "correct": 418,
+        "rescues_RAW": 75,
+        "breaks_RAW": 83,
+        "switches": 231,
+        "fold_correct": [
+          91,
+          77,
+          77,
+          88,
+          85
+        ]
+      },
+      "ADAPTED_FINAL_HEAD": {
+        "correct": 478,
+        "rescues_RAW": 54,
+        "breaks_RAW": 2,
+        "switches": 73,
+        "fold_correct": [
+          105,
+          91,
+          103,
+          92,
+          87
+        ]
+      },
+      "CONSTANT_FINAL_HEAD": {
+        "correct": 426,
+        "rescues_RAW": 5,
+        "breaks_RAW": 5,
+        "switches": 22,
+        "fold_correct": [
+          99,
+          76,
+          97,
+          80,
+          74
+        ]
+      }
+    },
+    "max_original_logit_error": 0.0,
+    "original_logits_recomputed": 225933,
+    "constant_counterfactual_on_54_real_rescues": {
+      "correct_challenger_below_hold": 17,
+      "wrong_challenger_ranked_first": 33,
+      "also_correct": 4
+    },
+    "internal_external_rescue_overlap": {
+      "common": 48,
+      "internal_only": 6,
+      "external_only": 10
+    },
+    "real_rescues_target_logit_increased_by_M": 54
+  },
+  "decomposition_checks": {
+    "status": "ALL593_DECOMPOSITION_AUDITED",
+    "CPU_GPU_decision_differences": {
+      "NATIVE": 0,
+      "CONSTANT": 0
+    },
+    "maximum_independent_logit_error": 2.1316282072803006e-14,
+    "median_query_energy_weighted_common_share": 0.8254546452034498
+  },
+  "claims": [
+    {
+      "id": "soft_support",
+      "statement": "u and v are spatially indexed candidate-conditioned support; an explicit patch set can be represented by binary weights, but this does not equate old and current scoring algorithms.",
+      "evidence_kind": "definition and implementation",
+      "historical_P_only_GO": false
+    },
+    {
+      "id": "compression",
+      "statement": "M pools bilateral support means; loss of downstream position labels does not establish absence of upstream spatial computation.",
+      "evidence_kind": "algebraic property"
+    },
+    {
+      "id": "external_internal",
+      "statement": "The same source of pair evidence is effective through external calibration and post-LLM conditioning in the tested settings.",
+      "evidence_kind": "separately trained models and controlled replay",
+      "mathematical_equivalence_established": false
+    },
+    {
+      "id": "shared_response",
+      "statement": "The tested full POST model retains 52 of 54 rescues with its within-query shared response; the response may depend on query, M, and fold.",
+      "evidence_kind": "fixed-model full-panel replay",
+      "pure_M_shared_function_proven": false
+    },
+    {
+      "id": "visuals",
+      "statement": "90 COST1 figures are selected successful rescues, not an unbiased localization evaluation or outputs of the POST model.",
+      "evidence_kind": "illustration"
+    },
+    {
+      "id": "external_to_internal_functional_transfer",
+      "statement": "Use of true RoMa support has successfully moved from external score calibration to post-LLM content modulation on H593 original grouped five-fold ColNomic natural C128; the final INTERNAL3 head does not directly read M. This is functional transfer, not copying external head weights, removing RoMa, or external-dataset transfer.",
+      "evidence_kind": "POST_REAL and constant/shuffled conditioning controls",
+      "status": "SUPPORTED_IN_TESTED_PROTOCOL",
+      "source": "results/rc_postllm_h593_v1/result.json",
+      "arm": "POST_REAL",
+      "correct": 478,
+      "RAW_correct": 426,
+      "rescues": 54,
+      "breaks": 2
+    },
+    {
+      "id": "spatial_example",
+      "statement": "Illustrated successful corrections include high-response support accurately pointing to the target region; DIFFICULT-0013 was directly inspected. This does not claim all90 exact full boundaries or measured IoU.",
+      "evidence_kind": "case visualization",
+      "example": "reports/figures/new_hyp_rescue90_en_20260924_v1/medicine/01_medicine_DIFFICULT-0013.png",
+      "IoU_completed": false
+    },
+    {
+      "id": "M_role",
+      "statement": "M is important identity-discriminating reference evidence derived by pooling support; decisive influence is scoped to tested corrections and controlled replays, not all-query sufficiency.",
+      "evidence_kind": "candidate contrasts and fixed-model interventions"
+    },
+    {
+      "id": "shared_modulation_small_panel",
+      "statement": "An M-only cross-query shared response constructed from TRAIN16 preserves all8 probe decisions and the rescue of the tested original POST model.",
+      "status": "SUPPORTED_ON_PROBE8",
+      "source": "results/rc_postllm_train_pool_common_v2/summary.json",
+      "query_dependent_content_retained": true
+    },
+    {
+      "id": "segmented_mediation",
+      "statement": "Upstream phase interventions and downstream M-use interventions provide evidence for separate links; all-phase replay through the same frozen internal model has not been completed.",
+      "complete_mediation_claimed": false
+    },
+    {
+      "id": "retrieval_only_target_free",
+      "statement": "Task identity supervision only; no task region labels. All natural C128 candidates scored without held target identity or location. Frozen RoMa supplies maps; trained heads/adapters learn their identity use.",
+      "evidence_kind": "implementation and sealed prediction protocol"
+    },
+    {
+      "id": "patch_identification",
+      "statement": "Spatial maps u/v can identify and rank candidate-conditioned patch support; matching support alone is not patch-level causal importance.",
+      "evidence_kind": "spatial interface and support visualizations"
+    },
+    {
+      "id": "segmentation_use",
+      "statement": "Spatial maps may supply a reference-conditioned prior for downstream mask generation/refinement. Segmentation mask accuracy is not yet measured; pooled M alone cannot recover boundaries.",
+      "evidence_kind": "proposed application of spatial support; not segmentation validation"
+    },
+    {
+      "id": "frozen_internal_external_transfer",
+      "statement": "One preselected H593 fold0 POST model improves GroZi480 from321 to339 without external training, rescuing18 with0 observed RAW breaks. Source-video grouped paired bootstrap interval vsRAW is positive.",
+      "status": "SUPPORTED_ON_GROZI480",
+      "source": "results/rc_postllm_grozi_external_v1/result.json",
+      "external_training_updates": 0,
+      "constant_comparison_group_interval_positive": false,
+      "external_ISIC_internal_model_tested": false
+    }
+  ],
+  "primary_evidence_checks": "Counts and rescue/break arithmetic verified against seven current source result files; no scientific result file modified.",
+  "existing_cross_dataset_evidence": {
+    "grozi": {
+      "counts": {
+        "ADDITIVE4": 349,
+        "MASS5": 349,
+        "NATIVE7": 355,
+        "RAW": 321
+      },
+      "query_count": 480,
+      "target_recall_C128": 410,
+      "candidate_source": "original native ColNomic full-gallery natural C128; all127 challengers; HOLD=0",
+      "external_training_updates": 0,
+      "untouched_confirmation_claimed": false,
+      "source": "results/rc_simple_external_transfer_v1/grozi/result.json"
+    },
+    "isic": {
+      "counts": {
+        "ADDITIVE4": 506,
+        "MASS5": 506,
+        "NATIVE7": 500,
+        "RAW": 466
+      },
+      "query_count": 537,
+      "target_recall_C128": 531,
+      "candidate_source": "original native ColNomic full-gallery natural C128; all127 challengers; HOLD=0",
+      "external_training_updates": 0,
+      "untouched_confirmation_claimed": false,
+      "source": "results/rc_simple_external_transfer_v1/isic/result.json"
+    }
+  },
+  "shared_modulation_probe8": {
+    "scope": "TRAIN16-derived shared M-response function applied to opened PROBE8; current-query content base remains",
+    "result": {
+      "n": 8,
+      "correct": 5,
+      "rescues": [
+        "H593-90acde9b0567a472f4232120"
+      ],
+      "breaks": [],
+      "changed_vs_sealed_GPU_POST_REAL": []
+    },
+    "new_training": false,
+    "held_fit": false,
+    "full_H593_generalization_claimed": false
+  },
+  "sam3_comparison": {
+    "legacy72": {
+      "n": 72,
+      "gallery": 5413,
+      "correct": {
+        "bare_colnomic": 44,
+        "pure_part_to_whole": 47,
+        "colnomic_plus_sam3_bestcrop": 37
+      },
+      "head": "historical e7r_head_seed17.pt, not current COST1/POST"
+    },
+    "h593": {
+      "n": 593,
+      "gallery": 5412,
+      "correct": {
+        "colnomic_full": 427,
+        "sam3_single_crop_colnomic": 390,
+        "sam3_product_package_topk_colnomic": 394,
+        "sam3_product_package_topk_colnomic_ocr_a0p9": 402
+      },
+      "best_reported_nonoracle_scope": "Opened-panel configuration comparison, not independent selection"
+    },
+    "interpretation": "Tested segmentation/crop retrieval pipelines do not automatically solve identity selection; no soft-support IoU comparison or matched 481-minus-402 effect."
+  },
+  "updated_at_utc": "2026-09-25T08:07:49.459157+00:00",
+  "completed_internal_external_validation": {
+    "status": "FROZEN_EXTERNAL_TRANSFER_POSITIVE_IN_TESTED_PROTOCOL",
+    "dataset": "GroZi480 previously accessed product-crop panel",
+    "query_count": 480,
+    "source_video_groups": 27,
+    "target_recall_C128": 410,
+    "target_absent": 70,
+    "source_model": "Preselected H593 fold0 POST_REAL final.pt; not the 593-query OOF ensemble",
+    "source_snapshot": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/final.pt",
+      "sha256": "4ad1fa8be929c59339162d8557ee8be8e36d2c60408dd0e1974aedebcf749a29"
+    },
+    "external_training_updates": 0,
+    "external_model_selection": false,
+    "summary": {
+      "RAW": {
+        "correct": 321,
+        "MRR": 0.7107841281640662,
+        "rescue": 0,
+        "breaks": 0,
+        "net": 0,
+        "RAW_correct_loss_rate": 0.0
+      },
+      "POST_REAL": {
+        "correct": 339,
+        "MRR": 0.7343015803750165,
+        "rescue": 18,
+        "breaks": 0,
+        "net": 18,
+        "RAW_correct_loss_rate": 0.0
+      },
+      "POST_REAL_CONSTANT": {
+        "correct": 314,
+        "MRR": 0.7040132948307327,
+        "rescue": 2,
+        "breaks": 9,
+        "net": -7,
+        "RAW_correct_loss_rate": 0.028037383177570093
+      },
+      "POST_REAL_SHUFFLED": {
+        "correct": 308,
+        "MRR": 0.6980733146720026,
+        "rescue": 4,
+        "breaks": 17,
+        "net": -13,
+        "RAW_correct_loss_rate": 0.0529595015576324
+      },
+      "NO_ADAPTER_INTERNAL3": {
+        "correct": 304,
+        "MRR": 0.6919098175503412,
+        "rescue": 2,
+        "breaks": 19,
+        "net": -17,
+        "RAW_correct_loss_rate": 0.059190031152647975
+      },
+      "EXTERNAL_ADDITIVE4": {
+        "correct": 342,
+        "MRR": 0.7386892185476212,
+        "rescue": 24,
+        "breaks": 3,
+        "net": 21,
+        "RAW_correct_loss_rate": 0.009345794392523364
+      },
+      "EXTERNAL_PRODUCT5": {
+        "correct": 342,
+        "MRR": 0.7386892185476212,
+        "rescue": 24,
+        "breaks": 3,
+        "net": 21,
+        "RAW_correct_loss_rate": 0.009345794392523364
+      }
+    },
+    "paired_vs_RAW": {
+      "rescue": 18,
+      "loss": 0,
+      "net": 18,
+      "query_difference": 0.0375,
+      "group_count": 27,
+      "equal_group_difference": 0.022634875412653188,
+      "group_bootstrap95": [
+        0.00949667616334283,
+        0.03787831253109027
+      ],
+      "positive_group_interval": true,
+      "changed_choices": 58
+    },
+    "paired_vs_constant": {
+      "rescue": 27,
+      "loss": 2,
+      "net": 25,
+      "query_difference": 0.052083333333333336,
+      "group_count": 27,
+      "equal_group_difference": 0.029306290417401532,
+      "group_bootstrap95": [
+        -0.004937141048252159,
+        0.06675485008818342
+      ],
+      "positive_group_interval": false,
+      "changed_choices": 74
+    },
+    "paired_vs_shuffled": {
+      "rescue": 33,
+      "loss": 2,
+      "net": 31,
+      "query_difference": 0.06458333333333334,
+      "group_count": 27,
+      "equal_group_difference": 0.04594073621851399,
+      "group_bootstrap95": [
+        0.012634479717813053,
+        0.0757557912766246
+      ],
+      "positive_group_interval": true,
+      "changed_choices": 83
+    },
+    "paired_vs_same_fold_external": {
+      "rescue": 8,
+      "loss": 11,
+      "net": -3,
+      "query_difference": -0.00625,
+      "group_count": 27,
+      "equal_group_difference": -0.017052751774974,
+      "group_bootstrap95": [
+        -0.047001848460181794,
+        0.006922455116899548
+      ],
+      "positive_group_interval": false,
+      "changed_choices": 72
+    },
+    "jobs": [
+      "5163009",
+      "5163010",
+      "5163011 (failed validator)",
+      "5163071 (successful repaired join)"
+    ],
+    "source": "results/rc_postllm_grozi_external_v1/result.json",
+    "report": "reports/REPORT_POSTLLM_GROZI_EXTERNAL_V1_20260925.md",
+    "interpretation": "Positive frozen internal transfer relative to RAW; no external superiority/equivalence claim. Constant-control group CI includes zero. No unseen-data, IoU, or external full-decomposition claim."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "jobs": [
+    {
+      "role": "pilot",
+      "JobId": "5163009",
+      "JobState": "RUNNING",
+      "Reason": "Prolog",
+      "Partition": "dev_accelerated",
+      "TimeLimit": "00:10:00",
+      "NumCPUs": "8",
+      "ReqTRES": "cpu=8,mem=32G,node=1,billing=8,gres/gpu=1",
+      "TresPerNode": "gres/gpu:1",
+      "Dependency": "(null)"
+    },
+    {
+      "role": "worker",
+      "JobId": "5163010",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "Partition": "accelerated",
+      "TimeLimit": "00:10:00",
+      "NumCPUs": "8",
+      "ReqTRES": "cpu=8,mem=32G,node=1,billing=8,gres/gpu=1",
+      "TresPerNode": "gres/gpu:1",
+      "Dependency": "afterok:5163009(unfulfilled)",
+      "ArrayTaskThrottle": "12"
+    },
+    {
+      "role": "join",
+      "JobId": "5163011",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "Partition": "cpuonly,dev_cpuonly",
+      "TimeLimit": "00:10:00",
+      "NumCPUs": "8",
+      "MinMemoryNode": "16G",
+      "ReqTRES": "cpu=8,mem=16G,node=1,billing=8",
+      "Dependency": "afterok:5163009(unfulfilled),afterok:5163010_*(unfulfilled)"
+    }
+  ],
+  "source": "scontrol show job -o live"
+}
