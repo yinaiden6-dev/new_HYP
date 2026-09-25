@@ -1,0 +1,403 @@
+{
+  "status": "TRAIN16_INTERNAL_M_SCALE_ONLY_DIAGNOSTIC_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_condition_scale_v4_authority_20260924.json",
+    "sha256": "6edb7e2e89524112e83148886f799b89106428ecc6dd05c1ede2c945d7d896f4"
+  },
+  "evidence_level": "Opened TRAIN16 fit diagnostic; no held/probe result",
+  "raw_correct": 8,
+  "train_count": 16,
+  "external": {
+    "INTERNAL3": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/cpu/warmstart_INTERNAL3.json",
+        "sha256": "66aa5c52b10442d7460c442de69addc8929507ca50043bf48f6a4a7fd50a3373"
+      },
+      "theta": [
+        -0.1581809656091234,
+        24.178263874937812,
+        -0.45744478516823506
+      ],
+      "summary": {
+        "queries": 16,
+        "correct": 8,
+        "mean_cost1": 0.9220788025644815,
+        "target_margin_mean": 0.2826696597952313,
+        "rescues_vs_raw": [],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 0
+      }
+    },
+    "ADDITIVE4": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/cpu/ADDITIVE4.json",
+        "sha256": "273f6eecc0eae0ef611e22f6fb2dee48845ce636b57ddd028f17a8de3de9ca69"
+      },
+      "theta": [
+        0.08800040013269313,
+        3.5237561758291847,
+        30.777066049690756,
+        -0.4992148340409783
+      ],
+      "summary": {
+        "queries": 16,
+        "correct": 12,
+        "mean_cost1": 0.7484206912605809,
+        "target_margin_mean": 1.4003566177244975,
+        "rescues_vs_raw": [
+          "H593-f42264b44984bda93155507c",
+          "H593-dd91c965c4987a6f11b4d08b",
+          "H593-faa6074c9997f968c1272a9e",
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 5
+      }
+    },
+    "PRODUCT5": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/cpu/PRODUCT5.json",
+        "sha256": "11d06e5615417502e4b6b7ae08f924dc042daaa517401b9aa1e04d23b1b426a7"
+      },
+      "theta": [
+        0.08596441829987489,
+        3.2506088803663324,
+        0.24412378354748326,
+        28.832465181351385,
+        -0.48580859794970943
+      ],
+      "summary": {
+        "queries": 16,
+        "correct": 12,
+        "mean_cost1": 0.7461964448342494,
+        "target_margin_mean": 1.4108914613389034,
+        "rescues_vs_raw": [
+          "H593-f42264b44984bda93155507c",
+          "H593-dd91c965c4987a6f11b4d08b",
+          "H593-faa6074c9997f968c1272a9e",
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 5
+      }
+    }
+  },
+  "internal": {
+    "PRE_REAL": {
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_REAL/fit_validation.json",
+        "sha256": "83fbd05fb785d01e3e43f71bf2fc40873a0010ef02473cf9ff2da4f280782b71"
+      },
+      "endpoints": {
+        "16": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9947198235234727,
+            "target_margin_mean": 0.30478642943652096,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        },
+        "128": {
+          "native": {
+            "queries": 16,
+            "correct": 10,
+            "mean_cost1": 0.7900521407525811,
+            "target_margin_mean": 0.6633659780174126,
+            "rescues_vs_raw": [
+              "H593-f42264b44984bda93155507c",
+              "H593-fa12d24ad164c3ae3b3f0ff6"
+            ],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 2
+          },
+          "constant": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9031991535998615,
+            "target_margin_mean": 0.41296550349472266,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          },
+          "shuffled": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9600277664635295,
+            "target_margin_mean": 0.31414528929475505,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 1
+          }
+        }
+      }
+    },
+    "PRE_SHUFFLED": {
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_SHUFFLED/fit_validation.json",
+        "sha256": "58e2e2e965608bb7925c135333783c87a6cac243610def216e13361eb8171d41"
+      },
+      "endpoints": {
+        "16": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9925810616246564,
+            "target_margin_mean": 0.3128822854379385,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        },
+        "128": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8325542746765692,
+            "target_margin_mean": 0.5708445590228012,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        }
+      }
+    }
+  },
+  "no_generalization_claim": true,
+  "opened_probe_evaluations": 0,
+  "condition_gain": 59.86651818838306,
+  "baseline_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/result.json",
+    "sha256": "13cdb2b3b5d015a394f5986d7cdff8a4cc67025df8ad6fb09ab2351e11eb6424"
+  },
+  "train_loss_relative_change": {
+    "PRE_REAL": {
+      "16": -0.0787796235603316,
+      "128": 0.14318370777498451
+    },
+    "PRE_SHUFFLED": {
+      "16": -0.07646012343423833,
+      "128": 0.09708988823832312
+    }
+  },
+  "reused_gain1_and_constant": {
+    "PRE_CONSTANT": {
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_CONSTANT/fit_validation.json",
+        "sha256": "6e17e7dce0f63a91682cc2ce74fb37ec9b12ef3bccfec6e62d0377f5948a9c2b"
+      },
+      "endpoints": {
+        "16": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9945578601014684,
+            "target_margin_mean": 0.3050635448373774,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        },
+        "128": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8419840404477844,
+            "target_margin_mean": 0.5333272720413176,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        }
+      }
+    },
+    "PRE_REAL": {
+      "validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/fit_validation.json",
+        "sha256": "1665dc9ae501a6efaf32c25119af50ca6cfdcdafaf2d04f216eef31d03357482"
+      },
+      "endpoints": {
+        "16": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.9944737795266888,
+            "target_margin_mean": 0.30396060987894996,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        },
+        "128": {
+          "native": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8578355671070997,
+            "target_margin_mean": 0.4837670986027103,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          },
+          "constant": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8567127606845959,
+            "target_margin_mean": 0.4847937457360108,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          },
+          "shuffled": {
+            "queries": 16,
+            "correct": 8,
+            "mean_cost1": 0.8564160910874521,
+            "target_margin_mean": 0.48477422828856404,
+            "rescues_vs_raw": [],
+            "breaks_vs_raw": [],
+            "changed_vs_raw": 0
+          }
+        }
+      }
+    }
+  },
+  "fixed_endpoint_readout_refits": {
+    "GAIN_REAL": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/GAIN_REAL.json",
+        "sha256": "d73e25e66d07c2623a8405639e830a7640a804a9ec26d6296813be2c7dbba905"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 11,
+        "mean_cost1": 0.7144630184100963,
+        "target_margin_mean": 1.6245034989978597,
+        "rescues_vs_raw": [
+          "H593-f42264b44984bda93155507c",
+          "H593-faa6074c9997f968c1272a9e",
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 3
+      }
+    },
+    "GAIN_REAL_CONSTANT": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/GAIN_REAL_CONSTANT.json",
+        "sha256": "2fe195d521a6e15f6a231eef9cbae6b7d5985a299b0be66e696f7ca8f7cadf87"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 8,
+        "mean_cost1": 0.8969443315678173,
+        "target_margin_mean": 0.49737567354833867,
+        "rescues_vs_raw": [],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 1
+      }
+    },
+    "GAIN_REAL_SHUFFLED": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/GAIN_REAL_SHUFFLED.json",
+        "sha256": "c79463853aa03188d39753315f7d15fdaa7b1c29458dc8aff17d7c8cf105a2dc"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 8,
+        "mean_cost1": 0.9424582796298451,
+        "target_margin_mean": 0.14111197442421936,
+        "rescues_vs_raw": [],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 0
+      }
+    },
+    "GAIN_TRAIN_SHUFFLED": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/GAIN_TRAIN_SHUFFLED.json",
+        "sha256": "acffe4d5322c4264fe5b34c646bacc5049ee36eae6a885d96c10c5bea232038a"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 10,
+        "mean_cost1": 0.7920864690694067,
+        "target_margin_mean": 1.2192617595469355,
+        "rescues_vs_raw": [
+          "H593-f42264b44984bda93155507c",
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 2
+      }
+    },
+    "V3_REAL": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/V3_REAL.json",
+        "sha256": "ed0005a22131b2945d8641850f1720f4a1dd569fae984e85a0c9f5e682fab38f"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 9,
+        "mean_cost1": 0.8311757599882034,
+        "target_margin_mean": 0.94784404851492,
+        "rescues_vs_raw": [
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 3
+      }
+    },
+    "V3_REAL_CONSTANT": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/V3_REAL_CONSTANT.json",
+        "sha256": "fd1e3630f8068419673dc2e741ab3bf8f9d81bea225f88a228495144f2d7d399"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 9,
+        "mean_cost1": 0.8282830474567789,
+        "target_margin_mean": 0.9821936951759578,
+        "rescues_vs_raw": [
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 3
+      }
+    },
+    "V3_REAL_SHUFFLED": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/V3_REAL_SHUFFLED.json",
+        "sha256": "f9869a30ebf7f34ca8d78eba128d5964f54eb03d8c6001cf21eabb28a8ae1568"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 9,
+        "mean_cost1": 0.8271661129559786,
+        "target_margin_mean": 0.9771663892302851,
+        "rescues_vs_raw": [
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 3
+      }
+    },
+    "V3_CONSTANT": {
+      "binding": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/readout_refits/V3_CONSTANT.json",
+        "sha256": "0b5edb9461f283039cf6f0f6746fc23ddf831753aca372cadb2c6ceb8563aac4"
+      },
+      "summary": {
+        "queries": 16,
+        "correct": 10,
+        "mean_cost1": 0.8046503341297209,
+        "target_margin_mean": 1.1462134569945033,
+        "rescues_vs_raw": [
+          "H593-f42264b44984bda93155507c",
+          "H593-fa12d24ad164c3ae3b3f0ff6"
+        ],
+        "breaks_vs_raw": [],
+        "changed_vs_raw": 3
+      }
+    }
+  }
+}

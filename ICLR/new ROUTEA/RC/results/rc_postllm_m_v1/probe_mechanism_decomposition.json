@@ -1,0 +1,790 @@
+{
+  "status": "FROZEN_PRE_POST_PROBE_SCORE_DECOMPOSITION_PASS",
+  "feature_order": [
+    "raw_standardized_delta",
+    "sym_L",
+    "bias"
+  ],
+  "cases": [
+    {
+      "query_id": "H593-4ef2d085267e3a655f22c017",
+      "target": "75 100s carton",
+      "component": "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43",
+      "target_in_C128": true,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "cetirizine-hcl-10-mg-softgel-str-1",
+          "best_challenger_logit": -2.94409259385252,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "cetirizine-hcl-10-mg-softgels-cat-1",
+          "best_challenger_logit": -4.86745613157166,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "cetirizine-hcl-10-mg-softgels-cat-1",
+          "best_challenger_logit": -3.6553303120827945,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "5mL Carton",
+          "best_challenger_logit": -2.568036760749592,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        }
+      }
+    },
+    {
+      "query_id": "H593-f522efe671aecfa850b10989",
+      "target": "766-e9-infants-pain-and-fever",
+      "component": "8ad47f26cd065ca57d3a68d2c5f31cd9eeb977294c710ac87f6e9c84b24866ea",
+      "target_in_C128": true,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "ChildsIbuprofen Box",
+          "correct": false,
+          "best_challenger": "ChildsIbuprofen Box",
+          "best_challenger_logit": 0.12944899844648478,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ],
+          "target_logit": -0.015587669979856611,
+          "target_terms": [
+            0.1455693075114001,
+            0.36298479835161623,
+            -0.5241417758428729
+          ],
+          "target_L_rank": 2,
+          "target_L_minus_winner": 0.016734815407930315
+        },
+        "POST_REAL": {
+          "prediction_identity": "ChildsIbuprofen Box",
+          "correct": false,
+          "best_challenger": "ChildsIbuprofen Box",
+          "best_challenger_logit": 1.808084583226655,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 1.5734664521363029,
+          "target_terms": [
+            0.04503200278974625,
+            2.01299260380404,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 2,
+          "target_L_minus_winner": 0.07344504317054684
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "ARTE TROQUEL NOVALGINA",
+          "correct": false,
+          "best_challenger": "Artrifin 24 Caplets",
+          "best_challenger_logit": -0.16510111272626105,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": -0.6469789292066179,
+          "target_terms": [
+            0.04503200278974625,
+            -0.20745277753888045,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 9,
+          "target_L_minus_winner": -0.007468047191297789
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "careone-ibuprofen-carton-image",
+          "correct": false,
+          "best_challenger": "careone-ibuprofen-carton-image",
+          "best_challenger_logit": 0.18895542059394876,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": -1.603697566930836,
+          "target_terms": [
+            0.04503200278974625,
+            -1.1641714152630984,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 69,
+          "target_L_minus_winner": -0.04233402421332627
+        }
+      }
+    },
+    {
+      "query_id": "H593-2446df0fcadbf0831876d7dc",
+      "target": "83324304-60",
+      "component": "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf",
+      "target_in_C128": true,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "CDMA QC Ultra Strength Gas Relief 60ct",
+          "best_challenger_logit": -0.7787744896849533,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "CVS_721T_50ct",
+          "best_challenger_logit": -0.9068448384645826,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "CDMA QC Ultra Strength Gas Relief 60ct",
+          "best_challenger_logit": -0.7225939356187554,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "CVS_721T_50ct",
+          "best_challenger_logit": -0.6758342118483887,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        }
+      }
+    },
+    {
+      "query_id": "H593-53e0bb3f0f95aa31e37ff328",
+      "target": "75 100s carton",
+      "component": "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43",
+      "target_in_C128": true,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "dexedrine-dextroamphetamine-sulfate-spansule-susta-7",
+          "best_challenger_logit": -1.6361215730420913,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "05mgcarton",
+          "best_challenger_logit": -2.9138019653432465,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "05mgcarton",
+          "best_challenger_logit": -2.2200112434416033,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "75 100s carton",
+          "correct": true,
+          "best_challenger": "05mgcarton",
+          "best_challenger_logit": -0.8588567239435128,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        }
+      }
+    },
+    {
+      "query_id": "H593-9bea68f2367dffd8339109ca",
+      "target": "964901_LR",
+      "component": "1f59b78808c09c6bf68702306ba72c84cbbb75e1dfc61bab3c7f1b99aee3b17d",
+      "target_in_C128": false,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "Cold and flu Nighttime-24ct",
+          "correct": false,
+          "best_challenger": "aspirin_nsaid-1",
+          "best_challenger_logit": -0.1662022531341711,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ]
+        },
+        "POST_REAL": {
+          "prediction_identity": "aspirin_nsaid-1",
+          "correct": false,
+          "best_challenger": "aspirin_nsaid-1",
+          "best_challenger_logit": 1.2407582511889186,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ]
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "Cold and flu Nighttime-24ct",
+          "correct": false,
+          "best_challenger": "300000165_R-03-Final",
+          "best_challenger_logit": -0.11220287314992838,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ]
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "aurophen-fig2",
+          "correct": false,
+          "best_challenger": "aurophen-fig2",
+          "best_challenger_logit": 0.7263892011016121,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ]
+        }
+      }
+    },
+    {
+      "query_id": "H593-90acde9b0567a472f4232120",
+      "target": "cefdinir-fig2",
+      "component": "b290b929d9999bcd5494b609bbacdaa3be248ff840ce6785cb1cb2438d245c13",
+      "target_in_C128": true,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "gabapentin-fig11",
+          "correct": false,
+          "best_challenger": "cefdinir-fig2",
+          "best_challenger_logit": -0.38512210174469536,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ],
+          "target_logit": -0.38512210174469536,
+          "target_terms": [
+            0.01554336118468523,
+            0.12347631291349233,
+            -0.5241417758428729
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.005578327304766928
+        },
+        "POST_REAL": {
+          "prediction_identity": "cefdinir-fig2",
+          "correct": true,
+          "best_challenger": "cefdinir-fig2",
+          "best_challenger_logit": 0.36052366289852533,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.36052366289852533,
+          "target_terms": [
+            0.004808353465416899,
+            0.8402734638905921,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.032253861941615114
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "gabapentin-fig11",
+          "correct": false,
+          "best_challenger": "efavirenz-fig28",
+          "best_challenger_logit": -0.49939671408342606,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": -0.6116953390039246,
+          "target_terms": [
+            0.004808353465416899,
+            -0.13194553801185788,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 4,
+          "target_L_minus_winner": -0.004618578319335542
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "gabapentin-fig11",
+          "correct": false,
+          "best_challenger": "cartonlabel15mL",
+          "best_challenger_logit": -0.3622407769012726,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": -1.1568637860173376,
+          "target_terms": [
+            0.004808353465416899,
+            -0.6771139850252709,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 16,
+          "target_L_minus_winner": -0.024167643262542227
+        }
+      }
+    },
+    {
+      "query_id": "H593-b98760533d5b5968acf3d2d8",
+      "target": "83324304-60",
+      "component": "dabd4e44228b0c3fe4d6e936d82cc48dbee71a26baad248be0f99f22cd2424cf",
+      "target_in_C128": true,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "CDMA QC Ultra Strength Gas Relief 60ct",
+          "best_challenger_logit": -1.3696418606923202,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "722T- BJ- Gas Reilef 240ct carton",
+          "best_challenger_logit": -2.1565972099335444,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "CVS Simethicone 180mg",
+          "best_challenger_logit": -0.9057639677464172,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "83324304-60",
+          "correct": true,
+          "best_challenger": "walgreens-simethicone-dyefree-30",
+          "best_challenger_logit": -0.6191218326169923,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": 0.0,
+          "target_terms": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "target_L_rank": 1,
+          "target_L_minus_winner": 0.0
+        }
+      }
+    },
+    {
+      "query_id": "H593-7a2a329a01beb7a806b52b3e",
+      "target": "alp0b-0002-29",
+      "component": "1a231675f970ef17d8df9d796fcc4f991f31e3ecab14c9f45454f336dc22786a",
+      "target_in_C128": true,
+      "variants": {
+        "PRE_REAL": {
+          "prediction_identity": "alp0b-0002-27",
+          "correct": false,
+          "best_challenger": "alp0b-0002-29",
+          "best_challenger_logit": -0.5455562296601438,
+          "theta": [
+            -0.1065685290599571,
+            25.425026655377685,
+            -0.5241417758428729
+          ],
+          "target_logit": -0.5455562296601438,
+          "target_terms": [
+            0.0050766516927605925,
+            -0.026491105510031556,
+            -0.5241417758428729
+          ],
+          "target_L_rank": 2,
+          "target_L_minus_winner": -0.0015283448611618233
+        },
+        "POST_REAL": {
+          "prediction_identity": "alp0b-0002-27",
+          "correct": false,
+          "best_challenger": "alp0b-0002-29",
+          "best_challenger_logit": -0.5759305662473507,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": -0.5759305662473507,
+          "target_terms": [
+            0.0015704669967813206,
+            -0.0929428787866484,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 2,
+          "target_L_minus_winner": -0.004843403341337704
+        },
+        "POST_REAL_CONSTANT": {
+          "prediction_identity": "alp0b-0002-27",
+          "correct": false,
+          "best_challenger": "alp0b-0002-29",
+          "best_challenger_logit": -0.5988426371557599,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": -0.5988426371557599,
+          "target_terms": [
+            0.0015704669967813206,
+            -0.11585494969505758,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 2,
+          "target_L_minus_winner": -0.005538250794261956
+        },
+        "POST_REAL_SHUFFLED": {
+          "prediction_identity": "alp0b-0002-27",
+          "correct": false,
+          "best_challenger": "alp0b-0002-29",
+          "best_challenger_logit": -2.1363674058034965,
+          "theta": [
+            -0.03296707513396198,
+            25.44946296242132,
+            -0.4845581544574837
+          ],
+          "target_logit": -2.1363674058034965,
+          "target_terms": [
+            0.0015704669967813206,
+            -1.6533797183427943,
+            -0.4845581544574837
+          ],
+          "target_L_rank": 2,
+          "target_L_minus_winner": -0.08118309937011037
+        }
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-4ef2d085267e3a655f22c017.json",
+      "sha256": "fbdae31223365dcdf0e5da6a414d29fed7b31544f2afd9b70db347a10d1c9af3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-4ef2d085267e3a655f22c017.json",
+      "sha256": "c31d89677c5306cde9d9441b37e72d7b7b42927b43677d86e0101dd94b107427"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-4ef2d085267e3a655f22c017.json",
+      "sha256": "6cbfe816885667ea4aca727ff33800e229ea028ec9f63b1bf35f6007ff118e46"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-4ef2d085267e3a655f22c017.json",
+      "sha256": "e9988601960fe814e07352c82ad8b116611c4a884f34c22f9138cdc5f6346df4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-f522efe671aecfa850b10989.json",
+      "sha256": "dabafe299f886674474100fc1a9b36b4814aa3a7bf5cac0fde99af067c59e966"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-f522efe671aecfa850b10989.json",
+      "sha256": "e134c34073814b224827d86b96fec173609596b66b390eb9933ac99f26cf52e1"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-f522efe671aecfa850b10989.json",
+      "sha256": "21ac0bac868fe66f9417f51115eae049bafc8ae00092926bddb57b9f360e6202"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-f522efe671aecfa850b10989.json",
+      "sha256": "567310a927e36038000282ebc14d0a965b83fc0795ec8df94721204c26e8d4e4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-2446df0fcadbf0831876d7dc.json",
+      "sha256": "2aaa575a8306195ef7bd723f887be43f39c5960f4c86fa3174678581658e0297"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-2446df0fcadbf0831876d7dc.json",
+      "sha256": "412b3551b50e48d531204e1d6db60bc19c07b8d7aeaaa81894e4c64a82aad2e3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-2446df0fcadbf0831876d7dc.json",
+      "sha256": "9a4e41f20a3d72a54dea8aa8a69ae99c2cfcf9db75b61c763326bfbed8fa13d5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-2446df0fcadbf0831876d7dc.json",
+      "sha256": "a7117ebc33cbe2461fb9254ed3089bf1df5e5dd680623fdd642cb121bf51f305"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-53e0bb3f0f95aa31e37ff328.json",
+      "sha256": "d4d32ede62d0f83910cfaf565b87e50b874aa18b40127450d8de67f6da078d20"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-53e0bb3f0f95aa31e37ff328.json",
+      "sha256": "9817d8e00f242f3ef67b0c4dac26d0099efe4ffc4134000c3bcea1a7eeb0015e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-53e0bb3f0f95aa31e37ff328.json",
+      "sha256": "707e9568d139869368e0996279c45076a2bb7dbba28c94a682a6cd58269dfd83"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-53e0bb3f0f95aa31e37ff328.json",
+      "sha256": "e7b5f075b5ea27c895afb7617383e34bd5a02c025e5f3aa1b88fb09bc4d3d3eb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-9bea68f2367dffd8339109ca.json",
+      "sha256": "f242af8a9302e79af1dde9e00a0d06c3f3b0f53ab8202ba4d904b6258ca278d5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-9bea68f2367dffd8339109ca.json",
+      "sha256": "ebc90d7a1ed72391dd46f76f6503e11609bf1b5653b2df2d0c861332ea8a90bf"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-9bea68f2367dffd8339109ca.json",
+      "sha256": "49a3a61dc79d1b5e8c43f93e4edb53867b5ace0dee546acf2fee088cc9572e31"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-9bea68f2367dffd8339109ca.json",
+      "sha256": "1c1a7e463d09ba61825100877c2de913996644570b9c99132e4527655db407c2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-90acde9b0567a472f4232120.json",
+      "sha256": "9c6de5c9307b185926f54fa1a74b16fa7c577d91a2888021e852248fd6fc7891"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-90acde9b0567a472f4232120.json",
+      "sha256": "9f180eb7e3aaf97fab7c5b8c9a6941627a0b6c2a6fbe1dd3a08f1d5fe6bd7436"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-90acde9b0567a472f4232120.json",
+      "sha256": "3816aec35d86089ee421c7c2d1c1f5010a05023c45889706c3c13452ed96a37e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-90acde9b0567a472f4232120.json",
+      "sha256": "50a2e8e257b638380cbe61658e89b387ead70f360bbafc9a28b72116a907ab59"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-b98760533d5b5968acf3d2d8.json",
+      "sha256": "628273a7f8b61b693e88e1b3b285c4817a5899eabd7105e4cd2a9402ccb5f6bb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-b98760533d5b5968acf3d2d8.json",
+      "sha256": "1815da413277b37cf18b59ac9f0c35bf4e28afb65f26f56f5eb6cfb0cb89352b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-b98760533d5b5968acf3d2d8.json",
+      "sha256": "3a075cd852344d17c04966f7890c5e714869d3292846ea02da3a0d261a4bc055"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-b98760533d5b5968acf3d2d8.json",
+      "sha256": "a79b9c5fd2e7a582c21c420b8a5a2d75fc7d167f4aebc0898232a7b991948a31"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-7a2a329a01beb7a806b52b3e.json",
+      "sha256": "322362169c401b8e2848ac8349bcd629eae4b417641a86641591c4514284b905"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/native/H593-7a2a329a01beb7a806b52b3e.json",
+      "sha256": "927f369e61eb08f31306d32101fcd2650fe42a854acfc4cb9c4ca53f4dc64dc5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/constant/H593-7a2a329a01beb7a806b52b3e.json",
+      "sha256": "cc075688f48589fbe3eeb05dcb1b9283d7d6475ec7a838313a9f227b82a121b2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/probe/shuffled/H593-7a2a329a01beb7a806b52b3e.json",
+      "sha256": "0891aeb6ee12ea8d8ee8cfe58e6c485176e6a0e034eb84dcd7cda3a425e80177"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/prelabel_validation.json",
+      "sha256": "d6e1305fd22ad32c41ae7b61a295d80d555b7047cafea7514360656c008bf4d0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/result.json",
+      "sha256": "668d98178f7c1330ddf9d953c0d32078cb4ebb960597e710a6ef98c72555723b"
+    }
+  ],
+  "opened_development_probe": true,
+  "parameter_or_threshold_updates": 0
+}

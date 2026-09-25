@@ -1,0 +1,48 @@
+{
+  "status": "POSTLLM_H593_TRAINER_CPU_ENGINEERING_PASS_GPU_PILOT_PENDING",
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_h593_v1.py",
+    "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a"
+  },
+  "test": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_postllm_h593_v1.py",
+    "sha256": "de2c5424983bacea6364bea93f3c96aa8c8f08846d25b876852937b055dda82a"
+  },
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/input_manifest.json",
+    "sha256": "71e29aec16ae9deda67d9cea5cc6ffa10cfff93ef73498d95a00a12f18944f03"
+  },
+  "tests": [
+    "Complete C128 COST1 random and tied zero head loss/gradient parity",
+    "Python NumPy Torch RNG weights_only checkpoint roundtrip",
+    "Fresh zero-output shared three-arm initialization",
+    "Fixed cyclic candidate M shift and constant intervention"
+  ],
+  "all_tests_passed": 4,
+  "head_vectorization_max_gradient_error": 8.881784197001252e-16,
+  "fold_eligible_train": [
+    457,
+    454,
+    451,
+    461,
+    457
+  ],
+  "fold_held": [
+    119,
+    118,
+    119,
+    119,
+    118
+  ],
+  "fold_updates_per_arm": [
+    3656,
+    3632,
+    3608,
+    3688,
+    3656
+  ],
+  "total_updates_three_arms": 54720,
+  "GPU_full_C128_first_step_pending": true,
+  "native_GPU_projection_parity_pending": true,
+  "LLM_or_RoMa_forward_calls": 0
+}

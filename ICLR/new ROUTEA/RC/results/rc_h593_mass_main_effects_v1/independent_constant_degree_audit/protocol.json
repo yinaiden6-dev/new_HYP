@@ -1,0 +1,34 @@
+{
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_h593_mass_main_effects_v1.py",
+    "sha256": "eab62cebe3a163f5be1370c0a8ddb2da835961ca139e78619c2d618a4e0005b1"
+  },
+  "source_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_mass_main_effects_v1/protocol.json",
+    "sha256": "3adfe372a9979a5b84e993a71b538cc6b3b7661951ad4ccbee3477e3d6b0cbf1"
+  },
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_mass_main_effects_v1/result.json",
+    "sha256": "71bacd41a8671de6f6a12a11e4bc148374398853ee2400b8bb7b0a25e0b33810"
+  },
+  "source_seal": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_mass_main_effects_v1/all_predictions_prelabel_seal.json",
+    "sha256": "8299e0052b5539c776bf4eb00edb6362d19c81b3be4c1ef403a530821be202c8"
+  },
+  "constant_M": 1.0,
+  "head": "Identical frozen original per-fold COST1_PRODUCT5",
+  "threshold": 0.0,
+  "tie": "Original candidate axis argmax first; strict positive SWITCH else HOLD",
+  "target_degree": "Minimum TRAIN observations over correct-identity reference physical rows inside this natural C128",
+  "degree_bins": [
+    "0",
+    "1",
+    "2-5",
+    ">5"
+  ],
+  "stable_subset": "Target present, all target physical rows degree>=5, RAW winner degree>=5, original-M top proposed challenger degree>=5",
+  "predictors_fixed_before_sidecar": true,
+  "new_fits": 0,
+  "new_gpu_forwards": 0,
+  "evidence": "Post-hoc diagnostic on already opened development OOF predictions; not confirmatory selection"
+}

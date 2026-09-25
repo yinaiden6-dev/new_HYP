@@ -1,0 +1,112 @@
+{
+  "schema": 2,
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_m_v1_authority_20260924.json",
+      "sha256": "3dd514c8d5bf9ad66deb79640e242de671dd2e77449948a5607a019f383f5e5e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/input_manifest.json",
+      "sha256": "a788f82954ca68d713bba8fce91b76b806f85f222a2db58e507c2a3facb98054"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/snapshots/0128.pt",
+      "sha256": "f56db6ec37db9d88eabedf403881cc2706525f48ba660557cc43ef7932127b0a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_train_pool_common_v2.py",
+      "sha256": "b6c70d1e60404c437ab484c03d3d66301a4d33e5c8fe0597dd4f2d9439b73a5c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v2.py",
+      "sha256": "5b67a7292b64b83ddafc39c6588fd0a38cea0cb2a32aeb1aabb639e1969f75d2"
+    }
+  ],
+  "model": "frozen POST_REAL128",
+  "parent_sidecar_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_train_pool_common_v1.py",
+    "sha256": "7f8d3b51517d3dc45c18fc5918a01d4ddcb4f105255f5fd55f704d0dc0bc43a1"
+  },
+  "change_from_v1": "Only upstream residual-decomposition binding/output version changes; pooled nonlinear computation and quantization bridge unchanged.",
+  "head": "same frozen joint INTERNAL3; no refit",
+  "pool_query_ids": [
+    "H593-979d4429602e6c4a69aa6724",
+    "H593-5bf76899256100e280a80e1d",
+    "H593-71a8e729bc95ecbd6e4dbc1e",
+    "H593-ddead65d98e659c927cda92c",
+    "H593-b06273e75d64a6537f0ba426",
+    "H593-6a41937f82d722c1bd11db83",
+    "H593-b6cf2130e8541c75b7a0daf3",
+    "H593-4c47eaead5712c9295001ec4",
+    "H593-f42264b44984bda93155507c",
+    "H593-dd91c965c4987a6f11b4d08b",
+    "H593-08297e272b0164e6fdd42e9f",
+    "H593-faa6074c9997f968c1272a9e",
+    "H593-64e146b0abb950dce567767c",
+    "H593-174dc7ecf520dfa933141c09",
+    "H593-490d4ed0a2cc29258e504a6a",
+    "H593-fa12d24ad164c3ae3b3f0ff6"
+  ],
+  "probe_query_ids": [
+    "H593-4ef2d085267e3a655f22c017",
+    "H593-f522efe671aecfa850b10989",
+    "H593-2446df0fcadbf0831876d7dc",
+    "H593-53e0bb3f0f95aa31e37ff328",
+    "H593-9bea68f2367dffd8339109ca",
+    "H593-90acde9b0567a472f4232120",
+    "H593-b98760533d5b5968acf3d2d8",
+    "H593-7a2a329a01beb7a806b52b3e"
+  ],
+  "all_row_order": [
+    "H593-979d4429602e6c4a69aa6724",
+    "H593-5bf76899256100e280a80e1d",
+    "H593-71a8e729bc95ecbd6e4dbc1e",
+    "H593-ddead65d98e659c927cda92c",
+    "H593-b06273e75d64a6537f0ba426",
+    "H593-6a41937f82d722c1bd11db83",
+    "H593-b6cf2130e8541c75b7a0daf3",
+    "H593-4c47eaead5712c9295001ec4",
+    "H593-f42264b44984bda93155507c",
+    "H593-dd91c965c4987a6f11b4d08b",
+    "H593-08297e272b0164e6fdd42e9f",
+    "H593-faa6074c9997f968c1272a9e",
+    "H593-64e146b0abb950dce567767c",
+    "H593-174dc7ecf520dfa933141c09",
+    "H593-490d4ed0a2cc29258e504a6a",
+    "H593-fa12d24ad164c3ae3b3f0ff6",
+    "H593-4ef2d085267e3a655f22c017",
+    "H593-f522efe671aecfa850b10989",
+    "H593-2446df0fcadbf0831876d7dc",
+    "H593-53e0bb3f0f95aa31e37ff328",
+    "H593-9bea68f2367dffd8339109ca",
+    "H593-90acde9b0567a472f4232120",
+    "H593-b98760533d5b5968acf3d2d8",
+    "H593-7a2a329a01beb7a806b52b3e"
+  ],
+  "definition": "t_qp=W_content LN(H_qp)+b_down; c=g*(logM-train_mu)/train_sigma; latent_q(c)=mean_p[GELU(t_qp+w_M*c)-GELU(t_qp)]; latent_POOL(c)=mean_q_in_TRAIN16 latent_q(c); direction=s*W_up*latent. No GELU(mean).",
+  "base": "actual BF16 hidden after same POST_REAL adapter with standardized M=0",
+  "pool_weighting": "equal1/16 per query; each query has equal1/Nq per patch",
+  "arms": [
+    "TRAIN_POOL_COMMON",
+    "IDEAL_SELF_COMMON",
+    "TRAIN_POOL_COMMON_FIXED_ARGMAX",
+    "IDEAL_SELF_COMMON_FIXED_ARGMAX"
+  ],
+  "fixed_argmax": "constant-M best reference token from existing signal-decomposition result",
+  "new_training": false,
+  "new_llm_or_roma_forwards": 0,
+  "held_fit": false,
+  "scope": "opened eight probe queries; retain entire natural C128; descriptive frozen mechanism test"
+}

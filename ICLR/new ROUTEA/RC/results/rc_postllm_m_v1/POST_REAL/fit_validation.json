@@ -1,0 +1,47 @@
+{
+  "status": "FIXED128_UPDATES_TRAIN_ENDPOINTS_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_m_v1_authority_20260924.json",
+    "sha256": "3dd514c8d5bf9ad66deb79640e242de671dd2e77449948a5607a019f383f5e5e"
+  },
+  "arm": "POST_REAL",
+  "steps": 128,
+  "checkpoint": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/checkpoint.pt",
+    "sha256": "83abfeeb8411d0903d096e7eaafd5b355819ada6f2c2baa20393a23cd4693726"
+  },
+  "endpoints": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/endpoints/0016/validation.json",
+      "sha256": "c793252b34dd909b3cdefdb7a6d3352e1f79e12a97cc89cfa4a583bd6c41b6af"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/endpoints/0128/validation.json",
+      "sha256": "2995ae8d69dfe61d8db6cdebe579b728a17a3d2e4c700f1694a87c87a3fc4d2e"
+    }
+  ],
+  "snapshots": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/snapshots/0016.pt",
+      "sha256": "4e4f31c42faa11df774be5350f013a351d95e4f9988f09f1facb8ae3f2b7a121"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/snapshots/0064.pt",
+      "sha256": "6b8c00ea7792c43eac867f54ebee0c2c5310c5a60eefd37fa90656874d4f2ca8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/snapshots/0128.pt",
+      "sha256": "f56db6ec37db9d88eabedf403881cc2706525f48ba660557cc43ef7932127b0a"
+    }
+  ],
+  "head_trainable_parameters": 3,
+  "adapter_parameters": 118304,
+  "head_features": [
+    "raw_standardized_delta",
+    "sym_L",
+    "bias"
+  ],
+  "direct_M_in_head": false,
+  "held_label_reads": 0,
+  "selection": "Fixed terminal128; no model or epoch selection"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "SOURCE_FORMULA_IDENTITIES_NUMPY_PASS",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/verify_rc_pair_relation_embedding_identities_v1.py",
+      "sha256": "4e2ca609b98da753c07849a7ef5803ef89b99d18ede9f628aebcd60bcd52bb1f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/matcher.py",
+      "sha256": "b5db2b991d35b1bd217db70763d10d71bd690a600ab875665daf94a54e44a3b6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_pair_quality_core_v1.py",
+      "sha256": "be538cf93e9a36310c7478a43a29ee238ee94a6bfbe021cec0bc8f56cc7064d3"
+    }
+  ],
+  "positional_distribution": {
+    "expression": "P_i=sum_j a_ij [sin(Omega x_j),cos(Omega x_j)]",
+    "norm_identity": "||P_i||^2/K=sum_jk a_ij a_ik mean_l cos(omega_l dot (x_j-x_k))",
+    "K": 512,
+    "D": 1024,
+    "kernel_identity_error": 3.0531133177191805e-16,
+    "translation_norm_invariance_error": 2.7755575615628914e-17,
+    "summary_identity": "mean_i ||P_i||^2/K = 2 * global_matching_position_rms^2",
+    "meaning": "Kernel-smoothed concentration of the soft correspondence distribution; vector also carries location-dependent phase.",
+    "not_proven": [
+      "Entropy or unique correspondence cannot be recovered from its norm alone.",
+      "These identities do not establish which part the trained head actually uses.",
+      "No new geometry or identity theorem is claimed."
+    ]
+  },
+  "single_branch": {
+    "symmetry_cancellation_error": 3.3306690738754696e-16,
+    "assumptions": "Positive values, ignoring existing epsilon; cancellation is exact for sym(M) and sym(M*L).",
+    "implication": "At fixed query SINGLE M contributes a candidate reference-only scalar preference; it is not a direct test of rich query-reference content comparison."
+  },
+  "actual_dataset_predictions": false,
+  "new_training": false,
+  "new_GPU": false
+}

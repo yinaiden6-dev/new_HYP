@@ -1,0 +1,78 @@
+{
+  "status": "H593_FIXED_EIGHT_PASSES_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_h593_authority_v1_20260924.json",
+    "sha256": "4e244190e58a73b27239a400394ba362b9221d2d8cfd342f841f85ff59248bad"
+  },
+  "input_scope": {
+    "manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/input_manifest.json",
+      "sha256": "71e29aec16ae9deda67d9cea5cc6ffa10cfff93ef73498d95a00a12f18944f03"
+    },
+    "labels": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold_inputs/fold3_train_labels.json",
+      "sha256": "8e0d159ada4c9589a0c6914ec0e957da395653c76877c3f71287bc7bc3d4a311"
+    },
+    "train_axis_sha256": "8acf20b2c9fe07f9a2f3cc242896356fc11b108a99f01414423e13c132cb510e",
+    "held_axis_sha256": "1b93e682a9d927949dac53be537e9f3a130937b9de17c088da66a133f80c7e24"
+  },
+  "arm": "POST_SHUFFLED",
+  "steps": 3688,
+  "passes": 8,
+  "train_queries": 461,
+  "snapshot": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_SHUFFLED/final.pt",
+    "sha256": "ab31359924a979963d4695399849652322e19ab3bdf7dffde91f4e92b8878f0a"
+  },
+  "checkpoint": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_SHUFFLED/checkpoint.pt",
+    "sha256": "7a6bdb9825ac1067786a6ee20081d5655eb0e0093fad2dbe1c6cc9b4ab76be00"
+  },
+  "held_label_reads": 0,
+  "old_pilot_parameters_reused": false,
+  "parity": [
+    {
+      "status": "POSTLLM_NATIVE_TOKEN_PARITY_PASS",
+      "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+      "patches": 720,
+      "max_abs_error": 0.0,
+      "atol": 0.0,
+      "exact_equal": true,
+      "device": "cuda:0",
+      "dtype": "torch.bfloat16",
+      "new_encoder_forwards": 0
+    },
+    {
+      "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+      "zero_content_max_error": 0.0
+    }
+  ],
+  "cache_stats": {
+    "query_cpu": {
+      "hits": 1098,
+      "misses": 461,
+      "bytes": 2539220647,
+      "entries": 461
+    },
+    "reference_cpu": {
+      "hits": 1509,
+      "misses": 4493,
+      "bytes": 825813504,
+      "entries": 4493
+    },
+    "reference_device": {
+      "hits": 193550,
+      "misses": 6002,
+      "bytes": 3221171200,
+      "entries": 4379
+    }
+  },
+  "final_checkpoint_selection": "fixed eight complete TRAIN passes",
+  "direct_M_in_head": false,
+  "adapter_parameters": 118304,
+  "head_features": [
+    "raw_standardized_delta",
+    "sym_L",
+    "bias"
+  ]
+}

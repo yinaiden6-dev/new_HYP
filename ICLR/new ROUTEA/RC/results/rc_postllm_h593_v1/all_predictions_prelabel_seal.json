@@ -1,0 +1,413 @@
+{
+  "status": "ALL593_PREDICTIONS_INDEPENDENT_NUMPY_PASS_BEFORE_LABEL_JOIN",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_h593_authority_v1_20260924.json",
+    "sha256": "4e244190e58a73b27239a400394ba362b9221d2d8cfd342f841f85ff59248bad"
+  },
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/input_manifest.json",
+    "sha256": "71e29aec16ae9deda67d9cea5cc6ffa10cfff93ef73498d95a00a12f18944f03"
+  },
+  "required_seals": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/warm/validation.json",
+      "sha256": "10ea3e2d92f833c566016134e66b37e99f6e0cd8975f1ea3a9f20e2c5cf1bfdd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/fit_validation.json",
+      "sha256": "4ea57009698a13b79227c32d0280e7cf89a7f65fbd795dd72abaff4f23294f6b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "50368cece8d77b9529bd2a85409aa39aa90a0f2d6d0d41c3fa46b62733926285"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "0bac7a84021d69a89742f01225f3eea1ca455de4452133e31aa42a5989d806f0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_CONSTANT/fit_validation.json",
+      "sha256": "09760246186768641c9188f0da4b67e0edfc8711771db07d49a5579df757ed36"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "e740d576ec700ac4381aa1a0e2d4b73be000f90a250a330651f4a4f22688e0e4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "c512bec2795c4239dba893adc8a52e2cdd226aed5279a9d909c8ccc1e64bb531"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_SHUFFLED/fit_validation.json",
+      "sha256": "31fee81a4bae7489b8aae031d743e413ff44473e7bf63a750bb9fa53edb98818"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "d5dc888c7a54088ac4388a910916a0d73de669b65d6de712cc072e1bd18844bb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "c864a77a721d57bbfc417bfc433ba80dc03971d9b669cd72202fba8ccec57963"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/warm/validation.json",
+      "sha256": "4a49eecb086cd6443dcf6b8d9296b74269f73bc50ea84f82394b72661b416527"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/fit_validation.json",
+      "sha256": "ed6fc8bac4c69900f6ee90491d14c0132f44feadf3baef2e9c2c965064c0df39"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "f800ed3fd25bd05ca2d738e2f00c3f1be0e7ea775ff9800c543bc7ade810f90a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "0e9f2264e338e878a5748d91950a42a01ee573275f40c330d202e26292a4d3f7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_CONSTANT/fit_validation.json",
+      "sha256": "f4f77330ba438eb73c0934df55e1dc83785bdc0f7a100af0a367b13c828d8748"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "84777fb8eef3cd17f254c286ee4a7f1e3a33930c18a4c950058721d9bdec68c6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "bd0281b8c910441a249e3bdc7a35930393843e8e68f1c802ffba127d0d6a3b03"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_SHUFFLED/fit_validation.json",
+      "sha256": "ef5dbc612fd56d6dbfda706463a0fafd03ea9c24cec5e8cebc64ed93ae7eee67"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "3d23da37ca5243fbb47403c5a112d75ecb99ee091bfa21aa45f32abf49b79e65"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "f09797583df877c961db34088592965d01f95e2bff5551521304435dacdbc3ab"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/warm/validation.json",
+      "sha256": "607df308ada355180690ff85b814457e94cacd99e3e06dd56bbc195ccee08f30"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/fit_validation.json",
+      "sha256": "1aac0bd6c18528193301e6c174aec1fc27cee87c062961bf0d5315a2359cd5e9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "077abf4c5abdb36f91222e0055baa73f032732136960d4852745a6683e653d07"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "ae0f27166fb05951ac6b006cdd97cd67c21673dfa4760408a5f4a1e4c75bee65"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_CONSTANT/fit_validation.json",
+      "sha256": "91edd781acb47d9146cb723201b7684968fa6ad235d71cf6a4a41d54acf01bf3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "e5c9f71b74e8987e789c9296c25c0e2f2d21dfd28eef318ff945e5b6e9809c26"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "be2582e59c68ed282c653fd21852a4265ef46615b4ca02f57ceddd46128a2ba3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_SHUFFLED/fit_validation.json",
+      "sha256": "10b455af63b26481f1ad44db0bd69a1a7fe2cb3c25e0215a8d3ba43f71c8f8e7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "cdf7f9f26ba585ed8ba22059539cf91dbf6243387a06cf6a998609f90f558ab9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "ce0924ea76dd05d0b7f6770df12ad70d3cc17ae54b185644626d5d28342b5343"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/warm/validation.json",
+      "sha256": "1debce3d8befdc08a040519af02c54735b8e316e58bea2e163cbf89ba2ad35b8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/fit_validation.json",
+      "sha256": "d4c4fadee9292e83d902b49a3d85d802dde652b9c6f044eb4460b7316d0a22d4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "b4437ab88d634f1a307b3ddd71cb34e5ba2781079116c1a2ef85ed1bcd175d79"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "ff8ed015b72e54e16fc18a4b111837012e02d63da745b8a3ec39e5e7be56d349"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_CONSTANT/fit_validation.json",
+      "sha256": "7a9bb7c254769923870a4830eb51f416abf1b080b78cc12a9621aeba36e554e2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "3ba2ca8b28a1d6e1697a066e0c4551048ba08cd2f9f46eebbd739460eb89d595"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "b346dd51fc97ef7d82f42c53065a23ca70704cdd86edffc8cdf979bad0effbcc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_SHUFFLED/fit_validation.json",
+      "sha256": "b8e53db57f4b782b37b55930ed1756138009a9a976ac7eb163294e530a52a94f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "e15f7d02d5e67aee387c2245fc7a1ed448750c16aa141d24f88f94775bb1b404"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "a29a180bb2baa967ce8755412a2dc06b92157c4d58ced3a92c4ae7d402ca74f6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/warm/validation.json",
+      "sha256": "27c6057f6252a230ff26b843b38cf3ea41d1e413c04ee90fb658154cd8ff3ba8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/fit_validation.json",
+      "sha256": "735e85c04d88651217465d50fd256c72b8acce1c391841f9b3c766f93a4279dc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "1d20eb7133815f8be62e3c3641e25e14a0c5b209d2e9eb11cf37f2f3680d1f62"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "384ef025681e42cb33b51f69923c312e76f5eef328be027f14a141a5b0c5ac54"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_CONSTANT/fit_validation.json",
+      "sha256": "4cb01b94f027f035f17888daf1411258411249ac1e2a9e78576b9e415a4993dc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "fca05250f435cf901f38af4603765cf4a5cdc4effb32190493f0667fd15e1ec2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "fb94ab23cd1e939932464bd7b352db9ad83c05abe54fd86cbcf850e56e5472b5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_SHUFFLED/fit_validation.json",
+      "sha256": "57c6e1ccafab50f052753c442a25015122e898f9c50b390f35bd6aa1bc4fcecc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "910771ca7a418d55e71bdf869d5d4ef404663d487cee94ec39b9c59598cf719d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "c8d812db4f7426b44a4ea1ab1fad68b85d1cc891bb89b18ba682c1fd598fab0d"
+    }
+  ],
+  "endpoint_seals": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "50368cece8d77b9529bd2a85409aa39aa90a0f2d6d0d41c3fa46b62733926285"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "0bac7a84021d69a89742f01225f3eea1ca455de4452133e31aa42a5989d806f0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "e740d576ec700ac4381aa1a0e2d4b73be000f90a250a330651f4a4f22688e0e4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "c512bec2795c4239dba893adc8a52e2cdd226aed5279a9d909c8ccc1e64bb531"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "d5dc888c7a54088ac4388a910916a0d73de669b65d6de712cc072e1bd18844bb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "c864a77a721d57bbfc417bfc433ba80dc03971d9b669cd72202fba8ccec57963"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "f800ed3fd25bd05ca2d738e2f00c3f1be0e7ea775ff9800c543bc7ade810f90a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "0e9f2264e338e878a5748d91950a42a01ee573275f40c330d202e26292a4d3f7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "84777fb8eef3cd17f254c286ee4a7f1e3a33930c18a4c950058721d9bdec68c6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "bd0281b8c910441a249e3bdc7a35930393843e8e68f1c802ffba127d0d6a3b03"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "3d23da37ca5243fbb47403c5a112d75ecb99ee091bfa21aa45f32abf49b79e65"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "f09797583df877c961db34088592965d01f95e2bff5551521304435dacdbc3ab"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "077abf4c5abdb36f91222e0055baa73f032732136960d4852745a6683e653d07"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "ae0f27166fb05951ac6b006cdd97cd67c21673dfa4760408a5f4a1e4c75bee65"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "e5c9f71b74e8987e789c9296c25c0e2f2d21dfd28eef318ff945e5b6e9809c26"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "be2582e59c68ed282c653fd21852a4265ef46615b4ca02f57ceddd46128a2ba3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "cdf7f9f26ba585ed8ba22059539cf91dbf6243387a06cf6a998609f90f558ab9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "ce0924ea76dd05d0b7f6770df12ad70d3cc17ae54b185644626d5d28342b5343"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "b4437ab88d634f1a307b3ddd71cb34e5ba2781079116c1a2ef85ed1bcd175d79"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "ff8ed015b72e54e16fc18a4b111837012e02d63da745b8a3ec39e5e7be56d349"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "3ba2ca8b28a1d6e1697a066e0c4551048ba08cd2f9f46eebbd739460eb89d595"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "b346dd51fc97ef7d82f42c53065a23ca70704cdd86edffc8cdf979bad0effbcc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "e15f7d02d5e67aee387c2245fc7a1ed448750c16aa141d24f88f94775bb1b404"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "a29a180bb2baa967ce8755412a2dc06b92157c4d58ced3a92c4ae7d402ca74f6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/train_endpoint/validation-000-of-001.json",
+      "sha256": "1d20eb7133815f8be62e3c3641e25e14a0c5b209d2e9eb11cf37f2f3680d1f62"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/held/validation-000-of-001.json",
+      "sha256": "384ef025681e42cb33b51f69923c312e76f5eef328be027f14a141a5b0c5ac54"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_CONSTANT/train_endpoint/validation-000-of-001.json",
+      "sha256": "fca05250f435cf901f38af4603765cf4a5cdc4effb32190493f0667fd15e1ec2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_CONSTANT/held/validation-000-of-001.json",
+      "sha256": "fb94ab23cd1e939932464bd7b352db9ad83c05abe54fd86cbcf850e56e5472b5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_SHUFFLED/train_endpoint/validation-000-of-001.json",
+      "sha256": "910771ca7a418d55e71bdf869d5d4ef404663d487cee94ec39b9c59598cf719d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_SHUFFLED/held/validation-000-of-001.json",
+      "sha256": "c8d812db4f7426b44a4ea1ab1fad68b85d1cc891bb89b18ba682c1fd598fab0d"
+    }
+  ],
+  "query_count": 593,
+  "model_decisions": 4744,
+  "max_logit_error": 5.684341886080802e-14,
+  "training_summary": {
+    "0": {
+      "POST_REAL": {
+        "n": 457,
+        "correct": 417
+      },
+      "POST_CONSTANT": {
+        "n": 457,
+        "correct": 427
+      },
+      "POST_SHUFFLED": {
+        "n": 457,
+        "correct": 413
+      }
+    },
+    "1": {
+      "POST_REAL": {
+        "n": 454,
+        "correct": 421
+      },
+      "POST_CONSTANT": {
+        "n": 454,
+        "correct": 418
+      },
+      "POST_SHUFFLED": {
+        "n": 454,
+        "correct": 421
+      }
+    },
+    "2": {
+      "POST_REAL": {
+        "n": 451,
+        "correct": 412
+      },
+      "POST_CONSTANT": {
+        "n": 451,
+        "correct": 421
+      },
+      "POST_SHUFFLED": {
+        "n": 451,
+        "correct": 407
+      }
+    },
+    "3": {
+      "POST_REAL": {
+        "n": 461,
+        "correct": 424
+      },
+      "POST_CONSTANT": {
+        "n": 461,
+        "correct": 432
+      },
+      "POST_SHUFFLED": {
+        "n": 461,
+        "correct": 423
+      }
+    },
+    "4": {
+      "POST_REAL": {
+        "n": 457,
+        "correct": 434
+      },
+      "POST_CONSTANT": {
+        "n": 457,
+        "correct": 424
+      },
+      "POST_SHUFFLED": {
+        "n": 457,
+        "correct": 416
+      }
+    }
+  },
+  "curator_label_reads": 0,
+  "independent_numpy": true,
+  "checked_unique_files": 11057
+}

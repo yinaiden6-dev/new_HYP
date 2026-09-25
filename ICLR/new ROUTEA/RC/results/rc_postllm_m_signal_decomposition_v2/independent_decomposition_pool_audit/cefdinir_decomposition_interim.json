@@ -1,0 +1,115 @@
+{
+  "query_id": "H593-90acde9b0567a472f4232120",
+  "scope": "Interim cefdinir complete-row readout only, not complete all24/pool validation",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_signal_decomposition_v2/queries/H593-90acde9b0567a472f4232120/result.json",
+      "sha256": "85997c3ce123977876d22a6e736fb3a31933c7e2807e1d3a9bdd98932800b895"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_signal_decomposition_v2/queries/H593-90acde9b0567a472f4232120/patch_evidence/0087.npz",
+      "sha256": "c49cd087067b9d48b1981d080c388ccee3f0e17f161ff052213650efe4e81c25"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_signal_decomposition_v2/queries/H593-90acde9b0567a472f4232120/patch_evidence/0104.npz",
+      "sha256": "8dafd671cec6bd1c17931644ba50286707b40cc8d136f0f677917ecfea7d5ffa"
+    }
+  ],
+  "target_vs_RAWwinner": {
+    "target": {
+      "position": 87,
+      "M": 0.14329098420403902,
+      "L": {
+        "CONSTANT": 0.4431021732238214,
+        "NATIVE": 0.5045586829368544,
+        "COMMON_ONLY": 0.5045647265065426,
+        "SPATIAL_ONLY": 0.4430987798627733,
+        "RECOMPOSED": 0.5045586829368544,
+        "NATIVE_FIXED_ARGMAX": 0.501780343134795,
+        "COMMON_FIXED_ARGMAX": 0.5017883760663776
+      },
+      "native_old_argmax_retained_fraction": 0.8177083333333334,
+      "common_old_argmax_retained_fraction": 0.8177083333333334,
+      "native_rematch_gain": 0.0027783398020593264,
+      "common_rematch_gain": 0.0027763504401649985,
+      "common_energy_share": 0.9957982222715804
+    },
+    "RAWwinner": {
+      "position": 104,
+      "M": 0.034289546086745136,
+      "L": {
+        "CONSTANT": 0.44772699028088786,
+        "NATIVE": 0.4723167592203194,
+        "COMMON_ONLY": 0.4722741834656273,
+        "SPATIAL_ONLY": 0.4477704845650842,
+        "RECOMPOSED": 0.4723167592203194,
+        "NATIVE_FIXED_ARGMAX": 0.47180105892869834,
+        "COMMON_FIXED_ARGMAX": 0.4717604846921848
+      },
+      "native_old_argmax_retained_fraction": 0.9205729166666666,
+      "common_old_argmax_retained_fraction": 0.9244791666666666,
+      "native_rematch_gain": 0.0005157002916210685,
+      "common_rematch_gain": 0.0005136987734424836,
+      "common_energy_share": 0.9708341452413595
+    }
+  },
+  "head": [
+    -0.03296707513396198,
+    25.44946296242132,
+    -0.4845581544574837
+  ],
+  "raw_logit_term": 0.004808353465416899,
+  "bias": -0.4845581544574837,
+  "arms": {
+    "CONSTANT": {
+      "L_difference": -0.004624817057066466,
+      "target_logit": -0.6118729007103139
+    },
+    "NATIVE": {
+      "L_difference": 0.03224192371653495,
+      "target_logit": 0.3602136253055405
+    },
+    "COMMON_ONLY": {
+      "L_difference": 0.03229054304091533,
+      "target_logit": 0.3615117117980177
+    },
+    "SPATIAL_ONLY": {
+      "L_difference": -0.00467170470231093,
+      "target_logit": -0.613206392817641
+    },
+    "RECOMPOSED": {
+      "L_difference": 0.03224192371653495,
+      "target_logit": 0.3602136253055405
+    },
+    "NATIVE_FIXED_ARGMAX": {
+      "L_difference": 0.02997928420609669,
+      "target_logit": 0.303910077293508
+    },
+    "COMMON_FIXED_ARGMAX": {
+      "L_difference": 0.030027891374192817,
+      "target_logit": 0.30520690757098073
+    }
+  },
+  "sequential_contributions": {
+    "NATIVE": {
+      "base_L_difference": -0.004624817057066466,
+      "fixed_position_content_change_L_difference": 0.034604101263163156,
+      "rematching_L_difference_increment": 0.002262639510438258,
+      "final_L_difference": 0.03224192371653495,
+      "base_target_logit": -0.6118729007103139,
+      "fixed_position_change_target_logit": 0.9157829780038218,
+      "rematching_change_target_logit": 0.05630354801203252,
+      "final_target_logit": 0.3602136253055405
+    },
+    "COMMON": {
+      "base_L_difference": -0.004624817057066466,
+      "fixed_position_content_change_L_difference": 0.03465270843125928,
+      "rematching_L_difference_increment": 0.002262651666722515,
+      "final_L_difference": 0.03229054304091533,
+      "base_target_logit": -0.6118729007103139,
+      "fixed_position_change_target_logit": 0.9170798082812945,
+      "rematching_change_target_logit": 0.056304804227036986,
+      "final_target_logit": 0.3615117117980177
+    }
+  }
+}

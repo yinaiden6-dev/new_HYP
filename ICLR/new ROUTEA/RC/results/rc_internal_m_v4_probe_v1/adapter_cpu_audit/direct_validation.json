@@ -1,0 +1,49 @@
+{
+  "status": "DIRECT_ADAPTER_HOOK_VS_GRAM_PASS",
+  "query_id": "H593-4ef2d085267e3a655f22c017",
+  "patches": 720,
+  "checks": [
+    {
+      "mass_order": "min",
+      "candidate_position": 113,
+      "M": 0.002409051567702981,
+      "direct_energy": 5.459995416527513,
+      "gram_energy": 5.459995420533073,
+      "energy_relative_error": 7.336197235154992e-10,
+      "orthogonal_energy_closure_abs_error": 1.942890293094024e-16,
+      "direct_common_share": 0.9565990380392425,
+      "gram_common_share": 0.956599038491607,
+      "common_share_abs_error": 4.5236447920871115e-10,
+      "actual_BF16_input_delta_common_share": 0.9554543116555662
+    },
+    {
+      "mass_order": "median",
+      "candidate_position": 32,
+      "M": 0.009862614654990737,
+      "direct_energy": 0.32803619033666986,
+      "gram_energy": 0.32803622717417313,
+      "energy_relative_error": 1.1229707073535387e-07,
+      "orthogonal_energy_closure_abs_error": 1.3010426069826053e-17,
+      "direct_common_share": 0.9862162021867229,
+      "gram_common_share": 0.9862162023090489,
+      "common_share_abs_error": 1.2232603818773669e-10,
+      "actual_BF16_input_delta_common_share": 0.9676590551626252
+    },
+    {
+      "mass_order": "max",
+      "candidate_position": 71,
+      "M": 0.10032737717426103,
+      "direct_energy": 8.515965907913792,
+      "gram_energy": 8.515965906922126,
+      "energy_relative_error": 1.1644779079356828e-10,
+      "orthogonal_energy_closure_abs_error": 3.122502256758253e-17,
+      "direct_common_share": 0.9975361674203786,
+      "gram_common_share": 0.9975361672855291,
+      "common_share_abs_error": 1.3484957595011338e-10,
+      "actual_BF16_input_delta_common_share": 0.9967789567743965
+    }
+  ],
+  "max_energy_relative_error": 1.1229707073535387e-07,
+  "max_common_share_abs_error": 4.5236447920871115e-10,
+  "note": "Actual original adapter called on BF16 cached merger tokens on CPU. Hook captures up output before BF16 cast; standardized_zero condition is original constant path. No LLM forward."
+}

@@ -1,0 +1,2695 @@
+{
+  "status": "SEALED_READOUT_DECOMPOSITION_PASS",
+  "feature_formula": "dRAW=(RAWc-RAWw)/std(RAW); sym_X=(Xc-Xw)/(|Xc|+|Xw|+1e-12); HOLD=0",
+  "heads": {
+    "REAL": {
+      "raw_standardized_delta": -0.1065685290599571,
+      "sym_L": 25.425026655377685,
+      "bias": -0.5241417758428729
+    },
+    "REAL_REFIT": {
+      "raw_standardized_delta": -0.19133086331249993,
+      "sym_L": 62.60135332668105,
+      "bias": -0.4084074880116426
+    },
+    "ADDITIVE4": {
+      "raw_standardized_delta": 0.08800040013269313,
+      "sym_M": 3.5237561758291847,
+      "sym_L": 30.777066049690756,
+      "bias": -0.4992148340409783
+    }
+  },
+  "max_logit_reconstruction_error": 2.6645352591003757e-15,
+  "source_sha256": {
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/validation.json": "8823f369171e704ecdba36d045571c402f6647e4845e4e1986a2d7a204d16bd4",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/result.json": "668d98178f7c1330ddf9d953c0d32078cb4ebb960597e710a6ef98c72555723b",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_v4_probe_v1_authority_20260924.json": "4f94a5f9b9824795146c5f4818dca6843007d7da98b0a43b6561a2e7040e6071",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/input_manifest.json": "a788f82954ca68d713bba8fce91b76b806f85f222a2db58e507c2a3facb98054",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/prelabel_validation.json": "1133e1b51cc4ceb4ae6f941d82833d5b4247cf16b69b99466ecf841469bb23d2",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-4ef2d085267e3a655f22c017.json": "2b832da5669c5f7fe72cb91e52c9e84762288c55dc6eff38a78108d38b573fe1",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-4ef2d085267e3a655f22c017.json": "fbdae31223365dcdf0e5da6a414d29fed7b31544f2afd9b70db347a10d1c9af3",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4ef2d085267e3a655f22c017/validation.json": "1df59dc577e1172fd91871091cdf87dd522f9761d8322768a316acfe56ecd73c",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4ef2d085267e3a655f22c017/parity.json": "9ea7916ac2cfe1426cbb52f35aeec0cc668cec15a4f1f30fa515dd0ff4a5b2ad",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-f522efe671aecfa850b10989.json": "d53d8e58b662ffa97852963a76493dca9abd8f5682d147071b16123c14b02236",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-f522efe671aecfa850b10989.json": "dabafe299f886674474100fc1a9b36b4814aa3a7bf5cac0fde99af067c59e966",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f522efe671aecfa850b10989/validation.json": "dc767d38472b27dd935efb3a9b02c3b57d8c3dc7559e520af944cb2bc3a3420f",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f522efe671aecfa850b10989/parity.json": "4811bb15fab63e6385decae40584be71d7e3ab6e1a18be214ba9449898b84dfe",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-2446df0fcadbf0831876d7dc.json": "c6bebad6a38615712da5626ac322558bcbe957ed0fa808f5da16553a5adbe0d7",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-2446df0fcadbf0831876d7dc.json": "2aaa575a8306195ef7bd723f887be43f39c5960f4c86fa3174678581658e0297",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-2446df0fcadbf0831876d7dc/validation.json": "a0711905bd0cab9cca4ccdc7c213ec1563d7d827db8dba17dd95527d07860340",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-2446df0fcadbf0831876d7dc/parity.json": "fd9e5ad733fe508dcafff3ecfca9576b8f14d9237abefeb07768f1e91449953f",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-53e0bb3f0f95aa31e37ff328.json": "1333020a709977d6f352e0b24489c1e6ac6701ebf4895b9ff167db46f6867022",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-53e0bb3f0f95aa31e37ff328.json": "d4d32ede62d0f83910cfaf565b87e50b874aa18b40127450d8de67f6da078d20",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-53e0bb3f0f95aa31e37ff328/validation.json": "2ad2ff5280fcae93d2aceb823bc931bfe3e4d0c94e7be211caeea1c4020de522",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-53e0bb3f0f95aa31e37ff328/parity.json": "7eb35ef4329040fbac49858b0110382a1ad7b9bf9e2816d494b0b1a69e98af5b",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-9bea68f2367dffd8339109ca.json": "b4d7d5ca11a34310729e23e36f5ba718b7163cb859aaebe42161b18edc935a98",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-9bea68f2367dffd8339109ca.json": "f242af8a9302e79af1dde9e00a0d06c3f3b0f53ab8202ba4d904b6258ca278d5",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-9bea68f2367dffd8339109ca/validation.json": "3382a34ca28402432a14cef4e35b904f25dd4cca4d9bfeb31278d06a4aa3a6c7",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-9bea68f2367dffd8339109ca/parity.json": "14113f37568583673440cdf0fe622f5c8f2530995d2634af1379faee31da72eb",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-90acde9b0567a472f4232120.json": "d6e001f85fa2dc2be2aae34ab510724bae46164eb72bea0550d78aa6670dbcae",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-90acde9b0567a472f4232120.json": "9c6de5c9307b185926f54fa1a74b16fa7c577d91a2888021e852248fd6fc7891",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-90acde9b0567a472f4232120/validation.json": "c7f6805863cbc0d4377f3c62caf557bc9fe8c88ecb088a3991171cdb7d2787b6",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-90acde9b0567a472f4232120/parity.json": "13f18db2ca4c89aabba59a02e57e7f97ff411f71b148df6c623948992ab16438",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-b98760533d5b5968acf3d2d8.json": "c302af0e4e9d36599943688b54ef65d8a0110d3e5e908cfdf907ca969ce76481",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-b98760533d5b5968acf3d2d8.json": "628273a7f8b61b693e88e1b3b285c4817a5899eabd7105e4cd2a9402ccb5f6bb",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b98760533d5b5968acf3d2d8/validation.json": "c79fa8a15faac411cfa4a744da8234ca32e3d59fac41c0e4aa2196daafb32ce6",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b98760533d5b5968acf3d2d8/parity.json": "654accd24a35b69598f3e357a06d64772a82dbf02219b9f094f0f39d446d4768",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/audited_decisions/H593-7a2a329a01beb7a806b52b3e.json": "1f8728f838fb931c2e7ebe0b6dacff50f7f3b79c7d52afc853134110b50c388a",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/predictions/REAL/H593-7a2a329a01beb7a806b52b3e.json": "322362169c401b8e2848ac8349bcd629eae4b417641a86641591c4514284b905",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-7a2a329a01beb7a806b52b3e/validation.json": "dc52c052b3baa5a14fae760ffd0a83fe71ee85af941be318bab28db068a4ce64",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-7a2a329a01beb7a806b52b3e/parity.json": "65b2a56f007198f3abab64983b6ff3c9daf9fbf463971f23db0cd3205a41b8d5"
+  },
+  "rows": [
+    {
+      "query_id": "H593-4ef2d085267e3a655f22c017",
+      "identity": "75 100s carton",
+      "raw_correct": true,
+      "target_in_C128": true,
+      "correct": {
+        "RAW": true,
+        "REAL": true,
+        "REAL_REFIT": true,
+        "REAL_CONSTANT": true,
+        "REAL_CONSTANT_REFIT": true,
+        "REAL_SHUFFLED": true,
+        "REAL_SHUFFLED_REFIT": true,
+        "TRAIN_SHUFFLED": true,
+        "TRAIN_SHUFFLED_REFIT": true,
+        "TRAIN_CONSTANT": true,
+        "TRAIN_CONSTANT_REFIT": true,
+        "warmstart_INTERNAL3": true,
+        "ADDITIVE4": true,
+        "PRODUCT5": true,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": true,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": true
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 51,
+            "candidate_id": 3835,
+            "identity": "cetirizine-hcl-10-mg-softgel-str-1",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 435.9008483886719,
+            "M": 0.005593151694133949,
+            "L": 0.5730905465007364,
+            "action": -2.9440925938525186,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -7.4393659621553105,
+              "sym_L": -0.1263618382502547,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.7928022877256039,
+              "sym_L": -3.2127531057352496,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 51,
+            "candidate_id": 3835,
+            "identity": "cetirizine-hcl-10-mg-softgel-str-1",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 435.9008483886719,
+            "M": 0.005593151694133949,
+            "L": 0.5730905465007364,
+            "action": -6.895449259287956,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -7.4393659621553105,
+              "sym_L": -0.1263618382502547,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 1.4233803120368023,
+              "sym_L": -7.910422083313115,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7388726245058939,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7321228878629819,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7321228878629819,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7321228878629819,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 76,
+            "candidate_id": 4894,
+            "identity": "Epuris_Carton_30mg",
+            "raw_rank": 5,
+            "content_rank": 5,
+            "raw": 426.29931640625,
+            "M": 0.016670515027488897,
+            "L": 0.5766894196027729,
+            "action": -7.390290901535738,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -8.14121289024576,
+              "sym_M": -0.7150287972863656,
+              "sym_L": -0.11875917377416406,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.7164299919070659,
+              "sym_M": -2.519587140333545,
+              "sym_L": -3.6550589352541496,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target": {
+            "position": 71,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 537.6741943359375,
+            "M": 0.10032737717426103,
+            "L": 0.7321228878629819,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "query_id": "H593-f522efe671aecfa850b10989",
+      "identity": "766-e9-infants-pain-and-fever",
+      "raw_correct": false,
+      "target_in_C128": true,
+      "correct": {
+        "RAW": false,
+        "REAL": false,
+        "REAL_REFIT": false,
+        "REAL_CONSTANT": false,
+        "REAL_CONSTANT_REFIT": false,
+        "REAL_SHUFFLED": false,
+        "REAL_SHUFFLED_REFIT": false,
+        "TRAIN_SHUFFLED": false,
+        "TRAIN_SHUFFLED_REFIT": false,
+        "TRAIN_CONSTANT": false,
+        "TRAIN_CONSTANT_REFIT": false,
+        "warmstart_INTERNAL3": false,
+        "ADDITIVE4": true,
+        "PRODUCT5": true,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": false,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": false
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 21,
+            "candidate_id": 1245,
+            "identity": "ARTE TROQUEL NOVALGINA",
+            "raw_rank": 1,
+            "content_rank": 44,
+            "raw": 448.8258972167969,
+            "M": 0.004939282673002261,
+            "L": 0.5777220507958,
+            "action": 0.0,
+            "action_rank": 5,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 26,
+            "candidate_id": 1460,
+            "identity": "Artrifin 24 Caplets",
+            "raw_rank": 4,
+            "content_rank": 1,
+            "raw": 447.0887756347656,
+            "M": 0.01673814945066947,
+            "L": 0.595048185400487,
+            "action": -0.11725470596069992,
+            "action_rank": 13,
+            "features": {
+              "raw_standardized_delta": -0.2933868925593286,
+              "sym_L": 0.014773682064840843,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.03126580958551932,
+              "sym_L": 0.37562126029665366,
+              "bias": -0.5241417758428729
+            }
+          },
+          "selected": {
+            "position": 52,
+            "candidate_id": 2456,
+            "identity": "ChildsIbuprofen Box",
+            "raw_rank": 60,
+            "content_rank": 4,
+            "raw": 432.1685791015625,
+            "M": 0.0985228061681637,
+            "L": 0.5940265927568141,
+            "action": 0.12944899844648472,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -2.8132969221914315,
+              "sym_L": 0.013914709482032472,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.29980891480684546,
+              "sym_L": 0.35378185948251223,
+              "bias": -0.5241417758428729
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 52,
+            "candidate_id": 2456,
+            "identity": "ChildsIbuprofen Box",
+            "raw_rank": 60,
+            "content_rank": 4,
+            "raw": 432.1685791015625,
+            "M": 0.0985228061681637,
+            "L": 0.5940265927568141,
+            "action": 0.12944899844648472,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -2.8132969221914315,
+              "sym_L": 0.013914709482032472,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.29980891480684546,
+              "sym_L": 0.35378185948251223,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target": {
+            "position": 16,
+            "candidate_id": 1134,
+            "identity": "766-e9-infants-pain-and-fever",
+            "raw_rank": 11,
+            "content_rank": 2,
+            "raw": 440.73809814453125,
+            "M": 0.073647978721388,
+            "L": 0.5944568662037303,
+            "action": -0.015587669979856611,
+            "action_rank": 6,
+            "features": {
+              "raw_standardized_delta": -1.365969004127856,
+              "sym_L": 0.014276673266528938,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.1455693075114001,
+              "sym_L": 0.36298479835161623,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": -0.15423960729544536,
+            "sym_L": 0.009202938869104005,
+            "bias": 0.0,
+            "total": -0.14503666842634133
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 21,
+            "candidate_id": 1245,
+            "identity": "ARTE TROQUEL NOVALGINA",
+            "raw_rank": 1,
+            "content_rank": 44,
+            "raw": 448.8258972167969,
+            "M": 0.004939282673002261,
+            "L": 0.5777220507958,
+            "action": 0.0,
+            "action_rank": 58,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 26,
+            "candidate_id": 1460,
+            "identity": "Artrifin 24 Caplets",
+            "raw_rank": 4,
+            "content_rank": 1,
+            "raw": 447.0887756347656,
+            "M": 0.01673814945066947,
+            "L": 0.595048185400487,
+            "action": 0.5725789703034578,
+            "action_rank": 9,
+            "features": {
+              "raw_standardized_delta": -0.2933868925593286,
+              "sym_L": 0.014773682064840843,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.056133967437948004,
+              "sym_L": 0.9248524908771525,
+              "bias": -0.4084074880116426
+            }
+          },
+          "selected": {
+            "position": 52,
+            "candidate_id": 2456,
+            "identity": "ChildsIbuprofen Box",
+            "raw_rank": 60,
+            "content_rank": 4,
+            "raw": 432.1685791015625,
+            "M": 0.0985228061681637,
+            "L": 0.5940265927568141,
+            "action": 1.0009426855884769,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -2.8132969221914315,
+              "sym_L": 0.013914709482032472,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.5382705288772855,
+              "sym_L": 0.8710796447228338,
+              "bias": -0.4084074880116426
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 52,
+            "candidate_id": 2456,
+            "identity": "ChildsIbuprofen Box",
+            "raw_rank": 60,
+            "content_rank": 4,
+            "raw": 432.1685791015625,
+            "M": 0.0985228061681637,
+            "L": 0.5940265927568141,
+            "action": 1.0009426855884769,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -2.8132969221914315,
+              "sym_L": 0.013914709482032472,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.5382705288772855,
+              "sym_L": 0.8710796447228338,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target": {
+            "position": 16,
+            "candidate_id": 1134,
+            "identity": "766-e9-infants-pain-and-fever",
+            "raw_rank": 11,
+            "content_rank": 2,
+            "raw": 440.73809814453125,
+            "M": 0.073647978721388,
+            "L": 0.5944568662037303,
+            "action": 0.7466836082938155,
+            "action_rank": 4,
+            "features": {
+              "raw_standardized_delta": -1.365969004127856,
+              "sym_L": 0.014276673266528938,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.2613520288178985,
+              "sym_L": 0.8937390674875597,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": -0.27691850005938706,
+            "sym_L": 0.02265942276472588,
+            "bias": 0.0,
+            "total": -0.25425907729466135
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 21,
+            "candidate_id": 1245,
+            "identity": "ARTE TROQUEL NOVALGINA",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 448.8258972167969,
+            "M": 0.004939282673002261,
+            "L": 0.6080722009857737,
+            "action": 0.0,
+            "action_rank": 100,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 21,
+            "candidate_id": 1245,
+            "identity": "ARTE TROQUEL NOVALGINA",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 448.8258972167969,
+            "M": 0.004939282673002261,
+            "L": 0.6080722009857737,
+            "action": 0.0,
+            "action_rank": 100,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 16,
+            "candidate_id": 1134,
+            "identity": "766-e9-infants-pain-and-fever",
+            "raw_rank": 11,
+            "content_rank": 23,
+            "raw": 440.73809814453125,
+            "M": 0.073647978721388,
+            "L": 0.5939214601096824,
+            "action": 2.0990628624088106,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -1.365969004127856,
+              "sym_M": 0.8742981346900073,
+              "sym_L": -0.01177272504347742,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.12020581893210767,
+              "sym_M": 3.0808134516298495,
+              "sym_L": -0.36232993624795307,
+              "bias": -0.4992148340409783
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 52,
+            "candidate_id": 2456,
+            "identity": "ChildsIbuprofen Box",
+            "raw_rank": 60,
+            "content_rank": 60,
+            "raw": 432.1685791015625,
+            "M": 0.0985228061681637,
+            "L": 0.585372857036658,
+            "action": 1.8551413885888741,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -2.8132969221914315,
+              "sym_M": 0.904519950664494,
+              "sym_L": -0.01902001587463953,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.24757125484492,
+              "sym_M": 3.18730776231472,
+              "sym_L": -0.5853802848399474,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target": {
+            "position": 16,
+            "candidate_id": 1134,
+            "identity": "766-e9-infants-pain-and-fever",
+            "raw_rank": 11,
+            "content_rank": 23,
+            "raw": 440.73809814453125,
+            "M": 0.073647978721388,
+            "L": 0.5939214601096824,
+            "action": 2.0990628624088106,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -1.365969004127856,
+              "sym_M": 0.8742981346900073,
+              "sym_L": -0.01177272504347742,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.12020581893210767,
+              "sym_M": 3.0808134516298495,
+              "sym_L": -0.36232993624795307,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": 0.12736543591281235,
+            "sym_M": -0.10649431068487036,
+            "sym_L": 0.22305034859199435,
+            "bias": 0.0,
+            "total": 0.24392147381993645
+          }
+        }
+      }
+    },
+    {
+      "query_id": "H593-2446df0fcadbf0831876d7dc",
+      "identity": "83324304-60",
+      "raw_correct": true,
+      "target_in_C128": true,
+      "correct": {
+        "RAW": true,
+        "REAL": true,
+        "REAL_REFIT": true,
+        "REAL_CONSTANT": true,
+        "REAL_CONSTANT_REFIT": true,
+        "REAL_SHUFFLED": true,
+        "REAL_SHUFFLED_REFIT": true,
+        "TRAIN_SHUFFLED": true,
+        "TRAIN_SHUFFLED_REFIT": true,
+        "TRAIN_CONSTANT": true,
+        "TRAIN_CONSTANT_REFIT": true,
+        "warmstart_INTERNAL3": true,
+        "ADDITIVE4": true,
+        "PRODUCT5": true,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": true,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": true
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 58,
+            "candidate_id": 2003,
+            "identity": "CDMA QC Ultra Strength Gas Relief 60ct",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 500.74334716796875,
+            "M": 0.015828667222005068,
+            "L": 0.6708052217888687,
+            "action": -0.7787744896849533,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.2650953529614109,
+              "sym_L": -0.011126184428521532,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.028250821825727704,
+              "sym_L": -0.2828835356678081,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 58,
+            "candidate_id": 2003,
+            "identity": "CDMA QC Ultra Strength Gas Relief 60ct",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 500.74334716796875,
+            "M": 0.015828667222005068,
+            "L": 0.6708052217888687,
+            "action": -1.0542007678570973,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.2650953529614109,
+              "sym_L": -0.011126184428521532,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.05072092274223863,
+              "sym_L": -0.6965142025876933,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6859001762627731,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6915451702019108,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6915451702019108,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6915451702019108,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 70,
+            "candidate_id": 2267,
+            "identity": "CVS_721T_50ct",
+            "raw_rank": 3,
+            "content_rank": 3,
+            "raw": 494.2878723144531,
+            "M": 0.026166317060171407,
+            "L": 0.6716877981322376,
+            "action": -0.7787688891009619,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.46316404317314797,
+              "sym_M": 0.05945787796489802,
+              "sym_L": -0.014566381925111494,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.040758621126312976,
+              "sym_M": 0.2095150646805074,
+              "sym_L": -0.44831049861417804,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target": {
+            "position": 39,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 509.38336181640625,
+            "M": 0.023229355206486883,
+            "L": 0.6915451702019108,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "query_id": "H593-53e0bb3f0f95aa31e37ff328",
+      "identity": "75 100s carton",
+      "raw_correct": true,
+      "target_in_C128": true,
+      "correct": {
+        "RAW": true,
+        "REAL": true,
+        "REAL_REFIT": true,
+        "REAL_CONSTANT": true,
+        "REAL_CONSTANT_REFIT": true,
+        "REAL_SHUFFLED": true,
+        "REAL_SHUFFLED_REFIT": true,
+        "TRAIN_SHUFFLED": true,
+        "TRAIN_SHUFFLED_REFIT": true,
+        "TRAIN_CONSTANT": true,
+        "TRAIN_CONSTANT_REFIT": true,
+        "warmstart_INTERNAL3": true,
+        "ADDITIVE4": true,
+        "PRODUCT5": true,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": true,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": true
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 97,
+            "candidate_id": 5098,
+            "identity": "dexedrine-dextroamphetamine-sulfate-spansule-susta-7",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 471.0508728027344,
+            "M": 0.020798643570968275,
+            "L": 0.6351266561785915,
+            "action": -1.6361215730420913,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -3.2705478499401357,
+              "sym_L": -0.05744408022001534,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.3485374735883256,
+              "sym_L": -1.460517270787544,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 97,
+            "candidate_id": 5098,
+            "identity": "dexedrine-dextroamphetamine-sulfate-spansule-susta-7",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 471.0508728027344,
+            "M": 0.020798643570968275,
+            "L": 0.6351266561785915,
+            "action": -3.3787279067571467,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -3.2705478499401357,
+              "sym_L": -0.05744408022001534,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.6257567436338867,
+              "sym_L": -3.5960771623793906,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7125422573578577,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7078574559396069,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7078574559396069,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7078574559396069,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 97,
+            "candidate_id": 5098,
+            "identity": "dexedrine-dextroamphetamine-sulfate-spansule-susta-7",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 471.0508728027344,
+            "M": 0.020798643570968275,
+            "L": 0.6386959733316772,
+            "action": -4.166168955130325,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -3.2705478499401357,
+              "sym_M": -0.510358065052229,
+              "sym_L": -0.05136185546332655,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.28780951944785116,
+              "sym_M": -1.7983773836120247,
+              "sym_L": -1.5807672180294712,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target": {
+            "position": 65,
+            "candidate_id": 4855,
+            "identity": "75 100s carton",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 520.9612426757812,
+            "M": 0.06415585924726767,
+            "L": 0.7078574559396069,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "query_id": "H593-9bea68f2367dffd8339109ca",
+      "identity": "964901_LR",
+      "raw_correct": false,
+      "target_in_C128": false,
+      "correct": {
+        "RAW": false,
+        "REAL": false,
+        "REAL_REFIT": false,
+        "REAL_CONSTANT": false,
+        "REAL_CONSTANT_REFIT": false,
+        "REAL_SHUFFLED": false,
+        "REAL_SHUFFLED_REFIT": false,
+        "TRAIN_SHUFFLED": false,
+        "TRAIN_SHUFFLED_REFIT": false,
+        "TRAIN_CONSTANT": false,
+        "TRAIN_CONSTANT_REFIT": false,
+        "warmstart_INTERNAL3": false,
+        "ADDITIVE4": false,
+        "PRODUCT5": false,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": false,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": false
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 36,
+            "candidate_id": 2509,
+            "identity": "Cold and flu Nighttime-24ct",
+            "raw_rank": 1,
+            "content_rank": 6,
+            "raw": 445.61077880859375,
+            "M": 0.006256612529905144,
+            "L": 0.5832902755175342,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 30,
+            "candidate_id": 2293,
+            "identity": "Cabinet Cought travel carton",
+            "raw_rank": 2,
+            "content_rank": 1,
+            "raw": 444.31854248046875,
+            "M": 0.026113150135077885,
+            "L": 0.591567951968882,
+            "action": -0.30834916932843226,
+            "action_rank": 9,
+            "features": {
+              "raw_standardized_delta": -0.3439662359950166,
+              "sym_L": 0.007045681136396063,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.03665597581627899,
+              "sym_L": 0.17913663069816163,
+              "bias": -0.5241417758428729
+            }
+          },
+          "selected": {
+            "position": 36,
+            "candidate_id": 2509,
+            "identity": "Cold and flu Nighttime-24ct",
+            "raw_rank": 1,
+            "content_rank": 6,
+            "raw": 445.61077880859375,
+            "M": 0.006256612529905144,
+            "L": 0.5832902755175342,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 53,
+            "candidate_id": 3234,
+            "identity": "aspirin_nsaid-1",
+            "raw_rank": 52,
+            "content_rank": 8,
+            "raw": 432.0401611328125,
+            "M": 0.047841637802341214,
+            "L": 0.5820523405578003,
+            "action": -0.16620225313417114,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -3.612214097740789,
+              "sym_L": -0.0010622927048716201,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.384948343045876,
+              "sym_L": -0.0270088203371742,
+              "bias": -0.5241417758428729
+            }
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 36,
+            "candidate_id": 2509,
+            "identity": "Cold and flu Nighttime-24ct",
+            "raw_rank": 1,
+            "content_rank": 6,
+            "raw": 445.61077880859375,
+            "M": 0.006256612529905144,
+            "L": 0.5832902755175342,
+            "action": 0.0,
+            "action_rank": 8,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 30,
+            "candidate_id": 2293,
+            "identity": "Cabinet Cought travel carton",
+            "raw_rank": 2,
+            "content_rank": 1,
+            "raw": 444.31854248046875,
+            "M": 0.026113150135077885,
+            "L": 0.591567951968882,
+            "action": 0.09847304311829652,
+            "action_rank": 5,
+            "features": {
+              "raw_standardized_delta": -0.3439662359950166,
+              "sym_L": 0.007045681136396063,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.0658113568832776,
+              "sym_L": 0.4410691742466616,
+              "bias": -0.4084074880116426
+            }
+          },
+          "selected": {
+            "position": 53,
+            "candidate_id": 3234,
+            "identity": "aspirin_nsaid-1",
+            "raw_rank": 52,
+            "content_rank": 8,
+            "raw": 432.0401611328125,
+            "M": 0.047841637802341214,
+            "L": 0.5820523405578003,
+            "action": 0.21621959282466152,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -3.612214097740789,
+              "sym_L": -0.0010622927048716201,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.6911280417903282,
+              "sym_L": -0.06650096095402401,
+              "bias": -0.4084074880116426
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 53,
+            "candidate_id": 3234,
+            "identity": "aspirin_nsaid-1",
+            "raw_rank": 52,
+            "content_rank": 8,
+            "raw": 432.0401611328125,
+            "M": 0.047841637802341214,
+            "L": 0.5820523405578003,
+            "action": 0.21621959282466152,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -3.612214097740789,
+              "sym_L": -0.0010622927048716201,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.6911280417903282,
+              "sym_L": -0.06650096095402401,
+              "bias": -0.4084074880116426
+            }
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 36,
+            "candidate_id": 2509,
+            "identity": "Cold and flu Nighttime-24ct",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 445.61077880859375,
+            "M": 0.006256612529905144,
+            "L": 0.6043275199880438,
+            "action": 0.0,
+            "action_rank": 30,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 36,
+            "candidate_id": 2509,
+            "identity": "Cold and flu Nighttime-24ct",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 445.61077880859375,
+            "M": 0.006256612529905144,
+            "L": 0.6043275199880438,
+            "action": 0.0,
+            "action_rank": 30,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 30,
+            "candidate_id": 2293,
+            "identity": "Cabinet Cought travel carton",
+            "raw_rank": 2,
+            "content_rank": 3,
+            "raw": 444.31854248046875,
+            "M": 0.026113150135077885,
+            "L": 0.6004588937976181,
+            "action": 1.5332621374920619,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -0.3439662359950166,
+              "sym_M": 0.6134285817930856,
+              "sym_L": -0.0032110473243689443,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.030269166399697813,
+              "sym_M": 2.1615727535235236,
+              "sym_L": -0.09882661559078577,
+              "bias": -0.4992148340409783
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 30,
+            "candidate_id": 2293,
+            "identity": "Cabinet Cought travel carton",
+            "raw_rank": 2,
+            "content_rank": 3,
+            "raw": 444.31854248046875,
+            "M": 0.026113150135077885,
+            "L": 0.6004588937976181,
+            "action": 1.5332621374920619,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -0.3439662359950166,
+              "sym_M": 0.6134285817930856,
+              "sym_L": -0.0032110473243689443,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.030269166399697813,
+              "sym_M": 2.1615727535235236,
+              "sym_L": -0.09882661559078577,
+              "bias": -0.4992148340409783
+            }
+          }
+        }
+      }
+    },
+    {
+      "query_id": "H593-90acde9b0567a472f4232120",
+      "identity": "cefdinir-fig2",
+      "raw_correct": false,
+      "target_in_C128": true,
+      "correct": {
+        "RAW": false,
+        "REAL": false,
+        "REAL_REFIT": false,
+        "REAL_CONSTANT": false,
+        "REAL_CONSTANT_REFIT": false,
+        "REAL_SHUFFLED": false,
+        "REAL_SHUFFLED_REFIT": false,
+        "TRAIN_SHUFFLED": false,
+        "TRAIN_SHUFFLED_REFIT": false,
+        "TRAIN_CONSTANT": false,
+        "TRAIN_CONSTANT_REFIT": false,
+        "warmstart_INTERNAL3": false,
+        "ADDITIVE4": true,
+        "PRODUCT5": true,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": false,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": false
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 104,
+            "candidate_id": 5164,
+            "identity": "gabapentin-fig11",
+            "raw_rank": 1,
+            "content_rank": 2,
+            "raw": 450.8756103515625,
+            "M": 0.034289546086745136,
+            "L": 0.5715279546250407,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 87,
+            "candidate_id": 5043,
+            "identity": "cefdinir-fig2",
+            "raw_rank": 2,
+            "content_rank": 1,
+            "raw": 449.4945373535156,
+            "M": 0.14329098420403902,
+            "L": 0.5771062819298076,
+            "action": -0.38512210174469536,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.1458532018954704,
+              "sym_L": 0.0048564870584855676,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.01554336118468523,
+              "sym_L": 0.12347631291349233,
+              "bias": -0.5241417758428729
+            }
+          },
+          "selected": {
+            "position": 104,
+            "candidate_id": 5164,
+            "identity": "gabapentin-fig11",
+            "raw_rank": 1,
+            "content_rank": 2,
+            "raw": 450.8756103515625,
+            "M": 0.034289546086745136,
+            "L": 0.5715279546250407,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 100,
+            "candidate_id": 5119,
+            "identity": "efavirenz-fig28",
+            "raw_rank": 3,
+            "content_rank": 3,
+            "raw": 449.1231994628906,
+            "M": 0.033267255948051445,
+            "L": 0.5692764716947589,
+            "action": -0.5545978112017856,
+            "action_rank": 3,
+            "features": {
+              "raw_standardized_delta": -0.18506968097323165,
+              "sym_L": -0.0019735923865083597,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.01972260367491283,
+              "sym_L": -0.05017863903382551,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target": {
+            "position": 87,
+            "candidate_id": 5043,
+            "identity": "cefdinir-fig2",
+            "raw_rank": 2,
+            "content_rank": 1,
+            "raw": 449.4945373535156,
+            "M": 0.14329098420403902,
+            "L": 0.5771062819298076,
+            "action": -0.38512210174469536,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.1458532018954704,
+              "sym_L": 0.0048564870584855676,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.01554336118468523,
+              "sym_L": 0.12347631291349233,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": -0.0041792424902275995,
+            "sym_L": 0.17365495194731784,
+            "bias": 0.0,
+            "total": 0.16947570945709028
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 104,
+            "candidate_id": 5164,
+            "identity": "gabapentin-fig11",
+            "raw_rank": 1,
+            "content_rank": 2,
+            "raw": 450.8756103515625,
+            "M": 0.034289546086745136,
+            "L": 0.5715279546250407,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 87,
+            "candidate_id": 5043,
+            "identity": "cefdinir-fig2",
+            "raw_rank": 2,
+            "content_rank": 1,
+            "raw": 449.4945373535156,
+            "M": 0.14329098420403902,
+            "L": 0.5771062819298076,
+            "action": -0.07647860670138096,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.1458532018954704,
+              "sym_L": 0.0048564870584855676,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.027906219035552706,
+              "sym_L": 0.304022662274709,
+              "bias": -0.4084074880116426
+            }
+          },
+          "selected": {
+            "position": 104,
+            "candidate_id": 5164,
+            "identity": "gabapentin-fig11",
+            "raw_rank": 1,
+            "content_rank": 2,
+            "raw": 450.8756103515625,
+            "M": 0.034289546086745136,
+            "L": 0.5715279546250407,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 100,
+            "candidate_id": 5119,
+            "identity": "efavirenz-fig28",
+            "raw_rank": 3,
+            "content_rank": 3,
+            "raw": 449.1231994628906,
+            "M": 0.033267255948051445,
+            "L": 0.5692764716947589,
+            "action": -0.49654750048872276,
+            "action_rank": 3,
+            "features": {
+              "raw_standardized_delta": -0.18506968097323165,
+              "sym_L": -0.0019735923865083597,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.035409541833577356,
+              "sym_L": -0.1235495543106575,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target": {
+            "position": 87,
+            "candidate_id": 5043,
+            "identity": "cefdinir-fig2",
+            "raw_rank": 2,
+            "content_rank": 1,
+            "raw": 449.4945373535156,
+            "M": 0.14329098420403902,
+            "L": 0.5771062819298076,
+            "action": -0.07647860670138096,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.1458532018954704,
+              "sym_L": 0.0048564870584855676,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.027906219035552706,
+              "sym_L": 0.304022662274709,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": -0.00750332279802465,
+            "sym_L": 0.4275722165853665,
+            "bias": 0.0,
+            "total": 0.4200688937873418
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 104,
+            "candidate_id": 5164,
+            "identity": "gabapentin-fig11",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 450.8756103515625,
+            "M": 0.034289546086745136,
+            "L": 0.5725276164674415,
+            "action": 0.0,
+            "action_rank": 2,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 104,
+            "candidate_id": 5164,
+            "identity": "gabapentin-fig11",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 450.8756103515625,
+            "M": 0.034289546086745136,
+            "L": 0.5725276164674415,
+            "action": 0.0,
+            "action_rank": 2,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 87,
+            "candidate_id": 5043,
+            "identity": "cefdinir-fig2",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 449.4945373535156,
+            "M": 0.14329098420403902,
+            "L": 0.5710948456597043,
+            "action": 1.6123227449230004,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -0.1458532018954704,
+              "sym_M": 0.6138141266849053,
+              "sym_L": -0.0012528354900192122,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.012835140127435871,
+              "sym_M": 2.1629313197171327,
+              "sym_L": -0.038558600625717976,
+              "bias": -0.4992148340409783
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 118,
+            "candidate_id": 5315,
+            "identity": "quetiapine-fig4",
+            "raw_rank": 4,
+            "content_rank": 4,
+            "raw": 446.56011962890625,
+            "M": 0.037453162219720906,
+            "L": 0.5678001455718411,
+            "action": -0.5115281502234096,
+            "action_rank": 3,
+            "features": {
+              "raw_standardized_delta": -0.4557529837595508,
+              "sym_M": 0.04409669229962068,
+              "sym_L": -0.00414571235829777,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.04010644493250926,
+              "sym_M": 0.15538599182442764,
+              "sym_L": -0.1275928630743497,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target": {
+            "position": 87,
+            "candidate_id": 5043,
+            "identity": "cefdinir-fig2",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 449.4945373535156,
+            "M": 0.14329098420403902,
+            "L": 0.5710948456597043,
+            "action": 1.6123227449230004,
+            "action_rank": 1,
+            "features": {
+              "raw_standardized_delta": -0.1458532018954704,
+              "sym_M": 0.6138141266849053,
+              "sym_L": -0.0012528354900192122,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.012835140127435871,
+              "sym_M": 2.1629313197171327,
+              "sym_L": -0.038558600625717976,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": 0.027271304805073393,
+            "sym_M": 2.007545327892705,
+            "sym_L": 0.08903426244863172,
+            "bias": 0.0,
+            "total": 2.12385089514641
+          }
+        }
+      }
+    },
+    {
+      "query_id": "H593-b98760533d5b5968acf3d2d8",
+      "identity": "83324304-60",
+      "raw_correct": true,
+      "target_in_C128": true,
+      "correct": {
+        "RAW": true,
+        "REAL": true,
+        "REAL_REFIT": true,
+        "REAL_CONSTANT": true,
+        "REAL_CONSTANT_REFIT": true,
+        "REAL_SHUFFLED": true,
+        "REAL_SHUFFLED_REFIT": true,
+        "TRAIN_SHUFFLED": true,
+        "TRAIN_SHUFFLED_REFIT": true,
+        "TRAIN_CONSTANT": true,
+        "TRAIN_CONSTANT_REFIT": true,
+        "warmstart_INTERNAL3": true,
+        "ADDITIVE4": true,
+        "PRODUCT5": true,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": true,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": true
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 27,
+            "candidate_id": 2003,
+            "identity": "CDMA QC Ultra Strength Gas Relief 60ct",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 464.9463195800781,
+            "M": 0.007938322178753104,
+            "L": 0.6092707670791545,
+            "action": -1.3696418606923202,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.7177670180571294,
+              "sym_L": -0.036263146256192244,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.07649137532209994,
+              "sym_L": -0.9219914601715473,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 27,
+            "candidate_id": 2003,
+            "identity": "CDMA QC Ultra Strength Gas Relief 60ct",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 464.9463195800781,
+            "M": 0.007938322178753104,
+            "L": 0.6092707670791545,
+            "action": -2.541198536310535,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.7177670180571294,
+              "sym_L": -0.036263146256192244,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.1373309832221093,
+              "sym_L": -2.270122031521002,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6551216128788219,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6478492812818166,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6478492812818166,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6478492812818166,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 119,
+            "candidate_id": 4682,
+            "identity": "simethicone-60ct",
+            "raw_rank": 5,
+            "content_rank": 5,
+            "raw": 461.0974426269531,
+            "M": 0.011308496446111167,
+            "L": 0.6250091448572379,
+            "action": -3.68083145526543,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.9460663041358577,
+              "sym_M": -0.7225527131158253,
+              "sym_L": -0.01794397236607175,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.08325421331601363,
+              "sym_M": -2.5460995852040225,
+              "sym_L": -0.552262822704416,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target": {
+            "position": 13,
+            "candidate_id": 1145,
+            "identity": "83324304-60",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 477.0470886230469,
+            "M": 0.07020966560528688,
+            "L": 0.6478492812818166,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "query_id": "H593-7a2a329a01beb7a806b52b3e",
+      "identity": "alp0b-0002-29",
+      "raw_correct": false,
+      "target_in_C128": true,
+      "correct": {
+        "RAW": false,
+        "REAL": false,
+        "REAL_REFIT": false,
+        "REAL_CONSTANT": false,
+        "REAL_CONSTANT_REFIT": false,
+        "REAL_SHUFFLED": false,
+        "REAL_SHUFFLED_REFIT": false,
+        "TRAIN_SHUFFLED": false,
+        "TRAIN_SHUFFLED_REFIT": false,
+        "TRAIN_CONSTANT": false,
+        "TRAIN_CONSTANT_REFIT": false,
+        "warmstart_INTERNAL3": false,
+        "ADDITIVE4": false,
+        "PRODUCT5": false,
+        "REAL_CONSTANT_REAL_REFIT_HEAD": false,
+        "REAL_SHUFFLED_REAL_REFIT_HEAD": false
+      },
+      "paths": {
+        "REAL": {
+          "raw_winner": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7341840898988738,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7341840898988738,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7341840898988738,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 20,
+            "candidate_id": 4792,
+            "identity": "elo04-0001-33",
+            "raw_rank": 3,
+            "content_rank": 3,
+            "raw": 473.5107116699219,
+            "M": 0.08473555768248324,
+            "L": 0.6451176452468734,
+            "action": -1.8607774135061672,
+            "action_rank": 3,
+            "features": {
+              "raw_standardized_delta": -2.863408567973938,
+              "sym_L": -0.06457357544215982,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.30514923918666076,
+              "sym_L": -1.6417848768499552,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target": {
+            "position": 17,
+            "candidate_id": 4788,
+            "identity": "alp0b-0002-29",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 535.6495361328125,
+            "M": 0.10825259155167198,
+            "L": 0.732655745037712,
+            "action": -0.5455562296601438,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.04763743797105795,
+              "sym_L": -0.0010419302944733937,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.0050766516927605925,
+              "sym_L": -0.026491105510031556,
+              "bias": -0.5241417758428729
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": -0.30007258749390014,
+            "sym_L": 1.6152937713399236,
+            "bias": 0.0,
+            "total": 1.3152211838460235
+          }
+        },
+        "REAL_REFIT": {
+          "raw_winner": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7341840898988738,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7341840898988738,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7341840898988738,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 20,
+            "candidate_id": 4792,
+            "identity": "elo04-0001-33",
+            "raw_rank": 3,
+            "content_rank": 3,
+            "raw": 473.5107116699219,
+            "M": 0.08473555768248324,
+            "L": 0.6451176452468734,
+            "action": -3.902942266506521,
+            "action_rank": 3,
+            "features": {
+              "raw_standardized_delta": -2.863408567973938,
+              "sym_L": -0.06457357544215982,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.5478584333268627,
+              "sym_L": -4.042393211821741,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target": {
+            "position": 17,
+            "candidate_id": 4788,
+            "identity": "alp0b-0002-29",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 535.6495361328125,
+            "M": 0.10825259155167198,
+            "L": 0.732655745037712,
+            "action": -0.4645192223847462,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.04763743797105795,
+              "sym_L": -0.0010419302944733937,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": 0.009114512132998182,
+              "sym_L": -0.06522624650610176,
+              "bias": -0.4084074880116426
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": -0.5387439211938645,
+            "sym_L": 3.9771669653156394,
+            "bias": 0.0,
+            "total": 3.438423044121775
+          }
+        },
+        "ADDITIVE4": {
+          "raw_winner": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7297151374241632,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "content_best": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7297151374241632,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "selected": {
+            "position": 16,
+            "candidate_id": 4787,
+            "identity": "alp0b-0002-27",
+            "raw_rank": 1,
+            "content_rank": 1,
+            "raw": 536.7008056640625,
+            "M": 0.10895416710412835,
+            "L": 0.7297151374241632,
+            "action": 0.0,
+            "action_rank": 1,
+            "features": {
+              "HOLD": 0.0
+            },
+            "terms": {
+              "HOLD": 0.0
+            }
+          },
+          "strongest_wrong_challenger": {
+            "position": 20,
+            "candidate_id": 4792,
+            "identity": "elo04-0001-33",
+            "raw_rank": 3,
+            "content_rank": 3,
+            "raw": 473.5107116699219,
+            "M": 0.08473555768248324,
+            "L": 0.6428260805373348,
+            "action": -3.1401496500034165,
+            "action_rank": 3,
+            "features": {
+              "raw_standardized_delta": -2.863408567973938,
+              "sym_M": -0.1250381735438045,
+              "sym_L": -0.06330524413380671,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.25198109972508836,
+              "sym_M": -0.4406040362393825,
+              "sym_L": -1.9483496799979674,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target": {
+            "position": 17,
+            "candidate_id": 4788,
+            "identity": "alp0b-0002-29",
+            "raw_rank": 2,
+            "content_rank": 2,
+            "raw": 535.6495361328125,
+            "M": 0.10825259155167198,
+            "L": 0.7282488095779076,
+            "action": -0.5457422679267181,
+            "action_rank": 2,
+            "features": {
+              "raw_standardized_delta": -0.04763743797105795,
+              "sym_M": -0.0032299895122734168,
+              "sym_L": -0.0010057366982699927,
+              "bias": 1.0
+            },
+            "terms": {
+              "raw_standardized_delta": -0.004192113602749448,
+              "sym_M": -0.011381695491736949,
+              "sym_L": -0.030953624791253468,
+              "bias": -0.4992148340409783
+            }
+          },
+          "target_minus_strongest_wrong": {
+            "raw_standardized_delta": 0.2477889861223389,
+            "sym_M": 0.42922234074764554,
+            "sym_L": 1.917396055206714,
+            "bias": 0.0,
+            "total": 2.5944073820766986
+          }
+        }
+      }
+    }
+  ],
+  "fitting_updates": 0,
+  "new_inference": 0,
+  "threshold_searches": 0,
+  "scope": "Post-hoc explanation on previously opened group-disjoint PROBE8; no selected new model"
+}

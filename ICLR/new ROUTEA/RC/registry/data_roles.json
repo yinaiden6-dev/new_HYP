@@ -1,0 +1,35 @@
+{
+  "version": "rc_data_roles_v1_20260805",
+  "status": "FROZEN_READ_ONLY_UPSTREAMS_REGISTERED",
+  "rules": {
+    "optimization_may_train_calibrate_and_run_a0": true,
+    "fresh_requires_a0_and_oof_go": true,
+    "opened_access": false,
+    "sealed_access": false,
+    "historical_assets_read_only": true,
+    "historical_abandoned_data_reuse_requires_identity_supergroup_leakage_audit": true,
+    "external_data_participates_in_initial_model_selection": false
+  },
+  "role_assignments": {
+    "internal_development": {
+      "queries": 987,
+      "historical_fold0_train": 775,
+      "historical_fold0_heldout": 212,
+      "current_role": "optimization_only_five_fold_oof",
+      "reason": "both historical subsets have already informed model development and are not fresh"
+    },
+    "fresh": {
+      "registered": false,
+      "access_authorized": false
+    },
+    "opened": {
+      "registered_for_new_line": false,
+      "access_authorized": false
+    },
+    "sealed": {
+      "registered": false,
+      "access_authorized": false
+    }
+  },
+  "registered_resources_file": "upstream_inputs.json"
+}

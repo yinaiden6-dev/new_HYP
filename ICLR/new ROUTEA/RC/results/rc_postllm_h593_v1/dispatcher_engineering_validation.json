@@ -1,0 +1,37 @@
+{
+  "status": "LAUNCHER_DYNAMIC_BUDGET_REQUEUE_PASS",
+  "cases": [
+    {
+      "worker_exit": 0,
+      "restarts": 0,
+      "launcher_exit": 0,
+      "requeued": false
+    },
+    {
+      "worker_exit": 75,
+      "restarts": 0,
+      "launcher_exit": 0,
+      "requeued": true
+    },
+    {
+      "worker_exit": 124,
+      "restarts": 0,
+      "launcher_exit": 0,
+      "requeued": true
+    },
+    {
+      "worker_exit": 1,
+      "restarts": 0,
+      "launcher_exit": 1,
+      "requeued": false
+    },
+    {
+      "worker_exit": 75,
+      "restarts": 48,
+      "launcher_exit": 75,
+      "requeued": false
+    }
+  ],
+  "live_slurm_called": false,
+  "partial_submission_retry": "PASS: cache child submitted once; second child retries without breaking parent afterok"
+}

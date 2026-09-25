@@ -1,0 +1,47 @@
+{
+  "status": "FIXED128_UPDATES_TRAIN_ENDPOINTS_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_condition_scale_v4_authority_20260924.json",
+    "sha256": "6edb7e2e89524112e83148886f799b89106428ecc6dd05c1ede2c945d7d896f4"
+  },
+  "arm": "PRE_REAL",
+  "steps": 128,
+  "checkpoint": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_REAL/checkpoint.pt",
+    "sha256": "2718c5d597c6f6c7739d17d09a095c76b86b28f006864c48163f2c31b4c95b37"
+  },
+  "endpoints": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_REAL/endpoints/0016/validation.json",
+      "sha256": "db178952ee47f073a430118c871f687948d1ae39db05b4c714da075f212a2334"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_REAL/endpoints/0128/validation.json",
+      "sha256": "0022951fce6e479fe861ae92d43426fbed7adb4af7b85656548d5a8a9bddfcff"
+    }
+  ],
+  "snapshots": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_REAL/snapshots/0016.pt",
+      "sha256": "207dfd86b74831b3271c5f8bd3f58df8fd333543866e1ab0914eab8496e69359"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_REAL/snapshots/0064.pt",
+      "sha256": "7c0b77142fb68672afd115da7afbaf46800ce93fd6d94375895ff5fd8574b559"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/PRE_REAL/snapshots/0128.pt",
+      "sha256": "83f55181a40d2a362f78517f2d486529228f31571ba1b0bc748b53a2c1f698da"
+    }
+  ],
+  "head_trainable_parameters": 3,
+  "adapter_parameters": 118304,
+  "head_features": [
+    "raw_standardized_delta",
+    "sym_L",
+    "bias"
+  ],
+  "direct_M_in_head": false,
+  "held_label_reads": 0,
+  "selection": "Fixed terminal128; no model or epoch selection"
+}

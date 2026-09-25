@@ -1,0 +1,23 @@
+{
+  "job_id": "5162699",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--job-name=post593_train_pilot",
+    "--partition=dev_accelerated,accelerated",
+    "--mem=64G",
+    "--dependency=afterok:5162618:5162698",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_h593_v1.sbatch",
+    "train_pilot"
+  ],
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_h593_authority_v1_20260924.json",
+    "sha256": "4e244190e58a73b27239a400394ba362b9221d2d8cfd342f841f85ff59248bad"
+  },
+  "role": "train_pilot",
+  "array": null,
+  "dependencies": [
+    "5162618",
+    "5162698"
+  ]
+}

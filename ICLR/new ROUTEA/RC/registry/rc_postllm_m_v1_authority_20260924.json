@@ -1,0 +1,410 @@
+{
+  "condition_gain": 59.86651818838306,
+  "condition_shift": 1,
+  "updates": 128,
+  "endpoint_updates": [
+    16,
+    128
+  ],
+  "checkpoint_updates": [
+    16,
+    64,
+    128
+  ],
+  "warmstart_steps": 2000,
+  "external_steps": 2000,
+  "seed": 17,
+  "bottleneck": 16,
+  "residual_scale": 0.1,
+  "adapter_lr": 0.0003,
+  "head_lr": 0.03,
+  "weight_decay": 0.001,
+  "clip_norm": 1.0,
+  "max_requeues": 48,
+  "worker_budget": 400,
+  "diagnostic_interventions": [
+    "constant",
+    "shuffled"
+  ],
+  "diagnostic_updates": [
+    128
+  ],
+  "candidates": 128,
+  "train_count": 16,
+  "frozen_opened_probe_count": 8,
+  "attention": "sdpa",
+  "processor_backend": "torchvision",
+  "status": "POSTLLM_FIXED_LOCATION_COMPARISON_AUTHORIZED",
+  "user_authorization": "2026-09-24 现在做后注入",
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_internal_m_condition_scale_v4_authority_20260924.json",
+    "sha256": "6edb7e2e89524112e83148886f799b89106428ecc6dd05c1ede2c945d7d896f4"
+  },
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/input_manifest.json",
+    "sha256": "a788f82954ca68d713bba8fce91b76b806f85f222a2db58e507c2a3facb98054"
+  },
+  "model": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b",
+  "baseline_initial": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_learned_use_v3/PRE_REAL/initial.pt",
+    "sha256": "bbec46ba023dc25e5fa6b1c5739ccaca11a041f1ea274d182ba8ff2257bdc203"
+  },
+  "model_source_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/model_source_validation.json",
+    "sha256": "624a998ada31fbde71a55371f45d9fbd17a0726092181fdbb4824bb52b046590"
+  },
+  "cache_bindings": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-979d4429602e6c4a69aa6724/validation.json",
+      "sha256": "36bf08ca0e4a6d6d47dd047657c228e114c3dcdefb300c737a602c52aded876a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-979d4429602e6c4a69aa6724/payload.pt",
+      "sha256": "c95f1c4bb4c745abb98d5b5011074ec66e9f1c328cfc628cf363501dd2cd4e08"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-979d4429602e6c4a69aa6724/parity.json",
+      "sha256": "a34bb5db5af482c024be78c817cb5657e93c53b3b58f47aa19b408b035099292"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-5bf76899256100e280a80e1d/validation.json",
+      "sha256": "d6e26eb6e937b535fd0452d635c273d3ceecf6ab062d607a6f325e6b65bc72c2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-5bf76899256100e280a80e1d/payload.pt",
+      "sha256": "042bbc3419119e567b2ff86a5703d7cd2d2131f084db0ff6c924374203a531a9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-5bf76899256100e280a80e1d/parity.json",
+      "sha256": "af495de3c0d43dd4f2371c8cfee5f0c47ebe9147a5db0c31127a019213e0278f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-71a8e729bc95ecbd6e4dbc1e/validation.json",
+      "sha256": "563d950daaac1b5e8af2871bee87728313e80ab384c9f670995820a3aab97fb3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-71a8e729bc95ecbd6e4dbc1e/payload.pt",
+      "sha256": "8f5f1b8f9549f16b7c1bd6aa85e9254e91f1358b7263d4f4efe7b0a0dd76de0b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-71a8e729bc95ecbd6e4dbc1e/parity.json",
+      "sha256": "f668f822c0b98ee9954331fd59a51218f9f1740da7f1477c1c3774949ede9b4b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-ddead65d98e659c927cda92c/validation.json",
+      "sha256": "f6c612d0cb108a54f0d89e60d6aafc82a61008d1d8139fe280ab59d474cf033d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-ddead65d98e659c927cda92c/payload.pt",
+      "sha256": "fa59fd49c2fbf487e1e88633d5db7785d693a7209e960b0af371ed602ddf655b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-ddead65d98e659c927cda92c/parity.json",
+      "sha256": "f97c06daa238d502c9f1c1488d96be2cd45cc8d69937e4050b2d2f4fb924fa36"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b06273e75d64a6537f0ba426/validation.json",
+      "sha256": "a5ba5d85f78ca81136e3559f639a5728b2d0a79138fddca73a108e15f04596f0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b06273e75d64a6537f0ba426/payload.pt",
+      "sha256": "98150b8cc147d7ad931deebbe72e39e52728f9530e8e69b476b55db1bab9f8a7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b06273e75d64a6537f0ba426/parity.json",
+      "sha256": "2be371fb533b59f6ad90732170ba5b9a13aa6947cc6ee537bef8ceefd4267955"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-6a41937f82d722c1bd11db83/validation.json",
+      "sha256": "3b4fac5e20f4c5a393ba4c24fbec70aaed3e3e256395f44c0740843a12782835"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-6a41937f82d722c1bd11db83/payload.pt",
+      "sha256": "018a6f4ab8730463065f4b8bfd7c8d37b6adcef19f2cc5941f05746b14845fc9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-6a41937f82d722c1bd11db83/parity.json",
+      "sha256": "381794cf2d1bdd6fc6bc91072e39dfcffd6b57b8865907a4cefdee87698076f0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b6cf2130e8541c75b7a0daf3/validation.json",
+      "sha256": "50f7e6714c47b0706a02bcf4ce2d087b07405e376a953b065d3fbe9fbb5aa80f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b6cf2130e8541c75b7a0daf3/payload.pt",
+      "sha256": "ca2831f6d74861355ebb4205886339de7e72daffa79f06b66554a1216e20a62a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b6cf2130e8541c75b7a0daf3/parity.json",
+      "sha256": "6e85485d72d38ff9c09fa686fde79ae13e00e079b420d7a616341dc22b017417"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4c47eaead5712c9295001ec4/validation.json",
+      "sha256": "df46d2a74bb62ab6762d41437f8d40c93df211d0fe109a0b043160a5508e14cd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4c47eaead5712c9295001ec4/payload.pt",
+      "sha256": "064e1360a952f1105285eb54e641a585e53a5d9e24f9eaeb23a68c9cac9665f8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4c47eaead5712c9295001ec4/parity.json",
+      "sha256": "73d0e8f7e04c28d40021fbdfd25520082d860a322b42c3012e23149f2c83a117"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f42264b44984bda93155507c/validation.json",
+      "sha256": "ab8b1ec69f6bff7a74722e9581f10cbc6f15fa5b191f22f563856f1b96516cde"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f42264b44984bda93155507c/payload.pt",
+      "sha256": "af34a06275b1d9340f3d1db048fb3cc629014da181b368f71dfdc5ed1402e038"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f42264b44984bda93155507c/parity.json",
+      "sha256": "a5e9c658b0881c56475f9eab94e1e8a993d4fb55aa9e69bf7d53cca7e55d3f82"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-dd91c965c4987a6f11b4d08b/validation.json",
+      "sha256": "800bc4d093444ee8e22e6ba94c2f3b1f8b294a4a2deea744a5e6c96cf5fdbc09"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-dd91c965c4987a6f11b4d08b/payload.pt",
+      "sha256": "da41f72db9ccc3d6b827ab0578b460c982d3b26de6b7803451ac31b7b1bafccc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-dd91c965c4987a6f11b4d08b/parity.json",
+      "sha256": "2edbebbc7e214397fc4e28d3ca7c58edb5dba6584570c01554d903e1aa7396ff"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-08297e272b0164e6fdd42e9f/validation.json",
+      "sha256": "808e0ae5a726bb7318510a97cd205c76e089e48334e6d68dee68452a9f268be1"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-08297e272b0164e6fdd42e9f/payload.pt",
+      "sha256": "308d13cb5aed3079e75f707fd739c4e8fd23673de72d34299302d0a2eb7c298b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-08297e272b0164e6fdd42e9f/parity.json",
+      "sha256": "6043856e483efc0d57f8f8e200baf9b1af5f9f51cd309c7939bba915b5472e82"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-faa6074c9997f968c1272a9e/validation.json",
+      "sha256": "ce94958a899c27bb3f5cbcea3c66f9351d05f0fc45c8fd9150649ab5660d7304"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-faa6074c9997f968c1272a9e/payload.pt",
+      "sha256": "f3fe6e840d6c14039aab89ae46d5f7f79b675fe9da82bdd35020baeec8fbc35f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-faa6074c9997f968c1272a9e/parity.json",
+      "sha256": "6a2a0a180cbbc203ea515fc1a20f08f46c85e0a11cb1305d190e97ec517368a2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-64e146b0abb950dce567767c/validation.json",
+      "sha256": "45b60b6f74fb50e5d0a514fc7f9b434cebfa55a0d37d9462d764a4aff8562a2e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-64e146b0abb950dce567767c/payload.pt",
+      "sha256": "349e2c4c22cd63304dadce056d71ef778c1d132a871131be047ee77a9730a78d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-64e146b0abb950dce567767c/parity.json",
+      "sha256": "44e55ef9cfa392e014e4ef89e2726d9ceeb4b833cef46be7ba3a7b3a4ae007b3"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-174dc7ecf520dfa933141c09/validation.json",
+      "sha256": "37257db4a8b394baa4b3f4d082082dac30b769a5a85b45055ae2f01c1ebfde86"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-174dc7ecf520dfa933141c09/payload.pt",
+      "sha256": "645ec2e06bb507153211916fd58f97edb22a3be77b2496247257d29d03155355"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-174dc7ecf520dfa933141c09/parity.json",
+      "sha256": "c67455718716e59d8241e8d3b8c38040174805940115347b24d657599179cd02"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-490d4ed0a2cc29258e504a6a/validation.json",
+      "sha256": "b204649370106c883ce26789c0383dca63a88ee9b5811639e20c52bbe5f0586a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-490d4ed0a2cc29258e504a6a/payload.pt",
+      "sha256": "bb16930c95accbb4e08507c7ebb1bf8f6a7a59399d3debf86f820cac83dba375"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-490d4ed0a2cc29258e504a6a/parity.json",
+      "sha256": "8fc3aab0eb52340c92fa62fceb398f671bab3b8ef9e634877c1c1d0039dc293a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-fa12d24ad164c3ae3b3f0ff6/validation.json",
+      "sha256": "a002c620e8e1b21a1edc8c2f5397949f0a902b5219acf3bfd7c9c5d53e51cf26"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-fa12d24ad164c3ae3b3f0ff6/payload.pt",
+      "sha256": "5452d4ec1fd5dba2263fe14b26b761418a14fd251e564e9f659ed62daf1d5e83"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-fa12d24ad164c3ae3b3f0ff6/parity.json",
+      "sha256": "17721063e1137f5a2d6e38a66f9b05be8f84d52b010a529c6fc5deda3031e1a9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4ef2d085267e3a655f22c017/validation.json",
+      "sha256": "1df59dc577e1172fd91871091cdf87dd522f9761d8322768a316acfe56ecd73c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4ef2d085267e3a655f22c017/payload.pt",
+      "sha256": "eef5e0e8acd007ad5b0c0b2640bd6b6c2956d539ab56c6815b665d2db7aaf671"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-4ef2d085267e3a655f22c017/parity.json",
+      "sha256": "9ea7916ac2cfe1426cbb52f35aeec0cc668cec15a4f1f30fa515dd0ff4a5b2ad"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f522efe671aecfa850b10989/validation.json",
+      "sha256": "dc767d38472b27dd935efb3a9b02c3b57d8c3dc7559e520af944cb2bc3a3420f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f522efe671aecfa850b10989/payload.pt",
+      "sha256": "2d37861dacf8f381a5ff87bb1bec84d4cd1a26f0e77cee913880e05438417e51"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-f522efe671aecfa850b10989/parity.json",
+      "sha256": "4811bb15fab63e6385decae40584be71d7e3ab6e1a18be214ba9449898b84dfe"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-2446df0fcadbf0831876d7dc/validation.json",
+      "sha256": "a0711905bd0cab9cca4ccdc7c213ec1563d7d827db8dba17dd95527d07860340"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-2446df0fcadbf0831876d7dc/payload.pt",
+      "sha256": "c5a7ac3d26637117f8c0b046588692d0551a8f7e0def7f16988dabd5075b1fd6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-2446df0fcadbf0831876d7dc/parity.json",
+      "sha256": "fd9e5ad733fe508dcafff3ecfca9576b8f14d9237abefeb07768f1e91449953f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-53e0bb3f0f95aa31e37ff328/validation.json",
+      "sha256": "2ad2ff5280fcae93d2aceb823bc931bfe3e4d0c94e7be211caeea1c4020de522"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-53e0bb3f0f95aa31e37ff328/payload.pt",
+      "sha256": "63ffd8c188dc5b40edaebd6785cc1f0f9aa25fcdd8f9e15bea0347422aa72684"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-53e0bb3f0f95aa31e37ff328/parity.json",
+      "sha256": "7eb35ef4329040fbac49858b0110382a1ad7b9bf9e2816d494b0b1a69e98af5b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-9bea68f2367dffd8339109ca/validation.json",
+      "sha256": "3382a34ca28402432a14cef4e35b904f25dd4cca4d9bfeb31278d06a4aa3a6c7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-9bea68f2367dffd8339109ca/payload.pt",
+      "sha256": "5b98c0a2b8eab3de34c0e2711c71e7cbeba3bf5ae91d30f47088d196cd5d0696"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-9bea68f2367dffd8339109ca/parity.json",
+      "sha256": "14113f37568583673440cdf0fe622f5c8f2530995d2634af1379faee31da72eb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-90acde9b0567a472f4232120/validation.json",
+      "sha256": "c7f6805863cbc0d4377f3c62caf557bc9fe8c88ecb088a3991171cdb7d2787b6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-90acde9b0567a472f4232120/payload.pt",
+      "sha256": "cebe6689e714cc2dd5727a82da42bf03a87a3de2402bf0b73fe6a24322ecbc61"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-90acde9b0567a472f4232120/parity.json",
+      "sha256": "13f18db2ca4c89aabba59a02e57e7f97ff411f71b148df6c623948992ab16438"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b98760533d5b5968acf3d2d8/validation.json",
+      "sha256": "c79fa8a15faac411cfa4a744da8234ca32e3d59fac41c0e4aa2196daafb32ce6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b98760533d5b5968acf3d2d8/payload.pt",
+      "sha256": "ab501ff04d8b094a440daa43b557d621e406bd88a6331ca118fa9303e0e6fb02"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-b98760533d5b5968acf3d2d8/parity.json",
+      "sha256": "654accd24a35b69598f3e357a06d64772a82dbf02219b9f094f0f39d446d4768"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-7a2a329a01beb7a806b52b3e/validation.json",
+      "sha256": "dc52c052b3baa5a14fae760ffd0a83fe71ee85af941be318bab28db068a4ce64"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-7a2a329a01beb7a806b52b3e/payload.pt",
+      "sha256": "9350b9e06d4b11b25cf4aed52b20c4c0296da7df21e85bedeebeb488a1750b1d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/encoder_cache/H593-7a2a329a01beb7a806b52b3e/parity.json",
+      "sha256": "65b2a56f007198f3abab64983b6ff3c9daf9fbf463971f23db0cd3205a41b8d5"
+    }
+  ],
+  "warm_head": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/cpu/warmstart_INTERNAL3.json",
+    "sha256": "66aa5c52b10442d7460c442de69addc8929507ca50043bf48f6a4a7fd50a3373"
+  },
+  "external_heads": {
+    "ADDITIVE4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/cpu/ADDITIVE4.json",
+      "sha256": "273f6eecc0eae0ef611e22f6fb2dee48845ce636b57ddd028f17a8de3de9ca69"
+    },
+    "PRODUCT5": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/cpu/PRODUCT5.json",
+      "sha256": "11d06e5615417502e4b6b7ae08f924dc042daaa517401b9aa1e04d23b1b426a7"
+    }
+  },
+  "probe_label_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/result.json",
+    "sha256": "668d98178f7c1330ddf9d953c0d32078cb4ebb960597e710a6ef98c72555723b"
+  },
+  "pre_train_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_condition_scale_v4/result.json",
+    "sha256": "6aaadd99ce4018f4c4b490a9cfeab3afb0dcc03a18f1cb5043242a5a26c2ca81"
+  },
+  "pre_probe_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/validation.json",
+    "sha256": "8823f369171e704ecdba36d045571c402f6647e4845e4e1986a2d7a204d16bd4"
+  },
+  "changed_factor": "Adapter moves from pre-LLM visual merger tokens to post-LLM/pre-retrieval-projection image hidden states",
+  "arms": [
+    "POST_REAL",
+    "POST_CONSTANT",
+    "POST_SHUFFLED"
+  ],
+  "direct_M_in_head": false,
+  "vision_or_llm_or_roma_forwards": 0,
+  "probe_policy": "Fixed128 then opened PROBE8, no checkpoint or hyperparameter selection; post-hoc development only",
+  "initial_partition": "dev_accelerated,accelerated",
+  "projection_parity": "Exact BF16 original projector including frozen LoRA; fail closed on native-token or full-C128 zero-adapter mismatch",
+  "projection_cpu_conformance": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_internal_m_v4_probe_v1/adapter_cpu_audit/post_backend_cpu_validation.json",
+    "sha256": "96dd4d976514f7cac5203ac7ef78dc602b56e7eb7390abfb21afe913311e8512"
+  },
+  "readout_refit": "Same warm INTERNAL3; frozen128 endpoint;2000 fullTRAIN16 updates; fixed and secondary",
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_m_v1.py",
+      "sha256": "f3a00f040a7516db51f6daecda3007c6feb85aaba0f12d50d01573768feda630"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_POSTLLM_M_V1_EXECUTION_20260924.md",
+      "sha256": "9461fb5ecbfe96f641784b1a07936331a1eb54f6f130c831d4b40f58fd3722a0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_postllm_m_v1.sbatch",
+      "sha256": "b06e7e99c60f5ff5cb155528d7ea383578ad7a2285f104b3d909b915633f162e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_postllm_m_v1.py",
+      "sha256": "3afffbd83ae683c999ac17fb0055a2f605ec95ce520f1012db4f4f2bcc4a7e6f"
+    }
+  ]
+}

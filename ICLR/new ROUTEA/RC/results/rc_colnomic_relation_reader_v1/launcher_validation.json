@@ -1,0 +1,55 @@
+{
+  "status": "SIX_LAUNCHER_STATE_TRANSITIONS_PASS",
+  "scheduler_commands_mocked": true,
+  "cases": [
+    {
+      "case": "success",
+      "returncode": 0,
+      "calls": [
+        "capacity",
+        "fit",
+        "dispatch"
+      ]
+    },
+    {
+      "case": "fit_retry",
+      "returncode": 0,
+      "calls": [
+        "fit",
+        "scontrol requeue 123456"
+      ]
+    },
+    {
+      "case": "base_retry",
+      "returncode": 0,
+      "calls": [
+        "capacity",
+        "fit",
+        "scontrol requeue 123456"
+      ]
+    },
+    {
+      "case": "dispatch_retry",
+      "returncode": 0,
+      "calls": [
+        "fit",
+        "dispatch",
+        "scontrol requeue 123456"
+      ]
+    },
+    {
+      "case": "scientific_failure",
+      "returncode": 1,
+      "calls": [
+        "capacity"
+      ]
+    },
+    {
+      "case": "exhausted",
+      "returncode": 75,
+      "calls": [
+        "fit"
+      ]
+    }
+  ]
+}

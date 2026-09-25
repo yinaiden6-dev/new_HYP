@@ -1,0 +1,47 @@
+{
+  "status": "FIXED128_UPDATES_TRAIN_ENDPOINTS_COMPLETE",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_m_v1_authority_20260924.json",
+    "sha256": "3dd514c8d5bf9ad66deb79640e242de671dd2e77449948a5607a019f383f5e5e"
+  },
+  "arm": "POST_SHUFFLED",
+  "steps": 128,
+  "checkpoint": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_SHUFFLED/checkpoint.pt",
+    "sha256": "05b53b80a65393b62e3661d41f01af4c31eaa3081f22d3c542c63e8eb408e58f"
+  },
+  "endpoints": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_SHUFFLED/endpoints/0016/validation.json",
+      "sha256": "3590ed003158b7248e2431185ac895b78ffffb97528e6d392bbc7ee7b93250c8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_SHUFFLED/endpoints/0128/validation.json",
+      "sha256": "4204cd3b1c1225c2c9a2ceea780fe295fe1aa331bf9d6578460c3193eb0b59cc"
+    }
+  ],
+  "snapshots": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_SHUFFLED/snapshots/0016.pt",
+      "sha256": "7d6d14325bd02b4cc00e0b4c25b90ad09b6c76a7cf59ff827aed8259b5ca1afe"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_SHUFFLED/snapshots/0064.pt",
+      "sha256": "82dd5b6eb24533d2d1b28798c296d7f3435f27dc3cc5301e5262dc0d843f7c6a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_SHUFFLED/snapshots/0128.pt",
+      "sha256": "82c52de26430a381fee5f61981f855a4f4b53a48d04ec88892093aa36f9c92a9"
+    }
+  ],
+  "head_trainable_parameters": 3,
+  "adapter_parameters": 118304,
+  "head_features": [
+    "raw_standardized_delta",
+    "sym_L",
+    "bias"
+  ],
+  "direct_M_in_head": false,
+  "held_label_reads": 0,
+  "selection": "Fixed terminal128; no model or epoch selection"
+}

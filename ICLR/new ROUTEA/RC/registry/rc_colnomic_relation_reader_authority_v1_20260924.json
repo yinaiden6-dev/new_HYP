@@ -1,0 +1,94 @@
+{
+  "status": "ROMA_FREE_RELATION_READER_PILOT_AUTHORIZED",
+  "user_authorization": "2026-09-24 做",
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/manifest.json",
+    "sha256": "32fc21a62d753f0c038ab48c1db12105b8510ed43897459d01cac2a50f713f49"
+  },
+  "train_labels": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/train_labels.json",
+    "sha256": "e4e23e31b601567236d2251f2ebf6090b4529d5c0f26da380da87d3d696d49aa"
+  },
+  "intake": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/intake.json",
+    "sha256": "082f61ebeaff599e45bbd2fc1da51fc07eaf0c6f1fa49f0de7b4c01b58fae864"
+  },
+  "synthetic_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/synthetic_validation.json",
+    "sha256": "ee35bd0a73751b0ffac54f22ce2b797488c4e1dbeb2dd429ac5dd016990ba9e7"
+  },
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_colnomic_relation_reader_v1.py",
+      "sha256": "d94f210b7b2d4468a0e1d447f3aa44c0cadddad96942e45ffb159593b5aaf833"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_colnomic_relation_reader_v1.py",
+      "sha256": "3df2ebf9971b172d8f26cb9a8f619e34e1495ea3f1c7fbee88ae09aba344dbe9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/tests/test_colnomic_relation_reader_v1.py",
+      "sha256": "501d1cd9f3aad9bfddf8411d7a3abb23ae895f72d456b7edc8f974731cf5953f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dispatch_rc_colnomic_relation_reader_v1.py",
+      "sha256": "7dbe3d841745086fa19c28254d6491aed399cc11f2d8c1b2a360444e7a1ecdd0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_colnomic_relation_reader_v1.sbatch",
+      "sha256": "9d5517272aecb5b9963246f59e8aaa9e282d35e91efbe0bce49a799485fe5b51"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_COLNOMIC_ROMA_FREE_RELATION_READOUT_EXECUTION_V1_20260924.md",
+      "sha256": "4a7a386a84790c00fdb98000aa658348ee49f9bf89c1a64ec9eb0e3e3c7ff842"
+    }
+  ],
+  "join_sources": {
+    "curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+      "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+    },
+    "gallery": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+      "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+    },
+    "original_fold": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/fold0/payload.json",
+      "sha256": "bfced564709cb6a689be71a7972d642e826b7de649468bd6fd7de816e2cb9ab2"
+    }
+  },
+  "arms": [
+    "BASE",
+    "COMPRESSED",
+    "SET",
+    "SPATIAL"
+  ],
+  "seed": 17,
+  "passes": 8,
+  "updates": 512,
+  "head_warmstart_steps": 1000,
+  "reader_lr": 0.001,
+  "head_lr": 0.003,
+  "warmstart_lr": 0.03,
+  "weight_decay": 0.001,
+  "clip_norm": 1.0,
+  "reader_dtype": "float32",
+  "action_dtype": "float64",
+  "relation_width": 8,
+  "relation_layers": 2,
+  "temperature": 0.1,
+  "loss": "COST1",
+  "candidates": 128,
+  "direct_teacher_inputs": false,
+  "train_target_absent_policy": "all challenger logits suppressed; never count HOLD as correct",
+  "held_policy": "Fixed final endpoint, already opened H593 fold0 development subset; no untouched claim",
+  "benchmark_max_seconds_per_update": 90,
+  "benchmark_max_rss_gib": 24,
+  "worker_budget_seconds": 400,
+  "max_requeues": 64,
+  "inference_interventions": [
+    "native",
+    "shuffle",
+    "rotate"
+  ]
+}

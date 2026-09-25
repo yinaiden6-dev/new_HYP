@@ -1,0 +1,68 @@
+{
+  "status": "FIXED_OPENED_PANEL_DESCRIPTIVE_READOUT_SPEC",
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_pair_relation_feature_readout_v1.py",
+    "sha256": "4581a439550207880433d34f96e7dfa56eeb93cccae8f15333365eb37849d9d3"
+  },
+  "snapshot": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h71_feature_fusion_pilot_v1/snapshot.json",
+    "sha256": "fa401925abe922849f07bf6b472a4038ac62062eda92ffcae66a5ae662898444"
+  },
+  "ready": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_feature_fusion_cache_v1/ready.json",
+    "sha256": "ac2b6e58a23523bff0b245728e144b1fddc59348479b791d4b5bbc215394044c"
+  },
+  "parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_feature_fusion_train_authority_v2_20260922.json",
+    "sha256": "089afc443ffd4fe2770500f68809c328ffc2512f8d4a6b8d023649c8cdb3aeaa"
+  },
+  "identities": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+    "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+  },
+  "gallery": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+    "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+  },
+  "historical_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h71_feature_fusion_pilot_v1/result.json",
+    "sha256": "6b2bb74f52b92dd306dadf9262e01009a262f8f0a2a9f5fbca0e47cf57b8c3de"
+  },
+  "panel": "Existing execution ordinals 0..70, all 128 natural candidates each",
+  "pooling": "Valid patch centers assigned to fixed 8x8 image-coordinate bins; equal patch average inside each occupied bin; no empty-bin token",
+  "sources": {
+    "COL": "Original ColNomic128 pooled then per-cell L2",
+    "ROMA_COARSE": "coarse_11 and coarse_17 each raw1024 pooled then separately L2; concatenate divided by sqrt2; no random compression"
+  },
+  "mean_descriptor": "Per-source mean of valid ORIGINAL patches, separately L2 per coarse component; cosine",
+  "readouts": [
+    "forward_maxsim",
+    "reverse_maxsim",
+    "bidirectional_maxsim",
+    "global_mean_cosine",
+    "mutual_top1_fraction",
+    "unique_hit_coverage",
+    "soft_cycle"
+  ],
+  "soft_temperature": 0.1,
+  "grid": 8,
+  "dtype": "float32 scores; native M and full Col L preserved from cache",
+  "controls": [
+    "Same underlying pooled tokens for all local content/structure statistics",
+    "Structure summaries contain no position after fixed pooling",
+    "All new scores sealed before new identity join; no labels used by scoring"
+  ],
+  "observation": "Already opened panel; existing result first row was inspected for schema before this spec. This is not a fresh preregistered test.",
+  "no_training": true,
+  "no_new_encoders": true,
+  "no_new_roma_forward": true,
+  "limitations": [
+    "Pooled approximation, not full token exact MaxSim",
+    "Fixed generic readouts cannot establish absence of information or optimality",
+    "Comparing scores does not causally attribute native M to these statistics",
+    "Single-image encoders followed by pair comparison differ from independent scalar SINGLE arm",
+    "Argmax ranking diagnostic is different from frozen COST1 HOLD/SWITCH"
+  ],
+  "relation_match_diagnostic": "Within each query sort by coarse bidirectional MaxSim; adjacent pairs with absolute score gap <=0.01, original candidate order resolves ties; descriptive correlation of signed M/structure differences only",
+  "cpu_threads": 4
+}

@@ -1,0 +1,23 @@
+{
+  "initial_job": 5162600,
+  "finish_job": 5162608,
+  "dependency": "afterany:5162600",
+  "reason": "Observed compute-node cost approx 60s/query exceeds the original sequential 240s budget for 8 queries. Resume same frozen program/candidate checkpoints in 4 disjoint ranges, no protocol/model changes. Final summary rerun serially after all workers exit.",
+  "program_sha256": "b6c70d1e60404c437ab484c03d3d66301a4d33e5c8fe0597dd4f2d9439b73a5c",
+  "rows": [
+    "16-17",
+    "18-19",
+    "20-21",
+    "22-23"
+  ],
+  "resources": {
+    "cpus": 8,
+    "threads_per_worker": 2,
+    "mem": "16G",
+    "time": "00:10:00",
+    "partitions": [
+      "dev_cpuonly",
+      "cpuonly"
+    ]
+  }
+}

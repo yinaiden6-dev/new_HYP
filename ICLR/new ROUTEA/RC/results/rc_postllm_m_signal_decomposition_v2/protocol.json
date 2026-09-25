@@ -1,0 +1,97 @@
+{
+  "schema": 2,
+  "status": "FROZEN_POST_RESIDUAL_DECOMPOSITION",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_m_v1_authority_20260924.json",
+      "sha256": "3dd514c8d5bf9ad66deb79640e242de671dd2e77449948a5607a019f383f5e5e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_prellm_m_adapter_v2/input_manifest.json",
+      "sha256": "a788f82954ca68d713bba8fce91b76b806f85f222a2db58e507c2a3facb98054"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/POST_REAL/snapshots/0128.pt",
+      "sha256": "f56db6ec37db9d88eabedf403881cc2706525f48ba660557cc43ef7932127b0a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v2.py",
+      "sha256": "5b67a7292b64b83ddafc39c6588fd0a38cea0cb2a32aeb1aabb639e1969f75d2"
+    }
+  ],
+  "parent_v1_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v1.py",
+    "sha256": "3e7cda27a3a740d530f5689f9a8350a4d0f7b74f3a22dd3b36b24f6bf2a99dec"
+  },
+  "repair": "Keep original FP32 common/spatial interventions unchanged. Independently project and score RECOMPOSED; measure rounding closure instead of demanding bit-identical hidden and aliasing native output.",
+  "recomposition_limits": {
+    "hidden_max_abs": 1e-05,
+    "token_max_abs": 1e-05,
+    "L_max_abs": 1e-06,
+    "logit_max_abs": 0.0001,
+    "require_same_decision": true
+  },
+  "model": "POST_REAL128",
+  "head": "same original joint INTERNAL3; no refit",
+  "candidate_source": "original ColNomic natural C128",
+  "row_order": [
+    "H593-979d4429602e6c4a69aa6724",
+    "H593-5bf76899256100e280a80e1d",
+    "H593-71a8e729bc95ecbd6e4dbc1e",
+    "H593-ddead65d98e659c927cda92c",
+    "H593-b06273e75d64a6537f0ba426",
+    "H593-6a41937f82d722c1bd11db83",
+    "H593-b6cf2130e8541c75b7a0daf3",
+    "H593-4c47eaead5712c9295001ec4",
+    "H593-f42264b44984bda93155507c",
+    "H593-dd91c965c4987a6f11b4d08b",
+    "H593-08297e272b0164e6fdd42e9f",
+    "H593-faa6074c9997f968c1272a9e",
+    "H593-64e146b0abb950dce567767c",
+    "H593-174dc7ecf520dfa933141c09",
+    "H593-490d4ed0a2cc29258e504a6a",
+    "H593-fa12d24ad164c3ae3b3f0ff6",
+    "H593-4ef2d085267e3a655f22c017",
+    "H593-f522efe671aecfa850b10989",
+    "H593-2446df0fcadbf0831876d7dc",
+    "H593-53e0bb3f0f95aa31e37ff328",
+    "H593-9bea68f2367dffd8339109ca",
+    "H593-90acde9b0567a472f4232120",
+    "H593-b98760533d5b5968acf3d2d8",
+    "H593-7a2a329a01beb7a806b52b3e"
+  ],
+  "token_arms": [
+    "CONSTANT",
+    "NATIVE",
+    "COMMON_ONLY",
+    "SPATIAL_ONLY",
+    "RECOMPOSED"
+  ],
+  "score_arms": [
+    "CONSTANT",
+    "NATIVE",
+    "COMMON_ONLY",
+    "SPATIAL_ONLY",
+    "RECOMPOSED",
+    "NATIVE_FIXED_ARGMAX",
+    "COMMON_FIXED_ARGMAX"
+  ],
+  "definition": "a0=actualBF16_adapter(hidden,z=0); aM=actualBF16_adapter(hidden,M); delta=float32(aM)-float32(a0); common=mean_patch(delta); spatial=delta-common; each intervened hidden recastBF16 before exact frozen projector.",
+  "fixed_argmax": "Use each query patch best reference-token index under SAME POST_REAL adapter at constant M; read native/common cosine at that fixed index, without rematching.",
+  "label_policy": "Labels from already opened POST result only join after score calculation; no selection by outcome.",
+  "new_training": false,
+  "new_llm_or_roma_forwards": 0,
+  "cpu_only": true
+}

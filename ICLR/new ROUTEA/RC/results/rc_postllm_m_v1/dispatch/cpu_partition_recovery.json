@@ -1,0 +1,18 @@
+{
+  "status": "DEPENDENCY_CHAIN_SUBMITTED",
+  "pilot_job": "5162554",
+  "pilot_engineering": "PASS",
+  "pilot_scheduler_failure": "advance CPU submission hit QOSMaxSubmitJobPerUserLimit",
+  "workers": [
+    "5162555",
+    "5162556",
+    "5162557"
+  ],
+  "cpu_partition": {
+    "refit": "cpuonly,dev_cpuonly",
+    "join": "cpuonly"
+  },
+  "refit": "5162562",
+  "join": "5162570",
+  "reason": "Retry advance created refit; join hit dev total submit cap; join submitted cpuonly separately"
+}

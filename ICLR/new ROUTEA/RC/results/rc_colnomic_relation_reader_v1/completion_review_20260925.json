@@ -1,0 +1,158 @@
+{
+  "checked_utc": "2026-09-25T00:30:38.459273+00:00",
+  "source_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/result.json",
+    "sha256": "b07ebd3ebf1a0324180ed2ba7a9bb29e0279176fe8b91aac818c96ef76d8b105"
+  },
+  "arms": {
+    "BASE": {
+      "checkpoint": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/BASE/checkpoint.pt",
+        "sha256": "cf286bc742eee9055664dbfaf09af555c12842b38f2bdc7b260327ab2cbe2ae8"
+      },
+      "steps": 512,
+      "head": [
+        0.18514349115079143,
+        17.695872212968506,
+        -0.7259913079022975
+      ],
+      "first_pass_mean_loss": 0.7205108053924456,
+      "last_pass_mean_loss": 0.7302531602179351,
+      "update_seconds_sum": 0.43508871807716787,
+      "gradient_norm_range": [
+        0.0,
+        0.0
+      ],
+      "train": {
+        "changed_from_RAW": 0,
+        "within_query_relation_std_median": 0.0,
+        "max_absolute_relation_contrast": 0.0
+      },
+      "held": {
+        "changed_from_RAW": 0,
+        "within_query_relation_std_median": 0.0,
+        "max_absolute_relation_contrast": 0.0
+      }
+    },
+    "COMPRESSED": {
+      "checkpoint": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/COMPRESSED/checkpoint.pt",
+        "sha256": "c6a7f358c8b4fc258f4a72f0c155affac3b518669bad8b0fe13eff3bcf9675ec"
+      },
+      "steps": 512,
+      "head": [
+        0.2374468159736055,
+        17.752057250132225,
+        -0.8240141967314771
+      ],
+      "first_pass_mean_loss": 0.7202361819107927,
+      "last_pass_mean_loss": 0.4932916618562073,
+      "update_seconds_sum": 291.26373116043396,
+      "gradient_norm_range": [
+        0.004463889170438051,
+        1.8931727409362793
+      ],
+      "train": {
+        "changed_from_RAW": 11,
+        "within_query_relation_std_median": 0.4272074289892132,
+        "max_absolute_relation_contrast": 3.442552089691162
+      },
+      "held": {
+        "changed_from_RAW": 1,
+        "within_query_relation_std_median": 0.41617039189167176,
+        "max_absolute_relation_contrast": 2.3323378562927246
+      }
+    },
+    "SET": {
+      "checkpoint": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/SET/checkpoint.pt",
+        "sha256": "6ad2bc7bb8550973662c3fb17f91a634e8f5519a44a9c8d3502d50cf27511568"
+      },
+      "steps": 512,
+      "head": [
+        0.18719904792012668,
+        17.699555481649696,
+        -0.7270790890318221
+      ],
+      "first_pass_mean_loss": 0.7205493560909133,
+      "last_pass_mean_loss": 0.7288849886381712,
+      "update_seconds_sum": 2075.872730457457,
+      "gradient_norm_range": [
+        0.001605816651135683,
+        0.23283368349075317
+      ],
+      "train": {
+        "changed_from_RAW": 0,
+        "within_query_relation_std_median": 0.023706254654140654,
+        "max_absolute_relation_contrast": 0.3118008151650429
+      },
+      "held": {
+        "changed_from_RAW": 0,
+        "within_query_relation_std_median": 0.025734953404975634,
+        "max_absolute_relation_contrast": 0.2202044203877449
+      },
+      "interventions": {
+        "shuffle": {
+          "rms_relation_change": 1.092506781047596e-08,
+          "max_relation_change": 5.960464477539063e-08,
+          "decision_changes": 0
+        },
+        "rotate": {
+          "rms_relation_change": 1.069311327985225e-08,
+          "max_relation_change": 5.960464477539063e-08,
+          "decision_changes": 0
+        }
+      }
+    },
+    "SPATIAL": {
+      "checkpoint": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_colnomic_relation_reader_v1/SPATIAL/checkpoint.pt",
+        "sha256": "8536e85a667204ccac4c274b8d063c34d23cedb43424a20b7888c51a1480b100"
+      },
+      "steps": 512,
+      "head": [
+        0.19193947970052286,
+        17.710535590620722,
+        -0.7295771791820086
+      ],
+      "first_pass_mean_loss": 0.7205269960156233,
+      "last_pass_mean_loss": 0.7245309821782443,
+      "update_seconds_sum": 7667.222779493779,
+      "gradient_norm_range": [
+        0.001673065940849483,
+        0.4532138407230377
+      ],
+      "train": {
+        "changed_from_RAW": 0,
+        "within_query_relation_std_median": 0.07032478289607409,
+        "max_absolute_relation_contrast": 0.7731209695339203
+      },
+      "held": {
+        "changed_from_RAW": 0,
+        "within_query_relation_std_median": 0.06777018696249718,
+        "max_absolute_relation_contrast": 0.551675021648407
+      },
+      "interventions": {
+        "shuffle": {
+          "rms_relation_change": 0.292718398028784,
+          "max_relation_change": 0.6780152916908264,
+          "decision_changes": 0
+        },
+        "rotate": {
+          "rms_relation_change": 7.440410452118161e-09,
+          "max_relation_change": 5.960464477539063e-08,
+          "decision_changes": 0
+        }
+      }
+    }
+  },
+  "interpretation": "No successful RoMa-free correction learned in this pilot; not an information-absence proof.",
+  "held_panel": {
+    "n": 32,
+    "groups": 9,
+    "RAW_correct": 26,
+    "target_absent": 5,
+    "RAW_wrong_target_in_C128": 1
+  },
+  "prediction_files_sha_verified": 512
+}

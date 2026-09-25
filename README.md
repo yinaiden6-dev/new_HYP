@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-25 后 LLM 全量实验与机制归因完整归档](backup/postllm_and_attribution_20260925/README.md)**：H593 内部 POST_REAL 478/593；共同响应 477、patch 剩余 430、固定内容命中 469。含完整逐候选记录、独立核算、上游干预及无 RoMa 对照的负结果与边界。下方 V3/V4 快照保留为历史记录。
+
 - **[90张英文纠错图（放大 reference）及内部M V4最新快照](backup/rescue90_english_and_internal_m4_20260924/README.md)**：药盒／GroZi／ISIC各30张，附完整候选分数、原生热图与验证记录。
 
 - **[2026-09-24 内部M失败定位与V4阶段快照、ZIP下载](backup/internal_m_diagnostics_v4_snapshot_20260924/README.md)**：补齐V3读出/条件尺度诊断，V4仍在训练，阶段数据不作为最终结论。

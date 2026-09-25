@@ -1,0 +1,73 @@
+{
+  "status": "H593_POSTLLM_INTAKE_PASS_GPU_QUERY_CACHE_INCOMPLETE",
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/input_manifest.json",
+    "sha256": "71e29aec16ae9deda67d9cea5cc6ffa10cfff93ef73498d95a00a12f18944f03"
+  },
+  "query_count": 593,
+  "candidate_pairs": 75904,
+  "token_files": 5324,
+  "all_required_token_files_sha_verified": true,
+  "query_image_bytes_sha_verified": 593,
+  "legacy_hidden_reusable": 24,
+  "legacy_hidden_payload_bytes": 257500024,
+  "missing_query_hidden": 569,
+  "no_new_roma_or_reference_encoding_required": true,
+  "original_folds": [
+    {
+      "fold": 0,
+      "train_all": 474,
+      "eligible_train": 457,
+      "train_target_absent": 17,
+      "held": 119,
+      "train_components": 51
+    },
+    {
+      "fold": 1,
+      "train_all": 475,
+      "eligible_train": 454,
+      "train_target_absent": 21,
+      "held": 118,
+      "train_components": 52
+    },
+    {
+      "fold": 2,
+      "train_all": 474,
+      "eligible_train": 451,
+      "train_target_absent": 23,
+      "held": 119,
+      "train_components": 51
+    },
+    {
+      "fold": 3,
+      "train_all": 474,
+      "eligible_train": 461,
+      "train_target_absent": 13,
+      "held": 119,
+      "train_components": 51
+    },
+    {
+      "fold": 4,
+      "train_all": 475,
+      "eligible_train": 457,
+      "train_target_absent": 18,
+      "held": 118,
+      "train_components": 51
+    }
+  ],
+  "source_training_labels_read": "Five separate original TRAIN role files only; no curator opened",
+  "held_label_reads_from_curator": 0,
+  "labels_in_shared_rows": false,
+  "reused_pilot_learned_parameters": false,
+  "no_training_or_forward_in_preparation": true,
+  "agents_md_search": "No AGENTS.md found beneath benchmark or home by rg --files --hidden; .git/cache excluded",
+  "hidden_search_scope": "RC result encoder_cache paths and post/pre/internal-M implementations; only validated V2 24 hidden payloads reusable",
+  "validation": {
+    "all_old24_inputs_exact": true,
+    "candidate_axes_preserved": true,
+    "target_insertion": false,
+    "reference_tokens_and_RoMa_M_reused": true,
+    "oof_held_queries": 593,
+    "held_absent_not_filtered": true
+  }
+}

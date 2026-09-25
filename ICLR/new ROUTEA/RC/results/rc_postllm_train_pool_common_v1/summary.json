@@ -1,0 +1,72 @@
+{
+  "status": "PARTIAL_ROWS_COMPLETE",
+  "completed_probe_queries": 0,
+  "completed_rows": 1,
+  "summary": {
+    "train_engineering": {
+      "TRAIN_POOL_COMMON": {
+        "n": 1,
+        "correct": 1,
+        "rescues": [],
+        "breaks": [],
+        "changed_vs_sealed_GPU_POST_REAL": []
+      },
+      "IDEAL_SELF_COMMON": {
+        "n": 1,
+        "correct": 1,
+        "rescues": [],
+        "breaks": [],
+        "changed_vs_sealed_GPU_POST_REAL": []
+      },
+      "TRAIN_POOL_COMMON_FIXED_ARGMAX": {
+        "n": 1,
+        "correct": 1,
+        "rescues": [],
+        "breaks": [],
+        "changed_vs_sealed_GPU_POST_REAL": []
+      },
+      "IDEAL_SELF_COMMON_FIXED_ARGMAX": {
+        "n": 1,
+        "correct": 1,
+        "rescues": [],
+        "breaks": [],
+        "changed_vs_sealed_GPU_POST_REAL": []
+      },
+      "ACTUAL_COMMON_BRIDGE": {
+        "n": 1,
+        "correct": 1,
+        "rescues": [],
+        "breaks": [],
+        "changed_vs_sealed_GPU_POST_REAL": []
+      },
+      "CPU_NATIVE_REFERENCE": {
+        "n": 1,
+        "correct": 1,
+        "rescues": [],
+        "breaks": [],
+        "changed_vs_sealed_GPU_POST_REAL": []
+      },
+      "CPU_CONSTANT_REFERENCE": {
+        "n": 1,
+        "correct": 1,
+        "rescues": [],
+        "breaks": [],
+        "changed_vs_sealed_GPU_POST_REAL": []
+      }
+    }
+  },
+  "result_bindings": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_train_pool_common_v1/queries/H593-979d4429602e6c4a69aa6724/result.json",
+      "sha256": "212fed02751eaafe45f44728215e70c5fd0b483575cfdf8e5ebdee6573e7ddba"
+    }
+  ],
+  "opened_label_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_m_v1/result.json",
+    "sha256": "a72c9503d750cb44ce540b5412187097a60ea95808e786e08aa5c59b8e94caa1"
+  },
+  "interpretation": "Tests whether query-independent TRAIN-pooled M direction preserves opened-probe correction. The base content remains query-dependent; not a pure-scalar system or spatial-attention proof.",
+  "new_training": false,
+  "held_fit": false,
+  "new_llm_or_roma_forwards": 0
+}

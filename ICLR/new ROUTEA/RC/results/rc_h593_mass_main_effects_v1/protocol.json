@@ -1,0 +1,95 @@
+{
+  "status": "PREPARED_POSTHOC_MAIN_EFFECT_DIAGNOSTIC",
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_h593_mass_main_effects_v1.py",
+    "sha256": "7629b013efd26eb1c6366be9ae12f70a1c22f9530dee2acd37186bc0bfae3a4a"
+  },
+  "sources": {
+    "cache": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/cache.json",
+      "sha256": "e999dc7eb4a711038c724bea04c0642f556971374273b18dec7d587365531711"
+    },
+    "cache_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/cache_validation.json",
+      "sha256": "3c345be5c973889fa501a73b76275fb2feffd55bfd818d895f4f7dacbcba53c0"
+    },
+    "parent": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_h593_simple_explanations_authority_v1_20260924.json",
+      "sha256": "e096c3d5d8f24d307d5819d70fe02f83c52750f050e5fd8518ca2e5ce394c5eb"
+    },
+    "split": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/split_manifest.json",
+      "sha256": "be29f82bc404b44e713f98a3e099117f183de0ef0ca80e7f11ddca5bcf8d1d5c"
+    },
+    "gallery": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+      "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+    },
+    "curator": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/curator_roles.json",
+      "sha256": "5bcd24b3f2b6f8eb136a0d68d3b8ffc7e9e7d1edd006a2225315883104b1a824"
+    },
+    "historical_full_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_six_cause_isolation_v1/loss_binding/result.json",
+      "sha256": "f196945bf55723e74ab7f20bbaf9931d6cd9288dadf28cc76c9f3ea26b5fc141"
+    },
+    "historical_simple_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/result.json",
+      "sha256": "b68789604c1f81bf2de84ec2f87f595b3eb6d7b80354e83d1d5c3c0bc9cade54"
+    }
+  },
+  "heads": {
+    "0": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/fold0/COST1_PRODUCT5.json",
+      "sha256": "f8215a5c1518981c5d18ffe1110e488701c8695f1d8b49394df35be8cacf7a11"
+    },
+    "1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/fold1/COST1_PRODUCT5.json",
+      "sha256": "86718ac2644ee0e542f01376ef89d949edd55387a698eee9e7acf491cdbe0f2e"
+    },
+    "2": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/fold2/COST1_PRODUCT5.json",
+      "sha256": "1856913fbac2ab61ee555ccb4402266944516802bcf38be45426e496c594827c"
+    },
+    "3": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/fold3/COST1_PRODUCT5.json",
+      "sha256": "be570db2f9a2a516a6fbeab9d474bd8e2ac1bbd24aaa59230f9935c09361f4b5"
+    },
+    "4": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/fold4/COST1_PRODUCT5.json",
+      "sha256": "c6bf200964c2b0d4259d84c528d513118934101ae81f46f1d4abc3829a1e5a7a"
+    }
+  },
+  "head": "Frozen per-fold COST1_PRODUCT5, equivalent MASS5 interface",
+  "fit_data": "All TRAIN query natural C128 masses; no identity labels; no held query masses",
+  "reference_unit": "physical gallery row, not identity",
+  "fit": "Unpenalized log(M)=mu+a_query+b_reference least squares by fixed ALS",
+  "iterations": 2000,
+  "log_floor": 1e-12,
+  "sym_epsilon": 1e-12,
+  "gauge": "mu=TRAIN edge mean logM; reference b has observation-weighted mean zero",
+  "unseen_reference": "b=0 global geometric-mean reference prior; never fit from held",
+  "graph": "Require one connected TRAIN query/reference incidence component",
+  "arms": [
+    "ORIGINAL_M",
+    "REFERENCE_MAIN_EFFECT",
+    "REMOVE_REFERENCE_MAIN_EFFECT"
+  ],
+  "mass_definitions": {
+    "ORIGINAL_M": "M",
+    "REFERENCE_MAIN_EFFECT": "exp(mu+b_ref)",
+    "REMOVE_REFERENCE_MAIN_EFFECT": "M/exp(b_ref), preserves original zero if any"
+  },
+  "acceptance": "Original 127 challengers; frozen five-parameter head; strict max(z)>0 otherwise RAW HOLD",
+  "no_new_head_fit": true,
+  "new_encoder_forwards": 0,
+  "new_roma_forwards": 0,
+  "evidence": "Opened H593 development OOF panel. Post-hoc mechanism diagnosis, not fresh confirmation.",
+  "limits": [
+    "Reference prior is estimated conditional on natural-C128 TRAIN sampling; it is not universal single-image quality.",
+    "REMOVE_REFERENCE still contains query scale plus unexplained pair variation, including model error.",
+    "Frozen-head degradation does not establish indispensability or rule out refit recovery.",
+    "Shared query scale cancels algebraically only at zero epsilon; actual epsilon error is measured.",
+    "No claim that all reference or query-only explanations have been exhausted."
+  ]
+}
