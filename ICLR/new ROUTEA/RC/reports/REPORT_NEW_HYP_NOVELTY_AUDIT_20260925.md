@@ -1,14 +1,18 @@
 # new HYP：最近邻工作与新增认识核对
 
-2026-09-25。按用户指定，本轮只解决与已有工作的区别；benchmark由学长负责建设和写作。数据复用及成本/性能定位不扩展为新任务，原有事实记录保留。本轮不训练、不提交Slurm任务，也不将文献差异直接当成同协议性能胜出。
+2026-09-25。按用户指定，本轮只解决与已有工作的区别；benchmark由学长整理和写作，指现有ColNomic、ColQwen、ColPali等检索模型的结果比较，不是新建数据集。论文组织为“现有检索器benchmark→我们的方法补强→理论与机制解释”。数据复用及成本问题不扩展为新任务，原有事实记录保留。本轮不训练、不提交Slurm任务，也不将文献差异直接当成同协议性能胜出。
 
 ## 1. 结论
 
-**不能把“匹配置信度＋检索分数＋小头”、retrieval-only监督、空间支持压缩，或者条件化adapter本身作为首次提出的思想。当前最有依据的贡献，是一个具体的支持—内容接口，以及用受控对照查明它在评分端和表示端如何承载身份纠错。**
+**核心方法与认识贡献是：可复用的空间支持接口，以及外部和内部使用方式的机制发现。** 本文同时保留检索器benchmark、方法补强、统一理论框架和机制归因，形成“比较发现问题—接口实现补强—框架组织解释—干预检验机制”的贡献链。benchmark由学长汇总，其余主张由已完成实验和明确公式支撑；[主稿§2](RC_NEW_HYP_PAPER_CLOSURE_DRAFT_20260924.md#2-四项贡献及其证据)给出四项贡献的证据与状态。
+
+具体而言，接口分离reference条件空间支持的生成与使用，保持完整reference上的自由内容匹配；同源支持既能调节外部patch评分贡献，也能汇总后调制内部检索表示。受控实验进一步发现，空间来源的证据在使用端可以经汇总与配套校准承载收益，内部共同响应保留了大部分已观察到的纠错。这些发现回答支持应该在哪里、以何种形式被使用，能够影响模块设计和结果解释。
+
+已有工作提供了匹配置信度、retrieval-only监督、空间支持压缩和条件化adapter的基础思想。本文将这些先例明确归位，以具体接口、统一框架和已验证机制作为增量，不将上述通用组件单独宣称为首次提出。
 
 我们在所核对的近邻中没有发现同时报告以下完整证据组合的工作：固定同一支持来源，比较外部局部加权、取消局部权重后的重训、末端不直读支持的内部调制，再在固定内部模型中分解共同响应与patch剩余响应、固定内容匹配位置，并核对各通路保留哪些纠错。这是限定于本轮文献范围的区别判断，不是穷尽文献的首次性证明。
 
-新benchmark可以成为独立贡献，但其成果尚由学长建设，当前不预写规模、成绩或完成状态，也不借benchmark的新颖性替代机制本身的清楚定义。
+这里的benchmark用于回答现有检索器表现如何，并为“原检索器＋我们的方法”的配对增量提供背景。它不被表述为新数据集贡献，也不预写尚未汇总的模型成绩。我们的方法与理论解释承接这些比较，说明补强针对的证据缺口和起作用的通路。
 
 ## 2. 已有工作覆盖了什么
 
@@ -78,21 +82,24 @@
 
 ## 5. 正文可用的贡献段
 
-我们区分reference条件空间支持的生成与使用，建立保留自由内容匹配的接口。在编码器外部，空间支持调节各patch在身份匹配中的贡献；进一步将这一空间支持的汇总信号M引入编码器内部，在LLM之后、检索投影之前调制表示，仍能实现有效纠错。由此验证了同源空间支持从外部加权到内部表示调制的有效使用。通过支持绑定、固定头与重训、内容/头交换以及固定模型表示分解，我们进一步发现：局部支持加权在所测协议中可被支持汇总及重新校准替代；内部模型主要通过跨patch共同响应传递支持，部分纠错额外依赖内容重新匹配。所有新增任务模块仅用检索身份监督，匹配器及其预训练能力明确归属于原方法。
+本文结合现有检索器比较、方法补强、统一框架与机制分析，提出可复用的reference条件空间支持接口。该接口区分支持的生成与使用，保留完整reference上的自由内容匹配；空间支持在外部调节patch评分贡献，其汇总信号M也能在LLM之后、检索投影之前调制表示并实现有效纠错。框架将支持生成、空间表示及压缩、内容读取与身份决策分层组织，连接同源证据的两种使用方式。支持绑定、固定头与重训、内容/头交换及表示分解进一步发现：局部加权在所测协议中可由支持汇总和配套校准替代；共同表示响应承载大部分已观察到的内部纠错，部分决策还受重新匹配影响。这些发现为支持模块的设计与解释提供依据。新增任务模块仅使用检索身份监督，冻结匹配器及其预训练能力归于原方法。
 
-> We separate the generation and use of reference-conditioned spatial support through an interface that preserves unrestricted content matching. Outside the encoder, support reweights patch contributions to identity matching. Inside the encoder, its pooled signal M conditions representations after the LLM and before the frozen retrieval projection, where it remains effective for correction. Controlled operator changes, binding interventions, content/head swaps, and representation replay explain how the two paths use that support. Refitted pooled support can retain aggregate gains without local weighting, and a response shared across patches retains most corrections of the tested internal model. The contribution is this concrete interface and experimentally grounded account of its behavior.
+> Our study combines retriever comparison and paired augmentation with a reusable spatial-support interface, a unified framework, and controlled mechanism findings. The interface separates reference-conditioned support generation from its use while preserving unrestricted content matching. Support reweights patch contributions externally, and its pooled signal conditions representations after the LLM and before the frozen retrieval projection internally. The framework distinguishes support generation, spatial representation and compression, content readout, and identity decisions. Binding interventions, operator changes and refitting, content/head swaps, and representation replay show how these implementations work: calibrated pooled support can retain aggregate gains without local weighting, and a response shared across patches preserves most corrections of the tested internal model. These findings provide design and interpretation guidance for using matching support in frozen retrieval systems.
+
+以上四项共同构成论文贡献，不作为四个独立首创性证明。benchmark未汇总部分在主稿保留明确状态；定义与代数推导、经验发现和跨域适用性分别引用其证据。完整四项表见主稿§2。
 
 “外部改变patch关注度”在正文中具体写为改变patch的评分贡献，不表示冻结编码器的注意力计算发生变化。内部迁入的是空间支持的汇总M，不是完整支持网格；它验证的是同源支持的内部使用有效，而非内部重建了原区域。以此保留用户要求的“空间支持→外部作用→内部仍有效”叙事，同时准确区分两个实现。
 
-新benchmark贡献由学长的定义、数据、评价与结果完成后单独加入，不在此段提前许诺。
+检索器benchmark由学长汇总；其表格与我们的补强前后对比共同构成性能部分，上述贡献段负责说明具体方法与机制认识。
 
-## 6. 给benchmark负责人的对照接口
+## 6. 检索器benchmark、方法补强与理论的分工
 
-benchmark建设与写作由学长负责，本文只提供检验机制差异的交接信息：
+学长负责现有检索模型的统一结果比较。主表可按“模型/具体checkpoint—原始检索表现—加入我们方法后的表现—配对增量”衔接；原始排名、补强结果和机制证据保留各自口径。
 
-- 全部方法明确同一query、图库、候选来源；候选缺席情况计入结果并单列召回。
-- 最近邻按所检验的差异选：ELViS/CVNet代表学习式局部关系读出，VGGT-MPR代表几何置信度汇总，FoL++代表可靠性加权；To Match用于可靠性/有害重排问题。它们是候选清单，不要求全部复现；不能把只比较Qwen当成已回答这些机制重叠。
-- 同一M来源下保留自由内容、简单外部加性头和内部真实/恒定/错绑条件；否则无法分辨只是更强上游匹配器，还是新的支持使用方式。
-- 若某个官方方法因输入或训练域原因需要适配，记录差异，不把本地简化规则称官方复现。不以当前已知结果选择benchmark条件。
+- **原始检索比较：** ColNomic、ColQwen、ColPali等在相同query、图库和身份评价规则上报告R@1、R@5、R@10、MRR；明确模型版本和是否加载检索训练适配器。当前ColQwen-base不能替代正式检索训练版ColQwen的成绩。
+- **方法补强：** 对每个已完成实验的检索器，用自己的自然C128成对比较RAW与加入我们方法后的结果，列净增及救回/误伤；候选缺席仍保留在分母。不同检索器拥有不同候选召回，不能把原始总正确数差异当成补强模块的强弱。
+- **理论解释：** 以空间支持生成/使用分离和自由内容接口组织外部加权、内部调制及其归因。跨检索器外部补强与ColNomic内部实验分别报告，不暗示内部改造已在所有检索器上验证。
 
-这是交接建议，不是已经执行的benchmark，也没有向任何人发送消息。本轮修改仅限文献核对与写作材料；原结果、模型与统计不变。
+ELViS、CVNet、VGGT-MPR、FoL++、To Match与FiLM/CLAY等仍用于Related Work中的机制定位；这不把学长的benchmark改成上述文献方法的复现任务。若另有官方方法适配比较，另列其实际协议，不能把当前简单对照称作官方复现。
+
+本节是与用户澄清一致的写作交接，没有新建数据集、启动新实验或发送消息。原结果、模型与统计不变。

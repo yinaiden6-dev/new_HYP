@@ -4,7 +4,7 @@
 
 当前统一解释以[软支持—外部校准—内部调制收口](RC_NEW_HYP_UNIFIED_SUPPORT_CLOSURE_20260925.md)为准。该文补齐原 superregion 与软支持的功能联系，并给出逐项证据和数值来源；本稿同步更新主问题、方法图、内部主表和英文摘要。历史空间资格门及早期内部负结果仍按原协议保留。
 
-2026-09-25本轮按用户指定，集中完成[最近邻文献与新增认识核对](REPORT_NEW_HYP_NOVELTY_AUDIT_20260925.md)。不再扩展其他接收风险为新增实验；新benchmark由学长负责建设和写作，完成后再加入其定义与结果。本稿不提前计入尚未完成的benchmark贡献。
+2026-09-25本轮按用户指定，集中完成[最近邻文献与新增认识核对](REPORT_NEW_HYP_NOVELTY_AUDIT_20260925.md)。用户进一步明确：benchmark是对现有ColNomic、ColQwen、ColPali等模型的检索表现进行统一比较，由学长整理和写作；不是另建数据集。本文随后展示我们的方法对检索器的补强，再用理论与机制实验解释补强的原因。文献近邻核对与这一检索器benchmark分别承担方法定位和性能比较的作用。
 
 旧稿 [2026-09-09 working draft](RC_RETRIEVAL_ONLY_PAPER_WORKING_DRAFT_20260909.md) 保留作历史记录。其空间问题设定、结果面板与部分符号不再代表本文最新叙事。本稿中的 RPC 定位以用户后续决定为准：仅作诊断，不列正式外部效果主表。
 
@@ -28,15 +28,38 @@
 
 可选副标题：**Reference-Conditioned Support for External Calibration and Internal Modulation**。正文保留 new HYP 作为框架名称，定义为 reference 条件软支持与内容读取；不宣称已恢复真实目标mask或完整验证旧连通区域模型。
 
-## 2. 三项贡献及其证据
+### 论文的整体关系：检索器比较 → 方法补强 → 理论解释
 
-| 贡献 | 可以写入正文的具体结论 | 关键证据 | 不应扩大为 |
-|---|---|---|---|
-| 支持与自由内容读取的具体接口 | 以reference条件软支持承接superregion功能，分离支持生成与使用；任务模块只用检索身份标签，推理不提供真实目标位置/正确候选 | 同一支持来源的局部加权、汇总替代及固定头/重训对照；完整C128评分、内容近分与支持通路干预 | 首次图像级监督学习局部特征；检索标签从零训练出了RoMa定位能力；softmap像素精度已超过SAM3；旧空间资格门全部通过 |
-| 统一外部校准与内部调制 | 同源候选支持可经两个接口使用；内容变化需要配套校准，内部主要通过共同表示响应传递 | POST_REAL478、恒定426、错绑369；共同响应477，保留52/54原救回；内容/头交换与外部算子对照 | 两模型数学等价、内部重建同一高亮区域、M是充分统计量或乘法是必要条件 |
-| 检验接口的适用范围与限制 | 简化接口及固定内部模型经外部复核，另有跨检索器重训与强重排联合校准 | 外部简化头GroZi321→349、ISIC466→506；固定内部fold0的GroZi321→339（18救0损）；ColPali283→348、ColQwen-base227→322；Qwen-COST1同协议477→504 | 全部结果属于同一模型、已超过所有重排器、普遍零误伤、未经接触的新外部确认 |
+1. **检索器benchmark（学长负责）。** 在一致任务、query及图库上比较现有ColNomic、ColQwen、ColPali等模型，交代具体版本、适配器和评分设置，呈现原始检索表现及共同挑战。
+2. **我们的方法补强。** 对每个已完成对照的检索器，成对报告原模型与“原模型＋我们方法”的效果；补强阶段保留该检索器自己的自然候选轴。比较检索器原始能力和衡量同一检索器的补强增量是两个表格维度，不把二者混作模块强弱排名。外部接口的跨检索器结果与ColNomic内部改造结果分别标明。
+3. **理论与机制解释。** 用空间支持的生成/使用分离、自由内容匹配接口、外部patch贡献加权和内部表示调制解释为什么能补强，再用绑定、重训和共同响应等对照支持具体结论。
 
-**新增认识的分量应由上述受控发现承担。** “七参数很小”“只用检索监督”“使用匹配置信度”“设置 HOLD/SWITCH”均不能单独承担首创性。简单模型复现大部分收益是正文必须面对的结果，也是机制解释的一部分。具体的新认识是：在所测系统中，支持的空间生成与下游局部使用具有可分离性，部分复杂局部使用可经重新校准替代；内部有效使用则主要由候选条件的共同表示响应承载。它们是对本系统的受控经验发现，不是新的通用调制算子或信息充分性定理。
+benchmark为性能事实提供背景，补强实验检验方法作用，理论与干预给出解释，三者组成同一篇论文的证据链。当前ColQwen-base配置不代表正式检索训练版ColQwen的成绩；学长的模型比较应按实际checkpoint分别命名。尚未汇总的比较不提前填入结果。
+
+## 2. 四项贡献及其证据
+
+**论文同时主张检索器比较、方法补强、统一框架与机制发现。核心方法贡献是可复用的空间支持接口，核心认识贡献是外部和内部使用方式的机制发现。** 四项分别回答问题表现、解决方式、统一解释和实验证据；下表标明已完成部分及尚待汇总的benchmark。
+
+| 贡献 | 可以写入正文的具体结论 | 对应证据与完成范围 |
+|---|---|---|
+| 检索器benchmark与补强评估 | 在共同任务协议下比较现有检索器，并分别检验加入本方法的配对收益，区分候选召回与身份纠错 | 已有各自自然C128上的H593外部补强：ColNomic426→481、ColPali283→348、ColQwen-base227→322；学长负责完整原始检索比较，未汇总的checkpoint与成绩待填 |
+| 可复用的空间支持接口 | 分离reference条件空间支持的生成与使用，保留完整reference上的自由内容匹配；提供外部patch贡献加权与后LLM内部表示调制两种实现，任务模块仅用检索身份监督 | 外部算子对照；ColNomic内部POST_REAL478/593；固定内部源fold0在GroZi321→339/480（18救0损）；跨检索器已验证的是外部接口 |
+| 外部与内部使用的统一框架 | 用“支持生成—空间表示及压缩—内容读取—身份决策”组织两条路径，说明同源空间证据如何经评分端或表示端起作用 | 双侧支持H、汇总M、自由内容读出及内部调制的明确公式；空间压缩与共同响应的推导；同源支持的功能迁移由两种实现及干预支持 |
+| 经受控干预验证的机制发现 | 支持生成与下游逐patch使用可以分离；接口改变需要配套校准；内部大部分已观察到的纠错可由共同表示响应承载 | 去局部权重套旧头441，重训481；固定POST真实478、恒定426、错绑369；共同响应477并保留52/54次原救回，固定匹配位置469并保留44/54次；内容/头交换另见主表 |
+
+### 可直接用于引言的中文贡献段
+
+我们围绕现有多向量检索器的身份混淆，将检索器比较、方法补强与机制解释组成统一研究主线。方法上，我们提出可复用的reference条件空间支持接口，将支持生成与使用分开，保留完整reference上的自由内容匹配。该支持在外部调节patch对身份评分的贡献，其汇总信号也能在LLM之后、检索投影之前调制内容表示，实现有效纠错。理论框架将支持生成、表示及压缩、内容读取与身份决策分层组织；受控干预进一步发现，在所测系统中，空间来源的证据经配套校准后，可以通过汇总支持或共同表示响应承载大部分收益。这为支持模块的设计、简化与解释提供了可检验的依据。
+
+### 理论框架、推导和经验发现分别承担什么
+
+- **定义与统一：** reference条件双侧软支持H保留空间索引，压缩接口M传递候选级支持；外部与内部路径共享支持来源，并在不同位置作用于自由内容读取。统一的是信息来源和使用层次，各模型保留自己的参数与决策。
+- **可推导性质：** 已生成的u、v经过位置置换，其均值及M不变；由此可知只传M的接口不保留完整空间排列。共同响应经过冻结线性投影和归一化，可将不同patch的内容方向作不同幅度的改变，因而能够影响候选内容分差。具体公式见§3，这些推导使用既有代数性质。
+- **实验支持的机制命题：** 当前外部配置取消局部权重后可经重训恢复总体正确数；当前内部模型的共同响应保留大部分纠错。是否恢复收益、保留多少纠错由实验回答，不能仅从接口定义推出。
+
+这套框架给出可操作的设计原则：支持图的用途、传入读出的信息量和配套校准应分别检验；看到纠错增益时，应区分局部重选与候选条件的表示变化。完整u、v仍可用于重要patch展示及辅助分割先验，内部M实验验证的是压缩支持的使用。
+
+贡献范围与已有工作的具体区别见§7。匹配置信度、检索身份监督及条件调制均有先例；本文的新增认识由上述接口与受控发现共同承担。benchmark是已有模型的统一比较，ColQwen-base与检索训练版须分列；同一总体正确数不意味着逐图等价，功能统一不意味着数学等价或M对身份充分。全文保留强简化基线和历史负结果。
 
 ## 3. 方法表述：保留两个内容定义
 
@@ -246,11 +269,13 @@ Conditional modulation likewise builds on established ideas, including FiLM, con
 
 ### Abstract draft
 
-Dense matching produces spatially indexed support, but using that evidence for retrieval need not reproduce an explicit region. We study reference-conditioned soft matching support and separate its generation, compression, and content readout under identity-only task supervision. On a repeatedly used 593-query medicine benchmark with grouped cross-validation, the original externally weighted system improves correct predictions from 426 to 481. Removing local weights and refitting the readout retains 481, whereas reusing the original head yields 441. A post-LLM adapter instead conditions frozen content representations on pooled support and reaches 478 with a decision head that does not directly read that support. Replacing its true conditioning with a constant or mismatched candidate values gives 426 and 369. Controlled replay retaining only the query-dependent representation response shared across patches preserves 52 of the internal model's 54 rescues. Fixing content match indices preserves 44 rescues, identifying both a dominant shared response and a remaining role for rematching. These results connect external calibration and internal modulation as different uses of the same source of pair evidence. A source-frozen internal model also improves GroZi from 321 to 339 correct predictions out of 480, rescuing 18 without observed breaks; no external fitting or model selection is performed. External-head re-evaluation on previously used GroZi and ISIC panels and retriever-specific refitting establish additional, separately scoped evidence. Simple additive controls and historical negative results delimit the claims: the models are not equivalent, pooled support is not proved sufficient for identity, and downstream compression does not exclude spatial structure from support generation.
+How can spatial matching support improve identity decisions made by a frozen multi-vector retriever, and how should that support enter the system? We introduce a reference-conditioned support interface that separates support generation from its use while preserving unrestricted content matching. Our framework connects external patch-contribution weighting with internal representation modulation after the LLM and before the frozen retrieval projection. Added task modules use retrieval identity supervision. On a repeatedly used 593-query medicine panel with grouped cross-validation and fixed natural candidates, external weighting improves correct predictions from 426 to 481. Removing local weights gives 441 with the original head and 481 after refitting, revealing the role of interface-specific calibration. The internal path reaches 478; replacing its conditioning with constant or candidate-mismatched support gives 426 and 369. Fixed-model replay preserving only the query-dependent response shared across patches retains 52 of 54 original rescues, while fixing content match indices retains 44. These findings show that, in the tested system, spatially generated evidence can support correction without requiring most of its downstream effect to be patch-specific. A preselected source-frozen internal model improves GroZi from 321 to 339 out of 480, with 18 rescues and no observed breaks. Retriever-specific external augmentation and frozen external-head evaluations provide separately scoped evidence of applicability. Together, the interface, unified account, and controlled findings identify effective ways of using spatial support for content retrieval.
 
 ### Contribution paragraph draft
 
-We separate the generation and use of reference-conditioned spatial support through an interface that preserves unrestricted content matching. Outside the encoder, support reweights patch contributions to identity matching. Inside the encoder, its pooled signal M conditions representations after the LLM and before the frozen retrieval projection, where it remains effective for correction. This establishes effective external and internal uses of the same support source. Binding controls, fixed-head versus refitted operators, content/head swaps, and full-panel replay then explain those uses: a query-dependent response shared across patches retains most corrections of the tested internal model, while rematching contributes to some decisions. Source-frozen external heads and a preselected internal model are also evaluated on external panels, with retriever-specific refitting and strong-reranker integration reported separately. These contributions concern the interface and its verified behavior; the internal path uses pooled support rather than importing the spatial maps or modifying LLM attention.
+Our study combines retriever comparison, method augmentation, a unified framework, and controlled mechanism analysis. We introduce a reusable reference-conditioned spatial-support interface that preserves unrestricted content matching and separates support generation from its use. The interface supports external weighting of patch contributions and internal modulation of representations after the LLM and before the frozen retrieval projection. Our framework distinguishes spatial support, its pooled representation, and the content readout, connecting these two implementations through a common evidence source. Binding interventions, operator removal and refitting, content/head swaps, and representation replay establish how the tested models use this evidence: calibration can recover aggregate gains after local weighting is removed, and a response shared across patches retains most internal corrections. Paired evaluations within each retriever's natural candidates and separately reported frozen transfers examine the scope of the interface. The contribution is the combination of a reusable interface, an explicit framework, and experimentally established consequences for how matching support should be used.
+
+英文四项贡献可分别列为 **retriever benchmarking and paired augmentation; a reusable spatial-support interface; a unified framework for external and internal use; intervention-based mechanism findings**。摘要当前只采用已完成实验；学长完整benchmark尚待汇总，模型版本、指标和结论核对后再加入最终摘要，不用当前ColQwen-base代替正式训练版ColQwen。
 
 ### Limitations paragraph draft
 
@@ -260,12 +285,12 @@ H593 has been used repeatedly for development, and the external panels were prev
 
 建议正文按以下证据链组织，避免按历史试验版本堆叠：
 
-1. **问题与近邻工作：** 为什么只看准确率提升无法解释匹配器的作用；承认已有匹配验证与校准。
-2. **方法与监督：** 从原superregion到双侧软支持，图示支持生成、压缩、外部校准及后LLM内部路径；区分L_vis与L_free。
-3. **机制主表：** 原效果、固定头干预/重训、简单基线、内部真实/恒定/错绑、共同响应与固定命中，以及内容/头交换；每项标明数据与模型来源。
-4. **适用范围：** 固定头外部复核与跨检索器重训分表，始终列候选召回和救回/误伤。
-5. **强重排：** 直接Qwen、CE/COST1各自基线与质量增量同表，报告主分析的不确定性。
-6. **局限：** 数据复用、统计口径、依赖预训练模块、不能支持的空间/信息论/成本主张。
+1. **任务与检索器benchmark：** 统一身份检索问题和评价口径，展示现有模型比较及失败模式，交代每个checkpoint与候选召回；完整比较由学长汇总。
+2. **方法补强：** 给出可复用的空间支持接口、外部patch贡献加权和后LLM内部调制；同一检索器内成对比较补强前后，外部跨检索器与ColNomic内部结果分列。
+3. **统一框架与理论性质：** 从原superregion到双侧软支持，定义支持生成、表示及压缩、内容读取、身份决策；区分L_vis与L_free，列清定义、推导和经验命题。
+4. **机制归因：** 固定头干预/重训、强简化基线、内部真实/恒定/错绑、共同响应与固定命中，以及内容/头交换；每项标明模型和面板，回答接口怎样发挥作用。
+5. **适用范围与近邻定位：** 固定头外部复核、内部冻结迁移和跨检索器重训分别报告；强重排按各自基线列配对增量。Related Work说明与已有匹配验证、可靠性加权和条件调制的具体关系。
+6. **局限与复现：** 数据复用、统计口径、预训练来源、计算范围和未验证主张，提供完整实验配置与逐候选结果入口。
 
 附录保留完整配置、逐候选结果入口、训练耗时、全部历史负结果、六项消融、手填参数/CRISP、旧32/128面板、蒸馏及早期内部M配方。全量后LLM结果及主要归因进入正文。RPC仅为诊断。不会因负结果影响叙事而删除原始记录。
 

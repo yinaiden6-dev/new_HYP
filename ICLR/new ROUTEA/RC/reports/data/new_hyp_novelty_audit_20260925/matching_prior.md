@@ -1,6 +1,6 @@
 # Matching priors: primary-source audit (2026-09-25)
 
-Scope: literature verification only; no experiments, no manuscript edits. Comparison target is the current `RC_NEW_HYP_PAPER_CLOSURE_DRAFT_20260924.md` and `RC_NEW_HYP_UNIFIED_SUPPORT_CLOSURE_20260925.md`, including the later scalar-M/post-LLM interpretation. Local numerical claims were read, not independently recounted here. “Not found” below means absent from the inspected methods/analyses, not a universal priority claim. Benchmark authorship is not counted as new HYP's contribution.
+Scope: literature verification only; no experiments, no manuscript edits. Comparison target is the current `RC_NEW_HYP_PAPER_CLOSURE_DRAFT_20260924.md` and `RC_NEW_HYP_UNIFIED_SUPPORT_CLOSURE_20260925.md`, including the later scalar-M/post-LLM interpretation. Local numerical claims were read, not independently recounted here. “Not found” below means absent from the inspected methods/analyses, not a universal priority claim. Benchmark here means comparison of existing retrievers, followed by the proposed augmentation and its mechanism analysis; no new dataset is assumed.
 
 ## 1. ELViS — paper facts
 
