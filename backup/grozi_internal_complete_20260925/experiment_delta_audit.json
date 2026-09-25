@@ -1,0 +1,94 @@
+{
+  "schema": "new_hyp_postpush_experiment_audit_v1",
+  "cutoff_commit": "aeeeeb42dcee3635aeebea82866267113387c44d",
+  "cutoff_utc": "2026-09-25T02:20:48Z",
+  "compared_export_commit": "82cb288",
+  "finding": "Only rc_postllm_grozi_external_v1 is a new experiment after the last full archive; no non-GroZi missing experiment was identified within bounded audited scope.",
+  "old_18_roots": {
+    "roots": [
+      "rc_internal_m_v4_probe_v1",
+      "rc_mass_information_transport_v1",
+      "rc_postllm_h593_attribution_v1",
+      "rc_postllm_h593_decomposition_v1",
+      "rc_postllm_m_v1",
+      "rc_pair_relation_localization_v1",
+      "rc_roma_position_factor_v1",
+      "rc_internal_m_condition_scale_v4",
+      "rc_existing_evidence_attribution_v1",
+      "rc_postllm_h593_v1",
+      "rc_colnomic_relation_reader_v1",
+      "rc_postllm_m_signal_decomposition_v1",
+      "rc_postllm_train_pool_common_v1",
+      "rc_h593_mass_main_effects_v1",
+      "rc_postllm_train_pool_common_v2",
+      "rc_mass_discrimination_source_v1",
+      "rc_internal_m_content_preserving_readout_v1",
+      "rc_postllm_m_signal_decomposition_v2"
+    ],
+    "checked_file_count": 75179,
+    "updated_after_cutoff": [],
+    "pruned_dirs": [
+      "__pycache__",
+      "loading",
+      "encoder_cache",
+      "cache",
+      "logs",
+      "locks",
+      "patch_evidence",
+      "candidates"
+    ],
+    "selected_scientific_file_hash_checks": 52,
+    "all_source_and_export_match_prior_manifest": true
+  },
+  "other_historical_referenced_endpoints": {
+    "checked": 22,
+    "all_pre_cutoff": true,
+    "all_source_export_equal": true
+  },
+  "grozi_postllm": {
+    "scientific_text_file_count": 1037,
+    "scientific_text_files_missing_from_82cb288": 1032,
+    "missing_groups": {
+      "(root)": 3,
+      "shards": 60,
+      "frozen_protocol": 5,
+      "predictions": 960,
+      "operations": 4
+    },
+    "already_in_82cb288": [
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/validation.json",
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/result.json",
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/scheduler_validation.json",
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/jobs.json",
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/operations/independent_final_recount_20260925.json"
+    ],
+    "missing_root_scientific_files": [
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/progress_checked.json",
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/all_predictions_prelabel_seal.json",
+      "ICLR/new ROUTEA/RC/results/rc_postllm_grozi_external_v1/preflight.json"
+    ],
+    "missing_implementation_files": [
+      "ICLR/new ROUTEA/RC/programs/join_rc_postllm_grozi_external_v2.py",
+      "ICLR/new ROUTEA/RC/programs/submit_rc_postllm_grozi_external_v1.py",
+      "ICLR/new ROUTEA/RC/programs/prepare_rc_postllm_grozi_external_v1.py",
+      "ICLR/new ROUTEA/RC/programs/run_rc_postllm_grozi_external_v1.py",
+      "ICLR/new ROUTEA/RC/programs/join_rc_postllm_grozi_external_v1.py",
+      "ICLR/new ROUTEA/RC/slurm/rc_postllm_grozi_external_v1.sbatch",
+      "ICLR/new ROUTEA/RC/slurm/rc_postllm_grozi_join_repair_v2.sbatch",
+      "ICLR/new ROUTEA/RC/tests/test_postllm_grozi_external_v1.py",
+      "ICLR/new ROUTEA/RC/tests/test_postllm_grozi_identity_axis_v2.py"
+    ],
+    "already_archived_protocol_files": [
+      "ICLR/new ROUTEA/RC/plan/RC_POSTLLM_GROZI_EXTERNAL_V1_20260925.md",
+      "ICLR/new ROUTEA/RC/registry/rc_postllm_grozi_join_repair_v2_20260925.json",
+      "ICLR/new ROUTEA/RC/registry/rc_postllm_grozi_external_authority_v1_20260925.json"
+    ]
+  },
+  "method": "Read-only top-level mtimes and textual result-root references; scoped recursive mtimes for 18 prior archive roots; SHA256 verification of 52 scientific endpoints against prior manifest plus 22 older referenced endpoint byte comparisons; Git tree membership check for new GroZi text artifacts. No repo modification, networking or experiments.",
+  "scope_limits": "Did not sweep all workspace caches or every unrelated old results directory. Candidate directories in prior 18 roots were not traversed. Binary model/cache artifacts are outside scientific text file counts.",
+  "detail_files": [
+    "/tmp/new_hyp_postpush_preliminary_audit.json",
+    "/tmp/new_hyp_postpush_summary_hashes.json",
+    "/tmp/new_hyp_postpush_old_referenced_endpoints.json"
+  ]
+}
