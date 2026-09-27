@@ -1,0 +1,48 @@
+{
+  "status": "FINAL_ADDONS_SUBMITTED",
+  "stages": {
+    "compensate": {
+      "job_id": "5167749",
+      "dependency": null,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_compensate",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_final_addons_v1.sbatch",
+        "compensate"
+      ]
+    },
+    "bridge": {
+      "job_id": "5167750",
+      "dependency": null,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_bridge",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_final_addons_v1.sbatch",
+        "bridge"
+      ]
+    },
+    "join": {
+      "job_id": "5167751",
+      "dependency": "afterok:5167750",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_join",
+        "--dependency=afterok:5167750",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_final_addons_v1.sbatch",
+        "join"
+      ]
+    }
+  },
+  "created_utc": "2026-09-27T18:32:44.607664+00:00",
+  "upstream_dependency_already_completed": {
+    "job_id": "5167704",
+    "accounting": "5167704|COMPLETED|0:0",
+    "validation_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/validation.json",
+    "validation_sha256": "5e04838683ed3d0630977323ef395988ab184aaedf1cc7b6b784934eb13824e7",
+    "reason": "Completed job expired from active dependency records; artifacts and sacct verified before direct submit."
+  },
+  "launcher_sha256": "b57f34c52bc93d70e695e0fbf59ca73ad9b070f74477205d65748cdf030a668b"
+}

@@ -1,0 +1,71 @@
+{
+  "status": "FINAL_ADDON_LAUNCHER_DYNAMIC_PASS",
+  "created_utc": "2026-09-27T18:31:12.296761+00:00",
+  "checks": [
+    {
+      "stage": "compensate",
+      "simulated_status": 0,
+      "restart_count": 0,
+      "exit": 0,
+      "requeue": false
+    },
+    {
+      "stage": "bridge",
+      "simulated_status": 2,
+      "restart_count": 0,
+      "exit": 2,
+      "requeue": false
+    },
+    {
+      "stage": "join",
+      "simulated_status": 75,
+      "restart_count": 0,
+      "exit": 0,
+      "requeue": true
+    },
+    {
+      "stage": "bridge",
+      "simulated_status": 124,
+      "restart_count": 0,
+      "exit": 0,
+      "requeue": true
+    },
+    {
+      "stage": "bridge",
+      "simulated_status": 75,
+      "restart_count": 6,
+      "exit": 124,
+      "requeue": false
+    },
+    {
+      "stage": "unknown",
+      "simulated_status": 0,
+      "restart_count": 0,
+      "exit": 64,
+      "requeue": false
+    }
+  ],
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_final_addons_v1.sbatch",
+      "sha256": "b57f34c52bc93d70e695e0fbf59ca73ad9b070f74477205d65748cdf030a668b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_newgroup_property_bridge_v1.py",
+      "sha256": "3ddf5ab1529f0a0918b40f3251a430e4df0d1a72dd47070dfd8dd07b483e39b8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_property_compensation_v1.py",
+      "sha256": "3c20978fa94654554e64e66c5be9d98f598a0215b0912ed401cec30d908edaf0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/newgroup_property_bridge_v1/protocol.json",
+      "sha256": "d2db7e0be20e087802cda3bc00e5d3fbd859b9995d78b4e5be99ba9898112990"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/property_compensation_fixed_pairs_v1/protocol.json",
+      "sha256": "1dc4feee484411b9e468cca1f906827b62fc4af95e525465946e251b69d36df1"
+    }
+  ],
+  "no_actual_model_calls": true
+}

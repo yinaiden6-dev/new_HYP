@@ -1,0 +1,46 @@
+{
+  "status": "CAUSAL128_SAVE_REPAIR_HEALTH_SNAPSHOT",
+  "time_utc": "2026-09-27T18:26:11.490758+00:00",
+  "accounting": [
+    "5167702|accelerated|COMPLETED|0:0|00:00:45",
+    "5167704|accelerated|COMPLETED|0:0|00:00:39",
+    "5167705|accelerated|COMPLETED|0:0|00:00:34",
+    "5167706|accelerated|RUNNING|0:0|00:00:32",
+    "5167703_1|accelerated|COMPLETED|0:0|00:05:52",
+    "5167703_0|accelerated|COMPLETED|0:0|00:05:51",
+    "5167703_3|accelerated|COMPLETED|0:0|00:05:51",
+    "5167703_2|accelerated|COMPLETED|0:0|00:04:33",
+    "5167703_4|accelerated|COMPLETED|0:0|00:04:20",
+    "5167703_5|accelerated|COMPLETED|0:0|00:05:52",
+    "5167703_7|accelerated|COMPLETED|0:0|00:04:50",
+    "5167703_6|accelerated|COMPLETED|0:0|00:04:17",
+    "5167703_8|accelerated|COMPLETED|0:0|00:05:53"
+  ],
+  "accounting_error": "",
+  "validations": {
+    "phase_replication/pilot_validation.json": {
+      "present": true,
+      "status": "PHASE_NEWGROUP_CPU_PILOT_PASS",
+      "source": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/pilot_validation.json",
+        "sha256": "8a4d569777c1eb482d12e9126941a67c29c9240077fb34679273936b60fa19be"
+      }
+    },
+    "phase_replication/validation.json": {
+      "present": true,
+      "status": "PHASE_NEWGROUP_REPLICATION_JOIN_PASS",
+      "source": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/validation.json",
+        "sha256": "5e04838683ed3d0630977323ef395988ab184aaedf1cc7b6b784934eb13824e7"
+      }
+    },
+    "final_summary/validation.json": {
+      "present": true,
+      "status": "M_CAUSAL128_ATTRIBUTION_SUMMARY_PASS",
+      "source": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/final_summary/validation.json",
+        "sha256": "9a11510b5c2383c85dccef5199d1a43a01e46390a8123dceb936024473f4e7b9"
+      }
+    }
+  }
+}

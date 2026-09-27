@@ -1,0 +1,84 @@
+{
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_save_repair_v1/protocol.json",
+    "sha256": "d513c36cab3cf6156d98902097e19d0947a2ce5583ae0bb36af161e059f4eb71"
+  },
+  "stages": {
+    "pilot_repair": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--mem=32G",
+        "--comment=M_CAUSAL128_SAVE_REPAIR:pilot_repair",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_phase_save_repair_v1.sbatch",
+        "pilot_repair",
+        "4"
+      ],
+      "job_id": "5167702"
+    },
+    "phase_replication": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--mem=32G",
+        "--comment=M_CAUSAL128_SAVE_REPAIR:phase_replication",
+        "--array=0-8%9",
+        "--dependency=afterok:5167702",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_phase_save_repair_v1.sbatch",
+        "phase_replication",
+        "8"
+      ],
+      "job_id": "5167703"
+    },
+    "phase_join": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--mem=16G",
+        "--comment=M_CAUSAL128_SAVE_REPAIR:phase_join",
+        "--dependency=afterok:5167703",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_phase_save_repair_v1.sbatch",
+        "phase_join",
+        "8"
+      ],
+      "job_id": "5167704"
+    },
+    "final_summary": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--mem=16G",
+        "--comment=M_CAUSAL128_SAVE_REPAIR:final_summary",
+        "--dependency=afterok:5167704",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_phase_save_repair_v1.sbatch",
+        "final_summary",
+        "4"
+      ],
+      "job_id": "5167705"
+    },
+    "health": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--mem=8G",
+        "--comment=M_CAUSAL128_SAVE_REPAIR:health",
+        "--dependency=afterany:5167702:5167703:5167704:5167705",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_phase_save_repair_v1.sbatch",
+        "health",
+        "2"
+      ],
+      "job_id": "5167706"
+    }
+  },
+  "status": "ALL_REPAIR_STAGES_SUBMITTED"
+}

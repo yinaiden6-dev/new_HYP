@@ -1,0 +1,26 @@
+{
+  "status": "CAUSAL128_CHAIN_EXECUTION_TEST_PASS",
+  "stages": 14,
+  "checks": [
+    "exact_dependencies",
+    "idempotent_submission",
+    "dry_run_no_changes",
+    "rejection_persisted",
+    "uncertain_not_resubmitted",
+    "actual_shell_success_failure_timeout_requeue_limit"
+  ],
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_m_causal128_attribution_chain_v1.py",
+      "sha256": "5d7eb9ed75a6feee9afb4112bb355d22e7af58c223214f628e389aaeb2cba6ec"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+      "sha256": "0b1567626cabfe378ecd7d0d5251ce5975c9f8e0dcdab2e7c05e24ee531bd207"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/test_rc_m_causal128_chain_v1.py",
+      "sha256": "8e5b58515a6ec615ac25022a4d5935fa3435e74b84a660fe9e32b8b9286d87fc"
+    }
+  ]
+}

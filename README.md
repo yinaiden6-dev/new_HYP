@@ -12,6 +12,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 - **[F128 native token competition V2 / 原生 token 竞争完整结果](backup/token_competition_f128_v2_20260927/README.md)**：15 项独立验收，fixed0 主结果与继承阈值次结果；同面板 B_CAL、MULTI/ANCHOR、救回/误伤及开发面板限制。
 <!-- TOKEN_PUBLICATION:rc_token_competition_f128_v2:END -->
 
+- **[2026-09-27 M归因128图：信息性质、恢复与外部／内部传播](backup/m_causal128_attribution_20260927/README.md)**：9类验收通过：128图冻结传播、20项入口补偿、新9组性质复验与同模型传播、旧7组到新9组有界性质补偿；并列正向证据、内部反向结果及仍未分开的原因。
+
 - **[2026-09-27 QR/QRR、M归因与统一采集快照](backup/rebut_and_unified_sampling_20260927/README.md)**：71张60项关系读出结果、481/492逐图比较、外部/内部相位干预和逐patch证据；附冻结基线v2准备，以及128张恢复与剩余465张四个长任务的提交记录。明确区分已完成结果与运行中的采集。
 
 - **[2026-09-27 H593全部112张失败案例图（英文）](backup/h593_failures_20260927/README.md)**：沿用原90图的COST1口径与放大reference版式；92未纠正、17错换、3误伤，包含23张正确reference未进C128的案例。附全部127挑战分数、HOLD、真实热图与独立核算。

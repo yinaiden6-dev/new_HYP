@@ -1,0 +1,79 @@
+{
+  "status": "PROPERTY_NEWGROUP_BRIDGE_AND_COMPENSATION_SECOND_REVIEW_PASS",
+  "reviewer_code": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/audit_rc_m_causal128_property_closure_v1.py",
+    "sha256": "1bfb4b3d1f22c8b651f6b9e73c7cc528b684b64d0132c178b5212ffd3abc4bf2"
+  },
+  "source_validations": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/property_compensation_fixed_pairs_v1/validation.json",
+      "sha256": "53d35840e251f748a63c1541048818563b3001830a58b0b756087e0246ddecd9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/newgroup_property_bridge_v1/validation.json",
+      "sha256": "27cefe8cfc3f6a70abc17b1d4cabffb69710b74ff1d5ff22ab16dd2fe219ace0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/validation.json",
+      "sha256": "5e04838683ed3d0630977323ef395988ab184aaedf1cc7b6b784934eb13824e7"
+    }
+  ],
+  "bound_hash_checks": 478,
+  "metadata_pairs": 16,
+  "metadata_max_error": 6.750155989720952e-14,
+  "train_groups": 7,
+  "test_groups": 9,
+  "component_overlap": 0,
+  "train_features": 112,
+  "test_features": 144,
+  "train_only_shared_scale_exact": true,
+  "training_certificates": {
+    "AMP_NATIVE_GLOBAL": {
+      "independent_error": 2.9408983928669308e-18,
+      "gradient_inf": 6.680582736312557e-16,
+      "hessian_min_eigenvalue": 0.0010028820432912674,
+      "objective_gap_bound": 6.529371731911188e-28
+    },
+    "AMP_NATIVE_LOCAL": {
+      "independent_error": 4.675621868843738e-19,
+      "gradient_inf": 5.4304976314367703e-17,
+      "hessian_min_eigenvalue": 0.0010030812000030537,
+      "objective_gap_bound": 4.6169135811113606e-30
+    },
+    "AMP_PERMUTED_GLOBAL": {
+      "independent_error": 4.323256162785949e-18,
+      "gradient_inf": 9.294763580764559e-16,
+      "hessian_min_eigenvalue": 0.0010006421262199916,
+      "objective_gap_bound": 1.5050151799965606e-27
+    },
+    "AMP_PERMUTED_LOCAL": {
+      "independent_error": 9.0801931945661e-19,
+      "gradient_inf": 2.0817782854553116e-14,
+      "hessian_min_eigenvalue": 0.0010003767915270948,
+      "objective_gap_bound": 7.618485530109249e-25
+    },
+    "RAW_L_ONLY": {
+      "independent_error": 1.6263032587282567e-18,
+      "gradient_inf": 2.268183741955393e-12,
+      "hessian_min_eigenvalue": 0.0019007482872390223,
+      "objective_gap_bound": 4.480162861087019e-21
+    }
+  },
+  "features_max_error": 0.0,
+  "compensation_score_max_error": 3.552713678800501e-15,
+  "compensation_loss_max_error": 2.220446049250313e-16,
+  "bridge_logM_and_M_source_max_error": 8.881784197001252e-16,
+  "bridge_phase_per_group_contrast_max_error": 6.661338147750939e-16,
+  "bridge_phase_12_aggregate_contrast_max_error": 1.6653345369377348e-16,
+  "gap_equals_target_minus_wrong_max_error": 0.0,
+  "zero_HOLD_anchor_verified": true,
+  "no_experiment_mutations": true,
+  "no_formal_evaluator_called": true,
+  "boundaries": [
+    "Fixed target/wrong diagnostic, not complete C128 action.",
+    "Seven TRAIN groups and nine groups absent prior F71; all already opened in historical H593.",
+    "Certificates establish numerical optimum in this fixed regularized scalar family only.",
+    "GLOBAL is coherent phase translation, not native P; four signs/axes are within-group replicates.",
+    "No uniqueness, universal necessity, or equivalence claim."
+  ]
+}

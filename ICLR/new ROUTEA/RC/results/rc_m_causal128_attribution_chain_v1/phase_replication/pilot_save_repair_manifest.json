@@ -1,0 +1,66 @@
+{
+  "caches": {
+    "pilot_encoder_0.pt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/pilot_encoder_0.pt",
+      "sha256": "41e94982e79784412f8cf3e6d5fa15c13881df803674b9991da904899bb63c49"
+    },
+    "pilot_encoder_1.pt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/pilot_encoder_1.pt",
+      "sha256": "27624e279c629c184ac81b18b453ec4e90990be104711f518cfd423a1d1f4ea0"
+    },
+    "pilot_matcher_0.pt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/pilot_matcher_0.pt",
+      "sha256": "cdac6c781061b9bfb31a5ab6f6bbc6d8aa9d554a924d0ef32bbeae7a36308eae"
+    },
+    "pilot_matcher_1.pt": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/pilot_matcher_1.pt",
+      "sha256": "353465fa5abe59a79d613a6940902d1436a4ed25f9b5851c6acd5152b49da7c9"
+    }
+  },
+  "engineering_cause": "dict(protocol=pb, **first) supplies protocol twice",
+  "environment": {
+    "capability": "AVX512",
+    "head_final": "float32",
+    "interop": 1,
+    "matcher_amp": "CPU bfloat16",
+    "mkldnn": true,
+    "pooling": "float32 sigmoid then exact float64 integer-cell mean",
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+    "threads": 4,
+    "torch": "2.9.1+cu128"
+  },
+  "failed_job": "5167604",
+  "modification": "Merge the cached first matcher record without a duplicate protocol keyword; recover its missing validation.",
+  "modifies_original_protocol": false,
+  "modifies_original_sources": false,
+  "new_encoder_forwards": 0,
+  "new_matcher_forwards": 0,
+  "old_gpu_pilot_pair": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/query000/pair000.pt",
+    "sha256": "e61faacdb7eee9b24071459c555e23be98482eb75d2575db2314454b2a2fc3cf"
+  },
+  "original_checkpoint": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/model_cache/torch/hub/checkpoints/romav2.0.1.pt",
+    "sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7"
+  },
+  "original_head_state": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/head_replay_state.pt",
+    "sha256": "a5222b29cc3386d67c771ed2e0896e3d80a5f2bc3a065aec1a90097fe6a5debe"
+  },
+  "original_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/protocol.json",
+    "sha256": "ad58109751b07184dc6fe917095b3d949d35124cc5d2f3239492552115bf025d"
+  },
+  "original_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_newgroups_cpu_v1.py",
+    "sha256": "e0257b59cb8a8cf11dc01bef82b0b493e1a89f0896243b82e35440070e5b4c52"
+  },
+  "qualification": "Preserve original exact CPU repeats, finite tensors, strict checkpoint/head identity, original algebra; GPU differences remain diagnostic only.",
+  "repair_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/repair_rc_m_phase_newgroups_pilot_save_v1.py",
+    "sha256": "b81a7511ec34220d21b6f1b454387815691cc18f66e770107a23df46f21008a9"
+  },
+  "science_or_threshold_changes": false,
+  "status": "PHASE_PILOT_SAVE_REPAIR_PROTOCOL_FROZEN",
+  "version": 1
+}

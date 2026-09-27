@@ -1,0 +1,216 @@
+{
+  "status": "PROPERTY_FIXED_PAIR_FIT_CERTIFIED",
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/property_compensation_fixed_pairs_v1/protocol.json",
+    "sha256": "1dc4feee484411b9e468cca1f906827b62fc4af95e525465946e251b69d36df1"
+  },
+  "training_inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/property_compensation_fixed_pairs_v1/training_inputs.json",
+    "sha256": "b13db5f61e1f613546edaaec0174293e33ee9e1abab0c8a290f5540dffe892cb"
+  },
+  "name": "AMP_NATIVE_GLOBAL",
+  "cell": "AMP_NATIVE_GLOBAL",
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "scales": [
+    3.185543510821878,
+    0.5256149443725979,
+    0.5051842743884016,
+    0.04471334762641849
+  ],
+  "theta": [
+    -6.5854606318333095,
+    1.592198506550396,
+    1.152720200221701,
+    8.12957742251783
+  ],
+  "certificate": {
+    "objective": 0.17499560068317604,
+    "gradient": [
+      -4.830628898191275e-16,
+      -6.596014966858688e-16,
+      -6.701318102861342e-16,
+      -4.33131991644381e-16
+    ],
+    "gradient_inf": 6.701318102861342e-16,
+    "hessian_min_eigenvalue": 0.0010028820432912667,
+    "strong_convex_objective_gap_upper_bound": 6.525519276469221e-28
+  },
+  "iterations": 8,
+  "trace": [
+    {
+      "iteration": 0,
+      "objective": 0.6931471805599451,
+      "gradient_inf": 0.3828696575738539
+    },
+    {
+      "iteration": 1,
+      "objective": 0.29260257634471176,
+      "gradient_inf": 0.10050149978484792
+    },
+    {
+      "iteration": 2,
+      "objective": 0.20342389140548858,
+      "gradient_inf": 0.036917567484006084
+    },
+    {
+      "iteration": 3,
+      "objective": 0.17911952374496215,
+      "gradient_inf": 0.011887712050202181
+    },
+    {
+      "iteration": 4,
+      "objective": 0.1753634725940145,
+      "gradient_inf": 0.002960439455685619
+    },
+    {
+      "iteration": 5,
+      "objective": 0.1750021545001182,
+      "gradient_inf": 0.00036007233053474163
+    },
+    {
+      "iteration": 6,
+      "objective": 0.1749956035539802,
+      "gradient_inf": 7.380221027561678e-06
+    },
+    {
+      "iteration": 7,
+      "objective": 0.17499560068317663,
+      "gradient_inf": 3.305371192681081e-09
+    },
+    {
+      "iteration": 8,
+      "objective": 0.17499560068317604,
+      "gradient_inf": 6.661338147750939e-16
+    }
+  ],
+  "train": {
+    "groups": 7,
+    "replicates_per_group": 4,
+    "mean_group_loss": 0.1183345103099768,
+    "mean_group_margin": 3.9022182878184344,
+    "positive_mean_margin_groups": 7,
+    "negative_mean_margin_groups": 0,
+    "tied_mean_margin_groups": 0,
+    "mean_within_group_positive_fraction": 1.0,
+    "rows": [
+      {
+        "index": 0,
+        "component": "fa72f98eeda7c16b4963aa2c9a26bb7b6da07062d61f1935ff18b1204cf99a43",
+        "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+        "margins": [
+          2.6964597241318455,
+          2.7235742940408048,
+          2.702702253411722,
+          2.7069390614107633
+        ],
+        "mean_margin": 2.707418833248784,
+        "minimum_margin": 2.6964597241318455,
+        "group_mean_loss": 0.0645809448893871,
+        "positive_replicates": 4,
+        "tied_replicates": 0
+      },
+      {
+        "index": 1,
+        "component": "5993f2caf420c9a99c193d33f748eea45f5c55ab4832c947913f7c005ada8f7b",
+        "query_id": "H593-00db0e83284b1620da33639a",
+        "margins": [
+          1.05948386787288,
+          1.0597506807186607,
+          1.0609552782857434,
+          1.0634760331176873
+        ],
+        "mean_margin": 1.0609164649987428,
+        "minimum_margin": 1.05948386787288,
+        "group_mean_loss": 0.297240317560959,
+        "positive_replicates": 4,
+        "tied_replicates": 0
+      },
+      {
+        "index": 2,
+        "component": "d03ec6170d58ac2d6198068ac9aa233411e9b70ad6019840f643fdabcc4a9adf",
+        "query_id": "H593-00f945a36392a04124513f2c",
+        "margins": [
+          0.4673907420443089,
+          0.7797504252478927,
+          0.6509703186069568,
+          0.5560154232528424
+        ],
+        "mean_margin": 0.6135317272880002,
+        "minimum_margin": 0.4673907420443089,
+        "group_mean_loss": 0.43423864499049014,
+        "positive_replicates": 4,
+        "tied_replicates": 0
+      },
+      {
+        "index": 4,
+        "component": "27398dad6e577a6cdc7867303a9c586cdf14f835803381e1ac3586b1bec33c43",
+        "query_id": "H593-01539eca5c5afd1c6d5ccda2",
+        "margins": [
+          4.20769469955258,
+          4.272149088447107,
+          4.1786371809818545,
+          4.413865613390956
+        ],
+        "mean_margin": 4.268086645593125,
+        "minimum_margin": 4.1786371809818545,
+        "group_mean_loss": 0.013966279292172376,
+        "positive_replicates": 4,
+        "tied_replicates": 0
+      },
+      {
+        "index": 5,
+        "component": "a5cc6cd71cb98a23641d9032f2abdbe55a284b95eedc14e13d1ab9d93b7adc76",
+        "query_id": "H593-0188e7f7150a7aaf05c23614",
+        "margins": [
+          7.982444236525247,
+          8.185277405232084,
+          8.021925431914706,
+          8.078927846712826
+        ],
+        "mean_margin": 8.067143730096216,
+        "minimum_margin": 7.982444236525247,
+        "group_mean_loss": 0.00031453069513744537,
+        "positive_replicates": 4,
+        "tied_replicates": 0
+      },
+      {
+        "index": 6,
+        "component": "0afd089c456e855f9466067a75179f94b4fb386831d044fd18ff0bcd22e0d3f4",
+        "query_id": "H593-02060e3d320616b952a39654",
+        "margins": [
+          4.071023172088125,
+          4.107556905748688,
+          4.120306702793834,
+          4.087094472813598
+        ],
+        "mean_margin": 4.096495313361061,
+        "minimum_margin": 4.071023172088125,
+        "group_mean_loss": 0.016496952098237705,
+        "positive_replicates": 4,
+        "tied_replicates": 0
+      },
+      {
+        "index": 8,
+        "component": "e5b4f86a4d49af3ede0ecdd200dfae35f36ef1fb29c77d00e2fc254648085e0e",
+        "query_id": "H593-02543adf69ee9391380f4ee6",
+        "margins": [
+          6.560448257675172,
+          6.421810171787528,
+          6.429096292309695,
+          6.596386478800043
+        ],
+        "mean_margin": 6.501935300143109,
+        "minimum_margin": 6.421810171787528,
+        "group_mean_loss": 0.0015039026434538263,
+        "positive_replicates": 4,
+        "tied_replicates": 0
+      }
+    ]
+  },
+  "test_M_values_read": false
+}

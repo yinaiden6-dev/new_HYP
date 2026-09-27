@@ -1,0 +1,152 @@
+{
+  "status": "PROPERTY_FIXED_PAIR_COMPENSATION_DESIGN_FROZEN",
+  "frozen_utc": "2026-09-27T18:17:32.735583+00:00",
+  "version": 1,
+  "training_groups": 7,
+  "test_groups": 9,
+  "train_indices": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8
+  ],
+  "test_indices": [
+    78,
+    82,
+    93,
+    96,
+    100,
+    101,
+    104,
+    108,
+    118
+  ],
+  "cells": {
+    "AMP_NATIVE_GLOBAL": [
+      "GLOBAL_X_PLUS",
+      "GLOBAL_X_MINUS",
+      "GLOBAL_Y_PLUS",
+      "GLOBAL_Y_MINUS"
+    ],
+    "AMP_NATIVE_LOCAL": [
+      "LOCAL_X_PLUS",
+      "LOCAL_X_MINUS",
+      "LOCAL_Y_PLUS",
+      "LOCAL_Y_MINUS"
+    ],
+    "AMP_PERMUTED_GLOBAL": [
+      "AMP_PERMUTE__GLOBAL_X_PLUS",
+      "AMP_PERMUTE__GLOBAL_X_MINUS",
+      "AMP_PERMUTE__GLOBAL_Y_PLUS",
+      "AMP_PERMUTE__GLOBAL_Y_MINUS"
+    ],
+    "AMP_PERMUTED_LOCAL": [
+      "AMP_PERMUTE__LOCAL_X_PLUS",
+      "AMP_PERMUTE__LOCAL_X_MINUS",
+      "AMP_PERMUTE__LOCAL_Y_PLUS",
+      "AMP_PERMUTE__LOCAL_Y_MINUS"
+    ]
+  },
+  "reference_cell": "AMP_NATIVE_GLOBAL",
+  "global_is_native_P": false,
+  "features": [
+    "(RAW_a-RAW_b)/std(RAW_C128)",
+    "sym(M_a*Lfree_a,M_b*Lfree_b)",
+    "sym(M_a,M_b)",
+    "sym(Lfree_a,Lfree_b)"
+  ],
+  "sym_definition": "(a-b)/(abs(a)+abs(b)+1e-12)",
+  "orientation": "shared antisymmetric pair score; target-minus-wrong only for supervised ranking loss; swapped candidate order negates score; no intercept or HOLD",
+  "scaling": "RMS of each feature on old7 TRAIN AMP_NATIVE_GLOBAL x4 axes/signs only; no centering; one frozen scale vector shared by all cells and RAW_L_ONLY. Zero RMS mapped to 1.",
+  "loss": "group-equal mean softplus(-target_minus_wrong_margin) plus lambda/2 times squared L2 norm",
+  "ridge_lambda": 0.001,
+  "baseline_features": [
+    0,
+    3
+  ],
+  "fits": 5,
+  "model_selection": false,
+  "held_selection": false,
+  "optimizer": {
+    "name": "deterministic FP64 damped Newton with analytic gradient/Hessian",
+    "max_iterations": 100,
+    "gradient_inf_tolerance": 1e-10,
+    "armijo": 0.0001,
+    "backtracking_factor": 0.5,
+    "max_backtracking": 60,
+    "initialization": "zeros"
+  },
+  "certificate": "analytic gradient infinity norm; Hessian min eigenvalue>=lambda; strong-convexity objective gap bound ||gradient||2^2/(2lambda)",
+  "fit_models": [
+    "AMP_NATIVE_GLOBAL",
+    "AMP_NATIVE_LOCAL",
+    "AMP_PERMUTED_GLOBAL",
+    "AMP_PERMUTED_LOCAL",
+    "RAW_L_ONLY"
+  ],
+  "test_protocol": "Seal all fitted parameters and TRAIN certificates before reading new9 phase result M. Freeze GLOBAL model evaluated on all four cells; each separately refitted model evaluated on its cell; RAW/L-only baseline all cells unchanged.",
+  "primary_endpoint": "Per-group held mean logistic ranking loss over four fixed direction/sign replicates; compare frozen damage, refit recovery, remaining gap against GLOBAL reference.",
+  "secondary_endpoints": [
+    "per-group mean and minimum signed pair margins",
+    "positive/negative/tied mean-margin groups",
+    "mean within-group replicate positive fraction",
+    "TRAIN loss and classification diagnostics",
+    "exploratory paired group bootstrap95 with seed20260927 and10000 draws"
+  ],
+  "replicates_are_independent_samples": false,
+  "group_bootstrap_seed": 20260927,
+  "group_bootstrap_draws": 10000,
+  "forward_calls": 0,
+  "new_gpu_forwards": 0,
+  "reads_large_token_tensors": false,
+  "maximum_expected_CPU_runtime_seconds": 120,
+  "runtime_budget_seconds": 300,
+  "scope": "Cache-only diagnostic on 16 previously opened H593 identity groups and fixed target/wrong pairs, not full C128 target-free action or deployable evaluation.",
+  "compensation_boundary": "Tests replacement within one convex scalar evidence readout after a finite computational property intervention; does not retrain the RoMa DPT, prove universal necessity, or test all alternative mechanisms.",
+  "no_claims": [
+    "full-C128 accuracy",
+    "target-free HOLD/SWITCH",
+    "unique cause",
+    "irreducible information loss",
+    "equivalence from nonsignificance",
+    "untouched external confirmation"
+  ],
+  "new_test_phase_M_values_read_at_freeze": false,
+  "sources": {
+    "old_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_factorial_v2/result.json",
+      "sha256": "b312518bdbc93addb6b218297a79fe0b6604f0aab901c0334c84f8a71204976c"
+    },
+    "old_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_factorial_v2/validation.json",
+      "sha256": "10b7a94a9f6604270d46360036152b4cfab6b4f7dc39b8230a492f27fa099ad5"
+    },
+    "phase_protocol": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/protocol.json",
+      "sha256": "ad58109751b07184dc6fe917095b3d949d35124cc5d2f3239492552115bf025d"
+    },
+    "bridge_inputs": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/inputs.json",
+      "sha256": "dbb596955c3face1144c200d45cf132fb535e0713df4e26aa9ed8f59ff1cfa98"
+    },
+    "bridge_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/validation.json",
+      "sha256": "ba3eb4ce06b5c88b51852477be57991fe2f9460b756cdaa1824b1e67a7e0d435"
+    },
+    "path_cache": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/paths/cache.json",
+      "sha256": "caee01b03d903f09e5ece82c2bce1a2a8e3d9b849bb8f03bbcf9f3646107e7ab"
+    },
+    "path_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/paths/cache_validation.json",
+      "sha256": "9f887ad5a216b21ff5fd9282b66af3b8d2b2d3c37225f6a0b8fc4691b37240f7"
+    },
+    "pair_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/property_compensation_fixed_pairs_v1/pair_manifest.json",
+      "sha256": "26fcbecb72f7ae93e6f8d9ce30a4bb86264e550d90964cfb29a84d85e62fab8f"
+    }
+  }
+}

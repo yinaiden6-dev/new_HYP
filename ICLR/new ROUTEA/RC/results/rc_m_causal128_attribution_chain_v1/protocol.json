@@ -1,0 +1,210 @@
+{
+  "schema": "M_CAUSAL128_ATTRIBUTION_CHAIN_V1",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_m_causal128_attribution_chain_v1.py",
+      "sha256": "5d7eb9ed75a6feee9afb4112bb355d22e7af58c223214f628e389aaeb2cba6ec"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+      "sha256": "0b1567626cabfe378ecd7d0d5251ce5975c9f8e0dcdab2e7c05e24ee531bd207"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_path_ablation_v1.py",
+      "sha256": "2d5ed3274cc92bcd3b821e94eb50944858660615ac7e0193f2ef1a22e62260bb"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_newgroups_cpu_v1.py",
+      "sha256": "e0257b59cb8a8cf11dc01bef82b0b493e1a89f0896243b82e35440070e5b4c52"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/test_rc_m_causal128_chain_v1.py",
+      "sha256": "8e5b58515a6ec615ac25022a4d5935fa3435e74b84a660fe9e32b8b9286d87fc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/summarize_rc_m_causal128_attribution_v1.py",
+      "sha256": "25132004b13bff45f0964f6e84b0da790ccd1dda43142c530cd10c2533c8544c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_m_causal128_pair_structure_v1.py",
+      "sha256": "730d10105d84dfd8724dc711bf6c9daf42e80e59c95e8dac61945af71c53023c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/dev_refill_rc_m_causal128_v1.py",
+      "sha256": "94d3cb97b82531c48b27fa076bbfe83c9b48090a0351e9ccdc61650b04691990"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_M_CAUSAL128_ATTRIBUTION_CHAIN_V1_20260927.md",
+      "sha256": "2a279819e4209a6f4c9b3a095d6ec3512ec84d2cdff6caa5e69585b614f685b4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/paths/protocol.json",
+      "sha256": "31c1dda3bcd4f3fa0bb1a69772a70392fc93986693ad0d154e453ba8f468577b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/protocol.json",
+      "sha256": "ad58109751b07184dc6fe917095b3d949d35124cc5d2f3239492552115bf025d"
+    }
+  ],
+  "stages": [
+    {
+      "name": "path_extract",
+      "deps": [],
+      "array": "0-15%16",
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 16
+    },
+    {
+      "name": "path_validate",
+      "deps": [
+        "path_extract"
+      ],
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 4
+    },
+    {
+      "name": "pair_structure",
+      "deps": [
+        "path_validate"
+      ],
+      "cpu": 2,
+      "mem": "8G",
+      "restarts": 4
+    },
+    {
+      "name": "frozen_prepare",
+      "deps": [
+        "path_validate"
+      ],
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 4
+    },
+    {
+      "name": "frozen_bridge",
+      "deps": [
+        "frozen_prepare"
+      ],
+      "array": "0-15%16",
+      "cpu": 4,
+      "mem": "32G",
+      "restarts": 32
+    },
+    {
+      "name": "frozen_join",
+      "deps": [
+        "frozen_bridge"
+      ],
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 8
+    },
+    {
+      "name": "joint_pair_bridge",
+      "deps": [
+        "frozen_prepare"
+      ],
+      "cpu": 4,
+      "mem": "32G",
+      "restarts": 16
+    },
+    {
+      "name": "compensation_fit",
+      "deps": [
+        "path_validate"
+      ],
+      "array": "0-4%5",
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 16
+    },
+    {
+      "name": "compensation_join",
+      "deps": [
+        "compensation_fit"
+      ],
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 8
+    },
+    {
+      "name": "phase_pilot",
+      "deps": [],
+      "cpu": 4,
+      "mem": "32G",
+      "restarts": 8
+    },
+    {
+      "name": "phase_replication",
+      "deps": [
+        "phase_pilot"
+      ],
+      "array": "0-8%9",
+      "cpu": 4,
+      "mem": "32G",
+      "restarts": 8
+    },
+    {
+      "name": "phase_join",
+      "deps": [
+        "phase_replication"
+      ],
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 8
+    },
+    {
+      "name": "final_summary",
+      "deps": [
+        "pair_structure",
+        "frozen_join",
+        "joint_pair_bridge",
+        "compensation_join",
+        "phase_join"
+      ],
+      "cpu": 4,
+      "mem": "16G",
+      "restarts": 4
+    },
+    {
+      "name": "health",
+      "deps": [
+        "path_extract",
+        "path_validate",
+        "pair_structure",
+        "frozen_prepare",
+        "frozen_bridge",
+        "frozen_join",
+        "joint_pair_bridge",
+        "compensation_fit",
+        "compensation_join",
+        "phase_pilot",
+        "phase_replication",
+        "phase_join",
+        "final_summary"
+      ],
+      "dependency": "afterany",
+      "cpu": 2,
+      "mem": "8G",
+      "restarts": 2
+    }
+  ],
+  "queries": 128,
+  "roots": {
+    "paths": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/paths",
+    "bridge": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge",
+    "phase": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication"
+  },
+  "models": "Existing frozen external and POST; original PRODUCT5 only for matched compensation",
+  "relation_reader_training": false,
+  "new_gpu_jobs": 0,
+  "selection_on_outcomes": false,
+  "scope": "Attribution, not retrieval-model optimization",
+  "properties_and_path_deletions_not_equated": true
+}

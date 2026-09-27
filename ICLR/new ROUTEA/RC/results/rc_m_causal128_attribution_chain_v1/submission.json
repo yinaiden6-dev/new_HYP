@@ -1,0 +1,303 @@
+{
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/protocol.json",
+    "sha256": "56a94cbe448946a516713c979f1a3068564cfa2763418f83a1d700c65315ac26"
+  },
+  "stages": {
+    "path_extract": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:path_extract",
+        "--array=0-15%16",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "path_extract",
+        "16"
+      ],
+      "job_id": "5167595",
+      "dependencies": {}
+    },
+    "path_validate": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:path_validate",
+        "--dependency=afterok:5167595",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "path_validate",
+        "4"
+      ],
+      "job_id": "5167596",
+      "dependencies": {
+        "path_extract": "5167595"
+      }
+    },
+    "pair_structure": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=2",
+        "--mem=8G",
+        "--comment=M_CAUSAL128:pair_structure",
+        "--dependency=afterok:5167596",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "pair_structure",
+        "4"
+      ],
+      "job_id": "5167597",
+      "dependencies": {
+        "path_validate": "5167596"
+      }
+    },
+    "frozen_prepare": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:frozen_prepare",
+        "--dependency=afterok:5167596",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "frozen_prepare",
+        "4"
+      ],
+      "job_id": "5167598",
+      "dependencies": {
+        "path_validate": "5167596"
+      }
+    },
+    "frozen_bridge": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--comment=M_CAUSAL128:frozen_bridge",
+        "--dependency=afterok:5167598",
+        "--array=0-15%16",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "frozen_bridge",
+        "32"
+      ],
+      "job_id": "5167599",
+      "dependencies": {
+        "frozen_prepare": "5167598"
+      }
+    },
+    "frozen_join": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:frozen_join",
+        "--dependency=afterok:5167599",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "frozen_join",
+        "8"
+      ],
+      "job_id": "5167600",
+      "dependencies": {
+        "frozen_bridge": "5167599"
+      }
+    },
+    "joint_pair_bridge": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--comment=M_CAUSAL128:joint_pair_bridge",
+        "--dependency=afterok:5167598",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "joint_pair_bridge",
+        "16"
+      ],
+      "job_id": "5167601",
+      "dependencies": {
+        "frozen_prepare": "5167598"
+      }
+    },
+    "compensation_fit": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:compensation_fit",
+        "--dependency=afterok:5167596",
+        "--array=0-4%5",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "compensation_fit",
+        "16"
+      ],
+      "job_id": "5167602",
+      "dependencies": {
+        "path_validate": "5167596"
+      }
+    },
+    "compensation_join": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:compensation_join",
+        "--dependency=afterok:5167602",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "compensation_join",
+        "8"
+      ],
+      "job_id": "5167603",
+      "dependencies": {
+        "compensation_fit": "5167602"
+      }
+    },
+    "phase_pilot": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--comment=M_CAUSAL128:phase_pilot",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "phase_pilot",
+        "8"
+      ],
+      "job_id": "5167604",
+      "dependencies": {}
+    },
+    "phase_replication": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--comment=M_CAUSAL128:phase_replication",
+        "--dependency=afterok:5167604",
+        "--array=0-8%9",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "phase_replication",
+        "8"
+      ],
+      "job_id": "5167605",
+      "dependencies": {
+        "phase_pilot": "5167604"
+      }
+    },
+    "phase_join": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:phase_join",
+        "--dependency=afterok:5167605",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "phase_join",
+        "8"
+      ],
+      "job_id": "5167606",
+      "dependencies": {
+        "phase_replication": "5167605"
+      }
+    },
+    "final_summary": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=4",
+        "--mem=16G",
+        "--comment=M_CAUSAL128:final_summary",
+        "--dependency=afterok:5167597:5167600:5167601:5167603:5167606",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "final_summary",
+        "4"
+      ],
+      "job_id": "5167607",
+      "dependencies": {
+        "pair_structure": "5167597",
+        "frozen_join": "5167600",
+        "joint_pair_bridge": "5167601",
+        "compensation_join": "5167603",
+        "phase_join": "5167606"
+      }
+    },
+    "health": {
+      "status": "SUBMITTED",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--kill-on-invalid-dep=yes",
+        "--cpus-per-task=2",
+        "--mem=8G",
+        "--comment=M_CAUSAL128:health",
+        "--dependency=afterany:5167595:5167596:5167597:5167598:5167599:5167600:5167601:5167602:5167603:5167604:5167605:5167606:5167607",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_attribution_v1.sbatch",
+        "health",
+        "2"
+      ],
+      "job_id": "5167608",
+      "dependencies": {
+        "path_extract": "5167595",
+        "path_validate": "5167596",
+        "pair_structure": "5167597",
+        "frozen_prepare": "5167598",
+        "frozen_bridge": "5167599",
+        "frozen_join": "5167600",
+        "joint_pair_bridge": "5167601",
+        "compensation_fit": "5167602",
+        "compensation_join": "5167603",
+        "phase_pilot": "5167604",
+        "phase_replication": "5167605",
+        "phase_join": "5167606",
+        "final_summary": "5167607"
+      }
+    }
+  },
+  "status": "ALL_STAGES_SUBMITTED"
+}

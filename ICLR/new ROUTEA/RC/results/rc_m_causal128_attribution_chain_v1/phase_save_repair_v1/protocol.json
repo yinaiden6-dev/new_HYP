@@ -1,0 +1,117 @@
+{
+  "schema": "CAUSAL128_PILOT_SAVE_REPAIR_CHAIN_V1",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_m_causal128_phase_save_repair_v1.py",
+      "sha256": "ca1de05fdf2c3c35a3bb5277a6e0523f356ec4b3bba1172e8b0bced4e51220f9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_causal128_phase_save_repair_v1.sbatch",
+      "sha256": "a5c600ffeaa9071bd090c2a991b78233a73f24c84da8ecbbd53ce6ef6ab53d1c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_m_causal128_attribution_chain_v1.py",
+      "sha256": "5d7eb9ed75a6feee9afb4112bb355d22e7af58c223214f628e389aaeb2cba6ec"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/repair_rc_m_phase_newgroups_pilot_save_v1.py",
+      "sha256": "b81a7511ec34220d21b6f1b454387815691cc18f66e770107a23df46f21008a9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/protocol.json",
+      "sha256": "56a94cbe448946a516713c979f1a3068564cfa2763418f83a1d700c65315ac26"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/submission.json",
+      "sha256": "b0da1dd1d23d5a098f6d1d72e36e8d6656743cfc9054578689871d67a09a1593"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/protocol.json",
+      "sha256": "ad58109751b07184dc6fe917095b3d949d35124cc5d2f3239492552115bf025d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/pilot_save_repair_manifest.json",
+      "sha256": "e97138e8300b2e42dfafc6e39b5807b8ef3f9b8daec8ed71c97d0cc16827cbf8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/paths/cache_validation.json",
+      "sha256": "9f887ad5a216b21ff5fd9282b66af3b8d2b2d3c37225f6a0b8fc4691b37240f7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/paths/validation.json",
+      "sha256": "d77940477b96ae6c95aed6e1706cb4a495775f0a99fe9c65203d7c465a7ba908"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/validation.json",
+      "sha256": "ba3eb4ce06b5c88b51852477be57991fe2f9460b756cdaa1824b1e67a7e0d435"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/joint_pairs/validation.json",
+      "sha256": "5d54f844c7ba32c5a7c3e58fc2eda72563bbc674b6bb8faf39d181ff261e11d2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/pair_structure/validation.json",
+      "sha256": "af5438c6643dde0ec27984e554980d526f41ad8e3cdb92dd8709ba918d1e4379"
+    }
+  ],
+  "stages": [
+    {
+      "name": "pilot_repair",
+      "deps": [],
+      "mem": "32G",
+      "restarts": 4
+    },
+    {
+      "name": "phase_replication",
+      "deps": [
+        "pilot_repair"
+      ],
+      "array": "0-8%9",
+      "mem": "32G",
+      "restarts": 8
+    },
+    {
+      "name": "phase_join",
+      "deps": [
+        "phase_replication"
+      ],
+      "mem": "16G",
+      "restarts": 8
+    },
+    {
+      "name": "final_summary",
+      "deps": [
+        "phase_join"
+      ],
+      "mem": "16G",
+      "restarts": 4
+    },
+    {
+      "name": "health",
+      "deps": [
+        "pilot_repair",
+        "phase_replication",
+        "phase_join",
+        "final_summary"
+      ],
+      "dependency": "afterany",
+      "mem": "8G",
+      "restarts": 2
+    }
+  ],
+  "original_failed_job": "5167604",
+  "original_cancelled_jobs": [
+    "5167605",
+    "5167606",
+    "5167607"
+  ],
+  "completed_science_reused": true,
+  "scientific_protocol_changed": false,
+  "compute_device": "CPU",
+  "scheduling": {
+    "partition": "accelerated",
+    "gpu_per_task": 1,
+    "cpus": 4,
+    "time_limit": "00:10:00"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PHASE_NEWGROUP_STATIC_CHECKS_PASS",
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_newgroups_cpu_v1.py",
+    "sha256": "e0257b59cb8a8cf11dc01bef82b0b493e1a89f0896243b82e35440070e5b4c52"
+  },
+  "checks": [
+    "syntax_compile",
+    "cli_root_present",
+    "factorial_contrast_independent_numbers",
+    "common_logM_translation_invariance",
+    "atomic_immutable_idempotence_and_conflict",
+    "symlink_source_path_and_sha",
+    "source_tamper_rejected"
+  ],
+  "cpu_encoder_forward_run": false,
+  "cpu_matcher_forward_run": false,
+  "scientific_worker_run": false,
+  "runtime_qualification": "Slurm pilot required before workers"
+}
