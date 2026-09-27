@@ -1,0 +1,61 @@
+{
+  "authorization": "User: 该链所有任务都是cpuonly排队，dev补位",
+  "scope": {
+    "5167552": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "5167553": null,
+    "5167554": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "5167555": null
+  },
+  "ordinary_partition": "cpuonly",
+  "ready_backfill_partitions": "cpuonly,dev_cpuonly",
+  "max_dev_submitted_user": 4,
+  "max_dev_running_user": 1,
+  "poll_seconds": 30,
+  "max_controller_days": 7,
+  "mutations": "Partition only; pending exact owned jobs; remove dev from blocked dependencies; fill spare slots with ready jobs",
+  "resources_unchanged": {
+    "cpus": 8,
+    "memory_gb": 32,
+    "minutes_per_slice": 10,
+    "gpus": 0
+  },
+  "scientific_protocol_unchanged": true,
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/place_token128_chain_dev_20260927.py",
+    "sha256": "8086d64d683206fe88eb8aa4d59b42ef542165927a41152d86c70cbdf4e5b7c2"
+  },
+  "engineering": "EXACT_CHAIN_PENDING_ONLY_DEV_CAP_PASS"
+}

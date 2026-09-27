@@ -1,0 +1,110 @@
+{
+  "status": "COMPLETE_CHAIN_SUBMITTED_WAITING_ENGINEERING_PILOT",
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/protocol.json",
+    "sha256": "f7b9349ca2e268de497a5a3693beefd3ab3c7e57a51478e384da952761987143"
+  },
+  "script": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/token_competition_v2.sbatch",
+    "sha256": "0a4f40eb306b5e640aa9d32b16f366045427f4bf5adbf38f2d863ae6d170c05a"
+  },
+  "stages": {
+    "pilot": {
+      "job_id": "5167551",
+      "predecessor": null,
+      "array": null,
+      "partition": "cpuonly,dev_cpuonly",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--partition=cpuonly,dev_cpuonly",
+        "--job-name=token128_pilot",
+        "--comment=TOKEN_COMPETITION_F128_V2:pilot",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/token_competition_v2.sbatch",
+        "pilot"
+      ],
+      "submitted_utc": "2026-09-27T16:07:15.600953+00:00"
+    },
+    "evidence": {
+      "job_id": "5167552",
+      "predecessor": "5167551",
+      "array": "0-15%16",
+      "partition": "cpuonly",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--partition=cpuonly",
+        "--job-name=token128_evidence",
+        "--comment=TOKEN_COMPETITION_F128_V2:evidence",
+        "--dependency=afterok:5167551",
+        "--array=0-15%16",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/token_competition_v2.sbatch",
+        "evidence"
+      ],
+      "submitted_utc": "2026-09-27T16:07:15.632925+00:00"
+    },
+    "verify": {
+      "job_id": "5167553",
+      "predecessor": "5167552",
+      "array": null,
+      "partition": "cpuonly,dev_cpuonly",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--partition=cpuonly,dev_cpuonly",
+        "--job-name=token128_verify",
+        "--comment=TOKEN_COMPETITION_F128_V2:verify",
+        "--dependency=afterok:5167552",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/token_competition_v2.sbatch",
+        "verify"
+      ],
+      "submitted_utc": "2026-09-27T16:07:15.676398+00:00"
+    },
+    "train": {
+      "job_id": "5167554",
+      "predecessor": "5167553",
+      "array": "0-14%15",
+      "partition": "cpuonly",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--partition=cpuonly",
+        "--job-name=token128_train",
+        "--comment=TOKEN_COMPETITION_F128_V2:train",
+        "--dependency=afterok:5167553",
+        "--array=0-14%15",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/token_competition_v2.sbatch",
+        "train"
+      ],
+      "submitted_utc": "2026-09-27T16:07:15.721387+00:00"
+    },
+    "join": {
+      "job_id": "5167555",
+      "predecessor": "5167554",
+      "array": null,
+      "partition": "cpuonly,dev_cpuonly",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--kill-on-invalid-dep=yes",
+        "--partition=cpuonly,dev_cpuonly",
+        "--job-name=token128_join",
+        "--comment=TOKEN_COMPETITION_F128_V2:join",
+        "--dependency=afterok:5167554",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/token_competition_v2.sbatch",
+        "join"
+      ],
+      "submitted_utc": "2026-09-27T16:07:15.765083+00:00"
+    }
+  },
+  "population": 128,
+  "candidate_count": 128,
+  "baseline_fits_reused": 5,
+  "new_reader_fits": 15,
+  "new_backbone_forwards": 0,
+  "gpus": 0
+}

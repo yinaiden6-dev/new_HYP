@@ -1,0 +1,81 @@
+{
+  "status": "FROZEN_BASE_REAL_QUERY_ENGINEERING_PILOT_PASS",
+  "scientific_result": false,
+  "binding": {
+    "protocol": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/protocol.json",
+      "sha256": "f7b9349ca2e268de497a5a3693beefd3ab3c7e57a51478e384da952761987143"
+    },
+    "runner_sha256": "6a96f2ce171a3d7f64d90d9ecc1e2bb4e2d906407efedbc5da4123307866936b",
+    "v1_runner_sha256": "d128536744f2226770466364a4d1f055e52a3fa6f8d4ef6f19cafaac712e62cf",
+    "module_sha256": "50c823bdf9456ae68118302103ac2e7862180f56b5753ef4227260740b890953",
+    "data_adapter_sha256": "10286fd9514ef4f18611847d84070720440eaf723df1f5e1bf91a3b203751fb3",
+    "source_runner_sha256": "bc8111901046a1c4461ab873ff526e96e6b6684eab67bf4da114b762958b68f7",
+    "evidence_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/pilot_manifest.json",
+      "sha256": "dce0eff362c34f44b287f987bea43af565463e03c7392b5450423164b61ab5cc"
+    },
+    "baseline_bindings": {
+      "source_result": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_f128_v1/baseline/fold0/seed0/B_CAL/result.json",
+        "sha256": "bd060a80f45e0bc26de641fdca8669bf120a239e19917bac6565fb835f810356"
+      },
+      "source_model": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_f128_v1/baseline/fold0/seed0/B_CAL/model.pt",
+        "sha256": "edeb3628d2b0ac9c53d8e8e52d3a993c12a0029a366453d26181f207a9f042c4"
+      },
+      "source_checkpoint": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_f128_v1/baseline/fold0/seed0/B_CAL/checkpoint.pt",
+        "sha256": "201878cbbde7fa352b5a2e4e1b951eaa2b1dfad3c9ac83255a770594e8401a8a"
+      }
+    },
+    "baseline_inner_predictions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_f128_v1/baseline/fold0/seed0/B_CAL/inner_validation.json",
+      "sha256": "09d345d516b7cfefdbf9166cf1cc715c4768816ed3ccdccbdfc1aa666a2a5ecb"
+    },
+    "fold": 0,
+    "seed": 0,
+    "arm": "TOKEN_QR"
+  },
+  "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+  "updates": [
+    {
+      "step": 1,
+      "loss": 0.03290349166482357,
+      "seconds": 0.20386127079837024
+    },
+    {
+      "step": 2,
+      "loss": 0.032903490065604966,
+      "seconds": 0.1850169498939067
+    },
+    {
+      "step": 3,
+      "loss": 0.03290348845762103,
+      "seconds": 0.18508233805187047
+    }
+  ],
+  "gradients": [
+    {
+      "reader_norm": 1.4206555141920732e-06,
+      "output_norm": 1.4206555141920732e-06,
+      "stem_norm": 0.0
+    },
+    {
+      "reader_norm": 1.4207610806588911e-06,
+      "output_norm": 1.4206551751024236e-06,
+      "stem_norm": 1.3223811654509417e-08
+    },
+    {
+      "reader_norm": 1.4249955593758226e-06,
+      "output_norm": 1.4245720699902856e-06,
+      "stem_norm": 2.6473363694094562e-08
+    }
+  ],
+  "initial_scores_bit_exact_baseline": true,
+  "head_exact_unchanged": true,
+  "frozen_head_parameters": 18,
+  "trainable_reader_parameters": 11744,
+  "input_F_standardized": false,
+  "threads": 8
+}

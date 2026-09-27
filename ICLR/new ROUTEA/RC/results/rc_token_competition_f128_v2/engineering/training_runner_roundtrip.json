@@ -1,0 +1,98 @@
+{
+  "status": "TOKEN_TRAINING_JOIN_ENGINEERING_PASS",
+  "scientific_result": false,
+  "new_fits_submitted": false,
+  "sources": {
+    "token_competition_data_v2.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/token_competition_data_v2.py",
+      "sha256": "10286fd9514ef4f18611847d84070720440eaf723df1f5e1bf91a3b203751fb3"
+    },
+    "run_token_competition_v2.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_token_competition_v2.py",
+      "sha256": "6a96f2ce171a3d7f64d90d9ecc1e2bb4e2d906407efedbc5da4123307866936b"
+    },
+    "join_token_competition_v2.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/join_token_competition_v2.py",
+      "sha256": "4a996793f5d1e2f4eefdf156e92c6b29947636e6578fbe868f975867c1d76dc9"
+    }
+  },
+  "fixture_scope": "Synthetic native tokens N=2; original frozen F128 fold0 seed0 B_CAL and original TRAIN roles. No held labels opened.",
+  "validation_resume": {
+    "forced_exit_code": 75,
+    "stage": "validate_inner",
+    "epoch": 1,
+    "training_updates_preserved": 71,
+    "prediction_cursor": 1,
+    "resumed_terminal_stage": "done",
+    "final_updates": 71,
+    "selected_epoch": 0,
+    "max_independent_replay_error": 0.0
+  },
+  "independent_validation_receipt": {
+    "fold": 0,
+    "seed": 0,
+    "arm": "TOKEN_QRR_MULTI",
+    "result": {
+      "path": "/tmp/token_v2_resume_validation_check/fits/fold0/seed0/TOKEN_QRR_MULTI/result.json",
+      "sha256": "457e97c3eba0d9919ad0d623443d5b4d142a70b7b67aa434ecae492622c1c3ff"
+    },
+    "model": {
+      "path": "/tmp/token_v2_resume_validation_check/fits/fold0/seed0/TOKEN_QRR_MULTI/model.pt",
+      "sha256": "44a7ea56046d08c9fb640d53955e35d72d3090e00457154ef8e3b2ef5d9ab7c4"
+    },
+    "checkpoint": {
+      "path": "/tmp/token_v2_resume_validation_check/fits/fold0/seed0/TOKEN_QRR_MULTI/checkpoint.pt",
+      "sha256": "5473a171713307ab6469e2b4ac5bca56d2db9701e43c175c4855df9442d3a721"
+    },
+    "inner_validation": {
+      "path": "/tmp/token_v2_resume_validation_check/fits/fold0/seed0/TOKEN_QRR_MULTI/inner_validation.json",
+      "sha256": "7c43318dd90df6c034ec78aca37d948b6bb4a360dbc13fbfc6f3bc0ed3558d6f"
+    },
+    "main_inner_model": {
+      "path": "/tmp/token_v2_resume_validation_check/fits/fold0/seed0/TOKEN_QRR_MULTI/main_inner_model.pt",
+      "sha256": "d7185e0299dee662d0703e0cc9ec895d0672cafdd6e144a88bbbe321e85e750a"
+    },
+    "epoch_records": [
+      {
+        "path": "/tmp/token_v2_resume_validation_check/fits/fold0/seed0/TOKEN_QRR_MULTI/inner/epoch000.json",
+        "sha256": "50551c57559a0a5f3f08fd585c9be118bf1da293fc7f94542b913468ebdc9561"
+      },
+      {
+        "path": "/tmp/token_v2_resume_validation_check/fits/fold0/seed0/TOKEN_QRR_MULTI/inner/epoch001.json",
+        "sha256": "9766eecf93aa335cdea3f19e0fb22962a928378bca0260ebefa026a3c7a61517"
+      }
+    ],
+    "baseline_bindings": {
+      "source_result": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_f128_v1/baseline/fold0/seed0/B_CAL/result.json",
+        "sha256": "bd060a80f45e0bc26de641fdca8669bf120a239e19917bac6565fb835f810356"
+      },
+      "source_model": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_f128_v1/baseline/fold0/seed0/B_CAL/model.pt",
+        "sha256": "edeb3628d2b0ac9c53d8e8e52d3a993c12a0029a366453d26181f207a9f042c4"
+      },
+      "source_checkpoint": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_f128_v1/baseline/fold0/seed0/B_CAL/checkpoint.pt",
+        "sha256": "201878cbbde7fa352b5a2e4e1b951eaa2b1dfad3c9ac83255a770594e8401a8a"
+      }
+    },
+    "selected_epoch": 0,
+    "best_ce_epoch": 0,
+    "epoch0_fallback": true,
+    "inherited_tau": -1.9789563893401565,
+    "max_replay_error": 0.0
+  },
+  "additional_checks": {
+    "all3arm_synthetic_gradients_and_frozen_head_and_trace": "PASS",
+    "bounded_LRU_two_query_eviction_and_missing_key": "PASS",
+    "python_symtable_undefined_globals": 0,
+    "both_CLI_imports": "PASS"
+  },
+  "test_files": {
+    "script": "/tmp/token_v2_roundtrip.py",
+    "interruption_log": "/tmp/token_v2_resume_validation_check/interrupted.log",
+    "resume_log": "/tmp/token_v2_resume_validation_check/resumed.log",
+    "independent_verification": "/tmp/token_v2_resume_validation_check/verified.json"
+  },
+  "boundary": "Real native-token TRAIN pilot and formal fits are not claimed by this engineering check."
+}

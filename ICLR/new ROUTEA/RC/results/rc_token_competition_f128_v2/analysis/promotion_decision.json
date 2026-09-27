@@ -1,0 +1,109 @@
+{
+  "status": "TOKEN_COMPETITION_F128_SEED_CONFIRMATION_GATE_NO_GO",
+  "utc": "2026-09-27T18:34:29.411711+00:00",
+  "origin_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/protocol.json",
+    "sha256": "f7b9349ca2e268de497a5a3693beefd3ab3c7e57a51478e384da952761987143"
+  },
+  "origin_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/validation.json",
+    "sha256": "d0dcfe3ca5a8e6858d9bd510c97b51d2b53090fa7dc70160a1c6491e2ba7ada8"
+  },
+  "analysis_gate": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/analysis/analysis_summary.json",
+    "sha256": "46177fb0fb98a557786d245362cb36d490fee1220e7e5fa170c1e0bae16743f6"
+  },
+  "gate_specification": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/promotion_policy.json",
+    "sha256": "c95c069b54cc45317f40a4826b3e42082dd5ec3bc3a947fe4ec4506daf37ac8b"
+  },
+  "qualifying_arms": [],
+  "decisions": [
+    {
+      "arm": "TOKEN_QR",
+      "passed": false,
+      "comparison": {
+        "model": "TOKEN_QR",
+        "seed": "0",
+        "operating_point": "zero",
+        "baseline": "same_F128_B_CAL_seed0",
+        "queries": "128",
+        "rescues": "9",
+        "breaks": "4",
+        "net": "5",
+        "baseline_correct": "103",
+        "baseline_correct_loss_rate": "0.038834951456310676",
+        "changed_decisions": "20",
+        "identity_cluster_gain_ci_low": "-0.008620689655172414",
+        "identity_cluster_gain_ci_high": "0.09243697478991597"
+      }
+    },
+    {
+      "arm": "TOKEN_QRR_ANCHOR",
+      "passed": false,
+      "comparison": {
+        "model": "TOKEN_QRR_ANCHOR",
+        "seed": "0",
+        "operating_point": "zero",
+        "baseline": "same_F128_B_CAL_seed0",
+        "queries": "128",
+        "rescues": "9",
+        "breaks": "4",
+        "net": "5",
+        "baseline_correct": "103",
+        "baseline_correct_loss_rate": "0.038834951456310676",
+        "changed_decisions": "20",
+        "identity_cluster_gain_ci_low": "-0.015267175572519083",
+        "identity_cluster_gain_ci_high": "0.09565448658649396"
+      }
+    },
+    {
+      "arm": "TOKEN_QRR_MULTI",
+      "passed": false,
+      "comparison": {
+        "model": "TOKEN_QRR_MULTI",
+        "seed": "0",
+        "operating_point": "zero",
+        "baseline": "same_F128_B_CAL_seed0",
+        "queries": "128",
+        "rescues": "7",
+        "breaks": "4",
+        "net": "3",
+        "baseline_correct": "103",
+        "baseline_correct_loss_rate": "0.038834951456310676",
+        "changed_decisions": "17",
+        "identity_cluster_gain_ci_low": "-0.022905167351732234",
+        "identity_cluster_gain_ci_high": "0.06956521739130435"
+      }
+    }
+  ],
+  "next_round": {
+    "root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_confirm_v1",
+    "purpose": "Same-panel seed replication, not external confirmation",
+    "seeds": [
+      1,
+      2
+    ],
+    "arms": [
+      "TOKEN_QR",
+      "TOKEN_QRR_ANCHOR",
+      "TOKEN_QRR_MULTI"
+    ],
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "fits": 30,
+    "backbone_forwards": 0,
+    "max_automatic_rounds": 1
+  },
+  "publish_current_results": true,
+  "interpretation": "Development replication trigger only; no external confirmation or unique-cause claim.",
+  "decision_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/decide_token_competition_promotion_v1.py",
+    "sha256": "8440e9c8c198e0a307058d14fefb0a3b7fc97c5f21f70533545b2bff3bb97e52"
+  }
+}

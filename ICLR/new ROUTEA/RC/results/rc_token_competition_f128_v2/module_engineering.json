@@ -1,0 +1,95 @@
+{
+  "checks": {
+    "QR_independent_candidate_readout": true,
+    "TOKEN_QRR_ANCHOR_activation_checkpoint_exact_gradients": true,
+    "TOKEN_QRR_ANCHOR_actual_gradients_and_learning": true,
+    "TOKEN_QRR_ANCHOR_all_C128_candidates_scored_and_selectable_without_support_mask": true,
+    "TOKEN_QRR_ANCHOR_candidate_permutation_equivariance_with_ties": true,
+    "TOKEN_QRR_ANCHOR_chunk_size_invariance": true,
+    "TOKEN_QRR_ANCHOR_exact_antisymmetry_and_anchor_zero": true,
+    "TOKEN_QRR_ANCHOR_joint_query_token_permutation_invariance": true,
+    "TOKEN_QRR_ANCHOR_padding_and_unused_reference_do_not_participate": true,
+    "TOKEN_QRR_ANCHOR_sensitive_to_cross_candidate_token_alignment": true,
+    "TOKEN_QRR_ANCHOR_state_and_optimizer_exact_resume": true,
+    "TOKEN_QRR_MULTI_activation_checkpoint_exact_gradients": true,
+    "TOKEN_QRR_MULTI_actual_gradients_and_learning": true,
+    "TOKEN_QRR_MULTI_all_C128_candidates_scored_and_selectable_without_support_mask": true,
+    "TOKEN_QRR_MULTI_candidate_permutation_equivariance_with_ties": true,
+    "TOKEN_QRR_MULTI_chunk_size_invariance": true,
+    "TOKEN_QRR_MULTI_exact_antisymmetry_and_anchor_zero": true,
+    "TOKEN_QRR_MULTI_joint_query_token_permutation_invariance": true,
+    "TOKEN_QRR_MULTI_padding_and_unused_reference_do_not_participate": true,
+    "TOKEN_QRR_MULTI_sensitive_to_cross_candidate_token_alignment": true,
+    "TOKEN_QRR_MULTI_state_and_optimizer_exact_resume": true,
+    "TOKEN_QR_activation_checkpoint_exact_gradients": true,
+    "TOKEN_QR_actual_gradients_and_learning": true,
+    "TOKEN_QR_all_C128_candidates_scored_and_selectable_without_support_mask": true,
+    "TOKEN_QR_candidate_permutation_equivariance_with_ties": true,
+    "TOKEN_QR_chunk_size_invariance": true,
+    "TOKEN_QR_exact_antisymmetry_and_anchor_zero": true,
+    "TOKEN_QR_joint_query_token_permutation_invariance": true,
+    "TOKEN_QR_padding_and_unused_reference_do_not_participate": true,
+    "TOKEN_QR_state_and_optimizer_exact_resume": true,
+    "baseline_ties_use_ascending_physical_id": true,
+    "epoch_zero_no_grad_fast_path_matches_full_trace": true,
+    "matched_capacity_and_identical_anchor_multi_initialization": true,
+    "multi_excludes_self_and_anchor_from_extra_rival_and_deduplicates": true,
+    "rivals_use_current_forward_frozen_head_x0": true,
+    "shared_identity_hit_miss_loss_and_strict_fixed_anchor_action": true,
+    "two_candidate_fallback": true,
+    "zero_residual_exact_frozen_base_and_reader_only_optimizer": true
+  },
+  "dtype": "torch.float64",
+  "elapsed_seconds": 6.327807949855924,
+  "evidence_level": "synthetic CPU engineering checks only; no scientific result",
+  "parameter_report": {
+    "all_under_250k": true,
+    "anchor_multi_identical_parameter_shapes": true,
+    "capacity_note": "All counted reader parameters belong to active forward paths; ANCHOR and MULTI differ only in rival selection. Frozen head has 18 parameters.",
+    "frozen_head_parameters": {
+      "TOKEN_QR": 18,
+      "TOKEN_QRR_ANCHOR": 18,
+      "TOKEN_QRR_MULTI": 18
+    },
+    "reader_arms_within_10_percent_of_mean": true,
+    "relative_to_reader_arm_mean": {
+      "TOKEN_QR": -0.0009074410163338875,
+      "TOKEN_QRR_ANCHOR": 0.00045372050816694376,
+      "TOKEN_QRR_MULTI": 0.00045372050816694376
+    },
+    "trainable_parameters": {
+      "TOKEN_QR": 11744,
+      "TOKEN_QRR_ANCHOR": 11760,
+      "TOKEN_QRR_MULTI": 11760
+    }
+  },
+  "source_sha256": {
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/check_token_competition_modules_v2.py": "dddaa816f669a828702510c547f43380592d9f22a1aeaf021d33cab86860bd60",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/token_competition_v2.py": "50c823bdf9456ae68118302103ac2e7862180f56b5753ef4227260740b890953"
+  },
+  "status": "TOKEN_COMPETITION_V2_ENGINEERING_PASS",
+  "synthetic_fit": {
+    "TOKEN_QR": {
+      "all_reader_parameter_tensors_active": true,
+      "final_loss": 0.056877231049579,
+      "first_output_gradient_norm": 0.0002914112836968807,
+      "initial_loss": 1.623832539553329,
+      "max_stem_gradient_norm_after_first_update": 0.22050778878905233
+    },
+    "TOKEN_QRR_ANCHOR": {
+      "all_reader_parameter_tensors_active": true,
+      "final_loss": 0.07648475830969262,
+      "first_output_gradient_norm": 0.00012357090067119768,
+      "initial_loss": 1.623832539553329,
+      "max_stem_gradient_norm_after_first_update": 0.23533395627579626
+    },
+    "TOKEN_QRR_MULTI": {
+      "all_reader_parameter_tensors_active": true,
+      "final_loss": 0.0457632743782336,
+      "first_output_gradient_norm": 0.00022973518148935554,
+      "initial_loss": 1.623832539553329,
+      "max_stem_gradient_norm_after_first_update": 0.2500844580913691
+    }
+  },
+  "torch_version": "2.9.1+cu128"
+}

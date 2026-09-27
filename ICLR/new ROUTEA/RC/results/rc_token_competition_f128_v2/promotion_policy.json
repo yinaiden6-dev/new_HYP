@@ -1,0 +1,55 @@
+{
+  "version": "TOKEN_F128_PROMOTION_POLICY_V1",
+  "status": "FROZEN_BEFORE_FINAL_RESULT_ANALYSIS",
+  "created_utc": "2026-09-27T18:03:42.125753+00:00",
+  "user_authorization": "分析完结果后，如果通过门槛，直接进行下一轮实验，任务完成后依旧传到github",
+  "choice_basis": "Recommended conservative default, explicitly stated after optional clarification received no reply",
+  "scientific_validation_required": "TOKEN_COMPETITION_F128_ALL15_INDEPENDENT_JOIN_PASS",
+  "candidate_arms": [
+    "TOKEN_QR",
+    "TOKEN_QRR_ANCHOR",
+    "TOKEN_QRR_MULTI"
+  ],
+  "baseline": "same_F128_B_CAL_seed0",
+  "operating_point": "zero",
+  "criteria": {
+    "net_greater_than": 0,
+    "identity_cluster_gain_ci_low_greater_than": 0,
+    "confidence_level": 0.95,
+    "must_be_same_population_and_seed": true
+  },
+  "pass_if": "At least one registered new arm satisfies all primary criteria",
+  "structural_claim_requires": "MULTI compared separately to ANCHOR; a B_CAL gain alone is not evidence that multiple rivals help",
+  "next_round": {
+    "root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_confirm_v1",
+    "purpose": "Same-panel seed replication, not external confirmation",
+    "seeds": [
+      1,
+      2
+    ],
+    "arms": [
+      "TOKEN_QR",
+      "TOKEN_QRR_ANCHOR",
+      "TOKEN_QRR_MULTI"
+    ],
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "fits": 30,
+    "backbone_forwards": 0,
+    "max_automatic_rounds": 1
+  },
+  "publish": "Publish current completed results regardless of gate; publish confirmation results after all independent checks if launched",
+  "negative_result_policy": "No new experiment on failed gate; report actual result and limits",
+  "original_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/protocol.json",
+    "sha256": "f7b9349ca2e268de497a5a3693beefd3ab3c7e57a51478e384da952761987143"
+  },
+  "final_validation_present_at_freeze": false,
+  "held_results_used_to_set_criterion": false,
+  "operating_point_meaning": "Fixed decision threshold 0"
+}
