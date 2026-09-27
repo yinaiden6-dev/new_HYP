@@ -1,0 +1,40 @@
+{
+  "status": "CPU_PROPERTY_RESTORE_EXECUTION_AUTHORIZED",
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_factorial_v2/protocol.json",
+    "sha256": "a8ad10f45765d8f03db7c7c9e6b0918191b4e3615708007f85c214ebfbe1d298"
+  },
+  "qualification": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/result.json",
+    "sha256": "71bf82f93cf402663cf06aac21434e4d6b2710253a228040d29ba31f20b0d16f"
+  },
+  "threads": 4,
+  "science_backend": "CPU_ALL18",
+  "scope": "PRIMARY_FIXED_PAIRS",
+  "rationale": "Same intervention values: 36/36 failed-pair side/arm outputs bit-exact to old formulas; only scale-aware joint FP32 power-conservation validation repaired. Old controls reused with exact preserved tensors. All 18 cells remain CPU-only.",
+  "observed_backend_drift": {
+    "max_pilot_M_relative_difference": 0.012660313967401039,
+    "pilot_single_pair_LOCAL_GLOBAL_logM_difference": -0.00031147644529117
+  },
+  "forbidden_claims": [
+    "GPU bit-exact replay",
+    "new full-C128 ranking or accuracy",
+    "external validation",
+    "unique causality"
+  ],
+  "cost_estimate": {
+    "seconds_per_side_head": 7.995877087232657,
+    "heads_primary": 504,
+    "selected_pairs": 14,
+    "parallel_queries": 7
+  },
+  "user_authorization": "Continue four-step causal analysis, establish what information makes M discriminative and use historical files.",
+  "reused_controls": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_factorial_v2/reused_controls_validation.json",
+    "sha256": "6d8a3db1ae37fa5e92c021394fe91b032f55976380864813b3a948195150bcdd"
+  },
+  "repair_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_numeric_v2/validation.json",
+    "sha256": "0c5a531b46ebf817dbb8eb8abe95c7046492148d2a279dd6b3dcda4e3fcd07e0"
+  }
+}

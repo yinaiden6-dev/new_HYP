@@ -27,3 +27,7 @@ CPU/GPU并非逐位一致：试跑四臂M相对差约0.7%–1.3%，单个配对�
 正式交叉恢复尚未完成。第三步上游性质删除后的替代重训与第四步冻结解释后的跨组复核仍需单列；不能由这组小面板宣布唯一根因。POST/外部传递这组新联合干预也尚未运行。
 
 [冻结方案](../plan/RC_M_PROPERTY_RESTORATION_FACTORIAL_V1_20260927.md) · [执行状态](../results/rc_m_property_restoration_factorial_v1/execution_status.json) · [机器协议](../results/rc_m_property_restoration_factorial_v1/protocol.json)
+
+## 后续状态更新
+
+旧首片在首个联合臂的数值守恒检查处失败。已保留失败记录，验证v2仅修复检查边界、输出逐位不变后，提交后继5166797/5166798并取消旧剩余链。当前请以[v2提交与迁移记录](REPORT_M_PROPERTY_RESTORATION_V2_SUBMITTED_20260927.md)为准；上述原提交状态保留为历史快照。

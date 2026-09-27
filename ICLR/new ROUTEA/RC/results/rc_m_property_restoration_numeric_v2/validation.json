@@ -1,0 +1,808 @@
+{
+  "algebra": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_numeric_v2/algebra.json",
+    "sha256": "27c0e90aacee8ed41b503fe531dbc0779f150856366ac6e5b9d623d694ac586f"
+  },
+  "all_outputs_bit_exact_to_immutable_v1_equation": true,
+  "capture": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/query000/capture059.pt",
+    "sha256": "6ccc80d6d3b7d2f348bf53dfcef029d07020df1d8a206563a84c5205008f37f7"
+  },
+  "checks": [
+    {
+      "arm": "NATIVE",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "identity",
+        "norm_relative_error": 0.0
+      },
+      "phase_diagnostics": null,
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "changed_norm_mean": 11.171125383963618,
+        "direction_max_error": 1.2684283623443093e-08,
+        "kind": "amplitude",
+        "native_norm_mean": 11.17112538396362
+      },
+      "phase_diagnostics": null,
+      "side": 0
+    },
+    {
+      "arm": "GLOBAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.420209945432134e-09,
+        "perturbation_rms": 0.2761814451243605,
+        "spectral_power_max_abs_error": 8.195911860298111e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.420209945432134e-09,
+        "perturbation_rms": 0.2761814451243605,
+        "spectral_power_max_abs_error": 8.195911860298111e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "GLOBAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 8.235977677628625e-09,
+        "perturbation_rms": 0.27618144512731363,
+        "spectral_power_max_abs_error": 8.242106019906714e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 8.235977677628625e-09,
+        "perturbation_rms": 0.27618144512731363,
+        "spectral_power_max_abs_error": 8.242106019906714e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "LOCAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.234649489542335e-09,
+        "perturbation_rms": 0.2761814451184353,
+        "spectral_power_max_abs_error": 8.195911860298111e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.234649489542335e-09,
+        "perturbation_rms": 0.2761814451184353,
+        "spectral_power_max_abs_error": 8.195911860298111e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "LOCAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.420209945432134e-09,
+        "perturbation_rms": 0.2761814451332388,
+        "spectral_power_max_abs_error": 8.242106019906714e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.420209945432134e-09,
+        "perturbation_rms": 0.2761814451332388,
+        "spectral_power_max_abs_error": 8.242106019906714e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "GLOBAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.749780706056697e-09,
+        "perturbation_rms": 0.2409397177150855,
+        "spectral_power_max_abs_error": 8.331171130748771e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.749780706056697e-09,
+        "perturbation_rms": 0.2409397177150855,
+        "spectral_power_max_abs_error": 8.331171130748771e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "GLOBAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.819950909038198e-09,
+        "perturbation_rms": 0.24093971770623468,
+        "spectral_power_max_abs_error": 8.190333389279658e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.819950909038198e-09,
+        "perturbation_rms": 0.24093971770623468,
+        "spectral_power_max_abs_error": 8.190333389279658e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "LOCAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.812672730977965e-09,
+        "perturbation_rms": 0.24093971772781078,
+        "spectral_power_max_abs_error": 8.331171130748771e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.812672730977965e-09,
+        "perturbation_rms": 0.24093971772781078,
+        "spectral_power_max_abs_error": 8.331171130748771e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "LOCAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.819950909038198e-09,
+        "perturbation_rms": 0.2409397176935094,
+        "spectral_power_max_abs_error": 8.204102641684585e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.819950909038198e-09,
+        "perturbation_rms": 0.2409397176935094,
+        "spectral_power_max_abs_error": 8.204102641684585e-08
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.1335579919169447e-08,
+        "perturbation_rms": 0.22991550727257762,
+        "spectral_power_max_abs_error": 2.112793382025302e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.474561629599683e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 1.1335579919169447e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.22991550727257762,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.112793382025302e-06,
+        "spectral_power_max_error_over_bound": 0.9956457587241604
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.0715309306519316e-08,
+        "perturbation_rms": 0.22991550726582502,
+        "spectral_power_max_abs_error": 2.215767345603581e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.572759111259246e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 1.0715309306519316e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.22991550726582502,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.215767345603581e-06,
+        "spectral_power_max_error_over_bound": 0.9956341591001919
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.021512203943871e-09,
+        "perturbation_rms": 0.229915507263522,
+        "spectral_power_max_abs_error": 2.149625334624261e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.572759111259246e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 9.021512203943871e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.229915507263522,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.149625334624261e-06,
+        "spectral_power_max_error_over_bound": 0.9956341591001919
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.1335579919169447e-08,
+        "perturbation_rms": 0.22991550727488064,
+        "spectral_power_max_abs_error": 2.215767345603581e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.474561629599683e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 1.1335579919169447e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.22991550727488064,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.215767345603581e-06,
+        "spectral_power_max_error_over_bound": 0.9956457587241604
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.0771350700267135e-08,
+        "perturbation_rms": 0.19958769736332568,
+        "spectral_power_max_abs_error": 2.2198462623634896e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.592827586374752e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 1.0771350700267135e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.19958769736332568,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.2198462623634896e-06,
+        "spectral_power_max_error_over_bound": 0.9961564737445524
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.927877853144196e-09,
+        "perturbation_rms": 0.19958769736068888,
+        "spectral_power_max_abs_error": 2.093524294366489e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.516908137310889e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 9.927877853144196e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.19958769736068888,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.093524294366489e-06,
+        "spectral_power_max_error_over_bound": 0.9967153929709345
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.927877853144196e-09,
+        "perturbation_rms": 0.1995876973605873,
+        "spectral_power_max_abs_error": 2.2198462623634896e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.538628028629675e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 9.927877853144196e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.1995876973605873,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.2198462623634896e-06,
+        "spectral_power_max_error_over_bound": 0.9967153929709345
+      },
+      "side": 0
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.0771350700267135e-08,
+        "perturbation_rms": 0.19958769736342727,
+        "spectral_power_max_abs_error": 2.131875831423713e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.592827586374752e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 23.49820345713957,
+        "kind": "phase",
+        "norm_relative_error": 1.0771350700267135e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.19958769736342727,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.8012045572573043e-06,
+        "spectral_power_max_abs_error": 2.131875831423713e-06,
+        "spectral_power_max_error_over_bound": 0.9950507262667111
+      },
+      "side": 0
+    },
+    {
+      "arm": "NATIVE",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "identity",
+        "norm_relative_error": 0.0
+      },
+      "phase_diagnostics": null,
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "changed_norm_mean": 11.797641112117836,
+        "direction_max_error": 1.1710623082361593e-08,
+        "kind": "amplitude",
+        "native_norm_mean": 11.797641112117837
+      },
+      "phase_diagnostics": null,
+      "side": 1
+    },
+    {
+      "arm": "GLOBAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.523359490946291e-09,
+        "perturbation_rms": 0.28370007392731955,
+        "spectral_power_max_abs_error": 8.063881296038744e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.523359490946291e-09,
+        "perturbation_rms": 0.28370007392731955,
+        "spectral_power_max_abs_error": 8.063881296038744e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "GLOBAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.562371561244731e-09,
+        "perturbation_rms": 0.28370007393840635,
+        "spectral_power_max_abs_error": 8.063211343056764e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.562371561244731e-09,
+        "perturbation_rms": 0.28370007393840635,
+        "spectral_power_max_abs_error": 8.063211343056764e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "LOCAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.562371561244731e-09,
+        "perturbation_rms": 0.28370007393498725,
+        "spectral_power_max_abs_error": 8.063881296038744e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.562371561244731e-09,
+        "perturbation_rms": 0.28370007393498725,
+        "spectral_power_max_abs_error": 8.063881296038744e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "LOCAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.559508574672691e-09,
+        "perturbation_rms": 0.28370007393073865,
+        "spectral_power_max_abs_error": 8.006647078673268e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 7.559508574672691e-09,
+        "perturbation_rms": 0.28370007393073865,
+        "spectral_power_max_abs_error": 8.006647078673268e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "GLOBAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.86483983389519e-09,
+        "perturbation_rms": 0.2678250011952551,
+        "spectral_power_max_abs_error": 8.011221552806091e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.86483983389519e-09,
+        "perturbation_rms": 0.2678250011952551,
+        "spectral_power_max_abs_error": 8.011221552806091e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "GLOBAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 8.693837427742324e-09,
+        "perturbation_rms": 0.2678250012072421,
+        "spectral_power_max_abs_error": 8.062408785036723e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 8.693837427742324e-09,
+        "perturbation_rms": 0.2678250012072421,
+        "spectral_power_max_abs_error": 8.062408785036723e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "LOCAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.86483983389519e-09,
+        "perturbation_rms": 0.2678250012050012,
+        "spectral_power_max_abs_error": 8.062408785036723e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.86483983389519e-09,
+        "perturbation_rms": 0.2678250012050012,
+        "spectral_power_max_abs_error": 8.062408785036723e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "LOCAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": true,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 8.834322051676224e-09,
+        "perturbation_rms": 0.2678250011974961,
+        "spectral_power_max_abs_error": 8.001029438986507e-08
+      },
+      "phase_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 8.834322051676224e-09,
+        "perturbation_rms": 0.2678250011974961,
+        "spectral_power_max_abs_error": 8.001029438986507e-08
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.906354181410393e-09,
+        "perturbation_rms": 0.22843540962579334,
+        "spectral_power_max_abs_error": 2.0249107741676653e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 7.20518812029994e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 9.906354181410393e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.22843540962579334,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.0249107741676653e-06,
+        "spectral_power_max_error_over_bound": 0.9922349100098922
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.1115252274151999e-08,
+        "perturbation_rms": 0.2284354096142552,
+        "spectral_power_max_abs_error": 2.042145769820536e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.635787848113078e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 1.1115252274151999e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.2284354096142552,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.042145769820536e-06,
+        "spectral_power_max_error_over_bound": 0.9968198348854648
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_X_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.1115252274151999e-08,
+        "perturbation_rms": 0.22843540961039646,
+        "spectral_power_max_abs_error": 2.042145769820536e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 7.20518812029994e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 1.1115252274151999e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.22843540961039646,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.042145769820536e-06,
+        "spectral_power_max_error_over_bound": 0.9968198348854648
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_X_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 1.0257346527708933e-08,
+        "perturbation_rms": 0.22843540962965206,
+        "spectral_power_max_abs_error": 2.000072157670729e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.619946289991935e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 1.0257346527708933e-08,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.22843540962965206,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.000072157670729e-06,
+        "spectral_power_max_error_over_bound": 0.9947992209288231
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.777868070770523e-09,
+        "perturbation_rms": 0.21291943760014745,
+        "spectral_power_max_abs_error": 2.097635103837092e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.567020252603994e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 9.777868070770523e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.21291943760014745,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.097635103837092e-06,
+        "spectral_power_max_error_over_bound": 0.9975410289866642
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__GLOBAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.157472335985517e-09,
+        "perturbation_rms": 0.21291943760423795,
+        "spectral_power_max_abs_error": 2.0362824955100223e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.585634177128581e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 9.157472335985517e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.21291943760423795,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.0362824955100223e-06,
+        "spectral_power_max_error_over_bound": 0.9979819640168376
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_Y_PLUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 9.777868070770523e-09,
+        "perturbation_rms": 0.21291943760186596,
+        "spectral_power_max_abs_error": 2.0362824955100223e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.567020252603994e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 9.777868070770523e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.21291943760186596,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.0362824955100223e-06,
+        "spectral_power_max_error_over_bound": 0.994041535312634
+      },
+      "side": 1
+    },
+    {
+      "arm": "AMP_PERMUTE__LOCAL_Y_MINUS",
+      "bit_exact_to_v1_equation": true,
+      "old_assert_would_pass": false,
+      "old_diagnostics": {
+        "kind": "phase",
+        "norm_relative_error": 8.833993092594028e-09,
+        "perturbation_rms": 0.2129194376025194,
+        "spectral_power_max_abs_error": 2.097635103837092e-06
+      },
+      "phase_diagnostics": {
+        "fp64_rotation_power_max_relative_error": 6.585634177128581e-16,
+        "fp64_rotation_power_relative_allowance": 1.4210854715202004e-14,
+        "input_pair_power_max": 20.65614036249463,
+        "kind": "phase",
+        "norm_relative_error": 8.833993092594028e-09,
+        "norm_relative_tolerance_unchanged": 2e-06,
+        "output_unit_roundoff": 5.960464477539063e-08,
+        "perturbation_rms": 0.2129194376025194,
+        "spectral_power_check": "per_pair_dtype_rounding_bound_v2",
+        "spectral_power_max_abs_bound": 2.462404184400999e-06,
+        "spectral_power_max_abs_error": 2.097635103837092e-06,
+        "spectral_power_max_error_over_bound": 0.9979819640168376
+      },
+      "side": 1
+    }
+  ],
+  "code": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/validate_rc_roma_property_restore_v2.py",
+      "sha256": "60afcd7c14480f80ca4c9d0404c73f7ae1d80528e4a8764320897b221fe62d3d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_position_factor_v1.py",
+      "sha256": "2e804f20087b648eefd65eedf0e5c39fae32d012a8c38130bb1d75078a491399"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_property_restore_v1.py",
+      "sha256": "c489122b184b8adbf775e1b270bf9712850ef5d895971eed2692533c1f3d5c57"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_property_restore_v2.py",
+      "sha256": "a291ad9e28b46b66855942122dfb0bd4c8f70641230bd6faadf6d22cf20db7fe"
+    }
+  ],
+  "full_dpt_results_not_claimed": true,
+  "head": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/head_replay_state.pt",
+    "sha256": "a5222b29cc3386d67c771ed2e0896e3d80a5f2bc3a065aec1a90097fe6a5debe"
+  },
+  "index": 0,
+  "input_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_factorial_v1/protocol.json",
+    "sha256": "e43f3e7e0704fc3e575b868ddefb35569c17c47cba4a14c4aa77ecfb3656d5ff"
+  },
+  "joint_side_arm_checks": 16,
+  "legacy_10_arms_unchanged": true,
+  "max_joint_norm_relative_error": 1.1335579919169447e-08,
+  "max_joint_power_abs_error": 2.2198462623634896e-06,
+  "max_joint_power_error_over_derived_bound": 0.9979819640168376,
+  "old_joint_assert_failures": 16,
+  "position": 59,
+  "removed_reference_assertion_only": [
+    "assert float(relative) < 2e-06 and float(spectral) < 2e-06"
+  ],
+  "rounding_derivation": "u=eps(dtype)/2; gamma=64*eps64; each Fourier pair uses [gamma+(2u+u^2)(1+gamma)]*Pin plus conservative subnormal terms. Pre-cast FP64 power is checked separately against gamma*Pin. Original norm relative <2e-6 remains.",
+  "scientific_transform_changed": false,
+  "scope": "query000_pair059_original_failed_capture; CPU_transform_only_no_DPT",
+  "side_arm_checks": 36,
+  "status": "PROPERTY_RESTORE_V2_TRANSFORM_ROUNDING_VALIDATION_PASS"
+}

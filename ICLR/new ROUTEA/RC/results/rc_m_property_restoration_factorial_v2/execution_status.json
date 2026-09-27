@@ -1,0 +1,67 @@
+{
+  "status": "RUNNING_PARTIAL",
+  "snapshot_utc": "2026-09-27T11:20:53.827607+00:00",
+  "scientific_results_complete": false,
+  "jobs": {
+    "array": "5166797",
+    "join": "5166798"
+  },
+  "array_indices": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8
+  ],
+  "panel": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "scope": "PRIMARY_FIXED_PAIRS",
+  "candidate_pairs": 14,
+  "arms": 18,
+  "candidate_worlds": 252,
+  "partition_eligibility": {
+    "0": "cpuonly,dev_cpuonly",
+    "1": "cpuonly,dev_cpuonly",
+    "2": "cpuonly,dev_cpuonly",
+    "4": "cpuonly,dev_cpuonly",
+    "5": "cpuonly",
+    "6": "cpuonly",
+    "8": "cpuonly"
+  },
+  "verified_running_task": "5166797_0",
+  "verified_running_partition": "dev_cpuonly",
+  "dev_qos": {
+    "max_submitted_per_user": 4,
+    "max_running_per_user": 1
+  },
+  "per_task": {
+    "cpus": 4,
+    "memory_gib": 16,
+    "time_limit_minutes": 10,
+    "budget_seconds": 430,
+    "max_requeues": 4
+  },
+  "join_dependency": "afterok:5166797_*",
+  "old_failed_task": "5166570_0",
+  "old_remaining_chain_cancelled": [
+    "5166570_[1-2,4-6,8%7]",
+    "5166571"
+  ],
+  "reused_controls": 10,
+  "reused_joint_arms": 0,
+  "numeric_validation": "results/rc_m_property_restoration_numeric_v2/validation.json",
+  "report": "reports/REPORT_M_PROPERTY_RESTORATION_V2_SUBMITTED_20260927.md",
+  "plan": "plan/RC_M_PROPERTY_RESTORATION_FACTORIAL_V2_20260927.md",
+  "other_experiments_modified": false,
+  "new_gpu_jobs": 0
+}

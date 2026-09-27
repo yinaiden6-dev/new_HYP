@@ -1,5 +1,5 @@
 {
-  "status": "PRIMARY_FIXED_PAIRS_SUBMITTED",
+  "status": "ENGINEERING_FAILURE_SUPERSEDED_BY_V2",
   "scientific_results_complete": false,
   "old_experiments_unchanged": true,
   "panel": [
@@ -66,5 +66,13 @@
     "max_requeues": 4
   },
   "join_dependency": "afterok:5166570_*",
-  "plan_frozen": true
+  "plan_frozen": true,
+  "successor": "results/rc_m_property_restoration_factorial_v2",
+  "failure_job": "5166570_0",
+  "failure_reason": "Joint-phase fixed absolute power bound did not account for amplitude-reassigned FP32 rounding.",
+  "remaining_jobs": "CANCELLED_AFTER_VERIFIED_V2_SUBMISSION",
+  "successor_jobs": {
+    "array": "5166797",
+    "join": "5166798"
+  }
 }
