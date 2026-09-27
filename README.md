@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-27 H593全部112张失败案例图（英文）](backup/h593_failures_20260927/README.md)**：沿用原90图的COST1口径与放大reference版式；92未纠正、17错换、3误伤，包含23张正确reference未进C128的案例。附全部127挑战分数、HOLD、真实热图与独立核算。
+
 - **[2026-09-25 四项贡献补强与最新中英文稿](backup/paper_contributions_20260925/README.md)**：完整保留检索器benchmark、可复用空间支持接口、外部/内部统一框架与机制归因；区分定义、推导和实验发现。学长尚未汇总的模型比较明确待填，科学结果保持不变。
 
 - **[2026-09-25 GroZi内部迁移完整实验包](backup/grozi_internal_complete_20260925/README.md)**：补齐480张×六臂的逐候选分数、60片验收、缓存等价性元数据、冻结代码及身份轴修复记录。RAW321→POST_REAL339，18救0损；与下方写作材料分开归档。
