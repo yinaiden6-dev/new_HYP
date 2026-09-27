@@ -1,0 +1,57 @@
+{
+  "status": "COLLECTING_WITH_QUERY47_REPLACEMENT",
+  "created_utc": "2026-09-27T08:56:24.749542+00:00",
+  "query_cap": 128,
+  "missing_queries": 86,
+  "gpu_job": 5166238,
+  "export_job": 5166239,
+  "join_job": 5166240,
+  "dependencies": {
+    "5166239": "afterany:5166238,afterok:5166315",
+    "5166240": "afterok:5166239"
+  },
+  "scripts": [
+    {
+      "job_id": 5166238,
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_unified128_resume_gpu_v2.sbatch",
+      "spool": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h128_unified_resume_v2/submitted_scripts/5166238.sbatch",
+      "sha256": "606d6e434007db98e9665bdf463da6fcdb3ff5640a01c72b4ee1c1b84040580a"
+    },
+    {
+      "job_id": 5166239,
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_unified128_export_pack_v1.sbatch",
+      "spool": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h128_unified_resume_v2/submitted_scripts/5166239.sbatch",
+      "sha256": "c228d1cb8cccca43d3c48194f69de905c2c129fd91a48127a2712460955293dc"
+    },
+    {
+      "job_id": 5166240,
+      "source": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_unified128_resume_cpu_v1.sbatch",
+      "spool": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h128_unified_resume_v2/submitted_scripts/5166240.sbatch",
+      "sha256": "3fd24a5735f3219332df749650394a8760289d7dccf972b0defc0b70ae87dae4"
+    }
+  ],
+  "released_utc": "2026-09-27T08:57:12.257516+00:00",
+  "gpu_partition_default": "accelerated",
+  "dev_element": "5166238_71",
+  "dev_partition": "dev_accelerated",
+  "gpu_parallel_limit": 46,
+  "gpu_time_limit": "00:15:00",
+  "max_restarts": 31,
+  "qr_qrr_v2_training_submitted": false,
+  "last_live_check_utc": "2026-09-27T08:57:35.098957+00:00",
+  "last_live_states": {
+    "5166238": "PENDING/Priority",
+    "5166238_71": "PENDING/Priority (dev_accelerated)",
+    "5166239": "PENDING/Dependency afterok:5166238_*",
+    "5166240": "PENDING/Dependency afterok:5166239_*"
+  },
+  "repair_query47": {
+    "old_job": "5166238_47",
+    "new_job": "5166315_47",
+    "reason": "IMMUTABLE_PART during concurrent shared input first publication",
+    "validated_input": "61b9e060632057b0732a024d8700f178e12109a250b839bfc5d54c1cb3a03f82_NATIVE.pt",
+    "input_sha256": "27670e66cf0e247906e560d9237340419c5aea63f50bc97348ff36671a0c3fc2",
+    "existing_pairs_reused": 16,
+    "script_unchanged": true
+  }
+}

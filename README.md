@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-27 QR/QRR、M归因与统一采集快照](backup/rebut_and_unified_sampling_20260927/README.md)**：71张60项关系读出结果、481/492逐图比较、外部/内部相位干预和逐patch证据；附冻结基线v2准备，以及128张恢复与剩余465张四个长任务的提交记录。明确区分已完成结果与运行中的采集。
+
 - **[2026-09-27 H593全部112张失败案例图（英文）](backup/h593_failures_20260927/README.md)**：沿用原90图的COST1口径与放大reference版式；92未纠正、17错换、3误伤，包含23张正确reference未进C128的案例。附全部127挑战分数、HOLD、真实热图与独立核算。
 
 - **[2026-09-25 四项贡献补强与最新中英文稿](backup/paper_contributions_20260925/README.md)**：完整保留检索器benchmark、可复用空间支持接口、外部/内部统一框架与机制归因；区分定义、推导和实验发现。学长尚未汇总的模型比较明确待填，科学结果保持不变。

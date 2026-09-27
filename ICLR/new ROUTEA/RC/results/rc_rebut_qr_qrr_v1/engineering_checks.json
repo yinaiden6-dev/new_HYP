@@ -1,0 +1,77 @@
+{
+  "status": "REBUT_QR_QRR_ENGINEERING_PASS",
+  "scientific_result": false,
+  "checks": {
+    "zero_residual_exact_B_CAL": true,
+    "active_parameter_budget_and_10_percent": true,
+    "identity_probability_sum_and_absent_softplus": true,
+    "absent_gradient_rejects_challengers_without_HOLD_label": true,
+    "QR_antisymmetric_exact_and_self_zero": true,
+    "QR_candidate_permutation": true,
+    "QR_chunk_invariant": true,
+    "QR_masked_padding_invariant": true,
+    "QR_reference_native_grid_not_index_compared": true,
+    "QR_independent_of_rival": true,
+    "QR_VEC_antisymmetric_exact_and_self_zero": true,
+    "QR_VEC_candidate_permutation": true,
+    "QR_VEC_chunk_invariant": true,
+    "QR_VEC_masked_padding_invariant": true,
+    "QR_VEC_reference_native_grid_not_index_compared": true,
+    "QRR_antisymmetric_exact_and_self_zero": true,
+    "QRR_candidate_permutation": true,
+    "QRR_chunk_invariant": true,
+    "QRR_masked_padding_invariant": true,
+    "QRR_reference_native_grid_not_index_compared": true,
+    "finite_gradients_reader_learns_loss_decreases": true,
+    "ties_and_threshold_equal_hold": true,
+    "frozen_input_tensors_unchanged": true,
+    "atomic_optimizer_rng_resume_bit_exact": true,
+    "inner_threshold_net_gain_conservative_tie": true,
+    "real_shape_C128_64tokens72features_finite_forward_backward": true
+  },
+  "synthetic_fit": {
+    "QR": {
+      "first_loss": 1.3304314687684904,
+      "last_loss": 2.4187609385985464e-43,
+      "first_output_gradient": 0.06879790622489362,
+      "max_stem_gradient_after_first_update": 13.859989033054969
+    },
+    "QR_VEC": {
+      "first_loss": 1.3304314687684904,
+      "last_loss": 3.531794280522155e-293,
+      "first_output_gradient": 0.006527151268599351,
+      "max_stem_gradient_after_first_update": 12.453682200896013
+    },
+    "QRR": {
+      "first_loss": 1.3304314687684904,
+      "last_loss": 2.17897829857266e-23,
+      "first_output_gradient": 0.01818015732400259,
+      "max_stem_gradient_after_first_update": 10.18570741821539
+    }
+  },
+  "parameter_report": {
+    "trainable_parameters": {
+      "B_CAL": 18,
+      "QR": 25202,
+      "QR_VEC": 28290,
+      "QRR": 25266
+    },
+    "relative_to_reader_arm_mean": {
+      "QR": -0.040021331166357754,
+      "QR_VEC": 0.07760481474897785,
+      "QRR": -0.0375834835826202
+    },
+    "all_under_250k": true,
+    "reader_arms_within_10_percent_of_mean": true,
+    "capacity_note": "Same token backbone; all counted parameters are active. Any real capacity mismatch is reported, never hidden with unused parameters."
+  },
+  "shape_timing_seconds_2CPU": {
+    "B_CAL": 0.0023834435269236565,
+    "QR": 0.05936052091419697,
+    "QR_VEC": 0.04947573505342007,
+    "QRR": 0.14521046821027994
+  },
+  "module_sha256": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a",
+  "checker_sha256": "8a0e96b25be179a8794563de5f794ed6b08dc608942d73fc3cc2088458a20f86",
+  "torch_version": "2.9.1+cu128"
+}

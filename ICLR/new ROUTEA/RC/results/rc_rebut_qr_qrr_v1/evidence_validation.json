@@ -1,0 +1,38 @@
+{
+  "status": "POOLED_F_EVIDENCE_INDEPENDENT_PASS",
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/evidence_manifest.json",
+    "sha256": "1964a361c8e200ccc4fd0456db3137ff94dfe03a4fa85a5175d4ee75e5eea19e",
+    "bytes": 39753
+  },
+  "verifier": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/verify_rebut_qr_qrr_evidence_v1.py",
+    "sha256": "8b85ebe1a26438b3444155af6cb8e3f46f095afc6f63d2f038e9086a7bc1cf72",
+    "bytes": 12304
+  },
+  "queries": 71,
+  "candidates": 9088,
+  "synthetic_checks": [
+    "zero_and_low_support_retained",
+    "reference_array_permutation_geometry",
+    "out_of_bounds_nan_padding_masks",
+    "self_content_survives_unmappable",
+    "sample_before_spatial_pool",
+    "shared_query_grid"
+  ],
+  "independent_source_replay": {
+    "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+    "execution_ordinal": 0,
+    "positions": [
+      0,
+      1,
+      127
+    ],
+    "value_checks": 27648,
+    "max_abs_error": 0.0
+  },
+  "note": "All currently sealed outputs checked for SHA, shape, source M0/X and masks. First-query three pairs replayed by independent brute-force geometry and explicit means.",
+  "new_encoder_forwards": 0,
+  "new_roma_forwards": 0,
+  "labels_read": 0
+}

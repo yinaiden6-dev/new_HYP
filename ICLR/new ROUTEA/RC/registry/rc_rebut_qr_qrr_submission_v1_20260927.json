@@ -1,0 +1,102 @@
+{
+  "status": "F71_EXPERIMENT_CHAIN_SUBMITTED",
+  "time_utc": "2026-09-27T07:12:09.237188+00:00",
+  "user_authorization": "2026-09-27 feasible uploaded plan should be implemented, without changing all593 M versus481/492 audit",
+  "jobs": {
+    "cache": 5165781,
+    "cache_validation": 5165782,
+    "fold0": 5165783,
+    "fold1_to4_array": 5165784,
+    "join": 5165786
+  },
+  "latest_observed": {
+    "cache": "COMPLETE71",
+    "cache_validation": "POOLED_F_EVIDENCE_INDEPENDENT_PASS",
+    "fold0": "RUNNING dev_cpuonly",
+    "fold1_to4": "PENDING cpuonly Priority",
+    "join": "PENDING afterok5165783 and5165784_*"
+  },
+  "fit_count": 60,
+  "partition": "CPU only",
+  "gpu_jobs": 0,
+  "per_fold_resources": {
+    "cpus": 8,
+    "memory_gb": 16,
+    "time_minutes": 10,
+    "parallel_workers": 4,
+    "threads_each": 2,
+    "max_requeues": 16
+  },
+  "common_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/protocol.json",
+    "sha256": "e46af505d62c51717859fdd76d0c91ce1db82201a0c3731cc31b84fec47c1351"
+  },
+  "evidence_manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/evidence_manifest.json",
+    "sha256": "1964a361c8e200ccc4fd0456db3137ff94dfe03a4fa85a5175d4ee75e5eea19e"
+  },
+  "evidence_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/evidence_validation.json",
+    "sha256": "d3b95a4bf3d2624095a4880fe0b3eccc2034e20e8b82a45930d925c011d9f54b"
+  },
+  "programs": {
+    "prepare_rebut_qr_qrr_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prepare_rebut_qr_qrr_v1.py",
+      "sha256": "d2606cd9ae2952735929ff5b9fcbb8a3b5aa2eed904a6b4deeb7025a342f1bb1"
+    },
+    "build_rebut_qr_qrr_evidence_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/build_rebut_qr_qrr_evidence_v1.py",
+      "sha256": "44624f73c214a74a53fc0ad70bcffbdd6b2a078e67d47fd50a34f4ee6960b9f7"
+    },
+    "verify_rebut_qr_qrr_evidence_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/verify_rebut_qr_qrr_evidence_v1.py",
+      "sha256": "8b85ebe1a26438b3444155af6cb8e3f46f095afc6f63d2f038e9086a7bc1cf72"
+    },
+    "check_rebut_qr_qrr_modules_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/check_rebut_qr_qrr_modules_v1.py",
+      "sha256": "8a0e96b25be179a8794563de5f794ed6b08dc608942d73fc3cc2088458a20f86"
+    },
+    "rebut_qr_qrr_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/rebut_qr_qrr_v1.py",
+      "sha256": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a"
+    },
+    "run_rebut_qr_qrr_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rebut_qr_qrr_v1.py",
+      "sha256": "d128536744f2226770466364a4d1f055e52a3fa6f8d4ef6f19cafaac712e62cf"
+    },
+    "run_rebut_qr_qrr_fold_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rebut_qr_qrr_fold_v1.py",
+      "sha256": "16b577f410af8682347e49a9a7b386fc4bc6419a1166e3526e538895e7372ac4"
+    },
+    "join_rebut_qr_qrr_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/join_rebut_qr_qrr_v1.py",
+      "sha256": "aa64e63bb7e8ea22e083ac94d0e29a66e6ef68dccee52058aeeac7dfd9a6c517"
+    }
+  },
+  "launchers": {
+    "rebut_qr_qrr_cache_v1.sbatch": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rebut_qr_qrr_cache_v1.sbatch",
+      "sha256": "f633f7eb7f769db7a413523d8e7cfcd01ba3f6ef38168828be1f487ee71f9de4"
+    },
+    "rebut_qr_qrr_verify_v1.sbatch": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rebut_qr_qrr_verify_v1.sbatch",
+      "sha256": "3a17686817f87bd4d5c2c4fe4723b42bd76a6a75035ab2664f44bee19d57f796"
+    },
+    "rebut_qr_qrr_fold_v1.sbatch": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rebut_qr_qrr_fold_v1.sbatch",
+      "sha256": "6c31d85847747e361da01c3571c60fb15aa5b5227c0693005fc2e2787d1c9de3"
+    },
+    "rebut_qr_qrr_join_v1.sbatch": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rebut_qr_qrr_join_v1.sbatch",
+      "sha256": "0cc83f9c7b4b51cbbe1c32306daec7d5fd12bb8f992037072ebcc98513f51c54"
+    }
+  },
+  "baseline_report": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/reports/REPORT_H593_M_481_492_FULL_COMPARISON_20260927.md",
+    "sha256": "247f1a37184670ee43f9f627b235bca2b39f1523d2e93ec2772587ad5fb0ac6b"
+  },
+  "old_model_updates": 0,
+  "new_full593_result": false,
+  "new_accuracy_claim": false,
+  "verified_live_training": "fold0 seed0 B_CAL complete; QR13 inner epochs, QR_VEC11, QRR3 at verification; stderr empty; no accuracy joined"
+}

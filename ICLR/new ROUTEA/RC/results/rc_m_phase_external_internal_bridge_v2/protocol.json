@@ -1,0 +1,166 @@
+{
+  "status": "FROZEN_PHASE_BRIDGE_PANEL8_V2_THREADS4",
+  "threads": 4,
+  "workers": 2,
+  "repair_parent": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_external_internal_bridge_v1/protocol.json",
+    "sha256": "110aad0ab84ff275fc6b98b47fd88d7f23c74c5d8a56ea657d48246a4eb34522"
+  },
+  "numeric_repair": "Restore original CPU GEMM threads4; unchanged models and 2e-10 tolerance. Isolated recomputation, no mixed v1 pair cache.",
+  "inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_external_internal_bridge_v2/inputs.json",
+    "sha256": "7ff7c3c21254cd6e9f411359ac7b315b4238b8330e99e240e8933e1fdae6daa1"
+  },
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_mass_discrimination_source_v1/result.json",
+    "sha256": "d91cba8c4063c336f99ea10286e45ad175bf2a332d613ed36874f2534c7b54b1"
+  },
+  "post_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_decomposition_v1/protocol.json",
+    "sha256": "a88cb6c9d931127642a9feaee714ef0df2f57b6f9ee97ccef78c4a70261cb876"
+  },
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_h593_authority_v1_20260924.json",
+    "sha256": "4e244190e58a73b27239a400394ba362b9221d2d8cfd342f841f85ff59248bad"
+  },
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/input_manifest.json",
+    "sha256": "71e29aec16ae9deda67d9cea5cc6ffa10cfff93ef73498d95a00a12f18944f03"
+  },
+  "endpoints": {
+    "0": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/fit_validation.json",
+        "sha256": "4ea57009698a13b79227c32d0280e7cf89a7f65fbd795dd72abaff4f23294f6b"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/final.pt",
+        "sha256": "4ad1fa8be929c59339162d8557ee8be8e36d2c60408dd0e1974aedebcf749a29"
+      }
+    },
+    "1": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/fit_validation.json",
+        "sha256": "ed6fc8bac4c69900f6ee90491d14c0132f44feadf3baef2e9c2c965064c0df39"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/final.pt",
+        "sha256": "30ef77d096a89262266c7f6b9fcc644dc635a7d3fe3044b2e18b82cadb6e4264"
+      }
+    },
+    "2": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/fit_validation.json",
+        "sha256": "1aac0bd6c18528193301e6c174aec1fc27cee87c062961bf0d5315a2359cd5e9"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/final.pt",
+        "sha256": "2e8e4a3d7cb9d9e8d713bc01153741b9acb43b11e2a9161ab39dd85f29ecab59"
+      }
+    },
+    "3": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/fit_validation.json",
+        "sha256": "d4c4fadee9292e83d902b49a3d85d802dde652b9c6f044eb4460b7316d0a22d4"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/final.pt",
+        "sha256": "800c730245dfe67de09f341b7cffd4dcfc08bdd35a4ac48008311f9bbdbba7b6"
+      }
+    },
+    "4": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/fit_validation.json",
+        "sha256": "735e85c04d88651217465d50fd256c72b8acce1c391841f9b3c766f93a4279dc"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/final.pt",
+        "sha256": "b7f481b7045e9f35c67ff4e8a8105d7651c843fabdec6f98218b3e04ce1c8347"
+      }
+    }
+  },
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_bridge_v2.py",
+      "sha256": "b2b9783e890313a4c93dda4b7770c352354fcaccdc6b158c9e19886b47e5fd5a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/join_rc_m_phase_bridge_v2.py",
+      "sha256": "110c4dcb2b358fa627353b8eb001c532d49110c382feee3efe97ae291df1c305"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_M_PHASE_EXTERNAL_INTERNAL_BRIDGE_V2_THREAD_REPAIR_20260927.md",
+      "sha256": "f8ee2ee310913ba9fbde8fac3f0267e9aae5f88d550375da50ba6acb58e15445"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_h593_v1.py",
+      "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v2.py",
+      "sha256": "5b67a7292b64b83ddafc39c6588fd0a38cea0cb2a32aeb1aabb639e1969f75d2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_simple_explanations_v1.py",
+      "sha256": "9d4ab2913eb551b2804d64e64b3f057ff2069e2ce4fa6eb9f7c22dbd63aca498"
+    }
+  ],
+  "queries": 8,
+  "candidates": 128,
+  "max_external_native_feature_error": 0.0,
+  "worlds": [
+    "NATIVE",
+    "ORIGINAL_HR1",
+    "ZERO/FULL",
+    "ZERO/SCALE",
+    "ZERO/RELATIVE",
+    "AMP_FLAT/FULL",
+    "AMP_FLAT/SCALE",
+    "AMP_FLAT/RELATIVE",
+    "AMP_PERMUTE/FULL",
+    "AMP_PERMUTE/SCALE",
+    "AMP_PERMUTE/RELATIVE",
+    "GLOBAL_X_PLUS/FULL",
+    "GLOBAL_X_PLUS/SCALE",
+    "GLOBAL_X_PLUS/RELATIVE",
+    "GLOBAL_X_MINUS/FULL",
+    "GLOBAL_X_MINUS/SCALE",
+    "GLOBAL_X_MINUS/RELATIVE",
+    "LOCAL_X_PLUS/FULL",
+    "LOCAL_X_PLUS/SCALE",
+    "LOCAL_X_PLUS/RELATIVE",
+    "LOCAL_X_MINUS/FULL",
+    "LOCAL_X_MINUS/SCALE",
+    "LOCAL_X_MINUS/RELATIVE",
+    "GLOBAL_Y_PLUS/FULL",
+    "GLOBAL_Y_PLUS/SCALE",
+    "GLOBAL_Y_PLUS/RELATIVE",
+    "GLOBAL_Y_MINUS/FULL",
+    "GLOBAL_Y_MINUS/SCALE",
+    "GLOBAL_Y_MINUS/RELATIVE",
+    "LOCAL_Y_PLUS/FULL",
+    "LOCAL_Y_PLUS/SCALE",
+    "LOCAL_Y_PLUS/RELATIVE",
+    "LOCAL_Y_MINUS/FULL",
+    "LOCAL_Y_MINUS/SCALE",
+    "LOCAL_Y_MINUS/RELATIVE",
+    "CONSTANT"
+  ],
+  "training": false,
+  "gpu": false,
+  "primary": "Mean of four LOCAL output contrasts minus four GLOBAL output contrasts; same COARSE NATIVE baseline.",
+  "decomposition": "logM shift across128 candidates plus zero-mean relative change, 2-factor exact Shapley",
+  "known_limit": "Internal only receives M by construction. Recovery is a replay check, not independent proof of sufficiency."
+}

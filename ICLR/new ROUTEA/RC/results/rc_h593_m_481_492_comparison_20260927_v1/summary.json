@@ -1,0 +1,162 @@
+{
+  "status": "H593_M_481_492_FULL_COMPARISON_REPLAY_PASS",
+  "population": 593,
+  "model481": "Original grouped OOF NATIVE7-COST1",
+  "model492": "GAP_BIAS2 nested calibration on original COST1",
+  "candidate_source": "Frozen ColNomic natural C128",
+  "transitions": {
+    "BOTH_CORRECT": 476,
+    "BOTH_WRONG": 96,
+    "RESCUED_BY_492": 16,
+    "BROKEN_BY_492": 5
+  },
+  "M_rank_matrix": {
+    "M_FIRST": {
+      "BOTH_CORRECT": 338,
+      "RESCUED_BY_492": 12,
+      "BROKEN_BY_492": 1,
+      "BOTH_WRONG": 28
+    },
+    "M_FIRST_TIED": {
+      "BOTH_CORRECT": 0,
+      "RESCUED_BY_492": 0,
+      "BROKEN_BY_492": 0,
+      "BOTH_WRONG": 0
+    },
+    "M_RANK_2_5": {
+      "BOTH_CORRECT": 59,
+      "RESCUED_BY_492": 2,
+      "BROKEN_BY_492": 1,
+      "BOTH_WRONG": 12
+    },
+    "M_RANK_6_10": {
+      "BOTH_CORRECT": 15,
+      "RESCUED_BY_492": 1,
+      "BROKEN_BY_492": 0,
+      "BOTH_WRONG": 6
+    },
+    "M_RANK_11_128": {
+      "BOTH_CORRECT": 64,
+      "RESCUED_BY_492": 1,
+      "BROKEN_BY_492": 3,
+      "BOTH_WRONG": 27
+    },
+    "TARGET_ABSENT": {
+      "BOTH_CORRECT": 0,
+      "RESCUED_BY_492": 0,
+      "BROKEN_BY_492": 0,
+      "BOTH_WRONG": 23
+    }
+  },
+  "failure481": {
+    "CHALLENGER_RANKING_BLOCKED": 40,
+    "TARGET_ABSENT": 23,
+    "TARGET_TOP_BUT_HOLD": 46,
+    "RAW_CORRECT_BROKEN": 3
+  },
+  "failure492": {
+    "CHALLENGER_RANKING_BLOCKED": 40,
+    "TARGET_ABSENT": 23,
+    "TARGET_TOP_BUT_HOLD": 30,
+    "RAW_CORRECT_BROKEN": 8
+  },
+  "M_first_492_errors": 29,
+  "M_first_492_error_types": {
+    "TARGET_TOP_BUT_HOLD": 18,
+    "CHALLENGER_RANKING_BLOCKED": 10,
+    "RAW_CORRECT_BROKEN": 1
+  },
+  "M_first_492_error_ids": [
+    "DIFFICULT-0050",
+    "OUTCOME-0090",
+    "OUTCOME-0093",
+    "OUTCOME-0097",
+    "OUTCOME-0105",
+    "OUTCOME-0106",
+    "OUTCOME-0107",
+    "OUTCOME-0132",
+    "OUTCOME-0134",
+    "OUTCOME-0138",
+    "OUTCOME-0150",
+    "OUTCOME-0331",
+    "OUTCOME-0341",
+    "OUTCOME-0407",
+    "OUTCOME-0435",
+    "OUTCOME-0441",
+    "OUTCOME-0445",
+    "OUTCOME-0468",
+    "OUTCOME-0477",
+    "OUTCOME-0534",
+    "OUTCOME-0536",
+    "OUTCOME-0538",
+    "OUTCOME-0557",
+    "OUTCOME-0676",
+    "OUTCOME-0721",
+    "OUTCOME-0733",
+    "OUTCOME-0818",
+    "OUTCOME-0819",
+    "OUTCOME-0821"
+  ],
+  "M_first_new_492_breaks": [
+    "OUTCOME-0721"
+  ],
+  "low_M_correct_492": 142,
+  "maximum_native_logit_replay_error": 1.7763568394002505e-15,
+  "gate_all127_exact_replay": true,
+  "high_low_definition": "Within-query target M ranking; no absolute global M threshold. Ranks use1e-12 tolerance.",
+  "labels_used": "Opened evaluation labels for diagnosis only. Target rank is not an inference-time routing feature.",
+  "new_training_updates": 0,
+  "new_encoder_or_matcher_forwards": 0,
+  "sources": {
+    "M_audit": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_m_scalar_headroom_audit_20260927_v1/result.json",
+      "sha256": "3911249ac901f71aced13bda0c6add209dfc437a3cf8ddc40328eedeac4ffaa9"
+    },
+    "M_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_m_scalar_headroom_audit_20260927_v1/independent_validation.json",
+      "sha256": "9cdc81b12dfc61358cba61952138930d4b7d33f505e7547b5e2fa69c3ac819c7"
+    },
+    "cache": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/cache.json",
+      "sha256": "e999dc7eb4a711038c724bea04c0642f556971374273b18dec7d587365531711"
+    },
+    "gallery": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+      "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+    },
+    "GAP_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_s_bias_competition_v1/result.json",
+      "sha256": "c180313267377740e8c91d22bb1d26034da8362fe2f16e177739b2e17dd5d7dd"
+    },
+    "GAP_validation": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_s_bias_competition_v1/validation.json",
+      "sha256": "927e52414488fcee99ece8525aa172ea80035ee33b528dafaf561d13a9aa97db"
+    },
+    "GAP_folds": [
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_s_bias_competition_v1/fold0/payload.json",
+        "sha256": "d62824dc7da1c379ca69aa38182abb1ee15080025cfc1544b633b895e85cf183"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_s_bias_competition_v1/fold1/payload.json",
+        "sha256": "122e92c4ef2cc9f65c12b5431d33656a23466e501a33df0ac2fc8d5d5eae5d51"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_s_bias_competition_v1/fold2/payload.json",
+        "sha256": "99b1a2bad1c13192d19ffc4cd90bed8480f11888b07e621af0cd0fbae24742fa"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_s_bias_competition_v1/fold3/payload.json",
+        "sha256": "14106a036b89f1b328f0e75089b945c834d5d9a70bac30b855d3f269409c28a5"
+      },
+      {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_s_bias_competition_v1/fold4/payload.json",
+        "sha256": "8cbabb211f47a06db83e6717fb9a9c3ca2cef01c2e0be8ab1bab60c884dd136d"
+      }
+    ]
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_h593_m_481_492_comparison_v1.py",
+    "sha256": "fa86824522036e32b278d6c933a01c6757ddc9970e7d8e56860d4ca9afe28f33"
+  }
+}

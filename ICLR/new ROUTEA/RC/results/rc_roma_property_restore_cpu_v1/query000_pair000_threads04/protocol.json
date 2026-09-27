@@ -1,0 +1,128 @@
+{
+  "arms": [
+    "NATIVE",
+    "ZERO",
+    "GLOBAL_X_PLUS",
+    "LOCAL_X_PLUS"
+  ],
+  "autocast": "Original DPT BF16 block; final output_conv2 FP32",
+  "backend_policy": "Any later non-bit-exact CPU experiment must recompute every scientific arm on the same frozen CPU backend. Sealed GPU outputs are numerical references only and cannot be mixed into CPU causal contrasts.",
+  "code": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/probe_rc_roma_property_restore_cpu_v1.py",
+      "sha256": "549c16d9a925ea9a8c003c41ce9490a59fddbddd820c266f0591a255800a42d0"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_position_factor_v1.py",
+      "sha256": "2e804f20087b648eefd65eedf0e5c39fae32d012a8c38130bb1d75078a491399"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/dpt.py",
+      "sha256": "254aebb9b5fb02ffc90e3838ed4e5d27bb423912a680034a7f6af21f9e2d22e9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/matcher.py",
+      "sha256": "b5db2b991d35b1bd217db70763d10d71bd690a600ab875665daf94a54e44a3b6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_shared_native_cache_v1.py",
+      "sha256": "60eb8016b14e743171425f8653fd70672ec088a8a3c5373db5bbb96698042024"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_exact_feature_cache_v2.py",
+      "sha256": "0b8ed4d0946a7b320fe176359461fa290d4a5f8b400fb6eca3c824395d31bf5b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/colnomic_dino_canonical_geometry_v2.py",
+      "sha256": "c732dc933c502f17fd5cb8cc80ae45d116716fe801cc8f3034a1e6a49cef6508"
+    }
+  ],
+  "descriptors": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/rc_h593_shared_native_v1/coarse/e0e0d0a8ad38628159d2f1773c33c0d06c25cb87131c7545f5c31c60efbf6490.pt",
+      "sha256": "66df6a270bf0925c4f33bc972e6748f3247235669f568139a0f0265789d0c76b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/cache/rc_h593_shared_native_v1/coarse/4721818dd1be83d1baea41124ea9aae05f9930c9ad2a7a4bba51f207261f5030.pt",
+      "sha256": "e5e75ace2501aea35bfa014ec1a658b176d6cdae459063052f1899750609ecd4"
+    }
+  ],
+  "device": "cpu",
+  "geometry_metadata": [
+    {
+      "exif_orientation": 1,
+      "grid_shape": [
+        36,
+        20
+      ],
+      "oriented_size_hw": [
+        3840,
+        2160
+      ],
+      "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557",
+      "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+      "raw_size_hw": [
+        3840,
+        2160
+      ],
+      "sha256": "3bcf6a9d013b020f7aed0de0621a6091a421f0d065f047f84a843f2ad106e955"
+    },
+    {
+      "exif_orientation": 1,
+      "grid_shape": [
+        53,
+        14
+      ],
+      "oriented_size_hw": [
+        2448,
+        653
+      ],
+      "processor_config_sha256": "1a427e12a15406a5c4701273c91a0b319528de5c78523ae5ba5329d86e5d5557",
+      "processor_input_frame": "DECODED_RAW_BEFORE_EXIF",
+      "raw_size_hw": [
+        2448,
+        653
+      ],
+      "sha256": "cdf5fab661ce2cbf77da70b5dd3b26cadc6c3fbf589a3be553c137018ab39561"
+    }
+  ],
+  "geometry_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_original7_train128_roma_v1/shard06/payload.pt",
+    "sha256": "d47c1686c1f75f8eaeccbfce85832e40e7925142ce7c712d987d8931878e7b5f"
+  },
+  "index": 0,
+  "interop_threads": 1,
+  "next_stage_policy": "Pilot measurement never automatically launches a larger experiment.",
+  "numerical_policy": "Measure all errors. No approximate acceptance threshold is chosen or relaxed.",
+  "outcome_blind_selection": "Execution ordinal and natural candidate position only",
+  "physical_row": 251,
+  "position": 0,
+  "query_sha": "da4c6e66c28b635628233719623d25c134b1fcbe705aa8ba3e7a58915ae9a147",
+  "reference_sha": "2593831fd3ea8c4f42be1ceff71d33d18447c02ee4b4b830d0125bf1f425294f",
+  "schema": "CPU_DPT_PROPERTY_RESTORE_PILOT_V1",
+  "source_authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_roma_position_factor_authority_v1_20260924.json",
+    "sha256": "bd71deafd8e219b05799ca006c3c14f880353a1bd3b48878670343fefdb9bf82"
+  },
+  "source_capture": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/query000/capture000.pt",
+    "sha256": "70da231b9a7e2a10bad9c70805fec045cab6b7c06eb827f48c59155a24f722ad"
+  },
+  "source_gpu_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/query000/gpu_validation.json",
+    "sha256": "6c4a5fefcdd45d5b435e3018b9b7046e9b44eccee3da6df2516be714473ec815"
+  },
+  "source_head": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/head_replay_state.pt",
+    "sha256": "a5222b29cc3386d67c771ed2e0896e3d80a5f2bc3a065aec1a90097fe6a5debe"
+  },
+  "source_manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/manifest.json",
+    "sha256": "db14ca48b04a035afd7e58e1d10b399312e73231c1b4d3847d23880d43f0feca"
+  },
+  "source_pair": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/query000/pair000.pt",
+    "sha256": "e61faacdb7eee9b24071459c555e23be98482eb75d2575db2314454b2a2fc3cf"
+  },
+  "threads": 4
+}

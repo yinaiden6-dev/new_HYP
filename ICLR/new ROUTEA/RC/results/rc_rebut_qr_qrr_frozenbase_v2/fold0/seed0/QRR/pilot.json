@@ -1,0 +1,79 @@
+{
+  "status": "FROZEN_BASE_REAL_QUERY_ENGINEERING_PILOT_PASS",
+  "scientific_result": false,
+  "binding": {
+    "protocol": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_frozenbase_v2/protocol.json",
+      "sha256": "90189e31325f002151501aaad0891b4aeb3490cde2fa842ebde8b77f6b5cdb63"
+    },
+    "runner_sha256": "bc8111901046a1c4461ab873ff526e96e6b6684eab67bf4da114b762958b68f7",
+    "v1_runner_sha256": "d128536744f2226770466364a4d1f055e52a3fa6f8d4ef6f19cafaac712e62cf",
+    "module_sha256": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a",
+    "evidence_manifest": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/evidence_manifest.json",
+      "sha256": "1964a361c8e200ccc4fd0456db3137ff94dfe03a4fa85a5175d4ee75e5eea19e"
+    },
+    "baseline_bindings": {
+      "source_result": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/result.json",
+        "sha256": "4b58e35e4397f71aca6fd696991b5a5d92659231c5769050856ff19b59273336"
+      },
+      "source_model": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/model.pt",
+        "sha256": "6af728b5a64fa5c1d79765f2c1c9c012f053414b745a7ff8f286220f8750a64f"
+      },
+      "source_checkpoint": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/checkpoint.pt",
+        "sha256": "c7c08b08dbb6acf185598569aa517beac5b1d0966540624a6eab72b6cdcad783"
+      }
+    },
+    "baseline_inner_predictions": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/inner_validation.json",
+      "sha256": "4c97a9993e43accd35398833243bc8ba406861be95a5a220fb76b710f16080de"
+    },
+    "fold": 0,
+    "seed": 0,
+    "arm": "QRR"
+  },
+  "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+  "updates": [
+    {
+      "step": 1,
+      "loss": 0.09753169811000123,
+      "seconds": 0.21495121624320745
+    },
+    {
+      "step": 2,
+      "loss": 0.09752949179499963,
+      "seconds": 0.17035508155822754
+    },
+    {
+      "step": 3,
+      "loss": 0.09752626644001147,
+      "seconds": 0.17134202644228935
+    }
+  ],
+  "gradients": [
+    {
+      "reader_norm": 0.0016525534470645177,
+      "output_norm": 0.0016525534470645175,
+      "stem_norm": 0.0
+    },
+    {
+      "reader_norm": 0.001652885162377169,
+      "output_norm": 0.0016525035649255257,
+      "stem_norm": 2.54421084802724e-05
+    },
+    {
+      "reader_norm": 0.002000368927943607,
+      "output_norm": 0.001998957506971347,
+      "stem_norm": 5.3839758972934967e-05
+    }
+  ],
+  "initial_scores_bit_exact_baseline": true,
+  "head_exact_unchanged": true,
+  "frozen_head_parameters": 18,
+  "trainable_reader_parameters": 25248,
+  "input_F_standardized": false,
+  "threads": 2
+}

@@ -1,0 +1,440 @@
+{
+  "status": "THREAD4_EXACT_ANCHOR_REPAIR_PASS",
+  "diagnostic_thread2_projection_difference_reproduced": true,
+  "original_bridge_anchor_tolerance_unchanged": 2e-10,
+  "four_thread_actual_max_patch_error": 0.0,
+  "four_thread_actual_max_L_error": 0.0,
+  "queries": 3,
+  "candidates": 384,
+  "rows": [
+    {
+      "index": 0,
+      "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+      "candidates": 128,
+      "threads": 4,
+      "all_adapter_hashes_exact": true,
+      "max_patch_error": 0.0,
+      "max_L_error": 0.0,
+      "argmax_changes": 0,
+      "candidate_evidence": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_bridge_thread_repair_v2/row00_candidates.json",
+        "sha256": "c055ff7fad9b9fbd5636dcc178d720efcc1474b2e347452238178c154e8fad10"
+      },
+      "hidden_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/encoder_cache/H593-0091cc1b5a6f73a4ad8d88ae/validation.json",
+        "sha256": "e828ce09790a28047152bde63d64837b2e953e19b099528a92c269acffdbc718"
+      },
+      "hidden_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/encoder_cache/H593-0091cc1b5a6f73a4ad8d88ae/payload.pt",
+        "sha256": "375b0e9fa7a64ed657ba2b177d542537d8e132b864b2ae95e2df267284d9530b"
+      },
+      "projection_source_report": {
+        "status": "FROZEN_COLNOMIC_PROJECTION_ONLY_LOADED",
+        "sources": [
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_config.json",
+            "sha256": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c",
+            "stat": [
+              48,
+              777080427,
+              868,
+              1778003756805747239
+            ],
+            "sealed_stat": [
+              50,
+              777080427,
+              868,
+              1778003756805747239
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model.safetensors.index.json",
+            "sha256": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010",
+            "stat": [
+              48,
+              285291799,
+              57751,
+              1778003711612873000
+            ],
+            "sealed_stat": [
+              50,
+              285291799,
+              57751,
+              1778003711612873000
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_model.safetensors",
+            "sha256": "aa6cba28368342ac6b235f49fcc3e0a5bd891d56df490c12bcbc6dc52c8377f3",
+            "stat": [
+              48,
+              777080420,
+              323489536,
+              1778003664506585399
+            ],
+            "sealed_stat": [
+              50,
+              777080420,
+              323489536,
+              1778003664506585399
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00007-of-00007.safetensors",
+            "sha256": "d639238d6a4340a76150c1157e78cdb56d79441cd8cb8b90e25d8f16ade7e890",
+            "stat": [
+              48,
+              285291798,
+              3385682488,
+              1778003725566737873
+            ],
+            "sealed_stat": [
+              50,
+              285291798,
+              3385682488,
+              1778003725566737873
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          }
+        ],
+        "projection_tensor_sources": {
+          "custom_text_proj.weight": {
+            "shape": [
+              128,
+              3584
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "7520983df0b8515f53e5475c67ba08117fe4f653f670e61d614064a7a1818d61"
+          },
+          "custom_text_proj.bias": {
+            "shape": [
+              128
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+          },
+          "base_model.model.custom_text_proj.lora_A.weight": {
+            "shape": [
+              32,
+              3584
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "e3c93e624447238142f05019c446193758a2b0694d55038e3a9edb4e1cc0de77"
+          },
+          "base_model.model.custom_text_proj.lora_B.weight": {
+            "shape": [
+              128,
+              32
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "87b2e1d5e785a9d8973381eb1017aa66ef29a0e467cf98ba64782463c54ace9b"
+          }
+        },
+        "frozen_parameters": 577664,
+        "trainable_parameters": 0,
+        "base_dtype": "torch.bfloat16",
+        "lora_dtype": "torch.bfloat16",
+        "projection_merged": false,
+        "lora_scaling": 1.0,
+        "model_forward_calls": 0,
+        "language_model_loaded": false,
+        "semantics": "base linear + unmerged BF16 LoRA B(A(x))*alpha/r; eval dropout identity"
+      }
+    },
+    {
+      "index": 1,
+      "query_id": "H593-00db0e83284b1620da33639a",
+      "candidates": 128,
+      "threads": 4,
+      "all_adapter_hashes_exact": true,
+      "max_patch_error": 0.0,
+      "max_L_error": 0.0,
+      "argmax_changes": 0,
+      "candidate_evidence": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_bridge_thread_repair_v2/row01_candidates.json",
+        "sha256": "2a702978e899d4212493a43130acfe4cedd60473f37cbfcc488d2b0088ad6e25"
+      },
+      "hidden_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/encoder_cache/H593-00db0e83284b1620da33639a/validation.json",
+        "sha256": "7d884af6a9c5ff14b1707d5af61340138b829f143146e6ab147bcdf4e258c6d4"
+      },
+      "hidden_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/encoder_cache/H593-00db0e83284b1620da33639a/payload.pt",
+        "sha256": "caccb9ba22e302e79577c0672159229be1d510121833de05b2f59aac4b2fc4d1"
+      },
+      "projection_source_report": {
+        "status": "FROZEN_COLNOMIC_PROJECTION_ONLY_LOADED",
+        "sources": [
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_config.json",
+            "sha256": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c",
+            "stat": [
+              48,
+              777080427,
+              868,
+              1778003756805747239
+            ],
+            "sealed_stat": [
+              50,
+              777080427,
+              868,
+              1778003756805747239
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model.safetensors.index.json",
+            "sha256": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010",
+            "stat": [
+              48,
+              285291799,
+              57751,
+              1778003711612873000
+            ],
+            "sealed_stat": [
+              50,
+              285291799,
+              57751,
+              1778003711612873000
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_model.safetensors",
+            "sha256": "aa6cba28368342ac6b235f49fcc3e0a5bd891d56df490c12bcbc6dc52c8377f3",
+            "stat": [
+              48,
+              777080420,
+              323489536,
+              1778003664506585399
+            ],
+            "sealed_stat": [
+              50,
+              777080420,
+              323489536,
+              1778003664506585399
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00007-of-00007.safetensors",
+            "sha256": "d639238d6a4340a76150c1157e78cdb56d79441cd8cb8b90e25d8f16ade7e890",
+            "stat": [
+              48,
+              285291798,
+              3385682488,
+              1778003725566737873
+            ],
+            "sealed_stat": [
+              50,
+              285291798,
+              3385682488,
+              1778003725566737873
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          }
+        ],
+        "projection_tensor_sources": {
+          "custom_text_proj.weight": {
+            "shape": [
+              128,
+              3584
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "7520983df0b8515f53e5475c67ba08117fe4f653f670e61d614064a7a1818d61"
+          },
+          "custom_text_proj.bias": {
+            "shape": [
+              128
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+          },
+          "base_model.model.custom_text_proj.lora_A.weight": {
+            "shape": [
+              32,
+              3584
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "e3c93e624447238142f05019c446193758a2b0694d55038e3a9edb4e1cc0de77"
+          },
+          "base_model.model.custom_text_proj.lora_B.weight": {
+            "shape": [
+              128,
+              32
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "87b2e1d5e785a9d8973381eb1017aa66ef29a0e467cf98ba64782463c54ace9b"
+          }
+        },
+        "frozen_parameters": 577664,
+        "trainable_parameters": 0,
+        "base_dtype": "torch.bfloat16",
+        "lora_dtype": "torch.bfloat16",
+        "projection_merged": false,
+        "lora_scaling": 1.0,
+        "model_forward_calls": 0,
+        "language_model_loaded": false,
+        "semantics": "base linear + unmerged BF16 LoRA B(A(x))*alpha/r; eval dropout identity"
+      }
+    },
+    {
+      "index": 2,
+      "query_id": "H593-00f945a36392a04124513f2c",
+      "candidates": 128,
+      "threads": 4,
+      "all_adapter_hashes_exact": true,
+      "max_patch_error": 0.0,
+      "max_L_error": 0.0,
+      "argmax_changes": 0,
+      "candidate_evidence": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_bridge_thread_repair_v2/row02_candidates.json",
+        "sha256": "51c189a9be2043a2819aadbcf140dd524049e71d163d01ea8ed506eb51181b00"
+      },
+      "hidden_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/encoder_cache/H593-00f945a36392a04124513f2c/validation.json",
+        "sha256": "6dc2bc8d0cf0f032e392e131fbd2b8869311af28126ef3a6da37384d527b1030"
+      },
+      "hidden_payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/encoder_cache/H593-00f945a36392a04124513f2c/payload.pt",
+        "sha256": "49f33d923e1443661d925c37a93673ef881a88e1e7abcebae5434879479e67ea"
+      },
+      "projection_source_report": {
+        "status": "FROZEN_COLNOMIC_PROJECTION_ONLY_LOADED",
+        "sources": [
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_config.json",
+            "sha256": "810e2f2aa284e8bc13f21ab22ea3ea7b2c4e97f41adec297d266737904d99f9c",
+            "stat": [
+              48,
+              777080427,
+              868,
+              1778003756805747239
+            ],
+            "sealed_stat": [
+              50,
+              777080427,
+              868,
+              1778003756805747239
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model.safetensors.index.json",
+            "sha256": "eaed0aaf1b1db86181aa6c9eb5dbe6892036587774ec47cbee5440a270966010",
+            "stat": [
+              48,
+              285291799,
+              57751,
+              1778003711612873000
+            ],
+            "sealed_stat": [
+              50,
+              285291799,
+              57751,
+              1778003711612873000
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colnomic-embed-multimodal-7b/adapter_model.safetensors",
+            "sha256": "aa6cba28368342ac6b235f49fcc3e0a5bd891d56df490c12bcbc6dc52c8377f3",
+            "stat": [
+              48,
+              777080420,
+              323489536,
+              1778003664506585399
+            ],
+            "sealed_stat": [
+              50,
+              777080420,
+              323489536,
+              1778003664506585399
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          },
+          {
+            "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/models/downloaded_models/colqwen2.5-7B-base/model-00007-of-00007.safetensors",
+            "sha256": "d639238d6a4340a76150c1157e78cdb56d79441cd8cb8b90e25d8f16ade7e890",
+            "stat": [
+              48,
+              285291798,
+              3385682488,
+              1778003725566737873
+            ],
+            "sealed_stat": [
+              50,
+              285291798,
+              3385682488,
+              1778003725566737873
+            ],
+            "verification": "sealed hash plus exact inode/size/mtime; small configuration rehashed"
+          }
+        ],
+        "projection_tensor_sources": {
+          "custom_text_proj.weight": {
+            "shape": [
+              128,
+              3584
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "7520983df0b8515f53e5475c67ba08117fe4f653f670e61d614064a7a1818d61"
+          },
+          "custom_text_proj.bias": {
+            "shape": [
+              128
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+          },
+          "base_model.model.custom_text_proj.lora_A.weight": {
+            "shape": [
+              32,
+              3584
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "e3c93e624447238142f05019c446193758a2b0694d55038e3a9edb4e1cc0de77"
+          },
+          "base_model.model.custom_text_proj.lora_B.weight": {
+            "shape": [
+              128,
+              32
+            ],
+            "source_dtype": "torch.float32",
+            "source_tensor_sha256": "87b2e1d5e785a9d8973381eb1017aa66ef29a0e467cf98ba64782463c54ace9b"
+          }
+        },
+        "frozen_parameters": 577664,
+        "trainable_parameters": 0,
+        "base_dtype": "torch.bfloat16",
+        "lora_dtype": "torch.bfloat16",
+        "projection_merged": false,
+        "lora_scaling": 1.0,
+        "model_forward_calls": 0,
+        "language_model_loaded": false,
+        "semantics": "base linear + unmerged BF16 LoRA B(A(x))*alpha/r; eval dropout identity"
+      }
+    }
+  ],
+  "worst_candidate_sweep": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_bridge_thread_repair_v2/worst_candidate_thread_sweep.json",
+    "sha256": "925bee55f59b38e8c7de74c5e6cac47e63e6df9d14daf6ecf7e511cc3adf4e10"
+  },
+  "sources": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_bridge_thread_repair_v2/sources.json",
+    "sha256": "c50264ee535cba5ad87e8923dceae8f07cf90fa615b114ed85de341ca73df79d"
+  },
+  "runtime": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_bridge_thread_repair_v2/runtime.json",
+    "sha256": "c3f6981c3b8ce718515ca62881a77466eb318be452c095e7b5500eb9b36813a5"
+  },
+  "elapsed_seconds": 15.883813738822937,
+  "training": false,
+  "gpu": false,
+  "original_files_modified": false,
+  "scientific_scope": "Numerical replay repair only; no new mechanism or retrieval claim.",
+  "repair": "Use original four-thread computation in an isolated new bridge version; recompute all worlds. Do not mix two-thread candidate caches or loosen tolerance."
+}

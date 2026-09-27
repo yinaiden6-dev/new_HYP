@@ -1,0 +1,56 @@
+{
+  "status": "CPU_PHASE_BRIDGE_SUBMITTED",
+  "utc": "2026-09-27T08:17:17.560022+00:00",
+  "jobs": {
+    "replay": 5166024,
+    "independent_join": 5166025
+  },
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_external_internal_bridge_v1/protocol.json",
+    "sha256": "110aad0ab84ff275fc6b98b47fd88d7f23c74c5d8a56ea657d48246a4eb34522"
+  },
+  "pilot": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_external_internal_bridge_v1/pilot_validation.json",
+    "sha256": "8e3fdff7fa5f246f23e86dd23135124bbc266296b657cef43181ba6799c0526c"
+  },
+  "launchers": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_phase_bridge_v1.sbatch",
+      "sha256": "ddc97fcba96a70312862dd2205698978511f6573ea7073d45fa3021c28465705"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_phase_bridge_join_v1.sbatch",
+      "sha256": "0db8d07e684d352cc10167e8fc767a296e4bfbd661348bca34db3bc44dd125b7"
+    }
+  ],
+  "resources": {
+    "replay": {
+      "cpu": 8,
+      "mem": "16G",
+      "minutes": 10,
+      "workers": 4,
+      "threads": 2,
+      "partition": "cpuonly,dev_cpuonly"
+    },
+    "join": {
+      "cpu": 2,
+      "mem": "8G",
+      "minutes": 10,
+      "partition": "cpuonly"
+    }
+  },
+  "gpu": 0,
+  "new_training": 0,
+  "queries": 8,
+  "candidates": 128,
+  "worlds": 36,
+  "pending_is_not_complete": true,
+  "spool_byte_parity": {
+    "5166024": true,
+    "5166025": true
+  },
+  "external_scale_check": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_external_internal_bridge_v1/external_scale_validation.json",
+    "sha256": "b8bbfe899028756467be2849b2a3ae711b6d76513bc5476387b797104680f2b2"
+  }
+}

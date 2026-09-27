@@ -1,0 +1,1863 @@
+{
+  "version": "REBUT_QR_QRR_FROZENBASE_V2",
+  "status": "FROZEN_BEFORE_V2_TRAINING",
+  "user_authorization": "2026-09-27 continue: trained baseline frozen, new residual learns on existing F71; old results preserved",
+  "output_root": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_frozenbase_v2",
+  "common_features": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/common_features.pt",
+    "sha256": "2df0eb938efa9dcf99a6f4113922dbdad12cc56196cebe003f2deb490461e94a"
+  },
+  "evidence_manifest": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/evidence_manifest.json",
+  "gallery": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+    "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+  },
+  "folds": {
+    "0": {
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold0.json",
+        "sha256": "4ed6bdb7d4e47062e2bdef7268090b86453bd31c9af765e483af23b47e7bf7ca"
+      },
+      "train_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00f945a36392a04124513f2c",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-02060e3d320616b952a39654",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-03168677fa508c139372f0ed",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-059b70b913c381ca4c02e851",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-068d4310663d131f8027b587",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-0923651f03329ad9587b7927",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-178d10ad3076a41e89d549dd",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1aee8f8c27c19ea85c3d7d4b"
+      ],
+      "heldout_query_ids": [
+        "H593-00db0e83284b1620da33639a",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-059423d2642d803097a5e092",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-172289962b84290bc00b6b57",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1b38ef6880169a631e184725",
+        "H593-1bab76bb2cce8605543067d4"
+      ],
+      "inner_fit_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00f945a36392a04124513f2c",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-02060e3d320616b952a39654",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-03168677fa508c139372f0ed",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-068d4310663d131f8027b587",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-0923651f03329ad9587b7927",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1aee8f8c27c19ea85c3d7d4b"
+      ],
+      "inner_val_query_ids": [
+        "H593-059b70b913c381ca4c02e851",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-178d10ad3076a41e89d549dd"
+      ]
+    },
+    "1": {
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold1.json",
+        "sha256": "df1289b7063c7dd3cd3206b5145137b7f0ab3d6d9eb19a157b809bb0b177c1aa"
+      },
+      "train_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00db0e83284b1620da33639a",
+        "H593-00f945a36392a04124513f2c",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-02060e3d320616b952a39654",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-03168677fa508c139372f0ed",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-059423d2642d803097a5e092",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-0923651f03329ad9587b7927",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-172289962b84290bc00b6b57",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-178d10ad3076a41e89d549dd",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1b38ef6880169a631e184725",
+        "H593-1bab76bb2cce8605543067d4"
+      ],
+      "heldout_query_ids": [
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-059b70b913c381ca4c02e851",
+        "H593-068d4310663d131f8027b587",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-1aee8f8c27c19ea85c3d7d4b"
+      ],
+      "inner_fit_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00db0e83284b1620da33639a",
+        "H593-00f945a36392a04124513f2c",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-02060e3d320616b952a39654",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-059423d2642d803097a5e092",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-0923651f03329ad9587b7927",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-172289962b84290bc00b6b57",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1b38ef6880169a631e184725"
+      ],
+      "inner_val_query_ids": [
+        "H593-03168677fa508c139372f0ed",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-178d10ad3076a41e89d549dd",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1bab76bb2cce8605543067d4"
+      ]
+    },
+    "2": {
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold2.json",
+        "sha256": "1cacdef765473306368403b75add4c75561ab8130df67373ec9eb949c775ed78"
+      },
+      "train_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00db0e83284b1620da33639a",
+        "H593-00f945a36392a04124513f2c",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-059423d2642d803097a5e092",
+        "H593-059b70b913c381ca4c02e851",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-068d4310663d131f8027b587",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-172289962b84290bc00b6b57",
+        "H593-178d10ad3076a41e89d549dd",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1aee8f8c27c19ea85c3d7d4b",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1b38ef6880169a631e184725",
+        "H593-1bab76bb2cce8605543067d4"
+      ],
+      "heldout_query_ids": [
+        "H593-02060e3d320616b952a39654",
+        "H593-03168677fa508c139372f0ed",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-0923651f03329ad9587b7927",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99"
+      ],
+      "inner_fit_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00db0e83284b1620da33639a",
+        "H593-00f945a36392a04124513f2c",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-059423d2642d803097a5e092",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-068d4310663d131f8027b587",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-172289962b84290bc00b6b57",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1aee8f8c27c19ea85c3d7d4b",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1b38ef6880169a631e184725",
+        "H593-1bab76bb2cce8605543067d4"
+      ],
+      "inner_val_query_ids": [
+        "H593-059b70b913c381ca4c02e851",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-178d10ad3076a41e89d549dd"
+      ]
+    },
+    "3": {
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold3.json",
+        "sha256": "2e58828ddbc76acef92cda57c8b1f1c30fd828101209d4e5dcb46bfbcfda95fe"
+      },
+      "train_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00db0e83284b1620da33639a",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-02060e3d320616b952a39654",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-03168677fa508c139372f0ed",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-059423d2642d803097a5e092",
+        "H593-059b70b913c381ca4c02e851",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-068d4310663d131f8027b587",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-0923651f03329ad9587b7927",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-172289962b84290bc00b6b57",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-178d10ad3076a41e89d549dd",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1aee8f8c27c19ea85c3d7d4b",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1b38ef6880169a631e184725",
+        "H593-1bab76bb2cce8605543067d4"
+      ],
+      "heldout_query_ids": [
+        "H593-00f945a36392a04124513f2c",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1720428a3a7802dc9dfc49e4"
+      ],
+      "inner_fit_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-00db0e83284b1620da33639a",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-02060e3d320616b952a39654",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-059423d2642d803097a5e092",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-068d4310663d131f8027b587",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-0923651f03329ad9587b7927",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-172289962b84290bc00b6b57",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1aee8f8c27c19ea85c3d7d4b",
+        "H593-1b38ef6880169a631e184725"
+      ],
+      "inner_val_query_ids": [
+        "H593-03168677fa508c139372f0ed",
+        "H593-059b70b913c381ca4c02e851",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-178d10ad3076a41e89d549dd",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1bab76bb2cce8605543067d4"
+      ]
+    },
+    "4": {
+      "train_roles": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/roles/fold4.json",
+        "sha256": "3458451875fc7accfec4bd210404564f1c7cb3af46205393d44d2fd186e99318"
+      },
+      "train_query_ids": [
+        "H593-00db0e83284b1620da33639a",
+        "H593-00f945a36392a04124513f2c",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-02060e3d320616b952a39654",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-03168677fa508c139372f0ed",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-059423d2642d803097a5e092",
+        "H593-059b70b913c381ca4c02e851",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-068d4310663d131f8027b587",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-0923651f03329ad9587b7927",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-172289962b84290bc00b6b57",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1aee8f8c27c19ea85c3d7d4b",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1b38ef6880169a631e184725",
+        "H593-1bab76bb2cce8605543067d4"
+      ],
+      "heldout_query_ids": [
+        "H593-0091cc1b5a6f73a4ad8d88ae",
+        "H593-021e62b31ffbd6d351d13e91",
+        "H593-028ab5aaff186d9fc48a7f19",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04953480712cfc6b638e8fb2",
+        "H593-064aa36809b4f00051cb821a",
+        "H593-07197c3f4badd640f6859f5e",
+        "H593-10e669d82eed33568754dbb1",
+        "H593-12c93384cd26eac2b57b065b",
+        "H593-135d0a301829fc765ac62aca",
+        "H593-14742ff288bf8a71f7d5208d",
+        "H593-148a11f5ffffec76fd85b3c8",
+        "H593-14a2dd843bc26150f05949e9",
+        "H593-1533c32a07d745928239de77",
+        "H593-178d10ad3076a41e89d549dd"
+      ],
+      "inner_fit_query_ids": [
+        "H593-00db0e83284b1620da33639a",
+        "H593-00f945a36392a04124513f2c",
+        "H593-01371ddf81e97f382dca84d8",
+        "H593-01539eca5c5afd1c6d5ccda2",
+        "H593-0188e7f7150a7aaf05c23614",
+        "H593-02060e3d320616b952a39654",
+        "H593-02543adf69ee9391380f4ee6",
+        "H593-03168677fa508c139372f0ed",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0576bfe455276d27cc059542",
+        "H593-059423d2642d803097a5e092",
+        "H593-05b3ce4ffdc0d30f9d3abac9",
+        "H593-068d4310663d131f8027b587",
+        "H593-082cd2a46d9b304893a3587c",
+        "H593-0923651f03329ad9587b7927",
+        "H593-094186f2ba40a8fa08ad355b",
+        "H593-097dd2637a0f46ccbfb61ff4",
+        "H593-09ce47090a8b579fa3833638",
+        "H593-0a87021a30d8b6a9de32f2b3",
+        "H593-0c251f2d0b52c9cde036edc1",
+        "H593-0d8db033f048bf0a40089770",
+        "H593-0dc7d62664f27ce00d40a1ab",
+        "H593-0de8c65af51ef20333889d71",
+        "H593-0ee088c09f80add39585ed84",
+        "H593-106aa1a451e3f1c3a21d37fe",
+        "H593-118dee9f38aacba8f825b966",
+        "H593-13e342e35a49ea7a9a10b5ce",
+        "H593-14386333d65f4c444d23e372",
+        "H593-147ee84e2fed004258fe44bc",
+        "H593-156bfb4a63653eec1f65ecda",
+        "H593-158f7a5d2bb5969248c9eb5c",
+        "H593-1608d9630ec3a84e25e593bc",
+        "H593-1652082eb7bdd4e18f2fa4e2",
+        "H593-17128afb252013a8b2a0ee5f",
+        "H593-1720428a3a7802dc9dfc49e4",
+        "H593-172289962b84290bc00b6b57",
+        "H593-174dc7ecf520dfa933141c09",
+        "H593-17e5724183278e475c4a304d",
+        "H593-19cc2c81ca081e39a7d72b99",
+        "H593-1a93fb96ae91549c4629e69e",
+        "H593-1ab5d06d095c1ab6749b227c",
+        "H593-1aee8f8c27c19ea85c3d7d4b",
+        "H593-1b38ef6880169a631e184725"
+      ],
+      "inner_val_query_ids": [
+        "H593-059b70b913c381ca4c02e851",
+        "H593-0745854000292039c9c10f33",
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-0ac0e839567fe775450fa642",
+        "H593-0c19fd5a9f5839f926c4ae57",
+        "H593-0c93295a4efc661bc7464f47",
+        "H593-0dd4951a9b49124b8f24958f",
+        "H593-0e5d73ab749914eaaeb680ae",
+        "H593-0e8e2230acf18be9984a101b",
+        "H593-102e05de4bdefbe546c83578",
+        "H593-163df34acba78d2b4f94a0d0",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1bab76bb2cce8605543067d4"
+      ]
+    }
+  },
+  "arms": [
+    "QR",
+    "QR_VEC",
+    "QRR"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "max_epochs": 100,
+    "patience": 10,
+    "batch_queries": 1
+  },
+  "loss": "identity-set FULL-C128 CE when present; mean challenger softplus when absent; query equal weighting",
+  "checkpoint": "resumable reader-only AdamW; include baseline epoch0; fresh same-seed reader refit at selected epoch with frozen outer baseline",
+  "threshold": "fixed zero primary; unchanged inherited B_CAL inner threshold secondary; no new threshold fitting",
+  "head": "phase-correct trained B_CAL weights and RMS are frozen; inner uses best_model trained on inner_fit, outer uses model trained on outer TRAIN",
+  "panel_query_ids": [
+    "H593-0091cc1b5a6f73a4ad8d88ae",
+    "H593-00db0e83284b1620da33639a",
+    "H593-00f945a36392a04124513f2c",
+    "H593-01371ddf81e97f382dca84d8",
+    "H593-01539eca5c5afd1c6d5ccda2",
+    "H593-0188e7f7150a7aaf05c23614",
+    "H593-02060e3d320616b952a39654",
+    "H593-021e62b31ffbd6d351d13e91",
+    "H593-02543adf69ee9391380f4ee6",
+    "H593-028ab5aaff186d9fc48a7f19",
+    "H593-02ce6b371f2907428fc96ffe",
+    "H593-03168677fa508c139372f0ed",
+    "H593-04953480712cfc6b638e8fb2",
+    "H593-04bd54f85fedc55966f9ee04",
+    "H593-0576bfe455276d27cc059542",
+    "H593-059423d2642d803097a5e092",
+    "H593-059b70b913c381ca4c02e851",
+    "H593-05b3ce4ffdc0d30f9d3abac9",
+    "H593-064aa36809b4f00051cb821a",
+    "H593-068d4310663d131f8027b587",
+    "H593-07197c3f4badd640f6859f5e",
+    "H593-0745854000292039c9c10f33",
+    "H593-08297e272b0164e6fdd42e9f",
+    "H593-082cd2a46d9b304893a3587c",
+    "H593-0923651f03329ad9587b7927",
+    "H593-094186f2ba40a8fa08ad355b",
+    "H593-097dd2637a0f46ccbfb61ff4",
+    "H593-09ce47090a8b579fa3833638",
+    "H593-0a87021a30d8b6a9de32f2b3",
+    "H593-0ac0e839567fe775450fa642",
+    "H593-0c19fd5a9f5839f926c4ae57",
+    "H593-0c251f2d0b52c9cde036edc1",
+    "H593-0c93295a4efc661bc7464f47",
+    "H593-0d8db033f048bf0a40089770",
+    "H593-0dc7d62664f27ce00d40a1ab",
+    "H593-0dd4951a9b49124b8f24958f",
+    "H593-0de8c65af51ef20333889d71",
+    "H593-0e5d73ab749914eaaeb680ae",
+    "H593-0e8e2230acf18be9984a101b",
+    "H593-0ee088c09f80add39585ed84",
+    "H593-102e05de4bdefbe546c83578",
+    "H593-106aa1a451e3f1c3a21d37fe",
+    "H593-10e669d82eed33568754dbb1",
+    "H593-118dee9f38aacba8f825b966",
+    "H593-12c93384cd26eac2b57b065b",
+    "H593-135d0a301829fc765ac62aca",
+    "H593-13e342e35a49ea7a9a10b5ce",
+    "H593-14386333d65f4c444d23e372",
+    "H593-14742ff288bf8a71f7d5208d",
+    "H593-147ee84e2fed004258fe44bc",
+    "H593-148a11f5ffffec76fd85b3c8",
+    "H593-14a2dd843bc26150f05949e9",
+    "H593-1533c32a07d745928239de77",
+    "H593-156bfb4a63653eec1f65ecda",
+    "H593-158f7a5d2bb5969248c9eb5c",
+    "H593-1608d9630ec3a84e25e593bc",
+    "H593-163df34acba78d2b4f94a0d0",
+    "H593-1652082eb7bdd4e18f2fa4e2",
+    "H593-17128afb252013a8b2a0ee5f",
+    "H593-1720428a3a7802dc9dfc49e4",
+    "H593-172289962b84290bc00b6b57",
+    "H593-174dc7ecf520dfa933141c09",
+    "H593-178d10ad3076a41e89d549dd",
+    "H593-17e5724183278e475c4a304d",
+    "H593-19cc2c81ca081e39a7d72b99",
+    "H593-1a93fb96ae91549c4629e69e",
+    "H593-1ab5d06d095c1ab6749b227c",
+    "H593-1aee8f8c27c19ea85c3d7d4b",
+    "H593-1af45e7f0d56a52adeb60b07",
+    "H593-1b38ef6880169a631e184725",
+    "H593-1bab76bb2cce8605543067d4"
+  ],
+  "panel_rule": "all pre-existing complete coordinate caches000-070, no correctness/M screening",
+  "candidate_source": "unchanged original natural ColNomic C128",
+  "backbone_updates": 0,
+  "new_backbone_forwards": 0,
+  "evidence_level": "Repeatedly explored F71 grouped development; not untouched test or new H593 result",
+  "original593_analysis": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_m_481_492_comparison_20260927_v1/validation.json",
+    "sha256": "3cee5ac1274f3988edb340c8953ea31ee29d65bd72514c98e23508a12ac3c0a8"
+  },
+  "historical_comparators": [
+    "RAW426",
+    "NATIVE_COST1_481",
+    "GAP_BIAS2_492",
+    "CONTENT_BOX_CE_POLISH18_496"
+  ],
+  "historical_comparator_boundary": "compare on same71; old heads trained on broader original outer TRAIN, report training-population difference",
+  "primary_structural_comparison": "QRR versus QR_VEC",
+  "secondary": [
+    "new residual versus phase-matched frozen B_CAL",
+    "v1 from-zero context",
+    "inherited B_CAL tau sensitivity"
+  ],
+  "final_main_population": 593,
+  "F593_status": "requires522 missing corresponding warp sets; not scheduled by this prototype",
+  "uniqueness_claim": false,
+  "formal_test_status": false,
+  "sources": {
+    "simple_cache": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_simple_explanations_v1/cache.json",
+      "sha256": "e999dc7eb4a711038c724bea04c0642f556971374273b18dec7d587365531711"
+    },
+    "content_features": [
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard00/payload.json",
+          "sha256": "7d5336e55c61cfae5a1b2c42341052fdd2fc2d3fa7eefe46892ab1569b114ab4"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard00/validation.json",
+          "sha256": "cc012d4055feb58efe24c4a47d1417991b6077645c6112057911a23dc55c18cb"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard01/payload.json",
+          "sha256": "cce81925c4658a07097bd4188e3ab743812127c074e761d44d3ebc16b2360e82"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard01/validation.json",
+          "sha256": "5cb4c97333ddd21b70c56bd934716b6744191aedda9effcf6621b52ce68e9ea2"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard02/payload.json",
+          "sha256": "a116c5169c8e60f5c976cf17433bbcee94ed86f136e2e73e162aee2083026b8d"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard02/validation.json",
+          "sha256": "24bf385ecce58b4e2522cd92935431d8b8e0bcc5837d2d37a1c4180d97d6c7a6"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard03/payload.json",
+          "sha256": "dc48ac78f1cf49011849c1e4cfc22b0a39d268eeb098b1a549c33acac16b32fc"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard03/validation.json",
+          "sha256": "6ef44d290ea1f9d5542d12e1177f1f3e65e79e1d67ea9f4944d7bbfbbcaab90f"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard04/payload.json",
+          "sha256": "b697484495d0f058c9637424185c4de99153e02dca4417c4a9efc9694b07ed27"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard04/validation.json",
+          "sha256": "8883483537dfd17574d4bb0a19312014a3f37b0ab959d7283db5470916411153"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard05/payload.json",
+          "sha256": "f14b8434003e21915b09532c944f3e4e14be3ae30615916dbfe9e54a99e038ae"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard05/validation.json",
+          "sha256": "16f806a9739fbca311e1ec053c2381c0ec82b01dbb775055fd87bf95c590a55a"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard06/payload.json",
+          "sha256": "437ca35c9208fcce3f408fdd3ef765db4896c67d1f005aa5e8ca71f8057c6fa5"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard06/validation.json",
+          "sha256": "d0fb4bc9b1deab5cfbe9ae506c288ace8c4b3b9c4de7cb0b521916232e8e787c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard07/payload.json",
+          "sha256": "2a7fa4c7b825f6f79f1a6b6ca1c14a9a7d60e6b8928cde45efa1053fd09bdf75"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard07/validation.json",
+          "sha256": "5208cfc3d8e4d0190a08b741aca66226e949d127ea8713b056d1ca83ca649c04"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard08/payload.json",
+          "sha256": "e5d5723a87100e29a34840610ae2d29917f720da7b40a69133559d01eac78866"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard08/validation.json",
+          "sha256": "6e5382cb5f7454472dd6d5f80b024de515da116619915b5ac47339fa4abf9f00"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard09/payload.json",
+          "sha256": "0931ce238c944c00f8d8eb1373b6c36d9124a00a7095a2257462c1049f8c542c"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard09/validation.json",
+          "sha256": "b14ccc932131e6da261b20ea82507d8200d779ade99fbf4a83da33849f4925e7"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard10/payload.json",
+          "sha256": "e2eb3af61ce8903e9d9499fe546388eb6197676eed78e3f4d2b0771794ea53ce"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard10/validation.json",
+          "sha256": "cf9797b218bddf1101125afac3f345669ec6bfb25cc9f7446cb31b534605a253"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard11/payload.json",
+          "sha256": "f878093661512e3af7772f538dae5aa69bebc600c4a155fd1cb0b04e1bf4901e"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard11/validation.json",
+          "sha256": "20f6598fc6fee795f138e2616ff4dca3ca42d91839fe25f23c340ca252032990"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard12/payload.json",
+          "sha256": "65af095bee35d2a8df76421105b22a59471e342fbbdd0ccf68f3b349ce6e52f6"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard12/validation.json",
+          "sha256": "2d64f3940cfa6c98340338e5580b68d00c5d2e1fdb91bae7dedb408d5883a3ec"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard13/payload.json",
+          "sha256": "e44e437b4e637e3f33a9b1869378bed246407247e8262b8d2dd39018d33d93d5"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard13/validation.json",
+          "sha256": "d18abb0ffeea18ed70edd328fbcb3c3a64c54d5e6d05469a17c535623015bfee"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard14/payload.json",
+          "sha256": "03c26e4d00f774c4e8b910f2a41c4283cd88a4837ac3a16961f94e5847dcd00e"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard14/validation.json",
+          "sha256": "72e0f3a738b30498eb1237f6c6292a7b266f46b8af014aca70a51bcadf0f1121"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard15/payload.json",
+          "sha256": "748d087da6d186742cc08847299a023f2e3b818caaab22999ec57ca07543fd94"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard15/validation.json",
+          "sha256": "df66f95cc779abd56cb011d8969f75b16c2bc0bc20cd1b5af55a7626d6f915ff"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard16/payload.json",
+          "sha256": "8a7c42377b431e3a82799172c674c9c4c8537bc14c909126c82605b9e7ee7dca"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard16/validation.json",
+          "sha256": "a150ccf1f4c28dbc2b4cd95b5950fb41b3ee7847ca51dc62209005ed8bc0273f"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard17/payload.json",
+          "sha256": "af4fc4090cb5f5a16d2e58f3244c5d5b621c28c481853bc0edee37855c46c878"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard17/validation.json",
+          "sha256": "92a9ba3d2685ca4d95b1184be2823a66140f23c10099611254f9d0793b41bd3c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard18/payload.json",
+          "sha256": "27d5bdb2328d798f8df58e18eebbd850681371161962ce42a44088164c5fd7b1"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard18/validation.json",
+          "sha256": "e3f2b8ce1d0e54b50d4c4b2496635ef9b5c1567745a5973b1096d891f7f24651"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard19/payload.json",
+          "sha256": "6ff83f2b77df0626496af77b8832387ac940b7af449f3dc52fccdf5a34dc138e"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard19/validation.json",
+          "sha256": "0587b7ed2c1e56d010ae538a45b6f1b855920c4b0919a863006936a2f00f1759"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard20/payload.json",
+          "sha256": "f33515a50c24e5f3101da4c0861f5060e2dee422b95607b577a519bd5e43537b"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard20/validation.json",
+          "sha256": "d059e127b85293fa1fbe2780c8ea995559d876615741091eda9cc79ca5f2d3fe"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard21/payload.json",
+          "sha256": "f6668f6c269aed984aa54fefab0bf1c71f9cad2b7c5bcfe506678c6cd7baa33c"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard21/validation.json",
+          "sha256": "4fa568b663b5c4321b554dece79ffc51e00154e06cee99b93daa6f8bedc00fd2"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard22/payload.json",
+          "sha256": "f6bda8339186804a7ed0b8876cdbd09400bb36f40961aefa0cee0272e091244f"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard22/validation.json",
+          "sha256": "bc94f8ced0aa83b937e5064b7aaf6e55ba92f8be42912348ca7295df94fa557a"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard23/payload.json",
+          "sha256": "5fe13c5a9dd5965df642e4fc03fa8a3d18bbe1007fca30011ef04d7d5f73c043"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard23/validation.json",
+          "sha256": "be1e89323c046d93801afbabc73f7a16f162e4af1e548c3fede2e34d867edc3b"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard24/payload.json",
+          "sha256": "b9eb0e7f3d7c1fefb8f7dc20797678b5d201951498238d1339bb358081ecdf7f"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard24/validation.json",
+          "sha256": "844b174f2905ed0f5c7eca4ba4a4197af00c3e9e0eee6e00af28ee0e094c73db"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard25/payload.json",
+          "sha256": "a0debf9c00554a90626b970281a9bc586d213f679c6a2e87d2408b64e1bc49af"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard25/validation.json",
+          "sha256": "a1330d233274bdc9f023889bfeede7ad6c33815ffa6242908a81d4cee5a8b96c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard26/payload.json",
+          "sha256": "11b6930f2336d51531ed05634007482b45c59d99a6b1052543e77a20adbbb87b"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard26/validation.json",
+          "sha256": "98f431f4dc559f9a81fd17133bf65ed583a4c775079afe431f4eed75b3c5d49b"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard27/payload.json",
+          "sha256": "ecb94f81e49779c39e4eb373304c8f0e849f81c20a4da5dc2c09eed57b5fae26"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard27/validation.json",
+          "sha256": "950c39ccfbd0c74fe052058b6097141a425e6f10b86859ee89622783faa164ed"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard28/payload.json",
+          "sha256": "8ae1b57e47512e7713fff356ddfbdef5fd9f63ac4efb7204d5bfd10a899f9e89"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard28/validation.json",
+          "sha256": "3106a4b0d93f5536eeb97c668a951861f424b88c549261f7a82f45dd5e51fb61"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard29/payload.json",
+          "sha256": "50d699a61dab99d42be9593d540bc5348f3769afa1f7b4bd0bc5975d6721e6df"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard29/validation.json",
+          "sha256": "90aefbc54a098e5709c9e26eba14a877191f7d4ddf459582dfa8e8cd828426e4"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard30/payload.json",
+          "sha256": "24b8719293f522bcf47ae4bfd2416ae25ea166889f3f1a05f4d9e6262a7c77db"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard30/validation.json",
+          "sha256": "ab58e0409906636197fbe88b20a942e23feb61d49ea9b31f47ce4e3ad7993a7f"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard31/payload.json",
+          "sha256": "6632a316e4f02cb1eabc36f037fbd1762f531c7484a910534fc664d564bb8184"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard31/validation.json",
+          "sha256": "22ab60b34dbd8c02e424202859809eea90c76d94a8961ae060c0917c939c493c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard32/payload.json",
+          "sha256": "3f10fa8976d733f7754394fe7f66efe7d62e0b7c3c8fb5167f7221da49adf4f4"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard32/validation.json",
+          "sha256": "ec214f5a6012e632d4646912cfb6d8cd5b9560ef33be7316302253f1ed769a77"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard33/payload.json",
+          "sha256": "54006c7e08f9251d3fb948a5a654af175608beb7b7e9536974d638d4ab498fb7"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard33/validation.json",
+          "sha256": "d41a403b3455e54328138476cad8f394a16a4b82ea40052e4444b2663ce01c54"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard34/payload.json",
+          "sha256": "8da5ac00009d355eaeb8fbe6ce7f105a1a12f03bab673a6fb3716764bebbeb21"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard34/validation.json",
+          "sha256": "2a1c224996b6fdb59ea8af7eba378ae730f03890e55446b6f3d28fdbb1b1a387"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard35/payload.json",
+          "sha256": "8fa0c8d086f56a4eb498d5100a240e5eb9d82aa89ecec11a7d12ae56f1e57768"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard35/validation.json",
+          "sha256": "8e001c57cc70c10290578f31150ff2024399c0190baaf966647b9d39e1b6f09c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard36/payload.json",
+          "sha256": "676637a2facc3bad5ef8a7bcb984d5f1d75b7c0727be20f4ece4927e4406aca6"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard36/validation.json",
+          "sha256": "f5b8b5563d9ae5c19ebbd8686faa67b98a011591353e92d9d5b5670b5cf694ab"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard37/payload.json",
+          "sha256": "92927ad9ce2b21e376a4857cf25b71c2aaded54a10620bedd8ebc692f8786d45"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard37/validation.json",
+          "sha256": "8f38f177d9534ceacd4137a6196b341bd24e05253472109534ead14926476a95"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard38/payload.json",
+          "sha256": "e24a88ba7a5e929e045ea434b1aa57e8cd3e4f1360d36ea4e84f770721214e9e"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard38/validation.json",
+          "sha256": "3307f0f84ae752e27ef59c654a0ec3485deaa3e97edee5d1064eeec3edb905a0"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard39/payload.json",
+          "sha256": "71783bd8788f46a2f0181ea87bc12ecc740a3ce1050a4bd57f33d9725fcc1fb7"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard39/validation.json",
+          "sha256": "f402d4a30b271402061e8c5675e7b84483b00f8878f3b1e89e226aadf12ad487"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard40/payload.json",
+          "sha256": "56d533fe6bedc4e290c404cc3f6b673e09752dc4b8ba64f5ddc72b045d6506a5"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard40/validation.json",
+          "sha256": "dc39fcd09ca8ed195935b6449e879e9921b116971f2fa7ff2a031a49a9b70820"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard41/payload.json",
+          "sha256": "111f797d6c74d7c496581964a87438ff1add568657be014e2bbbc4a03845a928"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard41/validation.json",
+          "sha256": "6b1381676d01313836de8100304e7d01f3ece4696e4ce8726bccee6c52e178d0"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard42/payload.json",
+          "sha256": "5311172e35df10e5e2fed76dcf937f2a2c19e2b154a463c92c0948d65878b6b0"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard42/validation.json",
+          "sha256": "7889beb19168179fcb278aaf4cae886fb87b1082b815a19874b3db7695042add"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard43/payload.json",
+          "sha256": "3da7b6418ea5b74c3cfe3d901af169ab0fd8dbe1829b808b7e56b663ecd8d241"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard43/validation.json",
+          "sha256": "303b9b154fbbff484e53cf782e5f7a8bc8a8f9f6e27f1d3916ebc1da821678a2"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard44/payload.json",
+          "sha256": "4f52ee4d239699662664cb77ee94cd08a3e84df91e209be5431f60a176150cc9"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard44/validation.json",
+          "sha256": "a60596b92665e1c1053b893c39cc02be399cc4f0b375b7c3852657577e0ce8f6"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard45/payload.json",
+          "sha256": "411e780b8c8e1d0df19e93a1db5f1ed5a734c34fc17757f5c149683380d880f5"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard45/validation.json",
+          "sha256": "c40703572c543ec9fbc90bbd25dbdc781c5a89935eef2411a9558025fa491bb1"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard46/payload.json",
+          "sha256": "64df5a4784dff1b964cd7936d6ff9a6f3ed8eb6ef1585a8edb1dc16a22833342"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard46/validation.json",
+          "sha256": "fdb7af1f2589aa3be7adac2704612e367f2734490fd89c7465fb4f9b8428ea4d"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard47/payload.json",
+          "sha256": "be5c907159f4febdc7e9327c624ed3f691a5c0a13197fece0df1f472ab9b7346"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard47/validation.json",
+          "sha256": "8b5f1873837990c7fb7b39b9a9574b7e23f1bb72e284b5b718f1d7b6306c219c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard48/payload.json",
+          "sha256": "c9c54fb75c07834fc6251d88b6f9e0fd26d842e243ba0829c3dbd7a0f3033a33"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard48/validation.json",
+          "sha256": "22170f86ad7565d55eef6e4c005ee4bba4122acbc8f71c2e14b85c8421cb206c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard49/payload.json",
+          "sha256": "01f86f2caf1b4323267b1b378627659dcb4301d99dda8fe99e57c41f2428b890"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard49/validation.json",
+          "sha256": "9dae6d6a7c414b75360927ac7f8a36dad790a9cfda403696b6ee80472382c11a"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard50/payload.json",
+          "sha256": "3526f9b7ffefd2b80b105668dd267a06d8943e4f5e94188c3f12f579e5582bfa"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard50/validation.json",
+          "sha256": "4d59824432a02aa08a6c393803b614bc30f7574ce88b914c88e83b9ef166668c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard51/payload.json",
+          "sha256": "d971b11107eacfbf228c5a8f56fa9980a777aeac4c3be01d1b651c904830308b"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard51/validation.json",
+          "sha256": "3f24d90228e40e9a17ea80e2babcd7e3439908396049bff4442585c0bfa37e05"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard52/payload.json",
+          "sha256": "2bb455071abab32308799ae064173ff4eb640354fd8dcc84e202ee7e3eb54246"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard52/validation.json",
+          "sha256": "78bb45348aaad0937e0a143d8b6d48155c8e09bafb0a6984fb3bb28bbff01b9d"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard53/payload.json",
+          "sha256": "4c9eb6e1c60fdcfa415a0ad0ac4707d0a66cfd925e0b93c82935dbbc5d7d80d3"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard53/validation.json",
+          "sha256": "ca1b4a7ad31d6dffeae510950192819a95e8689020d97a34a4c05fb45103acb3"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard54/payload.json",
+          "sha256": "189bcb42a0c9d7d7ec278e74cc91bc92c4e747b6ab9487812212456ae8bf82b1"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard54/validation.json",
+          "sha256": "d1964b57744fd5fc75bd2261e366985ae99384d750dd87cf890bdbbc199f0896"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard55/payload.json",
+          "sha256": "9cd8a8d413d34b92e0f81b9293fcd1715d51b8db0310de225df158ed83a08e0c"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard55/validation.json",
+          "sha256": "a7462513ef6733a4349607275d47f7d9a660ffb112050a1b3fc4167c662691f4"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard56/payload.json",
+          "sha256": "cf56ab3b16f580ec06b236d24b7353cab19e57ff19604bb1c7da6801cd6ae622"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard56/validation.json",
+          "sha256": "1051c4f55bcdc66ebcb4b3549719092d37dab0321f700d323e7c2306d70df036"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard57/payload.json",
+          "sha256": "95a9acc0e4b65785979ef39cd6447a454e69b062f7dad11761dbbd2f4f8f68c5"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard57/validation.json",
+          "sha256": "e7300043f92acd7a8427fd12855136109465680eccac5a39ed99da457acdf62c"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard58/payload.json",
+          "sha256": "3fc99649f9c60f2a0d5461135be245d3410d4995cda09d1b27ba1b368a75c4de"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard58/validation.json",
+          "sha256": "5368aac224b3a6c09e28095c4434b5ef0e1966bfca17a305f89399b6d0a4dfe4"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard59/payload.json",
+          "sha256": "5b2b85cd80615f6a1bad480c8507080d37663128fa82eeba916da7252806cb05"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard59/validation.json",
+          "sha256": "95c8a3f3025ec819aeeaaf01971a7153afc1093d4cd08792202d9aaa02ea7a42"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard60/payload.json",
+          "sha256": "86a700c1deea963e5b3e8ca1629f433259fd5dabecb02c2b9d63e6fba7e53f92"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard60/validation.json",
+          "sha256": "6e44595fe7481bc5c93a9432af503bc4d5f5a98acc94f3250c361b79f3f2da28"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard61/payload.json",
+          "sha256": "f18b8b6ef6eab77a12f8ed0a0ef7630f09e329c341f3062e64e08142f7c83972"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard61/validation.json",
+          "sha256": "d9b80997aa6da72eb571bb74b3af6cbf7cea800cdc228e081d862ddf120c1896"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard62/payload.json",
+          "sha256": "238b7f7cf7094c2475a4996f41d89aad5cdbc0b7fbb36b4529a24b1c5c27d0a3"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard62/validation.json",
+          "sha256": "9f0d70411401f346ec8527363149f78fdd9fc4ac7b586ec6018e28163817375e"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard63/payload.json",
+          "sha256": "92ec0cdbc0c62005012afb5eaa5b84db2c45861d87a86b64cd1b5bad67fad349"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard63/validation.json",
+          "sha256": "acda386979c715e8a6e279d56ad5253cc15e72fa5b4d6823bbcb55b9e77b9efa"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard64/payload.json",
+          "sha256": "312db4dcbd0a547d3dc15cd49f67d411301725906b674010bf95493ccb648294"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard64/validation.json",
+          "sha256": "9b9610320352468cb50a21df26054ee16034259888bed7e7f149eba30fee1f9f"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard65/payload.json",
+          "sha256": "463a705d3c57ee3814cf7a3e9427e4e977c2771b1567680e547e5df36289122f"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard65/validation.json",
+          "sha256": "c58c504201f0ccdc3ba928420ff28f5d16dd0ecabf31aa2715c6984ef2881b91"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard66/payload.json",
+          "sha256": "2a272e05c88768405baddf09de0d507f46cec57b17c8f98d811cf844ede162cd"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard66/validation.json",
+          "sha256": "84fcf7985f2f286ad2034949ef8ea8f9aec8f5c52965a9a9a8b2302005288cfa"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard67/payload.json",
+          "sha256": "8f5ec9d03dbe61d4251c85481b10fa33e75e12f67576bf9bb21afdddcdf91dcc"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard67/validation.json",
+          "sha256": "3a948da27d791e93a6c301b303638061916b5c45c74247d2ab1cf3f46b36e092"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard68/payload.json",
+          "sha256": "f179fb781a0601ee97163dd1d56cee328c06e4077100004e1d0c1905ed96f821"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard68/validation.json",
+          "sha256": "b596bd6142696591be27cae0de015da6ef34e857daf4d67596cb56b48fb503a2"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard69/payload.json",
+          "sha256": "8292911687f0d21ff3877cc662a97c3e7511938585492339eb5af8b38452d629"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard69/validation.json",
+          "sha256": "0f560662646634a839a7a4f3cf18970e2baffcb4f4e51d37b1e480d81cd9157e"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard70/payload.json",
+          "sha256": "824768b352288a5e6aabea4618049c22542048c85a8f64f057898a8c11e2bfd3"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard70/validation.json",
+          "sha256": "6e4d967fc81f3b673f0d849f581f1cbb2501ba8a12c5729593ba85b515c19755"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard71/payload.json",
+          "sha256": "0a89cb6245881ced1adeb3355f7c500befdf265608fda7621166d6708a18b27b"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard71/validation.json",
+          "sha256": "35ec07150bec2391de4e38cbe36763dc545d199afbcbceda471cebc6c632e138"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard72/payload.json",
+          "sha256": "b8f380ae69f8134ae731c245e7b2c22aad3dbe41554d66bfeb1edf2ce0f5931c"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard72/validation.json",
+          "sha256": "f3e9a56c5150ce0e997876cd614aaa78006a6c4db92a71239e509ae44ea93900"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard73/payload.json",
+          "sha256": "76fc5a56fd9dbb679cebed2e6b4188bdd893e726a12a10e0f952ce0bb5a7247f"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard73/validation.json",
+          "sha256": "193e9e7d0e26e3d7510510563c4637aad9c1ebcccbf702d657cfb4c417e79c41"
+        }
+      },
+      {
+        "payload": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard74/payload.json",
+          "sha256": "d9c7ea6167ea66983ffe4be13af8096cc2d14844b4a0404721b03f693c21a42d"
+        },
+        "validation": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_learned_colnomic_only_v1/features/shard74/validation.json",
+          "sha256": "62da0be5a28d10b6bdcf67b19e717c1900cd0a681305abb26a92aef03109e38c"
+        }
+      }
+    ],
+    "grouped_split": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp593_oof5_v1/metadata/split_manifest.json",
+      "sha256": "be29f82bc404b44e713f98a3e099117f183de0ef0ca80e7f11ddca5bcf8d1d5c"
+    },
+    "preparation_program": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/prepare_rebut_qr_qrr_v1.py",
+      "sha256": "d2606cd9ae2952735929ff5b9fcbb8a3b5aa2eed904a6b4deeb7025a342f1bb1"
+    }
+  },
+  "normalization": "reuse phase-specific sealed B_CAL X0 RMS; F remains unchanged and unstandardized, to isolate training design",
+  "baseline_bindings": {
+    "0": {
+      "0": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/result.json",
+          "sha256": "4b58e35e4397f71aca6fd696991b5a5d92659231c5769050856ff19b59273336"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/model.pt",
+          "sha256": "6af728b5a64fa5c1d79765f2c1c9c012f053414b745a7ff8f286220f8750a64f"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/checkpoint.pt",
+          "sha256": "c7c08b08dbb6acf185598569aa517beac5b1d0966540624a6eab72b6cdcad783"
+        }
+      },
+      "1": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed1/B_CAL/result.json",
+          "sha256": "905c5a81d8931550aca94b86cde8aa4cd241b803feb86f1ebef0e519710bdb89"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed1/B_CAL/model.pt",
+          "sha256": "1e6582b1aa631676c45f7baeb2df2ea840a4edb0c3934e7056833e51666277f7"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed1/B_CAL/checkpoint.pt",
+          "sha256": "1c60898b62a236fe1cc5e3559d2b4dd8d9b41d53e63ac97aa43d8240141633a4"
+        }
+      },
+      "2": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed2/B_CAL/result.json",
+          "sha256": "b8c7b05d3420263bf2ceaa231836529389cf6d87a029d900284d8799e332b27e"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed2/B_CAL/model.pt",
+          "sha256": "0cb1c0c95c9dd48fa145f13858366f2c62563ff69a3133ac9ca26ac46a0f5299"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed2/B_CAL/checkpoint.pt",
+          "sha256": "b020969de070bec5a331b2a04709f0e3c5dd4764b8a0d79260ee27eb80b74576"
+        }
+      }
+    },
+    "1": {
+      "0": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed0/B_CAL/result.json",
+          "sha256": "07e44c407350f8427ee506a86fb600f52db2bdd1306c88a252c112d55a2fac8d"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed0/B_CAL/model.pt",
+          "sha256": "6bb22b39c5f6b468d76d4bc404468e547265fb912995f85f307f362d3f8d499c"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed0/B_CAL/checkpoint.pt",
+          "sha256": "0f5f638c91b7cf743bb5a5fdb1ee88b34ec44e8964929fd785f8391d36bae029"
+        }
+      },
+      "1": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed1/B_CAL/result.json",
+          "sha256": "ce08e6d47accc8f6749319bbc4824dcf25389f73bbafe649a7cbbeb06945f435"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed1/B_CAL/model.pt",
+          "sha256": "51b918ab42b7f8f2ac25a35d17a05676805ee9d4330361672c75988dd00878e9"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed1/B_CAL/checkpoint.pt",
+          "sha256": "0d3ef5de79a97725612effb56ea5b0088f0c3b087565f06729071ec27c633d82"
+        }
+      },
+      "2": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed2/B_CAL/result.json",
+          "sha256": "ce32808d58875a9f83847e0dc34d1b3acc03afa278ad4b71a2807f4c56860a6b"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed2/B_CAL/model.pt",
+          "sha256": "32156afbd61736f490e6539166d567ca88b6ddd3002c0907f42b7e2b6b821d3e"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold1/seed2/B_CAL/checkpoint.pt",
+          "sha256": "ccf246c7c229b8f95938e5a2dd713e7329c9705b185007eebdf52b09847a35f1"
+        }
+      }
+    },
+    "2": {
+      "0": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed0/B_CAL/result.json",
+          "sha256": "a65a6a7a8cd7e655c9ccca9e2c90ddbe7512bb400c642d4209119142b3870569"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed0/B_CAL/model.pt",
+          "sha256": "5446cde5e1ed7651303032c871e59ddc170489b724f91c7037bc4580179c063c"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed0/B_CAL/checkpoint.pt",
+          "sha256": "22cb148c1b0fb55e003164c86570f321847faef114430b66257ee19c669b80a3"
+        }
+      },
+      "1": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed1/B_CAL/result.json",
+          "sha256": "26f4f28c969948e61cbceb0ee1f51f94ced1b5ab45709df29153f38e56e93d1d"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed1/B_CAL/model.pt",
+          "sha256": "3832b7a24e0bd64535713860d021f6d4ef17e6b76e1821ffd462daa6e655cd69"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed1/B_CAL/checkpoint.pt",
+          "sha256": "254b8d99cead9d9d911d098c7e597384c42b825c0af1fe56cb97807713b013da"
+        }
+      },
+      "2": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed2/B_CAL/result.json",
+          "sha256": "fc915cd76f52ed53a3253af817b904afdf04753357b264ed06e8c5d643215bd1"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed2/B_CAL/model.pt",
+          "sha256": "fbf38da72e7d02a2a481aafaf345ee3cdb00c8df5ef462824fa302b6e7e153ad"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold2/seed2/B_CAL/checkpoint.pt",
+          "sha256": "255c009e1c9f80baa70b2c1f4f6a0396929a01cc05ca3c0e9d28238c17e81dd2"
+        }
+      }
+    },
+    "3": {
+      "0": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed0/B_CAL/result.json",
+          "sha256": "b08a8ed9d6dc6f30b3304acc18acdee8b71d6c8dbe250b1794bc0f3738c0fc0b"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed0/B_CAL/model.pt",
+          "sha256": "7313fe01c6f1b1835ac7c3996e6b2ab61ca59ba44314268d524775b05ab3b855"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed0/B_CAL/checkpoint.pt",
+          "sha256": "58eba15f4713e77665e0a8b4c611cf67d6899d4703aa372605328e1910f1119b"
+        }
+      },
+      "1": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed1/B_CAL/result.json",
+          "sha256": "b059eae69f47bb6284e3767eed4cd9d348ec8b550ec776e65b7bcfc0bcc40352"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed1/B_CAL/model.pt",
+          "sha256": "273c113b8dcb164aa174b0e301fedcc3b547d7809ff648d5c9e76766ddd34c3b"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed1/B_CAL/checkpoint.pt",
+          "sha256": "96bcf2e90c93360d32568599129491768bc9a63adbc4cf81f5993654a85df391"
+        }
+      },
+      "2": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed2/B_CAL/result.json",
+          "sha256": "cc16b0baf65558cd21c40c412af7352d67c78acfc711157bf0ee4cb63ed93b63"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed2/B_CAL/model.pt",
+          "sha256": "15c74f1f803248c7b5c845fcd5c2b8a4db5dd99f4d0b4a47dff33913f7880b4b"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold3/seed2/B_CAL/checkpoint.pt",
+          "sha256": "f105365930742b33a1926c93ae685c0d62e775cf413ec12514806d1f5e988330"
+        }
+      }
+    },
+    "4": {
+      "0": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed0/B_CAL/result.json",
+          "sha256": "ea61c862345a14d7546fe2d38c963fe5400e0056ab6e2db36dc521f3b6da8999"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed0/B_CAL/model.pt",
+          "sha256": "b13dffa171f2bf82ebe698e895f2d176972bb4029411e2324b8d30284f9b27f8"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed0/B_CAL/checkpoint.pt",
+          "sha256": "a81b6fa08fb8a450ef11a3c5186ae7b48caf4f29ae5d68ce9b156384da0dde62"
+        }
+      },
+      "1": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed1/B_CAL/result.json",
+          "sha256": "19a0643963fdb7008de4548e4e5e9929b06f79de8786317b94bfcf92e72bde04"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed1/B_CAL/model.pt",
+          "sha256": "675b03953f13121577c047009b6c565665958c81a76cb56f92bf94cf175b4a42"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed1/B_CAL/checkpoint.pt",
+          "sha256": "c6a0c23f36d518ad457974821e504993071690aec9e6fc60c9034e66743815e3"
+        }
+      },
+      "2": {
+        "source_result": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed2/B_CAL/result.json",
+          "sha256": "0f1e7f84a47a26384f55eb2e03348d71fceba9d49cc02e4a5115ce4509ede592"
+        },
+        "source_model": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed2/B_CAL/model.pt",
+          "sha256": "5c43905abbcbd2028f8151120aa4a46495dc3b9c4b9635712dbc01a0b9bc3a9a"
+        },
+        "source_checkpoint": {
+          "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold4/seed2/B_CAL/checkpoint.pt",
+          "sha256": "0f8db0f34d9418e95f68252e994576a03db91a26e652c525b60d853657f46c38"
+        }
+      }
+    }
+  },
+  "source_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/protocol.json",
+    "sha256": "e46af505d62c51717859fdd76d0c91ce1db82201a0c3731cc31b84fec47c1351"
+  },
+  "source_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/validation.json",
+    "sha256": "1d3ffb632e9b3812141776f8fc62c3c979e8284f6cf2cc0d307e2f1eaf9ed7e1"
+  },
+  "dependency_bindings": {
+    "module_v1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/rebut_qr_qrr_v1.py",
+      "sha256": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a"
+    },
+    "runner_v1": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rebut_qr_qrr_v1.py",
+      "sha256": "d128536744f2226770466364a4d1f055e52a3fa6f8d4ef6f19cafaac712e62cf"
+    }
+  },
+  "selection": {
+    "main": "epochs with inner fixed-zero correct count strictly greater than baseline; among these minimum inner validation CE, ties earliest; if none epoch0",
+    "early_stopping": "inner validation CE, include epoch0; patience10; max100 epochs",
+    "best_CE": "archive for diagnosis; not separately selected using held results",
+    "fallback": "epoch0 exactly restores phase-specific B_CAL; TRAIN selection does not guarantee no held breaks"
+  },
+  "source_baseline_fits_reused": 15,
+  "new_reader_fits": 45,
+  "normalization_or_feature_ablation_added": false
+}

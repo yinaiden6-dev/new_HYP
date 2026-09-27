@@ -1,0 +1,70 @@
+{
+  "status": "PRIMARY_FIXED_PAIRS_SUBMITTED",
+  "scientific_results_complete": false,
+  "old_experiments_unchanged": true,
+  "panel": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "candidates_per_query": 128,
+  "arms_planned": 18,
+  "new_joint_arms": 8,
+  "pilot_attempts": [
+    {
+      "job_id": "5166341",
+      "state": "FAILED",
+      "exit": "1:0",
+      "elapsed": "00:00:40",
+      "reason": "CPU sigmoid repooling was incorrectly required to equal legacy GPU sigmoid bitwise; no DPT forward and no scientific outputs."
+    },
+    {
+      "job_id": "5166352",
+      "state": "FAILED",
+      "exit": "1:0",
+      "elapsed": "00:00:48",
+      "reason": "Byte-view comparator did not flatten a singleton trailing dimension; preserved as v2."
+    },
+    {
+      "job_id": "5166355",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "00:02:00",
+      "result": "results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/result.json",
+      "status": "Measured CPU/GPU drift; same-CPU native and pooling repeat exact. CPU-only scientific replay approved without asserting GPU parity."
+    }
+  ],
+  "history_report": "reports/REPORT_M_CAUSAL_FOUR_STEPS_HISTORY_AUDIT_20260927.md",
+  "plan": "plan/RC_M_PROPERTY_RESTORATION_FACTORIAL_V1_20260927.md",
+  "gpu_jobs_submitted_this_branch": 0,
+  "scope": "PRIMARY_FIXED_PAIRS",
+  "original_queries": 8,
+  "scientific_groups": 7,
+  "candidate_pairs": 14,
+  "candidate_worlds": 252,
+  "qualification_job": "5166355",
+  "jobs": {
+    "factorial_array": "5166570",
+    "first_task_dev": "5166570_0",
+    "independent_join": "5166571"
+  },
+  "submission_partitions": {
+    "5166570_0": "dev_cpuonly",
+    "other_array_tasks": "cpuonly",
+    "5166571": "cpuonly"
+  },
+  "per_task": {
+    "cpus": 4,
+    "memory_gib": 16,
+    "time_limit_minutes": 10,
+    "budget_seconds": 430,
+    "max_requeues": 4
+  },
+  "join_dependency": "afterok:5166570_*",
+  "plan_frozen": true
+}

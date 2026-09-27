@@ -1,0 +1,78 @@
+{
+  "status": "INDEPENDENT_REBUT_AND_UNIFIED_EXPORT_VALIDATION_PASS",
+  "checked_at_utc": "2026-09-27T11:00:39.769302+00:00",
+  "base_commit": "e2223e0b17f89e3766af83970a75f490a4f65917",
+  "manifest": {
+    "path": "backup/rebut_and_unified_sampling_20260927/files.json",
+    "sha256": "7ba4e2d7d211b1991600a16096dc039fd727ae5b6779ebb513b31fc68cd8b11a"
+  },
+  "files": 4520,
+  "bytes": 410056032,
+  "verification_method": "Initial independent full target-file SHA256 and size scan verified4518 files; two live counter copy races were reported and then separately refreshed and reverified. No other exported files were modified between checks. This receipt records snapshot consistency, not completion of running jobs.",
+  "initial_scan": {
+    "files_checked": 4520,
+    "sha_size_pass": 4518,
+    "issues_found": [
+      "ICLR/new ROUTEA/RC/results/rc_h593_unified_long4_v1/collect-pack/pack0/query136_attempts.json",
+      "ICLR/new ROUTEA/RC/results/rc_h593_unified_long4_v1/collect-pack/pack1/query137_attempts.json"
+    ],
+    "issues_type": "Mutable execution counters advanced between source hashing and copying; no scientific result or prediction mismatch."
+  },
+  "refresh_checks": [
+    {
+      "path": "ICLR/new ROUTEA/RC/results/rc_h593_unified_long4_v1/collect-pack/pack0/query136_attempts.json",
+      "sha256": "451eada062f4f5e282942eeccbb0f3c9f7283078bd0d9d942ee179c79233dddd",
+      "bytes": 326,
+      "counter_next_attempt": 2,
+      "status": "REFRESHED_SNAPSHOT_HASH_SIZE_PASS"
+    },
+    {
+      "path": "ICLR/new ROUTEA/RC/results/rc_h593_unified_long4_v1/collect-pack/pack1/query137_attempts.json",
+      "sha256": "76367fd48c3277197eade957e2405db9fd08e871def172d97b3309b726ef004b",
+      "bytes": 326,
+      "counter_next_attempt": 2,
+      "status": "REFRESHED_SNAPSHOT_HASH_SIZE_PASS"
+    }
+  ],
+  "all_exported_files_hash_size_pass": true,
+  "scope": {
+    "no_raw_images": true,
+    "no_binary_model_or_optimizer_weights": true,
+    "no_pt_pkl_or_token_caches": true,
+    "no_err_out_log": true,
+    "no_locks_temporary_or_pycache_files": true,
+    "no_symlinks": true,
+    "duplicate_paths": 0,
+    "identity_encoded_files": 4520
+  },
+  "compact_npz": {
+    "files_checked": 1536,
+    "roots": {
+      "rc_m_phase_external_internal_bridge_v1": 512,
+      "rc_m_phase_external_internal_bridge_v2": 1024
+    },
+    "all_exact_fields": [
+      "worlds",
+      "M",
+      "L",
+      "maxsim",
+      "argmax"
+    ],
+    "object_dtype_arrays": 0,
+    "scope": "Stored per-patch decision evidence, no image/embedding/model arrays"
+  },
+  "readme": {
+    "batch_relative_links_checked": 15,
+    "missing_links": 0,
+    "root_readme_batch_link_present": true
+  },
+  "scientific_status": {
+    "qr_qrr_v1": "REBUT_QR_QRR_ALL60_F71_INDEPENDENT_JOIN_PASS",
+    "v1_scope": "F71,60 completed fits, no reliable QR/QRR increment demonstrated",
+    "qr_qrr_frozenbase_v2": "PREPARED_TRAINING_NOT_SUBMITTED_UNIFIED_ACQUISITION_FIRST",
+    "v2_new_fits_submitted": 0,
+    "sampling": "Running snapshot only; no all593 completion claim"
+  },
+  "workspace_or_model_edits": 0,
+  "jobs_submitted": 0
+}

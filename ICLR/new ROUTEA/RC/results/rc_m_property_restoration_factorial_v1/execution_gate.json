@@ -1,0 +1,32 @@
+{
+  "status": "CPU_PROPERTY_RESTORE_EXECUTION_AUTHORIZED",
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_property_restoration_factorial_v1/protocol.json",
+    "sha256": "e43f3e7e0704fc3e575b868ddefb35569c17c47cba4a14c4aa77ecfb3656d5ff"
+  },
+  "qualification": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/result.json",
+    "sha256": "71bf82f93cf402663cf06aac21434e4d6b2710253a228040d29ba31f20b0d16f"
+  },
+  "threads": 4,
+  "science_backend": "CPU_ALL18",
+  "scope": "PRIMARY_FIXED_PAIRS",
+  "rationale": "Same frozen A/J/P and DPT parameters, all 18 controls/interventions recomputed on one CPU backend. Deterministic native and independent pooling passed; differences from historical GPU are retained, not accepted as bit-exact. Qualification is engineering only.",
+  "observed_backend_drift": {
+    "max_pilot_M_relative_difference": 0.012660313967401039,
+    "pilot_single_pair_LOCAL_GLOBAL_logM_difference": -0.00031147644529117
+  },
+  "forbidden_claims": [
+    "GPU bit-exact replay",
+    "new full-C128 ranking or accuracy",
+    "external validation",
+    "unique causality"
+  ],
+  "cost_estimate": {
+    "seconds_per_side_head": 7.995877087232657,
+    "heads_primary": 504,
+    "selected_pairs": 14,
+    "parallel_queries": 7
+  },
+  "user_authorization": "Continue four-step causal analysis, establish what information makes M discriminative and use historical files."
+}

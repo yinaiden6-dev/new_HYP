@@ -1,0 +1,130 @@
+{
+  "status": "FROZENBASE_V2_ENGINEERING_PASS",
+  "sources": {
+    "protocol": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_frozenbase_v2/protocol.json",
+      "sha256": "90189e31325f002151501aaad0891b4aeb3490cde2fa842ebde8b77f6b5cdb63"
+    },
+    "runner": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rebut_qr_qrr_frozenbase_v2.py",
+      "sha256": "bc8111901046a1c4461ab873ff526e96e6b6684eab67bf4da114b762958b68f7"
+    },
+    "module": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/rebut_qr_qrr_v1.py",
+      "sha256": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a"
+    }
+  },
+  "scientific_result": false,
+  "query_id": "H593-0091cc1b5a6f73a4ad8d88ae",
+  "fold": 0,
+  "seed": 0,
+  "query_role": "inner_fit",
+  "baseline_bindings": {
+    "source_result": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/result.json",
+      "sha256": "4b58e35e4397f71aca6fd696991b5a5d92659231c5769050856ff19b59273336"
+    },
+    "source_model": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/model.pt",
+      "sha256": "6af728b5a64fa5c1d79765f2c1c9c012f053414b745a7ff8f286220f8750a64f"
+    },
+    "source_checkpoint": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_rebut_qr_qrr_v1/fold0/seed0/B_CAL/checkpoint.pt",
+      "sha256": "c7c08b08dbb6acf185598569aa517beac5b1d0966540624a6eab72b6cdcad783"
+    }
+  },
+  "true_TRAIN_updates": [
+    {
+      "arm": "QR",
+      "initial_logits_bit_exact_fitted_inner_B_CAL": true,
+      "losses": [
+        0.09753169811000123,
+        0.09752061187668017,
+        0.09750488000034718
+      ],
+      "gradient_updates": [
+        {
+          "reader_norm": 0.0062931668728279,
+          "output_norm": 0.0062931668728279,
+          "stem_norm": 0.0
+        },
+        {
+          "reader_norm": 0.006293855802179519,
+          "output_norm": 0.006292433989398662,
+          "stem_norm": 8.988853364830861e-05
+        },
+        {
+          "reader_norm": 0.00743529036039988,
+          "output_norm": 0.007429511417542521,
+          "stem_norm": 0.00019705779816364964
+        }
+      ],
+      "head_unchanged_after_updates": true,
+      "optimizer_rng_resume_parameters_bit_exact": true
+    },
+    {
+      "arm": "QR_VEC",
+      "initial_logits_bit_exact_fitted_inner_B_CAL": true,
+      "losses": [
+        0.09753169811000123,
+        0.09753086837613704,
+        0.09752953109544923
+      ],
+      "gradient_updates": [
+        {
+          "reader_norm": 0.0005666925081184539,
+          "output_norm": 0.0005666925081184539,
+          "stem_norm": 0.0
+        },
+        {
+          "reader_norm": 0.0005669015354357166,
+          "output_norm": 0.000566686819879595,
+          "stem_norm": 8.790146031870697e-06
+        },
+        {
+          "reader_norm": 0.0007331625942628551,
+          "output_norm": 0.0007323503266052003,
+          "stem_norm": 1.9508430664295797e-05
+        }
+      ],
+      "head_unchanged_after_updates": true,
+      "optimizer_rng_resume_parameters_bit_exact": true
+    },
+    {
+      "arm": "QRR",
+      "initial_logits_bit_exact_fitted_inner_B_CAL": true,
+      "losses": [
+        0.09753169811000123,
+        0.09752949179499963,
+        0.09752626644001147
+      ],
+      "gradient_updates": [
+        {
+          "reader_norm": 0.0016525534470645177,
+          "output_norm": 0.0016525534470645175,
+          "stem_norm": 0.0
+        },
+        {
+          "reader_norm": 0.001652885162377169,
+          "output_norm": 0.0016525035649255257,
+          "stem_norm": 2.54421084802724e-05
+        },
+        {
+          "reader_norm": 0.002000368927943607,
+          "output_norm": 0.001998957506971347,
+          "stem_norm": 5.3839758972934967e-05
+        }
+      ],
+      "head_unchanged_after_updates": true,
+      "optimizer_rng_resume_parameters_bit_exact": true
+    }
+  ],
+  "outer_label_free_fallback": {
+    "bit_exact": true,
+    "queries": 21,
+    "maximum_error": 0.0
+  },
+  "threads": 2,
+  "new_jobs_submitted": 0,
+  "testing_scope": "real 1 TRAIN query per arm; three updates plus serialized fourth-update replay; 21 held score-only fallback; no claim of full lifecycle or scientific efficacy"
+}

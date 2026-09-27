@@ -1,0 +1,1011 @@
+{
+  "approximate_acceptance_threshold": null,
+  "arms": [
+    {
+      "arm": "NATIVE",
+      "mass": {
+        "cpu": 0.014017551335255677,
+        "error": {
+          "actual_dtype": "torch.float64",
+          "bit_exact": false,
+          "different_values": 1,
+          "expected_dtype": "torch.float64",
+          "max_abs": 0.00010346866196584564,
+          "mean_abs": 0.00010346866196584564,
+          "p99_abs": 0.00010346866196584564,
+          "relative_l2": 0.00743625464900171,
+          "rms": 0.00010346866196584564,
+          "shape": [
+            1
+          ]
+        },
+        "log_error": 0.007408742017168457,
+        "sealed_gpu": 0.013914082673289831
+      },
+      "metrics": [
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.08957672119140625,
+              "mean_abs": 0.015164836341142655,
+              "p99_abs": 0.050051007270813144,
+              "relative_l2": 0.003904570376632421,
+              "rms": 0.0191316887910028,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.003963880240917206,
+              "mean_abs": 0.00016883020133172977,
+              "p99_abs": 0.0013140456378459933,
+              "relative_l2": 0.013795691491992463,
+              "rms": 0.00030368421044128156,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "warp": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 80000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.013438016176223755,
+              "mean_abs": 0.0008566427969608597,
+              "p99_abs": 0.00366644956171512,
+              "relative_l2": 0.003325577033037572,
+              "rms": 0.0011579557690769527,
+              "shape": [
+                1,
+                200,
+                200,
+                2
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.0011925873995730502,
+              "mean_abs": 0.0001006357676488261,
+              "p99_abs": 0.000675256398595161,
+              "relative_l2": 0.008121414297492104,
+              "rms": 0.0001686155144181278,
+              "shape": [
+                720
+              ]
+            }
+          },
+          "head_seconds": 8.052125455113128,
+          "side": 0,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 706,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.421438688449129e-09,
+              "mean_abs": 1.1299975141645926e-10,
+              "p99_abs": 1.349087261348631e-09,
+              "relative_l2": 1.2646747366258397e-08,
+              "rms": 2.625697612220399e-10,
+              "shape": [
+                720
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 1.4275291115861677e-08,
+              "mean_abs": 4.0054265867419776e-10,
+              "p99_abs": 3.6577393570935734e-09,
+              "relative_l2": 3.790296402930955e-08,
+              "rms": 8.343569940588111e-10,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 1.8271940765979267e-09,
+              "mean_abs": 9.984042772349455e-11,
+              "p99_abs": 9.732613213964106e-10,
+              "relative_l2": 1.0160072441703917e-08,
+              "rms": 2.1094181118335142e-10,
+              "shape": [
+                720
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        },
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.12151813507080078,
+              "mean_abs": 0.018446546241641045,
+              "p99_abs": 0.06393300533294699,
+              "relative_l2": 0.004416189302013694,
+              "rms": 0.02345688232603576,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.006184101104736328,
+              "mean_abs": 0.0001924612613210229,
+              "p99_abs": 0.002203277796506886,
+              "relative_l2": 0.012535914537687497,
+              "rms": 0.0004405962959496179,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "warp": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 79998,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.008983254432678223,
+              "mean_abs": 0.0005611499428145322,
+              "p99_abs": 0.002907695472240447,
+              "relative_l2": 0.0032296518532656786,
+              "rms": 0.0008399879341017726,
+              "shape": [
+                1,
+                200,
+                200,
+                2
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.0024229638775189744,
+              "mean_abs": 0.00012754316373451998,
+              "p99_abs": 0.0013923688441514915,
+              "relative_l2": 0.008618599704618321,
+              "rms": 0.0002877126599381419,
+              "shape": [
+                742
+              ]
+            }
+          },
+          "head_seconds": 7.986671751830727,
+          "side": 1,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 731,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.4835268702672053e-09,
+              "mean_abs": 1.248575409137332e-10,
+              "p99_abs": 1.822536183776481e-09,
+              "relative_l2": 9.849040084097612e-09,
+              "rms": 3.2878815788539944e-10,
+              "shape": [
+                742
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.524376399581918e-08,
+              "mean_abs": 4.706177557001695e-10,
+              "p99_abs": 6.7180688813339744e-09,
+              "relative_l2": 3.930522972079011e-08,
+              "rms": 1.3814499575204703e-09,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.910579541270941e-09,
+              "mean_abs": 1.1114352759655425e-10,
+              "p99_abs": 1.52360547789332e-09,
+              "relative_l2": 8.506763580080904e-09,
+              "rms": 2.8397926124570805e-10,
+              "shape": [
+                742
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        }
+      ],
+      "native_relative_logM": {
+        "cpu": 0.0,
+        "difference": 0.0,
+        "sealed_gpu": 0.0
+      },
+      "payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/NATIVE.pt",
+        "sha256": "9b23c61ba75b93eb251c3dc8e33f51c2e5c2415193b45c1d8335b6257d4efc55"
+      }
+    },
+    {
+      "arm": "ZERO",
+      "mass": {
+        "cpu": 0.003052935217523135,
+        "error": {
+          "actual_dtype": "torch.float64",
+          "bit_exact": false,
+          "different_values": 1,
+          "expected_dtype": "torch.float64",
+          "max_abs": 3.8167900768769445e-05,
+          "mean_abs": 3.8167900768769445e-05,
+          "p99_abs": 3.8167900768769445e-05,
+          "relative_l2": 0.012660313967401039,
+          "rms": 3.8167900768769445e-05,
+          "shape": [
+            1
+          ]
+        },
+        "log_error": 0.012580842247546187,
+        "sealed_gpu": 0.0030147673167543656
+      },
+      "metrics": [
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.12409162521362305,
+              "mean_abs": 0.019235440534353256,
+              "p99_abs": 0.06174978733062751,
+              "relative_l2": 0.0039595144106776385,
+              "rms": 0.024077264852285975,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.0019999854266643524,
+              "mean_abs": 6.119414359413895e-05,
+              "p99_abs": 0.00037831641733646396,
+              "relative_l2": 0.02240078204842323,
+              "rms": 0.00010169633479221393,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.00032381784751430755,
+              "mean_abs": 4.0403030413059616e-05,
+              "p99_abs": 0.00019203604611434935,
+              "relative_l2": 0.013631658907083836,
+              "rms": 5.671946646925105e-05,
+              "shape": [
+                720
+              ]
+            }
+          },
+          "head_seconds": 7.984079150017351,
+          "side": 0,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 695,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.3615679550781365e-10,
+              "mean_abs": 2.7093570465615356e-11,
+              "p99_abs": 1.5133991802807056e-10,
+              "relative_l2": 1.0012961047897464e-08,
+              "rms": 4.166256009523581e-11,
+              "shape": [
+                720
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 3.1127589325552485e-09,
+              "mean_abs": 1.0498215647729637e-10,
+              "p99_abs": 6.397574119770831e-10,
+              "relative_l2": 3.8047576672197116e-08,
+              "rms": 1.727305363206349e-10,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.0729335435676344e-10,
+              "mean_abs": 2.8312100971846e-11,
+              "p99_abs": 1.3253300091067804e-10,
+              "relative_l2": 9.914467763491253e-09,
+              "rms": 4.1252743023050906e-11,
+              "shape": [
+                720
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        },
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.13466453552246094,
+              "mean_abs": 0.024096803176403045,
+              "p99_abs": 0.07655812740325937,
+              "relative_l2": 0.0046028482823706,
+              "rms": 0.030033025961506605,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.0018159188330173492,
+              "mean_abs": 5.7416222467327316e-05,
+              "p99_abs": 0.0004306391812860976,
+              "relative_l2": 0.02482288409170037,
+              "rms": 0.0001062526164460474,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.0004102903356154753,
+              "mean_abs": 4.0034061652647224e-05,
+              "p99_abs": 0.00020597620597885262,
+              "relative_l2": 0.01579865893833453,
+              "rms": 6.055704751855398e-05,
+              "shape": [
+                742
+              ]
+            }
+          },
+          "head_seconds": 7.997450433904305,
+          "side": 1,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 725,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.173086016687975e-10,
+              "mean_abs": 2.0567732388899846e-11,
+              "p99_abs": 1.2764066853812616e-10,
+              "relative_l2": 9.082337339774162e-09,
+              "rms": 3.4813051918584e-11,
+              "shape": [
+                742
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 3.195219075435851e-09,
+              "mean_abs": 8.31611298680906e-11,
+              "p99_abs": 6.363379134212441e-10,
+              "relative_l2": 3.751802017407898e-08,
+              "rms": 1.6059325703451364e-10,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.7630984479609655e-10,
+              "mean_abs": 2.1250166266332628e-11,
+              "p99_abs": 1.3163535311257222e-10,
+              "relative_l2": 9.371921807693818e-09,
+              "rms": 3.592304362439231e-11,
+              "shape": [
+                742
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        }
+      ],
+      "native_relative_logM": {
+        "cpu": -1.5242067169924916,
+        "difference": 0.00517210023037773,
+        "sealed_gpu": -1.5293788172228693
+      },
+      "payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/ZERO.pt",
+        "sha256": "a2a954e27b67ecd31557d2c7934dd0b0bb89234624c288bc3858cbfa6d87a56a"
+      }
+    },
+    {
+      "arm": "GLOBAL_X_PLUS",
+      "mass": {
+        "cpu": 0.013328935587427072,
+        "error": {
+          "actual_dtype": "torch.float64",
+          "bit_exact": false,
+          "different_values": 1,
+          "expected_dtype": "torch.float64",
+          "max_abs": 9.864053472513623e-05,
+          "mean_abs": 9.864053472513623e-05,
+          "p99_abs": 9.864053472513623e-05,
+          "relative_l2": 0.007455656456050957,
+          "rms": 9.864053472513623e-05,
+          "shape": [
+            1
+          ]
+        },
+        "log_error": 0.00742800042695535,
+        "sealed_gpu": 0.013230295052701936
+      },
+      "metrics": [
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 39999,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.0934152603149414,
+              "mean_abs": 0.015062034633755684,
+              "p99_abs": 0.050318827629089374,
+              "relative_l2": 0.0038754212301058324,
+              "rms": 0.019011797739559584,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 39999,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.003195159137248993,
+              "mean_abs": 0.00016081799526473331,
+              "p99_abs": 0.0012089048139750976,
+              "relative_l2": 0.014134829131128408,
+              "rms": 0.00028110238881070063,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.0014237192060266163,
+              "mean_abs": 0.00010090692521290194,
+              "p99_abs": 0.0007179713913549882,
+              "relative_l2": 0.008981514410400493,
+              "rms": 0.00016792496923365838,
+              "shape": [
+                720
+              ]
+            }
+          },
+          "head_seconds": 7.986215837998316,
+          "side": 0,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 701,
+              "expected_dtype": "torch.float64",
+              "max_abs": 1.741694163892582e-09,
+              "mean_abs": 1.0218437640908528e-10,
+              "p99_abs": 9.195258227068204e-10,
+              "relative_l2": 1.0835783066710332e-08,
+              "rms": 2.025937336350376e-10,
+              "shape": [
+                720
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 1.1712476530312266e-08,
+              "mean_abs": 3.839684509630511e-10,
+              "p99_abs": 3.401154860943612e-09,
+              "relative_l2": 3.824159036810945e-08,
+              "rms": 7.605187365310562e-10,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.0500915826060506e-09,
+              "mean_abs": 8.96226995147976e-11,
+              "p99_abs": 8.533190101744912e-10,
+              "relative_l2": 1.0183474783628829e-08,
+              "rms": 1.9039770038696111e-10,
+              "shape": [
+                720
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        },
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.1203165054321289,
+              "mean_abs": 0.018218631185591222,
+              "p99_abs": 0.06266644001007081,
+              "relative_l2": 0.004343879166002624,
+              "rms": 0.023176873207549145,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.006800740957260132,
+              "mean_abs": 0.00017860986159093955,
+              "p99_abs": 0.0018867382407188624,
+              "relative_l2": 0.01185438303068179,
+              "rms": 0.00040088267317401363,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.0020846559604008885,
+              "mean_abs": 0.00011203013628123442,
+              "p99_abs": 0.0011113441325724133,
+              "relative_l2": 0.007240795588715797,
+              "rms": 0.0002322365669433216,
+              "shape": [
+                742
+              ]
+            }
+          },
+          "head_seconds": 7.984577419003472,
+          "side": 1,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 729,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.5828679472983396e-09,
+              "mean_abs": 1.1437871554897636e-10,
+              "p99_abs": 1.5003296240101469e-09,
+              "relative_l2": 9.740388112931056e-09,
+              "rms": 3.1240687136202404e-10,
+              "shape": [
+                742
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.2427396439983482e-08,
+              "mean_abs": 4.411003568729011e-10,
+              "p99_abs": 6.321104570328199e-09,
+              "relative_l2": 3.7642183143591106e-08,
+              "rms": 1.2729552384999183e-09,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.1242450021219383e-09,
+              "mean_abs": 1.0462978212433399e-10,
+              "p99_abs": 1.6874425393109698e-09,
+              "relative_l2": 8.657105643057682e-09,
+              "rms": 2.776623741930474e-10,
+              "shape": [
+                742
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        }
+      ],
+      "native_relative_logM": {
+        "cpu": -0.0503729311385106,
+        "difference": 1.9258409786893083e-05,
+        "sealed_gpu": -0.050392189548297495
+      },
+      "payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/GLOBAL_X_PLUS.pt",
+        "sha256": "286df6c114db63830ef28f5d7d522f7a3dffce2b13140453f6008ae9fc826070"
+      }
+    },
+    {
+      "arm": "LOCAL_X_PLUS",
+      "mass": {
+        "cpu": 0.013972652992736598,
+        "error": {
+          "actual_dtype": "torch.float64",
+          "bit_exact": false,
+          "different_values": 1,
+          "expected_dtype": "torch.float64",
+          "max_abs": 9.908373604481518e-05,
+          "mean_abs": 9.908373604481518e-05,
+          "p99_abs": 9.908373604481518e-05,
+          "relative_l2": 0.007141906614768445,
+          "rms": 9.908373604481518e-05,
+          "shape": [
+            1
+          ]
+        },
+        "log_error": 0.00711652398166418,
+        "sealed_gpu": 0.013873569256691783
+      },
+      "metrics": [
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.0900120735168457,
+              "mean_abs": 0.015361957469582558,
+              "p99_abs": 0.050366001129150406,
+              "relative_l2": 0.0039008559610723454,
+              "rms": 0.019310642952567843,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.004400193691253662,
+              "mean_abs": 0.00016443818987445412,
+              "p99_abs": 0.0013141125626862057,
+              "relative_l2": 0.014505144720316753,
+              "rms": 0.0003059227990796627,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.0016567897051572855,
+              "mean_abs": 0.00010478545110100314,
+              "p99_abs": 0.0008488286437297388,
+              "relative_l2": 0.009646408609399295,
+              "rms": 0.00019222156196796718,
+              "shape": [
+                720
+              ]
+            }
+          },
+          "head_seconds": 7.993923265952617,
+          "side": 0,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 705,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.022300452098058e-09,
+              "mean_abs": 1.1034017277958452e-10,
+              "p99_abs": 1.3490872725896392e-09,
+              "relative_l2": 1.2515033194553024e-08,
+              "rms": 2.493839237116606e-10,
+              "shape": [
+                720
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 1.3874039472838717e-08,
+              "mean_abs": 3.858559226210701e-10,
+              "p99_abs": 3.774542477325005e-09,
+              "relative_l2": 3.80905147272811e-08,
+              "rms": 8.033533676737871e-10,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 720,
+              "expected_dtype": "torch.float64",
+              "max_abs": 1.5723063129247095e-09,
+              "mean_abs": 1.0006679435913275e-10,
+              "p99_abs": 1.2075105827735697e-09,
+              "relative_l2": 1.08508724367725e-08,
+              "rms": 2.1622261019289934e-10,
+              "shape": [
+                720
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        },
+        {
+          "errors": {
+            "confidence": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.1507549285888672,
+              "mean_abs": 0.018340835615247488,
+              "p99_abs": 0.062432336807250986,
+              "relative_l2": 0.004443051508618596,
+              "rms": 0.023327917599811218,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "overlap": {
+              "actual_dtype": "torch.float32",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float32",
+              "max_abs": 0.00580240786075592,
+              "mean_abs": 0.00019593384977833922,
+              "p99_abs": 0.002000749558210376,
+              "relative_l2": 0.011936394436839633,
+              "rms": 0.0004285604200136377,
+              "shape": [
+                1,
+                200,
+                200,
+                1
+              ]
+            },
+            "weights": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 0.0024237808585166887,
+              "mean_abs": 0.00011854923050308524,
+              "p99_abs": 0.001162746641971173,
+              "relative_l2": 0.007027357819621282,
+              "rms": 0.00023716466211560764,
+              "shape": [
+                742
+              ]
+            }
+          },
+          "head_seconds": 7.981973384041339,
+          "side": 1,
+          "source_pooling_diagnostic": {
+            "cpu_pool_independent_integer_bounds_bit_exact": true,
+            "cpu_sigmoid_fp32_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 726,
+              "expected_dtype": "torch.float64",
+              "max_abs": 3.377596535791838e-09,
+              "mean_abs": 1.3987893677300255e-10,
+              "p99_abs": 2.244114874622175e-09,
+              "relative_l2": 1.1711470529086025e-08,
+              "rms": 3.952476908394101e-10,
+              "shape": [
+                742
+              ]
+            },
+            "cpu_sigmoid_fp32_vs_fp64": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 40000,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.5869315356530365e-08,
+              "mean_abs": 4.761547503404095e-10,
+              "p99_abs": 6.579368607984036e-09,
+              "relative_l2": 3.7648613075848016e-08,
+              "rms": 1.3517235438488764e-09,
+              "shape": [
+                200,
+                200
+              ]
+            },
+            "cpu_sigmoid_fp64_then_pool_vs_sealed": {
+              "actual_dtype": "torch.float64",
+              "bit_exact": false,
+              "different_values": 742,
+              "expected_dtype": "torch.float64",
+              "max_abs": 2.446730151817178e-09,
+              "mean_abs": 1.1923751074735163e-10,
+              "p99_abs": 1.65617030950527e-09,
+              "relative_l2": 9.05813428399504e-09,
+              "rms": 3.0570086396671624e-10,
+              "shape": [
+                742
+              ]
+            },
+            "historical_gpu_probability_map_saved": false,
+            "interpretation": "Cross-backend sigmoid rounding is measured, not asserted away; historical logits alone cannot establish bit-exact CUDA probability pooling."
+          }
+        }
+      ],
+      "native_relative_logM": {
+        "cpu": -0.0032081495727283027,
+        "difference": -0.00029221803550427694,
+        "sealed_gpu": -0.0029159315372240258
+      },
+      "payload": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/LOCAL_X_PLUS.pt",
+        "sha256": "cec4a83463d1d6bb1183943fbd1e11ef7b4d5dd90422a265b118c3926e2691b1"
+      }
+    }
+  ],
+  "cpu_pool_integer_bounds_bit_exact": true,
+  "environment": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/environment.json",
+    "sha256": "33c7622f980352825939deb989c20ed318fb1332ef7c410a06287ffa7d67e9ee"
+  },
+  "expanded_experiment_authorized_by_probe": false,
+  "interpretation": "One natural candidate pair is an engineering pilot, not an identity or causal result.",
+  "local_minus_global_logM": {
+    "cpu": 0.0471647815657823,
+    "difference": -0.00031147644529117,
+    "note": "One sign, one axis, one natural pair: backend diagnostic only; not the predeclared antithetic scientific contrast.",
+    "sealed_gpu": 0.04747625801107347
+  },
+  "max_rss_kib": 1347592,
+  "native_repeat_bit_exact": true,
+  "native_repeat_head_seconds": 16.0080950090196,
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_property_restore_cpu_v3/query000_pair000_threads04/protocol.json",
+    "sha256": "92baf0218a7a12ca17a3d88658e7fc69253cffd60183619dee05f78a2836dc66"
+  },
+  "sealed_gpu_repool_bit_exact": false,
+  "status": "CPU_DPT_PILOT_MEASURED_WITH_DRIFT_REVIEW_REQUIRED",
+  "suggested_next_gate": "Inspect confidence, weight and logM errors; freeze any numerical tolerance before additional pairs, then validate on additional outcome-blind pairs and all planned arms. Do not approve solely from aggregate M or loosen thresholds after observing effects.",
+  "total_measured_head_seconds": 63.967016697861254
+}
