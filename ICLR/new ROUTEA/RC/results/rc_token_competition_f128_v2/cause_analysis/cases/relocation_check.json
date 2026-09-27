@@ -1,0 +1,48 @@
+{
+  "status": "RELOCATED_ROOT_REPLAY_PASS",
+  "analysis_code_sha256": "b15828a308a3b3b0e8aafdc6f40178e432bc9bf9145df6524f48b11b5a836a50",
+  "inputs_copied": [
+    "protocol.json",
+    "validation.json",
+    "joined_predictions.json",
+    "candidate_predictions.json",
+    "analysis/analysis_summary.json",
+    "analysis/per_query_diagnostics.csv"
+  ],
+  "python_dependencies": "standard library only",
+  "original_absolute_JSON_paths_dereferenced": false,
+  "path_access_evidence": "source inspection: all source reads use --root / relative input; embedded original paths are not opened",
+  "replay_stdout": "{\"status\": \"PRIMARY_FIXED0_CASE_ARITHMETIC_PASS\", \"rows\": 384, \"multi_losses\": 2, \"out\": \"/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/.relocation_check_m3qnwdfe/results/rc_token_competition_f128_v2/cause_analysis/cases\"}",
+  "seven_machine_outputs_byte_identical": true,
+  "outputs": {
+    "primary_fixed0_cases.csv": {
+      "sha256": "819d0b5e911640289aa1ad1da50588c19927acc1a93fbd7b22d059933a68fef8",
+      "identical_to_original": true
+    },
+    "rescues_and_breaks.csv": {
+      "sha256": "6ea71f4ef8af6300b7160a0f0a5c1b5f33e639aeb6a31403a8683df90df1712a",
+      "identical_to_original": true
+    },
+    "errors.csv": {
+      "sha256": "8695a634ace8c9d3885ab083e074d3760279adeeb10a66f99ae3676e4ac10236",
+      "identical_to_original": true
+    },
+    "between_arm_decision_changes.csv": {
+      "sha256": "05d7597356d5790742157d7ce6861984655912ecaa89d6b995b7a7bd35353255",
+      "identical_to_original": true
+    },
+    "target_rank_depth.csv": {
+      "sha256": "fbc47745adee653057bd025c5656dce308fe866df71ebc3949a18863aa145339",
+      "identical_to_original": true
+    },
+    "multi_specific_losses.json": {
+      "sha256": "479f5910bfdc9201a77c12db035fcafb50cc030c03af5a82539c0acadb71618c",
+      "identical_to_original": true
+    },
+    "candidate_score_support.json": {
+      "sha256": "06e3aa0ed2f6690f9e6b5e90d289889fa42a82542a1db844daa321525f76e148",
+      "identical_to_original": true
+    }
+  },
+  "case_summary_boundary": "case_summary.json source and output path fields intentionally rebind to the relocated root; score tables remain byte identical"
+}

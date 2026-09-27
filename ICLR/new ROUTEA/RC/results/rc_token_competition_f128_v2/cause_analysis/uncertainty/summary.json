@@ -1,0 +1,69 @@
+{
+  "status": "TOKEN128_GROUP_EFFECT_ACCOUNTING_PASS",
+  "validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/validation.json",
+    "sha256": "d0dcfe3ca5a8e6858d9bd510c97b51d2b53090fa7dc70160a1c6491e2ba7ada8"
+  },
+  "summary": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/analysis/analysis_summary.json",
+    "sha256": "46177fb0fb98a557786d245362cb36d490fee1220e7e5fa170c1e0bae16743f6"
+  },
+  "input": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/analysis/per_query_diagnostics.csv",
+    "sha256": "eb5ee64416b000862ca7ec2b22a4233e356a8718f2739b373b7cbee1af09a69d"
+  },
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_token128_group_uncertainty_v1.py",
+    "sha256": "0ec9257121c9987df25db786bd835f5e2ab6ea0ac9fb542a2b09cf4edf3cb5e6"
+  },
+  "models": [
+    {
+      "model": "TOKEN_QR",
+      "queries": 128,
+      "identity_groups": 48,
+      "max_queries_per_identity": 8,
+      "groups_with_any_changed_correctness": 10,
+      "positive_net_groups": 6,
+      "negative_net_groups": 2,
+      "zero_net_groups": 40,
+      "rescues": 9,
+      "breaks": 4,
+      "net": 5
+    },
+    {
+      "model": "TOKEN_QRR_ANCHOR",
+      "queries": 128,
+      "identity_groups": 48,
+      "max_queries_per_identity": 8,
+      "groups_with_any_changed_correctness": 11,
+      "positive_net_groups": 7,
+      "negative_net_groups": 3,
+      "zero_net_groups": 38,
+      "rescues": 9,
+      "breaks": 4,
+      "net": 5
+    },
+    {
+      "model": "TOKEN_QRR_MULTI",
+      "queries": 128,
+      "identity_groups": 48,
+      "max_queries_per_identity": 8,
+      "groups_with_any_changed_correctness": 10,
+      "positive_net_groups": 6,
+      "negative_net_groups": 3,
+      "zero_net_groups": 39,
+      "rescues": 7,
+      "breaks": 4,
+      "net": 3
+    }
+  ],
+  "artifacts": {
+    "groups": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/uncertainty/identity_group_effects.csv",
+      "sha256": "1860b80a1a55def36cb49868a012774db7f29f3f200c38d59effb7d81b497f17"
+    }
+  },
+  "interpretation": "128 images form 48 identity groups. The original cluster interval treats images of one identity jointly. These counts describe why a positive point estimate is not the same as a strictly positive lower confidence endpoint; they do not prove that more data alone would resolve the training/mechanism issue.",
+  "new_training": false,
+  "gate_changed": false
+}

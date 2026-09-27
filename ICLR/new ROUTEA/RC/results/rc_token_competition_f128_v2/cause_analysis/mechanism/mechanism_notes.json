@@ -1,0 +1,57 @@
+{
+  "evidence_level": "Posthoc explanatory diagnostics on existing F128 seed0 frozen natural ColNomic C128 results, fixed threshold zero; no new training, jobs, token-cache forward passes, or official score changes.",
+  "source_audit": {
+    "src/rc_aslo_xf/token_competition_v2.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/token_competition_v2.py",
+      "sha256": "50c823bdf9456ae68118302103ac2e7862180f56b5753ef4227260740b890953",
+      "live_sha_verified": true
+    },
+    "src/rc_aslo_xf/rebut_qr_qrr_v1.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/rebut_qr_qrr_v1.py",
+      "sha256": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a",
+      "live_sha_verified": true
+    },
+    "programs/build_token_competition_evidence_v2.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/build_token_competition_evidence_v2.py",
+      "sha256": "c8d2e9d79bf9c5e94d19f94cb531d92ec3055658c65edce1a7fbbb947bad856c",
+      "live_sha_verified": true
+    },
+    "programs/token_competition_data_v2.py": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/token_competition_data_v2.py",
+      "sha256": "10286fd9514ef4f18611847d84070720440eaf723df1f5e1bf91a3b203751fb3",
+      "live_sha_verified": true
+    }
+  },
+  "native_operator": {
+    "pair": "delta(g,r)=0.5*(ordered(g,r)-ordered(r,g)); ordered comparison uses aligned native query tokens before mean/attention pooling.",
+    "rivals": "Let a=RAW, b=highest frozen B_CAL nonanchor, c=second. For g outside {a,b}, rivals={a,b}; for b, rivals={a,c}; for a, rivals={b}. Immutable physical row ascending resolves baseline-score ties.",
+    "pool": "Dg=mean(valid pair edges), logits_g=base_g+Dg-Da, logit_a=0; strict unique-best challenger >0 SWITCH, otherwise HOLD."
+  },
+  "structural_derivation": {
+    "transitive_assumption": "Suppose delta(g,r)=f(g)-f(r), which QR satisfies by construction but QRR is not required to satisfy.",
+    "g_vs_b": "For g outside {a,b}, Dg-Db=f(g)-f(b)-0.5*(f(b)-f(c)). Thus differing opponents can alter ranks even with exactly transitive pair scores.",
+    "common_opponents": "Using exactly {a,b} for every candidate, retaining self pair zero and denominator 2, gives Dg-Da=f(g)-f(a) under transitivity.",
+    "exact_observed_native_minus_common_g_vs_b": "-0.5*delta(b,c) for g outside {a,b}, without needing transitivity; values -1.2980490019062305 and -1.4849171761974524 for the two losses."
+  },
+  "findings": [
+    "Loss 1 (H593-1af45..., fold0): same MULTI weights RAW-only and common-opponent probes both switch to correct physical1183; native selects wrong1980. Native margin -0.743059 becomes +0.849198 or +0.554990. Therefore the native aggregation operator is sufficient to flip this fixed-model decision from correct to wrong.",
+    "Loss 2 (H593-2e515..., fold4): native margin -1.584615 improves to -0.461516 RAW-only and -0.099698 common-opponents, but both still select wrong1966. The native operator contributes harm; removing it alone is insufficient. Separate trained ANCHOR margin is only +0.004075 and its selected epoch6 differs from MULTI epoch4. These are trained-model/selection differences, not an isolated operator effect.",
+    "Both targets have positive direct pair evidence versus their wrong b (2.072793 and1.687169), while b-vs-c edges (2.596098 and2.969834) are stronger. Mixing incomparable opponents reduces target-vs-b residual margin; on loss2 it reverses that residual margin from +0.963534 to -0.159566.",
+    "The subtraction of RAW D increases target-vs-RAW logits in both cases: +0.952993 and+2.457913 relative to RAW-only; it is a common shift among nonanchors and cancels from target-vs-wrong-nonanchor margins. Saying the target score simply decreased would be false.",
+    "Across all128, each fixed probe yields107 correct versus native106, with2 rescues and1 break,5 decision changes. The lost previously correct query is H593-17e572..., so this is not a free improvement or validated replacement.",
+    "16,128 native MULTI triangles show nontransitivity (RMS cycle/edge26.44%). The two loss target cycles have opposite signs and nontransitivity respectively harms and helps their g-vs-b margins. It cannot alone explain both losses."
+  ],
+  "limits": [
+    "M0 stays byte-equal to frozen common features; local mean_v remains a scalar cache channel. The reader adds learned local content/support use without recomputing that global coverage scalar.",
+    "MULTI is RAW plus one baseline-chosen rival per candidate, with candidate-dependent opponent sets and unweighted mean; it is not full all-pairs competition.",
+    "Extra information can improve pair decisions yet harm ranking when opponent sets differ; the evidence here is restricted to the fixed saved-edge interventions.",
+    "No external test, no renewed OOF model selection, no claim that either posthoc107 score is an official benchmark result."
+  ],
+  "rerun": "Keep probe_saved_edges.py and portable_input_snapshot.json in the same directory; run python probe_saved_edges.py using Python3.9+. Default replay uses only stdlib and this snapshot. --from-originals revalidates original bound workspace artifacts and regenerates snapshot.",
+  "artifacts": {
+    "full": "saved_edge_probe.json",
+    "portable_inputs": "portable_input_snapshot.json",
+    "code": "probe_saved_edges.py",
+    "validation": "rerun_validation.json"
+  }
+}

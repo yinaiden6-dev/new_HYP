@@ -76,3 +76,8 @@ RPC 只作参考信息不足诊断，不列为正式外部确认。不同面板�
 `backup/copied_files.json` 记录每个源文件的 SHA256；`backup/excluded_files.json` 记录 Git 文件树排除项，包括改存 Release 的大模型文件与未上传的缓存、日志；`MODEL_DEPENDENCIES.json` 记录冻结模型来源指纹；`model_assets_manifest.json` 给出大模型原文件与每个分片的 SHA256。上传完成证据见 `backup/publication_receipt.json`。
 
 这是研究归档，不声称 `git clone` 后即可无条件重跑。旧绝对路径、源码封存 SHA、Slurm 要求和历史 deadline 仍按原样保留；恢复运行还需要原图、重建被排除的缓存并适配执行环境，详见复现说明。
+
+
+### F128 correction and rival-aggregation causes (2026-09-27)
+
+[Cause analysis, code and saved-score probes](backup/token_competition_f128_causes_20260927/README.md): QR/ANCHOR net +5, MULTI net +3 on opened F128; fixed-weight operator probes locate one failed rescue, while the original replication gate remains NO_GO.
