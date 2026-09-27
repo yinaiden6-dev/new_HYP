@@ -1,0 +1,214 @@
+{
+  "scope": "All15 native token V2 F128 grouped-fivefold seed0; unchanged C128; fixed0 primary; phase-specific same-F128 B_CAL. Existing current-panel labels only. No training, inference, or protected data read.",
+  "script": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/training/analyze_training.py",
+    "sha256": "a248aa751e642811cfe0e0cfc12d60a8532699612fc19805a4310302cd9b4374"
+  },
+  "inputs": {
+    "protocol.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/protocol.json",
+      "sha256": "f7b9349ca2e268de497a5a3693beefd3ab3c7e57a51478e384da952761987143"
+    },
+    "joined_predictions.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/joined_predictions.json",
+      "sha256": "893ce99de444777ee802880dae69d91f5ece0eb89ca4a0c2bdf6707cc110198f"
+    },
+    "candidate_predictions.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/candidate_predictions.json",
+      "sha256": "5b32c37fb8db85e1068d38ed437f74d7815e0a43c102fd7925c648e5dd0415b0"
+    },
+    "analysis/per_query_diagnostics.csv": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/analysis/per_query_diagnostics.csv",
+      "sha256": "eb5ee64416b000862ca7ec2b22a4233e356a8718f2739b373b7cbee1af09a69d"
+    }
+  },
+  "sources_verified": {
+    "programs/run_token_competition_v2.py": {
+      "expected": "6a96f2ce171a3d7f64d90d9ecc1e2bb4e2d906407efedbc5da4123307866936b",
+      "actual": "6a96f2ce171a3d7f64d90d9ecc1e2bb4e2d906407efedbc5da4123307866936b",
+      "match": true,
+      "declared_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_token_competition_v2.py",
+      "resolved_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_token_competition_v2.py"
+    },
+    "programs/run_rebut_qr_qrr_frozenbase_v2.py": {
+      "expected": "bc8111901046a1c4461ab873ff526e96e6b6684eab67bf4da114b762958b68f7",
+      "actual": "bc8111901046a1c4461ab873ff526e96e6b6684eab67bf4da114b762958b68f7",
+      "match": true,
+      "declared_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rebut_qr_qrr_frozenbase_v2.py",
+      "resolved_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rebut_qr_qrr_frozenbase_v2.py"
+    },
+    "src/rc_aslo_xf/token_competition_v2.py": {
+      "expected": "50c823bdf9456ae68118302103ac2e7862180f56b5753ef4227260740b890953",
+      "actual": "50c823bdf9456ae68118302103ac2e7862180f56b5753ef4227260740b890953",
+      "match": true,
+      "declared_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/token_competition_v2.py",
+      "resolved_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/token_competition_v2.py"
+    },
+    "src/rc_aslo_xf/rebut_qr_qrr_v1.py": {
+      "expected": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a",
+      "actual": "c4645c97c4126f5c7c90cdc3c3a857cea2f23537ded9d7b24a7688bb1e9a632a",
+      "match": true,
+      "declared_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/rebut_qr_qrr_v1.py",
+      "resolved_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/rebut_qr_qrr_v1.py"
+    },
+    "programs/token_competition_data_v2.py": {
+      "expected": "10286fd9514ef4f18611847d84070720440eaf723df1f5e1bf91a3b203751fb3",
+      "actual": "10286fd9514ef4f18611847d84070720440eaf723df1f5e1bf91a3b203751fb3",
+      "match": true,
+      "declared_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/token_competition_data_v2.py",
+      "resolved_path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/token_competition_data_v2.py"
+    }
+  },
+  "checked_fits": 15,
+  "checked_epoch_records": 247,
+  "maximum_recomputed_inner_loss_error": 7.771561172376096e-16,
+  "selected_equals_global_best_ce_all_fits": true,
+  "selected_equals_frozen_eligible_min_ce_all_fits": true,
+  "all_gradient_counts_consistent": true,
+  "all_progress_complete": true,
+  "all_baseline_replay_bit_exact_in_existing_results": true,
+  "existing_independent_receipt_result_shas_verified": true,
+  "existing_receipts_model_replay_error": 0,
+  "new_model_replay_performed": false,
+  "inner_identity_sets": {
+    "0": [
+      "0003",
+      "200000002710_Final",
+      "2021 Lice Freee!_6ozPOP R2a",
+      "469584",
+      "4_Kids_Oral_Pain_Relief",
+      "734-uw-mint-mini-nicotine-lozenge",
+      "77l96n1c1",
+      "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22"
+    ],
+    "1": [
+      "10 mL carton",
+      "200000002710_Final",
+      "2021 Lice Freee!_6ozPOP R2a",
+      "469584",
+      "4_Kids_Oral_Pain_Relief",
+      "766-e9-infants-pain-and-fever",
+      "964901_LR",
+      "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22"
+    ],
+    "2": [
+      "0003",
+      "200000002710_Final",
+      "2021 Lice Freee!_6ozPOP R2a",
+      "4_Kids_Oral_Pain_Relief",
+      "734-uw-mint-mini-nicotine-lozenge",
+      "766-e9-infants-pain-and-fever",
+      "964901_LR",
+      "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22"
+    ],
+    "3": [
+      "0003",
+      "200000002710_Final",
+      "469584",
+      "734-uw-mint-mini-nicotine-lozenge",
+      "766-e9-infants-pain-and-fever",
+      "77l96n1c1",
+      "964901_LR",
+      "Bacitracin Zinc Ointment USP Carton 0.5oz(14.2g) Rev 02-22"
+    ],
+    "4": [
+      "0003",
+      "2021 Lice Freee!_6ozPOP R2a",
+      "469584",
+      "4_Kids_Oral_Pain_Relief",
+      "734-uw-mint-mini-nicotine-lozenge",
+      "766-e9-infants-pain-and-fever",
+      "77l96n1c1",
+      "964901_LR"
+    ]
+  },
+  "summary_by_arm": {
+    "TOKEN_QR": {
+      "epochs": [
+        5,
+        7,
+        7,
+        6,
+        6
+      ],
+      "inner_rescues_occurrences": 14,
+      "inner_breaks_occurrences": 0,
+      "inner_net_occurrences": 14,
+      "inner_query_occurrences": 130,
+      "inner_unique_queries": 38,
+      "held_rescues": 9,
+      "held_breaks": 4,
+      "held_net": 5,
+      "mean_inner_baseline_loss": 0.660072311009776,
+      "mean_inner_selected_loss": 0.2653367035291484,
+      "mean_held_baseline_loss": 0.5959379945530461,
+      "mean_held_model_loss": 0.3477936907251352,
+      "held_break_queries": [
+        "H593-0745854000292039c9c10f33",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-272a6668246b45626dea5ed4",
+        "H593-02ce6b371f2907428fc96ffe"
+      ]
+    },
+    "TOKEN_QRR_ANCHOR": {
+      "epochs": [
+        5,
+        6,
+        5,
+        6,
+        6
+      ],
+      "inner_rescues_occurrences": 15,
+      "inner_breaks_occurrences": 0,
+      "inner_net_occurrences": 15,
+      "inner_query_occurrences": 130,
+      "inner_unique_queries": 38,
+      "held_rescues": 9,
+      "held_breaks": 4,
+      "held_net": 5,
+      "mean_inner_baseline_loss": 0.660072311009776,
+      "mean_inner_selected_loss": 0.27039793578799,
+      "mean_held_baseline_loss": 0.5959379945530461,
+      "mean_held_model_loss": 0.37224296720821504,
+      "held_break_queries": [
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-272a6668246b45626dea5ed4",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-29d505a42ed3f7b9bb256b2b"
+      ]
+    },
+    "TOKEN_QRR_MULTI": {
+      "epochs": [
+        5,
+        5,
+        4,
+        5,
+        4
+      ],
+      "inner_rescues_occurrences": 10,
+      "inner_breaks_occurrences": 1,
+      "inner_net_occurrences": 9,
+      "inner_query_occurrences": 130,
+      "inner_unique_queries": 38,
+      "held_rescues": 7,
+      "held_breaks": 4,
+      "held_net": 3,
+      "mean_inner_baseline_loss": 0.660072311009776,
+      "mean_inner_selected_loss": 0.37079060190366836,
+      "mean_held_baseline_loss": 0.5959379945530461,
+      "mean_held_model_loss": 0.37625520567106197,
+      "held_break_queries": [
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-272a6668246b45626dea5ed4",
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-29d505a42ed3f7b9bb256b2b"
+      ]
+    }
+  },
+  "caveats": [
+    "Inner query occurrences overlap across folds and are selected-on, not independent OOF evidence.",
+    "Train loss averages evolving per-query update losses, not a post-epoch frozen-model evaluation.",
+    "Held model is fresh outer-TRAIN refit; inner-to-held discrepancy mixes unseen identities and refit changes.",
+    "Opened development panel, seed0 only; specific hyperparameter/data-size/architecture causes are not isolated."
+  ]
+}

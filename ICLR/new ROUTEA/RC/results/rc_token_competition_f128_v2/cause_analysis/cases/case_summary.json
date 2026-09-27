@@ -1,0 +1,358 @@
+{
+  "status": "PRIMARY_FIXED0_CASE_ARITHMETIC_PASS",
+  "panel": "F128 opened development, original grouped five folds, seed0",
+  "candidate_source": "unchanged frozen natural ColNomic C128",
+  "baseline": "SAME F128 seed0 phase-correct frozen 18-dimensional B_CAL",
+  "scoring": "B_CAL zero_base plus native-token D_g minus D_RAW residual; RAW exactly0",
+  "operating_point": "fixed0 primary only",
+  "evidence_level": "post-join descriptive score decomposition; no visual causal attribution or fixed-weight rival ablation",
+  "source_bindings": {
+    "protocol.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/protocol.json",
+      "sha256": "f7b9349ca2e268de497a5a3693beefd3ab3c7e57a51478e384da952761987143"
+    },
+    "validation.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/validation.json",
+      "sha256": "d0dcfe3ca5a8e6858d9bd510c97b51d2b53090fa7dc70160a1c6491e2ba7ada8"
+    },
+    "joined_predictions.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/joined_predictions.json",
+      "sha256": "893ce99de444777ee802880dae69d91f5ece0eb89ca4a0c2bdf6707cc110198f"
+    },
+    "candidate_predictions.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/candidate_predictions.json",
+      "sha256": "5b32c37fb8db85e1068d38ed437f74d7815e0a43c102fd7925c648e5dd0415b0"
+    },
+    "analysis/analysis_summary.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/analysis/analysis_summary.json",
+      "sha256": "46177fb0fb98a557786d245362cb36d490fee1220e7e5fa170c1e0bae16743f6"
+    },
+    "analysis/per_query_diagnostics.csv": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/analysis/per_query_diagnostics.csv",
+      "sha256": "eb5ee64416b000862ca7ec2b22a4233e356a8718f2739b373b7cbee1af09a69d"
+    }
+  },
+  "analysis_code": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/build_case_analysis.py",
+    "sha256": "b15828a308a3b3b0e8aafdc6f40178e432bc9bf9145df6524f48b11b5a836a50"
+  },
+  "arms": {
+    "TOKEN_QR": {
+      "n": 128,
+      "correct": 108,
+      "changed_decisions": 20,
+      "transition_counts": {
+        "correct_unchanged": 99,
+        "wrong_to_different_wrong": 7,
+        "break": 4,
+        "rescue": 9,
+        "wrong_unchanged": 9
+      },
+      "failure_counts": {
+        "target_beats_RAW_but_wrong_challenger_wins": 3,
+        "target_absent_from_C128": 8,
+        "SWITCH_away_from_correct_RAW": 4,
+        "target_not_above_RAW_and_wrong_challenger_wins": 1,
+        "target_present_but_HOLD_wrong_RAW": 4
+      },
+      "absent_failure_actions": {
+        "SWITCH": 6,
+        "HOLD": 2
+      },
+      "rescues": [
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-1533c32a07d745928239de77",
+        "H593-17e5724183278e475c4a304d",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1e203e93f22affa5c8c93e7b",
+        "H593-1e69202f59c1e38274747acc",
+        "H593-297ba148574e09f5723aa6b7",
+        "H593-2e5153cd0e9bd1dddbb75dea",
+        "H593-30656f17b4be13cde8124a15"
+      ],
+      "breaks": [
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-0745854000292039c9c10f33",
+        "H593-272a6668246b45626dea5ed4"
+      ]
+    },
+    "TOKEN_QRR_ANCHOR": {
+      "n": 128,
+      "correct": 108,
+      "changed_decisions": 20,
+      "transition_counts": {
+        "correct_unchanged": 99,
+        "wrong_to_different_wrong": 7,
+        "break": 4,
+        "rescue": 9,
+        "wrong_unchanged": 9
+      },
+      "failure_counts": {
+        "target_beats_RAW_but_wrong_challenger_wins": 2,
+        "target_absent_from_C128": 8,
+        "SWITCH_away_from_correct_RAW": 5,
+        "target_not_above_RAW_and_wrong_challenger_wins": 1,
+        "target_present_but_HOLD_wrong_RAW": 4
+      },
+      "absent_failure_actions": {
+        "SWITCH": 6,
+        "HOLD": 2
+      },
+      "rescues": [
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-1533c32a07d745928239de77",
+        "H593-17e5724183278e475c4a304d",
+        "H593-1af45e7f0d56a52adeb60b07",
+        "H593-1e203e93f22affa5c8c93e7b",
+        "H593-1e69202f59c1e38274747acc",
+        "H593-297ba148574e09f5723aa6b7",
+        "H593-2e5153cd0e9bd1dddbb75dea",
+        "H593-30656f17b4be13cde8124a15"
+      ],
+      "breaks": [
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-272a6668246b45626dea5ed4",
+        "H593-29d505a42ed3f7b9bb256b2b"
+      ]
+    },
+    "TOKEN_QRR_MULTI": {
+      "n": 128,
+      "correct": 106,
+      "changed_decisions": 17,
+      "transition_counts": {
+        "correct_unchanged": 99,
+        "wrong_to_different_wrong": 6,
+        "break": 4,
+        "rescue": 7,
+        "wrong_unchanged": 12
+      },
+      "failure_counts": {
+        "target_not_above_RAW_and_wrong_challenger_wins": 2,
+        "target_absent_from_C128": 8,
+        "SWITCH_away_from_correct_RAW": 5,
+        "target_beats_RAW_but_wrong_challenger_wins": 3,
+        "target_present_but_HOLD_wrong_RAW": 4
+      },
+      "absent_failure_actions": {
+        "HOLD": 3,
+        "SWITCH": 5
+      },
+      "rescues": [
+        "H593-08297e272b0164e6fdd42e9f",
+        "H593-1533c32a07d745928239de77",
+        "H593-17e5724183278e475c4a304d",
+        "H593-1e203e93f22affa5c8c93e7b",
+        "H593-1e69202f59c1e38274747acc",
+        "H593-297ba148574e09f5723aa6b7",
+        "H593-30656f17b4be13cde8124a15"
+      ],
+      "breaks": [
+        "H593-02ce6b371f2907428fc96ffe",
+        "H593-04bd54f85fedc55966f9ee04",
+        "H593-272a6668246b45626dea5ed4",
+        "H593-29d505a42ed3f7b9bb256b2b"
+      ]
+    }
+  },
+  "between_arms": [
+    {
+      "old_model": "TOKEN_QR",
+      "new_model": "TOKEN_QRR_ANCHOR",
+      "changed_decisions": 5,
+      "transitions": {
+        "wrong_to_different_wrong": 3,
+        "gain": 1,
+        "loss": 1
+      }
+    },
+    {
+      "old_model": "TOKEN_QRR_ANCHOR",
+      "new_model": "TOKEN_QRR_MULTI",
+      "changed_decisions": 6,
+      "transitions": {
+        "wrong_to_different_wrong": 4,
+        "loss": 2
+      }
+    },
+    {
+      "old_model": "TOKEN_QR",
+      "new_model": "TOKEN_QRR_MULTI",
+      "changed_decisions": 7,
+      "transitions": {
+        "wrong_to_different_wrong": 3,
+        "gain": 1,
+        "loss": 3
+      }
+    }
+  ],
+  "target_rank_depth": [
+    {
+      "model": "TOKEN_QR",
+      "target_B_CAL_rank_stratum": "rank1",
+      "queries": 103,
+      "B_CAL_correct": 103,
+      "correct": 99,
+      "rescues": 0,
+      "breaks": 4
+    },
+    {
+      "model": "TOKEN_QR",
+      "target_B_CAL_rank_stratum": "rank2",
+      "queries": 5,
+      "B_CAL_correct": 0,
+      "correct": 4,
+      "rescues": 4,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QR",
+      "target_B_CAL_rank_stratum": "rank3_5",
+      "queries": 4,
+      "B_CAL_correct": 0,
+      "correct": 2,
+      "rescues": 2,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QR",
+      "target_B_CAL_rank_stratum": "rank6_128",
+      "queries": 8,
+      "B_CAL_correct": 0,
+      "correct": 3,
+      "rescues": 3,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QR",
+      "target_B_CAL_rank_stratum": "absent",
+      "queries": 8,
+      "B_CAL_correct": 0,
+      "correct": 0,
+      "rescues": 0,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_ANCHOR",
+      "target_B_CAL_rank_stratum": "rank1",
+      "queries": 103,
+      "B_CAL_correct": 103,
+      "correct": 99,
+      "rescues": 0,
+      "breaks": 4
+    },
+    {
+      "model": "TOKEN_QRR_ANCHOR",
+      "target_B_CAL_rank_stratum": "rank2",
+      "queries": 5,
+      "B_CAL_correct": 0,
+      "correct": 4,
+      "rescues": 4,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_ANCHOR",
+      "target_B_CAL_rank_stratum": "rank3_5",
+      "queries": 4,
+      "B_CAL_correct": 0,
+      "correct": 2,
+      "rescues": 2,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_ANCHOR",
+      "target_B_CAL_rank_stratum": "rank6_128",
+      "queries": 8,
+      "B_CAL_correct": 0,
+      "correct": 3,
+      "rescues": 3,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_ANCHOR",
+      "target_B_CAL_rank_stratum": "absent",
+      "queries": 8,
+      "B_CAL_correct": 0,
+      "correct": 0,
+      "rescues": 0,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_MULTI",
+      "target_B_CAL_rank_stratum": "rank1",
+      "queries": 103,
+      "B_CAL_correct": 103,
+      "correct": 99,
+      "rescues": 0,
+      "breaks": 4
+    },
+    {
+      "model": "TOKEN_QRR_MULTI",
+      "target_B_CAL_rank_stratum": "rank2",
+      "queries": 5,
+      "B_CAL_correct": 0,
+      "correct": 4,
+      "rescues": 4,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_MULTI",
+      "target_B_CAL_rank_stratum": "rank3_5",
+      "queries": 4,
+      "B_CAL_correct": 0,
+      "correct": 2,
+      "rescues": 2,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_MULTI",
+      "target_B_CAL_rank_stratum": "rank6_128",
+      "queries": 8,
+      "B_CAL_correct": 0,
+      "correct": 1,
+      "rescues": 1,
+      "breaks": 0
+    },
+    {
+      "model": "TOKEN_QRR_MULTI",
+      "target_B_CAL_rank_stratum": "absent",
+      "queries": 8,
+      "B_CAL_correct": 0,
+      "correct": 0,
+      "rescues": 0,
+      "breaks": 0
+    }
+  ],
+  "source_hashes_unchanged_after_analysis": true,
+  "outputs": {
+    "primary_fixed0_cases.csv": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/primary_fixed0_cases.csv",
+      "sha256": "819d0b5e911640289aa1ad1da50588c19927acc1a93fbd7b22d059933a68fef8"
+    },
+    "rescues_and_breaks.csv": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/rescues_and_breaks.csv",
+      "sha256": "6ea71f4ef8af6300b7160a0f0a5c1b5f33e639aeb6a31403a8683df90df1712a"
+    },
+    "errors.csv": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/errors.csv",
+      "sha256": "8695a634ace8c9d3885ab083e074d3760279adeeb10a66f99ae3676e4ac10236"
+    },
+    "between_arm_decision_changes.csv": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/between_arm_decision_changes.csv",
+      "sha256": "05d7597356d5790742157d7ce6861984655912ecaa89d6b995b7a7bd35353255"
+    },
+    "target_rank_depth.csv": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/target_rank_depth.csv",
+      "sha256": "fbc47745adee653057bd025c5656dce308fe866df71ebc3949a18863aa145339"
+    },
+    "multi_specific_losses.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/multi_specific_losses.json",
+      "sha256": "479f5910bfdc9201a77c12db035fcafb50cc030c03af5a82539c0acadb71618c"
+    },
+    "candidate_score_support.json": {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_token_competition_f128_v2/cause_analysis/cases/candidate_score_support.json",
+      "sha256": "06e3aa0ed2f6690f9e6b5e90d289889fa42a82542a1db844daa321525f76e148"
+    }
+  }
+}
