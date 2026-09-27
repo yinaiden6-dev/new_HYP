@@ -1,0 +1,136 @@
+{
+  "status": "M_ATTRIBUTION_DEPTH_CHAIN_SUBMITTED",
+  "created_utc": "2026-09-27T19:21:13.198350+00:00",
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_attribution_depth_v1/protocol.json",
+    "sha256": "ced8c692013a626763e10416675cae9fe1081362f0f678cb10e12761f5203865"
+  },
+  "stages": {
+    "upstream": {
+      "job_id": "5167771",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_upstream",
+        "--array=0-17%18",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "upstream"
+      ],
+      "dependencies": [],
+      "array": "0-17%18",
+      "tasks": 18
+    },
+    "downstream": {
+      "job_id": "5167772",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_downstream",
+        "--array=0-7%8",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "downstream"
+      ],
+      "dependencies": [],
+      "array": "0-7%8",
+      "tasks": 8
+    },
+    "upstream_join": {
+      "job_id": "5167773",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_upstream_join",
+        "--dependency=afterok:5167771",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "upstream_join"
+      ],
+      "dependencies": [
+        "5167771"
+      ],
+      "array": null,
+      "tasks": 1
+    },
+    "upstream_bridge": {
+      "job_id": "5167774",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_upstream_bridge",
+        "--array=0-8%9",
+        "--dependency=afterok:5167773",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "upstream_bridge"
+      ],
+      "dependencies": [
+        "5167773"
+      ],
+      "array": "0-8%9",
+      "tasks": 9
+    },
+    "upstream_bridge_join": {
+      "job_id": "5167775",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_upstream_bridge_join",
+        "--dependency=afterok:5167774",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "upstream_bridge_join"
+      ],
+      "dependencies": [
+        "5167774"
+      ],
+      "array": null,
+      "tasks": 1
+    },
+    "downstream_join": {
+      "job_id": "5167776",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_downstream_join",
+        "--dependency=afterok:5167772",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "downstream_join"
+      ],
+      "dependencies": [
+        "5167772"
+      ],
+      "array": null,
+      "tasks": 1
+    },
+    "downstream_audit": {
+      "job_id": "5167777",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_downstream_audit",
+        "--dependency=afterok:5167776",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "downstream_audit"
+      ],
+      "dependencies": [
+        "5167776"
+      ],
+      "array": null,
+      "tasks": 1
+    },
+    "closure": {
+      "job_id": "5167778",
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M_closure",
+        "--dependency=afterok:5167775:5167777",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+        "closure"
+      ],
+      "dependencies": [
+        "5167775",
+        "5167777"
+      ],
+      "array": null,
+      "tasks": 1
+    }
+  }
+}

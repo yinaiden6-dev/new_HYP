@@ -1,0 +1,44 @@
+{
+  "status": "M_DEPTH_SHELL_BRANCHES_DYNAMIC_PASS",
+  "launcher": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+    "sha256": "5d8c7efe6fa9b01bea3986a007c4d7689e4984a485d6cfd3da1cdf2d27c1adfd"
+  },
+  "checks": [
+    {
+      "status": 0,
+      "restart": 0,
+      "array": false,
+      "exit": 0,
+      "requeue": ""
+    },
+    {
+      "status": 2,
+      "restart": 0,
+      "array": false,
+      "exit": 2,
+      "requeue": ""
+    },
+    {
+      "status": 75,
+      "restart": 0,
+      "array": false,
+      "exit": 0,
+      "requeue": "requeue 12345"
+    },
+    {
+      "status": 124,
+      "restart": 0,
+      "array": true,
+      "exit": 0,
+      "requeue": "requeue 12340_5"
+    },
+    {
+      "status": 75,
+      "restart": 6,
+      "array": true,
+      "exit": 124,
+      "requeue": ""
+    }
+  ]
+}

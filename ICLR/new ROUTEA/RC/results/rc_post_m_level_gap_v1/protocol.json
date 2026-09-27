@@ -1,0 +1,196 @@
+{
+  "CPU_POST_adapter_projection_only": true,
+  "anchor_policy": "Only target/fixed-wrong M and POST content change. If RAW winner is a third candidate, hold original HR1 M/L fixed; if in pair, update its values. HOLD=0. Thus full128 LL/GG candidate M and content replay old sources, but action gaps are recomputed under this new fixed-third-anchor protocol and do not purport to replay previous all-world actions.",
+  "attribution_boundary": "Exact finite computational decomposition at the M interface, conditional on frozen content/head/query and chosen coordinates. Symmetric contributions are not a unique causal allocation or necessarily realizable upstream image interventions.",
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_h593_authority_v1_20260924.json",
+    "sha256": "4e244190e58a73b27239a400394ba362b9221d2d8cfd342f841f85ff59248bad"
+  },
+  "budget_seconds": 430,
+  "cached_five_mass_candidate_median_seconds": 0.1405579895945266,
+  "cells": [
+    "LL",
+    "LG",
+    "GL",
+    "GG"
+  ],
+  "coordinates": [
+    "log_M",
+    "log_odds_M"
+  ],
+  "data_scope": "All 120 target-present of the existing 128-query panel, 45 components; 9 phase queries/9 groups also reported separately. Not old EVAL128, not untouched external data.",
+  "domain": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/domain_audit.json",
+    "sha256": "fd7a9330e38436f48054ff0fc302ddcfabc86f5aaf09b0a0e840f4f886095d40"
+  },
+  "domain_policy": "No clipping. Primary log_M J_with_P: retain all 120 endpoints and explicitly mark 21 incomplete grids; full decomposition only in a domain-limited 99-query appendix. Other three log_M edges all 120. Pre-frozen log_odds_M sensitivity: all four edges/all120 and phase9; always report both coordinates, never select by outcomes.",
+  "edges": [
+    [
+      "P_with_J",
+      "A1J1P0",
+      "A1J1P1"
+    ],
+    [
+      "P_without_J",
+      "A1J0P0",
+      "A1J0P1"
+    ],
+    [
+      "J_with_P",
+      "A1J0P1",
+      "A1J1P1"
+    ],
+    [
+      "J_without_P",
+      "A1J0P0",
+      "A1J1P0"
+    ]
+  ],
+  "effects": [
+    "delta_at_mu_L",
+    "delta_at_mu_G",
+    "mu_at_delta_L",
+    "mu_at_delta_G",
+    "interaction",
+    "total",
+    "symmetric_delta",
+    "symmetric_mu"
+  ],
+  "endpoint_replay": "LL/GG and all existing source endpoints are actually forwarded through the original-fold frozen POST and must reproduce old maxsim, argmax and mean content; inherited mass floats are used exactly at endpoints.",
+  "endpoints": {
+    "0": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/fit_validation.json",
+        "sha256": "4ea57009698a13b79227c32d0280e7cf89a7f65fbd795dd72abaff4f23294f6b"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/final.pt",
+        "sha256": "4ad1fa8be929c59339162d8557ee8be8e36d2c60408dd0e1974aedebcf749a29"
+      }
+    },
+    "1": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/fit_validation.json",
+        "sha256": "ed6fc8bac4c69900f6ee90491d14c0132f44feadf3baef2e9c2c965064c0df39"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/final.pt",
+        "sha256": "30ef77d096a89262266c7f6b9fcc644dc635a7d3fe3044b2e18b82cadb6e4264"
+      }
+    },
+    "2": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/fit_validation.json",
+        "sha256": "1aac0bd6c18528193301e6c174aec1fc27cee87c062961bf0d5315a2359cd5e9"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/final.pt",
+        "sha256": "2e8e4a3d7cb9d9e8d713bc01153741b9acb43b11e2a9161ab39dd85f29ecab59"
+      }
+    },
+    "3": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/fit_validation.json",
+        "sha256": "d4c4fadee9292e83d902b49a3d85d802dde652b9c6f044eb4460b7316d0a22d4"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/final.pt",
+        "sha256": "800c730245dfe67de09f341b7cffd4dcfc08bdd35a4ac48008311f9bbdbba7b6"
+      }
+    },
+    "4": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/fit_validation.json",
+        "sha256": "735e85c04d88651217465d50fd256c72b8acce1c391841f9b3c766f93a4279dc"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/final.pt",
+        "sha256": "b7f481b7045e9f35c67ff4e8a8105d7651c843fabdec6f98218b3e04ce1c8347"
+      }
+    }
+  },
+  "expected_total_CPU_worker_wall_seconds_range": [
+    300,
+    1500
+  ],
+  "expected_unique_candidate_mass_forwards_upper_bound": 6336,
+  "inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/inputs.json",
+    "sha256": "dbb596955c3face1144c200d45cf132fb535e0713df4e26aa9ed8f59ff1cfa98"
+  },
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/input_manifest.json",
+    "sha256": "71e29aec16ae9deda67d9cea5cc6ffa10cfff93ef73498d95a00a12f18944f03"
+  },
+  "maximum_error": 2e-10,
+  "motivation": "Post-hoc mechanism diagnosis after observing opposite logM-gap and POST-content-gap effects in native-amplitude phase restoration.",
+  "new_RoMa_vision_LLM_forwards": 0,
+  "new_gpu_forwards": 0,
+  "new_training": 0,
+  "parent_bridge_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/protocol.json",
+    "sha256": "2510d898df4a60e18ff9b64fc0a473108eedf1f9e7ba87ac4c7b3e6b919cb5df"
+  },
+  "parent_bridge_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/validation.json",
+    "sha256": "ba3eb4ce06b5c88b51852477be57991fe2f9460b756cdaa1824b1e67a7e0d435"
+  },
+  "phase_bridge_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/newgroup_property_bridge_v1/validation.json",
+    "sha256": "27cefe8cfc3f6a70abc17b1d4cabffb69710b74ff1d5ff22ab16dd2fe219ace0"
+  },
+  "phase_query_count": 9,
+  "query_count": 120,
+  "recommended_shards": 8,
+  "runtime_estimate_not_measurement": true,
+  "source_code": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_bridge_v2.py",
+      "sha256": "b2b9783e890313a4c93dda4b7770c352354fcaccdc6b158c9e19886b47e5fd5a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_h593_v1.py",
+      "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v2.py",
+      "sha256": "5b67a7292b64b83ddafc39c6588fd0a38cea0cb2a32aeb1aabb639e1969f75d2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_newgroup_property_bridge_v1.py",
+      "sha256": "3ddf5ab1529f0a0918b40f3251a430e4df0d1a72dd47070dfd8dd07b483e39b8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_post_m_level_gap_v1.py",
+      "sha256": "f2570fabd949e88cbc1098b61e9f8a8d07cedbab82763f2c084360fd1df5dfdd"
+    }
+  ],
+  "status": "POST_M_LEVEL_GAP_PROTOCOL_FROZEN",
+  "supervision": "None; fixed diagnostic target/wrong selection inherited unchanged. No prediction or full-C128 accuracy reported.",
+  "threads": 4,
+  "version": 1,
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/workers.json",
+    "sha256": "fd0519738ee7a6b996780e9270209b2015454744ca98a43451eb9e918ed49294"
+  }
+}

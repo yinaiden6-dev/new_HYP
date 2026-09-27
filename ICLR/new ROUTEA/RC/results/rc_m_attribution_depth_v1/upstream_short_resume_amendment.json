@@ -1,0 +1,123 @@
+{
+  "time": "2026-09-27T20:04:47.287854+00:00",
+  "basis": "Completed equivalent 3-arm resumes used 85-86 seconds; remaining all have >=26/29 saved arms. Request 5 minutes with unchanged program and inputs.",
+  "records": [
+    {
+      "job": "5167771_9",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_9",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167795 ArrayJobId=5167771 ArrayTaskId=9 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=9 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:43:34 EligibleTime=2026-09-27T21:45:35 AccrueTime=2026-09-27T21:45:35 StartTime=2026-09-27T22:04:46 EndTime=2026-09-27T22:09:46 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Backfill:* Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0612 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_9.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_9.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_12",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_12",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167798 ArrayJobId=5167771 ArrayTaskId=12 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=8 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:45:33 EligibleTime=2026-09-27T21:47:34 AccrueTime=2026-09-27T21:47:34 StartTime=2026-09-27T22:30:00 EndTime=2026-09-27T22:35:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Backfill:* Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0426 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_12.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_12.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_11",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_11",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167797 ArrayJobId=5167771 ArrayTaskId=11 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=8 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:45:31 EligibleTime=2026-09-27T21:47:32 AccrueTime=2026-09-27T21:47:32 StartTime=2026-09-27T22:20:00 EndTime=2026-09-27T22:25:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Backfill:* Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0612 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_11.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_11.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_10",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_10",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167796 ArrayJobId=5167771 ArrayTaskId=10 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=8 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:45:31 EligibleTime=2026-09-27T21:47:32 AccrueTime=2026-09-27T21:47:32 StartTime=2026-09-27T22:10:14 EndTime=2026-09-27T22:15:14 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Backfill:* Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0426 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_10.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_10.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_13",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_13",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167799 ArrayJobId=5167771 ArrayTaskId=13 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=5 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:51:35 EligibleTime=2026-09-27T21:53:36 AccrueTime=2026-09-27T21:53:36 StartTime=2026-09-27T22:30:00 EndTime=2026-09-27T22:35:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0612 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_13.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_13.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_16",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_16",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167807 ArrayJobId=5167771 ArrayTaskId=16 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=4 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:53:35 EligibleTime=2026-09-27T21:55:36 AccrueTime=2026-09-27T21:55:36 StartTime=2026-09-27T22:50:00 EndTime=2026-09-27T22:55:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0426 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_16.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_16.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_15",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_15",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167806 ArrayJobId=5167771 ArrayTaskId=15 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=4 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:53:34 EligibleTime=2026-09-27T21:55:35 AccrueTime=2026-09-27T21:55:35 StartTime=2026-09-27T22:40:00 EndTime=2026-09-27T22:45:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0612 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_15.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_15.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_14",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_14",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167805 ArrayJobId=5167771 ArrayTaskId=14 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=4 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:53:33 EligibleTime=2026-09-27T21:55:34 AccrueTime=2026-09-27T21:55:34 StartTime=2026-09-27T22:40:00 EndTime=2026-09-27T22:45:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:11 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0426 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_14.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_14.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    },
+    {
+      "job": "5167771_17",
+      "saved_arms": 26,
+      "argv": [
+        "scontrol",
+        "update",
+        "JobId=5167771_17",
+        "TimeLimit=00:05:00"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "after": "JobId=5167771 ArrayJobId=5167771 ArrayTaskId=17 ArrayTaskThrottle=18 JobName=M_upstream UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A SubmitTime=2026-09-27T21:59:37 EligibleTime=2026-09-27T22:01:38 AccrueTime=2026-09-27T22:01:38 StartTime=2026-09-27T22:50:00 EndTime=2026-09-27T22:55:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:04:12 Scheduler=Main Partition=accelerated AllocNode:Sid=hkn1991:1538973 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=hkn0612 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch SubmitLine=sbatch --parsable --job-name=M_upstream --array=0-17%18 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch upstream WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_17.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-depth-5167771_17.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+    }
+  ]
+}

@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-09-27 M归因深化：配准、共同水平与实际纠错](backup/m_attribution_depth_20260927/README.md)**：两条链全部完成；区分logM比例差、原始M绝对差与内部内容变化，解释共同水平为何帮助或抵消相对优势；附前128自然C128的原有纠错核算、科学图及独立验收。归因结果与尚未执行的预测理论检验分开记录。
+
 <!-- TOKEN_PUBLICATION:rc_token_competition_f128_v2:BEGIN -->
 - **[F128 native token competition V2 / 原生 token 竞争完整结果](backup/token_competition_f128_v2_20260927/README.md)**：15 项独立验收，fixed0 主结果与继承阈值次结果；同面板 B_CAL、MULTI/ANCHOR、救回/误伤及开发面板限制。
 <!-- TOKEN_PUBLICATION:rc_token_competition_f128_v2:END -->

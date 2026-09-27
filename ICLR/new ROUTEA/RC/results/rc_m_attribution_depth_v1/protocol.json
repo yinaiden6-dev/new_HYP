@@ -1,0 +1,142 @@
+{
+  "status": "M_ATTRIBUTION_DEPTH_ORCHESTRATION_FROZEN",
+  "scope": "Separate P-context alignment and downstream common-level/gap causal diagnostics; no QRR or accuracy search.",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_m_attribution_depth_v1.py",
+      "sha256": "26c7971479991321684b3bf7c4dd64d1bb022a78a4b64dfb1059390824a6f10b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_attribution_depth_v1.sbatch",
+      "sha256": "5d8c7efe6fa9b01bea3986a007c4d7689e4984a485d6cfd3da1cdf2d27c1adfd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_context_binding_v1.py",
+      "sha256": "25a10532c7fd9b68cb51d7fadb06170cb20793a04657c4743993b2e2662aeb94"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_post_m_level_gap_v1.py",
+      "sha256": "f2570fabd949e88cbc1098b61e9f8a8d07cedbab82763f2c084360fd1df5dfdd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/check_rc_post_m_level_gap_v1.py",
+      "sha256": "680231ef197231579fc2e1d816eff552b2ae63f671aa5ad624c0304091f5ed18"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_context_binding_v1/protocol.json",
+      "sha256": "10a4f5ac417750cc44fad912d3167257ab2a3635012e752160a531bc2e24f5fd"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/protocol.json",
+      "sha256": "5e18de6ddc53e0f6b84b96eeb9030ceea4dd2ef8b141312cb74177605d9edecb"
+    }
+  ],
+  "required_statuses": {
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_context_binding_v1/validation.json": "CONTEXT_BINDING_COMPLETE_INDEPENDENT_PASS",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/validation.json": "POST_M_LEVEL_GAP_INDEPENDENT_PASS",
+    "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/second_arithmetic_validation.json": "POST_M_LEVEL_GAP_SECOND_ARITHMETIC_PASS"
+  },
+  "stages": {
+    "upstream": {
+      "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_context_binding_v1.py",
+      "args": [
+        "worker",
+        "--pair-index",
+        "{index}",
+        "--budget",
+        "430"
+      ],
+      "array": "0-17%18",
+      "count": 18,
+      "dependencies": []
+    },
+    "downstream": {
+      "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_post_m_level_gap_v1.py",
+      "args": [
+        "worker",
+        "--shard",
+        "{index}",
+        "--shards",
+        "8",
+        "--budget",
+        "430"
+      ],
+      "array": "0-7%8",
+      "count": 8,
+      "dependencies": []
+    },
+    "upstream_join": {
+      "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_context_binding_v1.py",
+      "args": [
+        "join"
+      ],
+      "count": 1,
+      "dependencies": [
+        "upstream"
+      ]
+    },
+    "upstream_bridge": {
+      "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_context_binding_v1.py",
+      "args": [
+        "bridge-worker",
+        "--index",
+        "{index}",
+        "--budget",
+        "430"
+      ],
+      "array": "0-8%9",
+      "count": 9,
+      "dependencies": [
+        "upstream_join"
+      ]
+    },
+    "upstream_bridge_join": {
+      "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_context_binding_v1.py",
+      "args": [
+        "bridge-join"
+      ],
+      "count": 1,
+      "dependencies": [
+        "upstream_bridge"
+      ]
+    },
+    "downstream_join": {
+      "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_post_m_level_gap_v1.py",
+      "args": [
+        "join"
+      ],
+      "count": 1,
+      "dependencies": [
+        "downstream"
+      ]
+    },
+    "downstream_audit": {
+      "program": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/check_rc_post_m_level_gap_v1.py",
+      "args": [],
+      "count": 1,
+      "dependencies": [
+        "downstream_join"
+      ]
+    },
+    "closure": {
+      "program": null,
+      "args": [],
+      "count": 1,
+      "dependencies": [
+        "upstream_bridge_join",
+        "downstream_audit"
+      ]
+    }
+  },
+  "resources": {
+    "partition": "accelerated",
+    "cpu": 4,
+    "memory": "32G",
+    "gpu_for_scheduling": 1,
+    "gpu_computation": false,
+    "time_limit": "00:10:00",
+    "worker_budget_seconds": 430,
+    "max_same_id_requeues": 6
+  },
+  "population": "Opened historical mechanism panels; post-hoc diagnostics, not untouched external confirmation."
+}

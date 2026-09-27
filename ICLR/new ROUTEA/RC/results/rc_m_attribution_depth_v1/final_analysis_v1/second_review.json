@@ -1,0 +1,108 @@
+{
+  "status": "M_ATTRIBUTION_DEPTH_FINAL_REPORT_SECOND_REVIEW_PASS",
+  "report": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/reports/REPORT_M_ATTRIBUTION_DEPTH_FINAL_20260927.md",
+    "sha256": "d682a941f9b571c96efa5c1ae2e06a4cc0e991bbbcd6a4ab78ac8da1bac0cd54"
+  },
+  "generator": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/summarize_rc_m_attribution_depth_v1.py",
+    "sha256": "dd0f112c5247c7702cf65b36c9b3fd058af2420e96931fdad94224d7f991608b"
+  },
+  "reviewed_primary_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_attribution_depth_v1/final_analysis_v1/validation.json",
+    "sha256": "5cf85d9cd635b6d20c0203643b2c8a19a2e6da314b03e0ef603882f727c3d3ec"
+  },
+  "source_results": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_context_binding_v1/upstream_result.json",
+      "sha256": "aa13b3b83985c0e40385d5e9f25066c608c081591817faf713704acbb062f69a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_context_binding_v1/result.json",
+      "sha256": "77079a313449a251a21ff462f277bc221305455c22bd616c25ef9838f29b802e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/result.json",
+      "sha256": "d76a14b025c531dbd6c82f4e6927201e07d5b3ad2225846c24201cbd8d33901e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_coarse_path_correction_audit_v1/result.json",
+      "sha256": "087e6170eb7b276f10fc88ea98ba7ec4bccf892b7a597c7f515a58bbe042e41b"
+    }
+  ],
+  "scope": "Independent source-JSON, numerical-table and scientific-claim audit; no model or upstream rerun.",
+  "numeric_checks": {
+    "tables": 4,
+    "interval_numeric_entries": 150,
+    "maximum_7_decimal_rounding_error": 4.94464444875109e-08,
+    "coarse_count_cells": 48,
+    "raw_anchor_counts": {
+      "target": 93,
+      "fixed_wrong": 27,
+      "third": 0
+    },
+    "coarse_accuracy_rescue_break_identity_checked": true
+  },
+  "primary_upstream_endpoints": {
+    "M_gap": {
+      "exploratory_bootstrap95": [
+        0.0008713684816506348,
+        0.005062491396695052
+      ],
+      "groups": 9,
+      "mean": 0.002856674504021219,
+      "negative_groups": 2,
+      "positive_groups": 7
+    },
+    "logM_gap": {
+      "exploratory_bootstrap95": [
+        -0.02076282794245382,
+        0.017138698013384288
+      ],
+      "groups": 9,
+      "mean": -0.0013628053955745771,
+      "negative_groups": 3,
+      "positive_groups": 6
+    },
+    "POST_content_gap": {
+      "exploratory_bootstrap95": [
+        0.00039854199435846853,
+        0.005406420792663143
+      ],
+      "groups": 9,
+      "mean": 0.002533284989765939,
+      "negative_groups": 3,
+      "positive_groups": 6
+    },
+    "POST_action_gap": {
+      "exploratory_bootstrap95": [
+        -0.001990497891748678,
+        0.3236159209120449
+      ],
+      "groups": 9,
+      "mean": 0.1310706269305767,
+      "negative_groups": 4,
+      "positive_groups": 5
+    }
+  },
+  "scientific_checks": {
+    "positive_raw_M_and_POST_content_preserved": true,
+    "log_M_and_action_intervals_cross_zero_not_equivalence_claim": true,
+    "primary_and_secondary_contrasts_distinguished": true,
+    "fixed_pair_diagnostics_vs_full_C128_coarse_counts_distinguished": true,
+    "post_hoc_coordinate_dependency_and_21_illegal_cells_retained": true,
+    "training_range_boundary_retained": true,
+    "no_unique_cause_or_new_accuracy_claim": true,
+    "M_only_propagation_not_total_upstream_effect": true,
+    "channel_Gram_not_spatial_indexed_Gram": true,
+    "J_removal_direct_input_only": true,
+    "18_query_reference_pairs_not18_target_wrong_pairs": true
+  },
+  "wording_notes_resolved": [
+    "Clarified channel Gram preservation.",
+    "Clarified that J=0 removes only the direct J input; original P still carries joint-derived information.",
+    "Clarified9 query target/wrong diagnostics comprise18query-reference candidate pairs."
+  ],
+  "remaining_blockers": [],
+  "new_model_forwards": 0
+}
