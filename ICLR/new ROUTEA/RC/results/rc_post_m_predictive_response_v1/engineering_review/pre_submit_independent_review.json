@@ -1,0 +1,30 @@
+{
+  "status": "POST_M_PREDICTIVE_PRE_SUBMIT_READONLY_REVIEW_PASS",
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_post_m_predictive_response_v1.py",
+    "sha256": "072db90496d8f0408ec82fe1ab68b0d4281c636bc858be956a16ef5cb0858344"
+  },
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_predictive_response_v1/protocol.json",
+    "sha256": "7d71fe4057332ab611e3fbedf0cb9d64952ec9c9b8b9cad164d601c34fc638fa"
+  },
+  "synthetic_formula_max_error": 2.220446049250313e-16,
+  "review": {
+    "global_probe_seal_endpoint_barrier": true,
+    "probe_only_shared_fit": true,
+    "role_labels_used_only_by_evaluation": true,
+    "inherited_label_selected_pair_scope_explicit": true,
+    "forecasts_do_not_renormalize_normalized_token_polynomial": true,
+    "predicted_norm_bound_not_actual_endpoint_guarantee": true,
+    "query_then_component_equal_metrics": true,
+    "all_128_action_logits_recomputed_with_fixed_original_head": true,
+    "existing_outputs_not_overwritten": true
+  },
+  "queries": 120,
+  "candidates": 240,
+  "components": 45,
+  "new_model_forward": false,
+  "slurm_mutation": false,
+  "source_changed": false,
+  "clarification": "126 non-intervened content scores L remain fixed; their action logits are nevertheless recomputed when the RAW anchor content changes."
+}

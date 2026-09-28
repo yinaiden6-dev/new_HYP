@@ -1,0 +1,200 @@
+{
+  "arithmetic_tolerance": 2e-10,
+  "authority": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_postllm_h593_authority_v1_20260924.json",
+    "sha256": "4e244190e58a73b27239a400394ba362b9221d2d8cfd342f841f85ff59248bad"
+  },
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20260927,
+  "budget_seconds": 430,
+  "candidate_count": 240,
+  "clipping": false,
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_bridge_v2.py",
+      "sha256": "b2b9783e890313a4c93dda4b7770c352354fcaccdc6b158c9e19886b47e5fd5a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_h593_v1.py",
+      "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v2.py",
+      "sha256": "5b67a7292b64b83ddafc39c6588fd0a38cea0cb2a32aeb1aabb639e1969f75d2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_newgroup_property_bridge_v1.py",
+      "sha256": "3ddf5ab1529f0a0918b40f3251a430e4df0d1a72dd47070dfd8dd07b483e39b8"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_post_m_level_gap_v1.py",
+      "sha256": "f2570fabd949e88cbc1098b61e9f8a8d07cedbab82763f2c084360fd1df5dfdd"
+    }
+  ],
+  "components": 45,
+  "endpoint_barrier": "Every query probe and every prediction saved and hashed in global prediction_seal before any endpoint forward.",
+  "endpoint_shifts": [
+    -0.08,
+    -0.04,
+    0.04,
+    0.08
+  ],
+  "endpoints": {
+    "0": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/fit_validation.json",
+        "sha256": "4ea57009698a13b79227c32d0280e7cf89a7f65fbd795dd72abaff4f23294f6b"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold0/POST_REAL/final.pt",
+        "sha256": "4ad1fa8be929c59339162d8557ee8be8e36d2c60408dd0e1974aedebcf749a29"
+      }
+    },
+    "1": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/fit_validation.json",
+        "sha256": "ed6fc8bac4c69900f6ee90491d14c0132f44feadf3baef2e9c2c965064c0df39"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold1/POST_REAL/final.pt",
+        "sha256": "30ef77d096a89262266c7f6b9fcc644dc635a7d3fe3044b2e18b82cadb6e4264"
+      }
+    },
+    "2": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/fit_validation.json",
+        "sha256": "1aac0bd6c18528193301e6c174aec1fc27cee87c062961bf0d5315a2359cd5e9"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold2/POST_REAL/final.pt",
+        "sha256": "2e8e4a3d7cb9d9e8d713bc01153741b9acb43b11e2a9161ab39dd85f29ecab59"
+      }
+    },
+    "3": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/fit_validation.json",
+        "sha256": "d4c4fadee9292e83d902b49a3d85d802dde652b9c6f044eb4460b7316d0a22d4"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold3/POST_REAL/final.pt",
+        "sha256": "800c730245dfe67de09f341b7cffd4dcfc08bdd35a4ac48008311f9bbdbba7b6"
+      }
+    },
+    "4": {
+      "fit_validation": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/fit_validation.json",
+        "sha256": "735e85c04d88651217465d50fd256c72b8acce1c391841f9b3c766f93a4279dc"
+      },
+      "snapshot": {
+        "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/fold4/POST_REAL/final.pt",
+        "sha256": "b7f481b7045e9f35c67ff4e8a8105d7651c843fabdec6f98218b3e04ce1c8347"
+      }
+    }
+  },
+  "evaluation_roles": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_predictive_response_v1/evaluation_roles.json",
+    "sha256": "e5ac3e370fc372058c47efdc158bd565e47d9a10b5e9fb3dbf038f73e65269b3"
+  },
+  "full_axis_action": "Other 126 candidate scores remain at original HR1; original frozen INTERNAL3 is recomputed. Report prediction agreement only, not new accuracy.",
+  "historical_transport": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_mass_information_transport_v1/protocol.json",
+      "sha256": "fab2264be800d2bb6ef6de3a92777d3cc82b7d11d28ecf1c847aa1da8a698297"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_mass_information_transport_v1/result.json",
+      "sha256": "fc16807d7964185cd64f15502acd6d92b0b6598e0ca79ff9f9d862fd85c6a4cf"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_mass_information_transport_v1/independent_validation.json",
+      "sha256": "290fdba414501a23ed68a71692a315ac476dd85c88c2c3ee16292d94201fdc0a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_mass_information_transport_v1.py",
+      "sha256": "ee2fe843aa359fea256578540471e9e9d6142dc2eb85677c2bdff767592156f5"
+    }
+  ],
+  "inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/inputs.json",
+    "sha256": "dbb596955c3face1144c200d45cf132fb535e0713df4e26aa9ed8f59ff1cfa98"
+  },
+  "interpretation": "Finite local computational response prediction, not M generation, new identity information, unique causality, or independent population confirmation.",
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_postllm_h593_v1/input_manifest.json",
+    "sha256": "71e29aec16ae9deda67d9cea5cc6ffa10cfff93ef73498d95a00a12f18944f03"
+  },
+  "models": [
+    "CONSTANT",
+    "SHARED_LINEAR",
+    "SHARED_QUADRATIC",
+    "LOCAL_LINEAR",
+    "LOCAL_QUADRATIC",
+    "PATCH_LINEAR_MAX",
+    "PATCH_QUADRATIC_MAX"
+  ],
+  "new_POST_candidate_forwards_upper_bound": 2160,
+  "new_training": 0,
+  "new_vision_RoMa_LLM_GPU_forwards": 0,
+  "old_level_gap_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/protocol.json",
+    "sha256": "5e18de6ddc53e0f6b84b96eeb9030ceea4dd2ef8b141312cb74177605d9edecb"
+  },
+  "old_level_gap_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_level_gap_v1/validation.json",
+    "sha256": "cd59a5af69876878cbff2f11485556c7418432969d6cecedabda51ccbdee96fb"
+  },
+  "pair_scope": "Inherited target-present fixed-pair diagnosis; intervention assignment uses ascending candidate positions. It is not target-free natural C128 retrieval evaluation.",
+  "parent_bridge_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/protocol.json",
+    "sha256": "2510d898df4a60e18ff9b64fc0a473108eedf1f9e7ba87ac4c7b3e6b919cb5df"
+  },
+  "plan": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_POST_M_PREDICTIVE_RESPONSE_V1_20260927.md",
+    "sha256": "063c43e86f6ae54013b7b6e015368087a4a76a315aef903d50805c504358d905"
+  },
+  "prediction": "Given M, predict frozen POST score response. Original HR1 as baseline. New synthetic M shifts are unrevealed endpoints; the queries/groups are already opened.",
+  "probe_domain_max": 0.3098741782278284,
+  "probe_domain_min": 0.002093769367982131,
+  "probe_shifts": [
+    -0.02,
+    -0.01,
+    0.0,
+    0.01,
+    0.02
+  ],
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_post_m_predictive_response_v1.py",
+    "sha256": "072db90496d8f0408ec82fe1ab68b0d4281c636bc858be956a16ef5cb0858344"
+  },
+  "query_count": 120,
+  "recommended_shards": 8,
+  "shared_fit": "Zero-intercept probe-response least squares; every component equal, then each query equal, then each of two candidates equal. No response endpoints or identity labels.",
+  "sign_epsilon": 1e-06,
+  "status": "POST_M_PREDICTIVE_PROTOCOL_FROZEN",
+  "threads": 4,
+  "version": 1,
+  "workers": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_post_m_predictive_response_v1/workers.json",
+    "sha256": "ea68314567728e842eb137cafae0d92b66a0aed6842f1013b9584b0a0fd96f26"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PACKED_SHELL_EXIT_REQUEUE_PASS",
+  "cases": [
+    {
+      "code": 0,
+      "restart": 0,
+      "exit": 0,
+      "requeue": false
+    },
+    {
+      "code": 75,
+      "restart": 0,
+      "exit": 0,
+      "requeue": true
+    },
+    {
+      "code": 124,
+      "restart": 0,
+      "exit": 0,
+      "requeue": true
+    },
+    {
+      "code": 75,
+      "restart": 32,
+      "exit": 124,
+      "requeue": false
+    },
+    {
+      "code": 124,
+      "restart": 32,
+      "exit": 124,
+      "requeue": false
+    },
+    {
+      "code": 1,
+      "restart": 0,
+      "exit": 1,
+      "requeue": false
+    }
+  ]
+}

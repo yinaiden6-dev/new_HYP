@@ -1,0 +1,203 @@
+{
+  "status": "M_PREDICTIVE_FINE_CHAIN_SUBMITTED",
+  "utc": "2026-09-28T02:55:18.264304+00:00",
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_predictive_and_fine_c128_chain_v1/protocol.json",
+    "sha256": "78bc7b4834c0bf96494273ebf0a06ce8aec3c4670935f29d65285b6369304e9a"
+  },
+  "stages": {
+    "predict_probe": {
+      "job_id": "5168058",
+      "dependencies": [],
+      "tasks": 8,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_predict_probe",
+        "--array=0-7%8",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "predict_probe"
+      ]
+    },
+    "predict_seal": {
+      "job_id": "5168059",
+      "dependencies": [
+        "5168058"
+      ],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_predict_seal",
+        "--dependency=afterok:5168058",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "predict_seal"
+      ]
+    },
+    "predict_endpoint": {
+      "job_id": "5168060",
+      "dependencies": [
+        "5168059"
+      ],
+      "tasks": 8,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_predict_endpoint",
+        "--array=0-7%8",
+        "--dependency=afterok:5168059",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "predict_endpoint"
+      ]
+    },
+    "predict_join": {
+      "job_id": "5168061",
+      "dependencies": [
+        "5168060"
+      ],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_predict_join",
+        "--dependency=afterok:5168060",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "predict_join"
+      ]
+    },
+    "predict_check": {
+      "job_id": "5168062",
+      "dependencies": [
+        "5168061"
+      ],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_predict_check",
+        "--dependency=afterok:5168061",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "predict_check"
+      ]
+    },
+    "phase_existing": {
+      "job_id": "5168063",
+      "dependencies": [],
+      "tasks": 11,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_phase_existing",
+        "--array=0-10%11",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "phase_existing"
+      ]
+    },
+    "phase_join": {
+      "job_id": "5168064",
+      "dependencies": [
+        "5168063"
+      ],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_phase_join",
+        "--dependency=afterok:5168063",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "phase_join"
+      ]
+    },
+    "context_pilot": {
+      "job_id": "5168065",
+      "dependencies": [],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_context_pilot",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "context_pilot"
+      ]
+    },
+    "context": {
+      "job_id": "5168066",
+      "dependencies": [
+        "5168065"
+      ],
+      "tasks": 50,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_context",
+        "--array=0-49%50",
+        "--dependency=afterok:5168065",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "context"
+      ]
+    },
+    "context_join": {
+      "job_id": "5168067",
+      "dependencies": [
+        "5168066"
+      ],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_context_join",
+        "--dependency=afterok:5168066",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "context_join"
+      ]
+    },
+    "fine_bridge": {
+      "job_id": "5168068",
+      "dependencies": [
+        "5168067"
+      ],
+      "tasks": 11,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_fine_bridge",
+        "--array=0-10%11",
+        "--dependency=afterok:5168067",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "fine_bridge"
+      ]
+    },
+    "fine_join": {
+      "job_id": "5168069",
+      "dependencies": [
+        "5168068",
+        "5168064"
+      ],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_fine_join",
+        "--dependency=afterok:5168068:5168064",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "fine_join"
+      ]
+    },
+    "closure": {
+      "job_id": "5168070",
+      "dependencies": [
+        "5168062",
+        "5168069"
+      ],
+      "tasks": 1,
+      "argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M2_closure",
+        "--dependency=afterok:5168062:5168069",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_predictive_and_fine_c128_v1.sbatch",
+        "closure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "all_intermediate_outputs_retained": true,
+  "bridge_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/protocol.json",
+    "sha256": "2510d898df4a60e18ff9b64fc0a473108eedf1f9e7ba87ac4c7b3e6b919cb5df"
+  },
+  "bridge_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/validation.json",
+    "sha256": "ba3eb4ce06b5c88b51852477be57991fe2f9460b756cdaa1824b1e67a7e0d435"
+  },
+  "candidates": 128,
+  "cases": [
+    9,
+    21,
+    32
+  ],
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_fine_c128_attribution_v1.py",
+      "sha256": "54bd8314984d4f16f8bd2bb638859820c410560b4bc3e82083fe836a3c2a777a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_context_binding_v1.py",
+      "sha256": "25a10532c7fd9b68cb51d7fadb06170cb20793a04657c4743993b2e2662aeb94"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/probe_rc_roma_property_restore_cpu_v3.py",
+      "sha256": "643e065b1754115ed8b57f493f5537ccaeaae83d3b3b0320302fff58fcbafa1c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_newgroups_cpu_v1.py",
+      "sha256": "e0257b59cb8a8cf11dc01bef82b0b493e1a89f0896243b82e35440070e5b4c52"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_shared_native_cache_v1.py",
+      "sha256": "60eb8016b14e743171425f8653fd70672ec088a8a3c5373db5bbb96698042024"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/colnomic_dino_canonical_geometry_v2.py",
+      "sha256": "c732dc933c502f17fd5cb8cc80ae45d116716fe801cc8f3034a1e6a49cef6508"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/dpt.py",
+      "sha256": "254aebb9b5fb02ffc90e3838ed4e5d27bb423912a680034a7f6af21f9e2d22e9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_bridge_v2.py",
+      "sha256": "b2b9783e890313a4c93dda4b7770c352354fcaccdc6b158c9e19886b47e5fd5a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_h593_v1.py",
+      "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v2.py",
+      "sha256": "5b67a7292b64b83ddafc39c6588fd0a38cea0cb2a32aeb1aabb639e1969f75d2"
+    }
+  ],
+  "cohort_policy": "Eight historically outcome-independent group representatives are primary; three historically selected original rescues remain case diagnostics, never pooled as an unbiased sample.",
+  "context_arms": [
+    "NATIVE",
+    "X_PLUS__001",
+    "X_PLUS__110",
+    "X_PLUS__111",
+    "X_MINUS__001",
+    "X_MINUS__110",
+    "X_MINUS__111",
+    "Y_PLUS__001",
+    "Y_PLUS__110",
+    "Y_PLUS__111",
+    "Y_MINUS__001",
+    "Y_MINUS__110",
+    "Y_MINUS__111"
+  ],
+  "context_backend": "All thirteen context cells use frozen CPU DPT on original retained A/J/P; own same-CPU NATIVE anchor. Never form a mixed-backend causal contrast.",
+  "directions": {
+    "X_MINUS": [
+      0,
+      -4
+    ],
+    "X_PLUS": [
+      0,
+      4
+    ],
+    "Y_MINUS": [
+      -4,
+      0
+    ],
+    "Y_PLUS": [
+      4,
+      0
+    ]
+  },
+  "fine_property_terminology": "Fine means finer mechanistic property decomposition at the COARSE DPT endpoint, not RoMa fine-matching/refiner-stage inference.",
+  "head_state": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/head_replay_state.pt",
+    "sha256": "a5222b29cc3386d67c771ed2e0896e3d80a5f2bc3a065aec1a90097fe6a5debe"
+  },
+  "indices": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    21,
+    32
+  ],
+  "inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_fine_c128_attribution_v1/inputs.json",
+    "sha256": "6eaa36fb97fe8926558614e298d5db72de3d28c38cf2f8d7dad5dcea0a4ec5a5"
+  },
+  "label_source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_eval_v1/result.json",
+    "sha256": "aa6a2919419c4d1a6c95d31e03169f795fa67d718271f0267ad06574fc78c935"
+  },
+  "main": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "mediator": "M-only: original local weighting shape/content fixed; all M-scaled descendants updated together; POST uses real M with frozen original held-fold adapter/head.",
+  "native_parity": "Repeat CPU native confidence exactly for the first formal pair; keep CPU versus historical GPU confidence/M drift descriptive for every pair.",
+  "new_gpu_or_encoder_matcher_LLM_forwards": 0,
+  "new_training": 0,
+  "old_manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/manifest.json",
+    "sha256": "db14ca48b04a035afd7e58e1d10b399312e73231c1b4d3847d23880d43f0feca"
+  },
+  "old_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/validation.json",
+    "sha256": "1d4ab971ff85b5f76a68340c00cb17f6d33d190cb202c094a0ca3d49585fd6ad"
+  },
+  "pairs": 1408,
+  "phase_arms": [
+    "NATIVE",
+    "ZERO",
+    "AMP_FLAT",
+    "AMP_PERMUTE",
+    "GLOBAL_X_PLUS",
+    "LOCAL_X_PLUS",
+    "GLOBAL_X_MINUS",
+    "LOCAL_X_MINUS",
+    "GLOBAL_Y_PLUS",
+    "LOCAL_Y_PLUS",
+    "GLOBAL_Y_MINUS",
+    "LOCAL_Y_MINUS"
+  ],
+  "phase_backend": "Reuse sealed historical GPU DPT+sigmoid+FP64 pooling outputs for every phase/amplitude cell; no new RoMa forward.",
+  "phase_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_external_internal_bridge_v2/protocol.json",
+    "sha256": "ea7aee0e1d41482acb6409a262b8646758e368724d59af31626bdfa6b9d3c3d5"
+  },
+  "phase_validation": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_phase_external_internal_bridge_v2/validation.json",
+    "sha256": "9e3d76d46a86ad6a7207fbba2e720501812bd1b86fdaf4dd3f17451f48916416"
+  },
+  "primary_context": "Four-direction mean of (000+111-001-110)/2, each cell scored over every natural C128 candidate. Also retain 110-000,001-000,111-000.",
+  "property_contrasts": "Native-amplitude GLOBAL minus LOCAL phase coherence, NATIVE minus AMP_PERMUTE and AMP_FLAT amplitude interventions, matched context alignment. Conditional effects overlap, not additive unique shares.",
+  "queries": 11,
+  "scope": "Opened historical11, complete natural C128. Not all128 queries, not all593 and not untouched confirmation. No inference of universal necessity, unique cause, or all original benefit attribution.",
+  "shards": 50,
+  "status": "FINE_C128_PROPERTY_PROTOCOL_FROZEN",
+  "threads": 4,
+  "torch_version": "2.9.1+cu128",
+  "version": 1
+}

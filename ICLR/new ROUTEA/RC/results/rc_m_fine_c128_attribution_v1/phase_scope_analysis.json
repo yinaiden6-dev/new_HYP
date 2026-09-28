@@ -1,0 +1,826 @@
+{
+  "status": "FINE_C128_PHASE_SCOPE_ANALYSIS_COMPLETE",
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_fine_c128_attribution_v1/phase_accounting.json",
+    "sha256": "5a70b1a604c9499dc31d20a5341630b2f9bf5ee6b12d911f2e1d6fe82b360063"
+  },
+  "source_receipt": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_fine_c128_attribution_v1/phase_validation.json",
+    "sha256": "5f28a308b6ead325fcdba305b94d50ac04a0acce899dbe46a6896f4ef7e1ec1b"
+  },
+  "original128": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_coarse_path_correction_audit_v1/result.json",
+    "sha256": "087e6170eb7b276f10fc88ea98ba7ec4bccf892b7a597c7f515a58bbe042e41b"
+  },
+  "program": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_m_fine_c128_phase_scope_v1.py",
+    "sha256": "be8ef205ff858e1e6255683849e2dab661d229c2a5b111581e06d66b4a91a7b6"
+  },
+  "coverage": {
+    "NATIVE7": {
+      "original128_rescues": [
+        9,
+        21,
+        32,
+        41,
+        44,
+        55,
+        82,
+        110,
+        116,
+        118
+      ],
+      "original128_breaks": [
+        84
+      ],
+      "covered_rescues": [
+        9,
+        21,
+        32
+      ],
+      "not_covered_rescues": [
+        41,
+        44,
+        55,
+        82,
+        110,
+        116,
+        118
+      ],
+      "covered_breaks": [],
+      "original_rescue_names": {
+        "9": "DIFFICULT-0014",
+        "21": "DIFFICULT-0044",
+        "32": "OUTCOME-0159",
+        "41": "OUTCOME-0476",
+        "44": "DIFFICULT-0017",
+        "55": "OUTCOME-0307",
+        "82": "OUTCOME-0378",
+        "110": "OUTCOME-0600",
+        "116": "DIFFICULT-0013",
+        "118": "OUTCOME-0537"
+      }
+    },
+    "M_FREE": {
+      "original128_rescues": [
+        9,
+        21,
+        32,
+        41,
+        44,
+        55,
+        82,
+        110,
+        116,
+        118
+      ],
+      "original128_breaks": [
+        84
+      ],
+      "covered_rescues": [
+        9,
+        21,
+        32
+      ],
+      "not_covered_rescues": [
+        41,
+        44,
+        55,
+        82,
+        110,
+        116,
+        118
+      ],
+      "covered_breaks": [],
+      "original_rescue_names": {
+        "9": "DIFFICULT-0014",
+        "21": "DIFFICULT-0044",
+        "32": "OUTCOME-0159",
+        "41": "OUTCOME-0476",
+        "44": "DIFFICULT-0017",
+        "55": "OUTCOME-0307",
+        "82": "OUTCOME-0378",
+        "110": "OUTCOME-0600",
+        "116": "DIFFICULT-0013",
+        "118": "OUTCOME-0537"
+      }
+    },
+    "POST": {
+      "original128_rescues": [
+        9,
+        32,
+        41,
+        44,
+        55,
+        82,
+        116,
+        118
+      ],
+      "original128_breaks": [],
+      "covered_rescues": [
+        9,
+        32
+      ],
+      "not_covered_rescues": [
+        41,
+        44,
+        55,
+        82,
+        116,
+        118
+      ],
+      "covered_breaks": [],
+      "original_rescue_names": {
+        "9": "DIFFICULT-0014",
+        "32": "OUTCOME-0159",
+        "41": "OUTCOME-0476",
+        "44": "DIFFICULT-0017",
+        "55": "OUTCOME-0307",
+        "82": "OUTCOME-0378",
+        "116": "DIFFICULT-0013",
+        "118": "OUTCOME-0537"
+      }
+    }
+  },
+  "comparisons": {
+    "NATIVE7": {
+      "MAIN8": {
+        "total": 8,
+        "original_rescues": [],
+        "worlds": {
+          "AMP_FLAT": {
+            "correct": 6,
+            "prediction_changed_from_native": [
+              7
+            ],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "AMP_PERMUTE": {
+            "correct": 6,
+            "prediction_changed_from_native": [
+              7
+            ],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_X_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_X_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_Y_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_Y_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_X_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_X_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_Y_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_Y_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "NATIVE": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "ORIGINAL_HR1": {
+            "correct": 6,
+            "prediction_changed_from_native": [
+              7
+            ],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "ZERO": {
+            "correct": 6,
+            "prediction_changed_from_native": [
+              2,
+              7
+            ],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          }
+        }
+      },
+      "SELECTED_CASES3": {
+        "total": 3,
+        "original_rescues": [
+          9,
+          21,
+          32
+        ],
+        "worlds": {
+          "AMP_FLAT": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "AMP_PERMUTE": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_X_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_X_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_Y_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_Y_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_X_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_X_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_Y_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_Y_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "NATIVE": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "ORIGINAL_HR1": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "ZERO": {
+            "correct": 2,
+            "prediction_changed_from_native": [
+              21
+            ],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "M_FREE": {
+      "MAIN8": {
+        "total": 8,
+        "original_rescues": [],
+        "worlds": {
+          "AMP_FLAT": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "AMP_PERMUTE": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_X_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_X_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_Y_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_Y_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_X_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_X_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_Y_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_Y_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "NATIVE": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "ORIGINAL_HR1": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "ZERO": {
+            "correct": 6,
+            "prediction_changed_from_native": [
+              2,
+              7
+            ],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          }
+        }
+      },
+      "SELECTED_CASES3": {
+        "total": 3,
+        "original_rescues": [
+          9,
+          21,
+          32
+        ],
+        "worlds": {
+          "AMP_FLAT": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "AMP_PERMUTE": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_X_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_X_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_Y_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_Y_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_X_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_X_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_Y_MINUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_Y_PLUS": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "NATIVE": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "ORIGINAL_HR1": {
+            "correct": 3,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              21,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "ZERO": {
+            "correct": 0,
+            "prediction_changed_from_native": [
+              9,
+              21,
+              32
+            ],
+            "original_rescues_retained": [],
+            "retention_fraction": 0.0
+          }
+        }
+      }
+    },
+    "POST": {
+      "MAIN8": {
+        "total": 8,
+        "original_rescues": [],
+        "worlds": {
+          "AMP_FLAT": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "AMP_PERMUTE": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_X_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_X_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_Y_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "GLOBAL_Y_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_X_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_X_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_Y_MINUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "LOCAL_Y_PLUS": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "NATIVE": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "ORIGINAL_HR1": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          },
+          "ZERO": {
+            "correct": 6,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [],
+            "retention_fraction": null
+          }
+        }
+      },
+      "SELECTED_CASES3": {
+        "total": 3,
+        "original_rescues": [
+          9,
+          32
+        ],
+        "worlds": {
+          "AMP_FLAT": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "AMP_PERMUTE": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_X_MINUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_X_PLUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_Y_MINUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "GLOBAL_Y_PLUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_X_MINUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_X_PLUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_Y_MINUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "LOCAL_Y_PLUS": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "NATIVE": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "ORIGINAL_HR1": {
+            "correct": 2,
+            "prediction_changed_from_native": [],
+            "original_rescues_retained": [
+              9,
+              32
+            ],
+            "retention_fraction": 1.0
+          },
+          "ZERO": {
+            "correct": 0,
+            "prediction_changed_from_native": [
+              9,
+              32
+            ],
+            "original_rescues_retained": [],
+            "retention_fraction": 0.0
+          }
+        }
+      }
+    }
+  },
+  "all128_property_attribution_complete": false,
+  "boundary": "Phase comparisons use complete natural C128 within each of eleven opened queries. MAIN8 has no original rescues. CASES3 was selected for historical correction outcomes. Missing coverage means not included in this frozen fine-property panel; it is not an exhaustive filesystem assertion that no other cache exists."
+}
