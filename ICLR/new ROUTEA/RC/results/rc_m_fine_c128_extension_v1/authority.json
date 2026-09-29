@@ -1,0 +1,143 @@
+{
+  "branches": [
+    "NATIVE",
+    "ZERO",
+    "AMP_FLAT",
+    "AMP_PERMUTE",
+    "GLOBAL_X_PLUS",
+    "GLOBAL_X_MINUS",
+    "LOCAL_X_PLUS",
+    "LOCAL_X_MINUS",
+    "GLOBAL_Y_PLUS",
+    "GLOBAL_Y_MINUS",
+    "LOCAL_Y_PLUS",
+    "LOCAL_Y_MINUS"
+  ],
+  "budget_seconds": 430,
+  "candidates": 128,
+  "delta": 0.125,
+  "external_GO": false,
+  "gallery": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_new_hyp_processed128_regression_v1/gallery_manifest.json",
+    "sha256": "b5a9399b56cd38c29c1f81aaf6900a28ee8f974d996213e2705c9dba0e229acc"
+  },
+  "heads": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_subset41_frozen_paths_v1/heads.json",
+    "sha256": "4dd4ab7d1a4778e7019a27286c9469d3026cb81a32c6b77f3f06499b495bd3d2"
+  },
+  "manifest": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_fine_c128_extension_v1/manifest.json",
+    "sha256": "64939cdad4846f0dec6938b64c57c7906906c254045adaa52d1bbe726334205f"
+  },
+  "note": "Isolated reuse of validated collector; original authority and files remain unchanged.",
+  "old_result": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_h593_quality_operator_eval_v1/result.json",
+    "sha256": "aa6a2919419c4d1a6c95d31e03169f795fa67d718271f0267ad06574fc78c935"
+  },
+  "profile": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/registry/rc_original7_eval128_roma_source_profile_v1_20260910.json",
+    "sha256": "3df244260f8c0597291cc1b7c7773fdf05fdf1e43c44a73eeec6d929c216005e"
+  },
+  "protected_data_read": false,
+  "query_count": 8,
+  "scope": "New8 complete natural C128 axes; same12 phase/amplitude worlds. No retraining; no fine refiner or ColNomic encoder.",
+  "seed": 20260924,
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_fine_c128_extension_v1.py",
+      "sha256": "abc2623b47ee106ca3b2fb39a9a172d4dedfc8358ec191e8ec92a4561e29d727"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/submit_rc_m_fine_c128_extension_v1.py",
+      "sha256": "bfd78f4c5dec42640f85bf8ec4894bbcc3a018a4cf1d18f51b646844534a04e4"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_fine_c128_extension_v1.sbatch",
+      "sha256": "3ee03a4df91c7ebed4455c888bc3abbf4fcd2204c9819f1afe7f955a330c749f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_M_FINE_C128_EXTENSION_V1_20260929.md",
+      "sha256": "eeabd395782b5528b8a2d8fc8f011bed13d565589b07e1d4b2cdcf90756db101"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_roma_position_factor_v1.py",
+      "sha256": "8ec2158f4dd8ac476bfca104dbe2af8f9a99dbae9a673a7d2054f49b127c5cf5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_fine_c128_attribution_v1.py",
+      "sha256": "54bd8314984d4f16f8bd2bb638859820c410560b4bc3e82083fe836a3c2a777a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_position_factor_v1.py",
+      "sha256": "2e804f20087b648eefd65eedf0e5c39fae32d012a8c38130bb1d75078a491399"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/plan/RC_ROMA_POSITION_FACTOR_V1_20260924.md",
+      "sha256": "38beda6de70e77f91a34d83939848212f138827194c77f9bac6e48a1ade9478a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_roma_position_factor_v1.sbatch",
+      "sha256": "4bdbce168c4a1163bdb638de0a0c60befa8413281a30145a3e6d90416f1e90d2"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_roma_coordinate_precision_v2.py",
+      "sha256": "e6f4a801047c97aa4f3e31441adfd41cf3c4e69f1779217d575b14cb606c8b3c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/materialize_rc_original7_train128_roma_v1.py",
+      "sha256": "e15ef3f65d4d50ef421970450ad28f842b4407506cdaef7b287ff9867c60724e"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_shared_native_cache_v1.py",
+      "sha256": "60eb8016b14e743171425f8653fd70672ec088a8a3c5373db5bbb96698042024"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_h593_subset41_frozen_paths_v1.py",
+      "sha256": "aed218b702abe31ab1e50bfd2c3f729e14c603b51903e031bb0c27cd5a6569bc"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/src/rc_aslo_xf/romav2_colnomic_frozen_gate_v1.py",
+      "sha256": "96599a560a4066507ae57e641e983b3cf85a18b06ecda0960318174265c981a7"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/matcher.py",
+      "sha256": "b5db2b991d35b1bd217db70763d10d71bd690a600ab875665daf94a54e44a3b6"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/dpt.py",
+      "sha256": "254aebb9b5fb02ffc90e3838ed4e5d27bb423912a680034a7f6af21f9e2d22e9"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_bridge_v2.py",
+      "sha256": "b2b9783e890313a4c93dda4b7770c352354fcaccdc6b158c9e19886b47e5fd5a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_postllm_h593_v1.py",
+      "sha256": "1e34f917d52e3022f3bfc99f4bf9f7afa063f66ccbfb5d111e84258c3008969a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_postllm_m_backend_v1.py",
+      "sha256": "0bf6c68c568f00d5ee67135071d3542515ce831974c5b63a97e9c799cad5446c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_scaled_adapter_v4.py",
+      "sha256": "740e4f7b521d9ed12c118f5d2070262af3c9ded2521323a3611c6ad3a9ea1a2c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_prellm_m_adapter_v1.py",
+      "sha256": "104a237a7ccc750e9f23f35123156bf073a5a0d03c230345ea23b5dd803c560c"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_postllm_signal_decomposition_v2.py",
+      "sha256": "5b67a7292b64b83ddafc39c6588fd0a38cea0cb2a32aeb1aabb639e1969f75d2"
+    }
+  ],
+  "stage": "COARSE",
+  "status": "ROMA_POSITION_FACTOR_AUTHORIZED",
+  "training": false,
+  "user_authorization": "Expand attribution beyond three historical rescues, reuse existing data, submit and archive then exit."
+}

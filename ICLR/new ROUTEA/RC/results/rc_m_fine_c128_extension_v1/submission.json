@@ -1,0 +1,91 @@
+{
+  "protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_fine_c128_extension_v1/protocol.json",
+    "sha256": "43daf09e420f640b5278b8acc4ea2890c4fca1f51023cf8cb84754ec621ed887"
+  },
+  "status": "SUBMITTED_AND_VERIFIED",
+  "utc": "2026-09-29T10:53:22.445468+00:00",
+  "stages": {
+    "pilot": {
+      "job_id": "5170218",
+      "dependencies": [],
+      "count": 1,
+      "partition": "dev_accelerated,accelerated",
+      "gpu": true,
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M19_pilot",
+        "--partition=dev_accelerated,accelerated",
+        "--cpus-per-task=8",
+        "--mem=64G",
+        "--gres=gpu:1",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_fine_c128_extension_v1.sbatch",
+        "pilot"
+      ]
+    },
+    "collect": {
+      "job_id": "5170219",
+      "dependencies": [
+        "5170218"
+      ],
+      "count": 8,
+      "partition": "accelerated",
+      "gpu": true,
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M19_collect",
+        "--partition=accelerated",
+        "--cpus-per-task=8",
+        "--mem=64G",
+        "--gres=gpu:1",
+        "--array=0-7%8",
+        "--dependency=afterok:5170218",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_fine_c128_extension_v1.sbatch",
+        "collect"
+      ]
+    },
+    "replay": {
+      "job_id": "5170220",
+      "dependencies": [
+        "5170219"
+      ],
+      "count": 8,
+      "partition": "cpuonly",
+      "gpu": false,
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M19_replay",
+        "--partition=cpuonly",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--array=0-7%8",
+        "--dependency=afterok:5170219",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_fine_c128_extension_v1.sbatch",
+        "replay"
+      ]
+    },
+    "join": {
+      "job_id": "5170221",
+      "dependencies": [
+        "5170220"
+      ],
+      "count": 1,
+      "partition": "dev_cpuonly,cpuonly",
+      "gpu": false,
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=M19_join",
+        "--partition=dev_cpuonly,cpuonly",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--dependency=afterok:5170220",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_fine_c128_extension_v1.sbatch",
+        "join"
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "status": "SUBMITTED_AND_VERIFIED",
+  "stages": {
+    "prepare": {
+      "job_id": "5170229",
+      "count": 1,
+      "dependencies": [
+        "5170219"
+      ],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=Mup19_prepare",
+        "--dependency=afterok:5170219",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_upstream_event_closure_v1.sbatch",
+        "prepare"
+      ]
+    },
+    "context": {
+      "job_id": "5170230",
+      "count": 8,
+      "dependencies": [
+        "5170229"
+      ],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=Mup19_context",
+        "--dependency=afterok:5170229",
+        "--array=0-7%8",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_upstream_event_closure_v1.sbatch",
+        "context"
+      ]
+    },
+    "masses": {
+      "job_id": "5170231",
+      "count": 1,
+      "dependencies": [
+        "5170230"
+      ],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=Mup19_masses",
+        "--dependency=afterok:5170230",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_upstream_event_closure_v1.sbatch",
+        "masses"
+      ]
+    },
+    "bridge": {
+      "job_id": "5170232",
+      "count": 8,
+      "dependencies": [
+        "5170231"
+      ],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=Mup19_bridge",
+        "--dependency=afterok:5170231",
+        "--array=0-7%8",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_upstream_event_closure_v1.sbatch",
+        "bridge"
+      ]
+    },
+    "analyze": {
+      "job_id": "5170233",
+      "count": 1,
+      "dependencies": [
+        "5170232",
+        "5170221",
+        "5168069"
+      ],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--job-name=Mup19_analyze",
+        "--dependency=afterok:5170232:5170221:5168069",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_upstream_event_closure_v1.sbatch",
+        "analyze"
+      ]
+    }
+  }
+}
