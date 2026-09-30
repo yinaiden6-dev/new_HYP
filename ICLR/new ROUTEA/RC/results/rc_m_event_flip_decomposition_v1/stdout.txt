@@ -1,0 +1,40 @@
+events found (POST correct at NATIVE, wrong at AMP_PERMUTE): 2
+POST feature order: [standardized RAW delta, symmetric L delta, bias]
+-> POST does NOT read M directly; M acts only through the content score L,
+   and the content feature is a symmetric RATIO, not an absolute level.
+
+================================================================================================
+H593-106aa1a451e3f1c3a21d37fe
+  index=41 target=39 RAW_winner=12 head=[1.5012, 30.626, -2.2793]
+  L1 exact replay: max|logit err| NATIVE=0.000e+00 AMP_PERMUTE=0.000e+00   picked/stored (39, 39) -> (12, 12)
+  L2 target logit +2.046867 -> -0.184604  = -2.231471
+     RAW feature identical across worlds: True
+     head[1] * d(symL) = -2.231471  exact: True
+  L3 target-side L 0.280675->0.237545: -2.492355 (111.7%)
+     RAWwin-side L 0.189054->0.185816: +0.254065 (-11.4%)
+     interaction: +0.006819 ( -0.3%)
+  L4 target L = mean MaxSim over 720 query tokens; dL=-0.04312923
+     argmax MOVED  152/720 tokens -> -0.00997088 ( 23.1% of dL)
+     argmax STAYED 568/720 tokens -> -0.03315835 ( 76.9% of dL)
+     CAVEAT: the npz stores only each token's max and its index, not the
+     full 720 x Nref similarity matrix, so a frozen-argmax counterfactual
+     is NOT computable offline. This split is descriptive, not causal.
+
+================================================================================================
+H593-2f5a93c328b7e7c9e25412f0
+  index=116 target=20 RAW_winner=10 head=[0.8468, 29.0546, -2.1513]
+  L1 exact replay: max|logit err| NATIVE=0.000e+00 AMP_PERMUTE=0.000e+00   picked/stored (20, 20) -> (10, 10)
+  L2 target logit +2.393271 -> -0.141666  = -2.534937
+     RAW feature identical across worlds: True
+     head[1] * d(symL) = -2.534937  exact: True
+  L3 target-side L 0.322947->0.270153: -2.555307 (100.8%)
+     RAWwin-side L 0.232949->0.232621: +0.019944 ( -0.8%)
+     interaction: +0.000426 ( -0.0%)
+  L4 target L = mean MaxSim over 768 query tokens; dL=-0.05279434
+     argmax MOVED   99/768 tokens -> -0.00655084 ( 12.4% of dL)
+     argmax STAYED 669/768 tokens -> -0.04624350 ( 87.6% of dL)
+     CAVEAT: the npz stores only each token's max and its index, not the
+     full 720 x Nref similarity matrix, so a frozen-argmax counterfactual
+     is NOT computable offline. This split is descriptive, not causal.
+
+wrote results/rc_m_event_flip_decomposition_v1/result.json
