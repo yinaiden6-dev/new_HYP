@@ -1,0 +1,773 @@
+{
+  "cases": [
+    {
+      "RAW_winner": 12,
+      "index": 41,
+      "original_query_id": "OUTCOME-0476",
+      "query_id": "H593-106aa1a451e3f1c3a21d37fe",
+      "target": 39,
+      "worlds": {
+        "AMP_FLAT": {
+          "POST_prediction": 12,
+          "POST_target_action": -0.7078259553712622,
+          "RAW_wrong_M": 0.005297515361016492,
+          "logM_gap": 2.5993836388531957,
+          "target_M": 0.07128041103869677,
+          "target_content": 0.23097806730579865,
+          "target_to_RAW_wrong_M_ratio": 13.455442066905007,
+          "wrong_content": 0.18704256798682656
+        },
+        "AMP_PERMUTE": {
+          "POST_prediction": 12,
+          "POST_target_action": -0.1846038901505196,
+          "RAW_wrong_M": 0.003911065826107326,
+          "logM_gap": 2.9835133311151742,
+          "target_M": 0.07727135036828539,
+          "target_content": 0.2375454311635861,
+          "target_to_RAW_wrong_M_ratio": 19.757108114233244,
+          "wrong_content": 0.1858157984563208
+        },
+        "NATIVE": {
+          "POST_prediction": 39,
+          "POST_target_action": 2.046867296559805,
+          "RAW_wrong_M": 0.00860951294624783,
+          "logM_gap": 2.699805508806931,
+          "target_M": 0.1280823296142585,
+          "target_content": 0.28067466064335655,
+          "target_to_RAW_wrong_M_ratio": 14.876838029505366,
+          "wrong_content": 0.1890540616409734
+        },
+        "ZERO": {
+          "POST_prediction": 12,
+          "POST_target_action": -4.1195222908725775,
+          "RAW_wrong_M": 0.0010798018959347507,
+          "logM_gap": 1.5184612217236377,
+          "target_M": 0.004929506178202804,
+          "target_content": 0.17874731130776303,
+          "target_to_RAW_wrong_M_ratio": 4.565194964707378,
+          "wrong_content": 0.1810120668499338
+        }
+      }
+    },
+    {
+      "RAW_winner": 10,
+      "index": 116,
+      "original_query_id": "DIFFICULT-0013",
+      "query_id": "H593-2f5a93c328b7e7c9e25412f0",
+      "target": 20,
+      "worlds": {
+        "AMP_FLAT": {
+          "POST_prediction": 10,
+          "POST_target_action": -0.9450179543156552,
+          "RAW_wrong_M": 0.009597708228588228,
+          "logM_gap": 1.3388968226532014,
+          "target_M": 0.03661365163811344,
+          "target_content": 0.2557009447811083,
+          "target_to_RAW_wrong_M_ratio": 3.8148327461189258,
+          "wrong_content": 0.2327434756077161
+        },
+        "AMP_PERMUTE": {
+          "POST_prediction": 10,
+          "POST_target_action": -0.14166598683459064,
+          "RAW_wrong_M": 0.00938016289069008,
+          "logM_gap": 1.5597923197109789,
+          "target_M": 0.044629248869244714,
+          "target_content": 0.2701530968347011,
+          "target_to_RAW_wrong_M_ratio": 4.757833034385763,
+          "wrong_content": 0.23262058014870854
+        },
+        "NATIVE": {
+          "POST_prediction": 20,
+          "POST_target_action": 2.393271195839438,
+          "RAW_wrong_M": 0.00995649420456009,
+          "logM_gap": 1.9518810333025876,
+          "target_M": 0.07011284780152849,
+          "target_content": 0.3229474379495991,
+          "target_to_RAW_wrong_M_ratio": 7.0419212185566975,
+          "wrong_content": 0.23294880374899316
+        },
+        "ZERO": {
+          "POST_prediction": 10,
+          "POST_target_action": -1.9679459283852854,
+          "RAW_wrong_M": 0.003203468312012639,
+          "logM_gap": 0.028209529353348355,
+          "target_M": 0.003295123339990109,
+          "target_content": 0.23207851259782028,
+          "target_to_RAW_wrong_M_ratio": 1.0286111860803413,
+          "wrong_content": 0.2266680073632261
+        }
+      }
+    }
+  ],
+  "code": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/analyze_rc_m_upstream_event_results_20260930.py",
+    "sha256": "1e395c525ccf66d1a994607cb41f2a118617e0e63519f802df71c61b5a7d4c6c"
+  },
+  "decisions_recomputed": 1539,
+  "maximum_arithmetic_error": 1.1102230246251565e-15,
+  "query_family_rows": 38,
+  "scope": "Opened19, naturalC128, same frozen held-fold endpoints. Selected original-event cohort is separate from fixed controls; no unique-cause or population improvement claim.",
+  "source": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_upstream_event_closure_v1/result.json",
+    "sha256": "4474c4a0612128bd25ef41bcee56dbdf783a51fa7875f8961e48c1b363b521d7"
+  },
+  "status": "UPSTREAM_COMPLETION_SECOND_ACCOUNTING_PASS",
+  "tables": {
+    "context": {
+      "M_FREE": {
+        "NATIVE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "ORIGINAL_HR1": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_MINUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_MINUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_MINUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_PLUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_PLUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_PLUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_MINUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_MINUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_MINUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_PLUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_PLUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_PLUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        }
+      },
+      "NATIVE7": {
+        "NATIVE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "ORIGINAL_HR1": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_MINUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_MINUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_MINUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_PLUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_PLUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "X_PLUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_MINUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_MINUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_MINUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_PLUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_PLUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "Y_PLUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        }
+      },
+      "POST": {
+        "NATIVE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "ORIGINAL_HR1": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "X_MINUS__001": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "X_MINUS__110": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "X_MINUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "X_PLUS__001": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "X_PLUS__110": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "X_PLUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "Y_MINUS__001": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "Y_MINUS__110": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "Y_MINUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "Y_PLUS__001": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "Y_PLUS__110": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "Y_PLUS__111": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        }
+      }
+    },
+    "phase": {
+      "M_FREE": {
+        "AMP_FLAT": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "AMP_PERMUTE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_X_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_X_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_Y_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_Y_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_X_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_X_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_Y_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_Y_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "NATIVE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "ORIGINAL_HR1": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "ZERO": {
+          "RAW_breaks": [],
+          "correct": 7,
+          "original_rescues_lost": [
+            9,
+            21,
+            32,
+            116
+          ],
+          "original_rescues_retained": 6
+        }
+      },
+      "NATIVE7": {
+        "AMP_FLAT": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "AMP_PERMUTE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_X_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_X_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_Y_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "GLOBAL_Y_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_X_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_X_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_Y_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "LOCAL_Y_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "NATIVE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "ORIGINAL_HR1": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 10,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 10
+        },
+        "ZERO": {
+          "RAW_breaks": [],
+          "correct": 8,
+          "original_rescues_lost": [
+            21,
+            116,
+            118
+          ],
+          "original_rescues_retained": 7
+        }
+      },
+      "POST": {
+        "AMP_FLAT": {
+          "RAW_breaks": [],
+          "correct": 7,
+          "original_rescues_lost": [
+            41,
+            116
+          ],
+          "original_rescues_retained": 6
+        },
+        "AMP_PERMUTE": {
+          "RAW_breaks": [],
+          "correct": 7,
+          "original_rescues_lost": [
+            41,
+            116
+          ],
+          "original_rescues_retained": 6
+        },
+        "GLOBAL_X_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "GLOBAL_X_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "GLOBAL_Y_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "GLOBAL_Y_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "LOCAL_X_MINUS": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "LOCAL_X_PLUS": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "LOCAL_Y_MINUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "LOCAL_Y_PLUS": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "NATIVE": {
+          "RAW_breaks": [
+            84
+          ],
+          "correct": 8,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "ORIGINAL_HR1": {
+          "RAW_breaks": [],
+          "correct": 9,
+          "original_rescues_lost": [],
+          "original_rescues_retained": 8
+        },
+        "ZERO": {
+          "RAW_breaks": [],
+          "correct": 3,
+          "original_rescues_lost": [
+            9,
+            32,
+            41,
+            82,
+            116,
+            118
+          ],
+          "original_rescues_retained": 2
+        }
+      }
+    }
+  }
+}
