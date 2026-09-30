@@ -1,0 +1,91 @@
+closure: /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_upstream_event_closure_v1/result.json
+sha256-verified frozen sources: 38/38
+target-present query-families: 36
+
+====================================================================================================
+S1. Rank of the CORRECT identity among 128 candidates (1 = best), NATIVE world
+    M = with-P support | L = content/local weighting | M/L = correspondence gain
+====================================================================================================
+coord       mean rank  median  rank==1   top5  top13(10%)
+M                7.17     1.0    0.722  0.889       0.944
+L                4.72     1.0    0.778  0.889       0.944
+M_over_L         8.81     1.0    0.556  0.833       0.889
+
+====================================================================================================
+S2. Is the strongest confuser STABLE across worlds?
+    (if it moves, 'exclude the strongest' is a moving target and must
+     become 'exclude a top-k set')
+====================================================================================================
+  identical strongest confuser in EVERY world: 17/36 query-families
+  distinct confusers per query-family: mean=1.69 max=4
+  share of worlds whose strongest == NATIVE's strongest: mean=0.901 min=0.385
+  agrees with closure's fixed_native_strongest_M_wrong: 36/36
+    MOVES: H593-00db0e83284b1620da336 phase    n_distinct=2 frac_native=0.92
+    MOVES: H593-00f945a36392a04124513 phase    n_distinct=2 frac_native=0.85
+    MOVES: H593-01539eca5c5afd1c6d5cc phase    n_distinct=3 frac_native=0.69
+    MOVES: H593-0188e7f7150a7aaf05c23 phase    n_distinct=2 frac_native=0.54
+    MOVES: H593-028ab5aaff186d9fc48a7 phase    n_distinct=2 frac_native=0.92
+    MOVES: H593-0745854000292039c9c10 phase    n_distinct=3 frac_native=0.38
+    MOVES: H593-0c93295a4efc661bc7464 phase    n_distinct=4 frac_native=0.69
+    MOVES: H593-106aa1a451e3f1c3a21d3 phase    n_distinct=2 frac_native=0.92
+    MOVES: H593-12c93384cd26eac2b57b0 phase    n_distinct=3 frac_native=0.77
+    MOVES: H593-1608d9630ec3a84e25e59 phase    n_distinct=2 frac_native=0.92
+    MOVES: H593-202d17a8fea9c8283f65d phase    n_distinct=2 frac_native=0.92
+    MOVES: H593-20fdadbf18ce1e0e1a074 phase    n_distinct=2 frac_native=0.92
+    MOVES: H593-2f5a93c328b7e7c9e2541 phase    n_distinct=2 frac_native=0.85
+    MOVES: H593-00db0e83284b1620da336 context  n_distinct=2 frac_native=0.86
+    MOVES: H593-00f945a36392a04124513 context  n_distinct=2 frac_native=0.93
+    MOVES: H593-01539eca5c5afd1c6d5cc context  n_distinct=2 frac_native=0.93
+    MOVES: H593-0188e7f7150a7aaf05c23 context  n_distinct=3 frac_native=0.64
+    MOVES: H593-0745854000292039c9c10 context  n_distinct=2 frac_native=0.86
+    MOVES: H593-0c93295a4efc661bc7464 context  n_distinct=2 frac_native=0.93
+
+====================================================================================================
+S3/S4. Target vs its STRONGEST CONFUSER, NATIVE world, per coordinate
+    margin > 0 means the correct identity is ahead of the hardest wrong one.
+    S4 question: is the target ahead on absolute support M, or on M/L?
+====================================================================================================
+coord         margin     ci_lo     ci_hi   pos_grp  excl_0
+M           +0.26771  -0.19728  +0.62882   11/16        no
+L           +0.29569  +0.15436  +0.43134   14/16       YES
+M_over_L    -0.02797  -0.37168  +0.22990    9/16        no
+
+  Reading: if M/L excludes 0 while M does not, the property that separates the
+  strongest confuser is correspondence gain RELATIVE TO CONTENT, not raw support.
+
+====================================================================================================
+S5. Same contrast per world, and restricted to original rescue events
+====================================================================================================
+world                     M          L   M_over_L
+AMP_FLAT           +0.29765   +0.26790   +0.02975
+AMP_PERMUTE        +0.32346   +0.29126   +0.03220
+GLOBAL_X_MINUS     +0.29807   +0.29919   -0.00112
+GLOBAL_X_PLUS      +0.27295   +0.29729   -0.02435
+GLOBAL_Y_MINUS     +0.27482   +0.29808   -0.02326
+GLOBAL_Y_PLUS      +0.27910   +0.29602   -0.01691
+LOCAL_X_MINUS      +0.30078   +0.30186   -0.00108
+LOCAL_X_PLUS       +0.29938   +0.30173   -0.00236
+LOCAL_Y_MINUS      +0.26876   +0.29321   -0.02445
+LOCAL_Y_PLUS       +0.26822   +0.29327   -0.02505
+NATIVE             +0.26771   +0.29569   -0.02797
+ORIGINAL_HR1       +0.40480   +0.32522   +0.07958
+X_MINUS__001       +0.27051   +0.29343   -0.02292
+X_MINUS__110       +0.28130   +0.29531   -0.01401
+X_MINUS__111       +0.26868   +0.29420   -0.02551
+X_PLUS__001        +0.27777   +0.29613   -0.01837
+X_PLUS__110        +0.26597   +0.29095   -0.02498
+X_PLUS__111        +0.26250   +0.29293   -0.03043
+Y_MINUS__001       +0.27437   +0.29777   -0.02341
+Y_MINUS__110       +0.28728   +0.30148   -0.01419
+Y_MINUS__111       +0.26740   +0.29490   -0.02750
+Y_PLUS__001        +0.29058   +0.30247   -0.01189
+Y_PLUS__110        +0.27558   +0.29769   -0.02210
+Y_PLUS__111        +0.26677   +0.29490   -0.02814
+ZERO               +0.18279   +0.17857   +0.00422
+
+  original POST rescue events (RAW wrong -> POST correct): n=16
+    M          margin=+0.53905 ci=[+0.23460,+0.83914] pos=5/6
+    L          margin=+0.34107 ci=[+0.20599,+0.48567] pos=6/6
+    M_over_L   margin=+0.19797 ci=[-0.00569,+0.41142] pos=4/6
+
+wrote results/rc_m_strongest_confuser_offline_v1/result.json
