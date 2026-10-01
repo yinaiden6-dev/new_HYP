@@ -1,0 +1,13 @@
+{
+  "command": [
+    "scontrol",
+    "update",
+    "JobId=5173347_2",
+    "Partition=dev_cpuonly",
+    "Gres=",
+    "MinMemoryNode=32768"
+  ],
+  "returncode": 1,
+  "stderr": "5173347_2: Job is no longer pending execution\n",
+  "after": "JobId=5174131 ArrayJobId=5173347 ArrayTaskId=2 ArrayTaskThrottle=14 JobName=Miso2_work UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=397 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=RUNNING Reason=Prolog Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:22 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-10-01T03:19:13 EligibleTime=2026-10-01T03:24:16 AccrueTime=2026-10-01T03:24:16 StartTime=2026-10-01T16:45:45 EndTime=2026-10-01T16:55:45 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-01T16:45:45 Scheduler=Backfill Partition=accelerated AllocNode:Sid=hkn1991:4152097 ReqNodeList=(null) ExcNodeList=(null) NodeList=hkn0605 BatchHost=hkn0605 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 AllocTRES=cpu=4,mem=32G,node=1,billing=4,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryTRES=124375M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_isolation_precision_repair_20261001.sbatch SubmitLine=sbatch --parsable --partition=cpuonly --job-name=Miso2_work --array=0-12,15%14 --dependency=afterok:5173346 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_isolation_precision_repair_20261001.sbatch work WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-iso-fix-5173347_2.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-iso-fix-5173347_2.out MemPerTres=gpu:124375 TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n"
+}
