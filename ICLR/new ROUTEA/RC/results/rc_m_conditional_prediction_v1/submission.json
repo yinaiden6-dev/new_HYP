@@ -1,0 +1,62 @@
+{
+  "status": "SUBMITTED_AND_SPOOL_VERIFIED",
+  "family": "held",
+  "stages": {
+    "fold0": {
+      "job_id": "5171641",
+      "stage": "fold",
+      "array": null,
+      "dependencies": [],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--partition=dev_cpuonly,cpuonly",
+        "--job-name=Mnll_fold0",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch",
+        "held",
+        "fold"
+      ],
+      "scheduler": "JobId=5171641 JobName=Mnll_fold0 UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-30T12:29:58 EligibleTime=2026-09-30T12:29:58 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T12:29:58 Scheduler=Main Partition=dev_cpuonly,cpuonly AllocNode:Sid=hkn1991:3068160 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch SubmitLine=sbatch --parsable --partition=dev_cpuonly,cpuonly --job-name=Mnll_fold0 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch held fold WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-ident-5171641_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-ident-5171641_4294967294.out TresPerTask=cpu=4",
+      "submitted_script_sha256": "dbd35cb2075e273d3d66972b3e63b918261e32ed550c9f679f71586ef6920fbe"
+    },
+    "fold_rest": {
+      "job_id": "5171642",
+      "stage": "fold",
+      "array": "1-4%4",
+      "dependencies": [],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--job-name=Mnll_fold_rest",
+        "--array=1-4%4",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch",
+        "held",
+        "fold"
+      ],
+      "scheduler": "JobId=5171642 ArrayJobId=5171642 ArrayTaskId=1-4%4 ArrayTaskThrottle=4 JobName=Mnll_fold_rest UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-30T12:29:58 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T12:29:58 Scheduler=Main Partition=cpuonly AllocNode:Sid=hkn1991:3068160 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch SubmitLine=sbatch --parsable --partition=cpuonly --job-name=Mnll_fold_rest --array=1-4%4 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch held fold WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-ident-5171642_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-ident-5171642_4294967294.out TresPerTask=cpu=4",
+      "submitted_script_sha256": "dbd35cb2075e273d3d66972b3e63b918261e32ed550c9f679f71586ef6920fbe"
+    },
+    "join": {
+      "job_id": "5171643",
+      "stage": "join",
+      "array": null,
+      "dependencies": [
+        "5171641",
+        "5171642"
+      ],
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--partition=cpuonly",
+        "--job-name=Mnll_join",
+        "--dependency=afterok:5171641:5171642",
+        "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch",
+        "held",
+        "join"
+      ],
+      "scheduler": "JobId=5171643 JobName=Mnll_join UserId=ap7811(509100) GroupId=hk-project-pai00054(502514) MCS_label=N/A Priority=1 Nice=0 Account=hk-project-p0025545 QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:5171641(unfulfilled),afterok:5171642_*(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-09-30T12:29:58 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T12:29:58 Scheduler=Main Partition=cpuonly AllocNode:Sid=hkn1991:3068160 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=32G,node=1,billing=4 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch SubmitLine=sbatch --parsable --partition=cpuonly --job-name=Mnll_join --dependency=afterok:5171641:5171642 /hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/slurm/rc_m_identification_20260930.sbatch held join WorkDir=/hkfs/work/workspace/scratch/ap7811-benchmark StdErr=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-ident-5171643_4294967294.err StdIn=/dev/null StdOut=/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/logs/M-ident-5171643_4294967294.out TresPerTask=cpu=4",
+      "submitted_script_sha256": "dbd35cb2075e273d3d66972b3e63b918261e32ed550c9f679f71586ef6920fbe"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "angle": 0.5,
+  "arms": [
+    "NATIVE",
+    "Q_P_PLUS",
+    "Q_P_MINUS",
+    "Q_C_PLUS",
+    "Q_C_MINUS",
+    "Q_ALL_PLUS",
+    "Q_ALL_MINUS",
+    "S_P_PLUS",
+    "S_P_MINUS",
+    "Q_AFTER_S_PLUS",
+    "Q_AFTER_S_MINUS",
+    "S_AFTER_Q_PLUS",
+    "S_AFTER_Q_MINUS"
+  ],
+  "bridge_protocol": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/protocol.json",
+    "sha256": "2510d898df4a60e18ff9b64fc0a473108eedf1f9e7ba87ac4c7b3e6b919cb5df"
+  },
+  "candidate_pairs": 77,
+  "code_sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_structure_binding_isolation_v1.py",
+      "sha256": "23a0df1e7b5dea620a6ee57ad107faa0545960d88b25bae1c035bbe8889e6e0d"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_conditional_prediction_v1.py",
+      "sha256": "11a4bb30e643e28a752ba9c2149d53cec37c7bb6932a9a6af21a6b964d76870b"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_fine_c128_attribution_v1.py",
+      "sha256": "54bd8314984d4f16f8bd2bb638859820c410560b4bc3e82083fe836a3c2a777a"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_m_context_binding_v1.py",
+      "sha256": "25a10532c7fd9b68cb51d7fadb06170cb20793a04657c4743993b2e2662aeb94"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_causal128_frozen_bridge_v1.py",
+      "sha256": "da4a12a91cfc3b82a0a021440fe26591c1d74f7bb035ce676b8b4ee08dc30e92"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/run_rc_m_phase_newgroups_cpu_v1.py",
+      "sha256": "e0257b59cb8a8cf11dc01bef82b0b493e1a89f0896243b82e35440070e5b4c52"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/programs/rc_roma_shared_native_cache_v1.py",
+      "sha256": "60eb8016b14e743171425f8653fd70672ec088a8a3c5373db5bbb96698042024"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/third_party/RoMaV2/src/romav2/dpt.py",
+      "sha256": "254aebb9b5fb02ffc90e3838ed4e5d27bb423912a680034a7f6af21f9e2d22e9"
+    }
+  ],
+  "cohorts": "MAIN8 controls, ORIGINAL_CHANGED11 selected events, ADDITIONAL_GROUPS analyzed separately; already-opened data.",
+  "contrasts": [
+    "local-binding-restored S_P vs NATIVE: residual effect beyond these local statistics",
+    "(NATIVE+Q_ALL-Q_P-Q_C)/2: relative alignment interaction with decoder basis control",
+    "Q_AFTER_S-S_P vs Q_P-NATIVE; S_AFTER_Q-Q_P vs S_P-NATIVE; retain order interaction"
+  ],
+  "decoder_basis_control": "Q_ALL preserves joint Gram and local inner products but can change learned channel response. Nonzero Q_ALL forbids attributing Q_P to semantic binding alone.",
+  "head_state": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_roma_position_factor_v1/head_replay_state.pt",
+    "sha256": "a5222b29cc3386d67c771ed2e0896e3d80a5f2bc3a065aec1a90097fe6a5debe"
+  },
+  "inference_scope": "Fixed candidate contrasts only, not new complete-C128 accuracy or fraction of all rescues. Frozen POST adapter consumes absolute M; terminal head receives RAW and content only.",
+  "inputs": {
+    "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_structure_binding_isolation_v1/inputs.json",
+    "sha256": "37b8ce7793f872dde74721d71bfe2e5829ee42035af2dc82452c697ae2327cdf"
+  },
+  "intermediates": "Source tensors+deterministic transform recipe+changedP SHA; dense confidence, FP64 weights, LN scales/local products, and POST patch maxsim/argmax retained.",
+  "new_GPU": 0,
+  "new_encoder_matcher_LLM": 0,
+  "new_training": 0,
+  "operational_binding": "Pointwise P dot A0,A1,J,ones plus P norm; these determine sum mean/variance but NOT all semantic content binding.",
+  "operational_structure": "P row Gram under a common orthogonal channel rotation; all patch norms and means also held.",
+  "queries": 25,
+  "shards": 16,
+  "source_components_not_independent": "J and P originate in the same upstream matching process; equal summed inputs are indistinguishable to DPT.",
+  "source_scope": "Existing19 full-C128 captures plus already-captured9-group paired replication, overlap deduplicated; excludes the target-missing control. No missing encoder/matcher stage is recomputed.",
+  "sources": [
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/protocol.json",
+      "sha256": "2510d898df4a60e18ff9b64fc0a473108eedf1f9e7ba87ac4c7b3e6b919cb5df"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/bridge/inputs.json",
+      "sha256": "dbb596955c3face1144c200d45cf132fb535e0713df4e26aa9ed8f59ff1cfa98"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_fine_c128_attribution_v1/inputs.json",
+      "sha256": "6eaa36fb97fe8926558614e298d5db72de3d28c38cf2f8d7dad5dcea0a4ec5a5"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_upstream_event_closure_v1/inputs.json",
+      "sha256": "2ef1d781db4d3bc6ed3dbaec0f1cc0572fad4fb0a4c276772da367a5b0d6a61f"
+    },
+    {
+      "path": "/hkfs/work/workspace/scratch/ap7811-benchmark/ICLR/new ROUTEA/RC/results/rc_m_causal128_attribution_chain_v1/phase_replication/protocol.json",
+      "sha256": "ad58109751b07184dc6fe917095b3d949d35124cc5d2f3239492552115bf025d"
+    }
+  ],
+  "status": "STRUCTURE_BINDING_OPERATIONAL_ISOLATION_FROZEN",
+  "threads": 4,
+  "torch_version": "2.9.1+cu128",
+  "unique_causal_percentages": false
+}
