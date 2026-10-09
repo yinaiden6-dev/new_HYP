@@ -1,0 +1,162 @@
+{
+  "status": "ACTUAL_SHELL_ROUTING_PASS",
+  "stages": {
+    "prepare": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream_all593_v1.py",
+      "prepare",
+      "--shard",
+      "7",
+      "--budget",
+      "430"
+    ],
+    "pilot": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream_all593_v1.py",
+      "pilot",
+      "--shard",
+      "7",
+      "--budget",
+      "430"
+    ],
+    "worker": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream_all593_v1.py",
+      "worker",
+      "--shard",
+      "7",
+      "--budget",
+      "430"
+    ],
+    "join": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream_all593_v1.py",
+      "join",
+      "--shard",
+      "7",
+      "--budget",
+      "430"
+    ],
+    "cached": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/analyze_rc_m_upstream_all593_v1.py",
+      "cached"
+    ],
+    "property-join": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/analyze_rc_m_upstream_all593_v1.py",
+      "property-join"
+    ],
+    "final": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/analyze_rc_m_upstream_all593_v1.py",
+      "final"
+    ],
+    "property-fit": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/analyze_rc_m_upstream_all593_v1.py",
+      "property-fit",
+      "--fold",
+      "7"
+    ],
+    "path-prepare": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream593_path_compensation_v1.py",
+      "prepare"
+    ],
+    "path-extract": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream593_path_compensation_v1.py",
+      "extract",
+      "--shard",
+      "7",
+      "--shards",
+      "50",
+      "--budget",
+      "430"
+    ],
+    "path-validate": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream593_path_compensation_v1.py",
+      "validate"
+    ],
+    "path-fit": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream593_path_compensation_v1.py",
+      "fit",
+      "--fold",
+      "7",
+      "--budget",
+      "430",
+      "--threads",
+      "4"
+    ],
+    "path-join": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/run_rc_m_upstream593_path_compensation_v1.py",
+      "join"
+    ],
+    "separability": [
+      "--signal=TERM",
+      "--kill-after=15s",
+      "550s",
+      "/tmp/.venv-colpali/bin/python",
+      "-u",
+      "programs/analyze_rc_m_upstream593_pair_structure_v1.py",
+      "--root",
+      "/tmp/results/rc_m_upstream_all593_v1"
+    ]
+  }
+}

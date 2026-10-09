@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-10-09 全593上游归因扩展：程序与提交快照](backup/m_upstream_all593_20261009/README.md)**：相位／幅度／配准／结构绑定60条件扩至自然C128，复用已有593缓存；14阶段任务链已提交，新增结论待验收。
+
 - **[2026-09-27 M归因深化：配准、共同水平与实际纠错](backup/m_attribution_depth_20260927/README.md)**：两条链全部完成；区分logM比例差、原始M绝对差与内部内容变化，解释共同水平为何帮助或抵消相对优势；附前128自然C128的原有纠错核算、科学图及独立验收。归因结果与尚未执行的预测理论检验分开记录。
 
 <!-- TOKEN_PUBLICATION:rc_token_competition_f128_v2:BEGIN -->
