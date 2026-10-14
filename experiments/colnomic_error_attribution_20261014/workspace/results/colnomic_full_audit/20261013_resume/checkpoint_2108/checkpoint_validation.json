@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-13T21:04:46.974059+00:00",
+  "checks": {
+    "unique_manifest_ids": true,
+    "completion_matches_manifest": true,
+    "progress_matches_manifest": true,
+    "last_progress_matches_manifest": true,
+    "output_ids_exact": true,
+    "source_split_disjoint": true,
+    "all_records_valid": true,
+    "all_sources_have_six_arms": true,
+    "base_coverage_matches_sources": true
+  },
+  "records": 228,
+  "original_cache_exact_count": 38,
+  "source_identities_per_split": {
+    "train": 20,
+    "val": 8,
+    "test": 10
+  },
+  "source_split_intersections": {
+    "package_id": {
+      "train__val": [],
+      "train__test": [],
+      "val__test": []
+    },
+    "group_id": {
+      "train__val": [],
+      "train__test": [],
+      "val__test": []
+    },
+    "image_sha256": {
+      "train__val": [],
+      "train__test": [],
+      "val__test": []
+    },
+    "source_sha256": {
+      "train__val": [],
+      "train__test": [],
+      "val__test": []
+    }
+  },
+  "source_folder": "/mnt/lsdf_zyin/results/token_mechanism_experiments/20261013_v2/stage4_extended_photos_v3",
+  "evidence": "encoding_records.csv",
+  "resume_at": "analyze_layout_photos.py; encoder already complete",
+  "gpu_encoding_restarted": false
+}

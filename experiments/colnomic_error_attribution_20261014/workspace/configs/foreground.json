@@ -1,0 +1,15 @@
+{
+  "model": "colnomic7b",
+  "margin": 0.05,
+  "sam_prompt": "product package",
+  "sam_confidence_threshold": 0.2,
+  "sam_mask_threshold": 0.5,
+  "selection": "highest segmentation confidence; stable original index for ties",
+  "background": "white",
+  "crop_resolution": "EXIF-transposed original resolution",
+  "fallback": "reuse original-image embedding; never remove a query",
+  "scoring": "same full-gallery FP32 MaxSim and SHA-256 deduplication as B03",
+  "query_batch": 8,
+  "reference_batch": 16,
+  "token_block": 2048
+}

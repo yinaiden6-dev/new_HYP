@@ -1,0 +1,12 @@
+{
+  "purpose": "corrected human-box D01 sensitivity, fixed original gallery",
+  "source": "all actual user changes of bbox coordinates, without retrieval-response selection",
+  "identities": 4,
+  "photos": 5,
+  "baseline_before": "old D01 processed input exact decoded pixels; must separately compare fresh old-crop encoding with historical D01 bank",
+  "after": "same .05 padding and image processor; changed target box only upstream",
+  "no_original_data_cache_or_history_rewrites": true,
+  "matching_labels": "natural original package labels; edited pixels are a new crop of same original",
+  "old_image_baseline": "B03 full original and F03 unchanged; this sensitivity is separately named and is not an extra member of the historical35",
+  "prior_historical_gallery_encoding_reproducibility": "not resolved; frozen gallery conditional scope remains explicit"
+}

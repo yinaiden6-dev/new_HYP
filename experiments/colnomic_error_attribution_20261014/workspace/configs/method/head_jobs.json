@@ -1,0 +1,454 @@
+[
+  {
+    "id": "medicine_scalar_w61_cost",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine",
+      "--width",
+      "61",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_scalar_w340_cost",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine",
+      "--width",
+      "340",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_scalar_w61_ce",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine",
+      "--width",
+      "61",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_scalar_w340_ce",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine",
+      "--width",
+      "340",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_catalog_scalar_w61_cost",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine_catalog",
+      "--width",
+      "61",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_catalog_scalar_w340_cost",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine_catalog",
+      "--width",
+      "340",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_catalog_scalar_w61_ce",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine_catalog",
+      "--width",
+      "61",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_catalog_scalar_w340_ce",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine_catalog",
+      "--width",
+      "340",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_scalar_w61_cost_s31",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine",
+      "--width",
+      "61",
+      "--loss",
+      "cost",
+      "--seed",
+      "31"
+    ]
+  },
+  {
+    "id": "medicine_scalar_w61_cost_s53",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine",
+      "--width",
+      "61",
+      "--loss",
+      "cost",
+      "--seed",
+      "53"
+    ]
+  },
+  {
+    "id": "medicine_RAW_U_cost",
+    "requires": {
+      "medicine": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine",
+      "--kind",
+      "RAW_U",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_RAW_U_ce",
+    "requires": {
+      "medicine": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine",
+      "--kind",
+      "RAW_U",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_RAW_V_cost",
+    "requires": {
+      "medicine": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine",
+      "--kind",
+      "RAW_V",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_RAW_V_ce",
+    "requires": {
+      "medicine": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine",
+      "--kind",
+      "RAW_V",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_ADDITIVE_UV_cost",
+    "requires": {
+      "medicine": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine",
+      "--kind",
+      "ADDITIVE_UV",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_ADDITIVE_UV_ce",
+    "requires": {
+      "medicine": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine",
+      "--kind",
+      "ADDITIVE_UV",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_catalog_RAW_U_cost",
+    "requires": {
+      "medicine_catalog": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine_catalog",
+      "--kind",
+      "RAW_U",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_catalog_RAW_U_ce",
+    "requires": {
+      "medicine_catalog": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine_catalog",
+      "--kind",
+      "RAW_U",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_catalog_RAW_V_cost",
+    "requires": {
+      "medicine_catalog": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine_catalog",
+      "--kind",
+      "RAW_V",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_catalog_RAW_V_ce",
+    "requires": {
+      "medicine_catalog": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine_catalog",
+      "--kind",
+      "RAW_V",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_catalog_ADDITIVE_UV_cost",
+    "requires": {
+      "medicine_catalog": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine_catalog",
+      "--kind",
+      "ADDITIVE_UV",
+      "--loss",
+      "cost"
+    ]
+  },
+  {
+    "id": "medicine_catalog_ADDITIVE_UV_ce",
+    "requires": {
+      "medicine_catalog": [
+        "train",
+        "val"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.heads",
+      "--dataset",
+      "medicine_catalog",
+      "--kind",
+      "ADDITIVE_UV",
+      "--loss",
+      "ce"
+    ]
+  },
+  {
+    "id": "medicine_catalog_scalar_w61_ce_s31",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine_catalog",
+      "--width",
+      "61",
+      "--loss",
+      "ce",
+      "--seed",
+      "31"
+    ]
+  },
+  {
+    "id": "medicine_catalog_scalar_w61_ce_s53",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.scalar_head",
+      "--dataset",
+      "medicine_catalog",
+      "--width",
+      "61",
+      "--loss",
+      "ce",
+      "--seed",
+      "53"
+    ]
+  }
+]

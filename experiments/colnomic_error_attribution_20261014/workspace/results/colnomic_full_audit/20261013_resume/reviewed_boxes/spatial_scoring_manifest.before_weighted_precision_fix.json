@@ -1,0 +1,35 @@
+{
+  "schema": "colnomic.explicit_spatial_scoring.v1",
+  "scores": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/full_gallery_scores.npz",
+  "scores_sha256": "26b68b2835d32fa44ac95f0c397aadfedbae57aa1386dcc7e5d9c6ff8e17d3b9",
+  "alignments": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/alignments.json",
+  "alignments_sha256": "06177151c796817a8f7673debb8cad7b001ad79d3f429732ddc456021202cb57",
+  "boxes": "results/colnomic_full_audit/20261013_resume/manual_box_review/subject_boxes_after_user_review.json",
+  "boxes_sha256": "6ae58604383e1d2a07c6186859e56082a5c6d2ab3c404d1ac6d00393182057b5",
+  "selection": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/selection.json",
+  "selection_sha256": "64c78a6824bd9706dfb5c841e3c770db39543b17b4092d40c8645e74c5c837b6",
+  "score_axes": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/score_axes.json",
+  "score_axes_sha256": "58d86d03524c3fa0358c5877ef57a8e53ca756ed6e8acf5911a992e105ee04d3",
+  "parameters": {
+    "gamma": 0.2,
+    "lambda_value": 0.1,
+    "lambda_index": 4,
+    "validation_metrics": {
+      "photos": 173,
+      "packages": 21,
+      "r1": 0.8092485549132948,
+      "package_macro_r1": 0.803363567649282,
+      "r5": 0.884393063583815,
+      "package_macro_r5": 0.8764928193499621,
+      "r10": 0.9248554913294798,
+      "package_macro_r10": 0.9176870748299321,
+      "mrr": 0.8406796511610961,
+      "package_macro_mrr": 0.8342328618358439
+    }
+  },
+  "loader": "scripts.colnomic_mechanism.reviewed_box_sensitivity.load_spatial_inputs",
+  "loader_return": "means, alignments keyed by (query_index, reference_index), box records keyed by photo_id, selected parameter dict",
+  "human_box_assistance": true,
+  "full1117_by5405_scalar_scores": true,
+  "encoder_rerun": false
+}

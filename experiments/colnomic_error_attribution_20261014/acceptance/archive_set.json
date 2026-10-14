@@ -1,0 +1,560 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-14T07:19:59.881462+00:00",
+  "volumes": [
+    {
+      "path": "results/colnomic_full_audit/20261013_resume/delivery_support/archive_20261014T055014Z/colnomic_full_audit.tar.gz",
+      "bytes": 33289484786,
+      "sha256": "de78b51b70ab25d619cdb23c92dd6022f6cd9ca7fbccf3e590119f66cbb0e279",
+      "verification": {
+        "status": "passed",
+        "archive_format": "tar-hardlinks",
+        "logical_members_verified": 55150,
+        "regular_payload_SHA256_comparisons": 48622,
+        "internal_hardlink_SHA256_comparisons": 6527,
+        "logical_uncompressed_bytes": 47091141265,
+        "actual_gzip_trailer_CRC32": "758097d7",
+        "actual_gzip_trailer_ISIZE": 3528394752,
+        "complete_decompressed_tar_bytes": 37888133120,
+        "manifest_sha256": "839a084c3dc598a1b4b81ed4f43fa7b0239637d799040cce301eda5f9c6553b1",
+        "hardlinks_target_earlier_regular_archive_members": true,
+        "unsafe_or_duplicate_members": false,
+        "extracted_to": null,
+        "external_archive_SHA256_verified": null
+      }
+    }
+  ],
+  "workspace_relative_source_files": 55142,
+  "uncompressed_source_bytes": 47061788069,
+  "archive_bytes": 33289484786,
+  "member_manifest_sha256": "839a084c3dc598a1b4b81ed4f43fa7b0239637d799040cce301eda5f9c6553b1",
+  "CRC32_validation": "Actual per-member CRC32 for ZIP; actual complete gzip trailer CRC32 and ISIZE for tar.gz.",
+  "actual_SHA256_all_logical_volume_members": true,
+  "source_SHA_rechecked_after_all_volumes": true,
+  "archive_format": "tar-hardlinks",
+  "deduplication": {
+    "logical_bytes": 47061788069,
+    "unique_payload_bytes": 37792044824,
+    "internal_hardlink_members": 6527,
+    "safe_link_policy": "Only archive-relative links to earlier regular members with identical byte count, SHA256 and ordinary executable permissions. No external targets or symlinks.",
+    "permissions_policy": "0644 plus ordinary source execute bits; setuid/setgid/sticky bits are removed. Differing executable modes use independent payloads."
+  },
+  "independent_decoded_workspace_validation": {
+    "status": "passed",
+    "files_SHA_verified": 55149,
+    "physical_file_payloads_read": 48622,
+    "member_manifest_sha256": "839a084c3dc598a1b4b81ed4f43fa7b0239637d799040cce301eda5f9c6553b1",
+    "original_workspace_absolute_paths_not_treated_as_portable": true,
+    "archive_compatibility_aliases_SHA_verified": 1,
+    "axes": {
+      "status": "passed",
+      "queries": 1117,
+      "references": 5405,
+      "raw_banks_axes_verified": true,
+      "configurations": 35,
+      "actual_prediction_rows_replayed": 39095,
+      "empty_OCR_rows": 0,
+      "receipts": [
+        {
+          "config_id": "B01",
+          "status": "passed",
+          "path": "cache/scores/colpali/image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B02",
+          "status": "passed",
+          "path": "cache/scores/colnomic3b/image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B03",
+          "status": "passed",
+          "path": "cache/scores/colnomic7b/image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B04",
+          "status": "passed",
+          "path": "cache/scores/Qwen3-VL-Embedding-2B/image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B05",
+          "status": "passed",
+          "path": "cache/scores/bm25/bm25.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B06",
+          "status": "passed",
+          "path": "cache/scores/colpali/ocr_to_image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B07",
+          "status": "passed",
+          "path": "cache/scores/colnomic3b/ocr_to_image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B08",
+          "status": "passed",
+          "path": "cache/scores/colnomic7b/ocr_to_image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B09",
+          "status": "passed",
+          "path": "cache/scores/Qwen3-VL-Embedding-2B/ocr_to_image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B10",
+          "status": "passed",
+          "path": "cache/scores/colpali/fusion_alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B11",
+          "status": "passed",
+          "path": "cache/scores/colnomic3b/fusion_alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B12",
+          "status": "passed",
+          "path": "cache/scores/colnomic7b/fusion_alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B13",
+          "status": "passed",
+          "path": "cache/scores/Qwen3-VL-Embedding-2B/fusion_alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B14",
+          "status": "passed",
+          "path": "cache/scores/colpali/image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B15",
+          "status": "passed",
+          "path": "cache/scores/colnomic3b/image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B16",
+          "status": "passed",
+          "path": "cache/scores/colnomic7b/image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B17",
+          "status": "passed",
+          "path": "cache/scores/colpali/ocr_to_image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B18",
+          "status": "passed",
+          "path": "cache/scores/colnomic3b/ocr_to_image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B19",
+          "status": "passed",
+          "path": "cache/scores/colnomic7b/ocr_to_image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B20",
+          "status": "passed",
+          "path": "cache/scores/Qwen3-VL-Embedding-2B/ocr_to_ocr.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B21",
+          "status": "passed",
+          "path": "cache/scores/dinov3/image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B22",
+          "status": "passed",
+          "path": "cache/scores/siglip2/image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B23",
+          "status": "passed",
+          "path": "cache/scores/Qwen3-VL-Embedding-2B/ocr_fusion_alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B24",
+          "status": "passed",
+          "path": "cache/scores/colqwen2.5-v0.2/image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B25",
+          "status": "passed",
+          "path": "cache/scores/colqwen2.5-v0.2/ocr_to_image.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B26",
+          "status": "passed",
+          "path": "cache/scores/colqwen2.5-v0.2/fusion_alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B27",
+          "status": "passed",
+          "path": "cache/scores/colqwen2.5-v0.2/image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "B28",
+          "status": "passed",
+          "path": "cache/scores/colqwen2.5-v0.2/ocr_to_image_crisp.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "D01",
+          "status": "passed",
+          "path": "cache/foreground/human_boxes/0a7a1ed078cd491c/scores.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "D03",
+          "status": "passed",
+          "path": "cache/foreground/sam3_auto/98ff18651444a632/scores.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "configuration_inventory_hashes_and_all_prediction_replay",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "F01",
+          "status": "passed",
+          "path": "cache/scores/bm25_image_fusion/colpali/alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "F02",
+          "status": "passed",
+          "path": "cache/scores/bm25_image_fusion/colnomic3b/alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "F03",
+          "status": "passed",
+          "path": "cache/scores/bm25_image_fusion/colnomic7b/alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "F04",
+          "status": "passed",
+          "path": "cache/scores/bm25_image_fusion/Qwen3-VL-Embedding-2B/alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        },
+        {
+          "config_id": "F05",
+          "status": "passed",
+          "path": "cache/scores/bm25_image_fusion/colqwen2.5-v0.2/alpha_0.5.pt",
+          "shape": [
+            1117,
+            5405
+          ],
+          "finite": true,
+          "verified_predictions": 1117,
+          "empty_ocr_predictions": 0,
+          "axis_scope": "explicit_ids",
+          "method": "NumPy stable full-row sorting followed by SHA deduplication"
+        }
+      ]
+    },
+    "links": {
+      "status": "passed",
+      "broken_relative_links": 0,
+      "legacy_absolute_links": 10,
+      "repaired_original_source_links": 1
+    }
+  },
+  "link_validation": "archive_link_validation.json",
+  "model_weights_included": false,
+  "encoding_reproduction_claimed": false
+}

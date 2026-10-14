@@ -1,0 +1,41 @@
+{
+  "schema": "colnomic.controlled_crossview_layout.v1",
+  "source_population": "all130 identities/all1117 original query images",
+  "selection": "first deterministic quality-eligible two distinct source SHA photos, same identity/positive reference/isolated OCR word; no embedding/ranking/correctness",
+  "source_quality": {
+    "OCR_confidence": 0.95,
+    "maximum_tilt": 0.08,
+    "minimum_height_pixels": 10,
+    "word_width_fraction_shift": 0.35,
+    "symmetric_uniform_blank_paper": "existing symmetric_layouts.variants quantile<=24/maxdeviation<=35; no other OCR line collision",
+    "alignment": "existing OCR RANSAC gates>=4inlierlines,coverage>=.15,positive Jacobian determinant,condition<=20",
+    "same_word_GT_center_tolerance": 0.025,
+    "crossview_x_tilt": 0.16,
+    "physical_equal_magnitude": "within each original source +/-round(.35word_width) equal; across sources projected magnitude differences reported, not a rejection gate"
+  },
+  "correspondence": "H_AB=inv(H_BG)@H_AG; Jacobian horizontal sign swaps B direction labels when needed",
+  "arms": [
+    "base",
+    "sham",
+    "left",
+    "right",
+    "editor_left",
+    "editor_right"
+  ],
+  "arms_per_pair": 12,
+  "expected": "A left vs B corresponding left and A right vs B corresponding right consistent; opposite inconsistent",
+  "annotations": "positive identity and confirmed subject boxes are source selection assistance; OCR supplies words/alignment; actual same word/same face review required",
+  "evaluation_scope": "same-content manually edited layout matching across views; not natural packaging identity accuracy",
+  "historical_test_exposure": true,
+  "GPU_or_encoder_used_for_preparation": false,
+  "no_quality_relaxation_for_counts": true,
+  "inputs_sha256": {
+    "dataset/lists/photos.csv": "96d6aca309fd630c4b97684f4143ab1ed9883f2d9a86b997dbe924560b19f5ec",
+    "dataset/lists/groups.csv": "996e2eea351e844ece454756119706f1bf0a2571b3c786f3bbb3d57947fb47fa",
+    "dataset/lists/positives.csv": "0d1e59efa6f7b9b6a2654c349ca6332f47ea9b63ca1b62ff437ea15867ae423c",
+    "results/colnomic_full_audit/20261013_resume/manual_box_review/subject_boxes_after_user_review.json": "6ae58604383e1d2a07c6186859e56082a5c6d2ab3c404d1ac6d00393182057b5",
+    "cache/ocr/photos.json": "72bf963778423498f0f2f170379ea05248450656409f4a9a27183b3bec1c2735",
+    "cache/ocr/references.json": "bd29816a4ac4ab2c72e509b351711966c153cc4c27e1ab9211cd193b7cfbb1bb",
+    "results/token_mechanism_analysis/F03/reproduction/token_metadata.json": "4290c981ea4025e1dcc0b7bc9e16725c117e717b2cec8c86e49f122f01db4bc1"
+  }
+}

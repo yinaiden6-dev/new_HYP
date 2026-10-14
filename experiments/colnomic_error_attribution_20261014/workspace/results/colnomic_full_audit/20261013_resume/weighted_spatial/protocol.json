@@ -1,0 +1,20 @@
+{
+  "etas": [
+    0.0,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "weights": "1+eta for query tokens above within-query 75th-percentile feature distance from query mean; 1 for others; divide by sum of weights",
+  "inputs": "frozen query vectors only; no coordinates, OCR, identity or truth",
+  "spatial_lambda": 0.1,
+  "alignment_gamma": 0.2,
+  "bound": "sum-subset upper=min(sum token norm upper, N*mean minus outside lower); lower analogous",
+  "safety_tolerance": 2e-06,
+  "selection": "validation identity macro R@1 then MRR then smaller eta",
+  "evaluated_scope": "all gallery rows bounded; exact scores for every row that may enter top10 or outrank any positive; stable SHA dedup",
+  "full_scalar_scores_for_low_bound_rows": "not computed; explicitly NaN and accompanied by rigorous bounds",
+  "historical_test_exposure": true,
+  "input_scores_SHA256": "fa1d8bcaa6a0d87287051a21b1a4d441126271dcd9eb0ea1f094e447bb0a8215"
+}

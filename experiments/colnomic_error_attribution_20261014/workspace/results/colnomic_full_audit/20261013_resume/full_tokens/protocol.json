@@ -1,0 +1,22 @@
+{
+  "schema": "colnomic.all_query_frozen_token_audit.v1",
+  "scope": {
+    "queries": 1117,
+    "reference_records": 5405,
+    "sha_designs": 5330
+  },
+  "original_score": "FP16 frozen vectors; FP32 dot product; valid norm>1e-8; mean MaxSim including nonzero templates",
+  "sorting": "stable descending full-gallery row scores, SHA dedup after sorting; first row wins exact ties",
+  "positives": "positives.csv package relation, expand every positive image SHA alias; primary highest original image score then stable bank row",
+  "contrasts": "every correct candidate record versus unique image/fusion strongest wrong; identical candidate matrices shared",
+  "region_rule": "mutually exclusive center/confirmed-box; OCR numeric line first, fully common-word line second; remaining subject unknown",
+  "unassigned_regions": [
+    "difference_layout",
+    "pattern_color"
+  ],
+  "region_warning": "automatic OCR-line proxies, not word cells, visual review, critical-region labels or mechanism proof",
+  "visual_review_status": "unreviewed",
+  "ranking_scope": "complete gallery",
+  "device": "CPU",
+  "version": 1
+}

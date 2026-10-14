@@ -1,0 +1,192 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-14T05:34:26.600909+00:00",
+  "fixture_directory": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/self_test_20261014T053425986675",
+  "actual_cases": 22,
+  "cases": [
+    {
+      "test": "tar_real_SHA_CRC_hardlinks",
+      "receipt": {
+        "status": "passed",
+        "archive_format": "tar-hardlinks",
+        "logical_members_verified": 5,
+        "regular_payload_SHA256_comparisons": 3,
+        "internal_hardlink_SHA256_comparisons": 1,
+        "logical_uncompressed_bytes": 1775,
+        "actual_gzip_trailer_CRC32": "1893d4ea",
+        "actual_gzip_trailer_ISIZE": 10240,
+        "complete_decompressed_tar_bytes": 10240,
+        "manifest_sha256": "fe320939950e8bc4bcecb286c88ea343d02d278ac02c41a522f99cb595414240",
+        "hardlinks_target_earlier_regular_archive_members": true,
+        "unsafe_or_duplicate_members": false,
+        "extracted_to": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/self_test_20261014T053425986675/extracted",
+        "external_archive_SHA256_verified": null
+      }
+    },
+    {
+      "test": "extracted_all_logical_SHA_and_actual_shared_inode",
+      "status": "passed"
+    },
+    {
+      "test": "actual_verify_extracted_entrypoint",
+      "receipt": {
+        "status": "passed",
+        "files_SHA_verified": 4,
+        "physical_file_payloads_read": 3,
+        "member_manifest_sha256": "fe320939950e8bc4bcecb286c88ea343d02d278ac02c41a522f99cb595414240",
+        "original_workspace_absolute_paths_not_treated_as_portable": true,
+        "archive_compatibility_aliases_SHA_verified": 0
+      }
+    },
+    {
+      "test": "final_sealing_requires_explicit_ready",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "external_archive_SHA_sidecar_matches_actual_bytes",
+      "status": "passed"
+    },
+    {
+      "test": "external_archive_SHA_sidecar_mismatch",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "externally_expected_manifest_SHA_mismatch",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "gzip_actual_trailer_CRC_corruption",
+      "status": "rejected_as_expected",
+      "exception_type": "BadGzipFile"
+    },
+    {
+      "test": "tar_hardlink_path_escape",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "tar_actual_payload_SHA_mismatch",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "zip_real_SHA_and_all_member_CRC",
+      "receipt": {
+        "status": "passed",
+        "members_read": 5,
+        "uncompressed_member_bytes": 1745,
+        "actual_member_CRC32_comparisons": 5,
+        "actual_member_SHA256_comparisons": 4,
+        "manifest_bytes_SHA256_reported": true,
+        "manifest_sha256": "e198ad5896dfe12d34fc15fcf83c5115137a36cbfe26159b998410ef48479600",
+        "unsafe_or_duplicate_members": false,
+        "external_archive_SHA256_verified": null
+      }
+    },
+    {
+      "test": "zip_actual_member_CRC_corruption",
+      "status": "rejected_as_expected",
+      "exception_type": "BadZipFile"
+    },
+    {
+      "test": "zip_actual_payload_SHA_mismatch",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "zip_member_path_escape",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "actual_HTML_present_and_missing_relative_link",
+      "status": "passed"
+    },
+    {
+      "test": "actual_Markdown_present_and_missing_relative_link",
+      "status": "passed"
+    },
+    {
+      "test": "original_historical_missing_link_cannot_pass_without_archive_member",
+      "status": "passed"
+    },
+    {
+      "test": "archive_only_compatibility_member_actual_extract_SHA_and_resolved_original_link",
+      "receipt": {
+        "status": "passed",
+        "files_SHA_verified": 3,
+        "physical_file_payloads_read": 3,
+        "member_manifest_sha256": "939a652866d5c14e22ec054e22529ec9881154baea8268fdbdb42d4edb1a1d90",
+        "original_workspace_absolute_paths_not_treated_as_portable": true,
+        "archive_compatibility_aliases_SHA_verified": 1,
+        "links": {
+          "status": "passed",
+          "broken_relative_links": 0,
+          "legacy_absolute_links": 0,
+          "repaired_original_source_links": 1
+        }
+      }
+    },
+    {
+      "test": "ordinary_exec_bits_retained_and_actual_extracted_REPRODUCE_entry_executes",
+      "status": "passed",
+      "archive_receipt": {
+        "status": "passed",
+        "archive_format": "tar-hardlinks",
+        "logical_members_verified": 5,
+        "regular_payload_SHA256_comparisons": 3,
+        "internal_hardlink_SHA256_comparisons": 1,
+        "logical_uncompressed_bytes": 1117,
+        "actual_gzip_trailer_CRC32": "a1672eae",
+        "actual_gzip_trailer_ISIZE": 10240,
+        "complete_decompressed_tar_bytes": 10240,
+        "manifest_sha256": "d7633cb9953b86e681106105618a2e9a45280ba7f517ee41a7d3f52a05e2c484",
+        "hardlinks_target_earlier_regular_archive_members": true,
+        "unsafe_or_duplicate_members": false,
+        "extracted_to": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/self_test_20261014T053425986675/permissions_extracted",
+        "external_archive_SHA256_verified": null
+      },
+      "extracted_receipt": {
+        "status": "passed",
+        "files_SHA_verified": 4,
+        "physical_file_payloads_read": 3,
+        "member_manifest_sha256": "d7633cb9953b86e681106105618a2e9a45280ba7f517ee41a7d3f52a05e2c484",
+        "original_workspace_absolute_paths_not_treated_as_portable": true,
+        "archive_compatibility_aliases_SHA_verified": 0
+      },
+      "actual_stdout": "archive executable fixture\n"
+    },
+    {
+      "test": "same_SHA_different_exec_modes_are_independent_payloads_and_inodes",
+      "status": "passed",
+      "same_mode_hardlink_verified": true,
+      "different_mode_regular_payload_verified": true,
+      "special_permission_bits_removed": true
+    },
+    {
+      "test": "same_SHA_hardlink_with_different_exec_permissions_is_rejected",
+      "status": "rejected_as_expected",
+      "exception_type": "AssertionError"
+    },
+    {
+      "test": "ZIP_fallback_safe_executable_and_virtual_member_modes_verified",
+      "status": "passed",
+      "receipt": {
+        "status": "passed",
+        "members_read": 5,
+        "uncompressed_member_bytes": 1078,
+        "actual_member_CRC32_comparisons": 5,
+        "actual_member_SHA256_comparisons": 4,
+        "manifest_bytes_SHA256_reported": true,
+        "manifest_sha256": "43b70f370285238731b3b4d986aa12d6dbca346561dd47df97eba59dcf852a6e",
+        "unsafe_or_duplicate_members": false,
+        "external_archive_SHA256_verified": null
+      }
+    }
+  ],
+  "final_archive_created": false,
+  "source_code_sha256": "04a57033ba310e2dde87267bfd84ef2ad19536562b469c8a2766dd6fa075d072"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checks": {
+    "exact_historical_index_records": true,
+    "exact_2234_samples": true,
+    "relation_count_identical_axes": true,
+    "query_ids_CSV_axes": true,
+    "reference_ids_CSV_axes": true,
+    "package_ids_CSV_axes": true,
+    "splits_CSV_axes": true,
+    "labels_CSV_axes": true,
+    "labels_match_original_positive_SHA_relation": true,
+    "training_negatives_only_training_positive_references": true,
+    "all2234_cross_relation_features_independently_joined": true,
+    "all2234_count_features_independently_rebuilt": true,
+    "all1117_queries_represented": true
+  },
+  "samples": 2234,
+  "queries": 1117,
+  "maximum_relation_feature_error": 0.0,
+  "maximum_count_feature_error": 0.0,
+  "input_SHA": {
+    "results/token_mechanism_experiments/20261013_v2/stage3_probes/identity_sample_index.csv": "9dac7f6e51edd7ec7255bd8be487d54c701d10bcdaab962ed36bcd58809ab263",
+    "results/colnomic_full_audit/20261013_resume/cross_token_relation/restricted_sample_index.csv": "9dac7f6e51edd7ec7255bd8be487d54c701d10bcdaab962ed36bcd58809ab263",
+    "results/colnomic_full_audit/20261013_resume/cross_token_relation/restricted_inputs.npz": "8d41793c2f879062345e16974a397e97dc005963500a24652a80c7c67d342e7d",
+    "results/colnomic_full_audit/20261013_resume/cross_token_relation/restricted_count_inputs.npz": "7106a9b94f8ac53918ae5d89c067a363dda4915f97a78075996cfa7418c285b5",
+    "results/colnomic_full_audit/20261013_resume/cross_token_relation/full_gallery/score_axes.json": "27c2011cece477fdc69025fd18b6dde10c471b06a03731a5fdf70616316e14c7",
+    "results/colnomic_full_audit/20261013_resume/cross_token_relation/verify_restricted_joins.py": "a38e0dd8e9e1b9f0d48b139bef1187cdb2feefc9ee2facc618faf0cd7b37e541"
+  }
+}

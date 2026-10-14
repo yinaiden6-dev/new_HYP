@@ -1,0 +1,40 @@
+{
+  "schema": "colnomic.all_query_frozen_token_audit.v1",
+  "verified_utc": "2026-10-13T22:32:07.649146+00:00",
+  "status": "passed_for_generated_frozen_analysis_scope",
+  "queries": 1117,
+  "expected_queries": 1117,
+  "all_queries_complete": true,
+  "data_coverage": 1.0,
+  "token_analysis_coverage": 1.0,
+  "visual_reviewed_queries": 0,
+  "visual_review_coverage": 0.0,
+  "controlled_intervention_identities": 0,
+  "mechanism_causal_evidence_coverage": 0.0,
+  "total_contrasts": 1648,
+  "full_matrices": 2765,
+  "max_matrix_cached_score_error": 1.7881393432617188e-07,
+  "max_token_delta_conservation_error": 1.825392246246338e-07,
+  "max_region_conservation_error": 1.7958855009353458e-07,
+  "full_pointwise_matrices_recomputed": 0,
+  "max_pointwise_matrix_error": null,
+  "outcome_counts": {
+    "both_correct": 829,
+    "fusion_rescued": 143,
+    "both_wrong": 104,
+    "fusion_harmed": 41
+  },
+  "unreviewed_region_categories": [
+    "difference_layout",
+    "pattern_color"
+  ],
+  "limitations": [
+    "Automatic OCR regions are not visually audited critical regions.",
+    "Residuals use existing accepted transforms only; missing transforms and cross-face annotations remain unknown.",
+    "No causal mechanism inferred from final token statistics.",
+    "All scalar ranks replay caches; selected candidate dot replay is not full-gallery re-encoding."
+  ],
+  "input_source_hashes_rechecked": true,
+  "original_images_hash_verified": 1974,
+  "original_images_missing": 0
+}

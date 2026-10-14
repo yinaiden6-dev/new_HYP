@@ -1,0 +1,33 @@
+{
+  "feature_generation": {
+    "source_sha256": "fb515f5c84256a2e9de64b08f5b3e39dbc3495aff2436f5e365c90da9acf2266",
+    "source_snapshot": "source_executed_fb515f5c8425.py",
+    "partitions": [
+      559,
+      558
+    ],
+    "GPU_workers_exited": true
+  },
+  "heads_and_full_gallery_scores": {
+    "source_sha256": "826f47a3bb95a1f9d098cce60723c91d670b607cf5ed035c655f273c05891119",
+    "source_snapshot": "source_executed_826f47a3bb95.py",
+    "training_runtime": "CPU_runtime.json",
+    "full_scoring_log": "train_scoring_complete_validation_json_failure.log"
+  },
+  "independent_selection_coefficients_predictions_ranks_and_metrics": {
+    "source_sha256": "f5baffe966c8c81f1297752f0cd6b6b41bb4f50f8d5cf470afd88f46ea70ed38",
+    "source_snapshot": "source_executed_f5baffe966c8.py",
+    "runtime": "CPU_verify_runtime.json",
+    "log": "verify.log"
+  },
+  "independent_restricted_input_joins": {
+    "path": "results/colnomic_full_audit/20261013_resume/cross_token_relation/verify_restricted_joins.py",
+    "bytes": 4477,
+    "sha256": "a38e0dd8e9e1b9f0d48b139bef1187cdb2feefc9ee2facc618faf0cd7b37e541"
+  },
+  "historical_attempt_logs": [
+    "train_failed_metrics_collision.log",
+    "train_scoring_complete_validation_json_failure.log"
+  ],
+  "explanation": "The first attempt stopped before metrics saved; the second scored all heads, then JSON serialization failed; final verification reused all saved features, weights and full-gallery arrays. No feature or gallery scores were regenerated to obtain passing validation."
+}

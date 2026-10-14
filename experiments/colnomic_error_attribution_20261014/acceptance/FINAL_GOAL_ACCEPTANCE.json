@@ -1,0 +1,85 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-14T07:20:40.296023+00:00",
+  "completion_scope": "All executable analysis, independent numerical acceptance, immutable archive integrity and actual extracted verification; unresolved mechanisms retained explicitly",
+  "archive": {
+    "path": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/archive_20261014T055014Z/colnomic_full_audit.tar.gz",
+    "bytes": 33289484786,
+    "SHA256": "de78b51b70ab25d619cdb23c92dd6022f6cd9ca7fbccf3e590119f66cbb0e279",
+    "member_manifest_SHA256": "839a084c3dc598a1b4b81ed4f43fa7b0239637d799040cce301eda5f9c6553b1",
+    "logical_members_verified": 55150
+  },
+  "acceptance_receipts_SHA256": {
+    "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/archive_set.json": "6ba07f6053ca965fc18d238aecc6a9a2a7cbb356a6902aefad7eda50e73e3ad0",
+    "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/final_extracted_validation.json": "79140c29a90271587427d6193124f85206143b86a326e88c4df8905ae95a9fe4",
+    "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/archive_20261014T055014Z/extracted_validation_workspace/results/colnomic_full_audit/20261013_resume/reproduction_support/final_runs/20261014_extracted_cpu_verify/validation.json": "40bb8514ac4540df02e0a32d87be544f9cfda38e00b277ccc659eccf16f8f90d",
+    "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery/acceptance.json": "1aa15313da74a0051fae82d80e84a589d20800c8ca2e97577af397af88fe03c9",
+    "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/FINAL_PROTOCOL.json": "1fde2280f1058a5ea0c006d71d56a1ac1adb0b81055ee4a02430db05dadcbf37"
+  },
+  "frozen_source_SHA256": {
+    "results/colnomic_full_audit/20261013_resume/delivery/acceptance.json": "1aa15313da74a0051fae82d80e84a589d20800c8ca2e97577af397af88fe03c9",
+    "results/colnomic_full_audit/20261013_resume/FINAL_PROTOCOL.json": "1fde2280f1058a5ea0c006d71d56a1ac1adb0b81055ee4a02430db05dadcbf37",
+    "results/colnomic_full_audit/20261013_resume/REPORT.md": "d5ba66fee00b486fdd8dec44fcb0295d63a464b5ab0e96bddfe4b82e1687ddd8",
+    "results/colnomic_full_audit/20261013_resume/REPRODUCE.sh": "e879ffa3c003b639a83069ff3193f06253ee78ccf88162ebc9ff177d37f8e002",
+    "results/colnomic_full_audit/20261013_resume/reproduction_support/final_full_verification.json": "6026634679febed7962b58019147d08add3b24e216e920d97d9141d38c7b195b"
+  },
+  "extracted_workspace": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/archive_20261014T055014Z/extracted_validation_workspace",
+  "extracted_dispatcher_output": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/archive_20261014T055014Z/extracted_validation_workspace/results/colnomic_full_audit/20261013_resume/reproduction_support/final_runs/20261014_extracted_cpu_verify",
+  "extracted_rank_replay": {
+    "queries": 1117,
+    "references": 5405,
+    "configurations": 35,
+    "prediction_rows": 39095,
+    "empty_OCR_rows": 0
+  },
+  "extracted_dispatcher_scope": "core_quick_plus_complete_fresh_reference_verification",
+  "previously_full_core_SHA256": "6026634679febed7962b58019147d08add3b24e216e920d97d9141d38c7b195b",
+  "coverage": {
+    "data_queries": 1117,
+    "visual_overview": 1117,
+    "scene_by_dimension": {
+      "background": 1117,
+      "placement": 1117,
+      "occlusion": 1117
+    },
+    "scene_known_by_dimension": {
+      "background": 1111,
+      "placement": 1117,
+      "occlusion": 1116
+    },
+    "explicit_limited_detail_verified": 13,
+    "selected_detail_observation_records": 85,
+    "manual_semantic_ROI_queries": 4,
+    "token_queries": 1117,
+    "token_contrasts": 1648,
+    "complete_key_token_matrices": 2765,
+    "intervention_identities_by_experiment": {
+      "symmetric_layouts": 41,
+      "detail_interventions": 12,
+      "controlled_crossview_layouts": 3
+    },
+    "unique_intervention_identities": 47,
+    "deterministic_score_evidence_queries": 1117,
+    "unique_causal_failure_mechanism_coverage": "not identifiable from this audit; do not replace with1117"
+  },
+  "limitations": [
+    "1117原图和关键候选overview已实际审核；细字、可见面边界或身份信息无法识别的范围保留未知，overview不等于全字转录",
+    "原测试集已观察；包装/实际设计/来源group/hash隔离已验，不额外声称未定义的设计族或形态家族隔离",
+    "4张重点图完成语义ROI定位；全量区域分区守恒但绝大多数身份关键数字/布局/图案ROI仍未定位",
+    "同面成功控制仅为确认子集，剩余未确认不等于不存在；角度/清晰度/主体大小与控制复用残留混杂",
+    "自然共享四短语不等于全文同文字/布局单因素，ROI有外部坐标选择和整图上下文影响；测试8身份、区间宽",
+    "跨视角词位置pilot仅3身份，2train/1val/0test，不能形成held-test布局Probe结论",
+    "旧图库冻结缓存可忠实评分；缺少旧processor/中间层/上游文件，唯一重新编码漂移原因尚未查明",
+    "手工修订框、裁切和遮挡改变多个因素；新Query对旧图库条件排名不当作新编码器全图库准确率",
+    "28新参考与12重新编码base及60兼容编辑臂作完整预选候选对照；worker源码SHA不同原因未知，新旧相同ordinal轴不证明物理格点相同",
+    "E0-E7与人工困难规范化是未校准分类，不与已经验证的机制混同；OCR纵向序号非真实阅读行",
+    "完成全量审计与可执行实验不表示为全部错误确定唯一原因；最终Token不能归因具体编码层",
+    "归档整包SHA/CRC及实际解包的验证由封存后的外部delivery_support receipt给出，避免把自引用SHA写入自身归档"
+  ],
+  "verifier_SHA256": "f1b6bc7f858f69faebf6f7fb98161df754210e6cac77025e63c55f1a9720284e",
+  "analysis_accepted": true,
+  "archive_and_actual_extraction_accepted": true,
+  "all_queries_unique_causes_identified": false,
+  "full_fresh_gallery_accuracy_claimed": false,
+  "state_policy": "Authoritative post-seal external completion receipt; frozen payload state remains analysis_accepted_archive_pending to avoid self-referential SHA or post-seal mutation"
+}

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "purpose": "specification-bearing-region image occlusion with matched-area controls",
+  "selection": "first 3 independent packages per original B03/F03 joint outcome, original sorted query order; before edit features",
+  "strata": [
+    "both_correct",
+    "fusion_rescue",
+    "fusion_harm",
+    "both_wrong"
+  ],
+  "eligibility": "OCR confidence>=0.95, numeric unit/count text in supplied subject box, matching blank-paper area inside box",
+  "visual_review": "numeric text is an OCR proposal; semantic identity importance and subject box validity require direct image review",
+  "edit": "replace one OCR line rectangle by median RGB of its surrounding ring; matched-size blank rectangle uses SAME replacement RGB",
+  "expected_relationship": "occlusion does not assert new identity labels; score/gap response to removing visible information, not edited retrieval accuracy",
+  "arms": [
+    "base",
+    "sham",
+    "numeric_mask",
+    "blank_control",
+    "both_masks"
+  ],
+  "interaction": "both-minus-numeric-minus-blank-plus-sham",
+  "selection_uses_baseline_correctness_for_predeclared_strata": true,
+  "selection_uses_no_edited_response": true,
+  "focus_browser_images_not_used": true,
+  "seed": 20261013,
+  "historical_test_exposed": true
+}

@@ -1,0 +1,143 @@
+{
+  "schema": "colnomic.reviewed_box_sensitivity.v1",
+  "source_code_sha256": "643a4f34b0ba456f6b762c96c718989646ecb29219900bc4b4d6bc80329a5c58",
+  "old_boxes": "results/colnomic_full_audit/20261013_resume/manual_box_review/subject_boxes_before_user_review.json",
+  "new_boxes": "results/colnomic_full_audit/20261013_resume/manual_box_review/subject_boxes_after_user_review.json",
+  "changed_queries": [
+    "photo_88e7f77db7da30c3",
+    "photo_41de3eb383934ec3",
+    "photo_67f24002bcb357c9",
+    "photo_c81d2a7abb5af160",
+    "photo_d33ae6dfc0cb239b"
+  ],
+  "full_gallery_shape": [
+    1117,
+    5405
+  ],
+  "cpu_threads": 2,
+  "device": "cpu",
+  "gamma_grid": [
+    0.0,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "lambda_grid": [
+    0.0,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "recomputation": "For every changed query, rebuild exact OCR-anchor proposals over all 5405 reference rows, refit homographies, recheck acceptance, remap subject tokens and score each accepted pair; rejected pairs receive exact cached MaxSim.",
+  "reuse": "1112 unchanged queries reuse SHA-validated frozen original geometry and deterministic shuffle scores exactly.",
+  "shuffle": "Permute coordinate-to-feature association only; same newly fitted accepted pairs, H, boxes, subject masks, OCR and embeddings as real-coordinate scoring; copy real-coordinate val-selected parameters.",
+  "selection": "all 21 validation packages only; package_macro_r1, package_macro_mrr, smaller gamma+lambda, lambda, gamma",
+  "human_box_assistance": true,
+  "human_box_test_assistance": true,
+  "box_gt_free_system_claimed": false,
+  "historical_test_already_observed": true,
+  "encoder_rerun": false,
+  "original_inputs_modified": false,
+  "inputs": {
+    "results/colnomic_full_audit/20261013_resume/manual_box_review/subject_boxes_before_user_review.json": {
+      "bytes": 658655,
+      "sha256": "3a5bad5014d36ceb61bd7a599874aa3119772d34287456c9f98ff52049cfd480"
+    },
+    "results/colnomic_full_audit/20261013_resume/manual_box_review/subject_boxes_after_user_review.json": {
+      "bytes": 658126,
+      "sha256": "6ae58604383e1d2a07c6186859e56082a5c6d2ab3c404d1ac6d00393182057b5"
+    },
+    "results/token_mechanism_experiments/20261013_v1/stage2_geometry/full_gallery_scores.npz": {
+      "bytes": 362244688,
+      "sha256": "98390d4f667291ed891319e08b813917d4c4cf200ab9a88b3485da4bfd2d7cd7"
+    },
+    "results/token_mechanism_experiments/20261013_v1/stage2_geometry/alignments.json": {
+      "bytes": 11438707,
+      "sha256": "81860fb60d84ac3781f0dca7fb31eb8e43a933d55242bd7f84a4dfe6f268df3b"
+    },
+    "results/token_mechanism_experiments/20261013_v1/stage2_geometry/score_axes.json": {
+      "bytes": 552552,
+      "sha256": "58d86d03524c3fa0358c5877ef57a8e53ca756ed6e8acf5911a992e105ee04d3"
+    },
+    "results/colnomic_full_audit/20261013_resume/split_geometry/shuffled_geo_penalty.npy": {
+      "bytes": 144897368,
+      "sha256": "085f630cd95f2bdff9f51a5ff59b9b2bd03e29c79674793c1d9ca2c1638d8ee4"
+    },
+    "results/colnomic_full_audit/20261013_resume/split_geometry/selected_full_gallery_scores.npz": {
+      "bytes": 911742496,
+      "sha256": "183e2c4e1e2057cce88ca41e6f26b396352d387f0232cf751a2b97f54d24237f"
+    },
+    "results/colnomic_full_audit/20261013_resume/split_geometry/validation.json": {
+      "bytes": 3281,
+      "sha256": "22d0899a37a8fd18d1e8e037936e200adfb06e4e919c5a10da86ca2787b37233"
+    },
+    "results/colnomic_full_audit/20261013_resume/split_geometry/selection.json": {
+      "bytes": 4264,
+      "sha256": "64c78a6824bd9706dfb5c841e3c770db39543b17b4092d40c8645e74c5c837b6"
+    },
+    "cache/image_embeddings/colnomic7b/photos.pt": {
+      "bytes": 213797208,
+      "sha256": "e3505044319ab374c20bd7ecb42f5342d818d0b764899329b2f4a5e3c47fe8ca"
+    },
+    "cache/image_embeddings/colnomic7b/references.pt": {
+      "bytes": 1000307044,
+      "sha256": "500d4e15d167f7f4749348816a489e6d24c647cb20e89bef216d18d265f6b17d"
+    },
+    "cache/scores/colnomic7b/image.pt": {
+      "bytes": 24327976,
+      "sha256": "fa1d8bcaa6a0d87287051a21b1a4d441126271dcd9eb0ea1f094e447bb0a8215"
+    },
+    "cache/scores/bm25/bm25.pt": {
+      "bytes": 24327585,
+      "sha256": "581bcf5b4aee48d38b509624dfdc55f784b5e22d656b26c4105509d1b07a4a7e"
+    },
+    "cache/scores/bm25_image_fusion/colnomic7b/alpha_0.5.pt": {
+      "bytes": 24327876,
+      "sha256": "c27e55efc08162a5da8254f466a7680f4eab4d4830241f1f6db51d51c8c05bfa"
+    },
+    "cache/ocr/photos.json": {
+      "bytes": 25371523,
+      "sha256": "72bf963778423498f0f2f170379ea05248450656409f4a9a27183b3bec1c2735"
+    },
+    "cache/ocr/references.json": {
+      "bytes": 333198911,
+      "sha256": "bd29816a4ac4ab2c72e509b351711966c153cc4c27e1ab9211cd193b7cfbb1bb"
+    },
+    "results/token_mechanism_analysis/F03/reproduction/token_metadata.json": {
+      "bytes": 65912134,
+      "sha256": "4290c981ea4025e1dcc0b7bc9e16725c117e717b2cec8c86e49f122f01db4bc1"
+    },
+    "results/token_mechanism_analysis/F03/reproduction/candidate_ledger_all1117.json": {
+      "bytes": 1803752,
+      "sha256": "5c721ece4b4a890e145145efce17aa80720da7a93f3e75e322f989d1667fc5d5"
+    },
+    "dataset/lists/photos.csv": {
+      "bytes": 336883,
+      "sha256": "96d6aca309fd630c4b97684f4143ab1ed9883f2d9a86b997dbe924560b19f5ec"
+    },
+    "dataset/lists/groups.csv": {
+      "bytes": 5427,
+      "sha256": "996e2eea351e844ece454756119706f1bf0a2571b3c786f3bbb3d57947fb47fa"
+    },
+    "dataset/lists/positives.csv": {
+      "bytes": 3925,
+      "sha256": "0d1e59efa6f7b9b6a2654c349ca6332f47ea9b63ca1b62ff437ea15867ae423c"
+    },
+    "dataset/lists/train.csv": {
+      "bytes": 234376,
+      "sha256": "7cd5bfbeac8249f8961cea9e9f2fe443c8a43e716847068212e0a43342d8b738"
+    },
+    "dataset/lists/val.csv": {
+      "bytes": 54133,
+      "sha256": "7fe9b374c8148285d91ac47f53a0dabc1e3d515d1c93c84b211817a9e35ba227"
+    },
+    "dataset/lists/test.csv": {
+      "bytes": 48524,
+      "sha256": "60db4f1a133c40313f624728abf11f5bf888713101d4ed2fa328778cbe11e107"
+    }
+  }
+}

@@ -1,0 +1,589 @@
+[
+  {
+    "id": "post_real_s17",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "post_real_s31",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--seed",
+      "31"
+    ]
+  },
+  {
+    "id": "post_real_s53",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--seed",
+      "53"
+    ]
+  },
+  {
+    "id": "patch_post_real_s17",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine",
+      "--arm",
+      "real",
+      "--seed",
+      "17",
+      "--condition",
+      "patch"
+    ]
+  },
+  {
+    "id": "post_real_ce_s17",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--loss",
+      "ce",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "patch_post_real_s31",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine",
+      "--arm",
+      "real",
+      "--seed",
+      "31",
+      "--condition",
+      "patch"
+    ]
+  },
+  {
+    "id": "patch_post_real_s53",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine",
+      "--arm",
+      "real",
+      "--seed",
+      "53",
+      "--condition",
+      "patch"
+    ]
+  },
+  {
+    "id": "medicine_catalog_patch_post_real_s17",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "real",
+      "--seed",
+      "17",
+      "--condition",
+      "patch"
+    ]
+  },
+  {
+    "id": "post_constant_s17",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "constant",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "post_shuffled_s17",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "shuffled",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "catalog_post_real_s17",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "catalog_post_real_s31",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--seed",
+      "31"
+    ]
+  },
+  {
+    "id": "catalog_post_real_s53",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--seed",
+      "53"
+    ]
+  },
+  {
+    "id": "catalog_post_constant_s17",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "constant"
+    ]
+  },
+  {
+    "id": "catalog_post_shuffled_s17",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "shuffled"
+    ]
+  },
+  {
+    "id": "catalog_embedding_s17",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--location",
+      "embedding",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "catalog_embedding_s31",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--location",
+      "embedding",
+      "--seed",
+      "31"
+    ]
+  },
+  {
+    "id": "catalog_embedding_s53",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--location",
+      "embedding",
+      "--seed",
+      "53"
+    ]
+  },
+  {
+    "id": "embedding_post_s17",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--location",
+      "embedding",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "embedding_post_s31",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--location",
+      "embedding",
+      "--seed",
+      "31"
+    ]
+  },
+  {
+    "id": "embedding_post_s53",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--location",
+      "embedding",
+      "--seed",
+      "53"
+    ]
+  },
+  {
+    "id": "post_real_budget25",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--budget",
+      "25",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "post_real_budget50",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--budget",
+      "50",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "post_real_width8",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--bottleneck",
+      "8",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "post_real_width32",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--arm",
+      "real",
+      "--bottleneck",
+      "32",
+      "--seed",
+      "17"
+    ]
+  },
+  {
+    "id": "reader_COMPRESSED",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.reader",
+      "--arm",
+      "COMPRESSED"
+    ]
+  },
+  {
+    "id": "reader_SET",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.reader",
+      "--arm",
+      "SET"
+    ]
+  },
+  {
+    "id": "reader_SPATIAL",
+    "requires": {
+      "medicine": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.reader",
+      "--arm",
+      "SPATIAL"
+    ]
+  },
+  {
+    "id": "catalog_reader_COMPRESSED",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.reader",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "COMPRESSED"
+    ]
+  },
+  {
+    "id": "catalog_reader_SET",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.reader",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "SET"
+    ],
+    "priority": -1
+  },
+  {
+    "id": "catalog_reader_SPATIAL",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.reader",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "SPATIAL"
+    ],
+    "priority": -2
+  },
+  {
+    "id": "catalog_post_real_ce_s17",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "real",
+      "--loss",
+      "ce",
+      "--seed",
+      "17"
+    ],
+    "priority": -0.5
+  },
+  {
+    "id": "catalog_post_real_ce_s31",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "real",
+      "--loss",
+      "ce",
+      "--seed",
+      "31"
+    ],
+    "priority": -0.4
+  },
+  {
+    "id": "catalog_post_real_ce_s53",
+    "requires": {
+      "medicine_catalog": [
+        "train"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.post",
+      "--dataset",
+      "medicine_catalog",
+      "--arm",
+      "real",
+      "--loss",
+      "ce",
+      "--seed",
+      "53"
+    ],
+    "priority": -0.4
+  }
+]

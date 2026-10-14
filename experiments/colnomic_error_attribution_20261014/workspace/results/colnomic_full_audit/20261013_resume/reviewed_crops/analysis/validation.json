@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "photos": 1117,
+  "changed_queries": 5,
+  "changed_package_identities": 4,
+  "encodings": 10,
+  "fresh_before_exact": 5,
+  "score_replay": [
+    {
+      "photo_id": "photo_88e7f77db7da30c3",
+      "maximum_full_gallery_score_error": 1.1920928955078125e-07
+    },
+    {
+      "photo_id": "photo_41de3eb383934ec3",
+      "maximum_full_gallery_score_error": 8.940696716308594e-08
+    },
+    {
+      "photo_id": "photo_67f24002bcb357c9",
+      "maximum_full_gallery_score_error": 1.1920928955078125e-07
+    },
+    {
+      "photo_id": "photo_c81d2a7abb5af160",
+      "maximum_full_gallery_score_error": 1.1920928955078125e-07
+    },
+    {
+      "photo_id": "photo_d33ae6dfc0cb239b",
+      "maximum_full_gallery_score_error": 1.1920928955078125e-07
+    }
+  ],
+  "unchanged_rows_verified": 1112,
+  "source_SHA256": {
+    "cache/foreground/human_boxes/0a7a1ed078cd491c/photo_embeddings.pt": "de8531152781f0ae16af4aea4b12dde98fa773434bf2eae1393baa0e8899cfd8",
+    "cache/foreground/human_boxes/0a7a1ed078cd491c/scores.pt": "aac1ee1f957eef9f9b22530213a80cf021dfe39369bdea04209ff0434537d430",
+    "cache/image_embeddings/colnomic7b/references.pt": "500d4e15d167f7f4749348816a489e6d24c647cb20e89bef216d18d265f6b17d",
+    "cache/image_embeddings/colnomic7b/photos.pt": "e3505044319ab374c20bd7ecb42f5342d818d0b764899329b2f4a5e3c47fe8ca",
+    "cache/scores/colnomic7b/image.pt": "fa1d8bcaa6a0d87287051a21b1a4d441126271dcd9eb0ea1f094e447bb0a8215",
+    "cache/scores/bm25_image_fusion/colnomic7b/alpha_0.5.pt": "c27e55efc08162a5da8254f466a7680f4eab4d4830241f1f6db51d51c8c05bfa"
+  },
+  "scope": "same frozen historical gallery; five changed queries; other1112 historicalD01 rows unchanged",
+  "extra_supervision": "manual target localization revised after viewing historical results",
+  "interpretation": "target selection/background/scale/content change together; no isolated background causal claim"
+}

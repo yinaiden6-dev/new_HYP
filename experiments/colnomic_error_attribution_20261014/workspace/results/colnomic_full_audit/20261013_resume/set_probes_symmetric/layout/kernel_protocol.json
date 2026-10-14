@@ -1,0 +1,14 @@
+{
+  "seed": 20261015,
+  "dimensions": 64,
+  "training_images": 54,
+  "sampled_training_tokens": 864,
+  "sigma_squared": 1.7635693550109863,
+  "landmark_selection": "unlabelled training images only; up to 16 randomly sampled visual tokens per image",
+  "features": "mean(exp(-squared_raw_feature_distance/(2*sigma_squared))) over ALL visual tokens",
+  "input_coordinates": false,
+  "input_token_indices": false,
+  "input_ids": false,
+  "input_identity_labels": false,
+  "limitation": "permutation-invariant nonlinear distribution summary, not a complete Token-set information test"
+}

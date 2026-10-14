@@ -1,0 +1,14 @@
+{
+  "scope": "natural local shared phrases, not full-pack same-content and not a layout-only causal task",
+  "population": "all1117 queries/all130 identities; positive vs unique image/fusion strongest negative",
+  "quality": "both OCR homographies accepted;>=4 shared exact normalized phrases;every selected phrase confidence>=.95 andbboxheight>=10px",
+  "selection": "four longest shared exact phrases, lexical tie;first eligible query peridentity for manual inspection only;all qualified pairs used",
+  "inputs": "ROI-selected frozen visual features;explicit extra OCR/coordinate supervision for Token selection; no coordinates/index/ID in classifier",
+  "labels": "original natural package positives vs negatives; candidate full content, dose, graphics and contextual encoding may differ",
+  "train_negatives": "exclude any reference SHA that is a groundtruth design of validation/test packages",
+  "fitting": "training-only standardization,validation identity-macro paired ranking thenAUC then smallerC;3 within-package training label shuffles",
+  "interpretation": "ability to distinguish natural candidates from common-phrase selected features, not proof that layout alone is encoded or used",
+  "historical_test_exposure": true,
+  "seed": 20261014,
+  "manual_review_required_before_confirmed_results": true
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "queries": 1117,
+  "pairs": 1648,
+  "token_pair_records": 1225578,
+  "seven_region_rows_replayed": 11536,
+  "exactly_one_primary_region_per_valid_token": true,
+  "all_signed_deltas_preserved_by_pair_digest": true,
+  "sum_positive_negative_net_over_N_matches_original_image_gap": true,
+  "max_image_gap_conservation_error": 1.7958855009353458e-07,
+  "conservation_limit": 2e-07,
+  "manual_ROI_queries": 4,
+  "manual_ROI_annotations": 13,
+  "source_token_files_SHA_rechecked": 1648,
+  "old_full_tokens_modified": false,
+  "automatic_identity_key_numbers_from_all_OCR_digits": false,
+  "thresholded_color_identity_patterns_claimed": false,
+  "semantic_overlap_labels_separate_from_primary_partition": true,
+  "manual_ROI_is_annotation_assistance": true,
+  "encoder_causality_claimed": false,
+  "limitations": [
+    "Only four requested focal queries have manually localized semantic ROIs.",
+    "Other cases retain automatic shared-OCR proxies or explicitly unlocated subject semantics.",
+    "Manual patch ROIs can straddle neighbouring words, lines and colors; a token is not a word.",
+    "Observed candidate layout, dose and visual design differences remain confounded; this is descriptive signed-score decomposition."
+  ],
+  "explicit_query_region_status_rows": 7819,
+  "unlocated_key_layout_pattern_query_region_rows": 3346,
+  "coverage_status_clarification": "Every query has7 status records; these are not all unknown. manual_localized means at leastone justified manual ROI, not exhaustive semantic coverage of that category."
+}

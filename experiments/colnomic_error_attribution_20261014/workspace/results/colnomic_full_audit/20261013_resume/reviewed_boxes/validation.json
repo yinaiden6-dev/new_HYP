@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "changed_box_queries": 5,
+  "unchanged_queries_deterministically_reused": 1112,
+  "query_ids": 1117,
+  "reference_rows": 5405,
+  "unique_reference_sha256": 5330,
+  "all_pairs_have_actual_scalar_scores": true,
+  "score_pairs_per_method": 6037385,
+  "methods_replayed": 20,
+  "query_rank_records_replayed": 22340,
+  "accepted_pairs": 20329,
+  "queries_with_alignment": 599,
+  "old_affected_homography_and_penalty_replay": true,
+  "affected_homographies_refit": true,
+  "alignment_acceptance_and_subject_tokens_refit": true,
+  "shuffle_same_new_alignment_support": true,
+  "shuffle_parameters_copied_from_real_val_selection": true,
+  "validation_only_parameter_selection": true,
+  "original_B03_F03_baselines_exactly_unchanged": true,
+  "human_box_assistance_including_observed_test": true,
+  "box_GT_free_automatic_method_claimed": false,
+  "encoder_rerun": false,
+  "source_hashes_rechecked": 24,
+  "spatial_scoring_manifest": {
+    "schema": "colnomic.explicit_spatial_scoring.v1",
+    "scores": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/full_gallery_scores.npz",
+    "scores_sha256": "26b68b2835d32fa44ac95f0c397aadfedbae57aa1386dcc7e5d9c6ff8e17d3b9",
+    "alignments": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/alignments.json",
+    "alignments_sha256": "06177151c796817a8f7673debb8cad7b001ad79d3f429732ddc456021202cb57",
+    "boxes": "results/colnomic_full_audit/20261013_resume/manual_box_review/subject_boxes_after_user_review.json",
+    "boxes_sha256": "6ae58604383e1d2a07c6186859e56082a5c6d2ab3c404d1ac6d00393182057b5",
+    "selection": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/selection.json",
+    "selection_sha256": "64c78a6824bd9706dfb5c841e3c770db39543b17b4092d40c8645e74c5c837b6",
+    "score_axes": "results/colnomic_full_audit/20261013_resume/reviewed_boxes/score_axes.json",
+    "score_axes_sha256": "58d86d03524c3fa0358c5877ef57a8e53ca756ed6e8acf5911a992e105ee04d3",
+    "parameters": {
+      "gamma": 0.2,
+      "lambda_value": 0.1,
+      "lambda_index": 4,
+      "validation_metrics": {
+        "photos": 173,
+        "packages": 21,
+        "r1": 0.8092485549132948,
+        "package_macro_r1": 0.803363567649282,
+        "r5": 0.884393063583815,
+        "package_macro_r5": 0.8764928193499621,
+        "r10": 0.9248554913294798,
+        "package_macro_r10": 0.9176870748299321,
+        "mrr": 0.8406796511610961,
+        "package_macro_mrr": 0.8342328618358439
+      }
+    },
+    "loader": "scripts.colnomic_mechanism.reviewed_box_sensitivity.load_spatial_inputs",
+    "loader_return": "means, alignments keyed by (query_index, reference_index), box records keyed by photo_id, selected parameter dict",
+    "human_box_assistance": true,
+    "full1117_by5405_scalar_scores": true,
+    "encoder_rerun": false
+  },
+  "split_verification": {
+    "status": "passed",
+    "checks": {
+      "package_id": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "design_id": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "identity": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 783,
+          "val": 173,
+          "test": 161
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "source_sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 783,
+          "val": 173,
+          "test": 161
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "group_id": {
+        "passed": true,
+        "unique_counts": {
+          "train": 82,
+          "val": 18,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "positive_reference_sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "positive_reference_source_sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      }
+    },
+    "photos_per_split": {
+      "train": 783,
+      "val": 173,
+      "test": 161
+    },
+    "query_bank_sha_checked": true,
+    "positive_reference_hashes_checked": true
+  },
+  "limitations": [
+    "Human-reviewed test box is auxiliary annotation assistance; historical test already inspected.",
+    "Frozen-feature scoring is executable; historical gallery encoder reproduction remains unresolved.",
+    "The prior weighted_spatial results use old boxes/H/scores and are not reviewed-box results."
+  ]
+}

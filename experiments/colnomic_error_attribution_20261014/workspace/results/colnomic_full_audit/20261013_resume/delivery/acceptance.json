@@ -1,0 +1,342 @@
+{
+  "status": "analysis_accepted",
+  "queries": 1117,
+  "references": 5405,
+  "distinct_SHA_designs": 5330,
+  "independent_prediction_matrix_shape": [
+    1117,
+    35
+  ],
+  "repeated_predictions": 39095,
+  "original_query_and_reference_image_SHA_checks": 6522,
+  "actual_box_coordinate_revisions": 5,
+  "numeric_receipts": {
+    "original_tokens_all_matrices": {
+      "path": "delivery_verification/full_tokens/independent_validation.json",
+      "SHA256": "21379ee16595b419146f308b74655d5cc6d9f9407daad99975e80b89b494454e",
+      "numerical_or_semantic_scope": "complete scalar rankings and every exported Token comparison; independent implementation"
+    },
+    "original_BM25_fusion": {
+      "path": "checkpoint_2108/fusion_independent_validation.json",
+      "SHA256": "9e910e6b9009df5dcde23ce14d3925e6ae3d223172585978b5c22de30e0d28ba",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "original_geometry_ablation": {
+      "path": "split_geometry/validation.json",
+      "SHA256": "22d0899a37a8fd18d1e8e037936e200adfb06e4e919c5a10da86ca2787b37233",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "reviewed_geometry": {
+      "path": "reviewed_boxes/validation.json",
+      "SHA256": "3f63fcf4635f11c609e65091d010bc3e090f7922d4365e0ed68cc6ea65930dd3",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "weighted_current_boxes": {
+      "path": "checkpoint_2108/weighted_reviewed_independent_validation.json",
+      "SHA256": "d2224306d0d5da615b588d6e941bf562bcc0295213fa55dcba5398f0ced7799a",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "pure_spatial_matching_aggregation": {
+      "path": "weighted_spatial_only_reviewed/independent_verification.json",
+      "SHA256": "d2931140f3601bac1b2604824ac0a8638bd4228cb921f15182896335ca096acf",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "pooled_set_full_gallery": {
+      "path": "checkpoint_2108/set_probes_independent_validation.json",
+      "SHA256": "1a6d100a3972a996dd05e202c9d5fdcaed9c6b4469bdc1ef087de9155d0dc47f",
+      "numerical_or_semantic_scope": "scores/rankings/null predictions and standardization; no new visual-audit or causal claim"
+    },
+    "signed_layout_all_qualified": {
+      "path": "completion_audit/signed_layout_independent_validation.json",
+      "SHA256": "1a4c485e3118e1e8c61a4f6b02dbd3335ad5a5afca200bffc68e915eb378c45b",
+      "numerical_or_semantic_scope": "all symmetric synthetic position inputs, heads, selections, controls and pixels; no new encoding, no natural same-text identity Probe and no causal attribution to encoder layers"
+    },
+    "current_position_heads_nulls": {
+      "path": "positions_reviewed/independent_validation.json",
+      "SHA256": "a4363ea0dd1c9c1477917d8491e91c66c5812a7275ff2e434aef4b81b30c667c",
+      "numerical_or_semantic_scope": "reviewed box targets, all cached feature inputs, validation selections, main/null heads/predictions and all metrics"
+    },
+    "OCR_content_position_correlation": {
+      "path": "position_content_control/validation.json",
+      "SHA256": "1e0fd0f867909051516a93cdf4ee4f6202e39372a672ec4a074a11701495f7c2",
+      "numerical_or_semantic_scope": "OCR content-only correlation control for normalized vertical ordinal; not actual reading lines or layout identity separability"
+    },
+    "natural_shared_phrase_features": {
+      "path": "natural_shared_phrase_layout/independent/validation.json",
+      "SHA256": "6621bb147560dc6b3fa5d01486237def375b8a2907409b108458792dabbc8c47",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "complete_cross_token_heads": {
+      "path": "cross_token_relation/independent_validation.json",
+      "SHA256": "c7b61220d7351c4925286b9816b803dcf23bbaad03fc9303b9c07c93a0ff86a2",
+      "numerical_or_semantic_scope": "direct saved-feature scoring, independent objective refit, independent lexsort/SHA ranks, null labels, selections and conserved original mean MaxSim; finite relation statistics do not exhaust Token-set information"
+    },
+    "cross_token_training_input_join": {
+      "path": "cross_token_relation/restricted_join_independent_validation.json",
+      "SHA256": "e41a81e2d7ba15b7a00f8393974db154a2af183564746316707fd903d8ad4c48",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "controlled_details": {
+      "path": "detail_interventions/analysis/independent_validation.json",
+      "SHA256": "696677f047536eced1a73772e3579921449c1870d780d9073b89be61880a8e2b",
+      "numerical_or_semantic_scope": "independent serialized matrix reductions and saved CSV conservation; no model rerun"
+    },
+    "crossview_layout_pilot": {
+      "path": "controlled_crossview_layouts/analysis/independent_validation.json",
+      "SHA256": "d2f8298e4180c3419a23e53070309ba17d813f5fb13f395a35119e1b7a438fe0",
+      "numerical_or_semantic_scope": "cross-view3 identity pilot; no held-test group or fitted classifier; all scalar pairs and selected complete Token matrices verified independently"
+    },
+    "reviewed_crops": {
+      "path": "reviewed_crops/analysis/independent_validation.json",
+      "SHA256": "fd3033ac72994629381f4fc26db3c2a3fd0795c8b1aff0b4262a9df280fb5faf",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "current_regions": {
+      "path": "reviewed_regions/validation.json",
+      "SHA256": "647fe7d370e3a94de439db87dcb3007addf23beb95fb729ea9728e1b7011bb9e",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "current_query_region_summaries": {
+      "path": "reviewed_regions/query_summary_independent_validation.json",
+      "SHA256": "6681e53937ed473c8187cb4fd9add3c8968ca8905b34652ebc0dacb0476d689a",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "literal35_predictions_scenarios": {
+      "path": "scene35_reviewed/validation.json",
+      "SHA256": "2d41f7c48b93efb597ac6d308eaabdd9a3fcf2aa88140e5da0b88ecd472e9783",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "confirmed_face_token_controls": {
+      "path": "correspondence_controls/independent_validation.json",
+      "SHA256": "7a2656d20d050b3befede2d42e7c5ff2bae4c2a8321a182e67c0444b1e912cf3",
+      "numerical_or_semantic_scope": "all exported fixed-candidate matrices and confirmed-control ties; numerical replay does not establish semantic causality"
+    },
+    "difficulty35_intersections": {
+      "path": "difficulty_config/independent_validation.json",
+      "SHA256": "e0bca84c0b12aa6d7d91f870cbc27610c6957a6a50e415955f1861fd7c5f9eeb",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "foreground_harm_details": {
+      "path": "foreground_harms_review/validation.json",
+      "SHA256": "452a0db1056d86005d72830bc108175fc9e7089aefadcfa91b0b048b1a7aa59f",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "original_scene_and_overview_sources": {
+      "path": "visual_consolidated/validation.json",
+      "SHA256": "293ac918c53942b919513c282b27f7385e8f383027af0a46f22afc5b2ca50b40",
+      "numerical_or_semantic_scope": "see individual verifier receipt"
+    },
+    "delivered_UI_exact_filters": {
+      "path": "delivery/ui_validation.json",
+      "SHA256": "33a43e81fcdb021f9a4fe77a61e81f429fd6a2f9fe8490c08a1674f40bbfff3e",
+      "numerical_or_semantic_scope": "actual delivered JavaScript render and exact displayed query IDs against independent dossier fields; DOM event registration inspected; no deployment claim"
+    },
+    "full_one_click_frozen_entry": {
+      "path": "reproduction_support/final_full_verification.json",
+      "SHA256": "6026634679febed7962b58019147d08add3b24e216e920d97d9141d38c7b195b",
+      "numerical_or_semantic_scope": "full_frozen_numerical_verification"
+    },
+    "fresh_reference_intervention_candidates": {
+      "path": "fresh_reference_interventions/independent/validation.json",
+      "SHA256": "9a0d1cb187e902be242801d9e8150444c4da80b99ae9179ae7f88ed93adce385",
+      "numerical_or_semantic_scope": "Independent complete raw pointwise matrices (NumPy and original FP32 arithmetic), stable top2/argmax, source/runtime/base rerun, all pair/ROI/interaction/token traces"
+    },
+    "fresh_reference_identity_bootstrap": {
+      "path": "fresh_reference_interventions/interpretation_independent/validation.json",
+      "SHA256": "d18fe4a22cd1818ed46df9a25c83cbf9a09a75dd2a233fc3b7168471a46f98ae",
+      "numerical_or_semantic_scope": "Complete recomputation of all15 descriptive rows and their identity bootstrap intervals"
+    },
+    "fresh_reference_feature_changes": {
+      "path": "fresh_reference_interventions/feature_bridge/validation.json",
+      "SHA256": "586106b7b6a90b45435a6741a418f76425b1fc57d211443eb95cb2d5fb15c24b",
+      "numerical_or_semantic_scope": "Independent NumPy float64 recomputation of every original Query edit feature L2/cosine trace; bridged by twelve actual bitwise repeated bases"
+    },
+    "final_combined_entry_quick": {
+      "path": "reproduction_support/final_dispatcher_quick_validation.json",
+      "SHA256": "81583a5abd42ff5ba2d2bfd7c78fac880d93ba34d0a4dc3049b8ad4cee02cc17",
+      "numerical_or_semantic_scope": "core_quick_plus_complete_fresh_reference_verification"
+    },
+    "final_audited_scene_statistics": {
+      "path": "scene35_reviewed/final_scene_statistics/validation.json",
+      "SHA256": "1bb6fd06c1f1ac16022f79a6d7ed96b48645481dd0a862300ddb8d1952a40dc0",
+      "actual_checks": {
+        "matrix_files_byte_unchanged": true,
+        "initial_score_replay_inputs_unchanged": true,
+        "final_scene_sources_and_evidence_sha_matching": true,
+        "focused_actual_evidence_sha_matching": true,
+        "focused_harms_exact8": true,
+        "complete1117_scene_join": true,
+        "final_dimension_partitions": true
+      }
+    }
+  },
+  "split_checks": {
+    "status": "passed",
+    "checks": {
+      "package_id": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "design_id": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "identity": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 783,
+          "val": 173,
+          "test": 161
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "source_sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 783,
+          "val": 173,
+          "test": 161
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "group_id": {
+        "passed": true,
+        "unique_counts": {
+          "train": 82,
+          "val": 18,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "positive_reference_sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      },
+      "positive_reference_source_sha256": {
+        "passed": true,
+        "unique_counts": {
+          "train": 91,
+          "val": 21,
+          "test": 18
+        },
+        "intersections": {
+          "train__val": [],
+          "train__test": [],
+          "val__test": []
+        }
+      }
+    },
+    "photos_per_split": {
+      "train": 783,
+      "val": 173,
+      "test": 161
+    },
+    "query_bank_sha_checked": true,
+    "positive_reference_hashes_checked": true
+  },
+  "coverage": {
+    "data_queries": 1117,
+    "visual_overview": 1117,
+    "scene_by_dimension": {
+      "background": 1117,
+      "placement": 1117,
+      "occlusion": 1117
+    },
+    "scene_known_by_dimension": {
+      "background": 1111,
+      "placement": 1117,
+      "occlusion": 1116
+    },
+    "explicit_limited_detail_verified": 13,
+    "selected_detail_observation_records": 85,
+    "manual_semantic_ROI_queries": 4,
+    "token_queries": 1117,
+    "token_contrasts": 1648,
+    "complete_key_token_matrices": 2765,
+    "intervention_identities_by_experiment": {
+      "symmetric_layouts": 41,
+      "detail_interventions": 12,
+      "controlled_crossview_layouts": 3
+    },
+    "unique_intervention_identities": 47,
+    "deterministic_score_evidence_queries": 1117,
+    "unique_causal_failure_mechanism_coverage": "not identifiable from this audit; do not replace with1117"
+  },
+  "tests": {
+    "passed": 59,
+    "log_SHA256": "5a108ca6690502cff77d5fdf00ceb658516cddc523b951efa51f3903c8f71e41"
+  },
+  "relative_links_verified": 12358,
+  "limitations": [
+    "1117原图和关键候选overview已实际审核；细字、可见面边界或身份信息无法识别的范围保留未知，overview不等于全字转录",
+    "原测试集已观察；包装/实际设计/来源group/hash隔离已验，不额外声称未定义的设计族或形态家族隔离",
+    "4张重点图完成语义ROI定位；全量区域分区守恒但绝大多数身份关键数字/布局/图案ROI仍未定位",
+    "同面成功控制仅为确认子集，剩余未确认不等于不存在；角度/清晰度/主体大小与控制复用残留混杂",
+    "自然共享四短语不等于全文同文字/布局单因素，ROI有外部坐标选择和整图上下文影响；测试8身份、区间宽",
+    "跨视角词位置pilot仅3身份，2train/1val/0test，不能形成held-test布局Probe结论",
+    "旧图库冻结缓存可忠实评分；缺少旧processor/中间层/上游文件，唯一重新编码漂移原因尚未查明",
+    "手工修订框、裁切和遮挡改变多个因素；新Query对旧图库条件排名不当作新编码器全图库准确率",
+    "28新参考与12重新编码base及60兼容编辑臂作完整预选候选对照；worker源码SHA不同原因未知，新旧相同ordinal轴不证明物理格点相同",
+    "E0-E7与人工困难规范化是未校准分类，不与已经验证的机制混同；OCR纵向序号非真实阅读行",
+    "完成全量审计与可执行实验不表示为全部错误确定唯一原因；最终Token不能归因具体编码层",
+    "归档整包SHA/CRC及实际解包的验证由封存后的外部delivery_support receipt给出，避免把自引用SHA写入自身归档"
+  ],
+  "task_specification_SHA256": "4089e1fce20c48633251aa1ebdd3bd057a804ba6d5eaf163a8e02df465cd9db1",
+  "verifier_SHA256": "d5ef1c5a5e2b67ffeb1b014c017dae1a29de99b3431b3770adf2459102040562",
+  "originals_and_history": "original images/cache/predictions unchanged; only user-authorized annotation revisions with before/after snapshots",
+  "archive_integrity_scope": "separate final external archive-validation receipt; analysis acceptance does not assert a not-yet-built archive is valid",
+  "final_document_link_receipt_SHA256": "774a99d12a03131c02d0afbeb6703dacdffcc2b0e53766c6092fcaf3c8ce23cb",
+  "root_report_SHA256": "d5ba66fee00b486fdd8dec44fcb0295d63a464b5ab0e96bddfe4b82e1687ddd8"
+}

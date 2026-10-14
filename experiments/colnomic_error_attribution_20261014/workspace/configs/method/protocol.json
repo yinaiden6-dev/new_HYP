@@ -1,0 +1,365 @@
+{
+  "version": "reference_conditioned_release_v1",
+  "created_utc": "2026-09-25",
+  "training_dataset": "medicine",
+  "split": "package_holdout_v3_corrected",
+  "selection": "medicine validation package macro R@1, then macro MRR; final test only after configuration and checkpoints are frozen",
+  "historical_exposure": "Medicine and external baseline results have prior development exposure; no claim of historically blind evaluation",
+  "train_reference_scope": "positive reference designs of training packages only; no validation or test design participates in training",
+  "additional_training_regime": {
+    "name": "medicine_catalog",
+    "scope": "Full fixed reference catalog supplies natural Top-128 negatives, matching the original rebut candidate setting. Only training-photo labels are optimized; held photos remain excluded.",
+    "reporting": "Separate catalog-visible and strict unseen-reference tables; never present catalog-visible results as unseen-reference training."
+  },
+  "additional_adapter_location_ablation": {
+    "location": "after frozen 128D projection",
+    "parameters": 4256,
+    "reason": "Test whether the 3584D hidden adapter is necessary relative to conditioning existing embeddings; selected only on medicine validation."
+  },
+  "gallery": "complete existing gallery with existing dataset-specific deduplication and relevance",
+  "candidate_source": "natural frozen ColNomic 7B ranking; no oracle insertion",
+  "candidate_limit": 128,
+  "roma": {
+    "version": "2.0.1",
+    "resolution": 512,
+    "bidirectional": true,
+    "threshold": null,
+    "high_resolution": false,
+    "precision": "fp16",
+    "aggregation_precision": "fp32",
+    "cache": "copied descriptor containers; parity checked against uncached forward and official match API",
+    "precision_amendment": {
+      "time": 1790304072.9146307,
+      "reason": "After correcting mutable descriptor-cache reuse, FP16 is finite and exactly agrees with the same-precision uncached implementation on audited pairs. Representative FP32 versus FP16 mass differences are below 0.0002; every generated pair remains finite checked.",
+      "audit_files": [
+        "rebut/cache/intermediate/audits/roma_cache_i14s45_fp16.json",
+        "rebut/cache/intermediate/audits/roma_cache_i14s47_fp16.json",
+        "rebut/cache/intermediate/audits/roma_cache_i14s43_fp16.json"
+      ]
+    }
+  },
+  "original_internal": {
+    "bottleneck": 16,
+    "scale": 0.1,
+    "condition_gain": 59.86651818838306,
+    "adapter_lr": 0.0003,
+    "head_lr": 0.03,
+    "weight_decay": 0.001,
+    "clip_norm": 1.0,
+    "passes": 8
+  },
+  "seeds": [
+    17,
+    31,
+    53
+  ],
+  "core_comparisons": [
+    "RAW",
+    "image_only_MaxSim",
+    "CRISP",
+    "M_only",
+    "RAW_M",
+    "EXTERNAL_INTERNAL3",
+    "EXTERNAL_ADDITIVE4",
+    "EXTERNAL_PRODUCT5",
+    "EXTERNAL_WEIGHTED7",
+    "POST_REAL",
+    "POST_CONSTANT",
+    "POST_SHUFFLED"
+  ],
+  "ablations": [
+    "COST1_vs_CE",
+    "constant_or_shuffled_M_at_inference",
+    "candidate_K_8_16_32_64_128",
+    "train_budget_25_50_100",
+    "three_training_seeds",
+    "local_support_vs_scalar_support",
+    "RoMa_free_relation_reader"
+  ],
+  "strong_baselines": [
+    "all existing frozen image baselines",
+    "PP-OCRv6+BM25",
+    "BM25+image fusion",
+    "CRISP"
+  ],
+  "transfer": {
+    "datasets": [
+      "grozi",
+      "milk",
+      "forb"
+    ],
+    "checkpoint": "the identical medicine-validation-selected trained checkpoint",
+    "fine_tuning": false,
+    "parameter_selection_on_transfer": false
+  },
+  "forb_compute_budget": {
+    "queries": 8995,
+    "gallery": 43585,
+    "rerank_top_k": 32,
+    "frozen_before_new_model_transfer_results": true,
+    "note": "Same trained checkpoint. All queries retained; first-stage full gallery. Candidate K sweep is reported on medicine; GroZi/MILK also have up to 128 cached candidates."
+  },
+  "reporting": [
+    "R@1",
+    "R@5",
+    "R@10",
+    "MRR",
+    "package_or_class_macro",
+    "candidate_recall",
+    "rescued",
+    "harmed",
+    "paired_group_bootstrap",
+    "end_to_end_and_stage_timing"
+  ],
+  "adjustment_policy": "Additional variants may be developed on medicine train/validation and must be logged before test/transfer evaluation",
+  "artifacts": "final checkpoints, compact predictions, result tables, one final report, reusable feature caches, and reproducible code",
+  "additional_strong_baseline": {
+    "name": "validation-calibrated BM25 + image fusion",
+    "alpha_grid": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "selection": "medicine validation package macro R@1 then macro MRR",
+    "source": "rebut/results/baseline_selection.json",
+    "test_or_transfer_tuning": false
+  },
+  "budget_ablation_scope": "25/50/100 percent query-label budgets with the full training-design negative catalog fixed; not a reduction of the design catalog.",
+  "patch_condition_ablation": {
+    "added_before_any_trained_validation_result": true,
+    "purpose": "Use reference-conditioned query patch support u rather than a scalar M. Same hidden adapter size; normalization from eligible training pairs only.",
+    "initial_seeds": [
+      17
+    ],
+    "replication_policy": "Replicate promising validation variants before test/transfer selection.",
+    "strict_replication": {
+      "seeds": [
+        17,
+        31,
+        53
+      ],
+      "time": 1790306596.5595436,
+      "reason": "Seed 17 improved validation R@1 to 78.91% from RAW 74.83%; replicate before checkpoint selection and all new-model test/transfer scoring."
+    }
+  },
+  "practical_ocr_fusion_comparison": {
+    "visual_methods": "medicine-validation-selected checkpoints",
+    "rule": "Weighted reciprocal rank fusion with BM25 over the complete canonical gallery; offset 60",
+    "weight_grid": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "selection": "medicine validation only; same calibration for RAW image baseline",
+    "scope": "medicine validation and test; visual-only frozen transfer remains separate"
+  },
+  "forb_resampling": {
+    "queries_retained": 8995,
+    "unique_query_sha256": 8972,
+    "duplicate_pairs": 23,
+    "unit": "query image SHA-256",
+    "macro_unit": "domain",
+    "relevance": "official multiple positives preserved; official AP denominator preserved"
+  },
+  "intervention_scope": {
+    "post_constant": "Set standardized adapter condition to zero; frozen RoMa/MaxSim features otherwise unchanged.",
+    "post_shuffled": "Permute scalar or per-patch support among physical candidate IDs before prefix selection.",
+    "external_mass": "Change the global coverage summaries used by the head (M or U/V) and recompute dependent products; spatially weighted content remains fixed, so this is not complete removal of RoMa."
+  },
+  "foreground_baselines": {
+    "automatic": "Existing SAM3 highest-confidence package mask, white background, ColNomic 7B; same full gallery and current inventory.",
+    "source": "results/foreground/{sam3_auto,human_boxes}/latest.json",
+    "selection_on_new_test": false,
+    "mixed_boxes": "Historical human_boxes route contains 200 human-confirmed boxes and 800 retained SAM3 default boxes. Report as a mixed-region diagnostic, not a fully human-annotated upper bound or a fully automatic method.",
+    "human_counts_by_split": {
+      "train": 120,
+      "val": 22,
+      "test": 58
+    },
+    "default_counts_by_split": {
+      "train": 586,
+      "val": 125,
+      "test": 89
+    },
+    "provenance_verified_at": 1790309732.8546772
+  },
+  "nonlinear_head_control": {
+    "added": 1790306797.7397125,
+    "reason": "Validation shows tiny linear heads compete with token adapters; control for nonlinear scoring capacity with approximately matched parameter counts. No new-model test or transfer scores inspected.",
+    "widths": [
+      61,
+      340
+    ],
+    "mlp_parameters": [
+      4210,
+      118321
+    ],
+    "base_head_parameters": 4,
+    "seeds": [
+      17
+    ],
+    "losses": [
+      "cost",
+      "ce"
+    ],
+    "epochs": 8,
+    "inputs": "Relative RAW/M/L0 and train-standardized log mass of candidate and RAW winner",
+    "trainable_image_tokens": false,
+    "strict_replication": {
+      "width": 61,
+      "loss": "cost",
+      "seeds": [
+        17,
+        31,
+        53
+      ],
+      "time": 1790307416.3591456,
+      "reason": "Best strict external-head validation macro R@1/MRR; replicate stochastic head before model selection and test/transfer."
+    },
+    "catalog_replication": {
+      "width": 61,
+      "loss": "ce",
+      "seeds": [
+        17,
+        31,
+        53
+      ],
+      "time": 1790308873.963845,
+      "reason": "Best catalog external-head validation macro R@1/MRR among current runs; repeat before checkpoint selection and all new-model test/transfer scoring."
+    }
+  },
+  "evaluation_scheduling": {
+    "forb_gpu_query_chunks": 1024,
+    "definition": "Contiguous query batches over the full unchanged manifest. All batches are merged; duplicate/missing IDs and checkpoint signatures are checked. No model or metric is changed.",
+    "time": 1790307342.8344212,
+    "idle_gpu_work": "Training queues may fill frozen FORB geometry one query at a time when no training job can be claimed. The same GPU lease protects both kinds of work; training is checked again after each query. No labels or test metrics are used for this scheduling."
+  },
+  "reader_interventions": {
+    "arms": [
+      "SET",
+      "SPATIAL"
+    ],
+    "controls": [
+      "shuffle",
+      "rotate"
+    ],
+    "compressed": "Not applicable; omitted rather than interpreting an ignored argument as evidence of invariance."
+  },
+  "directional_overlap_control": {
+    "time": 1790308284.0713658,
+    "reason": "Real photos show partial package surfaces while reference art can show unfolded designs. Test each direction of frozen RoMa coverage and a learned asymmetric combination.",
+    "models": [
+      "RAW_U",
+      "RAW_V",
+      "ADDITIVE_UV"
+    ],
+    "controls": [
+      "U",
+      "V"
+    ],
+    "inputs": "Existing cached mean query/reference support; no new matching or teacher fitting.",
+    "selection": "Medicine validation only; declared before any new-model test/transfer evaluation."
+  },
+  "catalog_loss_ablation": {
+    "time": 1790308955.4204586,
+    "run": "catalog_post_real_ce_s17",
+    "reason": "Catalog ADDITIVE4 CE reaches validation R@1 80.95% versus COST 77.55%; add the same loss comparison for the original hidden adapter before new-model test/transfer. Training scope, architecture, seed and update budget remain fixed."
+  },
+  "online_timing": {
+    "methods": [
+      "strict primary adapter",
+      "strict external head",
+      "strict reader"
+    ],
+    "queries": 10,
+    "query_selection": "Uniform fixed seed 20260925 on medicine validation, without labels; identical queries for all methods.",
+    "hardware": "Same host and visible GPUs for all three methods.",
+    "scope": "Fresh query decode, ColNomic 7B encoding, full-gallery MaxSim, required RoMa, pooling and trained reranking; model loading recorded separately."
+  },
+  "adapter_loss_selection": {
+    "time": 1790309665.0212474,
+    "rule": "Full-budget real-condition hidden adapters include both declared COST and CE runs in validation-only family selection. Constant/shuffled conditioning, width and training-budget ablations remain diagnostic. Seed summaries are separated by loss.",
+    "replication": "If the newly declared catalog CE variant becomes the leading hidden-adapter validation result, repeat seeds 31 and 53 before freezing selection.",
+    "catalog_ce_replication": {
+      "time": 1790310578.5837636,
+      "seeds": [
+        17,
+        31,
+        53
+      ],
+      "reason": "Catalog CE seed 17 reaches validation R@1 80.27%, ahead of completed original hidden COST runs at 78.23%; execute the declared replication policy before any new-model test/transfer evaluation."
+    }
+  },
+  "gradient_replay_correction": {
+    "time": 1790310553.3805287,
+    "guard": 2e-05,
+    "correction": "Sparse VJP recomputes complete original forward candidate batches containing active derivatives, retaining batch and reference-padding shapes. Model, objective and inference are unchanged.",
+    "failed_run": "medicine_catalog_post_real_cost_s53_b100_d16",
+    "last_valid_saved_step": 1175,
+    "evidence": "Regression test matches dense objective gradients; 30 real updates on the affected GPU type have zero corrected replay error. The intermittent production mismatch did not recur in fresh legacy audit processes.",
+    "historical": "Earlier accepted updates remain within the same guard. Failed updates are never applied; existing valid checkpoints are retained.",
+    "audit": "rebut/cache/intermediate/audits/post_replay_i14s43.json"
+  },
+  "development_freeze": {
+    "time": 1790310957.9110434,
+    "expected_runs": 78,
+    "scope": "Declared training variants are closed. Complete all runs and validation before automatically freezing checkpoints, calibrating OCR fusion on validation, and dispatching test/transfer. Numerical failures may be repaired without test-driven model selection.",
+    "gpu_jobs_sha256": "a41e1bf72aa0eb55d69e02c4d8355a86bb989063512a802bf47acb5fc8578827",
+    "head_jobs_sha256": "8e61f7f9f1f577caa58d48bd69ba5e5838293f480887ae404643243ad456c253"
+  },
+  "forb_hidden_parity_correction": {
+    "time": 1790313775.7278602,
+    "queries_retained": 8995,
+    "mismatches_reencoded": 91,
+    "interrupted_query_completed": 1,
+    "finding": "Single-device shortcut differs from the frozen baseline on 91 FORB queries. On audited examples the original sharded encoder on the original GPU class restores agreement below 3e-8. No claim about the deeper kernel-level cause.",
+    "action": "Regenerate only mismatching/missing hidden states with the original sharded encoder and unchanged 1e-6 parity guard. Baseline vectors, rankings, candidates, labels and trained models remain unchanged. No affected pooled features or new-model predictions existed.",
+    "audits": [
+      "rebut/cache/intermediate/audits/forb_hidden_parity_probe.json",
+      "rebut/cache/intermediate/audits/forb_hidden_parity_i14s44_sharded.json",
+      "rebut/cache/intermediate/audits/forb_hidden_quarantine.json",
+      "rebut/cache/intermediate/audits/forb_hidden_repaired.json"
+    ],
+    "actual_vector_verification": {
+      "queries": 8995,
+      "maximum_error": 2.9802322387695312e-08,
+      "audit_sha256": "ed9b06bfee9520fa206b2f3029888d9fde02474fce24e074c2c205ae28632ead"
+    }
+  }
+}

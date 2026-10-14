@@ -1,0 +1,18 @@
+{
+  "id": "L01",
+  "model": "colnomic7b",
+  "base_id": "F03",
+  "base_result": "results/bm25_image_fusion/colnomic7b/alpha_0.5",
+  "result": "results/bm25_layout_fusion/colnomic7b/fixed_v1",
+  "score_path": "cache/scores/bm25_layout_fusion/colnomic7b/fixed_v1.pt",
+  "candidate_k": 50,
+  "layout_weight": 0.5,
+  "minimum_text_similarity": 0.5,
+  "distance_sigma_heights": 3.0,
+  "log_size_sigma": 0.5,
+  "max_hypotheses": 128,
+  "max_line_pairs": 2048,
+  "refine_hypotheses": 8,
+  "minimum_matched_lines": 3,
+  "selection": "Fixed before the first run; no training, label-based selection or parameter sweep"
+}

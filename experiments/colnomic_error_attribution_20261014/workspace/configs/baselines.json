@@ -1,0 +1,293 @@
+{
+  "protocol": "Full-1117",
+  "alpha": 0.5,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75
+  },
+  "bootstrap": {
+    "repetitions": 10000,
+    "seed": 20260924
+  },
+  "ocr_python": ".venvs/ocr/bin/python",
+  "models": {
+    "colpali": {
+      "family": "colpali",
+      "image_model": {
+        "repo": "vidore/colpali-v1.3-hf",
+        "revision": "7d3c8ab1c1908b32d701308fb1dfb2968d150c67",
+        "revision_source": "historical baseline metadata"
+      },
+      "text_model": {
+        "repo": "vidore/colpali-v1.3-hf",
+        "revision": "7d3c8ab1c1908b32d701308fb1dfb2968d150c67",
+        "revision_source": "historical baseline metadata"
+      },
+      "image_contract": {
+        "recipe": "h593_encoder_v1",
+        "family": "colpali",
+        "repo": "vidore/colpali-v1.3-hf",
+        "revision": "7d3c8ab1c1908b32d701308fb1dfb2968d150c67",
+        "view": "image",
+        "image_sha256": null,
+        "dtype": "torch.float16",
+        "text": "",
+        "checkpoint_mapping": "transformers5_colpali_v1"
+      },
+      "text_contract": {
+        "recipe": "release.ocr_text_embeddings.v1",
+        "view": "text",
+        "source": "PP-OCRv6 text",
+        "field": "text",
+        "preprocessing": "verbatim UTF-8; preserve case and newlines",
+        "truncation": false,
+        "chunking": false,
+        "images_supplied": false,
+        "same_recipe_for_photos_and_references": true,
+        "compute_dtype": "torch.float16",
+        "context_limit": 8192,
+        "empty_text": "has_text=false; zero dense vector or empty multi-vector; no model call",
+        "output_dtype": "torch.float16",
+        "query_prefix": "Question: ",
+        "query_augmentation_token": "<pad>",
+        "augmentation_repeats": 10,
+        "pooling": "all attended token vectors; model L2 normalization; remove batch padding"
+      },
+      "checkpoint": "weights/colpali"
+    },
+    "Qwen3-VL-Embedding-2B": {
+      "family": "qwen3",
+      "image_model": {
+        "repo": "Qwen/Qwen3-VL-Embedding-2B",
+        "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda"
+      },
+      "text_model": {
+        "repo": "Qwen/Qwen3-VL-Embedding-2B",
+        "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda"
+      },
+      "image_contract": {
+        "recipe": "h593_encoder_v1",
+        "family": "qwen3",
+        "repo": "Qwen/Qwen3-VL-Embedding-2B",
+        "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+        "view": "image",
+        "image_sha256": null,
+        "dtype": "torch.float16",
+        "text": "",
+        "patch_projection": "single_patch_linear_v1"
+      },
+      "text_contract": {
+        "recipe": "release.ocr_text_embeddings.v1",
+        "view": "text",
+        "source": "PP-OCRv6 text",
+        "field": "text",
+        "preprocessing": "verbatim UTF-8; preserve case and newlines",
+        "truncation": false,
+        "chunking": false,
+        "images_supplied": false,
+        "same_recipe_for_photos_and_references": true,
+        "compute_dtype": "torch.float16",
+        "context_limit": 32768,
+        "empty_text": "has_text=false; zero dense vector or empty multi-vector; no model call",
+        "output_dtype": "torch.float32",
+        "instruction": "Represent the user's input.",
+        "template": "official chat template with add_generation_prompt=True",
+        "pooling": "official last attended token; L2 normalize in model dtype, then cast to float32"
+      },
+      "checkpoint": "weights/qwen3vl_embedding_2b"
+    },
+    "colnomic3b": {
+      "family": "colnomic_3b",
+      "image_model": {
+        "repo": "nomic-ai/colnomic-embed-multimodal-3b",
+        "revision": "86627b4a9b0cade577851a70afa469084f9863a4",
+        "base_model": "vidore/colqwen2.5-base"
+      },
+      "text_model": {
+        "repo": "nomic-ai/colnomic-embed-multimodal-3b",
+        "revision": "86627b4a9b0cade577851a70afa469084f9863a4",
+        "base_model": "vidore/colqwen2.5-base",
+        "base_revision": "92908120384b7a2110c5beda3ab29cbdb2c08e49"
+      },
+      "image_contract": {
+        "recipe": "h593_encoder_v1",
+        "family": "colnomic_3b",
+        "repo": "nomic-ai/colnomic-embed-multimodal-3b",
+        "revision": "86627b4a9b0cade577851a70afa469084f9863a4",
+        "view": "image",
+        "image_sha256": null,
+        "dtype": "torch.bfloat16",
+        "text": "",
+        "attention": "fp32_sdpa_on_pre_ampere_v1"
+      },
+      "text_contract": {
+        "recipe": "release.ocr_text_embeddings.v1",
+        "view": "text",
+        "source": "PP-OCRv6 text",
+        "field": "text",
+        "preprocessing": "verbatim UTF-8; preserve case and newlines",
+        "truncation": false,
+        "chunking": false,
+        "images_supplied": false,
+        "same_recipe_for_photos_and_references": true,
+        "compute_dtype": "torch.bfloat16",
+        "context_limit": 128000,
+        "empty_text": "has_text=false; zero dense vector or empty multi-vector; no model call",
+        "output_dtype": "torch.float16",
+        "query_prefix": "",
+        "query_augmentation_token": "<|endoftext|>",
+        "augmentation_repeats": 10,
+        "pooling": "all attended token vectors; model L2 normalization; remove batch padding",
+        "attention": "fp32_sdpa_on_pre_ampere_v1"
+      },
+      "checkpoint": "weights/colnomic3b/adapter",
+      "base_checkpoint": "weights/colnomic3b/base",
+      "base_revision": "92908120384b7a2110c5beda3ab29cbdb2c08e49"
+    },
+    "colnomic7b": {
+      "family": "colnomic_7b",
+      "image_model": {
+        "repo": "nomic-ai/colnomic-embed-multimodal-7b",
+        "revision": "09dbc9502b66605d5be56d2226019b49c9fd3293",
+        "base_model": "nomic-ai/colqwen2.5-7B-base"
+      },
+      "text_model": {
+        "repo": "nomic-ai/colnomic-embed-multimodal-7b",
+        "revision": "09dbc9502b66605d5be56d2226019b49c9fd3293",
+        "base_model": "nomic-ai/colqwen2.5-7B-base",
+        "base_revision": "15e77de3944c94363b38ff3b53844f066e6fcd19"
+      },
+      "image_contract": {
+        "recipe": "h593_encoder_v1",
+        "family": "colnomic_7b",
+        "repo": "nomic-ai/colnomic-embed-multimodal-7b",
+        "revision": "09dbc9502b66605d5be56d2226019b49c9fd3293",
+        "view": "image",
+        "image_sha256": null,
+        "dtype": "torch.bfloat16",
+        "text": "",
+        "attention": "fp32_sdpa_on_pre_ampere_v1"
+      },
+      "text_contract": {
+        "recipe": "release.ocr_text_embeddings.v1",
+        "view": "text",
+        "source": "PP-OCRv6 text",
+        "field": "text",
+        "preprocessing": "verbatim UTF-8; preserve case and newlines",
+        "truncation": false,
+        "chunking": false,
+        "images_supplied": false,
+        "same_recipe_for_photos_and_references": true,
+        "compute_dtype": "torch.bfloat16",
+        "context_limit": 128000,
+        "empty_text": "has_text=false; zero dense vector or empty multi-vector; no model call",
+        "output_dtype": "torch.float16",
+        "query_prefix": "",
+        "query_augmentation_token": "<|endoftext|>",
+        "augmentation_repeats": 10,
+        "pooling": "all attended token vectors; model L2 normalization; remove batch padding",
+        "attention": "fp32_sdpa_on_pre_ampere_v1"
+      },
+      "checkpoint": "weights/colnomic7b/adapter",
+      "base_checkpoint": "weights/colnomic7b/base",
+      "base_revision": "15e77de3944c94363b38ff3b53844f066e6fcd19"
+    },
+    "dinov3": {
+      "family": "dinov3",
+      "image_model": {
+        "repo": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+        "revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51"
+      },
+      "image_contract": {
+        "recipe": "release.dense_images.v1",
+        "family": "dinov3",
+        "repo": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+        "revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51",
+        "view": "image",
+        "text": "",
+        "image_sha256": null,
+        "dtype": "torch.float32",
+        "output_dtype": "torch.float32",
+        "embedding_dimension": 1024,
+        "pooling": "last hidden state CLS; FP32 L2 normalization",
+        "processor_backend": "torchvision",
+        "processor_kwargs": {},
+        "input": "full RGB image; no subject crop"
+      },
+      "checkpoint": "weights/dinov3"
+    },
+    "siglip2": {
+      "family": "siglip2",
+      "image_model": {
+        "repo": "google/siglip2-large-patch16-256",
+        "revision": "787800c8990e6f058423089178e718139608408c"
+      },
+      "image_contract": {
+        "recipe": "release.dense_images.v1",
+        "family": "siglip2",
+        "repo": "google/siglip2-large-patch16-256",
+        "revision": "787800c8990e6f058423089178e718139608408c",
+        "view": "image",
+        "text": "",
+        "image_sha256": null,
+        "dtype": "torch.float16",
+        "output_dtype": "torch.float32",
+        "embedding_dimension": 1024,
+        "pooling": "official vision attention pooling; FP32 L2 normalization",
+        "processor_backend": "pil",
+        "processor_kwargs": {},
+        "input": "full RGB image; no subject crop"
+      },
+      "checkpoint": "weights/siglip2"
+    },
+    "colqwen2.5-v0.2": {
+      "family": "colqwen2_5",
+      "image_model": {
+        "repo": "vidore/colqwen2.5-v0.2",
+        "revision": "dcbe8d9cede518bce830488364ba0e40c873645b",
+        "base_model": "vidore/colqwen2.5-base",
+        "base_revision": "92908120384b7a2110c5beda3ab29cbdb2c08e49"
+      },
+      "text_model": {
+        "repo": "vidore/colqwen2.5-v0.2",
+        "revision": "dcbe8d9cede518bce830488364ba0e40c873645b",
+        "base_model": "vidore/colqwen2.5-base",
+        "base_revision": "92908120384b7a2110c5beda3ab29cbdb2c08e49"
+      },
+      "image_contract": {
+        "recipe": "h593_encoder_v1",
+        "family": "colqwen2_5",
+        "repo": "vidore/colqwen2.5-v0.2",
+        "revision": "dcbe8d9cede518bce830488364ba0e40c873645b",
+        "view": "image",
+        "image_sha256": null,
+        "dtype": "torch.bfloat16",
+        "text": "",
+        "attention": "fp32_sdpa_on_pre_ampere_v1"
+      },
+      "text_contract": {
+        "recipe": "release.ocr_text_embeddings.v1",
+        "view": "text",
+        "source": "PP-OCRv6 text",
+        "field": "text",
+        "preprocessing": "verbatim UTF-8; preserve case and newlines",
+        "truncation": false,
+        "chunking": false,
+        "images_supplied": false,
+        "same_recipe_for_photos_and_references": true,
+        "compute_dtype": "torch.bfloat16",
+        "context_limit": 128000,
+        "empty_text": "has_text=false; zero dense vector or empty multi-vector; no model call",
+        "output_dtype": "torch.float16",
+        "query_prefix": "Query: ",
+        "query_augmentation_token": "<|endoftext|>",
+        "augmentation_repeats": 10,
+        "pooling": "all attended token vectors; model L2 normalization; remove batch padding",
+        "attention": "fp32_sdpa_on_pre_ampere_v1"
+      },
+      "checkpoint": "weights/colqwen2.5-v0.2/adapter",
+      "base_checkpoint": "weights/colqwen2.5-v0.2/base",
+      "base_revision": "92908120384b7a2110c5beda3ab29cbdb2c08e49"
+    }
+  }
+}

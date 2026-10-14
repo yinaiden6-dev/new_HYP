@@ -8,6 +8,8 @@ Reference-conditioned Joint Evidence Calibration for Fine-grained Retrieval.
 
 ## 从这里阅读
 
+- **[2026-10-14 ColNomic 完整错误分析与归因实验](experiments/colnomic_error_attribution_20261014/README.md)**：1,117 查询、35 配置、39,095 条排名与实际解包 SHA 验收通过；完整 33.29 GB 原图、embedding、矩阵及对照归档见同仓库 Release。语义 ROI 仅 4 张、旧图库编码来源未完全复现等限制保留。
+
 - **[2026-10-09 OCR双模态空间支持首轮](backup/ocr_support_pilot128_20261009/README.md)**：固定128张、五臂原分组五折，Paddle文字与RoMa空间支持；真实接口通过，任务已提交，增益待验收。
 
 - **[2026-10-09 全593上游归因扩展：程序与提交快照](backup/m_upstream_all593_20261009/README.md)**：相位／幅度／配准／结构绑定60条件扩至自然C128，复用已有593缓存；14阶段任务链已提交，新增结论待验收。

@@ -1,0 +1,5952 @@
+[
+  {
+    "id": "eval_d4bbb388de531312ea23",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_b87904b960a286db5181",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_0ee7ac7e4f6d1d84c0c2",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_06f0765cacb4fdd5e4c8",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_f8bcf03e9c44be5ab837",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_ce_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_ce_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_2b84e7e0dca69ffc4090",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_fc6d1b58d882f1ed64e1",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s53_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s53_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_35e8e23832d83b4036c9",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_ff5b2236480d5d9bc3cd",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_constant_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_constant_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_eef02cce2ae6c924bf14",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_shuffled_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_shuffled_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_78a1478a264b1fd08399",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_a52547369721b4f94328",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_2107811b31c4a5c2e842",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_ae83bd7913d495b02662",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_constant_cost_s17_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_constant_cost_s17_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_feec85e9e59edbc436b7",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_shuffled_cost_s17_b100_d16",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_shuffled_cost_s17_b100_d16",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_5045ff9bd40c2cf8bb4f",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_e6018e9ca0448b806e43",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_00a0d96cb85c6f575a60",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_262b585cb10b579acbed",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_682de4544a63ebe7321f",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_060f0ef4510cc19e4a00",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_00b810741e5811373c8f",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s17_b25_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s17_b25_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_5348d547578a93a738b1",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s17_b50_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s17_b50_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_dd1339b1c06b65c49632",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s17_b100_d8",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s17_b100_d8",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_6df47b196b973a881d93",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s17_b100_d32",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s17_b100_d32",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_452bf3d9479714240db4",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_COMPRESSED_s17",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_3e2e813a9dfb289de4d5",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_SET_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_SET_s17",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_b85550fa11bda384fef9",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_SET_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffle"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_SET_s17",
+      "k": 128,
+      "intervention": "shuffle"
+    }
+  },
+  {
+    "id": "eval_c327beae4ec4922f8a78",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_SET_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "rotate"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_SET_s17",
+      "k": 128,
+      "intervention": "rotate"
+    }
+  },
+  {
+    "id": "eval_30a65c1a621f083ee103",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_SPATIAL_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_SPATIAL_s17",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_0cac87ee86cf2f0e929b",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_SPATIAL_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffle"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_SPATIAL_s17",
+      "k": 128,
+      "intervention": "shuffle"
+    }
+  },
+  {
+    "id": "eval_5f0f85300f107904bbe0",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_SPATIAL_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "rotate"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_SPATIAL_s17",
+      "k": 128,
+      "intervention": "rotate"
+    }
+  },
+  {
+    "id": "eval_bbc98ce9d5a6a361353b",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_c2ee2a9ec6a782c9bd08",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_SET_s17",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_SET_s17",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_12764d9374868381516e",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_SET_s17",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffle"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_SET_s17",
+      "k": 64,
+      "intervention": "shuffle"
+    }
+  },
+  {
+    "id": "eval_6811cb714033d6950e1c",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_SET_s17",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "rotate"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_SET_s17",
+      "k": 64,
+      "intervention": "rotate"
+    }
+  },
+  {
+    "id": "eval_aeaed588bf691e156981",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_SPATIAL_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_SPATIAL_s17",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_494ce19b8582d6a60309",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_SPATIAL_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffle"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_SPATIAL_s17",
+      "k": 32,
+      "intervention": "shuffle"
+    }
+  },
+  {
+    "id": "eval_6c3829119cb381633344",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_SPATIAL_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "rotate"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_SPATIAL_s17",
+      "k": 32,
+      "intervention": "rotate"
+    }
+  },
+  {
+    "id": "eval_8f7fdefdc2762d481fb0",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_8a4f363e91884be0cba2",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_48fc831eec34c19cdd6c",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s53_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_35e61616bdc91e192d4c",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_e4e6ce9496a8766f5e39",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_993477782d2f5d5c7ef5_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_0cc13819c11e4205454a",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_74eb692faa18b34a2aaf",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_d49ef6f38af8b8b36ba4",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_b64c51f8169719c406cb",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_1ab986c067cd1c5cb6d1",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "constant"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": "constant"
+    }
+  },
+  {
+    "id": "eval_ab70e4bb8c413676e5eb",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "post_real_cost_s53_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffled"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "post_real_cost_s53_b100_d16",
+      "k": 128,
+      "intervention": "shuffled"
+    }
+  },
+  {
+    "id": "eval_710327ff21aba2d59478",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_7846eb336b3f559e263f",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_56926e802d6fb76691f2_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_03a64d1833441cd10c94",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_5eb249b6ce3c5e21da8b",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_27be9e9097a227b7370e",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_30a42b4278935313006d",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_bfe80b8c5926943d1f0a",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "constant"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": "constant"
+    }
+  },
+  {
+    "id": "eval_e0d77f3b1c5e0f496223",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "patch_post_real_cost_s31_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffled"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "patch_post_real_cost_s31_b100_d16",
+      "k": 128,
+      "intervention": "shuffled"
+    }
+  },
+  {
+    "id": "eval_bc9d60c31fe433d3fb1f",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_a601cefa4fe5b3d0abaa",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_8f56e432b22504233eb5_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_59f5c6671be46353bf22",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_507776b78f964498cd9a",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_eaf00ce28603d553c89b",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_4daf1ae1dbd8d928bbf4",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_9bcae883e2d08fbb5af3",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "constant"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": "constant"
+    }
+  },
+  {
+    "id": "eval_870394048e1b27754590",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffled"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_patch_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": "shuffled"
+    }
+  },
+  {
+    "id": "eval_eeb00029199fbce41a90",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_da39c90361d7fc045b58",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_ba93c09376181335d2ba_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_5464ebb2d5e331db5d30",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_f0f88b121538cda3f73d",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_9e03d64b749c7adb938b",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_7045baaf07c9be8c47e1",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_3e7b130a5d63f5f5edc3",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "constant"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 128,
+      "intervention": "constant"
+    }
+  },
+  {
+    "id": "eval_4b7281ee0d7085a2e395",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_post_real_ce_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffled"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_post_real_ce_s17_b100_d16",
+      "k": 128,
+      "intervention": "shuffled"
+    }
+  },
+  {
+    "id": "eval_07a67367a26d12c702f1",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_7fb4e133821746a5745d",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_6e008fd55862f830b52a_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_bf5e7c79e251ad34919f",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_78e6895fbfa3e8aba325",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_ddbc13838013eb7103b1",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_94150934c225d74adad5",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_a9dba35f2f129303b05e",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "constant"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": "constant"
+    }
+  },
+  {
+    "id": "eval_2fc10155d8b86e90b412",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffled"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": "shuffled"
+    }
+  },
+  {
+    "id": "eval_b60be8fa1f6ef408e1dc",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_295bb104268d1d79babb",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_7a1510347c12b2eb9bb8_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_d28d792041cbd5026987",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_b4ba7e0735975f395e7b",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_03c775c9952f03a0c127",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_80a78891d25f5c09a6cf",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_22385d64a3e0696c5ff7",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "constant"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": "constant"
+    }
+  },
+  {
+    "id": "eval_e591a28a48f439df94e2",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "embedding_post_real_cost_s17_b100_d16",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0",
+      "--intervention",
+      "shuffled"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "embedding_post_real_cost_s17_b100_d16",
+      "k": 128,
+      "intervention": "shuffled"
+    }
+  },
+  {
+    "id": "eval_8a132c803afcf193064a",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_facf9a9fb29bb65a5665",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 128,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_23e2c847012d0a9e7705_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_0a2e873547ad922d3290",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_COMPRESSED_s17",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_0a473897884f395702fa",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_COMPRESSED_s17",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_a3b6ea7e06dc0565fcfc",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_51b47b9f8dc5e5c7f749",
+    "requires": {
+      "medicine": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine",
+      "--split",
+      "test",
+      "--run",
+      "reader_COMPRESSED_s17",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine",
+      "split": "test",
+      "run": "reader_COMPRESSED_s17",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_8213f7786439164d758a",
+    "requires": {
+      "grozi": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "grozi",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "grozi",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_35ec96a233b4ea6fdf80",
+    "requires": {
+      "milk": [
+        "transfer"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "milk",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "8",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "milk",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 8,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q0_1024",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      0,
+      1024
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "0",
+      "--query-stop",
+      "1024"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        0,
+        1024
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q1024_2048",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      1024,
+      2048
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "1024",
+      "--query-stop",
+      "2048"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        1024,
+        2048
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q2048_3072",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      2048,
+      3072
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "2048",
+      "--query-stop",
+      "3072"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        2048,
+        3072
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q3072_4096",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      3072,
+      4096
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "3072",
+      "--query-stop",
+      "4096"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        3072,
+        4096
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q4096_5120",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      4096,
+      5120
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "4096",
+      "--query-stop",
+      "5120"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        4096,
+        5120
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q5120_6144",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      5120,
+      6144
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "5120",
+      "--query-stop",
+      "6144"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        5120,
+        6144
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q6144_7168",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      6144,
+      7168
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "6144",
+      "--query-stop",
+      "7168"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        6144,
+        7168
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q7168_8192",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      7168,
+      8192
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "7168",
+      "--query-stop",
+      "8192"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        7168,
+        8192
+      ]
+    }
+  },
+  {
+    "id": "eval_63d62e390ba4c4552b9a_q8192_8995",
+    "requires": {
+      "forb32": [
+        "transfer"
+      ]
+    },
+    "query_range": [
+      8192,
+      8995
+    ],
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "forb32",
+      "--split",
+      "transfer",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0",
+      "--query-start",
+      "8192",
+      "--query-stop",
+      "8995"
+    ],
+    "description": {
+      "dataset": "forb32",
+      "split": "transfer",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null,
+      "query_range": [
+        8192,
+        8995
+      ]
+    }
+  },
+  {
+    "id": "eval_64ba539786dd1dae2319",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "16",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 16,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_eab5d7f279878c62bd8f",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "32",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 32,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_e582a993fb59ae51c9bb",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "64",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 64,
+      "intervention": null
+    }
+  },
+  {
+    "id": "eval_4eaadecdea7ac05cfa0d",
+    "requires": {
+      "medicine_catalog": [
+        "test"
+      ]
+    },
+    "arguments": [
+      "-m",
+      "rebut.train.evaluate",
+      "--dataset",
+      "medicine_catalog",
+      "--split",
+      "test",
+      "--run",
+      "medicine_catalog_reader_COMPRESSED_s17",
+      "--k",
+      "128",
+      "--device",
+      "cuda:0"
+    ],
+    "description": {
+      "dataset": "medicine_catalog",
+      "split": "test",
+      "run": "medicine_catalog_reader_COMPRESSED_s17",
+      "k": 128,
+      "intervention": null
+    }
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "schema": "colnomic.consolidated_actual_vision.v1",
+  "queries": 1117,
+  "unique_queries": 1117,
+  "candidate_overview_reviewed": 1117,
+  "candidate_overview_missing": [],
+  "scene_audited_by_dimension": {
+    "background": 1117,
+    "placement": 1117,
+    "occlusion": 1117
+  },
+  "scene_known_by_dimension": {
+    "background": 1111,
+    "placement": 1117,
+    "occlusion": 1116
+  },
+  "scene_unreviewed_ids": {
+    "background": [],
+    "placement": [],
+    "occlusion": []
+  },
+  "scene_uncertain_ids": {
+    "background": [
+      "photo_045575d4d47e1205",
+      "photo_12b37e2d68711d62",
+      "photo_3e01b05369dd6cf5",
+      "photo_46b3373ecce22234",
+      "photo_4920adb7ad190a5f",
+      "photo_813fb072c0f3b380"
+    ],
+    "placement": [],
+    "occlusion": [
+      "photo_ca454f8a9d866abb"
+    ]
+  },
+  "scene_counts": {
+    "background": {
+      "single_object": 858,
+      "multi_object": 253,
+      "unclear": 6
+    },
+    "placement": {
+      "tabletop": 601,
+      "handheld": 516
+    },
+    "occlusion": {
+      "none": 1072,
+      "foreground": 44,
+      "unclear": 1
+    }
+  },
+  "all_three_scene_audited": 1117,
+  "all_three_scene_known": 1110,
+  "explicit_fine_detail_verified": 13,
+  "selected_detail_observation_records": 85,
+  "original_images_sha_verified": 1117,
+  "objective_outcomes": {
+    "both_correct": 829,
+    "image_wrong_fusion_correct": 143,
+    "both_wrong": 104,
+    "image_correct_fusion_wrong": 41
+  },
+  "primary_source_groups": {
+    "photo_0007f82bf7613055.json": 1,
+    "photo_002246f5f205397a.json": 1,
+    "batches_001_004.json": 14,
+    "batches_005_008.json": 13,
+    "visual_audit": 204,
+    "results": 329,
+    "zoom_photo_045575d4d47e1205.json": 1,
+    "full_tokens_agent": 90,
+    "geometry_agent": 51,
+    "tokens_resume": 260,
+    "root_resume": 77,
+    "scene35_agent": 76
+  },
+  "same_face_success_controls": {
+    "missing_confirmed_same_face_success": 251,
+    "actual_same_face_success_quality_not_matched": 37
+  },
+  "mechanism_limit": "1117 observed images does not imply 1117 established mechanisms",
+  "narrow_package_count_policy": "token-agent package counts retained in raw records; actual scene rechecks supply background",
+  "same_face_pair_comparisons_actually_viewed": 49
+}
