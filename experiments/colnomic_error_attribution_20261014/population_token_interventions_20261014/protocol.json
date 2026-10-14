@@ -1,0 +1,43 @@
+{
+  "frozen_original_features": true,
+  "scope": "All1117 queries and5405 physical references; SHA deduplicated ranks.",
+  "methods": [
+    "full",
+    "center",
+    "overlap50",
+    "fully_inside",
+    "area_fraction",
+    "background",
+    "random_00",
+    "random_01",
+    "random_02",
+    "random_03",
+    "random_04",
+    "random_05",
+    "random_06",
+    "random_07",
+    "random_08",
+    "random_09"
+  ],
+  "regional_definition": "Keep template tokens plus weighted/selected visual tokens. Normalize by sum of query weights; use all original valid reference tokens. Empty visual regions retain templates and are flagged.",
+  "random_control": "Ten fixed seeds, per-query SHA-derived generator; sample same number of visual tokens as center subject mask; retain identical template tokens.",
+  "weights": [
+    0,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1
+  ],
+  "selection": "Choose center mixing weight using validation-package macro Top1 then macro MRR then smaller weight. Repeat for image, original fusion, corrected-presence fusion, numeric fusion. Apply that weight to all random masks. Other mask definitions are sensitivity analyses, not candidates for selection.",
+  "fusion": "Image mixture with fresh per-query population z score and unchanged text z-score; also fixed original image mean/std to isolate normalization.",
+  "ocr_intervention": "Remove one most-negative or all negative OCR lines for baseline best-positive vs best-negative pair; ten deterministic same-count random deletions; original BM25, corrected presence and numeric presence; frozen reference corpus and IDF. Full-gallery reranking, both fixed and recomputed text normalization.",
+  "oracle_warning": "OCR line selection uses truth and is an oracle diagnostic, not a deployable method. Subject boxes are human-reviewed supervision. No test tuning; historical splits already inspected, not a fresh blind test.",
+  "evidence_boundary": "Frozen readout interventions test score aggregation sufficiency, not image causality or universal presence/absence of encoder identity information.",
+  "input_sha256": {
+    "masks.npz": "edc26ddd3d5cac342ed2eeeef33cc019ed00c5911e20f8260ae0050809911d1c",
+    "cohort.json": "8965623d03ce9f4c73563d138487fc5ad976ad706a0f4d44a07980e2b3c2f985"
+  }
+}

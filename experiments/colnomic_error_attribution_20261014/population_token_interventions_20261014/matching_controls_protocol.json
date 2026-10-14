@@ -1,0 +1,22 @@
+{
+  "purpose": "Disentangle31 full-gallery image harms after subject filtering: boundary inclusion, query-template proportion, and reference-template matching.",
+  "scope": "All1117 and5405; prior human masks and original frozen features. Secondary diagnostic prespecified before new results; no tuning.",
+  "methods": [
+    "full",
+    "foreground_only",
+    "background_only",
+    "query_template_only",
+    "query_visual_only",
+    "center_fixed_template_fraction",
+    "any_overlap_template",
+    "full_refvisual",
+    "center_refvisual",
+    "query_visual_refvisual"
+  ],
+  "interpretation": [
+    "Background-position score contribution is not evidence that background pixels contain identity.",
+    "Template fraction control preserves original total query-template mass.",
+    "Reference visual-only pooling changes MaxSim candidate domain, not encoder.",
+    "Any overlap includes all query patches intersecting the subject; does not prove optical ownership."
+  ]
+}

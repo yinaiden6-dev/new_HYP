@@ -1,0 +1,51 @@
+{
+  "scope": {
+    "queries": 1117,
+    "packages": 130,
+    "reference_rows": 5405,
+    "unique_sha": 5330,
+    "baseline_error_union": 292,
+    "four_baseline_success_controls": 825
+  },
+  "new_decision_counts": {
+    "token": 185422,
+    "ocr": 154146,
+    "matching": 11170
+  },
+  "random_subset_correct": [
+    844,
+    834,
+    839,
+    842,
+    837,
+    832,
+    824,
+    840,
+    828,
+    838
+  ],
+  "free_weight_random_wrong_success": 1233,
+  "free_weight_random_wrong_trials": 1235,
+  "stage_counts": {
+    "original": {
+      "image_and_text_both_favor_wrong": 64,
+      "text_overturns_image_pair": 55,
+      "text_support_insufficient": 24,
+      "text_tie_propagates_image_error": 2
+    },
+    "center_presence": {
+      "image_and_text_both_favor_wrong": 11,
+      "text_tie_propagates_image_error": 39,
+      "text_support_insufficient": 23,
+      "text_overturns_image_pair": 18
+    },
+    "numeric": {
+      "image_and_text_both_favor_wrong": 18,
+      "text_tie_propagates_image_error": 37,
+      "text_support_insufficient": 19,
+      "text_overturns_image_pair": 14
+    }
+  },
+  "matching_prior31_union_recovered": 7,
+  "prior31_not_recovered_by_these_controls": 24
+}

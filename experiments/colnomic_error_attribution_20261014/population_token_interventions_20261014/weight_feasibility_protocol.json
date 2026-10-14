@@ -1,0 +1,10 @@
+{
+  "scope": "All247 original image failures;870 successes already have uniform-weight witnesses.",
+  "optimization": "For the sole positive reference SHA, maximize minimum margin over every wrong reference with w>=0,sum(w)=1. All tokens and subject+template support. Cutting plane, full-gallery primal verification and convex mixture of negative constraints as independent dual bound.",
+  "tolerance": 1e-06,
+  "limits": [
+    "Truth-dependent per-photo oracle; no deployable method or generalization claim.",
+    "Positive witness does not establish semantically meaningful identity coding; nuisance correlations can be exploited.",
+    "Negative upper bound rules out this query-weighted MaxSim family only, not all matchers, intermediate layers or encoder information."
+  ]
+}
