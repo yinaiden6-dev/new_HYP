@@ -1,0 +1,35 @@
+{
+  "stage": "Pure-image full-gallery reference-input verification; not the final OCR joint experiment.",
+  "query": "All1117 frozen original photo embeddings, all original reference candidates, SHA deduplication identical to original evaluation.",
+  "reference_arms": [
+    "historical",
+    "current_base",
+    "high_detail",
+    "same_grid_low_detail"
+  ],
+  "input_budgets": {
+    "current_base": 602112,
+    "high_detail": 1204224
+  },
+  "low_detail_control": "Bicubic enlargement of current-base normalized processor RGB into exactly the high-detail input token grid, without additional source pixels.",
+  "selection": "No per-query reference selection, no oracle candidate substitution, no parameter choice based on test labels. The diagnostic pool results motivated this prespecified validation.",
+  "reuse": {
+    "distinct_sha": 5330,
+    "existing_sha": 275,
+    "new_encodings": 5055
+  },
+  "validation": [
+    "Validate every raw source SHA and historical embedding hash.",
+    "Repeat first and last new original encoding in each shard; all new same-budget baselines use the exact diagnostic-pool single-image runtime recipe.",
+    "Validate high/low input IDs and grid equality.",
+    "Recompute all1117 original historical scores and ranks; compare to original cache.",
+    "Evaluate original870 successful queries, original247 failures, frozen136 residual failures, fixed train/validation/test and package macro metrics.",
+    "Independent stable SHA-deduplicated ranking and sampled FP64 scores before completion."
+  ],
+  "limits": [
+    "Historical reference-generation recipe has not been recovered; current_base is required for valid within-runtime resolution comparisons.",
+    "A higher rank or repair does not alone identify semantic information loss in the encoder.",
+    "Previously inspected test examples mean this is exploratory validation, not a pristine held-out confirmatory benchmark."
+  ],
+  "manifest_sha256": "c907d1cb5a9394d8ddba064ff3bf373884c8542fc2b4aeb8513d1afb4aa3fc86"
+}

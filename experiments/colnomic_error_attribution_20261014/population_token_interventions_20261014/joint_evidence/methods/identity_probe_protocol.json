@@ -1,0 +1,87 @@
+{
+  "created_before_fitting": true,
+  "question": "Can a small shared readout of full frozen token vectors improve natural positive/negative discrimination for unseen source/confusion components?",
+  "scope": "Historical three-fold cross-fit on 1860 fixed pairs / 1117 photos, not a fresh blind test and not full-gallery retrieval.",
+  "features": "Original cached valid 128-dimensional tokens only, including valid template tokens; no OCR, coordinates, positions, IDs, order, ROI or edited pixels enter readout.",
+  "architecture": "Shared bias-free Linear(128,16), tanh, L2 normalization; directional mean MaxSim; residual baseline + beta * learned score.",
+  "parameters": 2048,
+  "epochs": 4,
+  "seeds": [
+    17,
+    31,
+    53
+  ],
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "loss": "pair logistic softplus(-target*(baseline_margin + .2*learned_margin)/.03), equal pair weight",
+  "selection": "Best validation positive-component macro accuracy, averaging pairs within photo first; epoch0..4 and beta in [0,.05,.1,.2,.5,1]. Ties prefer beta0, then smaller beta, then earlier epoch. Separate head-only selection on same validation metric.",
+  "labels": "True positive-versus-negative. Null controls flip signs for exactly half of training positive components, deterministically per seed/fold; all rows in a component share a flip. Validation and test labels stay true for both pipelines.",
+  "controls": [
+    "original MaxSim",
+    "random untrained projection",
+    "matched shuffled-label training"
+  ],
+  "splits": "Union SHA duplicates, DailyMed set, source group, positive equivalents, human confusion edges and all focal39 confusions. Train/validation/test candidate components are disjoint, including negatives. Grouping is conservative but not an exhaustive independent brand audit.",
+  "split_counts": [
+    {
+      "train": {
+        "pairs": 710,
+        "queries": 465,
+        "positive_families": 51
+      },
+      "validation": {
+        "pairs": 314,
+        "queries": 187,
+        "positive_families": 13
+      },
+      "test": {
+        "pairs": 605,
+        "queries": 371,
+        "positive_families": 28
+      }
+    },
+    {
+      "train": {
+        "pairs": 832,
+        "queries": 531,
+        "positive_families": 47
+      },
+      "validation": {
+        "pairs": 335,
+        "queries": 200,
+        "positive_families": 14
+      },
+      "test": {
+        "pairs": 419,
+        "queries": 260,
+        "positive_families": 31
+      }
+    },
+    {
+      "train": {
+        "pairs": 516,
+        "queries": 351,
+        "positive_families": 39
+      },
+      "validation": {
+        "pairs": 146,
+        "queries": 92,
+        "positive_families": 9
+      },
+      "test": {
+        "pairs": 836,
+        "queries": 486,
+        "positive_families": 42
+      }
+    }
+  ],
+  "limitations": [
+    "Positive references are historical ledger choices; positive equivalence preserved. Hard negatives were mined in earlier full-gallery analyses.",
+    "Selection of focal39 and grouping use previously observed historical errors; no claim of untouched test.",
+    "Full token cache is frozen; no claim that failure of this 2048-parameter readout proves absence of information.",
+    "Color, text, layout, background and templates remain mixed in token vectors; improvement would not isolate layout information."
+  ]
+}

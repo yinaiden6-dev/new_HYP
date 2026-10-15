@@ -1,0 +1,8 @@
+{
+  "question": "Does the change in foreground-position or background-position query-token contributions suffice to alter full-gallery ranking after changing the reference input?",
+  "fixed_inputs": "All1117 original frozen query features, all5405 reference candidates, current-base/high-detail/same-grid-low-detail reference features, previously reviewed subject masks.",
+  "formula": "S_counterfactual = S_current_base + sum_over_selected_query_region(c_new_reference - c_current_base)/N_query. Other query-region contributions remain current-base.",
+  "updates": ["foreground_only", "background_only", "template_only", "foreground_and_background"],
+  "purpose": "Distinguish score changes by query-region location with actual full-gallery rankings, without selecting query tokens using the true identity.",
+  "limitations": ["This is a frozen-readout intervention, not a raw-background pixel or semantic identity intervention.", "Token location does not limit its contextual receptive field.", "Foreground annotation is human reviewed. No OCR is used or rerun."]
+}

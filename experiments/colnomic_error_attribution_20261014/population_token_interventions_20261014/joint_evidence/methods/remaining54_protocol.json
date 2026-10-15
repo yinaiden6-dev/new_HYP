@@ -1,0 +1,14 @@
+{
+ "date":"2026-10-15",
+ "scope":"Diagnose the fixed automatic-code control's54 retained failures, while evaluating all repairs on all1117 queries and the complete unchanged gallery.",
+ "human_boxes_only":true,
+ "no_per_query_ground_truth_switch":true,
+ "selection":"Freeze candidate rules before evaluation. Select by package-macro Top1 then macroMRR on the original full validation partition173; choose the simpler rule on ties. Report full1117, retained1104, test161, retained test158, and target54 separately. Historical test results were inspected; all new results are exploratory, not a fresh held-out claim.",
+ "image_mixes":["incremental","selected_new","new_plus_subject","prior_subject","half_incremental_new"],
+ "text_weights":[0.25,0.5,0.75,1.0],
+ "code_weights":[0,0.25,0.5,1],
+ "color_weights":[0,0.05,0.1,0.25,0.5,1],
+ "routing":"Blend or select branches from observable confidence and agreement only; never use query ID, package label, true rank or target54 membership as an inference feature.",
+ "case_hypotheses":{"photo_02fb3c06e1fb70e5":"layout correspondence, with color controlled","photo_0913bcc35e9beb5a":"OCR, orientation, layout and fusion contribution separated","photo_0a0e75a3b7797609":"chromatic difference, with OCR corruption tested separately"},
+ "controls":"Original cache parity; no-op edit; query/reference grayscale crossed; spatial permutation before and after encoding; manual visible-face crops explicitly diagnostic; exact full-gallery rankings independently checked. Reuse earlier OCR and input experiments instead of repeating them."
+}
