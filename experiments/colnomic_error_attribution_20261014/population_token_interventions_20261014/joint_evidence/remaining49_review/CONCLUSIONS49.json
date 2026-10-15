@@ -1,8 +1,8 @@
 {
   "scope": "Current fixed1058 failures after unchanged13 exclusions",
   "levels": {
-    "完整图库干预已改变成败": 24,
-    "候选对失分环节已复算；现有干预未修复": 25
+    "完整图库干预已改变成败": 25,
+    "候选对失分环节已复算；现有干预未修复": 24
   },
   "cases": [
     {
@@ -20,20 +20,65 @@
       },
       "stage_label": "旧图像分支压过修复图像",
       "finding": "版式差异可见，修复图像排名已正确；旧整图和主体Token的负贡献使混合后排错。移除旧图像影响可修复。该证据确定融合冲突，不单独证明修复由版式信号引起。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像混合单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 2，修复图像＋OCR 1，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
         "width": 3024,
         "height": 4032,
         "subject_bbox": [
-          855.0,
-          1092.0,
-          2222.0,
-          3582.0
+          855,
+          1092,
+          2222,
+          3582
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_02fb3c06e1fb70e5",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_001129",
+            "positive": "reference_001129",
+            "negative": "reference_003109",
+            "margin": 0.38072095459566757
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_003109",
+            "positive": "reference_001129",
+            "negative": "reference_003109",
+            "margin": -0.0337440843686343
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_001129",
+            "positive": "reference_001129",
+            "negative": "reference_003109",
+            "margin": 0.380720932235203
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_003109",
+            "positive": "reference_001129",
+            "negative": "reference_003109",
+            "margin": -0.03374410672909711
+          }
+        },
+        "mechanism_when_repaired_image_correct": "legacy_image_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.38072095459566757,
+          "ocr": -2.236046281467452e-8
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -59,19 +104,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          194.0,
-          609.0,
-          1949.0,
-          3233.0
+          194,
+          609,
+          1949,
+          3233
         ],
         "old_ocr_negative_lines": [
           {
             "text": "Uses proven cinically eective in the treatment of most athlete's foot (tinea peis) and ringworm (nea corporis)helps prevent most atlete's f with daiy ue",
             "bbox": [
-              744.0,
-              777.0,
-              842.0,
-              2992.0
+              744,
+              777,
+              842,
+              2992
             ],
             "terms": [
               "f",
@@ -81,6 +126,64 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_0913bcc35e9beb5a",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 49,
+            "top1": "reference_000955",
+            "positive": "reference_001357",
+            "negative": "reference_000955",
+            "margin": -0.8908689943921752
+          },
+          "mixed_image_only": {
+            "rank": 450,
+            "top1": "reference_000955",
+            "positive": "reference_001357",
+            "negative": "reference_000955",
+            "margin": -1.2127853879825992
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_001357",
+            "positive": "reference_001357",
+            "negative": "reference_004710",
+            "margin": 0.16818601214716988
+          },
+          "mixed_image_ocr": {
+            "rank": 3,
+            "top1": "reference_004710",
+            "positive": "reference_001357",
+            "negative": "reference_004710",
+            "margin": -0.21456174938866823
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.7580052594510412,
+          "ocr": 0.9261912715982117
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "proven",
+            "contribution": -0.051011597288033464
+          },
+          {
+            "word": "uses",
+            "contribution": -0.010133937070110038
+          },
+          {
+            "word": "f",
+            "contribution": -0.006301711554300386
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 3,
+        "retained_old_codes_plus_decoded_weight1": 3,
+        "retained_old_codes_plus_union_weight4": 3
       }
     },
     {
@@ -105,19 +208,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          427.0,
-          1561.0,
-          1956.0,
-          2345.0
+          427,
+          1561,
+          1956,
+          2345
         ],
         "old_ocr_negative_lines": [
           {
             "text": "0NDED",
             "bbox": [
-              1639.0,
-              1892.0,
-              1688.0,
-              2016.0
+              1639,
+              1892,
+              1688,
+              2016
             ],
             "terms": [
               "nded"
@@ -125,6 +228,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_0a0e75a3b7797609",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 5,
+            "top1": "reference_004752",
+            "positive": "reference_000518",
+            "negative": "reference_004752",
+            "margin": -0.07414110828592824
+          },
+          "mixed_image_only": {
+            "rank": 7,
+            "top1": "reference_004752",
+            "positive": "reference_000518",
+            "negative": "reference_004752",
+            "margin": -0.14408392610657428
+          },
+          "repaired_image_ocr": {
+            "rank": 8,
+            "top1": "reference_004742",
+            "positive": "reference_000518",
+            "negative": "reference_004742",
+            "margin": -1.0856314263921147
+          },
+          "mixed_image_ocr": {
+            "rank": 9,
+            "top1": "reference_003895",
+            "positive": "reference_000518",
+            "negative": "reference_003895",
+            "margin": -1.0709192389950255
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.7276771988502309,
+          "ocr": -1.8133086252423456
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "nded",
+            "contribution": -1.8133089248644747
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 9,
+        "retained_old_codes_plus_decoded_weight1": 9,
+        "retained_old_codes_plus_union_weight4": 9
       }
     },
     {
@@ -142,20 +295,65 @@
       },
       "stage_label": "旧图像分支压过修复图像",
       "finding": "同系列Alka-Seltzer侧面共有文字；Query胶囊红色、色带偏金棕，对照错误包装胶囊和色带偏紫红。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像混合单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 5，修复图像＋OCR 1，最终混合＋OCR 5。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          667.0,
-          758.0,
-          1170.0,
-          3124.0
+          667,
+          758,
+          1170,
+          3124
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_0be06814ec4048e3",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_001321",
+            "positive": "reference_001321",
+            "negative": "reference_001338",
+            "margin": 0.025046062141285574
+          },
+          "mixed_image_only": {
+            "rank": 5,
+            "top1": "reference_001311",
+            "positive": "reference_001321",
+            "negative": "reference_001311",
+            "margin": -0.17198873491283884
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_001321",
+            "positive": "reference_001321",
+            "negative": "reference_001338",
+            "margin": 0.025045835222712753
+          },
+          "mixed_image_ocr": {
+            "rank": 5,
+            "top1": "reference_001311",
+            "positive": "reference_001321",
+            "negative": "reference_001311",
+            "margin": -0.17198926484292443
+          }
+        },
+        "mechanism_when_repaired_image_correct": "legacy_image_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.025046062141285574,
+          "ocr": -2.2691857282097772e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 5,
+        "retained_old_codes_plus_decoded_weight1": 5,
+        "retained_old_codes_plus_union_weight4": 5
       }
     },
     {
@@ -189,19 +387,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          374.0,
-          824.0,
-          1571.0,
-          3119.0
+          374,
+          824,
+          1571,
+          3119
         ],
         "old_ocr_negative_lines": [
           {
             "text": "if you are no w taking a prescription monoamine",
             "bbox": [
-              487.0,
-              1841.0,
-              1378.0,
-              1917.0
+              487,
+              1841,
+              1378,
+              1917
             ],
             "terms": [
               "no"
@@ -210,10 +408,10 @@
           {
             "text": "the MAOI drug. Ifyou do not know I your prescription",
             "bbox": [
-              532.0,
-              2050.0,
-              1472.0,
-              2127.0
+              532,
+              2050,
+              1472,
+              2127
             ],
             "terms": [
               "maoi"
@@ -222,10 +420,10 @@
           {
             "text": "persistent or chronic cough such as occurs with",
             "bbox": [
-              530.0,
-              2263.0,
-              1381.0,
-              2344.0
+              530,
+              2263,
+              1381,
+              2344
             ],
             "terms": [
               "such"
@@ -233,6 +431,64 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_1f48d45127db4129",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 186,
+            "top1": "reference_004489",
+            "positive": "reference_001139",
+            "negative": "reference_004489",
+            "margin": -1.2147499901581007
+          },
+          "mixed_image_only": {
+            "rank": 159,
+            "top1": "reference_004489",
+            "positive": "reference_001139",
+            "negative": "reference_004489",
+            "margin": -1.2649392803325163
+          },
+          "repaired_image_ocr": {
+            "rank": 14,
+            "top1": "reference_004489",
+            "positive": "reference_001139",
+            "negative": "reference_004489",
+            "margin": -0.7638429616176303
+          },
+          "mixed_image_ocr": {
+            "rank": 16,
+            "top1": "reference_004489",
+            "positive": "reference_001139",
+            "negative": "reference_004489",
+            "margin": -0.814032251792046
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -1.2147499901581007,
+          "ocr": 0.4509070285404704
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "maoi",
+            "contribution": -0.04350932775075238
+          },
+          {
+            "word": "such",
+            "contribution": -0.020388441671255697
+          },
+          {
+            "word": "no",
+            "contribution": -0.010820520575530419
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 16,
+        "retained_old_codes_plus_decoded_weight1": 16,
+        "retained_old_codes_plus_union_weight4": 16
       }
     },
     {
@@ -257,19 +513,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          685.0,
-          328.0,
-          1606.0,
-          3535.0
+          685,
+          328,
+          1606,
+          3535
         ],
         "old_ocr_negative_lines": [
           {
             "text": "bareMineral",
             "bbox": [
-              728.0,
-              657.0,
-              948.0,
-              1707.0
+              728,
+              657,
+              948,
+              1707
             ],
             "terms": [
               "baremineral"
@@ -277,6 +533,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_206a9b7d61884264",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_003297",
+            "positive": "reference_003298",
+            "negative": "reference_003297",
+            "margin": -0.0347136481045891
+          },
+          "mixed_image_only": {
+            "rank": 9,
+            "top1": "reference_003299",
+            "positive": "reference_003298",
+            "negative": "reference_003299",
+            "margin": -0.09431960599265254
+          },
+          "repaired_image_ocr": {
+            "rank": 4,
+            "top1": "reference_003306",
+            "positive": "reference_003298",
+            "negative": "reference_003306",
+            "margin": -0.44583841074302555
+          },
+          "mixed_image_ocr": {
+            "rank": 9,
+            "top1": "reference_003306",
+            "positive": "reference_003298",
+            "negative": "reference_003306",
+            "margin": -0.5293008728471573
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.03008363981974327,
+          "ocr": -0.47592205056276793
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "baremineral",
+            "contribution": -0.47592240835091315
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 9,
+        "retained_old_codes_plus_decoded_weight1": 9,
+        "retained_old_codes_plus_union_weight4": 9
       }
     },
     {
@@ -305,26 +611,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "体重档文字已被旧OCR读到，但对当前正负参考的净负文字项仅为“9”（−0.0941）；混合图像支持+0.0762被压过。去普通文字保留编号可到第1。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：两者单独不翻错，合用翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 1，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          705.0,
-          857.0,
-          1086.0,
-          2724.0
+          705,
+          857,
+          1086,
+          2724
         ],
         "old_ocr_negative_lines": [
           {
             "text": "9",
             "bbox": [
-              833.0,
-              2036.0,
-              907.0,
-              2092.0
+              833,
+              2036,
+              907,
+              2092
             ],
             "terms": [
               "9"
@@ -332,6 +638,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_21fb819788729c55",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000009",
+            "positive": "reference_000009",
+            "negative": "reference_000051",
+            "margin": 0.14992912973820438
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_000009",
+            "positive": "reference_000009",
+            "negative": "reference_000031",
+            "margin": 0.07318860396210702
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_000009",
+            "positive": "reference_000009",
+            "negative": "reference_000051",
+            "margin": 0.05583278877847064
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000051",
+            "positive": "reference_000009",
+            "negative": "reference_000051",
+            "margin": -0.01787648476854109
+          }
+        },
+        "mechanism_when_repaired_image_correct": "joint_interaction",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.14992912973820438,
+          "ocr": -0.09409634095973374
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "9",
+            "contribution": -0.09409571881970508
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -356,13 +712,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          586.0,
-          133.0,
-          1467.0,
-          3469.0
+          586,
+          133,
+          1467,
+          3469
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_2bb7a4894380d509",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 7,
+            "top1": "reference_003301",
+            "positive": "reference_003298",
+            "negative": "reference_003301",
+            "margin": -0.04697747063690283
+          },
+          "mixed_image_only": {
+            "rank": 8,
+            "top1": "reference_003299",
+            "positive": "reference_003298",
+            "negative": "reference_003299",
+            "margin": -0.1656891573512591
+          },
+          "repaired_image_ocr": {
+            "rank": 7,
+            "top1": "reference_003301",
+            "positive": "reference_003298",
+            "negative": "reference_003301",
+            "margin": -0.046977200428420574
+          },
+          "mixed_image_ocr": {
+            "rank": 8,
+            "top1": "reference_003299",
+            "positive": "reference_003298",
+            "negative": "reference_003299",
+            "margin": -0.1656892506690717
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.04697747063690283,
+          "ocr": 2.7020848136771747e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 8,
+        "retained_old_codes_plus_decoded_weight1": 8,
+        "retained_old_codes_plus_union_weight4": 8
       }
     },
     {
@@ -390,13 +791,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          82.0,
-          1550.0,
-          2010.0,
-          2103.0
+          82,
+          1550,
+          2010,
+          2103
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_31ff4c6250aab6d5",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 4,
+            "top1": "reference_000051",
+            "positive": "reference_000009",
+            "negative": "reference_000051",
+            "margin": -0.2663966588779252
+          },
+          "mixed_image_only": {
+            "rank": 8,
+            "top1": "reference_000051",
+            "positive": "reference_000009",
+            "negative": "reference_000051",
+            "margin": -0.44505282019837433
+          },
+          "repaired_image_ocr": {
+            "rank": 3,
+            "top1": "reference_000051",
+            "positive": "reference_000009",
+            "negative": "reference_000051",
+            "margin": -0.2663967615648435
+          },
+          "mixed_image_ocr": {
+            "rank": 4,
+            "top1": "reference_000051",
+            "positive": "reference_000009",
+            "negative": "reference_000051",
+            "margin": -0.4450529228852931
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.2663966588779252,
+          "ocr": -1.0268691852388656e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 4,
+        "retained_old_codes_plus_decoded_weight1": 4,
+        "retained_old_codes_plus_union_weight4": 4
       }
     },
     {
@@ -425,13 +871,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          537.0,
-          1305.0,
-          1539.0,
-          2246.0
+          537,
+          1305,
+          1539,
+          2246
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_324805558f8eab41",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 308,
+            "top1": "reference_001243",
+            "positive": "reference_000567",
+            "negative": "reference_001243",
+            "margin": -0.6627850575365
+          },
+          "mixed_image_only": {
+            "rank": 764,
+            "top1": "reference_000997",
+            "positive": "reference_000567",
+            "negative": "reference_000997",
+            "margin": -0.7709779549334002
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_000567",
+            "positive": "reference_000567",
+            "negative": "reference_001243",
+            "margin": 0.05183511804966634
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000997",
+            "positive": "reference_000567",
+            "negative": "reference_000997",
+            "margin": -0.05635780090193765
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.6627850575365,
+          "ocr": 0.7146201755861663
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 1,
+        "retained_old_codes_plus_decoded_weight1": 1,
+        "retained_old_codes_plus_union_weight4": 1
       }
     },
     {
@@ -457,13 +948,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          496.0,
-          1444.0,
-          1837.0,
-          2797.0
+          496,
+          1444,
+          1837,
+          2797
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_38ab72e39bb67515",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1761,
+            "top1": "reference_002176",
+            "positive": "reference_000929",
+            "negative": "reference_002176",
+            "margin": -2.2898481434438254
+          },
+          "mixed_image_only": {
+            "rank": 1712,
+            "top1": "reference_002176",
+            "positive": "reference_000929",
+            "negative": "reference_002176",
+            "margin": -2.0991560207250135
+          },
+          "repaired_image_ocr": {
+            "rank": 4,
+            "top1": "reference_002350",
+            "positive": "reference_000929",
+            "negative": "reference_002350",
+            "margin": -0.29721416789458655
+          },
+          "mixed_image_ocr": {
+            "rank": 5,
+            "top1": "reference_002350",
+            "positive": "reference_000929",
+            "negative": "reference_002350",
+            "margin": -0.2736806588481264
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.326908124907175,
+          "ocr": 0.029693957012588257
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 5,
+        "retained_old_codes_plus_decoded_weight1": 5,
+        "retained_old_codes_plus_union_weight4": 5
       }
     },
     {
@@ -488,19 +1024,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          697.0,
-          1600.0,
-          1499.0,
-          2734.0
+          697,
+          1600,
+          1499,
+          2734
         ],
         "old_ocr_negative_lines": [
           {
             "text": "prasentty taking a presoription drug. Antacids may interact with certain presoription drugs",
             "bbox": [
-              746.0,
-              2171.0,
-              1277.0,
-              2207.0
+              746,
+              2171,
+              1277,
+              2207
             ],
             "terms": [
               "antacids"
@@ -509,10 +1045,10 @@
           {
             "text": "#pregnant or breast-feeding. ask a heath prolessional betore use R ia especialy important not to use aspirin",
             "bbox": [
-              733.0,
-              2349.0,
-              1420.0,
-              2385.0
+              733,
+              2349,
+              1420,
+              2385
             ],
             "terms": [
               "r"
@@ -521,10 +1057,10 @@
           {
             "text": "problems in the unbom child or complications during delivery.",
             "bbox": [
-              731.0,
-              2391.0,
-              1138.0,
-              2420.0
+              731,
+              2391,
+              1138,
+              2420
             ],
             "terms": [
               "unbom"
@@ -532,6 +1068,72 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_390d64929b6faaa9",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 43,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.6146299463133853
+          },
+          "mixed_image_only": {
+            "rank": 7,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.23892309169467785
+          },
+          "repaired_image_ocr": {
+            "rank": 4,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.6604839151301825
+          },
+          "mixed_image_ocr": {
+            "rank": 3,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.2847770605114741
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.6146299463133853,
+          "ocr": -0.04585396881679671
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "unbom",
+            "contribution": -0.04913071806989945
+          },
+          {
+            "word": "antacids",
+            "contribution": -0.0451450362771542
+          },
+          {
+            "word": "r",
+            "contribution": -0.014318497273873363
+          },
+          {
+            "word": "stools",
+            "contribution": -0.0057723201727733955
+          },
+          {
+            "word": "0",
+            "contribution": -0.0016380718483626903
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 3,
+        "retained_old_codes_plus_decoded_weight1": 3,
+        "retained_old_codes_plus_union_weight4": 3
       }
     },
     {
@@ -558,26 +1160,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "可见UPC旧OCR接近读全，但编号支路没有获得这条独有码的支持；25.1–50lbs表格档位被抽成25150及251501BS，分别额外支持错误候选，合计约−1.1703。字段未区分且同源变体重复加分。去全部OCR可到第1，单去编号仍第3。 新增像素条码解码自动读出727804564599；全图库统一加权1后恢复第1。证实可读编号线索存在，原读取/编号利用链路不足。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 5，最终混合＋OCR 5。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 3024,
         "height": 4032,
         "subject_bbox": [
-          861.0,
-          598.0,
-          2329.0,
-          3960.0
+          861,
+          598,
+          2329,
+          3960
         ],
         "old_ocr_negative_lines": [
           {
             "text": "TM",
             "bbox": [
-              1975.0,
-              661.0,
-              2022.0,
-              692.0
+              1975,
+              661,
+              2022,
+              692
             ],
             "terms": [
               "tm"
@@ -586,10 +1188,10 @@
           {
             "text": "Store at room temperature, between 59º and 77℉ (15-25℃).",
             "bbox": [
-              1016.0,
-              2029.0,
-              2142.0,
-              2108.0
+              1016,
+              2029,
+              2142,
+              2108
             ],
             "terms": [
               "º"
@@ -597,6 +1199,60 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_3fa0e51f2f450f84",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000395",
+            "positive": "reference_000395",
+            "negative": "reference_000383",
+            "margin": 0.034003602595992
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_000395",
+            "positive": "reference_000395",
+            "negative": "reference_000387",
+            "margin": 0.028339082994286002
+          },
+          "repaired_image_ocr": {
+            "rank": 5,
+            "top1": "reference_000393",
+            "positive": "reference_000395",
+            "negative": "reference_000393",
+            "margin": -0.4847786258648057
+          },
+          "mixed_image_ocr": {
+            "rank": 5,
+            "top1": "reference_000393",
+            "positive": "reference_000395",
+            "negative": "reference_000393",
+            "margin": -0.6573762356372264
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.4074130343172113,
+          "ocr": -0.8921916601820161
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "º",
+            "contribution": -0.0878310409980493
+          },
+          {
+            "word": "tm",
+            "contribution": -0.046145588141904455
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 5,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 1
       }
     },
     {
@@ -614,26 +1270,26 @@
       },
       "stage_label": "旧图像分支压过修复图像",
       "finding": "共有50mcg Drug Facts背面文字极相似，但各小节横线、行长、换行及四周绿色边框与错误参考不同；不能依赖参考正面品牌差异替代可见面比较。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像混合单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 2，修复图像＋OCR 1，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          324.0,
-          800.0,
-          1832.0,
-          3373.0
+          324,
+          800,
+          1832,
+          3373
         ],
         "old_ocr_negative_lines": [
           {
             "text": "Ask a doctor or pharmacist before use if you are taking medicine for HIV",
             "bbox": [
-              410.0,
-              1689.0,
-              1632.0,
-              1763.0
+              410,
+              1689,
+              1632,
+              1763
             ],
             "terms": [
               "taking"
@@ -642,10 +1298,10 @@
           {
             "text": "productyou have severe or frequent nosebleeds",
             "bbox": [
-              429.0,
-              2367.0,
-              1225.0,
-              2441.0
+              429,
+              2367,
+              1225,
+              2441
             ],
             "terms": [
               "frequent"
@@ -653,6 +1309,64 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_40d4735eb62e06cf",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000929",
+            "positive": "reference_000929",
+            "negative": "reference_000930",
+            "margin": 0.007961403022684888
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_000930",
+            "positive": "reference_000929",
+            "negative": "reference_000930",
+            "margin": -0.060590591963294305
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_000929",
+            "positive": "reference_000929",
+            "negative": "reference_000930",
+            "margin": 0.03614379342161911
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000930",
+            "positive": "reference_000929",
+            "negative": "reference_000930",
+            "margin": -0.03240820156436097
+          }
+        },
+        "mechanism_when_repaired_image_correct": "legacy_image_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.007961403022684888,
+          "ocr": 0.028182390398933777
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "frequent",
+            "contribution": -0.026681791672746386
+          },
+          {
+            "word": "taking",
+            "contribution": -0.011397323985656233
+          },
+          {
+            "word": "directions",
+            "contribution": -0.0006344346085414209
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -671,26 +1385,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "旧OCR中的HIC成为当前候选对唯一负文字项（−1.2903），压过图像+0.3390；去普通文字可到第1。需修读取与稀疏文本计分。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 2，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          309.0,
-          906.0,
-          1667.0,
-          2044.0
+          309,
+          906,
+          1667,
+          2044
         ],
         "old_ocr_negative_lines": [
           {
             "text": "HIC",
             "bbox": [
-              1326.0,
-              1690.0,
-              1521.0,
-              1806.0
+              1326,
+              1690,
+              1521,
+              1806
             ],
             "terms": [
               "hic"
@@ -698,6 +1412,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_423dd2b26155876d",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_001144",
+            "positive": "reference_001144",
+            "negative": "reference_002266",
+            "margin": 0.44994836211581646
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_001144",
+            "positive": "reference_001144",
+            "negative": "reference_002002",
+            "margin": 0.33900414432772585
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_002002",
+            "positive": "reference_001144",
+            "negative": "reference_002002",
+            "margin": -0.815692105188722
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_002002",
+            "positive": "reference_001144",
+            "negative": "reference_002002",
+            "margin": -0.9512769267653383
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.47458896590434163,
+          "ocr": -1.2902810710930641
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "hic",
+            "contribution": -1.2902807597642425
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -729,13 +1493,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          524.0,
-          1298.0,
-          1768.0,
-          2289.0
+          524,
+          1298,
+          1768,
+          2289
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_438026ead38bb48f",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 4,
+            "top1": "reference_001326",
+            "positive": "reference_001023",
+            "negative": "reference_001326",
+            "margin": -0.4028028689136738
+          },
+          "mixed_image_only": {
+            "rank": 3,
+            "top1": "reference_001326",
+            "positive": "reference_001023",
+            "negative": "reference_001326",
+            "margin": -0.57170817146761
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_001023",
+            "positive": "reference_001023",
+            "negative": "reference_001326",
+            "margin": 0.09136829374664224
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_001326",
+            "positive": "reference_001023",
+            "negative": "reference_001326",
+            "margin": -0.07753700880729308
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.4028028689136738,
+          "ocr": 0.4941711626603169
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -760,13 +1569,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          699.0,
-          253.0,
-          1189.0,
-          3636.0
+          699,
+          253,
+          1189,
+          3636
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_441809a846ca8a24",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_003224",
+            "positive": "reference_000943",
+            "negative": "reference_003224",
+            "margin": -0.18964695752660976
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_003224",
+            "positive": "reference_000943",
+            "negative": "reference_003224",
+            "margin": -0.35074841139864166
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_003224",
+            "positive": "reference_000943",
+            "negative": "reference_003224",
+            "margin": -0.18964710092540216
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_003224",
+            "positive": "reference_000943",
+            "negative": "reference_003224",
+            "margin": -0.35074855479743405
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.18964695752660976,
+          "ocr": -1.4339879239599895e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -797,19 +1651,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          352.0,
-          1637.0,
-          1919.0,
-          2553.0
+          352,
+          1637,
+          1919,
+          2553
         ],
         "old_ocr_negative_lines": [
           {
             "text": "hane RR001143",
             "bbox": [
-              428.0,
-              2268.0,
-              461.0,
-              2467.0
+              428,
+              2268,
+              461,
+              2467
             ],
             "terms": [
               "rr"
@@ -817,6 +1671,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_487b4a6b018c220d",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 34,
+            "top1": "reference_000905",
+            "positive": "reference_003087",
+            "negative": "reference_000905",
+            "margin": -0.33157414033784705
+          },
+          "mixed_image_only": {
+            "rank": 180,
+            "top1": "reference_001242",
+            "positive": "reference_003087",
+            "negative": "reference_001242",
+            "margin": -0.592310739208571
+          },
+          "repaired_image_ocr": {
+            "rank": 3,
+            "top1": "reference_004870",
+            "positive": "reference_003087",
+            "negative": "reference_004870",
+            "margin": -0.1464989527429741
+          },
+          "mixed_image_ocr": {
+            "rank": 6,
+            "top1": "reference_003412",
+            "positive": "reference_003087",
+            "negative": "reference_003412",
+            "margin": -0.3778975272792655
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.22431594712834846,
+          "ocr": -0.37081489987132255
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "rr",
+            "contribution": -1.6091664558131198
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 6,
+        "retained_old_codes_plus_decoded_weight1": 1,
+        "retained_old_codes_plus_union_weight4": 1
       }
     },
     {
@@ -857,10 +1761,10 @@
           {
             "text": "heart attack, or irregular heartbeat. Nicotine can increase your",
             "bbox": [
-              909.0,
-              1755.0,
-              1914.0,
-              1848.0
+              909,
+              1755,
+              1914,
+              1848
             ],
             "terms": [
               "irregular"
@@ -869,10 +1773,10 @@
           {
             "text": "dlabetes history of selzures",
             "bbox": [
-              915.0,
-              1935.0,
-              1436.0,
-              2011.0
+              915,
+              1935,
+              1436,
+              2011
             ],
             "terms": [
               "history"
@@ -881,10 +1785,10 @@
           {
             "text": "persistent indigestion or severe sore throat occurs irregular",
             "bbox": [
-              925.0,
-              2227.0,
-              1985.0,
-              2317.0
+              925,
+              2227,
+              1985,
+              2317
             ],
             "terms": [
               "irregular"
@@ -893,10 +1797,10 @@
           {
             "text": "begin using the lozenge on your quit day",
             "bbox": [
-              1185.0,
-              3055.0,
-              1871.0,
-              3135.0
+              1185,
+              3055,
+              1871,
+              3135
             ],
             "terms": [
               "begin"
@@ -904,6 +1808,80 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_4b09c283ed00faca",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.6025616329672103
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.48366197210148343
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.6794767908502859
+          },
+          "mixed_image_ocr": {
+            "rank": 3,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.5605771299845594
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.6025616329672103,
+          "ocr": -0.07691515788307601
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "irregular",
+            "contribution": -0.09332734197255771
+          },
+          {
+            "word": "history",
+            "contribution": -0.029540210283478256
+          },
+          {
+            "word": "begin",
+            "contribution": -0.029404354457978774
+          },
+          {
+            "word": "taking",
+            "contribution": -0.016335518243742315
+          },
+          {
+            "word": "diabetes",
+            "contribution": -0.0076760010126490485
+          },
+          {
+            "word": "occurs",
+            "contribution": -0.0075117192689146415
+          },
+          {
+            "word": "information",
+            "contribution": -0.003153514348724452
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 3,
+        "retained_old_codes_plus_decoded_weight1": 3,
+        "retained_old_codes_plus_union_weight4": 3
       }
     },
     {
@@ -935,13 +1913,63 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          511.0,
-          642.0,
-          1423.0,
-          3668.0
+          511,
+          642,
+          1423,
+          3668
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_50614555bf86aaf4",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 36,
+            "top1": "reference_001096",
+            "positive": "reference_003087",
+            "negative": "reference_001096",
+            "margin": -0.4392148877952884
+          },
+          "mixed_image_only": {
+            "rank": 54,
+            "top1": "reference_003969",
+            "positive": "reference_003087",
+            "negative": "reference_003969",
+            "margin": -0.5980124259035191
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_001096",
+            "positive": "reference_003087",
+            "negative": "reference_001096",
+            "margin": -0.04060493423513378
+          },
+          "mixed_image_ocr": {
+            "rank": 5,
+            "top1": "reference_004742",
+            "positive": "reference_003087",
+            "negative": "reference_004742",
+            "margin": -0.1770381983342464
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.4392148877952884,
+          "ocr": 0.39860995356015483
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "diseasehigh",
+            "contribution": -0.019838396606378778
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 5,
+        "retained_old_codes_plus_decoded_weight1": 5,
+        "retained_old_codes_plus_union_weight4": 5
       }
     },
     {
@@ -962,26 +1990,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "普通文字的负差额几乎全由PD（−2.6245）产生；图像+1.5635与编号+0.9528仍被压过。去普通文字保留编号可到第1。完整UPC漏首位，已有编号支持来自另一小码。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 3，最终混合＋OCR 3。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          458.0,
-          1360.0,
-          1599.0,
-          2641.0
+          458,
+          1360,
+          1599,
+          2641
         ],
         "old_ocr_negative_lines": [
           {
             "text": "PD 3917433",
             "bbox": [
-              1418.0,
-              1820.0,
-              1487.0,
-              2059.0
+              1418,
+              1820,
+              1487,
+              2059
             ],
             "terms": [
               "pd"
@@ -989,6 +2017,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_518888b98e9ac193",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_001139",
+            "positive": "reference_001139",
+            "negative": "reference_000997",
+            "margin": 0.29532710062637935
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_001139",
+            "positive": "reference_001139",
+            "negative": "reference_001803",
+            "margin": 0.18749896162475066
+          },
+          "repaired_image_ocr": {
+            "rank": 3,
+            "top1": "reference_005076",
+            "positive": "reference_001139",
+            "negative": "reference_005076",
+            "margin": -0.1334925927926589
+          },
+          "mixed_image_ocr": {
+            "rank": 3,
+            "top1": "reference_001111",
+            "positive": "reference_001139",
+            "negative": "reference_001111",
+            "margin": -0.10818815141339666
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 1.2206121500692453,
+          "ocr": -1.3541047428619044
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "pd",
+            "contribution": -2.62451644673644
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 3,
+        "retained_old_codes_plus_decoded_weight1": 3,
+        "retained_old_codes_plus_union_weight4": 3
       }
     },
     {
@@ -1023,19 +2101,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          804.0,
-          1707.0,
-          1560.0,
-          3064.0
+          804,
+          1707,
+          1560,
+          3064
         ],
         "old_ocr_negative_lines": [
           {
             "text": "if you are no w taking a prescription monoamine",
             "bbox": [
-              959.0,
-              2133.0,
-              1415.0,
-              2214.0
+              959,
+              2133,
+              1415,
+              2214
             ],
             "terms": [
               "no"
@@ -1044,10 +2122,10 @@
           {
             "text": "the MAOI drug. If you do not know I your prescription",
             "bbox": [
-              949.0,
-              2226.0,
-              1452.0,
-              2315.0
+              949,
+              2226,
+              1452,
+              2315
             ],
             "terms": [
               "maoi"
@@ -1056,10 +2134,10 @@
           {
             "text": "persistent or chronic coug h such as occurs with",
             "bbox": [
-              927.0,
-              2326.0,
-              1391.0,
-              2411.0
+              927,
+              2326,
+              1391,
+              2411
             ],
             "terms": [
               "such"
@@ -1067,6 +2145,72 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_51b91a8efbda2ee9",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 160,
+            "top1": "reference_004585",
+            "positive": "reference_001139",
+            "negative": "reference_004585",
+            "margin": -1.1883072220865294
+          },
+          "mixed_image_only": {
+            "rank": 147,
+            "top1": "reference_004489",
+            "positive": "reference_001139",
+            "negative": "reference_004489",
+            "margin": -0.788969944276859
+          },
+          "repaired_image_ocr": {
+            "rank": 9,
+            "top1": "reference_004489",
+            "positive": "reference_001139",
+            "negative": "reference_004489",
+            "margin": -0.6299894196461437
+          },
+          "mixed_image_ocr": {
+            "rank": 7,
+            "top1": "reference_004489",
+            "positive": "reference_001139",
+            "negative": "reference_004489",
+            "margin": -0.32241205508377924
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -1.096547308839223,
+          "ocr": 0.4665578891930795
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "maoi",
+            "contribution": -0.03143958486016618
+          },
+          {
+            "word": "such",
+            "contribution": -0.0199871097948515
+          },
+          {
+            "word": "no",
+            "contribution": -0.010607526375371896
+          },
+          {
+            "word": "have",
+            "contribution": -0.0098709052352888
+          },
+          {
+            "word": "4",
+            "contribution": -0.005964508332263925
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 7,
+        "retained_old_codes_plus_decoded_weight1": 7,
+        "retained_old_codes_plus_union_weight4": 7
       }
     },
     {
@@ -1093,26 +2237,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "正确数量/单数CHEWABLE提供正贡献，但OCR误读restrids提供更大负贡献，并有体重串编号负差额；去普通文字可到第1。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 2，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 3024,
         "height": 4032,
         "subject_bbox": [
-          819.0,
-          613.0,
-          2173.0,
-          3638.0
+          819,
+          613,
+          2173,
+          3638
         ],
         "old_ocr_negative_lines": [
           {
             "text": "C",
             "bbox": [
-              2099.0,
-              1581.0,
-              2132.0,
-              1636.0
+              2099,
+              1581,
+              2132,
+              1636
             ],
             "terms": [
               "c"
@@ -1121,10 +2265,10 @@
           {
             "text": "Cantion: Federal (USA) law restrids this",
             "bbox": [
-              905.0,
-              2727.0,
-              1447.0,
-              2787.0
+              905,
+              2727,
+              1447,
+              2787
             ],
             "terms": [
               "restrids"
@@ -1132,6 +2276,64 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_51f740065ab2be47",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000395",
+            "positive": "reference_000395",
+            "negative": "reference_000383",
+            "margin": 0.2150994142477769
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_000395",
+            "positive": "reference_000395",
+            "negative": "reference_000396",
+            "margin": 0.10165718375871258
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000396",
+            "positive": "reference_000395",
+            "negative": "reference_000396",
+            "margin": -0.09571053810705266
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000396",
+            "positive": "reference_000395",
+            "negative": "reference_000396",
+            "margin": -0.2146669968239987
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.22061364247565862,
+          "ocr": -0.3163241805827113
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "restrids",
+            "contribution": -0.34720302505006095
+          },
+          {
+            "word": "bs",
+            "contribution": -0.05521840029259589
+          },
+          {
+            "word": "c",
+            "contribution": -0.013589654855988004
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1156,13 +2358,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          309.0,
-          1229.0,
-          1841.0,
-          2367.0
+          309,
+          1229,
+          1841,
+          2367
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_527d8bc5deabf857",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_004018",
+            "positive": "reference_003143",
+            "negative": "reference_004018",
+            "margin": -0.3583305028819712
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_004018",
+            "positive": "reference_003143",
+            "negative": "reference_004018",
+            "margin": -0.1891162072501258
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004018",
+            "positive": "reference_003143",
+            "negative": "reference_004018",
+            "margin": -0.35833074462418146
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004018",
+            "positive": "reference_003143",
+            "negative": "reference_004018",
+            "margin": -0.18911644899233693
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.3583305028819712,
+          "ocr": -2.417422111378187e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1186,19 +2433,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          449.0,
-          1040.0,
-          1803.0,
-          2837.0
+          449,
+          1040,
+          1803,
+          2837
         ],
         "old_ocr_negative_lines": [
           {
             "text": " prasentty taking a presorption drug. Antacids may interact with certain prescription druga",
             "bbox": [
-              534.0,
-              2290.0,
-              1440.0,
-              2337.0
+              534,
+              2290,
+              1440,
+              2337
             ],
             "terms": [
               "antacids"
@@ -1207,10 +2454,10 @@
           {
             "text": "teel tant vomit blood have bloody or black stools have stomach pain that does not get better",
             "bbox": [
-              559.0,
-              2481.0,
-              1599.0,
-              2527.0
+              559,
+              2481,
+              1599,
+              2527
             ],
             "terms": [
               "stools"
@@ -1219,10 +2466,10 @@
           {
             "text": "problems in the unbom child or complications during delivery.",
             "bbox": [
-              544.0,
-              2705.0,
-              1206.0,
-              2740.0
+              544,
+              2705,
+              1206,
+              2740
             ],
             "terms": [
               "unbom"
@@ -1230,6 +2477,80 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_59d5e8c638df29f0",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 39,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.7060590401518376
+          },
+          "mixed_image_only": {
+            "rank": 77,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.6882813865730377
+          },
+          "repaired_image_ocr": {
+            "rank": 4,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.6742719496706773
+          },
+          "mixed_image_ocr": {
+            "rank": 8,
+            "top1": "reference_001308",
+            "positive": "reference_001401",
+            "negative": "reference_001308",
+            "margin": -0.6564942960918776
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.7060590401518376,
+          "ocr": 0.03178709048116035
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "antacids",
+            "contribution": -0.03234082868885366
+          },
+          {
+            "word": "unbom",
+            "contribution": -0.026487393338848402
+          },
+          {
+            "word": "stools",
+            "contribution": -0.017701499002786388
+          },
+          {
+            "word": "i",
+            "contribution": -0.009595171037002356
+          },
+          {
+            "word": "o",
+            "contribution": -0.002666489499657146
+          },
+          {
+            "word": "0",
+            "contribution": -0.0016516036486800736
+          },
+          {
+            "word": "f",
+            "contribution": -0.0009068187596409014
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 8,
+        "retained_old_codes_plus_decoded_weight1": 8,
+        "retained_old_codes_plus_union_weight4": 8
       }
     },
     {
@@ -1264,10 +2585,10 @@
           {
             "text": "way to get the best results place the lozenge in your mouth",
             "bbox": [
-              923.0,
-              1709.0,
-              1873.0,
-              1805.0
+              923,
+              1709,
+              1873,
+              1805
             ],
             "terms": [
               "results"
@@ -1276,10 +2597,10 @@
           {
             "text": "tingling sensaticn occasionally move the lozenge from one",
             "bbox": [
-              928.0,
-              1857.0,
-              1849.0,
-              1953.0
+              928,
+              1857,
+              1849,
+              1953
             ],
             "terms": [
               "occasionally"
@@ -1288,10 +2609,10 @@
           {
             "text": "Questions or comments?call toll-free 1-866-751-9303",
             "bbox": [
-              984.0,
-              2726.0,
-              1822.0,
-              2822.0
+              984,
+              2726,
+              1822,
+              2822
             ],
             "terms": [
               "toll"
@@ -1299,6 +2620,80 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_64625e0a749be4a5",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.7104621897905128
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.536799871675611
+          },
+          "repaired_image_ocr": {
+            "rank": 3,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.7984102001128388
+          },
+          "mixed_image_ocr": {
+            "rank": 3,
+            "top1": "reference_004360",
+            "positive": "reference_001129",
+            "negative": "reference_004360",
+            "margin": -0.6247478819979371
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.7104621897905128,
+          "ocr": -0.08794801032232691
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "occasionally",
+            "contribution": -0.0649481764136878
+          },
+          {
+            "word": "results",
+            "contribution": -0.04014458243865883
+          },
+          {
+            "word": "toll",
+            "contribution": -0.037809127590990574
+          },
+          {
+            "word": "place",
+            "contribution": -0.02797866881385867
+          },
+          {
+            "word": "distributed",
+            "contribution": -0.011807519829176619
+          },
+          {
+            "word": "store",
+            "contribution": -0.006945816461491088
+          },
+          {
+            "word": "information",
+            "contribution": -0.005417168397278208
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 3,
+        "retained_old_codes_plus_decoded_weight1": 3,
+        "retained_old_codes_plus_union_weight4": 3
       }
     },
     {
@@ -1315,7 +2710,7 @@
       },
       "stage_label": "旧图像分支压过修复图像",
       "finding": "共有EnroPro成分/用法侧面，但CONTRAINDICATIONS等段落行长、换行和字号明显不同。Query没有露出20/50mL或独有NDC，判别依据是可见版式。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像混合单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 2，修复图像＋OCR 1，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
@@ -1329,6 +2724,51 @@
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_665b96b3fb0b01c7",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000229",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": 0.15195463120635466
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_000233",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": -0.031245000212758
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_000229",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": 0.15195490984242
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000233",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": -0.031244721576694445
+          }
+        },
+        "mechanism_when_repaired_image_correct": "legacy_image_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.15195463120635466,
+          "ocr": 2.7863606355538195e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1354,19 +2794,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          532.0,
-          1205.0,
-          1719.0,
-          2959.0
+          532,
+          1205,
+          1719,
+          2959
         ],
         "old_ocr_negative_lines": [
           {
             "text": "resh, nausea, or vomiting consult a doctor promptly.",
             "bbox": [
-              796.0,
-              2708.0,
-              1514.0,
-              2841.0
+              796,
+              2708,
+              1514,
+              2841
             ],
             "terms": [
               "nausea"
@@ -1374,6 +2814,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_740025f501c6528b",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 69,
+            "top1": "reference_003969",
+            "positive": "reference_001023",
+            "negative": "reference_003969",
+            "margin": -0.4853329318564654
+          },
+          "mixed_image_only": {
+            "rank": 105,
+            "top1": "reference_003969",
+            "positive": "reference_001023",
+            "negative": "reference_003969",
+            "margin": -0.5983927295976532
+          },
+          "repaired_image_ocr": {
+            "rank": 8,
+            "top1": "reference_001312",
+            "positive": "reference_001023",
+            "negative": "reference_001312",
+            "margin": -0.13848089116842566
+          },
+          "mixed_image_ocr": {
+            "rank": 10,
+            "top1": "reference_001312",
+            "positive": "reference_001023",
+            "negative": "reference_001312",
+            "margin": -0.2158270889147067
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.40942880466684883,
+          "ocr": 0.27094791349842406
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "nausea",
+            "contribution": -0.034956661315810836
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 10,
+        "retained_old_codes_plus_decoded_weight1": 10,
+        "retained_old_codes_plus_union_weight4": 10
       }
     },
     {
@@ -1391,26 +2881,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "NSAID被读成NSAD；当前正负对文字负差额几乎全部来自nsad（−0.9092），大于图像+0.00994。去普通文字可到第1。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 2，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 3024,
         "height": 4032,
         "subject_bbox": [
-          87.0,
-          1164.0,
-          3004.0,
-          3612.0
+          87,
+          1164,
+          3004,
+          3612
         ],
         "old_ocr_negative_lines": [
           {
             "text": "IBUPRO FEN (NSAD)",
             "bbox": [
-              335.0,
-              2768.0,
-              1695.0,
-              3125.0
+              335,
+              2768,
+              1695,
+              3125
             ],
             "terms": [
               "nsad"
@@ -1418,6 +2908,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_7e10c5317a5e74d8",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_001971",
+            "positive": "reference_001971",
+            "negative": "reference_001973",
+            "margin": 0.020063989773167812
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_001971",
+            "positive": "reference_001971",
+            "negative": "reference_001973",
+            "margin": 0.009943961941097701
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_001973",
+            "positive": "reference_001971",
+            "negative": "reference_001973",
+            "margin": -0.8891451791002414
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_001973",
+            "positive": "reference_001971",
+            "negative": "reference_001973",
+            "margin": -0.8992652069323119
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.020063989773167812,
+          "ocr": -0.9092091688734096
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "nsad",
+            "contribution": -0.9092092797234816
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1442,26 +2982,26 @@
       },
       "stage_label": "旧图像分支压过修复图像",
       "finding": "Query侧面黄色成分栏为Aspirin325mg，错误候选81mg；分面、小节顺序与文字块位置也不同。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像混合单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 13，修复图像＋OCR 1，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          384.0,
-          1845.0,
-          1598.0,
-          2653.0
+          384,
+          1845,
+          1598,
+          2653
         ],
         "old_ocr_negative_lines": [
           {
             "text": "are recoveri x o n x orfulike symptom",
             "bbox": [
-              902.0,
-              2389.0,
-              942.0,
-              2628.0
+              902,
+              2389,
+              942,
+              2628
             ],
             "terms": [
               "x"
@@ -1469,6 +3009,64 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_80f2fdc29081fedd",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_003233",
+            "positive": "reference_003233",
+            "negative": "reference_003229",
+            "margin": 0.008924705042734793
+          },
+          "mixed_image_only": {
+            "rank": 13,
+            "top1": "reference_004303",
+            "positive": "reference_003233",
+            "negative": "reference_004303",
+            "margin": -0.27741623300465434
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_003233",
+            "positive": "reference_003233",
+            "negative": "reference_004275",
+            "margin": 0.13854500957813576
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004303",
+            "positive": "reference_003233",
+            "negative": "reference_004303",
+            "margin": -0.11632512473087342
+          }
+        },
+        "mechanism_when_repaired_image_correct": "legacy_image_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.19568952995952138,
+          "ocr": -0.05714452038138518
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "gout",
+            "contribution": -0.04567997760337834
+          },
+          {
+            "word": "diabetes",
+            "contribution": -0.030441720539126645
+          },
+          {
+            "word": "x",
+            "contribution": -0.027872542551953088
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1500,13 +3098,58 @@
         "width": 4032,
         "height": 3024,
         "subject_bbox": [
-          14.0,
-          440.0,
-          4001.0,
-          2531.0
+          14,
+          440,
+          4001,
+          2531
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_813fb072c0f3b380",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_001939",
+            "positive": "reference_001983",
+            "negative": "reference_001939",
+            "margin": -0.44015361223499294
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_001939",
+            "positive": "reference_001983",
+            "negative": "reference_001939",
+            "margin": -0.2895582165855113
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_001939",
+            "positive": "reference_001983",
+            "negative": "reference_001939",
+            "margin": -0.28877392800798596
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_001939",
+            "positive": "reference_001983",
+            "negative": "reference_001939",
+            "margin": -0.13817853235850386
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.44015361223499294,
+          "ocr": 0.15137968422700743
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1531,13 +3174,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          563.0,
-          1387.0,
-          1566.0,
-          2374.0
+          563,
+          1387,
+          1566,
+          2374
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_817005ee11887c2a",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 4,
+            "top1": "reference_003177",
+            "positive": "reference_000934",
+            "negative": "reference_003177",
+            "margin": -0.07623882956676242
+          },
+          "mixed_image_only": {
+            "rank": 8,
+            "top1": "reference_001965",
+            "positive": "reference_000934",
+            "negative": "reference_001965",
+            "margin": -0.22539764547860797
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_000934",
+            "positive": "reference_000934",
+            "negative": "reference_001965",
+            "margin": 0.04303509190374477
+          },
+          "mixed_image_ocr": {
+            "rank": 5,
+            "top1": "reference_001965",
+            "positive": "reference_000934",
+            "negative": "reference_001965",
+            "margin": -0.22539782874228553
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.04303527516742145,
+          "ocr": -1.8326367756671402e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 5,
+        "retained_old_codes_plus_decoded_weight1": 5,
+        "retained_old_codes_plus_union_weight4": 5
       }
     },
     {
@@ -1568,19 +3256,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          273.0,
-          2010.0,
-          1582.0,
-          2787.0
+          273,
+          2010,
+          1582,
+          2787
         ],
         "old_ocr_negative_lines": [
           {
             "text": "caps I es if pr egnant or if ty ing to c onc eiv e Tri los tane is assoc iated with terabgeric effects and early pre grancy loss",
             "bbox": [
-              328.0,
-              2064.0,
-              1525.0,
-              2115.0
+              328,
+              2064,
+              1525,
+              2115
             ],
             "terms": [
               "eiv"
@@ -1589,10 +3277,10 @@
           {
             "text": "labeled contairer wih you.",
             "bbox": [
-              322.0,
-              2120.0,
-              613.0,
-              2155.0
+              322,
+              2120,
+              613,
+              2155
             ],
             "terms": [
               "wih"
@@ -1601,10 +3289,10 @@
           {
             "text": "CONTRA NDICA TONS: The use is c ontraindicated in dogs fhat have demonstrated hyper sens itivity b tilos ane.",
             "bbox": [
-              322.0,
-              2145.0,
-              1470.0,
-              2200.0
+              322,
+              2145,
+              1470,
+              2200
             ],
             "terms": [
               "ndica"
@@ -1613,10 +3301,10 @@
           {
             "text": "blood volume ard renal per fusi on. Potas sium sparing dur etic s(e g. spi ronola ctore) should rot be us ed wih VETORYL",
             "bbox": [
-              302.0,
-              2360.0,
-              1536.0,
-              2427.0
+              302,
+              2360,
+              1536,
+              2427
             ],
             "terms": [
               "wih"
@@ -1624,6 +3312,92 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_85e10feb92319a7b",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 5,
+            "top1": "reference_000508",
+            "positive": "reference_000512",
+            "negative": "reference_000508",
+            "margin": -0.2077775496826404
+          },
+          "mixed_image_only": {
+            "rank": 8,
+            "top1": "reference_000508",
+            "positive": "reference_000512",
+            "negative": "reference_000508",
+            "margin": -0.45911983871309103
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000510",
+            "positive": "reference_000512",
+            "negative": "reference_000510",
+            "margin": -0.7739863671705649
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000510",
+            "positive": "reference_000512",
+            "negative": "reference_000510",
+            "margin": -0.9917650214897726
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.05281116920156914,
+          "ocr": -0.8267975363721316
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "wih",
+            "contribution": -0.28373649127992734
+          },
+          {
+            "word": "eiv",
+            "contribution": -0.21529745672030925
+          },
+          {
+            "word": "ndica",
+            "contribution": -0.21529745672030925
+          },
+          {
+            "word": "ortic",
+            "contribution": -0.21529745672030925
+          },
+          {
+            "word": "ism",
+            "contribution": -0.21529745672030925
+          },
+          {
+            "word": "egnant",
+            "contribution": -0.20186863471625507
+          },
+          {
+            "word": "permited",
+            "contribution": -0.17674967842359343
+          },
+          {
+            "word": "ty",
+            "contribution": -0.1208498711865727
+          },
+          {
+            "word": "tri",
+            "contribution": -0.11092448556206061
+          },
+          {
+            "word": "pr",
+            "contribution": -0.10722879484417108
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1654,19 +3428,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          248.0,
-          1333.0,
-          1667.0,
-          2408.0
+          248,
+          1333,
+          1667,
+          2408
         ],
         "old_ocr_negative_lines": [
           {
             "text": "is torn or open.",
             "bbox": [
-              427.0,
-              2329.0,
-              705.0,
-              2396.0
+              427,
+              2329,
+              705,
+              2396
             ],
             "terms": [
               "torn"
@@ -1674,6 +3448,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_8a62e5cd6902b0ae",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_001310",
+            "positive": "reference_001023",
+            "negative": "reference_001310",
+            "margin": -0.14128463591451368
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_001310",
+            "positive": "reference_001023",
+            "negative": "reference_001310",
+            "margin": -0.26756050357377426
+          },
+          "repaired_image_ocr": {
+            "rank": 3,
+            "top1": "reference_001310",
+            "positive": "reference_001023",
+            "negative": "reference_001310",
+            "margin": -0.09795530895313398
+          },
+          "mixed_image_ocr": {
+            "rank": 3,
+            "top1": "reference_001310",
+            "positive": "reference_001023",
+            "negative": "reference_001310",
+            "margin": -0.22423117661239544
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.14128463591451368,
+          "ocr": 0.04332932696137881
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "torn",
+            "contribution": -0.3692858704153292
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 3,
+        "retained_old_codes_plus_decoded_weight1": 3,
+        "retained_old_codes_plus_union_weight4": 3
       }
     },
     {
@@ -1698,19 +3522,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          601.0,
-          1040.0,
-          1678.0,
-          3098.0
+          601,
+          1040,
+          1678,
+          3098
         ],
         "old_ocr_negative_lines": [
           {
             "text": "If pregnant or breast-feading, ask a health",
             "bbox": [
-              669.0,
-              2287.0,
-              1506.0,
-              2359.0
+              669,
+              2287,
+              1506,
+              2359
             ],
             "terms": [
               "pregnant"
@@ -1719,10 +3543,10 @@
           {
             "text": "contact a Polson Control Center right away.",
             "bbox": [
-              667.0,
-              2587.0,
-              1468.0,
-              2661.0
+              667,
+              2587,
+              1468,
+              2661
             ],
             "terms": [
               "contact"
@@ -1730,6 +3554,60 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_8bc3a7a3577518f0",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 383,
+            "top1": "reference_003251",
+            "positive": "reference_001182",
+            "negative": "reference_003251",
+            "margin": -0.96775962584216
+          },
+          "mixed_image_only": {
+            "rank": 668,
+            "top1": "reference_003251",
+            "positive": "reference_001182",
+            "negative": "reference_003251",
+            "margin": -1.4411455133256332
+          },
+          "repaired_image_ocr": {
+            "rank": 3,
+            "top1": "reference_002727",
+            "positive": "reference_001182",
+            "negative": "reference_002727",
+            "margin": -0.370258932967483
+          },
+          "mixed_image_ocr": {
+            "rank": 6,
+            "top1": "reference_002727",
+            "positive": "reference_001182",
+            "negative": "reference_002727",
+            "margin": -0.7661538760301418
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.9062336989931062,
+          "ocr": 0.5359747660256233
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "pregnant",
+            "contribution": -0.01564101665153492
+          },
+          {
+            "word": "contact",
+            "contribution": -0.005168026564763418
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 6,
+        "retained_old_codes_plus_decoded_weight1": 6,
+        "retained_old_codes_plus_union_weight4": 6
       }
     },
     {
@@ -1756,13 +3634,58 @@
         "width": 3024,
         "height": 4032,
         "subject_bbox": [
-          545.0,
-          1245.0,
-          2375.0,
-          2665.0
+          545,
+          1245,
+          2375,
+          2665
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_8c54b7644f2e05b2",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.21822295301238892
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.3087997735502781
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.21822349660175888
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.3088003171396476
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.21822295301238892,
+          "ocr": -5.435893708494177e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -1785,26 +3708,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "条码8809479160763已读对且匹配，编号+0.9528；韩文被识别成310、101、号Y等乱码，普通文字净−3.5453。去普通文字保留编号可从第5到第1；去全部OCR仅第3。 自动有效GTIN完整匹配后，统一权重4控制恢复第1；本例已读对，瓶颈在证据加权与文字负贡献。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像、OCR各自均能翻错。四组完整图库排名分别为：修复图像 1，混合图像 3，修复图像＋OCR 4，最终混合＋OCR 5。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          787.0,
-          9.0,
-          1579.0,
-          3719.0
+          787,
+          9,
+          1579,
+          3719
         ],
         "old_ocr_negative_lines": [
           {
             "text": "101，01",
             "bbox": [
-              871.0,
-              1984.0,
-              1472.0,
-              2053.0
+              871,
+              1984,
+              1472,
+              2053
             ],
             "terms": [
               "101"
@@ -1813,10 +3736,10 @@
           {
             "text": "310房10亿属02",
             "bbox": [
-              878.0,
-              2082.0,
-              1479.0,
-              2142.0
+              878,
+              2082,
+              1479,
+              2142
             ],
             "terms": [
               "310"
@@ -1825,10 +3748,10 @@
           {
             "text": "M2202号Y2E310RPEh0",
             "bbox": [
-              878.0,
-              2172.0,
-              1481.0,
-              2238.0
+              878,
+              2172,
+              1481,
+              2238
             ],
             "terms": [
               "310",
@@ -1838,10 +3761,10 @@
           {
             "text": "212105101Y101号10",
             "bbox": [
-              886.0,
-              2691.0,
-              1490.0,
-              2752.0
+              886,
+              2691,
+              1490,
+              2752
             ],
             "terms": [
               "101"
@@ -1849,6 +3772,92 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_9b57495c8cae1f4b",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_003311",
+            "positive": "reference_003311",
+            "negative": "reference_003180",
+            "margin": 0.0763887724453709
+          },
+          "mixed_image_only": {
+            "rank": 3,
+            "top1": "reference_004734",
+            "positive": "reference_003311",
+            "negative": "reference_004734",
+            "margin": -0.10983660239612192
+          },
+          "repaired_image_ocr": {
+            "rank": 4,
+            "top1": "reference_003293",
+            "positive": "reference_003311",
+            "negative": "reference_003293",
+            "margin": -2.074783991538757
+          },
+          "mixed_image_ocr": {
+            "rank": 5,
+            "top1": "reference_003293",
+            "positive": "reference_003311",
+            "negative": "reference_003293",
+            "margin": -2.3499966322220756
+          }
+        },
+        "mechanism_when_repaired_image_correct": "both_single_additions_fail",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.5176585598457859,
+          "ocr": -2.592442551384542
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "310",
+            "contribution": -1.19425580639026
+          },
+          {
+            "word": "101",
+            "contribution": -0.9319006917120445
+          },
+          {
+            "word": "号y",
+            "contribution": -0.7690295105983233
+          },
+          {
+            "word": "号",
+            "contribution": -0.6127478555096335
+          },
+          {
+            "word": "三",
+            "contribution": -0.6056529856670128
+          },
+          {
+            "word": "400",
+            "contribution": -0.2870385642024583
+          },
+          {
+            "word": "y",
+            "contribution": -0.2079635467773334
+          },
+          {
+            "word": "11",
+            "contribution": -0.19071735783590396
+          },
+          {
+            "word": "e",
+            "contribution": -0.15887045120338605
+          },
+          {
+            "word": "222",
+            "contribution": -0.05912524026793094
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 5,
+        "retained_old_codes_plus_decoded_weight1": 5,
+        "retained_old_codes_plus_union_weight4": 1
       }
     },
     {
@@ -1867,26 +3876,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "韩文被错误识别，负文字主项“号”（−1.4297）；文字净−1.3221压过图像+0.5299。去普通文字后完整图库第1。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 26，最终混合＋OCR 24。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          660.0,
-          1533.0,
-          1553.0,
-          2617.0
+          660,
+          1533,
+          1553,
+          2617
         ],
         "old_ocr_negative_lines": [
           {
             "text": "       号 ",
             "bbox": [
-              736.0,
-              1675.0,
-              1503.0,
-              1741.0
+              736,
+              1675,
+              1503,
+              1741
             ],
             "terms": [
               "号"
@@ -1895,10 +3904,10 @@
           {
             "text": "6 3-",
             "bbox": [
-              726.0,
-              1952.0,
-              1507.0,
-              2030.0
+              726,
+              1952,
+              1507,
+              2030
             ],
             "terms": [
               "6"
@@ -1906,6 +3915,60 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_a7b92b4cabf1396a",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_003207",
+            "positive": "reference_003207",
+            "negative": "reference_003124",
+            "margin": 0.30915148281027505
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_003207",
+            "positive": "reference_003207",
+            "negative": "reference_003480",
+            "margin": 0.45210404732655185
+          },
+          "repaired_image_ocr": {
+            "rank": 26,
+            "top1": "reference_004725",
+            "positive": "reference_003207",
+            "negative": "reference_004725",
+            "margin": -0.7105132227666133
+          },
+          "mixed_image_ocr": {
+            "rank": 24,
+            "top1": "reference_002769",
+            "positive": "reference_003207",
+            "negative": "reference_002769",
+            "margin": -0.7921818745956499
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.9545537115161811,
+          "ocr": -1.6650669342827946
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "号",
+            "contribution": -1.429674311940367
+          },
+          {
+            "word": "6",
+            "contribution": -0.2353931112841054
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 24,
+        "retained_old_codes_plus_decoded_weight1": 24,
+        "retained_old_codes_plus_union_weight4": 24
       }
     },
     {
@@ -1935,19 +3998,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          380.0,
-          1173.0,
-          1358.0,
-          3342.0
+          380,
+          1173,
+          1358,
+          3342
         ],
         "old_ocr_negative_lines": [
           {
             "text": "[号]",
             "bbox": [
-              717.0,
-              2056.0,
-              1079.0,
-              2171.0
+              717,
+              2056,
+              1079,
+              2171
             ],
             "terms": [
               "号"
@@ -1956,10 +4019,10 @@
           {
             "text": "A2202号Y2t310R6E30",
             "bbox": [
-              672.0,
-              2194.0,
-              1037.0,
-              2307.0
+              672,
+              2194,
+              1037,
+              2307
             ],
             "terms": [
               "310",
@@ -1969,10 +4032,10 @@
           {
             "text": "2t310RBEh0",
             "bbox": [
-              685.0,
-              2198.0,
-              884.0,
-              2271.0
+              685,
+              2198,
+              884,
+              2271
             ],
             "terms": [
               "310"
@@ -1981,10 +4044,10 @@
           {
             "text": "31022号",
             "bbox": [
-              721.0,
-              2252.0,
-              888.0,
-              2327.0
+              721,
+              2252,
+              888,
+              2327
             ],
             "terms": [
               "号"
@@ -1993,10 +4056,10 @@
           {
             "text": "310亿百号力10",
             "bbox": [
-              679.0,
-              2269.0,
-              891.0,
-              2351.0
+              679,
+              2269,
+              891,
+              2351
             ],
             "terms": [
               "310"
@@ -2005,10 +4068,10 @@
           {
             "text": "22层105101Y51010号0",
             "bbox": [
-              586.0,
-              2455.0,
-              954.0,
-              2572.0
+              586,
+              2455,
+              954,
+              2572
             ],
             "terms": [
               "号"
@@ -2016,6 +4079,92 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_acbddc48df8f77fd",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 3,
+            "top1": "reference_003180",
+            "positive": "reference_003311",
+            "negative": "reference_003180",
+            "margin": -0.16672643843574186
+          },
+          "mixed_image_only": {
+            "rank": 14,
+            "top1": "reference_000965",
+            "positive": "reference_003311",
+            "negative": "reference_000965",
+            "margin": -0.3904912760979484
+          },
+          "repaired_image_ocr": {
+            "rank": 4,
+            "top1": "reference_003293",
+            "positive": "reference_003311",
+            "negative": "reference_003293",
+            "margin": -1.3334018728671424
+          },
+          "mixed_image_ocr": {
+            "rank": 3,
+            "top1": "reference_003293",
+            "positive": "reference_003311",
+            "negative": "reference_003293",
+            "margin": -1.1592147371829205
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.25543632274764816,
+          "ocr": -1.5888381956147901
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "310",
+            "contribution": -0.855397247022759
+          },
+          {
+            "word": "号",
+            "contribution": -0.6998002574978689
+          },
+          {
+            "word": "号y",
+            "contribution": -0.41594713553283863
+          },
+          {
+            "word": "y",
+            "contribution": -0.39951669234591003
+          },
+          {
+            "word": "百",
+            "contribution": -0.2781315656833658
+          },
+          {
+            "word": "22",
+            "contribution": -0.23177620717748057
+          },
+          {
+            "word": "人",
+            "contribution": -0.2156565135336902
+          },
+          {
+            "word": "e",
+            "contribution": -0.14165628395848187
+          },
+          {
+            "word": "102",
+            "contribution": -0.10674356093247271
+          },
+          {
+            "word": "x",
+            "contribution": -0.05902890232444771
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 3,
+        "retained_old_codes_plus_decoded_weight1": 3,
+        "retained_old_codes_plus_union_weight4": 1
       }
     },
     {
@@ -2040,7 +4189,7 @@
       },
       "stage_label": "旧图像分支压过修复图像",
       "finding": "Query说明明确puncture a maximum of20times，错误参考对应段落50times；另有换行差异。这里用可见用法数字，不用未露出的20/50mL正面容量。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像混合单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 2，修复图像＋OCR 1，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
@@ -2054,6 +4203,51 @@
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_bc5564b0e01eeb18",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000229",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": 0.019635753150516244
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_000233",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": -0.02789328423098425
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_000229",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": 0.019635782390771794
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000233",
+            "positive": "reference_000229",
+            "negative": "reference_000233",
+            "margin": -0.02789325499072781
+          }
+        },
+        "mechanism_when_repaired_image_correct": "legacy_image_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.019635753150516244,
+          "ocr": 2.9240256438356482e-8
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -2076,21 +4270,71 @@
         ]
       },
       "stage_label": "旧图像分支压过修复图像",
-      "finding": "全零条码不是独有码；条码下参考编号87936/87946不同，Query区域模糊，新OCR读成8936且无匹配。当前候选对主要由旧图像负贡献压过微弱修复图像正贡献；只用修复图像＋OCR仍第2，八个本轮控制均未到第1。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
-      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "finding": "修复图像完整图库第1；加入旧图像混合后第9，错误参考003297。只加入OCR也变第2，此时错误参考换成003299；修复图像对003299贡献+0.024925，OCR负贡献−0.026066，几乎全部来自OCR中的孤立字母b。最终两者合用第8。已验证两条独立的计分损害路径；小编号8936读取缺失是附加问题，不能代替这两个已查明原因。",
+      "bounded_conclusion": "已验证计分机制：旧图像、OCR各自均能翻错。四组完整图库排名分别为：修复图像 1，混合图像 9，修复图像＋OCR 2，最终混合＋OCR 8。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
+      "conclusion_level": "完整图库干预已改变成败",
       "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          751.0,
-          1373.0,
-          1281.0,
-          3200.0
+          751,
+          1373,
+          1281,
+          3200
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_c576c0c30f74cd4f",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_003298",
+            "positive": "reference_003298",
+            "negative": "reference_003306",
+            "margin": 0.0012853809394046678
+          },
+          "mixed_image_only": {
+            "rank": 9,
+            "top1": "reference_003297",
+            "positive": "reference_003298",
+            "negative": "reference_003297",
+            "margin": -0.20897351581785717
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_003299",
+            "positive": "reference_003298",
+            "negative": "reference_003299",
+            "margin": -0.0011408282214553367
+          },
+          "mixed_image_ocr": {
+            "rank": 8,
+            "top1": "reference_003297",
+            "positive": "reference_003298",
+            "negative": "reference_003297",
+            "margin": -0.2089735841873992
+          }
+        },
+        "mechanism_when_repaired_image_correct": "both_single_additions_fail",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.02492529341057015,
+          "ocr": -0.02606612163202726
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "b",
+            "contribution": -0.02606605742438849
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 8,
+        "retained_old_codes_plus_decoded_weight1": 8,
+        "retained_old_codes_plus_union_weight4": 8
       }
     },
     {
@@ -2124,6 +4368,51 @@
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_c8920e14924534af",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.22087802289611735
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.2585872470358872
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.22087775234687435
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004976",
+            "positive": "reference_004975",
+            "negative": "reference_004976",
+            "margin": -0.25858697648664375
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.22087802289611735,
+          "ocr": 2.705492434529333e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -2141,20 +4430,65 @@
       },
       "stage_label": "旧图像分支压过修复图像",
       "finding": "Query盖面Mucus/Extended Release两行大字、右侧12小时圆标；错误盖面Mucus Extended-/Release的分行、连字符与圆标位置不同。1200mg相同；正面28/42片数未露出。",
-      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：旧图像混合单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 2，修复图像＋OCR 1，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          159.0,
-          1561.0,
-          2018.0,
-          2498.0
+          159,
+          1561,
+          2018,
+          2498
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_da9d9887ba9c878f",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000936",
+            "positive": "reference_000936",
+            "negative": "reference_004358",
+            "margin": 0.05127180702071943
+          },
+          "mixed_image_only": {
+            "rank": 2,
+            "top1": "reference_004358",
+            "positive": "reference_000936",
+            "negative": "reference_004358",
+            "margin": -0.08539015421875629
+          },
+          "repaired_image_ocr": {
+            "rank": 1,
+            "top1": "reference_000936",
+            "positive": "reference_000936",
+            "negative": "reference_004358",
+            "margin": 0.051271154797461804
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004358",
+            "positive": "reference_000936",
+            "negative": "reference_004358",
+            "margin": -0.08539080644201391
+          }
+        },
+        "mechanism_when_repaired_image_correct": "legacy_image_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.05127180702071943,
+          "ocr": -6.522232576244846e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -2185,19 +4519,19 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          708.0,
-          1037.0,
-          1548.0,
-          2905.0
+          708,
+          1037,
+          1548,
+          2905
         ],
         "old_ocr_negative_lines": [
           {
             "text": "Reconstitute ALPROLUX with",
             "bbox": [
-              806.0,
-              1998.0,
-              1240.0,
-              2056.0
+              806,
+              1998,
+              1240,
+              2056
             ],
             "terms": [
               "alprolux"
@@ -2205,6 +4539,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_dd1b9056edc18f04",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_004779",
+            "positive": "reference_004780",
+            "negative": "reference_004779",
+            "margin": -0.0370517291418917
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_004780",
+            "positive": "reference_004780",
+            "negative": "reference_004779",
+            "margin": 0.1236149562397344
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004779",
+            "positive": "reference_004780",
+            "negative": "reference_004779",
+            "margin": -0.183308793130319
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_004779",
+            "positive": "reference_004780",
+            "negative": "reference_004779",
+            "margin": -0.02264210774869113
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.0370517291418917,
+          "ocr": -0.14625706398842553
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "alprolux",
+            "contribution": -0.3894324047006172
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -2229,13 +4613,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          598.0,
-          388.0,
-          1790.0,
-          2776.0
+          598,
+          388,
+          1790,
+          2776
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_e5b4dba01622bfaf",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 2,
+            "top1": "reference_003667",
+            "positive": "reference_001133",
+            "negative": "reference_003667",
+            "margin": -0.05190327380952109
+          },
+          "mixed_image_only": {
+            "rank": 3,
+            "top1": "reference_003667",
+            "positive": "reference_001133",
+            "negative": "reference_003667",
+            "margin": -0.05583051594820043
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_003667",
+            "positive": "reference_001133",
+            "negative": "reference_003667",
+            "margin": -0.051903344758606806
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_003667",
+            "positive": "reference_001133",
+            "negative": "reference_003667",
+            "margin": -0.055830586897286594
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.05190327380952109,
+          "ocr": -7.094908616167572e-8
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     },
     {
@@ -2253,26 +4682,26 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "韩文乱码“号”几乎构成全部负文字差额（−1.1119）；去普通文字后完整图库第1。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 6，最终混合＋OCR 9。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          228.0,
-          1065.0,
-          1882.0,
-          2612.0
+          228,
+          1065,
+          1882,
+          2612
         ],
         "old_ocr_negative_lines": [
           {
             "text": "号",
             "bbox": [
-              303.0,
-              1526.0,
-              1808.0,
-              1603.0
+              303,
+              1526,
+              1808,
+              1603
             ],
             "terms": [
               "号"
@@ -2280,6 +4709,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_ee67048e97d12344",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_003207",
+            "positive": "reference_003207",
+            "negative": "reference_003123",
+            "margin": 0.3322954750048739
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_003207",
+            "positive": "reference_003207",
+            "negative": "reference_003123",
+            "margin": 0.10179938677425016
+          },
+          "repaired_image_ocr": {
+            "rank": 6,
+            "top1": "reference_003123",
+            "positive": "reference_003207",
+            "negative": "reference_003123",
+            "margin": -0.7796320844146649
+          },
+          "mixed_image_ocr": {
+            "rank": 9,
+            "top1": "reference_003123",
+            "positive": "reference_003207",
+            "negative": "reference_003123",
+            "margin": -1.0101281726452886
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.3322954750048739,
+          "ocr": -1.1119275594195388
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "号",
+            "contribution": -1.111927347540516
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 9,
+        "retained_old_codes_plus_decoded_weight1": 9,
+        "retained_old_codes_plus_union_weight4": 9
       }
     },
     {
@@ -2305,13 +4784,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          528.0,
-          1333.0,
-          1551.0,
-          2403.0
+          528,
+          1333,
+          1551,
+          2403
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_f9a136cbb2bdc194",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 4,
+            "top1": "reference_001215",
+            "positive": "reference_001190",
+            "negative": "reference_001215",
+            "margin": -0.4284644548245784
+          },
+          "mixed_image_only": {
+            "rank": 4,
+            "top1": "reference_002096",
+            "positive": "reference_001190",
+            "negative": "reference_002096",
+            "margin": -0.43325287592531136
+          },
+          "repaired_image_ocr": {
+            "rank": 4,
+            "top1": "reference_001215",
+            "positive": "reference_001190",
+            "negative": "reference_001215",
+            "margin": -0.4284650272797883
+          },
+          "mixed_image_ocr": {
+            "rank": 4,
+            "top1": "reference_002096",
+            "positive": "reference_001190",
+            "negative": "reference_002096",
+            "margin": -0.43325365388794523
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -0.4284644548245784,
+          "ocr": -5.724552085695223e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 4,
+        "retained_old_codes_plus_decoded_weight1": 4,
+        "retained_old_codes_plus_union_weight4": 4
       }
     },
     {
@@ -2336,13 +4860,58 @@
         "width": 2160,
         "height": 3840,
         "subject_bbox": [
-          445.0,
-          935.0,
-          1472.0,
-          2188.0
+          445,
+          935,
+          1472,
+          2188
         ],
         "old_ocr_negative_lines": [],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_fc0ee05b6b185ffa",
+        "target18": false,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 10,
+            "top1": "reference_005332",
+            "positive": "reference_004857",
+            "negative": "reference_005332",
+            "margin": -1.0491234647048753
+          },
+          "mixed_image_only": {
+            "rank": 9,
+            "top1": "reference_005332",
+            "positive": "reference_004857",
+            "negative": "reference_005332",
+            "margin": -0.9436195523224153
+          },
+          "repaired_image_ocr": {
+            "rank": 10,
+            "top1": "reference_005332",
+            "positive": "reference_004857",
+            "negative": "reference_005332",
+            "margin": -1.049124033497904
+          },
+          "mixed_image_ocr": {
+            "rank": 9,
+            "top1": "reference_005332",
+            "positive": "reference_004857",
+            "negative": "reference_005332",
+            "margin": -0.9436201211154422
+          }
+        },
+        "mechanism_when_repaired_image_correct": null,
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": -1.0491234647048753,
+          "ocr": -5.687930269004937e-7
+        },
+        "direct_pair_negative_terms": []
+      },
+      "composed_controls": {
+        "retained_old_codes": 9,
+        "retained_old_codes_plus_decoded_weight1": 9,
+        "retained_old_codes_plus_union_weight4": 9
       }
     },
     {
@@ -2361,7 +4930,7 @@
       },
       "stage_label": "OCR压过混合图像",
       "finding": "文字负差额几乎全部来自“40”（−0.3750）；体重字段被拆碎，失去区间语义。蓝/绿可见色差及图像正支持没有挡住该负分；去普通文字可到第1。",
-      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "bounded_conclusion": "已验证计分机制：OCR单独翻错。四组完整图库排名分别为：修复图像 1，混合图像 1，修复图像＋OCR 2，最终混合＋OCR 2。这证明特定计分接口导致本例错误，不单独证明颜色或版式的编码机制。",
       "conclusion_level": "完整图库干预已改变成败",
       "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
       "locator": {
@@ -2377,10 +4946,10 @@
           {
             "text": "40",
             "bbox": [
-              1589.0,
-              3364.0,
-              1790.0,
-              3763.0
+              1589,
+              3364,
+              1790,
+              3763
             ],
             "terms": [
               "40"
@@ -2388,6 +4957,56 @@
           }
         ],
         "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      },
+      "interface_factorial": {
+        "query": "photo_fd3bb2cdcb3bd3a7",
+        "target18": true,
+        "pairs": {
+          "repaired_image_only": {
+            "rank": 1,
+            "top1": "reference_000265",
+            "positive": "reference_000265",
+            "negative": "reference_000266",
+            "margin": 0.04036779050720618
+          },
+          "mixed_image_only": {
+            "rank": 1,
+            "top1": "reference_000265",
+            "positive": "reference_000265",
+            "negative": "reference_000262",
+            "margin": 0.019214861160484542
+          },
+          "repaired_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000264",
+            "positive": "reference_000265",
+            "negative": "reference_000264",
+            "margin": -0.24605677220422262
+          },
+          "mixed_image_ocr": {
+            "rank": 2,
+            "top1": "reference_000264",
+            "positive": "reference_000265",
+            "negative": "reference_000264",
+            "margin": -0.3291935912671189
+          }
+        },
+        "mechanism_when_repaired_image_correct": "ocr_only",
+        "direct_image_ocr_pair_parts": {
+          "repaired_image": 0.12893190828242052,
+          "ocr": -0.37498868048664313
+        },
+        "direct_pair_negative_terms": [
+          {
+            "word": "40",
+            "contribution": -0.3749891571992732
+          }
+        ]
+      },
+      "composed_controls": {
+        "retained_old_codes": 2,
+        "retained_old_codes_plus_decoded_weight1": 2,
+        "retained_old_codes_plus_union_weight4": 2
       }
     }
   ]
