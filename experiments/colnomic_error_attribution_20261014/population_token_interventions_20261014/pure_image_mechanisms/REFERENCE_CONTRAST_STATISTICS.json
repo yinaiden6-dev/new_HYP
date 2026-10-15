@@ -1,0 +1,118 @@
+{
+  "all": {
+    "queries": 1117,
+    "identities": 130,
+    "repairs": 26,
+    "harms": 8,
+    "repair_identities": 22,
+    "harm_identities": 7,
+    "micro_difference": 0.01611459265890779,
+    "micro_identity_cluster95": [
+      0.005385996409335727,
+      0.027002719871290264
+    ],
+    "macro_difference": 0.011976581111196495,
+    "macro_identity_cluster95": [
+      0.00155378996003996,
+      0.022346198939948936
+    ],
+    "nominal_paired_exact_p": 0.0029350556433200836,
+    "repair_overlap_subject": 18,
+    "repair_overlap_crop": 14,
+    "repair_outside_corrected_fusion": 3,
+    "repaired_original_ranks": [
+      2,
+      3,
+      2,
+      2,
+      2,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      6,
+      2,
+      12,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "val": {
+    "queries": 173,
+    "identities": 21,
+    "repairs": 1,
+    "harms": 0,
+    "repair_identities": 1,
+    "harm_identities": 0,
+    "micro_difference": 0.005780346820809248,
+    "micro_identity_cluster95": [
+      0.0,
+      0.01875
+    ],
+    "macro_difference": 0.007936507936507936,
+    "macro_identity_cluster95": [
+      0.0,
+      0.023809523809523808
+    ],
+    "nominal_paired_exact_p": 1.0,
+    "repair_overlap_subject": 1,
+    "repair_overlap_crop": 1,
+    "repair_outside_corrected_fusion": 0,
+    "repaired_original_ranks": [
+      2
+    ]
+  },
+  "test": {
+    "queries": 161,
+    "identities": 18,
+    "repairs": 4,
+    "harms": 2,
+    "repair_identities": 4,
+    "harm_identities": 2,
+    "micro_difference": 0.012422360248447204,
+    "micro_identity_cluster95": [
+      -0.012345679012345678,
+      0.035975556903874426
+    ],
+    "macro_difference": 0.010030864197530862,
+    "macro_identity_cluster95": [
+      -0.013888888888888888,
+      0.033950617283950615
+    ],
+    "nominal_paired_exact_p": 0.6875,
+    "repair_overlap_subject": 4,
+    "repair_overlap_crop": 3,
+    "repair_outside_corrected_fusion": 0,
+    "repaired_original_ranks": [
+      3,
+      2,
+      2,
+      2
+    ]
+  },
+  "nulls": {
+    "n": 10,
+    "min_correct": 864,
+    "max_correct": 871,
+    "mean_correct": 868.5,
+    "matched_visual_template_weight_mass": true
+  },
+  "limits": [
+    "Historical identity split, repeatedly inspected; not a fresh blinded test.",
+    "All-cohort and validation uncertainty are descriptive after selection, not unbiased confirmatory inference.",
+    "Identity-cluster bootstrap has only18 historical test identities; uncertainty can be wide.",
+    "Ten shuffles are a mechanistic negative control, insufficient for fine permutation significance."
+  ]
+}

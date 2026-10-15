@@ -1,0 +1,23 @@
+{
+  "max_additive_error": 2.028585552316109e-08,
+  "dual_fill_full_rescue_queries": 30,
+  "already_subject_correct_queries": 26,
+  "outside_subject_repair_queries": 4,
+  "arms": {
+    "far_background_gray": {
+      "n": 30,
+      "background_region_update_sufficient": 29,
+      "subject_and_template_update_sufficient": 9,
+      "neither_alone_sufficient": 1,
+      "positive_without_rematching": 23
+    },
+    "far_background_blur": {
+      "n": 30,
+      "background_region_update_sufficient": 27,
+      "subject_and_template_update_sufficient": 11,
+      "neither_alone_sufficient": 3,
+      "positive_without_rematching": 25
+    }
+  },
+  "limits": "Fixed original correct/wrong pair. Region hybrids are score arithmetic, not additional realistic pixel interventions; sufficiency against this pair is not full-gallery sufficiency. Groups can overlap."
+}

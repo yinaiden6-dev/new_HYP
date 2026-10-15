@@ -1,0 +1,22 @@
+{
+  "population": {
+    "total": 1117,
+    "correct": 881,
+    "repairs": 62,
+    "harms": 51,
+    "neither": 156,
+    "crop_and_center": 38,
+    "crop_only": 24,
+    "center_only": 29
+  },
+  "subject_readout_harms31": {
+    "n": 31,
+    "crop_correct": 19
+  },
+  "validation": "All1117 positive-referenceSHA sets and Top1 correctness rechecked against current cohort.",
+  "limits": [
+    "Existing crop experiment reused; not a new model run.",
+    "Crop changes object scale, context, token count and potentially EXIF orientation together.",
+    "Crop boxes are the historical experiment version, not guaranteed identical to current reviewed boxes; crop/readout difference is not a single-factor mechanism estimate."
+  ]
+}

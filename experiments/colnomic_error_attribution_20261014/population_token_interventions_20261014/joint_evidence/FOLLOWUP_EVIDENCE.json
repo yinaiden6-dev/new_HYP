@@ -1,0 +1,96 @@
+{
+  "remaining_joint_errors": 81,
+  "ocr_new_repairs_after_image": 104,
+  "ocr_new_repairs_lost_after_positive_term_removal": 91,
+  "remaining_errors_repaired_by_negative_term_removal_diagnostic": 20,
+  "new_joint_harms_vs_corrected_ocr": 19,
+  "new_joint_harm_rank_bands": {
+    "2-5": 17,
+    "6-20": 2
+  },
+  "remaining_stages": {
+    "ocr_tie_image_error": 35,
+    "both_channels_nonpositive": 10,
+    "image_overturns_ocr_support": 17,
+    "ocr_overturns_image_support": 19
+  },
+  "original247_any_single_image_arm_diagnostic_repairs": 154,
+  "all1117_have_score_evidence_and_direction": true,
+  "prior_strong_baselines": {
+    "prior_subject_image": {
+      "all": {
+        "n": 1117,
+        "prior_correct": 906,
+        "new_correct": 944,
+        "repairs": 83,
+        "harms": 45
+      },
+      "val": {
+        "n": 173,
+        "prior_correct": 142,
+        "new_correct": 144,
+        "repairs": 10,
+        "harms": 8
+      },
+      "test": {
+        "n": 161,
+        "prior_correct": 132,
+        "new_correct": 128,
+        "repairs": 7,
+        "harms": 11
+      }
+    },
+    "prior_subject_corrected_ocr": {
+      "all": {
+        "n": 1117,
+        "prior_correct": 1035,
+        "new_correct": 1036,
+        "repairs": 21,
+        "harms": 20
+      },
+      "val": {
+        "n": 173,
+        "prior_correct": 160,
+        "new_correct": 157,
+        "repairs": 3,
+        "harms": 6
+      },
+      "test": {
+        "n": 161,
+        "prior_correct": 151,
+        "new_correct": 149,
+        "repairs": 2,
+        "harms": 4
+      }
+    },
+    "prior_subject_numeric": {
+      "all": {
+        "n": 1117,
+        "prior_correct": 1035,
+        "new_correct": 1036,
+        "repairs": 24,
+        "harms": 23
+      },
+      "val": {
+        "n": 173,
+        "prior_correct": 163,
+        "new_correct": 157,
+        "repairs": 2,
+        "harms": 8
+      },
+      "test": {
+        "n": 161,
+        "prior_correct": 149,
+        "new_correct": 149,
+        "repairs": 4,
+        "harms": 4
+      }
+    }
+  },
+  "pure_image_repairs_already_correct_with_original_image_corrected_ocr": 92,
+  "pure_image_repairs_total": 113,
+  "limits": [
+    "Truth-selected term deletion tests reliance on those frozen OCR scores, not whether the OCR transcription or semantic identity is correct.",
+    "Per-query union of image arms is diagnostic coverage and cannot be reported as a deployed retrieval accuracy."
+  ]
+}

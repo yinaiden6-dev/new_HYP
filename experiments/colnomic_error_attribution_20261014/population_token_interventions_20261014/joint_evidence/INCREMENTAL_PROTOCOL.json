@@ -1,0 +1,12 @@
+{
+  "request": "Preserve the existing numeric-tokenization plus subject-token1035 pipeline, then add the new image repair.",
+  "baseline": "Exactly reproduce the existing numeric/fresh center-token mixture, including its production empty-OCR fallback. Obtain its fixed subject weight from token_summary.json; expected0.2.",
+  "new_image_branch": "Use the already frozen pure-image selection, without reselecting its crop/reference parameters after OCR results.",
+  "formula": "I_gamma = 0.2*S_subject + 0.8*((1-gamma)*S_original + gamma*S_repaired_image). Final = 0.5*z(I_gamma) + 0.5*Z_numeric_production. The subject coefficient, numeric tokenizer, OCR evidence, and fusion0.5 remain fixed.",
+  "gamma": [0, 0.1, 0.25, 0.5, 0.75, 1],
+  "selection": ["existing validation package macro Top1", "validation package macro MRR", "smaller gamma"],
+  "primary": "Choose gamma using validation only; gamma0 must exactly recover the1035baseline. Freeze selection before computing selected test summaries.",
+  "controls": ["Report fixed gamma0.25 without selection", "At the selected gamma retain original numeric-subject image mean/std as a normalization control", "Report whether production numeric component differs from literal z(text) on empty-text fallback rows; do not silently alter baseline behavior"],
+  "evidence": "All1117 full-gallery ranks; paired repairs/harms against1035; final actual-positive/negative image and numeric term contributions; retain every previous experiment as a named comparator.",
+  "limits": ["Human boxes remain additional supervision.", "Repeatedly inspected historical test identities are exploratory evidence.", "No per-query oracle weights or truth-selected OCR are used for retrieval."]
+}

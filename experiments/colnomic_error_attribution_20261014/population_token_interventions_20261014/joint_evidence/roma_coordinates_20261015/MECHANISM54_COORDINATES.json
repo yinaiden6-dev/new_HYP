@@ -1,0 +1,4766 @@
+[
+  {
+    "query": "photo_02fb3c06e1fb70e5",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1129,
+      "negative": 3109
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.0661534721377599,
+      "subject_image": -0.11948514879951189,
+      "new_image": -0.15189514496857548,
+      "ocr": -2.236046281467452e-08,
+      "code": 0.0
+    },
+    "current_margin": -0.33753378826630875,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.006922196014784277,
+        "inside": -0.006121754258250196,
+        "outside": -0.0008004417565340807,
+        "positive_token_count": 343,
+        "negative_token_count": 425
+      },
+      "S": {
+        "total": 0.025409127963451968,
+        "inside": 0.024238486329500555,
+        "outside": 0.0011706416339514088,
+        "positive_token_count": 628,
+        "negative_token_count": 140
+      },
+      "D": {
+        "total": 0.024293019447416506,
+        "inside": 0.023135673036431235,
+        "outside": 0.0011573464109852693,
+        "positive_token_count": 698,
+        "negative_token_count": 70
+      },
+      "H": {
+        "total": 0.02408560899022475,
+        "inside": 0.0231153308964085,
+        "outside": 0.000970278093816254,
+        "positive_token_count": 601,
+        "negative_token_count": 167
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.08413109183311462,
+      "S": 0.02579798921942711,
+      "G": 0.36652249097824097,
+      "D": 0.024480076506733894,
+      "H": 0.02447446994483471,
+      "Droll": 0.02312130481004715,
+      "Hroll": 0.023358598351478577,
+      "MaxSim": 0.48231014609336853,
+      "subject_fraction": 0.9391815270749896,
+      "homography_valid": true,
+      "homography_points": 365,
+      "subject_token_fraction": 0.2721354166666667
+    },
+    "negative_features": {
+      "M": 0.010479405522346497,
+      "S": 0.0003888606443069875,
+      "G": 0.0,
+      "D": 0.00018705632828641683,
+      "H": 0.0003888606443069875,
+      "Droll": 0.00013740980648435652,
+      "Hroll": 0.0003888606443069875,
+      "MaxSim": 0.48923230171203613,
+      "subject_fraction": 0.08356010111319964,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.2721354166666667
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_0913bcc35e9beb5a",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1357,
+      "negative": 4710
+    },
+    "fixed_rank": 3,
+    "current_branch_parts": {
+      "original_image": -0.5211741726490655,
+      "subject_image": -0.30150978483362123,
+      "new_image": -0.3314620481284596,
+      "ocr": 0.9465286677567084,
+      "code": 0.0
+    },
+    "current_margin": -0.20761733785443948,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.10734482482075691,
+        "inside": -0.06691644162767463,
+        "outside": -0.040428383193082285,
+        "positive_token_count": 220,
+        "negative_token_count": 500
+      },
+      "S": {
+        "total": 0.05107440237274503,
+        "inside": 0.05024286689920933,
+        "outside": 0.0008315354735356994,
+        "positive_token_count": 596,
+        "negative_token_count": 124
+      },
+      "D": {
+        "total": 0.047806056266173305,
+        "inside": 0.04703362414305048,
+        "outside": 0.0007724321231228278,
+        "positive_token_count": 598,
+        "negative_token_count": 122
+      },
+      "H": {
+        "total": 0.04751285956681311,
+        "inside": 0.046785677381854844,
+        "outside": 0.0007271821849582627,
+        "positive_token_count": 585,
+        "negative_token_count": 135
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.19036442041397095,
+      "S": 0.05243588238954544,
+      "G": 0.5302770733833313,
+      "D": 0.04887544363737106,
+      "H": 0.04887433722615242,
+      "Droll": 0.04671156406402588,
+      "Hroll": 0.04640248790383339,
+      "MaxSim": 0.5347715616226196,
+      "subject_fraction": 0.9871308392253862,
+      "homography_valid": true,
+      "homography_points": 1252,
+      "subject_token_fraction": 0.5333333333333333
+    },
+    "negative_features": {
+      "M": 0.012687033042311668,
+      "S": 0.0013614828931167722,
+      "G": 0.0,
+      "D": 0.001069390680640936,
+      "H": 0.0013614828931167722,
+      "Droll": 0.0011221752502024174,
+      "Hroll": 0.0013614828931167722,
+      "MaxSim": 0.642116367816925,
+      "subject_fraction": 0.8419832302542555,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.5333333333333333
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_0a0e75a3b7797609",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 518,
+      "negative": 3895
+    },
+    "fixed_rank": 8,
+    "current_branch_parts": {
+      "original_image": 0.22525617714229007,
+      "subject_image": 0.19405229664079426,
+      "new_image": 0.3075489294333371,
+      "ocr": -2.417745537039683,
+      "code": 0.0
+    },
+    "current_margin": -1.690888133823261,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.03315943487816386,
+        "inside": 0.007391550805833605,
+        "outside": 0.02576788407233026,
+        "positive_token_count": 486,
+        "negative_token_count": 234
+      },
+      "S": {
+        "total": 0.014800848845288693,
+        "inside": 0.013722512253679745,
+        "outside": 0.0010783365916089483,
+        "positive_token_count": 406,
+        "negative_token_count": 314
+      },
+      "D": {
+        "total": 0.014478082969165277,
+        "inside": 0.01344072612287493,
+        "outside": 0.0010373568462903457,
+        "positive_token_count": 425,
+        "negative_token_count": 295
+      },
+      "H": {
+        "total": 0.014358915152912346,
+        "inside": 0.01337938778401664,
+        "outside": 0.0009795273688957043,
+        "positive_token_count": 379,
+        "negative_token_count": 341
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.04804347828030586,
+      "S": 0.017652790993452072,
+      "G": 0.5188154578208923,
+      "D": 0.017207426950335503,
+      "H": 0.017210856080055237,
+      "Droll": 0.01585674285888672,
+      "Hroll": 0.01603354513645172,
+      "MaxSim": 0.6136434078216553,
+      "subject_fraction": 0.8908780714226664,
+      "homography_valid": true,
+      "homography_points": 311,
+      "subject_token_fraction": 0.1361111111111111
+    },
+    "negative_features": {
+      "M": 0.016807150095701218,
+      "S": 0.0028519423212856054,
+      "G": 0.0,
+      "D": 0.002729343483224511,
+      "H": 0.0028519423212856054,
+      "Droll": 0.0025291708298027515,
+      "Hroll": 0.0028519423212856054,
+      "MaxSim": 0.5804840326309204,
+      "subject_fraction": 0.7366602104765643,
+      "homography_valid": false,
+      "homography_points": 3,
+      "subject_token_fraction": 0.1361111111111111
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_0be06814ec4048e3",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1321,
+      "negative": 1311
+    },
+    "fixed_rank": 5,
+    "current_branch_parts": {
+      "original_image": -0.1254056208800849,
+      "subject_image": -0.0842005866223352,
+      "new_image": -0.010716323112543336,
+      "ocr": -5.299300855909905e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.22032306054505035,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.015981694828304978,
+        "inside": -0.003764861242638694,
+        "outside": -0.012216833585666286,
+        "positive_token_count": 324,
+        "negative_token_count": 396
+      },
+      "S": {
+        "total": 0.02434830158144497,
+        "inside": 0.023970593395847915,
+        "outside": 0.000377708185597055,
+        "positive_token_count": 493,
+        "negative_token_count": 227
+      },
+      "D": {
+        "total": 0.023765586925677862,
+        "inside": 0.02340056485507941,
+        "outside": 0.0003650220705984551,
+        "positive_token_count": 516,
+        "negative_token_count": 204
+      },
+      "H": {
+        "total": 0.023755684445600684,
+        "inside": 0.02339034154603692,
+        "outside": 0.00036534289956376435,
+        "positive_token_count": 522,
+        "negative_token_count": 198
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.07033386081457138,
+      "S": 0.030093694105744362,
+      "G": 0.6833648681640625,
+      "D": 0.02919882722198963,
+      "H": 0.029199782758951187,
+      "Droll": 0.027576541528105736,
+      "Hroll": 0.027271602302789688,
+      "MaxSim": 0.6423724293708801,
+      "subject_fraction": 0.9751077502026693,
+      "homography_valid": true,
+      "homography_points": 465,
+      "subject_token_fraction": 0.1527777777777778
+    },
+    "negative_features": {
+      "M": 0.025280695408582687,
+      "S": 0.0057453918270766735,
+      "G": 0.21265532076358795,
+      "D": 0.005433239042758942,
+      "H": 0.005444096866995096,
+      "Droll": 0.004956349730491638,
+      "Hroll": 0.005041438154876232,
+      "MaxSim": 0.6583541035652161,
+      "subject_fraction": 0.9322306869966616,
+      "homography_valid": true,
+      "homography_points": 82,
+      "subject_token_fraction": 0.1527777777777778
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_1f48d45127db4129",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1139,
+      "negative": 4489
+    },
+    "fixed_rank": 16,
+    "current_branch_parts": {
+      "original_image": -0.4555716024598704,
+      "subject_image": -0.27215170708331815,
+      "new_image": -0.5372128893144406,
+      "ocr": 0.4509070285404708,
+      "code": 0.0
+    },
+    "current_margin": -0.8140291703171583,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.12077772025432851,
+        "inside": -0.052027481752965184,
+        "outside": -0.06875023850136333,
+        "positive_token_count": 155,
+        "negative_token_count": 565
+      },
+      "S": {
+        "total": -0.0034211373480351175,
+        "inside": -0.003440871119532717,
+        "outside": 1.973377149759962e-05,
+        "positive_token_count": 184,
+        "negative_token_count": 536
+      },
+      "D": {
+        "total": -0.0033433945597969583,
+        "inside": -0.0033237469946326634,
+        "outside": -1.9647565164295195e-05,
+        "positive_token_count": 118,
+        "negative_token_count": 602
+      },
+      "H": {
+        "total": -0.0034211373480351175,
+        "inside": -0.003440871119532717,
+        "outside": 1.973377149759962e-05,
+        "positive_token_count": 184,
+        "negative_token_count": 536
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": true
+    },
+    "positive_features": {
+      "M": 0.027518603950738907,
+      "S": 0.0017775478772819042,
+      "G": 0.0,
+      "D": 0.0010257617104798555,
+      "H": 0.0017775478772819042,
+      "Droll": 0.0008666097419336438,
+      "Hroll": 0.0017775478772819042,
+      "MaxSim": 0.5853503942489624,
+      "subject_fraction": 0.8669774316841059,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.35
+    },
+    "negative_features": {
+      "M": 0.03958544880151749,
+      "S": 0.005198684986680746,
+      "G": 0.0,
+      "D": 0.004369155969470739,
+      "H": 0.005198684986680746,
+      "Droll": 0.003950673621147871,
+      "Hroll": 0.005198684986680746,
+      "MaxSim": 0.7061281204223633,
+      "subject_fraction": 0.9665714763431364,
+      "homography_valid": false,
+      "homography_points": 1,
+      "subject_token_fraction": 0.35
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_206a9b7d61884264",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 3298,
+      "negative": 3306
+    },
+    "fixed_rank": 9,
+    "current_branch_parts": {
+      "original_image": -0.04544594375744904,
+      "subject_image": -0.020321797296239064,
+      "new_image": 0.013495925707302625,
+      "ocr": -0.6345627340836923,
+      "code": 0.0
+    },
+    "current_margin": -0.6868345494300776,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.009287175494763584,
+        "inside": -0.0031842775228950702,
+        "outside": -0.006102897971868513,
+        "positive_token_count": 310,
+        "negative_token_count": 410
+      },
+      "S": {
+        "total": -0.0020345236789515004,
+        "inside": -0.002020686030546736,
+        "outside": -1.3837648404764678e-05,
+        "positive_token_count": 285,
+        "negative_token_count": 435
+      },
+      "D": {
+        "total": -0.0019943068488761325,
+        "inside": -0.001983454417324217,
+        "outside": -1.0852431551915365e-05,
+        "positive_token_count": 290,
+        "negative_token_count": 430
+      },
+      "H": {
+        "total": -0.0019941567709015713,
+        "inside": -0.001983170778456722,
+        "outside": -1.098599244484941e-05,
+        "positive_token_count": 284,
+        "negative_token_count": 436
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.1154266744852066,
+      "S": 0.05620473250746727,
+      "G": 0.4666057229042053,
+      "D": 0.054710328578948975,
+      "H": 0.05470338836312294,
+      "Droll": 0.05316661670804024,
+      "Hroll": 0.05314071476459503,
+      "MaxSim": 0.7223224639892578,
+      "subject_fraction": 0.9856425909014586,
+      "homography_valid": true,
+      "homography_points": 690,
+      "subject_token_fraction": 0.375
+    },
+    "negative_features": {
+      "M": 0.11844480782747269,
+      "S": 0.05823926255106926,
+      "G": 0.48032382130622864,
+      "D": 0.05670464411377907,
+      "H": 0.0566975474357605,
+      "Droll": 0.055015504360198975,
+      "Hroll": 0.054992277175188065,
+      "MaxSim": 0.7316096425056458,
+      "subject_fraction": 0.9854182614186718,
+      "homography_valid": true,
+      "homography_points": 711,
+      "subject_token_fraction": 0.375
+    },
+    "evidence": [
+      "已保存正负图的双向匹配、逐Token差额及现有各分支贡献；当前对照尚未产生该固定对的稳定反转证据。"
+    ],
+    "repair_directions": [
+      "按现有差额最大的错误区域复核对应包装面、颜色或编号，验证局部视觉比较；不能据此宣称编码器完全丢失信息。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_21fb819788729c55",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 9,
+      "negative": 51
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": 0.019569088306849558,
+      "subject_image": -0.011098987736852806,
+      "new_image": 0.09463340769976636,
+      "ocr": -0.12546178794631224,
+      "code": 0.0
+    },
+    "current_margin": -0.02235827967654913,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.0032486273389723576,
+        "inside": -4.0197206868066034e-05,
+        "outside": 0.003288824545840424,
+        "positive_token_count": 361,
+        "negative_token_count": 359
+      },
+      "S": {
+        "total": -0.0002281292486182006,
+        "inside": -2.002935150356205e-05,
+        "outside": -0.00020809989711463857,
+        "positive_token_count": 188,
+        "negative_token_count": 532
+      },
+      "D": {
+        "total": -7.657211176546151e-05,
+        "inside": -1.525764550483913e-05,
+        "outside": -6.131446626062237e-05,
+        "positive_token_count": 305,
+        "negative_token_count": 415
+      },
+      "H": {
+        "total": -0.0002281292486182006,
+        "inside": -2.002935150356205e-05,
+        "outside": -0.00020809989711463857,
+        "positive_token_count": 188,
+        "negative_token_count": 532
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.01403573714196682,
+      "S": 0.00034715075162239373,
+      "G": 0.0,
+      "D": 0.00010583621042314917,
+      "H": 0.00034715075162239373,
+      "Droll": 9.934871923178434e-05,
+      "Hroll": 0.00034715075162239373,
+      "MaxSim": 0.7365683913230896,
+      "subject_fraction": 0.11681471462710213,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.075
+    },
+    "negative_features": {
+      "M": 0.013259666971862316,
+      "S": 0.0005752799334004521,
+      "G": 0.0,
+      "D": 0.00018240830104332417,
+      "H": 0.0005752799334004521,
+      "Droll": 0.00017615771503187716,
+      "Hroll": 0.0005752799334004521,
+      "MaxSim": 0.7333197593688965,
+      "subject_fraction": 0.12377513774343561,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.075
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_2bb7a4894380d509",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 3298,
+      "negative": 3299
+    },
+    "fixed_rank": 8,
+    "current_branch_parts": {
+      "original_image": -0.09203948246816651,
+      "subject_image": -0.06719721708177095,
+      "new_image": 0.006452726346870996,
+      "ocr": -1.2442375219023916e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.1527840976268191,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.013270659454994732,
+        "inside": -0.007971114872230425,
+        "outside": -0.005299544582764309,
+        "positive_token_count": 285,
+        "negative_token_count": 435
+      },
+      "S": {
+        "total": -0.001134895124048339,
+        "inside": -0.0011681337524553752,
+        "outside": 3.323862840703618e-05,
+        "positive_token_count": 257,
+        "negative_token_count": 463
+      },
+      "D": {
+        "total": -0.0008524983565880229,
+        "inside": -0.0009067571037221787,
+        "outside": 5.425874713415592e-05,
+        "positive_token_count": 272,
+        "negative_token_count": 448
+      },
+      "H": {
+        "total": -0.0008509676250637848,
+        "inside": -0.0009055709581873013,
+        "outside": 5.4603333123516475e-05,
+        "positive_token_count": 273,
+        "negative_token_count": 447
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.10122881829738617,
+      "S": 0.0275533776730299,
+      "G": 0.41016706824302673,
+      "D": 0.02540002577006817,
+      "H": 0.025393307209014893,
+      "Droll": 0.0251445434987545,
+      "Hroll": 0.02512924186885357,
+      "MaxSim": 0.601036012172699,
+      "subject_fraction": 0.924105436546946,
+      "homography_valid": true,
+      "homography_points": 451,
+      "subject_token_fraction": 0.4
+    },
+    "negative_features": {
+      "M": 0.10664582252502441,
+      "S": 0.028688274323940277,
+      "G": 0.4278463125228882,
+      "D": 0.02625252492725849,
+      "H": 0.026244275271892548,
+      "Droll": 0.026039160788059235,
+      "Hroll": 0.02602178230881691,
+      "MaxSim": 0.614306628704071,
+      "subject_fraction": 0.9232407619582434,
+      "homography_valid": true,
+      "homography_points": 484,
+      "subject_token_fraction": 0.4
+    },
+    "evidence": [
+      "已保存正负图的双向匹配、逐Token差额及现有各分支贡献；当前对照尚未产生该固定对的稳定反转证据。"
+    ],
+    "repair_directions": [
+      "按现有差额最大的错误区域复核对应包装面、颜色或编号，验证局部视觉比较；不能据此宣称编码器完全丢失信息。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_31ff4c6250aab6d5",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 9,
+      "negative": 51
+    },
+    "fixed_rank": 4,
+    "current_branch_parts": {
+      "original_image": -0.08771443056175787,
+      "subject_image": -0.24604404406864155,
+      "new_image": -0.06534711192730303,
+      "ocr": -1.3691588929276577e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.39910572347359086,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.011559336404833528,
+        "inside": -0.007494403049349784,
+        "outside": -0.0040649333554837455,
+        "positive_token_count": 303,
+        "negative_token_count": 417
+      },
+      "S": {
+        "total": -0.006422753867412743,
+        "inside": -0.006248215884708516,
+        "outside": -0.00017453798270422843,
+        "positive_token_count": 334,
+        "negative_token_count": 386
+      },
+      "D": {
+        "total": -0.00653714631132197,
+        "inside": -0.006326230734082485,
+        "outside": -0.00021091557723948445,
+        "positive_token_count": 328,
+        "negative_token_count": 392
+      },
+      "H": {
+        "total": -0.0065340406540353125,
+        "inside": -0.006325483672630752,
+        "outside": -0.00020855698140456074,
+        "positive_token_count": 330,
+        "negative_token_count": 390
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.06868278980255127,
+      "S": 0.02394203469157219,
+      "G": 0.664753794670105,
+      "D": 0.023319557309150696,
+      "H": 0.023329447954893112,
+      "Droll": 0.023001402616500854,
+      "Hroll": 0.021049123257398605,
+      "MaxSim": 0.5454201102256775,
+      "subject_fraction": 0.8193715927843385,
+      "homography_valid": true,
+      "homography_points": 408,
+      "subject_token_fraction": 0.125
+    },
+    "negative_features": {
+      "M": 0.06510508805513382,
+      "S": 0.030364789068698883,
+      "G": 0.6430110335350037,
+      "D": 0.02985670045018196,
+      "H": 0.02986348606646061,
+      "Droll": 0.029668748378753662,
+      "Hroll": 0.027565810829401016,
+      "MaxSim": 0.5569794774055481,
+      "subject_fraction": 0.8471512189879505,
+      "homography_valid": true,
+      "homography_points": 389,
+      "subject_token_fraction": 0.125
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_38ab72e39bb67515",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 929,
+      "negative": 2350
+    },
+    "fixed_rank": 5,
+    "current_branch_parts": {
+      "original_image": -0.101406612908443,
+      "subject_image": -0.05885123109083601,
+      "new_image": -0.14311538752150454,
+      "ocr": 6.442535749329181e-08,
+      "code": 0.0
+    },
+    "current_margin": -0.30337316709542606,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.006569401423136393,
+        "inside": -0.002094569098618295,
+        "outside": -0.0044748323245181,
+        "positive_token_count": 315,
+        "negative_token_count": 405
+      },
+      "S": {
+        "total": -7.498371730468061e-06,
+        "inside": -5.3799170617806915e-05,
+        "outside": 4.630079888733886e-05,
+        "positive_token_count": 421,
+        "negative_token_count": 299
+      },
+      "D": {
+        "total": 0.00019220340142591223,
+        "inside": -1.030177206264779e-05,
+        "outside": 0.00020250517348856,
+        "positive_token_count": 591,
+        "negative_token_count": 129
+      },
+      "H": {
+        "total": -7.498371730468061e-06,
+        "inside": -5.3799170617806915e-05,
+        "outside": 4.630079888733886e-05,
+        "positive_token_count": 421,
+        "negative_token_count": 299
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.013875418342649937,
+      "S": 0.0005978803965263069,
+      "G": 0.0,
+      "D": 0.0005047470913268626,
+      "H": 0.0005978803965263069,
+      "Droll": 0.0004959972575306892,
+      "Hroll": 0.0005978803965263069,
+      "MaxSim": 0.518215537071228,
+      "subject_fraction": 0.3924405585373658,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.2
+    },
+    "negative_features": {
+      "M": 0.017481721937656403,
+      "S": 0.0006053787074051797,
+      "G": 0.0,
+      "D": 0.00031254367786459625,
+      "H": 0.0006053787074051797,
+      "Droll": 0.00013007852248847485,
+      "Hroll": 0.0006053787074051797,
+      "MaxSim": 0.5247849225997925,
+      "subject_fraction": 0.5013326409112391,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.2
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_390d64929b6faaa9",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1401,
+      "negative": 1308
+    },
+    "fixed_rank": 3,
+    "current_branch_parts": {
+      "original_image": 0.13073559553564618,
+      "subject_image": 0.03400310038790799,
+      "new_image": -0.4036629086408188,
+      "ocr": -0.053273320178588435,
+      "code": 0.0
+    },
+    "current_margin": -0.2921975328958526,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.024481316717962425,
+        "inside": 0.0017694672362671962,
+        "outside": 0.022711849481695225,
+        "positive_token_count": 506,
+        "negative_token_count": 214
+      },
+      "S": {
+        "total": 0.04339408651384913,
+        "inside": 0.04019218040197957,
+        "outside": 0.0032019061118695614,
+        "positive_token_count": 668,
+        "negative_token_count": 52
+      },
+      "D": {
+        "total": 0.041939835369430974,
+        "inside": 0.03891813245684737,
+        "outside": 0.003021702912583603,
+        "positive_token_count": 720,
+        "negative_token_count": 0
+      },
+      "H": {
+        "total": 0.0417330479507253,
+        "inside": 0.038877098867677845,
+        "outside": 0.002855949083047446,
+        "positive_token_count": 647,
+        "negative_token_count": 73
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.10536029189825058,
+      "S": 0.04351276904344559,
+      "G": 0.7091614603996277,
+      "D": 0.04195113480091095,
+      "H": 0.04185173287987709,
+      "Droll": 0.040327202528715134,
+      "Hroll": 0.033694442361593246,
+      "MaxSim": 0.579888641834259,
+      "subject_fraction": 0.9190417039836789,
+      "homography_valid": true,
+      "homography_points": 337,
+      "subject_token_fraction": 0.12222222222222222
+    },
+    "negative_features": {
+      "M": 0.008594793267548084,
+      "S": 0.00011868350702570751,
+      "G": 0.0,
+      "D": 1.1303181963739917e-05,
+      "H": 0.00011868350702570751,
+      "Droll": -4.9968007260758895e-06,
+      "Hroll": 0.00011868350702570751,
+      "MaxSim": 0.5554072856903076,
+      "subject_fraction": 0.26291580605886855,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.12222222222222222
+    },
+    "evidence": [
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_3fa0e51f2f450f84",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 395,
+      "negative": 393
+    },
+    "fixed_rank": 5,
+    "current_branch_parts": {
+      "original_image": 0.053522520789498707,
+      "subject_image": -0.007844678954740392,
+      "new_image": 0.18913778931383973,
+      "ocr": 0.22515568493870308,
+      "code": -1.488377500755766
+    },
+    "current_margin": -1.0284061846684658,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.006644780146113287,
+        "inside": -0.0013220037023226419,
+        "outside": 0.007966783848435929,
+        "positive_token_count": 427,
+        "negative_token_count": 341
+      },
+      "S": {
+        "total": 0.12333247674310618,
+        "inside": 0.11827605371015495,
+        "outside": 0.005056423032951217,
+        "positive_token_count": 683,
+        "negative_token_count": 85
+      },
+      "D": {
+        "total": 0.12028686184476728,
+        "inside": 0.11545792098874064,
+        "outside": 0.0048289408560266475,
+        "positive_token_count": 729,
+        "negative_token_count": 39
+      },
+      "H": {
+        "total": 0.11946953441233449,
+        "inside": 0.1148397517015102,
+        "outside": 0.004629782710824294,
+        "positive_token_count": 667,
+        "negative_token_count": 101
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.24651896953582764,
+      "S": 0.12540510296821594,
+      "G": 0.7838767766952515,
+      "D": 0.12153315544128418,
+      "H": 0.12154215574264526,
+      "Droll": 0.11765876412391663,
+      "Hroll": 0.11715300381183624,
+      "MaxSim": 0.6309370994567871,
+      "subject_fraction": 0.9846766758311021,
+      "homography_valid": true,
+      "homography_points": 1553,
+      "subject_token_fraction": 0.3723958333333333
+    },
+    "negative_features": {
+      "M": 0.03243885189294815,
+      "S": 0.0020726339425891638,
+      "G": 0.0,
+      "D": 0.0012462978484109044,
+      "H": 0.0020726339425891638,
+      "Droll": 0.0009796090889722109,
+      "Hroll": 0.0020726339425891638,
+      "MaxSim": 0.6242923140525818,
+      "subject_fraction": 0.831557448063765,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.3723958333333333
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_3ff837bd4edbded5",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1129,
+      "negative": 3109
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": 0.14751583796952872,
+      "subject_image": 0.02063989689726231,
+      "new_image": -0.30915501427272574,
+      "ocr": 4.019066244254077e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.14099887749931028,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.009065318348196644,
+        "inside": 0.0002970071121429401,
+        "outside": 0.008768311236053705,
+        "positive_token_count": 406,
+        "negative_token_count": 362
+      },
+      "S": {
+        "total": 0.011895176786420152,
+        "inside": 0.010245470223295569,
+        "outside": 0.001649706563124584,
+        "positive_token_count": 763,
+        "negative_token_count": 5
+      },
+      "D": {
+        "total": 0.01114917766927144,
+        "inside": 0.009737400528771764,
+        "outside": 0.0014117771404996756,
+        "positive_token_count": 767,
+        "negative_token_count": 1
+      },
+      "H": {
+        "total": 0.010977676758840664,
+        "inside": 0.009715932390724987,
+        "outside": 0.0012617443681156744,
+        "positive_token_count": 751,
+        "negative_token_count": 17
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.04654402658343315,
+      "S": 0.012072468176484108,
+      "G": 0.19657403230667114,
+      "D": 0.011207976378500462,
+      "H": 0.011154968291521072,
+      "Droll": 0.010577116161584854,
+      "Hroll": 0.010397662408649921,
+      "MaxSim": 0.5167381763458252,
+      "subject_fraction": 0.7949267335246213,
+      "homography_valid": true,
+      "homography_points": 23,
+      "subject_token_fraction": 0.20833333333333334
+    },
+    "negative_features": {
+      "M": 0.011382904835045338,
+      "S": 0.0001772925170371309,
+      "G": 0.0,
+      "D": 5.879941818420775e-05,
+      "H": 0.0001772925170371309,
+      "Droll": 5.7469544117338955e-05,
+      "Hroll": 0.0001772925170371309,
+      "MaxSim": 0.5076727867126465,
+      "subject_fraction": 0.13241808614239603,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.20833333333333334
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_40d4735eb62e06cf",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 929,
+      "negative": 930
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.04253788199332886,
+      "subject_image": -0.021339490141372153,
+      "new_image": -0.0032867895857173757,
+      "ocr": 0.05100491721461875,
+      "code": 0.0
+    },
+    "current_margin": -0.01615924450580053,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.010066333247555626,
+        "inside": -0.0038146415518389805,
+        "outside": -0.006251691695716646,
+        "positive_token_count": 340,
+        "negative_token_count": 380
+      },
+      "S": {
+        "total": 0.005833309721727991,
+        "inside": 0.0058654333749812125,
+        "outside": -3.2123653253221974e-05,
+        "positive_token_count": 391,
+        "negative_token_count": 329
+      },
+      "D": {
+        "total": 0.005550156114657746,
+        "inside": 0.005576480357208349,
+        "outside": -2.6324242550602413e-05,
+        "positive_token_count": 388,
+        "negative_token_count": 332
+      },
+      "H": {
+        "total": 0.005553937584774371,
+        "inside": 0.005579208469129581,
+        "outside": -2.527088435520946e-05,
+        "positive_token_count": 387,
+        "negative_token_count": 333
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.2151293158531189,
+      "S": 0.11900074779987335,
+      "G": 0.5966201424598694,
+      "D": 0.11626844853162766,
+      "H": 0.1162676215171814,
+      "Droll": 0.11110200732946396,
+      "Hroll": 0.10986769944429398,
+      "MaxSim": 0.6923006772994995,
+      "subject_fraction": 0.9966139899569656,
+      "homography_valid": true,
+      "homography_points": 1442,
+      "subject_token_fraction": 0.4666666666666667
+    },
+    "negative_features": {
+      "M": 0.20735812187194824,
+      "S": 0.11316744238138199,
+      "G": 0.5658156275749207,
+      "D": 0.1107182726264,
+      "H": 0.11071368306875229,
+      "Droll": 0.10523828864097595,
+      "Hroll": 0.10400095582008362,
+      "MaxSim": 0.7023670077323914,
+      "subject_fraction": 0.9970526721644244,
+      "homography_valid": true,
+      "homography_points": 1336,
+      "subject_token_fraction": 0.4666666666666667
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_41de3eb383934ec3",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 229,
+      "negative": 233
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.03671181285941927,
+      "subject_image": -0.06266671289916736,
+      "new_image": -0.1075876994765288,
+      "ocr": -9.405500369652486e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.2069671657851515,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.0038689919747412196,
+        "inside": -0.0025660806568339467,
+        "outside": -0.0013029113179072733,
+        "positive_token_count": 404,
+        "negative_token_count": 364
+      },
+      "S": {
+        "total": 0.028478385890415354,
+        "inside": 0.02554914335510742,
+        "outside": 0.0029292425353079302,
+        "positive_token_count": 589,
+        "negative_token_count": 179
+      },
+      "D": {
+        "total": 0.028121997093023134,
+        "inside": 0.02529249014919969,
+        "outside": 0.002829506943823443,
+        "positive_token_count": 606,
+        "negative_token_count": 162
+      },
+      "H": {
+        "total": 0.028089332458210735,
+        "inside": 0.025288199553836058,
+        "outside": 0.002801132904374682,
+        "positive_token_count": 607,
+        "negative_token_count": 161
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.09878523647785187,
+      "S": 0.04148293286561966,
+      "G": 0.5395172238349915,
+      "D": 0.040401387959718704,
+      "H": 0.04039428010582924,
+      "Droll": 0.03935721516609192,
+      "Hroll": 0.03855837881565094,
+      "MaxSim": 0.539159893989563,
+      "subject_fraction": 0.8465249161118339,
+      "homography_valid": true,
+      "homography_points": 426,
+      "subject_token_fraction": 0.17708333333333334
+    },
+    "negative_features": {
+      "M": 0.05320568382740021,
+      "S": 0.0130045460537076,
+      "G": 0.22278191149234772,
+      "D": 0.012279391288757324,
+      "H": 0.01230495236814022,
+      "Droll": 0.011773568578064442,
+      "Hroll": 0.011576195247471333,
+      "MaxSim": 0.5430288314819336,
+      "subject_fraction": 0.7722629518492813,
+      "homography_valid": true,
+      "homography_points": 43,
+      "subject_token_fraction": 0.17708333333333334
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_423dd2b26155876d",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1144,
+      "negative": 2002
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": 0.07095191015589553,
+      "subject_image": 0.0832624660699901,
+      "new_image": 0.17519438653575303,
+      "ocr": -1.7203747614574203,
+      "code": 0.0
+    },
+    "current_margin": -1.3909659986957834,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.01259704165988498,
+        "inside": 0.005566301859087414,
+        "outside": 0.007030739800797567,
+        "positive_token_count": 458,
+        "negative_token_count": 262
+      },
+      "S": {
+        "total": 0.0012760949306891518,
+        "inside": 0.0009408662295542648,
+        "outside": 0.00033522870113488704,
+        "positive_token_count": 611,
+        "negative_token_count": 109
+      },
+      "D": {
+        "total": 0.0011931589079024138,
+        "inside": 0.0008796281057774139,
+        "outside": 0.000313530802125,
+        "positive_token_count": 698,
+        "negative_token_count": 22
+      },
+      "H": {
+        "total": 0.0009334757656703321,
+        "inside": 0.0007612434436181227,
+        "outside": 0.00017223232205220936,
+        "positive_token_count": 443,
+        "negative_token_count": 277
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.02163323573768139,
+      "S": 0.0017340494086965919,
+      "G": 0.07791034132242203,
+      "D": 0.0014533650828525424,
+      "H": 0.001391430152580142,
+      "Droll": 0.0013385966885834932,
+      "Hroll": 0.0009853511583060026,
+      "MaxSim": 0.691467821598053,
+      "subject_fraction": 0.685728078753773,
+      "homography_valid": true,
+      "homography_points": 17,
+      "subject_token_fraction": 0.18333333333333332
+    },
+    "negative_features": {
+      "M": 0.01570070907473564,
+      "S": 0.00045795453479513526,
+      "G": 0.0,
+      "D": 0.00026020625955425203,
+      "H": 0.00045795453479513526,
+      "Droll": 0.00010012263373937458,
+      "Hroll": 0.00045795453479513526,
+      "MaxSim": 0.6788707375526428,
+      "subject_fraction": 0.6028174506316484,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.18333333333333332
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_438026ead38bb48f",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1023,
+      "negative": 1326
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.2744266869899379,
+      "subject_image": -0.11680905680329179,
+      "new_image": -0.2447567679853222,
+      "ocr": 0.4941711626603169,
+      "code": 0.0
+    },
+    "current_margin": -0.14182134911823496,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.035407403939300114,
+        "inside": -0.004439981612894271,
+        "outside": -0.030967422326405838,
+        "positive_token_count": 298,
+        "negative_token_count": 422
+      },
+      "S": {
+        "total": 0.009795357373622252,
+        "inside": 0.00990771432084317,
+        "outside": -0.00011235694722091846,
+        "positive_token_count": 309,
+        "negative_token_count": 411
+      },
+      "D": {
+        "total": 0.009835544070641692,
+        "inside": 0.009919648104190633,
+        "outside": -8.41040335489403e-05,
+        "positive_token_count": 305,
+        "negative_token_count": 415
+      },
+      "H": {
+        "total": 0.009861590058930567,
+        "inside": 0.009921470051580126,
+        "outside": -5.9879992649557753e-05,
+        "positive_token_count": 320,
+        "negative_token_count": 400
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.06235576048493385,
+      "S": 0.030213193967938423,
+      "G": 0.7712305784225464,
+      "D": 0.029763640835881233,
+      "H": 0.02975505031645298,
+      "Droll": 0.02926531992852688,
+      "Hroll": 0.027353251352906227,
+      "MaxSim": 0.6223979592323303,
+      "subject_fraction": 0.9835217918242358,
+      "homography_valid": true,
+      "homography_points": 485,
+      "subject_token_fraction": 0.1375
+    },
+    "negative_features": {
+      "M": 0.052150171250104904,
+      "S": 0.0204178374260664,
+      "G": 0.39809587597846985,
+      "D": 0.0199280995875597,
+      "H": 0.019893459975719452,
+      "Droll": 0.0191455390304327,
+      "Hroll": 0.01712937466800213,
+      "MaxSim": 0.6578053832054138,
+      "subject_fraction": 0.9648657940712114,
+      "homography_valid": true,
+      "homography_points": 217,
+      "subject_token_fraction": 0.1375
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_441809a846ca8a24",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 943,
+      "negative": 3224
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.16057799452181953,
+      "subject_image": -0.11454541447542788,
+      "new_image": -0.07562500240139158,
+      "ocr": -1.911983869007372e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.35074860259702945,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.013894024449918005,
+        "inside": -0.004614846573935615,
+        "outside": -0.00927917787598239,
+        "positive_token_count": 239,
+        "negative_token_count": 481
+      },
+      "S": {
+        "total": 0.0003454345925429917,
+        "inside": -3.9373361732923824e-06,
+        "outside": 0.00034937192871628423,
+        "positive_token_count": 560,
+        "negative_token_count": 160
+      },
+      "D": {
+        "total": 0.00014423291520188332,
+        "inside": -5.4653488263407956e-05,
+        "outside": 0.00019888640346529132,
+        "positive_token_count": 505,
+        "negative_token_count": 215
+      },
+      "H": {
+        "total": 0.0003454345925429917,
+        "inside": -3.9373361732923824e-06,
+        "outside": 0.00034937192871628423,
+        "positive_token_count": 560,
+        "negative_token_count": 160
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.0239811260253191,
+      "S": 0.0011915501672774553,
+      "G": 0.0,
+      "D": 0.000725500809494406,
+      "H": 0.0011915501672774553,
+      "Droll": 0.0006742649129591882,
+      "Hroll": 0.0011915501672774553,
+      "MaxSim": 0.6109341382980347,
+      "subject_fraction": 0.39166137128101164,
+      "homography_valid": false,
+      "homography_points": 1,
+      "subject_token_fraction": 0.2222222222222222
+    },
+    "negative_features": {
+      "M": 0.019200414419174194,
+      "S": 0.0008461154066026211,
+      "G": 0.0,
+      "D": 0.0005812678718939424,
+      "H": 0.0008461154066026211,
+      "Droll": 0.000549189979210496,
+      "Hroll": 0.0008461154066026211,
+      "MaxSim": 0.6248281598091125,
+      "subject_fraction": 0.521196979318873,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.2222222222222222
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_487b4a6b018c220d",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 3087,
+      "negative": 3412
+    },
+    "fixed_rank": 9,
+    "current_branch_parts": {
+      "original_image": -0.15641175372972072,
+      "subject_image": -0.05611840370503529,
+      "new_image": 0.059040715872674454,
+      "ocr": -1.192893646019157,
+      "code": 0.9528269202876081
+    },
+    "current_margin": -0.3935561672936294,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.029269777528113793,
+        "inside": -0.003757187227408091,
+        "outside": -0.025512590300705698,
+        "positive_token_count": 232,
+        "negative_token_count": 488
+      },
+      "S": {
+        "total": 0.03753029324612741,
+        "inside": 0.03632031907997015,
+        "outside": 0.0012099741661572522,
+        "positive_token_count": 392,
+        "negative_token_count": 328
+      },
+      "D": {
+        "total": 0.03710581979317431,
+        "inside": 0.03577226644751793,
+        "outside": 0.0013335533456563797,
+        "positive_token_count": 673,
+        "negative_token_count": 47
+      },
+      "H": {
+        "total": 0.03683512522392454,
+        "inside": 0.035723922427075006,
+        "outside": 0.0011112027968495407,
+        "positive_token_count": 379,
+        "negative_token_count": 341
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.07751353830099106,
+      "S": 0.03802166134119034,
+      "G": 0.66063392162323,
+      "D": 0.037323616445064545,
+      "H": 0.03732649236917496,
+      "Droll": 0.03620517626404762,
+      "Hroll": 0.03535895794630051,
+      "MaxSim": 0.5446412563323975,
+      "subject_fraction": 0.9212781891781806,
+      "homography_valid": true,
+      "homography_points": 592,
+      "subject_token_fraction": 0.1875
+    },
+    "negative_features": {
+      "M": 0.011920932680368423,
+      "S": 0.0004913686425425112,
+      "G": 0.0,
+      "D": 0.00021780050883535296,
+      "H": 0.0004913686425425112,
+      "Droll": 0.0001108114083763212,
+      "Hroll": 0.0004913686425425112,
+      "MaxSim": 0.5739110112190247,
+      "subject_fraction": 0.3888479007423432,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.1875
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_4b09c283ed00faca",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1129,
+      "negative": 4360
+    },
+    "fixed_rank": 4,
+    "current_branch_parts": {
+      "original_image": -0.08575957825232505,
+      "subject_image": -0.08471931810511646,
+      "new_image": -0.31318270307726603,
+      "ocr": -0.13440320527951544,
+      "code": 0.0
+    },
+    "current_margin": -0.6180648047142236,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.015873148203051336,
+        "inside": -0.007168902588697771,
+        "outside": -0.008704245614353566,
+        "positive_token_count": 331,
+        "negative_token_count": 437
+      },
+      "S": {
+        "total": 0.0328461082978573,
+        "inside": 0.03065821060921033,
+        "outside": 0.0021878976886469674,
+        "positive_token_count": 563,
+        "negative_token_count": 205
+      },
+      "D": {
+        "total": 0.03225533494589924,
+        "inside": 0.029812555456324236,
+        "outside": 0.0024427794895750094,
+        "positive_token_count": 636,
+        "negative_token_count": 132
+      },
+      "H": {
+        "total": 0.031312010088195556,
+        "inside": 0.029625825273924163,
+        "outside": 0.0016861848142713986,
+        "positive_token_count": 524,
+        "negative_token_count": 244
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.10001152008771896,
+      "S": 0.03706284612417221,
+      "G": 0.3958640396595001,
+      "D": 0.035584285855293274,
+      "H": 0.035528749227523804,
+      "Droll": 0.03428400307893753,
+      "Hroll": 0.03419538214802742,
+      "MaxSim": 0.4927271008491516,
+      "subject_fraction": 0.8691188650319324,
+      "homography_valid": true,
+      "homography_points": 299,
+      "subject_token_fraction": 0.234375
+    },
+    "negative_features": {
+      "M": 0.03039407730102539,
+      "S": 0.004216738510876894,
+      "G": 0.0,
+      "D": 0.0033289508428424597,
+      "H": 0.004216738510876894,
+      "Droll": 0.0031814223621040583,
+      "Hroll": 0.004216738510876894,
+      "MaxSim": 0.5086002349853516,
+      "subject_fraction": 0.34881786156961025,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.234375
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_50614555bf86aaf4",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 3087,
+      "negative": 4742
+    },
+    "fixed_rank": 5,
+    "current_branch_parts": {
+      "original_image": -0.2682248672010239,
+      "subject_image": -0.14829688301420885,
+      "new_image": -0.19465096545681382,
+      "ocr": 0.4105097804526694,
+      "code": 0.0
+    },
+    "current_margin": -0.20066293521937695,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.07512247504459488,
+        "inside": -0.026390964165329933,
+        "outside": -0.04873151087926494,
+        "positive_token_count": 221,
+        "negative_token_count": 499
+      },
+      "S": {
+        "total": 0.059166389371387,
+        "inside": 0.05798293078524816,
+        "outside": 0.0011834585861388342,
+        "positive_token_count": 702,
+        "negative_token_count": 18
+      },
+      "D": {
+        "total": 0.05763000812612527,
+        "inside": 0.05649100419970848,
+        "outside": 0.0011390039264167838,
+        "positive_token_count": 716,
+        "negative_token_count": 4
+      },
+      "H": {
+        "total": 0.057441922204987256,
+        "inside": 0.056327749867018856,
+        "outside": 0.001114172337968393,
+        "positive_token_count": 700,
+        "negative_token_count": 20
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.13674309849739075,
+      "S": 0.059499386698007584,
+      "G": 0.6042578220367432,
+      "D": 0.05777641013264656,
+      "H": 0.05777491629123688,
+      "Droll": 0.05528184026479721,
+      "Hroll": 0.05528424680233002,
+      "MaxSim": 0.6221515536308289,
+      "subject_fraction": 0.9890967804062952,
+      "homography_valid": true,
+      "homography_points": 1041,
+      "subject_token_fraction": 0.3111111111111111
+    },
+    "negative_features": {
+      "M": 0.011025574058294296,
+      "S": 0.00033299613278359175,
+      "G": 0.0,
+      "D": 0.00014640843437518924,
+      "H": 0.00033299613278359175,
+      "Droll": 0.00011938601528527215,
+      "Hroll": 0.00033299613278359175,
+      "MaxSim": 0.6972740888595581,
+      "subject_fraction": 0.9200261660189136,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.3111111111111111
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_518888b98e9ac193",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1139,
+      "negative": 1111
+    },
+    "fixed_rank": 3,
+    "current_branch_parts": {
+      "original_image": 0.4169414818186432,
+      "subject_image": 0.3929347531759788,
+      "new_image": 0.7536314616409436,
+      "ocr": -2.6245165466884197,
+      "code": 0.9528269202876081
+    },
+    "current_margin": -0.10818192976524843,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.0551649630897575,
+        "inside": 0.019944773407446013,
+        "outside": 0.035220189682311484,
+        "positive_token_count": 425,
+        "negative_token_count": 295
+      },
+      "S": {
+        "total": 0.025468106062678908,
+        "inside": 0.02397649743460687,
+        "outside": 0.0014916086280720349,
+        "positive_token_count": 667,
+        "negative_token_count": 53
+      },
+      "D": {
+        "total": 0.024876962900770207,
+        "inside": 0.023428902102483155,
+        "outside": 0.0014480607982870538,
+        "positive_token_count": 675,
+        "negative_token_count": 45
+      },
+      "H": {
+        "total": 0.024735687462559868,
+        "inside": 0.023398983484170494,
+        "outside": 0.001336703978389377,
+        "positive_token_count": 641,
+        "negative_token_count": 79
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.06054167449474335,
+      "S": 0.026207346469163895,
+      "G": 0.42828869819641113,
+      "D": 0.0255214124917984,
+      "H": 0.025474928319454193,
+      "Droll": 0.025387048721313477,
+      "Hroll": 0.024186763912439346,
+      "MaxSim": 0.5900196433067322,
+      "subject_fraction": 0.9036932504479831,
+      "homography_valid": true,
+      "homography_points": 279,
+      "subject_token_fraction": 0.18333333333333332
+    },
+    "negative_features": {
+      "M": 0.014946424402296543,
+      "S": 0.0007392416591756046,
+      "G": 0.0,
+      "D": 0.0006444478640332818,
+      "H": 0.0007392416591756046,
+      "Droll": 0.0006340150139294565,
+      "Hroll": 0.0007392416591756046,
+      "MaxSim": 0.5348547101020813,
+      "subject_fraction": 0.3555330446595411,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.18333333333333332
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_51b91a8efbda2ee9",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1139,
+      "negative": 4489
+    },
+    "fixed_rank": 7,
+    "current_branch_parts": {
+      "original_image": -0.16717369620825817,
+      "subject_image": -0.1075060732266877,
+      "new_image": -0.5573183719675319,
+      "ocr": 0.4152099168542325,
+      "code": 0.0
+    },
+    "current_margin": -0.4167882245482444,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.0376607018419438,
+        "inside": -0.006747220539384418,
+        "outside": -0.03091348130255938,
+        "positive_token_count": 298,
+        "negative_token_count": 422
+      },
+      "S": {
+        "total": 0.0011354599472865995,
+        "inside": 0.0003837484470990801,
+        "outside": 0.0007517115001875195,
+        "positive_token_count": 713,
+        "negative_token_count": 7
+      },
+      "D": {
+        "total": 0.0006985523176376514,
+        "inside": 0.0002521933600335265,
+        "outside": 0.00044635895760412474,
+        "positive_token_count": 720,
+        "negative_token_count": 0
+      },
+      "H": {
+        "total": 0.0011354599472865995,
+        "inside": 0.0003837484470990801,
+        "outside": 0.0007517115001875195,
+        "positive_token_count": 713,
+        "negative_token_count": 7
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.0191945917904377,
+      "S": 0.0012403184082359076,
+      "G": 0.0,
+      "D": 0.0007073503802530468,
+      "H": 0.0012403184082359076,
+      "Droll": 0.0008675649296492338,
+      "Hroll": 0.0012403184082359076,
+      "MaxSim": 0.5807211995124817,
+      "subject_fraction": 0.35156191993507596,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.12638888888888888
+    },
+    "negative_features": {
+      "M": 0.00804938841611147,
+      "S": 0.00010485845996299759,
+      "G": 0.0,
+      "D": 8.798087947070599e-06,
+      "H": 0.00010485845996299759,
+      "Droll": -2.2052549866202753e-06,
+      "Hroll": 0.00010485845996299759,
+      "MaxSim": 0.6183819770812988,
+      "subject_fraction": 0.32067740334269274,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.12638888888888888
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_51f740065ab2be47",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 395,
+      "negative": 396
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": 0.019340947498029948,
+      "subject_image": -0.015997709293868123,
+      "new_image": 0.09585659037410288,
+      "ocr": -0.18811324443025956,
+      "code": -0.09857728497200857
+    },
+    "current_margin": -0.18749070082400365,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.0027968471792216096,
+        "inside": -0.0017120256088674075,
+        "outside": 0.0045088727880890165,
+        "positive_token_count": 409,
+        "negative_token_count": 359
+      },
+      "S": {
+        "total": 0.08736106503131533,
+        "inside": 0.08659227191746052,
+        "outside": 0.0007687931138547991,
+        "positive_token_count": 474,
+        "negative_token_count": 294
+      },
+      "D": {
+        "total": 0.08529951939401288,
+        "inside": 0.08445548156066726,
+        "outside": 0.0008440378333456231,
+        "positive_token_count": 485,
+        "negative_token_count": 283
+      },
+      "H": {
+        "total": 0.0853082805449428,
+        "inside": 0.08445690483785541,
+        "outside": 0.000851375707087385,
+        "positive_token_count": 486,
+        "negative_token_count": 282
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.22671616077423096,
+      "S": 0.12031713873147964,
+      "G": 0.7559919953346252,
+      "D": 0.11653652787208557,
+      "H": 0.11653684824705124,
+      "Droll": 0.11300545185804367,
+      "Hroll": 0.11220193654298782,
+      "MaxSim": 0.5957546830177307,
+      "subject_fraction": 0.9728912019927054,
+      "homography_valid": true,
+      "homography_points": 1213,
+      "subject_token_fraction": 0.34375
+    },
+    "negative_features": {
+      "M": 0.11200637370347977,
+      "S": 0.0329560711979866,
+      "G": 0.3790948688983917,
+      "D": 0.031237004324793816,
+      "H": 0.031228559091687202,
+      "Droll": 0.029299374669790268,
+      "Hroll": 0.028980383649468422,
+      "MaxSim": 0.5929578542709351,
+      "subject_fraction": 0.9295228822246888,
+      "homography_valid": true,
+      "homography_points": 418,
+      "subject_token_fraction": 0.34375
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_527d8bc5deabf857",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 3143,
+      "negative": 4018
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.04064180652169558,
+      "subject_image": -0.0015890300226328868,
+      "new_image": -0.1468621651143982,
+      "ocr": -2.417422111378187e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.1890932434009347,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.006168064454363454,
+        "inside": -0.00045641370945506557,
+        "outside": -0.005711650744908388,
+        "positive_token_count": 326,
+        "negative_token_count": 394
+      },
+      "S": {
+        "total": -0.0006417111408657317,
+        "inside": -0.00029696927804660604,
+        "outside": -0.00034474186281912563,
+        "positive_token_count": 97,
+        "negative_token_count": 623
+      },
+      "D": {
+        "total": -0.0006640060904385426,
+        "inside": -0.00029307551928596813,
+        "outside": -0.00037093057115257446,
+        "positive_token_count": 111,
+        "negative_token_count": 609
+      },
+      "H": {
+        "total": -0.0006417111408657317,
+        "inside": -0.00029696927804660604,
+        "outside": -0.00034474186281912563,
+        "positive_token_count": 97,
+        "negative_token_count": 623
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.02413317561149597,
+      "S": 0.0006037399871274829,
+      "G": 0.0,
+      "D": 0.0003667968267109245,
+      "H": 0.0006037399871274829,
+      "Droll": 0.0002981492143590003,
+      "Hroll": 0.0006037399871274829,
+      "MaxSim": 0.5925986766815186,
+      "subject_fraction": 0.2745272788837123,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.19444444444444445
+    },
+    "negative_features": {
+      "M": 0.020356668159365654,
+      "S": 0.0012454511597752571,
+      "G": 0.0,
+      "D": 0.0010308028431609273,
+      "H": 0.0012454511597752571,
+      "Droll": 0.0007121089729480445,
+      "Hroll": 0.0012454511597752571,
+      "MaxSim": 0.5987667441368103,
+      "subject_fraction": 0.36276852829008405,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.19444444444444445
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_59d5e8c638df29f0",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1401,
+      "negative": 1308
+    },
+    "fixed_rank": 7,
+    "current_branch_parts": {
+      "original_image": -0.2512100263036916,
+      "subject_image": -0.14112917093714583,
+      "new_image": -0.29594253211114907,
+      "ocr": 0.018085635123274546,
+      "code": 0.0
+    },
+    "current_margin": -0.6701960942287117,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.06793786113460859,
+        "inside": -0.024265622595945995,
+        "outside": -0.043672238538662596,
+        "positive_token_count": 230,
+        "negative_token_count": 490
+      },
+      "S": {
+        "total": 0.07489007957195665,
+        "inside": 0.07460854258228958,
+        "outside": 0.00028153698966707896,
+        "positive_token_count": 593,
+        "negative_token_count": 127
+      },
+      "D": {
+        "total": 0.07369546121621971,
+        "inside": 0.07334759717650341,
+        "outside": 0.0003478640397163103,
+        "positive_token_count": 648,
+        "negative_token_count": 72
+      },
+      "H": {
+        "total": 0.07307641712705103,
+        "inside": 0.0728193782985744,
+        "outside": 0.0002570388284766346,
+        "positive_token_count": 582,
+        "negative_token_count": 138
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.1643022745847702,
+      "S": 0.07633507251739502,
+      "G": 0.8915879130363464,
+      "D": 0.07452256977558136,
+      "H": 0.07452141493558884,
+      "Droll": 0.07194531708955765,
+      "Hroll": 0.06946505606174469,
+      "MaxSim": 0.6105018258094788,
+      "subject_fraction": 0.995591531749124,
+      "homography_valid": true,
+      "homography_points": 1115,
+      "subject_token_fraction": 0.30694444444444446
+    },
+    "negative_features": {
+      "M": 0.0221688374876976,
+      "S": 0.0014449874870479107,
+      "G": 0.0,
+      "D": 0.0008271062979474664,
+      "H": 0.0014449874870479107,
+      "Droll": 0.0007083747768774629,
+      "Hroll": 0.0014449874870479107,
+      "MaxSim": 0.6784396767616272,
+      "subject_fraction": 0.892641564673095,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.30694444444444446
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_6172bb3bbbb3a2d6",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 3298,
+      "negative": 3299
+    },
+    "fixed_rank": 10,
+    "current_branch_parts": {
+      "original_image": -0.04999367273649735,
+      "subject_image": -0.06561114421579495,
+      "new_image": -0.0027792667636012958,
+      "ocr": -7.296858655081451e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.1183848134017591,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.010412623340057003,
+        "inside": -0.0041013911780383855,
+        "outside": -0.006311232162018619,
+        "positive_token_count": 288,
+        "negative_token_count": 432
+      },
+      "S": {
+        "total": -0.0011577204553966571,
+        "inside": -0.0011130881266172895,
+        "outside": -4.4632328779367394e-05,
+        "positive_token_count": 414,
+        "negative_token_count": 306
+      },
+      "D": {
+        "total": -0.001172859572587382,
+        "inside": -0.0011349851026736708,
+        "outside": -3.787446991371109e-05,
+        "positive_token_count": 408,
+        "negative_token_count": 312
+      },
+      "H": {
+        "total": -0.0011779944130031765,
+        "inside": -0.0011301935067414236,
+        "outside": -4.7800906261753165e-05,
+        "positive_token_count": 409,
+        "negative_token_count": 311
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.07407966256141663,
+      "S": 0.03146200254559517,
+      "G": 0.4811079502105713,
+      "D": 0.030323175713419914,
+      "H": 0.030246326699852943,
+      "Droll": 0.028163766488432884,
+      "Hroll": 0.026633860543370247,
+      "MaxSim": 0.7335391640663147,
+      "subject_fraction": 0.8844318033552564,
+      "homography_valid": true,
+      "homography_points": 279,
+      "subject_token_fraction": 0.14166666666666666
+    },
+    "negative_features": {
+      "M": 0.07443109154701233,
+      "S": 0.032619722187519073,
+      "G": 0.48441869020462036,
+      "D": 0.03149603679776192,
+      "H": 0.03142432123422623,
+      "Droll": 0.029278472065925598,
+      "Hroll": 0.027813097462058067,
+      "MaxSim": 0.7439517974853516,
+      "subject_fraction": 0.8875501322088991,
+      "homography_valid": true,
+      "homography_points": 283,
+      "subject_token_fraction": 0.14166666666666666
+    },
+    "evidence": [
+      "已保存正负图的双向匹配、逐Token差额及现有各分支贡献；当前对照尚未产生该固定对的稳定反转证据。"
+    ],
+    "repair_directions": [
+      "按现有差额最大的错误区域复核对应包装面、颜色或编号，验证局部视觉比较；不能据此宣称编码器完全丢失信息。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_64625e0a749be4a5",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1129,
+      "negative": 4360
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.06045170186739579,
+      "subject_image": -0.06332736612551493,
+      "new_image": -0.41301884788349685,
+      "ocr": -0.08794801032232424,
+      "code": 0.0
+    },
+    "current_margin": -0.6247459261987327,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.008568066793183483,
+        "inside": -0.0020832867206384735,
+        "outside": -0.006484780072545011,
+        "positive_token_count": 354,
+        "negative_token_count": 414
+      },
+      "S": {
+        "total": 0.0026398276423883742,
+        "inside": 0.002111703227998378,
+        "outside": 0.0005281244143899964,
+        "positive_token_count": 541,
+        "negative_token_count": 227
+      },
+      "D": {
+        "total": 0.0029158673121517688,
+        "inside": 0.0021070460678496296,
+        "outside": 0.000808821244302139,
+        "positive_token_count": 636,
+        "negative_token_count": 132
+      },
+      "H": {
+        "total": 0.0026398276423883742,
+        "inside": 0.002111703227998378,
+        "outside": 0.0005281244143899964,
+        "positive_token_count": 541,
+        "negative_token_count": 227
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.03713860362768173,
+      "S": 0.004647729452699423,
+      "G": 0.0,
+      "D": 0.003956667613238096,
+      "H": 0.004647729452699423,
+      "Droll": 0.0038599863182753325,
+      "Hroll": 0.004647729452699423,
+      "MaxSim": 0.5137946009635925,
+      "subject_fraction": 0.5680056180381647,
+      "homography_valid": false,
+      "homography_points": 1,
+      "subject_token_fraction": 0.15625
+    },
+    "negative_features": {
+      "M": 0.021265340968966484,
+      "S": 0.0020079014357179403,
+      "G": 0.0,
+      "D": 0.00104080094024539,
+      "H": 0.0020079014357179403,
+      "Droll": 0.0009081187890842557,
+      "Hroll": 0.0020079014357179403,
+      "MaxSim": 0.5223627090454102,
+      "subject_fraction": 0.2995946551574474,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.15625
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_665b96b3fb0b01c7",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 229,
+      "negative": 233
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.08321722326537717,
+      "subject_image": -0.01907894031668622,
+      "new_image": -0.07105136062644846,
+      "ocr": 2.7863606355538195e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.17334724557244385,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.009886624330344299,
+        "inside": -0.0013225265623380742,
+        "outside": -0.008564097768006224,
+        "positive_token_count": 359,
+        "negative_token_count": 409
+      },
+      "S": {
+        "total": 0.042516301132759435,
+        "inside": 0.03659335155329981,
+        "outside": 0.0059229495794596194,
+        "positive_token_count": 608,
+        "negative_token_count": 160
+      },
+      "D": {
+        "total": 0.04182685162384282,
+        "inside": 0.03627276062293051,
+        "outside": 0.005554091000912328,
+        "positive_token_count": 625,
+        "negative_token_count": 143
+      },
+      "H": {
+        "total": 0.041761544977363604,
+        "inside": 0.036270539544695155,
+        "outside": 0.005491005432668448,
+        "positive_token_count": 633,
+        "negative_token_count": 135
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.1203661561012268,
+      "S": 0.05565473809838295,
+      "G": 0.4845832288265228,
+      "D": 0.05425752326846123,
+      "H": 0.05417189747095108,
+      "Droll": 0.05241318792104721,
+      "Hroll": 0.05228402838110924,
+      "MaxSim": 0.5803439021110535,
+      "subject_fraction": 0.8408800144704849,
+      "homography_valid": true,
+      "homography_points": 707,
+      "subject_token_fraction": 0.28125
+    },
+    "negative_features": {
+      "M": 0.056649528443813324,
+      "S": 0.01313843484967947,
+      "G": 0.23022402822971344,
+      "D": 0.012430667877197266,
+      "H": 0.012410351075232029,
+      "Droll": 0.011948582716286182,
+      "Hroll": 0.011741802096366882,
+      "MaxSim": 0.5902305841445923,
+      "subject_fraction": 0.848554420248667,
+      "homography_valid": true,
+      "homography_points": 99,
+      "subject_token_fraction": 0.28125
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_740025f501c6528b",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1023,
+      "negative": 1312
+    },
+    "fixed_rank": 10,
+    "current_branch_parts": {
+      "original_image": -0.1997545639695062,
+      "subject_image": -0.1065997755301693,
+      "new_image": -0.1804205812807944,
+      "ocr": 0.2899718110640723,
+      "code": 0.0
+    },
+    "current_margin": -0.1968031097163978,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.05532835204568174,
+        "inside": -0.015948586414257684,
+        "outside": -0.03937976563142406,
+        "positive_token_count": 265,
+        "negative_token_count": 455
+      },
+      "S": {
+        "total": 0.03828205088102829,
+        "inside": 0.03342364499637688,
+        "outside": 0.004858405884651402,
+        "positive_token_count": 632,
+        "negative_token_count": 88
+      },
+      "D": {
+        "total": 0.037571284712934666,
+        "inside": 0.032883324114896306,
+        "outside": 0.004687960598038346,
+        "positive_token_count": 653,
+        "negative_token_count": 67
+      },
+      "H": {
+        "total": 0.03757928812380867,
+        "inside": 0.03287995617419913,
+        "outside": 0.0046993319496095405,
+        "positive_token_count": 667,
+        "negative_token_count": 53
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.10525038093328476,
+      "S": 0.04212342947721481,
+      "G": 0.7085887789726257,
+      "D": 0.04106661677360535,
+      "H": 0.04106087237596512,
+      "Droll": 0.03990701958537102,
+      "Hroll": 0.03815218061208725,
+      "MaxSim": 0.6063532829284668,
+      "subject_fraction": 0.8536977428631298,
+      "homography_valid": true,
+      "homography_points": 808,
+      "subject_token_fraction": 0.25972222222222224
+    },
+    "negative_features": {
+      "M": 0.03065505065023899,
+      "S": 0.0038413796573877335,
+      "G": 0.1591109186410904,
+      "D": 0.003495332319289446,
+      "H": 0.003481578780338168,
+      "Droll": 0.0029791162814944983,
+      "Hroll": 0.002527775941416621,
+      "MaxSim": 0.6616816520690918,
+      "subject_fraction": 0.8242985066932946,
+      "homography_valid": true,
+      "homography_points": 31,
+      "subject_token_fraction": 0.25972222222222224
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_7e0b721a9c25b555",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1983,
+      "negative": 1939
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": 0.043212980671730516,
+      "subject_image": 0.004455133165100156,
+      "new_image": -0.12078345933468304,
+      "ocr": 1.0094756985878917e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.07311524455028096,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.009073379158508036,
+        "inside": 0.0005767542946462836,
+        "outside": 0.00849662486386175,
+        "positive_token_count": 436,
+        "negative_token_count": 332
+      },
+      "S": {
+        "total": 0.10483619456911528,
+        "inside": 0.0985889810788081,
+        "outside": 0.006247213490307178,
+        "positive_token_count": 714,
+        "negative_token_count": 54
+      },
+      "D": {
+        "total": 0.10334109020109356,
+        "inside": 0.0973207412470922,
+        "outside": 0.006020348954001345,
+        "positive_token_count": 741,
+        "negative_token_count": 27
+      },
+      "H": {
+        "total": 0.10334742458160145,
+        "inside": 0.09731819849513716,
+        "outside": 0.006029226086464319,
+        "positive_token_count": 737,
+        "negative_token_count": 31
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.18189175426959991,
+      "S": 0.10820966213941574,
+      "G": 0.8869189620018005,
+      "D": 0.10627206414937973,
+      "H": 0.10628682374954224,
+      "Droll": 0.10352130979299545,
+      "Hroll": 0.10341033339500427,
+      "MaxSim": 0.6876642107963562,
+      "subject_fraction": 0.9514162087329725,
+      "homography_valid": true,
+      "homography_points": 996,
+      "subject_token_fraction": 0.2708333333333333
+    },
+    "negative_features": {
+      "M": 0.040517691522836685,
+      "S": 0.003373476443812251,
+      "G": 0.23102860152721405,
+      "D": 0.0029309792444109917,
+      "H": 0.0029393984004855156,
+      "Droll": 0.0022206760477274656,
+      "Hroll": 0.00236363778822124,
+      "MaxSim": 0.6785908937454224,
+      "subject_fraction": 0.8843957179251466,
+      "homography_valid": true,
+      "homography_points": 81,
+      "subject_token_fraction": 0.2708333333333333
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_7e10c5317a5e74d8",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1971,
+      "negative": 1973
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": 0.004696341138115123,
+      "subject_image": -0.002790411404392623,
+      "new_image": -0.008038019964612175,
+      "ocr": -0.9030128750386703,
+      "code": 0.0
+    },
+    "current_margin": -0.9091449652695598,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.001263177798440058,
+        "inside": -0.0007399794024725761,
+        "outside": 0.002003157200912634,
+        "positive_token_count": 417,
+        "negative_token_count": 351
+      },
+      "S": {
+        "total": 0.002380798272179804,
+        "inside": 0.0018246318556422968,
+        "outside": 0.0005561664165375066,
+        "positive_token_count": 573,
+        "negative_token_count": 195
+      },
+      "D": {
+        "total": 0.0021924008455483906,
+        "inside": 0.001662029243827343,
+        "outside": 0.0005303716017210477,
+        "positive_token_count": 567,
+        "negative_token_count": 201
+      },
+      "H": {
+        "total": 0.002194029628722117,
+        "inside": 0.0016656970540252806,
+        "outside": 0.0005283325746968364,
+        "positive_token_count": 569,
+        "negative_token_count": 199
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.08874323964118958,
+      "S": 0.03771470859646797,
+      "G": 0.38286349177360535,
+      "D": 0.037053484469652176,
+      "H": 0.03705936670303345,
+      "Droll": 0.03658905625343323,
+      "Hroll": 0.03663667291402817,
+      "MaxSim": 0.7158545255661011,
+      "subject_fraction": 0.9420128164785804,
+      "homography_valid": true,
+      "homography_points": 906,
+      "subject_token_fraction": 0.5989583333333334
+    },
+    "negative_features": {
+      "M": 0.08432887494564056,
+      "S": 0.03533391281962395,
+      "G": 0.4797249138355255,
+      "D": 0.03486108407378197,
+      "H": 0.03486534208059311,
+      "Droll": 0.03443269059062004,
+      "Hroll": 0.034415069967508316,
+      "MaxSim": 0.7145912647247314,
+      "subject_fraction": 0.9540672991889386,
+      "homography_valid": true,
+      "homography_points": 1154,
+      "subject_token_fraction": 0.5989583333333334
+    },
+    "evidence": [
+      "已保存正负图的双向匹配、逐Token差额及现有各分支贡献；当前对照尚未产生该固定对的稳定反转证据。"
+    ],
+    "repair_directions": [
+      "按现有差额最大的错误区域复核对应包装面、颜色或编号，验证局部视觉比较；不能据此宣称编码器完全丢失信息。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_80f2fdc29081fedd",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 3233,
+      "negative": 4303
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.20308194539235913,
+      "subject_image": -0.11530864145226927,
+      "new_image": 0.01794539236037629,
+      "ocr": 0.16109110827378048,
+      "code": 0.0
+    },
+    "current_margin": -0.13935408621047074,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.041860250342223376,
+        "inside": -0.006091220056017241,
+        "outside": -0.035769030286206135,
+        "positive_token_count": 126,
+        "negative_token_count": 594
+      },
+      "S": {
+        "total": 0.025965259858054743,
+        "inside": 0.01972379563506754,
+        "outside": 0.006241464222987204,
+        "positive_token_count": 496,
+        "negative_token_count": 224
+      },
+      "D": {
+        "total": 0.02333823178526128,
+        "inside": 0.01767231632353348,
+        "outside": 0.005665915461727793,
+        "positive_token_count": 482,
+        "negative_token_count": 238
+      },
+      "H": {
+        "total": 0.02304387539217093,
+        "inside": 0.01819979801980947,
+        "outside": 0.004844077372361461,
+        "positive_token_count": 398,
+        "negative_token_count": 322
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.09003324061632156,
+      "S": 0.03306182101368904,
+      "G": 0.24005721509456635,
+      "D": 0.029926560819149017,
+      "H": 0.030140433460474014,
+      "Droll": 0.02964680641889572,
+      "Hroll": 0.024519523605704308,
+      "MaxSim": 0.5548097491264343,
+      "subject_fraction": 0.7472262203524488,
+      "homography_valid": true,
+      "homography_points": 160,
+      "subject_token_fraction": 0.12222222222222222
+    },
+    "negative_features": {
+      "M": 0.03307835012674332,
+      "S": 0.007096560206264257,
+      "G": 0.0,
+      "D": 0.006588326767086983,
+      "H": 0.007096560206264257,
+      "Droll": 0.0066262236796319485,
+      "Hroll": 0.007096560206264257,
+      "MaxSim": 0.5966700315475464,
+      "subject_fraction": 0.6406704768856023,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.12222222222222222
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_813fb072c0f3b380",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1983,
+      "negative": 1939
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.07503248494362547,
+      "subject_image": -0.03313504536559386,
+      "new_image": -0.18139069458252122,
+      "ocr": 0.15137968422700787,
+      "code": 0.0
+    },
+    "current_margin": -0.13817854066473423,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.017342529492452737,
+        "inside": -0.01104661515758683,
+        "outside": -0.006295914334865907,
+        "positive_token_count": 317,
+        "negative_token_count": 451
+      },
+      "S": {
+        "total": 0.124443614746614,
+        "inside": 0.12432442616146319,
+        "outside": 0.00011918858515081411,
+        "positive_token_count": 590,
+        "negative_token_count": 178
+      },
+      "D": {
+        "total": 0.12161034574832855,
+        "inside": 0.12149110168041433,
+        "outside": 0.00011924406791420834,
+        "positive_token_count": 586,
+        "negative_token_count": 182
+      },
+      "H": {
+        "total": 0.12160397584869503,
+        "inside": 0.12148477164239925,
+        "outside": 0.00011920420629578057,
+        "positive_token_count": 588,
+        "negative_token_count": 180
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.29724109172821045,
+      "S": 0.19871969521045685,
+      "G": 0.559299647808075,
+      "D": 0.1944296956062317,
+      "H": 0.19442477822303772,
+      "Droll": 0.19190141558647156,
+      "Hroll": 0.18848435580730438,
+      "MaxSim": 0.7643556594848633,
+      "subject_fraction": 0.9965378733827743,
+      "homography_valid": true,
+      "homography_points": 1739,
+      "subject_token_fraction": 0.7083333333333334
+    },
+    "negative_features": {
+      "M": 0.15067704021930695,
+      "S": 0.07427608221769333,
+      "G": 0.38750579953193665,
+      "D": 0.07281934469938278,
+      "H": 0.07282081246376038,
+      "Droll": 0.07093548774719238,
+      "Hroll": 0.06935632973909378,
+      "MaxSim": 0.7816982269287109,
+      "subject_fraction": 0.9949661679364622,
+      "homography_valid": true,
+      "homography_points": 1303,
+      "subject_token_fraction": 0.7083333333333334
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_817005ee11887c2a",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 934,
+      "negative": 1965
+    },
+    "fixed_rank": 6,
+    "current_branch_parts": {
+      "original_image": -0.13158296140625048,
+      "subject_image": -0.11134089675771008,
+      "new_image": -0.005880858600579408,
+      "ocr": -1.8326367845489244e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.2488049000282171,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.03485182912813292,
+        "inside": -0.008316681534051896,
+        "outside": -0.02653514759408103,
+        "positive_token_count": 263,
+        "negative_token_count": 457
+      },
+      "S": {
+        "total": 0.0009455850229552233,
+        "inside": 0.0002127078904002088,
+        "outside": 0.0007328771325550145,
+        "positive_token_count": 708,
+        "negative_token_count": 12
+      },
+      "D": {
+        "total": 0.0009041292093698376,
+        "inside": 0.00021559728746458007,
+        "outside": 0.0006885319219052575,
+        "positive_token_count": 705,
+        "negative_token_count": 15
+      },
+      "H": {
+        "total": 0.0009455850229552233,
+        "inside": 0.0002127078904002088,
+        "outside": 0.0007328771325550145,
+        "positive_token_count": 708,
+        "negative_token_count": 12
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.01636097952723503,
+      "S": 0.00113153294660151,
+      "G": 0.0,
+      "D": 0.0009663041564635932,
+      "H": 0.00113153294660151,
+      "Droll": 0.0009567457600496709,
+      "Hroll": 0.00113153294660151,
+      "MaxSim": 0.6894516348838806,
+      "subject_fraction": 0.23725930133769116,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.125
+    },
+    "negative_features": {
+      "M": 0.00842120498418808,
+      "S": 0.00018594786524772644,
+      "G": 0.0,
+      "D": 6.217490590643138e-05,
+      "H": 0.00018594786524772644,
+      "Droll": 3.489357550279237e-05,
+      "Hroll": 0.00018594786524772644,
+      "MaxSim": 0.7243035435676575,
+      "subject_fraction": 0.346314648768421,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.125
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_85e10feb92319a7b",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 512,
+      "negative": 510
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.17044672055468357,
+      "subject_image": -0.01891670830287273,
+      "new_image": 0.024396563498978452,
+      "ocr": -0.826797536372128,
+      "code": 0.0
+    },
+    "current_margin": -0.9917644017307072,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.020980840341912377,
+        "inside": -0.0004246522155072958,
+        "outside": -0.02055618812640508,
+        "positive_token_count": 289,
+        "negative_token_count": 431
+      },
+      "S": {
+        "total": 0.0002618091341345519,
+        "inside": 0.00011434602845952973,
+        "outside": 0.00014746310567502214,
+        "positive_token_count": 570,
+        "negative_token_count": 150
+      },
+      "D": {
+        "total": 0.00019633010076043625,
+        "inside": 8.529909191973132e-05,
+        "outside": 0.00011103100884070497,
+        "positive_token_count": 564,
+        "negative_token_count": 156
+      },
+      "H": {
+        "total": 0.0002618091341345519,
+        "inside": 0.00011434602845952973,
+        "outside": 0.00014746310567502214,
+        "positive_token_count": 570,
+        "negative_token_count": 150
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.022207016125321388,
+      "S": 0.0010306171607226133,
+      "G": 0.0,
+      "D": 0.0006610892014577985,
+      "H": 0.0010306171607226133,
+      "Droll": 0.0007626795559190214,
+      "Hroll": 0.0010306171607226133,
+      "MaxSim": 0.5249302387237549,
+      "subject_fraction": 0.3602218568467565,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.11666666666666667
+    },
+    "negative_features": {
+      "M": 0.020386265590786934,
+      "S": 0.0007688080077059567,
+      "G": 0.0,
+      "D": 0.0004647590685635805,
+      "H": 0.0007688080077059567,
+      "Droll": 0.0005170977674424648,
+      "Hroll": 0.0007688080077059567,
+      "MaxSim": 0.5459110736846924,
+      "subject_fraction": 0.34298954997687864,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.11666666666666667
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_8a62e5cd6902b0ae",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1023,
+      "negative": 1310
+    },
+    "fixed_rank": 5,
+    "current_branch_parts": {
+      "original_image": -0.12048387938340888,
+      "subject_image": -0.08702265794087216,
+      "new_image": -0.20012910341663837,
+      "ocr": 0.043329326961382364,
+      "code": 0.0
+    },
+    "current_margin": -0.36430631377954015,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.016810766959355936,
+        "inside": -0.00521801718407207,
+        "outside": -0.011592749775283864,
+        "positive_token_count": 320,
+        "negative_token_count": 400
+      },
+      "S": {
+        "total": 0.03630108357303208,
+        "inside": 0.03129945578272664,
+        "outside": 0.005001627790305447,
+        "positive_token_count": 488,
+        "negative_token_count": 232
+      },
+      "D": {
+        "total": 0.035977080155478416,
+        "inside": 0.031102946835999706,
+        "outside": 0.004874133319478704,
+        "positive_token_count": 502,
+        "negative_token_count": 218
+      },
+      "H": {
+        "total": 0.036073529692080476,
+        "inside": 0.031082081164372326,
+        "outside": 0.004991448527708149,
+        "positive_token_count": 522,
+        "negative_token_count": 198
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.08612530678510666,
+      "S": 0.04426911473274231,
+      "G": 0.7946710586547852,
+      "D": 0.04354322329163551,
+      "H": 0.043547309935092926,
+      "Droll": 0.04207822307944298,
+      "Hroll": 0.04104023054242134,
+      "MaxSim": 0.6587546467781067,
+      "subject_fraction": 0.8225098610206948,
+      "homography_valid": true,
+      "homography_points": 650,
+      "subject_token_fraction": 0.1986111111111111
+    },
+    "negative_features": {
+      "M": 0.03197982907295227,
+      "S": 0.007968030869960785,
+      "G": 0.17725342512130737,
+      "D": 0.007566145155578852,
+      "H": 0.0074737886898219585,
+      "Droll": 0.0072524589486420155,
+      "Hroll": 0.005657609552145004,
+      "MaxSim": 0.6755654811859131,
+      "subject_fraction": 0.7627439816000409,
+      "homography_valid": true,
+      "homography_points": 71,
+      "subject_token_fraction": 0.1986111111111111
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_8bc3a7a3577518f0",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1182,
+      "negative": 2727
+    },
+    "fixed_rank": 6,
+    "current_branch_parts": {
+      "original_image": -0.5630324818810364,
+      "subject_image": -0.3512392137417526,
+      "new_image": -0.38785072940569565,
+      "ocr": 0.5359747660256229,
+      "code": 0.0
+    },
+    "current_margin": -0.7661476590028631,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.15887769125401974,
+        "inside": -0.05422891585363282,
+        "outside": -0.10464877540038692,
+        "positive_token_count": 103,
+        "negative_token_count": 617
+      },
+      "S": {
+        "total": 0.0005141362154822599,
+        "inside": 0.0002482925787348979,
+        "outside": 0.000265843636747362,
+        "positive_token_count": 630,
+        "negative_token_count": 90
+      },
+      "D": {
+        "total": 0.00031623606567003225,
+        "inside": 0.000153309718320534,
+        "outside": 0.0001629263473494983,
+        "positive_token_count": 653,
+        "negative_token_count": 67
+      },
+      "H": {
+        "total": 0.0005141362154822599,
+        "inside": 0.0002482925787348979,
+        "outside": 0.000265843636747362,
+        "positive_token_count": 630,
+        "negative_token_count": 90
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": true,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.014451813884079456,
+      "S": 0.0010558123467490077,
+      "G": 0.0,
+      "D": 0.00045093600056134164,
+      "H": 0.0010558123467490077,
+      "Droll": 0.0004222090938128531,
+      "Hroll": 0.0010558123467490077,
+      "MaxSim": 0.5394232869148254,
+      "subject_fraction": 0.640899367868409,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.2638888888888889
+    },
+    "negative_features": {
+      "M": 0.015104373916983604,
+      "S": 0.0005416760686784983,
+      "G": 0.0,
+      "D": 0.0001346999779343605,
+      "H": 0.0005416760686784983,
+      "Droll": 6.536547152791172e-05,
+      "Hroll": 0.0005416760686784983,
+      "MaxSim": 0.6983009576797485,
+      "subject_fraction": 0.7634201382844482,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.2638888888888889
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_8c54b7644f2e05b2",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 4975,
+      "negative": 4976
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.10831582893541647,
+      "subject_image": -0.0934115166131626,
+      "new_image": -0.10706735364856268,
+      "ocr": -5.435893690730609e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.3087952427865126,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.015148782481749851,
+        "inside": -0.005689507893597085,
+        "outside": -0.009459274588152764,
+        "positive_token_count": 320,
+        "negative_token_count": 448
+      },
+      "S": {
+        "total": 0.014837141446412638,
+        "inside": 0.013868569892395708,
+        "outside": 0.0009685715540169311,
+        "positive_token_count": 515,
+        "negative_token_count": 253
+      },
+      "D": {
+        "total": 0.014811730172747783,
+        "inside": 0.013784200327747582,
+        "outside": 0.0010275298450002001,
+        "positive_token_count": 545,
+        "negative_token_count": 223
+      },
+      "H": {
+        "total": 0.014800835171977514,
+        "inside": 0.013787748573139778,
+        "outside": 0.0010130865988377381,
+        "positive_token_count": 541,
+        "negative_token_count": 227
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.09037292003631592,
+      "S": 0.03630294278264046,
+      "G": 0.7087389230728149,
+      "D": 0.03538251295685768,
+      "H": 0.03548259660601616,
+      "Droll": 0.03410845994949341,
+      "Hroll": 0.03412613272666931,
+      "MaxSim": 0.5351493954658508,
+      "subject_fraction": 0.8331604624682222,
+      "homography_valid": true,
+      "homography_points": 731,
+      "subject_token_fraction": 0.21484375
+    },
+    "negative_features": {
+      "M": 0.07349944859743118,
+      "S": 0.02146580070257187,
+      "G": 0.5053290128707886,
+      "D": 0.0205707848072052,
+      "H": 0.02068175934255123,
+      "Droll": 0.01970919594168663,
+      "Hroll": 0.01960645616054535,
+      "MaxSim": 0.5502981543540955,
+      "subject_fraction": 0.783951280070984,
+      "homography_valid": true,
+      "homography_points": 417,
+      "subject_token_fraction": 0.21484375
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_9b57495c8cae1f4b",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 3311,
+      "negative": 3293
+    },
+    "fixed_rank": 5,
+    "current_branch_parts": {
+      "original_image": -0.027655583633531045,
+      "subject_image": 0.02545073545158738,
+      "new_image": 0.17812940180952097,
+      "ocr": -3.7022401342796054,
+      "code": 0.9528269202876081
+    },
+    "current_margin": -2.5734886603644203,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.0031092623455656887,
+        "inside": 0.0026091496149698904,
+        "outside": -0.0057184119605355795,
+        "positive_token_count": 314,
+        "negative_token_count": 406
+      },
+      "S": {
+        "total": 0.04875251520295344,
+        "inside": 0.04805290008798857,
+        "outside": 0.0006996151149648566,
+        "positive_token_count": 638,
+        "negative_token_count": 82
+      },
+      "D": {
+        "total": 0.04742888904759235,
+        "inside": 0.046570861098810444,
+        "outside": 0.0008580279487819157,
+        "positive_token_count": 714,
+        "negative_token_count": 6
+      },
+      "H": {
+        "total": 0.04708347162467574,
+        "inside": 0.046453293366197815,
+        "outside": 0.0006301782584779356,
+        "positive_token_count": 627,
+        "negative_token_count": 93
+      }
+    },
+    "outside_overturn": true,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.1257893592119217,
+      "S": 0.04925232753157616,
+      "G": 0.489725261926651,
+      "D": 0.04757445305585861,
+      "H": 0.047583285719156265,
+      "Droll": 0.045895423740148544,
+      "Hroll": 0.045912932604551315,
+      "MaxSim": 0.5228145718574524,
+      "subject_fraction": 0.9754945791706091,
+      "homography_valid": true,
+      "homography_points": 658,
+      "subject_token_fraction": 0.3888888888888889
+    },
+    "negative_features": {
+      "M": 0.012207098305225372,
+      "S": 0.0004998121876269579,
+      "G": 0.0,
+      "D": 0.00014556641690433025,
+      "H": 0.0004998121876269579,
+      "Droll": 0.00014183996245265007,
+      "Hroll": 0.0004998121876269579,
+      "MaxSim": 0.5259238481521606,
+      "subject_fraction": 0.38635755687030454,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.3888888888888889
+    },
+    "evidence": [
+      "历史图像Token中主体内正负差额为正，但主体外贡献使该固定候选对总差额变负。",
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "以主体支持门控或区域归一化削弱主体外负贡献；必须同时核查成功样本误伤。",
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_9e0c7038dd6543a7",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1321,
+      "negative": 1311
+    },
+    "fixed_rank": 8,
+    "current_branch_parts": {
+      "original_image": -0.03998232668434909,
+      "subject_image": -0.020830892164996673,
+      "new_image": -0.050371123485006386,
+      "ocr": -0.08353483661846095,
+      "code": 0.0
+    },
+    "current_margin": -0.19471917895281265,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.0034622590161032135,
+        "inside": -0.0005305737257003774,
+        "outside": -0.0029316852904028366,
+        "positive_token_count": 383,
+        "negative_token_count": 337
+      },
+      "S": {
+        "total": 0.01608828668263334,
+        "inside": 0.01632116972408482,
+        "outside": -0.00023288304145148127,
+        "positive_token_count": 299,
+        "negative_token_count": 421
+      },
+      "D": {
+        "total": 0.015797106158069712,
+        "inside": 0.015945632577466062,
+        "outside": -0.00014852641939634503,
+        "positive_token_count": 330,
+        "negative_token_count": 390
+      },
+      "H": {
+        "total": 0.016015107536965268,
+        "inside": 0.016030346443997548,
+        "outside": -1.5238907032279328e-05,
+        "positive_token_count": 397,
+        "negative_token_count": 323
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.04792977124452591,
+      "S": 0.0205109640955925,
+      "G": 0.3085295855998993,
+      "D": 0.01987474411725998,
+      "H": 0.019853321835398674,
+      "Droll": 0.018257638439536095,
+      "Hroll": 0.017392676323652267,
+      "MaxSim": 0.6540682911872864,
+      "subject_fraction": 0.9515770968701245,
+      "homography_valid": true,
+      "homography_points": 208,
+      "subject_token_fraction": 0.13194444444444445
+    },
+    "negative_features": {
+      "M": 0.01991480030119419,
+      "S": 0.0044226800091564655,
+      "G": 0.04516603425145149,
+      "D": 0.004077639896422625,
+      "H": 0.0038382140919566154,
+      "Droll": 0.0037508790846914053,
+      "Hroll": 0.003102873219177127,
+      "MaxSim": 0.6575305461883545,
+      "subject_fraction": 0.6702659660895597,
+      "homography_valid": true,
+      "homography_points": 23,
+      "subject_token_fraction": 0.13194444444444445
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_a0dda9c59f0160fe",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1129,
+      "negative": 4360
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.13734155375747026,
+      "subject_image": -0.0770982405870968,
+      "new_image": -0.37495078220597566,
+      "ocr": 0.15520428311436874,
+      "code": 0.0
+    },
+    "current_margin": -0.4341862934361771,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.019466402746426564,
+        "inside": -0.007847128086723387,
+        "outside": -0.011619274659703173,
+        "positive_token_count": 323,
+        "negative_token_count": 445
+      },
+      "S": {
+        "total": 0.05734460343442445,
+        "inside": 0.05468765342429012,
+        "outside": 0.002656950010134326,
+        "positive_token_count": 629,
+        "negative_token_count": 139
+      },
+      "D": {
+        "total": 0.056658544517827814,
+        "inside": 0.05374610668136849,
+        "outside": 0.0029124378364593275,
+        "positive_token_count": 681,
+        "negative_token_count": 87
+      },
+      "H": {
+        "total": 0.05553203051641054,
+        "inside": 0.0532274176359723,
+        "outside": 0.0023046128804382455,
+        "positive_token_count": 609,
+        "negative_token_count": 159
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.14820952713489532,
+      "S": 0.06184908375144005,
+      "G": 0.5599244236946106,
+      "D": 0.06006570905447006,
+      "H": 0.060036517679691315,
+      "Droll": 0.05889100953936577,
+      "Hroll": 0.05856772139668465,
+      "MaxSim": 0.5739622116088867,
+      "subject_fraction": 0.9260318990990807,
+      "homography_valid": true,
+      "homography_points": 1045,
+      "subject_token_fraction": 0.359375
+    },
+    "negative_features": {
+      "M": 0.04234106466174126,
+      "S": 0.004504482261836529,
+      "G": 0.0,
+      "D": 0.0034071614500135183,
+      "H": 0.004504482261836529,
+      "Droll": 0.003255109302699566,
+      "Hroll": 0.004504482261836529,
+      "MaxSim": 0.5934286117553711,
+      "subject_fraction": 0.6163637460337239,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.359375
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_a7b92b4cabf1396a",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 3207,
+      "negative": 2769
+    },
+    "fixed_rank": 24,
+    "current_branch_parts": {
+      "original_image": -0.043677014362002,
+      "subject_image": 0.009903977172743161,
+      "new_image": 0.5636108567169478,
+      "ocr": -1.322054084573713,
+      "code": 0.0
+    },
+    "current_margin": -0.7922162650460232,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.003973006788227293,
+        "inside": 0.0006510241991943786,
+        "outside": -0.004624030987421672,
+        "positive_token_count": 310,
+        "negative_token_count": 410
+      },
+      "S": {
+        "total": -1.1861261985182301e-05,
+        "inside": -2.3577133875603252e-05,
+        "outside": 1.1715871890420958e-05,
+        "positive_token_count": 395,
+        "negative_token_count": 325
+      },
+      "D": {
+        "total": 2.3553478278036323e-05,
+        "inside": 2.6402674633381415e-05,
+        "outside": -2.849196355345089e-06,
+        "positive_token_count": 336,
+        "negative_token_count": 384
+      },
+      "H": {
+        "total": -1.1861261985182301e-05,
+        "inside": -2.3577133875603252e-05,
+        "outside": 1.1715871890420958e-05,
+        "positive_token_count": 395,
+        "negative_token_count": 325
+      }
+    },
+    "outside_overturn": true,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": true
+    },
+    "positive_features": {
+      "M": 0.02065657638013363,
+      "S": 0.0009384640725329518,
+      "G": 0.0,
+      "D": 0.00030754448380321264,
+      "H": 0.0009384640725329518,
+      "Droll": 0.0003675738116726279,
+      "Hroll": 0.0009384640725329518,
+      "MaxSim": 0.521965742111206,
+      "subject_fraction": 0.12321341726737993,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.12222222222222222
+    },
+    "negative_features": {
+      "M": 0.018107261508703232,
+      "S": 0.0009503252804279327,
+      "G": 0.0,
+      "D": 0.00028399101574905217,
+      "H": 0.0009503252804279327,
+      "Droll": 0.00027427400345914066,
+      "Hroll": 0.0009503252804279327,
+      "MaxSim": 0.5259387493133545,
+      "subject_fraction": 0.14331453024618432,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.12222222222222222
+    },
+    "evidence": [
+      "历史图像Token中主体内正负差额为正，但主体外贡献使该固定候选对总差额变负。",
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "以主体支持门控或区域归一化削弱主体外负贡献；必须同时核查成功样本误伤。",
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_acbddc48df8f77fd",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 3311,
+      "negative": 3293
+    },
+    "fixed_rank": 3,
+    "current_branch_parts": {
+      "original_image": 0.18727560490256234,
+      "subject_image": 0.13401621800568098,
+      "new_image": 0.04704713564066765,
+      "ocr": -2.7017829977048162,
+      "code": 0.9528269202876081
+    },
+    "current_margin": -1.3806171188682983,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.020398330874741077,
+        "inside": 0.00756186760134167,
+        "outside": 0.01283646327339941,
+        "positive_token_count": 406,
+        "negative_token_count": 314
+      },
+      "S": {
+        "total": 0.01694384819897605,
+        "inside": 0.018046984777075278,
+        "outside": -0.0011031365780992323,
+        "positive_token_count": 232,
+        "negative_token_count": 488
+      },
+      "D": {
+        "total": 0.017047497483560145,
+        "inside": 0.017527834327022512,
+        "outside": -0.00048033684346236494,
+        "positive_token_count": 258,
+        "negative_token_count": 462
+      },
+      "H": {
+        "total": 0.016142586230534755,
+        "inside": 0.017446707538859366,
+        "outside": -0.0013041213083246066,
+        "positive_token_count": 212,
+        "negative_token_count": 508
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.056128352880477905,
+      "S": 0.020373638719320297,
+      "G": 0.16793274879455566,
+      "D": 0.01962697133421898,
+      "H": 0.01957237534224987,
+      "Droll": 0.018979620188474655,
+      "Hroll": 0.016284648329019547,
+      "MaxSim": 0.5540823340415955,
+      "subject_fraction": 0.9177456663159103,
+      "homography_valid": true,
+      "homography_points": 177,
+      "subject_token_fraction": 0.25
+    },
+    "negative_features": {
+      "M": 0.04545467719435692,
+      "S": 0.0034297886304557323,
+      "G": 0.0,
+      "D": 0.002579472726210952,
+      "H": 0.0034297886304557323,
+      "Droll": 0.0025482280179858208,
+      "Hroll": 0.0034297886304557323,
+      "MaxSim": 0.5336840152740479,
+      "subject_fraction": 0.18591271783242694,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.25
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_bc5564b0e01eeb18",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 229,
+      "negative": 233
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.01641196568552239,
+      "subject_image": -0.02094563214038292,
+      "new_image": 0.009464313594921059,
+      "ocr": 3.8987009176594256e-08,
+      "code": 0.0
+    },
+    "current_margin": -0.027893245243975073,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.0019719190119455274,
+        "inside": -0.0008875308946395917,
+        "outside": -0.0010843881173059349,
+        "positive_token_count": 374,
+        "negative_token_count": 394
+      },
+      "S": {
+        "total": 0.0003194503934973093,
+        "inside": -2.260693451857266e-05,
+        "outside": 0.0003420573280158819,
+        "positive_token_count": 532,
+        "negative_token_count": 236
+      },
+      "D": {
+        "total": 0.00038907713798913047,
+        "inside": 2.149128464606697e-06,
+        "outside": 0.0003869280095245237,
+        "positive_token_count": 602,
+        "negative_token_count": 166
+      },
+      "H": {
+        "total": 0.0003194503934973093,
+        "inside": -2.260693451857266e-05,
+        "outside": 0.0003420573280158819,
+        "positive_token_count": 532,
+        "negative_token_count": 236
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.027468176558613777,
+      "S": 0.0016316443216055632,
+      "G": 0.0,
+      "D": 0.0010915372986346483,
+      "H": 0.0016316443216055632,
+      "Droll": 0.001043913303874433,
+      "Hroll": 0.0016316443216055632,
+      "MaxSim": 0.5362228155136108,
+      "subject_fraction": 0.3716227014553002,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.17708333333333334
+    },
+    "negative_features": {
+      "M": 0.02970251254737377,
+      "S": 0.00131219404283911,
+      "G": 0.0,
+      "D": 0.0007024602964520454,
+      "H": 0.00131219404283911,
+      "Droll": 0.0006779112736694515,
+      "Hroll": 0.00131219404283911,
+      "MaxSim": 0.5381947755813599,
+      "subject_fraction": 0.446301491735218,
+      "homography_valid": false,
+      "homography_points": 1,
+      "subject_token_fraction": 0.17708333333333334
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_c576c0c30f74cd4f",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 3298,
+      "negative": 3297
+    },
+    "fixed_rank": 8,
+    "current_branch_parts": {
+      "original_image": -0.07386317480517413,
+      "subject_image": -0.13794324800438473,
+      "new_image": 0.009909086081873575,
+      "ocr": -9.115938759407527e-08,
+      "code": 0.0
+    },
+    "current_margin": -0.2018974278870722,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.01356212529871199,
+        "inside": -0.006802299784289466,
+        "outside": -0.006759825514422524,
+        "positive_token_count": 319,
+        "negative_token_count": 401
+      },
+      "S": {
+        "total": -0.0009194557387327135,
+        "inside": -0.000606507582056544,
+        "outside": -0.0003129481566761695,
+        "positive_token_count": 327,
+        "negative_token_count": 393
+      },
+      "D": {
+        "total": -0.0008478032361289869,
+        "inside": -0.0004953705264511701,
+        "outside": -0.00035243270967781675,
+        "positive_token_count": 65,
+        "negative_token_count": 655
+      },
+      "H": {
+        "total": -0.0009194557387327135,
+        "inside": -0.000606507582056544,
+        "outside": -0.0003129481566761695,
+        "positive_token_count": 327,
+        "negative_token_count": 393
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.02106238342821598,
+      "S": 0.0010763122700154781,
+      "G": 0.0,
+      "D": 0.00024043630401138216,
+      "H": 0.0010763122700154781,
+      "Droll": 0.0001283626043004915,
+      "Hroll": 0.0010763122700154781,
+      "MaxSim": 0.6962350606918335,
+      "subject_fraction": 0.24904313784555177,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.11805555555555555
+    },
+    "negative_features": {
+      "M": 0.022623751312494278,
+      "S": 0.00199576816521585,
+      "G": 0.0,
+      "D": 0.0010882396018132567,
+      "H": 0.00199576816521585,
+      "Droll": 0.0010646636364981532,
+      "Hroll": 0.00199576816521585,
+      "MaxSim": 0.709797203540802,
+      "subject_fraction": 0.433165768827805,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.11805555555555555
+    },
+    "evidence": [
+      "已保存正负图的双向匹配、逐Token差额及现有各分支贡献；当前对照尚未产生该固定对的稳定反转证据。"
+    ],
+    "repair_directions": [
+      "按现有差额最大的错误区域复核对应包装面、颜色或编号，验证局部视觉比较；不能据此宣称编码器完全丢失信息。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_c86676a1232aefc7",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 377,
+      "negative": 379
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": 0.09999072724622504,
+      "subject_image": 0.036212765925243584,
+      "new_image": 0.10951129545701743,
+      "ocr": -0.3578700623048512,
+      "code": 0.0
+    },
+    "current_margin": -0.11215527367636469,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": 0.014821822279029423,
+        "inside": 0.0017073892056941975,
+        "outside": 0.013114433073335225,
+        "positive_token_count": 386,
+        "negative_token_count": 334
+      },
+      "S": {
+        "total": 0.012687966194643515,
+        "inside": 0.0119873204566439,
+        "outside": 0.0007006457379996141,
+        "positive_token_count": 379,
+        "negative_token_count": 341
+      },
+      "D": {
+        "total": 0.01242179147755832,
+        "inside": 0.011711883365863809,
+        "outside": 0.0007099081116945109,
+        "positive_token_count": 411,
+        "negative_token_count": 309
+      },
+      "H": {
+        "total": 0.01244932634539814,
+        "inside": 0.011711364550283612,
+        "outside": 0.000737961795114529,
+        "positive_token_count": 415,
+        "negative_token_count": 305
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.044249966740608215,
+      "S": 0.01833689957857132,
+      "G": 0.3881962299346924,
+      "D": 0.017832545563578606,
+      "H": 0.017815764993429184,
+      "Droll": 0.017201421782374382,
+      "Hroll": 0.01674214005470276,
+      "MaxSim": 0.712205708026886,
+      "subject_fraction": 0.9377884640082866,
+      "homography_valid": true,
+      "homography_points": 273,
+      "subject_token_fraction": 0.15
+    },
+    "negative_features": {
+      "M": 0.024768617004156113,
+      "S": 0.005648931488394737,
+      "G": 0.16751347482204437,
+      "D": 0.005410755518823862,
+      "H": 0.00536643760278821,
+      "Droll": 0.00494618434458971,
+      "Hroll": 0.004786335397511721,
+      "MaxSim": 0.6973838806152344,
+      "subject_fraction": 0.8110508719179373,
+      "homography_valid": true,
+      "homography_points": 62,
+      "subject_token_fraction": 0.15
+    },
+    "evidence": [
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。"
+    ],
+    "repair_directions": [
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_c8920e14924534af",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 4975,
+      "negative": 4976
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.05994062387593324,
+      "subject_image": -0.08454138314987425,
+      "new_image": -0.1140977600137747,
+      "ocr": 2.705492434529333e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.25857949649033785,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.0076207388580466304,
+        "inside": -0.0025909139076247807,
+        "outside": -0.005029824950421849,
+        "positive_token_count": 354,
+        "negative_token_count": 414
+      },
+      "S": {
+        "total": 0.002537001564119191,
+        "inside": 0.0016648087549332893,
+        "outside": 0.0008721928091859018,
+        "positive_token_count": 422,
+        "negative_token_count": 346
+      },
+      "D": {
+        "total": 0.002638707728804761,
+        "inside": 0.0017240100150298673,
+        "outside": 0.000914697713774894,
+        "positive_token_count": 492,
+        "negative_token_count": 276
+      },
+      "H": {
+        "total": 0.0026121586647328446,
+        "inside": 0.0017253337517648714,
+        "outside": 0.000886824912967973,
+        "positive_token_count": 442,
+        "negative_token_count": 326
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.05431564897298813,
+      "S": 0.014547453261911869,
+      "G": 0.4275602102279663,
+      "D": 0.013819201849400997,
+      "H": 0.01362623181194067,
+      "Droll": 0.013318896293640137,
+      "Hroll": 0.013113327324390411,
+      "MaxSim": 0.525277316570282,
+      "subject_fraction": 0.6983819682943325,
+      "homography_valid": true,
+      "homography_points": 249,
+      "subject_token_fraction": 0.11458333333333333
+    },
+    "negative_features": {
+      "M": 0.048875246196985245,
+      "S": 0.012010451406240463,
+      "G": 0.3816360831260681,
+      "D": 0.011180494911968708,
+      "H": 0.01101407315582037,
+      "Droll": 0.010480599477887154,
+      "Hroll": 0.010555397719144821,
+      "MaxSim": 0.5328980684280396,
+      "subject_fraction": 0.723890342623501,
+      "homography_valid": true,
+      "homography_points": 200,
+      "subject_token_fraction": 0.11458333333333333
+    },
+    "evidence": [
+      "文字及编号合计支持正确图，但图像负贡献更大。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "保留已有正向文字证据，优先修复图像匹配或融合标度；不把该错误简单归为OCR读错。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_da9d9887ba9c878f",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 936,
+      "negative": 4358
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.05867836668394144,
+      "subject_image": -0.04605783747471426,
+      "new_image": -0.019346204837509262,
+      "ocr": -6.522232594008415e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.12408306121942303,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.01134747217098872,
+        "inside": -0.003688212235768635,
+        "outside": -0.007659259935220085,
+        "positive_token_count": 296,
+        "negative_token_count": 424
+      },
+      "S": {
+        "total": 0.04473395050859589,
+        "inside": 0.042144640894256534,
+        "outside": 0.002589309614339353,
+        "positive_token_count": 682,
+        "negative_token_count": 38
+      },
+      "D": {
+        "total": 0.04435563209569465,
+        "inside": 0.04178774358993141,
+        "outside": 0.002567888505763239,
+        "positive_token_count": 699,
+        "negative_token_count": 21
+      },
+      "H": {
+        "total": 0.04439434372462366,
+        "inside": 0.041830966315540466,
+        "outside": 0.0025633774090831956,
+        "positive_token_count": 701,
+        "negative_token_count": 19
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.09131070971488953,
+      "S": 0.04756230488419533,
+      "G": 0.6400253772735596,
+      "D": 0.04683152213692665,
+      "H": 0.04688363894820213,
+      "Droll": 0.04628457874059677,
+      "Hroll": 0.043790753930807114,
+      "MaxSim": 0.7661058306694031,
+      "subject_fraction": 0.9614751619650462,
+      "homography_valid": true,
+      "homography_points": 676,
+      "subject_token_fraction": 0.2
+    },
+    "negative_features": {
+      "M": 0.028808338567614555,
+      "S": 0.0028283530846238136,
+      "G": 0.10822507739067078,
+      "D": 0.0024758896324783564,
+      "H": 0.0024892918299883604,
+      "Droll": 0.0021250515710562468,
+      "Hroll": 0.0015479582361876965,
+      "MaxSim": 0.7774533033370972,
+      "subject_fraction": 0.9159688807894183,
+      "homography_valid": true,
+      "homography_points": 30,
+      "subject_token_fraction": 0.2
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_e5b4dba01622bfaf",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 1133,
+      "negative": 3667
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.0276133506036893,
+      "subject_image": -0.00596399624324806,
+      "new_image": -0.022253130984213332,
+      "ocr": -9.459878080875228e-08,
+      "code": 0.0
+    },
+    "current_margin": -0.055830572429933056,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.00908520875705613,
+        "inside": -0.0014110491093662057,
+        "outside": -0.007674159647689925,
+        "positive_token_count": 313,
+        "negative_token_count": 407
+      },
+      "S": {
+        "total": 0.021904230687382766,
+        "inside": 0.02104094722605216,
+        "outside": 0.000863283461330603,
+        "positive_token_count": 486,
+        "negative_token_count": 234
+      },
+      "D": {
+        "total": 0.021628173645457185,
+        "inside": 0.02080141246315525,
+        "outside": 0.0008267611823019361,
+        "positive_token_count": 491,
+        "negative_token_count": 229
+      },
+      "H": {
+        "total": 0.021626815913821897,
+        "inside": 0.020801068654373076,
+        "outside": 0.0008257472594488214,
+        "positive_token_count": 493,
+        "negative_token_count": 227
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.17539656162261963,
+      "S": 0.09847790747880936,
+      "G": 0.6313725113868713,
+      "D": 0.09675583988428116,
+      "H": 0.09675268828868866,
+      "Droll": 0.0917496532201767,
+      "Hroll": 0.09044930338859558,
+      "MaxSim": 0.7153071165084839,
+      "subject_fraction": 0.9942645033963003,
+      "homography_valid": true,
+      "homography_points": 1136,
+      "subject_token_fraction": 0.33611111111111114
+    },
+    "negative_features": {
+      "M": 0.15229757130146027,
+      "S": 0.07657366991043091,
+      "G": 0.5681165456771851,
+      "D": 0.07512766122817993,
+      "H": 0.07512587308883667,
+      "Droll": 0.07107792049646378,
+      "Hroll": 0.06987903267145157,
+      "MaxSim": 0.7243923544883728,
+      "subject_fraction": 0.9956591011806623,
+      "homography_valid": true,
+      "homography_points": 1028,
+      "subject_token_fraction": 0.33611111111111114
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_ee67048e97d12344",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 3207,
+      "negative": 3123
+    },
+    "fixed_rank": 12,
+    "current_branch_parts": {
+      "original_image": -0.05578700611982956,
+      "subject_image": 0.005412578649718558,
+      "new_image": 0.15217387995699116,
+      "ocr": -1.482570079226052,
+      "code": 0.0
+    },
+    "current_margin": -1.3807706267391717,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.00833887445429961,
+        "inside": 0.0008617719428406822,
+        "outside": -0.009200646397140293,
+        "positive_token_count": 327,
+        "negative_token_count": 393
+      },
+      "S": {
+        "total": 0.03466825707565904,
+        "inside": 0.03315343450682463,
+        "outside": 0.0015148225688343998,
+        "positive_token_count": 686,
+        "negative_token_count": 34
+      },
+      "D": {
+        "total": 0.0323852644580597,
+        "inside": 0.030874185887057624,
+        "outside": 0.0015110785710020732,
+        "positive_token_count": 713,
+        "negative_token_count": 7
+      },
+      "H": {
+        "total": 0.033483539857878164,
+        "inside": 0.03217010391194976,
+        "outside": 0.0013134359459284065,
+        "positive_token_count": 667,
+        "negative_token_count": 53
+      }
+    },
+    "outside_overturn": true,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": true
+    },
+    "positive_features": {
+      "M": 0.11583077907562256,
+      "S": 0.03661825880408287,
+      "G": 0.0816531553864479,
+      "D": 0.033464424312114716,
+      "H": 0.03543354198336601,
+      "Droll": 0.03191503509879112,
+      "Hroll": 0.030924497172236443,
+      "MaxSim": 0.5507868528366089,
+      "subject_fraction": 0.9592440787968194,
+      "homography_valid": true,
+      "homography_points": 184,
+      "subject_token_fraction": 0.2916666666666667
+    },
+    "negative_features": {
+      "M": 0.031071484088897705,
+      "S": 0.001949999714270234,
+      "G": 0.0,
+      "D": 0.001079159090295434,
+      "H": 0.001949999714270234,
+      "Droll": 0.0006006172043271363,
+      "Hroll": 0.001949999714270234,
+      "MaxSim": 0.5591257810592651,
+      "subject_fraction": 0.8018336226599689,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.2916666666666667
+    },
+    "evidence": [
+      "历史图像Token中主体内正负差额为正，但主体外贡献使该固定候选对总差额变负。",
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。",
+      "至少一条分支的自然Top10不含任何真值允许的参考SHA；诊断对已额外计算，但未插入重排候选。"
+    ],
+    "repair_directions": [
+      "以主体支持门控或区域归一化削弱主体外负贡献；必须同时核查成功样本误伤。",
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。",
+      "该分支应改善召回或使用统一、无真值的扩候选规则；Top10重排无法选中其集合外参考。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_f9a136cbb2bdc194",
+    "cache_source": "generated",
+    "fixed_pair": {
+      "positive": 1190,
+      "negative": 2096
+    },
+    "fixed_rank": 3,
+    "current_branch_parts": {
+      "original_image": -0.3141862091253742,
+      "subject_image": -0.003451730063564362,
+      "new_image": -0.14413881461691158,
+      "ocr": -1.037283514193632e-06,
+      "code": 0.0
+    },
+    "current_margin": -0.46177779108936434,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.03350321381456322,
+        "inside": 0.0003674216154548858,
+        "outside": -0.03387063543001811,
+        "positive_token_count": 206,
+        "negative_token_count": 514
+      },
+      "S": {
+        "total": 0.0003492669617315843,
+        "inside": 0.00012317282233932346,
+        "outside": 0.00022609413939226082,
+        "positive_token_count": 612,
+        "negative_token_count": 108
+      },
+      "D": {
+        "total": 0.0003247345632563831,
+        "inside": 0.00012918699557660054,
+        "outside": 0.0001955475676797826,
+        "positive_token_count": 703,
+        "negative_token_count": 17
+      },
+      "H": {
+        "total": 0.0003492669617315843,
+        "inside": 0.00012317282233932346,
+        "outside": 0.00022609413939226082,
+        "positive_token_count": 612,
+        "negative_token_count": 108
+      }
+    },
+    "outside_overturn": true,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.015226172283291817,
+      "S": 0.0004822070768568665,
+      "G": 0.0,
+      "D": 0.00033207854721695185,
+      "H": 0.0004822070768568665,
+      "Droll": 0.0001376284344587475,
+      "Hroll": 0.0004822070768568665,
+      "MaxSim": 0.5601799488067627,
+      "subject_fraction": 0.2550959959609738,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.1375
+    },
+    "negative_features": {
+      "M": 0.009741152636706829,
+      "S": 0.00013294012751430273,
+      "G": 0.0,
+      "D": 7.343996912823059e-06,
+      "H": 0.00013294012751430273,
+      "Droll": -7.688082348522585e-08,
+      "Hroll": 0.00013294012751430273,
+      "MaxSim": 0.593683123588562,
+      "subject_fraction": 0.25141300195497124,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.1375
+    },
+    "evidence": [
+      "历史图像Token中主体内正负差额为正，但主体外贡献使该固定候选对总差额变负。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "以主体支持门控或区域归一化削弱主体外负贡献；必须同时核查成功样本误伤。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_fc0ee05b6b185ffa",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 4857,
+      "negative": 5332
+    },
+    "fixed_rank": 9,
+    "current_branch_parts": {
+      "original_image": -0.28080668481453763,
+      "subject_image": -0.22385778048684069,
+      "new_image": -0.4167382243155435,
+      "ocr": -5.687930269004937e-07,
+      "code": 0.0
+    },
+    "current_margin": -0.9214032584099474,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.032146903996666275,
+        "inside": -0.009138066983885236,
+        "outside": -0.023008837012781037,
+        "positive_token_count": 234,
+        "negative_token_count": 486
+      },
+      "S": {
+        "total": 0.0070660252356411525,
+        "inside": 0.005771467434130044,
+        "outside": 0.0012945578015111092,
+        "positive_token_count": 715,
+        "negative_token_count": 5
+      },
+      "D": {
+        "total": 0.006997795436520657,
+        "inside": 0.005631313066735116,
+        "outside": 0.0013664823697855403,
+        "positive_token_count": 719,
+        "negative_token_count": 1
+      },
+      "H": {
+        "total": 0.006653231578322832,
+        "inside": 0.005570066685863254,
+        "outside": 0.001083164892459579,
+        "positive_token_count": 700,
+        "negative_token_count": 20
+      }
+    },
+    "outside_overturn": false,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.03491346165537834,
+      "S": 0.007467372342944145,
+      "G": 0.3015466034412384,
+      "D": 0.007222325075417757,
+      "H": 0.007054578512907028,
+      "Droll": 0.0071035162545740604,
+      "Hroll": 0.00636326614767313,
+      "MaxSim": 0.6104693412780762,
+      "subject_fraction": 0.7480230775629062,
+      "homography_valid": true,
+      "homography_points": 135,
+      "subject_token_fraction": 0.16666666666666666
+    },
+    "negative_features": {
+      "M": 0.014247220009565353,
+      "S": 0.0004013469151686877,
+      "G": 0.0,
+      "D": 0.00022452996927313507,
+      "H": 0.0004013469151686877,
+      "Droll": 0.0001104666807805188,
+      "Hroll": 0.0004013469151686877,
+      "MaxSim": 0.6426162123680115,
+      "subject_fraction": 0.340050755884928,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.16666666666666666
+    },
+    "evidence": [
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  },
+  {
+    "query": "photo_fd3bb2cdcb3bd3a7",
+    "cache_source": "reused",
+    "fixed_pair": {
+      "positive": 265,
+      "negative": 264
+    },
+    "fixed_rank": 2,
+    "current_branch_parts": {
+      "original_image": -0.03166941180621663,
+      "subject_image": 0.011134986521454504,
+      "new_image": 0.06632949464562987,
+      "ocr": -0.37498868048664313,
+      "code": 0.0
+    },
+    "current_margin": -0.32919361112577494,
+    "patch_contributions": {
+      "MaxSim": {
+        "total": -0.0033532688394188872,
+        "inside": 0.000332988003113618,
+        "outside": -0.0036862568425325057,
+        "positive_token_count": 351,
+        "negative_token_count": 417
+      },
+      "S": {
+        "total": 0.0003908227991585789,
+        "inside": 0.00025760976198803035,
+        "outside": 0.0001332130371705485,
+        "positive_token_count": 555,
+        "negative_token_count": 213
+      },
+      "D": {
+        "total": 0.00012252231937093325,
+        "inside": 0.00012604468909687482,
+        "outside": -3.5223697259415717e-06,
+        "positive_token_count": 428,
+        "negative_token_count": 340
+      },
+      "H": {
+        "total": 0.0003908227991585789,
+        "inside": 0.00025760976198803035,
+        "outside": 0.0001332130371705485,
+        "positive_token_count": 555,
+        "negative_token_count": 213
+      }
+    },
+    "outside_overturn": true,
+    "selected_positive_outside_top10": {
+      "image": false,
+      "joint": false
+    },
+    "positive_features": {
+      "M": 0.03401801735162735,
+      "S": 0.001266894512809813,
+      "G": 0.0,
+      "D": 0.0005616053240373731,
+      "H": 0.001266894512809813,
+      "Droll": 0.0005253308918327093,
+      "Hroll": 0.001266894512809813,
+      "MaxSim": 0.4804583489894867,
+      "subject_fraction": 0.28277197190178655,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.15104166666666666
+    },
+    "negative_features": {
+      "M": 0.027288304641842842,
+      "S": 0.0008760716882534325,
+      "G": 0.0,
+      "D": 0.0004390829708427191,
+      "H": 0.0008760716882534325,
+      "Droll": 0.0004296633997000754,
+      "Hroll": 0.0008760716882534325,
+      "MaxSim": 0.483811616897583,
+      "subject_fraction": 0.16562512351671577,
+      "homography_valid": false,
+      "homography_points": 0,
+      "subject_token_fraction": 0.15104166666666666
+    },
+    "evidence": [
+      "历史图像Token中主体内正负差额为正，但主体外贡献使该固定候选对总差额变负。",
+      "在最终固定候选对上，图像分支合计支持正确图，文字及编号分支合计使最终排序反转。",
+      "RoMa可见区域置信度支持正确图，历史ColNomic的无约束Patch MaxSim仍支持错误图。"
+    ],
+    "repair_directions": [
+      "以主体支持门控或区域归一化削弱主体外负贡献；必须同时核查成功样本误伤。",
+      "优先核查OCR读数、主体归属、词与编号计分；比较自动重新识别及固定融合权重的全量误伤。",
+      "检验主体视觉支持重排；用置信度、几何单独评分及坐标打乱分开检验空间约束的增量。"
+    ],
+    "causal_boundary": "Score algebra and fixed-feature counterfactual evidence; not proof of a unique pixel/encoder root cause. Diagnostic positive is never inserted into inference candidates."
+  }
+]

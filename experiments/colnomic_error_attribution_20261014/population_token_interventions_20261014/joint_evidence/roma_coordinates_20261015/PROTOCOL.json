@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "candidates": "Union of independent image944 and joint1051 natural SHA-unique Top10; each reranker only uses its own original ten. Diagnostic positives never inserted.",
+  "model": {
+    "version": "v2.0.1",
+    "revision": "95c9968145c8906b7b59383258e9f73b02853d89",
+    "checkpoint_sha256": "1557dec0d21b62366465f7ff4d5fdf228cc695d0582e196ad2b80e05230828b7",
+    "setting": "precise",
+    "H_lr": 800,
+    "W_lr": 800,
+    "H_hr": 1280,
+    "W_hr": 1280,
+    "bidirectional": true,
+    "threshold": null,
+    "amp": "stock_bfloat16",
+    "seed": 17
+  },
+  "frame": "EXIF-oriented normalized [0,1], historical token geometry transformed from DECODED_RAW_BEFORE_EXIF",
+  "human_boxes_only": true,
+  "no_ocr": true,
+  "no_colnomic_forward": true,
+  "no_training": true,
+  "save": "Native FP32 bidirectional warp/confidence for fixed diagnostic pairs; FP32 native-map samples at EVERY frozen token center plus a fixed64x64 grid for EVERY pair.",
+  "homography": "RANSAC seed17, source points inside human box, overlap>=0.5, cycle distance<=0.05, threshold0.02 in normalized reference coordinates; no labels. If <4 or failed, geometry score0 and feature score falls back to visibility.",
+  "lambda_distance": 0.1,
+  "rank_weights": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1,
+    2,
+    5
+  ],
+  "gates": [
+    0,
+    0.5
+  ],
+  "selection": "All original173validation: macroTop1, macroMRR, smaller weight, fewer added constraints. Historical exploratory only.",
+  "controls": [
+    "visibility alone",
+    "geometry alone",
+    "feature MaxSim with no coordinate penalty",
+    "dense warp constraint",
+    "single homography constraint",
+    "half-query-grid rolled warp and homography"
+  ],
+  "limits": [
+    "RoMa provides extra visual features; a gain is not proof ColNomic itself encodes all layout.",
+    "A single homography is a planar approximation; foldouts/multiple faces violate it.",
+    "Historical test set already inspected."
+  ]
+}

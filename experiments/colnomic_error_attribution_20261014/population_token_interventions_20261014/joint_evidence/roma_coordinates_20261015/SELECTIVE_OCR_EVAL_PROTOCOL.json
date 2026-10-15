@@ -1,0 +1,23 @@
+{
+  "trigger": "OCR_TRIGGER.json",
+  "thresholds": [
+    0,
+    0.8,
+    0.9
+  ],
+  "weights": [
+    0,
+    0.25,
+    0.5,
+    1
+  ],
+  "code_update": [
+    false,
+    true
+  ],
+  "score": "fixed1051 + weight*0.5*(new_text_z-old_text_z) + weight*(new_code_bonus-old_code_bonus) if code_update; code branch stays fixed otherwise",
+  "selection": "All 173 original validation queries: package macro Top1 then macro MRR then smaller weight, lower confidence threshold and no code update.",
+  "empty_text_policy": "If no recognized line remains at the fixed threshold, preserve old text and code scores.",
+  "scope": "Exploratory historical full-gallery evaluation; all triggered successes and failures included. Human subject boxes, no hand-read text.",
+  "runtime": "Existing pinned OCR models, CPU Paddle3 runtime; historical runtime parity not presumed."
+}

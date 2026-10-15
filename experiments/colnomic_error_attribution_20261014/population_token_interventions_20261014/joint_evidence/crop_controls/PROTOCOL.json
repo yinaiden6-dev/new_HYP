@@ -1,0 +1,41 @@
+{
+  "n": 100,
+  "harm_cases": 50,
+  "controls": 50,
+  "source_sha256": "6ae58604383e1d2a07c6186859e56082a5c6d2ab3c404d1ac6d00393182057b5",
+  "subject_region": "latest confirmed human boxes only",
+  "sam_allowed": false,
+  "ocr_allowed": false,
+  "gallery": "unchanged historical5405rows;5330uniqueSHA",
+  "arms": {
+    "original": "Historical raw full image; replay must be bitwise exact.",
+    "reviewed_crop": "Human box plus fixed5percent padding, EXIF display orientation; replay must match current corrected crop cache.",
+    "raw_orientation_crop": "Same reviewed crop pixels, inverse EXIF orientation only; reuse reviewed_crop if orientation1.",
+    "context_gray": "Full original processor grid; replace only patches entirely outside the padded box with neutral gray. Retained patch values and indices unchanged.",
+    "context_white": "Same as context_gray, white fill control.",
+    "native_patch_crop": "Extract the retained rectangular patch block from original processor input; no resizing and identical patch values. Grid/positions/sequence change.",
+    "enlarged_patch_crop": "Upsample that identical low-resolution patch block to the standard processor crop budget. Adds no original-image detail; changes scale/grid and interpolated samples."
+  },
+  "readouts": [
+    "all_tokens",
+    "visual_only",
+    "subject_plus_template",
+    "retained_region_plus_template"
+  ],
+  "comparisons": [
+    "reviewed_crop vs raw_orientation_crop: pixel orientation control",
+    "original vs context_gray/white at fixed retained readout: outside-patch context intervention",
+    "context_gray/white retained readout vs native_patch_crop: sequence/grid/position and excluded-context-token changes at identical retained pixels",
+    "native_patch_crop vs enlarged_patch_crop: resampling plus scale/grid; no added source detail",
+    "all_tokens vs subject_plus_template within the same encoded image: readout intervention"
+  ],
+  "control_selection": "One unique success control per harm; minimize identity mismatch, orientation mismatch, background mismatch, log subject-area gap, then queryID. No intervention outcome used.",
+  "limits": [
+    "Diagnostic selected cohort; not a population accuracy claim or held-out repair tuning.",
+    "Human boxes are rectangles, not pixel-perfect object segmentation.",
+    "Native patch crop rounds crop extent outward to full28pixel visual patches; differs slightly from exact historical crop extent.",
+    "Scale and grid/token budget are a joint intervention here; cannot uniquely attribute to optical detail.",
+    "Pixel context dependence and score changes do not establish semantic identity content in background pixels.",
+    "Reencoding may change contextual representations at retained positions; claim loss of identity only with additional evidence."
+  ]
+}

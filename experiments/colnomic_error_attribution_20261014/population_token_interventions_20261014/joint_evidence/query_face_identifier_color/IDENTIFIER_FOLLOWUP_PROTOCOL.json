@@ -1,0 +1,18 @@
+{
+  "reason": "Binary any-code reward can cancel a unique code when a shared postal/contact code matches both candidates.",
+  "score": "Sum per-query-code reference IDF/log(N+1), with max credit once per query code per candidate; preserve original score.",
+  "modes": [
+    "exact",
+    "one_edit_min8"
+  ],
+  "weights": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2
+  ],
+  "selection": "Same retained validation package-macro Top1, MRR and smaller weight; test not used.",
+  "scope": "Exploratory follow-up prompted by score structure; not a fresh untouched test evaluation."
+}

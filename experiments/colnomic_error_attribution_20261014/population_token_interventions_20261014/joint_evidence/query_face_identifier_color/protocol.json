@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-15",
+  "exclusion_source": "User-confirmed insufficient information in the face captured by the query photo; NOT a reference-gallery defect.",
+  "exclusion_scope": "Exclude these 13 query rows only for a secondary sensitivity analysis. Keep the complete reference gallery, identity labels, frozen scoring configurations, and original full1117 results.",
+  "excluded_queries": [
+    "photo_01baf6cd7fca88bb",
+    "photo_16ff2e9baedfa1da",
+    "photo_24aba52659f86e92",
+    "photo_264a39405899b54d",
+    "photo_2d06e466a2c40697",
+    "photo_31ef5fd43cac8585",
+    "photo_449ade96538a6b03",
+    "photo_45b5970f1ebe4f19",
+    "photo_529ca7857c6387ae",
+    "photo_578a5c367aa237fe",
+    "photo_6f1045004ede2c6e",
+    "photo_9e6d02a08ae58eae",
+    "photo_b4f22cae9dac8426"
+  ],
+  "identifier_diagnostics": {
+    "photo_85e10feb92319a7b": "17033-112-30",
+    "photo_8c54b7644f2e05b2": "372603327106",
+    "photo_c8920e14924534af": "372603327106",
+    "photo_f8f533ac85b05854": "87936",
+    "photo_fbc7b6d852b1125b": "B83264U-4"
+  },
+  "identifier_manual_scope": "Verified candidate-pair readings are diagnostic hypotheses, not proof of a unique acceptable identity. Append a verified code only when missing from existing query OCR, retaining other lines. Keep reference OCR fixed; separately assess full-code matching. Never count manual readings as deployable accuracy.",
+  "automatic_code_match": {
+    "source": "Existing OCR lines inside reviewed human query boxes and reference OCR; no manual codes or test labels supplied to matcher.",
+    "code_rule": "Uppercase alphanumeric segments with at least5 digits, at most4 letters, length5..18; remove separators, preserve order and leading zeros. Reject a repeated single digit. Reference support capped at1% of reference rows.",
+    "modes": [
+      "exact",
+      "one_edit_min8"
+    ],
+    "weights": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      1,
+      2
+    ],
+    "selection": "Original selection was made on the then-retained validation set excluding17 and chose weight0. Recalculate the same selection rule on the corrected exclusion13 mask as a sensitivity check only; do not retroactively replace the locked1041 primary or call this a fresh held-out validation.",
+    "score": "Existing final1041 joint score plus weight times binary any-compatible-code score. Missing codes give zero increment. Never remove gallery candidates."
+  },
+  "layout_case": {
+    "query": "photo_fbc7b6d852b1125b",
+    "positive": "reference_003333",
+    "negative": "reference_003331",
+    "scope": "Color diagnosis on fixed reference003333/reference003331 pair. Audit actual layout alignment; no invented claim of a natural layout difference.",
+    "factors": [
+      "original vs neutralized luminance color vs visible-side color swap",
+      "identifier visible vs hidden",
+      "query original vs luminance-only"
+    ],
+    "controls": [
+      "unchanged repeated encoding",
+      "exact tensor repack",
+      "blank-background sham edit"
+    ],
+    "limits": "Synthetic layout sensitivity does not prove that an actual layout difference caused the original error. Paired reference interventions cannot be reported as a full-gallery repaired system. Original photograph remains unchanged.",
+    "user_correction": "User corrected this case: distinguishable by color, not the claimed classic layout case; retain in evaluation."
+  },
+  "visibility_corrections_20261015": {
+    "restored_due_to_user_confirmed_visible_code": [
+      "photo_c8920e14924534af",
+      "photo_8c54b7644f2e05b2",
+      "photo_c576c0c30f74cd4f",
+      "photo_f8f533ac85b05854"
+    ],
+    "already_retained_code_case": "photo_85e10feb92319a7b",
+    "already_retained_color_case": "photo_fbc7b6d852b1125b",
+    "reason": "User corrected visible-code availability. Code visibility is separate from OCR accuracy, code uniqueness, and retrieval success.",
+    "prior_excluded_count": 17,
+    "latest_excluded_count": 13
+  }
+}

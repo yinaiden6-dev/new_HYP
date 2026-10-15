@@ -1,0 +1,104 @@
+{
+  "status": "complete",
+  "selected": {
+    "name": "confidence0/weight0.25/code1",
+    "threshold": 0,
+    "weight": 0.25,
+    "code_update": true,
+    "validation": {
+      "n": 173,
+      "identities": 21,
+      "correct": 165,
+      "accuracy": 0.953757225433526,
+      "mrr": 0.9651000091751536,
+      "macro_accuracy": 0.9582010582010583,
+      "macro_mrr": 0.9684072394389854,
+      "repairs": 1,
+      "harms": 0
+    }
+  },
+  "metrics": {
+    "all": {
+      "n": 1117,
+      "identities": 130,
+      "correct": 1054,
+      "accuracy": 0.9435989256938228,
+      "mrr": 0.9628801281778004,
+      "macro_accuracy": 0.9433224254378101,
+      "macro_mrr": 0.9633955015930176,
+      "repairs": 4,
+      "harms": 1
+    },
+    "validation": {
+      "n": 173,
+      "identities": 21,
+      "correct": 165,
+      "accuracy": 0.953757225433526,
+      "mrr": 0.9651000091751536,
+      "macro_accuracy": 0.9582010582010583,
+      "macro_mrr": 0.9684072394389854,
+      "repairs": 1,
+      "harms": 0
+    },
+    "test": {
+      "n": 161,
+      "identities": 18,
+      "correct": 151,
+      "accuracy": 0.937888198757764,
+      "mrr": 0.9663561076604553,
+      "macro_accuracy": 0.9021164021164021,
+      "macro_mrr": 0.9433421516754851,
+      "repairs": 0,
+      "harms": 0
+    },
+    "retained": {
+      "n": 1104,
+      "identities": 130,
+      "correct": 1053,
+      "accuracy": 0.9538043478260869,
+      "mrr": 0.9692958146422819,
+      "macro_accuracy": 0.9558104929258776,
+      "macro_mrr": 0.9713760704069198,
+      "repairs": 4,
+      "harms": 1
+    },
+    "target54": {
+      "n": 54,
+      "identities": 31,
+      "correct": 4,
+      "accuracy": 0.07407407407407407,
+      "mrr": 0.38152924750146966,
+      "macro_accuracy": 0.07258064516129033,
+      "macro_mrr": 0.3919034818228367,
+      "repairs": 4,
+      "harms": 0
+    },
+    "triggered": {
+      "n": 379,
+      "identities": 119,
+      "correct": 341,
+      "accuracy": 0.899736147757256,
+      "mrr": 0.9303126439669974,
+      "macro_accuracy": 0.91843737494998,
+      "macro_mrr": 0.9444877514497863,
+      "repairs": 4,
+      "harms": 1
+    }
+  },
+  "repairs": [
+    "photo_21fb819788729c55",
+    "photo_6172bb3bbbb3a2d6",
+    "photo_9e0c7038dd6543a7",
+    "photo_c86676a1232aefc7"
+  ],
+  "harms": [
+    "photo_324805558f8eab41"
+  ],
+  "coverage": 379,
+  "checks": {
+    "original_text_reconstruction_max_error": 0.0,
+    "original_code_reconstruction_max_error": 0.0,
+    "untriggered_rows_unchanged": true
+  },
+  "runtime": "Existing pinned OCR models, CPU Paddle3 runtime; historical runtime parity not presumed."
+}

@@ -1,0 +1,117 @@
+{
+  "original": {
+    "all_transitions": {
+      "both_preserve": 803,
+      "ocr_fusion_only_repair": 90,
+      "both_repair": 53,
+      "neither_repair": 90,
+      "image_harm_only": 26,
+      "fusion_harm_only": 36,
+      "image_only_repair": 14,
+      "both_harm": 5
+    },
+    "original247": {
+      "total": 247,
+      "ocr_alone_correct": 157,
+      "fusion_correct": 143,
+      "image_center_correct": 67,
+      "center_oracle_possible": 71
+    },
+    "same_image_pair_text_direction": {
+      "image_pair_text_supports_truth": 203,
+      "image_pair_text_supports_wrong": 43,
+      "image_pair_text_tie": 1
+    },
+    "ocr_alone_all_correct": 929,
+    "fusion_all_correct": 972
+  },
+  "center_presence": {
+    "all_transitions": {
+      "both_preserve": 828,
+      "ocr_fusion_only_repair": 109,
+      "both_repair": 61,
+      "neither_repair": 71,
+      "image_harm_only": 28,
+      "image_only_repair": 6,
+      "fusion_harm_only": 11,
+      "both_harm": 3
+    },
+    "original247": {
+      "total": 247,
+      "ocr_alone_correct": 193,
+      "fusion_correct": 170,
+      "image_center_correct": 67,
+      "center_oracle_possible": 71
+    },
+    "same_image_pair_text_direction": {
+      "image_pair_text_supports_truth": 217,
+      "image_pair_text_tie": 28,
+      "image_pair_text_supports_wrong": 2
+    },
+    "ocr_alone_all_correct": 989,
+    "fusion_all_correct": 1026
+  },
+  "numeric": {
+    "all_transitions": {
+      "both_preserve": 835,
+      "ocr_fusion_only_repair": 109,
+      "both_repair": 58,
+      "neither_repair": 71,
+      "image_harm_only": 27,
+      "image_only_repair": 9,
+      "both_harm": 4,
+      "fusion_harm_only": 4
+    },
+    "original247": {
+      "total": 247,
+      "ocr_alone_correct": 186,
+      "fusion_correct": 167,
+      "image_center_correct": 67,
+      "center_oracle_possible": 71
+    },
+    "same_image_pair_text_direction": {
+      "image_pair_text_supports_truth": 214,
+      "image_pair_text_tie": 28,
+      "image_pair_text_supports_wrong": 5
+    },
+    "ocr_alone_all_correct": 992,
+    "fusion_all_correct": 1029
+  },
+  "pure_image247": {
+    "not_repaired_by_tested_image_readouts": 168,
+    "subject_readout_repairs": 67,
+    "other_image_control_repairs": 8,
+    "center_mixture_can_repair_only_oracle": 4
+  },
+  "pure_image_controls": {
+    "foreground_only": {
+      "repairs": 70,
+      "harms": 32
+    },
+    "any_overlap_template": {
+      "repairs": 63,
+      "harms": 29
+    },
+    "center_fixed_template_fraction": {
+      "repairs": 69,
+      "harms": 32
+    },
+    "full_refvisual": {
+      "repairs": 4,
+      "harms": 8
+    },
+    "center_refvisual": {
+      "repairs": 60,
+      "harms": 32
+    },
+    "query_visual_refvisual": {
+      "repairs": 5,
+      "harms": 5
+    },
+    "query_visual_only": {
+      "repairs": 4,
+      "harms": 1
+    }
+  },
+  "scope": "Frozen original image and existing OCR scores only. All3351 method-query fusion ranks exactly reproduced. No OCR rerun; same image-positive/image-negative candidates fixed for bridge."
+}

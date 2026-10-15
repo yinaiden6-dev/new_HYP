@@ -1,0 +1,9 @@
+{
+  "scope": "All1117 queries and5405 reference rows, SHA-collapsed ranking; frozen original embeddings, no OCR, no human boxes used by the new matching scores.",
+  "hypotheses": ["Unilateral MaxSim may reward one-sided shared content", "Many query tokens choosing the same gallery token may inflate a match", "Template tokens may confound the direction/collision controls"],
+  "methods": ["original forward mean MaxSim", "reverse mean MaxSim", "forward per-gallery-winner-group balanced mean", "visual-only forward", "visual-only reverse", "visual-only per-winner-group balanced mean"],
+  "balanced_definition": "Each gallery token that wins at least one query contributes one equal-weight group mean, instead of weighting groups by the number of query tokens assigned. No semantic or identity interpretation of repeated matches is assumed.",
+  "mixture_grid": [0, 0.1, 0.25, 0.5, 0.75, 1],
+  "selection": "For each method choose mixture with original score on the existing validation identities by macroTop1, macroMRR, then lower intervention weight. Report all curves and harms; do not select by full/test accuracy.",
+  "limitation": "Historical split already studied, not fresh blind evaluation. Candidate token counts/background differ; reverse and balancing are diagnostic controls, not a priori correct identity scorers. Failure of these methods does not rule out other spatial or relational matching methods."
+}

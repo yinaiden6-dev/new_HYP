@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "current_reference_tensors": 5405,
+  "verified_tensor_hashes": 5405,
+  "horeka_original_reference_rows": 5413,
+  "same_original_identity": 5390,
+  "labels_require_revision_explanation": 15,
+  "upstream_cache_sha256": "74f3bd6278fb7f36d1eabef569abc329cf9f9b315778c8353677694750d8a98e",
+  "all_reference_images_sha_match": 5405,
+  "query_provenance_counts": {
+    "generated": 678,
+    "reused": 439
+  },
+  "query_contract": {
+    "recipe": "h593_encoder_v1",
+    "family": "colnomic_7b",
+    "repo": "nomic-ai/colnomic-embed-multimodal-7b",
+    "revision": "09dbc9502b66605d5be56d2226019b49c9fd3293",
+    "view": "image",
+    "image_sha256": null,
+    "dtype": "torch.bfloat16",
+    "text": "",
+    "attention": "fp32_sdpa_on_pre_ampere_v1"
+  },
+  "original_job": [
+    {
+      "path": "1/difficult/logs/diff_cn7b_raw-4076613.out",
+      "sha256": "cd673d6fbd46b3b853f924ccca7af3d6614b2d50b4cdfcdbbd9e71943166cf06",
+      "excerpts": [
+        "job=4076613 host=hkn0607.localdomain",
+        "Python 3.13.11",
+        "|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:E3:00.0 Off |                    0 |",
+        "[INFO] model device=cuda dtype=torch.bfloat16",
+        "[INFO] saved gallery cache: /hkfs/work/workspace/scratch/ap7811-benchmark/colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt items=5413",
+        "Job ID: 4076613",
+        "Starttime: Mon Jun  8 14:18:11 2026",
+        "Endtime: Mon Jun  8 14:42:08 2026"
+      ]
+    },
+    {
+      "path": "release/eval/workspace/1/difficult/logs/diff_cn7b_raw-4076613.out",
+      "sha256": "e55b6419a69f2fd7cb198ff9c8049bbd7efe8d838699ddd22e8ecb647efc38c3",
+      "excerpts": [
+        "job=4076613 host=hkn0607.localdomain",
+        "Python 3.13.11",
+        "|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:E3:00.0 Off |                    0 |",
+        "[INFO] model device=cuda dtype=torch.bfloat16",
+        "[INFO] saved gallery cache: /path/to/workspace/colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt items=5413",
+        "Job ID: 4076613",
+        "Starttime: Mon Jun  8 14:18:11 2026",
+        "Endtime: Mon Jun  8 14:42:08 2026"
+      ]
+    },
+    {
+      "path": "release/eval/workspace/colnomic/difficult/raw_gallery_7b/cache/colnomic_gallery_emb_difficult.pt",
+      "SHA256": "74f3bd6278fb7f36d1eabef569abc329cf9f9b315778c8353677694750d8a98e",
+      "bytes": 1000105413
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/provenance_risk_audit_20261014/original_horeka_gallery_binding.json",
+      "sha256": "576bbf2f95e9e895c6015d3795181e5a8b528e3d1ac7e0b36bd6507edd03f6f0"
+    },
+    {
+      "path": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/provenance_risk_audit_20261014/horeka_input_binding.json",
+      "sha256": "d15993765078f32dd74cbaad5e040295c4f651e47e2282f1f0b34ee7ad114ecd"
+    },
+    {
+      "path": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/provenance_risk_audit_20261014/source_cohort_audit.json",
+      "sha256": "df8b3a6ea20abba27ea8a9d7a80b7aeab45564142420668122a6dd32a1056196"
+    },
+    {
+      "path": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/provenance_risk_audit_20261014/actual_query_cache_vs_intervention_base.json",
+      "sha256": "d2995a0285f47306678b7cb7d3c0023414049d52dd129e6b450db0b4f0a9333c"
+    },
+    {
+      "path": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/delivery_support/provenance_risk_audit_20261014/historical_sources/horeka/producer_job_4076613_evidence.json",
+      "sha256": "ec6668e6911c981fbdf7010452c9ca3425dc953d45e2e9cd84f20e4d143c5244"
+    }
+  ],
+  "conclusion": "All current gallery tensors bind byte-for-byte to the recovered HoreKa original. Current query bank is mixed:439 reused and678 generated under h593_encoder_v1. i14s45 current coordinate run freezes BOTH banks; RoMa inference is new, ColNomic inference is not.",
+  "limitations": [
+    "Matching current feature bytes proves cache identity, not reconstruction of every historical library or checkpoint byte at production time.",
+    "Query source group comparisons are confounded by sample identity and acquisition differences.",
+    "Historical15label discrepancies are not newly inferred wrong examples; existing current cohort labels remain unchanged.",
+    "Neither a cache difference nor its GPU provenance alone establishes a causal encoder failure."
+  ]
+}

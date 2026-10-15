@@ -1,0 +1,32 @@
+{
+  "scope": "31 original-image-correct/subject-readout-wrong cases, plus31 unique successful controls. Same identity and scene preferred, foreground fraction nearest; matching is descriptive, not equal-view proof.",
+  "selection": "All31 harms included, no score-based subset after intervention; control tie-break deterministic. Preserve the original full gallery and SHA ranking.",
+  "arms": [
+    "original",
+    "lossless_sham",
+    "far_background_gray",
+    "far_background_blur",
+    "all_background_gray",
+    "boundary_ring_gray",
+    "matched_background_gray",
+    "matched_subject_gray"
+  ],
+  "pixels": "Decode original raw RGB without EXIF transpose, convert reviewed display-frame box back to raw. Keep size and processor grid. Far background excludes a two-merged-token-width guard outside subject. No resizing/cropping. Gray=127. Blur affects only far background. Matched background/subject masks use exactly the same pixel count, up to10percent of the subject interior, deterministic row-major blocks seeded per image; subject control is not presumed identity-free.",
+  "runtime": "Pinned existing checkpoint, same inference runtime for every arm, unchanged reference cache. Original and lossless sham encoded independently; exact tensor equality required. Old-query parity and original full-gallery rank replay reported before interpreting interventions as old-error explanations.",
+  "readouts": [
+    "all_valid",
+    "subject_plus_template",
+    "subject_visual",
+    "background_visual",
+    "template_only"
+  ],
+  "matching": "For fixed historical correct and center-error candidates, report independent MaxSim and baseline-argmax-locked matching, positive and negative absolute scores, and per-region contributions. No truth-based arm choice or weight fitting.",
+  "stages": "Capture visual merger, final preprojection and retrieval embedding; compare corresponding token changes for pixel-unmodified subject tokens. Stage cosine is a sensitivity diagnostic, not a retrieval-trained head.",
+  "conclusions": "Separate mask/readout boundary effect, encoded contextual dependence, and rematching/aggregation effects. Background-position usefulness is not background semantic identity. Pixel interventions may be out-of-distribution; two fills and same-count spatial controls are reported. No forced exclusive root label.",
+  "source_hashes": {
+    "cohort.json": "8965623d03ce9f4c73563d138487fc5ad976ad706a0f4d44a07980e2b3c2f985",
+    "masks.npz": "edc26ddd3d5cac342ed2eeeef33cc019ed00c5911e20f8260ae0050809911d1c",
+    "matching_controls_per_query.csv": "1c15a29bde16b3a79bb5d08943a5b78bd6f42d4a8b96d9b4b124143c411941fe",
+    "token_per_query.csv": "703af75218c4d29e1c81984b1d23e7ff86d0123b0eeb2181d2048d47b527140e"
+  }
+}

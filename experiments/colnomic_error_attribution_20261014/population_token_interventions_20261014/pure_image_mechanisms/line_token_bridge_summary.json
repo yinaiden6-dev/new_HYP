@@ -1,0 +1,13 @@
+{
+  "queries": 247,
+  "lines": 7402,
+  "max_text_pair_replay_error": 0.0008243957734066498,
+  "queries_with_positive_text_line": 218,
+  "queries_with_positive_text_line_but_negative_overlapping_image_tokens": 156,
+  "corrected_fusion_repaired": 170,
+  "limits": [
+    "No OCR re-recognition or new OCR tuning. Uses existing corrected-presence formula.",
+    "Text line boundaries provide a spatial overlap annotation, not proof those image tokens encode that exact word or no other context.",
+    "Negative image contribution at a text-supported location does not prove encoder information loss; matching and reference view can also explain it."
+  ]
+}

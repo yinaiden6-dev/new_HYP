@@ -1,0 +1,23 @@
+{
+  "status": "active",
+  "selection": "reviewed_human_boxes_only",
+  "source": "C:\\Users\\shazer\\Documents\\ChatGPT\\mb\\mechanism_experiments\\roi_expansion_20261014\\source\\results\\colnomic_full_audit\\20261013_resume\\foreground_harms_review\\source_snapshots\\subject_boxes_after_user_review.json",
+  "source_sha256": "6ae58604383e1d2a07c6186859e56082a5c6d2ab3c404d1ac6d00393182057b5",
+  "remote_source": "/mnt/lsdf_zyin/results/colnomic_full_audit/20261013_resume/foreground_harms_review/source_snapshots/subject_boxes_after_user_review.json",
+  "coordinate_system": "EXIF-transposed original pixels; xyxy; exclusive right/bottom",
+  "required_source": "human",
+  "required_status": "confirmed",
+  "sam_allowed": false,
+  "current_token_mask_sha256": "edc26ddd3d5cac342ed2eeeef33cc019ed00c5911e20f8260ae0050809911d1c",
+  "superseded_crop_queries": [
+    "photo_41de3eb383934ec3",
+    "photo_67f24002bcb357c9",
+    "photo_88e7f77db7da30c3",
+    "photo_c81d2a7abb5af160",
+    "photo_d33ae6dfc0cb239b"
+  ],
+  "rule": "Use the latest confirmed human box for cropping, spatial masks and attribution. Do not reuse a crop cache with a different box. No silent substitution with SAM or legacy boxes.",
+  "superseded_crops_reencoded_and_verified": true,
+  "active_crop_ranks": "background_causal_v1/manual_box_audit/reviewed_crop_rank1117.csv",
+  "active_case_ledger": "background_causal_v1/manual_box_audit/all247_current_image_evidence.csv"
+}

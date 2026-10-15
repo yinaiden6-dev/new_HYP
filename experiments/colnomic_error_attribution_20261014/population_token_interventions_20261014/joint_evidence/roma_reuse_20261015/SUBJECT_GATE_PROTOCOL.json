@@ -1,0 +1,26 @@
+{
+  "designed_after_inspecting_region_audit": true,
+  "primary_threshold": 0.5,
+  "threshold_sensitivity": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    1
+  ],
+  "rule": "If RoMa proposes a different Top1, accept its same-Top10 permutation only when at least threshold of proposed winner query overlap confidence lies in the existing human subject box. Otherwise keep every baseline rank. If winner is unchanged, preserve the proposed permutation.",
+  "baseline_arms": {
+    "fusion": "fixed1051 + previously fixed S beta0.2",
+    "image": "image944 + validation-selected M beta0.5"
+  },
+  "controls": [
+    "Accept based on subject rectangle area fraction only at identical threshold.",
+    "Roll overlap map by half height and half width, retain same values; gate at identical threshold."
+  ],
+  "selection": "Full173 validation macro Top1 then macro MRR, then smaller threshold; do not select using target54 or test. Fixed0.5 also reported independently.",
+  "no_ground_truth_at_inference": true,
+  "no_SAM": true,
+  "no_neural_forward": true,
+  "limitation": "Human subject boxes remain external annotations; retrospective exploratory result, not untouched benchmark. Spatial support gating is not correspondence-constrained matching."
+}

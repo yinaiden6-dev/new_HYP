@@ -1,0 +1,9 @@
+{
+  "hypothesis": "Uniform query-token aggregation may overweight signals shared by competing reference designs. Measure each query token's MaxSim variation across reference candidates and use it as a label-free weight.",
+  "population": "1117 original query embeddings and5405 physical references,5330SHA groups; no OCR, no boxes, no identity labels for weights or candidate selection.",
+  "methods": ["std across unique gallery references", "std across baseline top20 distinct reference images"],
+  "score": "Normalize nonnegative std weights to sum1, then weighted mean of the original per-token MaxSim values against every reference. Full-gallery reranking, not top20 pruning.",
+  "mixing": "Blend with original score using weights0,.1,.25,.5,.75,1; select per method by validation-identity macroTop1,macroMRR,then smaller weight. Test never selects parameters.",
+  "null": "Ten deterministic permutations of hard20 weights within visual and template groups, keeping weight distribution and group mass. Apply real hard20 validation-selected mixture to all permutations.",
+  "limits": "Variation is a heuristic for discriminability, not proof of identity semantics. Hard20 neighborhoods can omit truth. Report historical test, success harms, all curves and nulls; do not replace failed methods with test-picked weights."
+}

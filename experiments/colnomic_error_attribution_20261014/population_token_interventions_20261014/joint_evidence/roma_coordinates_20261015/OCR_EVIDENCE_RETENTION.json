@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "protocol": "One global post-hoc control: keep the larger old/new aggregate code bonus for every gallery row. All OCR threshold/weight parameters frozen from the prior validation selection. Same rule for all1117 queries; no truth or case-specific routing. Original replacement result and primary2x2 remain unchanged.",
+  "selection": {
+    "name": "confidence0/weight0.25/code1",
+    "threshold": 0,
+    "weight": 0.25,
+    "code_update": true,
+    "validation": {
+      "n": 173,
+      "identities": 21,
+      "correct": 165,
+      "accuracy": 0.953757225433526,
+      "mrr": 0.9651000091751536,
+      "macro_accuracy": 0.9582010582010583,
+      "macro_mrr": 0.9684072394389854,
+      "repairs": 1,
+      "harms": 0
+    }
+  },
+  "metrics": {
+    "all": {
+      "n": 1117,
+      "identities": 130,
+      "correct": 1055,
+      "accuracy": 0.9444941808415398,
+      "mrr": 0.963327755751659,
+      "macro_accuracy": 0.9444213265367112,
+      "macro_mrr": 0.9639449521424681,
+      "repairs": 4,
+      "harms": 0
+    },
+    "validation": {
+      "n": 173,
+      "identities": 21,
+      "correct": 165,
+      "accuracy": 0.953757225433526,
+      "mrr": 0.9651000091751536,
+      "macro_accuracy": 0.9582010582010583,
+      "macro_mrr": 0.9684072394389854,
+      "repairs": 1,
+      "harms": 0
+    },
+    "test": {
+      "n": 161,
+      "identities": 18,
+      "correct": 151,
+      "accuracy": 0.937888198757764,
+      "mrr": 0.9663561076604553,
+      "macro_accuracy": 0.9021164021164021,
+      "macro_mrr": 0.9433421516754851,
+      "repairs": 0,
+      "harms": 0
+    },
+    "retained": {
+      "n": 1104,
+      "identities": 130,
+      "correct": 1054,
+      "accuracy": 0.9547101449275363,
+      "mrr": 0.9697487131930066,
+      "macro_accuracy": 0.9569093940247787,
+      "macro_mrr": 0.9719255209563703,
+      "repairs": 4,
+      "harms": 0
+    },
+    "target54": {
+      "n": 54,
+      "identities": 31,
+      "correct": 4,
+      "accuracy": 0.07407407407407407,
+      "mrr": 0.38152924750146966,
+      "macro_accuracy": 0.07258064516129033,
+      "macro_mrr": 0.3919034818228367,
+      "repairs": 4,
+      "harms": 0
+    }
+  },
+  "repairs": [
+    "photo_21fb819788729c55",
+    "photo_6172bb3bbbb3a2d6",
+    "photo_9e0c7038dd6543a7",
+    "photo_c86676a1232aefc7"
+  ],
+  "harms": [],
+  "limits": [
+    "Designed after observing a replacement failure; exploratory control, not independent confirmation.",
+    "Can retain a previous false code match; future evaluation must measure that risk."
+  ]
+}

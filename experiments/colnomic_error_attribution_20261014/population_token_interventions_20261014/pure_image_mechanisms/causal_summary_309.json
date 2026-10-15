@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "queries": 309,
+  "groups": {
+    "harm": {
+      "n": 31,
+      "exact_old_query_parity": 31,
+      "original_rank_reproduced": 31,
+      "subject_rank_reproduced": 31,
+      "subject_repaired_both_fills": 4,
+      "subject_repaired_either_fill": 8,
+      "full_repaired_both_fills": 0,
+      "full_repaired_either_fill": 0,
+      "foreground_input_violation": 0,
+      "any_unmodified_subject_vision_changed": 31
+    },
+    "original_image_failure": {
+      "n": 247,
+      "exact_old_query_parity": 247,
+      "original_rank_reproduced": 247,
+      "subject_rank_reproduced": 247,
+      "subject_repaired_both_fills": 7,
+      "subject_repaired_either_fill": 15,
+      "full_repaired_both_fills": 30,
+      "full_repaired_either_fill": 50,
+      "foreground_input_violation": 0,
+      "any_unmodified_subject_vision_changed": 247
+    },
+    "success_control": {
+      "n": 31,
+      "exact_old_query_parity": 31,
+      "original_rank_reproduced": 31,
+      "subject_rank_reproduced": 31,
+      "subject_repaired_both_fills": 0,
+      "subject_repaired_either_fill": 0,
+      "full_repaired_both_fills": 0,
+      "full_repaired_either_fill": 0,
+      "foreground_input_violation": 0,
+      "any_unmodified_subject_vision_changed": 31
+    }
+  },
+  "sham_rank_and_margin_exact": true,
+  "decomposition_max_residual": 0.0,
+  "ranking_decisions": 6180,
+  "limitations": [
+    "Cohort includes selected failures and only31 success controls; not a1117 deployment accuracy estimate.",
+    "A changed foreground representation with unchanged foreground processor pixels proves outside-pixel contextual dependence; it does not prove background semantic identity.",
+    "Both-fill rescue is stronger than one-fill sensitivity but does not establish invariance to arbitrary backgrounds.",
+    "Single-family illustrative ROI findings do not label all247 failures."
+  ]
+}

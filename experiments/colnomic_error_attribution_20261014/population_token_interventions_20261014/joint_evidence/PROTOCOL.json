@@ -1,0 +1,32 @@
+{
+  "stage": "Complete the pure-image query/reference cross, freeze image selection, then evaluate the previously validated OCR repairs.",
+  "queries": 1117,
+  "gallery_rows": 5405,
+  "deduplication": "Original SHA groups and stable row-order ties, unchanged.",
+  "human_region_policy": "../manual_box_audit corrected crops; reviewed human boxes only. Five superseded crops are replaced. SAM prohibited.",
+  "query_arms": ["original", "reviewed_crop"],
+  "reference_arms": ["historical", "current_base", "high_detail", "same_grid_low_detail"],
+  "reuse": "Reuse all encoded features and original-query score arrays; compute missing cropped-query versus new-reference scores. No repeated OCR recognition or model encoding.",
+  "image_selection": {
+    "reference_family": ["high_detail", "same_grid_low_detail"],
+    "query_crop_weights": [0, 0.1, 0.25, 0.5, 0.75, 1],
+    "reference_changed_weights": [0, 0.1, 0.25, 0.5, 0.75, 1],
+    "formula": "(1-a)*((1-b)*S(original,current_base)+b*S(original,changed)) + a*((1-b)*S(crop,current_base)+b*S(crop,changed))",
+    "criterion": ["validation package macro Top1", "validation package macro MRR", "smaller total intervention weight a+b", "smaller crop weight a", "smaller reference weight b", "high_detail tie preference"],
+    "fixed_prior_composition": {"query_crop_weight": 0.5, "reference_changed_weight": 0.25, "reference_family": "same_grid_low_detail"},
+    "scope": "Freeze selected family and both weights using only the existing validation identities, before OCR combination. Report the prior fixed composition separately. No per-query oracle or test selection."
+  },
+  "ocr_joint": {
+    "image_arms": ["historical_original", "current_original", "validation_selected_image", "fixed_prior_composition", "historical_reference_crop_mix", "reference_low_unmixed"],
+    "ocr_arms": ["none", "original", "center_presence", "numeric_exploratory"],
+    "primary_ocr_weight": 0.5,
+    "primary_normalization": "Fresh per-query z score of full-gallery image scores and OCR scores.",
+    "calibration_control": "Use original image score mean/std for changed image branch, keeping OCR normalization unchanged.",
+    "primary_contrast": "2x2 original/repaired image and original/corrected OCR at fixed0.5. Numeric tokenization is an exploratory comparator and cannot replace the primary corrected OCR based on test results.",
+    "secondary_weight_sweep": [0, 0.1, 0.25, 0.5, 0.75, 1],
+    "secondary_selection": "For the already frozen image branch and corrected OCR only: validation macroTop1, macroMRR, then smaller OCR weight. Keep the fixed0.5 primary result."
+  },
+  "evidence": ["Independent full-gallery ranks and FP64 score checks", "Pure-image repair/harm overlaps and candidate switches", "Fixed-pair and actual-winner image/OCR margin decomposition", "OCR term/line contributions for changed and remaining failures; no truth-selected words used for retrieval", "Original247 failures and870 successes; all1117, scene and fixed identity splits", "Package-cluster confidence intervals for paired differences"],
+  "report": "Update ../../release/REPORT.html only after a byte-identical backup. Preserve image-based query/reference browsing and clearly mark older results as historical. No separate report page.",
+  "limits": ["Human boxes are diagnostic supervision, not automatic subject detection.", "Existing test examples have already been examined; results are exploratory, not a fresh blind test.", "Reference current_base differs from the historical cache and is retained as the within-runtime causal comparator.", "Operational score decomposition and observed interventions do not uniquely establish absence of identity information in the encoder."]
+}

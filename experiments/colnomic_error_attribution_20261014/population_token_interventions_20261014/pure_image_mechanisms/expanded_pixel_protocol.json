@@ -1,0 +1,11 @@
+{
+  "reason": "User explicitly requested original pure-ColNomic failures and a link to OCR, beyond the31 newly harmed cases. Cohort and arms fixed before inspecting pixel intervention scores.",
+  "core_population": "All247 original image failures +31 subject-readout harms +31 matched successful controls=309",
+  "core_arms": ["original", "lossless_sham", "far_background_gray", "far_background_blur"],
+  "extended_population": "The31 subject-readout harms and31 successful controls=62",
+  "extended_additional_arms": ["all_background_gray", "boundary_ring_gray", "matched_background_gray", "matched_subject_gray"],
+  "fresh_gallery": "Original reference embeddings remain fixed for all query interventions. Fresh original queries are checked against old query tensors. Exact old-query parity permits interpreting query-side interventions against historical scores; it does not reconstruct the reference encoder's internal history.",
+  "analysis": "Full-gallery image-only ranking, same-candidate locked/free matching, input-patch-unchanged stage changes, and repair/harm intersections with existing OCR variants. No text score participates in pixel-arm ranking.",
+  "repeat": "Lossless sham is separately encoded for every query. When a cohort phase is resumed, fresh original encoding must exactly equal the saved original.",
+  "area_controls": "Extended matched-background and matched-subject masks have the same pixel count; not the same area as the much larger far-background mask. No claim they are semantically matched or identity-free."
+}

@@ -1,0 +1,553 @@
+{
+  "n": 100,
+  "roles": {
+    "crop_harm": 50,
+    "success_control": 50
+  },
+  "response_counts": {
+    "crop_harm": {
+      "crop_readout_rescue": 3,
+      "original_subject_readout_harm": 12,
+      "original_retained_readout_harm": 7,
+      "orientation_rescue": 8,
+      "fixed_context_both_harm_retained": 5,
+      "fixed_context_both_harm_subject": 4,
+      "fixed_context_fill_disagreement": 3,
+      "native_crop_rescue": 34,
+      "enlargement_grid_harm": 18,
+      "enlargement_grid_rescue": 4,
+      "repacking_context_removal_harm": 8,
+      "repacking_context_removal_rescue": 2,
+      "source_pixels_preserved": 50,
+      "any_tested_crop_variant_correct": 39
+    },
+    "success_control": {
+      "crop_readout_rescue": 0,
+      "original_subject_readout_harm": 4,
+      "original_retained_readout_harm": 3,
+      "orientation_rescue": 0,
+      "fixed_context_both_harm_retained": 1,
+      "fixed_context_both_harm_subject": 0,
+      "fixed_context_fill_disagreement": 1,
+      "native_crop_rescue": 0,
+      "enlargement_grid_harm": 1,
+      "enlargement_grid_rescue": 2,
+      "repacking_context_removal_harm": 1,
+      "repacking_context_removal_rescue": 0,
+      "source_pixels_preserved": 50,
+      "any_tested_crop_variant_correct": 50
+    }
+  },
+  "readout_results": [
+    {
+      "role": "crop_harm",
+      "arm": "original",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 50,
+      "mean_rank": 1.0
+    },
+    {
+      "role": "crop_harm",
+      "arm": "original",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 49,
+      "mean_rank": 1.02
+    },
+    {
+      "role": "crop_harm",
+      "arm": "original",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 38,
+      "mean_rank": 1.5
+    },
+    {
+      "role": "crop_harm",
+      "arm": "original",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 43,
+      "mean_rank": 1.32
+    },
+    {
+      "role": "crop_harm",
+      "arm": "reviewed_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 0,
+      "mean_rank": 7.02
+    },
+    {
+      "role": "crop_harm",
+      "arm": "reviewed_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 0,
+      "mean_rank": 7.08
+    },
+    {
+      "role": "crop_harm",
+      "arm": "reviewed_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 3,
+      "mean_rank": 6.88
+    },
+    {
+      "role": "crop_harm",
+      "arm": "reviewed_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 0,
+      "mean_rank": 7.02
+    },
+    {
+      "role": "crop_harm",
+      "arm": "raw_orientation_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 8,
+      "mean_rank": 6.7
+    },
+    {
+      "role": "crop_harm",
+      "arm": "raw_orientation_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 8,
+      "mean_rank": 6.78
+    },
+    {
+      "role": "crop_harm",
+      "arm": "raw_orientation_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 12,
+      "mean_rank": 6.66
+    },
+    {
+      "role": "crop_harm",
+      "arm": "raw_orientation_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 8,
+      "mean_rank": 6.7
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_gray",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 38,
+      "mean_rank": 1.8
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_gray",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 39,
+      "mean_rank": 1.86
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_gray",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 37,
+      "mean_rank": 1.78
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_gray",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 39,
+      "mean_rank": 1.52
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_white",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 37,
+      "mean_rank": 1.44
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_white",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 37,
+      "mean_rank": 1.44
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_white",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 36,
+      "mean_rank": 1.76
+    },
+    {
+      "role": "crop_harm",
+      "arm": "context_white",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 40,
+      "mean_rank": 1.44
+    },
+    {
+      "role": "crop_harm",
+      "arm": "native_patch_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 34,
+      "mean_rank": 1.64
+    },
+    {
+      "role": "crop_harm",
+      "arm": "native_patch_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 34,
+      "mean_rank": 1.62
+    },
+    {
+      "role": "crop_harm",
+      "arm": "native_patch_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 34,
+      "mean_rank": 1.68
+    },
+    {
+      "role": "crop_harm",
+      "arm": "native_patch_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 34,
+      "mean_rank": 1.64
+    },
+    {
+      "role": "crop_harm",
+      "arm": "enlarged_patch_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 20,
+      "mean_rank": 21.98
+    },
+    {
+      "role": "crop_harm",
+      "arm": "enlarged_patch_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 20,
+      "mean_rank": 22.38
+    },
+    {
+      "role": "crop_harm",
+      "arm": "enlarged_patch_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 22,
+      "mean_rank": 23.34
+    },
+    {
+      "role": "crop_harm",
+      "arm": "enlarged_patch_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 20,
+      "mean_rank": 21.98
+    },
+    {
+      "role": "success_control",
+      "arm": "original",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 50,
+      "mean_rank": 1.0
+    },
+    {
+      "role": "success_control",
+      "arm": "original",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 50,
+      "mean_rank": 1.0
+    },
+    {
+      "role": "success_control",
+      "arm": "original",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 46,
+      "mean_rank": 1.1
+    },
+    {
+      "role": "success_control",
+      "arm": "original",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 47,
+      "mean_rank": 1.06
+    },
+    {
+      "role": "success_control",
+      "arm": "reviewed_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 50,
+      "mean_rank": 1.0
+    },
+    {
+      "role": "success_control",
+      "arm": "reviewed_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 50,
+      "mean_rank": 1.0
+    },
+    {
+      "role": "success_control",
+      "arm": "reviewed_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 47,
+      "mean_rank": 1.06
+    },
+    {
+      "role": "success_control",
+      "arm": "reviewed_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 50,
+      "mean_rank": 1.0
+    },
+    {
+      "role": "success_control",
+      "arm": "raw_orientation_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    },
+    {
+      "role": "success_control",
+      "arm": "raw_orientation_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    },
+    {
+      "role": "success_control",
+      "arm": "raw_orientation_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 46,
+      "mean_rank": 1.08
+    },
+    {
+      "role": "success_control",
+      "arm": "raw_orientation_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    },
+    {
+      "role": "success_control",
+      "arm": "context_gray",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 49,
+      "mean_rank": 1.02
+    },
+    {
+      "role": "success_control",
+      "arm": "context_gray",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 49,
+      "mean_rank": 1.02
+    },
+    {
+      "role": "success_control",
+      "arm": "context_gray",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 47,
+      "mean_rank": 1.06
+    },
+    {
+      "role": "success_control",
+      "arm": "context_gray",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 47,
+      "mean_rank": 1.06
+    },
+    {
+      "role": "success_control",
+      "arm": "context_white",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 49,
+      "mean_rank": 1.02
+    },
+    {
+      "role": "success_control",
+      "arm": "context_white",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 49,
+      "mean_rank": 1.02
+    },
+    {
+      "role": "success_control",
+      "arm": "context_white",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    },
+    {
+      "role": "success_control",
+      "arm": "context_white",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    },
+    {
+      "role": "success_control",
+      "arm": "native_patch_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 47,
+      "mean_rank": 1.06
+    },
+    {
+      "role": "success_control",
+      "arm": "native_patch_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 46,
+      "mean_rank": 1.08
+    },
+    {
+      "role": "success_control",
+      "arm": "native_patch_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 47,
+      "mean_rank": 1.06
+    },
+    {
+      "role": "success_control",
+      "arm": "native_patch_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 47,
+      "mean_rank": 1.06
+    },
+    {
+      "role": "success_control",
+      "arm": "enlarged_patch_crop",
+      "readout": "all_tokens",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    },
+    {
+      "role": "success_control",
+      "arm": "enlarged_patch_crop",
+      "readout": "visual_only",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    },
+    {
+      "role": "success_control",
+      "arm": "enlarged_patch_crop",
+      "readout": "subject_plus_template",
+      "n": 50,
+      "correct": 45,
+      "mean_rank": 1.1
+    },
+    {
+      "role": "success_control",
+      "arm": "enlarged_patch_crop",
+      "readout": "retained_region_plus_template",
+      "n": 50,
+      "correct": 48,
+      "mean_rank": 1.04
+    }
+  ],
+  "locked_match_summary": {
+    "crop_harm": {
+      "original -> context_gray": {
+        "n": 50,
+        "median_representation_change": -0.002638979582116008,
+        "median_rematching_change": 0.003504315158352256,
+        "fixed_pair_positive_to_negative": 5
+      },
+      "original -> context_white": {
+        "n": 50,
+        "median_representation_change": -0.0028041076147928834,
+        "median_rematching_change": 0.0022844296181574464,
+        "fixed_pair_positive_to_negative": 4
+      },
+      "context_gray -> native_patch_crop": {
+        "n": 50,
+        "median_representation_change": -0.0036258093314245343,
+        "median_rematching_change": 0.000377774460503133,
+        "fixed_pair_positive_to_negative": 8
+      },
+      "context_white -> native_patch_crop": {
+        "n": 50,
+        "median_representation_change": -0.003575613023713231,
+        "median_rematching_change": 0.003343223826959729,
+        "fixed_pair_positive_to_negative": 7
+      }
+    },
+    "success_control": {
+      "original -> context_gray": {
+        "n": 50,
+        "median_representation_change": -0.008274516090750694,
+        "median_rematching_change": 0.011487534269690514,
+        "fixed_pair_positive_to_negative": 1
+      },
+      "original -> context_white": {
+        "n": 50,
+        "median_representation_change": -0.007324561942368746,
+        "median_rematching_change": 0.008392327465116978,
+        "fixed_pair_positive_to_negative": 1
+      },
+      "context_gray -> native_patch_crop": {
+        "n": 50,
+        "median_representation_change": -0.018664000555872917,
+        "median_rematching_change": 0.019418717361986637,
+        "fixed_pair_positive_to_negative": 1
+      },
+      "context_white -> native_patch_crop": {
+        "n": 50,
+        "median_representation_change": -0.01798288617283106,
+        "median_rematching_change": 0.020847970619797707,
+        "fixed_pair_positive_to_negative": 1
+      }
+    }
+  },
+  "limits": [
+    "Diagnostic selected cohort; not a population accuracy claim or held-out repair tuning.",
+    "Human boxes are rectangles, not pixel-perfect object segmentation.",
+    "Native patch crop rounds crop extent outward to full28pixel visual patches; differs slightly from exact historical crop extent.",
+    "Scale and grid/token budget are a joint intervention here; cannot uniquely attribute to optical detail.",
+    "Pixel context dependence and score changes do not establish semantic identity content in background pixels.",
+    "Reencoding may change contextual representations at retained positions; claim loss of identity only with additional evidence."
+  ]
+}

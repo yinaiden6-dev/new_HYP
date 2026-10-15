@@ -1,0 +1,90 @@
+{
+  "selected_weight": 0.5,
+  "protocol": {
+    "reference_bank": "unchanged historical5405rows",
+    "query_branches": [
+      "original full image",
+      "latest reviewed human crop"
+    ],
+    "score": "(1-w)*meanMaxSim_original+w*meanMaxSim_crop",
+    "weights": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "selection": [
+      "validation identity macro Top1",
+      "validation identity macro MRR",
+      "smaller crop weight"
+    ],
+    "validation_split": "existing identity-disjoint validation split only",
+    "no_ocr": true,
+    "no_per_query_oracle": true,
+    "evaluation": [
+      "all1117",
+      "held test161",
+      "50crop harms",
+      "original247failures and870successes"
+    ],
+    "limits": [
+      "Previously inspected split; exploratory validation-selected repair, not pristine confirmatory test.",
+      "Human subject boxes are diagnostic supervision."
+    ]
+  },
+  "all": {
+    "n": 1117,
+    "identities": 130,
+    "correct": 898,
+    "accuracy": 0.8039391226499553,
+    "mrr": 0.8530424924673872,
+    "macro_accuracy": 0.8147318920395844,
+    "macro_mrr": 0.8624905049144572,
+    "repairs": 57,
+    "harms": 29
+  },
+  "validation": {
+    "n": 173,
+    "identities": 21,
+    "correct": 141,
+    "accuracy": 0.815028901734104,
+    "mrr": 0.8405808915435192,
+    "macro_accuracy": 0.8232048374905518,
+    "macro_mrr": 0.8478175357535263,
+    "repairs": 9,
+    "harms": 4
+  },
+  "test": {
+    "n": 161,
+    "identities": 18,
+    "correct": 125,
+    "accuracy": 0.7763975155279503,
+    "mrr": 0.8428305255904942,
+    "macro_accuracy": 0.7420654962321629,
+    "macro_mrr": 0.8213108254811647,
+    "repairs": 7,
+    "harms": 7
+  },
+  "crop_harms50_retained_correct": 21,
+  "crop_rescues63_preserved": 52,
+  "bootstrap_all": {
+    "identities": 130,
+    "gain": 0.025067144136078783,
+    "ci95": [
+      0.006894205958245368,
+      0.04432145242726076
+    ]
+  },
+  "bootstrap_test": {
+    "identities": 18,
+    "gain": 0.0,
+    "ci95": [
+      -0.05357142857142857,
+      0.056962025316455694
+    ]
+  },
+  "independent_selected_rank_checks": 1117,
+  "source_validation": "All1117original and corrected-crop ranks match prior independently checked results."
+}
