@@ -1,0 +1,2394 @@
+{
+  "scope": "Current fixed1058 failures after unchanged13 exclusions",
+  "levels": {
+    "完整图库干预已改变成败": 24,
+    "候选对失分环节已复算；现有干预未修复": 25
+  },
+  "cases": [
+    {
+      "query": "photo_02fb3c06e1fb70e5",
+      "positive": "reference_001129",
+      "negative": "reference_003109",
+      "visual": {
+        "n": 1,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "颜色"
+        ],
+        "note": "可见面是蓝瓶图加上方横向年龄警示；错误参考的对应瓶图与警示分列左右，背景绿与深青也不同。Query未露出剂量或小码。"
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "版式差异可见，修复图像排名已正确；旧整图和主体Token的负贡献使混合后排错。移除旧图像影响可修复。该证据确定融合冲突，不单独证明修复由版式信号引起。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          855.0,
+          1092.0,
+          2222.0,
+          3582.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_0913bcc35e9beb5a",
+      "positive": "reference_001357",
+      "negative": "reference_004710",
+      "visual": {
+        "n": 2,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "颜色",
+          "文字内容"
+        ],
+        "note": "背面Drug Facts宽幅单栏与错误参考分栏排版不同；主体深蓝外框对错误参考白底/红边。成分标题共有，不能单凭共有药品词认定正确。"
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "宽幅Drug Facts版式/配色可分；应同时检查OCR读取和图像同面结构，不能把共有成分名视为身份充分证据。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          194.0,
+          609.0,
+          1949.0,
+          3233.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "Uses proven cinically eective in the treatment of most athlete's foot (tinea peis) and ringworm (nea corporis)helps prevent most atlete's f with daiy ue",
+            "bbox": [
+              744.0,
+              777.0,
+              842.0,
+              2992.0
+            ],
+            "terms": [
+              "f",
+              "proven",
+              "uses"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_0a0e75a3b7797609",
+      "positive": "reference_000518",
+      "negative": "reference_003895",
+      "visual": {
+        "n": 3,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "共有品牌面"
+        ],
+        "note": "只见Walgreens品牌面，主要可见差异是橙色底与错误参考红色底；药名/剂量/编号不在所见面。"
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "只见共有Walgreens品牌面，主要线索是橙/红底色；OCR不应被期待凭共有品牌恢复身份。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          427.0,
+          1561.0,
+          1956.0,
+          2345.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "0NDED",
+            "bbox": [
+              1639.0,
+              1892.0,
+              1688.0,
+              2016.0
+            ],
+            "terms": [
+              "nded"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_0be06814ec4048e3",
+      "positive": "reference_001321",
+      "negative": "reference_001311",
+      "visual": {
+        "n": 4,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "图案细节"
+        ],
+        "note": "同系列Alka-Seltzer侧面共有文字；Query胶囊红色、色带偏金棕，对照错误包装胶囊和色带偏紫红。"
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "同系列Alka-Seltzer侧面共有文字；Query胶囊红色、色带偏金棕，对照错误包装胶囊和色带偏紫红。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          667.0,
+          758.0,
+          1170.0,
+          3124.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_1f48d45127db4129",
+      "positive": "reference_001139",
+      "negative": "reference_004489",
+      "visual": {
+        "n": 5,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query的Drug Facts明确为Dextromethorphan 60 mg、Guaifenesin1200 mg；错误参考为30mg/600mg。Drug Facts栏宽和换行也不同。",
+        "expected": [
+          "60",
+          "1200"
+        ],
+        "wrong_expected": [
+          "30",
+          "600"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query的Drug Facts明确为Dextromethorphan 60 mg、Guaifenesin1200 mg；错误参考为30mg/600mg。Drug Facts栏宽和换行也不同。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          374.0,
+          824.0,
+          1571.0,
+          3119.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "if you are no w taking a prescription monoamine",
+            "bbox": [
+              487.0,
+              1841.0,
+              1378.0,
+              1917.0
+            ],
+            "terms": [
+              "no"
+            ]
+          },
+          {
+            "text": "the MAOI drug. Ifyou do not know I your prescription",
+            "bbox": [
+              532.0,
+              2050.0,
+              1472.0,
+              2127.0
+            ],
+            "terms": [
+              "maoi"
+            ]
+          },
+          {
+            "text": "persistent or chronic cough such as occurs with",
+            "bbox": [
+              530.0,
+              2263.0,
+              1381.0,
+              2344.0
+            ],
+            "terms": [
+              "such"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_206a9b7d61884264",
+      "positive": "reference_003298",
+      "negative": "reference_003306",
+      "visual": {
+        "n": 6,
+        "primary": "弱线索/可见面受限",
+        "tags": [
+          "共有品牌面",
+          "弱色差"
+        ],
+        "note": "Query只见共有bareMinerals正面和很窄肤色色条；参考差异NATURAL05/WHEAT4.5在未露出的盖面。所见色条差异弱，不能据参考全图差异断言Query可用；保留评测，不自动新增剔除。"
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "Query只见共有bareMinerals正面和很窄肤色色条；参考差异NATURAL05/WHEAT4.5在未露出的盖面。所见色条差异弱，不能据参考全图差异断言Query可用；保留评测，不自动新增剔除。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "保持原评测与13张排除名单；单列可见线索强度，复核局部差异或补拍判别面后再决定可分性。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          685.0,
+          328.0,
+          1606.0,
+          3535.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "bareMineral",
+            "bbox": [
+              728.0,
+              657.0,
+              948.0,
+              1707.0
+            ],
+            "terms": [
+              "baremineral"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_21fb819788729c55",
+      "positive": "reference_000009",
+      "negative": "reference_000051",
+      "visual": {
+        "n": 7,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "颜色"
+        ],
+        "note": "Query紫色侧面写dogs26-50lbs/cats6.1-12lbs；错误蓝色版本为dogs11-25lbs/cats1.5-6lbs。规格文字和大片色域都可区分。",
+        "expected": [
+          "26",
+          "50",
+          "6.1",
+          "12"
+        ],
+        "wrong_expected": [
+          "11",
+          "25",
+          "1.5"
+        ]
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "体重档文字已被旧OCR读到，但对当前正负参考的净负文字项仅为“9”（−0.0941）；混合图像支持+0.0762被压过。去普通文字保留编号可到第1。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          705.0,
+          857.0,
+          1086.0,
+          2724.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "9",
+            "bbox": [
+              833.0,
+              2036.0,
+              907.0,
+              2092.0
+            ],
+            "terms": [
+              "9"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_2bb7a4894380d509",
+      "positive": "reference_003298",
+      "negative": "reference_003299",
+      "visual": {
+        "n": 8,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "共有品牌面"
+        ],
+        "note": "只见近乎空白的黑色侧面及左侧肤色色条；正确Natural05与错误Opal01的可见色条深浅不同，正文与编号均不足以判别。需排除拍摄光照对弱色差的影响。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "只见近乎空白的黑色侧面及左侧肤色色条；正确Natural05与错误Opal01的可见色条深浅不同，正文与编号均不足以判别。需排除拍摄光照对弱色差的影响。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          586.0,
+          133.0,
+          1467.0,
+          3469.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_31ff4c6250aab6d5",
+      "positive": "reference_000009",
+      "negative": "reference_000051",
+      "visual": {
+        "n": 9,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "颜色"
+        ],
+        "note": "原图放大可读UPC851321007816，旧/新OCR都只提取中间51321-00781，自动编号匹配为空；同时紫底对蓝底可分。",
+        "expected": [
+          "851321007816"
+        ]
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "原图放大可读UPC851321007816，旧/新OCR都只提取中间51321-00781，自动编号匹配为空；同时紫底对蓝底可分。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          82.0,
+          1550.0,
+          2010.0,
+          2103.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_324805558f8eab41",
+      "positive": "reference_000567",
+      "negative": "reference_000997",
+      "visual": {
+        "n": 10,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "颜色",
+          "版式"
+        ],
+        "note": "Query主要信息为UPC083926243003；错误参考为不同产品且条码数字不同。新OCR丢失旧编号支持已有干预证据。",
+        "expected": [
+          "083926243003"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query主要信息为UPC083926243003；错误参考为不同产品且条码数字不同。新OCR丢失旧编号支持已有干预证据。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          537.0,
+          1305.0,
+          1539.0,
+          2246.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_38ab72e39bb67515",
+      "positive": "reference_000929",
+      "negative": "reference_002350",
+      "visual": {
+        "n": 11,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "文字内容",
+          "拍摄退化"
+        ],
+        "note": "倾斜倒置的Drug Facts背面仍见宽幅连续栏与下盖声明；错误参考为不同品牌、不同分面分栏。明显透视压缩和小字降低读取质量，不能只比较正面药名。"
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "倾斜倒置的Drug Facts背面仍见宽幅连续栏与下盖声明；错误参考为不同品牌、不同分面分栏。明显透视压缩和小字降低读取质量，不能只比较正面药名。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          496.0,
+          1444.0,
+          1837.0,
+          2797.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_390d64929b6faaa9",
+      "positive": "reference_001401",
+      "negative": "reference_001308",
+      "visual": {
+        "n": 12,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "拍摄退化"
+        ],
+        "note": "同系列Alka-Seltzer Original的Drug Facts内容高度共有，但Query宽幅长栏、行长与错误小包装窄栏不同；Query没有露出72/12片数，不能把参考正面片数当作Query证据。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "同系列Alka-Seltzer Original的Drug Facts内容高度共有，但Query宽幅长栏、行长与错误小包装窄栏不同；Query没有露出72/12片数，不能把参考正面片数当作Query证据。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          697.0,
+          1600.0,
+          1499.0,
+          2734.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "prasentty taking a presoription drug. Antacids may interact with certain presoription drugs",
+            "bbox": [
+              746.0,
+              2171.0,
+              1277.0,
+              2207.0
+            ],
+            "terms": [
+              "antacids"
+            ]
+          },
+          {
+            "text": "#pregnant or breast-feeding. ask a heath prolessional betore use R ia especialy important not to use aspirin",
+            "bbox": [
+              733.0,
+              2349.0,
+              1420.0,
+              2385.0
+            ],
+            "terms": [
+              "r"
+            ]
+          },
+          {
+            "text": "problems in the unbom child or complications during delivery.",
+            "bbox": [
+              731.0,
+              2391.0,
+              1138.0,
+              2420.0
+            ],
+            "terms": [
+              "unbom"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_3fa0e51f2f450f84",
+      "positive": "reference_000395",
+      "negative": "reference_000393",
+      "visual": {
+        "n": 13,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "剂量规格",
+          "颜色",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query可读UPC727804564599，与错误参考727804561419不同；体重档高亮框、蓝/黄标记、CHEWABLE单复数及段落字号也不同。",
+        "expected": [
+          "727804564599"
+        ],
+        "wrong_expected": [
+          "727804561419"
+        ]
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "可见UPC旧OCR接近读全，但编号支路没有获得这条独有码的支持；25.1–50lbs表格档位被抽成25150及251501BS，分别额外支持错误候选，合计约−1.1703。字段未区分且同源变体重复加分。去全部OCR可到第1，单去编号仍第3。 新增像素条码解码自动读出727804564599；全图库统一加权1后恢复第1。证实可读编号线索存在，原读取/编号利用链路不足。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          861.0,
+          598.0,
+          2329.0,
+          3960.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "TM",
+            "bbox": [
+              1975.0,
+              661.0,
+              2022.0,
+              692.0
+            ],
+            "terms": [
+              "tm"
+            ]
+          },
+          {
+            "text": "Store at room temperature, between 59º and 77℉ (15-25℃).",
+            "bbox": [
+              1016.0,
+              2029.0,
+              2142.0,
+              2108.0
+            ],
+            "terms": [
+              "º"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_40d4735eb62e06cf",
+      "positive": "reference_000929",
+      "negative": "reference_000930",
+      "visual": {
+        "n": 14,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "颜色"
+        ],
+        "note": "共有50mcg Drug Facts背面文字极相似，但各小节横线、行长、换行及四周绿色边框与错误参考不同；不能依赖参考正面品牌差异替代可见面比较。"
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "共有50mcg Drug Facts背面文字极相似，但各小节横线、行长、换行及四周绿色边框与错误参考不同；不能依赖参考正面品牌差异替代可见面比较。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          324.0,
+          800.0,
+          1832.0,
+          3373.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "Ask a doctor or pharmacist before use if you are taking medicine for HIV",
+            "bbox": [
+              410.0,
+              1689.0,
+              1632.0,
+              1763.0
+            ],
+            "terms": [
+              "taking"
+            ]
+          },
+          {
+            "text": "productyou have severe or frequent nosebleeds",
+            "bbox": [
+              429.0,
+              2367.0,
+              1225.0,
+              2441.0
+            ],
+            "terms": [
+              "frequent"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_423dd2b26155876d",
+      "positive": "reference_001144",
+      "negative": "reference_002002",
+      "visual": {
+        "n": 15,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query盒盖蓝色Anti-Gas条、紫色Gas/Relief两行；错误版本黄色条且Gas Relief一行并有Ultra Strength，QC图标与文字相对位置也不同。"
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "旧OCR中的HIC成为当前候选对唯一负文字项（−1.2903），压过图像+0.3390；去普通文字可到第1。需修读取与稀疏文本计分。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          309.0,
+          906.0,
+          1667.0,
+          2044.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "HIC",
+            "bbox": [
+              1326.0,
+              1690.0,
+              1521.0,
+              1806.0
+            ],
+            "terms": [
+              "hic"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_438026ead38bb48f",
+      "positive": "reference_001023",
+      "negative": "reference_001326",
+      "visual": {
+        "n": 16,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "颜色",
+          "版式"
+        ],
+        "note": "Query橙色底面可读UPC016500564966，错误参考为016500587583，底色蓝色。共有Bayer标志无法区分。",
+        "expected": [
+          "016500564966"
+        ],
+        "wrong_expected": [
+          "016500587583"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query橙色底面可读UPC016500564966，错误参考为016500587583，底色蓝色。共有Bayer标志无法区分。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          524.0,
+          1298.0,
+          1768.0,
+          2289.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_441809a846ca8a24",
+      "positive": "reference_000943",
+      "negative": "reference_003224",
+      "visual": {
+        "n": 17,
+        "primary": "弱线索/可见面受限",
+        "tags": [
+          "共有品牌面",
+          "版式"
+        ],
+        "note": "只见狭长黄色AsperFlex品牌侧面；两候选在正面数量不同，但数量未出现在Query可见面。侧面图标比例/位置可能有差异，受透视影响，不能据参考正面认定已可分。保留评测，不新增剔除。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "只见狭长黄色AsperFlex品牌侧面；两候选在正面数量不同，但数量未出现在Query可见面。侧面图标比例/位置可能有差异，受透视影响，不能据参考正面认定已可分。保留评测，不新增剔除。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "保持原评测与13张排除名单；单列可见线索强度，复核局部差异或补拍判别面后再决定可分性。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          699.0,
+          253.0,
+          1189.0,
+          3636.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_487b4a6b018c220d",
+      "positive": "reference_003087",
+      "negative": "reference_003412",
+      "visual": {
+        "n": 18,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "版式"
+        ],
+        "note": "Query底面UPC810053181546与错误参考070038201670不同；Lot/Exp位置和底面线条亦不同。",
+        "expected": [
+          "810053181546"
+        ],
+        "wrong_expected": [
+          "070038201670"
+        ]
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "Query底面UPC810053181546与错误参考070038201670不同；Lot/Exp位置和底面线条亦不同。 新增像素条码解码自动读出810053181546；全图库统一加权1后恢复第1。证实可读编号线索存在，原读取/编号利用链路不足。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          352.0,
+          1637.0,
+          1919.0,
+          2553.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "hane RR001143",
+            "bbox": [
+              428.0,
+              2268.0,
+              461.0,
+              2467.0
+            ],
+            "terms": [
+              "rr"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_4b09c283ed00faca",
+      "positive": "reference_001129",
+      "negative": "reference_004360",
+      "visual": {
+        "n": 19,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "版式",
+          "颜色"
+        ],
+        "note": "Query可见nicotine polacrilex2mg；错误参考Drug Facts为4mg。窄长侧栏与宽栏及绿色边缘也不同。",
+        "expected": [
+          "2"
+        ],
+        "wrong_expected": [
+          "4"
+        ]
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "Query可见nicotine polacrilex2mg；错误参考Drug Facts为4mg。窄长侧栏与宽栏及绿色边缘也不同。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          833.6197,
+          905.8726,
+          2123.9275,
+          3181.3518
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "heart attack, or irregular heartbeat. Nicotine can increase your",
+            "bbox": [
+              909.0,
+              1755.0,
+              1914.0,
+              1848.0
+            ],
+            "terms": [
+              "irregular"
+            ]
+          },
+          {
+            "text": "dlabetes history of selzures",
+            "bbox": [
+              915.0,
+              1935.0,
+              1436.0,
+              2011.0
+            ],
+            "terms": [
+              "history"
+            ]
+          },
+          {
+            "text": "persistent indigestion or severe sore throat occurs irregular",
+            "bbox": [
+              925.0,
+              2227.0,
+              1985.0,
+              2317.0
+            ],
+            "terms": [
+              "irregular"
+            ]
+          },
+          {
+            "text": "begin using the lozenge on your quit day",
+            "bbox": [
+              1185.0,
+              3055.0,
+              1871.0,
+              3135.0
+            ],
+            "terms": [
+              "begin"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_50614555bf86aaf4",
+      "positive": "reference_003087",
+      "negative": "reference_004742",
+      "visual": {
+        "n": 20,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query黄色成分块Acetaminophen500mg，错误参考为650mg；Query Drug Facts从整面顶部起排，错误参考顶部为商家地址/条码，分栏与续页位置也不同。",
+        "expected": [
+          "500"
+        ],
+        "wrong_expected": [
+          "650"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query黄色成分块Acetaminophen500mg，错误参考为650mg；Query Drug Facts从整面顶部起排，错误参考顶部为商家地址/条码，分栏与续页位置也不同。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          511.0,
+          642.0,
+          1423.0,
+          3668.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_518888b98e9ac193",
+      "positive": "reference_001139",
+      "negative": "reference_001111",
+      "visual": {
+        "n": 21,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "颜色"
+        ],
+        "note": "Query主要可辨信息为UPC719283151100及上方生产小码，深绿色底；错误候选是另一个产品。小生产码读数不够确定，不纳入人工真值。",
+        "expected": [
+          "719283151100"
+        ]
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "普通文字的负差额几乎全由PD（−2.6245）产生；图像+1.5635与编号+0.9528仍被压过。去普通文字保留编号可到第1。完整UPC漏首位，已有编号支持来自另一小码。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          458.0,
+          1360.0,
+          1599.0,
+          2641.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "PD 3917433",
+            "bbox": [
+              1418.0,
+              1820.0,
+              1487.0,
+              2059.0
+            ],
+            "terms": [
+              "pd"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_51b91a8efbda2ee9",
+      "positive": "reference_001139",
+      "negative": "reference_004489",
+      "visual": {
+        "n": 22,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "小码",
+          "版式"
+        ],
+        "note": "Query明确60mg/1200mg，错误参考30mg/600mg；底面还露出UPC719283151100。Drug Facts宽度和换行不同。",
+        "expected": [
+          "60",
+          "1200",
+          "719283151100"
+        ],
+        "wrong_expected": [
+          "30",
+          "600"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query明确60mg/1200mg，错误参考30mg/600mg；底面还露出UPC719283151100。Drug Facts宽度和换行不同。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          804.0,
+          1707.0,
+          1560.0,
+          3064.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "if you are no w taking a prescription monoamine",
+            "bbox": [
+              959.0,
+              2133.0,
+              1415.0,
+              2214.0
+            ],
+            "terms": [
+              "no"
+            ]
+          },
+          {
+            "text": "the MAOI drug. If you do not know I your prescription",
+            "bbox": [
+              949.0,
+              2226.0,
+              1452.0,
+              2315.0
+            ],
+            "terms": [
+              "maoi"
+            ]
+          },
+          {
+            "text": "persistent or chronic coug h such as occurs with",
+            "bbox": [
+              927.0,
+              2326.0,
+              1391.0,
+              2411.0
+            ],
+            "terms": [
+              "such"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_51f740065ab2be47",
+      "positive": "reference_000395",
+      "negative": "reference_000396",
+      "visual": {
+        "n": 23,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query正面明确1 CHEWABLE，错误参考为6 CHEWABLES；成分与体重档共有，但数量、单复数、狗图与文字占比不同。",
+        "expected": [
+          "1",
+          "CHEWABLE"
+        ],
+        "wrong_expected": [
+          "6",
+          "CHEWABLES"
+        ]
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "正确数量/单数CHEWABLE提供正贡献，但OCR误读restrids提供更大负贡献，并有体重串编号负差额；去普通文字可到第1。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          819.0,
+          613.0,
+          2173.0,
+          3638.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "C",
+            "bbox": [
+              2099.0,
+              1581.0,
+              2132.0,
+              1636.0
+            ],
+            "terms": [
+              "c"
+            ]
+          },
+          {
+            "text": "Cantion: Federal (USA) law restrids this",
+            "bbox": [
+              905.0,
+              2727.0,
+              1447.0,
+              2787.0
+            ],
+            "terms": [
+              "restrids"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_527d8bc5deabf857",
+      "positive": "reference_003143",
+      "negative": "reference_004018",
+      "visual": {
+        "n": 24,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "共有品牌面"
+        ],
+        "note": "Query只见Dr.CHOI'S盖面共有标志；底色亮蓝，对错误参考偏紫深蓝。未露出药名成分或编号，需验证色差对光照是否稳健。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "Query只见Dr.CHOI'S盖面共有标志；底色亮蓝，对错误参考偏紫深蓝。未露出药名成分或编号，需验证色差对光照是否稳健。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          309.0,
+          1229.0,
+          1841.0,
+          2367.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_59d5e8c638df29f0",
+      "positive": "reference_001401",
+      "negative": "reference_001308",
+      "visual": {
+        "n": 25,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式"
+        ],
+        "note": "Query为Alka-Seltzer Original宽幅Drug Facts整页；错误小包装将相同内容排成更窄的多面，行长和小节相对位置不同。未见正面片数，不把72/12当作可见线索。"
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query为Alka-Seltzer Original宽幅Drug Facts整页；错误小包装将相同内容排成更窄的多面，行长和小节相对位置不同。未见正面片数，不把72/12当作可见线索。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          449.0,
+          1040.0,
+          1803.0,
+          2837.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": " prasentty taking a presorption drug. Antacids may interact with certain prescription druga",
+            "bbox": [
+              534.0,
+              2290.0,
+              1440.0,
+              2337.0
+            ],
+            "terms": [
+              "antacids"
+            ]
+          },
+          {
+            "text": "teel tant vomit blood have bloody or black stools have stomach pain that does not get better",
+            "bbox": [
+              559.0,
+              2481.0,
+              1599.0,
+              2527.0
+            ],
+            "terms": [
+              "stools"
+            ]
+          },
+          {
+            "text": "problems in the unbom child or complications during delivery.",
+            "bbox": [
+              544.0,
+              2705.0,
+              1206.0,
+              2740.0
+            ],
+            "terms": [
+              "unbom"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_64625e0a749be4a5",
+      "positive": "reference_001129",
+      "negative": "reference_004360",
+      "visual": {
+        "n": 26,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "文字内容",
+          "颜色"
+        ],
+        "note": "Query Drug Facts continued顶部即12周用法表格，错误参考把该表放在另一面的底部；整页粗体、行长、页脚免责声明和咨询电话亦不同。Query同时提到2mg和4mg用法，不能把任一数字孤立当作本品剂量。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "Query Drug Facts continued顶部即12周用法表格，错误参考把该表放在另一面的底部；整页粗体、行长、页脚免责声明和咨询电话亦不同。Query同时提到2mg和4mg用法，不能把任一数字孤立当作本品剂量。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          830.2606,
+          1084.5312,
+          1915.458,
+          3017.8079
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "way to get the best results place the lozenge in your mouth",
+            "bbox": [
+              923.0,
+              1709.0,
+              1873.0,
+              1805.0
+            ],
+            "terms": [
+              "results"
+            ]
+          },
+          {
+            "text": "tingling sensaticn occasionally move the lozenge from one",
+            "bbox": [
+              928.0,
+              1857.0,
+              1849.0,
+              1953.0
+            ],
+            "terms": [
+              "occasionally"
+            ]
+          },
+          {
+            "text": "Questions or comments?call toll-free 1-866-751-9303",
+            "bbox": [
+              984.0,
+              2726.0,
+              1822.0,
+              2822.0
+            ],
+            "terms": [
+              "toll"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_665b96b3fb0b01c7",
+      "positive": "reference_000229",
+      "negative": "reference_000233",
+      "visual": {
+        "n": 27,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式"
+        ],
+        "note": "共有EnroPro成分/用法侧面，但CONTRAINDICATIONS等段落行长、换行和字号明显不同。Query没有露出20/50mL或独有NDC，判别依据是可见版式。"
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "共有EnroPro成分/用法侧面，但CONTRAINDICATIONS等段落行长、换行和字号明显不同。Query没有露出20/50mL或独有NDC，判别依据是可见版式。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          726.7638,
+          455.6721,
+          2258.0264,
+          2813.9824
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_740025f501c6528b",
+      "positive": "reference_001023",
+      "negative": "reference_001312",
+      "visual": {
+        "n": 28,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "颜色",
+          "文字内容"
+        ],
+        "note": "Query Drug Facts橙框宽栏、Uses双列，错误参考是蓝紫框窄栏且剂型为gel；共有感冒成分词不能区分，成分剂型措辞与可见版式可比较。"
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query Drug Facts橙框宽栏、Uses双列，错误参考是蓝紫框窄栏且剂型为gel；共有感冒成分词不能区分，成分剂型措辞与可见版式可比较。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          532.0,
+          1205.0,
+          1719.0,
+          2959.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "resh, nausea, or vomiting consult a doctor promptly.",
+            "bbox": [
+              796.0,
+              2708.0,
+              1514.0,
+              2841.0
+            ],
+            "terms": [
+              "nausea"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_7e10c5317a5e74d8",
+      "positive": "reference_001971",
+      "negative": "reference_001973",
+      "visual": {
+        "n": 29,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "颜色"
+        ],
+        "note": "Query盖面Dual Pain Reliever大字及250mg/125mg的换行位置不同于错误盖面；正确与错误的成分剂量本身相同。Query未露出144/216数量，不能以该数量代替版式证据。"
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "NSAID被读成NSAD；当前正负对文字负差额几乎全部来自nsad（−0.9092），大于图像+0.00994。去普通文字可到第1。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          87.0,
+          1164.0,
+          3004.0,
+          3612.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "IBUPRO FEN (NSAD)",
+            "bbox": [
+              335.0,
+              2768.0,
+              1695.0,
+              3125.0
+            ],
+            "terms": [
+              "nsad"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_80f2fdc29081fedd",
+      "positive": "reference_003233",
+      "negative": "reference_004303",
+      "visual": {
+        "n": 30,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query侧面黄色成分栏为Aspirin325mg，错误候选81mg；分面、小节顺序与文字块位置也不同。",
+        "expected": [
+          "325"
+        ],
+        "wrong_expected": [
+          "81"
+        ]
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "Query侧面黄色成分栏为Aspirin325mg，错误候选81mg；分面、小节顺序与文字块位置也不同。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          384.0,
+          1845.0,
+          1598.0,
+          2653.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "are recoveri x o n x orfulike symptom",
+            "bbox": [
+              902.0,
+              2389.0,
+              942.0,
+              2628.0
+            ],
+            "terms": [
+              "x"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_813fb072c0f3b380",
+      "positive": "reference_001983",
+      "negative": "reference_001939",
+      "visual": {
+        "n": 31,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "版式",
+          "图案细节"
+        ],
+        "note": "Query正面20 tablets可见，错误为45 tablets并有瓶图；Query横向标题/成分条和文字列表，错误版分面和行长不同。",
+        "expected": [
+          "20"
+        ],
+        "wrong_expected": [
+          "45"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query正面20 tablets可见，错误为45 tablets并有瓶图；Query横向标题/成分条和文字列表，错误版分面和行长不同。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 4032,
+        "height": 3024,
+        "subject_bbox": [
+          14.0,
+          440.0,
+          4001.0,
+          2531.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_817005ee11887c2a",
+      "positive": "reference_000934",
+      "negative": "reference_001965",
+      "visual": {
+        "n": 32,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query红色盖面中8Hour、Arthritis/PainRelief、650mg和黄色声明框的换行/位置，与错误参考盖面品牌标志及竖排方案不同；650mg为共有剂量。"
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "Query红色盖面中8Hour、Arthritis/PainRelief、650mg和黄色声明框的换行/位置，与错误参考盖面品牌标志及竖排方案不同；650mg为共有剂量。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          563.0,
+          1387.0,
+          1566.0,
+          2374.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_85e10feb92319a7b",
+      "positive": "reference_000512",
+      "negative": "reference_000510",
+      "visual": {
+        "n": 33,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "版式"
+        ],
+        "note": "原图转正可读底面UPC317033112304；错误版本317033160306。旧OCR仅得到断裂的12-30等片段，本轮自动重读未触发，编号差额为0；警告背面共有。",
+        "expected": [
+          "317033112304"
+        ],
+        "wrong_expected": [
+          "317033160306"
+        ]
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "原图转正可读底面UPC317033112304；错误版本317033160306。旧OCR仅得到断裂的12-30等片段，本轮自动重读未触发，编号差额为0；警告背面共有。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          273.0,
+          2010.0,
+          1582.0,
+          2787.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "caps I es if pr egnant or if ty ing to c onc eiv e Tri los tane is assoc iated with terabgeric effects and early pre grancy loss",
+            "bbox": [
+              328.0,
+              2064.0,
+              1525.0,
+              2115.0
+            ],
+            "terms": [
+              "eiv"
+            ]
+          },
+          {
+            "text": "labeled contairer wih you.",
+            "bbox": [
+              322.0,
+              2120.0,
+              613.0,
+              2155.0
+            ],
+            "terms": [
+              "wih"
+            ]
+          },
+          {
+            "text": "CONTRA NDICA TONS: The use is c ontraindicated in dogs fhat have demonstrated hyper sens itivity b tilos ane.",
+            "bbox": [
+              322.0,
+              2145.0,
+              1470.0,
+              2200.0
+            ],
+            "terms": [
+              "ndica"
+            ]
+          },
+          {
+            "text": "blood volume ard renal per fusi on. Potas sium sparing dur etic s(e g. spi ronola ctore) should rot be us ed wih VETORYL",
+            "bbox": [
+              302.0,
+              2360.0,
+              1536.0,
+              2427.0
+            ],
+            "terms": [
+              "wih"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_8a62e5cd6902b0ae",
+      "positive": "reference_001023",
+      "negative": "reference_001310",
+      "visual": {
+        "n": 34,
+        "primary": "文字内容差异",
+        "tags": [
+          "文字内容",
+          "版式",
+          "颜色",
+          "图案细节"
+        ],
+        "note": "Query盖面明确Cold & Flu，错误盖面Cold；橙色边框、柑橘图与标题比例亦不同。",
+        "expected": [
+          "Cold",
+          "Flu"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query盖面明确Cold & Flu，错误盖面Cold；橙色边框、柑橘图与标题比例亦不同。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "核验Query与参考两侧OCR的实际读取，再将身份文字与共有说明区分计分。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          248.0,
+          1333.0,
+          1667.0,
+          2408.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "is torn or open.",
+            "bbox": [
+              427.0,
+              2329.0,
+              705.0,
+              2396.0
+            ],
+            "terms": [
+              "torn"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_8bc3a7a3577518f0",
+      "positive": "reference_001182",
+      "negative": "reference_002727",
+      "visual": {
+        "n": 35,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query续页包含Overdose warning整段并在底部开始Directions，错误侧面相同警告话语占比/换行与分面不同；不能用参考正面品牌作为照片线索。"
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query续页包含Overdose warning整段并在底部开始Directions，错误侧面相同警告话语占比/换行与分面不同；不能用参考正面品牌作为照片线索。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          601.0,
+          1040.0,
+          1678.0,
+          3098.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "If pregnant or breast-feading, ask a health",
+            "bbox": [
+              669.0,
+              2287.0,
+              1506.0,
+              2359.0
+            ],
+            "terms": [
+              "pregnant"
+            ]
+          },
+          {
+            "text": "contact a Polson Control Center right away.",
+            "bbox": [
+              667.0,
+              2587.0,
+              1468.0,
+              2661.0
+            ],
+            "terms": [
+              "contact"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_8c54b7644f2e05b2",
+      "positive": "reference_004975",
+      "negative": "reference_004976",
+      "visual": {
+        "n": 36,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码"
+        ],
+        "note": "共有制造商白底侧面，但Query条码数字372603327106完整可见；不同浓度版本应靠这类独有编号区分，不能使用未露出的紫/橙正面。",
+        "expected": [
+          "372603327106"
+        ]
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "共有制造商白底侧面，但Query条码数字372603327106完整可见；不同浓度版本应靠这类独有编号区分，不能使用未露出的紫/橙正面。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          545.0,
+          1245.0,
+          2375.0,
+          2665.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_9b57495c8cae1f4b",
+      "positive": "reference_003311",
+      "negative": "reference_003293",
+      "visual": {
+        "n": 37,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "颜色",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query黑底白字韩文侧面，条码8809479160763清楚；错误参考白/红配色且排版不同。无须依赖共有韩文化妆品词。",
+        "expected": [
+          "8809479160763"
+        ]
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "条码8809479160763已读对且匹配，编号+0.9528；韩文被识别成310、101、号Y等乱码，普通文字净−3.5453。去普通文字保留编号可从第5到第1；去全部OCR仅第3。 自动有效GTIN完整匹配后，统一权重4控制恢复第1；本例已读对，瓶颈在证据加权与文字负贡献。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          787.0,
+          9.0,
+          1579.0,
+          3719.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "101，01",
+            "bbox": [
+              871.0,
+              1984.0,
+              1472.0,
+              2053.0
+            ],
+            "terms": [
+              "101"
+            ]
+          },
+          {
+            "text": "310房10亿属02",
+            "bbox": [
+              878.0,
+              2082.0,
+              1479.0,
+              2142.0
+            ],
+            "terms": [
+              "310"
+            ]
+          },
+          {
+            "text": "M2202号Y2E310RPEh0",
+            "bbox": [
+              878.0,
+              2172.0,
+              1481.0,
+              2238.0
+            ],
+            "terms": [
+              "310",
+              "号y"
+            ]
+          },
+          {
+            "text": "212105101Y101号10",
+            "bbox": [
+              886.0,
+              2691.0,
+              1490.0,
+              2752.0
+            ],
+            "terms": [
+              "101"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_a7b92b4cabf1396a",
+      "positive": "reference_003207",
+      "negative": "reference_002769",
+      "visual": {
+        "n": 38,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "颜色",
+          "文字内容"
+        ],
+        "note": "Query白底韩文两大段位于上部，错误参考桃色底韩文分成多段且比例不同；照片下部深灰区域含折叠/阴影，不将其直接认作印刷色块。韩文具体身份词需OCR核验，不能凭语言相同匹配。"
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "韩文被错误识别，负文字主项“号”（−1.4297）；文字净−1.3221压过图像+0.5299。去普通文字后完整图库第1。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          660.0,
+          1533.0,
+          1553.0,
+          2617.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "       号 ",
+            "bbox": [
+              736.0,
+              1675.0,
+              1503.0,
+              1741.0
+            ],
+            "terms": [
+              "号"
+            ]
+          },
+          {
+            "text": "6 3-",
+            "bbox": [
+              726.0,
+              1952.0,
+              1507.0,
+              2030.0
+            ],
+            "terms": [
+              "6"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_acbddc48df8f77fd",
+      "positive": "reference_003311",
+      "negative": "reference_003293",
+      "visual": {
+        "n": 39,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "颜色",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query黑底侧面条码8809479160763清楚；错误参考为白底红字的不同产品，文字块与条码位置也不同。",
+        "expected": [
+          "8809479160763"
+        ]
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "同一条码已读对且匹配，编号+0.9528；韩文乱码文字净−2.5417压过图像+0.4296。应处理语言/读取质量与融合，而非继续盲目提高码权重。 自动有效GTIN完整匹配后，统一权重4控制恢复第1；本例已读对，瓶颈在证据加权与文字负贡献。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          380.0,
+          1173.0,
+          1358.0,
+          3342.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "[号]",
+            "bbox": [
+              717.0,
+              2056.0,
+              1079.0,
+              2171.0
+            ],
+            "terms": [
+              "号"
+            ]
+          },
+          {
+            "text": "A2202号Y2t310R6E30",
+            "bbox": [
+              672.0,
+              2194.0,
+              1037.0,
+              2307.0
+            ],
+            "terms": [
+              "310",
+              "号y"
+            ]
+          },
+          {
+            "text": "2t310RBEh0",
+            "bbox": [
+              685.0,
+              2198.0,
+              884.0,
+              2271.0
+            ],
+            "terms": [
+              "310"
+            ]
+          },
+          {
+            "text": "31022号",
+            "bbox": [
+              721.0,
+              2252.0,
+              888.0,
+              2327.0
+            ],
+            "terms": [
+              "号"
+            ]
+          },
+          {
+            "text": "310亿百号力10",
+            "bbox": [
+              679.0,
+              2269.0,
+              891.0,
+              2351.0
+            ],
+            "terms": [
+              "310"
+            ]
+          },
+          {
+            "text": "22层105101Y51010号0",
+            "bbox": [
+              586.0,
+              2455.0,
+              954.0,
+              2572.0
+            ],
+            "terms": [
+              "号"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_bc5564b0e01eeb18",
+      "positive": "reference_000229",
+      "negative": "reference_000233",
+      "visual": {
+        "n": 40,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query说明明确puncture a maximum of20times，错误参考对应段落50times；另有换行差异。这里用可见用法数字，不用未露出的20/50mL正面容量。",
+        "expected": [
+          "20"
+        ],
+        "wrong_expected": [
+          "50"
+        ]
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "Query说明明确puncture a maximum of20times，错误参考对应段落50times；另有换行差异。这里用可见用法数字，不用未露出的20/50mL正面容量。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          1019.9327,
+          1040.8041,
+          2068.5205,
+          3144.5215
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_c576c0c30f74cd4f",
+      "positive": "reference_003298",
+      "negative": "reference_003297",
+      "visual": {
+        "n": 41,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码",
+          "版式"
+        ],
+        "note": "底面条码为共有全零占位；其下小编号正确参考87936、错误参考87946，Query该区域模糊但确有小字。新OCR读成8936，未形成编号匹配；不能宣称条码本身独有或Query完整读数已确定。",
+        "expected": [
+          "87936"
+        ],
+        "wrong_expected": [
+          "87946"
+        ]
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "全零条码不是独有码；条码下参考编号87936/87946不同，Query区域模糊，新OCR读成8936且无匹配。当前候选对主要由旧图像负贡献压过微弱修复图像正贡献；只用修复图像＋OCR仍第2，八个本轮控制均未到第1。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          751.0,
+          1373.0,
+          1281.0,
+          3200.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_c8920e14924534af",
+      "positive": "reference_004975",
+      "negative": "reference_004976",
+      "visual": {
+        "n": 42,
+        "primary": "小码/条码编号",
+        "tags": [
+          "小码"
+        ],
+        "note": "Query完整UPC372603327106清楚，主体白底制造商文字与错误浓度版本共有；正面紫/橙配色未出现在Query。",
+        "expected": [
+          "372603327106"
+        ]
+      },
+      "stage_label": "图像压过正确OCR支持",
+      "finding": "Query完整UPC372603327106清楚，主体白底制造商文字与错误浓度版本共有；正面紫/橙配色未出现在Query。",
+      "bounded_conclusion": "图像压过正确OCR支持：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "定位条码与旁侧编号，转正/局部重读并做格式与校验位检查；区分独有商品码、共有说明数字和占位码。 OCR已有正确支持但不足以压过图像负差额；先查负图像分支与可见局部，再测试可靠证据的融合。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          822.9558,
+          1120.4264,
+          1915.4258,
+          2577.2937
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_da9d9887ba9c878f",
+      "positive": "reference_000936",
+      "negative": "reference_004358",
+      "visual": {
+        "n": 43,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query盖面Mucus/Extended Release两行大字、右侧12小时圆标；错误盖面Mucus Extended-/Release的分行、连字符与圆标位置不同。1200mg相同；正面28/42片数未露出。"
+      },
+      "stage_label": "旧图像分支压过修复图像",
+      "finding": "Query盖面Mucus/Extended Release两行大字、右侧12小时圆标；错误盖面Mucus Extended-/Release的分行、连字符与圆标位置不同。1200mg相同；正面28/42片数未露出。",
+      "bounded_conclusion": "旧图像分支压过修复图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 优先校准旧整图/主体Token与修复图像的融合；此处已定位到分支冲突，不能归为修复图像完全没有信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          159.0,
+          1561.0,
+          2018.0,
+          2498.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_dd1b9056edc18f04",
+      "positive": "reference_004780",
+      "negative": "reference_004779",
+      "visual": {
+        "n": 44,
+        "primary": "剂量/规格文字",
+        "tags": [
+          "剂量规格",
+          "颜色"
+        ],
+        "note": "Query顶部红色条明确2000IU Nominal，错误参考蓝色条500IU；下面共有保存说明不能覆盖这一身份差异。",
+        "expected": [
+          "2000"
+        ],
+        "wrong_expected": [
+          "500"
+        ]
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "Query顶部红色条明确2000IU Nominal，错误参考蓝色条500IU；下面共有保存说明不能覆盖这一身份差异。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "把数字绑定到单位、成分、数量或体重档及所在行；不能将警告中的所有数字当成本品规格。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          708.0,
+          1037.0,
+          1548.0,
+          2905.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "Reconstitute ALPROLUX with",
+            "bbox": [
+              806.0,
+              1998.0,
+              1240.0,
+              2056.0
+            ],
+            "terms": [
+              "alprolux"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_e5b4dba01622bfaf",
+      "positive": "reference_001133",
+      "negative": "reference_003667",
+      "visual": {
+        "n": 45,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "版式"
+        ],
+        "note": "Query Drug Facts外框红色，错误版本蓝色；成分160mg/5mL相同，黄色强调带及换行也不同。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "Query Drug Facts外框红色，错误版本蓝色；成分160mg/5mL相同，黄色强调带及换行也不同。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          598.0,
+          388.0,
+          1790.0,
+          2776.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_ee67048e97d12344",
+      "positive": "reference_003207",
+      "negative": "reference_003123",
+      "visual": {
+        "n": 46,
+        "primary": "版式/空间结构",
+        "tags": [
+          "版式",
+          "文字内容"
+        ],
+        "note": "Query韩文两大段铺满宽面，错误参考韩文窄面为分段/列表并有条码；相同语言或共有警告不能作身份匹配。"
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "韩文乱码“号”几乎构成全部负文字差额（−1.1119）；去普通文字后完整图库第1。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "对齐同一包装面，比较文字块、行长、换行和图形相对位置；保持文字内容固定验证布局作用。已有几何对照不能替代这些可见面的布局核验。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          228.0,
+          1065.0,
+          1882.0,
+          2612.0
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "号",
+            "bbox": [
+              303.0,
+              1526.0,
+              1808.0,
+              1603.0
+            ],
+            "terms": [
+              "号"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_f9a136cbb2bdc194",
+      "positive": "reference_001190",
+      "negative": "reference_002096",
+      "visual": {
+        "n": 47,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "共有品牌面",
+          "图案细节"
+        ],
+        "note": "Query盖面为均匀金棕色与aoao熊猫标志，错误参考同标志但彩虹珠光背景；色域/材质呈现是主要可见差异。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "Query盖面为均匀金棕色与aoao熊猫标志，错误参考同标志但彩虹珠光背景；色域/材质呈现是主要可见差异。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          528.0,
+          1333.0,
+          1551.0,
+          2403.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_fc0ee05b6b185ffa",
+      "positive": "reference_004857",
+      "negative": "reference_005332",
+      "visual": {
+        "n": 48,
+        "primary": "弱线索/可见面受限",
+        "tags": [
+          "共有占位码",
+          "版式"
+        ],
+        "note": "Query可见面印有For Presentation Purposes Only，GTIN/SN/Lot/Exp均为X占位；不能把这种示意二维代码当作真实独有编号。两参考所示盖面极相似，应核验示意码图形和版式是否真实可区分，保持原队列，不自动剔除。"
+      },
+      "stage_label": "图像与OCR均未支持正确候选",
+      "finding": "Query可见面印有For Presentation Purposes Only，GTIN/SN/Lot/Exp均为X占位；不能把这种示意二维代码当作真实独有编号。两参考所示盖面极相似，应核验示意码图形和版式是否真实可区分，保持原队列，不自动剔除。",
+      "bounded_conclusion": "图像与OCR均未支持正确候选：固定正确／错误候选对的各支路差额可精确重构。所有本轮通用干预仍失败；可确定当前计分不能分开候选，不能据此断言信息在编码器中完全不存在。",
+      "conclusion_level": "候选对失分环节已复算；现有干预未修复",
+      "direction": "保持原评测与13张排除名单；单列可见线索强度，复核局部差异或补拍判别面后再决定可分性。 两路对当前候选均不利；按可见线索分别核验输入读取、同面匹配和计分，现有分差不能证明编码器永久丢失信息。",
+      "locator": {
+        "width": 2160,
+        "height": 3840,
+        "subject_bbox": [
+          445.0,
+          935.0,
+          1472.0,
+          2188.0
+        ],
+        "old_ocr_negative_lines": [],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    },
+    {
+      "query": "photo_fd3bb2cdcb3bd3a7",
+      "positive": "reference_000265",
+      "negative": "reference_000264",
+      "visual": {
+        "n": 49,
+        "primary": "颜色",
+        "tags": [
+          "颜色",
+          "剂量规格",
+          "文字内容"
+        ],
+        "note": "Query狭长侧面蓝色条带，对错误候选绿色；边缘体重档转正后仍模糊，不能把完整体重数字当作已读清。共有Comfortis和6片文字不能区分。"
+      },
+      "stage_label": "OCR压过混合图像",
+      "finding": "文字负差额几乎全部来自“40”（−0.3750）；体重字段被拆碎，失去区间语义。蓝/绿可见色差及图像正支持没有挡住该负分；去普通文字可到第1。",
+      "bounded_conclusion": "OCR压过混合图像：固定正确／错误候选对的各支路差额可精确重构。至少一种预先固定的完整图库干预能恢复正确排名；支持该计分环节造成当前错误，但不证明视觉差异全部由编码器编码。",
+      "conclusion_level": "完整图库干预已改变成败",
+      "direction": "按同一可见面做色域比较并控制光照/白平衡；整张展开图的颜色直方图不能替代局部颜色证据。 检查下列负向词和编号串；验证OCR读取质量、字段绑定和融合强度，避免稀有误读词压过图像。",
+      "locator": {
+        "width": 3024,
+        "height": 4032,
+        "subject_bbox": [
+          1524.5133,
+          269.8702,
+          2033.3348,
+          3861.7156
+        ],
+        "old_ocr_negative_lines": [
+          {
+            "text": "40",
+            "bbox": [
+              1589.0,
+              3364.0,
+              1790.0,
+              3763.0
+            ],
+            "terms": [
+              "40"
+            ]
+          }
+        ],
+        "scope": "Old OCR line coordinates on original EXIF-oriented image. A red box locates a negatively scoring line, not proof all pixels/text within it are erroneous."
+      }
+    }
+  ]
+}

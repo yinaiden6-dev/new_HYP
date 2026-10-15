@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-15T16:40:37.078640+00:00",
+  "n": 1117,
+  "purpose": "Test whether rare/sparse lexical OCR terms and short numeric aliases dominate useful image/code signals.",
+  "text_cap": [
+    null,
+    2.0,
+    1.0,
+    0.5
+  ],
+  "image_direct_fraction": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "code_modes": [
+    "current",
+    "min8",
+    "min8_plus_exact_gtin"
+  ],
+  "rule": "Cap each query term IDF*TF / original query score SD before the original 0.5 text weight; do not renormalize capped terms. Centering constants do not affect ranks. min8 keeps code query strings with at least 8 alphanumeric characters. GTIN: only 12/13/14 digit automatic OCR strings passing checksum, >=3 distinct digits; zero-pad to14; exact gallery match; IDF bonus with max across query codes. Implemented unit guard also excludes all-numeric strings followed by LBS/IBS/1BS/BS/MG/MCG/ML/KG/OZ/LB; see frozen source.",
+  "image": "Convex combination of standardized existing mixed-image score and standardized repaired-image score.",
+  "selection": "Validation macro Top1, then macro MRR, then fewer modifications, then declaration order. Baseline included. Freeze selected arm before reporting test metrics.",
+  "limits": "Hypotheses informed by inspected failures. Historical validation/test reused; exploratory retrospective audit, not a fresh blind test.",
+  "no_manual_values": true,
+  "no_sam": true,
+  "no_truth_in_candidates": true
+}

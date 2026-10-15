@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-15T16:45:21.655405+00:00",
+  "sources": [
+    "decoded_query",
+    "decoded_or_ocr_query"
+  ],
+  "weights": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "reference": "all exact valid GTINs from decoded pixels OR cached automatic OCR; SHA aliases retained for evaluation",
+  "score": "baseline1058 plus max normalized IDF over matching exact GTINs; no query labels or candidate insertion",
+  "selection": "validation macro accuracy, macro MRR, then smaller weight, then decoded-only; baseline included",
+  "limits": "Exploratory historical data; no manual barcode transcription."
+}
